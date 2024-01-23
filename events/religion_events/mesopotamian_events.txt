@@ -1,0 +1,256 @@
+﻿namespace = mspt
+namespace = embrace_culture
+
+mspt.001 = {
+	type = character_event
+	title = mspt.001.t
+	desc = mspt.001.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Marduk
+	option = {
+		name = mspt.001.marduk
+		trigger = {
+			NOT = { has_character_modifier = babylonian_marduk }
+		}
+		set_bhakti_effect = { BHAKTI = babylonian_marduk }
+	}
+
+	 #Ishtar
+	 option = {
+	 	name = mspt.001.ishtar
+	 	trigger = {
+	 		NOT = { has_character_modifier = mesopotamian_ishtar }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = mesopotamian_ishtar }
+	 }
+
+	#Ninhegal
+	option = {
+		name = mspt.001.ninhegal
+		trigger = {
+			NOT = { has_character_modifier = mesopotamian_ninhegal }
+		}
+		set_bhakti_effect = { BHAKTI = mesopotamian_ninhegal }
+	}
+
+	# Nabu
+	option = {
+		name = mspt.001.nergal
+		trigger = {
+			NOT = { has_character_modifier = mesopotamian_nabu }
+		}
+		set_bhakti_effect = { BHAKTI = mesopotamian_nabu }
+	}
+
+
+	 # Nergal
+	 option = {
+	 	name = mspt.001.nergal
+	 	trigger = {
+	 		NOT = { has_character_modifier = babylonian_nergal }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = babylonian_nergal }
+	 }
+
+	# Opt-Out
+	option = {
+		name = mspt.001.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
+mspt.002 = {
+	type = character_event
+	title = mspt.002.t
+	desc = mspt.002.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Ashur
+	option = {
+		name = mspt.002.ashur
+		trigger = {
+			NOT = { has_character_modifier = assyrian_ashur }
+		}
+		set_bhakti_effect = { BHAKTI = assyrian_ashur }
+	}
+
+	 #Ishtar
+	 option = {
+	 	name = mspt.002.ishtar
+	 	trigger = {
+	 		NOT = { has_character_modifier = mesopotamian_ishtar }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = mesopotamian_ishtar }
+	 }
+
+	#Ninhegal
+	option = {
+		name = mspt.002.ninhegal
+		trigger = {
+			NOT = { has_character_modifier = mesopotamian_ninhegal }
+		}
+		set_bhakti_effect = { BHAKTI = mesopotamian_ninhegal }
+	}
+
+	# Nabu
+	option = {
+		name = mspt.002.nabu
+		trigger = {
+			NOT = { has_character_modifier = mesopotamian_nabu }
+		}
+		set_bhakti_effect = { BHAKTI = mesopotamian_nabu }
+	}
+
+
+	 # Ninkarrak
+	 option = {
+	 	name = mspt.002.ninkarrak
+	 	trigger = {
+	 		NOT = { has_character_modifier = assyrian_ninkarrak }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = assyrian_ninkarrak }
+	 }
+
+	# Opt-Out
+	option = {
+		name = mspt.002.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
+mspt.003 = {
+	type = character_event
+	title = mspt.003.t
+	desc = mspt.003.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Enlil
+	option = {
+		name = mspt.003.enlil
+		trigger = {
+			NOT = { has_character_modifier = sumerian_enlil }
+		}
+		set_bhakti_effect = { BHAKTI = sumerian_enlil  }
+	}
+
+	 #Inanna
+	 option = {
+	 	name = mspt.003.inanna
+	 	trigger = {
+	 		NOT = { has_character_modifier = sumerian_inanna }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = sumerian_inanna }
+	 }
+
+	#Ninhegal
+	option = {
+		name = mspt.003.ninhegal
+		trigger = {
+			NOT = { has_character_modifier = mesopotamian_ninhegal }
+		}
+		set_bhakti_effect = { BHAKTI = mesopotamian_ninhegal }
+	}
+
+	# Nisaba
+	option = {
+		name = mspt.003.nisaba
+		trigger = {
+			NOT = { has_character_modifier = sumerian_nisaba }
+		}
+		set_bhakti_effect = { BHAKTI = sumerian_nisaba }
+	}
+
+
+	 # Ninurta
+	 option = {
+	 	name = mspt.003.ninurta
+	 	trigger = {
+	 		NOT = { has_character_modifier = sumerian_ninurta }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = sumerian_ninurta }
+	 }
+
+	# Opt-Out
+	option = {
+		name = mspt.003.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
+embrace_culture.005 = {
+	type = character_event
+	title = embrace_culture.005.t
+	desc = embrace_culture.005.desc
+	theme = learning
+
+	lower_right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = embrace_culture.005.a
+		set_culture = culture:babylonian
+	}
+
+}
+
+
+embrace_culture.006 = {
+	type = character_event
+	title = embrace_culture.006.t
+	desc = embrace_culture.006.desc
+	theme = learning
+
+
+	lower_right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = embrace_culture.006.a
+		set_culture = culture:assyrian
+	}
+
+}
+
+embrace_culture.007 = {
+	type = character_event
+	title = embrace_culture.007.t
+	desc = embrace_culture.007.desc
+	theme = learning
+
+	lower_right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = embrace_culture.007.a
+		set_culture = culture:sumerian
+	}
+
+}

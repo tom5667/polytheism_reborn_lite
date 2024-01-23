@@ -1,0 +1,80 @@
+﻿parthian = {
+	color = { 162 32 112 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_iranian
+	language = language_parthian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_pastoralists
+		tradition_hit_and_run
+		tradition_horse_breeder
+		tradition_horse_lords
+	}
+	
+	name_list = name_list_parthian
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+	
+	ethnicities = {
+		8 = arab
+		5 = mediterranean
+	}
+}
+
+avestan = {
+	color = { 42 191 48 }
+	
+	ethos = ethos_spiritual 
+	heritage = heritage_iranian
+	language = language_avestan
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_agrarian
+		tradition_modest
+		tradition_language_scholars
+		tradition_faith_bound
+	}
+	
+	name_list = name_list_avestan
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+	
+	ethnicities = {
+		8 = arab
+		5 = mediterranean
+	}
+}
+
+scythian = {
+	color = { 245 167 10 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_iranian
+    language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_pastoralists
+		tradition_hit_and_run
+		tradition_horse_breeder
+		tradition_horse_lords
+	}
+	
+	name_list = name_list_scythian
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { steppe_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		80 = arab
+		20 = asian
+	}
+}

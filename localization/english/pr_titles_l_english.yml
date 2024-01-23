@@ -1,0 +1,62 @@
+﻿l_english:
+ #Cultus deorum dutchy title 
+ d_pontifex_polytheistic:0 "College of Pontiffs"
+ #Celtic religions dutchy title
+ d_druidic:0 "Arch Druids"
+ #High kingdom of ireland 
+ k_high_kingdom_of_ireland:0 "High Kingdom of Ireland"
+
+ #Celtic empire
+ e_celtic_empire:0 "Celtic"
+ #Kingdom of Carthago
+ k_carthago:0 "Carthago"
+ #Kingdom of Egypt
+ e_egyptus:0 "Egyptus"
+ k_upper_egypt:0 "Upper Egypt"
+ k_lower_egypt:0 "Lower Egypt"
+ #Gaul
+ e_gaul:0 "Gaulish"
+ k_celtica:0 "Celtica"
+ k_belgica:0 "Belgica"
+ k_cisalpina:0 "Liguria"
+ k_aquitania:0 "Aquitania"
+ k_narbonensis:0 "Narbonensis"
+ k_etruria:0 "Etruria"
+ k_scythia:0 "Scythia"
+ k_indo_scythia:0 "Indo Scythia"
+ e_scythia:0 "Scythia"
+ k_pr_dacia:0 "Dacia"
+ k_babylon:0 "Babylon"
+ k_sumer:0 "Sumer"
+ k_assyria:0 "Assyria"
+ e_mesopotamia:0 "Mesopotamia"
+ k_hittite:0 "Hattusha"
+ e_hittite:0 "Hattusha"
+ pr_sumerian_empire:0 "Sumerian"
+ pr_assyrian_empire:0 "Assyrian"
+ pr_babylonian_empire:0 "Babylonian"
+
+ k_pr_illyria:0 "Illyria"
+ k_pergamon:0 "Pergamon"
+ k_odrysian:0 "Odrysian"
+
+ pr_imperium_romanum:0 "Roman Empire"
+ pr_romaiki_aftokratoria:0 "Roman Empire"
+ pr_roman_eastern_roman_empire:0 "Eastern Roman Empire"
+ pr_greek_eastern_roman_empire:0 "Eastern Roman Empire"
+ e_pr_western_roman_empire:0 "Western Roman Empire"
+ pr_roman_western_roman_empire:0 "Western Roman Empire"
+ pr_greek_western_roman_empire:0 "Western Roman Empire"
+
+ pr_celtic_empire:0 "Celtic"
+ pr_high_kingdom_of_ireland:0 "High Kingdom of Ireland"
+ pr_roman_eastern_roman_empire_tfe:0 "Eastern Roman Empire"
+ pr_greek_eastern_roman_empire_tfe:0 "Eastern Roman Empire"
+ pr_roman_western_roman_empire_tfe:0 "Western Roman Empire"
+ pr_greek_western_roman_empire_tfe:0 "Western Roman Empire"
+
+
+
+ #Coa Category 
+ COA_DESIGNER_CATEGORY_polytheism_reborn:0 "Polytheism Reborn"
+

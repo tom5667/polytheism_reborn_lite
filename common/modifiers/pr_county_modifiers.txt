@@ -1,0 +1,5 @@
+﻿open_temple_of_vesta ={ 
+	icon = outdoors_positive
+	county_opinion_add = 5
+	christianity_religion_opinion = -10 
+}

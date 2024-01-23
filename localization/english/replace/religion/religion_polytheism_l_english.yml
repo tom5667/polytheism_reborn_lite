@@ -1,0 +1,163 @@
+﻿l_english:
+#####################
+#Made by tom5667 
+###################### 
+
+#Better religion name localization
+#Greek
+    hellenic_pagan:0 "Hellenism"
+    hellenic_pagan_adj:0 "Hellenism"
+    hellenic_pagan_adherent:0 "Greek polytheist"
+    hellenic_pagan_adherent_plural:0 "Greek Polytheists"
+
+    hellenic_pagan_old:0 "Old Hellenism"
+    hellenic_pagan_old_adj:0 "Old Hellenism"
+    hellenic_pagan_old_adherent:0 "Old Hellenism Polytheist"
+    hellenic_pagan_old_adherent_plural:0 "Old Hellenism Polytheists"
+    hellenic_pagan_desc:0 "Greeks worship the ancient Greek and gods, the greek gods said to reside on Mount Olympus. Each god has their own aspects and is venerated by their worshipers in their own way."
+    #hellenic Localization correction
+    hellenism_religion:2 "Greek"
+    hellenism_religion_adj:2 "Greek"
+    hellenism_religion_adherent:2 "Greek"
+    hellenism_religion_adherent_plural:2 "Greek"
+
+    hellenic_pagan_old_desc:0 "Greeks worship the ancient Greek and gods, the greek gods said to reside on Mount Olympus. Each god has their own aspects and is venerated by their worshipers in their own way."
+    hellenism_religion_desc:0 "The Greek gods and godesses residing on mount olympus, venerated by the ancient Greeks. The gods are known to play games with human lives or even come to earth like in the famous Illiad about the ancient city of troy"
+
+    greek_religion_negative_afterlife:0 "Hades's realm"
+#Gods and Godesses Correction
+    hellenism_household_god_name:0 "Hestia"
+    hellenism_household_god_name_possessive:0 "Hestia's"
+    hellenism_health_god_name:0 "Appolo"
+    hellenism_health_god_name_possessive:0 "Appolo's"
+    hellenism_devil_name:0 "Eris"
+    hellenism_devil_name_possessive:0 "Eris's"
+    hellenism_fertility_god_name:0 "Aphrodite"
+    hellenism_fertility_god_name_possessive:0 "Aphrodite's"
+#Norse
+    germanic_religion:1 "Germanic"
+    germanic_religion_adj:1 "Germanic"
+    germanic_religion_adherent:1 "Germanic Polytheist"
+    germanic_religion_adherent_plural:1 "Germanic Polytheists"
+    germanic_religion_desc:1 "Germanic Polytheism has three main branches Norse in Scandinavia Anglo Saxon in Saxony and Angleland and Gemanic in the rest of Germany although every tribe had his own customs and rituals."
+
+    norse_pagan:0 "Norse"
+    norse_pagan_adj:0 "Norse"
+    norse_pagan_adherent:0 "Norse polytheist"
+    norse_pagan_adherent_plural:0 "Norse polytheists"
+
+    norse_pagan_old:0 "Old Norse"
+    norse_pagan_old_adj:0 "Old Norse"
+    norse_pagan_old_adherent:0 "Old Norse Polytheist"
+    norse_pagan_old_adherent_plural:0 "Old Norse Polytheists"
+
+    rf_abrahamic:0 "Abrahamic"
+    rf_pagan:0 "Polytheistic"
+    rf_eastern:0 "Eastern"
+    pagan_hostility_doctrine_name:0 "Polytheistic"
+    pagan_hostility_doctrine_desc:0 "The following religions are Polytheistic:\n[GetReligionFamily('rf_pagan').GetReligions]"
+
+    #Decision tooltip 
+    restore_roman_empire_decision_tt:0 "Either your Religion is Christian, Roman or Greek or your Culture is Roman"
+
+    #Baltic
+    baltic_pagan:0 "Lithuanian"
+    baltic_pagan_adj:0 "Lithuanian"
+    baltic_pagan_adherent:0 "Lithuanian"
+    baltic_pagan_adherent_plural:0 "Lithuanians"
+    baltic_pagan_desc:0 "Lithuanian is a native faith of the Lithuanian tribes."
+    baltic_pagan_old:0 "Old Lithuanian"
+    baltic_pagan_old_adj:0 "Old Lithuanian"
+    baltic_pagan_old_adherent:0 "Old Lithuanians"
+    baltic_pagan_old_adherent_plural:0 "Old Lithuaniannai"
+    baltic_divine_realm:0 "Dausų Vartai"
+    baltic_house_of_worship:0 "alka"
+    baltic_house_of_worship_plural:0 "alkos"
+    baltic_negative_afterlife:0 "Tamsybių Laukus"
+    baltic_positive_afterlife:0 "Dausos"
+    baltic_bishop_female:0 "burtininkė"
+    baltic_bishop_female_plural:0 "burtininkės"
+    baltic_bishop_male:0 "burtininkas"
+    baltic_bishop_male_plural:0 "burtininkai"
+    baltic_bishop_neuter:0 "$baltic_bishop_male$"
+    baltic_bishop_neuter_plural:0 "$baltic_bishop_male_plural$"
+    baltic_devotee_female:0 "atsidavėlutė"
+    baltic_devotee_female_plural:0 "atsidavėlutės"
+    baltic_devotee_male:0 "atsidavėlis"
+    baltic_devotee_male_plural:0 "atsidavėliai"
+    baltic_devotee_neuter:0 "$baltic_devotee_male$"
+    baltic_devotee_neuter_plural:0 "$baltic_devotee_male_plural$"
+    baltic_priest_alternate_plural:0 "seniūnaičiai"
+    baltic_priest_female:0 "vaidilė"
+    baltic_priest_female_plural:0 "vaidilės"
+    baltic_priest_male:0 "vaidila"
+    baltic_priest_male_plural:0 "vaidilos"
+    baltic_priest_neuter:0 "$baltic_priest_male$"
+    baltic_priest_neuter_plural:0 "$baltic_priest_male_plural$"
+    baltic_religious_head_title:0 "Krivis"
+    baltic_religious_head_title_name:0 "Kriviai"
+    baltic_religious_symbol:0 "aušros medis"
+    baltic_religious_text:0 "dainos"
+
+    baltic_creator_god_name:0 "$baltic_high_god_name$"
+    baltic_creator_god_name_possessive:0 "$baltic_high_god_name_possessive$"
+    baltic_death_deity_name:0 "$baltic_evil_god_Giltine$"
+    baltic_death_deity_name_possessive:0 "$baltic_evil_god_Giltine$'s"
+    baltic_devil_name:0 "$baltic_evil_god_Velnias$"
+    baltic_devil_name_possessive:0 "$baltic_evil_god_Velnias$'"
+    baltic_fate_god_name:0 "$baltic_good_god_Laima$"
+    baltic_fate_god_name_possessive:0 "$baltic_good_god_Laima$'s"
+    baltic_fertility_god_name:0 "$baltic_good_god_Zemyna$"
+    baltic_fertility_god_name_possessive:0 ""$baltic_good_god_Zemyna$'s"
+    baltic_health_god_name:0 "$baltic_good_god_Saule$"
+    baltic_health_god_name_possessive:0 "$baltic_good_god_Saule$'s"
+    baltic_high_god_name:0 "Dievas"
+    baltic_high_god_name_possessive:0 "Dievas'"
+    baltic_high_god_name_alternate:0 "Praamžius"
+    baltic_high_god_name_alternate_possessive:0 "Praamžius'"
+    baltic_household_god_name:0 "$baltic_good_god_Dimstipatis$"
+    baltic_household_god_name_possessive:0 "$baltic_good_god_Dimstipatis$'"
+    baltic_knowledge_god_name:0 "$baltic_high_god_name$"
+    baltic_knowledge_god_name_possessive:0 "$baltic_high_god_name_possessive$"
+    baltic_night_god_name:0 "$baltic_good_god_Menulis$"
+    baltic_night_god_name_possessive:0 "$baltic_good_god_Menulis$'"
+    baltic_trickster_god_name:0 "$baltic_evil_god_Pinciukas$"
+    baltic_trickster_god_name_possessive:0 "$baltic_evil_god_Pinciukas$'"
+    baltic_war_god_name:0 "$baltic_good_god_Perkunas$"
+    baltic_war_god_name_possessive:0 "$baltic_good_god_Perkunas$'"
+    baltic_water_god_name:0 "$baltic_evil_god_Bangputys$"
+    baltic_water_god_name_possessive:0 "$baltic_evil_god_Bangputys$'"
+    baltic_wealth_god_name:0 "$baltic_good_god_Dalia$"
+    baltic_wealth_god_name_possessive:0 "$baltic_good_god_Dalia$'s"
+    baltic_witch_god_name:0 "$baltic_evil_god_Ragana$"
+
+    baltic_good_god_Ausrine:0 "Aušrinė" #goddess morning star
+    baltic_good_god_Austrinis:0 "Auštrinis" #god of the northeast wind
+    baltic_good_god_Bicbirbis:0 "Bičbirbis" #god of bees
+    baltic_good_god_Dalia:0 "Dalia" #goddess of fate, wealth
+    baltic_good_god_Dimstipatis:0 "Dimstipatis" #god of the hearth
+    baltic_good_god_Ezerinis:0 "Ežerinis" #god of lakes
+    baltic_good_god_Gabija:0 "Gabija" #goddess of fire
+    baltic_good_god_Laima:0 "Laima" #goddess of fate, life
+    baltic_good_god_Laukpatis:0 "Laukpatis" #god of fields
+    baltic_good_god_Menulis:0 "Mėnulis" #god of the moon
+    baltic_good_god_Perkunas:0 "Perkūnas" #god of thunder
+    baltic_good_god_Saule:0 "Saulė" #goddess of the sun, fetility, health
+    baltic_good_god_Vakarine:0 "Vakarinė" #goddess of evening star
+    baltic_good_god_Vaizgantas:0 "Vaižgantas" #goddess of flax
+    baltic_good_god_Zemepatis:0 "Žemėpatis" #god of land and farmers
+    baltic_good_god_Zemyna:0 "Žemyna" #goddess of earth
+
+    baltic_evil_god_Aitvaras:0 "Aitvaras" #god of luck
+    baltic_evil_god_Bangputys:0 "Bangpūtys" #god of seas, storms
+    baltic_evil_god_Drebkulis:0 "Drebkulis" #god of earthquakes
+    baltic_evil_god_Giltine:0 "Giltinė" #goddess of death
+    baltic_evil_god_Magyla:0 "Magyla" #goddess of anger, calamity
+    baltic_evil_god_Medeina:0 "Medeina" #goddess of forest
+    baltic_evil_god_Pagirnis:0 "Pagirnis" #god of snakes
+    baltic_evil_god_Pinciukas:0 "Pinčiukas" #god of tricks
+    baltic_evil_god_Ragana:0 "Ragana" #goddess of witches
+    baltic_evil_god_Slogutis:0 "Slogutis" #god of pain, misery, nightmare
+    baltic_evil_god_Vejopatis:0 "Vėjopatis" #god of wind
+    baltic_evil_god_Veliona:0 "Veliona" #goddess of eternity, spirits, the deceased
+    baltic_evil_god_Velnias:0 "Velnias" #god of underworld, devil

@@ -1,0 +1,30 @@
+﻿l_english:
+#####################
+#Made by tom5667 
+######################
+                                             
+#Choose main deity
+choose_main_deity_baltic_decision:0 "Choose your main deity"
+choose_main_deity_baltic_decision_desc:0 "For some extra help in daily life, I can choose one god as my personal main god"
+choose_main_deity_baltic_decision_tt:0 "You begin to live your life according to the values of"
+select_main_deity_baltic_decision.select_dievas:0 "Dievas high god of the Lithuanians"
+select_main_deity_baltic_decision.select_dalia:0 "Dalia goddess of fate and wealth"
+select_main_deity_baltic_decision.select_perkunas:0 "Perkūnas god of war"
+select_main_deity_baltic_decision.select_zemyna:0 "Žemyna goddess of fertility"
+select_main_deity_baltic_decision.select_saule:0 "Tadenus god of health"
+
+
+select_main_deity_baltic_decision.select_dievs:0 "Dievs high god of the Latvians"
+select_main_deity_baltic_decision.select_jumis:0 "Jumis god of wealth"
+select_main_deity_baltic_decision.select_perkons:0 "Pērkons God of war"
+select_main_deity_baltic_decision.select_ceroklis:0 "Ceroklis god of youth and fertility"
+
+
+select_main_deity_baltic_decision.select_deiws:0 "Dēiws high god of the Prussians"
+select_main_deity_baltic_decision.select_pilwits:0 "Pilwīts god of wealth"
+select_main_deity_baltic_decision.select_perkuns:0 "Perkūns God of war"
+select_main_deity_baltic_decision.select_patrimps:0 "Patrīmps god of youth and fertility"
+select_main_deity_baltic_decision.select_ausauts:0 "Āušauts god of health"
+
+choose_main_deity_baltic_decision_tooltip:1 "Choose main god(dess)"
+choose_main_deity_baltic_decision_confirm:1 "Choose main god(dess)"

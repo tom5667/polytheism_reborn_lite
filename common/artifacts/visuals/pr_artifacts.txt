@@ -1,0 +1,40 @@
+﻿#Made with photos from own collection 
+#image copyrights Tom5667 
+pr_juno_statue = {
+	icon = "pr_artifact_juno.dds"
+	asset = ep1_western_statue_01_female_entity
+}
+pr_mars_statue = {
+	icon = "pr_artifact_mars.dds"
+	asset = ep1_western_statue_01_male_entity
+}
+
+pr_jupiter_statue = {
+	icon = "pr_artifact_jupiter.dds"
+	asset = ep1_western_statue_01_male_entity
+}
+
+pr_mercurius_statue = {
+	icon = "pr_artifact_mercurius.dds"
+	asset = ep1_western_statue_01_male_entity
+}
+
+pr_venus_statue = {
+	icon = "pr_artifact_venus.dds"
+	asset = ep1_western_statue_01_female_entity
+}
+
+pr_minerva_statue = {
+	icon = "pr_artifact_minerva.dds"
+	asset = ep1_western_statue_01_female_entity
+}
+
+pr_apollo_statue = {
+	icon = "pr_artifact_apollo.dds"
+	asset = ep1_western_statue_01_male_entity
+}
+
+pr_treaty_of_kadesh = {
+	icon = "pr_treaty_of_kadesh.dds"
+	asset = ep1_western_statue_01_male_entity
+}

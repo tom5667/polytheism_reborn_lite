@@ -1,0 +1,19 @@
+﻿l_english:
+#####################
+#Made by tom5667 
+######################
+
+# Choose main deity
+choose_main_deity_caucasus_decision:0 "Choose your main deity"
+choose_main_deity_caucasus_decision_tt:0 "You begin to live your life according to the values of"
+select_main_deity_caucasus_decision.select_armzi:0 "Armzi high god of the Georgians"
+select_main_deity_caucasus_decision.select_adgilis_deda:0 "Adgilis Deda goddess of fertility"
+select_main_deity_caucasus_decision.select_kopala:0 "Kopala god of war"
+select_main_deity_caucasus_decision.select_barbale:0 "Barbale god of health"
+select_main_deity_caucasus_decision.select_aramazd:0 "Aramazd high god of the Georgians"
+select_main_deity_caucasus_decision.select_astlik:0 "Astlik goddess of fertility"
+select_main_deity_caucasus_decision.select_nane:0 "Nane god of war"
+select_main_deity_caucasus_decision.select_nvard:0 "Nvard god of health"
+choose_main_deity_caucasus_decision_tooltip:1 "Choose main god(dess)"
+choose_main_deity_caucasus_decision_confirm:1 "Choose main god(dess)"
+

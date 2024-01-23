@@ -1,0 +1,680 @@
+﻿@smCastleX = 0.27
+@smCastleY = 0.23
+@smLysX = 0.23
+@smLysY = 0.26
+@smCross = 0.22
+
+#Cultus Deorum priesthood kingdom 
+d_pontifex_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_pontifex.dds"
+		color1 = "brown"
+		color2 = "green"
+		instance = { position = { 0.50 0.45 } scale = { 0.8 0.8 }  }									
+	}	
+}
+
+#Celtic priesthood kingdom 
+d_druidic = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	colored_emblem = {
+		texture = "ce_druidic.dds"
+		#color2 = "green"
+		color1 = "yellow"
+		instance = { position = { 0.50 0.45 } scale = { 0.8 0.8 }  }									
+	}	
+}
+#Celtic empire
+e_celtic_empire = {
+	pattern =  "pattern_solid.dds"
+	color1 = "green"
+	colored_emblem = {
+		texture = "ce_celtic_empire.dds"
+		color1 = "yellow_light"
+		color2 = "yellow_light"
+		color3 = "yellow_light"
+		instance = {position = { 0.5 0.45 } scale = { 0.9 0.9 }  }
+	}
+}
+#High kingdom of ireland
+k_high_kingdom_of_ireland = {
+	pattern =  "pattern_solid.dds"
+	color1 = "green"
+	colored_emblem = {
+		texture = "ce_harp.dds"
+		color1 = "yellow"
+		instance = {position = { 0.5 0.48 } scale = { 0.9 0.9 }  }
+	}
+}
+#Scotland
+k_scotland_polytheistic = {
+	pattern =  "pattern_solid.dds"
+	color1 = "green_light"
+
+	colored_emblem = {
+		texture = "ce_scotland_polytheism.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "black"
+		instance = { position = { 0.5 0.40 } scale = { 0.75 0.75 }  }
+	}
+}
+#Kingdom of Carthago
+k_carthago = {
+	pattern =  "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_carthago.dds"
+		color1 = "red"
+		color2 = "green"
+		instance = {position = { 0.5 0.41 } scale = { 0.9 0.9 } }
+	}
+}
+
+#Kingdom of kemet
+e_egyptus ={ 
+	pattern =  "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_kemet.dds"
+		color1 = "yellow_light" 
+		color2 = "black"
+		color3 = "red"
+		instance = {position = { 0.50 0.39 } scale = { 0.8 0.8 } }
+	}
+}
+#Needed for the greek one 
+# e_egyptus ={ 
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "black"
+# 	colored_emblem = {
+# 		texture = "ce_kemet.dds"
+# 		color1 = "yellow_light" 
+# 		color2 = "yellow_light"
+# 		instance = {position = { 0.52 0.48 } scale = { 0.9 0.9 } }
+# 	}
+# }
+
+e_egyptus_greco_roman = {
+	pattern = "pattern_solid.dds"
+ 	color1 = "blue"
+ 	colored_emblem = {
+ 		texture = "ce_egyptus.dds"
+ 		color1 = "yellow_light" 
+ 		instance = {position = { 0.52 0.48 } scale = { 0.9 0.9 } }
+ 	}
+}
+
+k_upper_egypt = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_upper_egypt.dds"
+		color1 = "green" 
+		color2 = "yellow"
+		color3 = "yellow_light"
+		instance = {position = { 0.50 0.48 } scale = { 0.8 0.8 } }
+	}
+}
+
+k_lower_egypt = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	colored_emblem = {
+		texture = "ce_lower_egypt.dds"
+		color1 = "black" 
+		color2 = "yellow_light"
+		instance = {position = { 0.50 0.40 } scale = { 0.9 0.9 } }
+	}
+}
+
+#Greek polytheistic 
+e_byzantium_polytheistic ={ 
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	colored_emblem = {
+		texture = "ce_alternative_byzantine_laurels.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		color3 = "red"
+		instance = {position = { 0.50 0.40 } scale = { 0.9 0.9 } }
+	}
+}
+
+e_pr_western_roman_empire  = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	colored_emblem = {
+		texture = "ce_roman_eagle.dds"
+		color1 =  "yellow"
+		instance = {position = { 0.50 0.42 } scale = { 0.92 0.92 } }
+	}
+}
+
+b_kos_polytheitic = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue_light"
+	colored_emblem = {
+		texture = "ce_kos.dds"
+		color1 = "yellow_light" 
+		instance = {position = { 0.52 0.48 } scale = { 0.9 0.9 } }
+	}
+}
+
+c_rhodos_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue_light"
+	colored_emblem = {
+		texture = "ce_rhodos.dds"
+		color1 = "white" 
+		color2 = "white"
+		color3 = "white"
+		instance = {position = { 0.50 0.48 } scale = { 0.9.5 0.9.5 } }
+	}
+}
+
+d_athens_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	colored_emblem = {
+		texture = "ce_athenas_owl.dds"
+		color1 = "white" 
+		instance = {position = { 0.53 0.48 } scale = { 0.8 0.8 } }
+	}
+}
+
+c_attica_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_athenas_owl.dds"
+		color1 = "blue" 
+		instance = {position = { 0.53 0.48 } scale = { 0.8 0.8 } }
+	}
+}
+
+d_achaia_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow_light"
+	colored_emblem = {
+		texture = "ce_pegasus.dds"
+		color1 = "black" 
+		instance = {position = { 0.53 0.40 } scale = { 0.8.5 0.8.5 } }
+	}
+}
+
+c_korinthos_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	colored_emblem = {
+		texture = "ce_pegasus.dds"
+		color1 = "white" 
+		color2 = "white"
+		instance = {position = { 0.53 0.40 } scale = { 0.9 0.9 } }
+	}
+}
+
+c_roma_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	colored_emblem = {
+		texture = "ce_wolf_romulus_remus.dds"
+		color1 = "yellow_light" 
+		instance = {position = { 0.53 0.40 } scale = { 0.9 0.9 } }
+	}
+}
+
+c_nova_roma_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	colored_emblem = {
+		texture = "ce_wolf_romulus_remus.dds"
+		color1 = "yellow_light" 
+		instance = {position = { 0.53 0.40 } scale = { 0.9 0.9 } }
+	}
+}
+
+k_hellas_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_morea.dds"
+		color1 = "blue" 
+		color2 = "green"
+		instance = {position = { 0.50 0.40 } scale = { 0.8 0.8 } }
+	}
+}
+
+k_thessalonika_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	colored_emblem = {
+		texture = "ce_kingdom_of_thessalonika.dds"
+		color1 = "yellow" 
+		color2 = "purple"
+		color3 = "yellow_light"
+		instance = {position = { 0.50 0.42} scale = { 0.9 0.9 } }
+	}
+}
+
+d_epirus_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "brown"
+	colored_emblem = {
+		texture = "ce_epirus.dds"
+		#texture = "ce_k_epirus.dds"
+		color1 = "white" 
+		color2 = "yellow"
+		instance = {position = { 0.50 0.40 } scale = { 0.8 0.8 } }
+	}
+}
+
+k_epirus_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "brown"
+	colored_emblem = {
+		texture = "ce_k_epirus.dds"
+		color1 = "yellow_light" 
+		color2 = "yellow_light"
+		color3 = "yellow"
+		instance = {position = { 0.50 0.40 } scale = { 0.7 0.7 } }
+	}
+}
+
+k_aegyptus_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue_light"
+	colored_emblem = {
+		texture = "ce_roman_egypt.dds"
+		color1 = "white" 
+		instance = {position = { 0.50 0.40 } scale = { 0.8 0.8 } }
+	}
+}
+
+e_gaul = { 
+	pattern = "pattern_solid.dds"
+	color1 = "green_light"
+	colored_emblem = {
+		texture = "ce_boar_passant_02.dds"
+		color1 = "brown" 
+		color2 = "red"
+		color3 = "white"
+		instance = {position = { 0.50 0.30 } scale = { 0.6 0.6 } }
+	}
+	colored_emblem = {
+		texture = "ce_pagan_rod.dds"
+		color1 =  "yellow" 
+		instance = {position = { 0.50 0.63 } scale = { 0.4 0.4 } }
+	}
+}
+
+k_belgica = {
+	pattern = "pattern_solid.dds"
+	color1 = "green_light"
+	colored_emblem = {
+		texture = "ce_bugle_horn_random.dds"
+		color1 = "yellow_light" 
+		color2 = "brown"
+		#color3 = "green"
+		instance = {position = { 0.50 0.40 } scale = { 0.8 0.8 } }
+	}
+}
+
+k_celtica = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	colored_emblem = {
+		texture = "ce_celtica.dds"
+		color2 = "brown" 
+		color1 = "yellow"
+		#color3 = "green"
+		instance = {position = { 0.50 0.45 } scale = { 0.68 0.68 } }
+	}
+}
+
+k_cisalpina = {
+	pattern = "pattern_solid.dds"
+	color1 = "brown"
+	colored_emblem = {
+		texture = "ce_goat.dds"
+		color1 =  "white"
+		color2 = "red"	
+		color3 = "black"
+		instance = {position = { 0.50 0.50 } scale = { 0.8 0.8 } }
+	}
+}
+
+k_narbonensis = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	colored_emblem = {
+		texture = "ce_lion_passant.dds"
+		color1 =  "yellow_light"
+		color2 = "red"	
+		color3 = "white"
+		instance = {position = { 0.50 0.50 } scale = { 0.8 0.8 } }
+	}
+}
+k_aquitania = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+	colored_emblem = {
+		texture = "ce_lion_rampant_crown.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+	}
+}
+k_etruria = {
+	pattern = "pattern_solid.dds"
+	color1 = {250 244 207}
+	colored_emblem = {
+		texture = "ce_etruscan.dds"
+		color1 =  {251 235 133} 
+		color2 = "red"	
+		color3 = "black"
+		instance = {position = { 0.50 0.40 } scale = { 0.8 0.8 } }
+	}
+}
+
+d_ephese_polytheistic ={ 
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	colored_emblem = {
+		texture = "ce_ephesus.dds"
+		color1 =  "yellow_light" 
+		instance = {position = { 0.50 0.40 } scale = { 0.8 0.8 } }
+	}
+}
+
+d_anatolia_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	colored_emblem = {
+		texture = "ce_galatian_lion.dds"
+		color1 =  "yellow_light"
+		color2 = "black"	
+		color3 = "brown"
+		instance = {position = { 0.50 0.40 } scale = { 0.8 0.8 } }
+	}
+}
+
+k_pr_anatolia_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	colored_emblem = {
+		texture = "ce_pr_galatia.dds"
+		color1 =  "yellow_light"
+		color2 = "red"	
+		instance = {position = { 0.50 0.40 } scale = { 0.8 0.8 } }
+	}
+}
+
+
+
+k_nikaea_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "grey"
+	colored_emblem = {
+		texture = "ce_laurels.dds"
+		color1 =  "green"
+		instance = {position = { 0.50 0.46 } scale = { 0.86 0.86 } }
+	}
+	colored_emblem = {
+		texture = "ce_ephesus.dds"
+		color1 =  "yellow_light"
+		instance = {position = { 0.50 0.47 } scale = { 0.68 0.68 } }
+	}
+}
+
+d_seleucia_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_seleucia.dds"
+		color1 =  "white"
+		instance = {position = { 0.50 0.45 } scale = { 0.8 0.8 } }
+	}
+}
+
+d_krete_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	colored_emblem = {
+		texture = "ce_krete.dds"
+		color1 =  "white"
+		instance = {position = { 0.50 0.45 } scale = { 0.8 0.8 } }
+	}
+}
+
+k_krete_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	colored_emblem = {
+		texture = "ce_k_krete.dds"
+		color1 =  "white"
+		instance = {position = { 0.50 0.42 } scale = { 0.92 0.92 } }
+	}
+}
+
+k_pontus_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	colored_emblem = {
+		texture = "ce_pontus.dds"
+		color1 =  "black"
+		instance = {position = { 0.50 0.42 } scale = { 0.8 0.8 } }
+	}
+}
+
+k_egypt_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	colored_emblem = {
+		texture = "ce_roman_egypt.dds"
+		color1 = "yellow" 
+		color2 = "yellow_light"
+		color3 = "blue"
+		instance = {position = { 0.5 0.4 } scale = { 0.8 0.8 } }
+	}
+}
+
+k_jerusalem_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	colored_emblem = {
+		texture = "ce_roman_judea.dds"
+		color1 = "yellow_light" 
+		color2 = "white"
+		color3 = "yellow_light"
+		instance = {position = { 0.5 0.38 } scale = { 0.8 0.8 } }
+	}
+}
+
+k_antioch_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	colored_emblem = {
+		texture = "ce_roman_syria.dds"
+		color1 = "yellow_light" 
+		color2 = "yellow_light"
+		instance = {position = { 0.5 0.38 } scale = { 0.8 0.8 } }
+	}
+}
+
+k_andalusia_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	colored_emblem = {
+		texture = "ce_roman_andalusia.dds"
+		color1 = "yellow_light" 
+		color2 = "yellow_light"
+		instance = {position = { 0.5 0.45 } scale = { 0.8 0.8 } }
+	}
+}
+
+k_africa_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	colored_emblem = {
+		texture = "ce_africa1.dds"
+		color1 = "yellow_light" 
+		instance = {position = { 0.5 0.39 } scale = { 0.8 0.8 } }
+	}
+}
+
+e_roman_empire_polytheistic = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_roman3.dds"
+		color1 = "yellow_light"
+		instance = {position = {0.5 0.47}  scale = { 0.85 0.85 } }
+	}
+}
+
+k_scythia = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	colored_emblem = {
+		texture = "ce_scythia.dds"
+		color1 = "yellow" 
+		instance = {position = { 0.5 0.4 } scale = { 0.8 0.8 } }
+	}
+}
+k_indo_scythia  = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	colored_emblem = {
+		texture = "ce_scythia.dds"
+		color1 = "red" 
+		instance = {position = { 0.5 0.4 } scale = { 0.8 0.8 } }
+	}
+}
+e_scythia = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	colored_emblem = {
+		texture = "ce_scythia1.dds"
+		color1 = "red" 
+		color2 = "green"
+		instance = {position = { 0.5 0.4 } scale = { 0.8 0.8 } }
+	}
+}
+
+k_pr_dacia = {
+	pattern = "pattern_solid.dds"
+	color1 = "brown"
+	colored_emblem = {
+		texture = "ce_dacian.dds"
+		color1 = "white" 
+		instance = {position = { 0.5 0.45 } scale = { 0.76 0.76 } }
+	}
+}
+
+#k_babylon
+k_babylon = {
+	pattern = "pattern_solid.dds"
+	color1 = "grey"
+	colored_emblem = {
+		texture = "ce_pr_babylonian.dds"
+		color1 = "yellow" 
+		color2 = "blue" 
+		color3 = "brown" 
+		instance = {position = { 0.5 0.45 } scale = { 0.76 0.76 } }
+	}
+}
+#k_sumer
+k_sumer = {
+	pattern = "pattern_tricolor_horizontal_01.dds"
+	color1 = "blue_light"
+	color2 = "white"
+	color3 = "yellow"
+	colored_emblem = {
+		texture = "ce_pr_sumerian.dds"
+		color1 = "black" 
+		instance = {position = { 0.5 0.5 } }
+	}
+}
+#k_assyria
+k_assyria = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	colored_emblem = {
+		texture = "ce_pr_assyrian.dds"
+		color1 = "yellow_light" 
+		color2 = "blue_light" 
+		color3 = "orange" 
+		instance = {position = { 0.5 0.45 } scale = { 0.8 0.8 } }
+	}
+}
+#e_mesopotamia
+e_mesopotamia = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_pr_mesopotamian.dds"
+		color1 = "black" 
+		color2 = "blue_light" 
+		color3 = "yellow" 
+		instance = {position = { 0.5 0.45 } scale = { 0.78 0.78 } }
+	}
+}
+
+k_hittite = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	colored_emblem = {
+		texture = "ce_hittite.dds"
+		color1 = "red" 
+		instance = {position = { 0.5 0.45 } scale = { 0.8 0.8 } }
+	}
+}
+
+e_hittite = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	colored_emblem = {
+		texture = "ce_hittite.dds"
+		color1 = "red" 
+		instance = {position = { 0.5 0.45 } scale = { 0.8 0.8 } }
+	}
+}
+
+k_pr_illyria = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_illyria.dds"
+		color1 = "black" 
+		color2 =  "yellow_light"
+		instance = {position = { 0.45 0.45 } scale = { 0.85 0.85 } }
+	}
+}
+
+k_odrysian = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_labrys.dds"
+		color1 = "brown" 
+		color2 =  "grey"
+		instance = {position = { 0.5 0.45 } scale = { 0.85 0.85 } }
+	}
+}
+
+k_pergamon = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_pergamon.dds"
+		color1 = "brown" 
+		color2 =  "green_light"
+		instance = {position = { 0.45 0.45 } scale = { 0.85 0.85 } }
+	}
+}

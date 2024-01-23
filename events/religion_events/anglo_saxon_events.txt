@@ -1,0 +1,557 @@
+﻿namespace = ascmd
+namespace = solstice
+namespace = feast_main_befriend
+namespace = pr_germanic
+
+#Choose anglo saxon main deity 
+ascmd.001 = {
+	type = character_event
+	title = ascmd.001.t
+	desc = ascmd.001.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Wōden
+	option = {
+		name = ascmd.001.woden
+		trigger = {
+			NOT = { has_character_modifier = anglo_saxon_woden }
+		}
+		set_bhakti_effect = { BHAKTI = anglo_saxon_woden }
+	}
+
+	# Njǫrd
+	option = {
+		name = ascmd.001.njord
+		trigger = {
+			NOT = { has_character_modifier = anglo_saxon_njord }
+		}
+		set_bhakti_effect = { BHAKTI = anglo_saxon_njord}
+	}
+
+	#Frī
+	option = {
+		name = ascmd.001.fri
+		trigger = {
+			NOT = { has_character_modifier = anglo_saxon_fri }
+		}
+		set_bhakti_effect = { BHAKTI = anglo_saxon_fri }
+	}
+
+	# Tīwaz
+	option = {
+		name = ascmd.001.tiwaz
+		trigger = {
+			NOT = { has_character_modifier = anglo_saxon_tiwaz }
+		}
+		set_bhakti_effect = { BHAKTI = anglo_saxon_tiwaz }
+	}
+
+
+	# Seaxnēat
+	option = {
+		name = ascmd.001.seaxneat
+		trigger = {
+			NOT = { has_character_modifier = anglo_saxon_seaxneat }
+		}
+		set_bhakti_effect = { BHAKTI = anglo_saxon_seaxneat }
+	}
+
+	# Opt-Out
+	option = {
+		name = ascmd.001.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
+#Choose german main deity 
+ascmd.002 = {
+	type = character_event
+	title = ascmd.002.t
+	desc = ascmd.002.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Wōden
+	option = {
+		name = ascmd.002.wotan
+		trigger = {
+			NOT = { has_character_modifier = german_wotan }
+		}
+		set_bhakti_effect = { BHAKTI = german_wotan }
+	}
+
+	# Njordr
+	option = {
+		name = ascmd.002.njordr
+		trigger = {
+			NOT = { has_character_modifier = german_njordr }
+		}
+		set_bhakti_effect = { BHAKTI = german_njordr }
+	}
+
+	#Freyr
+	option = {
+		name = ascmd.002.freyr
+		trigger = {
+			NOT = { has_character_modifier = german_freyr }
+		}
+		set_bhakti_effect = { BHAKTI = german_freyr }
+	}
+
+	# Nornir
+	option = {
+		name = ascmd.002.nornir
+		trigger = {
+			NOT = { has_character_modifier = german_nornir }
+		}
+		set_bhakti_effect = { BHAKTI = german_nornir }
+	}
+
+
+	# Mímir
+	option = {
+		name = ascmd.002.mimir
+		trigger = {
+			NOT = { has_character_modifier = german_mimir }
+		}
+		set_bhakti_effect = { BHAKTI = german_mimir }
+	}
+
+	# Opt-Out
+	option = {
+		name = ascmd.002.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
+solstice.001 ={ 
+	type = character_event
+	title = solstice.001.t
+	desc = solstice.001.desc
+	theme = feast_activity
+
+	option = {
+		name = solstice.001.a
+		add_character_modifier = {  modifier = winter_solstice  months = 3 }
+		faith = scope:root.faith
+		faith ={ 
+			change_fervor = {
+				value = 5
+			}
+		}
+	}
+}
+
+solstice.002 ={ 
+	type = character_event
+	title = solstice.002.t
+	desc = solstice.002.desc
+	theme = feast_activity
+	
+	option = {
+		name = solstice.002.a
+		add_character_modifier = { modifier = summer_solstice months = 3 }
+		faith = scope:root.faith
+		faith ={ 
+			change_fervor = {
+				value = 5
+				
+			}
+		}
+	}
+	
+}
+#Visit the Volva 
+pr_germanic.001 = {
+	type = character_event
+	title = pr_germanic.001.t
+	desc = pr_germanic.001.desc
+	theme = learning
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = realm_priest
+		animation = personality_content
+	}
+	immediate = { 
+		hidden_effect = {
+			cp:councillor_court_chaplain = {
+				save_scope_as = realm_priest
+			}
+		}
+	}
+	#
+	option = {
+		name = pr_germanic.001.a
+		hidden_effect = {
+			random_list = {
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_germanic.001.positive
+						add_character_modifier = {
+							modifier = volva_good_future
+							years = 2
+						}
+					}
+				}
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_germanic.001.negative
+						add_character_modifier = {
+							modifier = volva_bad_future
+							years = 2
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+#Offering to Odin/wodan
+pr_germanic.002 = {
+	type = character_event
+	title = pr_germanic.002.t
+	desc = pr_germanic.002.desc
+	theme = learning
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	#
+	option = {
+		name = pr_germanic.002.a
+		hidden_effect = {
+			random_list = {
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_germanic.002.positive
+						add_character_modifier = {
+							modifier = offering_to_odin_wodan_good
+							years = 2
+						}
+					}
+				}
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_germanic.002.negative
+						add_character_modifier = {
+							modifier = offering_to_odin_wodan_bad
+							years = 2
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+
+#Read about Germans tribes vs Romans 
+#Converted from Cybrkxhan Celtic events 
+pr_germanic.003 = {
+	type = character_event
+	title = pr_germanic.003.t
+	desc = pr_germanic.003.desc
+	theme = learning
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			add = 0.2
+			has_trait = patient
+		}
+		modifier = {
+			add = -0.2
+			has_trait = impatient
+		}
+		modifier = {
+			add = 0.2
+			has_trait = shy
+		}
+		modifier = {
+			add = -0.2
+			has_trait = gregarious
+		}
+		modifier = {
+			add = 0.2
+			has_trait = cynical
+		}
+		modifier = {
+			add = -0.2
+			has_trait = zealous
+		}
+	}
+	
+	option = { # Romans bad
+		name = pr_germanic.003.a
+		add_piety = 20
+		stress_impact = {
+			forgiving = miniscule_stress_impact_gain
+			humble = miniscule_stress_impact_gain
+		}
+	}	
+	option = { # Romans and Germans can learn from each other
+		name = pr_germanic.003.b
+		add_piety = 20
+		stress_impact = {
+			zealous = miniscule_stress_impact_gain
+			arrogant = miniscule_stress_impact_gain
+		}
+	}
+}
+
+#Carve a idol for Freyja -> Think it can be used for more god(desse)s 
+pr_germanic.004 = {
+	type = character_event
+	title = pr_germanic.004.t
+	desc = pr_germanic.004.desc
+	theme = learning
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
+	option = { # Carve Idol 
+		name = pr_germanic.004.a
+		piety = 30
+		add_character_modifier = {
+			modifier = idol_of_freyja
+			years = 2
+		}
+	}	
+}
+
+#Dreams of Ragnarok
+pr_germanic.005 = {
+	type = character_event
+	title = pr_germanic.005.t
+	desc = pr_germanic.005.desc
+	theme = faith
+	override_background = { reference= bedchamber }
+	left_portrait = {
+		character = root
+		#Needs to be changed 
+		animation = shock
+	}
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			add = 0.2
+			has_trait = zealous
+		}
+		modifier = {
+			add = -0.2
+			has_trait = cynical
+		}
+		modifier = {
+			add = 0.2
+			has_trait = brave
+		}
+		modifier = {
+			add = -0.2
+			has_trait = craven
+		}
+		modifier = {
+			add = 0.2
+			has_trait = ambitious
+		}
+		modifier = {
+			add = -0.2
+			has_trait = content
+		}
+	}
+	option = { # Just a bad dream
+		name = pr_germanic.005.a
+		if = {
+			limit = {
+				OR = {
+					has_trait = zealous
+					has_trait = cynical
+				}
+			}
+			stress_impact = {
+				zealous = medium_stress_impact_gain
+				cynical = miniscule_stress_impact_gain
+		   }
+		}
+		else = {
+			add_stress = minor_stress_impact_gain
+		}
+
+	}	
+}
+
+#Sign of prensence of Freyja
+#Falcon, Bee's around flowering lelies 
+pr_germanic.006 = {
+	type = character_event
+	title = pr_germanic.006.t
+	desc = pr_germanic.006.desc
+	theme = faith
+	override_background = { reference= wilderness_forest }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	option = { # A sign of Freyja
+		name = pr_germanic.006.a
+		add_piety = 25
+	}	
+}
+
+#Build a shrine for Njord
+pr_germanic.007 = {
+	type = character_event
+	title = pr_germanic.007.t
+	desc = pr_germanic.007.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	option = { # Builded a shrine for Njord
+		name = pr_germanic.007.a
+		add_piety = 25
+		add_prestige = 25
+	}	
+}
+
+#Rune carving event 
+pr_germanic.008 = {
+	type = character_event
+	title = pr_germanic.008.t
+	desc = pr_germanic.008.desc
+	theme = faith
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				template = religious_leader_character
+				random_traits = no
+				dynasty = generate
+				faith = root.faith
+				age = 30
+				gender = female
+				culture = culture:norse
+				save_scope_as = german_volva
+				}
+
+				cp:councillor_court_chaplain = {
+					save_scope_as = realm_priest
+				}
+		}
+	}
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = { # 
+		name = pr_germanic.008.a
+		trigger_event = pr_germanic.009
+	}	
+	option = {
+		name = pr_germanic.008.b
+		trigger_event = pr_germanic.010
+	}
+}
+pr_germanic.009 = {
+	type = character_event
+	title = pr_germanic.009.t
+	desc = pr_germanic.009.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = german_volva
+		animation = personality_rational
+	}
+	option = { # 
+	name = pr_germanic.009.a
+		add_character_modifier = {
+			modifier = blessed_army
+			years = 2
+		}
+	}	
+}
+
+pr_germanic.010 = {
+	type = character_event
+	title = pr_germanic.010.t
+	desc = pr_germanic.010.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:realm_priest
+		animation = personality_rational
+	}
+	option = { # 
+	name = pr_germanic.010.a
+		add_character_modifier = {
+			modifier = blessed_army
+			years = 2
+		}
+	}	
+}
+#Leave some butter at a stone in the gardens 
+pr_germanic.011 = {
+	type = character_event
+	title = pr_germanic.11.t
+	desc = pr_germanic.011.desc
+	theme = faith
+	override_background = { reference= garden }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = { # 
+	name = pr_germanic.011.a
+		add_piety = 25
+	}
+}
+
+#Held a small Thing 
+
+
+
+#Carve a god Pole 
+
+
+
+

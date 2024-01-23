@@ -1,0 +1,844 @@
+﻿#Celtic
+namespace = gp
+namespace = gp_sr
+namespace = gp_cmd
+namespace = bp 
+namespace = bp_sr
+namespace = bp_cmd 
+namespace = gl
+namespace = gl_sr
+namespace = ci 
+namespace = ci_sr
+namespace = cp_rph_decisions
+namespace = rhk
+namespace = ccmd
+namespace = solstice
+namespace = feast_main_befriend
+namespace = cult
+namespace = celtic 
+
+
+#Restore Priesthood events
+cp_rph_decisions.0001 = {
+	type = character_event
+	title = cp_rph_decisions.0001.t
+	desc = cp_rph_decisions.0001.desc
+	theme = faith
+	left_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous
+	}
+	right_portrait = {
+		character = scope:new_priest
+		animation = happiness
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		if = { # Check if Temporal first.
+			limit = {
+				faith = { has_doctrine = doctrine_temporal_head }
+			}
+			save_scope_as = new_priest
+		}
+		else_if = { # Pick your chaplain first.
+			limit = {
+				exists = cp:councillor_court_chaplain
+				cp:councillor_court_chaplain = { faith = scope:scoped_ruler.faith }
+			}
+			cp:councillor_court_chaplain = { save_scope_as = new_priest }
+		}
+		else = {
+			hidden_effect = {
+				create_character = {
+					employer = root
+					template = religious_leader_character
+					random_traits = no
+					save_scope_as = new_priest
+					dynasty = generate
+				}
+			}
+			scope:new_priest = {
+				add_trait = education_learning_3
+				add_trait = zealous
+				add_trait = intellect_good_1
+				random_list = {
+					1 = { add_trait = lustful }
+					1 = { add_trait = chaste }
+					1 = { add_trait = wrathful }
+					1 = { add_trait = diligent }
+					1 = { add_trait = impatient }
+					1 = { add_trait = arrogant }
+					1 = { add_trait = humble }
+					1 = { add_trait = gregarious }
+				}
+				random_list = {
+					1 = { add_trait = honest }
+					1 = { add_trait = ambitious }
+					1 = { add_trait = just }
+					1 = { add_trait = cynical }
+					1 = { add_trait = zealous }
+					1 = { add_trait = compassionate }
+					1 = { add_trait = stubborn }
+				}
+			}
+		}
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		root.faith.religious_head_title = {
+			change_title_holder = {
+				holder = scope:new_priest
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+	}
+
+	option = {
+		name = cp_rph_decisions.0001.a
+		add_prestige = major_prestige_gain
+		add_piety = major_piety_gain
+		faith = { change_fervor = 10 }
+		if = { # Vassalize if possible/needed.
+			limit = {
+				highest_held_title_tier > scope:new_priest.highest_held_title_tier
+				NOT = { scope:new_priest = { any_liege_or_above = { this = root } } }
+			}
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			scope:new_priest = {
+				change_liege = {
+					liege = root
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+		hidden_effect = {
+			every_player = {
+				limit = {
+					NOT = { this = root }
+					OR = {
+						faith.religion = root.faith.religion
+						AND = {
+							is_landed = yes
+							capital_province = {
+								OR = {
+									geographical_region = world_europe_west_britannia
+									geographical_region = world_europe_west_iberia
+									geographical_region = world_europe_west_francia
+								}
+							}
+						}
+					}
+				}
+				trigger_event = cp_rph_decisions.0002
+			}
+		}
+	}
+}
+
+# Players notified.
+cp_rph_decisions.0002 = {
+	type = character_event
+	title = cp_rph_decisions.0001.t
+	desc = {
+		first_valid = {
+			# Celtic religion Reaction
+			triggered_desc = {
+				trigger = {
+					root.faith.religion = scope:scoped_ruler.faith.religion
+				}
+				desc = cp_rph_decisions.0001.desc
+			}
+			# Christian Reaction
+			triggered_desc = {
+				trigger = {
+					root.faith.religion = faith:catholic.religion
+				}
+				desc = cp_rph_decisions.0002.desc.catholic
+			}
+			# Everybody else
+			triggered_desc = {
+				trigger = {
+					NOR = {
+						root.faith.religion = scope:scoped_ruler.faith.religion
+						root.faith.religion = faith:catholic.religion
+					}
+				}
+				desc = cp_rph_decisions.0002.desc.others
+			}
+		}
+	}
+	theme = faith
+	left_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous
+	}
+	right_portrait = {
+		character = scope:new_priest
+		animation = happiness
+	}
+
+	immediate = {
+		#Cultus Deorum characters get some chilled music.
+		if = {
+			limit = {
+				faith = { religion_tag = celtic_religion }
+			}
+			play_music_cue = "mx_cue_faith_conversion"
+		}
+	}
+
+	option = {
+		name = cp_rph_decisions.0002.a
+		trigger = {
+			root.faith.religion = scope:scoped_ruler.faith.religion
+		}
+	}
+	option = {
+		name = cp_rph_decisions.0002.b
+		trigger = {
+			NOT = {
+				root.faith.religion = scope:scoped_ruler.faith.religion
+			}
+		}
+	}
+	option = {
+		name = cp_rph_decisions.0002.c
+		trigger = {
+			NOR = {
+				root.faith.religion = scope:scoped_ruler.faith.religion
+				root.faith.religion = faith:catholic.religion
+			}
+		}
+	}
+}
+
+rhk.001 = {
+	type = character_event
+	title = rhk.001.t
+	desc = rhk.001.desc
+	theme = claim_throne_scheme
+	right_portrait = {
+			character = root
+			animation = personality_content
+	}
+	option = {
+		name = rhk.001.a
+	}
+}
+#celtic choose main deity
+
+#Choose gaelic main deity 
+ccmd.001 = {
+	type = character_event
+	title = ccmd.001.t
+	desc = ccmd.001.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#An Dagda 
+	option = {
+		name = ccmd.001.an_dagda
+		trigger = {
+			NOT = { has_character_modifier = gaelic_an_dagda }
+		}
+		set_bhakti_effect = { BHAKTI = gaelic_an_dagda }
+	}
+
+	# Lugh
+	option = {
+		name = ccmd.001.lugh
+		trigger = {
+			NOT = { has_character_modifier = gaelic_lugh }
+		}
+		set_bhakti_effect = { BHAKTI = gaelic_lugh}
+	}
+
+	#Brigid
+	option = {
+		name = ccmd.001.brigid
+		trigger = {
+			NOT = { has_character_modifier = gaelic_brigid }
+		}
+		set_bhakti_effect = { BHAKTI = gaelic_brigid }
+	}
+
+	# The Morrighan
+	option = {
+		name = ccmd.001.the_morrighan
+		trigger = {
+			NOT = { has_character_modifier = gaelic_the_morrighan }
+		}
+		set_bhakti_effect = { BHAKTI = gaelic_the_morrighan }
+	}
+
+
+	# Ecna
+	option = {
+		name = ccmd.001.ecna
+		trigger = {
+			NOT = { has_character_modifier = gaelic_ecna }
+		}
+		set_bhakti_effect = { BHAKTI = gaelic_ecna }
+	}
+
+	# Opt-Out
+	option = {
+		name = ccmd.001.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+#Choose brythonic main deity 
+ccmd.002 = {
+	type = character_event
+	title = ccmd.002.t
+	desc = ccmd.002.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Taranis
+	option = {
+		name = ccmd.002.taranis
+		trigger = {
+			NOT = { has_character_modifier = brythonic_taranis }
+		}
+		set_bhakti_effect = { BHAKTI = brythonic_taranis }
+	}
+
+	# Lugus
+	option = {
+		name = ccmd.002.lugus
+		trigger = {
+			NOT = { has_character_modifier = brythonic_lugus }
+		}
+		set_bhakti_effect = { BHAKTI = brythonic_lugus }
+	}
+
+	#Arianrhod
+	option = {
+		name = ccmd.002.arianrhod 
+		trigger = {
+			NOT = { has_character_modifier = brythonic_arianrhod  }
+		}
+		set_bhakti_effect = { BHAKTI = brythonic_arianrhod  }
+	}
+
+	#Andraste
+	option = {
+		name = ccmd.002.andraste
+		trigger = {
+			NOT = { has_character_modifier =  brythonic_andraste }
+		}
+		set_bhakti_effect = { BHAKTI = brythonic_andraste }
+	}
+
+
+	# Brigantia
+	option = {
+		name = ccmd.002.brigantia
+		trigger = {
+			NOT = { has_character_modifier = brythonic_brigantia }
+		}
+		set_bhakti_effect = { BHAKTI = brythonic_brigantia }
+	}
+
+	# Opt-Out
+	option = {
+		name = ccmd.002.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+#Choose gaulish main deity 
+ccmd.003 = {
+	type = character_event
+	title = ccmd.003.t
+	desc = ccmd.003.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Toutatis
+	option = {
+		name = ccmd.003.toutatis
+		trigger = {
+			NOT = { has_character_modifier = gaulish_toutatis }
+		}
+		set_bhakti_effect = { BHAKTI = gaulish_toutatis }
+	}
+
+	# Lughus
+	option = {
+		name = ccmd.003.lughus
+		trigger = {
+			NOT = { has_character_modifier = gaulish_lughus }
+		}
+		set_bhakti_effect = { BHAKTI = gaulish_lughus }
+	}
+
+	#Rosmerta
+	option = {
+		name = ccmd.003.rosmerta 
+		trigger = {
+			NOT = { has_character_modifier = gaulish_rosmerta }
+		}
+		set_bhakti_effect = { BHAKTI = gaulish_rosmerta }
+	}
+
+	#Cicolluis
+	option = {
+		name = ccmd.003.cicolluis
+		trigger = {
+			NOT = { has_character_modifier =  gaulish_cicolluis }
+		}
+		set_bhakti_effect = { BHAKTI = gaulish_cicolluis }
+	}
+
+
+	# Belisama
+	option = {
+		name = ccmd.003.belisama
+		trigger = {
+			NOT = { has_character_modifier = gaulish_belisama }
+		}
+		set_bhakti_effect = { BHAKTI = gaulish_belisama }
+	}
+
+	# Opt-Out
+	option = {
+		name = ccmd.003.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
+#Celtic Iberian
+ccmd.004 = {
+	type = character_event
+	title = ccmd.004.t
+	desc = ccmd.004.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Reue
+	option = {
+		name = ccmd.004.reue
+		trigger = {
+			NOT = { has_character_modifier = celtic_iberian_reue }
+		}
+		set_bhakti_effect = { BHAKTI = celtic_iberian_reue }
+	}
+
+	# Arentius
+	option = {
+		name = ccmd.004.arentius
+		trigger = {
+			NOT = { has_character_modifier = celtic_iberian_arentius }
+		}
+		set_bhakti_effect = { BHAKTI = celtic_iberian_arentius }
+	}
+
+	#Nabia
+	option = {
+		name = ccmd.004.nabia 
+		trigger = {
+			NOT = { has_character_modifier = celtic_iberian_nabia }
+		}
+		set_bhakti_effect = { BHAKTI = celtic_iberian_nabia }
+	}
+
+	#Lugus
+	option = {
+		name = ccmd.004.lugus
+		trigger = {
+			NOT = { has_character_modifier =  celtic_iberian_lugus }
+		}
+		set_bhakti_effect = { BHAKTI = celtic_iberian_lugus }
+	}
+
+
+	#Bandua
+	option = {
+		name = ccmd.004.bandua
+		trigger = {
+			NOT = { has_character_modifier = celtic_iberian_bandua }
+		}
+		set_bhakti_effect = { BHAKTI = celtic_iberian_bandua }
+	}
+
+	# Opt-Out
+	option = {
+		name = ccmd.004.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
+#solstice
+#Gaelic
+solstice.003 = {
+	type = character_event
+	title = solstice.003.t
+	desc = solstice.003.desc
+	theme = feast_activity
+
+	option = {
+		name = solstice.003.a
+		add_character_modifier = {  modifier = winter_solstice  months = 3 }
+		faith = scope:root.faith
+		faith ={ 
+			change_fervor = {
+				value = 5
+			}
+		}
+	}
+}
+#Brythonic
+solstice.004 = {
+	type = character_event
+	title = solstice.004.t
+	desc = solstice.004.desc
+	theme = feast_activity
+
+	option = {
+		name = solstice.004.a
+		add_character_modifier = {  modifier = winter_solstice  months = 3 }
+		faith = scope:root.faith
+		faith ={ 
+			change_fervor = {
+				value = 5
+			}
+		}
+	}
+}
+#Gaulish
+solstice.005 = {
+	type = character_event
+	title = solstice.005.t
+	desc = solstice.005.desc
+	theme = feast_activity
+
+	option = {
+		name = solstice.005.a
+		add_character_modifier = {  modifier = winter_solstice  months = 3 }
+		faith = scope:root.faith
+		faith ={ 
+			change_fervor = {
+				value = 5
+			}
+		}
+	}
+}
+#Gaelic
+solstice.006 ={ 
+	type = character_event
+	title = solstice.006.t
+	desc = solstice.006.desc
+	theme = feast_activity
+	
+	option = {
+		name = solstice.006.a
+		add_character_modifier = { modifier = summer_solstice_celtic months = 3 }
+		faith = scope:root.faith
+		faith ={ 
+			change_fervor = {
+				value = 5
+				
+			}
+		}
+	}
+	
+}
+#Brythonic
+solstice.007 ={ 
+	type = character_event
+	title = solstice.007.t
+	desc = solstice.007.desc
+	theme = feast_activity
+	
+	option = {
+		name = solstice.007.a
+		add_character_modifier = { modifier = summer_solstice_celtic months = 3 }
+		faith = scope:root.faith
+		faith ={ 
+			change_fervor = {
+				value = 5
+				
+			}
+		}
+	}
+	
+}
+#Gaulish
+solstice.008 ={ 
+	type = character_event
+	title = solstice.008.t
+	desc = solstice.008.desc
+	theme = feast_activity
+	
+	option = {
+		name = solstice.008.a
+		add_character_modifier = { modifier = summer_solstice_celtic months = 3 }
+		faith = scope:root.faith
+		faith ={ 
+			change_fervor = {
+				value = 5
+				
+			}
+		}
+	}
+	
+}
+
+#Manx
+celtic.001 = {
+	type = character_event
+	title = celtic.001.t
+	desc = celtic.001.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = celtic.001.a
+		set_culture = culture:manx
+	}
+
+}
+#Eburones
+celtic.002 = {
+	type = character_event
+	title = celtic.002.t
+	desc = celtic.002.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = celtic.002.a
+		set_culture = culture:eburones
+	}
+
+}
+#Gaulish
+celtic.003 = {
+	type = character_event
+	title = celtic.003.t
+	desc = celtic.003.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = celtic.003.a
+		set_culture = culture:gaulish
+	}
+
+}
+celtic.004 = {
+	type = character_event
+	title = celtic.004.t
+	desc = celtic.004.desc
+	theme = claim_throne_scheme
+	right_portrait = {
+			character = root
+			animation = personality_content
+	}
+	option = {
+		name = celtic.004.a
+	}
+}
+
+celtic.009 = {
+	type = activity_event
+	title = celtic.009.t
+	desc = celtic.009.desc
+	override_background = { reference = wilderness_mountains }
+
+	
+	right_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	
+	option = {
+		name = celtic.009.a
+		trigger_event = {
+			id = celtic.010
+			days = { 4 12 }
+		}
+	}
+}
+
+celtic.010 = {
+	type = activity_event
+	title = celtic.010.t
+	theme = faith
+	override_background = { reference = wilderness_mountains }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_character_modifier = celtic_cnoc_uisnigh_godly_presence
+				}
+				desc = celtic.010.desc.zealous
+			}
+			triggered_desc = {
+				trigger = {
+					has_character_modifier = celtic_cnoc_uisnigh_hill
+				}
+				desc = celtic.010.desc.uisneach
+			}
+		}
+	}
+	right_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	immediate = {
+		play_music_cue = mx_cue_sacredrite
+		random_list = {
+			20 = {
+				modifier = {
+					add = 5
+					has_trait = content
+				}
+				modifier = {
+					add = 5
+					has_trait = temperate
+				}
+				scope:activity = {
+					add_activity_log_entry = {
+						key = Pr_cnoc_uisnigh_pilgrimage_inspired_log
+						tags = { good }
+						# this line below adds the entry to the Effects section of the conclusion UI
+						show_in_conclusion = yes
+						character = root
+						scope:host = {
+							add_character_modifier = {
+								modifier = celtic_cnoc_uisnigh_hill
+								years = 10
+							}
+						}
+					}
+				}
+			}
+			20 = {
+				modifier = {
+					add = 5
+					has_trait = just
+				}
+				modifier = {
+					add = 5
+					has_trait = zealous
+				}
+				scope:activity = {
+					add_activity_log_entry = {
+
+						key = Pr_cnoc_uisnigh_pilgrimage_inspired_log
+						tags = { good }
+						# this line below adds the entry to the Effects section of the conclusion UI
+						show_in_conclusion = yes
+						character = root
+						scope:host = {
+							add_character_modifier = {
+								modifier = celtic_cnoc_uisnigh_godly_presence
+								years = 10
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	option = { 
+		name = celtic.010.a
+		trigger_event = {
+			id = celtic.011
+			days = { 4 12 }
+		}
+	}
+}
+
+celtic.011 = {
+	type = activity_event
+	title = celtic.011.t
+	desc = celtic.011.desc
+	theme = friendly
+	override_background = { reference = wilderness_mountains }
+	
+	right_portrait = {
+		character = root
+		animation = happiness
+	}
+	
+	option = { 
+		name = celtic.011.a
+		pr_activity_kogaionon_pilgrimage_completed_log_entry_effect = yes
+	}
+
+
+	after = {
+		hidden_effect = {
+			scope:activity = {
+				hidden_effect = { skip_activity_phase = yes }
+			}
+		}
+	}
+}
+
+celtic.013 = {
+	type = character_event
+	title = celtic.013.t
+	desc = celtic.013.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = celtic.013.a
+		set_culture = culture:pr_brythonic
+	}
+
+}

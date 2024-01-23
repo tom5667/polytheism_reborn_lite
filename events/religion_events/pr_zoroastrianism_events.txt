@@ -1,0 +1,43 @@
+﻿namespace = zoroastrianism 
+
+zoroastrianism.001 = {
+	type = character_event
+	title = zoroastrianism.001.t
+	desc = zoroastrianism.001.desc
+	theme = hunt_activity
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	#proceed
+	option = {
+		name = zoroastrianism.001.a
+		
+		trigger_event = { 
+			id = zoroastrianism.002
+			years = 1
+		}	
+	}
+}
+
+zoroastrianism.002 = {
+	type = character_event
+	title = zoroastrianism.002.t
+	desc = zoroastrianism.002.desc
+	theme = hunt_activity
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	option = {
+		name = zoroastrianism.002.a
+		add_piety = 100 
+		create_artifact = {	
+			name = pr_zoroastrian_avesta
+			description = pr_zoroastrian_avesta_book_description
+			type = pedestal
+			visuals = book
+			modifier = pr_book_avesta
+		}
+	}
+}

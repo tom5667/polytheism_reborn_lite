@@ -1,0 +1,119 @@
+﻿namespace = caucasus
+
+#Choose main deity Georgian
+caucasus.001 = {
+	type = character_event
+	title = caucasus.001.t
+	desc = caucasus.001.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Armzi
+	option = {
+		name = caucasus.001.armzi
+		trigger = {
+			NOT = { has_character_modifier = georgian_armzi}
+		}
+		set_bhakti_effect = { BHAKTI = georgian_armzi }
+	}
+
+	 #Adgilis Deda
+	 option = {
+	 	name = caucasus.001.adgilis_deda
+	 	trigger = {
+	 		NOT = { has_character_modifier = georgian_adgilis_deda }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = georgian_adgilis_deda}
+	 }
+
+	#Kopala
+	option = {
+		name = caucasus.001.kopala
+		trigger = {
+			NOT = { has_character_modifier = georgian_kopala }
+		}
+		set_bhakti_effect = { BHAKTI = georgian_kopala }
+	}
+
+	#Barbale 
+	option = {
+		name = caucasus.001.barbale 
+		trigger = {
+			NOT = { has_character_modifier = georgian_the_barbale }
+		}
+		set_bhakti_effect = { BHAKTI = georgian_the_barbale }
+	}
+
+	# Opt-Out
+	option = {
+		name = caucasus.001.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+#Choose main deity Armenian
+caucasus.002 = {
+	type = character_event
+	title = caucasus.002.t
+	desc = caucasus.002.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Aramazd
+	option = {
+		name = caucasus.002.aramazd
+		trigger = {
+			NOT = { has_character_modifier = armenian_aramazd}
+		}
+		set_bhakti_effect = { BHAKTI = armenian_aramazd }
+	}
+
+	 #Astlik
+	 option = {
+	 	name = caucasus.002.astlik
+	 	trigger = {
+	 		NOT = { has_character_modifier = armenian_astlik }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = armenian_astlik}
+	 }
+
+	#Nane
+	option = {
+		name = caucasus.002.nane
+		trigger = {
+			NOT = { has_character_modifier = armenian_nane }
+		}
+		set_bhakti_effect = { BHAKTI = armenian_nane }
+	}
+
+	#Nvard
+	option = {
+		name = caucasus.002.nvard 
+		trigger = {
+			NOT = { has_character_modifier = armenian_nvard }
+		}
+		set_bhakti_effect = { BHAKTI = armenian_nvard }
+	}
+
+	# Opt-Out
+	option = {
+		name = caucasus.002.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
+
+

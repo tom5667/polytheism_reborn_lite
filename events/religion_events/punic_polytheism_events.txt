@@ -1,0 +1,157 @@
+﻿#Punic
+
+namespace = rc
+namespace = pcmd
+namespace = semitic
+
+
+
+rc.001 = {
+	type = character_event
+	title = rc.001.t
+	desc = rc.001.desc
+	theme = claim_throne_scheme
+	right_portrait = {
+			character = root
+			animation = personality_content
+	}
+	option = {
+		name = rc.001.a
+
+	}
+}
+
+pcmd.001 = {
+	type = character_event
+	title = pcmd.001.t
+	desc = pcmd.001.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Baal
+	option = {
+		name = pcmd.001.baal
+		trigger = {
+			NOT = { has_character_modifier = punic_baal}
+		}
+		set_bhakti_effect = { BHAKTI = punic_baal }
+	}
+
+	 #Kusor
+	 option = {
+	 	name = pcmd.001.kusor
+	 	trigger = {
+	 		NOT = { has_character_modifier = punic_kusor }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = punic_kusor}
+	 }
+
+	#Astarte
+	option = {
+		name = pcmd.001.astarte
+		trigger = {
+			NOT = { has_character_modifier = punic_astarte }
+		}
+		set_bhakti_effect = { BHAKTI = punic_astarte }
+	}
+
+	# Tanit
+	option = {
+		name = pcmd.001.tanit
+		trigger = {
+			NOT = { has_character_modifier = punic_tanit }
+		}
+		set_bhakti_effect = { BHAKTI = punic_tanit }
+	}
+
+
+	 # Melqart
+	 option = {
+	 	name = pcmd.001.melqart
+	 	trigger = {
+	 		NOT = { has_character_modifier = punic_melqart }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = punic_melqart }
+	 }
+
+	# Opt-Out
+	option = {
+		name = pcmd.001.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
+semitic.001 = {
+	type = character_event
+	title = semitic.001.t
+	desc = semitic.001.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Ba al hadad
+	option = {
+		name = semitic.001.ba_al_hadad
+		trigger = {
+			NOT = { has_character_modifier = semitic_ba_al_hadad }
+		}
+		set_bhakti_effect = { BHAKTI = semitic_ba_al_hadad  }
+	}
+
+	 #Ashera
+	 option = {
+	 	name = semitic.001.ashera
+	 	trigger = {
+	 		NOT = { has_character_modifier = semitic_ashera }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = semitic_ashera}
+	 }
+
+	#Dagan
+	option = {
+		name = semitic.001.dagan
+		trigger = {
+			NOT = { has_character_modifier = semitic_dagan }
+		}
+		set_bhakti_effect = { BHAKTI = semitic_dagan }
+	}
+
+	# Tanit
+	option = {
+		name = semitic.001.el_elyon
+		trigger = {
+			NOT = { has_character_modifier = semitic_el_elyon }
+		}
+		set_bhakti_effect = { BHAKTI = semitic_el_elyon }
+	}
+
+
+	 # Ashtart
+	 option = {
+	 	name = semitic.001.ashtart
+	 	trigger = {
+	 		NOT = { has_character_modifier = semitic_ashtart }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = semitic_ashtart }
+	 }
+
+	# Opt-Out
+	option = {
+		name = semitic.001.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
