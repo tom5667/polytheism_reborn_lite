@@ -369,7 +369,7 @@
 				WaterGodHerHim = CHARACTER_HERHIM_IT
 		
 		
-				PantheonTerm = mesopotamian_pantheon
+				PantheonTerm = religion_the_gods
 				PantheonTermHasHave = pantheon_term_have
 				GoodGodNames = { sumerian_polytheism_high_god_name sumerian_polytheism_high_god_name_alternate sumerian_polytheism_health_god_name sumerian_polytheism_knowledge_god_name }
 				DevilName = paganism_evil_god_decay
@@ -563,7 +563,7 @@
 				WaterGodHerHim = CHARACTER_HERHIM_IT
 		
 		
-				PantheonTerm = mesopotamian_pantheon
+				PantheonTerm = religion_the_gods
 				PantheonTermHasHave = pantheon_term_have
 				GoodGodNames = { assyrian_polytheism_high_god_name assyrian_polytheism_high_god_name_alternate assyrian_polytheism_health_god_name assyrian_polytheism_knowledge_god_name }
 				DevilName = paganism_evil_god_decay
