@@ -44,6 +44,7 @@ canaanite_religion ={
 
             doctrine = unreformed_faith_doctrine
             doctrine = special_doctrine_punic_patron_god
+            doctrine = doctrine_pilgrimage_forbidden
             #Main Group
             doctrine = doctrine_no_head
             doctrine = doctrine_gender_male_dominated
@@ -76,6 +77,8 @@ canaanite_religion ={
 			doctrine = tenet_communal_identity
 			doctrine = tenet_human_sacrifice
             doctrine = tenet_esotericism 
+
+            doctrine = special_doctrine_ecumenical_west_semitic_roman
             
             #religious_head = k_pontifex 
             
@@ -240,6 +243,7 @@ canaanite_religion ={
             # }
             doctrine = unreformed_faith_doctrine
             doctrine = special_doctrine_semitic_patron_god
+            doctrine = doctrine_pilgrimage_forbidden
             #Main Group
             doctrine = doctrine_no_head
             doctrine = doctrine_gender_male_dominated
@@ -272,6 +276,8 @@ canaanite_religion ={
 			doctrine = tenet_communal_identity
 			doctrine = tenet_human_sacrifice
             doctrine = tenet_esotericism 
+
+            doctrine = special_doctrine_ecumenical_west_semitic_roman
             
             #religious_head = k_pontifex 
             

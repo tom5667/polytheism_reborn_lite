@@ -50,7 +50,7 @@ celtic_religion ={
                 doctrine = doctrine_gender_male_dominated
                 doctrine = doctrine_pluralism_pluralistic
                 doctrine = doctrine_theocracy_lay_clergy
-
+                doctrine = doctrine_pilgrimage_encouraged
                 #doctrine = unreformed_faith_doctrine
     
                 #mariage 
@@ -263,6 +263,7 @@ celtic_religion ={
                 doctrine = doctrine_gender_male_dominated
                 doctrine = doctrine_pluralism_pluralistic
                 doctrine = doctrine_theocracy_lay_clergy
+                doctrine = doctrine_pilgrimage_encouraged
 
                 # Special doctrine
                 doctrine = special_doctrine_ecumenical_celtic_roman 
@@ -466,7 +467,7 @@ celtic_religion ={
             doctrine = doctrine_gender_male_dominated
             doctrine = doctrine_pluralism_pluralistic
             doctrine = doctrine_theocracy_lay_clergy
-
+            doctrine = doctrine_pilgrimage_forbidden
             #doctrine = unreformed_faith_doctrine
             doctrine = special_doctrine_gaulish_patron_god
 
@@ -667,7 +668,7 @@ celtic_religion ={
             doctrine = doctrine_gender_male_dominated
             doctrine = doctrine_pluralism_pluralistic
             doctrine = doctrine_theocracy_lay_clergy
-
+            doctrine = doctrine_pilgrimage_forbidden
             
             doctrine = special_doctrine_celtic_iberian_patron_god
 
@@ -804,7 +805,7 @@ celtic_religion ={
                 DevilSheHe = CHARACTER_SHEHE_HE
                 DevilHerHis = CHARACTER_HERHIS_HIS
                 DevilHerselfHimself = CHARACTER_HIMSELF
-                EvilGodNames = { celtic_iberian_polytheism_evil_god_ataecina celtic_iberian_polytheism_evil_god_luru }
+                EvilGodNames = { celtic_iberian_polytheism_evil_god_ataecina }
                 HouseOfWorship = paganism_house_of_worship
                 HouseOfWorshipPlural = paganism_house_of_worship_plural
                 ReligiousSymbol = celtic_iberian_polytheism_religious_symbol

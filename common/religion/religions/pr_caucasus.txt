@@ -48,7 +48,7 @@ caucasus_religion ={
 				doctrine = tenet_communal_identity
 				doctrine = tenet_ritual_celebrations
 				doctrine = tenet_esotericism 
-			
+				doctrine = doctrine_pilgrimage_forbidden
 	
 				#Main Group
 				doctrine = doctrine_no_head
@@ -248,7 +248,7 @@ caucasus_religion ={
 			doctrine = tenet_communal_identity
 			doctrine = tenet_ritual_celebrations
 			doctrine = tenet_esotericism 
-		
+			doctrine = doctrine_pilgrimage_forbidden
 
 			#Main Group
 			doctrine = doctrine_no_head

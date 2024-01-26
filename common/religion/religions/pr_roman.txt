@@ -35,12 +35,11 @@
             icon = cultus_deorum_romanorum
             reformed_icon = cultus_deorum_romanorum_reformed
             religious_head = d_pontifex_polytheistic
-            holy_site = rome
-            holy_site = ravenna
-			holy_site = alexandria
-            holy_site = carthage
-            holy_site = athens
-            holy_site = constantinople
+            holy_site = rome # true 
+            holy_site = paestum #Greek temples but after the conquest by the romans they mostly took over the tempels 
+            holy_site = agrigento #Orginaly greek temples but in roman hands for a long time
+			holy_site = delphi #
+            holy_site = cumae #Cumaean Sibyl oracle of apollo 
 
 			reserved_male_names = {
 				Marcus Gaius Publius Sextus Appius Gnaeus Caius Agrippa Titus Vitus Albus Tiberius Lucius Nero Antonius
@@ -62,7 +61,7 @@
 
             doctrine = special_doctrine_ecumenical_greaco_roman 
             doctrine = special_doctrine_roman_patron_god
-            
+            doctrine = doctrine_pilgrimage_encouraged
             #mariage 
             doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
             doctrine = doctrine_bastardry_legitimization
@@ -266,6 +265,7 @@
             doctrine = tenet_esotericism
             doctrine = special_doctrine_ecumenical_greaco_roman
             doctrine = special_doctrine_no_patron_god
+            doctrine = doctrine_pilgrimage_encouraged
 
             #Main Group
             doctrine = doctrine_spiritual_head
@@ -471,6 +471,7 @@
             doctrine = tenet_warmonger
             doctrine = special_doctrine_ecumenical_greaco_roman 
             doctrine = special_doctrine_mithras_patron_god 
+            doctrine = doctrine_pilgrimage_encouraged
             
             #Main Group
             doctrine = doctrine_no_head
@@ -678,6 +679,7 @@
         doctrine = tenet_esotericism
         doctrine = special_doctrine_ecumenical_greaco_roman 
         doctrine = special_doctrine_no_patron_god
+        doctrine = doctrine_pilgrimage_encouraged
 
         #Main Group
         doctrine = doctrine_no_head
@@ -884,6 +886,7 @@
         doctrine = tenet_esotericism
         doctrine = special_doctrine_ecumenical_greaco_roman 
         doctrine = special_doctrine_no_patron_god
+        doctrine = doctrine_pilgrimage_encouraged
 
         #Main Group
         doctrine = doctrine_no_head
@@ -1085,6 +1088,7 @@
             doctrine = tenet_sun_worship
             doctrine = special_doctrine_ecumenical_greaco_roman 
             doctrine = special_doctrine_no_patron_god
+            doctrine = doctrine_pilgrimage_encouraged
 
             #Main Group
             doctrine = doctrine_no_head
@@ -1287,6 +1291,7 @@
 		doctrine = tenet_ritual_celebrations
         doctrine = special_doctrine_ecumenical_greaco_roman 
         doctrine = special_doctrine_no_patron_god
+        doctrine = doctrine_pilgrimage_encouraged
 
 		#Main Group
 		doctrine = doctrine_temporal_head
@@ -1490,6 +1495,7 @@
 		doctrine = doctrine_gender_male_dominated
 		doctrine = doctrine_pluralism_pluralistic
 		doctrine = doctrine_theocracy_lay_clergy
+        doctrine = doctrine_pilgrimage_encouraged
 
 		#mariage 
 		doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
@@ -1679,7 +1685,7 @@
 		holy_site = rome
 		holy_site = vannes
 		holy_site = aachen
-		holy_site = ravenna 
+		holy_site = cumae 
 		holy_site = montpellier	 
 		holy_site = vannes     
 
@@ -1697,6 +1703,7 @@
 		doctrine = doctrine_gender_male_dominated
 		doctrine = doctrine_pluralism_pluralistic
 		doctrine = doctrine_theocracy_lay_clergy
+        doctrine = doctrine_pilgrimage_encouraged
 
 		#mariage 
 		doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
@@ -1880,7 +1887,7 @@
 		color = { 32 169 230 }
 		icon = romano_british
 		holy_site = rome
-		holy_site = ravenna
+		holy_site = cumae
 		holy_site = cornwall 	
 		holy_site = glammorgan  
 		holy_site = vannes    
@@ -1901,6 +1908,7 @@
 		doctrine = doctrine_gender_male_dominated
 		doctrine = doctrine_pluralism_pluralistic
 		doctrine = doctrine_theocracy_lay_clergy
+        doctrine = doctrine_pilgrimage_encouraged
 
 		#mariage 
 		doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
@@ -2105,6 +2113,7 @@
         doctrine = doctrine_gender_male_dominated
         doctrine = doctrine_pluralism_pluralistic
         doctrine = doctrine_theocracy_lay_clergy
+        doctrine = doctrine_pilgrimage_encouraged
 
         #mariage 
         doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece

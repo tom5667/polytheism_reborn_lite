@@ -38,11 +38,11 @@
 			icon = hellenismos
 			reformed_icon = hellenismos_reformed
 
-			holy_site = rome
+			holy_site = delphi
 			holy_site = athens
-			holy_site = sparta
+			holy_site = syracusai
 			holy_site = alexandria
-			holy_site = carthage	
+			holy_site = olympus	
 			
 			reserved_male_names = {
 				Alexander Antiochus Sebastianos Lysander Dorian Adonis Orpheus Hector Jason Leonidas Leander Achilles Zenon Aeneas Demetrios Archimedes Homer Odysseus Aristotle Nestor Pericles 
@@ -58,8 +58,8 @@
 			doctrine = tenet_astrology
 			doctrine = tenet_communal_identity
 			doctrine = tenet_esotericism
-
-            #doctrine = special_doctrine_ecumenical_greaco_roman 
+			doctrine = doctrine_pilgrimage_encouraged
+            doctrine = special_doctrine_ecumenical_greaco_roman 
         
             doctrine = special_doctrine_greek_syncretism
 			#Main Group
@@ -447,7 +447,7 @@
 			holy_site = athens
 			holy_site = alexandria 
 			holy_site = memphis
-			holy_site = sparta
+			holy_site = olympus
 			
             holy_order_names = {
                 { name = "holy_order_Protectors_of_zeus_amon" }
@@ -460,7 +460,7 @@
 			doctrine = tenet_ancestor_worship
 			doctrine = tenet_unrelenting_faith
 			doctrine = special_doctrine_ecumenical_graeco_egyptian
-			
+			doctrine = doctrine_pilgrimage_encouraged
 	
 			#Main Group
 			doctrine = doctrine_spiritual_head
@@ -639,7 +639,7 @@
 			holy_site = athens
 			holy_site = alexandria 
 			holy_site = memphis
-			holy_site = sparta
+			holy_site = olympus
 			
             holy_order_names = {
                 { name = "holy_order_Protectors_of_alexandros_megalos" }
@@ -652,7 +652,7 @@
 			doctrine = tenet_ancestor_worship
 			doctrine = tenet_unrelenting_faith
 			doctrine = special_doctrine_ecumenical_graeco_egyptian
-			
+			doctrine = doctrine_pilgrimage_encouraged
 	
 			#Main Group
 			doctrine = doctrine_spiritual_head

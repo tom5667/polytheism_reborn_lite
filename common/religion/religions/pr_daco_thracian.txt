@@ -50,7 +50,8 @@
 			doctrine = tenet_communal_identity
 			doctrine = tenet_warmonger
 			doctrine = tenet_unrelenting_faith
-	
+			doctrine = doctrine_pilgrimage_encouraged
+
 			#Main Group
 			doctrine = doctrine_spiritual_head
 			doctrine = doctrine_gender_male_dominated
@@ -235,7 +236,7 @@
 			doctrine = tenet_warmonger
 			doctrine = tenet_unrelenting_faith
 			doctrine = special_doctrine_no_patron_god
-		
+			doctrine = doctrine_pilgrimage_encouraged
 		
 			#Main Group
 			doctrine = doctrine_spiritual_head

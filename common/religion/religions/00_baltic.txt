@@ -223,6 +223,7 @@
 			doctrine = tenet_sacred_childbirth
 			doctrine = tenet_sanctity_of_nature
 			doctrine = special_doctrine_lithuanian_patron_god 
+			doctrine = doctrine_pilgrimage_forbidden
 		}
 		latvian_pagan = {
 			color = { 88 77 74 }
@@ -242,7 +243,7 @@
 			doctrine = tenet_communal_identity
 			doctrine = tenet_sanctity_of_nature
 			doctrine = special_doctrine_latvian_patron_god
-
+			doctrine = doctrine_pilgrimage_forbidden
 			doctrine = doctrine_pluralism_pluralistic
 
 			localization = {
@@ -395,7 +396,7 @@
 			doctrine = tenet_ancestor_worship
 			doctrine = tenet_ritual_hospitality
 			doctrine = tenet_sanctity_of_nature
-
+			doctrine = doctrine_pilgrimage_forbidden
 			doctrine = special_doctrine_prussian_patron_god
 
 			localization = {

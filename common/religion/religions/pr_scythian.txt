@@ -48,7 +48,7 @@
 			doctrine = tenet_human_sacrifice
 			doctrine = tenet_ancestor_worship
 			doctrine = tenet_esotericism 
-		
+			doctrine = doctrine_pilgrimage_forbidden
 
 			#Main Group
 			doctrine = doctrine_no_head

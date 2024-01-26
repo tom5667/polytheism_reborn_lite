@@ -43,7 +43,7 @@ egyptian_religion ={
 			doctrine = unreformed_faith_doctrine
 			doctrine = special_doctrine_kemetic_patron_god
 			doctrine = special_doctrine_ecumenical_graeco_egyptian
-
+			doctrine = doctrine_pilgrimage_encouraged
 			#Main Group
 			doctrine = doctrine_no_head
 			doctrine = doctrine_gender_equal #Women could hold jobs and buisnesses and where treated with respect although men had more rights, so it's a bit up to debate. 
@@ -216,8 +216,8 @@ egyptian_religion ={
 				WitchGodMistressMaster = mistress
 				WitchGodMotherFather = mother
 				
-				GHWName = phw_great_holy_war
-				GHWNamePlural = phw_great_holy_wars
+				GHWName = ghw_great_holy_wars
+				GHWNamePlural = ghw_great_holy_wars
 
 				}
 			}
@@ -245,7 +245,7 @@ egyptian_religion ={
 		doctrine = doctrine_pluralism_pluralistic
 		doctrine = doctrine_theocracy_lay_clergy
 		doctrine = special_doctrine_no_patron_god
-		
+		doctrine = doctrine_pilgrimage_encouraged
 		#mariage 
 		doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
 		doctrine = doctrine_bastardry_legitimization
@@ -411,8 +411,8 @@ egyptian_religion ={
 			WitchGodMistressMaster = mistress
 			WitchGodMotherFather = mother
 			
-			GHWName = phw_great_holy_war
-			GHWNamePlural = phw_great_holy_wars
+			GHWName = ghw_great_holy_wars
+			GHWNamePlural = ghw_great_holy_wars
 
 			}
 		}
