@@ -1,0 +1,83 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+
+ choose_main_deity_babylonian_decision:0 "Wählen Sie Ihre Hauptgottheit"
+ choose_main_deity_mesopotamian_decision_tt:0 "Du beginnst, dein Leben nach den Werten von" zu leben
+
+ select_main_deity_babylonian_decision.select_marduk:0 "Marduk Hochgott der Babylonier"
+ select_main_deity_mesopotamian_decision.select_ishtar:0 "Ishtar Göttin der Gesundheit"
+ select_main_deity_mesopotamian_decision.select_ninhegal:0 "Ninhegal Gott des Reichtums"
+ select_main_deity_mesopotamian_decision.select_nabu:0 "Nabu, Gott der Weisheit"
+ select_main_deity_babylonian_decision.select_nergal:0 "Nergal Gott des Krieges"
+
+ choose_main_deity_babylonian_decision_tooltip:1 "Wählen Sie den Hauptgott(dess)"
+ choose_main_deity_babylonian_decision_confirm:1 "Wähle Hauptgott(dess)"
+
+ choose_main_deity_assyrian_decision:0 "Wählen Sie Ihre Hauptgottheit"
+ select_main_deity_assyrian_decision.select_ashur:0 "Ashur Hochgott der Assyrer"
+ select_main_deity_assyrian_decision.select_ninkarrak:0 "Ninkarrak Göttin der Gesundheit"
+ choose_main_deity_assyrian_decision_tooltip:1 "Hauptgott(e) wählen"
+ choose_main_deity_assyrian_decision_confirm:1 "Wähle Hauptgott(dess)"
+
+ choose_main_deity_sumerian_decision:0 "Wählen Sie Ihre Hauptgottheit"
+ select_main_deity_sumerian_decision.select_enlil:0 "Enlil Hochgott der Sumerer"
+ select_main_deity_sumerian_decision.select_inanna:0 "Inanna Göttin der Fruchtbarkeit"
+ select_main_deity_sumerian_decision.select_nisaba:0 "Nisaba Göttin der Weisheit"
+ select_main_deity_sumerian_decision.select_ninurta:0 "Ninurta Gott des Krieges"
+ choose_main_deity_sumerian_decision_tooltip:1 "Hauptgottheit(en) wählen"
+ choose_main_deity_sumerian_decision_confirm:1 "Wähle Hauptgott(dess)"
+
+ restore_empire_mesopotamia:0 "Mesopotamisches Reich wiederherstellen"
+ restore_empire_mesopotamia_desc:0 "Nun, da Babylon, Sumerien und Assyrien wieder unter unserer Kontrolle sind, ist es an der Zeit, das mesopotamische Reich wiederherzustellen."
+ create_empire_mesopotamia_effect_tooltip:0 "Wiederhergestelltes mesopotamisches Reich"
+ restore_empire_mesopotamia_tooltip:1 "Es ist an der Zeit, ganz Mesopotamien zurückzuerobern"
+ restore_empire_mesopotamia_confirm:0 "Mesopotamisches Reich erschaffen"
+
+ kingdom_of_babylon:0 "Wiederherstellung des Königreichs Babylon"
+ kingdom_of_babylon_desc:0 "Viel zu lange war das alte Mesopotamien, für das unsere Vorfahren lebten und kämpften, unter der Kontrolle unserer Feinde."
+ kingdom_of_babylon_effect_tooltip:0 "Wiederhergestelltes Königreich von Babylon"
+ create_babylon_effect_tooltip:1 "Es ist an der Zeit, das Königreich Babylon zurückzuerobern"
+ kingdom_of_babylon_tooltip:1 "Es ist an der Zeit, Babylon zurückzufordern"
+ kingdom_of_babylon_confirm:0 "Königreich Babylon erschaffen"
+
+
+ kingdom_of_assyria:0 "Königreich Assyrien wiederherstellen"
+ kingdom_of_assyria_desc:0 "Schon viel zu lange ist das alte Mesopotamien unter der Kontrolle unserer Feinde, für die unsere Vorfahren gelebt und gekämpft haben."
+ kingdom_of_assyria_tooltip:1 "Es ist an der Zeit, Assyrien zurückzufordern"
+ kingdom_of_assyria_effect_tooltip:0 "Wiederhergestelltes Königreich Assyrien"
+ create_assyria_effect_tooltip:1 "Es ist an der Zeit, das Königreich Assyrien zurückzufordern"
+ kingdom_of_assyria_confirm:0 "Königreich Assyrien erschaffen"
+
+ kingdom_of_sumer:0 "Wiederherstellung des Königreichs Sumer"
+ kingdom_of_sumer_desc:0 "Viel zu lange war das alte Mesopotamien unter der Kontrolle unserer Feinde, für die unsere Vorfahren lebten und kämpften."
+ kingdom_of_sumer_tooltip:1 "Es ist an der Zeit, Sumer zurückzuerobern"
+ kingdom_of_sumer_effect_tooltip:0 "Wiederhergestelltes Königreich von Sumer"
+ create_sumer_effect_tooltip:1 "Es ist an der Zeit, das Königreich Sumer zurückzufordern"
+ kingdom_of_sumer_confirm:0 "Königreich Sumer erschaffen"
+
+ set_capital_mosul_decision:0 "Mosul zur Hauptstadt machen"
+ set_capital_mosul_decision_desc:0 "Mossul zur Hauptstadt von Assyrien machen"
+ set_capital_mosul_decision_tooltip:1 "Hauptstadt in Mosul ändern"
+ set_capital_mosul_decision_confirm:0 "Hauptstadt ändern"
+
+ set_capital_baghdad_decision:0 "Bagdad zur Hauptstadt machen"
+ set_capital_baghdad_decision_desc:0 "Bagdad zur Hauptstadt von Babylon machen"
+ set_capital_baghdad_decision_tooltip:1 "Hauptstadt zu Bagdad machen"
+ set_capital_baghdad_decision_confirm:0 "Hauptstadt ändern"
+
+ set_capital_ninive_decision:0 "Ninive zur Hauptstadt machen"
+ set_capital_ninive_decision_desc:0 "Macht Ninive zur Hauptstadt von Mesopotamien"
+ set_capital_ninive_decision_tooltip:1 "Hauptstadt in Ninive ändern"
+ set_capital_ninive_decision_confirm:0 "Hauptstadt ändern"
+
+ set_capital_qadisiya_decision:0 "Qadisiya zur Hauptstadt machen"
+ set_capital_qadisiya_decision_desc:0 "Qadisiya zur Hauptstadt von Sumer machen"
+ set_capital_qadisiya_decision_tooltip:1 "Hauptstadt zu Qadisiya machen"
+ set_capital_qadisiya_decision_confirm:0 "Hauptstadt ändern"
+
+ open_first_brewery_decision:0 "Eröffne die erste Brauerei"
+ open_first_brewery_decision_desc:0 "Ehre die Göttin des Bierbrauens, indem du die erste Brauerei in Mesopotamien in den heiligen Mauern von Nippur errichtest. Dieses Unterfangen verspricht Wohlstand und Heiterkeit, aber bedenke, dass Ninkasis Segen Respekt und Mäßigung verlangt."
+ open_first_brewery_decision_tooltip:0 "Eröffne die erste Brauerei"
+ open_first_brewery_decision_confirm:0 "Entkorken Sie den Segen von Ninkasi!"

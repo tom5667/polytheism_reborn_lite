@@ -4,6 +4,8 @@
 ###################### 
     celtic_religion:0 "Celtic"
     celtic_religion_adj:0 "Celtic"
+    celtic_religion_adherent:0 "Celtic"
+    celtic_religion_adherent_plural:0 "Celts"
     celtic_religion_desc:0 "Religions of the Ancient celtic people."
     celtic_pantheon_the_gods:0 "Celtic Pantheon of gods"
     #Gaulish and celtiberian don't have a known name for the afterlife so they get the generic other world as they believed the souls go to the other world
@@ -46,9 +48,9 @@
     gaelic_polytheism_creator_god_name:0 "Beira"
     gaelic_polytheism_creator_god_name_possessive:0 "Beira's"
 
-    #Health Goddess Dianus
-    gaelic_polytheism_health_god_name:0 "Dianus"
-    gaelic_polytheism_health_god_name_possessive:0 "Dianus"
+    #Health Goddess Dian Cecht
+    gaelic_polytheism_health_god_name:0 "Dian Cecht"
+    gaelic_polytheism_health_god_name_possessive:0 "$gaelic_polytheism_health_god_name$'s"
 
     #Fertility Goddess Beira Localization
     gaelic_polytheism_fertility_god_name:0 "Brigid"
@@ -71,19 +73,19 @@
     gaelic_polytheism_knowledge_god_name_possessive:0 "Ecna's"
 
     #War god Neit Localization
-    gaelic_polytheism_war_god_name:0 "The Morrighan"
-    gaelic_polytheism_war_god_name_possessive:0 "The Morrighan's"
+    gaelic_polytheism_war_god_name:0 "Nemain"
+    gaelic_polytheism_war_god_name_possessive:0 "$gaelic_polytheism_war_god_name$'s"
 
     #Trickster god Mendacius Localization
     gaelic_polytheism_trickster_god_name:0 "Mendacius"
     gaelic_polytheism_trickster_god_name_possessive:0 "Mendacius's"
 
     #Night goddess Latona Localization
-    gaelic_polytheism_night_god_name:0 "No night god"
-    gaelic_polytheism_night_god_name_possessive:0 "No night god's"
+    gaelic_polytheism_night_god_name:0 "Rhiannon"
+    gaelic_polytheism_night_god_name_possessive:0 "$gaelic_polytheism_night_god_name$'s"
 
-    gaelic_polytheism_water_god_name:0 "Manannán"
-    gaelic_polytheism_water_god_name_possessive:0 "Manannán's"
+    gaelic_polytheism_water_god_name:0 "Manannán mac Lir"
+    gaelic_polytheism_water_god_name_possessive:0 "$gaelic_polytheism_water_god_name$'s"
 
     #evil gods names 
     gaelic_polytheism_evil_god_leanan_sidhe:0 "Leanan Sidhe" 
@@ -106,7 +108,7 @@
     gaelic_polytheism_good_god_etain:0 "Étaín" 
     gaelic_polytheism_good_god_manannan:0 "Manannán" 
     gaelic_polytheism_good_god_neit:0 "Neit" 
-    gaelic_polytheism_good_god_dianus:0 "Dianus" 
+    gaelic_polytheism_good_god_dianus:0 "Dian Cecht" 
     gaelic_polytheism_good_god_angus_og:0 "Angus Og"
 
     
@@ -158,9 +160,9 @@
     brythonic_polytheism_creator_god_name:0 "Beira"
     brythonic_polytheism_creator_god_name_possessive:0 "Beira's"
 
-    #Health Goddess Dianus
-    brythonic_polytheism_health_god_name:0 "Dianus"
-    brythonic_polytheism_health_god_name_possessive:0 "Dianus"
+    #Health Goddess Dian Cecht
+    brythonic_polytheism_health_god_name:0 "Dian Cecht"
+    brythonic_polytheism_health_god_name_possessive:0 "$brythonic_polytheism_health_god_name$'s"
 
     #Fertility Goddess Arianrhod  Localization
     brythonic_polytheism_fertility_god_name:0 "Arianrhod"
@@ -191,18 +193,17 @@
     brythonic_polytheism_trickster_god_name_possessive:0 "Gwydion's"
 
     #Night goddess Latona Localization
-    brythonic_polytheism_night_god_name:0 "Arianrhod"
-    brythonic_polytheism_night_god_name_possessive:0 "Arianrhod's"
+    brythonic_polytheism_night_god_name:0 "Rhiannon"
+    brythonic_polytheism_night_god_name_possessive:0 "$brythonic_polytheism_night_god_name$'s"
 
     #Brythonic water goddess 
     brythonic_polytheism_water_god_name:0 "Coventina"
     brythonic_polytheism_water_god_name_possessive:0 "Coventina's"
 
     #evil gods names 
-    brythonic_polytheism_evil_god_leanan_sidhe:0 "Leanan Sidhe" 
     brythonic_polytheism_evil_god_carman:0 "Carman"
     
-    brythonic_polytheism_witchgodname_leanan_sidhe:0 "Leanan Sidhe"
+    brythonic_polytheism_witchgodname_gwydion:0 "Gwydion"
 
     #Devil god   
     brythonic_polytheism_devil_name:0 "Pwyll" 
@@ -227,7 +228,7 @@
     brythonic_polytheism_priest_male_plural:0 "Druids"
 
     #Brythonic female priests 
-    brythonic_polytheism_priest_female:0 "Druidesses" 
+    brythonic_polytheism_priest_female:0 "Druidess" 
     brythonic_polytheism_priest_female_plural:0 "Druidesses" 
 
     #Druids  
@@ -303,8 +304,8 @@
     gaulish_polytheism_trickster_god_name_possessive:0 "Lugh"
 
     #Night goddess Latona Localization
-    gaulish_polytheism_night_god_name:0 "Arianrhod"
-    gaulish_polytheism_night_god_name_possessive:0 "Arianrhod's"
+    gaulish_polytheism_night_god_name:0 "Rhiannon"
+    gaulish_polytheism_night_god_name_possessive:0 "$gaulish_polytheism_night_god_name$'s"
 
     #Gaulish water goddess 
     gaulish_polytheism_water_god_name:0 "Arausio"
@@ -339,7 +340,7 @@
     gaulish_polytheism_priest_male_plural:0 "Druids"
 
     #Gaulish female priests 
-    gaulish_polytheism_priest_female:0 "Druidesses" 
+    gaulish_polytheism_priest_female:0 "Druidess" 
     gaulish_polytheism_priest_female_plural:0 "Druidesses" 
 
     #Druids  
@@ -368,16 +369,16 @@
     celtic_iberian_polytheism_religious_symbol:0 "wild boar"
     celtic_iberian_polytheism_religious_text:0 "rituals"
     celtic_iberian_polytheism_religious_head_title:0 "High Druid"
-    holy_order_sons_of_reue:0 "Sons of Reue"
+    holy_order_sons_of_reue:0 "Sons of Reo"
     holy_order_sons_of_lugh:0 "Sons of Lugei"
 
     celtic_iberian_religious_head_title:0 "High Druid"
 
     #Reue Localization historical correct
-    celtic_iberian_polytheism_high_god_name:0 "Reue"
-    celtic_iberian_polytheism_high_god_name_possessive:0 "Reue's"
-    celtic_iberian_polytheism_high_god_name_alternate:0 "Reue"
-    celtic_iberian_polytheism_high_god_name_alternate_possessive:0 "Reue's"
+    celtic_iberian_polytheism_high_god_name:0 "Reo"
+    celtic_iberian_polytheism_high_god_name_possessive:0 "Reo's"
+    celtic_iberian_polytheism_high_god_name_alternate:0 "Reo"
+    celtic_iberian_polytheism_high_god_name_alternate_possessive:0 "Reo's"
     celtic_iberian_polytheism_high_god_shehe:0 "He"
     celtic_iberian_polytheism_high_god_herselfhimself:0 "Himself"
     celtic_iberian_polytheism_high_god_herhis:0 "His"
@@ -411,17 +412,17 @@
     celtic_iberian_polytheism_knowledge_god_name:0 "Belisama"
     celtic_iberian_polytheism_knowledge_god_name_possessive:0 "Belisama's"
 
-    #War god Bandua Localization  historical correct
-    celtic_iberian_polytheism_war_god_name:0 "Bandua"
-    celtic_iberian_polytheism_war_god_name_possessive:0 "Bandua's"
+    #War god Teleno Localization  historical correct
+    celtic_iberian_polytheism_war_god_name:0 "Teleno"
+    celtic_iberian_polytheism_war_god_name_possessive:0 "$celtic_iberian_polytheism_war_god_nam$'s"
 
     #Trickster god no god Localization
-    celtic_iberian_polytheism_trickster_god_name:0 "$celtic_iberian_polytheism_wealth_god_name$"
-    celtic_iberian_polytheism_trickster_god_name_possessive:0 "$celtic_iberian_polytheism_wealth_god_name$'s"
+    celtic_iberian_polytheism_trickster_god_name:0 "Spirits"
+    celtic_iberian_polytheism_trickster_god_name_possessive:0 "$celtic_iberian_polytheism_trickster_god_name$'s"
 
     #Night goddess Latona Localization
-    celtic_iberian_polytheism_night_god_name:0 "no god"
-    celtic_iberian_polytheism_night_god_name_possessive:0 "no god"
+    celtic_iberian_polytheism_night_god_name:0 "Spirit"
+    celtic_iberian_polytheism_night_god_name_possessive:0 "Spirits"
 
     #Celtiberian water goddess 
     celtic_iberian_polytheism_water_god_name:0 "Durius"
@@ -429,13 +430,13 @@
 
     #evil gods names  gods of the underword 
     celtic_iberian_polytheism_evil_god_ataecina:0 "Ataecina" 
-    celtic_iberian_polytheism_evil_god_luru:0 "Luru"
+
 
     celtic_iberian_witchgodname_ataecina:0 "Ataecina"
 
     #Devil god   
-    celtic_iberian_polytheism_devil_name:0 "Reva" 
-    celtic_iberian_polytheism_devil_name_possessive:0 "Reva's"
+    celtic_iberian_polytheism_devil_name:0 "Ataecina" 
+    celtic_iberian_polytheism_devil_name_possessive:0 "Ataecina's"
 
     #Death god Endovelicus  historical correct
     celtic_iberian_polytheism_death_deity_name:0 "Endovelicus"
@@ -456,7 +457,7 @@
     celtic_iberian_polytheism_priest_male_plural:0 "Druids"
 
     #Celtiberian female priests 
-    celtic_iberian_polytheism_priest_female:0 "Druidesses" 
+    celtic_iberian_polytheism_priest_female:0 "Druidess" 
     celtic_iberian_polytheism_priest_female_plural:0 "Druidesses" 
 
     #Druids  

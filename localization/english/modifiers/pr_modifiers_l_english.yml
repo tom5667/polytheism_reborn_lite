@@ -135,11 +135,11 @@ gaulish_belisama:0 "Devotee Of Belisama"
 gaulish_belisama_desc:0 "Devotee of Belisama goddess of wisdom"
 
 #Celtic Iberian
-celtic_iberian_reue:0 "Devotee Of Reue"
-celtic_iberian_reue_desc:0 "Devotee of Reue high god and god of thunder"
+celtic_iberian_reue:0 "Devotee Of Reo"
+celtic_iberian_reue_desc:0 "Devotee of Reo high god and god of thunder"
 
-celtic_iberian_arentius:0 "Devotee Of Arentius"
-celtic_iberian_arentius_desc:0 "Devotee of Arentius goddess of health"
+celtic_iberian_arancia:0 "Devotee Of Arancia"
+celtic_iberian_arancia_desc:0 "Devotee of Arancia goddess of health"
 
 celtic_iberian_nabia:0 "Devotee Of Nabia"
 celtic_iberian_nabia_desc:0 "Devotee of Nabia goddess of fertility"
@@ -149,6 +149,22 @@ celtic_iberian_lugus_desc:0 "Devotee of Lugus god of trade and wealth"
 
 celtic_iberian_bandua:0 "Devotee Of Bandua"
 celtic_iberian_bandua_desc:0 "Devotee of Bandua god of war"
+
+#Lusitanian
+lusitanian_reue:0 "Devotee Of Reue"
+lusitanian_reue_desc:0 "Devotee of Reue high god and god of thunder"
+
+lusitanian_arancio:0 "Devotee Of Arancio"
+lusitanian_arancio_desc:0 "Devotee of Arancio god of health"
+
+lusitanian_ataegina:0 "Devotee Of Ataegina"
+lusitanian_ataegina_desc:0 "Devotee of Ataegina goddess of fertility"
+
+lusitanian_lucubo:0 "Devotee Of Lucubo"
+lusitanian_lucubo_desc:0 "Devotee of Lucubo god of trade and wealth"
+
+lusitanian_cariocecus:0 "Devotee Of Cariocecus"
+lusitanian_cariocecus_desc:0 "Devotee of Cariocecus god of war"
 
 #Germanic
 #Anglo Saxon
@@ -319,7 +335,7 @@ hittite_halki:0 "Devotee Of Halki"
 hittite_halki_desc:0 "Devotee of Halki god of grain"
 
 hittite_a_as:0 "Devotee Of A'as"
-hittite_a_as_desc:0 "Devotee of A'as god of wisdom "
+hittite_a_as_desc:0 "Devotee of A'as god of wisdom"
 
 hittite_tashmishu:0 "Devotee Of Tashmishu"
 hittite_tashmishu_desc:0 "Devotee of Tashmishu god of war"
@@ -400,16 +416,43 @@ romano_british_venus_desc:0 "Devotee of Venus goddess of fertility"
 
 #Romano Germanic
 romano_germanic_mars_thincsus:0 "Devotee Of Mars Thincsus"
-romano_germanic_mars_thincsus_desc:0 "Devotee of Mars Thinkcsus, god of war"
+romano_germanic_mars_thincsus_desc:0 "Devotee of Mars Thinkcsus god of war"
 
 romano_germanic_mercurius_hranno:0 "Devotee Of Mercurius Hranno"
-romano_germanic_mercurius_hranno_desc:0 "Devotee of Mercurius Hranno, high god of the Romano Germanic"
+romano_germanic_mercurius_hranno_desc:0 "Devotee of Mercurius Hranno high god of the Romano Germanic"
 
 romano_germanic_isis_freia:0 "Devotee Of Isis Freia"
-romano_germanic_isis_freia_desc:0 "Devotee of Isis Freia, goddess of love, beauty and fertility"
+romano_germanic_isis_freia_desc:0 "Devotee of Isis Freia goddess of love, beauty and fertility"
 
 romano_germanic_hercules_meganusus:0 "Devotee Of Hercules Meganusus"
-romano_germanic_hercules_meganusus_desc:0 "Devotee of Hercules Meganusus, God of strength and high god of the old Batavi"
+romano_germanic_hercules_meganusus_desc:0 "Devotee of Hercules Meganusus God of strength and high god of the old Batavi"
+
+romano_hispanic_jupiter_solutorius:0 "Devotee of Jupiter Solutorius"
+romano_hispanic_jupiter_solutorius_desc:0 "Devotee of Jupiter Solutorius, high god of the Romano Hispanics"
+
+romano_hispanic_minerva:0 "Devotee of Minerva"
+romano_hispanic_minerva_desc:0 "Devotee of Minerva goddess of wisdom"
+
+romano_hispanic_mars_neto:0 "Devotee of Mars Neto"
+romano_hispanic_mars_neto_desc:0 "Devotee of Mars Neto god of war"
+
+romano_hispanic_lucubo:0 "Devotee of Lucubo"
+romano_hispanic_lucubo_desc:0 "Devotee of Lucubo god of wealth and trade"
+
+romano_hispanic_nabia:0 "Devotee of Nabia"
+romano_hispanic_nabia_desc:0 "Devotee of Nabia goddess of fertility"
+
+cultus_orientis_jupiter_dolichenus:0 "Devotee Jupiter Dolichenus"
+cultus_orientis_jupiter_dolichenus_desc:0 "Devotee of Jupiter Dolichenus ruler of the sky and honered with a mysterie cult"
+
+cultus_orientis_juno_caelestis:0 "Devotee of Juno Caelestis"
+cultus_orientis_juno_caelestis_desc:0 "Devotee of Juno Caelestis goddess of motherhood, war and fertility"
+
+cultus_orientis_mercurius_sobrius:0 "Devotee of Mercurius Sobrius"
+cultus_orientis_mercurius_sobrius_desc:0 "Devotee of Mercurius Sobrius god of wealth and trade "
+
+cultus_orientis_eshmun:0 "Devotee of Eshmun"
+cultus_orientis_eshmun_desc:0 "Devotee of Eshmun god of health"
 
 #Etruscan
 etruscan_tinia:0 "Devotee Of Tinia"

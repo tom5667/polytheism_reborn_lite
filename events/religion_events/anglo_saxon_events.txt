@@ -1,7 +1,539 @@
-﻿namespace = ascmd
+﻿namespace = anglo_saxon_return
+namespace = anglo_saxon_sr
+namespace = g_r
+namespace = g_sr
+namespace = ascmd
 namespace = solstice
 namespace = feast_main_befriend
 namespace = pr_germanic
+
+#Return Cultus Deorum
+anglo_saxon_return.001  = {
+	type = character_event
+	title = anglo_saxon_return.001.t
+	desc = anglo_saxon_return.001.desc
+	theme =  hunt_activity
+	right_portrait = {
+			character = root
+			animation = personality_content
+	}
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				template = religious_leader_character
+				random_traits = no
+				dynasty = generate
+				faith = faith:anglo_saxon_polytheism
+				gender = female
+				age = 20
+				save_scope_as = anglo_saxon_priest
+				}
+
+				cp:councillor_court_chaplain = {
+					save_scope_as = realm_priest
+				}
+			}
+			scope:new_priest = {
+				add_trait = education_learning_2
+				add_trait = zealous
+				add_trait = intellect_good_1
+			}
+
+	}
+	option = {
+		name = anglo_saxon_return.001.a
+		trigger_event = anglo_saxon_return.002
+	}
+
+}
+
+anglo_saxon_return.002 = { 
+	type = character_event
+	title = anglo_saxon_return.002.t
+	desc = anglo_saxon_return.002.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = idle
+	}
+	left_portrait = {
+		character = scope:realm_priest
+		animation = idle
+	}
+	option = { #Proceed
+		name = anglo_saxon_return.002.a
+		trigger_event = anglo_saxon_return.003
+	}
+	option = { #Stop
+		name = anglo_saxon_return.002.b
+		hidden_effect ={
+			clear_global_variable_list = unavailable_unique_decisions_convert
+			remove_trait = pilgrim 
+		}
+	}
+}
+
+anglo_saxon_return.003 = { 
+	type = character_event
+	title = anglo_saxon_return.003.t
+	desc = anglo_saxon_return.003.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = idle
+	}
+	left_portrait = {
+		character = scope:realm_priest
+		animation = idle
+	}
+	#proceed
+	option = {
+		name = anglo_saxon_return.003.a
+		trigger_event = anglo_saxon_return.004
+	}	
+}
+
+anglo_saxon_return.004 = {
+	type = character_event
+	title = anglo_saxon_return.004.t
+	desc = anglo_saxon_return.004.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = idle
+	}
+	left_portrait = {
+		character = scope:realm_priest
+		animation = idle
+	}
+	option = {
+		name = anglo_saxon_return.004.a
+		trigger_event = anglo_saxon_return.005
+	}
+}
+
+anglo_saxon_return.005 = {
+	type = character_event
+	title = anglo_saxon_return.005.t
+	desc = anglo_saxon_return.005.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = idle
+	}
+	left_portrait = {
+		character = scope:anglo_saxon_priest
+		animation = idle
+	}
+	option = {
+		name = anglo_saxon_return.005.a
+		trigger_event = anglo_saxon_return.006
+	}
+	option = {
+		name = anglo_saxon_return.005.b
+		hidden_effect ={
+			clear_global_variable_list = unavailable_unique_decisions_convert
+			remove_trait = pilgrim 
+		}
+	}
+}
+anglo_saxon_return.006 = {
+	type = character_event
+	title = anglo_saxon_return.006.t
+	desc = anglo_saxon_return.006.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = idle
+		
+	}
+	left_portrait = {
+		character = scope:anglo_saxon_priest
+		animation = idle
+	}
+	option = {
+		name = anglo_saxon_return.006.a
+		trigger_event = {
+			id = anglo_saxon_sr.001
+			months = 2 
+		}
+	}
+	
+}
+
+scripted_effect anglo_saxon_sr_notify_players_effectt = {
+	every_player = {
+		limit = {
+			Not = {this = root}  
+			capital_province = {
+			geographical_region = world_europe_west_germania
+			}
+		}
+		trigger_event = anglo_saxon_sr.002
+	}
+}
+
+anglo_saxon_sr.001 = {
+	type = character_event
+	title = anglo_saxon_sr.001.t
+	desc = anglo_saxon_sr.001.desc
+	theme = faith
+	right_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous	
+		}
+		override_background = { reference= throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		faith = { save_scope_as = old_faith }
+		return_anglo_saxon_sr_decision_scripted_effect = yes
+	}
+
+	option = {
+		name = anglo_saxon_sr.001.a
+		#Get a nice reward for your adherence to the true faith.
+		add_piety_level = 1
+		#Sort notification copy for players.
+		save_scope_value_as = {
+			name = anglo_saxon_return
+			value = flag:vanilla
+		}
+		anglo_saxon_sr_notify_players_effect = yes 
+		
+	}	
+}
+
+anglo_saxon_sr.002 = {
+	type = character_event
+	title = anglo_saxon_sr.002.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { top_liege = root }
+				desc = anglo_saxon_sr.002.desc.vassals
+			}
+			desc = anglo_saxon_sr.002.desc.outsiders
+		}
+		desc = anglo_saxon_sr.002.desc.intro
+		triggered_desc = {
+			trigger = { scope:anglo_saxon_return = flag:vanilla }
+			desc = anglo_saxon_sr.002.desc_vanilla
+		}
+	}
+	theme = faith
+	left_portrait = scope:scoped_ruler
+	override_background = { reference= throne_room }
+	#Roman polyteist are happy about this unexpected turn of events!
+	option = {
+		name = anglo_saxon_sr.002.a
+		trigger = { religion = religion:germanic_religion}
+		add_stress = minor_stress_loss
+	}
+	#Vassals who do not follow the faith may decide to convert after all.
+	option = {
+		name = anglo_saxon_sr.002.b
+		trigger = {
+			top_liege = root
+			NOT = { religion = religion:germanic_religion}
+		}
+		set_character_faith_with_conversion = faith:anglo_saxon_polytheism
+		
+	}
+	#Those who aren't polytheist are probably horrified.
+	option = {
+		name = anglo_saxon_sr.002.c
+		trigger = {
+			NOT = {
+				religion = { is_in_family = rf_pagan}
+			}
+		}
+	}
+	#And, as a fallback, some people just won't care.
+	option = { 
+		name = anglo_saxon_sr.002.d 
+	}
+}
+
+
+#german
+g_r.001  = {
+	type = character_event
+	title = g_r.001.t
+	desc = g_r.001.desc
+	theme =  claim_throne_scheme
+	right_portrait = {
+			character = root
+			animation = personality_content
+	}
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				template = religious_leader_character
+				random_traits = no
+				dynasty = generate
+				faith = faith:norse_pagan
+				age = 30
+				gender = female
+				culture = culture:norse
+				save_scope_as = german_volva
+				}
+
+				cp:councillor_court_chaplain = {
+					save_scope_as = realm_priest
+				}
+			# create_character = {
+			# 	employer = root
+			# 	template = religious_leader_character
+			# 	random_traits = no
+			# 	dynasty = generate
+				
+			# 	save_scope_as = realm_priest
+			# }
+			}
+			scope:new_priest = {
+				add_trait = education_learning_4
+				add_trait = zealous
+				add_trait = intellect_good_3
+			}
+			# scope:realm_priest ={
+			# 	add_trait = education_learning_2
+			# 	add_trait = zealous
+			# 	add_trait = intellect_good_1
+			# }
+	}
+	option = {
+		name = g_r.001.a
+		trigger_event = g_r.002
+	}
+
+}
+
+g_r.002 = { 
+	type = character_event
+	title = g_r.002.t
+	desc = g_r.002.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = idle
+	}
+	left_portrait = {
+		#character = scope:realm_priest
+		character = scope:realm_priest
+		animation = anger
+	}
+	option = { #Proceed
+		name = g_r.002.a
+		trigger_event = g_r.003
+	}
+	option = { #Stop
+		name = g_r.002.b
+		imprison_character_effect = {
+			TARGET = scope:german_volva
+			IMPRISONER = root
+		}
+		# clergical_opinion = {
+			
+		# }
+		hidden_effect ={
+			clear_global_variable_list = unavailable_unique_decisions_german
+			
+		}
+	}
+}
+
+g_r.003 = { 
+	type = character_event
+	title = g_r.003.t
+	desc = g_r.003.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = anger
+	}
+	left_portrait = {
+		character = scope:realm_priest
+		animation = anger
+	}
+	#proceed
+	option = {
+		name = g_r.003.a
+		trigger_event = g_r.004
+	}	
+}
+
+g_r.004 = {
+	type = character_event
+	title = g_r.004.t
+	desc = g_r.004.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = idle
+	}
+	left_portrait = {
+		character = scope:german_volva
+		animation = idle
+	}
+	option = {
+		name = g_r.004.a
+		trigger_event = g_r.005
+	}
+	option = {
+		name = g_r.004.b
+		imprison_character_effect = {
+			TARGET = scope:german_volva
+			IMPRISONER = root
+		}
+		hidden_effect ={
+			clear_global_variable_list = unavailable_unique_decisions_german
+
+		}
+	}
+}
+
+g_r.005 = {
+	type = character_event
+	title = g_r.005.t
+	desc = g_r.005.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = idle
+	}
+	left_portrait = {
+		character = scope:german_volva
+		animation = idle
+	}
+	option = {
+		name = g_r.005.a
+		trigger_event = g_r.006
+	}
+
+}
+g_r.006 = {
+	type = character_event
+	title = g_r.006.t
+	desc = g_r.006.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = idle
+		
+	}
+	left_portrait = {
+		character = scope:german_volva
+		animation = idle
+	}
+	option = {
+		name = g_r.006.a
+		trigger_event = {
+			id = g_sr.001
+			months = 2 
+		}
+	}
+	
+}
+
+#Reinstate Cultus Deorum as state religion 
+scripted_effect g_sr_notify_players_effectt = {
+	every_player = {
+		limit = {
+			Not = {this = root}  
+			capital_province = {
+			geographical_region = world_europe_west_germania
+			}
+		}
+		trigger_event = g_sr.002
+	}
+}
+
+g_sr.001 = {
+	type = character_event
+	title = g_sr.001.t
+	desc = g_sr.001.desc
+	theme = faith
+	right_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous	
+		}
+		override_background = { reference= throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		faith = { save_scope_as = old_faith }
+		return_g_sr_decision_scripted_effect = yes
+	}
+
+	option = {
+		name = g_sr.001.a
+		#Get a nice reward for your adherence to the true faith.
+		add_piety_level = 1
+		#Sort notification copy for players.
+		save_scope_value_as = {
+			name = german_return
+			value = flag:vanilla
+		}
+		g_sr_notify_players_effect = yes 
+		
+	}	
+}
+
+g_sr.002 = {
+	type = character_event
+	title = g_sr.002.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { top_liege = root }
+				desc = g_sr.002.desc.vassals
+			}
+			desc = g_sr.002.desc.outsiders
+		}
+		desc = g_sr.002.desc.intro
+		triggered_desc = {
+			trigger = { scope:g_return = flag:vanilla }
+			desc = g_sr.002.desc_vanilla
+		}
+	}
+	theme = faith
+	left_portrait = scope:scoped_ruler
+	override_background = { reference= throne_room }
+	#Roman polyteist are happy about this unexpected turn of events!
+	option = {
+		name = g_sr.002.a
+		trigger = { religion = religion:germanic_religion}
+		add_stress = minor_stress_loss
+	}
+	#Vassals who do not follow the faith may decide to convert after all.
+	option = {
+		name = g_sr.002.b
+		trigger = {
+			top_liege = root
+			NOT = { religion = religion:germanic_religion}
+		}
+		set_character_faith_with_conversion = faith:german_polytheism
+		
+	}
+	#Those who aren't polytheist are probably horrified.
+	option = {
+		name = g_sr.002.c
+		trigger = {
+			NOT = {
+				religion = { is_in_family = rf_pagan}
+			}
+		}
+	}
+	#And, as a fallback, some people just won't care.
+	option = { 
+		name = g_sr.002.d 
+	}
+}
 
 #Choose anglo saxon main deity 
 ascmd.001 = {

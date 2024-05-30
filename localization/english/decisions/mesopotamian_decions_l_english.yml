@@ -67,7 +67,7 @@
  set_capital_baghdad_decision_tooltip:1 "Change capital to Baghdad"
  set_capital_baghdad_decision_confirm:0 "Change Capital"
 
- set_capital_ninive_decision:0 "Make ninive Capital"
+ set_capital_ninive_decision:0 "Make Ninive Capital"
  set_capital_ninive_decision_desc:0 "Make ninive the capital of Mesopotamia"
  set_capital_ninive_decision_tooltip:1 "Change capital to ninive"
  set_capital_ninive_decision_confirm:0 "Change Capital"
@@ -76,3 +76,8 @@
  set_capital_qadisiya_decision_desc:0 "Make Qadisiya the capital of Sumer"
  set_capital_qadisiya_decision_tooltip:1 "Change capital to Qadisiya"
  set_capital_qadisiya_decision_confirm:0 "Change Capital"
+
+ open_first_brewery_decision:0 "Open the first Brewery"
+ open_first_brewery_decision_desc:0 "Honor the goddess of brewing by establishing the first brewery in Mesopotamia within the hallowed walls of Nippur. This venture promises prosperity and merriment, but remember, Ninkasi's blessings demand respect and moderation."
+ open_first_brewery_decision_tooltip:0 "Open the first brewery"
+ open_first_brewery_decision_confirm:0 "Uncork the Bounty of Ninkasi!"

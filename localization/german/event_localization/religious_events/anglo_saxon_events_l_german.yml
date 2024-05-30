@@ -1,0 +1,78 @@
+﻿l_german:
+
+#Saxon
+ascmd.001.t:0 "Hauptgottheit wählen"
+ascmd.001.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+ascmd.001.woden:0 "Wōden"
+ascmd.001.njord:0 "Njǫrd"
+ascmd.001.fri:0 "Frī"
+ascmd.001.tiwaz:0 "Tīwaz"
+ascmd.001.seaxneat:0 "Seaxnēat"
+ascmd.001.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+#German
+ascmd.002.t:0 "Hauptgottheit wählen"
+ascmd.002.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+ascmd.002.wotan:0 "Wotan"
+ascmd.002.njordr:0 "Nerthus"
+ascmd.002.freyr:0 "Frauwaz"
+ascmd.002.nornir:0 "Nornir"
+ascmd.002.mimir:0 "Mímir"
+ascmd.002.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+solstice.001.t:0 "Wintersonnenwende"
+solstice.001.desc:0 "Wenn der Schnee auftaut und das Eis sich zurückzieht, beginnen sich die Meere zu beruhigen und eine neue Jahreszeit beginnt, in der die Götter und das Leben gleichermaßen ihre Rückkehr vom Kampf gegen die Geister von Eis und Schnee antreten. Räuber und Bauern werden die Beruhigung der Meere gleichermaßen zu schätzen wissen. Ich sollte das Reich versammeln, um den Rückzug des Winters zu feiern, wenn er bald beginnt, wenn die wärmeren Sonnenstrahlen von Sól eintreffen."
+solstice.001.a:0 "Sammeln Sie das Reich für die Sonnenwende"
+
+solstice.002.t:0 "Sommersonnenwende"
+solstice.002.desc:0 "Wenn der Sommer zu Ende geht und der Winter beginnt, danken Räuber und Bauern gleichermaßen den Göttern für eine fruchtbare Erntezeit, in der unsere Ernte reichlich gewachsen ist und die ruhigere See es uns ermöglicht, mit den anderen Völkern auf der anderen Seite der Meere Handel zu treiben und Raubzüge zu betreiben. Ich sollte mich darauf vorbereiten, das Reich zu versammeln, um diese reiche Erntezeit zu feiern, denn die Sonne verlässt uns bald und der Winter beginnt Einzug zu halten."
+solstice.002.a:0 "Sammeln Sie das Reich für die Sonnenwende"
+
+pr_germanic.001.t:0 "Besuchen Sie die Volva"
+pr_germanic.001.desc:0 "Heute besuche ich [realm_priest.GetCouncilTitle] [realm_priest.GetName], da es immer gut ist zu wissen, ob wir die Unterstützung haben, in den Krieg zu ziehen oder nicht."
+pr_germanic.001.a:0 "Fragen den [realm_priest.GetCouncilTitle]"
+pr_germanic.001.positive:0 "Positive Zukunft"
+pr_germanic.001.negative:0 "Negative Zukunft"
+
+pr_germanic.002.t:0 "Opfergabe an [ROOT.Char.GetFaith.HighGodName]"
+pr_germanic.002.desc:0 "Die Herrschaft über mein Reich erfordert viel Zeit und Geschick, deshalb biete ich heute [ROOT.Char.GetFaith.HighGodName] an"
+pr_germanic.002.a:0 "Ein opfer machen"
+#Converted a part of Cybrkxhan event of Celts and Romans 
+pr_germanic.003.t:0 "Römer und Germanen"
+pr_germanic.003.desc:0 "Ich lese alte historische Berichte über die Völker Germaniens, die die römischen Invasoren bekämpften – manchmal erfolgreich, oft nicht.\n\nDa ich dieselben Götter verehre, die diese alten Völker verehren, bin ich ihr spiritueller Nachkomme. Es ist traurig zu glauben, dass sie auf diese Weise erobert wurden. Aber war das alles so schlimm? Einige unserer Praktiken wurden auch von den Römern beeinflusst, was dazu beitrug, unsere spirituelle Weltanschauung und Verbindungen zu den Göttern zu bereichern."
+pr_germanic.003.a:0 "Die Römer waren rücksichtslose, blutrünstige Eroberer, mehr nicht!"
+pr_germanic.003.b:0 "Römer und Germanen haben viel voneinander gelernt."
+
+pr_germanic.004.t:0 "Schnitzen [ROOT.Char.GetFaith.FertilityGodName]"
+pr_germanic.004.desc:0 "Heute schnitze ich ein kleines Idol aus Holz für [ROOT.Char.GetFaith.FertilityGodName], die Göttin der Liebe und Fruchtbarkeit, um sie zu ehren und eine engere Bindung zu schaffen."
+pr_germanic.004.a:0 "Schnitze das Idol"
+
+pr_germanic.005.t:0 "Träume von Ragnarok"
+pr_germanic.005.desc:0 "Neinnn, das kann nicht wahr sein, das Ende der Welt, der Tod der Götter!! Einen Moment später wache ich auf."
+pr_germanic.005.a:0 "Es war alles nur ein böser Traum"
+
+pr_germanic.006.t:0 "Falke"
+pr_germanic.006.desc:0 "Heute bin ich durch den Wald gelaufen, normalerweise fliegen Falken weg, sobald man in ihre Nähe kommt, aber dieser blieb und beobachtete mich, bis ich an ihm vorbeikam. Minuten später tauchte der Falke über mir auf, bis ich den Wald verließ. Das muss ein Zeichen dafür sein, dass [ROOT.Char.GetFaith.FertilityGodName] über mich wacht!"
+pr_germanic.006.a:0 "Danke, dass du auf mich aufgepasst hast [ROOT.Char.GetFaith.FertilityGodName]"
+
+pr_germanic.007.t:0 "Erstellt einen Schrein für [ROOT.Char.GetFaith.WealthGodName]"
+pr_germanic.007.desc:0 "Da ich beginnen möchte, eine Bindung zu [ROOT.Char.GetFaith.WealthGodName] aufzubauen, habe ich beschlossen, einen kleinen Schrein zu bauen."
+pr_germanic.007.a:0 "Endlich fertig"
+
+pr_germanic.008.t:0 "Ruf nach den Runenschnitzern"
+pr_germanic.008.desc:0 "Das Wissen um die Runen ist zwar eine sich ständig verändernde Idee, aber etwas, das uns seit jeher begleitet.\nJede Rune, unabhängig von der Art und Weise, wie sie angeordnet ist, ist nichts weniger als eine mächtige Manifestation der Wirklichkeit gewordenen Götter,\na [ROOT. Char.GetFaith.PriestMale] muss gerufen werden, damit alle unsere Ritter solche Geschenke erhalten können.\n\nIch könnte entweder die örtliche Volva besuchen, um zu verstehen, was die Spinner für mich weben und welches Schicksal die Götter sehen passend für mich.\nOder ich suche nach Runenschnitzern und [ROOT.Char.GetFaith.PriestNeuterPlural] gleichermaßen, um den Erfolg aller unserer Ritter sicherzustellen, während ich die Ausrüstung sammle, die von solchen besonderen Kräften aufgenommen werden soll. "
+pr_germanic.008.a:0 "Ich sollte den örtlichen Volva besuchen [german_volva.GetName]"
+pr_germanic.008.b:0 "Ich werde runenschnitzern auskundschaften"
+
+pr_germanic.009.t:0 ""
+pr_germanic.009.desc:0 "Als die Volva [german_volva.GetName] gerufen wird, rufe ich einen Schmied, der mir einen Helm besorgt. Nach gründlicher Meditation offenbaren mir die Götter ein großes Siegel, das in jeden meiner Ritterhelme eingraviert werden soll, obwohl Blacksmith und Volva [german_volva.GetName] offenbar Unklarheiten darüber haben, wie die Einbindung einer solchen Rune die Ästhetik des Helms beeinträchtigen könnte."
+pr_germanic.009.a:0 "Der Segen der Götter ist mit uns!"
+
+pr_germanic.010.t:0 ""
+pr_germanic.010.desc:0 "Da der [ROOT.Char.GetFaith.PriestNeuterPlural] die Bedeutung einer gut gepanzerten Armee erkennt, weist er subtil darauf hin, dass die Umgestaltung des Rüstungsdesigns etwas von meiner eigenen Idee abweicht. Zunächst scheint ihm die Idee, dass kein Siegel auf die Helme geschnitzt werden kann, nicht zu gefallen, doch er schlägt dem Schmied eine andere Idee vor und drängt sie zu einer anderen Idee, einem Kunstwerk, das er mit den Kräften der Götter selbst segnet, mit dem der Schmied jedoch trotzdem einverstanden ist."
+pr_germanic.010.a:0 "Wir wurden durch die List von [ROOT.Char.GetFaith.HighGodName] gesegnet"
+
+pr_germanic.11.t:0 "Der Huldufólk"
+pr_germanic.011.desc:0 "Ich lasse etwas Butter auf einem Stein in der Nähe meines Gartens liegen, damit versteckte Menschen wie Elfen beim Wachstum der Feldfrüchte und Blumen helfen können."
+pr_germanic.011.a:0 "Die Butter auf dem Stein verteilen"
+

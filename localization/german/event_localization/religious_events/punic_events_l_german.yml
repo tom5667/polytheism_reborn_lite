@@ -1,0 +1,23 @@
+﻿l_german:
+
+rc.001.t:0 "Königreich schaffen"
+rc.001.desc:0 "Nach Jahren des Kampfes um weite Teile Afrikas ist es endlich an der Zeit, Carthago wiederherzustellen."
+rc.001.a:0 "Carthago ist wieder da"
+#choose main deity
+pcmd.001.t:0 "Wählen Sie die Hauptgottheit"
+pcmd.001.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+pcmd.001.baal:0 "Baal Hammon"
+pcmd.001.tanit:0 "Tanit"
+pcmd.001.astarte:0 "Astarte"
+pcmd.001.melqart:0 "Melqart"
+pcmd.001.kusor:0 "Kusor"
+pcmd.001.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+#Semitic
+semitic.001.t:0 "Wählen Sie die Hauptgottheit"
+semitic.001.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+semitic.001.ba_al_hadad:0 "Ba'al-Hadad"
+semitic.001.ashera:0 "Ashera"
+semitic.001.dagan:0 "Dagan"
+semitic.001.el_elyon:0 "El Elyon"
+semitic.001.ashtart:0 "Ashtart"
+semitic.001.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"

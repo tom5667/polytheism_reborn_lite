@@ -7,21 +7,21 @@
     scythian_religion:0 "Scythian"
     scythian_religion_adj:2 "Scythian"
     scythian_religion_adherent:2 "Scythian"
-    scythian_religion_adherent_plural:2 "Scythian"
-    scythian_religion_desc:0 "The Scythian Religions know many gods, once the religion of the ancient Scythians"
+    scythian_religion_adherent_plural:2 "Scythians"
+    scythian_religion_desc:0 "The Scythian Religion know many gods, once the religion of the ancient Scythians"
 
     #Georgian
     scythian_polytheism:0 "Scythian"
     scythian_polytheism_adj:0 "Scythian"
     scythian_polytheism_adherent:0 "Scythian polytheist"
-    scythian_polytheism_adherent_plural:0 "Scythian polytheists"
-    scythian_polytheism_desc:0 "scythian gods and goddesses are honored with rituals and ceremonies, so they may help them in everyday life" 
+    scythian_polytheism_adherent_plural:0 "Scythian polytheisten"
+    scythian_polytheism_desc:0 "Skythische Götter und Göttinnen werden mit Ritualen und Zeremonien geehrt, damit sie ihnen im Alltag helfen können" 
 
-    scythian_polytheism_old:0 "Scythian Old"
-    scythian_polytheism_old_adj:0 "Scythian Old"
+    scythian_polytheism_old:0 "Old Scythian"
+    scythian_polytheism_old_adj:0 "Old Scythian"
     scythian_polytheism_adherent_old:0 "Old Scythian polytheist"
-    scythian_polytheism_old_adherent_plural:0 "Old Scythian polytheists"
-    scythian_polytheism_old_desc:0 "Scythian gods and goddesses are honored with rituals and ceremonies, so they may help them in everyday life" 
+    scythian_polytheism_old_adherent_plural:0 "Old Scythian polytheisten"
+    scythian_polytheism_old_desc:0 "Skythische Götter und Göttinnen werden mit Ritualen und Zeremonien geehrt, damit sie ihnen im Alltag helfen können" 
 
     scythian_polytheism_religious_head_title:0 "Supreme priest"
     scythian_polytheism_divine_realm:0 "Devine realm"
@@ -69,7 +69,7 @@
     scythian_polytheism_knowledge_god_name_possessive:0 "$scythian_polytheism_high_god_name$'s"
 
     #War god Kopala Localization
-    scythian_polytheism_war_god_name:0 "Pitari Za"
+    scythian_polytheism_war_god_name:0 "Artimpasa"
     scythian_polytheism_war_god_name_possessive:0 "$scythian_polytheism_war_god_name$'s"
 
     #Trickster god Syrdon Localization
@@ -89,7 +89,7 @@
     scythian_polytheism_evil_god_saubarag:0 "Saubarag"
 
     #witch goddess
-    scythian_polytheism_witchgodname_artimpasa :0 "Artimpasa "
+    scythian_polytheism_witchgodname_artimpasa :0 "Anguipede"
     scythian_polytheism_witchgodname_artimpasa_possesive:0 "$scythian_polytheism_witchgodname_artimpasa$'s"
 
     #Devil god   
@@ -119,9 +119,9 @@
 
     #roman names
     #males
-    reserved_male_names:0 "scythian male names"
+    reserved_male_names:0 "Scythian male names"
     #Female 
-    reserved_female_names:0 "scythian female names"
+    reserved_female_names:0 "Scythian female names"
 
     #holy orders: 
     holy_order_sons_of_papaios:0 "Sons of Papaios"

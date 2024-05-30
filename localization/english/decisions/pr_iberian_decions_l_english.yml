@@ -1,0 +1,16 @@
+﻿l_english:
+#####################
+#Made by tom5667 
+######################
+
+#Choose main deity
+choose_main_deity_iberian_decision:0 "Choose your main deity"
+choose_main_deity_iberian_decision_desc:0 "For some extra help in daily life, I can choose one god as my personal main god"
+choose_main_deity_iberian_decision_tt:0 "You begin to live your life according to the values of"
+select_main_iberian_decision.select_reue:0 "Reue high god of the Lusitanians"
+select_main_iberian_decision.select_cariocecus:0 "CarioCecus god of war"
+select_main_iberian_decision.select_ataegina:0 "Ataegina Goddess of fertility"
+select_main_iberian_decision.select_lucubo:0 "Lucubo god of wealth"
+select_main_iberian_decision.select_arancio:0 "Arancio god of health"
+choose_main_deity_iberian_decision_tooltip:1 "Choose main god(dess)"
+choose_main_deity_iberian_decision_confirm:1 "Choose main god(dess)"

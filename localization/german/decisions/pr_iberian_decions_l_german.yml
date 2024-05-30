@@ -1,0 +1,16 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+
+#Choose main deity
+choose_main_deity_iberian_decision:0 "Wählen Sie Ihre Hauptgottheit"
+choose_main_deity_iberian_decision_desc:0 "Für zusätzliche Hilfe im täglichen Leben kann ich einen Gott als meinen persönlichen Hauptgott wählen"
+choose_main_deity_iberian_decision_tt:0 "Du beginnst, dein Leben nach den Werten von" zu leben.
+select_main_iberian_decision.select_reue:0 "Reue hoher Gott der Lusitanier"
+select_main_iberian_decision.select_cariocecus:0 "CarioCecus, Gott des Krieges"
+select_main_iberian_decision.select_ataegina:0 "Ataegina Göttin der Fruchtbarkeit"
+select_main_iberian_decision.select_lucubo:0 "Lucubo Gott des Reichtums"
+select_main_iberian_decision.select_arancio:0 "Arancio Gott der Gesundheit"
+choose_main_deity_iberian_decision_tooltip:1 "Hauptgottheit(en) wählen"
+choose_main_deity_iberian_decision_confirm:1 "Wähle Hauptgott(dess)"

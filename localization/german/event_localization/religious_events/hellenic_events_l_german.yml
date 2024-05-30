@@ -1,0 +1,75 @@
+﻿l_german:
+
+#Choose main deity Hellenic
+#choose your main deity hellenic event localization 
+h_cmd.001.t:0 "Hauptgottheit wählen"
+h_cmd.001.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+h_cmd.001.a:0 "Zeus"
+h_cmd.001.b:0 "Hera"
+h_cmd.001.c:0 "Ares"
+h_cmd.001.d:0 "Aphrodite"
+h_cmd.001.e:0 "Hermes"
+h_cmd.001.f:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkts"
+
+#Hauptgottheit wählen Mycenaean 
+mycenaean.001.t:0 "Hauptgottheit wählen"
+mycenaean.001.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+mycenaean.001.poseidon:0 "Poseidon"
+mycenaean.001.hermes:0 "Hermes"
+mycenaean.001.aphrodite:0 "Aphrodite"
+mycenaean.001.athena:0 "Athena"
+mycenaean.001.ares:0 "Ares"
+mycenaean.001.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkts"
+
+#Visiting temple of Zeus
+hellenismos.007.t:0 "Besuch des Tempel von $hellenism_high_god_name$"
+hellenismos.007.desc:0 "Um mein Reich zu regieren, brauche ich etwas Führung von $Hellenismus, hoher Gottname$. Nur er, der König der Götter, kann mir die Unterstützung geben, mein Reich auf gute Weise zu regieren."
+hellenismos.007.a:0 "Opfere ein weißes Tier"
+hellenismos.007.message.positive:0 "Gesegnet von $hellenism_high_god_name$"
+hellenismos.007.message.negative:0 "Unbegünstigt von $hellenism_high_god_name$"
+
+#Buy book about greek mythology 
+hellenismos.008.t:0 "Der Buchhändler"
+hellenismos.008.desc:0 "Als ich heute durch den Markt schlenderte, stieß ich auf einen Stand mit einigen Büchern. Es gab ein bestimmtes Buch, das mir ins Auge fiel, nämlich das über die griechische Mythologie. Es kostet ein paar Münzen, aber es lohnt sich."
+hellenismos.008.a:0 "Kaufen das Buch"
+ 
+#Offering to Demeter
+hellenismos.010.t:0 "Opfergabe an Demeter"
+hellenismos.010.desc:0 "Es ist fast Erntezeit. Um zusätzliche Hilfe zu bekommen, machen wir Demeter heute ein Angebot für eine gute Ernte in dieser Saison."
+hellenismos.010.a:0 "Machen Sie Demeter ein Opfer"
+hellenismos.010.message.positive:0 "Gesegnet von Demeter"
+hellenismos.010.message.negative:0 "Schlechte Ernte"
+
+hellenismos.017.t:0 "Ankunft in Delphi"
+hellenismos.017.desc:0 "Die Sonne ziert das Ägäische Meer und wirft einen warmen Schein auf den geschäftigen Hafen. Ich stehe inmitten einer Gruppe von Mitpilgern und unsere Herzen sind voller Vorfreude, während wir uns auf die Reise nach Delphi begeben, dem heiligen Heiligtum des antiken Griechenlands.\n\nWährend die Sonne untergeht, taucht sie den Himmel in Gold- und Purpurtöne Wir machen uns auf den Weg nach Delphi, dem spirituellen Herzen des antiken Griechenlands. Ein Gefühl der Vorfreude erfüllt mich, als ich diesen heiligen Boden betrete, den Geburtsort unzähliger Mythen und Legenden.\n\nWir bleiben bis zum nächsten Tag in einer örtlichen Taverne."
+hellenismos.017.a:0 "Ruh dich gut aus"
+
+hellenismos.018.t:0 "Delphi"
+hellenismos.018.desc.zealous:0 "Ein wunderschöner Tag heute in Delphi. Zuerst gingen wir zum Tempel von $hellenism_health_god_name$, wo die Pythia in die Zukunft blickt.\nDanach besuchte ich einige kleine Schreine, um anderen Göttern und Göttinnen Opfergaben zu überbringen."
+
+hellenismos.018.desc.delphi:0 "Heute besuchen wir zunächst die örtliche Arena, um uns griechisches Ringen anzusehen, gefolgt von einem Theaterstück.\nAm Abend besuchen wir den Tempel von $hellenism_health_god_name$, wo die Pythia in meinem Namen einige kleine Opfergaben an Apollo darbrachte."
+hellenismos.018.a:0 "Was für ein Tag"
+
+hellenismos.019.t:0 "Reise zurück nach Hause"
+hellenismos.019.desc:0 "Nach tagelanger Reise bin ich endlich wieder zu Hause. Ich fühle mich durch diese Pilgerreise wirklich revitalisiert, möge die Zukunft rosig aussehen und möge $hellenism_health_god_name$ mich vor Krankheiten schützen"
+hellenismos.019.a:0 "Schön, wieder zu Hause zu sein"
+
+
+#Embrace Dacian culture 
+hellenismos.016.t:0 "Hellen"
+hellenismos.016.desc:0 "Vor langer Zeit war unsere griechische Kultur eine blühende. Die Stadt Athen, der Geburtsort der Demokratie, war ein Leuchtfeuer der Hoffnung und des Wohlstands für die Welt.\n\nAber dann kamen die Römer und die griechische Kultur begann zu verfallen.\n\nJetzt, Jahrhunderte später, ist es an der Zeit Erobern Sie unsere antike griechische Kultur zurück. Mit Hilfe von Athene, der Göttin der Weisheit, können wir etwas über unsere Geschichte und Traditionen erfahren und ein neues Gefühl des Stolzes auf unser griechisches Erbe entwickeln."
+hellenismos.016.a:0 "Umarm die Hellenistische kultur"
+
+hellenismos.020.t:0 "Hauptgottheit wählen"
+hellenismos.020.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+hellenismos.020.zeus_amon:0 "Zeus Amon"
+hellenismos.020.alexandros_megalos:0 "Alexandros Megalos"
+hellenismos.020.hermes_trismegistus:0 "Hermes Trismegistos"
+hellenismos.020.isis:0 "Isis"
+hellenismos.020.harpocrates:0 "Harpocrates"
+hellenismos.020.ares:0 "Ares"
+hellenismos.020.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkts"
+
+hellenismos.021.t:0 "Adoptiere die ägyptischen Götter"
+hellenismos.021.desc:0 "Nach Monaten der Forschung und der Suche nach Orten, an denen die Anwesenheit der Götter und guten Vorzeichen beobachtet werden kann, ist es an der Zeit, einige Schreine zu bauen und neue Rituale zu schreiben."
+hellenismos.021.a:0 "Möge $graeco_egyptian_polytheism_high_god_name$ uns leiten"

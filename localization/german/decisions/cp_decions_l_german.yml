@@ -1,0 +1,165 @@
+﻿l_german:
+#####################
+#Made by tom5667
+######################
+
+#restore celtic priesthood
+cp_restore_high_priesthood_decision:0 "Keltisches Priestertum wiederherstellen"
+cp_restore_high_priesthood_decision_confirm:0 "Ein neues religiöses Oberhaupt einrichten"
+cp_restore_high_priesthood_decision_desc:0 "Wenn der [ROOT.Char.GetFaith.GetAdjective]-Glaube in Europa Fuß fasst, wird die Zeit reif sein für die Wiedereinführung eines richtigen druidischen Priestertums."
+cp_restore_high_priesthood_decision_tooltip:0 "Das [ROOT.Char.GetFaith.GetAdjective]-Priestertum wird eingeführt."
+cp_restore_high_priesthood_decision_effect_tooltip:0 "Das [THIS.Char.GetFaith.GetAdjective] Priestertum ist etabliert"
+
+
+#Gälisch Irisches Hochkönigtum wiederherstellen 
+restore_high_kingdom:0 "Das irische Hochkönigreich wird wiederhergestellt"
+restore_high_kingdom_desc:0 "Jetzt, da alle irischen Herzogtümer wieder unter einem Banner stehen, können wir das alte irische Hochkönigreich wiederherstellen"
+restore_high_kingdom_of_ireland_effect_tooltip:0 "Wiederhergestelltes irisches Hochkönigreich"
+restore_high_kingdom_tooltip:1 "Es ist an der Zeit, das alte irische Hochkönigreich zurückzufordern"
+restore_high_kingdom_confirm:0 "Hochkönigreich schaffen"
+
+#Gaelic restore Celtic Empire 
+create_celtic_empire_decision:0 "Keltisches Reich schaffen"
+create_celtic_empire_decision_desc:0 "Nun, da die [Königreiche |E] Schottland, Irland, Wales und England unter einem Banner vereint sind, können wir das Keltische Reich erschaffen"
+create_celtic_empire_effect_tooltip:0 "Das keltische Reich erschaffen" 
+create_celtic_empire_decision_tooltip:1 "Es ist an der Zeit, alle keltischen Inseln zurückzufordern"
+create_celtic_empire_decision_confirm:0 "Keltisches Reich erschaffen"
+
+set_capital_dublin_decision:0 "Dublin zur Hauptstadt machen"
+set_capital_dublin_decision_desc:0 "Dublin zur Hauptstadt von Ardrí na hÉireann machen"
+set_capital_dublin_decision_tooltip:1 "Hauptstadt zu Dublin machen"
+set_capital_dublin_decision_confirm:0 "Hauptstadt ändern"
+
+#Choose main deity decision 
+choose_main_deity_celtic_decision:0 "Hauptgottheit wählen"
+choose_main_deity_celtic_decision_desc:0 "Für zusätzliche Hilfe im täglichen Leben kann ich einen Gott als meinen persönlichen Hauptgott wählen"
+choose_main_deity_celtic_decision_tooltip:1 "Hauptgott(e) wählen"
+choose_main_deity_celtic_decision_confirm:1 "Wähle Hauptgott(dess)"
+
+choose_main_deity_celtic_decision_tt:0 "Du beginnst dein Leben nach den Werten von" zu leben
+select_main_deity_celtic_decision.select_an_dagda:0 "An Dagda dem großen Gott"
+select_main_deity_celtic_decision.select_lugh:0 "Lugh hat Geschick und Meisterschaft in mehreren Disziplinen"
+select_main_deity_celtic_decision.select_brigid:0 "Brigid, Göttin von Herd und Heim"
+select_main_deity_celtic_decision.select_nemain:0 "Die Nemain Göttin des Krieges"
+select_main_deity_celtic_decision.select_ecna:0 "Ecna, Göttin der Weisheit"
+
+select_main_deity_celtic_decision.select_taranis:0 "Taranis Gott des Donners"
+select_main_deity_celtic_decision.select_lugus_brythonic:0 "Lugus, Gott des Handels"
+select_main_deity_celtic_decision.select_arianrhod:0 "Arianrhod Göttin der Fruchtbarkeit und Schönheit"
+select_main_deity_celtic_decision.select_andraste:0 "Andraste Göttin des Krieges, der Hasennatur und der Vormundschaft"
+select_main_deity_celtic_decision.select_brigantia:0 "Brigantia Göttin der Weisheit, der Festungen und der Gesellschaft"
+
+select_main_deity_celtic_decision.select_toutatis:0 "Toutatis Gott des Donners"
+select_main_deity_celtic_decision.select_lughus:0 "Lughus, Gott des Handels"
+select_main_deity_celtic_decision.select_rosmerta:0 "Rosmerta Göttin der Fruchtbarkeit"
+select_main_deity_celtic_decision.select_cicolluis:0 "Cicolluis Gott des Krieges"
+select_main_deity_celtic_decision.select_belisama:0 "Belisama Göttin der Weisheit"
+
+select_main_deity_celtic_decision.select_reue:0 "Reue hoher Gott und Gott des Donners"
+select_main_deity_celtic_decision.select_arancia:0 "Arancia Gott der Gesundheit"
+select_main_deity_celtic_decision.select_nabia:0 "Nabia Göttin der Fruchtbarkeit"
+select_main_deity_celtic_decision.select_lugus:0 "Lugei, Gott des Handels und des Reichtums"
+select_main_deity_celtic_decision.select_bandua:0 "Teleno Gott des Krieges"
+
+celtic_solstice_summer_decision:0 "Sommersonnenwende halten"
+celtic_solstice_summer_decision_tooltip:1 "Sommersonnenwende festhalten"
+celtic_solstice_summer_decision_desc:0 "As the winds begin to chill and the Seas begin to rise, A stormy Horizon looks to the people of the [ROOT.Char.GetPrimaryTitle.GetName], In order to ensure a bountiful harvest and for keeping the realm united, I must convene an audience with the gods before the Winter-Spirits arrive and Snow covers the land."
+celtic_solstice_summer_decision_confirm:1 "Bereite das Reich vor"
+
+celtic_solstice_winter_decision:0 "Wintersonnenwende abhalten"
+celtic_solstice_winter_decision_tooltip:1 "Wintersonnenwende festhalten"
+celtic_solstice_winter_decision_desc:0 "Die Luft hat begonnen, sich langsam zu erwärmen, während das neue Jahr beginnt. Eine strahlende Zukunft blickt auf die Menschen des [ROOT.Char.GetPrimaryTitle.GetName], um diese Zukunft zu sichern, muss ich die Götter und die Geister um ihren Segen bitten, bevor die neue Saison beginnt. "
+celtic_solstice_winter_decision_confirm:1 "Prepare the Realm"
+
+#Umarmt die keltische Kultur 
+gaulish_culture_decision:0 "Umarmt die gallische Kultur"
+gaulish_culture_decision_desc:0 "Wir haben unsere alte Religion zurück, jetzt ist es an der Zeit, die gallischen Tugenden wieder einzuführen."
+gaulish_culture_decision_tooltip:0 "Gallische Kultur wieder einführen"
+gaulish_culture_decision_confirm:0 "Bestätigen"
+
+eburones_culture_decision:0 "Die Kultur der Eburonen annehmen"
+eburones_culture_decision_desc:0 "Wir haben unsere alte Religion zurück, jetzt ist es an der Zeit, die Tugenden der Eburonen wieder einzuführen."
+eburones_culture_decision_tooltip:0 "Eburones-Kultur wieder einführen"
+eburones_culture_decision_confirm:0 "Bestätigen"
+
+brythonic_culture_decision:0 "Brythonische Kultur annehmen"
+brythonic_culture_decision_desc:0 "Wir haben unsere alte Religion zurück, jetzt ist es an der Zeit, die brythonischen Tugenden wieder einzuführen."
+brythonic_culture_decision_tooltip:0 "Brythonische Kultur wieder einführen"
+brythonic_culture_decision_confirm:0 "Bestätigen"
+
+manx_culture_decision:0 "Die Manx-Kultur annehmen"
+manx_culture_decision_desc:0 "Wir haben unsere alte Religion zurück, jetzt ist es an der Zeit, die manxischen Tugenden wieder einzuführen."
+manx_culture_decision_tooltip:0 "Die Manx-Kultur wieder einführen"
+manx_culture_decision_confirm:0 "Bestätigen"
+
+create_lusitania_decision:0 "Wiederherstellung des Königreichs Lusitanien"
+create_lusitania_desc:0 "Viel zu lange waren die lusitanischen Ländereien unter der Kontrolle unserer Feinde, für die unsere Vorfahren gelebt und gekämpft haben."
+create_lusitania_effect_tooltip:0 "Wiederhergestelltes Kigdom von Lusitanien"
+create_lusitania_effect_tooltip:1 "Es ist an der Zeit, das Königreich Lusitanien zurückzuerobern"
+create_lusitania_decision_tooltip:1 "Es ist an der Zeit, Lusitanien zurückzufordern"
+create_lusitania_decision_confirm:0 "Königreich Lusitania erschaffen"
+
+create_galicia_decision:0 "Wiederherstellung des Königreichs Gallaecia"
+create_galicia_decision_desc:0 "Viel zu lange waren die gallaecischen Ländereien, für die unsere Vorfahren lebten und kämpften, unter der Kontrolle unserer Feinde."
+create_galicia_effect_tooltip:0 "Wiederhergestelltes Kigdom von Gallaecia"
+create_illyria_effect_tooltip:1 "Es ist an der Zeit, das Königreich Gallaecia zurückzuerobern"
+create_galicia_decision_tooltip:1 "Es ist an der Zeit, Gallaecia zurückzufordern"
+create_galicia_decision_confirm:0 "Königreich Gallaecia erschaffen"
+
+create_vasconia_decision:0 "Wiederherstellung des Königreichs Vasconia"
+create_vasconia_desc:0 "Viel zu lange waren die vasconischen Länder unter der Kontrolle unserer Feinde, für die unsere Vorfahren lebten und kämpften."
+create_vasconia_effect_tooltip:0 "Wiederhergestelltes Königreich von Vasconia"
+create_vasconia_effect_tooltip:1 "Es ist an der Zeit, das Königreich Vasconia zurückzuerobern"
+create_vasconia_decision_tooltip:1 "Es ist an der Zeit, Vasconia zurückzufordern"
+create_vasconia_decision_confirm:0 "Königreich Vasconia erschaffen"
+
+create_tartessia_decision:0 "Wiederherstellung des Königreichs Turdetanien"
+create_tartessia_desc:0 "Viel zu lange waren die Ländereien Turdetaniens unter der Kontrolle unserer Feinde, für die unsere Vorfahren gelebt und gekämpft haben."
+create_tartessia_effect_tooltip:0 "Wiederhergestelltes Königreich von Turdetanien"
+create_tartessia_effect_tooltip:1 "Es ist an der Zeit, das Königreich Turdetanien zurückzuerobern"
+create_tartessia_decision_tooltip:1 "Es ist an der Zeit, Turdetanien zurückzufordern"
+create_tartessia_decision_confirm:0 "Königreich Turdetanien erschaffen"
+
+create_celtiberia_decision:0 "Wiederherstellung des Königreichs Keltiberien"
+create_celtiberia_desc0 "Viel zu lange waren die keltiberischen Länder unter der Kontrolle unserer Feinde, für die unsere Vorfahren lebten und kämpften."
+create_celtiberia_effect_tooltip:0 "Wiederhergestelltes Königreich von Keltiberia"
+create_celtiberia_effect_tooltip:1 "Es ist an der Zeit, das Königreich Keltiberien zurückzuerobern"
+create_celtiberia_decision_tooltip:1 "Es ist an der Zeit, Celtiberia zurückzufordern"
+create_celtiberia_decision_confirm:0 "Königreich Keltiberien erschaffen"
+
+create_iberia_decision:0 "Königreich Iberia wiederherstellen"
+create_iberia_desc:0 "Unser Land war so lange verloren, aber jetzt, nach vielen Jahren des Kampfes, ist das Land unserer Vorfahren wieder in unserer Hand.
+create_iberia_effect_tooltip:0 "Wiederhergestelltes Königreich von Iberia"
+create_iberia_effect_tooltip:1 "Es ist an der Zeit, das Königreich Iberia zurückzuerobern"
+create_iberia_decision:1 "Es ist an der Zeit, Iberia zurückzufordern"
+create_iberia_decision_confirm:0 "Königreich Iberia erschaffen"
+
+push_out_the_sassenach_saga_decision:0 "Vertreibe die Sassenach"
+push_out_the_sassenach_decision_desc:0 "Jahrhunderte der Invasion durch germanische Stämme haben ihren Tribut von unserer Lebensweise gefordert, jetzt ist es an der Zeit, wieder zu den Waffen zu greifen und sie zu vertreiben"
+push_out_the_sassenach_saga_decision_tooltip:0 "Vertreibe die Sassenach"
+push_out_the_sassenach_saga_decision_confirm:0 "In den Krieg"
+
+celtic_reconquest_ireland_decision:0 "Keltische Rückeroberung von Irland"
+celtic_reconquest_ireland_decision_desc:0 "Vor den Wikingerinvasionen gab es in Irland nur interne Kämpfe zwischen den Stämmen, aber wir wissen, dass wir unsere Ländereien gegen die Invasoren verlieren könnten, das können wir nicht zulassen! Kämpfe und erobere Irland zurück, um deine eigene Saga für ein keltisches Reich aufzubauen und fortzusetzen.
+celtic_reconquest_ireland_decision_tooltip:0 "Rückeroberung von Irland"
+celtic_reconquest_ireland_decision_confirm:0 "Bestätigen"
+
+celtic_reconquest_alba_decision:0 "Keltische Rückeroberung von Schottland"
+celtic_reconquest_alba_decision_desc:0 "Die Stämme in Schottland sind gespalten und streiten darüber, welcher Clan den nächsten König stellen soll. Doch nun ist es an der Zeit, alle unter einer Krone zu vereinen und alle internen Streitigkeiten zu beenden. Denn wir haben einen gemeinsamen Feind, die Sassenach"
+celtic_reconquest_alba_decision_tooltip:0 "Keltische Rückeroberung von Schottland"
+celtic_reconquest_alba_decision_confirm:0 "Irland ist gesichert"
+
+celtic_reconquest_wales_decision:0 "Keltische Rückeroberung von Wales"
+celtic_reconquest_wales_decision_desc:0 "Natürlich hätten wir auch direkt auf England losgehen können, aber sie wären viel zu stark, um ihnen direkt gegenüberzutreten, wenn wir England umzingeln, wird es viel einfacher sein"
+celtic_reconquest_wales_decision_tooltip:0 "Keltische Rückeroberung von Wales"
+celtic_reconquest_wales_decision_confirm:0 "Wales ist gesichert"
+
+celtic_reconquest_albion_decision:0 "Keltische Rückeroberung von Albion"
+celtic_reconquest_albion_decision_desc:0 "Irland, Wales und Schottland sind unter unserer Kontrolle und nun ist auch England gefallen"
+celtic_reconquest_albion_decision_tooltip:0 "Keltische Rückeroberung von Albion"
+celtic_reconquest_albion_decision_confirm:0 "England ist gesichert"
+
+celtic_conquest_brittany_decision:0 "Keltische Eroberung der Bretagne"
+celtic_conquest_brittany_decision_desc:0 "Das keltische Reich ist komplett, nun ist es an der Zeit, den Blick über den Kanal zu richten, mit der Eroberung der Bretagne können wir uns das so dringend benötigte Standbein schaffen."
+celtic_conquest_brittany_decision_tooltip:0 "Keltische Eroberung der Bretagne"
+celtic_conquest_brittany_decision_confirm:0 "Bretagne ist gesichert"

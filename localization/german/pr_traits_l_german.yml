@@ -1,0 +1,132 @@
+﻿l_german:
+#####################
+#Made by tom5667
+######################
+#V0.1 added religious family and cdr
+#V0.2 integrated more religous doctrines by scarelos, Added Eluesinian Mysteries
+#V0.3 Added cult of isis, serapis and mithras. Added some missing localization
+#V0.4 Added beta version of return roman polytheism decision. 
+######################
+  
+  #choose main deity traits localization 
+  trait_cdr_cmd1_religion:0 "Anhänger von Iupiter"
+  trait_cdr_cmd1_religion_desc:0 "Anhänger von Iupiter, Gott des Donners und Ehemann von Iuno"
+
+  trait_cdr_cmd2_religion:0 "Anhänger von Iuno"
+  trait_cdr_cmd2_religion_desc:0 "Anhänger von Juno, Beschützerin der Frau von Rom und Ehefrau von Jupiter"
+
+  trait_cdr_cmd3_religion:0 "Anhänger von Mars"
+  trait_cdr_cmd3_religion_desc:0 "Anhänger von Mars, gott des krieges"
+
+  trait_cdr_cmd4_religion:0 "Anhänger von Venus"
+  trait_cdr_cmd4_religion_desc:0 "Anhänger von Venus, Göttin der Liebe und Fruchtbarkeit"
+
+  trait_cdr_cmd5_religion:0 "Anhänger von Lares"
+  trait_cdr_cmd5_religion_desc:0 "Anhänger von the Lares, Beschützer des Hauses"
+
+  trait_cdr_cmd6_religion:0 "Anhänger von Mercurius"
+  trait_cdr_cmd6_religion_desc:0 "Anhänger von Mercurius, Gott des Handels"
+
+  trait_cdr_cmd7_religion:0 "Anhänger von Minerva"
+  trait_cdr_cmd7_religion_desc:0 "Anhänger von Minerva, Göttin der Weisheit"
+
+  trait_cdr_cmd8_religion:0 "Anhänger von Apollo"
+  trait_cdr_cmd8_religion_desc:0 "Anhänger von Apollo, Gott der Heilung"
+
+
+  #choose main deity traits hellenic localization 
+  trait_h_cmd1_religion:0 "Anhänger von Zeus"
+  trait_h_cmd1_religion_desc:0 "Anhänger von Zeus, Gott des Donners und höchster Gott. Ehemann von Hera"
+
+  trait_h_cmd2_religion:0 "Anhänger von Hera"
+  trait_h_cmd2_religion_desc:0 "Anhänger von Hera, Ehefrau des Zeus und Beschützerin der Frau"
+
+  trait_h_cmd3_religion:0 "Anhänger von Ares"
+  trait_h_cmd3_religion_desc:0 "Anhänger von Ares, gott des krieges"
+
+  trait_h_cmd4_religion:0 "Anhänger von Aphrodite"
+  trait_h_cmd4_religion_desc:0 "Anhänger von Aphrodite, Göttin der Liebe und Fruchtbarkeit"
+
+  trait_h_cmd5_religion:0 "Anhänger von Hermes"
+  trait_h_cmd5_religion_desc:0 "Anhänger von Hermes, Gott des Handels"
+
+  #choose main deity Mithraic Mysteries traits localization 
+  trait_mm_cmd1_religion:0 "Anhänger von Mithras"
+  trait_mm_cmd1_religion_desc:0 "Anhänger von Mithras, gott des krieges"
+
+  trait_mm_cmd2_religion:0 "Anhänger von Arimanius"
+  trait_mm_cmd2_religion_desc:0 "Anhänger von Arimanius, er soll ein löwenköpfiger Gott sein und ist die hellenisch-romanisierte Form des zoroastrischen Geistes Angra Mainyu. Obwohl es sich ursprünglich um eine Darstellung des Bösen handelte, wie von Plutarch bestätigt, sind die göttlichen Eigenschaften des mithraischen Arimanius höchst umstritten und immer noch fraglich."
+
+  trait_mm_cmd3_religion:0 "Anhänger von Oromazes"
+  trait_mm_cmd3_religion_desc:0 "Anhänger von Oromazes, ursprünglich der zoroastrische Gott Ahura Mazda, wird in der mithraischen Dokumentation nicht bestätigt, aber man kann davon ausgehen, dass er im mithraischen Kult eine gewisse Rolle spielte."
+
+  #cult traits 
+  trait_mithras_cult:0 "Mithras cultist"
+  trait_mithras_cult_desc:0 "The Mithraic Cult, auch bekannt als die Mithrasmysterien, war ein römischer Mysterienkult, der den solaren Stiertötungsgott Mithras verehrte, der durch die im Osten stationierten Legionen und ihre Umsiedlung in der Nähe der Donau an Bedeutung erlangte. Obwohl er den Namen persischer Mithra trägt, wird die Verbindung zwischen den beiden heftig diskutiert, da einige Gelehrte behaupten, dass Mithras eher mit dem sogdischen manichäischen Mithra und den semitischen Göttern Shamash und Nergal verwandt ist.
+"
+
+  trait_isis_cult:0 "Isis cultist"
+  trait_isis_cult_desc:0 "Der Isis-Kult entstand im 3. Jahrhundert v. Chr. bis etwa zum 2. Jahrhundert n. Chr. Es enthielt mehrere traditionelle ägyptische Elemente, wie z. B. die starke Betonung der Wiedergeburt und des Jenseits, die Kahlkahlung des Kopfes bis zur Glatze und die Kastration des Selbst."
+
+  trait_serapis_cult:0 "Serapis cultist"
+  trait_serapis_cult_desc:0 "TDer Serapis-Kult wurde im dritten Jahrhundert v. Chr. auf Befehl des griechischen Pharaos Ptolemaios I. Soter aus dem ptolemäischen Königreich vorangetrieben und machte ihn zum Schutzpatron der Ptolomäer-Dynastie und Alexandrias. In der Römerzeit erfreute sich Serapis immer größerer Beliebtheit"
+
+  trait_eleusinian_cult:0 "Eluesinian cultist"
+  trait_eleusinian_cult_desc:0 "Die eleusinischen Mysterien waren ein Kult, der der Verehrung von Demeter und ihrer Tochter Persephone gewidmet war. Es wird angenommen, dass der Kult seinen Ursprung in der mykenischen Zeit hat. Wie viele griechisch-römische Mysterienkulte legen die eleusinischen Mysterien großen Wert auf das Leben nach dem Tod, sowohl nach dem Tod als auch auf der Reise dorthin unter Drogeneinfluss."
+
+  trait_sol_invictus_cult:0 "Sol Invictus cultist"
+  trait_sol_invictus_cult_desc:0 "Sol Invictus (Unbezwingbare Sonne) ist eine Fortsetzung des alten Sonnenkults, der 274 n. Chr. von Kaiser Aurelian gegründet wurde. Er machte ihn zu einem der wichtigsten Kulte. Der Kult verschwand 387 n. Chr. größtenteils"
+
+  trait_imperial_cult:0 "Emperor cultist"
+  trait_imperial_cult_desc:0 "Der Serapis-Kult wurde im dritten Jahrhundert v. Chr. auf Befehl des griechischen Pharaos Ptolemaios I. Soter aus dem ptolemäischen Königreich vorangetrieben und ernannte ihn zum Schutzpatron der Ptolomäer-Dynastie und Alexandrias. In der Römerzeit erfreute sich Serapis immer größerer Beliebtheit"
+
+  #Cult proceding 
+  #lvl's of initiation mithras cult from top to bottom lvl 1 to 7 
+  #Corax
+  trait_pr_corax_mithras:0 "Corax"
+  trait_pr_corax_mithras_desc:0 "Dieser Charakter hat den Corax-Titel im Mithras-Kult und den niedrigsten Rang im Mithras-Kult"
+  
+  #Nymphus
+  trait_pr_nymphus_mithras:0 "Nymphus"
+  trait_pr_nymphus_mithras_desc:0 "Dieser Charakter trägt im Mithras-Kult den Nymphus-Titel"
+  
+  #Miles
+  trait_pr_miles_mithras:0 "Miles"
+  trait_pr_miles_mithras_desc:0 "Dieser Charakter trägt den Miles-Titel im Mithras-Kult"
+
+  #Leo
+  trait_pr_leo_mithras:0 "Leo"
+  trait_pr_leo_mithras_desc:0 "Dieser Charakter trägt im Mithras-Kult den Leo-Titel"
+
+  #Perses
+  trait_pr_perses_mithras:0 "Perses"
+  trait_pr_perses_mithras_desc:0 "Dieser Charakter trägt im Mithras-Kult den Perses-Titel"
+
+  #Heliodromus
+  trait_pr_heliodromus_mithras:0 "Heliodromus"
+  trait_pr_heliodromus_mithras_desc:0 "Dieser Charakter trägt im Mithras-Kult den Titel Heliodromus"
+
+  #Pater
+  trait_pr_pater_mithras:0 "Pater"
+  trait_pr_pater_mithras_desc:0 "Dieser Charakter trägt den Titel Pater, den höchsten Rang des Mithras-Kultes"
+
+  #Kemetic choose main deity traits
+  #Amun Ra
+  trait_kemetic_cmd1_religion:0 "Anhänger von Amun Ra"
+  trait_kemetic_cmd1_religion_desc:0 "Anhänger von der höchste Gott Amun Ra"
+  
+  #Ra
+  trait_kemetic_cmd2_religion:0 "Anhänger von Ra"
+  trait_kemetic_cmd2_religion_desc:0 "Anhänger von Sonnengott Ra"
+
+  #Isis
+  trait_kemetic_cmd3_religion:0 "Anhänger von Isis"
+  trait_kemetic_cmd3_religion_desc:0 "Anhänger von Isis, beschützerin der Königreiche und Göttin der Weisheit"
+
+  #Montu
+  trait_kemetic_cmd4_religion:0 "Anhänger von Montu"
+  trait_kemetic_cmd4_religion_desc:0 "Anhänger von kriegs Gott Montu"
+   
+  #Hathor
+  trait_kemetic_cmd5_religion:0 "Anhänger von Hathor"
+  trait_kemetic_cmd5_religion_desc:0 "Anhänger der Göttin der Mutterschaft, Liebe und Fruchtbarkeit Hathor"

@@ -10,8 +10,6 @@
 	traditions = {
 		tradition_tribe_unity
 		tradition_stand_and_fight
-		#tradition_hussar
-		#trad
 		tradition_zealous_people
 	}
 	# FP1 Traditions

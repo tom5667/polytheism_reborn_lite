@@ -1,0 +1,48 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+
+# Hauptgottheit wählen
+choose_main_deity_dacian_decision:0 "Hauptgottheit wählen"
+choose_main_deity_dacian_decision_tt:0 "Du beginnst, dein Leben nach den Werten von" zu leben
+select_main_deity_dacian_decision.select_gebeleizis:0 "Gebeleizis hoher Gott der Daker"
+select_main_deity_dacian_decision.select_zalmoxis:0 "Zalmoxis Gott des Jenseits und der Weisheit"
+select_main_deity_dacian_decision.select_dionysus:0 "Dionysos, Gott der Fruchtbarkeit und der Ernte"
+select_main_deity_dacian_decision.select_pleistoros:0 "Pleistoros Gott des Krieges"
+select_main_deity_dacian_decision.select_derzelas:0 "Derzales Gott der Gesundheit"
+choose_main_deity_dacian_decision_tooltip:1 "Hauptgott(e) wählen"
+choose_main_deity_dacian_decision_confirm:1 "Wähle Hauptgott(dess)"
+
+dacian_edc_decision:0 "Dakische oder thrakische Kultur annehmen"
+dacian_edc_decision_desc:0 "Wir haben unsere alte Religion zurück, jetzt ist es an der Zeit, die dakischen oder thrakischen Tugenden wieder einzuführen."
+dacian_edc_decision_tooltip:0 "Eine der Kulturen zurückgeben"
+dacian_edc_decision_confirm:0 "Bestätigen"
+
+kingdom_of_dacia:0 "Wiederherstellung des Dakische Königreichs "
+kingdom_of_dacia_desc:0 "Viel zu lange waren die Karpaten unter der Kontrolle unserer Feinde, für die unsere Vorfahren gelebt und gekämpft haben."
+kingdom_of_dacia_effect_tooltip:0 "Wiederhergestelltes Königreich von Dacia"
+create_dacia_effect_tooltip:1 "Es ist an der Zeit, das Königreich Dacia zurückzuerobern"
+kingdom_of_dacia_tooltip:1 "Es ist an der Zeit, Dakien zurückzufordern"
+kingdom_of_dacia_confirm:0 "Königreich Dacia erschaffen"
+
+odrysian_kingdom_decision:0 "Odrysianisches Königreich wiederherstellen"
+odrysian_kingdom_decision_desc:0 "Viel zu lange waren die odrysianischen Ländereien, für die unsere Vorfahren lebten und kämpften, unter der Kontrolle unserer Feinde."
+odrysian_kingdom_decision_effect_tooltip:0 "Wiederhergestelltes Odrysianisches Königreich"
+create_dacia_effect_tooltip:1 "Es ist an der Zeit, das Odrysianische Königreich zurückzuerobern"
+odrysian_kingdom_decision_tooltip:1 "Es ist an der Zeit, das Odrysianische Königreich zurückzufordern"
+odrysian_kingdom_decision_confirm:0 "Odrysianisches Königreich erschaffen"
+
+set_capital_sarmizegetusa_decision:0 "Sarmizegetusa zur Hauptstadt machen"
+set_capital_sarmizegetusa_decision_desc:0 "Sarmizegetusa zur Hauptstadt von Dacia machen"
+set_capital_sarmizegetusa_decision_tooltip:1 "Sarmizegetusa zur Hauptstadt machen"
+set_capital_sarmizegetusa_decision_confirm:0 "Hauptstadt ändern"
+
+set_capital_seuthopolis_decision:0 "Seuthopolis zur Hauptstadt machen"
+set_capital_seuthopolis_decision_desc:0 "Seuthopolis zur Hauptstadt des Odrysischen Königreichs machen"
+set_capital_seuthopolis_decision_tooltip:1 "Hauptstadt nach Seuthopolis ändern"
+set_capital_seuthopolis_decision_confirm:0 "Hauptstadt ändern"
+
+zalmoxism_human_sacrifice_decision:0 "Menschenopfer für Zalmoxis"
+zalmoxism_human_sacrifice_desc:0 "Da wir uns im Krieg befinden, können wir uns entscheiden, Zalmoxis ein Menschenopfer zu bringen. Dies wird unseren Armeen einen bedeutenden Bonus in der Schlacht geben."
+zalmoxism_human_sacrifice_decision_confirm:0 "Wähle den feurigsten Krieger"

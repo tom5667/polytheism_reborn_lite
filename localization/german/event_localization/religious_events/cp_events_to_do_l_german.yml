@@ -1,0 +1,146 @@
+﻿l_german:
+#Restore celtic Priesthood
+cp_rph_decisions.0001.t:0 "Das neue [scoped_ruler.GetFaith.GetAdjective] Priestertum"
+cp_rph_decisions.0001.desc:0 "Nach der Zeit der Verbannung und Verfolgung nach den christlichen Eroberungen wurde der keltische Polytheismus von den Völkern Europas als der einzig wahre Weg zur Tugend akzeptiert. [scoped_ruler.GetTitledFirstName] hat die Einrichtung des Amtes des [new_priest.GetTitleTierName] angeordnet, eines Priesters der Priester, der über eine wiederhergestellte klerikale Hierarchie herrschen soll.\n\nDer [new_priest.GetTitleTierName] wird als höchste religiöse Autorität in der [scoped_ruler.GetFaith.GetAdjective] Welt dienen, mit Befugnissen, die von der Segnung zukünftiger Militärexpeditionen bis zur Gewährung von Scheidungen an verheiratete Paare reichen."
+cp_rph_decisions.0001.a:0 "Die Macht von An Dagda stärkt die Kelten erneut!"
+cp_rph_decisions.0002.desc.catholic:0 "Die verfluchten Anhänger von [scoped_ruler.GetFaith.HighGodName] haben genug Land und Einfluss zurückgewonnen, um unter dem Schutz von [scoped_ruler.GetTitledFirstName] eine blasphemische Priesterschaft wiederherzustellen.\n\nWenn diese Dämonen anbetenden Heiden nicht bald gestoppt werden, könnten sie die Ausbreitung des Christentums in Europa umkehren und die Gedanken ihrer unwissenden Untertanen mit Lügen und Perversionen vergiften."
+cp_rph_decisions.0002.desc.others:0 "Die seltsamen Anhänger des keltischen Polytheismus von [scoped_ruler.GetFaith.HighGodName] haben genug von ihren angestammten römischen Territorien zurückerobert, um eine funktionierende Priesterschaft wiederherzustellen.\n\nWenn sie nicht bald gestoppt werden, könnten sie die christliche Expansion umkehren und Europa unter dem Schutz ihrer alten Götter wiederherstellen."
+cp_rph_decisions.0002.a:0 "Ehre sei [scoped_ruler.GetFaith.HighGodName]!"
+cp_rph_decisions.0002.b:0 "Ihre Dämonen werden sie nicht vor der Macht von [ROOT.Char.GetFaith.HighGodName] schützen!"
+cp_rph_decisions.0002.c:0 "... keltische Götter anbeten?"
+
+
+ rhk.001.t:0 "Königreich erschaffen"
+ rhk.001.desc:0 "Nach Jahren der Kämpfe zwischen allen irischen Stämmen und der Abwehr von Eindringlingen ist es endlich an der Zeit, Ardrí na hÉireann, auch bekannt als das irische Hochkönigreich, wiederherzustellen."
+ rhk.001.a:0 "Ardrí na hÉireann ist wieder da"
+ ccmd.001.t:0 "Hauptgottheit wählen""
+ ccmd.001.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+ ccmd.001.an_dagda:0 "An Dagda"
+ ccmd.001.lugh:0 "Lugh"
+ ccmd.001.brigid:0 "Brigid"
+ ccmd.001.nemain:0 "Nemain"
+ ccmd.001.ecna:0 "Ecna"
+ ccmd.001.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+ ccmd.002.t:0 "Hauptgottheit wählen""
+ ccmd.002.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+ ccmd.002.taranis:0 "Taranis"
+ ccmd.002.lugus:0 "Lugus"
+ ccmd.002.arianrhod:0 "Arianrhod"
+ ccmd.002.andraste:0 "Andraste"
+ ccmd.002.brigantia:0 "Brigantia"
+ ccmd.002.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+ ccmd.003.t:0 "Hauptgottheit wählen""
+ ccmd.003.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+ ccmd.003.toutatis:0 "Toutatis"
+ ccmd.003.lughus:0 "Lughus"
+ ccmd.003.rosmerta:0 "Rosmerta"
+ ccmd.003.cicolluis:0 "Cicolluis"
+ ccmd.003.belisama:0 "Belisama"
+ ccmd.003.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+ ccmd.004.t:0 "Hauptgottheit wählen""
+ ccmd.004.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+ ccmd.004.reue:0 "$celtic_iberian_polytheism_high_god_name$"
+ ccmd.004.arancia:0 "$celtic_iberian_polytheism_health_god_name$"
+ ccmd.004.nabia:0 "$celtic_iberian_polytheism_fertility_god_name$" 
+ ccmd.004.lugus:0 "$celtic_iberian_polytheism_wealth_god_name$"
+ ccmd.004.bandua:0 "$celtic_iberian_polytheism_war_god_name$"
+ ccmd.004.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+ solstice.003.t:0 "Tairisem"
+ solstice.003.desc:0 "Mittwinter, es ist Zeit, die Feierlichkeiten für die Sonnengöttin Éatain Eachraidhe zu beginnen, möge sie den Schnee schmelzen, damit wir wieder mit der Arbeit auf unseren Feldern beginnen können."
+ solstice.003.a:0 "Versammeln das Reich zur Tairisem"
+
+ solstice.004.t:0 "Gheimhridh"
+ solstice.004.desc:0 "Mittwinter, es ist Zeit, die Feierlichkeiten für die Sonnengöttin Rhiannon zu beginnen. Möge sie den Schnee schmelzen, damit wir wieder mit der Arbeit auf unseren Feldern beginnen können."
+ solstice.004.a:0 "Versammeln das Reich zur Gheimhridh"
+
+ solstice.005.t:0 "Wintersonnenwende"
+ solstice.005.desc:0 "Mittwinter, es ist Zeit, die Feierlichkeiten für die Sonnengöttin Rhiannon zu beginnen. Möge sie den Schnee schmelzen, damit wir wieder mit der Arbeit auf unseren Feldern beginnen können."
+ solstice.005.a:0 "Versammeln das Reich zur Sonnenwende"
+
+ solstice.006.t:0 "Tairisem"
+ solstice.006.desc:0 "Es ist Mittsommer, die Zeit, in der die Festlichkeiten zu Ehren der Sonnengöttin Éatain Eachraidhe beginnen, um die Dämonen und bösen Geister aus dem Land zu vertreiben.\nMöge ihre Wärme uns eine gute Ernte bescheren und mögen unsere Beziehungen gesegnet sein."
+ solstice.006.a:0 "Versammeln das Reich zur Grainstad"
+
+ solstice.007.t:0 "Alban Hefin"
+ solstice.007.desc:0 "Endlich ist es Hochsommer und die Feierlichkeiten zu Ehren der Sonnengöttin Rhiannon beginnen, die Dämonen und böse Geister aus dem Land vertreiben soll.\nMöge ihre Wärme uns eine gute Ernte bescheren und mögen unsere Beziehungen gesegnet sein."
+ solstice.007.a:0 "Versammeln das Reich zur Alban Hefin"
+
+ solstice.008.t:0 "Sommersonnenwende"
+ solstice.008.desc:0 "Endlich ist es Hochsommer und die Feierlichkeiten zu Ehren der Sonnengöttin Rhiannon beginnen, die Dämonen und böse Geister aus dem Land vertreiben soll.\nMöge ihre Wärme uns eine gute Ernte bescheren und mögen unsere Beziehungen gesegnet sein."
+ solstice.008.a:0 "Versammeln das Reich zur Sonnewende"
+
+ #Embrace Manx culture 
+ celtic.001.t:0 "Umarm der Manx Kultur"
+ celtic.001.desc:0 "Viel zu lange haben wir die alten Tugenden der isle of Man."
+ celtic.001.a:0 "Umarm der the Manx culture"
+ 
+ #Umarm der Eburones culture 
+ celtic.002.t:0 "Umarm der Eburonische Kultur"
+ celtic.002.desc:0 "Viel zu lange haben wir die alten Tugenden der old Eburones wie Ambiorix und Cativolcus."
+ celtic.002.a:0 "Umarm der the Eburones culture"
+
+ #Umarm der Gaulish culture 
+ celtic.003.t:0 "Umarm der Gallische Kultur"
+ celtic.003.desc:0 "Viel zu lange haben wir die alten Tugenden der Galliër."
+ celtic.003.a:0 "Umarm der the Gaulish culture"
+ #Celtic Empire
+ celtic.004.t:0 "Celtic Empire"
+ celtic.004.desc:0 "Durch die Herrlichkeit der keltischen Götter sind unsere keltischen Brüder und Schwestern endlich unter einem Banner vereint, endlich sind die Sassenachs von unseren Inseln verschwunden"
+ celtic.004.a:0 "Die keltischen Länder sind vereint"
+
+ celtic.005.t:0 "Druidenkreis"
+ celtic.005.desc:0 "Wir stehen an einem Scheidepunkt eines neuen Glaubens. Meine Mitbrüder [ROOT.Char.GetFaith.GetAdherentNamePlural] erwarten sicherlich nicht, dass ich unsere Unterwerfung unter den bestehenden Druidenkreis erkläre.\n\nDoch vielleicht sind wir unseren Feinden stärker gegenübergestellt, wenn wir dem alten Druidenkreis Treue schwören..."
+ celtic.005.a:0 "$head_of_faith.0021.a$"
+ celtic.005.d:0 "Wir müssen weiterhin an festhalten an der [old_druid.GetFaith.GetAdjectiveNoTooltip] autorität!"
+ celtic.005.rejection_body:0 "lehnt das Versprechen ab"
+ celtic.005.acceptance_body:0 "nimmt das Versprechen an"
+ celtic.005.rejection.outcome:0 "Du bist gezwungen, Dein eigenen Weg zu gehen, unabhängig davon,"
+ celtic.005.d.rejection:0 "@piety_level_0_icon_pagan! [old_druid.GetTitledFirstNameNoTooltip] $celtic.005.rejection_body$"
+ celtic.005.d.acceptance:0 "@piety_level_3_icon_pagan! [old_druid.GetTitledFirstNameNoTooltip] $celtic.005.acceptance_body$"
+
+celtic.009.t:0 "Ankunft in Uisneach"
+celtic.009.desc:0 "Es war eine ziemliche Reise, aber endlich... sind wir da! Der heilige Hügel von Uisneach. Lasst uns hinaufgehen und unser Lager aufschlagen. Vielleicht können wir uns ein wenig umsehen, während die Diener das Lager aufschlagen."
+celtic.009.a:0 "Get to the Top"
+
+celtic.010.t:0 "Uisneach"
+celtic.010.desc.zealous:0 "Wir nähern uns der Spitze des Hügels, meine Wachen hinken jedoch noch hinterher, ihre Rüstungen machen den Aufstieg etwas anstrengender. Dies ist ein Ort, den jeder Anbeter von Tuatha De mindestens einmal in seinem Leben besuchen muss. Es wird gesagt, dass die Druiden hier die Zukunft und die Angelegenheiten des Reiches vorhersagten und Tiere opferten, um die Götter zu erfreuen. Schon wenn ich hier stehe, habe ich das Gefühl, als ob der Wind die Worte der Götter in meine Ohren trägt."
+celtic.010.desc.uisneach:0 "Endlich oben auf dem Hügel, dem Ort, an dem die Druiden lebten und wo das Bealtaine-Festival abgehalten wurde. Von hier aus kann ich das Lager sehen. Es fühlt sich ... angenehm an. Ich bin sicher, niemand hätte etwas dagegen, wenn ich ein kleines Nickerchen machen würde ... Oder?"
+
+celtic.010.a:0 "Es ist gut, treu zu sein"
+
+celtic.011.t:0 "Reise nach Hause"
+celtic.011.desc:0 "Es ist Zeit, nach Hause zurückzukehren, gestärkt durch das Wissen der großen Druiden und die göttliche Präsenz von $gaelic_polytheism_high_god_name$. Ich würde gerne bleiben und mehr von der Landschaft in mich aufnehmen, aber ich habe ein Reich zu regieren."
+celtic.011.a:0 "Schön, wieder zu Hause zu sein"
+
+ #Embrace Brythonic culture 
+ celtic.013.t:0 "Umarmen die brythonische Kultur"
+ celtic.013.desc:0 "Ich habe mich der alten Brythonen-Kultur immer verbunden gefühlt. Ich habe Geschichten über ihren Mut und ihre Stärke gelesen und sie bewundere sie immer wieder. Doch jahrhundertelang wurde die Brythonen-Kultur unterdrückt. Die Römer drangen in unser Land ein und zwangen uns ihre Kultur auf, und danach kamen die Sachsen. Doch nun haben wir endlich die Chance, unser Erbe zurückzufordern."
+ celtic.013.a:0 "Umarmen die brythonische Kultur"
+
+ celtic.014.t:0 "Verdränge den Sassenach"
+ celtic.014.desc:0 "Unsere keltischen Länder werden immer wieder von diesen Germanen überfallen, sie überfallen unsere Länder, kommen und gehen, wann immer sie wollen, immer und immer wieder.\n\nWir müssen jetzt handeln und sie Stück für Stück vertreiben!"
+ celtic.014.a:0 "Für [ROOT.Char.GetFaith.HighGodName]!"
+
+ celtic.015.t:0 "The Reconquest Saga"
+ celtic.015.desc.eire:0 "Nach Jahren des Kampfes gegen Wikinger und andere irische Stämme hat unsere Rückeroberung einen guten Start hingelegt. Jetzt, da unsere Insel sicher ist, können wir uns der Invasion unseres nächsten Ziels widmen.\n\nAber zuerst ist es Zeit, den Moment zu genießen, in dem Ardrí na hÉireann, auch bekannt als das irische Hochkönigreich, wieder in keltischer Hand ist."
+ celtic.015.desc.alba:0 "Schottland wurde nie von den Römern erobert, aber trotzdem gibt es Invasionen der Sassenach. Durch die Gründung des Königreichs Schottland können wir uns besser gegen Invasionen schützen. Wenn Schottland, Irland und Wales unter einem Banner stehen, können wir England erobern oder besser gesagt auf Schottisch-Gälisch Sasainn"
+ celtic.015.desc.wales:0 "Wales wurde von den Römern erobert und nach dem Fall des Römischen Reiches von den schottischen Stämmen erobert. Jetzt vereint unter dem Banner von Wales."
+ celtic.015.desc.albion:0 "Endlich der Sieg, ganz Sassenach ist verschwunden, das Land unserer Vorfahren ist endlich frei.\n\nMan könnte meinen, dies sei unsere letzte Station, aber nein, wir Kelten herrschten einst über die Länder, die heute von fränkischen Königen und Kaisern regiert werden.\nEs liegt in unserem Recht, diese verlorenen Gebiete zurückzuerobern und das goldene Zeitalter für das keltische Volk zurückzubringen!"
+ celtic.015.desc.brittany:0 "Unsere keltischen Brüder und Schwestern auf der anderen Seite des Kanals flohen vor Jahrhunderten aus den Sassenach, jetzt bieten sie uns einen Stützpunkt auf dem Festland."
+ celtic.015.a:0 "Vorwärts!"
+ celtic.015.b:0 "Vorwärts!"
+ celtic.015.c:0 "Vorwärts!"
+ celtic.015.d:0 "Möge [ROOT.Char.GetFaith.WarGodName] uns weiterführen!"
+ celtic.015.e:0 "Willkommen zurück in der Herde"
+ celtic.015.f:0 "Unser iberischer Stützpunkt ist zurück"
+
+ celtic.016.t:0 "Das Keltische Reich"
+ celtic.016.desc:0 "Nach der Rückeroberung der Inseln sind die Königreiche Irland, Schottland, Wales und England zwar vereint, aber immer noch getrennt.\n\nJedes Jahr kommen die bedeutendsten Lords zusammen, um über die Zukunft zu sprechen. Und um Stabilität in die Reiche zu bringen, ist es jetzt wichtig, die Königreiche zu einem einzigen Reich zu vereinen, wie es die Römer taten.\n\n Der einflussreichste Anführer der Lords stand von seinem Stuhl auf und sagte$:$ "Heute, mein Lord, möchten wir Sie bitten, die Krone des vereinigten keltischen Reiches mit all seinen Pflichten und Befugnissen anzunehmen. Werden Sie diese Ehre annehmen? Was wird Ihre Antwort sein?""
+ accepted_crown_of_celtic_empire_effect_tooltip:0 "Nimm die Krone des keltischen Reiches an"
+ celtic.016.a:0 "Eine normale Krönung genügt"
+ #celtic.016.b:0 "Ask the Arch druid to coronate you"
+ celtic.016.c:0 "Noch nicht"

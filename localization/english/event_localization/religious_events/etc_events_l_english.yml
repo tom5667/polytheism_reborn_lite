@@ -1,15 +1,5 @@
 ﻿l_english:
 
-etc_sr.002.desc.intro:0 "This is our chance to bring the religion back to state religion."
-etc_sr.002.desc.vassals:0 "test vassals desc"
-etc_sr.002.desc_vanilla:0 "test vanilla desc"
-etc_sr.002.b:0 "Convert willing vassals"
-etc_sr.002.c:0 "Those who aren't polytheist are probably horrified"
-etc_sr.002.d:0 "There will be people who just dont care"
-#event modifier 
-return_etc_sr_decision_scripted_effect.county_conversions.tt:0 "Let's hope vassals want to convert"
-
-
 #choose main deity
 etc.007.t:0 "Choose main deity"
 etc.007.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or godesses"

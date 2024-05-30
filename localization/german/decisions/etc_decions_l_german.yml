@@ -1,0 +1,40 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+
+# Return Etruscan polytheism Decision 
+etc_return_decision:0 "Etruskische Vielgötterei"
+etc_return_decision_desc:0 "Ich frage mich, wie die alte etruskische Religion aussah"
+etc_return_decision_tooltip:1 "Wie funktionierte die antike Religion" 
+etc_return_decision_confirm:1 "Reise nach "
+
+#Etruskischen Polytheismus zur Staatsreligion machen
+etc_sr_decision:0 "Etruskische Vielgötterei zur Staatsreligion machen"
+etc_sr_decision_desc:0 "Es ist an der Zeit, den etruskischen Polytheismus wieder zu unserer Staatsreligion zu machen"
+etc_sr_decision_tooltip:1 "Die etruskische Vielgötterei wieder zur Staatsreligion zu machen, wäre großartig"
+etc_sr_decision_confirm:1 "Let's do this"
+
+#Hauptgottheit wählen
+choose_main_deity_etruscan_decision:0 "Hauptgottheit wählen"
+choose_main_deity_etruscan_decision_desc:0 "Für zusätzliche Hilfe im täglichen Leben kann ich einen Gott als meinen persönlichen Hauptgott wählen"
+
+select_main_deity_etruscan_decision.select_tinia:0 "Tinia Hochgott der Etrusker"
+select_main_deity_etruscan_decision.select_nortia:0 "Nortia Göttin der Fruchtbarkeit"
+select_main_deity_etruscan_decision.select_turms:0 "Turms Gott des Reichtums"
+select_main_deity_etruscan_decision.select_menrva:0 "Menrva Göttin der Weisheit"
+select_main_deity_etruscan_decision.select_maris:0 "Maris Gott des Krieges"
+choose_main_deity_etruscan_decision_tooltip:1 "Hauptgott(e) wählen"
+choose_main_deity_etruscan_decision_confirm:1 "Wähle Hauptgott(e)"
+
+create_etruria_decision:0 "Etrurien erschaffen"
+create_etruria_decision_desc:0 "Etrurien ein lange verlorenes Königreich nach Jahrhunderten der römischen Herrschaft und danach der Langobarden"
+create_etruria_decision_effect_tooltip:0 "Erschaffe [Königreich|E] von Etrurien"
+create_etruria_decision_tooltip:0 "Erschafft [Königreich|E] von Etrurien"
+create_etruria_decision_confirm:1 "Erschafft Etrurien"
+
+set_capital_pisa_decision:0 "Macht Pisa zur Hauptstadt"
+set_capital_pisa_decision_desc:0 "Pisa zur Hauptstadt von Etrurien machen".
+set_capital_pisa_decision_tooltip:1 "Hauptstadt zu Pisa machen"
+set_capital_pisa_decision_confirm:0 "Hauptstadt ändern"
+

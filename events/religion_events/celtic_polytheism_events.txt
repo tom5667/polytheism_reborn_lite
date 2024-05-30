@@ -17,6 +17,821 @@ namespace = feast_main_befriend
 namespace = cult
 namespace = celtic 
 
+#Return Gaelic polytheism
+gp.001 = {
+	type = character_event
+	title = gp.001.t
+	desc = gp.001.desc
+	theme ==hunt_activity
+	 =right_portrait = {
+			character = root
+			animation = personality_content
+	}
+
+	option = {
+		name = gp.001.a
+		trigger_event = gp.002
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions_convert
+			target = flag:flag_restored_convert
+		}
+	}
+}
+
+gp.002 = { 
+	type = character_event
+	title = gp.002.t
+	desc = gp.002.desc
+	theme = learning_scholarship_focus
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	option = { #Proceed
+		name = gp.002.a
+		trigger_event = gp.003
+	}
+	option = { #Stop
+		name = gp.002.b
+		remove_trait = pilgrim
+		clear_global_variable_list = unavailable_unique_decisions_convert
+	}
+}
+
+gp.003 = { 
+	type = character_event
+	title = gp.003.t
+	desc = gp.003.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	#proceed
+	option = {
+		name = gp.003.a
+		trigger_event = gp.004
+	}
+	#stop
+	option = {
+		name = gp.003.b
+		trigger_event = gp.004
+		add_piety = 500 
+		hidden_effect ={
+			clear_global_variable_list = unavailable_unique_decisions_convert
+			remove_trait = pilgrim 
+		}
+	}	
+}
+
+gp.004 = {
+	type = character_event
+	title = gp.004.t
+	desc = gp.004.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	option = {
+		name = gp.004.a
+		trigger_event = gp.005
+	}
+}
+
+gp.005 = {
+	type = character_event
+	title = gp.005.t
+	desc = gp.005.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_zealous
+		
+	}
+	option = {
+		name = gp.005.a
+		trigger_event = {
+			id = gp_sr.001
+			months = 2 
+		}
+	}
+	option = {
+		name = gp.005.b
+		add_trait = zealous
+		add_piety = 500
+		hidden_effect ={
+			clear_global_variable_list = unavailable_unique_decisions_convert
+			remove_trait = pilgrim 
+		}
+	}
+}
+
+#Return brythonic polytheism
+bp.001 = {
+	type = character_event
+	title = bp.001.t
+	desc = bp.001.desc
+	theme =  hunt_activity
+	right_portrait = {
+			character = root
+			animation = personality_content
+	}
+	option = {
+		name = bp.001.a
+		trigger_event = bp.002
+	}
+}
+
+bp.002 = { 
+	type = character_event
+	title = bp.002.t
+	desc = bp.002.desc
+	theme = learning_scholarship_focus
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	option = { #Proceed
+		name = bp.002.a
+		trigger_event = bp.003
+	}
+	option = { #Stop
+		name = bp.002.b
+		hidden_effect ={
+			clear_global_variable_list = unavailable_unique_decisions_convert
+			remove_trait = pilgrim 
+		}
+	}
+}
+
+bp.003 = { 
+	type = character_event
+	title = bp.003.t
+	desc = bp.003.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	#proceed
+	option = {
+		name = bp.003.a
+		trigger_event = bp.004
+	}
+	#stop
+	option = {
+		name = bp.003.b
+		trigger_event = bp.004
+		add_piety = 500 
+		hidden_effect ={
+			clear_global_variable_list = unavailable_unique_decisions_convert
+			remove_trait = pilgrim 
+		}
+	}	
+}
+
+bp.004 = {
+	type = character_event
+	title = bp.004.t
+	desc = bp.004.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	option = {
+		name = bp.004.a
+		trigger_event = bp.005
+	}
+}
+
+bp.005 = {
+	type = character_event
+	title = bp.005.t
+	desc = bp.005.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_zealous
+		
+	}
+	option = {
+		name = bp.005.a
+		trigger_event = {
+			id = bp_sr.001 
+			months = 2 
+		}
+
+	}
+	option = {
+		name = bp.005.b
+		add_trait = zealous
+		add_piety = 500
+		hidden_effect ={
+			clear_global_variable_list = unavailable_unique_decisions_convert
+			remove_trait = pilgrim 
+		}
+	}
+}
+
+#Return Gaulish polytheism
+gl.001 = {
+	type = character_event
+	title = gl.001.t
+	desc = gl.001.desc
+	theme =  hunt_activity
+	right_portrait = {
+			character = root
+			animation = personality_content
+	}
+	option = {
+		name = gl.001.a
+		trigger_event = gl.002
+	}
+}
+
+gl.002 = { 
+	type = character_event
+	title = gl.002.t
+	desc = gl.002.desc
+	theme = learning_scholarship_focus
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	option = { #Proceed
+		name = gl.002.a
+		trigger_event = gl.003
+	}
+	option = { #Stop
+		name = gl.002.b
+		hidden_effect ={
+			clear_global_variable_list = unavailable_unique_decisions_convert
+			remove_trait = pilgrim 
+		}
+	}
+}
+
+gl.003 = { 
+	type = character_event
+	title = gl.003.t
+	desc = gl.003.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	#proceed
+	option = {
+		name = gl.003.a
+		trigger_event = gl.004
+	}
+	#stop
+	option = {
+		name = gl.003.b
+		trigger_event = gl.004
+		add_piety = 500 
+	}	
+}
+
+gl.004 = {
+	type = character_event
+	title = gl.004.t
+	desc = gl.004.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	option = {
+		name = gl.004.a
+		trigger_event = gl.005
+	}
+}
+
+gl.005 = {
+	type = character_event
+	title = gl.005.t
+	desc = gl.005.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_zealous
+		
+	}
+	option = {
+		name = gl.005.a
+		trigger_event = {
+			id = gl_sr.001
+			months = 2
+		}
+	}
+	option = {
+		name = gl.005.b
+		add_trait = zealous
+		add_piety = 500
+		hidden_effect ={
+			clear_global_variable_list = unavailable_unique_decisions_convert
+			remove_trait = pilgrim 
+		}
+	}
+}
+
+#Return Celtic Iberian polytheism
+ci.001 = {
+	type = character_event
+	title = ci.001.t
+	desc = ci.001.desc
+	theme =  hunt_activity
+	right_portrait = {
+			character = root
+			animation = personality_content
+	}
+	option = {
+		name = ci.001.a
+		trigger_event = ci.002
+	}
+}
+
+ci.002 = { 
+	type = character_event
+	title = ci.002.t
+	desc = ci.002.desc
+	theme = learning_scholarship_focus
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	option = { #Proceed
+		name = ci.002.a
+		trigger_event = ci.003
+	}
+	option = { #Stop
+		name = ci.002.b
+		hidden_effect ={
+			clear_global_variable_list = unavailable_unique_decisions_convert
+			remove_trait = pilgrim 
+		}
+	}
+}
+
+ci.003 = { 
+	type = character_event
+	title = ci.003.t
+	desc = ci.003.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	#proceed
+	option = {
+		name = ci.003.a
+		trigger_event = ci.004
+	}
+	#stop
+	option = {
+		name = ci.003.b
+		trigger_event = ci.004
+		add_piety = 500 
+		hidden_effect ={
+			clear_global_variable_list = unavailable_unique_decisions_convert
+			remove_trait = pilgrim 
+		}
+	}	
+}
+
+ci.004 = {
+	type = character_event
+	title = ci.004.t
+	desc = ci.004.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	option = {
+		name = ci.004.a
+		trigger_event = ci.005
+	}
+}
+
+ci.005 = {
+	type = character_event
+	title = ci.005.t
+	desc = ci.005.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_zealous
+		
+	}
+	option = {
+		name = ci.005.a
+		trigger_event = {
+			id = ci_sr.001
+			months = 2
+		}
+	}
+	option = {
+		name = ci.005.b
+		add_trait = zealous
+		add_piety = 500
+		hidden_effect ={
+			clear_global_variable_list = unavailable_unique_decisions_convert
+			remove_trait = pilgrim 
+		}
+	}
+}
+
+
+
+#make state religion events 
+
+#Reinstate Gaelic polytheism as state religion 
+scripted_effect gp_sr_notify_players_effectt = {
+	every_player = {
+		limit = {
+			Not = {this = root}  
+			capital_province = {
+			geographical_region = world_europe_west_britannia
+			}
+		}
+		trigger_event = gp_sr.002
+	}
+}
+
+gp_sr.001 = {
+	type = character_event
+	title = gp_sr.001.t
+	desc = gp_sr.001.desc
+	theme = faith
+	right_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous	
+		}
+		override_background = { reference= throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		faith = { save_scope_as = old_faith }
+		return_gp_sr_decision_scripted_effect = yes
+	}
+
+	option = {
+		name = gp_sr.001.a
+		#Get a nice reward for your adherence to the true faith.
+		add_piety_level = 1
+		#Sort notification copy for players.
+		save_scope_value_as = {
+			name = gp_return
+			value = flag:vanilla
+		}
+		gp_sr_notify_players_effect = yes 
+		
+	}	
+}
+
+gp_sr.002 = {
+	type = character_event
+	title = gp_sr.002.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { top_liege = root }
+				desc = gp_sr.002.desc.vassals
+			}
+			desc = gp_sr.002.desc.outsiders
+		}
+		desc = gp_sr.002.desc.intro
+		triggered_desc = {
+			trigger = { scope:gp_return = flag:vanilla }
+			desc = gp_sr.002.desc_vanilla
+		}
+	}
+	theme = faith
+	left_portrait = scope:scoped_ruler
+	override_background = { reference= throne_room }
+	#Celtic polyteist are happy about this unexpected turn of events!
+	option = {
+		name = gp_sr.002.a
+		trigger = { religion = religion:celtic_religion}
+		add_stress = minor_stress_loss
+	}
+	#Vassals who do not follow the faith may decide to convert after all.
+	option = {
+		name = gp_sr.002.b
+		trigger = {
+			top_liege = root
+			NOT = { religion = religion:celtic_religion}
+		}
+		set_character_faith_with_conversion = faith:gaelic_polytheism
+		
+	}
+	#Those who aren't polytheist are probably horrified.
+	option = {
+		name = gp_sr.002.c
+		trigger = {
+			NOT = {
+				religion = { is_in_family = rf_cp}
+			}
+		}
+	}
+	#And, as a fallback, some people just won't care.
+	option = { 
+		name = gp_sr.002.d 
+	}
+}
+
+#Reinstate Brythonic polytheism as state religion 
+scripted_effect bp_sr_notify_players_effectt = {
+	every_player = {
+		limit = {
+			Not = {this = root}  
+			capital_province = {
+			geographical_region = world_europe_west_britannia
+			}
+		}
+		trigger_event = bp_sr.002
+	}
+}
+
+bp_sr.001  = {
+	type = character_event
+	title = bp_sr.001.t
+	desc = bp_sr.001.desc
+	theme = faith
+	right_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous	
+		}
+		override_background = { reference= throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		faith = { save_scope_as = old_faith }
+		return_bp_sr_decision_scripted_effect  = yes
+	}
+
+	option = {
+		name = bp_sr.001.a
+		#Get a nice reward for your adherence to the true faith.
+		add_piety_level = 1
+		#Sort notification copy for players.
+		save_scope_value_as = {
+			name = bp_return
+			value = flag:vanilla
+		}
+		bp_sr_notify_players_effect = yes 
+		
+	}	
+}
+
+bp_sr.002 = {
+	type = character_event
+	title = bp_sr.002.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { top_liege = root }
+				desc = bp_sr.002.desc.vassals
+			}
+			desc = bp_sr.002.desc.outsiders
+		}
+		desc = bp_sr.002.desc.intro
+		triggered_desc = {
+			trigger = { scope:bp_return = flag:vanilla }
+			desc = bp_sr.002.desc_vanilla
+		}
+	}
+	theme = faith
+	left_portrait = scope:scoped_ruler
+	override_background = { reference= throne_room }
+	#Roman polyteist are happy about this unexpected turn of events!
+	option = {
+		name = bp_sr.002.a
+		trigger = { religion = religion:celtic_religion}
+		add_stress = minor_stress_loss
+	}
+	#Vassals who do not follow the faith may decide to convert after all.
+	option = {
+		name = bp_sr.002.b
+		trigger = {
+			top_liege = root
+			NOT = { religion = religion:celtic_religion}
+		}
+		set_character_faith_with_conversion = faith:brythonic_polytheism
+		
+	}
+	#Those who aren't polytheist are probably horrified.
+	option = {
+		name = bp_sr.002.c
+		trigger = {
+			NOT = {
+				religion = { is_in_family = rf_cp}
+			}
+		}
+	}
+	#And, as a fallback, some people just won't care.
+	option = { 
+		name = bp_sr.002.d 
+	}
+}
+
+#Reinstate Gaulish polytheism as state religion 
+scripted_effect gl_sr_notify_players_effectt = {
+	every_player = {
+		limit = {
+			Not = {this = root}  
+			capital_province = {
+			geographical_region = world_europe_west_francia 
+			}
+		}
+		trigger_event = gl_sr.002
+	}
+}
+
+gl_sr.001 = {
+	type = character_event
+	title = gl_sr.001.t
+	desc = gl_sr.001.desc
+	theme = faith
+	right_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous	
+		}
+		override_background = { reference= throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		faith = { save_scope_as = old_faith }
+		return_gl_sr_decision_scripted_effect = yes
+	}
+
+	option = {
+		name = gl_sr.001.a
+		#Get a nice reward for your adherence to the true faith.
+		add_piety_level = 1
+		#Sort notification copy for players.
+		save_scope_value_as = {
+			name = gl_return
+			value = flag:vanilla
+		}
+		gl_sr_notify_players_effect = yes 
+		
+	}	
+}
+
+gl_sr.002 = {
+	type = character_event
+	title = gl_sr.002.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { top_liege = root }
+				desc = gl_sr.002.desc.vassals
+			}
+			desc = gl_sr.002.desc.outsiders
+		}
+		desc = gl_sr.002.desc.intro
+		triggered_desc = {
+			trigger = { scope:gl_return = flag:vanilla }
+			desc = gl_sr.002.desc_vanilla
+		}
+	}
+	theme = faith
+	left_portrait = scope:scoped_ruler
+	override_background = { reference= throne_room }
+	#Gaulish polyteist are happy about this unexpected turn of events!
+	option = {
+		name = gl_sr.002.a
+		trigger = { religion = religion:celtic_religion}
+		add_stress = minor_stress_loss
+	}
+	#Vassals who do not follow the faith may decide to convert after all.
+	option = {
+		name = gl_sr.002.b
+		trigger = {
+			top_liege = root
+			NOT = { religion = religion:celtic_religion}
+		}
+		set_character_faith_with_conversion = faith:gaulish_polytheism
+		
+	}
+	#Those who aren't polytheist are probably horrified.
+	option = {
+		name = gl_sr.002.c
+		trigger = {
+			NOT = {
+				religion = { is_in_family = rf_cp}
+			}
+		}
+	}
+	#And, as a fallback, some people just won't care.
+	option = { 
+		name = gl_sr.002.d 
+	}
+}
+
+#Reinstate Celtic Iberian polytheism as state religion 
+scripted_effect ci_sr_notify_players_effect = {
+	every_player = {
+		limit = {
+			Not = {this = root}  
+			capital_province = {
+			geographical_region = world_europe_west_iberia
+			}
+		}
+		trigger_event = ci_sr.002
+	}
+}
+
+ci_sr.001 = {
+	type = character_event
+	title = ci_sr.001.t
+	desc = ci_sr.001.desc
+	theme = faith
+	right_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous	
+		}
+		override_background = { reference= throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		faith = { save_scope_as = old_faith }
+		return_ci_sr_decision_scripted_effect = yes
+	}
+
+	option = {
+		name = ci_sr.001.a
+		#Get a nice reward for your adherence to the true faith.
+		add_piety_level = 1
+		#Sort notification copy for players.
+		save_scope_value_as = {
+			name = ci_return
+			value = flag:vanilla
+		}
+		ci_sr_notify_players_effect = yes 
+		
+	}	
+}
+
+ci_sr.002 = {
+	type = character_event
+	title = ci_sr.002.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { top_liege = root }
+				desc = ci_sr.002.desc.vassals
+			}
+			desc = ci_sr.002.desc.outsiders
+		}
+		desc = ci_sr.002.desc.intro
+		triggered_desc = {
+			trigger = { scope:ci_return = flag:vanilla }
+			desc = ci_sr.002.desc_vanilla
+		}
+	}
+	theme = faith
+	left_portrait = scope:scoped_ruler
+	override_background = { reference = throne_room }
+	#CelticIberian polyteist are happy about this unexpected turn of events!
+	option = {
+		name = ci_sr.002.a
+		trigger = { religion = religion:celtic_religion}
+		add_stress = minor_stress_loss
+	}
+	#Vassals who do not follow the faith may decide to convert after all.
+	option = {
+		name = ci_sr.002.b
+		trigger = {
+			top_liege = root
+			NOT = { religion = religion:celtic_religion}
+		}
+		set_character_faith_with_conversion = faith:celtic_iberian_polytheism
+		
+	}
+	#Those who aren't polytheist are probably horrified.
+	option = {
+		name = ci_sr.002.c
+		trigger = {
+			NOT = {
+				religion = { is_in_family = rf_cp}
+			}
+		}
+	}
+	#And, as a fallback, some people just won't care.
+	option = { 
+		name = ci_sr.002.d 
+	}
+}
 
 #Restore Priesthood events
 cp_rph_decisions.0001 = {
@@ -275,13 +1090,13 @@ ccmd.001 = {
 		set_bhakti_effect = { BHAKTI = gaelic_brigid }
 	}
 
-	# The Morrighan
+	# The Nemain
 	option = {
-		name = ccmd.001.the_morrighan
+		name = ccmd.001.nemain
 		trigger = {
-			NOT = { has_character_modifier = gaelic_the_morrighan }
+			NOT = { has_character_modifier = gaelic_nemain }
 		}
-		set_bhakti_effect = { BHAKTI = gaelic_the_morrighan }
+		set_bhakti_effect = { BHAKTI = gaelic_nemain }
 	}
 
 
@@ -461,11 +1276,11 @@ ccmd.004 = {
 
 	# Arentius
 	option = {
-		name = ccmd.004.arentius
+		name = ccmd.004.arancia
 		trigger = {
-			NOT = { has_character_modifier = celtic_iberian_arentius }
+			NOT = { has_character_modifier = celtic_iberian_arancia }
 		}
-		set_bhakti_effect = { BHAKTI = celtic_iberian_arentius }
+		set_bhakti_effect = { BHAKTI = celtic_iberian_arancia }
 	}
 
 	#Nabia
@@ -830,7 +1645,7 @@ celtic.013 = {
 	type = character_event
 	title = celtic.013.t
 	desc = celtic.013.desc
-	theme = learning
+	theme = learning 
 
 	right_portrait = {
 		character = root
@@ -841,4 +1656,562 @@ celtic.013 = {
 		set_culture = culture:pr_brythonic
 	}
 
+}
+
+
+celtic.014 = {
+	type = character_event
+	title = celtic.014.t
+	desc = celtic.014.desc
+	theme = learning
+	immediate = {
+		root = {save_scope_as = ruler }
+		every_ruler = {
+			limit = {
+				AND = {
+					culture = { has_cultural_pillar = heritage_north_germanic } 
+					location = { geographical_region = world_europe_west_britannia }
+					is_landed = yes
+					is_independent_ruler = yes
+					is_neighbor_to_realm = root
+				}					
+			}
+			save_scope_as = germanic_invader
+		}
+
+
+
+	}
+	left_portrait = {
+		character = scope:ruler
+		animation = personality_content
+	}
+	right_portrait = {
+		character = scope:germanic_invader
+		animation = personality_content
+	}
+	option = {
+		name = celtic.014.a 
+		trigger = {
+			NOT = {
+				OR = {
+					scope:germanic_invader = {
+						has_title = title:k_norway
+					}
+					scope:germanic_invader = {
+						has_title = title:k_sweden
+					}
+					scope:germanic_invader = {
+						has_title = title:k_finland
+					}
+				}
+
+			}
+		}
+		add_pressed_claim = scope:germanic_invader.primary_title
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 300
+			men_at_arms = {
+				type = light_footmen
+				stacks = 3
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+		}
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 100
+			men_at_arms = {
+				type = chariots
+				stacks = 3
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+		}
+	}
+	option = {
+		name = celtic.014.b
+		trigger = {
+			OR = {
+				scope:germanic_invader = {
+					has_title = title:k_norway
+				}
+				scope:germanic_invader = {
+					has_title = title:k_sweden
+				}
+				scope:germanic_invader = {
+					has_title = title:k_finland
+				}
+			}
+		}
+		# remove_list_global_variable = {
+		# 	name = culture_is_germanic
+		# 	target = flag:flag_culture_is_germanic
+		# }
+	    every_county = {
+			limit = {
+				AND = {
+					#scope:owner_county = scope:germanic_invader
+					is_neighbor_to_realm = root
+					culture = { has_cultural_pillar = heritage_north_germanic } 
+					
+				}
+				
+			}
+			save_scope_as = germanic_neighbour
+		}
+		add_pressed_claim = scope:germanic_neighbour
+		#add_pressed_claim = scope:germanic_invader.primary_title
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 300
+			men_at_arms = {
+				type = light_footmen
+				stacks = 3
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+		}
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 100
+			men_at_arms = {
+				type = chariots
+				stacks = 3
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+		}
+	}
+}
+
+celtic.015 = {
+	type = character_event
+	title = celtic.015.t
+	#desc = celtic.014.desc
+	theme = learning
+	immediate = {
+		root = {save_scope_as = ruler }
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { 
+					is_target_in_global_variable_list = {
+						name = reconquest_ireland
+						target =  flag:flag_reconquest_ireland
+					}
+				 }
+				desc = celtic.015.desc.eire
+			}
+			triggered_desc = {
+				trigger = { 
+					is_target_in_global_variable_list = {
+						name = reconquest_alba
+						target =  flag:flag_reconquest_alba
+					}
+				 }
+				desc = celtic.015.desc.alba
+			}
+			triggered_desc = {
+				trigger = { 
+					is_target_in_global_variable_list = {
+						name = reconquest_wales
+						target =  flag:flag_reconquest_wales
+					}
+				 }
+				desc = celtic.015.desc.wales
+			}
+			triggered_desc = {
+				trigger = { 
+					is_target_in_global_variable_list = {
+						name = reconquest_albion
+						target =  flag:flag_reconquest_albion
+					}
+				 }
+				desc = celtic.015.desc.albion
+			}
+			triggered_desc = {
+				trigger = { 
+					is_target_in_global_variable_list = {
+						name = conquest_brittany
+						target =  flag:flag_conquest_brittany
+					}
+				 }
+				desc = celtic.015.desc.brittany
+			}
+			triggered_desc = {
+				trigger = { 
+					is_target_in_global_variable_list = {
+						name = conquest_galicia
+						target =  flag:flag_conquest_galicia
+					}
+				 }
+				desc = celtic.015.desc.galicia
+			}
+			desc = celtic.015.desc.fallback
+		}
+	}
+	left_portrait = {
+		character = scope:ruler
+		animation = personality_content
+	}
+
+	option = {
+		trigger = {
+			is_target_in_global_variable_list = {
+				name = reconquest_ireland
+				target = flag:flag_reconquest_ireland
+			}
+		}
+		name = celtic.015.a
+		add_prestige = 500 
+		#Add some loyal chariot troops 
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 200
+			men_at_arms = {
+				type = chariots
+				stacks = 3
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+			}
+		
+		#custom_tooltip = restore_high_kingdom_of_ireland_effect_tooltip
+			title:d_ulster = { save_scope_as = ulster }
+			title:d_meath = { save_scope_as = meath }
+			title:d_connacht = { save_scope_as = connacht }		 
+			title:d_leinster = { save_scope_as = leinster }
+			title:d_munster = { save_scope_as = munster }
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = yes
+			}
+			title:k_high_kingdom_of_ireland ={
+				change_title_holder ={
+					holder = root
+					change = scope:title_change
+				}
+			}
+			resolve_title_and_vassal_change = scope:title_change
+			title:d_ulster = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }
+			title:d_meath = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }
+			title:d_connacht = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }	 
+			title:d_leinster = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }
+			title:d_munster = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }
+			hidden_effect = {
+			title:k_high_kingdom_of_ireland = { set_de_jure_liege_title = title:e_celtic_empire }
+			hidden_effect = {
+				remove_list_global_variable = {
+					name = reconquest_ireland
+					target = flag:flag_reconquest_ireland
+				}
+			}
+		}
+	}
+	option = {
+		trigger ={ 
+			is_target_in_global_variable_list = {
+				name = reconquest_alba
+				target =  flag:flag_reconquest_alba
+			}
+			
+		}
+		name = celtic.015.b
+		add_prestige = 500 
+		#Add some loyal chariot troops 
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 200
+			men_at_arms = {
+				type = chariots
+				stacks = 3
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+			}
+		
+		custom_tooltip = restore_high_kingdom_of_ireland_effect_tooltip
+			title:d_galloway = { save_scope_as = gallowayr }
+			title:d_lothian = { save_scope_as = lothian }
+			title:d_albany = { save_scope_as = albany }	
+			title:d_western_isles = { save_scope_as = western_isles }
+			title:d_moray = { save_scope_as = moray }
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = yes
+			}
+			title:k_scotland ={
+				change_title_holder ={
+					holder = root
+					change = scope:title_change
+				}
+			}
+			resolve_title_and_vassal_change = scope:title_change
+			title:k_scotland = { set_de_jure_liege_title = title:e_celtic_empire }
+			hidden_effect = {
+			remove_list_global_variable = {
+				name = reconquest_alba
+				target = flag:flag_reconquest_alba
+			}
+		}
+	}
+	option = {
+		trigger = {
+			is_target_in_global_variable_list = {
+				name = reconquest_wales
+				target = flag:flag_reconquest_wales
+			}
+		}
+		name = celtic.015.c
+
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 200
+			men_at_arms = {
+				type = chariots
+				stacks = 3
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+			}
+		
+		custom_tooltip = restore_high_kingdom_of_ireland_effect_tooltip
+			title:d_gwynedd = { save_scope_as = gwynned }
+			title:d_powys = { save_scope_as = powys }
+			title:d_deheubarth = { save_scope_as = deheubarth }
+			title:d_western_isles = { save_scope_as = western_isles }
+			title:d_moray = { save_scope_as = moray }
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = yes
+			}
+			title:k_wales ={
+				change_title_holder ={
+					holder = root
+					change = scope:title_change
+				}
+			}
+			resolve_title_and_vassal_change = scope:title_change
+			title:k_wales = { set_de_jure_liege_title = title:e_celtic_empire }
+			hidden_effect = {
+			remove_list_global_variable = {
+				name = reconquest_wales
+				target = flag:flag_reconquest_wales
+			}
+		}
+	}
+	option = {
+		trigger = {
+			is_target_in_global_variable_list = {
+				name = reconquest_albion
+				target = flag:flag_reconquest_albion
+			}
+		}
+		name = celtic.015.d
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 200
+			men_at_arms = {
+				type = chariots
+				stacks = 3
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+			}
+		
+		#custom_tooltip = restore_high_kingdom_of_ireland_effect_tooltip
+			title:d_york = { save_scope_as = york }
+			title:d_norfolk = { save_scope_as = norfolk }
+			title:d_bedford =	{ save_scope_as = bedford }
+			title:d_canterbury = { save_scope_as = canterbury }
+			title:d_lancaster = { save_scope_as = lancaster }
+			title:d_hereford = { save_scope_as = hereford }
+			title:d_northumberland = { save_scope_as = northumberland }
+			title:d_cornwall = { save_scope_as = cornwall }
+			title:d_gloucester = { save_scope_as = gloucester }
+			title:d_somerset = { save_scope_as = somerset }
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = yes
+			}
+			title:k_england ={
+				change_title_holder ={
+					holder = root
+					change = scope:title_change
+				}
+			}
+			resolve_title_and_vassal_change = scope:title_change
+			title:k_england = { set_de_jure_liege_title = title:e_celtic_empire }
+			hidden_effect = {
+			remove_list_global_variable = {
+				name = reconquest_albion
+				target = flag:flag_reconquest_albion
+			}
+		}	
+	}
+	option = {
+		trigger = {
+			is_target_in_global_variable_list = {
+				name = conquest_brittany
+				target = flag:flag_conquest_brittany
+			}
+		}
+		name = celtic.015.e
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 200
+			men_at_arms = {
+				type = chariots
+				stacks = 3
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+			}
+		
+		 #custom_tooltip = restore_brittany_effect_tooltip
+			title:d_york = { save_scope_as = d_brittany }
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = yes
+			}
+			title:k_brittany ={
+				change_title_holder ={
+					holder = root
+					change = scope:title_change
+				}
+			}
+			resolve_title_and_vassal_change = scope:title_change
+			title:k_brittany = { set_de_jure_liege_title = title:e_celtic_empire }
+		hidden_effect = {
+			remove_list_global_variable = {
+				name = reconquest_albion
+				target = flag:flag_reconquest_albion
+			}
+		}	
+	}
+	option = {
+		trigger = {
+			is_target_in_global_variable_list = {
+				name = conquest_galicia
+				target = flag:flag_conquest_galicia
+			}
+		}
+		name = celtic.015.e
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 200
+			men_at_arms = {
+				type = chariots
+				stacks = 3
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+			}
+		
+			#custom_tooltip = create_galicia_effect_tooltip
+			title:d_porto = { save_scope_as = porto }
+			title:d_galicia = { save_scope_as = galicia }
+			title:d_asturias= { save_scope_as = asturias }		 		
+			title:d_leon = { save_scope_as = leon }
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = yes
+			}
+			title:k_pr_galicia ={
+				change_title_holder ={
+					holder = root
+					change = scope:title_change
+				}
+			}
+			resolve_title_and_vassal_change = scope:title_change
+			title:d_porto = { set_de_jure_liege_title = title:k_pr_galicia }
+			title:d_galicia = { set_de_jure_liege_title = title:k_pr_galicia }
+			title:d_asturias = { set_de_jure_liege_title = title:k_pr_galicia }	 
+			title:d_leon = { set_de_jure_liege_title = title:k_pr_galicia }
+
+			title:k_pr_galicia = { set_de_jure_liege_title = title:e_celtic_empire }
+			hidden_effect = {
+			remove_list_global_variable = {
+				name = conquest_galicia
+				target = flag:flag_conquest_galicia
+			}
+		}
+	}
+}
+
+celtic.016 = {
+	trigger =  {
+		AND = {
+			has_title = title:k_england
+			has_title = title:k_scotland
+			has_title = title:k_wales
+			has_title = title:k_high_kingdom_of_ireland
+			NOT = {
+				has_title = title:e_celtic_empire
+			}
+		}
+	}
+	type = character_event
+	title = celtic.016.t
+	desc = celtic.016.desc
+	theme = learning
+	immediate = {
+		root = {save_scope_as = ruler }
+	}
+	left_portrait = {
+		character = scope:ruler
+		animation = personality_content
+	}
+
+	option = {
+		name = celtic.016.a
+		add_prestige = major_prestige_gain 
+		#Add some loyal chariot troops 
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 1000
+			men_at_arms = {
+				type = chariots
+				stacks = 3
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+		}
+		#custom_tooltip = accepted_crown_of_celtic_empire_effect_tooltip
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = yes
+		}
+		title:e_celtic_empire ={
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+	}
+	option = {
+		name = celtic.016.c
+		add_prestige = -400
+	}
 }

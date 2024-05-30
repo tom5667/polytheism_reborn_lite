@@ -1,0 +1,133 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+
+#Dacian
+ dacian:0 "Dakisch"
+ dacian_prefix:0 "Dakisch"
+ dacian_collective_noun:0 "Daker"
+#Thracian
+ thracian:0 "Thracisch"
+ thracian_prefix:0 "Thracisch"
+ thracian_collective_noun:0 "Thraciërs"
+#Gaulish
+ gaulish:0 "Gallisch"
+ gaulish_prefix:0 "Gallisch"
+ gaulish_collective_noun:0 "Galliërs"
+#Eburones
+ eburones:0 "Eburonen"
+ eburones_prefix:0 "Eburonen"
+ eburones_collective_noun:0 "Eburonen"
+#Belgae
+ belgae:0 "Belgae"
+ belgae_prefix:0 "Belgae"
+ belgae_collective_noun:0 "Belgae"
+#Aquitani
+ aquitani:0 "Aquitani"
+ aquitani_prefix:0 "Aquitani"
+ aquitani_collective_noun:0 "Aquitani"
+
+#Manx
+ manx:0 "Manx"
+ manx_prefix:0 "Manx"
+ manx_collective_noun:0 "Manx"
+#Brythonic
+ pr_brythonic:0 "Brythonisch"
+ pr_brythonic_prefix:0 "Brythonisch"
+ pr_brythonic_collective_noun:0 "Briten"
+
+#Gallo Roman
+ gallo_roman:0 "Gallorömisch"
+ gallo_roman_prefix:0 "Gallorömisch"
+ gallo_roman_collective_noun:0 "Gallorömer"
+#Romano British
+ romano_british:0 "Römisch Britisch"
+ romano_british_prefix:0 "Römisch Britisch"  
+ romano_british_collective_noun:0 "Römisch Briten"
+#Romano British
+ romano_germanic:0 "Römisch Germanisch"
+ romano_germanic_prefix:0 "Römisch Germanisch"  
+ romano_germanic_collective_noun:0 "Romano Germans"
+#Mycenaean 
+ mycenaean:0 "Mycenaean"
+ mycenaean_prefix:0 "Mycenaean"
+ mycenaean_collective_noun:0 "Mykener"
+#Etruscan
+ etruscan:0 "Etrusker"
+ etruscan_prefix:0 "Etrusker"
+ etruscan_collective_noun:0 "Etrusker"
+#Illyrian
+ illyrian:0 "Illyrisch"
+ illyrian_prefix:0 "Illyrisch"
+ illyrian_collective_noun:0 "Illyrer"
+#Kemetic 
+ kemetic:0 "Kemetisch"
+ kemetic_prefix:0 "Kemetisch"
+ kemetic_collective_noun:0 "Kemetic"
+#babylonian
+ babylonian:0 "Babylonisch"
+ babylonian_prefix:0 "Babylonisch"
+ babylonian_collective_noun:0 "Babylonier"
+#Assyrian
+ pr_assyrian:0 "Assyrisch"
+ pr_assyrian_prefix:0 "Assyrisch"
+ pr_assyrian_collective_noun:0 "Assyrer"
+#Sumerian
+ sumerian:0 "Sumerisch"
+ sumerian_prefix:0 "Sumerisch"
+ sumerian_collective_noun:0 "Sumerer"
+#Parthian
+ parthian:0 "Parthisch"
+ parthian_prefix:0 "Parthisch"
+ parthian_collective_noun:0 "Parther"
+#Avestan 
+ avestan:0 "Avestan"
+ avestan_prefix:0 "Avestan"
+ avestan_collective_noun:0 "Avestaner"
+#Graeco Persian
+ graeco_persian:0 "Griechisch Persisch"
+ graeco_persian_prefix:0 "Griechisch Persisch"
+ graeco_persian_collective_noun:0 "Griechische Perser"
+#Hittite
+ hittite:0 "Hethiter"
+ hittite_prefix:0 "Hethiter"
+ hittite_collective_noun:0 "Hethiter"
+#Scythian
+ scythian:0 "Skythen"
+ scythian_prefix:0 "Skythen"
+ scythian_collective_noun:0 "Skythen"
+#Punic 
+ punic:0 "Punisch"
+ punic_prefix:0 "Punisch"
+ punic_collective_noun:0 "Puniker"
+#Clasical Greek
+ pr_greek:0 "Hellen"
+ pr_greek_prefix:0 "Hellen" 
+ pr_greek_collective_noun:0 "Hellenen"
+#Celtic Iberian
+ celtic_iberian:0 "Keltiberisch"
+ celtic_iberian_prefix:0 "Keltiberisch"
+ celtic_iberian_collective_noun:0 "Keltiberer"
+ 
+#Romano Hispanic
+ romano_hispanic:0 "Römisch Spanish"
+ romano_hispanic_prefix:0 "Römisch Spanish"
+ romano_hispanic_collective_noun:0 "Römische Spanier"
+#Graeco Egyptian
+ pr_graeco_egyptian:0 "Griechisch Ägyptisch"
+ pr_graeco_egyptian_prefix:0 "Griechisch Ägyptisch"
+ pr_graeco_egyptian_collective_noun:0 "Griechische Ägypter"
+
+#iberian
+ iberian:0 "Iberisch"
+ iberian_prefix:0 "Iberisch"
+ iberian_collective_noun:0 "Iberer"
+
+
+#Culture history
+graeco_egyptian_heritage_loc:0 "Um das Jahr [DATE.GetYear] aus [CULTURE.GetName] und Kemetisch entstanden" 
+romano_british_heritage_loc:0 "Um das Jahr [DATE.GetYear] aus [CULTURE.GetName] und Keltisch Britisch entstanden"
+romano_germanic_heritage_loc:0 "Um das Jahr [DATE.GetYear] aus [CULTURE.GetName] und Germanisch entstanden"
+gallo_roman_heritage_loc:0 "Um das Jahr [DATE.GetYear] aus [CULTURE.GetName] und Gallisch entstanden"
+romano_hispanic_heritage_loc:0 "um das Jahr [DATE.GetYear] aus [CULTURE.GetName] und (Keliti)Iberisch entstanden"

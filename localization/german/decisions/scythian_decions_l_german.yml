@@ -1,0 +1,47 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+
+restore_empire_scythia:0 "Wiederherstellung des skythischen Reiches"
+restore_empire_scythia_desc:0 "Skythien und Indo-Skythien sind wieder unter unserer Kontrolle, es ist an der Zeit, das Skythische Reich wiederherzustellen."
+create_empire_scythia_effect_tooltip:0 "Wiederhergestelltes skythisches Reich"
+restore_empire_scythia_tooltip:1 "Es ist an der Zeit, ganz Skythien zurückzuerobern"
+restore_empire_scythia_confirm:0 "Skythisches Reich erschaffen"
+
+kingdom_of_scythia:0 "Königreich Skythien wiederherstellen"
+kingdom_of_scythia_desc:0 "Viel zu lange wurde die pontische Steppe, für die unsere Vorfahren lebten und kämpften, von unseren Feinden kontrolliert."
+kingdom_of_scythia_effect_tooltip:0 "Wiederhergestelltes Königreich von Scythia"
+create_scythia_effect_tooltip:1 "Es ist an der Zeit, das Königreich Scythia zurückzuerobern"
+kingdom_of_scythia_tooltip:1 "Es ist an der Zeit, Scythia zurückzufordern"
+kingdom_of_scythia_confirm:0 "Königreich Skythien erschaffen"
+
+
+kingdom_of_indo_scythia:0 "Königreich von Indo-Skythien wiederherstellen"
+kingdom_of_indo_scythia_desc:0 "Viel zu lange war die pontische Steppe unter der Kontrolle unserer Feinde, für die unsere Vorfahren lebten und kämpften."
+kingdom_of_indo_scythia_tooltip:1 "Es ist an der Zeit, Indo-Skythien zurückzuerobern"
+kingdom_of_indo_scythia_effect_tooltip:0 "Wiederhergestelltes Königreich von Indo Scythia"
+create_indo_scythia_effect_tooltip:1 "Es ist an der Zeit, das Königreich Indo Scythia zurückzufordern"
+kingdom_of_indo_scythia_confirm:0 "Königreich Indo Scythia erschaffen"
+
+set_capital_kalos_limen_decision:0 "Kalos Limen zur Hauptstadt machen"
+set_capital_kalos_limen_decision_desc:0 "Macht Kalos Limen zur Hauptstadt von Skythien"
+set_capital_kalos_limen_decision_tooltip:1 "Hauptstadt in Kalos Limen ändern"
+set_capital_kalos_limen_decision_confirm:0 "Hauptstadt ändern"
+
+set_capital_mathura_decision:0 "Mathura zur Hauptstadt machen"
+set_capital_mathura_decision_desc:0 "Mathura zur Hauptstadt von Indo-Skythien machen"
+set_capital_mathura_decision_tooltip:1 "Hauptstadt zu Mathura machen"
+set_capital_mathura_decision_confirm:0 "Hauptstadt ändern"
+
+#Wählen Sie die Hauptgottheit
+choose_main_deity_scythia_decision:0 "Wählen Sie Ihre Hauptgottheit"
+choose_main_deity_scythian_decision_desc:0 "Für zusätzliche Hilfe im täglichen Leben kann ich einen Gott als meinen persönlichen Hauptgott wählen"
+choose_main_deity_scythian_decision_tt:0 "Sie beginnen Ihr Leben nach den Werten von"
+select_main_deity_scythia_decision.select_papaios:0 "Papaios hoher Gott der Skythen"
+select_main_deity_scythia_decision.select_artimpasa:0 "Artimpasa Göttin der Fruchtbarkeit"
+select_main_deity_scythia_decision.select_gaitasura:0 "Gaiϑāsūra Gott des Reichtums"
+select_main_deity_scythia_decision.select_api:0 "Api Göttin der Gesundheit"
+select_main_deity_scythia_decision.select_pitara_za:0 "Maris Gott des Krieges"
+choose_main_deity_scythia_decision_tooltip:1 "Hauptgottheit(en) wählen"
+choose_main_deity_scythia_decision_confirm:1 "Wähle Hauptgott(e)"

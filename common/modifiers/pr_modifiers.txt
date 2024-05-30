@@ -331,7 +331,7 @@ celtic_iberian_reue = {
 	islam_religion_opinion = -5
 }
 
-celtic_iberian_arentius = {
+celtic_iberian_arancia = {
 	icon = health_positive
 	same_faith_opinion = 5
 	monthly_piety = 0.5
@@ -368,6 +368,57 @@ celtic_iberian_bandua = {
 	martial = 1
 	christianity_religion_opinion = -5
 	islam_religion_opinion  = -5
+}
+
+lusitanian_reue = {
+	icon = jupiter_positive
+	same_faith_opinion = 10
+	monthly_piety = 0.5
+	diplomacy = 2
+	monthly_prestige = 0.2
+	monthly_piety = 0.3
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+
+lusitanian_cariocecus = {
+	icon = martial_positive
+	same_faith_opinion = 5
+	monthly_prestige = 0.3
+	prowess = 1
+	martial = 1
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+}
+
+lusitanian_ataegina = {
+	icon = love_positive
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	attraction_opinion = 20
+	fertility = 0.2
+	christianity_religion_opinion = -10
+	islam_religion_opinion  = -10
+}
+
+lusitanian_lucubo = {
+	icon = economy_positive
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	stewardship = 2
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+}
+
+lusitanian_arancio = {
+	icon = health_positive
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	health = 0.5
+	negate_health_penalty_add = 0.25
+	
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
 }
 
 #Anglo Saxon Polytheism
@@ -1163,6 +1214,92 @@ romano_germanic_hercules_meganusus ={
 	monthly_piety = 0.3
 	christianity_religion_opinion = -5
 	islam_religion_opinion = -5
+}
+#Romano Hispanic
+romano_hispanic_jupiter_solutorius = {
+	icon = jupiter_positive
+	same_faith_opinion = 10
+	monthly_piety = 0.5
+	diplomacy = 2
+	monthly_prestige = 0.2
+	monthly_piety = 0.3
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+
+romano_hispanic_minerva = {
+	icon = learning_positive
+	learning = 2
+	same_faith_opinion = 5
+	monthly_prestige = 0.3
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+}
+
+romano_hispanic_mars_neto = {
+	icon = martial_positive
+	same_faith_opinion = 5
+	monthly_prestige = 0.3
+	prowess = 1
+	martial = 1
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+}
+
+romano_hispanic_lucubo = {
+	icon = economy_positive
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	stewardship = 2
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+}
+
+romano_hispanic_nabia = {
+	icon = fertility_positive
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	attraction_opinion = 20
+	fertility = 0.2
+	christianity_religion_opinion = -10
+	islam_religion_opinion  = -10
+}
+#Cultus orientis
+cultus_orientis_jupiter_dolichenus = {
+	icon = jupiter_positive
+	same_faith_opinion = 10
+	monthly_piety = 0.5
+	diplomacy = 2
+	monthly_prestige = 0.2
+	monthly_piety = 0.3
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+cultus_orientis_juno_caelestis = {
+	icon = martial_positive
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	amartial = 1
+	fertility = 0.2
+	christianity_religion_opinion = -10
+	islam_religion_opinion  = -10
+}
+cultus_orientis_mercurius_sobrius = {
+	icon = economy_positive
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	stewardship = 2
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+}
+cultus_orientis_eshmun = {
+	icon = magic_positive
+	monthly_piety = 0.5
+	same_faith_opinion = 5
+	health = 0.5
+	negate_health_penalty_add = 0.25
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
 }
 #Etruscan
 etruscan_tinia = {

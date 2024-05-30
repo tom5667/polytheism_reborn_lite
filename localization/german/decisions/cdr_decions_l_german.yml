@@ -1,0 +1,289 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+
+#choose your main deity 
+choose_main_deity_cdr_decision:0 "Hauptgottheit wählen"
+cdr_cmd_decision_desc:0 "Für die meisten altrömischen Polytheisten gab es einen bestimmten Gott, der für ihre Familie wichtig war$:$ für den Bauern Ceres, für die Soldaten Mars."
+choose_main_deity_cdr_decision_tooltip:1 "this can only be done once a year so choose wisely"
+choose_main_deity_cdr_decision_confirm:1 "Let's see"
+
+#reinstate gladiator games
+# cdr_rgg_decision:0 "Reinstate gladiator games" 
+# cdr_rgg_decision_desc:0 "After bringing back Cultus deorum as state religion, I can finaly bring back some of the old glory like real gladiator fights. Hope the plebians will like it."
+# cdr_rgg_decision_tooltip:1 "On the old scrolls it realy looks like a big happening."
+# cdr_rgg_decision_confirm:1 "Explore options"
+
+#Cultus Deorum ritual 
+cdr_r_decision:0 "Ritual Ausführen"
+cdr_r_decision_desc:0 "Führen Sie ein Ritual durch. Die Rituale sind mit der von Ihnen gewählten Hauptgottheit verknüpft. Jupiter hat zwei Optionen$:$ eine zum Überspringen der Komplettlösung und eine zum Befolgen. Dadurch erhalten Sie einen Einblick in die Funktionsweise eines echten Rituals. Wenn Sie interessiert sind, schauen Sie unbedingt einmal vorbei."
+cdr_r_decision_tooltip:1 "Ein ritual ausführen ist nur einmal in 12 monaten möglich"
+cdr_r_decision_confirm:1 "Sammle Gegenstände zum opferen"
+
+#Roman Illyrian 
+choose_main_deity_roman_illyrian_decision:0 "Hauptgottheit wählen"
+choose_main_deity_roman_illyrian_decision_tt:0 "Du beginst dein Leben nach den Werten von zu leben"
+select_main_deity_roman_illyrian_decision.select_jupiter_parthinus:0 "Jupiter Parthinus high god of the Roman Illyrians"
+select_main_deity_roman_illyrian_decision.select_anzotica:0 "Anzotica, Göttin der Fruchtbarkeit"
+select_main_deity_roman_illyrian_decision.select_armatus:0 "Armatus, Gott des Krieges"
+select_main_deity_roman_illyrian_decision.select_bona_dea:0 "Bona Dea goddess of healing"
+select_main_deity_roman_illyrian_decision.select_latra:0 "Latra god of wealth"
+choose_main_deity_roman_illyrian_decision_tooltip:1 "Wählen dein Hauptgott(in)"
+choose_main_deity_roman_illyrian_decision_confirm:1 "Wählen dein Hauptgott(in)"
+
+#Gallo Roman 
+choose_main_deity_gallo_roman_decision:0 "Hauptgottheit wählen"
+choose_main_deity_gallo_roman_decision_tt:0 "Du beginst dein Leben nach den Werten von zu leben"
+select_main_deity_gallo_roman_decision.select_jupiter_teranus:0 "Jupiter Teranus, Hochgott der Gallo-Römer"
+select_main_deity_gallo_roman_decision.select_minerva_belisama:0 "Minerva Belisama, Göttin der Weisheit"
+select_main_deity_gallo_roman_decision.select_mars_lenus:0 "Mars Lenus, Gott des Krieges"
+select_main_deity_gallo_roman_decision.select_mercurius_cissonius:0 "Mercurius Cissonius god of wealth"
+select_main_deity_gallo_roman_decision.select_venus:0 "Venus, Göttin der Fruchtbarkeit"
+choose_main_deity_gallo_roman_decision_tooltip:1 "Wählen dein Hauptgott(in)"
+choose_main_deity_gallo_roman_decision_confirm:1 "Wählen dein Hauptgott(in)"
+
+#Romano British
+choose_main_deity_romano_british_decision:0 "Hauptgottheit wählen"
+choose_main_deity_romano_british_decision_tt:0 "Du beginst dein Leben nach den Werten von zu leben"
+select_main_deity_romano_british_decision.select_jupiter_teran:0 "Jupiter Teran high god of the Romano British"
+select_main_deity_romano_british_decision.select_sulis_minerva:0 "Sulis Minerva, Göttin der Weisheit"
+select_main_deity_romano_british_decision.select_mars_cocidius:0 "Mars Cocidius, Gott des Krieges"
+select_main_deity_romano_british_decision.select_mercurius_lugus:0 "Mercurius Lugus god of wealth"
+select_main_deity_romano_british_decision.select_venus:0 "Venus, Göttin der Fruchtbarkeit"
+choose_main_deity_romano_british_decision_tooltip:1 "Wählen dein Hauptgott(in)"
+choose_main_deity_romano_british_decision_confirm:1 "Wählen dein Hauptgott(in)"
+
+#Romano Germanic
+choose_main_deity_romano_germanic_decision:0 "Hauptgottheit wählen"
+choose_main_deity_romano_germanic_decision_tt:0 "Du beginst dein Leben nach den Werten von zu leben"
+select_main_deity_romano_germanic_decision.select_mercurius_hranno:0 "Mercurius Hranno high god of the Romano germanic and known for his great wisdom"
+select_main_deity_romano_germanic_decision.select_mars_thincsus:0 "Mars Thincsus, Gott des Krieges"
+select_main_deity_romano_germanic_decision.select_hercules_meganusus:0 "Hercules Meganusus god of strength and high god of the Batavi"
+select_main_deity_romano_germanic_decision.select_isis_freia:0 "Isis Freia goddess of love, beauty and fertility"
+
+choose_main_deity_romano_germanic_decision_tooltip:1 "Wählen dein Hauptgott(in)"
+choose_main_deity_romano_germanic_decision_confirm:1 "Wählen dein Hauptgott(in)"
+
+#Romano Hispanic
+choose_main_deity_romano_hispanic_decision:0 "Hauptgottheit wählen"
+choose_main_deity_romano_hispanic_decision_tt:0 "Du beginst dein Leben nach den Werten von zu leben"
+select_main_deity_romano_hispanic_decision.select_jupiter_solutorius:0 "Jupiter Solutorius high god of the Romano Hispanic"
+select_main_deity_romano_hispanic_decision.select_mars_neto:0 "Mars Neto, Gott des Krieges"
+select_main_deity_romano_hispanic_decision.select_minerva:0 "Minerva, Göttin der Weisheit"
+select_main_deity_romano_hispanic_decision.select_lucubo:0 "Lucubo god of wealth and trade"
+select_main_deity_gromano_hispanic_decision.select_nabia:0 "Nabia, Göttin der Fruchtbarkeit"
+
+choose_main_deity_romano_hispanic_decision_tooltip:1 "Wählen dein Hauptgott(in)"
+choose_main_deity_romano_hispanic_decision_confirm:1 "Wählen dein Hauptgott(in)"
+
+#Cultus Orientis
+choose_main_deity_cultus_orientis_decision:0 "Hauptgottheit wählen"
+choose_main_deity_cultus_orientis_decision_tt:0 "Du beginst dein Leben nach den Werten von zu leben"
+select_main_deity_cultus_orientis_decision.select_jupiter_dolichenus:0 "Jupiter Dolichenus ruler of the sky and honered in a mysterie cult"
+select_main_deity_cultus_orientis_decision.select_minerva:0 "Minerva, Göttin der Weisheit"
+select_main_deity_cultus_orientis_decision.select_juno_caelestis:0 "Juno Caelestis goddess of motherhood, war and fertility "
+select_main_deity_cultus_orientis_decision.select_mercurius_sobrius:0 "Mercurius Sobrius god of wealth and trade"
+select_main_deity_cultus_orientis_decision.select_eshmun:0 "Eshum god of health"
+
+choose_main_deity_cultus_orientis_decision_tooltip:1 "Wählen dein Hauptgott(in)"
+choose_main_deity_cultus_orientis_decision_confirm:1 "Wählen dein Hauptgott(in)"
+
+#choose your main deity Mithraic Mysteries
+choose_main_deity_mm_decision:0 "Hauptgottheit wählen"
+mm_cmd_decision_desc:0 "as i proceed, like most of the old cultus followers there was one particualar god who was important for their family."
+choose_main_deity_mm_decision_tooltip:1 "this can only be done once in a lifetime so choose wisely"
+choose_main_deity_mm_decision_confirm:1 "Let's see"
+
+#Embrace roman culture 
+embrace_roman_culture_decision:0 "Umarm die Römischer Kultur"
+embrace_roman_culture_decision_desc:0 "Wir haben unsere alte Religion zurück, jetzt ist es an der zeit, die Römischen tugenden wieder einzuführen."
+embrace_roman_culture_decision_tooltip:0 "Rückkehr der Römischen kultur"
+embrace_roman_culture_decision_confirm:0 "Bestätigen"
+
+#Embrace gallo roman culture 
+embrace_gallo_roman_culture_decision:0 "Umarm die Gallorömischen Kultur"
+embrace_gallo_roman_culture_decision_desc:0 "Wir haben unsere alte Religion zurück, jetzt ist es an der zeit, die Gallorömischen tugenden wieder einzuführen."
+embrace_gallo_roman_culture_decision_tooltip:0 "Rückkehr der Gallorömischen kultur"
+embrace_gallo_roman_culture_decision_confirm:0 "Bestätigen"
+
+#Embrace romano british culture 
+embrace_romano_british_culture_decision:0 "Umarm die Römisch Britischen Kultur"
+embrace_romano_british_culture_decision_desc:0 "Wir haben unsere alte Religion zurück, jetzt ist es an der zeit, die Römisch Britischen tugenden wieder einzuführen."
+embrace_romano_british_culture_decision_tooltip:0 "Rückkehr der Römisch Britischen Kultur"
+embrace_romano_british_culture_decision_confirm:0 "Bestätigen"
+
+#Umarm die romano germanic culture 
+embrace_romano_germanic_culture_decision:0 "Umarm die Römisch Germanischen culture"
+embrace_romano_germanic_culture_decision_desc:0 "Wir haben unsere alte Religion zurück, jetzt ist es an der zeit, die Römisch Germanischen tugenden wieder einzuführen."
+embrace_romano_germanic_culture_decision_tooltip:0 "Rückkehr zur Römisch Germanischen Kultur"
+embrace_romano_germanic_culture_decision_confirm:0 "Bestätigen"
+
+#Umarm die hispano roman culture 
+embrace_hispano_roman_culture_decision:0 "Umarm die Hispano Römischen culture"
+embrace_hispano_roman_culture_decision_desc:0 "Wir haben unsere alte Religion zurück, jetzt ist es an der zeit, die Hispano Römischen tugenden wieder einzuführen."
+embrace_hispano_roman_culture_decision_tooltip:0 "Rückkehr der Hispano Römischen Kultur"
+embrace_hispano_roman_culture_decision_confirm:0 "Bestätigen"
+
+#Restore Cultus Deorum Priesthood
+cdr_restore_high_priesthood_decision:0 "Wiederherstellung des Cultus Deorum Priestertums"
+cdr_restore_high_priesthood_decision_confirm:0 "Restore Cultus Deorum Priesthoodd"
+cdr_restore_high_priesthood_decision_desc:0 "Wenn der [ROOT.Char.GetFaith.GetAdjective] Glaube in Griechenland Fuß fasst, wird die Zeit reif sein für die Wiedereinführung eines richtigen Cultus Deorum Priestertums."
+cdr_restore_high_priesthood_decision_tooltip:0 "Das [ROOT.Char.GetFaith.GetAdjective] Priestertum ist errichtet."
+cdr_restore_high_priesthood_decision_effect_tooltip:0 "Das [THIS.Char.GetFaith.GetAdjective] Priestertum ist errichtet"
+
+
+#Open the temple of Vesta
+cdr_open_temple_of_vesta_decision:0 "Öffne den Tempel der Vesta"
+cdr_open_temple_of_vesta_decision_desc:0 "Der Tempel der Vesta, vielen unbekannt, aber er war einer der wichtigsten Tempel des römischen Reiches. Wenn die Flamme erloschen war, konnte Rom nur das Schlimmste passieren."
+cdr_open_temple_of_vesta_decision_tooltip:1 "Wiederaufbau und Öffnung des Tempels der Vesta"
+cdr_open_temple_of_vesta_decision_confirm:1 "Öffne den Tempel der Vesta"
+
+#Saturnalien
+saturnalia_decision:0 "Feiern Sie Saturnalien"
+saturnalia_decision_tooltip:1 "Feiern Sie Saturnalien"
+saturnalia_decision_desc:0 "Das Wetter wird kälter, die Erntezeit ist vorbei und nun ist es Zeit, Saturnus zu ehren und den Göttern für die Ernte im [ROOT.Char.GetPrimaryTitle.GetName] zu danken."
+saturnalia_decision_confirm:1 "Bereite das Reich vor"
+
+
+join_cult_decision:0 "Einem Kult beitreten"
+join_cult_decision_tooltip:1 "Kult beitreten"
+join_cult_decision_desc:0 "Die römischen und griechischen Religionen hatten viele verschiedene Kulte, vielleicht sollte ich versuchen, einem beizutreten? Historisch gesehen konnten die Römer mehreren Kulten beitreten, aber um das Spiel ein wenig ausgeglichen zu halten, kann man nur einem beitreten. Ich habe es so eingerichtet, dass du zwischen der Religion oder der Eigenschaft wählen kannst."
+join_cult_decision_tt:0 "Du beginnst, dein Leben nach den Werten von "
+join_cult_decision.mithraic_mysteries:0 "Mithraische Mysterien"
+join_cult_decision.isis_mysteries:0 "Mysterien der Isis" 
+join_cult_decision.serapis_cult:0 "Serapis-Kult"
+join_cult_decision.eluesinian_mysteries:0 "Eluesinische Mysterien"
+join_cult_decision.sol_invictus_cult:0 "Sol Invictus-Kult"
+join_cult_decision.imperial_cult:0 "Kaiserlicher Kult"
+join_cult_decision_confirm:1 "Schauen Sie sich die verfügbaren Kulte an"
+
+
+#Beschluss zur Wiederherstellung des Altars von Victoria
+restore_altar_of_victoria_decision:0 "Den Altar von Victoria wiederherstellen"
+restore_altar_of_victoria_decision_desc:0 "Bringen Sie den Altar von Victoria zurück in das Senatsgebäude."
+restore_altar_of_victoria_decision_tooltip:1 "Ich habe nur eine Chance dazu"
+restore_altar_of_victoria_decision_confirm:1 "Geh zum Senat"
+
+convert_to_roman_illyrian_decision:0 "Illyrische Götter adoptieren"
+convert_to_roman_illyrian_decision_desc:0 "Als römischer Polytheist in alten illyrischen Landen gibt es hier viele alte Götter, die wir annehmen können"
+convert_to_roman_illyrian_decision_tooltip:1 "Illyrische Götter adoptieren"
+convert_to_roman_illyrian_decision_confirm:1 "Illyrische Götter annehmen"
+
+convert_to_gallo_roman_decision:0 "Gallorömische Götter annehmen"
+convert_to_gallo_roman_decision_desc:0 "Als römischer Polytheist in den alten gallischen Ländern, gibt es hier viele alte Götter, die wir übernehmen können"
+convert_to_gallo_roman_decision_tooltip:1 "Gallische Götter übernehmen"
+convert_to_gallo_roman_decision_confirm:1 "Gallische Götter annehmen"
+
+convert_to_romano_british_decision:0 "Romano-britische Götter annehmen"
+convert_to_romano_british_decision_desc:0 "Als römischer Polytheist in den alten britischen Landen, gibt es hier viele alte Götter, die wir übernehmen können"
+convert_to_romano_british_decision_tooltip:1 "Übernimmt britische Götter"
+convert_to_romano_british_decision_confirm:1 "Nehmt britische Götter an"
+
+convert_to_romano_germanic_decision:0 "Romano germanische Götter übernehmen"
+convert_to_romano_germanic_decision_desc:0 "Als römischer Polytheist in alten germanischen Ländern, gibt es viele alte Götter hier, die wir übernehmen können"
+convert_to_romano_germanic_decision_tooltip:1 "Germanische Götter übernehmen"
+convert_to_romano_germanic_decision_confirm:1 "Germanische Götter annehmen"
+
+convert_to_cultus_orientis_decision:0 "West-semitische Götter annehmen"
+convert_to_cultus_orientis_decision_desc:0 "Als römischer Polytheist in alten westsemitischen Ländern, gibt es hier viele alte Götter, die wir übernehmen können"
+convert_to_cultus_orientis_decision_tooltip:1 "West-semitische Götter übernehmen"
+convert_to_cultus_orientis_decision_confirm:1 "Westsemitische Götter annehmen"
+
+convert_to_romano_hispanic_decision:0 "Iberische Götter annehmen"
+convert_to_romano_hispanic_decision_desc:0 "Als römischer Polytheist in den iberischen Ländern gibt es hier viele alte Götter, die wir übernehmen können"
+convert_to_romano_hispanic_decision_tooltip:1 "Iberische Götter adoptieren"
+convert_to_romano_hispanic_decision_confirm:1 "Iberische Götter annehmen"
+
+
+#Request auspice
+request_auspice_decision:0 "Bitte um ein Auspice"
+request_auspice_decision_desc:0 "Bei allem, was wir im Leben tun, wollen wir sicher sein, dass die Götter unser Tun gutheißen. Wenn sie nicht zustimmen, wer weiß, was passiert, wenn wir trotzdem weitermachen."
+request_auspice_decision_tooltip:0 "Bitte um einen Auspizien"
+request_auspice_decision_confirm:0 "Auspice beantragen"
+REQUEST_AUSPICE_NEXT_STEP_BUTTON:0 "Auspice auswählen"
+auspice_type:0 "Auspice auswählen"
+flying_eagle:0 "#Bold #V Der Flug des Adlers#!#!\n$flying_eagle_desc$"
+flying_eagle_desc:0 "Der Adler wird aus dem Käfig befreit, \wird er hoch oder tief fliegen?"
+auspice_flying_eagle_tooltip:0 "Kann es einfacher machen, dein Reich zu regieren"
+eating_patterns:0 "#Bold #V Fressmuster der heiligen Hühner#!#!\n$eating_patterns_desc$"
+eating_patterns_desc:0 "Werden die Heiligen Hühner aus dem Käfig kommen oder drinnen bleiben?"
+auspice_eating_patterns_tooltip:0 "Sie müssen im Krieg sein"
+auspice_eating_patterns_not_at_war:0 ""
+singing_of_crow:0 "#Bold #V Gesang der Krähen#!#!\n$singing_of_crow_desc$"
+singing_of_crow_desc:0 "Wie wird sich der Gesang der Krähen verändern"
+auspice_sing_of_crow_tooltip:0 "Kann Ihr monatliches Einkommen erhöhen"
+
+#Lararium Statuen kaufen
+pr_build_lararium_decision:0 "Bauen Sie Ihr Lararium"
+pr_build_lararium_decision_desc:0 "In der Antike hatte jede römische Familie ihr eigenes Lararium mit ein paar Götterstatuen, das zum Beispiel immer die Laren enthielt, die das Haus und den Haushalt beschützten. Jetzt ist es an der Zeit, selbst eines zu bauen."
+pr_build_lararium_decision_tooltip:1 "Erweitern Sie Ihr Lararium um eine neue Statue"
+pr_build_lararium_decision_confirm:1 "Geh auf den Markt"
+
+pr_offer_to_a_god_decision:0 "Eine Opfergabe bringen"
+pr_offer_to_a_god_decision_desc:0 "Bringe einem Gott eine Opfergabe dar, das hilft mir auch, meinen Fehler zu korrigieren, dass ich nicht nach der Zustimmung zu meinen Handlungen gefragt habe und mich mit den Göttern verbinde. Achte darauf, dass du auch eine Statue des Gottes kaufst, dem du opfern willst."
+pr_offer_to_a_god_decision_tooltip:0 "Mach ein Angebot an den von dir gewählten Hauptgott"
+pr_offer_to_a_god_decision_confirm:0 "Biete den Göttern"
+prdecision_type:0 "Opfergabe wählen"
+
+pr_milk_offering:0 "#Bold #V Offer Milk#!#!\n$pr_milk_offering_desc$"
+pr_milk_offering_desc:0 "Biete dem/den Gott(en) Milch an"
+pr_milk_offering_tooltip:0 "Milch anbieten"
+
+pr_wine_offering:0 "#Bold #V Offer Wine#!#!\n$pr_wine_offering_desc$"
+pr_wine_offering_desc:0 "Biete den Göttern Wein an"
+pr_wine_offering_tooltip:0 "Wein anbieten"
+
+pr_fig_offering:0 "pr_fig_offering_desc$" "#Bold #V Offer Figs#!#!\n$pr_fig_offering_desc$"
+pr_fig_offering_desc:0 "Biete Feigen an $cdr_polytheism_good_god_juno$"
+pr_fig_offering_tooltip:0 "Feigen anbieten"
+
+pr_incense_offering:0 "$cdr_polytheism_good_god_juno$" pr_incense_offering_desc$ "
+pr_incense_offering_desc:0 "Bringe den Göttern Weihrauch dar"
+pr_incense_offering_tooltip:0 "Weihrauchopfer"
+
+pr_roses_offering:0 "#Bold #V Offer Roses#!#!\n$pr_roses_offering_desc$"
+pr_roses_offering_desc:0 "Biete der Venus Rosen an"
+pr_roses_offering_tooltip:0 "Rosen anbieten"
+
+pr_fruit_offering:0 "#Bold #V Offer Fruit#!#!\n$pr_fruit_offering_desc$" 
+pr_fruit_offering_desc:0 "Biete den Göttern Früchte an"
+pr_fruit_offering_tooltip:0 "Obst anbieten"
+
+pr_vegetables_offering:0 "#Bold #V Offer Vegetables#!#!\n$pr_vegetables_offering_desc$"
+pr_vegetables_offering_desc:0 "Biete Gemüse für Mercurius an"
+pr_vegetables_offering_tooltip:0 "Biete Vergetables an"
+
+pr_spelt_offering:0 "#Bold #V Biete Dinkelmehl an#!#!\n$pr_spelt_offering_desc$"
+pr_spelt_offering_desc:0 "Biete Dinkelmehl für Mars"
+pr_dinkel_opfer_tooltip:0 "Biete Dinkelmehl an"
+
+pr_olives_offering:0 "pr_olives_offering_desc$" "#Fett #V Biete Oliven an#!#!\n$pr_olives_offering_desc$"
+pr_olives_offering_desc:0 "Biete der Minerva Oliven an"
+pr_olives_offering_tooltip:0 "Biete Oliven an"
+
+pr_honey_offering:0 "pr_honey_offering_desc$" "#Fett #V Biete Honig an#!#!\n$pr_honey_offering_desc$"
+pr_honey_offering_desc:0 "Biete Honig für Apollo an"
+pr_honey_offering_tooltip:0 "Biete Honig an"
+
+pr_initiation_mithras_cult:0 "Besuche das Mitraeum"
+pr_initiation_mithras_cult_desc:0 "Besuche das Mitraeum, um Mithras zu ehren und den Kult einzuweihen."
+pr_initiation_mithras_cult_tooltip:0 "Besuche das Mitraeum, um mit dem Mithraskult fortzufahren"
+pr_initiation_mithras_cult_confirm:0 "Gehe zum Mithraeum"
+
+pr_western_roman_empire:0 "Westliches Römisches Reich wiederherstellen"
+pr_western_roman_empire_desc:0 "Stelle das alte Weströmische Reich in seiner alten Pracht wieder her"
+pr_western_roman_empire_tooltip:0 "Westliches Römisches Reich wiederherstellen"
+create_western_roman_effect_tooltip:0 "Es ist an der Zeit, das Weströmische Reich wiederherzustellen"
+pr_western_roman_empire_confirm:0 "Wiederherstellung des Weströmischen Reiches"
+
+pr_invite_c_latin_speaker:0 "Lateinischen Sprecher einladen"
+switch_to_latin_language_tt:0 "[GetPlayer.GetCulture.GetName] wird die Sprache $language_latin_name$ [language|E] übernehmen"
+pr_invite_c_latin_speaker_desc:0 "Nachdem die klassische lateinische Sprache nach der Herrschaft von Kaiser Justinian verloren ging, ist es an der Zeit, einen Historiker mit Kenntnissen der klassischen Sprache einzuladen, damit wir in die Fußstapfen unserer Vorfahren treten können."
+pr_invite_c_latin_speaker_tooltip:0 "Lateinischen Redner einladen"
+pr_invite_c_latin_speaker_confirm:0 "Senden Sie die Einladung"
+
+pr_commission_sibylline_books:0 "Auftrag für die Neuen Sibyllinischen Bücher"
+pr_commission_sibylline_books_desc:0 "Sie gingen im Feuer verloren, als der Tempel von $cdr_polytheism_high_god_name$ im Jahr 83 v. Chr. niederbrannte. 76 v. Chr. ersetzten die Römer sie und lagerten sie im neu restaurierten Tempel von $cdr_polytheism_high_god_name$.\n\n Doch dann verbrannte General Flavius Stilicho sie 405 n. Chr.. Jetzt ist es an der Zeit, sie wieder zu restaurieren und vor allem, sie nie wieder von einer feindlichen Religion zerstören zu lassen!"
+pr_commission_sibylline_books_tooltip:0 "Die sibyllinischen Bücher enthalten Vorschriften, die notwendig sind, um außergewöhnliches Unheil abzuwenden und unheilvolle Wundertaten zu sühnen"
+pr_commission_sibylline_books_confirm:0 "Bestätigen"

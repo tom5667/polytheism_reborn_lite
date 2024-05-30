@@ -25,7 +25,7 @@ more_doctrines  = {
 	categories = {
 		polytheism_reborn
 	}
-	default = more_doctrines_off
+	default = more_doctrines_on 
 	# more_doctrines_on = {
 
 	# }
@@ -73,15 +73,15 @@ pr_reconstruct_polytheism_ai = {
 	}
 }
 
-pr_polytheism_variety_ai = {
+pr_polytheis_variety_ai = {
 	categories = {
 		polytheism_reborn
 	}
-	default = pr_polytheism_variety_ai_on
-	pr_polytheism_variety_ai_on = {	
+	default = pr_polytheis_variety_ai_on
+	pr_polytheis_variety_ai_on = {	
 		flag = GG_can_change_rule
 	}
-	pr_polytheism_variety_ai_off = { 
+	pr_polytheis_variety_ai_off = { 
 		flag = GG_can_change_rule
 	}
 }
@@ -94,7 +94,7 @@ customizable_ethics_game_rule = {
 
 	customizable_ethics_disabled = {
 		flag = customizable_ethics_disabled
-		#flag = GG_can_change_rule
+		flag = GG_can_change_rule
 	}
 
 	# customizable_ethics_enabled = {
@@ -116,7 +116,7 @@ pr_more_tenets_game_rule = {
 
 	pr_more_tenets_disabled = {
 		flag = pr_more_tenets_disabled
-		#flag = GG_can_change_rule
+		flag = GG_can_change_rule
 	}
 
 

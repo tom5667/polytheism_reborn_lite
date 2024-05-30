@@ -1,0 +1,544 @@
+﻿l_german:
+
+#quick menu change religon
+rps.001.t:0 ""
+rps.001.desc:0 "Schnellmenü zum Wechseln der Religion"
+rps.001.greek_roman:0 "Griechisch-römisch"
+rps.001.etruscan:0 "Etrusker"
+rps.001.egyptian:0 "Ägyptisch"
+rps.001.celtic:0 "Keltic"
+rps.001.germanic:0 "Germanisch"
+
+rps.001.next:0 "Nächste"
+rps.001.optout:0 "Beenden"
+
+rps.011.t:0 ""
+rps.011.desc:0 "Schnellmenü zum Wechseln der Religion"
+rps.011.canaanite:0 "Kanaaniter"
+rps.011.mesopotamian:0 "Mesopotamisch"
+rps.011.daco_thracian:0 "Dako-thrakisch"
+rps.011.caucasus:0 "Kaukasus"
+rps.011.hittite:0 "Hethiter"
+rps.011.scythian:0 "Skythen"
+
+rps.011.back:0 "Zurück"
+rps.011.next:0 "Nächste"
+rps.011.optout:0 "Beenden"
+
+rps.015.t:0 ""
+rps.015.desc:0 " "
+rps.015.illyrian:0 "Illyrisch"
+rps.015.baltic:0 "Baltisch"
+rps.015.iberian:0 "Iberisch"
+rps.015.back:0 "Zurück"
+rps.015.next:0 "Nächste"
+rps.015.optout:0 "Beenden"
+
+
+#Greek-Roman
+rps.002.t:0 ""
+rps.002.desc:0 " "
+rps.002.roman:0 "Römischer Polytheismus"
+rps.002.greek:0 "Griechischer Polytheismus"
+rps.002.mycenaean:0 "Mykenischer Polytheismus"
+rps.002.mithras:0 "Mithraische Geheimnisse"
+rps.002.eluesinian:0 "Eleusinische Geheimnisse"
+rps.002.serapis:0 "Kult des Serapis"
+rps.002.sol_invictus:0 "Sol Invictus Kult"
+rps.002.next:0 "Nächste"
+rps.002.back:0 "Zurück"
+#Greek-Roman2
+rps.012.t:0 ""
+rps.012.desc:0 " "
+rps.012.isis:0 "Geheimnisse der Isis"
+rps.012.imperial:0 "Kaiserlicher Kult"
+rps.012.roman_illyrian:0 "Römisch illyrischer Polytheismus"
+rps.012.romano_british:0 "Römisch britischer Polytheismus"
+rps.012.gallo_roman:0 "Gallorömischer Polytheismus"
+rps.012.romano_germanic:0 "Römisch Germanischer Polytheismus"
+rps.012.graeco_egyptian_polytheism:0 "Griechisch Ägyptischer Polytheismus"
+rps.012.alexandrian_cult:0 "Alexandrischer Kult"
+rps.012.main:0 "Hauptmenü"
+rps.012.back:0 "Zurück"
+
+#Etruscan
+rps.003.t:0 ""
+rps.003.desc:0 " "
+rps.003.etruscan:0 "Etruskischer Polytheismus"
+rps.003.back:0 "Zurück"
+
+#Egyptian
+rps.004.t:0 ""
+rps.004.desc:0 " "
+rps.004.kemetic:0 "Kemetischer Polytheismus"
+rps.004.atenism:0 "Atenismus"
+rps.004.back:0 "Zurück"
+
+#Celtic
+rps.005.t:0 ""
+rps.005.desc:0 " "
+rps.005.gaelic:0 "Gälischer Polytheismus"
+rps.005.brythonic:0 "Brythonischer Polytheismus"
+rps.005.gaulish:0 "Gallischer Polytheismus"
+rps.005.celtic_iberian:0 "Keltisch-iberischer Polytheismus"
+rps.005.back:0 "Zurück"
+
+#Germanic
+rps.006.t:0 ""
+rps.006.desc:0 " "
+rps.006.anglo_saxon:0 "Angelsächsischer Polytheismus"
+rps.006.german:0 "Deutscher Polytheismus"
+rps.006.back:0 "Zurück"
+
+#Punic
+rps.007.t:0 ""
+rps.007.desc:0 " "
+rps.007.punic:0 "Punischer Polytheismus"
+rps.007.semitic:0 "Semitischer Polytheismus"
+rps.007.back:0 "Zurück"
+
+#Mesopotamian
+rps.008.t:0 ""
+rps.008.desc:0 " "
+rps.008.babylonian:0 "Babylonischer Polytheismus"
+rps.008.sumerian:0 "Sumerischer Polytheismus"
+rps.008.assyrian:0 "Assyrischer Polytheismus"
+rps.008.back:0 "Zurück"
+
+#Dacian
+rps.009.t:0 ""
+rps.009.desc:0 " "
+rps.009.dacian:0 "Dakischer Polytheismus"
+rps.009.zalmoxism:0 "Zalmoxismus"
+rps.009.back:0 "Zurück"
+
+#Caucasus
+rps.010.t:0 ""
+rps.010.desc:0 " "
+rps.010.georgian:0 "Georgischer Polytheismus"
+rps.010.armenian:0 "Armenischer Polytheismus"
+rps.010.back:0 "Zurück"
+
+#Hittite
+rps.014.t:0 ""
+rps.014.desc:0 " "
+rps.014.hittite:0 "Hethitischer Polytheismus"
+rps.014.back:0 "Zurück"
+
+
+#Scythian
+rps.013.t:0 ""
+rps.013.desc:0 " "
+rps.013.scythian:0 "Skythischer Polytheismus"
+rps.013.back:0 "Zurück"
+
+
+
+#Illyrian
+rps.016.t:0 ""
+rps.016.desc:0 " "
+rps.016.illyrian:0 "Illyrischer Polytheismus"
+rps.016.back:0 "Zurück"
+
+rps.017.t:0 ""
+rps.017.desc:0 " "
+rps.017.lithuanian:0 "Litauischer Polytheismus"
+rps.017.latvian:0 "Lettischer Polytheismus"
+rps.017.prussian:0 "Preußischer Polytheismus"
+rps.017.back:0 "Zurück"
+
+rps.018.t:0 ""
+rps.018.desc:0 " "
+rps.018.lusitanian:0 "Lusitanischer Polytheismus"
+rps.018.back:0 "Zurück"
+
+
+
+#Culture menu
+rpcs.001.t:0 " "
+rpcs.001.desc:0 "Schnellmenü Wechsel Kultur"
+rpcs.001.greek_roman:0 "Griechisch-römisch"
+rpcs.001.celtic:0 "Keltic"
+rpcs.001.illyrian:0 "Illyrisch"
+rpcs.001.daco_thracian:0 "Dako-thrakisch"
+rpcs.001.next:0 "Nächste"
+rpcs.001.optout:0 "Beenden"
+
+rpcs.002.t:0 " "
+rpcs.002.desc:0 "Schnellmenü Wechsel Kultur"
+rpcs.002.egyptian:0 "Ägyptisch"
+rpcs.002.mesopotamian:0 "Mesopotamisch"
+rpcs.002.etruscan:0 "Etrusker"
+rpcs.002.punic:0 "Punisch"
+rpcs.002.hittite:0 "Hethitere"
+rpcs.002.iberian:0 "Iberisch"
+rpcs.002.back:0 "Zurück"
+rcps.002.optout:0 "Beenden"
+
+#Greek Roman 
+rpcs.003.t:0 " "
+rpcs.003.desc:0 " "
+rpcs.003.mycenaean:0 "Mykenisch"
+rpcs.003.graeco_persian:0 "Graeco-Perser"
+rpcs.003.roman:0 "Römisch"
+rpcs.003.greek:0 "Griechisch"
+rpcs.003.graeco_egyptian:0 "Griechisch-ägyptisch"
+rpcs.003.back:0 "Zurück"
+
+#Celtic
+rpcs.004.t:0 " "
+rpcs.004.desc:0 " "
+rpcs.004.goidelic:0 "Goidelic"
+rpcs.004.manx:0 "Manx"
+rpcs.004.irish:0 "Irisch"
+rpcs.004.gaelic:0 "Gälisch"
+rpcs.004.next:0 "Nächste"
+rpcs.004.back:0 "Zurück"
+
+rpcs.005.t:0 " "
+rpcs.005.desc:0 " "
+rpcs.005.gaulish:0 "Gallisch"
+rpcs.005.belgae:0 "Belgae"
+rpcs.005.eburones:0 "Eburones"
+rpcs.005.celtiberian:0 "Keltiberisch"
+rpcs.005.back:0 "Zurück"
+
+#Illyrian
+rpcs.006.t:0 " "
+rpcs.006.desc:0 " "
+rpcs.006.illyrian:0 "Illyrisch"
+rpcs.006.back:0 "Zurück"
+
+#Daco Thracian
+rpcs.007.t:0 " "
+rpcs.007.desc:0 " "
+rpcs.007.dacian:0 "Dakisch"
+rpcs.007.thracian:0 "Thrakisch"
+rpcs.007.back:0 "Zurück"
+
+#Kemetic
+rpcs.008.t:0 " "
+rpcs.008.desc:0 " "
+rpcs.008.kemetic:0 "Kemetisch"
+rpcs.008.back:0 "Zurück"
+
+#Mesopotamian
+rpcs.009.t:0 " "
+rpcs.009.desc:0 " "
+rpcs.009.babylonian:0 "Babylonisch"
+rpcs.009.assyrian:0 "Assyrisch"
+rpcs.009.sumerian:0 "Sumerisch"
+rpcs.009.back:0 "Zurück"
+
+#Etruscan
+rpcs.010.t:0 " "
+rpcs.010.desc:0 " "
+rpcs.010.etruscan:0 "Etrusker"
+rpcs.010.back:0 "Zurück"
+
+#Punic
+rpcs.011.t:0 " "
+rpcs.011.desc:0 " "
+rpcs.011.punic:0 "Punisch"
+rpcs.011.back:0 "Zurück"
+
+#Hittite
+rpcs.012.t:0 " "
+rpcs.012.desc:0 " "
+rpcs.012.hittite:0 "Hethiter"
+rpcs.012.back:0 "Zurück"
+
+rpcs.013.t:0 " "
+rpcs.013.desc:0 " "
+rpcs.013.iberian:0 "Iberisch"
+rpcs.013.back:0 "Zurück"
+
+
+#religion menu
+pr.018.t:0 ""
+pr.018.desc:0 "Let's see,there are so many religions lost, now it's time to do research and bring a religion back."
+pr.018.greek_roman:0 "Griechisch-Römisch"
+pr.018.etruscan:0 "Etrusker"
+pr.018.egyptian:0 "Ägyptisch"
+pr.018.celtic:0 "Keltic"
+pr.018.germanic:0 "Germanisch"
+pr.018.iberian:0 "Iberisch"
+pr.018.next:0 "Nächste"
+pr.018.optout:0 "Beenden"
+
+pr.019.t:0 ""
+pr.019.desc:0 ""
+pr.019.canaanite:0 "Kanaaniter"
+pr.019.mesopotamian:0 "Mesopotamisch"
+pr.019.daco_thracian:0 "Dako-Thrakisch"
+pr.019.caucasus:0 "Kaukasus"
+pr.019.hittite:0 "Hethiter"
+pr.019.scythian:0 "Skythen"
+pr.019.illyrian:0 "Illyrisch"
+pr.019.baltic:0 "Baltisch"
+pr.019.back:0 "Zurück"
+pr.019.optout:0 "Beenden"
+
+#Greek-Roman
+pr.020.t:0 ""
+pr.020.desc:0 "Die antiken griechischen und römischen Religionen waren vor langer Zeit die vorherrschenden Religionen im Mittelmeerraum. Die römische Religion oder besser gesagt Cultus deorum (Kultivierung der Götter) war einst die Staatsreligion des mächtigen Römischen Reiches. Oder vielleicht ist die Religion, die Kaiser Julian der Philosoph geschaffen hat, eine Kombination aus griechischer und römischer Religion. Vielleicht sogar die antike griechische Religion der mächtigen Spartaner und Athener."
+pr.020.roman:0 "Römischer Polytheismus"
+pr.020.greek:0 "Griechiescher Polytheismus"
+pr.020.mycenaean:0 "Mykenischer Polytheismus"
+pr.020.graeco_egyptian:0 "Griechisch Ägyptischer Polytheismus"
+pr.020.back:0 "Zurück"
+
+#Etruscan
+pr.021.t:0 ""
+pr.021.desc:0 "Einst die Religion der wohlhabenden Etrusker"
+pr.021.etruscan:0 "Etruskischer Polytheismus"
+pr.021.back:0 "Zurück"
+
+#Egyptian
+pr.022.t:0 ""
+pr.022.desc:0 " "
+pr.022.kemetic:0 "Kemetischer Polytheismus"
+pr.022.atenism:0 "Atenismus"
+pr.022.back:0 "Zurück"
+
+#Celtic
+pr.023.t:0 ""
+pr.023.desc:0 "TDie keltischen Religionen waren einst in den meisten Teilen Mitteleuropas vorherrschend und gab es sogar in Ancyra"
+pr.023.gaelic:0 "Gälischer Polytheismus"
+pr.023.brythonic:0 "Brythonischer Polytheismus"
+pr.023.gaulish:0 "Gallischer Polytheismus"
+pr.023.celtic_iberian:0 "Keltisch-iberischer Polytheismus"
+pr.023.back:0 "Zurück"
+
+#Germanic
+pr.024.t:0 ""
+pr.024.desc:0 " "
+pr.024.anglo_saxon:0 "Angelsächsischer Polytheismus"
+pr.024.german:0 "Deutscher Polytheismus"
+pr.024.back:0 "Zurück"
+
+#Iberian 
+pr.052.t:0 ""
+pr.052.desc:0 " "
+pr.052.lusitanian:0 "Lusitanischer Polytheismus"
+pr.052.back:0 "Zurück"
+
+#Punic
+pr.025.t:0 ""
+pr.025.desc:0 " "
+pr.025.punic:0 "Punischer Polytheismus"
+pr.025.semitic:0 "Semitischer Polytheismus"
+pr.025.back:0 "Zurück"
+
+#Mesopotamian
+pr.026.t:0 ""
+pr.026.desc:0 " "
+pr.026.babylonian:0 "Babylonischer Polytheismus"
+pr.026.sumerian:0 "Sumerischer Polytheismus"
+
+pr.026.back:0 "Zurück"
+
+#Dacian
+pr.027.t:0 ""
+pr.027.desc:0 " "
+pr.027.dacian:0 "Dakischer Polytheismus"
+pr.027.zalmoxism:0 "Zalmoxismus"
+pr.027.back:0 "Zurück"
+
+#Caucasus
+pr.028.t:0 ""
+pr.028.desc:0 " "
+pr.028.georgian:0 "Georgischer Polytheismus"
+pr.028.armenian:0 "Armenischer Polytheismus"
+pr.028.back:0 "Zurück"
+
+#Hittite
+pr.029.t:0 ""
+pr.029.desc:0 " "
+pr.029.hittite:0 "Hethitischer Polytheismus"
+pr.029.back:0 "Zurück"
+
+pr.047.t:0 ""
+pr.047.desc:0 " "
+pr.047.scythian:0 "Skythischer Polytheismus"
+pr.047.back:0 "Zurück"
+
+pr.048.t:0 ""
+pr.048.desc:0 " "
+pr.048.illyrian:0 "Illyrischer Polytheismus"
+pr.048.back:0 "Zurück"
+
+pr.049.t:0 ""
+pr.049.desc:0 " "
+pr.049.lithuanian:0 "Litauischer Polytheismus"
+pr.049.latvian:0 "Lettischer Polytheismus"
+pr.049.prussian:0 "Preußischer Polytheismus"
+pr.049.back:0 "Zurück"
+
+pr.030.t:0 "Die Bibliotheken"
+pr.030.desc:0 "Ich habe Wissen über die alten Bräuche ganz unterschiedlicher Menschen gewonnen. Ich sollte darüber nachdenken, jemanden auszusenden, um mehr Informationen über die alten Götter zu finden."
+pr.030.alexandria:0 "Bibliothek von Alexandria"
+pr.030.athens:0 "Bibliothek von Athene"
+pr.030.vatican:0 "Vatikanische Bibliothek"
+pr.030.minor_library:0 "Kleine Bibliothek"
+
+pr.031.t:0 "Rückkehr des Historikers"
+pr.031.desc:0 "Der Historiker kehrt zurück und mit großartigen Neuigkeiten! Hören wir, was sie aus den heiligen Schriften erzählen."
+pr.031.a:0 "Erfahren mehr über die Religion"
+
+pr.032.t:0 "Rückkehr des Historikers"
+pr.032.desc:0 "Der Historiker kehrt ohne hilfreiche Hilfe zurück. Vielleicht sollte ich einen Buchhändler einladen, der mir bei meiner Suche helfen kann?"
+pr.032.a:0 "Laden einen Buchhändler ein"
+pr.032.b:0 "Lass es so wie es ist"
+
+pr.034.t:0 "Der Buchhändler"
+pr.034.desc:0 "Nach 5 Tagen kam der Buchhändler mit einem Wagen voller Bücher. Er sagte, er habe nur ein Buch über die alten Religionen, das von Historikern erstellt wurde, bevor das Christentum eine Religion war."
+pr.034.a:0 "Kaufen das Buch"
+pr.034.b:0 "Kaufen das Buch nicht"
+
+pr.033.t:0 "Informationen gefunden"
+pr.033.desc:0 "Es ist nicht einfach, die Wege der Vergangenheit zu rekonstruieren, wenn alles, was damit in Zusammenhang stehen könnte, verborgen oder verschwand. Vielleicht gelingt mir das mit dem Wissen der wenigen Lowborn und des Historikers, oder sollte ich hier aufhören?"
+pr.033.a:0 "Weiter lernen"
+pr.033.b:0 "Das ist alles, was ich wissen möchte"
+
+pr.035.t:0 "Einmischung des hof pfarrers" 
+pr.035.desc:0 "[realm_priest.GetCouncilTitle] [realm_priest.GetName] glaubt, dass sie jedes Mal davon erfahren, wenn ich versuche, etwas zu versuchen, das mich von der Kirche wegtreibt, und hat mir vorgeschlagen, meine Sünden gegenüber der Kirche zu bereuen, sollte ich Buße tun oder Sollte ich versuchen, sie davon zu überzeugen, dass die alten Wege besser waren?"
+pr.035.a:0 "Versuchen, den [realm_priest.GetCouncilTitle] zu überzeugen"
+pr.035.b:0 "Bereuen"
+
+pr.036.t:0 "Debatte gewonnen"
+pr.036.desc:0 "Nach einer langen und ermüdenden Debatte gaben die [realm_priest.GetCouncilTitle] [realm_priest.GetName] schließlich nach und stellten fest, dass die alten Götter nicht so böse sind, wie sie sagen"
+pr.036.a:0 "Es wird nicht einfach sein mein Freund"
+
+pr.037.t:0 "Moderate Debatte"
+pr.037.desc:0 "Nach einer langen und ermüdenden Debatte blieb der [realm_priest.GetCouncilTitle] [realm_priest.GetName] bei seinem Standpunkt, dass sein Gott überlegen ist. Sagt er nun die Wahrheit? Er sagt, dass es noch Zeit zur Umkehr gibt."
+pr.037.a:0 "Sperren diesen Narren ein"
+pr.037.b:0 "Bereuen"
+
+pr.038.t:0 "Verlorene Debatte"
+pr.038.desc:0 "[realm_priest.GetCouncilTitle] [realm_priest.GetName] hat recht und ich war blind, die von Gott versprochene Herrlichkeit nicht zu sehen."
+pr.038.a:0 "Bereuen"
+
+pr.039.t:0 "Im Kerker"
+pr.039.desc:0 "Du verleugnest deine eigenen Vorfahren, indem du nicht zu den Göttern zurückkehrst, und dafür habe ich keine andere Wahl, als dich einzusperren."
+pr.039.a:0 "Kann ich das alles als Erfolg bezeichnen?"
+
+pr.040.t:0 "Ein gutes Buch"
+pr.040.desc:0 "Ein tolles Buch! Niemand weiß, dass ich über die alten Wahrheiten der Vergangenheit Bescheid weiß, und ich kann mehr erfahren, wenn ich das Buch selbst lese!"
+pr.040.a:0 "Weiterlesen"
+pr.040.b:0 "Das ist alles was ich wissen möchte"
+
+pr.041.t:0 "Ein schlechtes Buch"
+pr.041.desc:0 "Als ich anfange, das Buch zu lesen, stoße ich auf eine Seite mit dem folgenden Text$:$ "Sie wurden getäuscht, das Buch hat nichts zu bieten! haha" alles umsonst..."
+pr.041.a:0 "Viel glück beim nächsten mal hoffe ich"
+
+pr.042.t:0 "Nach dem Studium"
+pr.042.desc:0 "Erstaunlich, alles scheint so gut erhalten zu sein, vor allem die Rituale!"
+pr.042.a:0 "Konvertieren zum wahren Glauben"
+
+pr.043.t:0 "Buße tun"
+pr.043.desc:0 "Der Priester hatte schließlich recht, nachdem ich Buße getan hatte, kehrte ich in die liebevolle Umarmung Gottes zurück."
+pr.043.a:0 "Ehre sei Gott!"
+
+#Invite relatives
+prsr.001.t:0 "Die Sassanidischen Verwandten"
+prsr.001.desc:0 "Sie sind endlich da, zuerst haben wir ihnen Essen und Getränke gegeben, damit sie nach ihrer langen Reise wieder zu Kräften kommen.\nNach einiger Zeit kamen wir zur Sache, können wir ihnen wieder auf den Thron helfen? Ja, unsere Familien stammen aus derselben Blutlinie, aber wir brauchen immer noch Soldaten, die mit uns kämpfen und diese Abbasiden aus Persien vertreiben, da die chinesischen Truppen nicht helfen wollen, wir sind auf uns allein gestellt. Es liegt an uns, ob wir ihnen helfen oder ob wir sie zurückschicken?"
+prsr.001.stay:0 "Laden sie ein zu bleiben"
+prsr.001.abdicate_samani:0 "Geben sie ihnen ihre titel"
+prsr.001.abdicate_afrighid:0 "Geben sie ihnen ihre titel"
+prsr.001.send_away:0 "Schicken sie zurück"
+
+#Sassanid Reconquest
+sassanid_reconquest.001.t:0 "Beginn der Rückeroberung"
+sassanid_reconquest.001_desc:0 "Letzte Jahre nach der Eroberung Persiens durch die Araber haben wir endlich eine Brücke von Afrighids Land nach Tokharistan. Von nun an sind wir wieder ein Ort, mit dem man sich versöhnen kann. Wir können nach weiteren Verbündeten suchen oder so weitermachen wie bisher."
+sassanid_reconquest.001.a:0 "Lob Ahura Mazda"
+
+ prctv.001.t:0 "Schließen Den Tempel Von Vesta "
+ prctv.001.desc:0 "Einmal von Christen geschlossen, jetzt Soldaten der [ROOT.Char.GetFaith.GetAdjective] Religion, schließen es erneut und hoffentlich für immer."
+ prctv.001.a:0 "Schließen Den Tempel"
+
+#Gaelic
+ pr.001.t:0 "Neuer Anfang"
+ pr.001.desc:0 "Durch die Aufnahme erfahrener Händler, Bauern und Handwerker aus unseren Nachbarn wird [scoped_ruler.GetPrimaryTitle.GetNameNoTierNoTooltip] bald zu einem florierenden Handelszentrum.\n\nHoffentlich helfen uns diese neuen gälischen Siedler auch, unsere Vergangenheit besser zu verstehen."
+ pr.001.a:0 "Sie sind alle herzlich willkommen!"
+ #Text not changed, not important for single player
+ pr.002.t:0 "The New Settlers"
+ pr.002.desc.vassals:0 "[scoped_ruler.GetTitledFirstName] has decided to welcome foreign settlers from the neighboring [scoped_ruler.GetFaith.GetReligion.GetAdjectiveNoTooltip] realms.\n\n[scoped_ruler.GetSheHe|U] hopes that these new arrivals will help populate our land faster and increase commerce with our allies."
+ pr.002.desc.others:1 "[scoped_ruler.GetTitledFirstName] has decided to welcome foreign settlers from the [scoped_ruler.GetFaith.GetReligion.GetAdjectiveNoTooltip] realms neighboring [scoped_ruler.GetPrimaryTitle.GetNameNoTierNoTooltip].\n\n[scoped_ruler.GetSheHe|U] hopes that these new arrivals will help populate [scoped_ruler.GetHerHis] land faster and increase commerce with [scoped_ruler.GetHerHis] allies."
+ pr.002.a:0 "Well, I don't trust them!"
+ pr.002.b:0 "I see..."
+
+# #Brythonic
+#  pr.014.t:0 "New Beginning"
+#  pr.014.desc:0 "By allowing experienced traders, farmers, and artisans from our neighbours, [scoped_ruler.GetPrimaryTitle.GetNameNoTierNoTooltip] will soon become a thriving center of commerce.\n\nHopefully, these new Brythonic settlers will also help us to understand our past better."
+#  pr.014.a:0 "You are all welcome!"
+#  #Text not changed, not important for single player
+#  pr.015.t:0 "The New Settlers"
+#  pr.015.desc.vassals:0 "[scoped_ruler.GetTitledFirstName] has decided to welcome foreign settlers from the neighboring [scoped_ruler.GetFaith.GetReligion.GetAdjectiveNoTooltip] realms.\n\n[scoped_ruler.GetSheHe|U] hopes that these new arrivals will help populate our land faster and increase commerce with our allies."
+#  pr.015.desc.others:1 "[scoped_ruler.GetTitledFirstName] has decided to welcome foreign settlers from the [scoped_ruler.GetFaith.GetReligion.GetAdjectiveNoTooltip] realms neighboring [scoped_ruler.GetPrimaryTitle.GetNameNoTierNoTooltip].\n\n[scoped_ruler.GetSheHe|U] hopes that these new arrivals will help populate [scoped_ruler.GetHerHis] land faster and increase commerce with [scoped_ruler.GetHerHis] allies."
+#  pr.015.a:0 "Well, I don't trust them!"
+#  pr.015.b:0 "I see..."
+
+# #Gaulish
+#  pr.016.t:0 "New Beginning"
+#  pr.016.desc:0 "By allowing experienced traders, farmers, and artisans from our neighbours, [scoped_ruler.GetPrimaryTitle.GetNameNoTierNoTooltip] will soon become a thriving center of commerce.\n\nHopefully, these new Gaulish settlers will also help us to understand our past better."
+#  pr.016.a:0 "You are all welcome!"
+#  #Text not changed, not important for single player
+#  pr.017.t:0 "The New Settlers"
+#  pr.017.desc.vassals:0 "[scoped_ruler.GetTitledFirstName] has decided to welcome foreign settlers from the neighboring [scoped_ruler.GetFaith.GetReligion.GetAdjectiveNoTooltip] realms.\n\n[scoped_ruler.GetSheHe|U] hopes that these new arrivals will help populate our land faster and increase commerce with our allies."
+#  pr.017.desc.others:1 "[scoped_ruler.GetTitledFirstName] has decided to welcome foreign settlers from the [scoped_ruler.GetFaith.GetReligion.GetAdjectiveNoTooltip] realms neighboring [scoped_ruler.GetPrimaryTitle.GetNameNoTierNoTooltip].\n\n[scoped_ruler.GetSheHe|U] hopes that these new arrivals will help populate [scoped_ruler.GetHerHis] land faster and increase commerce with [scoped_ruler.GetHerHis] allies."
+#  pr.017.a:0 "Well, I don't trust them!"
+#  pr.017.b:0 "I see..."
+
+ pr.003.t:0 "Celtica"
+ pr.003.desc:0 "Es gab viele Stämme in Gallien, aber jetzt ist es an der Zeit, ein neues zentrales gallisches [Königreich] zu schaffen E] Celtica."
+ pr.003.a:0 "Celtica ist wieder da"
+
+ pr.004.t:0 "Belgica"
+ pr.004.desc:0 "Once one of the most problomatic tribes for the Romans to keep them under control, now again united under the [kingdom| E] Belgae"
+ pr.004.a:0 "Belgae ist wieder da"
+
+ pr.005.t:0 "Narbonensis"
+ pr.005.desc:0 "Narbonensis Once a Celtic Greek Province with the biggest city Massalia, this greek celtic city was once a great ally of the Roman Republic"
+ pr.005.a:0 "Narbonensis ist wieder da"
+
+ pr.006.t:0 "Aquitania"
+ pr.006.desc:0 "Es gab viele Stämme in Gallien, aber jetzt ist es an der Zeit, ein neues südliches Gualish [Königreich] zu schaffen E] Aquitanien."
+ pr.006.a:0 "Aquitania ist wieder da"
+
+ pr.007.t:0 "Gaul"
+ pr.007.desc:0 "Durch $gaulish_polytheism_high_god_name$, $gaulish_polytheism_wealth_god_name$ und $gaulish_polytheism_war_god_name$, jetzt, da die 4 [Königreiche| dejurieren]. E] Celtica, Narbonensis, Aquitania und Belgae sind wieder unter einem Banner. Wir haben unsere eigene Koalition von Königreichen, wie wir es in der Zeit hatten, als wir gegen die Römer kämpften."
+ pr.007.a:0 "Lobet $gaulish_polytheism_high_god_name$"
+ 
+ pr.008.t:0 "Liguria"
+ pr.008.desc:0 "Jetzt haben wir das gesamte alte Ligurien erobert und haben die Kontrolle über die alten Ländereien der Venetien. Norditalien ist wieder keltisch"
+ pr.008.a:0 "Liguria is once more"
+
+
+#Dismantle patriarchate
+ pr.044.t:0 "Die Auflösung des Patriarchats"
+ pr.044.desc.muslim:1 "TDie Herrschaft der Christen über Konstantinopel ist endlich zu Ende. \n\nDank der engagierten Bemühungen vieler hingebungsvoller Diener von [scoped_destroyer.GetFaith.HighGodName] ist ganz Griechenland unter die Herrschaft von [scoped_destroyer.GetFaith.GetAdjective] gefallen. Die Gläubigen haben unermüdlich daran gearbeitet, alle blasphemischen Ikonen zu entfernen und den dekadenten Klerus, der über diese Länder herrschte, vor Gericht zu bringen."
+ pr.044.desc.hellenic:1 "TDie Tyrannei der Galiläer über Europa hat endlich ein Ende gefunden.\n\nSeit Jahrhunderten wurde diesen verherrlichten Kultisten freie Hand gelassen, die alten Denkmäler unserer göttlichen Beschützer zu verunglimpfen und zu verunstalten, aber nicht mehr! Durch die Wiederherstellung der Herrschaft von [scoped_destroyer.GetFaith.GetAdjective] über Konstantinopel und die griechischen Länder haben wir das Herz der Kirche des Zimmermannsgottes zerquetscht."
+ pr.044.desc.fallback:0 "Nachdem sie jahrhundertelang von ihren Missionaren herabgesetzt und getäuscht wurden, haben die Anhänger von [scoped_destroyer.GetFaith.HighGodName] endlich Rache an den Anhängern des Christusgottes genommen. \n\nDas Kernland ihres Glaubens wurde mit der Gunst unserer Götter erobert, ihre Kirchen wurden geplündert, ihre Priester aller Macht und Würde beraubt. Dank meiner glorreichen Invasion habe ich die Welt von dieser feigen Religion befreit und die Schande gerächt, die ihre List über unser Land und unsere Vorfahren gebracht hat."
+ pr.044.desc.patriarch.submission:0 "\n\nAngesichts unserer unbestreitbaren religiösen Vormachtstellung hat der ehemalige Patriarch [scoped_patriarch.GetFullName] sogar öffentlich den [orthodox.GetAdjectiveNoTooltip]-Glauben widerrufen und ist zu [scoped_destroyer.GetFaith.GetNameNoTooltip] konvertiert!"
+ pr.044.desc.patriarch.crucifixion:0 "\n\n[scoped_patriarch.GetFirstName], der immer noch trotzig an dem unverdienten Titel des Patriarchen festhielt, wurde zwischen den brennenden Ruinen der Hagia Sophia gekreuzigt. Damit endet die schändliche Linie der christlichen Patriarchen von Konstantinopel."
+ pr.044.desc.patriarch.sacrificed:0 "\n\nDie Hagia Sophia wurde geheiligt und [scoped_destroyer.GetFaith.HighGodName] mit dem Blut von [scoped_patriarch.GetTitledFirstName] [scoped_patriarch.GetHerselfHimself] geweiht, der auf dem Altar geopfert wurde, von dem aus [scoped_patriarch.GetSheHe] predigte."
+ pr.044.desc.no_patriarch:0 "\n\nDesorganisierte [orthodox.BishopNeuterPlural] haben einzeln versucht, die demoralisierten [orthodox.GetAdherentNamePluralNoTooltip] zu sammeln, aber ohne einen echten [orthodox.ReligiousHeadName], der sie anführt, ist klar, dass die Tage der päpstlichen Autorität vorbei sind."
+ pr.044.a.a:0 "[scoped_destroyer.GetFaith.HighGodName] hat uns gesegnet!"
+ pr.044.a.b:0 "Nun ist die Zeit unseres Wiederauflebens!"
+ pr.044.a.c:0 "Ihrer toter Gott konnte sie schließlich nicht beschützen."
+ pr.045.desc.faithful:0 "Dank der unerbittlichen Eroberungskampagne von [scoped_destroyer.GetTitledFirstNamePossessive] ist das gesamte griechische Land der Herrschaft von [scoped_destroyer.GetFaith.GetAdjective] zum Opfer gefallen.\n\nMit der Hilfe von [scoped_destroyer.GetFaith.HighGodNamePossessive] hat [scoped_destroyer.GetSheHe] alle zur Strecke gebracht verbliebenen orthodoxen Kabalen, die sich immer noch in Italien versammelten, und beraubte alle großen Bistümer ihres Reichtums und Einflusses, was der Autorität der falschen Kirche einen schweren Schlag versetzte."
+ pr.045.desc.christians:0 "Die monströse Terrorkampagne von [scoped_destroyer.GetTitledFirstName] hat Ruin und Dunkelheit über das Kernland unserer Heiligen Mutterkirche gebracht!\n\nDie abscheulichen Heiden haben den Patriarchen all seiner Besitztümer und seiner Würde beraubt, unzählige Theologen brutal ermordet und werden nicht aufhören bis [scoped_destroyer.GetSheHe] das gesamte Christentum unter Kontrolle gebracht hat. Nachdem das Patriarchat zerstört und seine Hierarchie in Trümmern lag, wurde der orthodoxe Glaube auf einen unorganisierten Kult reduziert."
+ pr.045.desc.fallback:0 "Der gewagte Eroberungsfeldzug von [scoped_destroyer.GetTitledFirstName] hat Ruin und Dunkelheit über das Kernland der orthodoxen Kirche gebracht!\n\nNachdem er den Patriarchen bereits der meisten seiner Besitztümer und seiner Würde beraubt hat, scheint es, dass [scoped_destroyer.GetSheHe] dies nur noch tun wird zufrieden, wenn das gesamte Christentum unterworfen ist. Nachdem das Patriarchat zerstört und seine Hierarchie in Trümmern lag, wurde der orthodoxe Glaube auf einen unorganisierten Kult reduziert."
+ pr.045.a.a:0 "Es war an der zeit dass es jemand tat."
+ pr.045.a.b:0 "Das Ende ist nah!"
+ pr.045.a.c:0 "Ich verstehe..."
+
+
+#Credits cybrxkhan
+RICEmisc.0010.t:0 "Konvertierung"
+RICEmisc.0010.desc.host:0 "Da ich auf [host.GetFaith.GetName] umgestellt habe, nützt mir die ursprünglich geplante [activity_type.GetNameNoTooltip()] nur noch wenig, da die Veranstaltung selbst oder die Art und Weise, wie sie durchgeführt worden wäre, nicht den Anforderungen entspricht neue Lehren, denen ich folge. Daher habe ich diese Veranstaltung abgesagt."
+RICEmisc.0010.desc.not_host:0 "Da [host.GetTitledFirstName] in [host.GetFaith.GetName] umgewandelt wurde, wurde die ursprünglich geplante [activity_type.GetNameNoTooltip()] [host.GetSheHe] abgesagt, ebenso wie die Veranstaltung selbst oder die Art und Weise, wie sie durchgeführt worden wäre sich nicht an die neuen Lehren halten, denen [host.GetSheHe] folgt.\n\nDas ist gelinde gesagt umständlich."
+RICEmisc.0010.a:0 "Und so ist es."
+
+ 

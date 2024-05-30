@@ -5,6 +5,8 @@
 
     hittite_religion:0 "Hittite"
     hittite_religion_adj:2 "Hittite"
+    hittite_religion_adherent:0 "Hittite"
+    hittite_religion_adherent_plural:0 "Hittites"
     hittite_religion_desc:0 "The Hittite pantheon was a core component of the society of the Hittites, a branch of the Indo-European tribes that migrated south from the Steppes and established an empire in Anatolia. Not much is known about this faith, but it is known to have been influenced by both Mesopotamian pantheon and the original Indo-European mythology."
 
     #cdr

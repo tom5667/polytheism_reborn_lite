@@ -36,8 +36,8 @@
     anglo_saxon_high_god_herhis:0 "His"
 
     #Creater god Localization
-    anglo_saxon_creator_god_name:0 "kháos"
-    anglo_saxon_creator_god_name_possessive:0 "kháos's"
+    anglo_saxon_creator_god_name:0 "Ymir"
+    anglo_saxon_creator_god_name_possessive:0 "$anglo_saxon_creator_god_name$'s"
 
     #Health Goddess Bona Dea
     anglo_saxon_health_god_name:0 "Eir"
@@ -107,7 +107,7 @@
 
     #anglo saxon priest 
     anglo_saxon_priest_male:0 "Priest"
-    anglo_saxon_priest_male_plural:0 "Priest"
+    anglo_saxon_priest_male_plural:0 "Priests"
     anglo_saxon_priest_neuter:0 "Priest"
 
     #anglo saxon  
@@ -116,11 +116,11 @@
 
     #anglo saxon   
     anglo_saxon_bishop_male:0 "Priest" 
-    anglo_saxon_bishop_male_plural:0 "Head priest" 
+    anglo_saxon_bishop_male_plural:0 "Head priests" 
     anglo_saxon_bishop_neuter_plural:0 "Head priests"
     #roman names
     #males
-    reserved_male_names:0 "Angelo Saxon male names"
+    reserved_male_names:0 "Anglo Saxon male names"
     #Female 
     reserved_female_names:0 "Anglo Saxon female names"
 
@@ -134,14 +134,14 @@
 
     german_polytheism:0 "German"
     german_polytheism_adj:0 "German" 
-    german_polytheism_adherent:0 "German Polytheism polytheist"
+    german_polytheism_adherent:0 "German polytheist"
     german_polytheism_adherent_plural:0 "German Polytheism polytheists"
     german_polytheism_desc:0 "German polytheism has many deities, next to that each tribe has it's own additions to the pantheon." 
 
     german_polytheism_old:0 "German Old"
     german_polytheism_old_adj:0 "German Old" 
-    german_polytheism_adherent_old:0 "Old German Polytheism polytheist"
-    german_polytheism_old_adherent_plural:0 "Old German Polytheism polytheists"
+    german_polytheism_adherent_old:0 "Old German polytheist"
+    german_polytheism_old_adherent_plural:0 "Old German polytheists"
     german_polytheism_old_desc:0 "German polytheism has many deities, next to that each tribe has it's own additions to the pantheon." 
 
     german_religious_head_title:0 "High Priest"
@@ -184,8 +184,8 @@
     german_fate_god_name_possessive:0 "Nornir's"
 
     #knowledge god ocalization
-    german_knowledge_god_name:0 "Mímir "
-    german_knowledge_god_name_possessive:0 "Mímir 's"
+    german_knowledge_god_name:0 "Mímir"
+    german_knowledge_god_name_possessive:0 "Mímir's"
 
     #War god Localization
     german_war_god_name:0 "Donar"
@@ -234,7 +234,7 @@
     german_priest_male:0 "Priest"
     german_priest_male_plural:0 "Priest"
     german_priest_neuter:0 "Priest"
-    german_priest_neuter_plural:0 "Priest"
+    german_priest_neuter_plural:0 "Priests"
     
     #Germanic  
     german_priest_female:0 "Priestess" 
@@ -250,6 +250,6 @@
     #Female 
     reserved_female_names:0 "Germanic female names"
     holy_order_wodan_valkyrie:0 "Wodan Valkyrie"
-    holy_order_faithful_of_tiwaz:0 "Faitful of Tīwaz"
+    holy_order_faithful_of_tiwaz:0 "Faithful of Tīwaz"
     holy_order_chosen_of_fri:0 "Chosen of Fri"
 

@@ -1,4 +1,7 @@
-﻿daco_thracian_religion = {
+﻿#####################
+#Made by tom5667 
+#####################
+daco_thracian_religion = {
 	family = rf_pagan
 	pagan_roots = yes
 	doctrine = pagan_hostility_doctrine
@@ -77,6 +80,8 @@
 			doctrine = doctrine_clerical_gender_male_only
 			doctrine = doctrine_clerical_marriage_allowed
 			doctrine = doctrine_clerical_succession_spiritual_appointment
+
+			doctrine = doctrine_funeral_cremation
 		
 			localization = {
 				#High God Name
@@ -91,9 +96,9 @@
 				#Creator
 				CreatorName = dacian_polytheism_creator_god_name
 				CreatorNamePossessive = dacian_polytheism_creator_god_name_possessive
-				CreatorSheHe = CHARACTER_SHEHE_SHE
-				CreatorHerHis = CHARACTER_HERHIS_HER
-				CreatorHerHim = CHARACTER_HERHIM_HER
+				CreatorSheHe = CHARACTER_SHEHE_HE
+				CreatorHerHis = CHARACTER_HERHIS_HIS
+				CreatorHerHim = CHARACTER_HERHIM_HIM
 		
 				#HealthGod
 				HealthGodName = dacian_polytheism_health_god_name
@@ -105,9 +110,9 @@
 				#FertilityGod
 				FertilityGodName = dacian_polytheism_fertility_god_name
 				FertilityGodNamePossessive = dacian_polytheism_fertility_god_name_possessive
-				FertilityGodSheHe = CHARACTER_SHEHE_SHE
-				FertilityGodHerHis = CHARACTER_HERHIS_HER
-				FertilityGodHerHim = CHARACTER_HERHIM_HER
+				FertilityGodSheHe = CHARACTER_SHEHE_HE
+				FertilityGodHerHis = CHARACTER_HERHIS_HIS
+				FertilityGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#WealthGod
 				WealthGodName = dacian_polytheism_wealth_god_name
@@ -133,9 +138,9 @@
 				#KnowledgeGod
 				KnowledgeGodName = dacian_polytheism_knowledge_god_name
 				KnowledgeGodNamePossessive = dacian_polytheism_knowledge_god_name_possessive
-				KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-				KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-				KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+				KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+				KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+				KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#WarGod
 				WarGodName = dacian_polytheism_war_god_name
@@ -209,9 +214,9 @@
 				DeathDeitySheHe = CHARACTER_SHEHE_HE
 				DeathDeityHerHis = CHARACTER_HERHIS_HIS
 				WitchGodName = dacian_polytheism_witchgodname_zalmoxis
-				WitchGodHerHis = CHARACTER_HERHIS_HER
+				WitchGodHerHis = CHARACTER_HERHIS_HIS
 				WitchGodSheHe = CHARACTER_SHEHE_HE
-				WitchGodHerHim = CHARACTER_HERHIM_HER
+				WitchGodHerHim = CHARACTER_HERHIM_HIM
 				WitchGodMistressMaster = master
 				WitchGodMotherFather = father
 		
@@ -264,6 +269,8 @@
 			doctrine = doctrine_clerical_gender_male_only
 			doctrine = doctrine_clerical_marriage_allowed
 			doctrine = doctrine_clerical_succession_spiritual_appointment
+
+			doctrine = doctrine_funeral_cremation
 		
 			localization = {
 				#High God Name
@@ -278,9 +285,9 @@
 				#Creator
 				CreatorName = zalmoxism_creator_god_name
 				CreatorNamePossessive = zalmoxism_creator_god_name_possessive
-				CreatorSheHe = CHARACTER_SHEHE_SHE
-				CreatorHerHis = CHARACTER_HERHIS_HER
-				CreatorHerHim = CHARACTER_HERHIM_HER
+				CreatorSheHe = CHARACTER_SHEHE_HE
+				CreatorHerHis = CHARACTER_HERHIS_HIS
+				CreatorHerHim = CHARACTER_HERHIM_HIM
 		
 				#HealthGod
 				HealthGodName = zalmoxism_health_god_name
@@ -292,9 +299,9 @@
 				#FertilityGod
 				FertilityGodName = zalmoxism_fertility_god_name
 				FertilityGodNamePossessive = zalmoxism_fertility_god_name_possessive
-				FertilityGodSheHe = CHARACTER_SHEHE_SHE
-				FertilityGodHerHis = CHARACTER_HERHIS_HER
-				FertilityGodHerHim = CHARACTER_HERHIM_HER
+				FertilityGodSheHe = CHARACTER_SHEHE_HE
+				FertilityGodHerHis = CHARACTER_HERHIS_HIS	
+				FertilityGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#WealthGod
 				WealthGodName = zalmoxism_wealth_god_name
@@ -306,23 +313,23 @@
 				#HouseholdGod
 				HouseholdGodName = zalmoxism_household_god_name
 				HouseholdGodNamePossessive = zalmoxism_household_god_name_possessive
-				HouseholdGodSheHe = CHARACTER_SHEHE_SHE
-				HouseholdGodHerHis = CHARACTER_HERHIS_HER
-				HouseholdGodHerHim = CHARACTER_HERHIM_HER
+				HouseholdGodSheHe = CHARACTER_SHEHE_HE
+				HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+				HouseholdGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#FateGod
 				FateGodName = zalmoxism_fate_god_name
 				FateGodNamePossessive = zalmoxism_fate_god_name_possessive
-				FateGodSheHe = CHARACTER_SHEHE_THEY
-				FateGodHerHis = CHARACTER_HERHIS_THEIR
-				FateGodHerHim = CHARACTER_HERHIM_THEM
+				FateGodSheHe = CHARACTER_SHEHE_HE
+				FateGodHerHis = CHARACTER_HERHIS_HIS
+				FateGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#KnowledgeGod
 				KnowledgeGodName = zalmoxism_knowledge_god_name
 				KnowledgeGodNamePossessive = zalmoxism_knowledge_god_name_possessive
-				KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-				KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-				KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+				KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+				KnowledgeGodHerHis = CHARACTER_HERHIS_HIS	
+				KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#WarGod
 				WarGodName = zalmoxism_war_god_name
@@ -341,9 +348,9 @@
 				#NightGod
 				NightGodName = zalmoxism_night_god_name
 				NightGodNamePossessive = zalmoxism_night_god_name_possessive
-				NightGodSheHe = CHARACTER_SHEHE_SHE
-				NightGodHerHis = CHARACTER_HERHIS_HER
-				NightGodHerHim = CHARACTER_HERHIM_HER
+				NightGodSheHe = CHARACTER_SHEHE_HE
+				NightGodHerHis = CHARACTER_HERHIS_HIS	
+				NightGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#WaterGod
 				WaterGodName = zalmoxism_water_god_name
@@ -398,7 +405,7 @@
 				WitchGodName = zalmoxism_witchgodname_zalmoxis
 				WitchGodHerHis = CHARACTER_HERHIS_HER
 				WitchGodSheHe = CHARACTER_SHEHE_HE
-				WitchGodHerHim = CHARACTER_HERHIM_HER
+				WitchGodHerHim = CHARACTER_HERHIM_HIM
 				WitchGodMistressMaster = master
 				WitchGodMotherFather = father
 		

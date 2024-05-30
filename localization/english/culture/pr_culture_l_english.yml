@@ -110,10 +110,19 @@
  celtic_iberian_prefix:0 "Celtiberian"
  celtic_iberian_collective_noun:0 "Celtiberians"
  
+#Romano Hispanic
+ romano_hispanic:0 "Hispano Roman"
+ romano_hispanic_prefix:0 "Hispano Roman"
+ romano_hispanic_collective_noun:0 "Hispano Romans"
 #Graeco Egyptian
  pr_graeco_egyptian:0 "Graeco Egyptian"
  pr_graeco_egyptian_prefix:0 "Graeco Egyptian"
  pr_graeco_egyptian_collective_noun:0 "Graeco Egyptians"
+
+#iberian
+ iberian:0 "Iberian"
+ iberian_prefix:0 "Iberian"
+ iberian_collective_noun:0 "Iberians"
 
 
 #Culture history
@@ -121,3 +130,5 @@ graeco_egyptian_heritage_loc:0 "Formed from [CULTURE.GetName] and Kemetic around
 romano_british_heritage_loc:0 "Formed from [CULTURE.GetName] and Celtic British around the year [DATE.GetYear]"
 romano_germanic_heritage_loc:0 "Formed from [CULTURE.GetName] and Germanic around the year [DATE.GetYear]"
 gallo_roman_heritage_loc:0 "Formed from [CULTURE.GetName] and Gaulish around the year [DATE.GetYear]"
+romano_hispanic_heritage_loc:0 "Formed from [CULTURE.GetName] and (Celtic)Iberian around the year [DATE.GetYear]"
+

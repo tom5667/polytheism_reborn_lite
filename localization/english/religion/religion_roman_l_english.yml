@@ -5,11 +5,13 @@
 
     roman_religion:0 "Roman"
     roman_religion_adj:2 "Roman"
+    roman_religion_adherent:0 "Roman"
+    roman_religion_adherent_plural:0 "Romans"
     roman_religion_desc:0 "The Roman religion not to be Confused with the more familliar Greek religion Where the gods reside on Mount Olympus. The Gods and Godesses of Rome are many but don't interfare in the earthly matters unless being asked via prayers, rituals an ciremonies."
     greco_roman_religion_positive_afterlife:0 "Elysium"
     roman_religion_negative_afterlife:0 "Dīs Pater's realm"
 
-
+    d_pontifex_polytheistic:0 "Pontifex Maximus"
     #cdr
     cdr_polytheism:0 "Roman"
     cdr_polytheism_adj:0 "Roman"
@@ -79,21 +81,21 @@
     cdr_polytheism_trickster_god_name:0 "Mendacius"
     cdr_polytheism_trickster_god_name_possessive:0 "Mendacius's"
 
-    #Night goddess Latona Localization
-    cdr_polytheism_night_god_name:0 "Latona"
-    cdr_polytheism_night_god_name_possessive:0 "Latona's"
+    #Night goddess Nox Localization
+    cdr_polytheism_night_god_name:0 "Nox"
+    cdr_polytheism_night_god_name_possessive:0 "Nox's"
 
     #Water god Neptunus Localization
     cdr_polytheism_water_god_name:0 "Neptunus"
     cdr_polytheism_water_god_name_possessive:0 "Neptunus's"
 
     #evil gods names 
-    cdr_polytheism_evil_god_trivia:0 "Trivia" 
+    cdr_polytheism_evil_god_trivia:0 "Diana Trivia" 
     cdr_polytheism_evil_god_discordia:0 "Discordia"
 
     #witch goddess
-    cdr_polytheism_witchgodname_trivia:0 "Trivia"
-    cdr_polytheism_witchgodname_trivia_possesive:0 "Trivia's"
+    cdr_polytheism_witchgodname_trivia:0 "$cdr_polytheism_evil_god_trivia$"
+    cdr_polytheism_witchgodname_trivia_possesive:0 "$cdr_polytheism_evil_god_trivia$'s"
 
     #Devil god   
     cdr_polytheism_devil_name:0 "Orcus" 
@@ -203,15 +205,15 @@
     eluesinian_mysteries_trickster_god_name_possessive:0 "Mendacius's"
 
     #Night goddess Latona Localization
-    eluesinian_mysteries_night_god_name:0 "Latona"
-    eluesinian_mysteries_night_god_name_possessive:0 "Latona's"
+    eluesinian_mysteries_night_god_name:0 "Nox"
+    eluesinian_mysteries_night_god_name_possessive:0 "$eluesinian_mysteries_night_god_name$'s"
 
     #Water god Neptunus Localization
     eluesinian_mysteries_water_god_name:0 "Neptunus"
     eluesinian_mysteries_water_god_name_possessive:0 "Neptunus's"
 
     #evil gods names 
-    eluesinian_mysteries_evil_god_trivia:0 "Trivia" 
+    eluesinian_mysteries_evil_god_trivia:0 "Diana Trivia" 
     eluesinian_mysteries_evil_god_discordia:0 "Discordia"
 
     #Devil god   
@@ -219,7 +221,7 @@
     eluesinian_mysteries_devil_name_possessive:0 "Orcus's"
 
     #witch goddess
-    eluesinian_mysteries_witchgodname_trivia:0 "Trivia"
+    eluesinian_mysteries_witchgodname_trivia:0 "Diana Trivia"
     eluesinian_mysteries_witchgodname_trivia_possesive:0 "Trivia's"
 
     #Death god Dīs Pater 
@@ -312,20 +314,20 @@
     mithraic_mysteries_trickster_god_name_possessive:0 "Mendacius's"
 
     #Night goddess Latona Localization
-    mithraic_mysteries_night_god_name:0 "Latona"
-    mithraic_mysteries_night_god_name_possessive:0 "Latona's"
+    mithraic_mysteries_night_god_name:0 "Nox"
+    mithraic_mysteries_night_god_name_possessive:0 "Nox's"
 
     #Water god Neptunus Localization
     mithraic_mysteries_water_god_name:0 "Neptunus"
     mithraic_mysteries_water_god_name_possessive:0 "Neptunus"
 
     #evil gods names 
-    mithraic_mysteries_evil_god_trivia:0 "Trivia" 
+    mithraic_mysteries_evil_god_trivia:0 "Diana Trivia" 
     mithraic_mysteries_evil_god_discordia:0 "Discordia"
 
     #witch goddess
-    mithraic_mysteries_witchgodname_trivia:0 "Trivia"
-    mithraic_mysteries_witchgodname_trivia_possesive:0 "Trivia's"
+    mithraic_mysteries_witchgodname_trivia:0 "Diana Trivia"
+    mithraic_mysteries_witchgodname_trivia_possesive:0 "Diana Trivia's"
 
     #Devil god   
     mithraic_mysteries_devil_name:0 "Orcus" 
@@ -347,11 +349,11 @@
     mithraic_mysteries_good_god_juno:0 "Juno"
 
     #Mithraic Mysteries priest 
-    mithraic_mysteries_priest_male:0 "Mithraic priest"
-    mithraic_mysteries_priest_male_plural:0 "Mithraic priest's"
+    mithraic_mysteries_priest_male:0 "Priest"
+    mithraic_mysteries_priest_male_plural:0 "priests"
     #Mithraic priestess 
-    mithraic_mysteries_priest_female:0 "Dadouchousa Prietess" 
-    mithraic_mysteries_priest_female_plural:0 "Mithraic Prietesses" 
+    mithraic_mysteries_priest_female:0 "Priestess" 
+    mithraic_mysteries_priest_female_plural:0 " Priestesses" 
 
     #holy order Mithraic Mysteries 
     holy_order_protectors_of_mithraic_mysteries:0 "Protectors of Mithras"
@@ -419,16 +421,16 @@
     mysteries_of_isis_trickster_god_name:0 "Mendacius"
     mysteries_of_isis_trickster_god_name_possessive:0 "Mendacius's"
 
-    #Night goddess Latona Localization
-    mysteries_of_isis_night_god_name:0 "Latona"
-    mysteries_of_isis_night_god_name_possessive:0 "Latona's"
+    #Night goddess Nox Localization
+    mysteries_of_isis_night_god_name:0 "Nox"
+    mysteries_of_isis_night_god_name_possessive:0 "$mysteries_of_isis_night_god_name$'s"
 
     #Water god Neptunus Localization
     mysteries_of_isis_water_god_name:0 "Neptunus"
     mysteries_of_isis_water_god_name_possessive:0 "Neptunus's"
 
     #evil gods names 
-    mysteries_of_isis_evil_god_trivia:0 "Trivia" 
+    mysteries_of_isis_evil_god_trivia:0 "Diana Trivia" 
     mysteries_of_isis_evil_god_discordia:0 "Discordia"
 
     #Devil god   
@@ -436,8 +438,8 @@
     mysteries_of_isis_devil_name_possessive:0 "Orcus's"
 
     #witch goddess
-    mysteries_of_isis_witchgodname_trivia:0 "Trivia"
-    mysteries_of_isis_witchgodname_trivia_possesive:0 "Trivia's"
+    mysteries_of_isis_witchgodname_trivia:0 "Diana Trivia"
+    mysteries_of_isis_witchgodname_trivia_possesive:0 "Diana Trivia's"
 
     #Death god Dīs Pater 
     mysteries_of_isis_death_deity_name:0 "Dīs Pater"
@@ -527,16 +529,16 @@
     cult_of_serapis_trickster_god_name:0 "Mendacius"
     cult_of_serapis_trickster_god_name_possessive:0 "Mendacius's"
 
-    #Night goddess Latona Localization
-    cult_of_serapis_night_god_name:0 "Latona"
-    cult_of_serapis_night_god_name_possessive:0 "Latona's"
+    #Night goddess Nox Localization
+    cult_of_serapis_night_god_name:0 "Nox"
+    cult_of_serapis_night_god_name_possessive:0 "$cult_of_serapis_night_god_name$'s"
 
     #Water god Neptunus Localization
     cult_of_serapis_water_god_name:0 "Neptunus"
     cult_of_serapis_water_god_name_possessive:0 "Neptunus's"
 
     #evil gods names 
-    cult_of_serapis_evil_god_trivia:0 "Trivia" 
+    cult_of_serapis_evil_god_trivia:0 "Diana Trivia" 
     cult_of_serapis_evil_god_discordia:0 "Discordia"
 
     #Devil god   
@@ -544,8 +546,8 @@
     cult_of_serapis_devil_name_possessive:0 "Orcus's"
 
     #witch goddess
-    cult_of_serapis_witchgodname_trivia:0 "Trivia"
-    cult_of_serapis_witchgodname_trivia_possesive:0 "Trivia's"
+    cult_of_serapis_witchgodname_trivia:0 "Diana Trivia"
+    cult_of_serapis_witchgodname_trivia_possesive:0 "Diana Trivia's"
 
     #Death god Dīs Pater 
     cult_of_serapis_death_deity_name:0 "Dīs Pater"
@@ -635,21 +637,21 @@
     sol_invictus_cult_trickster_god_name:0 "Mendacius"
     sol_invictus_cult_trickster_god_name_possessive:0 "Mendacius's"
 
-    #Night goddess Latona Localization
-    sol_invictus_cult_night_god_name:0 "Latona"
-    sol_invictus_cult_night_god_name_possessive:0 "Latona's"
+    #Night goddess Nox Localization
+    sol_invictus_cult_night_god_name:0 "Nox"
+    sol_invictus_cult_night_god_name_possessive:0 "$sol_invictus_cult_night_god_name$'s"
 
     #Water god Neptunus Localization
     sol_invictus_cult_water_god_name:0 "Neptunus"
     sol_invictus_cult_water_god_name_possessive:0 "Neptunus"
 
     #evil gods names 
-    sol_invictus_cult_evil_god_trivia:0 "Trivia" 
+    sol_invictus_cult_evil_god_trivia:0 "Diana Trivia" 
     sol_invictus_cult_evil_god_discordia:0 "Discordia"
 
     #witch goddess
-    sol_invictus_cult_witchgodname_trivia:0 "Trivia"
-    sol_invictus_cult_witchgodname_trivia_possesive:0 "Trivia's"
+    sol_invictus_cult_witchgodname_trivia:0 "Diana Trivia"
+    sol_invictus_cult_witchgodname_trivia_possesive:0 "Diana Trivia's"
 
     #Devil god   
     sol_invictus_cult_devil_name:0 "Orcus" 
@@ -747,21 +749,21 @@
     imperial_cult_trickster_god_name:0 "Mendacius"
     imperial_cult_trickster_god_name_possessive:0 "Mendacius's"
 
-    #Night goddess Latona Localization
-    imperial_cult_night_god_name:0 "Latona"
-    imperial_cult_night_god_name_possessive:0 "Latona's"
+    #Night goddess Nox Localization
+    imperial_cult_night_god_name:0 "Nox"
+    imperial_cult_night_god_name_possessive:0 "$imperial_cult_night_god_name$'s"
 
     #Water god Neptunus Localization
     imperial_cult_water_god_name:0 "Neptunus"
     imperial_cult_water_god_name_possessive:0 "Neptunus"
 
     #evil gods names 
-    imperial_cult_evil_god_trivia:0 "Trivia" 
+    imperial_cult_evil_god_trivia:0 "Diana Trivia" 
     imperial_cult_evil_god_discordia:0 "Discordia"
 
     #witch goddess
-    imperial_cult_witchgodname_trivia:0 "Trivia"
-    imperial_cult_witchgodname_trivia_possesive:0 "Trivia's"
+    imperial_cult_witchgodname_trivia:0 "Diana Trivia"
+    imperial_cult_witchgodname_trivia_possesive:0 "Diana Trivia's"
 
     #Devil god   
     imperial_cult_devil_name:0 "Orcus" 
@@ -840,8 +842,8 @@
     roman_illyrian_polytheism_fertility_god_name_possessive:0 "Anzotica's"
 
     #Wealth god Latra Localization
-    roman_illyrian_polytheism_wealth_god_name:0 "Latra"
-    roman_illyrian_polytheism_wealth_god_name_possessive:0 "Latra's"
+    roman_illyrian_polytheism_wealth_god_name:0 "Mercurius"
+    roman_illyrian_polytheism_wealth_god_name_possessive:0 "$roman_illyrian_polytheism_wealth_god_name$'s"
 
     #Household god Lares 
     roman_illyrian_polytheism_household_god_name:0 "Lares"
@@ -863,21 +865,21 @@
     roman_illyrian_polytheism_trickster_god_name:0 "Mendacius"
     roman_illyrian_polytheism_trickster_god_name_possessive:0 "Mendacius's"
 
-    #Night goddess Latona Localization
-    roman_illyrian_polytheism_night_god_name:0 "Latona"
-    roman_illyrian_polytheism_night_god_name_possessive:0 "Latona's"
+    #Night goddess Nox Localization
+    roman_illyrian_polytheism_night_god_name:0 "Nox"
+    roman_illyrian_polytheism_night_god_name_possessive:0 "$roman_illyrian_polytheism_night_god_name$'s"
 
     #Water god Aecorna Localization
     roman_illyrian_polytheism_water_god_name:0 "Aecorna"
     roman_illyrian_polytheism_water_god_name_possessive:0 "Aecorna's"
 
     #evil gods names 
-    roman_illyrian_polytheism_evil_god_trivia:0 "Trivia" 
+    roman_illyrian_polytheism_evil_god_trivia:0 "Diana Trivia" 
     roman_illyrian_polytheism_evil_god_discordia:0 "Discordia"
 
     #witch goddess
-    roman_illyrian_polytheism_witchgodname_trivia:0 "Trivia"
-    roman_illyrian_polytheism_witchgodname_trivia_possesive:0 "Trivia's"
+    roman_illyrian_polytheism_witchgodname_serpant:0 "Serpant"
+    roman_illyrian_polytheism_witchgodname_serpant_possesive:0 "$roman_illyrian_polytheism_witchgodname_serpan$'s"
 
     #Devil god   
     roman_illyrian_polytheism_devil_name:0 "Orcus" 
@@ -932,7 +934,7 @@
     mycenaean_polytheism_old_adj:0 "Mycenaean Old"
     mycenaean_polytheism_adherent_old:0 "Old Mycenaean Polytheism follower"
     mycenaean_polytheism_old_adherent_plural:0 "Old Mycenaean Polytheism followers"
-    mycenaean_polytheism_old_desc:0 "TThe original faith of the Greeks before the Bronze Age Collapse. Similarly to other early Indo-European religions, once the Greeks settled down, they had adopted or at the very least were influenced by the neighboring trade power of the Minoans on Crete." 
+    mycenaean_polytheism_old_desc:0 "The original faith of the Greeks before the Bronze Age Collapse. Similarly to other early Indo-European religions, once the Greeks settled down, they had adopted or at the very least were influenced by the neighboring trade power of the Minoans on Crete." 
 
     mycenaean_polytheism_religious_head_title:0 "High Priest"
     mycenaean_polytheism_divine_realm:0 "$hellenism_divine_realm$"
@@ -989,7 +991,7 @@
 
     #Night goddess Nyx Localization
     mycenaean_polytheism_night_god_name:0 "Nyx"
-    mycenaean_polytheism_night_god_name_possessive:0 "Nyx's"
+    mycenaean_polytheism_night_god_name_possessive:0 "$mycenaean_polytheism_night_god_nam$'s"
 
     #Water god Poseidon Localization
     mycenaean_polytheism_water_god_name:0 "Poseidon"
@@ -1110,20 +1112,20 @@
     gallo_roman_polytheism_trickster_god_name:0 "Mercurius Cissonius"
     gallo_roman_polytheism_trickster_god_name_possessive:0 "Mercurius Cissonius's"
 
-    #Night goddess Latona Localization
-    gallo_roman_polytheism_night_god_name:0 "Latona"
-    gallo_roman_polytheism_night_god_name_possessive:0 "Latona's"
+    #Night goddess Nox Localization
+    gallo_roman_polytheism_night_god_name:0 "Nox"
+    gallo_roman_polytheism_night_god_name_possessive:0 "$gallo_roman_polytheism_night_god_name$'s"
 
     #Water god Neptunus Localization
     gallo_roman_polytheism_water_god_name:0 "Neptunus"
     gallo_roman_polytheism_water_god_name_possessive:0 "Neptunus's"
 
     #evil gods names 
-    gallo_roman_polytheism_evil_god_trivia:0 "Trivia" 
+    gallo_roman_polytheism_evil_god_trivia:0 "Diana Trivia" 
     gallo_roman_polytheism_evil_god_discordia:0 "Discordia"
 
     #witch goddess
-    gallo_roman_polytheism_witchgodname_trivia:0 "Trivia"
+    gallo_roman_polytheism_witchgodname_trivia:0 "Diana Trivia"
     gallo_roman_polytheism_witchgodname_trivia_possesive:0 "Trivia's"
 
     #Devil god   
@@ -1232,21 +1234,21 @@
     romano_british_polytheism_trickster_god_name:0 "Mercurius Lugus"
     romano_british_polytheism_trickster_god_name_possessive:0 "Mercurius Lugus's"
 
-    #Night goddess Latona Localization
-    romano_british_polytheism_night_god_name:0 "Latona"
-    romano_british_polytheism_night_god_name_possessive:0 "Latona's"
+    #Night goddess Nox Localization
+    romano_british_polytheism_night_god_name:0 "Nox"
+    romano_british_polytheism_night_god_name_possessive:0 "$romano_british_polytheism_night_god_name$'s"
 
     #Water god Neptunus Localization
     romano_british_polytheism_water_god_name:0 "Neptunus"
     romano_british_polytheism_water_god_name_possessive:0 "Neptunus's"
 
     #evil gods names 
-    romano_british_polytheism_evil_god_trivia:0 "Trivia" 
+    romano_british_polytheism_evil_god_trivia:0 "Diana Trivia" 
     romano_british_polytheism_evil_god_discordia:0 "Discordia"
 
     #witch goddess
-    romano_british_polytheism_witchgodname_trivia:0 "Trivia"
-    romano_british_polytheism_witchgodname_trivia_possesive:0 "Trivia's"
+    romano_british_polytheism_witchgodname_trivia:0 "Diana Trivia"
+    romano_british_polytheism_witchgodname_trivia_possesive:0 "Diana Trivia's"
 
     #Devil god   
     romano_british_polytheism_devil_name:0 "Orcus" 
@@ -1323,7 +1325,7 @@
     romano_germanic_polytheism_creator_god_name:0 "Lumirus"
     romano_germanic_polytheism_creator_god_name_possessive:0 "$romano_germanic_polytheism_creator_god_name$'s"
 
-    #Health God Eira
+    #Health God Eira formed from Eir 
     romano_germanic_polytheism_health_god_name:0 "Eira"
     romano_germanic_polytheism_health_god_name_possessive:0 "$romano_germanic_polytheism_health_god_name$'s"
 
@@ -1346,7 +1348,7 @@
     romano_germanic_polytheism_fate_god_name:0 "Fata Germanicae"
     romano_germanic_polytheism_fate_god_name_possessive:0 "$romano_germanic_polytheism_fate_god_name$'s"
 
-    #knowledge god Vothinus Localization
+    #knowledge god Vothinus Localization formed from Odin
     romano_germanic_polytheism_knowledge_god_name:0 "Vothinus"
     romano_germanic_polytheism_knowledge_god_name_possessive:0 "$romano_germanic_polytheism_knowledge_god_name$'s"
 
@@ -1358,8 +1360,8 @@
     romano_germanic_polytheism_trickster_god_name:0 "Locius"
     romano_germanic_polytheism_trickster_god_name_possessive:0 "$romano_germanic_polytheism_trickster_god_name$'s"
 
-    #Night goddess Nyx Localization
-    romano_germanic_polytheism_night_god_name:0 "Nyx"
+    #Night goddess Nox Localization
+    romano_germanic_polytheism_night_god_name:0 "Nox"
     romano_germanic_polytheism_night_god_name_possessive:0 "$romano_germanic_polytheism_night_god_name$'s"
 
     #Water god Neptunus Localization
@@ -1371,7 +1373,7 @@
     romano_germanic_polytheism_evil_god_imirus:0 "Imirus"
 
     #witch goddess
-    romano_germanic_polytheism_witchgodname_trivia:0 "Trivia"
+    romano_germanic_polytheism_witchgodname_trivia:0 "Diana Trivia"
     romano_germanic_polytheism_witchgodname_trivia_possesive:0 "$romano_germanic_polytheism_witchgodname_trivia$'s"
 
     #Devil god   
@@ -1408,6 +1410,235 @@
     holy_order_Protectors_of_dei_consentes:0 "Protectors of Dei Consentes"
 
 
+    romano_hispanic_polytheism:0 "Romano Hispanic"
+    romano_hispanic_polytheism_adj:0 "Romano Hispanic"
+    romano_hispanic_polytheism_adherent:0 "Romano Hispanic Polytheist"
+    romano_hispanic_polytheism_adherent_plural:0 "Romano Hispanic Polytheists"
+    romano_hispanic_polytheism_desc:0 "Following the Roman conquest of Hispania, a unique religious landscape emerged, blending Roman traditions with the pre-existing beliefs of the Iberian peoples. This fusion gave rise to the Romano-Hispanic faith, characterized by syncretism and the veneration of local deities alongside their Roman counterparts." 
+
+    romano_hispanic_polytheism_old:0 "Romano Hispanic Old"
+    romano_hispanic_polytheism_old_adj:0 "Romano Hispanic Old"
+    romano_hispanic_polytheism_adherent_old:0 "Old Romano Hispanic Polytheist"
+    romano_hispanic_polytheism_old_adherent_plural:0 "Old Romano Hispanic Polytheists"
+    romano_hispanic_polytheism_old_desc:0 "Following the Roman conquest of Hispania, a unique religious landscape emerged, blending Roman traditions with the pre-existing beliefs of the Iberian peoples. This fusion gave rise to the Romano-Hispanic faith, characterized by syncretism and the veneration of local deities alongside their Roman counterparts." 
+
+    romano_hispanic_polytheism_religious_head_title:0 "Pontifex Maximus"
+    romano_hispanic_polytheism_divine_realm:0 "Deii Consentes"
+    romano_hispanic_polytheism_religious_symbol:0 "Bull surounded by laurels"
+    romano_hispanic_polytheism_religious_text:0 "Combination of Roman Rituals, Caerimoniae and Germanic rituals "
+
+     #Romano germanic gods/goddesses Localization
+
+    #Jupiter Solutorius 
+    romano_hispanic_polytheism_high_god_name:0 "Jupiter Solutorius"
+    romano_hispanic_polytheism_high_god_name_possessive:0 "$romano_hispanic_polytheism_high_god_name$'s"
+    romano_hispanic_polytheism_high_god_name_alternate:0 "$romano_hispanic_polytheism_high_god_name$"
+    romano_hispanic_polytheism_high_god_name_alternate_possessive:0 "$romano_hispanic_polytheism_high_god_name$'s"
+    romano_hispanic_polytheism_high_god_shehe:0 "He"
+    romano_hispanic_polytheism_high_god_herselfhimself:0 "Himself"
+    romano_hispanic_polytheism_high_god_herhis:0 "His"
+
+    #Creater god Localization
+    romano_hispanic_polytheism_creator_god_name:0 "Chaos"
+    romano_hispanic_polytheism_creator_god_name_possessive:0 "$romano_hispanic_polytheism_creator_god_name$'s"
+
+    #Health God Arancio
+    romano_hispanic_polytheism_health_god_name:0 "Arancio"
+    romano_hispanic_polytheism_health_god_name_possessive:0 "$romano_hispanic_polytheism_health_god_name$'s"
+
+    #Fertility Goddess Nabia Localization
+    romano_hispanic_polytheism_fertility_god_name:0 "Nabia"
+    romano_hispanic_polytheism_fertility_god_name_possessive:0 "$romano_hispanic_polytheism_fertility_god_name$'s"
+
+    #Wealth god Latra Localization
+    #Lucubo
+    romano_hispanic_polytheism_wealth_god_name:0 "Lucubo"
+    romano_hispanic_polytheism_wealth_god_name_possessive:0 "$romano_hispanic_polytheism_wealth_god_name$'s"
+
+    #Household god Trebaruna 
+    romano_hispanic_polytheism_household_god_name:0 "Trebaruna"
+    romano_hispanic_polytheism_household_god_name_possessive:0 "$romano_hispanic_polytheism_household_god_name$'s"
+
+    #Fate god Endovelicus Localization
+    romano_hispanic_polytheism_fate_god_name:0 "Endovelicus"
+    romano_hispanic_polytheism_fate_god_name_possessive:0 "$romano_hispanic_polytheism_fate_god_name$'s"
+
+    #knowledge god Minerva Localization
+    romano_hispanic_polytheism_knowledge_god_name:0 "Minerva"
+    romano_hispanic_polytheism_knowledge_god_name_possessive:0 "$romano_hispanic_polytheism_knowledge_god_name$'s"
+
+    #War god Mars Localization
+    romano_hispanic_polytheism_war_god_name:0 "Mars Neto"
+    romano_hispanic_polytheism_war_god_name_possessive:0 "$romano_hispanic_polytheism_war_god_name$'s"
+
+    #Trickster god Mercurius Cissonius Localization
+    romano_hispanic_polytheism_trickster_god_name:0 "Lucubo"
+    romano_hispanic_polytheism_trickster_god_name_possessive:0 "$romano_hispanic_polytheism_trickster_god_name$'s"
+
+    #Night goddess Nox Localization
+    romano_hispanic_polytheism_night_god_name:0 "Nox"
+    romano_hispanic_polytheism_night_god_name_possessive:0 "$romano_hispanic_polytheism_night_god_name$'s"
+
+    #Water god Nabia Localization
+    romano_hispanic_polytheism_water_god_name:0 "Nabia"
+    romano_hispanic_polytheism_water_god_name_possessive:0 "$romano_hispanic_polytheism_water_god_name$'s"
+
+    #evil gods names 
+    romano_hispanic_polytheism_evil_god_discordia:0 "Discordia" 
+    romano_hispanic_polytheism_evil_god_orcus:0 "Orcus"
+
+    #witch goddess
+    romano_hispanic_polytheism_witchgodname_trivia:0 "Diana Trivia"
+    romano_hispanic_polytheism_witchgodname_trivia_possesive:0 "$romano_hispanic_polytheism_witchgodname_trivia$'s"
+
+    #Devil god   
+    romano_hispanic_polytheism_devil_name:0 "Orcus" 
+    romano_hispanic_polytheism_devil_name_possessive:0 "$romano_hispanic_polytheism_devil_name$'s"
+
+    #Death god Dīs Pater 
+    romano_hispanic_polytheism_death_deity_name:0 "Endovelicus "
+    romano_hispanic_polytheism_death_deity_name_possessive:0 "$romano_germanic_polytheism_death_deity_name$'s"
+
+
+    #Romano Hispanic priest flamen vestals
+
+    #Romano Hispanic priest 
+    romano_hispanic_polytheism_priest_male:0 "Priest"
+    romano_hispanic_polytheism_priest_male_plural:0 "Priests"
+
+    #Romano Hispanic vestals 
+    romano_hispanic_polytheism_priest_female:0 "Vestal" 
+    romano_hispanic_polytheism_priest_female_plural:0 "Vestals" 
+
+    #Romano Hispanic flamen  
+    romano_hispanic_polytheism_bishop_male:0 "flamen" 
+    romano_hispanic_polytheism_bishop_male_plural:0 "flamens" 
+
+    #roman names
+    #males
+    reserved_male_names:0 "Romano Hispanic male names"
+    #Female 
+    reserved_female_names:0 "Romano Hispanic female names"
+
+    #holy orders: 
+    holy_order_sons_of_mars_thincsus:0 "Sons of Mars Thincsus"
+    holy_order_Protectors_of_dei_consentes:0 "Protectors of Dei Consentes"
+
+    cultus_orientis:0 "Oriental cult"
+    cultus_orientis_adj:0 "Oriental cult"
+    cultus_orientis_adherent:0 "Oriental cult Polytheist"
+    cultus_orientis_adherent_plural:0 "Oriental cult Polytheists"
+    cultus_orientis_desc:0 "During the Roman rule over the foreign lands of Carthaginian North Africa and the region that is now known as Syria, several mystery cults started to emerge through the fusion of the Greco-Roman deities with their local counterparts. Chief among these were those of Jupiter fusing with aspects of the Semitic storm gods Hadad and Baal and the Hurrian weather god Teshub."
+
+    cultus_orientis_old:0 "Oriental cult Old"
+    cultus_orientis_old_adj:0 "Oriental cult Old"
+    cultus_orientis_adherent_old:0 "Old Oriental cult Polytheist"
+    cultus_orientis_old_adherent_plural:0 "Old Oriental cult Polytheists"
+    cultus_orientis_old_desc:0 "During the Roman rule over the foreign lands of Carthaginian North Africa and the region that is now known as Syria, several mystery cults started to emerge through the fusion of the Greco-Roman deities with their local counterparts. Chief among these were those of Jupiter fusing with aspects of the Semitic storm gods Hadad and Baal and the Hurrian weather god Teshub."
+
+    cultus_orientis_religious_head_title:0 "Pontifex Maximus"
+    cultus_orientis_divine_realm:0 "Deii Consentes"
+    cultus_orientis_religious_symbol:0 "Bull surounded by laurels"
+    cultus_orientis_religious_text:0 "Combination of Roman Rituals, Caerimoniae and Germanic rituals "
+
+     #Romano germanic gods/goddesses Localization
+
+    #Jupiter  Dolichenus
+    cultus_orientis_high_god_name:0 "Jupiter Dolichenus"
+    cultus_orientis_high_god_name_possessive:0 "$cultus_orientis_high_god_name$'s"
+    cultus_orientis_high_god_name_alternate:0 "Jupiter Optimus Maximus Dolichenus"
+    cultus_orientis_high_god_name_alternate_possessive:0 "$cultus_orientis_high_god_name_alternate$'s"
+    cultus_orientis_high_god_shehe:0 "He"
+    cultus_orientis_high_god_herselfhimself:0 "Himself"
+    cultus_orientis_high_god_herhis:0 "His"
+
+    #Creater god Localization
+    cultus_orientis_creator_god_name:0 "Chaos"
+    cultus_orientis_creator_god_name_possessive:0 "$cultus_orientis_creator_god_name$'s"
+
+    #Health God Eshmun
+    cultus_orientis_health_god_name:0 "Eshmun"
+    cultus_orientis_health_god_name_possessive:0 "$cultus_orientis_health_god_name$'s"
+
+    #Fertility Goddess Venus Localization
+    #Venus was a popular cult in the whole empire only evidence of putting names together is Venus Victrix who is equalized with Ishtar 
+    #To be save we just use Venus
+    cultus_orientis_fertility_god_name:0 "Juno Caelestis"
+    cultus_orientis_fertility_god_name_possessive:0 "$cultus_orientis_fertility_god_name$'s"
+
+    #Wealth god Latra Localization
+    #Mercurius Sobrius
+    cultus_orientis_wealth_god_name:0 "Mercurius Sobrius"
+    cultus_orientis_wealth_god_name_possessive:0 "$cultus_orientis_wealth_god_name$'s"
+
+    #Household god Lares 
+    cultus_orientis_household_god_name:0 "Lares"
+    cultus_orientis_household_god_name_possessive:0 "$cultus_orientis_household_god_name$'s"
+
+    #Fate god Janus Localization
+    cultus_orientis_fate_god_name:0 "Janus"
+    cultus_orientis_fate_god_name_possessive:0 "$cultus_orientis_fate_god_name$'s"
+
+    #knowledge god Minerva Localization
+    cultus_orientis_knowledge_god_name:0 "Minerva"
+    cultus_orientis_knowledge_god_name_possessive:0 "$cultus_orientis_knowledge_god_name$'s"
+
+    #War god Mars Localization
+    cultus_orientis_war_god_name:0 "$cultus_orientis_fertility_god_name$"
+    cultus_orientis_war_god_name_possessive:0 "$cultus_orientis_fertility_god_name$'s"
+
+    #Trickster god Mercurius Sobrius Localization
+    cultus_orientis_trickster_god_name:0 "Mercurius Sobrius"
+    cultus_orientis_trickster_god_name_possessive:0 "$cultus_orientis_trickster_god_name$'s"
+
+    #Night goddess Nox Localization
+    cultus_orientis_night_god_name:0 "Nox"
+    cultus_orientis_night_god_name_possessive:0 "$cultus_orientis_night_god_name$'s"
+
+    #Water god Neptune Localization
+    cultus_orientis_water_god_name:0 "Neptune"
+    cultus_orientis_water_god_name_possessive:0 "$cultus_orientis_water_god_name$'s"
+
+    #evil gods names 
+    cultus_orientis_evil_god_discordia:0 "Discordia" 
+    cultus_orientis_evil_god_orcus:0 "Orcus"
+
+    #witch goddess
+    cultus_orientis_witchgodname_trivia:0 "Diana Trivia"
+    cultus_orientis_witchgodname_trivia_possesive:0 "$cultus_orientis_witchgodname_trivia$'s"
+
+    #Devil god   
+    cultus_orientis_devil_name:0 "Orcus" 
+    cultus_orientis_devil_name_possessive:0 "$cultus_orientis_devil_name$'s"
+
+    #Death god Dīs Pater 
+    cultus_orientis_death_deity_name:0 "Persephone"
+    cultus_orientis_death_deity_name_possessive:0 "$romano_germanic_polytheism_death_deity_name$'s"
+
+
+    #Romano Hispanic priest flamen vestals
+
+    #Romano Hispanic priest 
+    cultus_orientis_priest_male:0 "Priest"
+    cultus_orientis_priest_male_plural:0 "Priests"
+
+    #Romano Hispanic vestals 
+    cultus_orientis_priest_female:0 "Vestal" 
+    cultus_orientis_priest_female_plural:0 "Vestals" 
+
+    #Romano Hispanic flamen  
+    cultus_orientis_bishop_male:0 "flamen" 
+    cultus_orientis_bishop_male_plural:0 "flamens" 
+
+    #roman names
+    #males
+    reserved_male_names:0 "Romano Hispanic male names"
+    #Female 
+    reserved_female_names:0 "Romano Hispanic female names"
+
+    #holy orders: 
+    holy_order_sons_of_mars_thincsus:0 "Sons of Mars Thincsus"
+    holy_order_Protectors_of_dei_consentes:0 "Protectors of Dei Consentes"
 
     #Graeco Egyptian
     graeco_egyptian_polytheism:0 "Graeco Egyptian"
@@ -1475,16 +1706,16 @@
     graeco_egyptian_polytheism_trickster_god_name:0 "Harpocrates"
     graeco_egyptian_polytheism_trickster_god_name_possessive:0 "$graeco_egyptian_polytheism_trickster_god_name$'s"
 
-    #Night goddess Bendis Localization
-    graeco_egyptian_polytheism_night_god_name:0 "Bendis"
-    graeco_egyptian_polytheism_night_god_name_possessive:0 "Bendis's"
+    #Night goddess Nyx Localization
+    graeco_egyptian_polytheism_night_god_name:0 "Nyx"
+    graeco_egyptian_polytheism_night_god_name_possessive:0 "$graeco_egyptian_polytheism_night_god_name$'s"
 
     #Water god Gebeleizis Localization
     graeco_egyptian_polytheism_water_god_name:0 "Isis Pelagia"
     graeco_egyptian_polytheism_water_god_name_possessive:0 "$graeco_egyptian_polytheism_water_god_name$'s"
 
     #evil gods names 
-    graeco_egyptian_polytheism_evil_god_menoetius:0 "Menoetius" 
+    graeco_egyptian_polytheism_evil_god_antaios:0 "Antaios" 
     
 
     #witch goddess
@@ -1496,7 +1727,7 @@
     graeco_egyptian_polytheism_devil_name_possessive:0 "$graeco_egyptian_polytheism_devil_name$'s"
 
     #Death god Zalmoxis 
-    graeco_egyptian_polytheism_death_deity_name:0 "Serapis"
+    graeco_egyptian_polytheism_death_deity_name:0 "Hermanubis"
     graeco_egyptian_polytheism_death_deity_name_possessive:0 "$graeco_egyptian_polytheism_death_deity_name$'s"
 
     
@@ -1594,9 +1825,9 @@
     alexandrian_cult_trickster_god_name:0 "Harpocrates"
     alexandrian_cult_trickster_god_name_possessive:0 "$alexandrian_cult_trickster_god_name$'s"
 
-    #Night goddess Bendis Localization
-    alexandrian_cult_night_god_name:0 "Bendis"
-    alexandrian_cult_night_god_name_possessive:0 "Bendis's"
+    #Night goddess Nyx Localization
+    alexandrian_cult_night_god_name:0 "Nyx"
+    alexandrian_cult_night_god_name_possessive:0 "$alexandrian_cult_night_god_name$'s"
 
     #Water god Gebeleizis Localization
     alexandrian_cult_water_god_name:0 "Isis Pelagia"

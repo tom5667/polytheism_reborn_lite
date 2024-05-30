@@ -1,0 +1,17 @@
+﻿l_german:
+
+#choose main deity
+etc.007.t:0 "Hauptgottheit wählen"
+etc.007.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+etc.007.tinia:0 "Tinia"
+etc.007.nortia:0 "Nortia"
+etc.007.turms:0 "Turms"
+etc.007.menvra:0 "Menvra"
+etc.007.maris:0 "Maris"
+etc.007.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkts"
+
+etc.008.t:0 "Etruria"
+etc.008.desc:0 "Der Ruhm des einst so großen etruskischen Königreichs ist schon lange vorbei, doch nun ist es durch die Macht des mächtigen $etc_polytheism_high_god_name$ des [Königreichs| gelungen E] Das Königreich Etrurien ist wieder da."
+etc.008.a:0 "Lob $etc_polytheism_high_god_name$"
+
+

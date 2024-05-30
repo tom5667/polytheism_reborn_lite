@@ -78,6 +78,8 @@
 			doctrine = doctrine_clerical_marriage_allowed
 			doctrine = doctrine_clerical_succession_temporal_appointment
 
+			doctrine = doctrine_funeral_stoic
+
 			localization = {
 				#High God Name
 				HighGodName = babylonian_polytheism_high_god_name
@@ -91,16 +93,16 @@
 				#Creator
 				CreatorName = babylonian_polytheism_creator_god_name
 				CreatorNamePossessive = babylonian_polytheism_creator_god_name_possessive
-				CreatorSheHe = CHARACTER_SHEHE_SHE
-				CreatorHerHis = CHARACTER_HERHIS_HER
-				CreatorHerHim = CHARACTER_HERHIM_HER
+				CreatorSheHe = CHARACTER_SHEHE_HE
+				CreatorHerHis = CHARACTER_HERHIS_HIS
+				CreatorHerHim = CHARACTER_HERHIM_HIM
 		
 				#HealthGod
 				HealthGodName = babylonian_polytheism_health_god_name
 				HealthGodNamePossessive = babylonian_polytheism_health_god_name_possessive
-				HealthGodSheHe = CHARACTER_SHEHE_HE
-				HealthGodHerHis = CHARACTER_HERHIS_HIS
-				HealthGodHerHim = CHARACTER_HERHIM_HIM
+				HealthGodSheHe = CHARACTER_SHEHE_SHE
+				HealthGodHerHis = CHARACTER_HERHIS_HER
+				HealthGodHerHim = CHARACTER_HERHIM_HER
 				
 				#FertilityGod
 				FertilityGodName = babylonian_polytheism_fertility_god_name
@@ -112,9 +114,9 @@
 				#WealthGod
 				WealthGodName = babylonian_polytheism_wealth_god_name
 				WealthGodNamePossessive = babylonian_polytheism_wealth_god_name_possessive
-				WealthGodSheHe = CHARACTER_SHEHE_HE
-				WealthGodHerHis = CHARACTER_HERHIS_HIS
-				WealthGodHerHim = CHARACTER_HERHIM_HIM
+				WealthGodSheHe = CHARACTER_SHEHE_SHE
+				WealthGodHerHis = CHARACTER_HERHIS_HER
+				WealthGodHerHim = CHARACTER_HERHIM_HER
 		
 				#HouseholdGod
 				HouseholdGodName = babylonian_polytheism_household_god_name
@@ -126,16 +128,16 @@
 				#FateGod
 				FateGodName = babylonian_polytheism_fate_god_name
 				FateGodNamePossessive = babylonian_polytheism_fate_god_name_possessive
-				FateGodSheHe = CHARACTER_SHEHE_THEY
-				FateGodHerHis = CHARACTER_HERHIS_THEIR
-				FateGodHerHim = CHARACTER_HERHIM_THEM
+				FateGodSheHe = CHARACTER_SHEHE_HE
+				FateGodHerHis = CHARACTER_HERHIS_HIS
+				FateGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#KnowledgeGod
 				KnowledgeGodName = babylonian_polytheism_knowledge_god_name
 				KnowledgeGodNamePossessive = babylonian_polytheism_knowledge_god_name_possessive
-				KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-				KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-				KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+				KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+				KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+				KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#WarGod
 				WarGodName = babylonian_polytheism_war_god_name
@@ -154,16 +156,16 @@
 				#NightGod
 				NightGodName = babylonian_polytheism_night_god_name
 				NightGodNamePossessive = babylonian_polytheism_night_god_name_possessive
-				NightGodSheHe = CHARACTER_SHEHE_SHE
-				NightGodHerHis = CHARACTER_HERHIS_HER
-				NightGodHerHim = CHARACTER_HERHIM_HER
+				NightGodSheHe = CHARACTER_SHEHE_HE
+				NightGodHerHis = CHARACTER_HERHIS_HIS
+				NightGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#WaterGod
 				WaterGodName = babylonian_polytheism_water_god_name
 				WaterGodNamePossessive = babylonian_polytheism_water_god_name_possessive
-				WaterGodSheHe = CHARACTER_SHEHE_HE
-				WaterGodHerHis = CHARACTER_HERHIS_HIS
-				WaterGodHerHim = CHARACTER_HERHIM_HIM
+				WaterGodSheHe = CHARACTER_SHEHE_SHE
+				WaterGodHerHis = CHARACTER_HERHIS_HER
+				WaterGodHerHim = CHARACTER_HERHIM_HER
 		
 		
 		
@@ -209,11 +211,11 @@
 				DeathDeitySheHe = CHARACTER_SHEHE_HE
 				DeathDeityHerHis = CHARACTER_HERHIS_HIS
 				WitchGodName = babylonian_polytheism_witchgodname_enki
-				WitchGodHerHis = CHARACTER_HERHIS_HER
+				WitchGodHerHis = CHARACTER_HERHIS_HE
 				WitchGodSheHe = CHARACTER_SHEHE_HE
-				WitchGodHerHim = CHARACTER_HERHIM_HER
-				WitchGodMistressMaster = mistress
-				WitchGodMotherFather = mother
+				WitchGodHerHim = CHARACTER_HERHIM_HIM
+				WitchGodMistressMaster = master
+				WitchGodMotherFather = father
 		
 				
 				GHWName = ghw_great_holy_war
@@ -278,6 +280,8 @@
 			#Infanticide
 			doctrine = doctrine_infanticide_none
 
+			doctrine = doctrine_funeral_stoic
+
 			#Clerical Functions
 			doctrine = doctrine_clerical_gender_either
 			doctrine = doctrine_clerical_marriage_disallowed
@@ -293,7 +297,7 @@
 		
 				#Creator
 				CreatorName = sumerian_polytheism_high_god_name
-				CreatorNamePossessive = sumerian_polytheismn_high_god_name_possessive
+				CreatorNamePossessive = sumerian_polytheism_high_god_name_possessive
 				CreatorSheHe = CHARACTER_SHEHE_HE
 				CreatorHerHis = CHARACTER_HERHIS_HIS
 				CreatorHerHim = CHARACTER_HERHIM_HIM
@@ -301,9 +305,9 @@
 				#HealthGod
 				HealthGodName = sumerian_polytheism_health_god_name
 				HealthGodNamePossessive = sumerian_polytheism_health_god_name_possessive
-				HealthGodSheHe = CHARACTER_SHEHE_HE
-				HealthGodHerHis = CHARACTER_HERHIS_HIS
-				HealthGodHerHim = CHARACTER_HERHIM_HIM
+				HealthGodSheHe = CHARACTER_SHEHE_SHE
+				HealthGodHerHis = CHARACTER_HERHIS_HER
+				HealthGodHerHim = CHARACTER_HERHIM_HER
 				
 				#FertilityGod
 				FertilityGodName = sumerian_polytheism_fertility_god_name
@@ -364,9 +368,9 @@
 				#WaterGod
 				WaterGodName = sumerian_polytheism_water_god_name
 				WaterGodNamePossessive = sumerian_polytheism_water_god_name_possessive
-				WaterGodSheHe = CHARACTER_SHEHE_IT
-				WaterGodHerHis = CHARACTER_HERHIS_ITS
-				WaterGodHerHim = CHARACTER_HERHIM_IT
+				WaterGodSheHe = CHARACTER_SHEHE_HE
+				WaterGodHerHis = CHARACTER_HERHIS_HIS
+				WaterGodHerHim = CHARACTER_HERHIM_HIM
 		
 		
 				PantheonTerm = religion_the_gods
@@ -411,11 +415,11 @@
 				DeathDeitySheHe = CHARACTER_SHEHE_IT
 				DeathDeityHerHis = CHARACTER_HERHIS_ITS
 				WitchGodName = sumerian_polytheism_witch_god_name
-				WitchGodHerHis = CHARACTER_HERHIS_HER
-				WitchGodSheHe = CHARACTER_SHEHE_SHE
-				WitchGodHerHim = CHARACTER_HERHIM_HER
-				WitchGodMistressMaster = mistress
-				WitchGodMotherFather = mother
+				WitchGodHerHis = CHARACTER_HERHIS_HIS
+				WitchGodSheHe = CHARACTER_SHEHE_HE
+				WitchGodHerHim = CHARACTER_HERHIM_HIM
+				WitchGodMistressMaster = master
+				WitchGodMotherFather = father
 		
 				GHWName = ghw_great_holy_war
 				GHWNamePlural = ghw_great_holy_wars
@@ -472,6 +476,8 @@
 			#Infanticide
 			doctrine = doctrine_infanticide_none
 
+			doctrine = doctrine_funeral_stoic
+
 			#Clerical Functions
 			doctrine = doctrine_clerical_gender_either
 			doctrine = doctrine_clerical_marriage_disallowed
@@ -487,7 +493,7 @@
 		
 				#Creator
 				CreatorName = assyrian_polytheism_high_god_name
-				CreatorNamePossessive = assyrian_polytheismn_high_god_name_possessive
+				CreatorNamePossessive = assyrian_polytheism_high_god_name_possessive
 				CreatorSheHe = CHARACTER_SHEHE_HE
 				CreatorHerHis = CHARACTER_HERHIS_HIS
 				CreatorHerHim = CHARACTER_HERHIM_HIM
@@ -605,11 +611,11 @@
 				DeathDeitySheHe = CHARACTER_SHEHE_IT
 				DeathDeityHerHis = CHARACTER_HERHIS_ITS
 				WitchGodName = assyrian_polytheism_witch_god_name
-				WitchGodHerHis = CHARACTER_HERHIS_HER
-				WitchGodSheHe = CHARACTER_SHEHE_SHE
-				WitchGodHerHim = CHARACTER_HERHIM_HER
-				WitchGodMistressMaster = mistress
-				WitchGodMotherFather = mother
+				WitchGodHerHis = CHARACTER_HERHIS_HIS
+				WitchGodSheHe = CHARACTER_SHEHE_HE
+				WitchGodHerHim = CHARACTER_HERHIM_HIM
+				WitchGodMistressMaster = master
+				WitchGodMotherFather = father
 		
 				GHWName = ghw_great_holy_war
 				GHWNamePlural = ghw_great_holy_wars

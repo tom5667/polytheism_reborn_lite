@@ -1,4 +1,7 @@
-﻿illyrian_religion = {
+﻿#####################
+#Made by tom5667 
+#####################
+illyrian_religion = {
 	family = rf_pagan
 	pagan_roots = yes
 	doctrine = pagan_hostility_doctrine
@@ -38,9 +41,9 @@
 			
 			doctrine = unreformed_faith_doctrine
 			doctrine = special_doctrine_illyrian_patron_god
-			doctrine = tenet_communal_identity
+			doctrine = tenet_sun_worship
+			doctrine = tenet_animal_sacrifice
 			doctrine = tenet_ancestor_worship
-			doctrine = tenet_unrelenting_faith
 			doctrine = special_doctrine_ecumenical_illyrian_roman
 			doctrine = doctrine_pilgrimage_forbidden
 			
@@ -69,6 +72,8 @@
 			doctrine = doctrine_clerical_gender_male_only
 			doctrine = doctrine_clerical_marriage_allowed
 			doctrine = doctrine_clerical_succession_spiritual_appointment
+
+			doctrine = doctrine_funeral_stoic
 		
 			localization = {
 				#High God Name
@@ -83,9 +88,9 @@
 				#Creator
 				CreatorName = illyrian_polytheism_creator_god_name
 				CreatorNamePossessive = illyrian_polytheism_creator_god_name_possessive
-				CreatorSheHe = CHARACTER_SHEHE_SHE
-				CreatorHerHis = CHARACTER_HERHIS_HER
-				CreatorHerHim = CHARACTER_HERHIM_HER
+				CreatorSheHe = CHARACTER_SHEHE_HE
+				CreatorHerHis = CHARACTER_HERHIS_HIS
+				CreatorHerHim = CHARACTER_HERHIM_HIM
 		
 				#HealthGod
 				HealthGodName = illyrian_polytheism_health_god_name
@@ -118,16 +123,16 @@
 				#FateGod
 				FateGodName = illyrian_polytheism_fate_god_name
 				FateGodNamePossessive = illyrian_polytheism_fate_god_name_possessive
-				FateGodSheHe = CHARACTER_SHEHE_THEY
-				FateGodHerHis = CHARACTER_HERHIS_THEIR
-				FateGodHerHim = CHARACTER_HERHIM_THEM
+				FateGodSheHe = CHARACTER_SHEHE_HE
+				FateGodHerHis = CHARACTER_HERHIS_HIS
+				FateGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#KnowledgeGod
 				KnowledgeGodName = illyrian_polytheism_knowledge_god_name
 				KnowledgeGodNamePossessive = illyrian_polytheism_knowledge_god_name_possessive
-				KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-				KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-				KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+				KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+				KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+				KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#WarGod
 				WarGodName = illyrian_polytheism_war_god_name
@@ -202,10 +207,10 @@
 				DeathDeityHerHis = CHARACTER_HERHIS_HIS
 				WitchGodName = illyrian_polytheism_witchgodname_vidasus
 				WitchGodHerHis = CHARACTER_HERHIS_HER
-				WitchGodSheHe = CHARACTER_SHEHE_HE
+				WitchGodSheHe = CHARACTER_SHEHE_SHE
 				WitchGodHerHim = CHARACTER_HERHIM_HER
-				WitchGodMistressMaster = master
-				WitchGodMotherFather = father
+				WitchGodMistressMaster = mistress
+				WitchGodMotherFather = mother
 		
 				
 				GHWName = ghw_great_holy_war

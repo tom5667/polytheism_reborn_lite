@@ -1,0 +1,88 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+
+#Rekonstruktion des Polytheismus
+reconstruct_polytheism_decision:0 "Polytheistische Religion wieder aufbauen"
+reconstruct_polytheism_decision_desc:0 "Die Zeiten der meisten polytheistischen Religionen sind lange vorbei, aber mit etwas Arbeit können wir sie zurückholen. Je mehr du lernst, desto größer ist die Chance, dass du Erfolg hast.
+reconstruct_polytheism_decision_tooltip:0 "Versuche, eine polytheistische Religion zu rekonstruieren"
+reconstruct_polytheism_decision_confirm:0 "Bestätige"
+
+# Return Cultus Deorum Decision 
+return_polytheism_decision:0 "Return Ancient Polytheism Religion"
+return_polytheism_decision_desc:0 "Return ancient polytheistic religion, the culture determines which ancient religion event will trigger for example irish Gealic polytheism and with Greek you get the events for cultus deorum hellenic etc." 
+return_polytheism_decision_tooltip:1 "Wie funktionierte die antike Religion" 
+return_polytheism_decision_confirm:1 "Antike Religion zurückgeben"
+
+#Schnellmenü Religion wechseln
+return_polytheism_short_decision:0 "Schnellmenü Religion wechseln"
+return_polytheism_short_decision_desc:0 "Schnelle Möglichkeit, zu einer der alten Religionen zu wechseln, die von Polytheism Reborn hinzugefügt wurden."
+return_polytheism_short_decision_tooltip:1 "Quick menu change relgion"
+return_polytheism_short_decision_confirm:1 "Neue Religion wählen"
+
+
+return_culture_short_decision:0 "Kulturwechsel Schnellmenü"
+return_culture_short_decision_desc:0 "Schneller Wechsel zu einer der alten Kulturen von Polytheism Reborn und einigen Vanilla-Kulturen."
+return_culture_short_decision_tooltip:1 "Schnellmenü Kulturwechsel"
+return_culture_short_decision_confirm:1 "Neue Kultur wählen"
+
+invite_sassanid_relatives_decision_before_last_date:0 "Wahl ist möglich bis zum 1. Januar 790 AD"
+invite_sassanid_relatives_decision:0 "Sassanidische Verwandte einladen"
+invite_sassanid_relatives_decision_desc:0 "Wir haben zwei der letzten sassanidischen Verwandten ausfindig gemacht, sie kämpften in Tokharistan gegen die Araber und nun besteht die Chance, dass wir sie hierher holen und ihnen helfen können, die persische Krone zurückzuerobern."
+invite_sassanid_relatives_decision_tooltip:1 "Helft den Sassaniden zurück auf ihren Thron."
+invite_sassanid_relatives_decision_confirm:1 "Einladungen senden"
+
+sassanid_reconquest:0 "Sassanidische Rückeroberung"
+sassanid_reconquest_desc:0 "Jetzt, wo wir die sassanidische Familie in unsere Reihen aufgenommen haben, können wir unseren Anspruch auf das Persische Reich geltend machen und die Rückeroberung der Sassaniden beginnen."
+sassanid_reconquest_tooltip:1 "Sassanidische Rückeroberung"
+sassanid_reconquest_confirm:1 "Endlich"
+
+#Tempel der Vesta schließen 
+close_temple_of_vesta_decision:0 "Schließt den Tempel der Vesta"
+close_temple_of_vesta_decision_desc:0 "Diese Heiden haben keinen Bedarf an einem heidnischen Tempel."
+close_temple_of_vesta_decision_confirm:1 "Schließt den Tempel"
+
+create_celtica_decision:0 "Celtica erschaffen"
+create_celtica_decision_desc:0 "Die alten Römer sagten, dass die Kelten, die in diesen Regionen lebten, sich Celtica nannten, lasst uns den Namen so verkünden, wie er einst war."
+create_celtica_decision_tooltip:0 "Celtica erschaffen"
+restore_celtica_effect_tooltip:0 "Erschafft [Königreich|E] von Celtica"
+create_celtica_decision_confirm:1 "Celtica erschaffen"
+
+create_belgica_decision:0 "Erschafft Belgae"
+create_belgica_decision_desc:0 "Die alten Römer sagten, dass die Kelten, die in diesen Regionen lebten, sich Belgica nannten, lasst uns den Namen so verkünden, wie er einst war."
+create_belgica_decision_tooltip:0 "Belgae erschaffen"
+restore_belgica_effect_tooltip:0 "Erschafft [Königreich|E] von Belgae"
+create_belgica_decision_confirm:1 "Erschafft Belgae"
+
+create_narbonensis_decision:0 "Erschafft Narbonensis"
+create_narbonensis_decision_desc:0 "Die alten Römer sagten, dass die Kelten, die in diesen Regionen lebten, sich Narbonensis nannten, lasst uns den Namen verkünden, wie er einst war.
+create_narbonensis_decision_tooltip:0 "Narbonensis erschaffen"
+restore_narbonensis_effect_tooltip:0 "Erschafft [Königreich|E] von Narbonensis"
+create_narbonensis_decision_confirm:1 "Narbonensis erschaffen"
+
+create_aquitania_decision:0 "Aquitanien erschaffen"
+create_aquitania_decision_desc:0 "Die alten Römer sagten, dass die Kelten, die in diesen Regionen lebten, sich Aquitania nannten, lasst uns den Namen so verkünden, wie er einst war."
+create_aquitania_decision_tooltip:0 "Aquitanien erschaffen"
+restore_aquitania_effect_tooltip:0 "Erschafft [Königreich|E] von Aquitanien"
+create_aquitania_decision_confirm:1 "Aquitanien erschaffen"
+
+create_cisalpine_gaul_decision:0 "Erschafft Ligurien"
+create_cisalpine_gaul_decision_desc:0 "Die alten Römer sagten, dass die Kelten, die in diesen Regionen lebten, sich Ligurien nannten, lasst uns den Namen so verkünden, wie er einst war.
+create_cisalpine_gaul_decision_tooltip:0 "Ligurien erschaffen"
+restore_cisalpine_gaul_effect_tooltip:0 "Erschafft [Königreich|E] von Ligurien"
+create_cisalpine_gaul_decision_confirm:1 "Ligurien erschaffen"
+
+create_empire_gaul_decision:0 "Erschafft Gallien"
+create_empire_gaul_decision_desc:0 "Jetzt, wo die [Königreiche|E] von Aquitanien, Narbonensis, Belgae und Celtica unter einem Banner stehen, können wir das ehemalige gallische Bündnis, das einst gegen die Römer und ihre Verbündeten kämpfte, wiederherstellen"
+create_empire_gaul_decision_tooltip:0 "Gallien erschaffen"
+restore_empire_gaul_effect_tooltip:0 "Erschafft [Imperium|E] von Gallien"
+create_empire_gaul_decision_confirm:1 "Gallien erschaffen"
+
+#Dismantle patriarchate
+dismantle_patriarchate_decision:0 "Abschaffung des Patriarchats"
+dismantle_patriarchate_decision_desc:0 "Sobald das gesamte griechische Land unter die Kontrolle von [ROOT.Char.GetFaith.GetAdjective] gebracht worden ist, werden wir in der Lage sein, die orthodoxen Heiden dauerhaft aus dieser Welt zu vertreiben."
+dismantle_patriarchate_decision_tooltip:0 "Das Patriarchat wird dauerhaft zerstört werden."
+dismantle_patriarchate_decision_effect_tooltip:0 "Das Patriarchat wird für immer zerstört"
+dismantle_patriarchate_decision_confirm:1 "Das Patriarchat von Konstantinopel soll brennen!"
+

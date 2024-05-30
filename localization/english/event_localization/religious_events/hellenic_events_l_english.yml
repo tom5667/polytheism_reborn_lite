@@ -23,8 +23,8 @@ mycenaean.001.optout:0 "Maybe now isn't the right time"
 
 #Visiting temple of Zeus
 hellenismos.007.t:0 "Visiting Temple of $hellenism_high_god_name$"
-hellenismos.007.desc:0 "To rule my realm I need some guidence from $hellenism_high_god_name$ King of the gods only he can he give the support my to rule my realm in a good way."
-hellenismos.007.a:0 "Sacrife a White animal"
+hellenismos.007.desc:0 "To rule my realm I need some guidance from $hellenism_high_god_name$ King of the gods only he can he give the support my to rule my realm in a good way."
+hellenismos.007.a:0 "Sacrifice a White animal"
 hellenismos.007.message.positive:0 "Blessed by $hellenism_high_god_name$"
 hellenismos.007.message.negative:0 "Unfavoured by $hellenism_high_god_name$"
 
@@ -71,5 +71,5 @@ hellenismos.020.ares:0 "Ares"
 hellenismos.020.optout:0 "Maybe now isn't the right time"
 
 hellenismos.021.t:0 "Adopting the Egyptian gods"
-hellenismos.021.desc:0 "After months of research and searching for places where the precense of the gods and good omens could be observed, it's time to build some shrines and write new rituals."
+hellenismos.021.desc:0 "After months of research and searching for places where the presence of the gods and good omens could be observed, it's time to build some shrines and write new rituals."
 hellenismos.021.a:0 "May $graeco_egyptian_polytheism_high_god_name$ guide us"

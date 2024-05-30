@@ -1,0 +1,41 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+
+restore_carthago:0 "Karthago wiederherstellen"
+restore_carthago_desc:0 "Jetzt, da alle afrikanischen Herzogtümer wieder unter einem Banner stehen, können wir das Königreich Karthago wiederherstellen."
+restore_carthago_effect_tooltip:0 "Wiederhergestelltes Königreich von Karthago"
+restore_carthago_tooltip:1 "Es ist an der Zeit, Karthago zurückzuerobern"
+restore_carthago_confirm:0 "Karthago erschaffen"
+
+set_capital_tunis_decision:0 "Tunis zur Hauptstadt machen"
+set_capital_tunis_decision_desc:0 "Mach Tunis zur Hauptstadt von Karthago".
+set_capital_tunis_decision_tooltip:1 "Hauptstadt zu Tunis machen"
+set_capital_tunis_decision_confirm:0 "Hauptstadt ändern"
+
+choose_main_deity_punic_decision:0 "Wählen Sie Ihre Hauptgottheit"
+choose_main_deity_punic_decision_tt:0 "Du fängst an, dein Leben nach den Werten von" zu leben
+select_main_deity_punic_decision.select_baal:0 "Baal Hammon Hochgott der Karthager"
+select_main_deity_punic_decision.select_tanit:0 "Tanit Göttin des Krieges und der Invasion"
+select_main_deity_punic_decision.select_astarte:0 "Astarte, Göttin der Fruchtbarkeit"
+select_main_deity_punic_decision.select_kusor:0 "Kusor Gott der Weisheit"
+select_main_deity_punic_decision.select_melqart:0 "Melqart, Gott des Handels und des Militärs"
+choose_main_deity_punic_decision_tooltip:1 "Wähle den Hauptgott(dess)"
+choose_main_deity_punic_decision_confirm:1 "Wähle Hauptgott(dess)"
+
+choose_main_deity_semitic_decision:0 "Wählen Sie Ihre Hauptgottheit"
+choose_main_deity_semitic_decision_tt:0 "Sie beginnen Ihr Leben nach den Werten von" zu leben
+select_main_deity_semitic_decision.select_ba_al_hadad:0 "Ba'al-Hadad Hoher Gott der Semitischen"
+select_main_deity_semitic_decision.select_ashera:0 "Aschera Göttin der Fruchtbarkeit"
+select_main_deity_semitic_decision.select_dagan:0 "Dagan Gott des Reichtums"
+select_main_deity_semitic_decision.select_el_elyon:0 "El Elyon Gott der Weisheit"
+select_main_deity_semitic_decision.select_ashtart:0 "Ashtart Göttin des Krieges"
+choose_main_deity_semitic_decision_tooltip:1 "Hauptgottheit(en) wählen"
+choose_main_deity_semitic_decision_confirm:1 "Wähle Hauptgott (dess)"
+
+#Umarmung der römischen Kultur 
+embrace_punic_culture_decision:0 "Umarme die punische Kultur"
+embrace_punic_culture_decision_desc:0 "Wir haben unsere alte Religion zurück, jetzt ist es an der Zeit, die punischen Tugenden wieder einzuführen."
+embrace_punic_culture_decision_tooltip:0 "Punische Kultur wieder einführen"
+embrace_punic_culture_decision_confirm:0 "Bestätigen"

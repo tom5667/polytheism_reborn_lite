@@ -6,6 +6,320 @@ namespace = cdr_sr
 namespace = embrace_culture
 namespace = mycenaean
 
+#Return Hellenismos
+hellenismos.001 = {
+	type = character_event
+	title = hellenismos.001.t
+	desc = hellenismos.001.desc
+	theme =  hunt_activity
+	right_portrait = {
+			character = root
+			animation = personality_content
+	}
+	option = {
+		name = hellenismos.001.a
+		trigger_event = hellenismos.002
+	}
+}
+
+hellenismos.002 = { 
+	type = character_event
+	title = hellenismos.002.t
+	desc = hellenismos.002.desc
+	theme = learning_scholarship_focus
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	option = { #Proceed
+		name = hellenismos.002.a
+		trigger_event = hellenismos.003
+	}
+	option = { #Stop
+		name = hellenismos.002.b
+		hidden_effect ={
+			clear_global_variable_list = unavailable_unique_decisions_convert
+		   remove_trait = pilgrim 
+	   }
+	}
+}
+
+hellenismos.003 = { 
+	type = character_event
+	title = hellenismos.003.t
+	desc = hellenismos.003.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = idle
+	}
+	#proceed
+	option = {
+		name = hellenismos.003.a
+		trigger_event = hellenismos.004
+	}	
+}
+
+hellenismos.004 = {
+	type = character_event
+	title = hellenismos.004.t
+	desc = hellenismos.004.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = idle
+	}
+	option = {
+		name = hellenismos.004.a
+		trigger_event = hellenismos.005
+	}
+}
+
+hellenismos.005 = {
+	type = character_event
+	title = hellenismos.005.t
+	desc = hellenismos.005.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = admiration
+	}
+	option = {
+		name = hellenismos.005.a
+		trigger_event = hellenismos.006
+	}
+	option = {
+		name = hellenismos.005.b
+		clear_global_variable_list = unavailable_unique_decisions_convert
+		remove_trait = pilgrim
+	}
+}
+hellenismos.006 = {
+	type = character_event
+	title = hellenismos.006.t
+	desc = hellenismos.006.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = idle
+	   
+	}
+	option = {
+		name = hellenismos.006.a
+		trigger_event = {
+			id = hellenismos_sr.001
+			months = 2 
+		}
+	}
+   option = {
+	   name = hellenismos.006.b
+		   trigger_event = {
+			id = cdr_sr.001
+			months = 2
+		   }
+
+   }
+   
+}
+
+#Reinstate Hellenism as state religion 
+scripted_effect hellenismos_sr_notify_players_effectt = {
+	every_player = {
+		limit = {
+			Not = {this = root}  
+			capital_province = {
+			geographical_region = world_europe_south_east
+			}
+		}
+		trigger_event = hellenismos_sr.002
+	}
+}
+
+hellenismos_sr.001 = {
+	type = character_event
+	title = hellenismos_sr.001.t
+	desc = hellenismos_sr.001.desc
+	theme = faith
+	right_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous	
+		}
+		override_background = { reference = throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		faith = { save_scope_as = old_faith }
+		return_hellenismos_sr_decision_scripted_effect = yes
+	}
+
+	option = {
+		name = hellenismos_sr.001.a
+		#Get a nice reward for your adherence to the true faith.
+		add_piety_level = 1
+		#Sort notification copy for players.
+		save_scope_value_as = {
+			name = hellenismos_return
+			value = flag:vanilla
+		}
+		hellenismos_sr_notify_players_effect = yes 
+		
+	}	
+}
+
+hellenismos_sr.002 = {
+	type = character_event
+	title = hellenismos_sr.002.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { top_liege = root }
+				desc = hellenismos_sr.002.desc.vassals
+			}
+			desc = hellenismos_sr.002.desc.outsiders
+		}
+		desc = hellenismos_pagan_sr.002.desc.intro
+		triggered_desc = {
+			trigger = { scope:hellenismos_return = flag:vanilla }
+			desc = hellenismos_sr.002.desc_vanilla
+		}
+	}
+	theme = faith
+	left_portrait = scope:scoped_ruler
+	override_background = { reference = throne_room }
+	#Roman polyteist are happy about this unexpected turn of events!
+	option = {
+		name = hellenismos_sr.002.a
+		trigger = { religion = religion:hellenic_religion}
+		add_stress = minor_stress_loss
+	}
+	#Vassals who do not follow the faith may decide to convert after all.
+	option = {
+		name = hellenismos_sr.002.b
+		trigger = {
+			top_liege = root
+			NOT = { religion = religion:hellenic_religion}
+		}
+		set_character_faith_with_conversion = faith:hellenic_pagan
+		
+	}
+	#Those who aren't polytheist are probably horrified.
+	option = {
+		name = hellenismos_sr.002.c
+		trigger = {
+			NOT = {
+				religion = { is_in_family = rf_pagan}
+			}
+		}
+	}
+	#And, as a fallback, some people just won't care.
+	option = { 
+		name = hellenismos_sr.002.d 
+	}
+}
+
+#Reinstate Cultus Deorum as state religion 
+scripted_effect cdr_sr_notify_players_effectt = {
+	every_player = {
+		limit = {
+			Not = {this = root}  
+			capital_province = {
+			geographical_region = world_europe_south_east
+			}
+		}
+		trigger_event = cdr_sr.002
+	}
+}
+
+cdr_sr.001 = {
+	type = character_event
+	title = cdr_sr.001.t
+	desc = cdr_sr.001.desc
+	theme = faith
+	right_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous	
+		}
+		override_background = { reference = throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		faith = { save_scope_as = old_faith }
+		return_cdr_sr_decision_scripted_effect = yes
+	}
+
+	option = {
+		name = cdr_sr.001.a
+		#Get a nice reward for your adherence to the true faith.
+		add_piety_level = 1
+		#Sort notification copy for players.
+		save_scope_value_as = {
+			name = cdr_return
+			value = flag:vanilla
+		}
+		cdr_sr_notify_players_effect = yes 
+		
+		
+
+		#Title creation e_p_roman
+
+		#demolish  e_eastern_roman
+
+	}	
+}
+
+cdr_sr.002 = {
+	type = character_event
+	title = cdr_sr.002.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { top_liege = root }
+				desc = cdr_sr.002.desc.vassals
+			}
+			desc = cdr_sr.002.desc.outsiders
+		}
+		desc = cdr_sr.002.desc.intro
+		triggered_desc = {
+			trigger = { scope:cdr_return = flag:vanilla }
+			desc = cdr_sr.002.desc_vanilla
+		}
+	}
+	theme = faith
+	left_portrait = scope:scoped_ruler
+	override_background = { reference = throne_room }
+	#Roman polyteist are happy about this unexpected turn of events!
+	option = {
+		name = cdr_sr.002.a
+		trigger = { religion = religion:hellenism_religion}
+		add_stress = minor_stress_loss
+	}
+	#Vassals who do not follow the faith may decide to convert after all.
+	option = {
+		name = cdr_sr.002.b
+		trigger = {
+			top_liege = root
+			NOT = { religion = religion:hellenism_religion}
+		}
+		set_character_faith_with_conversion = faith:cdr_polytheism
+		
+	}
+	#Those who aren't polytheist are probably horrified.
+	option = {
+		name = cdr_sr.002.c
+		trigger = {
+			NOT = {
+				religion = { is_in_family = rf_pagan}
+			}
+		}
+	}
+	#And, as a fallback, some people just won't care.
+	option = { 
+		name = cdr_sr.002.d 
+	}
+}
+
 embrace_culture.004= {
 	type = character_event
 	title = embrace_culture.004.t

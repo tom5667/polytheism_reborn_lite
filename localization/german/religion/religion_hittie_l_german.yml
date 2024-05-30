@@ -1,0 +1,135 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+###################### 
+
+    hittite_religion:0 "Hettitisch"
+    hittite_religion_adj:2 "Hettitisch"
+    hittite_religion_adherent:0 "Hettitisch"
+    hittite_religion_adherent_plural:0 "Hettitischs"
+    hittite_religion_desc:0 "Das hettitische Pantheon war ein zentraler Bestandteil der Gesellschaft der Hettitier, eines Zweigs der indoeuropäischen Stämme, die aus den Steppen nach Süden wanderten und in Anatolien ein Reich errichteten. Über diesen Glauben ist nicht viel bekannt, aber es ist bekannt, dass er sowohl vom mesopotamischen Pantheon als auch von der ursprünglichen indoeuropäischen Mythologie beeinflusst wurde."
+
+    #cdr
+    hittite_polytheism:0 "Hettitisch"
+    hittite_polytheism_adj:0 "Hettitisch"
+    hittite_polytheism_adherent:0 "Hettitische Polytheist"
+    hittite_polytheism_adherent_plural:0 "Hettitische Polytheisten"
+    hittite_polytheism_desc:0 "Das hettitische Pantheon war ein zentraler Bestandteil der Gesellschaft der Hettitier, eines Zweigs der indoeuropäischen Stämme, die aus den Steppen nach Süden wanderten und in Anatolien ein Reich errichteten. Über diesen Glauben ist nicht viel bekannt, aber es ist bekannt, dass er sowohl vom mesopotamischen Pantheon als auch von der ursprünglichen indoeuropäischen Mythologie beeinflusst wurde." 
+
+    hittite_polytheism_old:0 "Hettitisch Alt"
+    hittite_polytheism_old_adj:0 "Hettitisch Alt"
+    hittite_polytheism_adherent_old:0 "Alt Hettitische Polytheist"
+    hittite_polytheism_old_adherent_plural:0 "Alt Hettitische Polytheisten"
+    hittite_polytheism_old_desc:0 "Das hettitische Pantheon war ein zentraler Bestandteil der Gesellschaft der Hettitier, eines Zweigs der indoeuropäischen Stämme, die aus den Steppen nach Süden wanderten und in Anatolien ein Reich errichteten. Über diesen Glauben ist nicht viel bekannt, aber es ist bekannt, dass er sowohl vom mesopotamischen Pantheon als auch von der ursprünglichen indoeuropäischen Mythologie beeinflusst wurde." 
+
+    hittite_polytheism_religious_head_title:0 "Hohe Priester"
+    hittite_polytheism_divine_realm:0 "Reich von die Götter"
+    hittite_polytheism_religious_symbol:0 "Hettitische Sonnenscheibe"
+    hittite_polytheism_religious_text:0 "Hettitische Oral Tradition"
+  
+
+    #Cdr gods/goddesses Localization
+
+    #Tarhunna Localization
+    hittite_polytheism_high_god_name:0 "Tarhunna"
+    hittite_polytheism_high_god_name_possessive:0 "Tarhunna's"
+    hittite_polytheism_high_god_name_alternate:0 "Tarhunna"
+    hittite_polytheism_high_god_name_alternate_possessive:0 "Tarhunna's"
+    hittite_polytheism_high_god_shehe:0 "He"
+    hittite_polytheism_high_god_herselfhimself:0 "Himself"
+    hittite_polytheism_high_god_herhis:0 "His"
+
+    #Creater god Localization
+    hittite_polytheism_creator_god_name:0 "Elkunirsa"
+    hittite_polytheism_creator_god_name_possessive:0 "Elkunirsa's"
+
+    #Health Goddess Kamrushepa
+    hittite_polytheism_health_god_name:0 "Kamrushepa"
+    hittite_polytheism_health_god_name_possessive:0 "Kamrushepa's"
+
+    #Fertility Goddess Ceres Localization
+    hittite_polytheism_fertility_god_name:0 "Telipinu"
+    hittite_polytheism_fertility_god_name_possessive:0 "Telipinu's"
+
+    #Wealth god Halki Localization
+    hittite_polytheism_wealth_god_name:0 "Halki"
+    hittite_polytheism_wealth_god_name_possessive:0 "Halki's"
+
+    #Household god Hannahanna 
+    hittite_polytheism_household_god_name:0 "Hannahanna"
+    hittite_polytheism_household_god_name_possessive:0 "Hannahanna's"
+
+    #Fate god Janus Localization
+    hittite_polytheism_fate_god_name:0 "Ishtushtaya and Papaya"
+    hittite_polytheism_fate_god_name_possessive:0 "Ishtushtaya's and Papaya's"
+
+    #knowledge god A'as Localization
+    hittite_polytheism_knowledge_god_name:0 "A'as"
+    hittite_polytheism_knowledge_god_name_possessive:0 "A'as's"
+
+    #War god Tashmishu Localization
+    hittite_polytheism_war_god_name:0 "Tashmishu"
+    hittite_polytheism_war_god_name_possessive:0 "Tashmishu's"
+
+    #Trickster god A'as Localization
+    hittite_polytheism_trickster_god_name:0 "A'as"
+    hittite_polytheism_trickster_god_name_possessive:0 "A'as's"
+
+    #Night goddess Ispanza Localization
+    hittite_polytheism_night_god_name:0 "Ispanza"
+    hittite_polytheism_night_god_name_possessive:0 "Ispanza's"
+
+    #Water god Aruna Localization
+    hittite_polytheism_water_god_name:0 "Aruna"
+    hittite_polytheism_water_god_name_possessive:0 "Aruna's"
+
+    #evil gods names 
+    hittite_polytheism_evil_god_jarri:0 "Jarri" 
+    hittite_polytheism_evil_god_tashmishu:0 "Tashmishu"
+
+    #witch goddess
+    hittite_polytheism_witchgodname_kamrushepa:0 "Kamrushepa"
+    hittite_polytheism_witchgodname_kamrushepa_possesive:0 "Kamrushepa's"
+
+    #Devil god   
+    hittite_polytheism_devil_name:0 "Hahhima" 
+    hittite_polytheism_devil_name_possessive:0 "Hahhima's"
+
+    #Death god Lelwani 
+    hittite_polytheism_death_deity_name:0 "Lelwani"
+    hittite_polytheism_death_deity_name_possessive:0 "Lelwani's"
+
+    #Good gods names 
+    hittite_polytheism_good_god_a_as:0 "A'as" 
+    hittite_polytheism_good_god_bona_aruna:0 "Aruna" 
+    hittite_polytheism_good_god_ispanza:0 "Ispanza" 
+    hittite_polytheism_good_god_tashmishu:0 "Tashmishu" 
+    hittite_polytheism_good_god_hannahanna:0 "Hannahanna" 
+    hittite_polytheism_good_god_tarhunna:0 "Tarhunna" 
+    hittite_polytheism_good_god_kamrushepa:0 "Kamrushepa" 
+    hittite_polytheism_good_god_halki:0 "Halki"
+
+    #Cdr priest flamen vestals
+
+    #Cdr priest 
+    hittite_polytheism_priest_male:0 "Priester"
+    hittite_polytheism_priest_male_plural:0 "Priester"
+    hittite_polytheism_priest_alternate_plural:0 "Priester"
+
+    #Cdr vestals 
+    hittite_polytheism_priest_female:0 "Priesterin" 
+    hittite_polytheism_priest_female_plural:0 "Priesterinnen" 
+
+    #Cdr flamen  
+    hittite_polytheism_bishop_male:0 "Ober Priester" 
+    hittite_polytheism_bishop_male_plural:0 "Ober Priester" 
+
+    #roman names
+    #males
+    reserved_male_names:0 "Hettitische mänliche names"
+    #Female 
+    reserved_female_names:0 "Hettitische frauennamen"
+
+    #holy orders: 
+    holy_order_sons_of_tashmishu:0 "Söhne von Tashmishu"
+    holy_order_protectors_of_tarhunna:0 "Beschützer von Tarhunna"

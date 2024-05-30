@@ -5,6 +5,8 @@
 ######################
     canaanite_religion:0 "West Semitic"
     canaanite_religion_adj:0 "West Semitic"
+    canaanite_religion_adherent:0 "West Semitic"
+    canaanite_religion_adherent_plural:0 "West Semitics"
     canaanite_religion_desc:0 "The Old religion of the Phoenicians"
     canaanite_pantheon_the_gods:0 "The gods of the old West Semitic religion"
     holy_order_sons_of_baal:0 "Sons of Baal"
@@ -29,7 +31,7 @@
 
     #punic gods/goddesses Localization
 
-    #An El Localization
+    #An Baal Hammon Localization
     punic_polytheism_high_god_name:0 "Baal Hammon"
     punic_polytheism_high_god_name_possessive:0 "Baal Hammon's"
     punic_polytheism_high_god_name_alternate:0 "Baal Hammon"
@@ -39,16 +41,16 @@
     punic_polytheism_high_god_herhis:0 "His"
 
     #Creater god Localization
-    punic_polytheism_creator_god_name:0 "Hammon"
-    punic_polytheism_creator_god_name_possessive:0 "Hammon's"
+    punic_polytheism_creator_god_name:0 "Baal Hammon"
+    punic_polytheism_creator_god_name_possessive:0 "Baal Hammon's"
 
     #Health Goddess Eshmun
     punic_polytheism_health_god_name:0 "Eshmun"
     punic_polytheism_health_god_name_possessive:0 "Eshmun's"
 
     #Fertility Goddess Tanit Localization
-    punic_polytheism_fertility_god_name:0 "Tanit"
-    punic_polytheism_fertility_god_name_possessive:0 "Tanit's"
+    punic_polytheism_fertility_god_name:0 "Astarte"
+    punic_polytheism_fertility_god_name_possessive:0 "Astarte's"
 
     #Wealth god Lugh Localization
     punic_polytheism_wealth_god_name:0 "Melqart"
@@ -58,9 +60,9 @@
     punic_polytheism_household_god_name:0 "Tanit"
     punic_polytheism_household_god_name_possessive:0 "Tanit's"
 
-    #Fate god Mór-Ríoghain Localization
-    punic_polytheism_fate_god_name:0 "Mór-Ríoghain"
-    punic_polytheism_fate_god_name_possessive:0 "Mór-Ríoghain's"
+    #Fate god Baal Hammon Localization
+    punic_polytheism_fate_god_name:0 "$punic_polytheism_high_god_name$"
+    punic_polytheism_fate_god_name_possessive:0 "$punic_polytheism_high_god_name$'s"
 
     #knowledge god ecnaLocalization
     punic_polytheism_knowledge_god_name:0 "Kusor"
@@ -82,19 +84,19 @@
     punic_polytheism_water_god_name:0 "Yam"
     punic_polytheism_water_god_name_possessive:0 "Yam's"
 
-    #evil gods names 
-    punic_polytheism_evil_god_resjef:0 "Resjef" 
-    punic_polytheism_evil_god_resjef:0 "Resjef"
+    #evil gods names  #Check needed 
+    punic_polytheism_evil_god_resjef:0 "Reshef" 
+    punic_polytheism_evil_god_resjef:0 "Reshef"
 
-    punic_polytheism_witchgodname_resjef:0 "Resjef"
+    punic_polytheism_witchgodname_resjef:0 "Reshef"
 
     #Devil god   
-    punic_polytheism_devil_name:0 "Hawot" 
-    punic_polytheism_devil_name_possessive:0 "Hawot's"
+    punic_polytheism_devil_name:0 "Dark Spirit" 
+    punic_polytheism_devil_name_possessive:0 "$punic_polytheism_devil_name$'s"
 
     #Death god 
     punic_polytheism_death_deity_name:0 "Hawot"
-    punic_polytheism_death_deity_name_possessive:0 "Hawot's"
+    punic_polytheism_death_deity_name_possessive:0 "$punic_polytheism_death_deity_name$'s"
 
     #Good gods names 
     punic_polytheism_good_god_baal:0 "Baal Hammon" 
@@ -152,7 +154,7 @@
     semitic_polytheism_creator_god_name_possessive:0 "$semitic_polytheism_creator_god_name$'s"
 
     #Health Goddess 
-    semitic_polytheism_health_god_name:0 "Resheph"
+    semitic_polytheism_health_god_name:0 "Eshmun"
     semitic_polytheism_health_god_name_possessive:0 "$semitic_polytheism_health_god_name$s"
 
     #Fertility Goddess  Localization
@@ -160,8 +162,8 @@
     semitic_polytheism_fertility_god_name_possessive:0 "$semitic_polytheism_fertility_god_name$'s"
 
     #Wealth god  Localization
-    semitic_polytheism_wealth_god_name:0 "Dagan"
-    semitic_polytheism_wealth_god_name_possessive:0 "Dagan's"
+    semitic_polytheism_wealth_god_name:0 "Hammon"
+    semitic_polytheism_wealth_god_name_possessive:0 "$emitic_polytheism_wealth_god_name$'s"
 
     #Household god 
     semitic_polytheism_household_god_name:0 "Kotharat"
@@ -198,11 +200,11 @@
     semitic_polytheism_witchgodname_moloch:0 "Moloch"
 
     #Devil god   
-    semitic_polytheism_devil_name:0 "Hawot" 
-    semitic_polytheism_devil_name_possessive:0 "Hawot's"
+    semitic_polytheism_devil_name:0 "Dark Spirit" 
+    semitic_polytheism_devil_name_possessive:0 "$semitic_polytheism_devil_name$'s"
 
     #Death god 
-    semitic_polytheism_death_deity_name:0 "Mot"
+    semitic_polytheism_death_deity_name:0 "Hawot"
     semitic_polytheism_death_deity_name_possessive:0 "$semitic_polytheism_death_deity_name$'s"
 
     #Good gods names 

@@ -3,7 +3,7 @@
 #Made by tom5667 
 ######################
 
-pr_commission_te_avesta_decision:0 "Commission the 3th Avesta"
+pr_commission_te_avesta_decision:0 "Commission the 3rd Avesta"
 pr_commission_te_avesta_decision_desc:0 "The original Avesta was lost after the Sack of Parsa by Gizistag Aleksandar-i-Hromayig. The Avesta was recomposed and revised during the reign of Khosrow Anushiruwan.\n\nBut following the invasion of the Tazigs. Now, both the Eranshahr and the Priesthood has been restored by the [ROOT.Char.GetDynasty.GetBaseName] [dynasty|E], and many had began showing their support of a new composition of the Avesta, one that would not be destroyed by a foreign invader!"
-pr_commission_te_avesta_decision_tooltip:0 "Commission the 3th Avesta"
+pr_commission_te_avesta_decision_tooltip:0 "Commission the 3rd Avesta"
 pr_commission_te_avesta_decision_confirm:0 "Confirm"

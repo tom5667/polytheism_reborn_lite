@@ -32,6 +32,13 @@
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_temporal_appointment
 
+	#Funeral tradition
+	doctrine = doctrine_funeral_cremation
+
+	#Allow pilgrimages
+	doctrine = doctrine_pilgrimage_forbidden
+
+
 	traits = {
 		virtues = { brave just calm }
 		sins = { craven arbitrary wrathful }

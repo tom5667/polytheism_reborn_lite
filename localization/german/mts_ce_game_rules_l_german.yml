@@ -1,0 +1,8 @@
+﻿l_german:
+ rule_customizable_ethics_game_rule:0 "#X Religion:#! Anpassbare Ethik"
+ setting_customizable_ethics_disabled:0 "Deaktiviert"
+ setting_customizable_ethics_disabled_desc:0 "Bei Erschaffung eines neuen Glaubens ist es nicht möglich, Sünden und Tugenden auszuwählen"
+ setting_limited_customizable_ethics_enabled:0 "Eingeschränkt"
+ setting_limited_customizable_ethics_enabled_desc:0 "Bei Erschaffung eines neuen Glaubens können – eingeschränkt – bis zu 4 Sünden und Tugenden ausgewählt werden"
+ setting_customizable_ethics_enabled:0 "Uneingeschränkt"
+ setting_customizable_ethics_enabled_desc:0 "Bei Erschaffung eines neuen Glaubens können uneingeschränkt bis zu 16 Sünden und Tugenden auszuwählt werden"

@@ -1,0 +1,19 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+
+# Choose main deity
+choose_main_deity_caucasus_decision:0 "Hauptgottheit wählen"
+choose_main_deity_caucasus_decision_tt:0 "Du beginst dein Leben nach den Werten von zu leben"
+select_main_deity_caucasus_decision.select_armzi:0 "Armzi, hoher Gott der Georgier"
+select_main_deity_caucasus_decision.select_adgilis_deda:0 "Adgilis Deda, Göttin der Fruchtbarkeit"
+select_main_deity_caucasus_decision.select_kopala:0 "Kopala, Kriegsgott"
+select_main_deity_caucasus_decision.select_barbale:0 "Barbale, Gott der Gesundheit"
+select_main_deity_caucasus_decision.select_aramazd:0 "Barbale, Gott der Gesundheit"
+select_main_deity_caucasus_decision.select_astlik:0 "Astlik, Göttin der Fruchtbarkeit"
+select_main_deity_caucasus_decision.select_nane:0 "Nane, Gott des Krieges"
+select_main_deity_caucasus_decision.select_nvard:0 "Nvard, Gott der Gesundheit"
+choose_main_deity_caucasus_decision_tooltip:1 "Wählen dein Hauptgott(in)"
+choose_main_deity_caucasus_decision_confirm:1 "Wählen dein Hauptgott(in)"
+

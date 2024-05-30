@@ -3,7 +3,6 @@
 		PR_check
 		TFE_check
 		RICE_check
-		PR_lite_check
 	}
 }
 
@@ -36,6 +35,8 @@ yearly_playable_pulse = {
 		PR_check_temple_of_vesta_owner_roma
 		#Activate later it also needs more requirements as we don't want 100's of this artifact 
 		PR_check_owner_damascus_yearly_pulse
+		#Celtic Empire check 
+		PR_check_if_celtic_empire_exists_yearly_pulse
  	}
 }
 
@@ -53,19 +54,6 @@ PR_check = {
 	}
 }
 
-PR_lite_check = {
-	effect = {
-		set_global_variable = {
-			name = PR_lite_is_loaded
-			value = yes
-		}
-	}
-	if ={
-		limit = {
-			exists = global_var:PR_lite_is_loaded
-		}
-	}
-}
 
 TFE_check = {
 	effect = {
@@ -137,7 +125,40 @@ on_game_start_after_lobby = {
 
 polytheism_reborn_on_game_start = {
 	effect = {
-
+		# if = {
+		# 	limit = { has_game_rule = historical_polytheistic_world_on }
+		# 	game_rule_historical_polytheistic_world_list_effect = yes
+		# 	set_global_variable = {
+		# 		name = polytheistic_world_is_active
+		# 		value = yes
+		# 	}
+		# }
+		# if = {
+		# 	limit = { has_game_rule = historical_culture_world_on }
+		# 	game_rule_historical_culture_world_list_effect = yes
+		# 	set_global_variable = {
+		# 		name = historical_culture_world_is_active
+		# 		value = yes
+		# 	}
+		# }
+		# if = {
+		# 	limit = { has_game_rule = historical_culture_and_polytheistic_world_on }
+		# 	game_rule_historical_culture_poletheistic_world_list_effect = yes
+		# 	set_global_variable = {
+		# 		name = historical_culture_and_polytheistic_world_is_active
+		# 		value = yes
+		# 	}
+		# }
+		if = {
+			limit = {
+					has_game_rule = more_doctrines_on 
+			}
+			game_rule_more_doctrines_add_doctrines_effect = yes
+			set_global_variable = {
+			name = more_doctrines_is_active
+			value = yes
+			}
+		}
 		#Check if RICE is loaded 
 		if = {
 			limit = {
@@ -148,6 +169,51 @@ polytheism_reborn_on_game_start = {
 				value = yes
 			}
 		}
+		if = {
+			limit = {
+				AND = {
+					has_game_rule = more_doctrines_on 
+					has_global_variable = RICE_is_loaded
+				}
+			}
+			add_more_doctrines_to_rice_faiths_effect = yes
+		}
+		#Check if Africa plus is loaded 
+		if = {
+			limit = {
+				AND = {
+					has_game_rule = more_doctrines_on 
+					has_global_variable = BAP_is_loaded
+				}
+			}
+			add_more_doctrines_to_bap_faiths_effect = yes
+		}
+		#Check if Mb+ is loaded 
+		if = {
+			limit = {
+				AND = {
+					has_game_rule = more_doctrines_on 
+					has_global_variable = MBP_is_loaded
+				}
+			}
+			add_more_doctrines_to_mbp_faiths_effect = yes 
+		}
+		#Check if The fallen Eagle is loaded 
+		if = {
+			limit = {
+				AND = {
+					has_game_rule = more_doctrines_on 
+					has_global_variable = TFE_is_loaded
+				}
+			}
+			add_more_doctrines_to_tfe_faiths_effect = yes 
+		}
+		# if = {
+		# 	limit = {
+		# 		has_game_rule = pr_more_tenets_disabled
+		# 	}
+		# 	trigger_event = pr_faith_removing_tenets
+		# }
 		#Let player choose a nickname for Emperor Julian
 		if = {
 			limit = {
@@ -291,6 +357,15 @@ PR_roman_events_yearly_pulse = {
 	random_events = {
 		#Lupercalia
 		10 = cdr.009
+	}
+}
+PR_check_if_celtic_empire_exists_yearly_pulse = {
+	trigger = {
+		basic_is_valid_for_yearly_events_trigger = yes 
+		religion = religion:celtic_religion
+	}
+	random_events = {
+		10 = celtic.016
 	}
 }
 #Hellenic Religion random flavor events 

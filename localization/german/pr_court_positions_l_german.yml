@@ -1,0 +1,63 @@
+﻿l_german:
+ 
+
+ #COURT_POSITION_CATEGORY_SPECIAL_NAME:0 "Special"
+
+ pr_court_augur_court_position:0 "Hof-Augur"
+ pr_court_augur_tradition_bonus:0 "Von [culture_tradition|E]"
+ pr_court_augur_court_position_desc:1 "Der $pr_court_augur_court_position$ ist verantwortlich für die Schirmherrschaft des [court|E]. Er wird die Schirmherrschaft innehaben und sagen, ob die Götter ihre Handlungen gutheißen oder nicht."
+ pr_court_augur_employer_custom_effect_description:2 "#!\n@warning_icon!#X Kraftvoll [agent|E] in [hostile_schemes|E] gegen dich#!"
+ pr_hire_augur_decision:0 "Suche Nach Einem Augur"
+ pr_hire_augur_decision_tooltip:3 "Ihre Mitarbeiter werden Ihnen eine Reihe geeigneter Kandidaten für die Position vorschlagen [GetCourtPositionType('pr_court_augur_court_position').GetName()]"
+ pr_hire_augur_decision_desc:1 "Ein Hofaugur ist für die Interpretation von Vorzeichen unerlässlich, unabhängig davon, ob die Götter unsere Handlungen gutheißen oder nicht. Ich werde meine Diener bitten, eine Reihe geeigneter Kandidaten hervorzubringen"
+ pr_hire_augur_decision_effect_tooltip:4 "Ihnen wird eine Gruppe von  [GetCourtPositionType('pr_court_augur_court_position').GetName()] Kandidat(en)(innen) präsentiert und können einen von ihnen gegen eine Gebühr und ein monatliches Gehalt von [gold_i][SCOPE.ScriptValue('court_position_physician_salary')] anheuern"
+ pr_hire_augur_decision_confirm:0 "Starten Sie die Suche"
+ 
+
+ COURT_POSITION_CATEGORY_FLAMEN_NAME:0 "Religion"
+ pr_court_flamen_mars_court_position:0 "Priester von Mars"
+ pr_court_flamen_mars_court_position_desc:1 "Der $pr_court_flamen_mars_court_position$ ist für die Reichs Ritualen für Mars verantwortlich [court|E]. Er wird zu Ehren öffentliche Rituale abhalten für kriegs Gott Mars."
+ pr_court_flamen_mars_employer_custom_effect_description:2 "#!\n@warning_icon!#X Kraftvoll [agent|E] in [hostile_schemes|E] gegen dich#!"
+
+ pr_court_flamen_quirinus_court_position:0 "Priester von Quirinus"
+ pr_court_flamen_quirinus_court_position_desc:1 "Der $pr_court_flamen_quirinus_court_position$ ist für die Reichs Ritualen für Quirinus verantwortlich [court|E]. Er wird zu Ehren öffentliche Rituale abhalten für den Gott Quirinus."
+ pr_court_flamen_quirinus_employer_custom_effect_description:2 "#!\n@warning_icon!#X Kraftvoll [agent|E] in [hostile_schemes|E] gegen dich#!"
+
+ pr_court_flamen_augustus_court_position:0 "Priester von Augustus"
+ pr_court_flamen_augustus_court_position_desc:1 "Der $pr_court_flamen_augustus_court_position$ ist für die Reichs Ritualen für Augustus verantwortlich [court|E]. Er wird zu Ehren öffentliche Rituale abhalten für den Göttlicher Augustus."
+ pr_court_flamen_augustus_employer_custom_effect_description:2 "#!\n@warning_icon!#X Kraftvoll [agent|E] in [hostile_schemes|E] gegen dich#!"
+
+ pr_court_flamen_carmentis_court_position:0 "Priester von Carmenta"
+ pr_court_flamen_carmentis_court_position_desc:1 "Der $pr_court_flamen_carmentis_court_position$ ist für die Reichs Ritualen für Carmenta verantwortlich  [court|E]. Er wird zu Ehren öffentliche Rituale abhalten für Carmenta Göttin der Geburt."
+
+
+ pr_court_flamen_ceres_court_position:0 "Priester von Ceres"
+ pr_court_flamen_ceres_court_position_desc:1 "Der $pr_court_flamen_ceres_court_position$ ist für die Reichs Ritualen für Ceres verantwortlich  [court|E]. Er wird zu Ehren öffentliche Rituale abhalten für Ceres Göttin der Ernte."
+
+
+ pr_court_flamen_flora_court_position:0 "Priester von Flora"
+ pr_court_flamen_flora_court_position_desc:1 "Der $pr_court_flamen_flora_court_position$ ist für die Reichs Ritualen für Flora verantwortlich [court|E]. Er wird zu Ehren öffentliche Rituale abhalten für Flora Göttin der Blumen"
+
+
+ pr_court_flamen_furrina_court_position:0 "Priester von Furrina"
+ pr_court_flamen_furrina_court_position_desc:1 "Der $pr_court_flamen_furrina_court_position$ ist für die Reichs Ritualen für Furrina verantwortlich [court|E]. Er wird zu Ehren öffentliche Rituale abhalten für Furrina Göttin des Wassers"
+
+
+ pr_court_flamen_palatua_court_position:0 "Priester von Palatua"
+ pr_court_flamen_palatua_court_position_desc:1 "Der $pr_court_flamen_palatua_court_position$ ist für die Reichs Ritualen für Palatua verantwortlich [court|E]. Er wird zu Ehren öffentliche Rituale abhalten für Palatua beschützer des Palatin-Hügels"
+
+
+ pr_court_flamen_pomona_court_position:0 "Priester von Pomona"
+ pr_court_flamen_pomona_court_position_desc:1 "Der $pr_court_flamen_pomona_court_position$ ist für die Reichs Ritualen für Pomona verantwortlich [court|E]. Er wird zu Ehren öffentliche Rituale abhalten für Pomona Göttin der Obstbäume, Gärten und Obstgärten"
+
+ pr_court_flamen_portunus_court_position:0 "Priester von Portunus"
+ pr_court_flamen_portunus_court_position_desc:1 "Der $pr_court_flamen_portunus_court_position$ ist für die Reichs Ritualen für Portunus verantwortlich [court|E]. Er wird zu Ehren öffentliche Rituale abhalten für Portunus Gott der Schlüssel, Türen, Vieh und Häfen"
+
+ pr_court_flamen_vulcan_court_position:0 "Priester von Vulcan"
+ pr_court_flamen_vulcan_court_position_desc:1 "Der $pr_court_flamen_vulcan_court_position$ ist für die Reichs Ritualen für Vulcan verantwortlich [court|E]. Er wird zu Ehren öffentliche Rituale abhalten für Vulcan Gott des Feuers, der Metallverarbeitung und der Schmiede"
+
+ pr_court_flamen_volturnus_court_position:0 "Priester von Volturnus"
+ pr_court_flamen_volturnus_court_position_desc:1 "Der $pr_court_flamen_volturnus_court_position$ ist für die Reichs Ritualen für Volturnus verantwortlich [court|E]. Er wird zu Ehren öffentliche Rituale abhalten für Volturnus Gott der Flüsse"
+
+ pr_court_pater_mithras_court_position:0 "Pater of Mithras Cult"
+ pr_court_pater_mithras_court_position_desc:1 "$pr_court_pater_mithras_court_position$ Hat den höchsten Rang im Mithras-Kult inne"

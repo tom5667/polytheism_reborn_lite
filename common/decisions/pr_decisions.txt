@@ -995,8 +995,8 @@ create_celtica_decision = {
 
 	is_valid = {
 		completely_controls = title:d_valois
-		completely_controls = title:d_upper_lorraine
-		completely_controls = title:d_lower_lorraine
+		# completely_controls = title:d_upper_lorraine
+		# completely_controls = title:d_lower_lorraine
 		completely_controls = title:d_bar
 		completely_controls = title:d_savoie
 		completely_controls = title:d_berry
@@ -1008,7 +1008,6 @@ create_celtica_decision = {
 		completely_controls = title:d_champagne
 		completely_controls = title:d_burgundy
 		completely_controls = title:d_brittany
-		completely_controls = title:d_gascogne
 		completely_controls = title:d_aquitaine
 		completely_controls = title:d_poitou
 		completely_controls = title:d_auvergne
@@ -1033,8 +1032,9 @@ create_celtica_decision = {
 		custom_tooltip = restore_celtica_effect_tooltip
 
 		title:d_valois = { save_scope_as = valois }
-		title:d_upper_lorraine = { save_scope_as = upper_lorraine }
-		title:d_lower_lorraine = { save_scope_as = lower_lorraine }
+		title:d_bar = { save_scope_as = bar}
+		# title:d_upper_lorraine = { save_scope_as = upper_lorraine }
+		# title:d_lower_lorraine = { save_scope_as = lower_lorraine }
 		title:d_savoie = { save_scope_as = savoie }
 		title:d_berry = { save_scope_as = berry }
 		title:d_transjurania = { save_scope_as = transjurania }
@@ -1045,12 +1045,10 @@ create_celtica_decision = {
 		title:d_champagne = { save_scope_as = champagne }
 		title:d_burgundy = { save_scope_as = burgundy }
 		title:d_brittany = { save_scope_as = brittany }
-		title:d_gascogne = { save_scope_as = gascogne }
 		title:d_aquitaine = { save_scope_as = aquitane }
 		title:d_poitou = { save_scope_as = poitou }
 		title:d_auvergne = { save_scope_as = auvergne }
 		title:d_bourbon = { save_scope_as = bourbon }
-
 		#title:d_bihar = { save_scope_as = bihar }
 
 		create_title_and_vassal_change = {
@@ -1066,8 +1064,10 @@ create_celtica_decision = {
 		}
 		resolve_title_and_vassal_change = scope:title_change
 		title:d_valois = { set_de_jure_liege_title = title:k_celtica}
-		title:d_upper_lorraine = { set_de_jure_liege_title = title:k_celtica}
-		title:d_lower_lorraine = { set_de_jure_liege_title = title:k_celtica}
+		title:d_bar = { set_de_jure_liege_title = title:k_celtica}
+		
+		# title:d_upper_lorraine = { set_de_jure_liege_title = title:k_celtica}
+		# title:d_lower_lorraine = { set_de_jure_liege_title = title:k_celtica}
 		title:d_savoie = { set_de_jure_liege_title = title:k_celtica}
 		title:d_berry = { set_de_jure_liege_title = title:k_celtica}
 		title:d_transjurania = { set_de_jure_liege_title = title:k_celtica}
@@ -1078,7 +1078,6 @@ create_celtica_decision = {
 		title:d_champagne = { set_de_jure_liege_title = title:k_celtica}
 		title:d_burgundy = { set_de_jure_liege_title = title:k_celtica}
 		title:d_brittany = { set_de_jure_liege_title = title:k_celtica}
-		title:d_gascogne = { set_de_jure_liege_title = title:k_celtica}
 		title:d_aquitaine = { set_de_jure_liege_title = title:k_celtica}
 		title:d_poitou = { set_de_jure_liege_title = title:k_celtica}
 		title:d_auvergne = { set_de_jure_liege_title = title:k_celtica}
@@ -1159,6 +1158,7 @@ create_celtica_decision = {
 		title:d_brabant = { save_scope_as = brabant }
 		title:d_luxembourg = { save_scope_as = lexembourg }
 		title:d_flanders = { save_scope_as = flanders }
+		title:d_julich = { save_scope_as = julich }
 
 		create_title_and_vassal_change = {
 			type = created
@@ -1175,6 +1175,7 @@ create_celtica_decision = {
 		title:d_brabant = { set_de_jure_liege_title = title:k_belgica }
 		title:d_luxembourg = { set_de_jure_liege_title = title:k_belgica }
 		title:d_flanders = { set_de_jure_liege_title = title:k_belgica }
+		title:d_julich = { set_de_jure_liege_title = title:k_belgica }
 	}
 	cost = {
 		gold = {

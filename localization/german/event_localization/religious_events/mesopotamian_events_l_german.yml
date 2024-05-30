@@ -1,0 +1,45 @@
+﻿l_german:
+
+mspt.001.t:0 "Hauptgottheit wählen"
+mspt.001.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+mspt.001.marduk:0 "Marduk"
+mspt.001.ishtar:0 "Ishtar"
+mspt.001.ninhegal:0 "Ninhegal"
+mspt.001.nabu:0 "Nabu"
+mspt.001.nergal:0 "Nergal"
+mspt.001.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+mspt.002.t:0 "Hauptgottheit wählen"
+mspt.002.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+mspt.002.ashur:0 "Ashur"
+mspt.002.ishtar:0 "Ishtar"
+mspt.002.ninhegal:0 "Ninhegal"
+mspt.002.nabu:0 "Nabu"
+mspt.002.ninkarrak:0 "Ninkarrak"
+mspt.002.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+mspt.003.t:0 "Hauptgottheit wählen"
+mspt.003.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+mspt.003.enlil:0 "Enlil"
+mspt.003.inanna:0 "Inanna"
+mspt.003.ninhegal:0 "Ninhegal"
+mspt.003.nisaba:0 "Nisaba"
+mspt.003.ninurta:0 "Ninurta"
+mspt.003.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+
+embrace_culture.005.t:0 "Umarmen die babylonische Kultur"
+embrace_culture.005.desc:0 "Viel zu lange haben wir die alten Tugenden des babylonischen Reiches verloren."
+embrace_culture.005.a:0 "Umarmen die babylonische kultur"
+
+embrace_culture.006.t:0 "Umarmen die Assyrisches Kultur"
+embrace_culture.006.desc:0 "Viel zu lange haben wir die alten Tugenden des  Assyrisches Reiches verloren."
+embrace_culture.006.a:0 "Umarmen die Assyrische kultur"
+
+embrace_culture.007.t:0 "Umarmen Sumerian Kultur"
+embrace_culture.007.desc:0 "Viel zu lange haben wir die alten Tugenden des Sumeririsches Reich."
+embrace_culture.007.a:0 "Umarmen die Sumerische kultur"
+
+mspt.004.t:0 ""
+mspt.004.desc:0 "Der Duft von gemälzter Gerste und süßer Gärung liegt schwer in der Luft, wenn Sie vor der neu errichteten Brauerei in Nippur stehen. Tontöpfe brodeln fröhlich und die Luft summt von der Aktivität der Brauer, die sich um ihr Handwerk kümmern.\n Bald nähert sich eine Priesterin, ihr Gesicht strahlt vor Ehrfurcht. „Mein Herr, ein herrlicher Tag bricht über Nippur an! Der Segen von Ninkasi, der Göttin des Überflusses.“ Ernte und schaumiges Bier zieren endlich dieses Land! Erleben Sie die Früchte Ihrer Weitsicht – die allererste Brauerei in Mesopotamien, ein Beweis für Ihre Weisheit und Hingabe.“"
+mspt.004.a:0 "Nippur Brauerei ist gegründet!"

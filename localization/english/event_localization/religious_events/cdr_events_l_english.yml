@@ -1,6 +1,5 @@
 ﻿l_english:
 
-
 #choose your main deity event localization 
 cdr.001.t:0 "Choose main deity"
 cdr.001.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or godesses."
@@ -54,6 +53,25 @@ romano_germanic.002.select_hercules_meganusus:0 "Hercules Meganusus"
 romano_germanic.002.select_isis_freia:0 "Isis Freia"
 romano_germanic.002.select_mars_thincsus:0 "Mars Thincsus"
 romano_germanic.002.optout:0 "Maybe now isn't the right time"
+
+#Choose main deity Romano Hispanic
+romano_hispanic.002.t:0 "Choose main deity"
+romano_hispanic.002.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or godesses."
+romano_hispanic.002.select_jupiter_solutorius:0 "Jupiter Solutorius"
+romano_hispanic.002.select_minerva:0 "Minerva"
+romano_hispanic.002.select_mars_neto:0 "Mars Neto"
+romano_hispanic.002.select_lucubo:0 "Lucubo"
+romano_hispanic.002.select_nabia:0 "Nabia"
+romano_hispanic.002.optout:0 "Maybe now isn't the right time"
+
+cultus_orientis.002.t:0 "Choose main deity"
+cultus_orientis.002.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or godesses."
+cultus_orientis.002.select_jupiter_dolichenus:0 "Jupiter Dolichenus"
+cultus_orientis.002.select_minerva:0 "Minerva"
+cultus_orientis.002.select_juno_caelestis:0 "Juno Caelestis"
+cultus_orientis.002.select_mercurius_sobrius:0 "Mercurius Sobrius"
+cultus_orientis.002.select_eshmun:0 "Eshmun"
+cultus_orientis.002.optout:0 "Maybe now isn't the right time"
 
 #Choose your main deity Mithraic Mysteries
 mm_cmd.001.t:0 "Choose main deity"
@@ -234,7 +252,7 @@ cdr_r.007.desc:0 "Observe the room for signs"
 cdr_r.007.a:0 "Proceed"
 
 cdr_r.008.t:0 "Piaculum (Atonement)"
-cdr_r.008.desc:0 "Now for if there are made any errors int the ritual, i wil offer incense to Ianus, Vesta and as safety offer one last time to Iupiter to apologize for any inconviance during the ritual."
+cdr_r.008.desc:0 "Now for if there are made any errors int the ritual, i wil offer incense to Ianus, Vesta and as safety offer one last time to Iupiter to apologize for any inconveniance during the ritual."
 
 cdr_r.008.incense:0 "Offer the frankincense"
 cdr_r.008.wine:0 "Offer the wine"
@@ -262,6 +280,10 @@ embrace_culture.003.a:0 "Embrace the Romano British culture"
 embrace_culture.004.t:0 "Embrace Romano Germanic Culture"
 embrace_culture.004.desc:0 "For far to long we lost the old virtues of the Romano Germanic Culture."
 embrace_culture.004.a:0 "Embrace the Romano Germanic culture"
+#Embrace Hispano Roman Culture
+embrace_culture.005.t:0 "Embrace Hispano Roman Culture"
+embrace_culture.005.desc:0 "For far to long we lost the old virtues of the Hispano Roman Culture."
+embrace_culture.005.a:0 "Embrace the Hispano Roman culture"
 
 #Restore cultus deorum Priesthood
  cdr_rph_decisions.0001.t:0 "The New [scoped_ruler.GetFaith.GetAdjective] Priesthood"
@@ -274,7 +296,17 @@ embrace_culture.004.a:0 "Embrace the Romano Germanic culture"
  cdr_rph_decisions.0002.c:0 "... Pantheon worshiping?"
 
  #Hellenismos
- 
+
+ hellenismos_sr.002.desc.intro:0 "This is our chance to bring the religion back to state religion."
+ hellenismos_sr.002.desc.vassals:0 "test vassals desc"
+ hellenismos_sr.002.desc_vanilla:0 "test vanilla desc"
+ hellenismos_sr.002.b:0 "Convert willing vassals"
+ hellenismos_sr.002.c:0 "Those who aren't polytheist are probably horrified"
+ hellenismos_sr.002.d:0 "There will be people who just dont care"
+ #event modifier 
+ return_hellenismos_sr_decision_scripted_effect.county_conversions.tt:0 "Let's hope vassals want to convert"
+
+
  rejected_to_join_vestal_vergins.001.desc:0 "Your suggestion for me to uproot my entire life and scurry off to the temple of Vesta is ludicrous. I am happy where I am, and I have no plans to change that."
 
   accepted_to_join_vestal_vergins.001.desc:0 "I will answer the call to serve a higher power, and I thank you for setting me on this path of righteousness."
@@ -474,6 +506,14 @@ embrace_culture.004.a:0 "Embrace the Romano Germanic culture"
   romano_germanic.001.t:0 "Adopting the Germanic gods"
   romano_germanic.001.desc:0 "After months of research and searching for places where the precense of the gods and good omens could be observed, it's time to build some shrines and write new rituals."
   romano_germanic.001.a:0 "Let's start"
+
+  cultus_orientis.001.t:0 "Adopting the West Senitic gods"
+  cultus_orientis.001.desc:0 "After months of research and searching for places where the precense of the gods and good omens could be observed, it's time to build some shrines and write new rituals."
+  cultus_orientis.001.a:0 "Let's start"
+
+  romano_hispanic.001.t:0 "Adopting the Iberian gods"
+  romano_hispanic.001.desc:0 "After months of research and searching for places where the precense of the gods and good omens could be observed, it's time to build some shrines and write new rituals."
+  romano_hispanic.001.a:0 "Let's start"
 
   #Event text  random event Temple sacriledge
   cdr.002.t:0 "Temple Sacriledge"

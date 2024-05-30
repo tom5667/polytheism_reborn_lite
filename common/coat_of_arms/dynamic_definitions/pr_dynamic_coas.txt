@@ -261,6 +261,15 @@ k_africa = {
 }
 #d_druidic
 
+e_spain =  {
+	item = {
+		trigger = {
+			coa_switch_to_polytheism_trigger = yes
+		}
+		coat_of_arms = e_spain_polytheistic
+	}
+}
+
 #TFE dynamic titles 
 
 k_africae = {

@@ -18,6 +18,72 @@ giza = {
 	}
 	flag = giza_conversion_bonus # +10% County Conversion
 }
+
+cumae = {
+	county = c_napoli
+	
+	character_modifier = {
+		learning = 1
+		religious_vassal_opinion = 5
+	}
+	flag = cumae_conversion_bonus # +20% County Conversion
+}
+
+paestum= {
+	county = c_salerno
+	barony = b_policastro
+	character_modifier = {
+		name = holy_site_paestum_effect_name
+		cultural_head_fascination_mult = 0.05
+		monthly_county_control_change_factor = 0.05
+	}
+}
+
+delphi = {
+	county = c_boeotia
+    barony = b_amfissa
+	character_modifier = {
+		monthly_piety_gain_mult = 0.2
+	}
+	flag = ravenna_conversion_bonus # +20% County Conversion
+}
+
+agrigento = {
+	county = c_agrigento
+	barony = b_agricento
+	character_modifier = {
+		name = holy_site_tinmallal_effect_name
+		prowess_per_piety_level = 1
+		max_combat_roll = 4
+	}
+}
+
+#############
+# Hellenic
+#############
+
+syracusai = {
+	county = c_siracusa
+	
+	character_modifier = {
+		name = holy_site_syracusai_effect_name
+		prowess_per_piety_level = 1
+		max_combat_roll = 4
+	}
+}
+
+olympus = {
+	county = c_thessalia
+	barony = b_servia
+
+	character_modifier = {
+		name = holy_site_venice_effect_name
+		development_growth_factor = 0.1
+		stewardship = 1
+	}
+}
+
+
 #############
 # Sol invictus 
 #############
@@ -80,7 +146,7 @@ shiraz  = {
 #############
 dublin = {
 	county = c_dublin
-	
+	barony = b_trim
 	character_modifier = {
 		name = holy_site_dublin_effect_name
 		cultural_head_fascination_mult = 0.05
@@ -198,11 +264,12 @@ vannes = {
 
 aachen = {
 	county = c_aachen
-
+	name = holy_site_aachen_effect_name
 	character_modifier = {
-		monthly_piety_gain_mult = 0.1
+		intrigue_per_prestige_level = 1
+		knight_effectiveness_mult = 0.2
 	}
-	flag = aachen_conversion_bonus # +5% County Conversion
+	#flag = aachen_conversion_bonus # +5% County Conversion
 }
 
 ile_de_france = {
@@ -212,6 +279,24 @@ ile_de_france = {
 		monthly_piety_gain_mult = 0.2
 	}
 	flag = ile_de_france_conversion_bonus # +20% County Conversion
+}
+puy_de_dome = {
+	county = c_thiers
+
+	character_modifier = {
+		name = holy_site_puy_de_dome_effect_name
+		hills_advantage = 5
+		#stewardship = 1
+		monthly_county_control_change_factor = 0.1
+	}
+}
+
+carnutes = {
+	county = c_chartres
+	character_modifier = {
+		name = holy_site_tyre_effect_name
+		clergy_opinion = 5
+	}
 }
 
 montpellier = {
@@ -245,24 +330,6 @@ astorga = {
 	flag = astorga_conversion_bonus # +20% County Conversion
 }
 
-lisboa = {
-	county = c_lisboa
-
-	character_modifier = {
-		monthly_piety_gain_mult = 0.1
-	}
-	flag = lisboa_conversion_bonus # +5% County Conversion
-} 
-
-toledo = {
-	county = c_toledo
-
-	character_modifier = {
-		name = holy_site_toledo_effect_name
-		diplomacy = 1
-		martial = 1
-	}
-}
 
 #############
 # punic polytheism
@@ -867,4 +934,43 @@ sventakupselai = {
 		martial_per_piety_level = 1
 		personal_scheme_power_mult = 0.1
 	}
+}
+
+########################################
+#### Iberian (Lusitanian)
+########################################
+ebora = {
+	county = c_beja
+	barony = b_evora
+	character_modifier = {
+		name = holy_site_wassukani_effect_name
+		clergy_opinion = 5
+	}
+}
+
+caesarobriga = {
+	county = c_toledo
+	character_modifier = {
+		name = holy_site_toledo_effect_name
+		controlled_province_advantage = 5
+		same_faith_opinion = 5
+	}
+}
+
+emerita = {
+	county = c_merida
+	character_modifier = {
+		name = holy_site_emirita_effect_name
+		forest_advantage = 5
+		retreat_losses = -0.1
+	}
+}
+
+olisipo = {
+	county = c_lisboa
+
+	character_modifier = {
+		monthly_piety_gain_mult = 0.2
+	}
+	flag = ur_conversion_bonus # +20% County Conversion
 }

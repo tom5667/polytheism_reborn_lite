@@ -1,0 +1,30 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+                                             
+#Wählen Sie Ihre Hauptgottheit
+choose_main_deity_baltic_decision:0 "Wählen Sie Ihre Hauptgottheit"
+choose_main_deity_baltic_decision_desc:0 "Für eine zusätzliche Hilfe im täglichen Leben kann ich einen Gott als meinen persönlichen Hauptgott wählen"
+choose_main_deity_baltic_decision_tt:0 "Sie beginnen, Ihr Leben nach den Werten von"
+select_main_deity_baltic_decision.select_dievas:0 "Dievas hoher Gott der Litauer"
+select_main_deity_baltic_decision.select_dalia:0 "Dalia, Göttin des Schicksals und des Reichtums"
+select_main_deity_baltic_decision.select_perkunas:0 "Perkūnas Gott des Krieges"
+select_main_deity_baltic_decision.select_zemyna:0 "Žemyna Göttin der Fruchtbarkeit"
+select_main_deity_baltic_decision.select_saule:0 "Tadenus Gott der Gesundheit"
+
+
+select_main_deity_baltic_decision.select_dievs:0 "Dievs hoher Gott der Letten"
+select_main_deity_baltic_decision.select_jumis:0 "Jumis, Gott des Reichtums"
+select_main_deity_baltic_decision.select_perkons:0 "Pērkons Gott des Krieges"
+select_main_deity_baltic_decision.select_ceroklis:0 "Ceroklis Gott der Jugend und Fruchtbarkeit"
+
+
+select_main_deity_baltic_decision.select_deiws:0 "Dēiws hoher Gott der Preußen"
+select_main_deity_baltic_decision.select_pilwits:0 "Pilwīts Gott des Reichtums"
+select_main_deity_baltic_decision.select_perkuns:0 "Perkūns Gott des Krieges"
+select_main_deity_baltic_decision.select_patrimps:0 "Patrīmps Gott der Jugend und Fruchtbarkeit"
+select_main_deity_baltic_decision.select_ausauts:0 "Āušauts Gott der Gesundheit"
+
+choose_main_deity_baltic_decision_tooltip:1 "Hauptgott (dess) wählen"
+choose_main_deity_baltic_decision_confirm:1 "Wähle Hauptgott(dess)"

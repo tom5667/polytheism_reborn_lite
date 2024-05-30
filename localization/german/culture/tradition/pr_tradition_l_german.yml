@@ -1,0 +1,26 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+
+heritage_daco_thracian_name:0 "Dako-thrakisch"
+heritage_gaulish_name:0 "Gallisch"
+heritage_mycenaean_name:0 "Mykenisch"
+heritage_etruscan_name:0 "Etrusker"
+heritage_mesopotamian_name:0 "Mesopotamisch"
+heritage_hittite_name:0 "Hethiter"
+heritage_phoenician_name:0 "Phönizisch"
+heritage_illyrian_name:0 "Illyrisch"
+heritage_pr_greek_name:0 "Hellen"
+heritage_celtic_iberian_name:0 "Keltiberisch"
+heritage_iberian_name:0 "Iberisch"
+
+
+tradition_celtiberian_legacy_name:0 "Keltiberisches Erbe"
+tradition_celtiberian_legacy_desc:0 "Placeholder"
+tradition_celtiberian_tactics_name:0 "Keltiberische Taktiken"
+tradition_celtiberian_tactics_desc:0 "Placeholder"
+##################
+#Credits cybrxkhan
+##################
+heritage_kemetic_name:0 "Kemetisch"

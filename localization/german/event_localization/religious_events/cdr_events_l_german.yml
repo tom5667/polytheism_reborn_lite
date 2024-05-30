@@ -1,0 +1,701 @@
+﻿l_german:
+
+  #choose your main deity event localization 
+  cdr.001.t:0 "Hauptgottheit wählen"
+  cdr.001.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+  cdr.001.jupiter:0 "$cdr_polytheism_high_god_name$"
+  cdr.001.juno:0 "$cdr_polytheism_good_god_juno$"
+  cdr.001.mars:0 "$cdr_polytheism_good_god_mars$"
+  cdr.001.venus:0 "$cdr_polytheism_good_god_Venus$"
+  cdr.001.lares:0 "$cdr_polytheism_household_god_name$"
+  cdr.001.mercurius:0 "$cdr_polytheism_wealth_god_name$"
+  cdr.001.minerva:0 "$cdr_polytheism_knowledge_god_name$"
+  cdr.001.apollo:0 "$cdr_polytheism_good_god_apollo$"
+  cdr.001.cancel:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+
+  #Hauptgottheit wählen Roman Illyrian
+  roman_illyrian.001.t:0 "Hauptgottheit wählen"
+  roman_illyrian.001.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+  roman_illyrian.001.jupiter_parthinus:0 "Jupiter Parthinus"
+  roman_illyrian.001.anzotica:0 "Anzotica"
+  roman_illyrian.001.armatus:0 "Armatus"
+  roman_illyrian.001.bona_dea:0 "Bona Dea"
+  roman_illyrian.001.latra:0 "Latra"
+  roman_illyrian.001.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+  #Hauptgottheit wählen Gallo Roman 
+  gallo_roman.005.t:0 "Hauptgottheit wählen"
+  gallo_roman.005.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+  gallo_roman.005.select_jupiter_teranus:0 "Jupiter Teranus"
+  gallo_roman.005.select_minerva_belisama:0 "Minerva Belisama"
+  gallo_roman.005.select_mercurius_cissonius:0 "Mercurius Cissonius"
+  gallo_roman.005.select_venus:0 "Venus"
+  gallo_roman.005.select_mars_lenus:0 "Mars Lenus"
+  gallo_roman.005.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+  #Hauptgottheit wählen Romano British 
+  romano_british.001.t:0 "Hauptgottheit wählen"
+  romano_british.001.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+  romano_british.001.select_jupiter_teran:0 "Jupiter Teran"
+  romano_british.001.select_sulis_minerva:0 "Sulis Minerva"
+  romano_british.001.select_mercurius_lugus:0 "Mercurius Lugus"
+  romano_british.001.select_venus:0 "Venus"
+  romano_british.001.select_mars_cocidius:0 "Mars Cocidius"
+  romano_british.001.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+  #Hauptgottheit wählen Romano Germanic 
+  romano_germanic.002.t:0 "Hauptgottheit wählen"
+  romano_germanic.002.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+  romano_germanic.002.select_mercurius_hranno:0 "Mercurius Hranno"
+  #romano_germanic.002.select_sulis_minerva:0 "Sulis Minerva"
+  romano_germanic.002.select_hercules_meganusus:0 "Hercules Meganusus"
+  romano_germanic.002.select_isis_freia:0 "Isis Freia"
+  romano_germanic.002.select_mars_thincsus:0 "Mars Thincsus"
+  romano_germanic.002.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+  #Hauptgottheit wählen Romano Hispanic
+  romano_hispanic.002.t:0 "Hauptgottheit wählen"
+  romano_hispanic.002.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+  romano_hispanic.002.select_jupiter_solutorius:0 "Jupiter Solutorius"
+  romano_hispanic.002.select_minerva:0 "Minerva"
+  romano_hispanic.002.select_mars_neto:0 "Mars Neto"
+  romano_hispanic.002.select_lucubo:0 "Lucubo"
+  romano_hispanic.002.select_nabia:0 "Nabia"
+  romano_hispanic.002.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+  cultus_orientis.002.t:0 "Hauptgottheit wählen"
+  cultus_orientis.002.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+  cultus_orientis.002.select_jupiter_dolichenus:0 "Jupiter Dolichenus"
+  cultus_orientis.002.select_minerva:0 "Minerva"
+  cultus_orientis.002.select_juno_caelestis:0 "Juno Caelestis"
+  cultus_orientis.002.select_mercurius_sobrius:0 "Mercurius Sobrius"
+  cultus_orientis.002.select_eshmun:0 "Eshmun"
+  cultus_orientis.002.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+  #Choose your main deity Mithraic Mysteries
+  mm_cmd.001.t:0 "Hauptgottheit wählen"
+  mm_cmd.001.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+  mm_cmd.001.mithras:0 "I choose Mithras"
+  mm_cmd.001.arimanius:0 "I choose Arimanius"
+  mm_cmd.001.oromazes:0 "I choose Oromazes"
+  mm_cmd.001.optout:0 "Maybe this isn't the right time"
+
+  #reinstate gladiator games event localization
+  # cdr_rgg.001.t:0 "So how to begin ?"
+  # cdr_rgg.001.desc:0 "It will be a lot of work and gold to rebuild the lost glory of gladiator games, but it will be worth it. let's see first we need to build a arena"
+  # cdr_rgg.001.a:0 "it's a lot of gold hmm maybe a small arena."
+  # cdr_rgg.001.b:0 "Just rebuild it like in roman way no extra's"
+  # cdr_rgg.001.c:0 "Let's rebuild it just like the romans did wel maybe some extra's"
+  # cdr_rgg.001.d:0 "Maybe this isn't the right time"
+
+  # cdr_rgg.001.t:0 "Rebuilt first arena"
+  # cdr_rgg.001.desc:0 "Now i need to gather a team and build the arena, it wil take a few years but after that we can finaly start."
+  # cdr_rgg.001.a.tt:0 "Building the arena will take 2 years"
+  # cdr_rgg.001.a:0 "Start building"
+
+  # cdr_rgg.002.t:0 "finaly ready"
+  # cdr_rgg.002.desc:0 "After two years of work the arena is finaly ready, once again we can host gladiator games."
+  # cdr_rgg.002.a:0 "Great!"
+
+
+  #Cultus Deorum ritual 
+  cdr_r.001.t:0 "Vorbereitungen"
+  cdr_r.001.desc:0 "Zuerst muss ich alles sammeln, was ich brauche. Beginnen wir mit der Toga, die meinen Kopf bedeckt. Danach kann ich eine Schüssel mit Wasser holen. Wein, Milch und einige andere Dinge, die ich anbieten kann, wie Obst und zu guter Letzt zwei Gläser und einen Teller.\n\nDie zweite Option ist für Spieler, die die Komplettlösung nicht möchten."
+  cdr_r.001.a:0 "Lass uns das Schritt für Schritt machen."
+  cdr_r.001.incense:0 "Biete den Weihrauch an"
+  cdr_r.001.wine:0 "Biete den Wein an"
+  cdr_r.001.fruit:0 "Biete das Obst an"
+
+  cdr_r.001.message.positive:0 "Angebot erfolgreich"
+  cdr_r.001.message.negative:0 "Angebot nicht erfolgreich"
+
+
+  #Iuno 
+  cdr_r.009.t:0 "Das Opfer"
+
+  cdr_r.009.incense.desc:0 "Heute werde ich $cdr_polytheism_good_god_juno$ ehren, die Göttin der Ehe, Beschützerin der Frauen und Ehefrau des Jupiter.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, mit dem Ritual zu beginnen.\nIm weiteren Verlauf des Rituals ist es Zeit, $cdr_polytheism_good_god_juno$ ein Opfer darzubringen. Ich sage konkret, was ich anbiete und welchem ​​Gott (welcher Göttin) ich es anbiete. Danach lege ich die Feigen auf den Teller und besprenkele ihn mit etwas Wasser.\n\nAls letzten Teil beobachte ich den Raum auf Zeichen und opfere Vesta und Janus. Zur Sicherheit opfere ich $cdr_polytheism_good_god_juno$ ein letztes Mal, um mich für etwaige Unannehmlichkeiten während des Rituals zu entschuldigen.\nNun ist das Ritual beendet. Ich hoffe, $cdr_polytheism_good_god_juno$ hat mein Gebet erhört und nimmt mein Opfer an. Danach hörst du auf, den Weihrauch abzubrennen."
+
+  cdr_r.009.wine.desc:0 "Heute werde ich $cdr_polytheism_good_god_juno$ ehren, die Göttin der Ehe, Beschützerin der Frauen und Ehefrau des Jupiter.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, mit dem Ritual zu beginnen.\nIm weiteren Verlauf des Rituals ist es Zeit, $cdr_polytheism_good_god_juno$ ein Opfer darzubringen. Ich sage konkret, was ich anbiete und welchem ​​Gott (welcher Göttin) und danach opfere ich das Trankopfer aus Wein in einem Glas.\n\nAls letzten Teil beobachte ich den Raum auf Zeichen und opfere Vesta und Janus und opfere zur Sicherheit ein letztes Mal $cdr_polytheism_good_god_juno$, um mich für etwaige Unannehmlichkeiten während des Rituals zu entschuldigen.\nNun ist das Ritual beendet. Ich hoffe, $cdr_polytheism_good_god_juno$ hat mein Gebet erhört und nimmt mein Angebot an. Anschließend trinkt ihr den Wein."
+
+  cdr_r.009.figs.desc:0 "Heute werde ich $cdr_polytheism_good_god_juno$ ehren, die Göttin der Ehe, Beschützerin der Frauen und Ehefrau des Jupiter.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, mit dem Ritual zu beginnen.\nIm weiteren Verlauf des Rituals ist es Zeit, $cdr_polytheism_good_god_juno$ ein Opfer darzubringen. Ich sage konkret, was ich anbiete und welchem ​​Gott (welcher Göttin) ich es anbiete. Danach lege ich die Feigen auf den Teller und besprenkele ihn mit etwas Wasser.\n\nAls letzten Teil beobachte ich den Raum auf Zeichen und opfere Vesta und Janus. Zur Sicherheit opfere ich $cdr_polytheism_good_god_juno$ ein letztes Mal, um mich für etwaige Unannehmlichkeiten während des Rituals zu entschuldigen.\nNun ist das Ritual beendet. Ich hoffe, $cdr_polytheism_good_god_juno$ hat mein Gebet erhört und nimmt mein Angebot an. Anschließend isst man die Feigen oder gibt sie der Natur zurück."
+
+  cdr_r.009.falback.desc:0 "This is a bug, please send a message on discord or leave a bug report on steam."
+
+  cdr_r.009.inence:0 "Biete den Weihrauch an"
+  cdr_r.009.wine:0 "Biete den Wein an"
+  cdr_r.009.figs:0 "Biete den Feigen an"
+
+  cdr_r.009.message.positive:0 "Angebot erfolgreich"
+  cdr_r.009.message.negative:0 "Angebot nicht erfolgreich"
+
+  #Venus 
+  cdr_r.011.t:0 "Das Opfer"
+
+  cdr_r.011.incense.desc:0 "Heute werde ich Venus ehren, die Göttin der Liebe, Schönheit und Begierde.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, mit dem Ritual zu beginnen.\nIm weiteren Verlauf des Rituals ist es Zeit, Venus ein Opfer darzubringen. Ich sage konkret, was ich anbiete und welchem ​​Gott (welcher Göttin) und danach verbrenne ich das Räucherwerk.\n\nAls letzten Teil beobachte ich den Raum auf Zeichen und bringe Vesta und Janus ein Opfer dar und opfere Venus zur Sicherheit ein letztes Mal, um mich für etwaige Unannehmlichkeiten während des Rituals zu entschuldigen.\nNun ist das Ritual beendet. Ich hoffe, Venus hat mein Gebet erhört und nimmt mein Opfer an. Danach stelle ich das Verbrennen des Räucherwerks ein."
+
+
+  cdr_r.011.wine.desc:0 "Heute werde ich Venus ehren, die Göttin der Liebe, Schönheit und Begierde.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, mit dem Ritual zu beginnen.\nIm weiteren Verlauf des Rituals ist es Zeit, Venus ein Opfer darzubringen. Ich sage konkret, was ich anbiete und welchem ​​Gott (welcher Göttin) und danach opfere ich den Wein in einem Glas.\n\nAls letzten Teil beobachte ich den Raum auf Zeichen und opfere Vesta und Janus und opfere Venus zur Sicherheit ein letztes Mal, um mich für etwaige Unannehmlichkeiten während des Rituals zu entschuldigen.\nNun ist das Ritual beendet. Ich hoffe, Venus hat mein Gebet erhört und nimmt mein Angebot an. Anschließend trinkt ihr den Wein."
+
+
+  cdr_r.011.roses.desc:0 "Heute werde ich Venus, die Göttin der Liebe, Schönheit und Begierde, ehren.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, mit dem Ritual zu beginnen.\nIm weiteren Verlauf des Rituals ist es Zeit, Venus ein Opfer darzubringen. Ich sage konkret, was ich anbiete und welchem ​​Gott (welcher Göttin) ich es anbiete. Danach stelle ich die Rosen in eine Vase und besprenkel sie mit etwas Wasser.\n\nAls letzten Teil beobachte ich den Raum auf Zeichen und opfere Vesta und Janus etwas. Zur Sicherheit opfere ich Venus ein letztes Mal etwas, um mich für etwaige Unannehmlichkeiten während des Rituals zu entschuldigen.\nNun ist das Ritual beendet. Ich hoffe, Venus hat mein Gebet erhört und nimmt mein Angebot an. Du gibst die Rosen der Natur zurück."
+
+  cdr_r.011.incense:0 "Biete den Weihrauch an"
+  cdr_r.011.wine:0 "Biete den Wein an"
+  cdr_r.011.roses:0 "Biete den Rozen an"
+  cdr_r.011.fallback.desc:0 "This is a bug, please send a message on discord or leave a bug report on steam."
+
+  cdr_r.011.message.positive:0 "Angebot erfolgreich"
+  cdr_r.011.message.negative:0 "Angebot nicht erfolgreich"
+
+
+  #Mars 
+  cdr_r.010.t:0 "Das Opfer"
+
+  cdr_r.010.incense.desc:0 "Heute werde ich Mars, den Kriegsgott, ehren.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, mit dem Ritual zu beginnen.\nIm weiteren Verlauf des Rituals ist es Zeit, Mars ein Opfer darzubringen. Ich sage konkret, was ich anbiete und welchem ​​Gott (welcher Göttin) und danach verbrenne ich das Räucherwerk.\n\nAls letzten Teil beobachte ich den Raum auf Zeichen und bringe Vesta und Janus ein Opfer dar und opfere Mars zur Sicherheit ein letztes Mal, um mich für etwaige Unannehmlichkeiten während des Rituals zu entschuldigen.\nNun ist das Ritual beendet. Ich hoffe, Mars hat mein Gebet erhört und nimmt mein Opfer an. Danach hörst du auf, das Räucherwerk abzubrennen."
+
+  cdr_r.010.wine.desc:0 "Heute werde ich Mars, den Kriegsgott, ehren.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, mit dem Ritual zu beginnen.\nIm weiteren Verlauf des Rituals ist es Zeit, Mars ein Opfer darzubringen. Ich sage konkret, was ich anbiete und welchem ​​Gott (welcher Göttin) und danach bringe ich den Wein als Trankopfer dar.\n\nAls letzten Teil beobachte ich den Raum auf Zeichen und opfere Vesta und Janus und opfere Mars zur Sicherheit ein letztes Mal, um mich für etwaige Unannehmlichkeiten während des Rituals zu entschuldigen.\nJetzt ist das Ritual beendet. Ich hoffe, Mars hat mein Gebet erhört und nimmt mein Angebot an. Anschließend trinkt man den Wein."
+
+  cdr_r.010.spelt.desc:0 "Heute werde ich Mars, den Kriegsgott, ehren.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, das Ritual zu beginnen.\nIm Verlauf des Rituals ist es Zeit, Mars ein Opfer darzubringen. Ich sage konkret, was ich anbiete und welchem ​​Gott (welcher Göttin) ich es anbiete. Danach streue ich das Dinkelmehl auf den Teller und besprenkel es mit etwas Wasser.\n\nAls letzten Teil beobachte ich den Raum auf Anzeichen und opfere Vesta und Janus. Zur Sicherheit opfere ich Mars ein letztes Mal, um mich für etwaige Unannehmlichkeiten während des Rituals zu entschuldigen.\nJetzt ist das Ritual beendet. Ich hoffe, Mars hat mein Gebet erhört und nimmt mein Opfer an. Anschließend backt man aus dem Dinkel ein paar schöne Brote."
+
+  cdr_r.010.falback.desc:0 "Heute werde ich Mars, den Kriegsgott, ehren.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, mit dem Ritual zu beginnen.\nIm weiteren Verlauf des Rituals ist es Zeit, Mars ein Opfer darzubringen. Ich sage konkret, was ich anbiete und welchem ​​Gott (welcher Göttin) ich es anbiete. Danach lege ich die Kuchen/das Gebäck auf den Teller und besprenkele ihn mit etwas Wasser.\n\nAls letzten Teil beobachte ich den Raum auf Zeichen und opfere Vesta und Janus und opfere Mars zur Sicherheit ein letztes Mal, um mich für etwaige Unannehmlichkeiten während des Rituals zu entschuldigen.\nNun ist das Ritual beendet. Ich hoffe, Mars hat mein Gebet erhört und nimmt mein Angebot an. Sie essen die Kuchen/das Gebäck oder geben sie der Natur zurück."
+
+  cdr_r.010.incense:0 "Biete den Weihrauch an"
+  cdr_r.010.wine:0 "Biete den Wein an"
+  cdr_r.010.spelt:0 "Biete den Dinkelmehl an"
+
+  cdr_r.010.message.positive:0 "Angebot erfolgreich"
+  cdr_r.010.message.negative:0 "Angebot nicht erfolgreich"
+
+
+  #Lares 
+  cdr_r.012.t:0 "Das Opfer"
+  cdr_r.012.fallback.desc:0 "Heute werde ich Lares, den Beschützer der Haushalte, ehren.\Nachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, das Ritual zu beginnen.\Nachdem das Ritual fortschreitet, ist es an der Zeit, den Lares zu opfern, ich sage konkret, was ich opfern will und welchem Gott (welchen Göttern) ich opfern will, und danach lege ich die Feigen auf den Teller und bestreue ihn mit etwas Wasser. \n\nAls letztes beobachte ich den Raum auf irgendwelche Zeichen und opfere Vesta und Janus und zur Sicherheit opfere ich ein letztes Mal dem Lares, um mich für eventuelle Unannehmlichkeiten während des Rituals zu entschuldigen.\nNun ist das Ritual beendet und ich hoffe, dass der Lares mein Gebet erhört hat und mein Angebot annimmt, Du isst die Feigen oder gibst sie der Natur zurück."
+  cdr_r.012.a:0 "Aufräumen und auf das Beste hoffen."
+
+  #Mercurius
+  cdr_r.013.t:0 "Das Opfer"
+
+  cdr_r.013.vegetables.desc:0 "Heute werde ich Mercurius, den Gott des Handels, ehren.\Nachdem die Vorbereitungen abgeschlossen sind, kann ich mit dem Ritual beginnen.\nNachdem das Ritual fortschreitet, ist es an der Zeit, Mercurius zu opfern. Ich sage konkret, was ich opfern will und welchem Gott (welchen Göttern) ich opfern will. \n\nAls letztes beobachte ich den Raum auf Anzeichen und bringe Vesta und Janus ein Opfer dar und zur Sicherheit noch ein letztes Mal Mercurius, um mich für eventuelle Unannehmlichkeiten während des Rituals zu entschuldigen.\nNachdem das Ritual beendet ist, hoffe ich, dass Mercurius mein Gebet erhört hat und mein Angebot annimmt, Du isst das Gemüse nach dem Opfer in einem schönen Salat."
+
+  cdr_r.013.milk.desc:0 "Heute werde ich Mercurius, den Gott des Handels, ehren.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, das Ritual zu beginnen.\nNachdem das Ritual fortschreitet, ist es an der Zeit, Mercurius zu opfern, ich sage konkret, was ich opfern möchte und welchem Gott/welchen Göttern ich opfern möchte, und danach bringe ich ein Trankopfer aus Milch in einem Glas dar. \n\nAls letztes beobachte ich den Raum auf Anzeichen und bringe Vesta und Janus ein Opfer dar, und zur Sicherheit bringe ich Mercurius ein letztes Mal ein Opfer dar, um mich für eventuelle Unannehmlichkeiten während des Rituals zu entschuldigen.\nNachdem das Ritual beendet ist, hoffe ich, dass Mercurius mein Gebet erhört hat und mein Angebot annimmt, Du trinkst die Milch danach."
+
+  cdr_r.013.incense.desc:0 "Heute werde ich Mercurius, den Gott des Handels, ehren.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, das Ritual zu beginnen.\nNachdem das Ritual fortschreitet, ist es an der Zeit, Mercurius zu opfern, ich sage konkret, was ich opfern will und welchem Gott (welchen Göttern) ich opfern will, und danach bringe ich Weihrauch dar. \nAls letztes beobachte ich den Raum auf Anzeichen und opfere Vesta und Janus und zur Sicherheit opfere ich Mercurius ein letztes Mal, um mich für eventuelle Unannehmlichkeiten während des Rituals zu entschuldigen.\nnun ist das Ritual beendet und ich hoffe, dass Mercurius mein Gebet erhört hat und mein Angebot annimmt.\nAm Ende hört man auf, den Weihrauch abzubrennen."
+
+  cdr_r.013.fallback.desc:0 "Heute werde ich Mercurius, den Gott des Handels, ehren.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, das Ritual zu beginnen.\nNachdem das Ritual fortschreitet, ist es an der Zeit, Mercurius zu opfern, ich sage konkret, was ich opfern möchte und welchem Gott (welchen Göttern), und danach lege ich die blühenden Pflanzen auf den Teller und besprühe ihn mit etwas Wasser.\nAls letztes beobachte ich den Raum auf Anzeichen und opfere Vesta und Janus und zur Sicherheit opfere ich ein letztes Mal Mercurius, um mich für eventuelle Unannehmlichkeiten während des Rituals zu entschuldigen.\nnun ist das Ritual beendet und ich hoffe, dass Mercurius mein Gebet erhört hat und mein Angebot annimmt, Du gibst die blühenden Pflanzen der Natur zurück."
+
+  cdr_r.013.vegetables:0 "Biete das Gemüse an"
+  cdr_r.013.milk:0 "Biete die Milch an "
+  cdr_r.013.incense:0 "Biete den Weihrauch an"
+
+  cdr_r.013.message.positive:0 "Angebot erfolgreich"
+  cdr_r.013.message.negative:0 "Angebot nicht erfolgreich"
+
+  cdr_r.016.t:0 "Das Opfer"
+
+  cdr_r.016.incense.desc:0 "Heute werde ich $cdr_polytheism_knowledge_god_name$, die Göttin der Weisheit, ehren.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, das Ritual zu beginnen.\nWährend des Rituals ist es an der Zeit, $cdr_polytheism_knowledge_god_name$ zu opfern, ich sage konkret, was ich opfern möchte und welchem Gott/welchen Göttern ich opfern möchte und danach lege ich die Feigen auf den Teller und bestreue ihn mit etwas Wasser. \n\nAls letzten Teil beobachte ich den Raum auf irgendwelche Zeichen und opfere Vesta und Janus und zur Sicherheit opfere ich ein letztes Mal $cdr_polytheism_knowledge_god_name$, um mich für eventuelle Unannehmlichkeiten während des Rituals zu entschuldigen.\nNun ist das Ritual beendet und ich hoffe, dass $cdr_polytheism_knowledge_god_name$ mein Gebet erhört hat und mein Angebot annimmt, danach hörst du auf, den Weihrauch zu verbrennen."
+
+  cdr_r.016.wine.desc:0 "Heute werde ich $cdr_polytheism_knowledge_god_name$, die Göttin der Weisheit, ehren.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, das Ritual zu beginnen.\nWährend des Rituals ist es an der Zeit, $cdr_polytheism_knowledge_god_name$ zu opfern, ich sage konkret, was ich opfern möchte und welchem Gott (welchen Göttern) und danach bringe ich das Trankopfer aus Wein in einem Glas dar. \n\nAls letztes beobachte ich den Raum auf irgendwelche Zeichen und opfere Vesta und Janus und zur Sicherheit opfere ich ein letztes Mal $cdr_polytheism_knowledge_god_name$, um mich für eventuelle Unannehmlichkeiten während des Rituals zu entschuldigen.\nNun ist das Ritual beendet, ich hoffe $cdr_polytheism_knowledge_god_name$ hat mein Gebet erhört und nimmt mein Angebot an, danach trinkt man den Wein."
+
+  cdr_r.016.olives.desc:0 "Heute werde ich $cdr_polytheism_knowledge_god_name$, die Göttin der Weisheit, ehren.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, das Ritual zu beginnen.\nWährend des Rituals ist es an der Zeit, $cdr_polytheism_knowledge_god_name$ zu opfern, ich sage konkret, was ich opfern möchte und welchem Gott/welchen Göttern ich opfern möchte, danach lege ich die Oliven auf den Teller und bestreue ihn mit etwas Wasser. \n\nAls letzten Teil beobachte ich den Raum auf irgendwelche Zeichen und opfere Vesta und Janus und zur Sicherheit opfere ich ein letztes Mal $cdr_polytheism_knowledge_god_name$ um mich für eventuelle Unannehmlichkeiten während des Rituals zu entschuldigen.\nNun ist das Ritual beendet und ich hoffe $cdr_polytheism_knowledge_god_name$ hat mein Gebet erhört und nimmt mein Angebot an, danach isst man die Oliven oder gibt sie der Natur zurück."
+
+  cdr_r.016.falback.desc:0 "This is a bug, please send a message on discord or leave a bug report on steam."
+
+  cdr_r.016.olives:0 "Biete die Oliven an"
+  cdr_r.016.wine:0 "Biete den Wein an"
+  cdr_r.016.incense:0 "Bringe den Weihrauch dar"
+
+  cdr_r.016.message.positive:0 "Angebot erfolgreich"
+  cdr_r.016.message.negative:0 "Angebot nicht erfolgreich"
+
+  cdr_r.017.t:0 "Das Opfer"
+
+  cdr_r.017.incense.desc:0 "Heute werde ich $cdr_polytheism_good_god_apollo$, den Gott der Heilung, ehren.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, das Ritual zu beginnen.\nWährend des Rituals ist es an der Zeit, $cdr_polytheism_good_apollo$ zu opfern, ich sage konkret, was ich opfern möchte und welchem Gott (welchen Göttern) und danach lege ich die Feigen auf den Teller und besprenge ihn mit etwas Wasser. \n\nAls letztes beobachte ich den Raum auf irgendwelche Zeichen und opfere Vesta und Janus und zur Sicherheit opfere ich ein letztes Mal $cdr_polytheism_good_god_apollo$ um mich für eventuelle Unannehmlichkeiten während des Rituals zu entschuldigen.\nNachdem das Ritual beendet ist, hoffe ich, dass $cdr_polytheism_good_apollo$ mein Gebet erhört hat und mein Angebot annimmt, danach hörst du auf zu räuchern."
+
+  cdr_r.017.wine.desc:0 "Heute werde ich $cdr_polytheism_good_god_apollo$, den Gott der Heilung, ehren.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, das Ritual zu beginnen.\nWährend des Rituals ist es an der Zeit, $cdr_polytheism_good_apollo$ zu opfern, ich sage konkret, was ich opfern möchte und welchem Gott (welchen Göttern) und danach bringe ich das Trankopfer aus Wein in einem Glas dar. \n\nAls letztes beobachte ich den Raum auf irgendwelche Zeichen und opfere Vesta und Janus und zur Sicherheit opfere ich ein letztes Mal $cdr_polytheism_good_god_apollo$, um mich für eventuelle Unannehmlichkeiten während des Rituals zu entschuldigen.\nNun ist das Ritual beendet und ich hoffe, dass $cdr_polytheism_good_apollo$ mein Gebet erhört hat und mein Angebot annimmt, Danach trinkt man den Wein."
+
+  cdr_r.017.honey.desc:0 "Heute werde ich $cdr_polytheism_good_god_apollo$, den Gott der Heilung, ehren.\nNachdem die Vorbereitungen abgeschlossen sind, bin ich bereit, das Ritual zu beginnen.\nWährend des Rituals ist es an der Zeit, $cdr_polytheism_good_apollo$ zu opfern, ich sage konkret, was ich opfern will und welchem Gott (welchen Göttern) und danach gebe ich den Honig auf den Teller und bestreue ihn mit etwas Wasser. \n\nAls letztes beobachte ich den Raum auf irgendwelche Zeichen und opfere Vesta und Janus und zur Sicherheit opfere ich ein letztes Mal $cdr_polytheism_good_god_apollo$, um mich für eventuelle Unannehmlichkeiten während des Rituals zu entschuldigen.\nNun ist das Ritual beendet und ich hoffe, dass $cdr_polytheism_good_apollo$ mein Gebet erhört hat und mein Angebot annimmt, danach fügst du diesen Honig zu deinem Essen hinzu oder gibst ihn der Natur zurück."
+
+  cdr_r.017.falback.desc:0 "This is a bug, please send a message on discord or leave a bug report on steam."
+
+  cdr_r.017.honey:0 "Biete den Honig an"
+  cdr_r.017.wine:0 "Biete den Wein an"
+  cdr_r.017.incense:0 "Biete den Weihrauch an"
+
+  cdr_r.017.message.positive:0 "Angebot erfolgreich"
+  cdr_r.017.message.negative:0 "Angebot erfolglos"
+
+
+
+  cdr_r.002.t:0 "Purificatio (Reinigung)"
+  cdr_r.002.desc:0 "Ich bedecke mein Haupt mit der Toga, wasche meine Hände und mein Gesicht (dies ist ein Zeichen des Respekts und der Ehrfurcht vor den Göttern) und singe ein einfaches Gebet."
+  cdr_r.002.a:0 "Fortfahren"
+
+  cdr_r.003.t:0 "Praefatio (Beginn der Kommunikation)"
+  cdr_r.003.desc:0 "Jetzt, wo ich gereinigt bin, kann ich mit dem Ritual beginnen. Als erstes muss ich eine Kerze anzünden und Mutter Vesta mit einem Gebet grüßen. Als nächstes muss ich ein Gebet zu Janus, dem zweigesichtigen Gott, sprechen und ihm ein Willkommensangebot mit Weihrauch machen."
+  cdr_r.003.a:0 "Fortfahren"
+
+  cdr_r.004.t:0 "Salutatio (Begrüßung und Bitte an die Götter, dem Ritual beizuwohnen)"
+  cdr_r.004.desc:0 "$cdr_polytheism_high_god_name_alternate$ Gott des Himmels und Beschützer des Volkes von Rom oder welchen Namen du auch immer bevorzugst, mögest du diesem Ritual beiwohnen. Und mögest du dieses Angebot an Früchten annehmen (nachdem du die Worte gesprochen hast, lege sie auf die Schale und bespritze sie mit Wasser."
+  cdr_r.004.a:0 "Fortfahren"
+
+  cdr_r.005.t:0 "Precatio (Gebete)"
+  cdr_r.005.desc:0 "Für die Precatio werde ich $cdr_polytheism_high_god_name$ mein Hauptangebot unterbreiten (aber zunächst den Hauptgrund formell darlegen). $cdr_polytheism_high_god_name$ optimus maximus mögest Du meine Familie und das Volk meines Reiches begünstigen. Nun gieße ich ein Trankopfer in den Kelch und spreche die Worte $cdr_polytheism_high_god_name$ Mögest du meine Familie und die Menschen meines Reiches mit Kraft und Sieg begünstigen, um unsere Feinde zu besiegen."
+  cdr_r.005.a:0 "Fortfahren"
+
+  cdr_r.006.t:0 "Immolatio (Opfer)"
+  cdr_r.006.desc:0 "$dr_polytheism_high_god_name_alternate$ Gott des Donners und Beschützer des Volkes von Rom, nimm dieses Weinlibation an und mögest du meine Familie und das Volk meines Reiches begünstigen. Nun gieße ein Trankopfer in den Becher und spreche die Worte "$cdr_polytheism_high_god_name$ Mögest du meine Familie und die Menschen meines Reiches mit Macht und Sieg begünstigen, um unsere Feinde zu besiegen."
+  cdr_r.006.a:0 "Fortfahren"
+
+  cdr_r.007.t:0 "Litatio (Beachtung)"
+  cdr_r.007.desc:0 "Beobachten den Raum auf Anzeichen"
+  cdr_r.007.a:0 "Fortfahren"
+
+  cdr_r.008.t:0 "Piaculum (Wiedergutmachung)"
+  cdr_r.008.desc:0 "Für den Fall, dass während des Rituals Fehler gemacht werden, werde ich Ianus und Vesta Weihrauch darbringen und ihn zur Sicherheit ein letztes Mal Jupiter darbieten, um mich für etwaige Unannehmlichkeiten während des Rituals zu entschuldigen."
+
+  cdr_r.008.incense:0 "Biete den Weihrauch an"
+  cdr_r.008.wine:0 "Biete den Wein an"
+  cdr_r.008.fruit:0 "Offer the fruit"
+
+  cdr_r.008.message.positive:0 "Angebot erfolgreich"
+  cdr_r.008.message.negative:0 "Angebot erfolglos"
+
+
+  #Embrace culture decisions 
+
+  #Embrace roman culture 
+  embrace_culture.001.t:0 "Umarm die Römische Kultur"
+  embrace_culture.001.desc:0 "For far to long we lost the old virtues of the roman empire."
+  embrace_culture.001.a:0 "Embrace the Roman culture"
+  #Embrace Gallo Roman Culture
+  embrace_culture.002.t:0 "Umarm die Gallorömische Kultur"
+  embrace_culture.002.desc:0 "For far to long we lost the old virtues of the Gallo Roman Culture."
+  embrace_culture.002.a:0 "Embrace the Gallo Roman culture"
+  #Embrace Romano British Culture
+  embrace_culture.003.t:0 "Umarm die Römisch Britische Kultur"
+  embrace_culture.003.desc:0 "For far to long we lost the old virtues of the Romano British Culture."
+  embrace_culture.003.a:0 "Embrace the Romano British culture"
+  #Embrace Romano Germanic Culture
+  embrace_culture.004.t:0 "Umarm die Römisch Germanische Kultur"
+  embrace_culture.004.desc:0 "For far to long we lost the old virtues of the Romano Germanic Culture."
+  embrace_culture.004.a:0 "Embrace the Romano Germanic culture"
+  #Embrace Hispano Roman Culture
+  embrace_culture.005.t:0 "Umarm die Römisch Hispanische Kultur"
+  embrace_culture.005.desc:0 "For far to long we lost the old virtues of the Hispano Roman Culture."
+  embrace_culture.005.a:0 "Embrace the Hispano Roman culture"
+
+  #Restore cultus deorum Priesthood
+  cdr_rph_decisions.0001.t:0 "Das neue [scoped_ruler.GetFaith.GetAdjective] Priestertum"
+  cdr_rph_decisions.0001.desc:0 "Nach der Zeit der Verbannung und Verfolgung nach den christlichen Eroberungen wurde Cultus deorum von den Menschen Europas als der einzig wahre Weg zur Tugend akzeptiert. [scoped_ruler.GetTitledFirstName] hat die Einrichtung des Amtes des [new_priest.GetTitleTierName] angeordnet, eines Priesters der Priester, der über eine wiederhergestellte klerikale Hierarchie herrschen soll.\n\nDer [new_priest.GetTitleTierName] wird als höchste religiöse Autorität in der [scoped_ruler.GetFaith.GetAdjective] Welt dienen, mit Befugnissen, die von der Segnung zukünftiger Militärexpeditionen bis zur Gewährung von Scheidungen an verheiratete Paare reichen."
+  cdr_rph_decisions.0001.a:0 "Die ewige Flamme von Mutter Vesta brennt erneut!"
+  cdr_rph_decisions.0002.desc.orthodox:0 "Die verfluchten Anhänger von [scoped_ruler.GetFaith.HighGodName] haben genug Land und Einfluss zurückgewonnen, um unter dem Schutz von [scoped_ruler.GetTitledFirstName] eine blasphemische Priesterschaft wiederherzustellen.\n\nWenn diese Dämonen anbetenden Heiden nicht bald gestoppt werden, könnten sie die Ausbreitung des Christentums in Europa umkehren und die Gedanken ihrer unwissenden Untertanen mit Lügen und Perversionen vergiften."
+  cdr_rph_decisions.0002.desc.others:0 "Die seltsamen Anhänger des Cultus Deorum von [scoped_ruler.GetFaith.HighGodName] haben genug von ihren angestammten römischen Territorien zurückerobert, um eine funktionierende Priesterschaft wiederherzustellen.\n\nWenn sie nicht bald gestoppt werden, könnten sie die christliche Expansion umkehren und Europa unter dem Schutz ihrer alten Götter wiederherstellen."
+  cdr_rph_decisions.0002.a:0 "Ehre sei [scoped_ruler.GetFaith.HighGodName]!"
+  cdr_rph_decisions.0002.b:0 "Ihre Dämonen werden sie nicht vor der Macht von [ROOT.Char.GetFaith.HighGodName] schützen!"
+  cdr_rph_decisions.0002.c:0 "... Pantheon-Anbetung?"
+
+
+
+  rejected_to_join_vestal_vergins.001.desc:0 "Ihr Vorschlag, ich solle mein ganzes Leben aufgeben und zum Tempel der Vesta huschen, ist lächerlich. Ich bin glücklich, wo ich bin, und ich habe nicht vor, das zu ändern."
+
+  accept_to_join_vestal_vergins.001.desc:0 "Ich werde dem Ruf folgen, einer höheren Macht zu dienen, und ich danke Ihnen, dass Sie mich auf diesen Pfad der Tugend geführt haben."
+  accept_to_join_vestal_vergins.001.a:0 "Ich bin sicher, Sie werden Mutter Vesta gut dienen!"
+
+  cdr_otv.001.t:0 "Tempel der Vesta geöffnet"
+  cdr_otv.001.desc:0 "Nach Jahrhunderten der Schließung ist der Tempel der Vesta wieder geöffnet, die Flamme brennt und die neuen Vestalinnen tun alles, was sie können, um die Flamme am Brennen zu halten."
+  cdr_otv.001.a:0 "Endlich brennt die ewige Flamme wieder"
+
+  saturnalia.001.t:0 "Saturnalien"
+  saturnalia.001.desc:0 "Der 17. Dezember ist endlich da, alle Geschäfte sind geschlossen und die Ernten sind eingebracht. Heute ehren wir Saturn und danken den Göttern für die Ernte dieses Jahres. Nachdem wir die Rituale durchgeführt haben, tauschen wir Geschenke untereinander aus und es ist Zeit für die Festlichkeiten."
+  saturnalia.001.a:0 "Versammelt das Reich für die Saturnalien"
+
+  cult.001.t:0 "Kulte"
+  cult.001.desc:0 "In der Römerzeit gab es viele Kulte und mit der Wiedererrichtung des [ROOT.Char.GetFaith.GetAdjective] blühten auch diese Kulte wieder auf.\nDie Frage ist, ob ich Teil eines dieser Kulte sein möchte?"
+  cult.001.mithras:0 "Mithras Kult"
+  cult.001.isis:0 "Isis Kult"
+  cult.001.serapis:0 "Serapis Kult"
+  cult.001.eluesinian:0 "Eluesinischer Kult"
+  cult.001.sol_invictus:0 "Sol Invictus Kult"
+  cult.001.imperial:0 "Kaiserlicher Kult"
+  cult.001.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+    #Mithras-Kult beitreten
+  cult.002.t:0 "Die Bewerbung"
+  cult.002.desc:0 "Nachdem ich gelesen hatte, wie ich mit dem Kult in Kontakt treten kann, schrieb ich einen Brief, warum ich für den Kult eine wertvolle Bereicherung wäre\nDanach hinterließ ich den Brief an dem geheimen Ort beim Brunnen. Jetzt muss ich ein paar Tage warten, bis ich eine Antwort bekomme."
+  cult.002.a:0 "Warten wir ab und hoffen das Beste"
+
+  cult.003.t:0 "Das Antwort"
+  cult.003.desc:0 "Einige Tage später kehrte ich an den Ort zurück, an dem ich den Brief hinterlassen hatte. Zwischen den Steinen lag ein kleiner Brief mit einem Text und\neinem Ort, an dem ich sie zur Aufnahme in den Kult treffen werde."
+  cult.003.a:0 "Gehen Sie zum Treffpunkt"
+
+  cult.004.t:0 "Der verborgene Ort"
+  cult.004.desc:0 "Willkommen, willkommen, Sie sind also derjenige, der die Bewerbung abgeschickt hat, großartig. Der Kriegsgott Mithras wird von den Soldaten geliebt und viele von ihnen sind Teil dieses Kults\nAuch Sie haben sich einen Namen gemacht, daher freuen wir uns, Ihnen mitteilen zu können, dass wir mit der Initiation beginnen können."
+  cult_0004.a.tt:0 "Historischer Kontext, die wahre Initiation ist nicht erhalten geblieben, es handelt sich also um ein bisschen Vermutung und reine Fiktion./nWas bekannt ist, ist, dass es ein Initiationsprozess von 7 war, deren Namen bekannt sind, daher werde ich darauf aufbauen."
+  cult.004.a:0 "Beginne die Initiation"
+
+  cult.005.t:0 "Die Initiation"
+  cult.005.desc:0 "Wir stehen vor der Statue des Mithras. Nachdem du den 1. Grad der Initiation durchlaufen hast, nimm jetzt dieses Messer und schneide dir in die Hand. Lass danach ein paar Blutstropfen auf die Platte fallen\n und sprich die folgenden Worte$:$ Ich schwöre, dass ich immer dem Weg des Mithras folgen und meine Brüder und Schwestern niemals verraten werde. Ein paar Augenblicke später ist alles erledigt.\n\nDu bist jetzt Teil des Kults, den du am Anfang als Corax begonnen hast."
+  cult.005.trait:0 "Endlich bin ich Teil des Mithras Kults"
+  cult.005.religion:0 "Endlich bin ich Teil des Mithras Kults"
+  
+  #Standardantwort ablehnen
+  cult.006.t:0 "Die Antwort"
+  cult.006.desc:0 "Einige Tage später kehrte ich an den Ort zurück, an dem ich den Brief hinterlassen hatte. Zwischen den Steinen lag ein kleiner Brief mit einem Text.\nWir müssen die Bewerbung ablehnen. Sie sind noch nicht würdig, unserem Kult beizutreten."
+  cult.006.a:0 "Es ist eine Schande."
+
+  #Isis-Kult
+  cult.007.t:0 "Der Traum"
+  cult.007.desc:0 "Vor einigen Tagen hatte ich einen Traum von einer Göttin. Sie sagte mir, ich solle nach Tithorea reisen, einer Stadt in Griechenland. Ich solle dort zum Isis-Tempel gehen."
+  cult.007.a:0 "Reise nach Tithorea"
+
+  cult.008.t:0 "Ankunft in Tithorea"
+  cult.008.desc:0 "Ich kam schließlich in Tithorea an und konnte dort den Isis-Tempel finden."
+  cult.008.a:0 "Betrete den Tempel"
+
+  cult.009.t:0 "Tempel der Isis"
+  cult.009.desc:0 "Willkommen im Tempel der großen Muttergöttin Isis./nWie du weißt, ist sie die Göttin der Heilung und Magie. Du sagst also, du hast die Göttin in deinem Traum gesehen und sie hat dir gesagt, du sollst hierher gehen? Gut, nachdem du 100 Gold bezahlt hast, kannst du fortfahren. Du musst dich der Initiation unterziehen. Ich möchte, dass du weißt, dass du neben Isis noch andere Götter und Göttinnen ehren kannst und diese Initiation 10 Tage dauern wird. Wenn du bereit bist, können wir beginnen. Folge mir weiter unten in den Tempel."
+  cult_009.a.tt:0 "Historischer Kontext, die echte Initiation ist nicht erhalten geblieben, es gibt Quellen, die sagen, eine Initiation sei nicht notwendig gewesen. Es ist also ein bisschen Raterei und reine Fiktion."
+  cult.009.a:0 "Beginne die Initiation"
+
+  cult.010.t:0 "Die Initiation"
+  cult.010.desc:0 "Lasst uns mit der Initiation beginnen. Zuerst beginnen wir mit rituellen Reinigungen, in der Zwischenzeit bittet der Priester um Vergebung für meine Sünden und besprenkelt mich mit Wasser./nDanach musste ich 10 Tage warten und auf Fleisch und Wein verzichten. Am Abend des zehnten Tages bekam ich nicht näher bezeichnete Geschenke von anderen Anhängern der Isis, bevor ich ein sauberes Leinengewand anzog und den tiefsten Teil des Tempels betrat. Nach einigen Ritualen und dem Schwören der folgenden Worte\nIch schwöre, dass ich immer den Wegen der Isis folgen und meine Brüder und Schwestern niemals verraten werde.\nAm nächsten Tag verließ ich den Tempel und reiste nach Hause."
+  cult.010.trait:0 "Endlich bin ich Teil des Isis-Kults"
+  cult.010.religion:0 "Endlich bin ich Teil des Isis-Kults"
+
+  #Serapis-Kult
+  cult.011.t:0 "Vorbereitungen"
+  cult.011.desc:0 "Reise zu einem nahegelegenen Serapeum, um mit dem Priester Kontakt aufzunehmen und in den Kult aufgenommen zu werden"
+  cult.011.a:0 "Reise zum Serapeum"
+
+  cult.012.t:0 "Ankunft im Serapeum"
+  cult.012.desc:0 "Ich bin endlich im örtlichen Serapeum angekommen."
+  cult.012.a:0 "Betrete das Serapeum"
+
+  cult.013.t:0 "Das Serapeum"
+  cult.013.desc:0 "Willkommen im Tempel des Serapis. Du willst in den Kult aufgenommen werden. Großartig, folge mir nach unten. Du wirst erstaunt sein über den Wohlstand, den Serapis seinen wahren Anhängern bringt."
+  cult.013.a.tt:0 "Historischer Kontext, die wahre Initiation ist nicht erhalten geblieben, es ist also ein bisschen Raterei und reine Fiktion."
+  cult.013.a:0 "Beginne die Initiation"
+
+  cult.014.t:0 "Die Initiation"
+  cult.014.desc:0 "Wir stehen vor der Statue von Serapis. Biete Serapis jetzt in angemessener Weise dein Opfer an und sprich die folgenden Worte$:$ Ich schwöre, ich werde immer den Wegen von Serapis folgen und meine Brüder und Schwestern niemals verraten. Ein paar Augenblicke später ist alles erledigt."
+  cult.014.trait:0 "Endlich bin ich Teil des Serapis Kults"
+  cult.014.religion:0 "Endlich bin ich Teil des Serapis Kults"
+
+
+  cult.015.t:0 "Vorbereitung"
+  cult.015.desc:0 "Da die griechisch-römischen Religionen wieder aufleben, gewinnen die eleusinischen Mysterien stark an Zulauf. Es ist an der Zeit, sie mir genauer anzusehen."
+  cult.015.a:0 "Nach Eleusis reisen"
+
+  cult.016.t:0 "Ankunft in Eleusis"
+  cult.016.desc:0 "In Eleusis angekommen, fanden gerade Feierlichkeiten statt. Nachdem ich sie einige Minuten beobachtet hatte, kam eine Priesterin zu mir."
+  cult.016.a:0 "Mit der Priesterin sprechen"
+
+  cult.017.t:0 "Eleusinische Priesterin"
+  cult.017.desc:0 "Grüße, Sie scheinen sich für die Feierlichkeiten zu interessieren? Wenn Sie möchten, kann ich Ihnen mehr darüber erzählen.\nSpäter fragten Sie die Priesterin, ob Sie die Initiation durchführen könnten."
+  cult_017.a.tt:0 "Historischer Kontext$:$ Die eigentliche Initiation ist nicht überliefert, daher ist dies eine Vermutung und reine Fiktion."
+  cult.017.a:0 "Initiation beginnen"
+
+  cult.018.t:0 "Die Initiation"
+  cult.018.desc:0 "Wir stehen vor der Statue von Persephone und Demeter. Nun opfern wir beiden auf angemessene Weise und sprechen die folgenden Worte$:$ Ich schwöre, dass ich immer den Wegen von Demeter und Persephone folgen und meine Brüder und Schwestern niemals verraten werde. Wenige Augenblicke später ist alles vorbei."
+  cult.018.trait:0 "Endlich bin ich Teil des eleusinischen Kultes"
+  cult.018.religion:0 "Endlich bin ich Teil des eleusinischen Kultes"
+  
+  #Sol invictus cult
+  cult.019.t:0 "Vorbereitung"
+  cult.019.desc:0 "Der Sol-Kult ist einer der ältesten Kulte des Römischen Reiches, der durch Kaiser Aurelian im Jahr 274 n. Chr. einen neuen Popularitätsschub erhielt.\nIch möchte wirklich mehr darüber erfahren."
+  cult.019.a:0 "Zum örtlichen Sol Tempel reisen"
+
+  cult.020.t:0 "Ankunft im Tempel des Sol"
+  cult.020.desc:0 "Bei der Ankunft am örtlichen Tempel fällt ein großer Unterschied zu den traditionellen Tempeln auf$:$ Der Tempel für Sol (Invictus) ist ein Freilufttempel."
+  cult.020.a:0 "Den Tempel betreten"
+
+  cult.021.t:0 "Sol-Priester"
+  cult.021.desc:0 "Grüße, was führt Sie heute zu uns? Sie wollen mehr über diesen Kult erfahren, natürlich. Nach einer Weile fragte der Priester$:$ Wenn Sie möchten, können Sie sich mir bei einer Opfergabe an die unbesiegte Sonne anschließen. Danach können Sie sich als Teil des Sol Kults bezeichnen."
+  cult_021.a.tt:0 "Historischer Kontext$:$ Es konnten keine Informationen über eine Initiation gefunden werden, daher ist dieses Ereignis fiktiv. Wenn jemand weitere Informationen hat, lassen Sie es mich bitte auf Steam oder Discord wissen."
+  cult.021.trait:0 "Endlich bin ich Teil des Sol Kults"
+  cult.021.religion:0 "Endlich bin ich Teil des Sol Kults"
+
+#Kaiserkult
+  cult.022.t:0 "Vorbereitung"
+  cult.022.desc:0 "Da die griechisch-römischen Religionen wieder da sind, konnte der Kaiserkult natürlich nicht fehlen. Es ist nicht nur eine Religion, sondern auch eine           Möglichkeit, einem Kaiser und einer Kaiserin Respekt zu zollen./n Jeder kann beitreten, es sollte also kein Problem sein."
+  cult.022.a:0 "Zum örtlichen Kaisertempel reisen"
+
+  cult.023.t:0 "Der Kaisertempel"
+  cult.023.desc:0 "Vor dem Tempel ist es voll, als ob es eine Art Versammlung gäbe. Man geht an den Leuten vorbei und betritt den Tempel."
+  cult.023.a:0 "Den Tempel betreten"
+
+  cult.024.t:0 "Sacerdotes Augustales"
+  cult.024.desc:0 "Seid gegrüßt, was führt euch heute hierher? Ihr wollt mehr über diesen Kult erfahren, sicher. Nach einer Weile fragen die Augustales, ob ihr den verstorbenen Kaisern und Kaiserinnen Opfer darbringen wollt. Nachdem ihr dies getan habt, könnt ihr euch als Teil des Kaiserkults bezeichnen, die Kaiser wie eure Vorfahren und die Götter ehren."
+  cult_024.a.tt:0 "Historischer Kontext, keine Informationen über eine Initiation gefunden, daher ist dieses Ereignis fiktiv. Wenn jemand mehr Informationen hat, lasst es mich auf Steam oder Discord wissen."
+  cult.024.trait:0 "Endlich bin ich Teil des Kaiserkults"
+  cult.024.religion:0 "Endlich bin ich Teil des Kaiserkults"
+
+  restore_altar.001.t:0 "Der Senat"
+  restore_altar.001.desc:0 "Ich atme tief ein, als ich vor den Senatstüren stehe. Drinnen ein Senat, der so gespalten ist wie nie zuvor$:$ Christen, Polytheisten, die den Glauben anderer akzeptieren oder nicht akzeptieren, und hier bin ich mit dem Vorschlag, den Altar der Victoria in das Senatsgebäude zurückzubringen."
+  restore_altar.001.a:0 "Den Senat betreten"
+
+  restore_altar.002.t:0 "Der Senat"
+  restore_altar.002.desc:0 "Wie erwartet waren die Christen nicht sehr begeistert von der Idee, den Altar zurückzubringen. Es ist eine Schande, dass sie so dagegen sind, etwas zurückzubringen, das von Kaiser Augustus selbst aufgestellt wurde, damit wir den Göttern für das Wohlergehen des Reiches Opfer darbringen konnten. Es wurde sogar benutzt, um den neuen Kaisern den Eid abzunehmen.\n\nWährend die Christen im Senat anfangen, wütend zu werden, ist es Zeit, mit der Abstimmung zu beginnen."
+  restore_altar.002.a:0 "Abstimmung beginnen"
+
+  restore_altar.003.t:0 "Die Abstimmung"
+  restore_altar.003.desc:0 "Natürlich schafft das neue Probleme, aber zumindest haben sie abgestimmt. Als die Stimmen ausgezählt wurden, war die Mehrheit des Senats für die Rückkehr des Altars. Einige der christlichen Senatoren waren so wütend, dass sie mit Dolchen auf mich zugerannt sind. Ich muss sagen, ich wusste nicht, dass solche Dinge hier erlaubt sind..."
+  restore_altar.003.a:0 "Wachen!!!"
+
+  restore_altar.004.t:0 "Die Abstimmung"
+  restore_altar.004.desc:0 "Natürlich schafft das neue Probleme, aber zumindest haben sie abgestimmt. Als die Stimmen ausgezählt wurden, war die Mehrheit des Senats für die Rückkehr des Altars. Einige der christlichen Senatoren waren so wütend, dass sie mit Dolchen auf mich zugerannt sind. Ich muss sagen, ich wusste nicht, dass solche Dinge hier erlaubt sind..."
+  restore_altar.004.a:0 "Wachen!!!"
+
+  restore_altar.005.t:0 "Zum Senat gehen"
+  restore_altar.005.desc:0 "Ich atme tief ein, als ich vor den Senatstüren stehe. Drinnen ein Senat, der so gespalten ist wie nie zuvor$:$ Christen, Polytheisten, die den Glauben anderer akzeptieren oder nicht akzeptieren, und hier bin ich mit dem Vorschlag, den Altar der Victoria in das Senatsgebäude zurückzubringen."
+  restore_altar.005.a:0 "Den Senat betreten"
+
+  restore_altar.006.t:0 "Der Senat"
+  restore_altar.006.desc:0 "Wie erwartet waren die Christen nicht sehr begeistert von der Idee, den Altar zurückzubringen. Es ist eine Schande, dass sie so dagegen sind, etwas zurückzubringen, das von Kaiser Augustus selbst aufgestellt wurde, damit wir den Göttern für das Wohlergehen des Reiches Opfer darbringen konnten. Es wurde sogar benutzt, um den neuen Kaisern den Eid abzunehmen.\n\nWährend die Christen im Senat anfangen, wütend zu werden, ist es Zeit, mit der Abstimmung zu beginnen."
+  restore_altar.006.a:0 "Abstimmung beginnen"
+
+  restore_altar.007.t:0 "Die Abstimmung"
+  restore_altar.007.desc:0 "Natürlich schafft das neue Probleme, aber zumindest haben sie abgestimmt. Als die Stimmen ausgezählt wurden, war die Mehrheit des Senats für die Rückkehr des Altars. Einige der christlichen Senatoren waren so wütend, dass sie mit Dolchen auf mich zugerannt sind. Ich muss sagen, ich wusste nicht, dass solche Dinge hier erlaubt sind.."
+  restore_altar.007.a:0 "Wachen!!!"
+
+  restore_altar.008.t:0 "Der Angriff"
+  restore_altar.008.desc:0 "Könnten wir alle hier etwas Ruhe bewahren, bei cdr polytheism high god name! Jetzt haben die Wachen den Senat gesichert, die Christen haben sich beruhigt.  Wo waren wir denn stehen? Ah ja, wie die Abstimmung gesprochen hat, wird der Altar der Victoria ab sofort wieder im Senatsgebäude aufgestellt."
+  restore_altar.008.a:0 "Altar zurückbringen"
+
+  roman_illyrian.002.t:0 "Übernahme der illyrischen Götter"
+  roman_illyrian.002.desc:0 "Nach monatelanger Forschung und Suche nach Orten, an denen die Präsenz der Götter und gute Vorzeichen beobachtet werden konnten, ist es an der Zeit, einige Schreine zu bauen und neue Rituale zu schreiben."
+  roman_illyrian.002.a:0 "Lasst uns anfangen"
+
+  roman_illyrian.003.t:0 "Illyrische Götter übernommen"
+  roman_illyrian.003.desc:0 "Da neue Schreine gebaut und Rituale geschrieben werden, bleibt nur noch die Verbreitung der Nachricht. Danach werden die Menschen selbst anfangen, die alten Götter zu verehren."
+  roman_illyrian.003.a:0 "Die Nachricht verbreiten"
+
+  gallo_roman.002.t:0 "Übernahme der gallischen Götter"
+  gallo_roman.002.desc:0 "Nach monatelanger Forschung und Suche nach Orten, an denen die Präsenz der Götter und gute Vorzeichen beobachtet werden konnten, ist es an der Zeit, einige Schreine zu bauen und neue Rituale zu schreiben."
+  gallo_roman.002.a:0 "Lasst uns anfangen"
+
+  gallo_roman.003.t:0 "Gallische Götter übernommen"
+  gallo_roman.003.desc:0 "Da neue Schreine gebaut und Rituale geschrieben werden, bleibt nur noch die Verbreitung der Nachricht. Danach werden die Menschen selbst anfangen, die alten Götter zu verehren."
+  gallo_roman.003.a:0 "Die Nachricht verbreiten"
+
+  cdr_r.014.t:0 "Übernahme der britischen Götter"
+  cdr_r.014.desc:0 "Nach monatelanger Forschung und Suche nach Orten, an denen die Präsenz der Götter und gute Vorzeichen beobachtet werden konnten, ist es an der Zeit, einige Schreine zu bauen und neue Rituale zu schreiben."
+  cdr_r.014.a:0 "Lasst uns anfangen"
+
+  cdr_r.015.t:0 "Britische Götter übernommen"
+  cdr_r.015.desc:0 "Da neue Schreine gebaut und Rituale geschrieben werden, bleibt nur noch die Verbreitung der Nachricht. Danach werden die Menschen selbst anfangen, die alten Götter zu verehren."
+  cdr_r.015.a:0 "Die Nachricht verbreiten"
+
+  romano_germanic.001.t:0 "Übernahme der germanischen Götter"
+  omano_germanic.001.desc:0 "Nach monatelanger Forschung und Suche nach Orten, an denen die Präsenz der Götter und gute Vorzeichen beobachtet werden konnten, ist es an der Zeit, einige Schreine zu bauen und neue Rituale zu schreiben."
+  romano_germanic.001.a:0 "Lasst uns beginnen"
+
+  cultus_orientis.001.t:0 "Übernahme der westsemitischen Götter"
+  cultus_orientis.001.desc:0 "Nach monatelanger Forschung und Suche nach Orten, an denen die Präsenz der Götter und gute Vorzeichen beobachtet werden konnten, ist es an der Zeit, einige Schreine zu bauen und neue Rituale zu schreiben."
+  cultus_orientis.001.a:0 "Lasst uns beginnen"
+
+  romano_hispanic.001.t:0 "Übernahme der iberischen Götter"
+  romano_hispanic.001.desc:0 "Nach monatelanger Forschung und Suche nach Orten, an denen die Präsenz der Götter und gute Vorzeichen beobachtet werden konnten, ist es an der Zeit, einige Schreine zu bauen und neue Rituale zu schreiben."
+  romano_hispanic.001.a:0 "Lasst uns beginnen"
+
+  #Event-Text  Zufallsereignis Tempel-Schändung
+  cdr.002.t:0 "Tempel-Schändung"
+  cdr.002.desc:0 "Ein Narr wurde dabei erwischt, wie er den Jupitertempel verunstaltet hat. Solche Dinge sollten nicht auf die leichte Schulter genommen werden. Was sollen wir mit ihm tun? Außerdem möchte ich den Tempel wiederherstellen."
+  cdr.002.a:0 "Schickt ihn ins Gefängnis und repariert den Tempel."
+  cdr.002.b:0 "Der Priester möge über seinen Glauben entscheiden, repariert nur den Tempel."
+  cdr.002.c:0 "Lasst ihn gehen."
+
+  #Lemuria
+  cdr.003.t:0 "Lemuria"
+  cdr.003.desc:0 "Heute halten wir die Lemuria ab, um die unruhigen Toten und die furchterregenden Geister aus unserem Haus zu vertreiben. Zusammen mit meiner Familie gehen wir durch das Haus, sie mit Töpfen hinter mir, während ich die Worte spreche$:$ 'Mit diesen Bohnen erlöse ich mich und die Meinen, neunmal.' Danach nehme ich Bohnen in den Mund und spucke sie über meine Schulter. Jetzt, wo das getan ist, schlagen meine Familienmitglieder mit den Töpfen, während ich die Worte spreche$:$ 'Geister meiner Väter und Vorfahren, verschwindet!'. Das Ritual ist vollbracht, also ist es Zeit, mir dreimal die Hände zu waschen und auf gute oder schlechte Zeichen zu achten."
+  cdr.003.a:0 "Auf gute oder schlechte Zeichen achten."
+  cdr.003.message.positive:0 "Die Geister und unruhigen Toten sind besfriedigt."
+  cdr.003.message.negative:0 "Schlechtes Omen gesichtet."
+
+  #Opfer an Dis Pater
+  cdr.004.t:0 "Opfer an Dis Pater"
+  cdr.004.desc:0 "Heute bin ich an den Gräbern meiner Vorfahren entlang gegangen, manchmal ist es schwer zu glauben, dass sie nicht mehr da sind. Nachdem ich wieder zu Hause war, beschloss ich, Dis Pater ein Opfer darzubringen, um meine Vorfahren zu ehren und ihnen ein bisschen näher zu sein. Wichtig ist, das Opfer zu entsorgen und es anschließend nicht selbst zu essen."
+  cdr.004.a:0 "Opfer darbringen."
+
+  #Besuch des Jupitertempels
+  cdr.005.t:0 "Besuch des Jupitertempels"
+  cdr.005.desc:0 "Um mein Reich zu regieren, brauche ich die Führung von Jupiter, dem König der Götter. Nur er kann mir die Unterstützung geben, mein Reich auf gute Weise zu regieren"
+  cdr.005.a:0 "Einen weißen Ochsen opfern."
+  cdr.005.message.positive:0 "Von Jupiter gesegnet."
+  cdr.005.message.negative:0 "Von Jupiter nicht begünstigt."
+
+  #Ludi Plebei
+  cdr.006.t:0 "Ludi Plebei"
+  cdr.006.desc:0 "Heute ist der Tag, an dem alle Bürger des Reiches an Rennen und allerlei anderen Festlichkeiten teilnehmen, um die Freiheiten und die Demokratie zu feiern."
+  cdr.006.a:0 "An den Feierlichkeiten teilnehmen."
+
+  #Opferung von Speisen von deiner Mahlzeit an die Lares
+  cdr.007.t:0 "Opfer an die Lares"
+  cdr.007.desc:0 "Nichts ist besser als ein gutes Essen, aber heute möchte ich einen Teil mit den Lares, den Hausgöttern, teilen, um ihnen dafür zu danken, dass sie meine Familie beschützen."
+  cdr.007.a:0 "Opfer an die Lares darbringen."
+
+  #Opfer an Ceres
+  cdr.008.t:0 "Opfer an Ceres"
+  cdr.008.desc:0 "Die Erntezeit steht kurz bevor. Um etwas zusätzliche Hilfe zu bekommen, bringen wir heute Ceres ein Opfer dar, damit die Ernte in dieser Saison gut wird."
+  cdr.008.a:0 "Opfer an Ceres darbringen."
+  cdr.008.message.positive:0 "Von Ceres gesegnet."
+  cdr.008.message.negative:0 "Schlechte Ernte."
+
+  #Lupercalia
+  #Dieses Fest hatte seine Schattenseiten, und aus Gründen des Spiels und des Respekts gegenüber Frauen werden alle Dinge, die Schläge oder Dämonisierung befürworten, aus den Ereignissen herausgelassen, obwohl dies historisch korrekt war.
+  #\n\nDas Fest hat sich im Laufe der Jahrhunderte zum Besseren gewandelt. In der frühen Republik war es Brauch, dass die Luperci nackt tanzten. Aber mit dem ersten römischen Kaiser Augustus wurde es reformiert, so dass die Luperci in Ziegenfellen herumliefen.
+  cdr.009.t:0 "Lupercalia"
+  cdr.009.desc:0 "Heute kann ich das Zentrum der Stadt besuchen, wo die jährlichen Lupercalia (zwischen dem 13. und 15. Februar) stattfinden. Das Fest zu Ehren der  $cdr_polytheism_good_god_juno$ Februata soll die Stadt reinigen und Gesundheit und Fruchtbarkeit fördern.\n\nEs war auch das Fest, bei dem der berühmte Julius Caesar die goldene Krone ablehnte, die ihm von Marcus Antonius angeboten wurde."
+
+
+  cdr.009.a:0 "Gehe ins Stadtzentrum."
+  cdr.009.b:0 "Vielleicht nächstes Jahr."
+
+  cdr.010.t:0 "Stadtzentrum"
+  cdr.010.desc:0 "Natürlich ist das Zentrum der Stadt voll von Menschen, die in einer Beziehung sind oder nicht. Manche kommen einfach, um die Zeremonien und Festlichkeiten zu beobachten. Ich hingegen werde am Fest teilnehmen, und das bedeutet, dass ich den ganzen Tag mit der Frau verbringen werde, die auf dem kleinen Stück Pergament steht, das ich erhalten werde.\n\nAber vorher werden die Luperci-Priester Opfer darbringen, darunter einen Ziegenbock und einen Hund. Außerdem gibt es ein Opfer von gesalzenen Mehlkuchen, die von den Vestalinnen dargebracht werden. Zwei Luperci näherten sich dem Altar. Ihre Stirn wurde mit dem Blut des Opfermessers gesalbt, dann mit in Milch getränkter Wolle abgewischt, woraufhin sie erwartungsgemäß lachen mussten.\n\nIn einigen Jahrhunderten mag das alles etwas seltsam klingen, aber wie bei allem werden sich auch die Rituale im Laufe der Zeit ändern.\n\nDie Luperci kamen mit einer Schachtel auf uns zu, in der wir das kleine Pergamentstück erhielten, das den Namen der Frau enthält, mit der ich den Tag verbringen werde."
+  cdr.010.a:0 "Ich hoffe, dass dieses Date klappt."
+
+  cdr.011.t:0 "Die Lupercalia Date"
+  cdr.011.desc:0 "Der Tag ist zu Ende, was für ein Tag, aber die Frage ist, war es genug für uns beide, um darauf aufzubauen?"
+  cdr.011.a:0 "Vielleicht habe ich wirklich die Richtige gefunden."
+  cdr.011.b:0 "Nein, es war nur ein nettes Date."
+
+  lover_lupercalia_date:0 "Lupercalia date"
+  
+  #Buy book about Roman mythology 
+  cdr.012.t:0 "Der Buchhändler"
+  cdr.012.desc:0 "Als ich heute durch den Markt ging, fand ich einen Stand mit einigen Büchern. Ein Buch fiel mir besonders ins Auge, nämlich das über die römische Mythologie. Es kostet ein paar Münzen, aber es ist es wert."
+  cdr.012.a:0 "Kaufen Sie das Buch"
+
+  #Buch über römische Mythologie lesen
+  cdr.013.t:0 "Geschichte von Aenaes"
+  cdr.013.desc:0 "Man könnte meinen, die römische und griechische Mythologie seien gleich, aber das ist nicht der Fall. Ich habe über Aneas gelesen, den Sohn von $cdr_polytheism_fertility_god_name$, und wie er auf Befehl der Götter mit einer Gruppe namens Aenaeds nach Rom floh. Sie trugen die Statuen der Laren und Penaten, der Hausgötter Trojas, mit sich. Als die Gruppe in Italien ankam, begannen sie, die Statuen zu verbreiten.\n\nAußerdem sollte Aenaes Königin Dido von Karthago heiraten, aber nach der Intervention von $cdr_polytheism_wealth_god_name$ im Auftrag von $cdr_polytheism_high_god_name$ geschah dies nicht. Königin Dido verfluchte Rom, immer ein Feind Karthagos zu sein, was im ersten, zweiten und dritten Punischen Krieg und sogar in Elefantenkämpfen enden sollte. in den Alpen."
+  cdr.013.a:0 "Komisch, wenn man bedenkt, dass es in den Alpen einmal Elefanten gab"
+
+   # Recruit augur event
+  cdr.014.t:0 "Hof Augur"
+  cdr.014.fallback_reason.desc:0 "Wir wissen nie, ob die Götter oder ein [ROOT.Char.GetTitleTierName] es gutheißen. Ich sollte einen Hof Augur anheuern, damit ich herausfinden kann, ob die Götter meine Taten gutheißen.\n\nIch habe mich nach Empfehlungen umgehört und sie haben ein paar Optionen zusammengestellt, aus denen ich wählen kann."
+  cdr.014.decision.desc:0 "Wir wissen nie, ob die Götter oder ein [ROOT.Char.GetTitleTierName] es gutheißen. Ich sollte einen Hof Augur anheuern, damit ich herausfinden kann, ob die Götter meine Taten gutheißen.\n\nIch habe mich nach Empfehlungen umgehört und sie haben ein paar Optionen zusammengestellt, aus denen ich wählen kann."
+  cdr.014.a:0 "Offenbar ist [high_skill_option.GetFirstNameNoTooltip] ziemlich erfahren."
+  cdr.014.a.tt:1 "Ein [GetCourtPositionType('pr_court_augur_court_position').GetName()] hat außerdem ein Monatsgehalt von [gold_i][SCOPE.ScriptValue('court_position_physician_salary')]"
+  cdr.014.b:0 "[low_skill_option.GetFirstNameNoTooltip] scheint zumindest enthusiastisch zu sein."
+  cdr.014.c:0 "[mystic_option.GetFirstNameNoTooltip] behauptet, in "alternativer Medizin" ausgebildet zu sein."
+  cdr.014.d.two:0 "Beide können mich nicht beeindrucken."
+  cdr.014.d.more:0 "Sie können mich alle nicht beeindrucken."
+  cdr.014.e:0 "[excellent_skill_option.GetFirstNameNoTooltip] ist in wissenschaftlichen Kreisen weithin bekannt."
+  cdr.014.d.tt:1 "Ich rekrutiere niemanden als meinen [GetCourtPositionType('pr_court_augur_court_position').GetName()]"
+
+  cdr.015.fallback.t:0 "This is a bug"
+  cdr.015.fallback.desc:0 "Please report the bug on steam or discord when you see this message. Thanks in advance!"
+  cdr.015.sacred_hens.t:0 "Der Auspice der heiligen Hühner"
+  cdr.015.sacred_hens.desc:0 "Ich habe meinen [GetCourtPositionType('pr_court_augur_court_position').GetName()] um die Tripudiis auspice der heiligen Hühner gebeten. Natürlich kann er kein gutes Ergebnis garantieren, aber wenn ich die Zustimmung der Götter hätte, wäre die Herrschaft über mein Reich viel einfacher.\n\nWenn die Hühner aus dem Käfig kommen und nach einem bestimmten Muster fressen, ist das ein gutes Zeichen, wenn nicht, habe ich ein großes Problem."
+
+  cdr.015.eagle.t:0 "Der Adler Auspice"
+  cdr.015.eagle.desc:0 "Ich habe meinen [GetCourtPositionType('pr_court_augur_court_position').GetName()] um das Avibus auspice des Adlers gebeten. Natürlich kann er kein gutes Ergebnis garantieren, aber wenn ich die Zustimmung der Götter hätte, wäre die Herrschaft über mein Reich viel einfacher.\n\nWenn der Adler hoch fliegt, ist das ein gutes Zeichen, wenn nicht, habe ich ein großes Problem."
+
+  cdr.015.crows.t:0 "Der Auspice der Krähen"
+  cdr.015.crows.desc:0 "Ich habe meinen [GetCourtPositionType('pr_court_augur_court_position').GetName()] um die Oscines auspice der Krähen gebeten. Natürlich kann er kein gutes Ergebnis garantieren, aber wenn ich die Zustimmung der Götter hätte, wäre die Herrschaft über mein Reich viel einfacher.\n\nWenn die Krähen singen, ist das ein gutes Zeichen. Wenn nicht, habe ich ein großes Problem."
+  cdr.015.a:0 "Lasst uns fortfahren"
+  cdr.015.b:0 "Warte, ich habe einen Vorschlag"
+
+  cdr.016.t:0 "Good Auspice"
+  cdr.016.sacred_hens.desc:0 "The cage opened, what will the hens do will they stay in the cage or come out and eat?\nNot long after did a small prayer to [ROOT.Char.GetFaith.HighGodName] The hens came out of the cage and started eating. The augur watched and after a few minutes he said. "The gods have spoken they aprove this war to be fought [ROOT.Char.GetFaith.WarGodName] Invicta!"\n\nNow we can go to battle the enemy in knowledge that the gods aprove our actions."
+  cdr.016.eagle.desc:0 "The [GetCourtPositionType('pr_court_augur_court_position').GetName()] opened the cage of the eagle and he imediatly took of to the sky en circeled high above us all. The augur waited a few minutes and said "As the eagle flighs high above us, $cdr_polytheism_high_god_name$ Optimus Maximus certainly approves the actions of [scoped_ruler.GetTitledFirstName]."\n\nNow the gods have aproved the stability in my realm is once more assured!"
+  cdr.016.crows.desc:0 "The [GetCourtPositionType('pr_court_augur_court_position').GetName()] Stands next to the cage of the crows, he let's them out they immediatly fly to a tree nearby. A few minutes later the crows start to make sound, the augur listened and not much later hey said "Their sound is like a song played by $cdr_polytheism_good_god_apollo$ the gods approve the the financial state of the realm"\n\nNow the gods have aproved the trade in my realm is once more assured!
+  cdr.016.a:0 "The gods approve!"
+
+  cdr.017.t:0 "Augur Accepts Bribe"
+  cdr.017.sacred_hens.desc:0 "The augur told me that he will use hens that haven't eaten in a while so a good outcome is assured."
+  cdr.017.eagle.desc:0 "The augur told me that he has a eagle that flighs high on order so that a good outcome is assured."
+  cdr.017.crows.desc:0 "The augur told me that he that crows will make song like sounds so that a good outcome is assured."
+  cdr.017.a:0 "Great!"
+
+  cdr.018.t:0 "Augur Didn't Accept"
+  cdr.018.desc:0 "The [GetCourtPositionType('pr_court_augur_court_position').GetName()] was not amused to say the least. He asked if I want the wrath of the gods over the realm\n\nWhile unfortunate, the gods have spoken and had not grant me their blessings to rule the realm. Best I can do is prove them mistaken."
+  cdr.018.a:0 "I think I leave now"
+  
+  #Special event cancel auspice 
+  cdr.020.t:0 "The Eagle Owl"
+  cdr.020.desc:0 "It where just a few minutes after the start of the auspice when the sound of the eagle owl came close and emediatly the augur stoped the auspice and said, "I can't continue this is a eagle owl interfering in a auspice and that is a bad omen.""
+  cdr.020.a:0 "Well this doesn't sound good at all."
+
+  #Bad auspice 
+  cdr.021.t:0 "Bad Auspice"
+  cdr.021.fallback.desc:0 "Please report the bug on steam or discord when you see this message. Thanks in advance!"
+  cdr.021.eagle.desc:0 "The augur led the eagle out of the cage but it was safe to say the eagle didn't go verry high in my opinion. A moment later the [GetCourtPositionType('pr_court_augur_court_position').GetName()] came to me and said. "The gods have spoken and your actions are not aproved by the gods, Proceed in this way and you will anger [ROOT.Char.GetFaith.HighGodName]"\n\nThis was really the worst what could happen my vassals, my realm could get in trouble because of my actions."
+
+  cdr.021.sacred_hens.desc:0 "The augur led the hens out of the cage but it was safe to say the hens werren't verry hungry in my opinion. A moment later the [GetCourtPositionType('pr_court_augur_court_position').GetName()] came to me and said. "The gods have spoken and your actions are not aproved by the gods, Proceed in this way and you will anger [ROOT.Char.GetFaith.HighGodName]"\n\nThis was really the worst what could happen my vassals, my realm could get in trouble because of my actions."
+
+  cdr.021.crows.desc:0 "The augur led the crows out of the cage but instead of making a song like sound they flew to the three and just stayed there without making sound. A moment later the [GetCourtPositionType('pr_court_augur_court_position').GetName()] came to me and said. "The gods have spoken and your actions are not aproved by the gods, Proceed in this way and you will anger [ROOT.Char.GetFaith.HighGodName]"\n\nThis was really the worst what could happen my vassals, my realm could get in trouble because of my actions."
+  cdr.021.a:0 "Oh no"
+
+  cdr.022.t:0 "Augury"
+  cdr.022.desc:0 "In ancient Rome Augury was one of the most important things as only they can see if the gods approve our decisions, yet I failed to do so. Now I have to face the consequences."
+  cdr.022.a:0 "Oh no"
+
+  cdr.023.t:0 "Der Lararium Shop"
+  cdr.023.desc:0 "Heute gehe ich zu einem örtlichen Lararium-Laden, dort werden viele Statuen der Götter, aber auch Dinge wie Weihrauch verkauft. Soll ich eine neue Statue kaufen?"
+  cdr.023.jupiter:0 "$cdr_polytheism_high_god_name$"
+  cdr.023.juno:0 "$cdr_polytheism_good_god_juno$"
+  cdr.023.mars:0 "$cdr_polytheism_good_god_mars$"
+  cdr.023.lares:0 "$cdr_polytheism_wealth_god_name$"
+  cdr.023.venus:0 "$cdr_polytheism_good_god_Venus$"
+  cdr.023.mercurius:0 "$cdr_polytheism_wealth_god_name$"
+  cdr.023.minerva:0 "$cdr_polytheism_knowledge_god_name$"
+  cdr.023.apollo:0 "$cdr_polytheism_good_god_apollo$"
+  cdr.023.cancel:0 "Vielleicht nicht jetzt"
+
+  cult.025.t:0 "Das Mithreaum"
+  cult.025.corax.desc:0 "Das Treffen der Corax findet einmal wöchentlich statt. Hier führen wir kleine Rituale für Mithras durch, der uns im Kampf hilft. Aber wir sehen auch, wer bereit ist, im Rang aufzusteigen. Heute tritt der Pater vor und sagt$:$ "Durch die Macht des Mithras wird den folgenden Personen das Ritual der Initiation des nächsten Nymphus gewährt." Das ist immer ein besonderer Moment. Vielleicht kann ich auch bald weitermachen. Außerdem kann niemand mit Außenstehenden über das sprechen, was innerhalb des Kults geschieht."
+  cult.025.nymphus.desc:0 "Das Treffen der Nymphus findet einmal wöchentlich statt. Hier führen wir Rituale für Mithras durch, der uns im Kampf hilft. Aber wir sehen auch, wer bereit ist, im Rang aufzusteigen. Heute tritt der Pater vor und sagt$:$ "Durch die Macht des Mithras wird den folgenden Personen das Ritual der Initiation des nächsten Nymphus gewährt." Das ist immer ein besonderer Moment. Vielleicht kann ich auch bald weitermachen."
+  cult.025.miles.desc:0 "Das Treffen der Nymphen findet einmal wöchentlich statt. Hier führen wir Rituale für Mithras durch, der uns im Kampf hilft. Wir sehen aber auch, wer bereit ist, im Rang aufzusteigen. Heute tritt der Vater vor und sagt$:$ "Durch die Macht von Mithras wurde den folgenden Personen das Initiationsritual für den nächsten Rang der Nymphe verliehen." Es ist immer ein besonderer Moment. Vielleicht kann ich auch bald weitermachen, denn es ist ein echter Meilenstein. Ich bin auf halbem Weg, also möchte ich den Moment wirklich erleben, wenn es soweit ist."
+  cult.025.leo.desc:0 "Das Treffen der Leos findet einmal wöchentlich statt. Hier führen wir Rituale für Mithras durch, der uns im Kampf hilft. Aber wir sehen auch, wer bereit ist, im Rang aufzusteigen. Heute tritt der Pater vor und sagt$:$ "Durch die Macht des Mithras wird den folgenden Personen das Ritual der Initiation des nächsten Rangs Perses gewährt." Das ist immer ein besonderer Moment. Vielleicht kann ich auch bald weitermachen. Je höher mein Rang wird, desto schwieriger wird es."
+  cult.025.perses.desc:0 "Das Treffen der Perses findet einmal wöchentlich statt. Hier führen wir Rituale für Mithras durch, der uns im Kampf hilft. Aber wir sehen auch, wer bereit ist, im Rang aufzusteigen. Heute tritt der Pater vor und sagt$:$ "Durch die Macht des Mithras wird den folgenden Personen das Ritual der Initiation des nächsten Rangs Heliodromus gewährt." Das ist immer ein besonderer Moment. Vielleicht kann ich auch bald weitermachen."
+  cult.025.heliodromus.desc:0 "Das Treffen des Heliodromus findet einmal pro Woche statt. Hier führen wir einige wichtige Rituale für Mithras durch, der uns im Kampf hilft. Aber wir sehen auch, wer bereit ist, in den nächsten Rang aufzusteigen. Heute tritt der Pater vor und sagt$:$ "Durch die Macht des Mithras wird den folgenden Personen das Ritual der Initiation des nächsten Paters gewährt." Auch wenn ich schon weit gekommen bin, ist es immer noch ein besonderer Moment. Wir sprechen auch über die Taten des niederen Rangs und darüber, wer bereit ist, in den nächsten Rang aufzusteigen."
+  cult.025.fallback.desc:0 "Dies ist ein Fehler. Bitte melden Sie ihn auf Steam oder Discord."
+
+  cult.025.corax:0 "Endlich bin ich bereit, den Nymphus Rang zu erreichen!"
+  cult.025.nymphus:0 "Endlich bin ich bereit, den Miles Rang zu erreichen!"
+  cult.025.miles:0 "Lasst die Initiation beginnen"
+  cult.025.leo:0 "Endlich bin ich bereit, den Perses Rang zu erreichen!"
+  cult.025.perses:0 "Endlich bin ich bereit, den Heliodromus Rang zu erreichen!"
+  cult.025.heliodromus:0 "Endlich bin ich bereit, den Pater Rang zu erreichen!"
+  cult.025.standard:0 "Tolles Treffen mit meinen Mitbrüdern und schwestern"
+
+  cult.026.t:0 "Die Initiation"
+  cult.026.desc:0 "Für die Initiation in den Leo-Rang muss ich einen Katechismus rezitieren, in dem ich eine Reihe von Fragen beantworten muss. Der Pater des Kults begann\n\n"...Er wird sagen 'Wo...?'" Sehr scharf und ...\n"'... ist er da ratlos?' Sag'...'" Viel. Er wird sagen\n"... Sag'Nacht'. Er wird sagen 'Wo...?'" '... von der Hitze und der Kälte'. Er wird sagen '...?'\n"... Sag 'Alle Dinge...'" rotes Leinen. Er wird sagen Warum? Sag\n"Bist du gerufen? Sag Wegen des Sommers" Rotes Leinen säumt das Leinen jedoch\n"Hat er/es die Feurigen geworden" ist eingehüllt worden? Sag des Erlösers\n"hast du empfangen?" Sag 'In einer Grube'. Er wird sagen$:$ "Wo ist dein …?" Er wird sagen$:$ "Wer ist der Vater?" Sag$:$ "Derjenige, der alles zeugt"\nIm Leonteion. Er wird sagen$:$ "Wirst du dich gürten …?" Er wird sagen$:$ "Wie bist du ein Löwe geworden?" Sag$:$ "Durch den … des Vaters …"\n" … Tod." Er wird sagen$:$ "Warum, nachdem du dich gegürtet hast, …?" Sag$:$ "Getränk und Essen". Er wird sagen$:$ "…?"\n" … dies hat vier Quasten." … im Sieben- …\n\n Nach dem Rezitieren werde ich im Rang eines Löwen willkommen geheißen"
+  cult.026.a:0 "Ich gehöre zum Löwen rang !"
+
+  cdr.026.t:0 "Der Lateinsprecher"
+  cdr.026.desc:0 "Nachdem der Lateinsprecher angekommen war, begann er, einige alte Schriftrollen von römischen Staatsmännern wie Cicero und Livius aufzurollen. Er legte auch ein Buch über die Gallischen Kriege, Commentarii de bello Gallico, geschrieben von Gaius Julius Caesar, auf den Tisch.\n\nNach ein paar Tagen des Lernens sagte der Lehrer$:$ "Sie kennen jetzt die Grundlagen des Lateinischen. Arbeiten Sie weiter an Ihrem Latein, und Sie werden jeden Tag besser.\n\nAls Geschenk gebe ich Ihnen dieses Buch über die Gallischen Kriege."\n\nUnd so bin ich endlich fertig und kann die lateinische Sprache endlich wieder vor Gericht einführen, wenn ich möchte."
+  cdr.026.a:0 "Die lateinische Sprache ist zurück!"
+
+  cdr.027.t:0 "Pontif"
+  cdr.027.desc:0 "Meine Mitbrüder [ROOT.Char.GetFaith.GetAdherentNamePlural] erwarten von mir sicher nicht, dass ich unsere Unterwerfung unter das Bestehende erkläre.\n\nDoch vielleicht sind wir unseren Feinden gegenüber stärker, wenn wir dem alten Pontifex Treue schwören …"
+  cdr.027.a:0 "$head_of_faith.0021.a$"
+  cdr.027.d:0 "Wir müssen weiterhin an der Autorität von [old_pontifex.GetFaith.GetAdjectiveNoTooltip] festhalten!"
+  cdr.027.rejection_body:0 "lehnt das Versprechen ab"
+  cdr.027.acceptance_body:0 "nimmt das Versprechen an"
+  cdr.027.rejection.outcome:0 "Sie sind gezwungen, ungeachtet dessen Ihren eigenen Weg zu gehen"
+  cdr.027.d.rejection:0 "@piety_level_0_icon_islam! [old_pontifex.GetTitledFirstNameNoTooltip] $cdr.027.rejection_body$"
+  cdr.027.d.acceptance:0 "@piety_level_3_icon_islam! [old_pontifex.GetTitledFirstNameNoTooltip] $cdr.027.acceptance_body$"
+ 
+cdr.029.t:0 "Die Sibyllinischen Bücher"
+cdr.029.desc:0 "Da unsere Priester beginnen, die Nazarener-Priester und ihre Eiferer aus unseren Ländern und Tempeln zu vertreiben, glauben viele Aristokraten und Priester, dass es an der Zeit ist, nach den Überresten der Sibyllinischen Bücher zu suchen, die 405 n. Chr./1158 n. Chr. vom General Stilicho zerstört wurden.\n\nSo gehen wir also vor, antwortete [religious_head.GetTitledFirstNameNoTooltip] "Wenn wir das durchziehen, wird es etwa ein Jahr dauern, bis die Bücher fertig sind. Natürlich werde ich persönlich die Sicherheit des Orakels überwachen und sicherstellen, dass sie ihre Arbeit ohne Einmischung anderer verrichten können. Die Entscheidung liegt bei Ihnen.""
+cdr.029.a:0 "Sie können fortfahren"
+cdr.029.cancel:0 "Schon gut"
+
+cdr.030.t:0 "Die neuen Sibyllinischen Bücher"
+cdr.030.desc:0 "Während du auf deinem Thron sitzt, stürmt dein [religious_head.GetTitledFirstNameNoTooltip] plötzlich in die Halle und ruft$:$ "Gute Neuigkeiten, Leute! Das Orakel in Graecia hat die neuen Sibyllinischen Bücher für fertig erklärt!"\n\n"Wo sollen wir sie aufbewahren?", fragst du, nachdem das feierliche Durcheinander vorbei ist. "Ich dachte, du hättest vielleicht eine Idee dazu, mein Lehnsmann…""
+ cdr.030.jupiter:0 "Der Tempel von $cdr_polytheism_high_god_name$!"
+ cdr.030.mars:0 "Der Tempel von $cdr_polytheism_war_god_name$!"
+ cdr.030.venus:0 "Der Tempel von $cdr_polytheism_fertility_god_name$!"
+ cdr.030.minerva:0 "Der Tempel von $cdr_polytheism_knowledge_god_name$!"
+
+ cdr.031.t:0 ""
+ cdr.031.desc:0 "Obwohl Kaiser Julians Herrschaft nur von kurzer Dauer war, hinterließ er dennoch große Spuren im vierten Jahrhundert. Während seiner Herrschaft erhielt er einige Spitznamen. Jetzt ist es an der Zeit, sich für einen Namen zu entscheiden, den Sie ihm geben möchten."
+ cdr.031.polytheistic_nick:0 "Templorum Restaurator"
+ cdr.031.christian_nick:0 "Apostate"
+ cdr.031.philosopher_nick:0 "Der Philosoph"
+ cdr.031.jewish_nick:0 "Der Hellen"

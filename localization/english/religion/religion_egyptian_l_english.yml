@@ -4,6 +4,8 @@
 ###################### 
     egyptian_religion:0 "Egyptian"
     egyptian_religion_adj:0 "Egyptian"
+    egyptian_religion_adherent:0 "Egyptian"
+    egyptian_religion_adherent_plural:0 "Egyptians"
     egyptian_religion_desc:0 "The Egyptian pantheon was one of the oldest  practiced religions, dating back to somewhere in prehistory, but concretely coming into archeological record as early as the foundation of the first dynasty of Egypt. The Egyptians believed in a very complex cosmology and afterlife, with the Pharaohs acting as the gods' representative on earth."
     #pantheon_the_gods:0 "egyptian Pantheon of gods"
     holy_order_sons_of_Montu:0 "Sons of Montu"
@@ -154,43 +156,43 @@
     atenism_creator_god_name_possessive:0 "Atum's"
 
     #Health Goddess Dianus
-    atenism_health_god_name:0 "Sekhmet"
-    atenism_health_god_name_possessive:0 "Sekhmet's"
+    atenism_health_god_name:0 "$atenism_creator_god_name$"
+    atenism_health_god_name_possessive:0 "$atenism_creator_god_name$'s"
 
     #Fertility Goddess Beira Localization
-    atenism_fertility_god_name:0 "Hathor"
-    atenism_fertility_god_name_possessive:0 "hathor's"
+    atenism_fertility_god_name:0 "$atenism_creator_god_name$"
+    atenism_fertility_god_name_possessive:0 "$atenism_creator_god_name$'s"
 
     #Wealth god Lugh Localization
-    atenism_wealth_god_name:0 "Horus"
-    atenism_wealth_god_name_possessive:0 "horus's"
+    atenism_wealth_god_name:0 "$atenism_creator_god_name$"
+    atenism_wealth_god_name_possessive:0 "$atenism_creator_god_name$'s"
 
     #Household god Brigid 
-    atenism_household_god_name:0 "Bes"
-    atenism_household_god_name_possessive:0 "Bes's"
+    atenism_household_god_name:0 "$atenism_creator_god_name$"
+    atenism_household_god_name_possessive:0 "$atenism_creator_god_name$'s"
 
     #Fate god Mór-Ríoghain Localization
-    atenism_fate_god_name:0 "Shai"
-    atenism_fate_god_name_possessive:0 "Shai's"
+    atenism_fate_god_name:0 "$atenism_creator_god_name$"
+    atenism_fate_god_name_possessive:0 "$atenism_creator_god_name$'s"
 
     #knowledge god ecnaLocalization
-    atenism_knowledge_god_name:0 "Thoth"
-    atenism_knowledge_god_name_possessive:0 "Thoth's"
+    atenism_knowledge_god_name:0 "$atenism_creator_god_name$"
+    atenism_knowledge_god_name_possessive:0 "$atenism_creator_god_name$'s"
 
     #War god Neit Localization
-    atenism_war_god_name:0 "Montu"
-    atenism_war_god_name_possessive:0 "Montu's"
+    atenism_war_god_name:0 "$atenism_creator_god_name$"
+    atenism_war_god_name_possessive:0 "$atenism_creator_god_name$'s"
 
     #Trickster god Mendacius Localization
-    atenism_trickster_god_name:0 "Seth"
-    atenism_trickster_god_name_possessive:0 "Seth's"
+    atenism_trickster_god_name:0 "$atenism_creator_god_name$"
+    atenism_trickster_god_name_possessive:0 "$atenism_creator_god_name$'s"
 
     #Night goddess Latona Localization
-    atenism_night_god_name:0 "Nephthys"
-    atenism_night_god_name_possessive:0 "Nephthys's"
+    atenism_night_god_name:0 "$atenism_creator_god_name$s"
+    atenism_night_god_name_possessive:0 "$atenism_creator_god_name$'s"
 
-    atenism_water_god_name:0 "Anuket"
-    atenism_water_god_name_possessive:0 "Anuket's"
+    atenism_water_god_name:0 "$atenism_creator_god_name$"
+    atenism_water_god_name_possessive:0 "$atenism_creator_god_name$'s"
 
     #evil gods names 
     atenism_evil_god_apophis:0 "Apophis" 

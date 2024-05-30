@@ -11,7 +11,7 @@
  #Kingdom of Carthago
  k_carthago:0 "Carthago"
  #Kingdom of Egypt
- e_egyptus:0 "Egyptus"
+ e_egyptus:0 "Egypt"
  k_upper_egypt:0 "Upper Egypt"
  k_lower_egypt:0 "Lower Egypt"
  #Gaul
@@ -21,6 +21,8 @@
  k_cisalpina:0 "Liguria"
  k_aquitania:0 "Aquitania"
  k_narbonensis:0 "Narbonensis"
+
+
  k_etruria:0 "Etruria"
  k_scythia:0 "Scythia"
  k_indo_scythia:0 "Indo Scythia"
@@ -30,7 +32,7 @@
  k_sumer:0 "Sumer"
  k_assyria:0 "Assyria"
  e_mesopotamia:0 "Mesopotamia"
- k_hittite:0 "Hattusha"
+ k_hittite:0 "Hattusha" 
  e_hittite:0 "Hattusha"
  pr_sumerian_empire:0 "Sumerian"
  pr_assyrian_empire:0 "Assyrian"
@@ -55,6 +57,54 @@
  pr_roman_western_roman_empire_tfe:0 "Western Roman Empire"
  pr_greek_western_roman_empire_tfe:0 "Western Roman Empire"
 
+
+ #Iberian
+ k_pr_lusitania:0 "Lusitania"
+ pr_celitberian_lusitania:0 "Lusitania"
+ pr_roman_lusitania:0 "Lusitania"
+ 
+
+ k_pr_galicia:0 "Gallaecia"
+ pr_celitberian_galicia:0 "Gallaecia"
+ pr_roman_galicia:0 "Galleacia"
+
+ k_pr_celtiberia:0 "Celtiberia"
+ pr_celitberian_celtiberia:0 "Celtiberia"
+ pr_roman_celtiberia:0 "Celtiberia"
+
+ k_pr_iberia:0 "Iberia"
+ pr_roman_iberia:0 "Iberia"
+ pr_celitberian_iberia:0 "Iberia"
+
+ k_pr_tartessia:0 "Turdetania"
+ pr_celitberian_turdetania:0 "Turdetania"
+ pr_roman_turdetania:0 "Turdetania"
+
+ k_pr_vasconia:0 "Vasconia"
+ pr_celitberian_vasconia:0 "Vasconia"
+ pr_roman_vasconia:0 "Vasconia"
+
+ pr_celitberian_hispania:0 "Hispania"
+
+
+ #Gaulish 
+ pr_gaulish_gaul:0 "Gaul"
+ pr_roman_gaul:0 "Gaul"
+ 
+ pr_gaulish_celtica:0 "Celtica"
+ pr_roman_celtica:0 "Celtica"
+
+ pr_gaulish_belgica:0 "Belgica"
+ pr_roman_belgica:0 "Belgica"
+
+ pr_gaulish_narbonensis:0 "Narbonensis"
+ pr_roman_narbonensis:0 "Narbonensis"
+ pr_celtiberian_narbonensis:0 "Narbonensis"
+
+ pr_gaulish_aquitania:0 "Aquitania"
+ pr_roman_aquitania:0 "Aquitania"
+ pr_gaulish_cisalpina:0 "Cisalpina"
+ pr_roman_cisalpina:0 "Cisalpina"
 
 
  #Coa Category 

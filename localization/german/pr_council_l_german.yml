@@ -1,0 +1,23 @@
+﻿l_german:
+
+#Etruscan
+councillor_court_chaplain_etruscan_polytheism_male:0 "Hohepriester"
+councillor_court_chaplain_etruscan_polytheism_male_possesive:0 "Hohepriester's"
+
+councillor_court_chaplain_etruscan_polytheism_female:0 "Hohepriesterin"
+councillor_court_chaplain_etruscan_polytheism_female_possesive:0 "Hohepriesterin's"
+#Roman
+councillor_court_chaplain_roman_religion_male:0 "Flamen Dialis"
+councillor_court_chaplain_roman_religion_male_possesive:0 "Flamen Dialis's"
+councillor_court_chaplain_roman_religion_female:0 "Flaminica Dialis"
+councillor_court_chaplain_roman_religion_female_possesive:0 "Flaminica Dialis's"
+
+#Goidelic 
+councillor_court_chaplain_gaelic_polytheism_male:0 "Hohepriester"
+councillor_court_chaplain_gaelic_polytheism_male_possesive:0 "Hohepriester's"
+councillor_court_chaplain_gaelic_polytheism_female:0 "Hohepriesterin"
+councillor_court_chaplain_gaelic_polytheism_female_possesive:0 "Hohepriesterin's"
+#Egyptian
+
+
+

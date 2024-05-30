@@ -1,4 +1,7 @@
-﻿hittite_religion = {
+﻿#####################
+#Made by tom5667 
+#####################
+hittite_religion = {
 	family = rf_pagan
 
 	pagan_roots = yes
@@ -44,9 +47,7 @@
 			reserved_male_names = {
 				Labarna Ammuna
 			}
-			reserved_female_names = {
-				
-			}
+
 		
 
 			#doctrine = unreformed_faith_doctrine
@@ -85,6 +86,8 @@
 			doctrine = doctrine_clerical_marriage_allowed
 			doctrine = doctrine_clerical_succession_temporal_appointment
 
+			doctrine = doctrine_funeral_stoic
+
 			localization = {
 				#High God Name
 				HighGodName = hittite_polytheism_high_god_name
@@ -98,23 +101,23 @@
 				#Creator
 				CreatorName = hittite_polytheism_creator_god_name
 				CreatorNamePossessive = hittite_polytheism_creator_god_name_possessive
-				CreatorSheHe = CHARACTER_SHEHE_SHE
-				CreatorHerHis = CHARACTER_HERHIS_HER
-				CreatorHerHim = CHARACTER_HERHIM_HER
+				CreatorSheHe = CHARACTER_SHEHE_HE
+				CreatorHerHis = CHARACTER_HERHIS_HIS
+				CreatorHerHim = CHARACTER_HERHIM_HIM
 		
 				#HealthGod
 				HealthGodName = hittite_polytheism_health_god_name
 				HealthGodNamePossessive = hittite_polytheism_health_god_name_possessive
-				HealthGodSheHe = CHARACTER_SHEHE_HE
-				HealthGodHerHis = CHARACTER_HERHIS_HIS
-				HealthGodHerHim = CHARACTER_HERHIM_HIM
+				HealthGodSheHe = CHARACTER_SHEHE_SHE
+				HealthGodHerHis = CHARACTER_HERHIS_HER
+				HealthGodHerHim = CHARACTER_HERHIM_HER
 				
 				#FertilityGod
 				FertilityGodName = hittite_polytheism_fertility_god_name
 				FertilityGodNamePossessive = hittite_polytheism_fertility_god_name_possessive
-				FertilityGodSheHe = CHARACTER_SHEHE_SHE
-				FertilityGodHerHis = CHARACTER_HERHIS_HER
-				FertilityGodHerHim = CHARACTER_HERHIM_HER
+				FertilityGodSheHe = CHARACTER_SHEHE_HE
+				FertilityGodHerHis = CHARACTER_HERHIS_HIS
+				FertilityGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#WealthGod
 				WealthGodName = hittite_polytheism_wealth_god_name
@@ -140,9 +143,9 @@
 				#KnowledgeGod
 				KnowledgeGodName = hittite_polytheism_knowledge_god_name
 				KnowledgeGodNamePossessive = hittite_polytheism_knowledge_god_name_possessive
-				KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-				KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-				KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+				KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+				KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+				KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#WarGod
 				WarGodName = hittite_polytheism_war_god_name
@@ -217,7 +220,7 @@
 				DeathDeityHerHis = CHARACTER_HERHIS_HIS
 				WitchGodName = hittite_polytheism_witchgodname_kamrushepa
 				WitchGodHerHis = CHARACTER_HERHIS_HER
-				WitchGodSheHe = CHARACTER_SHEHE_HE
+				WitchGodSheHe = CHARACTER_SHEHE_SHE
 				WitchGodHerHim = CHARACTER_HERHIM_HER
 				WitchGodMistressMaster = mistress
 				WitchGodMotherFather = mother

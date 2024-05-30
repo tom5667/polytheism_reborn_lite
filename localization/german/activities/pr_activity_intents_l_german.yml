@@ -1,0 +1,9 @@
+﻿l_german:
+#All Credits to cybrxkhan
+ pr_local_pilgrimage_worship_intent_header: "Verehrung:"
+ pr_local_pilgrimage_worship_intent: "Verehrung"
+ pr_local_pilgrimage_worship_intent_desc: "Sie möchten sich auf die religiösen Aspekte dieser Pilgerreise konzentrieren. Gewinnen Sie mehr [piety_i|E] [piety|E] zusätzlich zu anderen Gewinnen. Du verlierst extra [stress_loss_i|E] [stress|E] wen du [GetTrait('zealous').GetName( GetNullCharacter )] hast oder [GetTrait('calm').GetName( GetNullCharacter )]."
+
+ pr_local_pilgrimage_curiosity_intent_header: "Curiosity:"
+ pr_local_pilgrimage_curiosity_intent: "Curiosity"
+ pr_local_pilgrimage_curiosity_intent_desc: "Sie möchten etwas über den heiligen Ort wissen [GetPlayer.GetFaith.GetName], während dieser Pilgerreise. Gewinnen [experience|E] in deinen [lifestyle|E]. Und du verlierst extra [stress_loss_i|E] [stress|E] wen du [GetTrait('humble').GetName( GetNullCharacter )] hast oder [GetTrait('just').GetName( GetNullCharacter )]."

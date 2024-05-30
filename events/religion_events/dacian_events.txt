@@ -1,6 +1,267 @@
-﻿
+﻿namespace = d_r
+namespace = d_sr
 namespace = dcmd
+namespace = zalmoxism_sr
 namespace = dacian
+d_r.001 = {
+	type = character_event
+	title = d_r.001.t
+	desc = d_r.001.desc
+	theme =  hunt_activity
+	right_portrait = {
+			character = root
+			animation = personality_content
+	}
+	option = {
+		name = d_r.001.a
+		trigger_event = d_r.002
+	}
+}
+
+d_r.002 = { 
+	type = character_event
+	title = d_r.002.t
+	desc = d_r.002.desc
+	theme = hunt_activity
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	option = {
+		name = d_r.002.dacia
+		trigger_event = d_r.003
+	}
+	option = {
+		name = d_r.002.optout
+		add_trait = zealous
+		hidden_effect ={
+			clear_global_variable_list = unavailable_unique_decisions_convert
+			remove_trait = pilgrim 
+		}
+	}
+}
+
+d_r.003 = { 
+	type = character_event
+	title = d_r.003.t
+	desc = d_r.003.desc
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	#proceed
+	option = {
+		name = d_r.003.a
+		# trigger_event = {
+		# 	id = d_sr.001
+		# 	months = 2 
+		# }
+		set_character_faith = faith:dacian_polytheism
+	}	
+	option = {
+		name = d_r.003.zalmoxism
+		# trigger_event = {
+		# 	id = zalmoxism_sr.001
+		# 	months = 2 
+		# }
+		set_character_faith = faith:zalmoxism
+	}
+}
+
+
+
+#Reinstate Cultus Deorum as state religion 
+scripted_effect d_sr_notify_players_effectt = {
+	every_player = {
+		limit = {
+			Not = {this = root}  
+			capital_province = {
+			geographical_region = world_europe_south_east
+			}
+		}
+		trigger_event = d_sr.002
+	}
+}
+
+d_sr.001 = {
+	type = character_event
+	title = d_sr.001.t
+	desc = d_sr.001.desc
+	theme = faith
+	right_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous	
+		}
+		override_background = { reference= throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		faith = { save_scope_as = old_faith }
+		return_d_sr_decision_scripted_effect = yes
+	}
+
+	option = {
+		name = d_sr.001.a
+		#Get a nice reward for your adherence to the true faith.
+		add_piety_level = 1
+		#Sort notification copy for players.
+		save_scope_value_as = {
+			name = d_return
+			value = flag:vanilla
+		}
+		d_sr_notify_players_effect = yes 
+		
+	}	
+}
+
+d_sr.002 = {
+	type = character_event
+	title = d_sr.002.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { top_liege = root }
+				desc = d_sr.002.desc.vassals
+			}
+			desc = d_sr.002.desc.outsiders
+		}
+		desc = d_sr.002.desc.intro
+		triggered_desc = {
+			trigger = { scope:d_return = flag:vanilla }
+			desc = d_sr.002.desc_vanilla
+		}
+	}
+	theme = faith
+	left_portrait = scope:scoped_ruler
+	override_background = { reference= throne_room }
+	#Roman polyteist are happy about this unexpected turn of events!
+	option = {
+		name = d_sr.002.a
+		trigger = { religion = religion:dacian_polytheism}
+		add_stress = minor_stress_loss
+	}
+	#Vassals who do not follow the faith may decide to convert after all.
+	option = {
+		name = d_sr.002.b
+		trigger = {
+			top_liege = root
+			NOT = { religion = religion:dacian_polytheism}
+		}
+		set_character_faith_with_conversion = faith:dacian_polytheism
+		
+	}
+	#Those who aren't polytheist are probably horrified.
+	option = {
+		name = d_sr.002.c
+		trigger = {
+			NOT = {
+				religion = { is_in_family = rf_pagan}
+			}
+		}
+	}
+	#And, as a fallback, some people just won't care.
+	option = { 
+		name = d_sr.002.d 
+	}
+}
+
+#Reinstate Cultus Deorum as state religion 
+scripted_effect zalmoxism_sr_notify_players_effectt = {
+	every_player = {
+		limit = {
+			Not = {this = root}  
+			capital_province = {
+			geographical_region = world_europe_south_east
+			}
+		}
+		trigger_event = zalmoxism_sr.002
+	}
+}
+
+zalmoxism_sr.001 = {
+	type = character_event
+	title = zalmoxism_sr.001.t
+	desc = zalmoxism_sr.001.desc
+	theme = faith
+	right_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous	
+		}
+		override_background = { reference= throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		faith = { save_scope_as = old_faith }
+		return_zalmoxism_sr_decision_scripted_effect = yes
+	}
+
+	option = {
+		name = zalmoxism_sr.001.a
+		#Get a nice reward for your adherence to the true faith.
+		add_piety_level = 1
+		#Sort notification copy for players.
+		save_scope_value_as = {
+			name = d_return
+			value = flag:vanilla
+		}
+		zalmoxism_sr_notify_players_effect = yes 
+		
+	}	
+}
+
+zalmoxism_sr.002 = {
+	type = character_event
+	title = zalmoxism_sr.002.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { top_liege = root }
+				desc = zalmoxism_sr.002.desc.vassals
+			}
+			desc = zalmoxism_sr.002.desc.outsiders
+		}
+		desc = zalmoxism_sr.002.desc.intro
+		triggered_desc = {
+			trigger = { scope:d_return = flag:vanilla }
+			desc = zalmoxism_sr.002.desc_vanilla
+		}
+	}
+	theme = faith
+	left_portrait = scope:scoped_ruler
+	override_background = { reference= throne_room }
+	#Roman polyteist are happy about this unexpected turn of events!
+	option = {
+		name = zalmoxism_sr.002.a
+		trigger = { religion = religion:dacian_polytheism}
+		add_stress = minor_stress_loss
+	}
+	#Vassals who do not follow the faith may decide to convert after all.
+	option = {
+		name = zalmoxism_sr.002.b
+		trigger = {
+			top_liege = root
+			NOT = { religion = religion:dacian_polytheism}
+		}
+		set_character_faith_with_conversion = faith:dacian_polytheism
+		
+	}
+	#Those who aren't polytheist are probably horrified.
+	option = {
+		name = zalmoxism_sr.002.c
+		trigger = {
+			NOT = {
+				religion = { is_in_family = rf_pagan}
+			}
+		}
+	}
+	#And, as a fallback, some people just won't care.
+	option = { 
+		name = zalmoxism_sr.002.d 
+	}
+}
 
 
 dcmd.001 = {

@@ -3,15 +3,9 @@
 #Made by tom5667 
 ######################
 
-#Make Cultus deorum state religion
-cdr_sr_decision:0 "Make Cultus Deorum state religion"
-cdr_sr_decision_desc:0 "It's time to make Cultus Deorum ones again our state religion."
-cdr_sr_decision_tooltip:1 "Making Cultus deorum state religion again would be great"
-cdr_sr_decision_confirm:1 "Let's do this"
-
 #choose your main deity 
 choose_main_deity_cdr_decision:0 "Choose your main deity"
-cdr_cmd_decision_desc:0 "For most of the old roman polytheists there was one particualar god who was important for their family, for farmer Ceres, Mars for soldiers."
+cdr_cmd_decision_desc:0 "For most of the old roman polytheists there was one particular god who was important for their family, for farmer Ceres, Mars for soldiers."
 choose_main_deity_cdr_decision_tooltip:1 "this can only be done once a year so choose wisely"
 choose_main_deity_cdr_decision_confirm:1 "Let's see"
 
@@ -71,6 +65,30 @@ select_main_deity_romano_germanic_decision.select_isis_freia:0 "Isis Freia godde
 choose_main_deity_romano_germanic_decision_tooltip:1 "Choose main god(dess)"
 choose_main_deity_romano_germanic_decision_confirm:1 "Choose main god(dess)"
 
+#Romano Hispanic
+choose_main_deity_romano_hispanic_decision:0 "Choose your main deity"
+choose_main_deity_romano_hispanic_decision_tt:0 "You begin to live your life according to the values of"
+select_main_deity_romano_hispanic_decision.select_jupiter_solutorius:0 "Jupiter Solutorius high god of the Romano Hispanic"
+select_main_deity_romano_hispanic_decision.select_mars_neto:0 "Mars Neto god of war"
+select_main_deity_romano_hispanic_decision.select_minerva:0 "Minerva goddess of wisdom"
+select_main_deity_romano_hispanic_decision.select_lucubo:0 "Lucubo god of wealth and trade"
+select_main_deity_gromano_hispanic_decision.select_nabia:0 "Nabia goddess of fertility"
+
+choose_main_deity_romano_hispanic_decision_tooltip:1 "Choose main god(dess)"
+choose_main_deity_romano_hispanic_decision_confirm:1 "Choose main god(dess)"
+
+#Cultus Orientis
+choose_main_deity_cultus_orientis_decision:0 "Choose your main deity"
+choose_main_deity_cultus_orientis_decision_tt:0 "You begin to live your life according to the values of"
+select_main_deity_cultus_orientis_decision.select_jupiter_dolichenus:0 "Jupiter Dolichenus ruler of the sky and honered in a mysterie cult"
+select_main_deity_cultus_orientis_decision.select_minerva:0 "Minerva goddess of wisdom"
+select_main_deity_cultus_orientis_decision.select_juno_caelestis:0 "Juno Caelestis goddess of motherhood, war and fertility "
+select_main_deity_cultus_orientis_decision.select_mercurius_sobrius:0 "Mercurius Sobrius god of wealth and trade"
+select_main_deity_cultus_orientis_decision.select_eshmun:0 "Eshum god of health"
+
+choose_main_deity_cultus_orientis_decision_tooltip:1 "Choose main god(dess)"
+choose_main_deity_cultus_orientis_decision_confirm:1 "Choose main god(dess)"
+
 #choose your main deity Mithraic Mysteries
 choose_main_deity_mm_decision:0 "Choose your main deity"
 mm_cmd_decision_desc:0 "as i proceed, like most of the old cultus followers there was one particualar god who was important for their family."
@@ -100,6 +118,12 @@ embrace_romano_germanic_culture_decision:0 "Embrace Romano Germanic culture"
 embrace_romano_germanic_culture_decision_desc:0 "We have our old religion back now it's time reintroduce the Romano Germanic virtues."
 embrace_romano_germanic_culture_decision_tooltip:0 "Return Romano Germanic culture"
 embrace_romano_germanic_culture_decision_confirm:0 "Confirm"
+
+#Embrace hispano roman culture 
+embrace_hispano_roman_culture_decision:0 "Embrace Hispano Roman culture"
+embrace_hispano_roman_culture_decision_desc:0 "We have our old religion back now it's time reintroduce the Hispano Roman virtues."
+embrace_hispano_roman_culture_decision_tooltip:0 "Return Hispano Roman culture"
+embrace_hispano_roman_culture_decision_confirm:0 "Confirm"
 
 #Restore Cultus Deorum Priesthood
 cdr_restore_high_priesthood_decision:0 "Restore Cultus Deorum Priesthood"
@@ -173,6 +197,17 @@ convert_to_romano_germanic_decision_desc:0 "As Roman Polytheist in old Germanic 
 convert_to_romano_germanic_decision_tooltip:1 "Adopt Germanic gods"
 convert_to_romano_germanic_decision_confirm:1 "Adopt Germanic gods"
 
+convert_to_cultus_orientis_decision:0 "Adopt West-Semitic Gods"
+convert_to_cultus_orientis_decision_desc:0 "As Roman Polytheist in old west semitic lands, there many ancient gods here we can adopt"
+convert_to_cultus_orientis_decision_tooltip:1 "Adopt West Semitic gods"
+convert_to_cultus_orientis_decision_confirm:1 "Adopt West Semitic gods"
+
+convert_to_romano_hispanic_decision:0 "Adopt Iberian Gods"
+convert_to_romano_hispanic_decision_desc:0 "As Roman Polytheist in Iberian lands, there many ancient gods here we can adopt"
+convert_to_romano_hispanic_decision_tooltip:1 "Adopt Iberian gods"
+convert_to_romano_hispanic_decision_confirm:1 "Adopt Iberian gods"
+
+
 #Request auspice
 request_auspice_decision:0 "Request a Auspice"
 request_auspice_decision_desc:0 "With everything we do in life we want to be sure the gods aprove what we do. If they don't aprove who knows what happens if we still continue."
@@ -198,7 +233,7 @@ pr_build_lararium_decision_tooltip:1 "Expand your lararium with a new statue"
 pr_build_lararium_decision_confirm:1 "Go To The Market"
 
 pr_offer_to_a_god_decision:0 "Make An Offering"
-pr_offer_to_a_god_decision_desc:0 "Make an offering to a god, this also helps me to correct my wrong in not asking for approval of my actions and bond with the gods."
+pr_offer_to_a_god_decision_desc:0 "Make an offering to a god, this also helps me to correct my wrong in not asking for approval of my actions and bond with the gods. Make sure you also buy a statue of the god you want to offer to."
 pr_offer_to_a_god_decision_tooltip:0 "Make an offer to your choosen main god"
 pr_offer_to_a_god_decision_confirm:0 "Offer to the gods"
 prdecision_type:0 "Choose Offering"

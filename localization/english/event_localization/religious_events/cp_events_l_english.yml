@@ -1,5 +1,4 @@
 ﻿l_english:
-
 #choose your main deity event localization 
 #gp_cmd.001.t:0 "Choose main deity"
 #gp_cmd.001.desc:0 "It's time to choose, I need to choose for the god or godess who can help to proceed beter in life further bonding will be important even as making proper offers to all the other gods and godesses"
@@ -30,7 +29,7 @@
  ccmd.001.an_dagda:0 "An Dagda"
  ccmd.001.lugh:0 "Lugh"
  ccmd.001.brigid:0 "Brigid"
- ccmd.001.the_morrighan:0 "The Morrighan"
+ ccmd.001.nemain:0 "Nemain"
  ccmd.001.ecna:0 "Ecna"
  ccmd.001.optout:0 "Maybe now isn't the right time"
 
@@ -55,14 +54,14 @@
  ccmd.004.t:0 "Choose main deity"
  ccmd.004.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or godesses."
  ccmd.004.reue:0 "$celtic_iberian_polytheism_high_god_name$"
- ccmd.004.arentius:0 "$celtic_iberian_polytheism_health_god_name$"
+ ccmd.004.arancia:0 "$celtic_iberian_polytheism_health_god_name$"
  ccmd.004.nabia:0 "$celtic_iberian_polytheism_fertility_god_name$" 
  ccmd.004.lugus:0 "$celtic_iberian_polytheism_wealth_god_name$"
  ccmd.004.bandua:0 "$celtic_iberian_polytheism_war_god_name$"
  ccmd.004.optout:0 "Maybe now isn't the right time"
 
  solstice.003.t:0 "Tairisem"
- solstice.003.desc:0 "Middwinter, time to start festivities for the goddess of the sun Éatain Eachraidhe may she melt away the snow so we can start working on our fields again."
+ solstice.003.desc:0 "Midwinter, time to start festivities for the goddess of the sun Éatain Eachraidhe may she melt away the snow so we can start working on our fields again."
  solstice.003.a:0 "Gather the realm for the Solstice"
 
  solstice.004.t:0 "Gheimhridh"
@@ -132,3 +131,27 @@ celtic.011.a:0 "Great to be Back Home Again"
  celtic.013.t:0 "Embrace Brythonic Culture"
  celtic.013.desc:0 "I have always felt a connection to the ancient Brythonic culture. I have read stories of their bravery and their strength, and I have always admired them. But for centuries, the Brythonic culture has been suppressed. The Romans invaded our lands and forced their culture upon us and after that the Saxons came. But now, at last, we have a chance to reclaim our heritage."
  celtic.013.a:0 "Embrace the Brythonic culture"
+
+ celtic.014.t:0 "Push Out The Sassenach"
+ celtic.014.desc:0 "Our celtic lands are invaded over and over again by those Germanic people, they raid our lands come and go whenever they want over and over again.\n\nWe need to act now and push them out bit by bit!"
+ celtic.014.a:0 "For [ROOT.Char.GetFaith.HighGodName]!"
+
+ celtic.015.t:0 "The Reconquest Saga"
+ celtic.015.desc.eire:0 "Years of fighting vikings and other Irish tribes our reconquest is off to a good start, now our island is safe we can look at invading our next target.\n\nBut first it's time enjoy the moment that Ardrí na hÉireann also known as The Irish high kingdom is back in Celtic hands."
+ celtic.015.desc.alba:0 "Scotland was never conquerd by the Romans, but nevertheless we have Sassenach invassions, by creating the kingdom of Scotland we can protect ourself better against invassions. When Scotland, Ireland and Wales are under one banner we can invade england or better said in scotisch gaelic Sasainn"
+ celtic.015.desc.wales:0 "Wales conquered by the romans, reconquerd by the scotish tribes after the fall of the Roman Empire. Now combined under the banner of Wales."
+ celtic.015.desc.albion:0 "Victory at last, all Sassenach are gone, the lands of our ancestors are finaly free.\n\nYou would think this is our final stop but no, we Celts once ruled the lands of what is now ruled by frankish kings and emperors.\nIt's within our right to reconquer those lost territories and bring back the golden age for the Celtic people!"
+ celtic.015.desc.brittany:0 "Our celtic brothers and sisters across the channel fled the Sassenach centuries ago, now they give us a foothold on the mainland."
+ celtic.015.a:0 "Onwards!"
+ celtic.015.b:0 "Onwards!"
+ celtic.015.c:0 "Onwards!"
+ celtic.015.d:0 "May [ROOT.Char.GetFaith.WarGodName] guide us forward !"
+ celtic.015.e:0 "Welcome back to the fold"
+ celtic.015.f:0 "Our iberian foothold is back"
+
+ celtic.016.t:0 "The Celtic Empire"
+ celtic.016.desc:0 "After reconquest of the islands, the kingdoms of Ireland, Scotland, Wales and England are united but also still seperated.\n\nEvery year the most notable lords come together to speak about the future. And now to bring stability to the realms it's important to bring the kingdoms under one complete realm like the Romans did.\n\n The most influencileader of the lords stood up from his chair and said "Today my lord we want to ask you to take the Crown of the united Celtic Empire, with all it's duties and powers. Will you accept this honor? What will be your answer?"  "
+ accepted_crown_of_celtic_empire_effect_tooltip:0 "Accept the crown of the Celtic Empire"
+ celtic.016.a:0 "A normal coronation is sufficient"
+ #celtic.016.b:0 "Ask the Arch druid to coronate you"
+ celtic.016.c:0 "Not yet"

@@ -1,0 +1,228 @@
+﻿l_german:
+
+# #####################
+# #Made by tom5667
+# ###################### 
+
+    mesopotamian_religion:0 "Mesopotamisch"
+    mesopotamian_religion_adj:2 "Mesopotamisch"
+    mesopotamian_religion_adherent:2 "Mesopotamisch"
+    mesopotamian_religion_adherent_plural:2 "Mesopotamier"
+    mesopotamian_religion_desc:0 "Die mesopotamische Religion kennt viele Götter, einst die Religion der alten Babylonier, Assyrer, Akkader und Sumerer"
+
+    #Babylonian
+    babylonian_polytheism:0 "Babylonisch"
+    babylonian_polytheism_adj:0 "Babylonisch"
+    babylonian_polytheism_adherent:0 "Babylonische Polytheist"
+    babylonian_polytheism_adherent_plural:0 "Babylonische Polytheisten"
+    babylonian_polytheism_desc:0 "Der einheimische Glaube der akkadischen und babylonischen Völker, die sich um das 3. und 2. Jahrtausend v. Chr. nach dem Niedergang von Sumer erhoben und die Länder Mesopotamiens unterwarfen, bevor sie vom Achämenidenreich erobert wurden.  Ihr Glaube drehte sich um die Schutzgötter der Stadtstaaten, wobei sie die Usurpation des einen über den anderen zuließen und ihre Könige als Wohlstandsbringer in den Mittelpunkt stellten." 
+
+    babylonian_polytheism_old:0 "Babylonisch Alt"
+    babylonian_polytheism_old_adj:0 "Babylonisch Alt"
+    babylonian_polytheism_adherent_old:0 "Alt Babylonische Polytheist"
+    babylonian_polytheism_old_adherent_plural:0 "Alt Babylonische Polytheisten"
+    babylonian_polytheism_old_desc:0 "Der einheimische Glaube der akkadischen und babylonischen Völker, die sich um das 3. und 2. Jahrtausend v. Chr. nach dem Niedergang von Sumer erhoben und die Länder Mesopotamiens unterwarfen, bevor sie vom Achämenidenreich erobert wurden.  Ihr Glaube drehte sich um die Schutzgötter der Stadtstaaten, wobei sie die Usurpation des einen über den anderen zuließen und ihre Könige als Wohlstandsbringer in den Mittelpunkt stellten." 
+
+    babylonian_polytheism_religious_head_title:0 "Hohe priester"
+    babylonian_polytheism_divine_realm:0 "Göttliches Reich"
+    babylonian_polytheism_religious_symbol:0 "Blauwe Löwe"
+    babylonian_polytheism_religious_text:0 "Enuma Elish"
+    #roman_pantheon_the_gods:0 "Roman pantheon of gods"
+
+    #Babylonian gods/goddesses Localization
+
+    #Marduk Localization
+    babylonian_polytheism_high_god_name:0 "Marduk"
+    babylonian_polytheism_high_god_name_possessive:0 "Marduk's"
+    babylonian_polytheism_high_god_name_alternate:0 "Marduk"
+    babylonian_polytheism_high_god_name_alternate_possessive:0 "Marduk's"
+    babylonian_polytheism_high_god_shehe:0 "He"
+    babylonian_polytheism_high_god_herselfhimself:0 "Himself"
+    babylonian_polytheism_high_god_herhis:0 "His"
+
+    #Creater god Localization
+    babylonian_polytheism_creator_god_name:0 "Ea"
+    babylonian_polytheism_creator_god_name_possessive:0 "Ea's"
+
+    #Health Goddess Ninkarrak
+    babylonian_polytheism_health_god_name:0 "Ninkarrak"
+    babylonian_polytheism_health_god_name_possessive:0 "Ninkarrak's"
+
+    #Fertility Goddess Ishtar Localization
+    babylonian_polytheism_fertility_god_name:0 "Ishtar"
+    babylonian_polytheism_fertility_god_name_possessive:0 "Ishtar's"
+
+    #Wealth god Ninhegal Localization
+    babylonian_polytheism_wealth_god_name:0 "Ninhegal"
+    babylonian_polytheism_wealth_god_name_possessive:0 "Ninhegal's"
+
+    #Household god Ninhursag 
+    babylonian_polytheism_household_god_name:0 "Ninhursag"
+    babylonian_polytheism_household_god_name_possessive:0 "Ninhursag's"
+
+    #Fate god Ea Localization
+    babylonian_polytheism_fate_god_name:0 "Ea"
+    babylonian_polytheism_fate_god_name_possessive:0 "Ea's"
+
+    #knowledge god Nabu Localization
+    babylonian_polytheism_knowledge_god_name:0 "Nabu"
+    babylonian_polytheism_knowledge_god_name_possessive:0 "Nabu's"
+
+    #War god Nergal Localization
+    babylonian_polytheism_war_god_name:0 "Nergal"
+    babylonian_polytheism_war_god_name_possessive:0 "Nergal's"
+
+    #Trickster god Ea Localization
+    babylonian_polytheism_trickster_god_name:0 "Ea"
+    babylonian_polytheism_trickster_god_name_possessive:0 "Ea's"
+
+    #Night goddess Ishum Localization
+    babylonian_polytheism_night_god_name:0 "Ishum"
+    babylonian_polytheism_night_god_name_possessive:0 "Ishum's"
+
+    #Water god Tiamat Localization
+    babylonian_polytheism_water_god_name:0 "Tiamat"
+    babylonian_polytheism_water_god_name_possessive:0 "Tiamat's"
+
+    #evil gods names 
+    babylonian_polytheism_evil_god_tiamat:0 "Tiamat" 
+    babylonian_polytheism_evil_god_pazuzu:0 "Pazuzu"
+
+    #witch goddess
+    babylonian_polytheism_witchgodname_ea:0 "Ea"
+    babylonian_polytheism_witchgodname_ea_possesive:0 "Ea's"
+
+    #Devil god   
+    babylonian_polytheism_devil_name:0 "Hanbi" 
+    babylonian_polytheism_devil_name_possessive:0 "Hanbi's"
+
+    #Death god Nergal 
+    babylonian_polytheism_death_deity_name:0 "Nergal"
+    babylonian_polytheism_death_deity_name_possessive:0 "Nergal's"
+
+    #Good gods names 
+    babylonian_polytheism_good_god_marduk:0 "Marduk" 
+    babylonian_polytheism_good_god_enkimdu:0 "Enkimdu" 
+    babylonian_polytheism_good_god_geshtinanna:0 "Geshtinanna" 
+    babylonian_polytheism_good_god_ninsun:0 "Ninsun" 
+    babylonian_polytheism_good_god_ishtar:0 "Ishtar" 
+    babylonian_polytheism_good_god_nabu:0 "Nabu" 
+    babylonian_polytheism_good_god_enki:0 "Enki" 
+    babylonian_polytheism_good_god_nergal:0 "Nergal"
+
+    #mesopotamian priest flamen vestals
+
+    #mesopotamian priest 
+    babylonian_polytheism_priest_male:0 "Priester"
+    babylonian_polytheism_priest_male_plural:0 "Priester"
+
+    #mesopotamian priestess 
+    babylonian_polytheism_priest_female:0 "Priesterin" 
+    babylonian_polytheism_priest_female_plural:0 "Priesterinnen" 
+
+    #mesopotamian high priest
+    babylonian_polytheism_bishop_male:0 "Ober Priester" 
+    babylonian_polytheism_bishop_male_plural:0 "Ober Priestser"
+
+    babylonian_polytheism_religious_head_title:0 "Hohe Priester"
+
+    #roman names
+    #males
+    reserved_male_names:0 "Babylonische mänliche namen"
+    #Female 
+    reserved_female_names:0 "Babylonische frauen namen"
+
+    #holy orders: 
+    holy_order_sons_of_nergal:0 "Sons of Nergal"
+    holy_order_Protectors_of_anu:0 "Protectors of Anu"
+
+    #Assyrian
+    assyrian_polytheism:0 "Assyrisch"
+    assyrian_polytheism_adj:0 "Assyrisch"
+    assyrian_polytheism_adherent:0 "Assyrische Polytheist"
+    assyrian_polytheism_adherent_plural:0 "Assyrische Polytheisten"
+    assyrian_polytheism_desc:0 "Der Glaube der Assyrer ist dem der übrigen Völker Mesopotamiens ähnlich. Allerdings halten die Assyrer den Gott Asshur, den Sonnengott und das Äquivalent von Enlil, für ihren Hauptgott, was sie zu ständigen Kriegen um die Vorherrschaft gegen ihre Nachbarn führt." 
+
+    assyrian_polytheism_old:0 "Assyrisch Alt"
+    assyrian_polytheism_old_adj:0 "Assyrisch Alt"
+    assyrian_polytheism_adherent_old:0 "Alt Assyrische Polytheist"
+    assyrian_polytheism_old_adherent_plural:0 "Alt Assyrische Polytheisten"
+    assyrian_polytheism_old_desc:0 "Der Glaube der Assyrer ist dem der übrigen Völker Mesopotamiens ähnlich. Allerdings halten die Assyrer den Gott Asshur, den Sonnengott und das Äquivalent von Enlil, für ihren Hauptgott, was sie zu ständigen Kriegen um die Vorherrschaft gegen ihre Nachbarn führt." 
+
+    assyrian_polytheism_religious_head_title:0 "Hohe Priester"
+    assyrian_polytheism_divine_realm:0 "Göttliches Reich"
+    assyrian_polytheism_religious_symbol:0 "Ashur"
+    assyrian_polytheism_religious_text:0 "Enuma Elish"
+
+    assyrian_polytheism_high_god_name:0 "Ashur"
+    assyrian_polytheism_high_god_name_possessive:0 "Ashur's"
+    assyrian_polytheism_high_god_name_alternate:0 "$assyrian_polytheism_high_god_name$"
+    assyrian_polytheism_high_god_name_alternate_possessive:0 "$assyrian_polytheism_high_god_name_possessive$"
+
+    assyrian_polytheism_creator_god_name:0 "Ea"
+    assyrian_polytheism_creator_god_name_possessive:0 "$assyrian_polytheism_creator_god_name$'s"
+
+    assyrian_polytheism_health_god_name:0 "Ninkarrak"
+    assyrian_polytheism_health_god_name_possessive:0 "$assyrian_polytheism_health_god_name$'s"
+
+    assyrian_polytheism_fertility_god_name:0 "Ishtar"
+    assyrian_polytheism_fertility_god_name_possessive:0 "$assyrian_polytheism_fertility_god_name$'s"    
+
+    assyrian_polytheism_wealth_god_name:0 "Ninhegal"
+    assyrian_polytheism_wealth_god_name_possessive:0 "$assyrian_polytheism_wealth_god_name$'s"
+
+    assyrian_polytheism_household_god_name:0 "Ninhursag"
+    assyrian_polytheism_household_god_name_possessive:0 "$assyrian_polytheism_household_god_name$'s"
+
+    assyrian_polytheism_fate_god_name:0 "Ea"
+    assyrian_polytheism_fate_name_possessive:0 "$assyrian_polytheism_fate_god_name$'s"
+
+    assyrian_polytheism_knowledge_god_name:0 "Nabu"
+    assyrian_polytheism_knowledge_god_name_possessive:0 "$assyrian_polytheism_knowledge_god_name$'s"
+
+    assyrian_polytheism_war_god_name:0 "Ashur"
+    assyrian_polytheism_war_god_name_possessive:0 "$assyrian_polytheism_war_god_name$'s"
+
+    assyrian_polytheism_trickster_god_name:0 "Ea"
+    assyrian_polytheism_trickster_god_name_possessive:0 "Ea's"
+
+    assyrian_polytheism_night_god_name:0 "Ishum"
+    assyrian_polytheism_night_god_name_possessive:0 "$assyrian_polytheism_night_god_name$'s"
+
+    assyrian_polytheism_water_god_name:0 "Lugalabba"
+    assyrian_polytheism_water_god_name_possessive:0 "$assyrian_polytheism_water_god_name$'s"
+
+    assyrian_polytheism_death_deity_name:0 "Nergal"
+    assyrian_polytheism_death_deity_name_possessive:0 "$assyrian_polytheism_death_deity_name$'s"
+
+    assyrian_polytheism_witchgodname_ea:0 "Ea"
+    assyrian_polytheism_witchgodname_ea_possesive:0 "$assyrian_polytheism_witchgodname_ea$'s"
+
+    assyrian_polytheism_evil_god_tiamat:0 "Tiamat" 
+    assyrian_polytheism_evil_god_pazuzu:0 "Pazuzu"
+
+
+    #assyrian_polytheism_pantheon:0 "Annunaki"
+    assyrian_polytheism_divine_realm:0 "Kur"
+    assyrian_polytheism_afterlife:0 "Irkallu"
+    assyrian_polytheism_religious_head:0 "Hohe Priester"
+    assyrian_polytheism_religious_head_title_name:0 "Hoher Rat"
+
+   #mesopotamian priest 
+    assyrian_polytheism_priest_male:0 "Priester"
+    assyrian_polytheism_priest_male_plural:0 "Priester"
+
+    #mesopotamian priestess 
+    assyrian_polytheism_priest_female:0 "Priesterin" 
+    assyrian_polytheism_priest_female_plural:0 "Priesterinnen" 
+
+    #mesopotamian high priest
+    assyrian_polytheism_bishop_male:0 "Ober Priester" 
+    assyrian_polytheism_bishop_male_plural:0 "Ober Priester" 
+    assyrian_polytheism_religious_head_title:0 "Hohe Priester"
+
+    #roman names
+    #males
+    reserved_male_names:0 "Assyrische mänliche namen"
+    #Female 
+    reserved_female_names:0 "Assyrische frauennamen"

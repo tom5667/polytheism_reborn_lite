@@ -47,5 +47,11 @@
 	}
 	effect = {
 		trigger_event = zoroastrianism.001
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions_avesta
+				target = flag:flag_restored_pr_avesta
+			}
+		}
 	}
 }

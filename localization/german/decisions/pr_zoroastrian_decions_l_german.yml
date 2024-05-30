@@ -1,0 +1,9 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+
+pr_commission_te_avesta_decision:0 "Inbetriebnahme des 3. Avesta"
+pr_commission_te_avesta_decision_desc:0 "Das ursprüngliche Avesta ging nach der Plünderung von Parsa durch Gizistag Aleksandar-i-Hromayig verloren. Das Avesta wurde während der Herrschaft von Khosrow Anushiruwan neu komponiert und überarbeitet.\n\nAber nach der Invasion der Tazigs. Nun wurde sowohl das Eranshahr als auch die Priesterschaft durch die [ROOT.Char.GetDynasty.GetBaseName] [Dynastie|E] wiederhergestellt, und viele hatten begonnen, ihre Unterstützung für eine neue Komposition des Avesta zu zeigen, eine, die nicht durch einen fremden Eindringling zerstört werden würde!"
+pr_commission_te_avesta_decision_tooltip:0 "Beauftragung des 3. Avesta"
+pr_commission_te_avesta_decision_confirm:0 "Bestätigen"

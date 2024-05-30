@@ -7,7 +7,7 @@
     mesopotamian_religion:0 "Mesopotamian"
     mesopotamian_religion_adj:2 "Mesopotamian"
     mesopotamian_religion_adherent:2 "Mesopotamian"
-    mesopotamian_religion_adherent_plural:2 "Mesopotamian"
+    mesopotamian_religion_adherent_plural:2 "Mesopotamians"
     mesopotamian_religion_desc:0 "The Mesopotamian Religion knows many gods, once the religion of the ancient Babylonians, Assyrians, Akkadians and Sumer"
 
     #Babylonian
@@ -189,7 +189,7 @@
     assyrian_polytheism_night_god_name:0 "Ishum"
     assyrian_polytheism_night_god_name_possessive:0 "$assyrian_polytheism_night_god_name$'s"
 
-    assyrian_polytheism_water_god_name:0 " Lugalabba"
+    assyrian_polytheism_water_god_name:0 "Lugalabba"
     assyrian_polytheism_water_god_name_possessive:0 "$assyrian_polytheism_water_god_name$'s"
 
     assyrian_polytheism_death_deity_name:0 "Nergal"

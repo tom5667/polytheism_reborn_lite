@@ -1,0 +1,60 @@
+﻿l_german:
+
+dcmd.001.t:0 "Hauptgottheit wählen"
+dcmd.001.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+dcmd.001.gebeleizis:0 "Gebeleizis"
+dcmd.001.zalmoxis:0 "Zalmoxis"
+dcmd.001.dionysus:0 "Dionysus"
+dcmd.001.pleistoros:0 "Pleistoros"
+dcmd.001.derzelas:0 "Derzelas"
+dcmd.001.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+
+#Embrace Dacian culture 
+dacian.001.t:0 "Dakisch Oder Thrakisch"
+dacian.001.desc:0 "Viel zu lange haben wir die alten Tugenden der dakischen Stämme verloren. Oder vielleicht die Tugenden der thrakischen Stämme."
+dacian.001.a:0 "Umarm die dakische Kultur"
+dacian.001.b:0 "Umarm die Thrakische Kultur"
+
+dacian.004.t:0 "Ankunft in Kogaionon"
+dacian.004.desc:0 "Wir sind mittlerweile tagelang durch das felsige Gelände gelaufen. Ehrlich gesagt möchte ich unsere Füße nicht am Ende dieser Reise sehen. Aber es wird sich lohnen, wenn wir die Höhle erreichen."
+dacian.004.a:0 "Reise zur Höhle"
+
+dacian.005.t:0 "Kogaionon"
+dacian.005.desc.zealous:0 "Der Besuch der Höhle, in der sich $zalmoxism_high_god_name$ befindet, ist eine der frommsten Aktivitäten, die ein Gläubiger von Zalmoxis unternehmen kann. Sobald wir das Innere der Höhle erreicht haben, beginnen wir mit der Opferung der Opfergaben, die wir mitgebracht haben."
+
+dacian.005.desc.cave:0 "Heute besuchen wir die Höhle von $zalmoxism_high_god_name$. Ich hätte nie gedacht, dass der Besuch einer Höhle so aufregend sein kann. Nachdem Sie den Tag damit verbracht haben, das Innere der Höhle und ihre Umgebung zu erkunden, ist es an der Zeit, $zalmoxism_high_god_name$ ein kleines Opfer darzubringen"
+dacian.005.a:0 "Ein Opfer darbringen"
+
+dacian.006.t:0 "Die Reise Zurück Nach Hause"
+dacian.006.desc:0 "Zeit, nach Hause zurückzukehren, belebt durch die große Göttlichkeit und Gnade des $zalmoxism_high_god_name$. Jetzt wäre es toll, die Schuhe auszuziehen, nachdem man wieder die Felsen hinuntergegangen ist"
+dacian.006.a:0 "Schön, wieder zu Hause zu sein"
+
+dacian.007.t:0 "Offering To Ursitoare"
+dacian.007.desc:0 "Nichts ist wichtiger als die Zukunft meines Clans/Stammes/Dynastie/Familie, mehr als mein Reich und ich selbst.\n\nDeshalb werde ich heute gehen und dem Gott des Schicksals $dacian_polytheism_fate_god_name$ eine Opfergabe bringen, und hoffentlich werden sie es tun Beuge das Schicksal meinen Wünschen."
+dacian.007.a:0 "Mach ein opfer zu $dacian_polytheism_fate_god_name$"
+
+
+dacian.008.t:0 "Besuchen das Heiligtum für Gebeleizis"
+dacian.008.desc:0 "Ich habe heute beschlossen, das örtliche Heiligtum von $dacian_polytheism_high_god_name$ zu besuchen. Als ich ankam, hatte der örtliche Priester gesagt$:$ "Ich werde diese Ziege in deinem Namen opfern" und danach würden ihre Leber und Eingeweide gemäß dem Willen der Götter gelesen werden."
+dacian.008.a:0 "Lass den Priester das Opfer bringen"
+dacian.008.message.positive:0 "Gesegnet von $dacian_polytheism_high_god_name$"
+dacian.008.message.negative:0 "Von $dacian_polytheism_high_god_name$ ungünstig"
+
+dacian.009.t:0 "Bau einen örtlichen Schrein"
+dacian.009.desc:0 "Der Hofpriester kam heute mit der Bitte zu mir, ein neues Heiligtum zu bauen. Was tun?"
+dacian.009.a:0 "Bezahlen alles"
+dacian.009.b:0 "Bezahlen die Materialien"
+dacian.009.c:0 "Der Priester ist allein"
+
+dacian.010.t:0 "Der wildeste aller Kämpfer"
+dacian.010.desc:0 "Heute stehe ich vor meinen Soldaten, das möchte ich euch fragen, meine tapferen Soldaten. Um die Gunst von Zalmoxis für diesen Krieg zu gewinnen, brauchen wir den schärfsten aller Kämpfer, der angeboten werden möchte. Wer ist also bereit, diese Ehre auf sich zu nehmen?!\n\n „Das werde ich“, sagte der Soldat.\n\ Sehr gut. Er war der wildeste aller Krieger, ein geschickter Schwertkämpfer und ein Meister des Speeres.\n\nEr war bereit, für sein Volk zu sterben. Er wusste, dass das Opfer für Zalmoxis gefährlich war, aber er war zuversichtlich, dass er von seinem Gott akzeptiert werden würde. Er war auch bestrebt, seinen Mitkriegern seinen Wert zu beweisen."
+dacian.010.a:0 "Setzen Sie das Opfer fort"
+dacian.010.b:0 "Warte, warte, hör auf!"
+
+dacian.011.t:0 "Das Opfer"
+dacian.011.desc:0 "Am Tag des Opfers wurde der Soldat auf die Spitze eines Hügels mit Blick auf das Dorf geführt. Ihm wurden Rüstung und Waffen abgenommen und seine Hände und Füße wurden gefesselt. Dann wurde er auf die Speere geworfen, die von unten stehenden Männern gehalten wurden.\n\n Nach einer Weile hörte der Soldat auf, sich zu bewegen. Die Krieger versammelten sich mit grimmigen Gesichtern um den Körper des Todeskriegers.\n\nSie wussten, dass das Schicksal ihrer Die Menschen hingen davon ab, ob Zalmoxis ihr Opfer angenommen hatte oder nicht.\n\nNach einem langen Moment des Schweigens trat ich vor. und legte meine Hand auf die Brust des Kriegers und schloss meine Augen und betete zu Zalmoxis.\n\nDie anderen Krieger stimmten in den Gesang ein, ihre Stimmen stiegen in den Himmel. Der Gesang wurde immer lauter, bis der ganze Hügel vom Klang ihrer Gebete erfüllt war.\nMöge es nicht umsonst sein."
+dacian.011.a:0 "In den Krieg!"
+
+dacian.011.message.positive:0 "Von Zalmoxis bevorzugt"
+dacian.011.message.negative:0 "Von Zalmoxis ungünstig"

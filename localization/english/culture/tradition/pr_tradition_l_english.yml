@@ -13,6 +13,13 @@ heritage_phoenician_name:0 "Phoenician"
 heritage_illyrian_name:0 "Illyrian"
 heritage_pr_greek_name:0 "Hellen"
 heritage_celtic_iberian_name:0 "Celtiberian"
+heritage_iberian_name:0 "Iberian"
+
+
+tradition_celtiberian_legacy_name:0 "Celtiberian Legacy"
+tradition_celtiberian_legacy_desc:0 "Placeholder"
+tradition_celtiberian_tactics_name:0 "Celtiberian Tactics"
+tradition_celtiberian_tactics_desc:0 "Placeholder"
 ##################
 #Credits cybrxkhan
 ##################

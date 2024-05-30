@@ -1,4 +1,7 @@
-﻿scythian_religion = {
+﻿#####################
+#Made by tom5667 
+#####################
+scythian_religion = {
 	
 	family = rf_pagan
 
@@ -45,7 +48,7 @@
 
 			doctrine = unreformed_faith_doctrine
 			doctrine = special_doctrine_scythian_patron_god
-			doctrine = tenet_human_sacrifice
+			doctrine = tenet_sacrificial_appeasement
 			doctrine = tenet_ancestor_worship
 			doctrine = tenet_esotericism 
 			doctrine = doctrine_pilgrimage_forbidden
@@ -75,7 +78,9 @@
 			doctrine = doctrine_clerical_gender_either
 			doctrine = doctrine_clerical_marriage_allowed
 			doctrine = doctrine_clerical_succession_temporal_appointment
-
+				
+			doctrine = doctrine_funeral_mummification
+		
 			holy_order_names = {
 				{ name = "holy_order_Protectors_of_the_middle_world" }
 				{ name = "holy_order_sons_of_papaios" }
@@ -101,9 +106,9 @@
 				#HealthGod
 				HealthGodName = scythian_polytheism_health_god_name
 				HealthGodNamePossessive = scythian_polytheism_health_god_name_possessive
-				HealthGodSheHe = CHARACTER_SHEHE_HE
-				HealthGodHerHis = CHARACTER_HERHIS_HIS
-				HealthGodHerHim = CHARACTER_HERHIM_HIM
+				HealthGodSheHe = CHARACTER_SHEHE_SHE
+				HealthGodHerHis = CHARACTER_HERHIS_HER
+				HealthGodHerHim = CHARACTER_HERHIM_HER
 				
 				#FertilityGod
 				FertilityGodName = scythian_polytheism_fertility_god_name
@@ -129,23 +134,23 @@
 				#FateGod
 				FateGodName = scythian_polytheism_fate_god_name
 				FateGodNamePossessive = scythian_polytheism_fate_god_name_possessive
-				FateGodSheHe = CHARACTER_SHEHE_THEY
-				FateGodHerHis = CHARACTER_HERHIS_THEIR
-				FateGodHerHim = CHARACTER_HERHIM_THEM
+				FateGodSheHe = CHARACTER_SHEHE_HE
+				FateGodHerHis = CHARACTER_HERHIS_His
+				FateGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#KnowledgeGod
 				KnowledgeGodName = scythian_polytheism_knowledge_god_name
 				KnowledgeGodNamePossessive = scythian_polytheism_knowledge_god_name_possessive
-				KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-				KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-				KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+				KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+				KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+				KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#WarGod
 				WarGodName = scythian_polytheism_war_god_name
 				WarGodNamePossessive = scythian_polytheism_war_god_name_possessive
-				WarGodSheHe = CHARACTER_SHEHE_HE
-				WarGodHerHis = CHARACTER_HERHIS_HIS
-				WarGodHerHim = CHARACTER_HERHIM_HIM
+				WarGodSheHe = CHARACTER_SHEHE_SHE
+				WarGodHerHis = CHARACTER_HERHIS_HER
+				WarGodHerHim = CHARACTER_HERHIM_HER 
 		
 				#TricksterGod
 				TricksterGodName = scythian_polytheism_trickster_god_name
@@ -209,11 +214,11 @@
 				NegativeAfterLife = scythian_polytheism_death_deity_name
 				DeathDeityName = scythian_polytheism_death_deity_name
 				DeathDeityNamePossessive = scythian_polytheism_death_deity_name_possessive
-				DeathDeitySheHe = CHARACTER_SHEHE_HE
-				DeathDeityHerHis = CHARACTER_HERHIS_HIS
+				DeathDeitySheHe = CHARACTER_SHEHE_SHE
+				DeathDeityHerHis = CHARACTER_HERHIS_HER
 				WitchGodName = scythian_polytheism_witchgodname_artimpasa
 				WitchGodHerHis = CHARACTER_HERHIS_HER
-				WitchGodSheHe = CHARACTER_SHEHE_HE
+				WitchGodSheHe = CHARACTER_SHEHE_SHE
 				WitchGodHerHim = CHARACTER_HERHIM_HER
 				WitchGodMistressMaster = mistress
 				WitchGodMotherFather = mother

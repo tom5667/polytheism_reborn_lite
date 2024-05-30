@@ -7,7 +7,7 @@
     illyrian_religion:0 "Illyrian"
     illyrian_religion_adj:2 "Illyrian"
     illyrian_religion_adherent:2 "Illyrian"
-    illyrian_religion_adherent_plural:2 "Illyrian"
+    illyrian_religion_adherent_plural:2 "Illyrians"
     illyrian_religion_desc:0 "The Illyrian faith is a polytheistic faith that emphasizes the importance of courage and honor. The Illyrians believe in a pantheon of gods and goddesses, each of whom has their own specific powers and domains. The chief god of the Illyrian pantheon is En."
 
     #dacian
@@ -73,7 +73,7 @@
     illyrian_polytheism_war_god_name_possessive:0 "$illyrian_polytheism_war_god_name$'s"
 
     #Trickster god Daedalus Localization
-    illyrian_polytheism_trickster_god_name:0 "Daedalus"
+    illyrian_polytheism_trickster_god_name:0 "Evil eye"
     illyrian_polytheism_trickster_god_name_possessive:0 "$illyrian_polytheism_trickster_god_name$'s"
 
     #Night goddess Bendis Localization
@@ -89,8 +89,8 @@
     
 
     #witch goddess
-    illyrian_polytheism_witchgodname_vidasus:0 "Vidasus"
-    illyrian_polytheism_witchgodname_vidasus_possesive:0 "$illyrian_polytheism_witchgodname_vidasus$'s"
+    illyrian_polytheism_witchgodname_serpant:0 "Serpant"
+    illyrian_polytheism_witchgodname_serpant_possesive:0 "$illyrian_polytheism_witchgodname_serpant$'s"
 
     #Devil god   #For now there is just no thing like a devil god in the dacian religion
     illyrian_polytheism_devil_name:0 "Antaios" 

@@ -11,6 +11,8 @@ kingdom_of_lower_egypt = {
 		#has_culture_group = culture_group:berber_group 
 		OR = {
 			religion = religion:egyptian_religion
+			faith = faith:alexandrian_cult
+			faith = faith:graeco_egyptian_polytheism
 			culture = culture:kemetic
 		}
 		is_imprisoned = no	
@@ -33,6 +35,8 @@ kingdom_of_lower_egypt = {
 			OR = {
 				religion = religion:egyptian_religion
 				culture = culture:kemetic
+				faith = faith:alexandrian_cult
+				faith = faith:graeco_egyptian_polytheism
 			}
 		}
 
@@ -108,6 +112,8 @@ kingdom_of_upper_egypt = {
 			OR = {
 				religion = religion:egyptian_religion
 				culture = culture:kemetic
+				faith = faith:alexandrian_cult
+				faith = faith:graeco_egyptian_polytheism
 			}
 		}
 		is_imprisoned = no	
@@ -129,6 +135,8 @@ kingdom_of_upper_egypt = {
 			OR = {
 				religion = religion:egyptian_religion
 				culture = culture:kemetic
+				faith = faith:alexandrian_cult
+				faith = faith:graeco_egyptian_polytheism
 			}
 		}
 		is_imprisoned = no	

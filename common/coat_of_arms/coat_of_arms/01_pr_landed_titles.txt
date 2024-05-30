@@ -296,79 +296,382 @@ k_aegyptus_polytheistic = {
 }
 
 e_gaul = { 
-	pattern = "pattern_solid.dds"
-	color1 = "green_light"
-	colored_emblem = {
-		texture = "ce_boar_passant_02.dds"
-		color1 = "brown" 
-		color2 = "red"
-		color3 = "white"
-		instance = {position = { 0.50 0.30 } scale = { 0.6 0.6 } }
+	pattern="pattern_solid.dds"
+	color1=green_light
+	colored_emblem={
+		color1=red
+		texture="ce_triskel.dds"
+		instance={
+			position={ 0.550000 0.540000 }
+			scale={ 0.320000 0.320000 }
+		}
+
 	}
-	colored_emblem = {
-		texture = "ce_pagan_rod.dds"
-		color1 =  "yellow" 
-		instance = {position = { 0.50 0.63 } scale = { 0.4 0.4 } }
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_boar_passant.dds"
+		instance={
+			position={ 0.500000 0.600000 }
+			scale={ 0.720000 0.720000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_pagan_rod.dds"
+		instance={
+			position={ 0.310000 0.220000 }
+			scale={ 0.360000 0.360000 }
+			depth=2.010000
+		}
+
 	}
 }
 
 k_belgica = {
-	pattern = "pattern_solid.dds"
-	color1 = "green_light"
-	colored_emblem = {
-		texture = "ce_bugle_horn_random.dds"
-		color1 = "yellow_light" 
-		color2 = "brown"
-		#color3 = "green"
-		instance = {position = { 0.50 0.40 } scale = { 0.8 0.8 } }
+	pattern="pattern_solid.dds"
+	color1=green_light
+	colored_emblem={
+		color1=yellow
+		texture="ce_boar_head.dds"
+		instance={
+			position={ 0.500000 0.620000 }
+			scale={ 0.690000 0.690000 }
+			depth=1.010000
+		}
+
 	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_pagan_rod.dds"
+		instance={
+			position={ 0.320000 0.260000 }
+			scale={ 0.410000 0.410000 }
+		}
+
+	}
+	
 }
 
+
+
 k_celtica = {
-	pattern = "pattern_solid.dds"
-	color1 = "green"
-	colored_emblem = {
-		texture = "ce_celtica.dds"
-		color2 = "brown" 
-		color1 = "yellow"
-		#color3 = "green"
-		instance = {position = { 0.50 0.45 } scale = { 0.68 0.68 } }
+	pattern="pattern_solid.dds"
+	color1=green
+	color2=yellow
+	color3=blue
+	colored_emblem={
+		color1=white
+		texture="ce_triskel.dds"
+		instance={
+			position={ 0.500000 0.270000 }
+			scale={ 0.440000 0.440000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_boar_passant.dds"
+		instance={
+			position={ 0.500000 0.710000 }
+			scale={ 0.730000 0.730000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_pagan_rod.dds"
+		instance={
+			position={ 0.500000 0.270000 }
+			scale={ 0.530000 0.530000 }
+			depth=2.010000
+		}
 	}
 }
 
 k_cisalpina = {
-	pattern = "pattern_solid.dds"
-	color1 = "brown"
-	colored_emblem = {
-		texture = "ce_goat.dds"
-		color1 =  "white"
-		color2 = "red"	
-		color3 = "black"
-		instance = {position = { 0.50 0.50 } scale = { 0.8 0.8 } }
+	pattern="pattern_barruly_10.dds"
+	color1=brown
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=yellow
+		color2=red
+		color3=black
+		texture="ce_goat.dds"
+		instance={
+			scale={ 0.840000 0.840000 }
+		}
+
 	}
 }
 
 k_narbonensis = {
-	pattern = "pattern_solid.dds"
-	color1 = "blue"
-	colored_emblem = {
-		texture = "ce_lion_passant.dds"
-		color1 =  "yellow_light"
-		color2 = "red"	
-		color3 = "white"
-		instance = {position = { 0.50 0.50 } scale = { 0.8 0.8 } }
+	pattern="pattern__solid_designer.dds"
+	color1=blue_light
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=yellow
+		texture="ce_boat.dds"
+		instance={
+			position={ 0.500000 0.630000 }
+			scale={ 0.690000 0.690000 }
+		}
+
+	}
+	colored_emblem={
+		color1=white
+		color2=grey
+		color3=black
+		texture="ce_dolphin.dds"
+		instance={
+			position={ 0.490000 0.330000 }
+			scale={ 0.570000 0.570000 }
+			depth=1.010000
+		}
 	}
 }
 k_aquitania = {
-	pattern = "pattern_solid.dds"
-	color1 = "red"
-	color2 = "yellow"
-	colored_emblem = {
-		texture = "ce_lion_rampant_crown.dds"
-		color1 = "yellow"
-		color2 = "yellow"
+	pattern="pattern_vertical_stripes_02.dds"
+	color1=red
+	color2=white
+	color3=green
+	colored_emblem={
+		color1=yellow
+		color2=green_light
+		texture="ce_african_frame_01.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			scale={ 0.920000 0.920000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=green_light
+		color2=rgb { 20 229 18 }
+		texture="ce_triskel_02.dds"
+		instance={
+			position={ 0.500000 0.440000 }
+			scale={ 0.680000 0.680000 }
+			depth=1.010000
+		}
+
 	}
 }
+k_pr_celtiberia = {
+	pattern = "pattern_vertical_split_01.dds"
+	color1 = "green_light"
+	color2 = "black"
+	colored_emblem = {
+		texture = "ce_bulls_massacre.dds"
+		color1 = "yellow_light"
+		instance = {position = { 0.50 0.50 } scale = { 0.8 0.8 } }
+	}
+}
+
+k_pr_lusitania = {
+	pattern = "pattern_tricolor_bend_01.dds"
+	color1 = "grey"
+	color2 = "blue"
+	color3 = "black"
+	colored_emblem = {
+		texture = "ce_horse_rampant.dds"
+		color1 = "white"
+		color2 = "brown"
+		color3 = "red"
+		instance = {position = { 0.50 0.50 } scale = { 0.8 0.8 } }
+	}
+}
+
+
+k_pr_galicia = {
+	pattern="pattern_solid.dds"
+	color1=green
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=white
+		texture="ce_triskel.dds"
+		instance={
+			scale={ 0.700000 0.700000 }
+			depth=1.010000
+		}
+	}
+	colored_emblem={
+		color1=yellow
+		texture="ce_frame_circle_borre_double_knots_03.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+		}
+	}
+}
+
+k_pr_tartessia = {
+	pattern="pattern_horizontal_split_02.dds"
+	color1=blue
+	color2=blue_light
+	color3=black
+	colored_emblem={
+		color1=yellow
+		texture="ce_spearhead.dds"
+		instance={
+			position={ 0.500000 0.320000 }
+			scale={ 0.550000 0.550000 }
+			rotation=360
+		}
+
+	}
+	colored_emblem={
+		color1=yellow
+		texture="ce_boat.dds"
+		instance={
+			position={ 0.510000 0.610000 }
+			scale={ 0.510000 0.510000 }
+			depth=3.010000
+		}
+
+	}
+	colored_emblem={
+		color1=white
+		texture="ce_column.dds"
+		instance={
+			position={ 0.280000 0.440000 }
+			scale={ 0.640000 0.640000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.740000 0.440000 }
+			scale={ 0.640000 0.640000 }
+			depth=2.010000
+		}
+
+	}
+}
+
+k_pr_iberia = {
+	pattern="pattern_vertical_stripes_01.dds"
+	color1=orange
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=white
+		color2=brown
+		color3=black
+		texture="ce_swords_crossed.dds"
+		instance={
+			position={ 0.500000 0.270000 }
+			scale={ 0.530000 0.530000 }
+			depth=1.010000
+		}
+
+	}
+	colored_emblem={
+		color1=white
+		color2=white
+		color3=black
+		texture="ce_horse_statant.dds"
+		instance={
+			position={ 0.500000 0.660000 }
+			scale={ 0.590000 0.590000 }
+		}
+
+	}
+}
+
+k_pr_vasconia = {
+	pattern="pattern_horizontal_stripes_01.dds"
+	color1=red
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=rgb { 10 126 21 }
+		texture="ce_tamgha_regular_circle_frame.dds"
+		instance={
+			position={ 0.500000 0.490000 }
+			scale={ 0.530000 0.530000 }
+		}
+	}
+	colored_emblem={
+		color1=rgb { 49 170 61 }
+		texture="ce_lauburu.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.470000 0.470000 }
+			depth=1.010000
+		}
+	}
+}
+
+e_spain_polytheistic = {
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=yellow
+	color3=blue
+	colored_emblem={
+		color1=yellow_light
+		texture="ce_triskel.dds"
+		instance={
+			position={ 0.510000 0.770000 }
+			scale={ 0.360000 0.360000 }
+			depth=3.010000
+		}
+
+	}
+	colored_emblem={
+		color1=yellow_light
+		texture="ce_lauburu.dds"
+		instance={
+			position={ 0.340000 0.190000 }
+			scale={ 0.200000 0.200000 }
+		}
+	}
+	colored_emblem={
+		color1=white
+		texture="ce_column.dds"
+		instance={
+			position={ 0.830000 0.410000 }
+			scale={ 0.500000 0.500000 }
+			depth=4.010000
+		}
+		instance={
+			position={ 0.180000 0.410000 }
+			scale={ 0.490000 0.500000 }
+			depth=5.010000
+		}
+	}
+	colored_emblem={
+		color1=white
+		texture="ce_horse_rampant.dds"
+		instance={
+			position={ 0.500000 0.410000 }
+			scale={ 0.520000 0.520000 }
+			depth=2.010000
+		}
+
+	}
+	colored_emblem={
+		color1=yellow_light
+		color2=white
+		color3=grey
+		texture="ce_crown_small.dds"
+		instance={
+			position={ 0.510000 0.130000 }
+			scale={ 0.210000 0.210000 }
+			depth=1.010000
+		}
+	}
+}
+
 k_etruria = {
 	pattern = "pattern_solid.dds"
 	color1 = {250 244 207}

@@ -69,6 +69,7 @@ rps.011={
 	name = rps.011.scythian
 	trigger_event = rps.013
 	}
+	
 	option={
 		name = rps.011.back
 		trigger_event = rps.001
@@ -94,6 +95,10 @@ rps.015={
 	option = {
 		name = rps.015.baltic
 		trigger_event = rps.017
+	}
+	option = {  #Iberian
+	name = rps.015.iberian
+	trigger_event = rps.018
 	}
 	option={
 		name = rps.015.back
@@ -139,6 +144,21 @@ rps.017 = {
 	}
 	option={
 		name = rps.017.back
+		trigger_event = rps.015
+	}
+}
+
+rps.018 = {
+	type = character_event
+	title = rps.018.t
+	desc = rps.018.desc
+	theme = learning_scholarship_focus
+	option={
+		name = rps.018.lusitanian
+		set_character_faith = faith:lusitanian_polytheism
+	}
+	option={
+		name = rps.018.back
 		trigger_event = rps.015
 	}
 }
@@ -488,6 +508,10 @@ rpcs.002= {
 		trigger_event = rpcs.012
 	}
 	option = {
+		name = rpcs.002.iberian
+		trigger_event = rpcs.013
+	}
+	option = {
 		name = rpcs.002.back
 		
 		trigger_event = rpcs.001
@@ -577,6 +601,10 @@ rpcs.005 = {
 	option = {
 		name = rpcs.005.eburones
 		set_culture = culture:eburones
+	}
+	option = {
+		name = rpcs.005.celtiberian
+		set_culture = culture:celtic_berian
 	}
 	option = {
 		name = rpcs.005.back
@@ -703,6 +731,22 @@ rpcs.012 = {
 	}
 	option = {
 		name = rpcs.012.back
+		trigger_event = rpcs.002
+	}
+}
+
+rpcs.013 = {
+	type = character_event
+	title = rpcs.013.t
+	desc = rpcs.013.desc
+	theme = learning_scholarship_focus
+
+	option = {
+		name = rpcs.013.iberian
+		set_culture = culture:iberian
+	}
+	option = {
+		name = rpcs.013.back
 		trigger_event = rpcs.002
 	}
 }
@@ -1347,6 +1391,10 @@ pr.018 = {
 	name = pr.018.germanic
 	trigger_event = pr.024
 	}
+	option = {
+		name = pr.018.iberian
+		trigger_event = pr.052
+	}
 	option={
 		name = pr.018.next
 		trigger_event = pr.019
@@ -1573,6 +1621,27 @@ pr.024={
 	}
 	option={
 		name = pr.024.back
+		trigger_event = pr.018
+	}
+}
+
+#Iberian
+pr.052={
+	type = character_event
+	title = pr.052.t
+	desc = pr.052.desc
+	theme = learning_scholarship_focus
+	option={
+		name = pr.052.lusitanian
+		#set_character_faith = faith:anglo_saxon_polytheism
+		trigger_event = pr.030
+		add_to_global_variable_list ={
+			name = research_lusitanian
+			target = flag:flag_research_lusitanian
+		}
+	}
+	option={
+		name = pr.052.back
 		trigger_event = pr.018
 	}
 }
@@ -2206,6 +2275,27 @@ pr.036 = {#Outcome debate good
 		if = {
 			limit = {
 					is_target_in_global_variable_list = {
+						name = research_lusitanian
+						target = flag:flag_research_lusitanian
+					}
+				}
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:lusitanian_polytheism }
+				scope:realm_priest = {
+					make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:lusitanian_polytheism }
+				}
+				hidden_effect = {
+					add_character_flag = converted_pr_religion_this_lifetime
+					remove_list_global_variable = {
+						name = research_lusitanian
+						target = flag:flag_research_lusitanian
+					}
+				}
+				# trigger_event = pr.039
+
+		}
+		if = {
+			limit = {
+					is_target_in_global_variable_list = {
 						name = research_etruscan
 						target = flag:flag_research_etruscan
 					}
@@ -2827,6 +2917,28 @@ pr.037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
+					is_target_in_global_variable_list = {
+						name = research_lusitanian
+						target = flag:flag_research_lusitanian
+					}
+				}
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:lusitanian_polytheism }
+				imprison_character_effect = {
+					TARGET = scope:realm_priest
+					IMPRISONER = root
+				}
+				hidden_effect = {
+					add_character_flag = converted_pr_religion_this_lifetime
+					remove_list_global_variable = {
+						name = research_lusitanian
+						target = flag:flag_research_lusitanian
+					}
+				}
+				trigger_event = pr.039
+
+		}
+		if = {
+			limit = {
 				is_target_in_global_variable_list = {
 					name = research_etruscan
 					target = flag:flag_research_etruscan
@@ -3309,6 +3421,10 @@ pr.037 = {#Outcome debate medium
 			target = flag:flag_research_german
 		}
 		remove_list_global_variable = {
+			name = research_lusitanian
+			target = flag:flag_research_lusitanian
+		}
+		remove_list_global_variable = {
 			name = research_anglo_saxon
 			target = flag:flag_research_anglo_saxon
 		}
@@ -3539,6 +3655,10 @@ pr.041 = {#Bought book bad
 			target = flag:flag_research_german
 		}
 		remove_list_global_variable = {
+			name = research_lusitanian
+			target = flag:flag_research_lusitanian
+		}
+		remove_list_global_variable = {
 			name = research_anglo_saxon
 			target = flag:flag_research_anglo_saxon
 		}
@@ -3742,6 +3862,23 @@ pr.042 = {#
 					remove_list_global_variable = {
 						name = research_german
 						target = flag:flag_research_german
+					}
+				}
+
+		}
+		if = {
+			limit = {
+					is_target_in_global_variable_list = {
+						name = research_lusitanian
+						target = flag:flag_research_lusitanian
+					}
+				}
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:lusitanian_polytheism }
+				hidden_effect = {
+					add_character_flag = converted_pr_religion_this_lifetime
+					remove_list_global_variable = {
+						name = research_lusitanian
+						target = flag:flag_research_lusitanian
 					}
 				}
 
@@ -4753,7 +4890,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 					culture = {  has_name_list = name_list_kemetic }
 				}
 		}
-		set_character_faith_with_conversion = faith:georgian_polytheism
+		set_character_faith_with_conversion = faith:kemetic_polytheism
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}

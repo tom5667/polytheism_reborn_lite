@@ -1,0 +1,26 @@
+﻿l_german:
+
+#Return Dacian polytheism event localization 
+pr_illyrian.001.t:0 "Ein Priester von Tadenus"
+pr_illyrian.001.desc:0 "Sie sitzen in Ihren Gemächern und pflegen Ihre Wunden aus einer kürzlichen Schlacht. Du hast große Schmerzen und weißt, dass du nicht von alleine heilen wirst.\nPlötzlich klopft es an der Tür. Du öffnest die Tür und findest einen Priester von Tadenus, dem illyrischen Gott der Heilung."Grüße“, sagt der Priester. "Ich habe von deinen Wunden gehört und bin gekommen, um meine Hilfe anzubieten.“\n\nDu zögerst Zuerst, aber Sie stimmen zu, dass der Priester Sie heilen lässt. Er legt seine Hände auf deine Wunden und singt ein Gebet zu Tadenus.\nDann opfert er ein kleines Tier und bietet sein Fleisch den Flammen an.\n\n Während der Priester betet, verspürst du ein warmes Kribbeln in deinen Wunden. Der Schmerz beginnt nachzulassen. Nach ein paar Minuten beendet der Priester sein Gebet. Er lächelt und sagt$:$ "Tadenus hat unsere Gebete erhört.“\n\nDu bist dem Priester dankbar und weißt, dass Tadenus über dich gewacht hat.\nDu weißt jedoch, dass nicht alle Wunden heilen und dass selbst die Götter nicht heilen können Rette uns immer. Sie müssen abwarten, ob Tadenus‘ Segen ausreicht, um Sie zu heilen."
+pr_illyrian.001.a:0 "Jetzt warten wir"
+
+
+pr_illyrian.002.t:0 "Hauptgottheit wählen"
+pr_illyrian.002.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+pr_illyrian.002.en:0 "En"
+pr_illyrian.002.medaurus:0 "Medaurus"
+pr_illyrian.002.anzotica:0 "Anzotica"
+pr_illyrian.002.bindus:0 "Bindus"
+pr_illyrian.002.tadenus:0 "Tadenus"
+pr_illyrian.002.optout:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkt"
+
+pr_illyrian.003.t:0 "Ein Traum von Medaurus"
+pr_illyrian.003.desc:0 "Sie schlafen in Ihrem Bett, wenn Sie einen Traum haben. In deinem Traum stehst du auf einem Schlachtfeld. Der Boden ist mit Blut befleckt und die Luft ist erfüllt vom Kampflärm.\n\nPlötzlich siehst du eine Gestalt auf einem weißen Pferd auf dich zukommen. Es handelt sich um Medaurus, den illyrischen Kriegsgott. Medaurus ist groß und imposant und trägt eine Lanze in der Hand.\n\nMedaurus bleibt vor Ihnen stehen und hebt seine Lanze. „Ich bin zu dir gekommen“, sagt er, „weil du ausgewählt wurdest, ein Verfechter des illyrischen Glaubens zu sein.“\n\nDu bist schockiert. "Mich?" du fragst. „Aber ich bin nur ein einfacher Mensch.“\n\n„Du bist nicht so einfach“, sagt Medaurus. „Du hast ein starkes Herz und einen mutigen Geist. Das sind die Eigenschaften, die ein Champion braucht.“\n\nMedaurus senkt seine Lanze. „Ich segne dich mit meiner Kraft und meinem Mut“, sagt er. „Du wirst ein großer Anführer und ein mächtiger Krieger sein. Du wirst dem illyrischen Glauben Ruhm verleihen.“ Medaurus verschwindet und du wachst auf.\nDu sitzt aufrecht im Bett und dein Herz klopft. War es nur ein Traum? Oder ist Ihnen Medaurus wirklich erschienen?"
+pr_illyrian.003.a:0 "Ist das echt oder ein Traum?"
+
+
+#Embrace Dacian culture 
+pr_illyrian.005.t:0 "Illyrisch"
+pr_illyrian.005.desc:0 "Zu lange haben wir die alten Tugenden der illyrischen Stämme verloren. Der letzte König, der sich gegen die Römer auflehnte, Bardylis, war ein echter Illyrer. Er war mutig, stark und weise. Er kämpfte für die Freiheit unseres Volkes und starb den Heldentod. Aber nach seinem Tod war unser Volk zerstreut und gespalten. Wir haben unsere Kultur und unsere Sprache verloren. Wir wurden Sklaven der Römer. Aber jetzt ist es an der Zeit, unser Erbe zurückzugewinnen. Es ist Zeit, wieder Illyrer zu werden."
+pr_illyrian.005.a:0 "Umarmen die illyrische Kultur"

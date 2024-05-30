@@ -1,0 +1,27 @@
+﻿l_german:
+
+# Return Cultus Deorum Decision 
+
+select_personal_deity_germanic_decision.select_woden:0 "Wōden, Gott der Weisheit"
+select_personal_deity_germanic_decision.select_fri:0 "Frī, Göttin der Fruchtbarkeit"
+select_personal_deity_germanic_decision.select_:0 "Njǫrd, Gott des Reichtums und des Handels"
+select_personal_deity_germanic_decision.select_tiwaz:0 "Tīwaz, Kriegsgott"
+select_personal_deity_germanic_decision.select_seaxneat:0 "Seaxnēat, beschützer der Sachsen"
+
+select_personal_deity_germanic_decision.select_wotan:0 "Wotan, Gott der Weisheit"
+select_personal_deity_germanic_decision.select_freyr:0 "Freyr, Göttin der Fruchtbarkeit"
+select_personal_deity_germanic_decision.select_njordr:0 "Njordr, Gott des Reichtums und des Handels"
+select_personal_deity_germanic_decision.select_nornir:0 "Nornir, Kriegsgott"
+select_personal_deity_germanic_decision.select_mimir:0 "Mímir although he's not always recognized as god he has much knowledge"
+
+
+solstice_summer_decision:0 "Halten die Sommersonnenwende fest"
+solstice_summer_decision_tooltip:1 "Halten die Sommersonnenwende fest"
+solstice_summer_decision_desc:0 "Während die Winde abkühlen und die Meere zu steigen beginnen, blickt ein stürmischer Horizont auf die Menschen des [ROOT.Char.GetPrimaryTitle.GetName]. Um eine reiche Ernte zu gewährleisten und das Reich vereint zu halten, muss ich eine einberufen Audienz bei den Göttern, bevor die Wintergeister eintreffen und Schnee das Land bedeckt."
+solstice_summer_decision_confirm:1 "Bereite das Reich vor"
+
+solstice_winter_decision:0 "Halten die Wintersonnenwende fest"
+solstice_winter_decision_tooltip:1 "Halten die Wintersonnenwende fest"
+solstice_winter_decision_desc:0 "Mit Beginn des neuen Jahres beginnt sich die Luft langsam zu erwärmen. Den Menschen in [ROOT.Char.GetPrimaryTitle.GetName] steht eine glänzende Zukunft bevor. Um diese Zukunft zu sichern, muss ich die Götter und Geister vor dem Jahr um ihren Segen bitten neue Saison beginnt."
+solstice_decision_confirm:0 "Sammeln das Reich für die Sonnenwende"
+solstice_winter_decision_confirm:1 "Bereite das Reich vor"

@@ -1,0 +1,34 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+
+#Königreich Illyrien
+kingdom_of_illyria_decision:0 "Wiederherstellung des Königreichs Illyrien"
+kingdom_of_illyria_desc:0 "Viel zu lange waren die illyrischen Länder unter der Kontrolle unserer Feinde, für die unsere Vorfahren lebten und kämpften."
+kingdom_of_illyria_effect_tooltip:0 "Wiederhergestelltes Königreich von Illyrien"
+create_illyria_effect_tooltip:1 "Es ist an der Zeit, das Königreich Illyrien zurückzuerobern"
+kingdom_of_illyria_tooltip:1 "Es ist an der Zeit, Illyrien zurückzufordern"
+kingdom_of_illyria_decision_confirm:0 "Königreich Illyrien erschaffen"
+
+set_capital_skodrinon_decision:0 "Skodrinon zur Hauptstadt machen"
+set_capital_skodrinon_decision_desc:0 "Macht Skodrinon zur Hauptstadt von Dakien"
+set_capital_skodrinon_decision_tooltip:1 "Hauptstadt in Skodrinon ändern"
+set_capital_skodrinon_decision_confirm:0 "Hauptstadt ändern"
+
+#Choose main deity
+choose_main_deity_illyrian_decision:0 "Wählen Sie Ihre Hauptgottheit"
+choose_main_deity_illyrian_decision_desc:0 "Für eine zusätzliche Hilfe im täglichen Leben kann ich einen Gott als meinen persönlichen Hauptgott wählen"
+choose_main_deity_illyrian_decision_tt:0 "Sie beginnen, Ihr Leben nach den Werten von"
+select_main_deity_illyrian_decision.select_en:0 "En hoher Gott der Illyrer"
+select_main_deity_illyrian_decision.select_medaurus:0 "Medaurus, Gott des Krieges"
+select_main_deity_illyrian_decision.select_anzotica:0 "Anzotica Göttin der Fruchtbarkeit"
+select_main_deity_illyrian_decision.select_bindus:0 "Bindus Gott des Wassers"
+select_main_deity_illyrian_decision.select_tadenus:0 "Tadenus Gott der Gesundheit"
+choose_main_deity_illyrian_decision_tooltip:1 "Hauptgott(e) wählen"
+choose_main_deity_illyrian_decision_confirm:1 "Wähle Hauptgott(dess)"
+
+illyrian_culture_decision:0 "Illyrianische Kultur annehmen"
+illyrian_culture_decision_desc:0 "Wir haben unsere alte Religion zurück, jetzt ist es an der Zeit, die illyrische Lebensweise wieder einzuführen."
+illyrian_culture_decision_tooltip:0 "Die illyrische Kultur wieder einführen"
+illyrian_culture_decision_confirm:0 "bestätigen"

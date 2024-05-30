@@ -75,6 +75,8 @@ caucasus_religion ={
 				doctrine = doctrine_clerical_gender_either
 				doctrine = doctrine_clerical_marriage_allowed
 				doctrine = doctrine_clerical_succession_temporal_appointment
+
+				doctrine = doctrine_funeral_stoic
 	
 				holy_order_names = {
 					{ name = "holy_order_kopalas_finest" }
@@ -94,16 +96,16 @@ caucasus_religion ={
 					#Creator
 					CreatorName = georgian_polytheism_creator_god_name
 					CreatorNamePossessive = georgian_polytheism_creator_god_name_possessive
-					CreatorSheHe = CHARACTER_SHEHE_SHE
-					CreatorHerHis = CHARACTER_HERHIS_HER
-					CreatorHerHim = CHARACTER_HERHIM_HER
+					CreatorSheHe = CHARACTER_SHEHE_HE
+					CreatorHerHis = CHARACTER_HERHIS_HIS
+					CreatorHerHim = CHARACTER_HERHIM_HIM
 			
 					#HealthGod
 					HealthGodName = georgian_polytheism_health_god_name
 					HealthGodNamePossessive = georgian_polytheism_health_god_name_possessive
-					HealthGodSheHe = CHARACTER_SHEHE_HE
-					HealthGodHerHis = CHARACTER_HERHIS_HIS
-					HealthGodHerHim = CHARACTER_HERHIM_HIM
+					HealthGodSheHe = CHARACTER_SHEHE_SHE
+					HealthGodHerHis = CHARACTER_HERHIS_HER
+					HealthGodHerHim = CHARACTER_HERHIM_HER
 					
 					#FertilityGod
 					FertilityGodName = georgian_polytheism_fertility_god_name
@@ -115,9 +117,9 @@ caucasus_religion ={
 					#WealthGod
 					WealthGodName = georgian_polytheism_wealth_god_name
 					WealthGodNamePossessive = georgian_polytheism_wealth_god_name_possessive
-					WealthGodSheHe = CHARACTER_SHEHE_HE
-					WealthGodHerHis = CHARACTER_HERHIS_HIS
-					WealthGodHerHim = CHARACTER_HERHIM_HIM
+					WealthGodSheHe = CHARACTER_SHEHE_SHE
+					WealthGodHerHis = CHARACTER_HERHIS_HER
+					WealthGodHerHim = CHARACTER_HERHIM_HER
 			
 					#HouseholdGod
 					HouseholdGodName = georgian_polytheism_household_god_name
@@ -136,9 +138,9 @@ caucasus_religion ={
 					#KnowledgeGod
 					KnowledgeGodName = georgian_polytheism_knowledge_god_name
 					KnowledgeGodNamePossessive = georgian_polytheism_knowledge_god_name_possessive
-					KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-					KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-					KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+					KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+					KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+					KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
 			
 					#WarGod
 					WarGodName = georgian_polytheism_war_god_name
@@ -157,16 +159,16 @@ caucasus_religion ={
 					#NightGod
 					NightGodName = georgian_polytheism_night_god_name
 					NightGodNamePossessive = georgian_polytheism_night_god_name_possessive
-					NightGodSheHe = CHARACTER_SHEHE_SHE
-					NightGodHerHis = CHARACTER_HERHIS_HER
-					NightGodHerHim = CHARACTER_HERHIM_HER
+					NightGodSheHe = CHARACTER_SHEHE_HE
+					NightGodHerHis = CHARACTER_HERHIS_HIS
+					NightGodHerHim = CHARACTER_HERHIM_HIM
 			
 					#WaterGod
 					WaterGodName = georgian_polytheism_water_god_name
 					WaterGodNamePossessive = georgian_polytheism_water_god_name_possessive
-					WaterGodSheHe = CHARACTER_SHEHE_HE
-					WaterGodHerHis = CHARACTER_HERHIS_HIS
-					WaterGodHerHim = CHARACTER_HERHIM_HIM
+					WaterGodSheHe = CHARACTER_SHEHE_SHE
+					WaterGodHerHis = CHARACTER_HERHIS_HER
+					WaterGodHerHim = CHARACTER_HERHIM_HER
 			
 			
 			
@@ -276,6 +278,8 @@ caucasus_religion ={
 			doctrine = doctrine_clerical_marriage_allowed
 			doctrine = doctrine_clerical_succession_temporal_appointment
 
+			doctrine = doctrine_funeral_cremation
+
 			holy_order_names = {
 				{ name = "holy_order_Protectors_of_the_middle_world" }
 				{ name = "holy_order_sons_of_armazi" }
@@ -294,16 +298,16 @@ caucasus_religion ={
 				#Creator
 				CreatorName = armenian_polytheism_creator_god_name
 				CreatorNamePossessive = armenian_polytheism_creator_god_name_possessive
-				CreatorSheHe = CHARACTER_SHEHE_SHE
-				CreatorHerHis = CHARACTER_HERHIS_HER
-				CreatorHerHim = CHARACTER_HERHIM_HER
+				CreatorSheHe = CHARACTER_SHEHE_HE
+				CreatorHerHis = CHARACTER_HERHIS_HIS
+				CreatorHerHim = CHARACTER_HERHIM_HIM
 		
 				#HealthGod
 				HealthGodName = armenian_polytheism_health_god_name
 				HealthGodNamePossessive = armenian_polytheism_health_god_name_possessive
-				HealthGodSheHe = CHARACTER_SHEHE_HE
-				HealthGodHerHis = CHARACTER_HERHIS_HIS
-				HealthGodHerHim = CHARACTER_HERHIM_HIM
+				HealthGodSheHe = CHARACTER_SHEHE_SHE
+				HealthGodHerHis = CHARACTER_HERHIS_HER
+				HealthGodHerHim = CHARACTER_HERHIM_HER
 				
 				#FertilityGod
 				FertilityGodName = armenian_polytheism_fertility_god_name
@@ -322,16 +326,16 @@ caucasus_religion ={
 				#HouseholdGod
 				HouseholdGodName = armenian_polytheism_household_god_name
 				HouseholdGodNamePossessive = armenian_polytheism_household_god_name_possessive
-				HouseholdGodSheHe = CHARACTER_SHEHE_SHE
-				HouseholdGodHerHis = CHARACTER_HERHIS_HER
-				HouseholdGodHerHim = CHARACTER_HERHIM_HER
+				HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+				HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+				HouseholdGodHerHim = CHARACTER_HERHIM_THEM
 		
 				#FateGod
 				FateGodName = armenian_polytheism_fate_god_name
 				FateGodNamePossessive = armenian_polytheism_fate_god_name_possessive
-				FateGodSheHe = CHARACTER_SHEHE_THEY
-				FateGodHerHis = CHARACTER_HERHIS_THEIR
-				FateGodHerHim = CHARACTER_HERHIM_THEM
+				FateGodSheHe = CHARACTER_SHEHE_HE
+				FateGodHerHis = CHARACTER_HERHIS_HIS
+				FateGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#KnowledgeGod
 				KnowledgeGodName = armenian_polytheism_knowledge_god_name
@@ -343,9 +347,9 @@ caucasus_religion ={
 				#WarGod
 				WarGodName = armenian_polytheism_war_god_name
 				WarGodNamePossessive = armenian_polytheism_war_god_name_possessive
-				WarGodSheHe = CHARACTER_SHEHE_HE
-				WarGodHerHis = CHARACTER_HERHIS_HIS
-				WarGodHerHim = CHARACTER_HERHIM_HIM
+				WarGodSheHe = CHARACTER_SHEHE_SHE
+				WarGodHerHis = CHARACTER_HERHIS_HER
+				WarGodHerHim = CHARACTER_HERHIM_HER
 		
 				#TricksterGod
 				TricksterGodName = armenian_polytheism_trickster_god_name
@@ -364,9 +368,9 @@ caucasus_religion ={
 				#WaterGod
 				WaterGodName = armenian_polytheism_water_god_name
 				WaterGodNamePossessive = armenian_polytheism_water_god_name_possessive
-				WaterGodSheHe = CHARACTER_SHEHE_HE
-				WaterGodHerHis = CHARACTER_HERHIS_HIS
-				WaterGodHerHim = CHARACTER_HERHIM_HIM
+				WaterGodSheHe = CHARACTER_SHEHE_SHE
+				WaterGodHerHis = CHARACTER_HERHIS_HER
+				WaterGodHerHim = CHARACTER_HERHIM_HER
 		
 		
 		
@@ -411,10 +415,10 @@ caucasus_religion ={
 				DeathDeityNamePossessive = armenian_polytheism_death_deity_name_possessive
 				DeathDeitySheHe = CHARACTER_SHEHE_HE
 				DeathDeityHerHis = CHARACTER_HERHIS_HIS
-				WitchGodName = armenian_polytheism_witchgodname_kudiani
-				WitchGodHerHis = CHARACTER_HERHIS_HER
+				WitchGodName = armenian_polytheism_witchgodname_aralez
+				WitchGodHerHis = CHARACTER_HERHIS_HIS
 				WitchGodSheHe = CHARACTER_SHEHE_HE
-				WitchGodHerHim = CHARACTER_HERHIM_HER
+				WitchGodHerHim = CHARACTER_HERHIM_HIM
 				WitchGodMistressMaster = mistress
 				WitchGodMotherFather = mother
 		

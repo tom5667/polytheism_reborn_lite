@@ -44,6 +44,8 @@ egyptian_religion ={
 			doctrine = special_doctrine_kemetic_patron_god
 			doctrine = special_doctrine_ecumenical_graeco_egyptian
 			doctrine = doctrine_pilgrimage_encouraged
+			doctrine = doctrine_funeral_mummification
+
 			#Main Group
 			doctrine = doctrine_no_head
 			doctrine = doctrine_gender_equal #Women could hold jobs and buisnesses and where treated with respect although men had more rights, so it's a bit up to debate. 
@@ -71,7 +73,7 @@ egyptian_religion ={
 			doctrine = doctrine_clerical_succession_temporal_fixed_appointment
 
 			#tenets
-			doctrine = tenet_unrelenting_faith
+			doctrine = tenet_animal_sacrifice
 			doctrine = tenet_ancestor_worship
 			doctrine = tenet_esotericism 
 			
@@ -94,9 +96,9 @@ egyptian_religion ={
 				#Creator
 				CreatorName = kemetic_polytheism_creator_god_name
 				CreatorNamePossessive = kemetic_polytheism_creator_god_name_possessive
-				CreatorSheHe = CHARACTER_SHEHE_SHE
-				CreatorHerHis = CHARACTER_HERHIS_HER
-				CreatorHerHim = CHARACTER_HERHIM_HER
+				CreatorSheHe = CHARACTER_SHEHE_HE
+				CreatorHerHis = CHARACTER_HERHIS_HIS
+				CreatorHerHim = CHARACTER_HERHIM_HIM
 		
 				#HealthGod
 				HealthGodName = kemetic_polytheism_health_god_name
@@ -122,23 +124,23 @@ egyptian_religion ={
 				#HouseholdGod
 				HouseholdGodName = kemetic_polytheism_household_god_name
 				HouseholdGodNamePossessive = kemetic_polytheism_household_god_name_possessive
-				HouseholdGodSheHe = CHARACTER_SHEHE_SHE
-				HouseholdGodHerHis = CHARACTER_HERHIS_HER
-				HouseholdGodHerHim = CHARACTER_HERHIM_HER
+				HouseholdGodSheHe = CHARACTER_SHEHE_HE
+				HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+				HouseholdGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#FateGod
 				FateGodName = kemetic_polytheism_fate_god_name
 				FateGodNamePossessive = kemetic_polytheism_fate_god_name_possessive
-				FateGodSheHe = CHARACTER_SHEHE_THEY
-				FateGodHerHis = CHARACTER_HERHIS_THEIR
-				FateGodHerHim = CHARACTER_HERHIM_THEM
+				FateGodSheHe = CHARACTER_SHEHE_HE
+				FateGodHerHis = CHARACTER_HERHIS_HIS
+				FateGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#KnowledgeGod
 				KnowledgeGodName = kemetic_polytheism_knowledge_god_name
 				KnowledgeGodNamePossessive = kemetic_polytheism_knowledge_god_name_possessive
-				KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-				KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-				KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+				KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+				KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+				KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
 		
 				#WarGod
 				WarGodName = kemetic_polytheism_war_god_name
@@ -164,9 +166,9 @@ egyptian_religion ={
 				#WaterGod
 				WaterGodName = kemetic_polytheism_water_god_name
 				WaterGodNamePossessive = kemetic_polytheism_water_god_name_possessive
-				WaterGodSheHe = CHARACTER_SHEHE_HE
-				WaterGodHerHis = CHARACTER_HERHIS_HIS
-				WaterGodHerHim = CHARACTER_HERHIM_HIM
+				WaterGodSheHe = CHARACTER_SHEHE_SHE
+				WaterGodHerHis = CHARACTER_HERHIS_HER
+				WaterGodHerHim = CHARACTER_HERHIM_HER
 
 				PantheonTerm = religion_the_gods
 				PantheonTermHasHave = pantheon_term_have
@@ -210,11 +212,11 @@ egyptian_religion ={
 				DeathDeitySheHe = CHARACTER_SHEHE_HE
 				DeathDeityHerHis = CHARACTER_HERHIS_HIS
 				WitchGodName = kemetic_polytheism_witchgodname_apophis
-				WitchGodHerHis = CHARACTER_HERHIS_HER
+				WitchGodHerHis = CHARACTER_HERHIS_HIS
 				WitchGodSheHe = CHARACTER_SHEHE_HE
-				WitchGodHerHim = CHARACTER_HERHIM_HER
-				WitchGodMistressMaster = mistress
-				WitchGodMotherFather = mother
+				WitchGodHerHim = CHARACTER_HERHIM_HIM
+				WitchGodMistressMaster = master
+				WitchGodMotherFather = father
 				
 				GHWName = ghw_great_holy_wars
 				GHWNamePlural = ghw_great_holy_wars
@@ -246,6 +248,8 @@ egyptian_religion ={
 		doctrine = doctrine_theocracy_lay_clergy
 		doctrine = special_doctrine_no_patron_god
 		doctrine = doctrine_pilgrimage_encouraged
+		doctrine = doctrine_funeral_mummification
+		
 		#mariage 
 		doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
 		doctrine = doctrine_bastardry_legitimization
@@ -289,9 +293,9 @@ egyptian_religion ={
 			#Creator
 			CreatorName = atenism_creator_god_name
 			CreatorNamePossessive = atenism_creator_god_name_possessive
-			CreatorSheHe = CHARACTER_SHEHE_SHE
-			CreatorHerHis = CHARACTER_HERHIS_HER
-			CreatorHerHim = CHARACTER_HERHIM_HER
+			CreatorSheHe = CHARACTER_SHEHE_HE
+			CreatorHerHis = CHARACTER_HERHIS_HIS
+			CreatorHerHim = CHARACTER_HERHIM_HIM
 	
 			#HealthGod
 			HealthGodName = atenism_health_god_name
@@ -303,9 +307,9 @@ egyptian_religion ={
 			#FertilityGod
 			FertilityGodName = atenism_fertility_god_name
 			FertilityGodNamePossessive = kemetic_fertility_god_name_possessive
-			FertilityGodSheHe = CHARACTER_SHEHE_SHE
-			FertilityGodHerHis = CHARACTER_HERHIS_HER
-			FertilityGodHerHim = CHARACTER_HERHIM_HER
+			FertilityGodSheHe = CHARACTER_SHEHE_HE
+			FertilityGodHerHis = CHARACTER_HERHIS_HIS
+			FertilityGodHerHim = CHARACTER_HERHIM_HIM
 	
 			#WealthGod
 			WealthGodName = atenism_wealth_god_name
@@ -317,23 +321,23 @@ egyptian_religion ={
 			#HouseholdGod
 			HouseholdGodName = atenism_household_god_name
 			HouseholdGodNamePossessive = atenism_household_god_name_possessive
-			HouseholdGodSheHe = CHARACTER_SHEHE_SHE
-			HouseholdGodHerHis = CHARACTER_HERHIS_HER
-			HouseholdGodHerHim = CHARACTER_HERHIM_HER
+			HouseholdGodSheHe = CHARACTER_SHEHE_HE	
+			HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+			HouseholdGodHerHim = CHARACTER_HERHIM_HIM
 	
 			#FateGod
 			FateGodName = atenism_fate_god_name
 			FateGodNamePossessive = atenism_fate_god_name_possessive
-			FateGodSheHe = CHARACTER_SHEHE_THEY
-			FateGodHerHis = CHARACTER_HERHIS_THEIR
-			FateGodHerHim = CHARACTER_HERHIM_THEM
+			FateGodSheHe = CHARACTER_SHEHE_HE
+			FateGodHerHis = CHARACTER_HERHIS_HIS	
+			FateGodHerHim = CHARACTER_HERHIM_HIM
 	
 			#KnowledgeGod
 			KnowledgeGodName = atenism_knowledge_god_name
 			KnowledgeGodNamePossessive = atenism_knowledge_god_name_possessive
-			KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-			KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-			KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+			KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+			KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+			KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
 	
 			#WarGod
 			WarGodName = atenism_war_god_name
@@ -352,9 +356,9 @@ egyptian_religion ={
 			#NightGod
 			NightGodName = atenism_night_god_name
 			NightGodNamePossessive = atenism_night_god_name_possessive
-			NightGodSheHe = CHARACTER_SHEHE_SHE
-			NightGodHerHis = CHARACTER_HERHIS_HER
-			NightGodHerHim = CHARACTER_HERHIM_HER
+			NightGodSheHe = CHARACTER_SHEHE_HE
+			NightGodHerHis = CHARACTER_HERHIS_HIS
+			NightGodHerHim = CHARACTER_HERHIM_HIM
 	
 			#WaterGod
 			WaterGodName = atenism_water_god_name
@@ -407,9 +411,9 @@ egyptian_religion ={
 			WitchGodName = atenism_witchgodname_apophis
 			WitchGodHerHis = CHARACTER_HERHIS_HER
 			WitchGodSheHe = CHARACTER_SHEHE_HE
-			WitchGodHerHim = CHARACTER_HERHIM_HER
-			WitchGodMistressMaster = mistress
-			WitchGodMotherFather = mother
+			WitchGodHerHim = CHARACTER_HERHIM_HIM
+			WitchGodMistressMaster = master
+			WitchGodMotherFather = father
 			
 			GHWName = ghw_great_holy_wars
 			GHWNamePlural = ghw_great_holy_wars

@@ -178,7 +178,10 @@ e_gaul = {
 	landless = no
 	can_be_named_after_dynasty = no
 	capital = c_ile_de_france 
-
+	cultural_names = {
+		name_list_gaulish = pr_gaulish_gaul
+		name_list_roman = pr_roman_gaul
+	}
 	can_create = {
 		OR = {
 			faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
@@ -210,7 +213,10 @@ e_gaul = {
 		landless = no
 		can_be_named_after_dynasty = no
 		capital = c_ile_de_france 
-	
+		cultural_names = {
+			name_list_gaulish = pr_gaulish_celtica
+			name_list_roman = pr_roman_celtica
+		}
 
 		ai_primary_priority = {
 			if = {
@@ -233,7 +239,10 @@ e_gaul = {
 		landless = no
 		can_be_named_after_dynasty = no
 		capital = c_aachen 
-
+		cultural_names = {
+			name_list_gaulish = pr_gaulish_belgica
+			name_list_roman = pr_roman_belgica
+		}
 		ai_primary_priority = {
 			if = {
 				limit = {
@@ -256,7 +265,11 @@ e_gaul = {
 		landless = no
 		can_be_named_after_dynasty = no
 		capital = c_provence
-
+		cultural_names = {
+			name_list_gaulish = pr_gaulish_narbonensis
+			name_list_roman = pr_roman_narbonensis
+			name_list_celtic_iberian = pr_celtiberian_narbonensis
+		}
 		ai_primary_priority = {
 			if = {
 				limit = {
@@ -271,14 +284,17 @@ e_gaul = {
 	}
 	#Aquitania
 	k_aquitania = {
-		color = green_light
+		color = {93 239 100}
 		color2 = yellow
 		definite_form = yes 
 		ruler_uses_title_name = yes
 		landless = no
 		can_be_named_after_dynasty = no
 		capital = c_bordeaux
-
+		cultural_names = {
+			name_list_gaulish = pr_gaulish_aquitania
+			name_list_roman = pr_roman_aquitania
+		}
 		ai_primary_priority = {
 			if = {
 				limit = {
@@ -303,7 +319,10 @@ k_cisalpina  ={
 	landless = no
 	can_be_named_after_dynasty = no
 	capital = c_genoa 
-
+	cultural_names = {
+		name_list_gaulish = pr_gaulish_cisalpina
+		name_list_roman = pr_roman_cisalpina
+	}
 	ai_primary_priority = {
 		if = {
 			limit = {
@@ -660,6 +679,238 @@ k_pergamon ={
 				}	
 			}
 			add = @correct_culture_primary_score
+		}
+	}
+}
+e_spain = {
+	color = { 233 200 20 }
+
+	capital = c_toledo # Toledo
+	can_be_named_after_dynasty = no
+
+	cultural_names = {
+		name_list_bedouin = cn_isbaniya
+		name_list_butr = cn_isbaniya
+		name_list_baranis = cn_isbaniya
+		name_list_zaghawa = cn_isbaniya
+		name_list_levantine = cn_isbaniya
+		name_list_egyptian = cn_isbaniya
+		name_list_maghrebi = cn_isbaniya
+		name_list_andalusian = cn_isbaniya
+		name_list_yemeni = cn_isbaniya
+		name_list_celtic_iberian = pr_celitberian_hispania
+	}
+	k_pr_lusitania ={
+		#color = {230 208 }
+		#color = {230 203 108}
+		color = {230 192 119}
+		capital = c_merida
+		definite_form = yes
+		can_be_named_after_dynasty = no
+		ruler_uses_title_name = yes
+		landless = no
+		cultural_names = {
+			name_list_celtic_iberian = pr_celitberian_lusitania
+			name_list_roman = pr_roman_lusitania
+			#name_list_greek
+		
+		}
+		can_create = {
+			OR = {
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+				religion = religion:celtic_religion
+			}
+			
+		}
+		ai_primary_priority = {
+			if = {
+				limit = {
+					OR = {
+						religion = religion:roman_religion
+						religion = religion:hellenism_religion
+						religion = religion:celtic_religion
+					}	
+				}
+				add = @correct_culture_primary_score
+			}
+		}
+	}
+
+	k_pr_galicia ={
+		color = { 164 230 96  }
+		capital = c_astorga
+		definite_form = yes
+		can_be_named_after_dynasty = no
+		ruler_uses_title_name = yes
+		landless = no
+		cultural_names = {
+			name_list_celtic_iberian = pr_celitberian_galicia
+			name_list_roman = pr_roman_galicia
+			#name_list_greek
+		
+		}
+		can_create = {
+			OR = {
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+				religion = religion:celtic_religion
+			}
+			
+		}
+		ai_primary_priority = {
+			if = {
+				limit = {
+					OR = {
+						religion = religion:roman_religion
+						religion = religion:hellenism_religion
+						religion = religion:celtic_religion
+					}	
+				}
+				add = @correct_culture_primary_score
+			}
+		}
+	}
+
+	k_pr_vasconia = {
+		#color = { 230 202 85 }
+		color = { 230 191 83 }
+		capital = c_navarra
+		definite_form = yes
+		can_be_named_after_dynasty = no
+		ruler_uses_title_name = yes
+		landless = no
+		cultural_names = {
+			name_list_celtic_iberian = pr_celitberian_vasconia
+			name_list_roman = pr_roman_vasconia
+			#name_list_greek
+		
+		}
+		can_create = {
+			OR = {
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+				religion = religion:celtic_religion
+			}
+			
+		}
+		ai_primary_priority = {
+			if = {
+				limit = {
+					OR = {
+						religion = religion:roman_religion
+						religion = religion:hellenism_religion
+						religion = religion:celtic_religion
+					}	
+				}
+				add = @correct_culture_primary_score
+			}
+		}
+	}
+
+	k_pr_tartessia = {
+		color = { 229 158 45 }
+		capital = c_cordoba
+		definite_form = yes
+		can_be_named_after_dynasty = no
+		ruler_uses_title_name = yes
+		landless = no
+		cultural_names = {
+			name_list_celtic_iberian = pr_celitberian_turdetania
+			name_list_roman = pr_roman_turdetania
+			#name_list_greek
+		
+		}
+
+		can_create = {
+			OR = {
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+				religion = religion:celtic_religion
+			}
+			
+		}
+		ai_primary_priority = {
+			if = {
+				limit = {
+					OR = {
+						religion = religion:roman_religion
+						religion = religion:hellenism_religion
+						religion = religion:celtic_religion
+					}	
+				}
+				add = @correct_culture_primary_score
+			}
+		}
+	}
+
+	k_pr_iberia = {
+		color = { 230 124 46 }
+		capital = c_barcelona
+		definite_form = yes
+		can_be_named_after_dynasty = no
+		ruler_uses_title_name = yes
+		landless = no
+		cultural_names = {
+			name_list_celtic_iberian = pr_celitberian_iberia
+			name_list_roman = pr_roman_iberia
+			#name_list_greek
+		
+		}
+
+		can_create = {
+			OR = {
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+			
+		}
+		ai_primary_priority = {
+			if = {
+				limit = {
+					OR = {
+						religion = religion:roman_religion
+						religion = religion:hellenism_religion
+					}	
+				}
+				add = @correct_culture_primary_score
+			}
+		}
+	}
+
+	k_pr_celtiberia = {
+		#color = { 230 208 11 }
+		color = { 229 208 103 }
+		capital = c_toledo
+		definite_form = yes
+		can_be_named_after_dynasty = no
+		ruler_uses_title_name = yes
+		landless = no
+
+		cultural_names = {
+			name_list_celtic_iberian = pr_celitberian_celtiberia
+			name_list_roman = pr_roman_celtiberia
+			#name_list_greek
+		
+		}
+
+		can_create = {
+			OR = {
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+			
+		}
+		ai_primary_priority = {
+			if = {
+				limit = {
+					OR = {
+						religion = religion:roman_religion
+						religion = religion:hellenism_religion
+					}	
+				}
+				add = @correct_culture_primary_score
+			}
 		}
 	}
 }

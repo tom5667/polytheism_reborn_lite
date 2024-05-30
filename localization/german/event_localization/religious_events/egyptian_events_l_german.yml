@@ -1,0 +1,45 @@
+﻿l_german:
+
+et.001.t:0 "Königreich schaffen"
+et.001.desc:0 "Von den ersten Tagen von Narmer bis zu den letzten Tagen von Nectanebo erhebt sich aus der Asche der letzten Königreiche und der Asche der Prätendenten ein neues vereintes Kemetisch Königreich"
+et.001.a:0 "Das Kemetisch Königreich ist wieder da"
+
+#Choose main deity 
+kemetic_cmd.001.t:0 "Hauptgottheit wählen"
+kemetic_cmd.001.desc:0 "Um mir im Kampf um die Herrschaft über mein Reich zu helfen, könnte ich mich einem der Götter oder Göttinnen widmen"
+kemetic_cmd.001.a:0 "Ich wähle Amun Ra"
+kemetic_cmd.001.b:0 "Ich wähle Ra"
+kemetic_cmd.001.c:0 "Ich wähle Isis"
+kemetic_cmd.001.d:0 "Ich wähle Montu"
+kemetic_cmd.001.e:0 "Ich wähle Hathor"
+kemetic_cmd.001.f:0 "Vielleicht ist jetzt nicht der richtige Zeitpunkts"
+
+
+kemetic.006.t:0 "Shema"
+kemetic.006.desc:0 "Wir haben den Oberen Nil und die alten Herzogtümer zurückerobert und durch den Willen von Horus werden wir das Königreich Shema wieder auferstehen lassen. "
+kemetic.006.a:0 "Shema ist wieder da"
+
+
+kemetic.007.t:0 "Mehu"
+kemetic.007.desc:0 "Wir haben den Unteren Nil und die alten Herzogtümer zurückerobert und durch den Willen von Horus werden wir das Königreich Mehu wieder auferstehen lassen."
+kemetic.007.a:0 "Mehu ist wieder da"
+
+kemetic.008.t:0 "Der Zorn von Ra"
+kemetic.008.desc:0 "Es kommt zu einer Sonnenfinsternis, und der Priester von Ra erklärte dies zu einem Zeichen des Unmuts des Gottes. Sie können Ra besänftigen, indem Sie ihm ein Opfer darbringen, oder den Priester ignorieren und riskieren, den Gott zu verärgern."
+kemetic.008.a:0 "Offer a sacrifice to Ra"
+kemetic.008.b:0 "Ignore the priest of Ra"
+
+kemetic.009.t:0 "Ein Besuch von Anubis"
+kemetic.009.desc:0 "Du hast einen seltsamen und schrecklichen Traum. Sie befinden sich in einer dunklen und düsteren Halle, umgeben von Statuen tierköpfiger Götter. Am Ende der Halle sehen Sie eine große Waage mit einer Feder auf der einen Seite und einem Herzen auf der anderen.\n\nNeben der Waage steht eine Gestalt mit Kapuze, die einen Stab und ein Messer hält. Er enthüllt sein Gesicht und du schnappst vor Entsetzen nach Luft. Es ist Anubis, der Gott der Mumifizierung und des Jenseits. Er ist gekommen, um deine Seele zu richten und über dein Schicksal in der Unterwelt zu entscheiden. Sie können sich seinem Urteil unterwerfen oder versuchen, ihn mit Gold und Geschenken zu bestechen."
+kemetic.009.a:0 "Unterwerfe dich dem Urteil von Anubis"
+kemetic.009.b:0 "Versuchen Sie, Anubis zu bestechen"
+
+kemetic.010.t:0 "Die Priesterin von Isis"
+kemetic.010.desc:0 "Sie werden von einer Priesterin der Isis, der Göttin der Magie und Heilung, besucht. Sie behauptet, dass sie eine Vision von der Göttin erhalten hat und dass sie Ihnen Ihre Zukunft offenbaren kann. Sie sind neugierig und fasziniert von ihrem Angebot. Sie haben die Wahl, die Priesterin von Isis zu konsultieren oder sie als Betrügerin abzutun."
+kemetic.010.a:0 "Konsultieren Sie die Priesterin von Isis"
+kemetic.010.b:0 "Entlassen Sie die Priesterin als Betrügerin"
+
+kemetic.011.t:0 "Der Segen von Ma’at"
+kemetic.011.desc:0 "Sie spazieren durch Ihren Garten und genießen die frische Luft und die Blumen. Sie stoßen auf einen kleinen Schrein, der Ma’at, der Göttin der Wahrheit und Gerechtigkeit, gewidmet ist. Sie haben sie immer für ihre Rolle bei der Aufrechterhaltung der Ordnung des Kosmos und der Harmonie der Gesellschaft bewundert.\n\nSie beschließen, ihr Ihren Respekt zu erweisen und um ihren Segen zu bitten. Sie können ihr ein Blumengeschenk machen oder ihr zu Ehren eine Hymne aufsagen."
+kemetic.011.a:0 "Opfer blumen zu Ma’at "
+kemetic.011.b:0 "Rezitieren Sie eine Hymne zu Ehren von Ma'at"

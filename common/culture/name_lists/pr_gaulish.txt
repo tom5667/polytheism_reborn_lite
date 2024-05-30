@@ -1,7 +1,6 @@
 ﻿name_list_gaulish = {
 		dynasty_names = {
 			"dynn_Aiduoi"
-			"dynn_Arelica"
 			"dynn_Arelicoi"
 			"dynn_Bituriges"
 			"dynn_Brigantioi"
@@ -15,17 +14,36 @@
 			"dynn_Allobrogis"
 			"dynn_Lemouices"
 			"dynn_Pictones"
+
+			"dynn_Aiduogenos"
+			"dynn_Arelicogenetos"
+			"dynn_Brigantiogenos"
+			"dynn_Brigantiogenetos"
+			"dynn_Parisigenos"
+			"dynn_Parisiogenetos"
+			"dynn_Cauarogenos"
+			"dynn_Cauarogenetos"
+			"dynn_Lexsuogenos"
+			"dynn_Lexsuogenetos"
+			"dynn_Redogenos"
+			"dynn_Redogenetos"
+			"dynn_Riedogenos"
+			"dynn_Riedogenetos"
+			"dynn_Limogenos"
+			"dynn_Eburogenos"
+			"dynn_Eburowices"
+			"dynn_Pritani"
+
+			
 		}
 
 
 	male_names = {
-		Ambiorix  Abbo Acco Argiotalus Ariogaisos Arleno Atebodwos Attalus Axtrotalus Bilius Brennos Brogimaros Camulos 
-		Camanos Carmo Caturix Celunno Cerdo Cilurnos Contessilo Corius Dagodubnos Damos Dosso Drutalos Cassiwellaunus
-		Dunnius Garomaros Garos Lantumaros Katumaros Kintugenos Kintugnatos Leno  Lukotorix Lutumaros Maguno 
-		Oclinos Samo Samorix Segomaros Talos Tanisius Tinus 
-
-		#New
-		Catuolcos Adyantumaros Carantos Dagomaros Iestinos Leucos Mogurix Uros Toutowalos
+		Ambiorix Abbo Acco Argiotalus Ariogaisos Arleno Atebodwos Attalus Axrotalus Bilios Brennos
+		Brogimaros Camulos Carmanos Carmo Caturix Celunno Cerdo Cilurnos Contessilo Conteddios Corios Dagodubnos Damos
+		Dosso Drutalos Garomaros Garos Iantumaros Katumaros Kintugenos Kintugnatos Leno Lukotorix Lutumaros Maguno Oclinos
+		Samo Samorix Segomaros Talos Tanisios Tinos Toccos Cassiwellaunos Catuolcos Adyantumaros Carantos Dagomaros
+		Iestinos Leucos Mogurix Uros Toutowalos
 	}
 	female_names = {
 		Abrexta Acaunissa Aculia Adbugissa Banna Baulia Blanda Boudia  Abbula Cantismerta boudilatis Carata Cauaria Cloustria 

@@ -641,9 +641,9 @@ set_bhakti_effect = {
 		}
 		else_if = {	
 			limit = {
-				has_character_modifier = celtic_iberian_arentius
+				has_character_modifier = celtic_iberian_arancia
 			}
-			remove_character_modifier = celtic_iberian_arentius
+			remove_character_modifier = celtic_iberian_arancia
 			add_piety = massive_piety_loss
 		}
 		else_if = {	
@@ -832,6 +832,110 @@ set_bhakti_effect = {
 			}
 			remove_character_modifier = romano_germanic_isis_freia
 			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = romano_hispanic_jupiter_solutorius
+			}
+			remove_character_modifier = romano_hispanic_jupiter_solutorius
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = romano_hispanic_minerva
+			}
+			remove_character_modifier = romano_hispanic_minerva
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = romano_hispanic_mars_neto
+			}
+			remove_character_modifier = romano_hispanic_mars_neto
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = romano_hispanic_lucubo 
+			}
+			remove_character_modifier = romano_hispanic_lucubo 
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = romano_hispanic_nabia
+			}
+			remove_character_modifier = romano_hispanic_nabia
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = cultus_orientis_jupiter_dolichenus
+			}
+			remove_character_modifier = cultus_orientis_jupiter_dolichenus
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = cultus_orientis_juno_caelestis
+			}
+			remove_character_modifier = cultus_orientis_juno_caelestis
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = cultus_orientis_mercurius_sobrius
+			}
+			remove_character_modifier = cultus_orientis_mercurius_sobrius
+			add_piety = massive_piety_loss
+		}
+		else_if = {	
+			limit = {
+				has_character_modifier = cultus_orientis_eshmun
+			}
+			remove_character_modifier = cultus_orientis_eshmun
+			add_piety = massive_piety_loss
+		}
+	}
+	#Iberian
+	else_if = {
+		limit = {
+			religion = religion:iberian_religion
+		}
+		if = {	
+			limit = {
+				has_character_modifier = lusitanian_reue
+			}
+			remove_character_modifier = lusitanian_reue
+			add_piety = massive_piety_loss
+		}
+		else_if = {
+			limit = { 
+				has_character_modifier = lusitanian_arancio
+			 }
+			 remove_character_modifier = lusitanian_arancio
+			 add_piety = massive_piety_loss
+		}
+		else_if = {
+			limit = { 
+				has_character_modifier = lusitanian_ataegina
+			 }
+			 remove_character_modifier = lusitanian_ataegina
+			 add_piety = massive_piety_loss
+		}
+		else_if = {
+			limit = { 
+				has_character_modifier = lusitanian_lucubo
+			 }
+			 remove_character_modifier = lusitanian_lucubo
+			 add_piety = massive_piety_loss
+		}
+		else_if = {
+			limit = { 
+				has_character_modifier = lusitanian_cariocecus
+			 }
+			 remove_character_modifier = lusitanian_cariocecus
+			 add_piety = massive_piety_loss
 		}
 	}
 	#Daco Thracian

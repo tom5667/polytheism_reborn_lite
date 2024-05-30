@@ -1,0 +1,69 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+
+ game_rule_category_polytheism_reborn:0 "Polytheism Reborn"  
+
+ rule_historical_polytheistic_world:0 "PR Historical Polytheistic World(WIP)"
+ setting_historical_polytheistic_world_on:0 "Polytheistic world"
+ setting_historical_culture_world_on:0 "Historical Culture World"
+ setting_historical_polytheistic_world_off:0 "Aktiviert"
+ setting_historical_polytheistic_world_on_desc:0 "Set the world back to a time where polytheistic religions were dominant. This will give regions their historical polytheistic religion"
+ setting_historical_culture_world_on_desc:0 "This will give regions their historical culture (Beta)"
+ setting_historical_polytheistic_world_off_desc:0 "Normal vanilla religions and cultures on map"
+ setting_historical_culture_and_polytheistic_world_on:0 "Cultures & Religions"
+ setting_historical_culture_and_polytheistic_world_on_desc:0 "Adds Historical cultures and religions to the map"
+
+ rule_more_doctrines:0 "PR Mehr Lehren"
+ setting_pr_more_doctrines_enabled:0 "Aktiviert"
+ setting_pr_more_doctrines_disabled:0 "Deaktiviert"
+ setting_pr_more_doctrines_enabled_desc:0 "Fügt die Lehren aus dem Mod "More Doctrines" hinzu"
+ setting_pr_more_doctrines_disabled_desc:0 "Aktiviert vanilla lehren"
+
+ rule_pr_augury:0 "PR Augury"
+ setting_pr_augury_on:0 "Aktiviert"
+ setting_pr_augury_on_desc:0 "Nach Ablauf von 3 Jahren erhalten Sie ein negatives Ergebnis, ohne dass eine Augur beantragt wurde, ohne dass eine Augur beantragt wurde. Macht es historisch genauer, bietet aber auch mehr Mikromanagement"
+ setting_pr_augury_off:0 "Deaktiviert" 
+ setting_pr_augury_off_desc:0 "YSie erhalten nach 3 Jahren, ohne die Voraussage angefordert zu haben, keinen negativen Modifikator. Kann aber trotzdem alle Funktionen nutzen"
+ rule_pr_convertion_to_polytheism_menu:0 "PR Polytheism Konvertierungsmenü"
+ setting_pr_convertion_to_polytheism_menu_on_desc:0 "Das Interaktionsmenü „Polytheism Konvertierungsmenü“ wird aktiviert"
+ setting_pr_convertion_to_polytheism_menu_on:0 "Aktiviert"
+ setting_pr_convertion_to_polytheism_menu_off_desc:0 "Das Interaktionsmenü „Polytheism Konvertierungsmenü“ wird deaktiviert"
+ setting_pr_convertion_to_polytheism_menu_off:0 "Off"
+
+ rule_pr_reconstruct_polytheism_ai:0 "Rekonstruier Polytheism KI"
+ setting_pr_reconstruct_polytheism_ai_on:0 "Aktiviert"
+ setting_pr_reconstruct_polytheism_ai_on_desc:0 "Die Rekonstruier Polytheism AI, die Entscheidung wird für die KI verfügbar. Wenn die Inbrunst eines christlichen oder muslimischen Glaubens unter 40 fällt, besteht die Möglichkeit, dass die KI die Entscheidung trifft und einen geheimen Glauben erhält, der auf der Kultur basiert."
+ setting_pr_reconstruct_polytheism_ai_off:0 "Deaktiviert"
+ setting_pr_reconstruct_polytheism_ai_off_desc:0 "Die Rekonstruier Polytheism AI Entscheidung wird deaktiviert"
+
+ rule_pr_polytheis_variety_ai:0 "Polytheism Vielfalt KI"
+ setting_pr_polytheis_variety_ai_on:0 "Aktiviert"
+ setting_pr_polytheis_variety_ai_on_desc:0 "KI konvertiert manchmal zu einer polytheistischen Religion, die auf der Kultur basiert."
+ setting_pr_polytheis_variety_ai_off:0 "Deaktiviert"
+ setting_pr_polytheis_variety_ai_off_desc:0 "In Ihrem Reich wird es keine Vielfalt polytheistischer Religionen geben"
+
+ rule_pr_more_tenets_game_rule:0 "More Tenets"
+ setting_pr_more_tenets_disabled:0 "Deaktiviert"
+ setting_pr_more_tenets_disabled_desc:0 "More tenets wird nicht verwendet"
+ setting_pr_more_tenets_enabled:0 "Deaktiviert"
+ setting_pr_more_tenets_enabled_desc:0 "More tenets wird bei der Gründung eines neuen Glaubens verfügbar sein"
+
+ rule_customizable_ethics_game_rule:0 "Customizable Ethics"
+ setting_pr_customizable_ethics_disabled:0 "Deaktiviert"
+ setting_pr_customizable_ethics_disabled_desc:0 "Customizable Ethics wird nicht verwendet"
+ setting_pr_customizable_ethics_enabled:0 "Deaktiviert"
+ setting_pr_customizable_ethics_enabled_desc:0 "Customizable Ethics wird bei der Gründung eines neuen Glaubens verfügbar sein"
+
+ rule_pr_ancient_kingdoms_decisions:0 "Ancient Kingdom Decisions"
+ setting_pr_ancient_kingdoms_decisions_on:0 "Aktiviert"
+ setting_pr_ancient_kingdoms_decisions_on_desc:0 "Entscheidungen zur Wiederherstellung alter Königreiche sind verfügbar"
+ setting_pr_ancient_kingdoms_decisions_off:0 "Deaktiviert"
+ setting_pr_ancient_kingdoms_decisions_off_desc:0 "Entscheidungen zur Wiederherstellung alter Königreiche sind nicht verfügbar"
+
+ rule_pr_semi_historical_events:0 "Weniger historischen Ereignisse"
+ setting_pr_semi_historical_events_on:0 "Aktiviert"
+ setting_pr_semi_historical_events_on_desc:0 "Stellt Ereignisse wie die Suche nach dem Vertrag von Kadesch zur Verfügung"
+ setting_pr_semi_historical_events_off:0 "Deaktiviert"
+ setting_pr_semi_historical_events_off_desc:0 "Deaktiviert die weniger historischen Ereignisse. Wichtig$:$ Dadurch werden zufällige Ereignisse für Religionen nicht deaktiviert"

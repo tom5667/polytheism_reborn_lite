@@ -1,0 +1,31 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+
+restore_egyptus:0 "Ägypten wiederherstellen"
+restore_egyptus_desc:0 "Jetzt, da alle Herzogtümer des alten ägyptischen Königreichs wieder unter einem Banner stehen, können wir das Königreich Ägypten wiederherstellen."
+restore_egyptus_effect_tooltip:0 "Wiederhergestelltes Königreich von Ägypten"
+restore_egyptus_tooltip:1 "Es ist an der Zeit, Ägypten zurückzuerobern"
+restore_egyptus_confirm:0 "Ägypten erschaffen"
+
+kingdom_of_upper_egypt:0 "Königreich von Shema wiederherstellen"
+kingdom_of_upper_egypt_desc:0 "Zu lange haben viele Prätendenten auf dem Thron dieses Königreichs gesessen, wir haben den Oberen Nil und die alten Herzogtümer zurückerobert und durch den Willen von Horus werden wir das Königreich von Shema wieder auferstehen lassen."
+
+kingdom_of_upper_egypt_effect_tooltip:0 "Wiederhergestelltes Königreich von Shema"
+create_upper_egypt_effect_tooltip:1 "Es ist an der Zeit, das Königreich von Shema zurückzufordern"
+kingdom_of_upper_egypt_confirm:0 "Königreich von Shema erschaffen"
+
+kingdom_of_lower_egypt:0 "Königreich von Mehu wiederherstellen"
+kingdom_of_lower_egypt_desc:0 "Zu lange haben viele Prätendenten auf dem Thron dieses Königreichs gesessen, wir haben den Unteren Nil und die alten Herzogtümer zurückerobert und durch den Willen von Horus werden wir das Königreich von Mehu wieder auferstehen lassen."
+kingdom_of_lower_egypt_effect_tooltip:0 "Wiederhergestelltes Königreich von Mehu"
+create_lower_egypt_effect_tooltip:1 "Es ist an der Zeit, das Königreich Mehu zurückzuerobern"
+kingdom_of_lower_egypt_confirm:0 "Königreich Mehu erschaffen"
+
+
+#Hauptgottheit wählen 
+choose_main_deity_kemetic_decision:0 "Hauptgottheit wählen"
+kemetic_cmd_decision_desc:0 "Für die meisten der alten kemetischen Polytheisten gab es einen bestimmten Gott, der für ihre Familie wichtig war, jetzt habe ich die Möglichkeit, für mich selbst zu wählen."
+choose_main_deity_kemetic_decision_tooltip:1 "Das kann man nur einmal im Leben machen, also wähle weise"
+choose_main_deity_kemetic_decision_confirm:1 "Schauen wir mal"
+

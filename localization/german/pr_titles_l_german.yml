@@ -1,0 +1,117 @@
+﻿l_german:
+ #Cultus deorum dutchy title 
+ d_pontifex_polytheistic:0 "Kollegium der Pontiffs"
+ #Celtic religions dutchy title
+ d_druidic:0 "Erzdruiden"
+ #High kingdom of ireland 
+ k_high_kingdom_of_ireland:0 "Hohes Königreich Irland"
+
+ #Celtic empire
+ e_celtic_empire:0 "Keltisch"
+ #Kingdom of Carthago
+ k_carthago:0 "Karthago"
+ #Kingdom of Egypt
+ e_egyptus:0 "Ägypten"
+ k_upper_egypt:0 "Oberägypten"
+ k_lower_egypt:0 "Unterägypten"
+ #Gaul
+ e_gaul:0 "Gallisches"
+ k_celtica:0 "Celtica"
+ k_belgica:0 "Belgien"
+ k_cisalpina:0 "Ligurien"
+ k_aquitania:0 "Aquitanien"
+ k_narbonensis:0 "Narbonensis"
+ k_etruria:0 "Etrurien"
+ k_scythia:0 "Skythien"
+ k_indo_scythia:0 "Indo-Skythien"
+ e_scythia:0 "Skythen"
+ k_pr_dacia:0 "Dacia"
+ k_babylon:0 "Babylon"
+ k_sumer:0 "Sumer"
+ k_assyria:0 "Assyrien"
+ e_mesopotamia:0 "Mesopotamisches"
+ k_hittite:0 "Hattusa" 
+ e_hittite:0 "Hattusa"
+ pr_sumerian_empire:0 "Sumerisches"
+ pr_assyrian_empire:0 "Assyrisches"
+ pr_babylonian_empire:0 "Babylonisches"
+
+ k_pr_illyria:0 "Illyrien"
+ k_pergamon:0 "Pergamon"
+ k_odrysian:0 "Odrysien"
+
+ pr_imperium_romanum:0 "Römisches Reich"
+ pr_romaiki_aftokratoria:0 "Römisches Reich"
+ pr_roman_eastern_roman_empire:0 "Oströmisches Reich"
+ pr_greek_eastern_roman_empire:0 "Oströmisches Reich"
+ e_pr_western_roman_empire:0 "WestRömisches Reich"
+ pr_roman_western_roman_empire:0 "WestRömisches Reich"
+ pr_greek_western_roman_empire:0 "WestRömisches Reich"
+
+ pr_celtic_empire:0 "Keltisches"
+ pr_high_kingdom_of_ireland:0 "High Kingdom of Ireland"
+ pr_roman_eastern_roman_empire_tfe:0 "Oströmisches Reich"
+ pr_greek_eastern_roman_empire_tfe:0 "Oströmisches Reich"
+ pr_roman_western_roman_empire_tfe:0 "WestRömisches Reich"
+ pr_greek_western_roman_empire_tfe:0 "WestRömisches Reich"
+
+ pr_celtic_empire:0 "Celtic"
+ pr_high_kingdom_of_ireland:0 "High Kingdom of Ireland"
+ pr_roman_eastern_roman_empire_tfe:0 "Eastern Roman Empire"
+ pr_greek_eastern_roman_empire_tfe:0 "Eastern Roman Empire"
+ pr_roman_western_roman_empire_tfe:0 "Western Roman Empire"
+ pr_greek_western_roman_empire_tfe:0 "Western Roman Empire"
+
+
+ #Iberian
+ k_pr_lusitania:0 "Lusitanien"
+ pr_celitberian_lusitania:0 "Lusitanien"
+ pr_roman_lusitania:0 "Lusitanien"
+ 
+
+ k_pr_galicia:0 "Gallaecia"
+ pr_celitberian_galicia:0 "Gallaecia"
+ pr_roman_galicia:0 "Galleacia"
+
+ k_pr_celtiberia:0 "Keltiberien"
+ pr_celitberian_celtiberia:0 "Keltiberien"
+ pr_roman_celtiberia:0 "Keltiberien"
+
+ k_pr_iberia:0 "Iberia"
+ pr_roman_iberia:0 "Iberia"
+ pr_celitberian_iberia:0 "Iberia"
+
+ k_pr_tartessia:0 "Turdetanien"
+ pr_celitberian_turdetania:0 "Turdetanien"
+ pr_roman_turdetania:0 "Turdetanien"
+
+ k_pr_vasconia:0 "Vasconia"
+ pr_celitberian_vasconia:0 "Vasconia"
+ pr_roman_vasconia:0 "Vasconia"
+
+ pr_celitberian_hispania:0 "Hispanien"
+
+
+ #Gaulish 
+ pr_gaulish_gaul:0 "Gallien"
+ pr_roman_gaul:0 "Gallien"
+ 
+ pr_gaulish_celtica:0 "Celtica"
+ pr_roman_celtica:0 "Celtica"
+
+ pr_gaulish_belgica:0 "Belgien"
+ pr_roman_belgica:0 "Belgien"
+
+ pr_gaulish_narbonensis:0 "Narbonensis"
+ pr_roman_narbonensis:0 "Narbonensis"
+ pr_celtiberian_narbonensis:0 "Narbonensis"
+
+ pr_gaulish_aquitania:0 "Aquitanien"
+ pr_roman_aquitania:0 "Aquitanien"
+ pr_gaulish_cisalpina:0 "Cisalpina"
+ pr_roman_cisalpina:0 "Cisalpina"
+
+
+ #Coa Category 
+ COA_DESIGNER_CATEGORY_polytheism_reborn:0 "Polytheism Reborn"
+

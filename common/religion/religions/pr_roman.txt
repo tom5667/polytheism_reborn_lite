@@ -1,4 +1,7 @@
-﻿roman_religion ={
+﻿#####################
+#Made by tom5667 
+#####################
+roman_religion ={
 
 	family = rf_pagan
 
@@ -26,7 +29,7 @@
 	# 	{ name = "holy_order_priesthood_of_ares" }
 	# }
 
-	holy_order_maa = { praetorian }
+	holy_order_maa = { joviani }
 
 	faiths ={ 
         cdr_polytheism ={
@@ -35,11 +38,13 @@
             icon = cultus_deorum_romanorum
             reformed_icon = cultus_deorum_romanorum_reformed
             religious_head = d_pontifex_polytheistic
+
             holy_site = rome # true 
             holy_site = paestum #Greek temples but after the conquest by the romans they mostly took over the tempels 
             holy_site = agrigento #Orginaly greek temples but in roman hands for a long time
-			holy_site = delphi #
+			      holy_site = delphi #Important for both greeks and romans 
             holy_site = cumae #Cumaean Sibyl oracle of apollo 
+
 
 			reserved_male_names = {
 				Marcus Gaius Publius Sextus Appius Gnaeus Caius Agrippa Titus Vitus Albus Tiberius Lucius Nero Antonius
@@ -58,6 +63,7 @@
             doctrine = doctrine_gender_male_dominated
             doctrine = doctrine_pluralism_pluralistic
             doctrine = doctrine_theocracy_lay_clergy
+            doctrine = doctrine_funeral_cremation
 
             doctrine = special_doctrine_ecumenical_greaco_roman 
             doctrine = special_doctrine_roman_patron_god
@@ -86,9 +92,10 @@
 
             doctrine = unreformed_faith_doctrine
 
-			doctrine = tenet_ancestor_worship
-			doctrine = tenet_warmonger
-            doctrine = tenet_ritual_celebrations
+			      doctrine = tenet_ancestor_worship
+            doctrine = tenet_animal_sacrifice
+			      doctrine = tenet_warmonger
+            
             
             holy_order_names = {
                     { name = "holy_order_sons_of_mars" }
@@ -109,16 +116,16 @@
                 #Creator
                 CreatorName = cdr_polytheism_creator_god_name
                 CreatorNamePossessive = cdr_polytheism_creator_god_name_possessive
-                CreatorSheHe = CHARACTER_SHEHE_SHE
-                CreatorHerHis = CHARACTER_HERHIS_HER
-                CreatorHerHim = CHARACTER_HERHIM_HER
+                CreatorSheHe = CHARACTER_SHEHE_HE
+                CreatorHerHis = CHARACTER_HERHIS_HIS
+                CreatorHerHim = CHARACTER_HERHIM_HIM
         
                 #HealthGod
                 HealthGodName = cdr_polytheism_health_god_name
                 HealthGodNamePossessive = cdr_polytheism_health_god_name_possessive
-                HealthGodSheHe = CHARACTER_SHEHE_HE
-                HealthGodHerHis = CHARACTER_HERHIS_HIS
-                HealthGodHerHim = CHARACTER_HERHIM_HIM
+                HealthGodSheHe = CHARACTER_SHEHE_SHE
+                HealthGodHerHis = CHARACTER_HERHIS_HER
+                HealthGodHerHim = CHARACTER_HERHIM_HER
                 
                 #FertilityGod
                 FertilityGodName = cdr_polytheism_fertility_god_name
@@ -137,16 +144,16 @@
                 #HouseholdGod
                 HouseholdGodName = cdr_polytheism_household_god_name
                 HouseholdGodNamePossessive = cdr_polytheism_household_god_name_possessive
-                HouseholdGodSheHe = CHARACTER_SHEHE_SHE
-                HouseholdGodHerHis = CHARACTER_HERHIS_HER
-                HouseholdGodHerHim = CHARACTER_HERHIM_HER
+                HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+                HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+                HouseholdGodHerHim = CHARACTER_HERHIM_THEM
         
                 #FateGod
                 FateGodName = cdr_polytheism_fate_god_name
                 FateGodNamePossessive = cdr_polytheism_fate_god_name_possessive
-                FateGodSheHe = CHARACTER_SHEHE_THEY
-                FateGodHerHis = CHARACTER_HERHIS_THEIR
-                FateGodHerHim = CHARACTER_HERHIM_THEM
+                FateGodSheHe = CHARACTER_SHEHE_HE
+                FateGodHerHis = CHARACTER_HERHIS_HIS
+                FateGodHerHim = CHARACTER_HERHIM_HIM    
         
                 #KnowledgeGod
                 KnowledgeGodName = cdr_polytheism_knowledge_god_name
@@ -194,7 +201,7 @@
                 EvilGodNames = { cdr_polytheism_evil_god_trivia cdr_polytheism_evil_god_discordia }
                 HouseOfWorship = paganism_house_of_worship
                 HouseOfWorshipPlural = paganism_house_of_worship_plural
-                ReligiousSymbol = cdr_polytheism_polytheism_religious_symbol
+                ReligiousSymbol = cdr_polytheism_religious_symbol
                 ReligiousText = cdr_polytheism_religious_text
                 ReligiousHeadName = cdr_polytheism_religious_head_title
                 ReligiousHeadTitleName = dualism_religious_head_title_name
@@ -226,7 +233,7 @@
                 DeathDeityHerHis = CHARACTER_HERHIS_HIS
                 WitchGodName = cdr_polytheism_witchgodname_trivia
                 WitchGodHerHis = CHARACTER_HERHIS_HER
-                WitchGodSheHe = CHARACTER_SHEHE_HE
+                WitchGodSheHe = CHARACTER_SHEHE_SHE
                 WitchGodHerHim = CHARACTER_HERHIM_HER
                 WitchGodMistressMaster = mistress
                 WitchGodMotherFather = mother
@@ -244,9 +251,10 @@
             reformed_icon = eluesinian_mysteries_reformed
             religious_head = d_pontifex_polytheistic
             holy_site = rome
-            holy_site = ravenna
-            holy_site = athens
-            #holy_site = troad (troy)
+            holy_site = paestum #Greek temples but after the conquest by the romans they mostly took over the tempels 
+            holy_site = agrigento #Orginaly greek temples but in roman hands for a long time
+			holy_site = delphi #Important for both greeks and romans 
+            holy_site = cumae #Cumaean Sibyl oracle of apollo 
             
 			reserved_male_names = {
 				Marcus Gaius Publius Sextus Appius Gnaeus Caius Agrippa Titus Vitus Albus Tiberius Lucius Nero Antonius
@@ -260,12 +268,13 @@
 			}
             doctrine = unreformed_faith_doctrine
 
-            doctrine = tenet_ritual_celebrations
+            doctrine = tenet_animal_sacrifice
             doctrine = tenet_communal_identity
             doctrine = tenet_esotericism
             doctrine = special_doctrine_ecumenical_greaco_roman
             doctrine = special_doctrine_no_patron_god
             doctrine = doctrine_pilgrimage_encouraged
+            doctrine = doctrine_funeral_cremation
 
             #Main Group
             doctrine = doctrine_spiritual_head
@@ -304,25 +313,25 @@
                 #High God Name
                 HighGodName = eluesinian_mysteries_high_god_name
                 HighGodNamePossessive = eluesinian_mysteries_high_god_name_possessive
-                HighGodNameSheHe = CHARACTER_SHEHE_HE
-                HighGodHerselfHimself = CHARACTER_HIMSELF
-                HighGodHerHis = CHARACTER_HERHIS_HIS
+                HighGodNameSheHe = CHARACTER_SHEHE_SHE
+                HighGodHerselfHimself = CHARACTER_HERSELF
+                HighGodHerHis = CHARACTER_HERHIS_HER
                 HighGodNameAlternate = eluesinian_mysteries_high_god_name_alternate
                 HighGodNameAlternatePossessive = eluesinian_mysteries_high_god_name_alternate_possessive
 
                 #Creator
                 CreatorName = eluesinian_mysteries_creator_god_name
                 CreatorNamePossessive = eluesinian_mysteries_creator_god_name_possessive
-                CreatorSheHe = CHARACTER_SHEHE_SHE
-                CreatorHerHis = CHARACTER_HERHIS_HER
-                CreatorHerHim = CHARACTER_HERHIM_HER
+                CreatorSheHe = CHARACTER_SHEHE_HE
+                CreatorHerHis = CHARACTER_HERHIS_HIS
+                CreatorHerHim = CHARACTER_HERHIM_HIM
         
                 #HealthGod
                 HealthGodName = eluesinian_mysteries_health_god_name
                 HealthGodNamePossessive = eluesinian_mysteries_health_god_name_possessive
-                HealthGodSheHe = CHARACTER_SHEHE_HE
-                HealthGodHerHis = CHARACTER_HERHIS_HIS
-                HealthGodHerHim = CHARACTER_HERHIM_HIM
+                HealthGodSheHe = CHARACTER_SHEHE_SHE
+                HealthGodHerHis = CHARACTER_HERHIS_HER
+                HealthGodHerHim = CHARACTER_HERHIM_HER
                 
                 #FertilityGod
                 FertilityGodName = eluesinian_mysteries_fertility_god_name
@@ -341,16 +350,16 @@
                 #HouseholdGod
                 HouseholdGodName = eluesinian_mysteries_household_god_name
                 HouseholdGodNamePossessive = eluesinian_mysteries_household_god_name_possessive
-                HouseholdGodSheHe = CHARACTER_SHEHE_SHE
-                HouseholdGodHerHis = CHARACTER_HERHIS_HER
-                HouseholdGodHerHim = CHARACTER_HERHIM_HER
+                HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+                HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+                HouseholdGodHerHim = CHARACTER_HERHIM_THEM
         
                 #FateGod
                 FateGodName = eluesinian_mysteries_fate_god_name
                 FateGodNamePossessive = eluesinian_mysteries_fate_god_name_possessive
-                FateGodSheHe = CHARACTER_SHEHE_THEY
-                FateGodHerHis = CHARACTER_HERHIS_THEIR
-                FateGodHerHim = CHARACTER_HERHIM_THEM
+                FateGodSheHe = CHARACTER_SHEHE_HE
+                FateGodHerHis = CHARACTER_HERHIS_HIS
+                FateGodHerHim = CHARACTER_HERHIM_HIM
         
                 #KnowledgeGod
                 KnowledgeGodName = eluesinian_mysteriesknowledge_god_name
@@ -430,7 +439,7 @@
                 DeathDeityHerHis = CHARACTER_HERHIS_HIS
                 WitchGodName = eluesinian_mysteries_witchgodname_trivia
                 WitchGodHerHis = CHARACTER_HERHIS_HER
-                WitchGodSheHe = CHARACTER_SHEHE_HE
+                WitchGodSheHe = CHARACTER_SHEHE_sHE
                 WitchGodHerHim = CHARACTER_HERHIM_HER
                 WitchGodMistressMaster = mistress
                 WitchGodMotherFather = mother
@@ -472,6 +481,8 @@
             doctrine = special_doctrine_ecumenical_greaco_roman 
             doctrine = special_doctrine_mithras_patron_god 
             doctrine = doctrine_pilgrimage_encouraged
+            doctrine = doctrine_funeral_cremation
+
             
             #Main Group
             doctrine = doctrine_no_head
@@ -520,16 +531,16 @@
                 #Creator
                 CreatorName = mithraic_mysteries_creator_god_name
                 CreatorNamePossessive = mithraic_mysteries_creator_god_name_possessive
-                CreatorSheHe = CHARACTER_SHEHE_SHE
-                CreatorHerHis = CHARACTER_HERHIS_HER
-                CreatorHerHim = CHARACTER_HERHIM_HER
+                CreatorSheHe = CHARACTER_SHEHE_HE
+                CreatorHerHis = CHARACTER_HERHIS_His
+                CreatorHerHim = CHARACTER_HERHIM_HIM
         
                 #HealthGod
                 HealthGodName = mithraic_mysteries_health_god_name
                 HealthGodNamePossessive = mithraic_mysteries_health_god_name_possessive
-                HealthGodSheHe = CHARACTER_SHEHE_HE
-                HealthGodHerHis = CHARACTER_HERHIS_HIS
-                HealthGodHerHim = CHARACTER_HERHIM_HIM
+                HealthGodSheHe = CHARACTER_SHEHE_SHE
+                HealthGodHerHis = CHARACTER_HERHIS_HER
+                HealthGodHerHim = CHARACTER_HERHIM_HER
                 
                 #FertilityGod
                 FertilityGodName = mithraic_mysteries_fertility_god_name
@@ -548,9 +559,9 @@
                 #HouseholdGod
                 HouseholdGodName = mithraic_mysteries_household_god_name
                 HouseholdGodNamePossessive = mithraic_mysteries_household_god_name_possessive
-                HouseholdGodSheHe = CHARACTER_SHEHE_SHE
-                HouseholdGodHerHis = CHARACTER_HERHIS_HER
-                HouseholdGodHerHim = CHARACTER_HERHIM_HER
+                HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+                HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+                HouseholdGodHerHim = CHARACTER_HERHIM_THEM
         
                 #FateGod
                 FateGodName = mithraic_mysteries_fate_god_name
@@ -635,9 +646,9 @@
                 DeathDeityNamePossessive = mithraic_mysteries_deity_name_possessive
                 DeathDeitySheHe = CHARACTER_SHEHE_HE
                 DeathDeityHerHis = CHARACTER_HERHIS_HIS
-                WitchGodName = mithraic_mysteries_witchgodname_trivia
+                WitchGodName = mithraic_mysteries_witchgodname_diana_trivia
                 WitchGodHerHis = CHARACTER_HERHIS_HER
-                WitchGodSheHe = CHARACTER_SHEHE_HE
+                WitchGodSheHe = CHARACTER_SHEHE_SHE
                 WitchGodHerHim = CHARACTER_HERHIM_HER
                 WitchGodMistressMaster = mistress
                 WitchGodMotherFather = mother
@@ -680,6 +691,8 @@
         doctrine = special_doctrine_ecumenical_greaco_roman 
         doctrine = special_doctrine_no_patron_god
         doctrine = doctrine_pilgrimage_encouraged
+        doctrine = doctrine_funeral_cremation
+
 
         #Main Group
         doctrine = doctrine_no_head
@@ -719,25 +732,25 @@
                 #High God Name
                 HighGodName = mysteries_of_isis_high_god_name
                 HighGodNamePossessive = mysteries_of_isis_high_god_name_possessive
-                HighGodNameSheHe = CHARACTER_SHEHE_HE
-                HighGodHerselfHimself = CHARACTER_HIMSELF
-                HighGodHerHis = CHARACTER_HERHIS_HIS
+                HighGodNameSheHe = CHARACTER_SHEHE_SHE
+                HighGodHerselfHimself = CHARACTER_HERSELF
+                HighGodHerHis = CHARACTER_HERHIS_HER
                 HighGodNameAlternate = mysteries_of_isis_high_god_name_alternate
                 HighGodNameAlternatePossessive = mysteries_of_isis_high_god_name_alternate_possessive
 
                 #Creator
                 CreatorName = mysteries_of_isis_creator_god_name
                 CreatorNamePossessive = mysteries_of_isis_creator_god_name_possessive
-                CreatorSheHe = CHARACTER_SHEHE_SHE
-                CreatorHerHis = CHARACTER_HERHIS_HER
-                CreatorHerHim = CHARACTER_HERHIM_HER
+                CreatorSheHe = CHARACTER_SHEHE_HE
+                CreatorHerHis = CHARACTER_HERHIS_HIS
+                CreatorHerHim = CHARACTER_HERHIM_HIM
         
                 #HealthGod
                 HealthGodName = mysteries_of_isis_health_god_name
                 HealthGodNamePossessive = mysteries_of_isis_health_god_name_possessive
-                HealthGodSheHe = CHARACTER_SHEHE_HE
-                HealthGodHerHis = CHARACTER_HERHIS_HIS
-                HealthGodHerHim = CHARACTER_HERHIM_HIM
+                HealthGodSheHe = CHARACTER_SHEHE_SHE
+                HealthGodHerHis = CHARACTER_HERHIS_HER
+                HealthGodHerHim = CHARACTER_HERHIM_HER
                 
                 #FertilityGod
                 FertilityGodName = mysteries_of_isis_fertility_god_name
@@ -756,16 +769,16 @@
                 #HouseholdGod
                 HouseholdGodName = mysteries_of_isis_household_god_name
                 HouseholdGodNamePossessive = mysteries_of_isis_household_god_name_possessive
-                HouseholdGodSheHe = CHARACTER_SHEHE_SHE
-                HouseholdGodHerHis = CHARACTER_HERHIS_HER
-                HouseholdGodHerHim = CHARACTER_HERHIM_HER
+                HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+                HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+                HouseholdGodHerHim = CHARACTER_HERHIM_THEM
         
                 #FateGod
                 FateGodName = mysteries_of_isis_fate_god_name
                 FateGodNamePossessive = mysteries_of_isis_fate_god_name_possessive
-                FateGodSheHe = CHARACTER_SHEHE_THEY
-                FateGodHerHis = CHARACTER_HERHIS_THEIR
-                FateGodHerHim = CHARACTER_HERHIM_THEM
+                FateGodSheHe = CHARACTER_SHEHE_HE
+                FateGodHerHis = CHARACTER_HERHIS_HIS
+                FateGodHerHim = CHARACTER_HERHIM_HIM
         
                 #KnowledgeGod
                 KnowledgeGodName = mysteries_of_isis_god_name
@@ -845,7 +858,7 @@
                 DeathDeityHerHis = CHARACTER_HERHIS_HIS
                 WitchGodName = mysteries_of_isis_witchgodname_trivia
                 WitchGodHerHis = CHARACTER_HERHIS_HER
-                WitchGodSheHe = CHARACTER_SHEHE_HE
+                WitchGodSheHe = CHARACTER_SHEHE_SHE
                 WitchGodHerHim = CHARACTER_HERHIM_HER
                 WitchGodMistressMaster = mistress
                 WitchGodMotherFather = mother
@@ -887,6 +900,8 @@
         doctrine = special_doctrine_ecumenical_greaco_roman 
         doctrine = special_doctrine_no_patron_god
         doctrine = doctrine_pilgrimage_encouraged
+        doctrine = doctrine_funeral_cremation
+
 
         #Main Group
         doctrine = doctrine_no_head
@@ -936,16 +951,16 @@
                 #Creator
                 CreatorName = cult_of_serapis_creator_god_name
                 CreatorNamePossessive = cult_of_serapis_creator_god_name_possessive
-                CreatorSheHe = CHARACTER_SHEHE_SHE
-                CreatorHerHis = CHARACTER_HERHIS_HER
-                CreatorHerHim = CHARACTER_HERHIM_HER
+                CreatorSheHe = CHARACTER_SHEHE_HE
+                CreatorHerHis = CHARACTER_HERHIS_HIS
+                CreatorHerHim = CHARACTER_HERHIM_HIM
         
                 #HealthGod
                 HealthGodName = cult_of_serapis_health_god_name
                 HealthGodNamePossessive = cult_of_serapis_health_god_name_possessive
-                HealthGodSheHe = CHARACTER_SHEHE_HE
-                HealthGodHerHis = CHARACTER_HERHIS_HIS
-                HealthGodHerHim = CHARACTER_HERHIM_HIM
+                HealthGodSheHe = CHARACTER_SHEHE_SHE
+                HealthGodHerHis = CHARACTER_HERHIS_HER
+                HealthGodHerHim = CHARACTER_HERHIM_HER
                 
                 #FertilityGod
                 FertilityGodName = cult_of_serapis_fertility_god_name
@@ -964,16 +979,16 @@
                 #HouseholdGod
                 HouseholdGodName = cult_of_serapis_household_god_name
                 HouseholdGodNamePossessive = cult_of_serapis_household_god_name_possessive
-                HouseholdGodSheHe = CHARACTER_SHEHE_SHE
-                HouseholdGodHerHis = CHARACTER_HERHIS_HER
-                HouseholdGodHerHim = CHARACTER_HERHIM_HER
+                HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+                HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+                HouseholdGodHerHim = CHARACTER_HERHIM_THEM
         
                 #FateGod
                 FateGodName = cult_of_serapis_fate_god_name
                 FateGodNamePossessive = cult_of_serapis_fate_god_name_possessive
-                FateGodSheHe = CHARACTER_SHEHE_THEY
-                FateGodHerHis = CHARACTER_HERHIS_THEIR
-                FateGodHerHim = CHARACTER_HERHIM_THEM
+                FateGodSheHe = CHARACTER_SHEHE_HE  
+                FateGodHerHis = CHARACTER_HERHIS_HIS
+                FateGodHerHim = CHARACTER_HERHIM_HIM
         
                 #KnowledgeGod
                 KnowledgeGodName = cult_of_serapis_god_name
@@ -1053,7 +1068,7 @@
                 DeathDeityHerHis = CHARACTER_HERHIS_HIS
                 WitchGodName = cult_of_serapis_witchgodname_trivia
                 WitchGodHerHis = CHARACTER_HERHIS_HER
-                WitchGodSheHe = CHARACTER_SHEHE_HE
+                WitchGodSheHe = CHARACTER_SHEHE_SHE
                 WitchGodHerHim = CHARACTER_HERHIM_HER
                 WitchGodMistressMaster = mistress
                 WitchGodMotherFather = mother
@@ -1089,6 +1104,8 @@
             doctrine = special_doctrine_ecumenical_greaco_roman 
             doctrine = special_doctrine_no_patron_god
             doctrine = doctrine_pilgrimage_encouraged
+            doctrine = doctrine_funeral_cremation
+
 
             #Main Group
             doctrine = doctrine_no_head
@@ -1144,9 +1161,9 @@
                 #HealthGod
                 HealthGodName = sol_invictus_cult_health_god_name
                 HealthGodNamePossessive = sol_invictus_cult_health_god_name_possessive
-                HealthGodSheHe = CHARACTER_SHEHE_HE
-                HealthGodHerHis = CHARACTER_HERHIS_HIS
-                HealthGodHerHim = CHARACTER_HERHIM_HIM
+                HealthGodSheHe = CHARACTER_SHEHE_SHE
+                HealthGodHerHis = CHARACTER_HERHIS_HER
+                HealthGodHerHim = CHARACTER_HERHIM_HER
                 
                 #FertilityGod
                 FertilityGodName = sol_invictus_cult_fertility_god_name
@@ -1165,16 +1182,16 @@
                 #HouseholdGod
                 HouseholdGodName = sol_invictus_cult_household_god_name
                 HouseholdGodNamePossessive = sol_invictus_cult_household_god_name_possessive
-                HouseholdGodSheHe = CHARACTER_SHEHE_SHE
-                HouseholdGodHerHis = CHARACTER_HERHIS_HER
-                HouseholdGodHerHim = CHARACTER_HERHIM_HER
+                HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+                HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+                HouseholdGodHerHim = CHARACTER_HERHIM_THEM
         
                 #FateGod
                 FateGodName = sol_invictus_cult_fate_god_name
                 FateGodNamePossessive = sol_invictus_cult_fate_god_name_possessive
-                FateGodSheHe = CHARACTER_SHEHE_THEY
-                FateGodHerHis = CHARACTER_HERHIS_THEIR
-                FateGodHerHim = CHARACTER_HERHIM_THEM
+                FateGodSheHe = CHARACTER_SHEHE_HE
+                FateGodHerHis = CHARACTER_HERHIS_HIS
+                FateGodHerHim = CHARACTER_HERHIM_HIM
         
                 #KnowledgeGod
                 KnowledgeGodName = sol_invictus_cult_god_name
@@ -1254,7 +1271,7 @@
                 DeathDeityHerHis = CHARACTER_HERHIS_HIS
                 WitchGodName = sol_invictus_cult_witchgodname_trivia
                 WitchGodHerHis = CHARACTER_HERHIS_HER
-                WitchGodSheHe = CHARACTER_SHEHE_HE
+                WitchGodSheHe = CHARACTER_SHEHE_SHE
                 WitchGodHerHim = CHARACTER_HERHIM_HER
                 WitchGodMistressMaster = mistress
                 WitchGodMotherFather = mother
@@ -1270,7 +1287,7 @@
 		religious_head = d_pontifex_polytheistic
 
 		holy_site = rome
-		holy_site = ravenna
+        holy_site = delphi #Important for both greeks and romans 
 		holy_site = alexandria
 		holy_site = constantinople 
 		holy_site = siffa
@@ -1289,9 +1306,11 @@
 		doctrine = tenet_ancestor_worship
 		doctrine = tenet_communal_identity
 		doctrine = tenet_ritual_celebrations
-        doctrine = special_doctrine_ecumenical_greaco_roman 
-        doctrine = special_doctrine_no_patron_god
-        doctrine = doctrine_pilgrimage_encouraged
+    doctrine = special_doctrine_ecumenical_greaco_roman 
+    doctrine = special_doctrine_no_patron_god
+    doctrine = doctrine_pilgrimage_encouraged
+    doctrine = doctrine_funeral_cremation
+
 
 		#Main Group
 		doctrine = doctrine_temporal_head
@@ -1340,16 +1359,16 @@
 			#Creator
 			CreatorName = imperial_cult_creator_god_name
 			CreatorNamePossessive = imperial_cult_creator_god_name_possessive
-			CreatorSheHe = CHARACTER_SHEHE_SHE
-			CreatorHerHis = CHARACTER_HERHIS_HER
-			CreatorHerHim = CHARACTER_HERHIM_HER
+			CreatorSheHe = CHARACTER_SHEHE_HE
+			CreatorHerHis = CHARACTER_HERHIS_HIS
+			CreatorHerHim = CHARACTER_HERHIM_HIM
 	
 			#HealthGod
 			HealthGodName = imperial_cult_health_god_name
 			HealthGodNamePossessive = imperial_cult_health_god_name_possessive
-			HealthGodSheHe = CHARACTER_SHEHE_HE
-			HealthGodHerHis = CHARACTER_HERHIS_HIS
-			HealthGodHerHim = CHARACTER_HERHIM_HIM
+			HealthGodSheHe = CHARACTER_SHEHE_SHE
+			HealthGodHerHis = CHARACTER_HERHIS_HER
+			HealthGodHerHim = CHARACTER_HERHIM_HER
 			
 			#FertilityGod
 			FertilityGodName = imperial_cult_fertility_god_name
@@ -1368,9 +1387,9 @@
 			#HouseholdGod
 			HouseholdGodName = imperial_cult_household_god_name
 			HouseholdGodNamePossessive = imperial_cult_household_god_name_possessive
-			HouseholdGodSheHe = CHARACTER_SHEHE_SHE
-			HouseholdGodHerHis = CHARACTER_HERHIS_HER
-			HouseholdGodHerHim = CHARACTER_HERHIM_HER
+			HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+			HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+			HouseholdGodHerHim = CHARACTER_HERHIM_THEM
 	
 			#FateGod
 			FateGodName = imperial_cult_fate_god_name
@@ -1457,7 +1476,7 @@
 			DeathDeityHerHis = CHARACTER_HERHIS_HIS
 			WitchGodName = imperial_cult_witchgodname_trivia
 			WitchGodHerHis = CHARACTER_HERHIS_HER
-			WitchGodSheHe = CHARACTER_SHEHE_HE
+			WitchGodSheHe = CHARACTER_SHEHE_SHE
 			WitchGodHerHim = CHARACTER_HERHIM_HER
 			WitchGodMistressMaster = mistress
 			WitchGodMotherFather = mother
@@ -1495,7 +1514,10 @@
 		doctrine = doctrine_gender_male_dominated
 		doctrine = doctrine_pluralism_pluralistic
 		doctrine = doctrine_theocracy_lay_clergy
-        doctrine = doctrine_pilgrimage_encouraged
+    doctrine = doctrine_pilgrimage_encouraged
+
+    doctrine = doctrine_funeral_cremation
+
 
 		#mariage 
 		doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
@@ -1523,7 +1545,7 @@
 
 		doctrine = tenet_ancestor_worship
 		doctrine = tenet_warmonger
-		doctrine = tenet_ritual_celebrations
+		doctrine = tenet_animal_sacrifice
 
         #doctrine = special_doctrine_ecumenical_greaco_roman 
         doctrine = special_doctrine_romano_illyrian_patron_god
@@ -1556,9 +1578,9 @@
 			#HealthGod
 			HealthGodName = roman_illyrian_polytheism_health_god_name
 			HealthGodNamePossessive = roman_illyrian_polytheism_health_god_name_possessive
-			HealthGodSheHe = CHARACTER_SHEHE_HE
-			HealthGodHerHis = CHARACTER_HERHIS_HIS
-			HealthGodHerHim = CHARACTER_HERHIM_HIM
+			HealthGodSheHe = CHARACTER_SHEHE_SHE
+			HealthGodHerHis = CHARACTER_HERHIS_HER
+			HealthGodHerHim = CHARACTER_HERHIM_HER
 			
 			#FertilityGod
 			FertilityGodName = roman_illyrian_polytheism_fertility_god_name
@@ -1577,16 +1599,16 @@
 			#HouseholdGod
 			HouseholdGodName = roman_illyrian_polytheism_household_god_name
 			HouseholdGodNamePossessive = roman_illyrian_polytheism_household_god_name_possessive
-			HouseholdGodSheHe = CHARACTER_SHEHE_SHE
-			HouseholdGodHerHis = CHARACTER_HERHIS_HER
-			HouseholdGodHerHim = CHARACTER_HERHIM_HER
+			HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+			HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+			HouseholdGodHerHim = CHARACTER_HERHIM_THEM
 	
 			#FateGod
 			FateGodName = roman_illyrian_polytheism_fate_god_name
 			FateGodNamePossessive = roman_illyrian_polytheism_fate_god_name_possessive
-			FateGodSheHe = CHARACTER_SHEHE_THEY
-			FateGodHerHis = CHARACTER_HERHIS_THEIR
-			FateGodHerHim = CHARACTER_HERHIM_THEM
+			FateGodSheHe = CHARACTER_SHEHE_HE
+			FateGodHerHis = CHARACTER_HERHIS_HIS
+			FateGodHerHim = CHARACTER_HERHIM_HIM
 	
 			#KnowledgeGod
 			KnowledgeGodName = roman_illyrian_polytheism_knowledge_god_name
@@ -1619,9 +1641,9 @@
 			#WaterGod
 			WaterGodName = roman_illyrian_polytheism_water_god_name
 			WaterGodNamePossessive = roman_illyrian_polytheism_water_god_name_possessive
-			WaterGodSheHe = CHARACTER_SHEHE_HE
-			WaterGodHerHis = CHARACTER_HERHIS_HIS
-			WaterGodHerHim = CHARACTER_HERHIM_HIM
+			WaterGodSheHe = CHARACTER_SHEHE_SHE
+			WaterGodHerHis = CHARACTER_HERHIS_HER
+			WaterGodHerHim = CHARACTER_HERHIM_HER
 
 			PantheonTerm = religion_the_gods
 			PantheonTermHasHave = pantheon_term_have
@@ -1634,7 +1656,7 @@
 			EvilGodNames = { roman_illyrian_polytheism_evil_god_trivia roman_illyrian_polytheism_evil_god_discordia }
 			HouseOfWorship = paganism_house_of_worship
 			HouseOfWorshipPlural = paganism_house_of_worship_plural
-			ReligiousSymbol = roman_illyrian_polytheism_polytheism_religious_symbol
+			ReligiousSymbol = roman_illyrian_polytheism_religious_symbol
 			ReligiousText = roman_illyrian_polytheism_religious_text
 			ReligiousHeadName = roman_illyrian_polytheism_religious_head_title
 			ReligiousHeadTitleName = dualism_religious_head_title_name
@@ -1664,12 +1686,12 @@
 			DeathDeityNamePossessive = roman_illyrian_polytheism_death_deity_name_possessive
 			DeathDeitySheHe = CHARACTER_SHEHE_HE
 			DeathDeityHerHis = CHARACTER_HERHIS_HIS
-			WitchGodName = roman_illyrian_polytheism_witchgodname_trivia
-			WitchGodHerHis = CHARACTER_HERHIS_HER
+			WitchGodName = roman_illyrian_polytheism_witchgodname_serpant
+			WitchGodHerHis = CHARACTER_HERHIS_HIS
 			WitchGodSheHe = CHARACTER_SHEHE_HE
-			WitchGodHerHim = CHARACTER_HERHIM_HER
-			WitchGodMistressMaster = mistress
-			WitchGodMotherFather = mother
+			WitchGodHerHim = CHARACTER_HERHIM_HIM
+			WitchGodMistressMaster = master
+			WitchGodMotherFather = father
 			
 			GHWName = ghw_great_holy_war
 			GHWNamePlural = ghw_great_holy_wars
@@ -1686,8 +1708,8 @@
 		holy_site = vannes
 		holy_site = aachen
 		holy_site = cumae 
-		holy_site = montpellier	 
-		holy_site = vannes     
+        holy_site = carnutes
+        holy_site = vannes     
 
 
 		reserved_male_names = {
@@ -1703,7 +1725,9 @@
 		doctrine = doctrine_gender_male_dominated
 		doctrine = doctrine_pluralism_pluralistic
 		doctrine = doctrine_theocracy_lay_clergy
-        doctrine = doctrine_pilgrimage_encouraged
+    doctrine = doctrine_pilgrimage_encouraged
+    doctrine = doctrine_funeral_cremation
+
 
 		#mariage 
 		doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
@@ -1731,7 +1755,7 @@
 
 		doctrine = tenet_warmonger 
 		doctrine = tenet_sanctity_of_nature
-		doctrine = tenet_ancestor_worship
+		doctrine = tenet_animal_sacrifice
 
         doctrine = special_doctrine_ecumenical_celtic_roman 
         doctrine = special_doctrine_gallo_roman_patron_god
@@ -1756,9 +1780,9 @@
 			#Creator
 			CreatorName = gallo_roman_polytheism_creator_god_name
 			CreatorNamePossessive = gallo_roman_polytheism_creator_god_name_possessive
-			CreatorSheHe = CHARACTER_SHEHE_SHE
-			CreatorHerHis = CHARACTER_HERHIS_HER
-			CreatorHerHim = CHARACTER_HERHIM_HER
+			CreatorSheHe = CHARACTER_SHEHE_HE
+			CreatorHerHis = CHARACTER_HERHIS_HIS
+			CreatorHerHim = CHARACTER_HERHIM_HIM
 	
 			#HealthGod
 			HealthGodName = gallo_roman_polytheism_health_god_name
@@ -1784,9 +1808,9 @@
 			#HouseholdGod
 			HouseholdGodName = gallo_roman_polytheism_household_god_name
 			HouseholdGodNamePossessive = gallo_roman_polytheism_household_god_name_possessive
-			HouseholdGodSheHe = CHARACTER_SHEHE_SHE
-			HouseholdGodHerHis = CHARACTER_HERHIS_HER
-			HouseholdGodHerHim = CHARACTER_HERHIM_HER
+			HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+			HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+			HouseholdGodHerHim = CHARACTER_HERHIM_THEM
 	
 			#FateGod
 			FateGodName = gallo_roman_polytheism_fate_god_name
@@ -1798,9 +1822,9 @@
 			#KnowledgeGod
 			KnowledgeGodName = gallo_roman_polytheism_knowledge_god_name
 			KnowledgeGodNamePossessive = gallo_roman_polytheism_knowledge_god_name_possessive
-			KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-			KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-			KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+			KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+			KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+			KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
 	
 			#WarGod
 			WarGodName = gallo_roman_polytheism_war_god_name
@@ -1841,7 +1865,7 @@
 			EvilGodNames = { gallo_roman_polytheism_evil_god_trivia gallo_roman_polytheism_evil_god_discordia }
 			HouseOfWorship = paganism_house_of_worship
 			HouseOfWorshipPlural = paganism_house_of_worship_plural
-			ReligiousSymbol = gallo_roman_polytheism_polytheism_religious_symbol
+			ReligiousSymbol = gallo_roman_polytheism_religious_symbol
 			ReligiousText = gallo_roman_polytheism_religious_text
 			ReligiousHeadName = gallo_roman_polytheism_religious_head_title
 			ReligiousHeadTitleName = dualism_religious_head_title_name
@@ -1873,7 +1897,7 @@
 			DeathDeityHerHis = CHARACTER_HERHIS_HIS
 			WitchGodName = gallo_roman_polytheism_witchgodname_trivia
 			WitchGodHerHis = CHARACTER_HERHIS_HER
-			WitchGodSheHe = CHARACTER_SHEHE_HE
+			WitchGodSheHe = CHARACTER_SHEHE_SHE
 			WitchGodHerHim = CHARACTER_HERHIM_HER
 			WitchGodMistressMaster = mistress
 			WitchGodMotherFather = mother
@@ -1908,7 +1932,9 @@
 		doctrine = doctrine_gender_male_dominated
 		doctrine = doctrine_pluralism_pluralistic
 		doctrine = doctrine_theocracy_lay_clergy
-        doctrine = doctrine_pilgrimage_encouraged
+    doctrine = doctrine_pilgrimage_encouraged
+    doctrine = doctrine_funeral_cremation
+
 
 		#mariage 
 		doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
@@ -1936,7 +1962,7 @@
 
 		doctrine = tenet_warmonger 
 		doctrine = tenet_sanctity_of_nature
-		doctrine = tenet_ritual_celebrations
+		doctrine = tenet_animal_sacrifice
 
         doctrine = special_doctrine_ecumenical_celtic_roman 
         doctrine = special_doctrine_romano_british_patron_god
@@ -1960,9 +1986,9 @@
 			#Creator
 			CreatorName = romano_british_polytheism_creator_god_name
 			CreatorNamePossessive = romano_british_polytheism_creator_god_name_possessive
-			CreatorSheHe = CHARACTER_SHEHE_SHE
-			CreatorHerHis = CHARACTER_HERHIS_HER
-			CreatorHerHim = CHARACTER_HERHIM_HER
+			CreatorSheHe = CHARACTER_SHEHE_HE
+			CreatorHerHis = CHARACTER_HERHIS_HIS
+			CreatorHerHim = CHARACTER_HERHIM_HIM
 	
 			#HealthGod
 			HealthGodName = romano_british_polytheism_health_god_name
@@ -1988,16 +2014,16 @@
 			#HouseholdGod
 			HouseholdGodName = romano_british_polytheism_household_god_name
 			HouseholdGodNamePossessive = romano_british_polytheism_household_god_name_possessive
-			HouseholdGodSheHe = CHARACTER_SHEHE_SHE
-			HouseholdGodHerHis = CHARACTER_HERHIS_HER
-			HouseholdGodHerHim = CHARACTER_HERHIM_HER
+			HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+			HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+			HouseholdGodHerHim = CHARACTER_HERHIM_THEM
 	
 			#FateGod
 			FateGodName = romano_british_polytheism_fate_god_name
 			FateGodNamePossessive = romano_british_polytheism_fate_god_name_possessive
-			FateGodSheHe = CHARACTER_SHEHE_THEY
-			FateGodHerHis = CHARACTER_HERHIS_THEIR
-			FateGodHerHim = CHARACTER_HERHIM_THEM
+			FateGodSheHe = CHARACTER_SHEHE_HE
+			FateGodHerHis = CHARACTER_HERHIS_HIS
+			FateGodHerHim = CHARACTER_HERHIM_HIM
 	
 			#KnowledgeGod
 			KnowledgeGodName = romano_british_polytheism_knowledge_god_name
@@ -2045,7 +2071,7 @@
 			EvilGodNames = { romano_british_polytheism_evil_god_trivia romano_british_polytheism_evil_god_discordia }
 			HouseOfWorship = paganism_house_of_worship
 			HouseOfWorshipPlural = paganism_house_of_worship_plural
-			ReligiousSymbol = romano_british_polytheism_polytheism_religious_symbol
+			ReligiousSymbol = romano_british_polytheism_religious_symbol
 			ReligiousText = romano_british_polytheism_religious_text
 			ReligiousHeadName = romano_british_polytheism_religious_head_title
 			ReligiousHeadTitleName = dualism_religious_head_title_name
@@ -2077,7 +2103,7 @@
 			DeathDeityHerHis = CHARACTER_HERHIS_HIS
 			WitchGodName = romano_british_polytheism_witchgodname_trivia
 			WitchGodHerHis = CHARACTER_HERHIS_HER
-			WitchGodSheHe = CHARACTER_SHEHE_HE
+			WitchGodSheHe = CHARACTER_SHEHE_SHE
 			WitchGodHerHim = CHARACTER_HERHIM_HER
 			WitchGodMistressMaster = mistress
 			WitchGodMotherFather = mother
@@ -2114,6 +2140,8 @@
         doctrine = doctrine_pluralism_pluralistic
         doctrine = doctrine_theocracy_lay_clergy
         doctrine = doctrine_pilgrimage_encouraged
+        doctrine = doctrine_funeral_cremation
+
 
         #mariage 
         doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
@@ -2166,16 +2194,16 @@
             #Creator
             CreatorName = romano_germanic_polytheism_creator_god_name
             CreatorNamePossessive = romano_germanic_polytheism_creator_god_name_possessive
-            CreatorSheHe = CHARACTER_SHEHE_SHE
-            CreatorHerHis = CHARACTER_HERHIS_HER
-            CreatorHerHim = CHARACTER_HERHIM_HER
+            CreatorSheHe = CHARACTER_SHEHE_HE
+            CreatorHerHis = CHARACTER_HERHIS_HIS
+            CreatorHerHim = CHARACTER_HERHIM_HIM
     
             #HealthGod
             HealthGodName = romano_germanic_polytheism_health_god_name
             HealthGodNamePossessive = romano_germanic_polytheism_health_god_name_possessive
-            HealthGodSheHe = CHARACTER_SHEHE_HE
-            HealthGodHerHis = CHARACTER_HERHIS_HIS
-            HealthGodHerHim = CHARACTER_HERHIM_HIM
+            HealthGodSheHe = CHARACTER_SHEHE_SHE
+            HealthGodHerHis = CHARACTER_HERHIS_HER
+            HealthGodHerHim = CHARACTER_HERHIM_HER
             
             #FertilityGod
             FertilityGodName = romano_germanic_polytheism_fertility_god_name
@@ -2187,9 +2215,9 @@
             #WealthGod
             WealthGodName = romano_germanic_polytheism_wealth_god_name
             WealthGodNamePossessive = romano_germanic_polytheism_wealth_god_name_possessive
-            WealthGodSheHe = CHARACTER_SHEHE_HE
-            WealthGodHerHis = CHARACTER_HERHIS_HIS
-            WealthGodHerHim = CHARACTER_HERHIM_HIM
+            WealthGodSheHe = CHARACTER_SHEHE_SHE
+            WealthGodHerHis = CHARACTER_HERHIS_HER
+            WealthGodHerHim = CHARACTER_HERHIM_HER
     
             #HouseholdGod
             HouseholdGodName = romano_germanic_polytheism_household_god_name
@@ -2201,16 +2229,16 @@
             #FateGod
             FateGodName = romano_germanic_polytheism_fate_god_name
             FateGodNamePossessive = romano_germanic_polytheism_fate_god_name_possessive
-            FateGodSheHe = CHARACTER_SHEHE_THEY
-            FateGodHerHis = CHARACTER_HERHIS_THEIR
-            FateGodHerHim = CHARACTER_HERHIM_THEM
+            FateGodSheHe = CHARACTER_SHEHE_HE
+            FateGodHerHis = CHARACTER_HERHIS_HER
+            FateGodHerHim = CHARACTER_HERHIM_HER
     
             #KnowledgeGod
             KnowledgeGodName = romano_germanic_polytheism_knowledge_god_name
             KnowledgeGodNamePossessive = romano_germanic_polytheism_knowledge_god_name_possessive
-            KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-            KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-            KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+            KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+            KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+            KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
     
             #WarGod
             WarGodName = romano_germanic_polytheism_war_god_name
@@ -2251,7 +2279,7 @@
             EvilGodNames = { romano_germanic_polytheism_evil_god_trivia romano_germanic_polytheism_evil_god_discordia }
             HouseOfWorship = paganism_house_of_worship
             HouseOfWorshipPlural = paganism_house_of_worship_plural
-            ReligiousSymbol = romano_germanic_polytheism_polytheism_religious_symbol
+            ReligiousSymbol = romano_germanic_polytheism_religious_symbol
             ReligiousText = romano_germanic_polytheism_religious_text
             ReligiousHeadName = romano_germanic_polytheism_religious_head_title
             ReligiousHeadTitleName = dualism_religious_head_title_name
@@ -2283,7 +2311,430 @@
             DeathDeityHerHis = CHARACTER_HERHIS_HIS
             WitchGodName = romano_germanic_polytheism_witchgodname_trivia
             WitchGodHerHis = CHARACTER_HERHIS_HER
-            WitchGodSheHe = CHARACTER_SHEHE_HE
+            WitchGodSheHe = CHARACTER_SHEHE_SHE
+            WitchGodHerHim = CHARACTER_HERHIM_HER
+            WitchGodMistressMaster = mistress
+            WitchGodMotherFather = mother
+            
+            GHWName = ghw_great_holy_war
+            GHWNamePlural = ghw_great_holy_wars
+            }
+        }
+        romano_hispanic_polytheism ={
+            #color
+            color = { 245 225 7 }
+            icon = romano_hispanic
+            reformed_icon = romano_hispanic_reformed
+            religious_head = d_pontifex_polytheistic
+            holy_site = rome
+            holy_site = cumae
+            holy_site = zaragoza 
+            holy_site = olisipo #-> modern day lisbon
+			holy_site = caesarobriga #Modern day Talavera de la Reina  close to Toledo so therefor holy site toledo  
+            
+            doctrine = unreformed_faith_doctrine
+    
+			reserved_male_names = {
+				Marcus Gaius Publius Sextus Appius Gnaeus Caius Agrippa Titus Vitus Albus Tiberius Lucius Nero Antonius
+		        Felix Atticus Cassius Aurelius Aloysius Rufus Remus Romulus Marius Maximus Cornelius Cato Brutus Septimus Silvanus Junius Flavius Vitus Antoninus
+		        Livius
+			}
+			reserved_female_names = {
+                Fabia Hadriana Agrippina Julia-Agrippina Julia Mariana Octavia Valentina Tiberia Antonia Aemilia Amanda Camilla Caecilia Claudia 
+                Clelia Flavia Fulvia Iulia Iris Laura Lucia Sabina Serena Silvana Titiana Tullia Valeria Martia Paula Domitia Domitilla Drusilla Fabricia  
+                Ennia Iuliana Iustina Romana Severa Servia Virginia Ursula Ulpia Tosca Rosa
+			}
+    
+            #Main Group
+            #doctrine = doctrine_temporal_head
+            doctrine = doctrine_spiritual_head
+            doctrine = doctrine_gender_male_dominated
+            doctrine = doctrine_pluralism_pluralistic
+            doctrine = doctrine_theocracy_lay_clergy
+            doctrine = doctrine_pilgrimage_encouraged
+            doctrine = doctrine_funeral_cremation
+
+            #mariage 
+            doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+            doctrine = doctrine_bastardry_legitimization
+            doctrine = doctrine_monogamy
+            doctrine = doctrine_divorce_allowed
+    
+            #Crimes
+            doctrine = doctrine_homosexuality_accepted
+            doctrine = doctrine_adultery_men_crime
+            doctrine = doctrine_adultery_women_crime
+            doctrine = doctrine_kinslaying_close_kin_crime
+            doctrine = doctrine_deviancy_accepted
+            doctrine = doctrine_witchcraft_crime
+    
+            #Clerical Functions
+            doctrine = doctrine_clerical_function_taxation
+            doctrine = doctrine_clerical_gender_either
+            doctrine = doctrine_clerical_marriage_allowed
+            doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+            doctrine = doctrine_curtailed 
+            doctrine = doctrine_monk_not_clergy_enforced
+    
+            #doctrine = unreformed_faith_doctrine
+    
+            doctrine = tenet_warmonger 
+            doctrine = tenet_communal_identity
+            doctrine = tenet_sanctity_of_nature
+    
+            doctrine = special_doctrine_ecumenical_hispano_roman 
+            doctrine = special_doctrine_ecumenical_celtic_roman
+            doctrine = special_doctrine_romano_hispanic_patron_god
+            holy_order_names = {            
+                { name = "holy_order_Protectors_of_dei_consentes" }
+                { name = "holy_order_herculiani"}
+                { name = "holy_order_joviani"}
+                }
+    
+    
+            localization = {
+                #High God Name
+                HighGodName = romano_hispanic_polytheism_high_god_name
+                HighGodNamePossessive = romano_hispanic_polytheism_high_god_name_possessive
+                HighGodNameSheHe = CHARACTER_SHEHE_HE
+                HighGodHerselfHimself = CHARACTER_HIMSELF
+                HighGodHerHis = CHARACTER_HERHIS_HIS
+                HighGodNameAlternate = romano_hispanic_polytheism_high_god_name_alternate
+                HighGodNameAlternatePossessive = romano_hispanic_polytheism_high_god_name_alternate_possessive
+    
+                #Creator
+                CreatorName = romano_hispanic_polytheism_creator_god_name
+                CreatorNamePossessive = romano_hispanic_polytheism_creator_god_name_possessive
+                CreatorSheHe = CHARACTER_SHEHE_HE
+                CreatorHerHis = CHARACTER_HERHIS_HIS
+                CreatorHerHim = CHARACTER_HERHIM_HIM
+        
+                #HealthGod
+                HealthGodName = romano_hispanic_polytheism_health_god_name
+                HealthGodNamePossessive = romano_hispanic_polytheism_health_god_name_possessive
+                HealthGodSheHe = CHARACTER_SHEHE_SHE
+                HealthGodHerHis = CHARACTER_HERHIS_HER
+                HealthGodHerHim = CHARACTER_HERHIM_HER
+                
+                #FertilityGod
+                FertilityGodName = romano_hispanic_polytheism_fertility_god_name
+                FertilityGodNamePossessive = romano_hispanic_polytheism_fertility_god_name_possessive
+                FertilityGodSheHe = CHARACTER_SHEHE_SHE
+                FertilityGodHerHis = CHARACTER_HERHIS_HER
+                FertilityGodHerHim = CHARACTER_HERHIM_HER
+        
+                #WealthGod
+                WealthGodName = romano_hispanic_polytheism_wealth_god_name
+                WealthGodNamePossessive = romano_hispanic_polytheism_wealth_god_name_possessive
+                WealthGodSheHe = CHARACTER_SHEHE_HE
+                WealthGodHerHis = CHARACTER_HERHIS_HIS
+                WealthGodHerHim = CHARACTER_HERHIM_HIM
+        
+                #HouseholdGod
+                HouseholdGodName = romano_hispanic_polytheism_household_god_name
+                HouseholdGodNamePossessive = romano_hispanic_polytheism_household_god_name_possessive
+                HouseholdGodSheHe = CHARACTER_SHEHE_SHE
+                HouseholdGodHerHis = CHARACTER_HERHIS_HER
+                HouseholdGodHerHim = CHARACTER_HERHIM_HER
+        
+                #FateGod
+                FateGodName = romano_hispanic_polytheism_fate_god_name
+                FateGodNamePossessive = romano_hispanic_polytheism_fate_god_name_possessive
+                FateGodSheHe = CHARACTER_SHEHE_HE
+                FateGodHerHis = CHARACTER_HERHIS_HIS
+                FateGodHerHim = CHARACTER_HERHIM_HIM
+        
+                #KnowledgeGod
+                KnowledgeGodName = romano_hispanic_polytheism_knowledge_god_name
+                KnowledgeGodNamePossessive = romano_hispanic_polytheism_knowledge_god_name_possessive
+                KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
+                KnowledgeGodHerHis = CHARACTER_HERHIS_HER
+                KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+        
+                #WarGod
+                WarGodName = romano_hispanic_polytheism_war_god_name
+                WarGodNamePossessive = romano_hispanic_polytheism_war_god_name_possessive
+                WarGodSheHe = CHARACTER_SHEHE_HE
+                WarGodHerHis = CHARACTER_HERHIS_HIS
+                WarGodHerHim = CHARACTER_HERHIM_HIM
+        
+                #TricksterGod
+                TricksterGodName = romano_hispanic_polytheism_trickster_god_name
+                TricksterGodNamePossessive = romano_hispanic_polytheism_trickster_god_name_possessive
+                TricksterGodSheHe = CHARACTER_SHEHE_HE
+                TricksterGodHerHis = CHARACTER_HERHIS_HIS
+                TricksterGodHerHim = CHARACTER_HERHIM_HIM
+        
+                #NightGod
+                NightGodName = romano_hispanic_polytheism_night_god_name
+                NightGodNamePossessive = romano_hispanic_polytheism_night_god_name_possessive
+                NightGodSheHe = CHARACTER_SHEHE_SHE
+                NightGodHerHis = CHARACTER_HERHIS_HER
+                NightGodHerHim = CHARACTER_HERHIM_HER
+        
+                #WaterGod
+                WaterGodName = romano_hispanic_polytheism_water_god_name
+                WaterGodNamePossessive = romano_hispanic_polytheism_water_god_name_possessive
+                WaterGodSheHe = CHARACTER_SHEHE_SHE
+                WaterGodHerHis = CHARACTER_HERHIS_HER
+                WaterGodHerHim = CHARACTER_HERHIM_HER
+    
+                PantheonTerm = religion_the_gods
+                PantheonTermHasHave = pantheon_term_have
+                GoodGodNames = { holy_order_sons_of_mars_thincsus romano_hispanic_polytheism_high_god_name romano_hispanic_polytheism_fertility_god_nam romano_hispanic_polytheism_wealth_god_name romano_hispanic_polytheism_wealth_god_name romano_hispanic_polytheism_fate_god_name romano_hispanic_polytheism_war_god_name romano_hispanic_polytheism_water_god_name }
+                DevilName = romano_hispanic_polytheism_devil_name
+                DevilNamePossessive = romano_hispanic_polytheism_devil_name_possessive
+                DevilSheHe = CHARACTER_SHEHE_HE
+                DevilHerHis = CHARACTER_HERHIS_HIS
+                DevilHerselfHimself = CHARACTER_HIMSELF
+                EvilGodNames = { romano_hispanic_polytheism_evil_god_orcus romano_hispanic_polytheism_evil_god_discordia }
+                HouseOfWorship = paganism_house_of_worship
+                HouseOfWorshipPlural = paganism_house_of_worship_plural
+                ReligiousSymbol = romano_hispanic_polytheism_religious_symbol
+                ReligiousText = romano_hispanic_polytheism_religious_text
+                ReligiousHeadName = romano_hispanic_polytheism_religious_head_title
+                ReligiousHeadTitleName = dualism_religious_head_title_name
+                DevoteeMale = paganism_devotee
+                DevoteeMalePlural = paganism_devoteeplural
+                DevoteeFemale = paganism_devotee
+                DevoteeFemalePlural = paganism_devoteeplural
+                DevoteeNeuter = paganism_devotee
+                DevoteeNeuterPlural = paganism_devoteeplural
+                PriestMale = romano_hispanic_polytheism_priest_male
+                PriestMalePlural = romano_hispanic_polytheism_priest_male_plural
+                PriestFemale = romano_hispanic_polytheism_priest_female
+                PriestFemalePlural = romano_hispanic_polytheism_priest_female_plural
+                PriestNeuter = romano_hispanic_polytheism_priest_male
+                PriestNeuterPlural = romano_hispanic_polytheism_priest_male_plural
+                AltPriestTermPlural = romano_hispanic_polytheism_priest_alternate_plural
+                BishopMale = romano_hispanic_polytheism_bishop_male
+                BishopMalePlural = romano_hispanic_polytheism_bishop_male_plural
+                BishopFemale = romano_hispanic_polytheism_priest_female
+                BishopFemalePlural = romano_hispanic_polytheism_priest_female_plural
+                BishopNeuter = romano_hispanic_polytheism_priest_male
+                BishopNeuterPlural = romano_hispanic_polytheism_priest_male_plural
+                DivineRealm = divine_realm
+                PositiveAfterLife = greco_roman_religion_positive_afterlife
+                NegativeAfterLife = roman_religion_negative_afterlife
+                DeathDeityName = romano_hispanic_polytheism_death_deity_name
+                DeathDeityNamePossessive = romano_hispanic_polytheism_death_deity_name_possessive
+                DeathDeitySheHe = CHARACTER_SHEHE_HE
+                DeathDeityHerHis = CHARACTER_HERHIS_HIS
+                WitchGodName = romano_hispanic_polytheism_witchgodname_trivia
+                WitchGodHerHis = CHARACTER_HERHIS_HER
+                WitchGodSheHe = CHARACTER_SHEHE_SHE
+                WitchGodHerHim = CHARACTER_HERHIM_HER
+                WitchGodMistressMaster = mistress
+                WitchGodMotherFather = mother
+                
+                GHWName = ghw_great_holy_war
+                GHWNamePlural = ghw_great_holy_wars
+                }
+            }
+            
+    cultus_orientis ={
+        #color
+        color = { 244 240 210 }
+        icon = cultus_orientis
+        reformed_icon = cultus_orientis_reformed
+        religious_head = d_pontifex_polytheistic
+        holy_site = rome
+        holy_site = cumae
+        holy_site = carthage
+        holy_site = nicosia
+        holy_site = tyre
+        
+        doctrine = unreformed_faith_doctrine
+
+        reserved_male_names = {
+            Marcus Gaius Publius Sextus Appius Gnaeus Caius Agrippa Titus Vitus Albus Tiberius Lucius Nero Antonius
+            Felix Atticus Cassius Aurelius Aloysius Rufus Remus Romulus Marius Maximus Cornelius Cato Brutus Septimus Silvanus Junius Flavius Vitus Antoninus
+            Livius
+        }
+        reserved_female_names = {
+            Fabia Hadriana Agrippina Julia-Agrippina Julia Mariana Octavia Valentina Tiberia Antonia Aemilia Amanda Camilla Caecilia Claudia 
+            Clelia Flavia Fulvia Iulia Iris Laura Lucia Sabina Serena Silvana Titiana Tullia Valeria Martia Paula Domitia Domitilla Drusilla Fabricia  
+            Ennia Iuliana Iustina Romana Severa Servia Virginia Ursula Ulpia Tosca Rosa
+        }
+
+        #Main Group
+        #doctrine = doctrine_temporal_head
+        doctrine = doctrine_spiritual_head
+        doctrine = doctrine_gender_male_dominated
+        doctrine = doctrine_pluralism_pluralistic
+        doctrine = doctrine_theocracy_lay_clergy
+        doctrine = doctrine_pilgrimage_encouraged
+        doctrine = doctrine_funeral_cremation
+
+        #mariage 
+        doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+        doctrine = doctrine_bastardry_legitimization
+        doctrine = doctrine_monogamy
+        doctrine = doctrine_divorce_allowed
+
+        #Crimes
+        doctrine = doctrine_homosexuality_accepted
+        doctrine = doctrine_adultery_men_crime
+        doctrine = doctrine_adultery_women_crime
+        doctrine = doctrine_kinslaying_close_kin_crime
+        doctrine = doctrine_deviancy_accepted
+        doctrine = doctrine_witchcraft_crime
+
+        #Clerical Functions
+        doctrine = doctrine_clerical_function_taxation
+        doctrine = doctrine_clerical_gender_either
+        doctrine = doctrine_clerical_marriage_allowed
+        doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+        doctrine = doctrine_curtailed 
+        doctrine = doctrine_monk_not_clergy_enforced
+
+        #doctrine = unreformed_faith_doctrine
+
+        doctrine = tenet_warmonger 
+        doctrine = tenet_communal_identity
+        doctrine = tenet_esotericism 
+
+        doctrine = special_doctrine_cultus_orientis_patron_god
+        doctrine = special_doctrine_ecumenical_west_semitic_roman
+
+        holy_order_names = {            
+            { name = "holy_order_Protectors_of_dei_consentes" }
+            { name = "holy_order_herculiani"}
+            { name = "holy_order_joviani"}
+            }
+
+
+        localization = {
+            #High God Name
+            HighGodName = cultus_orientis_high_god_name
+            HighGodNamePossessive = cultus_orientis_high_god_name_possessive
+            HighGodNameSheHe = CHARACTER_SHEHE_HE
+            HighGodHerselfHimself = CHARACTER_HIMSELF
+            HighGodHerHis = CHARACTER_HERHIS_HIS
+            HighGodNameAlternate = cultus_orientis_high_god_name_alternate
+            HighGodNameAlternatePossessive = cultus_orientis_high_god_name_alternate_possessive
+
+            #Creator
+            CreatorName = cultus_orientis_creator_god_name
+            CreatorNamePossessive = cultus_orientis_creator_god_name_possessive
+            CreatorSheHe = CHARACTER_SHEHE_HE
+            CreatorHerHis = CHARACTER_HERHIS_HIS
+            CreatorHerHim = CHARACTER_HERHIM_HIM
+    
+            #HealthGod
+            HealthGodName = cultus_orientis_health_god_name
+            HealthGodNamePossessive = cultus_orientis_health_god_name_possessive
+            HealthGodSheHe = CHARACTER_SHEHE_HE
+            HealthGodHerHis = CHARACTER_HERHIS_HIS
+            HealthGodHerHim = CHARACTER_HERHIM_HIM
+            
+            #FertilityGod
+            FertilityGodName = cultus_orientis_fertility_god_name
+            FertilityGodNamePossessive = cultus_orientis_fertility_god_name_possessive
+            FertilityGodSheHe = CHARACTER_SHEHE_SHE
+            FertilityGodHerHis = CHARACTER_HERHIS_HER
+            FertilityGodHerHim = CHARACTER_HERHIM_HER
+    
+            #WealthGod
+            WealthGodName = cultus_orientis_wealth_god_name
+            WealthGodNamePossessive = cultus_orientis_wealth_god_name_possessive
+            WealthGodSheHe = CHARACTER_SHEHE_HE
+            WealthGodHerHis = CHARACTER_HERHIS_HIS
+            WealthGodHerHim = CHARACTER_HERHIM_HIM
+    
+            #HouseholdGod
+            HouseholdGodName = cultus_orientis_household_god_name
+            HouseholdGodNamePossessive = cultus_orientis_household_god_name_possessive
+            HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+            HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+            HouseholdGodHerHim = CHARACTER_HERHIM_THEM
+    
+            #FateGod
+            FateGodName = cultus_orientis_fate_god_name
+            FateGodNamePossessive = cultus_orientis_fate_god_name_possessive
+            FateGodSheHe = CHARACTER_SHEHE_HE
+            FateGodHerHis = CHARACTER_HERHIS_HIS
+            FateGodHerHim = CHARACTER_HERHIM_HIM
+    
+            #KnowledgeGod
+            KnowledgeGodName = cultus_orientis_knowledge_god_name
+            KnowledgeGodNamePossessive = cultus_orientis_knowledge_god_name_possessive
+            KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
+            KnowledgeGodHerHis = CHARACTER_HERHIS_HER
+            KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+    
+            #WarGod
+            WarGodName = cultus_orientis_war_god_name
+            WarGodNamePossessive = cultus_orientis_war_god_name_possessive
+            WarGodSheHe = CHARACTER_SHEHE_SHE
+            WarGodHerHis = CHARACTER_HERHIS_HER
+            WarGodHerHim = CHARACTER_HERHIM_HER
+    
+            #TricksterGod
+            TricksterGodName = cultus_orientis_trickster_god_name
+            TricksterGodNamePossessive = cultus_orientis_trickster_god_name_possessive
+            TricksterGodSheHe = CHARACTER_SHEHE_HE
+            TricksterGodHerHis = CHARACTER_HERHIS_HIS
+            TricksterGodHerHim = CHARACTER_HERHIM_HIM
+    
+            #NightGod
+            NightGodName = cultus_orientis_night_god_name
+            NightGodNamePossessive = cultus_orientis_night_god_name_possessive
+            NightGodSheHe = CHARACTER_SHEHE_SHE
+            NightGodHerHis = CHARACTER_HERHIS_HER
+            NightGodHerHim = CHARACTER_HERHIM_HER
+    
+            #WaterGod
+            WaterGodName = cultus_orientis_water_god_name
+            WaterGodNamePossessive = cultus_orientis_water_god_name_possessive
+            WaterGodSheHe = CHARACTER_SHEHE_HE
+            WaterGodHerHis = CHARACTER_HERHIS_HIS
+            WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+            PantheonTerm = religion_the_gods
+            PantheonTermHasHave = pantheon_term_have
+            GoodGodNames = { cultus_orientis_high_god_name cultus_orientis_fertility_god_nam cultus_orientis_wealth_god_name cultus_orientis_wealth_god_name cultus_orientis_fate_god_name cultus_orientis_war_god_name cultus_orientis_water_god_name }
+            DevilName = cultus_orientis_devil_name
+            DevilNamePossessive = cultus_orientis_devil_name_possessive
+            DevilSheHe = CHARACTER_SHEHE_HE
+            DevilHerHis = CHARACTER_HERHIS_HIS
+            DevilHerselfHimself = CHARACTER_HIMSELF
+            EvilGodNames = { cultus_orientis_evil_god_orcus cultus_orientis_evil_god_discordia }
+            HouseOfWorship = paganism_house_of_worship
+            HouseOfWorshipPlural = paganism_house_of_worship_plural
+            ReligiousSymbol = cultus_orientis_polytheism_religious_symbol
+            ReligiousText = cultus_orientis_religious_text
+            ReligiousHeadName = cultus_orientis_religious_head_title
+            ReligiousHeadTitleName = dualism_religious_head_title_name
+            DevoteeMale = paganism_devotee
+            DevoteeMalePlural = paganism_devoteeplural
+            DevoteeFemale = paganism_devotee
+            DevoteeFemalePlural = paganism_devoteeplural
+            DevoteeNeuter = paganism_devotee
+            DevoteeNeuterPlural = paganism_devoteeplural
+            PriestMale = cultus_orientis_priest_male
+            PriestMalePlural = cultus_orientis_priest_male_plural
+            PriestFemale = cultus_orientis_priest_female
+            PriestFemalePlural = cultus_orientis_priest_female_plural
+            PriestNeuter = cultus_orientis_priest_male
+            PriestNeuterPlural = cultus_orientis_priest_male_plural
+            AltPriestTermPlural = cultus_orientis_priest_alternate_plural
+            BishopMale = cultus_orientis_bishop_male
+            BishopMalePlural = cultus_orientis_bishop_male_plural
+            BishopFemale = cultus_orientis_priest_female
+            BishopFemalePlural = cultus_orientis_priest_female_plural
+            BishopNeuter = cultus_orientis_priest_male
+            BishopNeuterPlural = cultus_orientis_priest_male_plural
+            DivineRealm = divine_realm
+            PositiveAfterLife = greco_roman_religion_positive_afterlife
+            NegativeAfterLife = roman_religion_negative_afterlife
+            DeathDeityName = cultus_orientis_death_deity_name
+            DeathDeityNamePossessive = cultus_orientis_death_deity_name_possessive
+            DeathDeitySheHe = CHARACTER_SHEHE_HE
+            DeathDeityHerHis = CHARACTER_HERHIS_HIS
+            WitchGodName = cultus_orientis_witchgodname_trivia
+            WitchGodHerHis = CHARACTER_HERHIS_HER
+            WitchGodSheHe = CHARACTER_SHEHE_SHE
             WitchGodHerHim = CHARACTER_HERHIM_HER
             WitchGodMistressMaster = mistress
             WitchGodMotherFather = mother

@@ -1,0 +1,130 @@
+﻿l_german:
+
+# #####################
+# #Made by tom5667
+# ###################### 
+
+    iberian_religion:0 "Iberisch"
+    iberian_religion_adj:2 "Iberisch"
+    iberian_religion_adherent:0 "Iberisch"
+    iberian_religion_adherent_plural:0 "Iberische"
+
+    iberian_religion_desc:0 "Der iberische Glaube ist ein polytheistischer Glaube, der die Bedeutung von Mut und Ehre hervorhebt. Die Iberer glauben an ein Pantheon von Göttern und Göttinnen, von denen jede ihre eigenen spezifischen Kräfte und Bereiche hat. Der Hauptgott des iberischen Pantheons ist En."
+
+    lusitanian_polytheism:0 "Lusitanian"
+    lusitanian_polytheism_adj:0 "Lusitanian"
+    lusitanian_polytheism_adherent:0 "Lusitanische Polytheist"
+    lusitanian_polytheism_adherent_plural:0 "Lusitanische Polytheisten"
+    lusitanian_polytheism_desc:0 "Der lusitanische Glaube ist eine starke Kraft in der lusitanischen Gesellschaft und spielt eine wichtige Rolle im Leben der Menschen in Lusitanien. Der lusitanische Glaube trägt dazu bei, das lusitanische Volk zu vereinen, und gibt ihm ein Gefühl von Identität und Ziel. Die Lusitanier haben über Jahrhunderte hinweg ihre eigenen einzigartigen religiösen Traditionen gepflegt." 
+
+    lusitanian_polytheism_old:0 "Lusitanisch Alt"
+    lusitanian_polytheism_old_adj:0 "Lusitanisch Alt"
+    lusitanian_polytheism_adherent_old:0 "Alt Lusitanische Polytheist"
+    lusitanian_polytheism_old_adherent_plural:0 "Alt Lusitanische Polytheisten"
+    lusitanian_polytheism_old_desc:0 "Der lusitanische Glaube ist eine starke Kraft in der lusitanischen Gesellschaft und spielt eine wichtige Rolle im Leben der Menschen in Lusitanien. Der lusitanische Glaube trägt dazu bei, das lusitanische Volk zu vereinen, und gibt ihm ein Gefühl von Identität und Ziel. Die Lusitanier haben über Jahrhunderte hinweg ihre eigenen einzigartigen religiösen Traditionen gepflegt." 
+
+    lusitanian_polytheism_religious_head_title:0 "Hohe priester"
+    lusitanian_polytheism_divine_realm:0 "Vdekje"
+    lusitanian_polytheism_religious_symbol:0 "Sun"
+    lusitanian_polytheism_religious_text:0 "Mythology"
+    #roman_pantheon_the_gods:0 "Roman pantheon of gods"
+
+    #lusitanian gods/goddesses Localization
+
+    #En Localization
+    lusitanian_polytheism_high_god_name:0 "Reue"
+    lusitanian_polytheism_high_god_name_possessive:0 "Reue's"
+    lusitanian_polytheism_high_god_name_alternate:0 "$lusitanian_polytheism_high_god_name$"
+    lusitanian_polytheism_high_god_name_alternate_possessive:0 "$lusitanian_polytheism_high_god_name$'s"
+    lusitanian_polytheism_high_god_shehe:0 "He"
+    lusitanian_polytheism_high_god_herselfhimself:0 "Himself"
+    lusitanian_polytheism_high_god_herhis:0 "His"
+
+    #Creater god Localization
+    lusitanian_polytheism_creator_god_name:0 "$lusitanian_polytheism_high_god_name$"
+    lusitanian_polytheism_creator_god_name_possessive:0 "$lusitanian_polytheism_high_god_name$'s"
+
+    #Health Goddess 
+    lusitanian_polytheism_health_god_name:0 "Arancio"
+    lusitanian_polytheism_health_god_name_possessive:0 "$lusitanian_polytheism_health_god_name$'s"
+
+    #Fertility God Ataecina Localization
+    lusitanian_polytheism_fertility_god_name:0 "Ataegina"
+    lusitanian_polytheism_fertility_god_name_possessive:0 "$lusitanian_polytheism_fertility_god_name$'s"
+
+    #Wealth god En Localization
+    lusitanian_polytheism_wealth_god_name:0 "Lucubo"
+    lusitanian_polytheism_wealth_god_name_possessive:0 "$lusitanian_polytheism_wealth_god_name$'s"
+
+    #Household god Trebaruna
+    lusitanian_polytheism_household_god_name:0 "Trebaruna"
+    lusitanian_polytheism_household_god_name_possessive:0 "$lusitanian_polytheism_household_god_name$'s"
+
+    #Fate god En Localization
+    lusitanian_polytheism_fate_god_name:0 "Endovelicos"
+    lusitanian_polytheism_fate_god_name_possessive:0 "$lusitanian_polytheism_fate_god_name$'s"
+
+    #knowledge god En Localization
+    lusitanian_polytheism_knowledge_god_name:0 "$lusitanian_polytheism_wealth_god_name$"
+    lusitanian_polytheism_knowledge_god_name_possessive:0 "$lusitanian_polytheism_wealth_god_name$'s"
+
+    #War god Cariocecus Localization
+    lusitanian_polytheism_war_god_name:0 "Cariocecus"
+    lusitanian_polytheism_war_god_name_possessive:0 "$lusitanian_polytheism_war_god_name$'s"
+
+    #Trickster god Daedalus Localization
+    lusitanian_polytheism_trickster_god_name:0 "$lusitanian_polytheism_wealth_god_name$"
+    lusitanian_polytheism_trickster_god_name_possessive:0 "$lusitanian_polytheism_wealth_god_name$'s"
+
+    #Night goddess Ataecina  Localization
+    lusitanian_polytheism_night_god_name:0 "Ataecina"
+    lusitanian_polytheism_night_god_name_possessive:0 "$lusitanian_polytheism_night_god_name$'s"
+
+    #Water god Gebeleizis Localization
+    lusitanian_polytheism_water_god_name:0 "Nabia"
+    lusitanian_polytheism_water_god_name_possessive:0 "$lusitanian_polytheism_water_god_name$'s"
+
+    #evil gods names 
+    lusitanian_polytheism_evil_god_ataecina:0 "Ataecina" 
+    
+
+    #witch goddess
+    lusitanian_polytheism_witchgodname_spirit:0 "spirits"
+    lusitanian_polytheism_witchgodname_spirit_possesive:0 "$lusitanian_polytheism_witchgodname_spirit$"
+
+    #Devil god   #For now there is just no thing like a devil god in the Lusitanian religion
+    lusitanian_polytheism_devil_name:0 "spirits" 
+    lusitanian_polytheism_devil_name_possessive:0 "$lusitanian_polytheism_devil_name$"
+
+    #Death god Zalmoxis 
+    lusitanian_polytheism_death_deity_name:0 "Ataecina"
+    lusitanian_polytheism_death_deity_name_possessive:0 "$lusitanian_polytheism_death_deity_name$'s"
+
+    
+    #lusitanian priest priest
+
+    #lusitanian priest 
+    lusitanian_polytheism_priest_male:0 "Priester"
+    lusitanian_polytheism_priest_male_plural:0 "Priester"
+
+    #lusitanian priestess 
+    lusitanian_polytheism_priest_female:0 "Priesterin" 
+    lusitanian_polytheism_priest_female_plural:0 "Priesterinnen" 
+
+    #lusitanian high priest
+    lusitanian_polytheism_bishop_male:0 "Ober Priester" 
+    lusitanian_polytheism_bishop_male_plural:0 "Ober Priest" 
+
+    lusitanian_polytheism_religious_head_title:0 "Hohe Priester"
+
+    #roman names
+    #males
+    reserved_male_names:0 "Lusitanische mänliche namen"
+    #Female 
+    reserved_female_names:0 "Lusitanische frauennamen"
+
+    #holy orders: 
+    holy_order_sons_of_medaurus:0 "Söhne von Medaurus"
+    holy_order_Protectors_of_En:0 "Beschützer von En"
+
+    

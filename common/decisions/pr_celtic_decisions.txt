@@ -61,6 +61,7 @@ cp_restore_high_priesthood_decision = {
 		base = 100
 	}
 }
+
 create_celtic_empire_decision = { 
 	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
 	major = yes
@@ -70,15 +71,12 @@ create_celtic_empire_decision = {
 		is_ruler = yes
 		is_landed = yes
 		has_game_rule = pr_ancient_kingdoms_decisions_on
-		OR = {
-			faith = faith:gaelic_polytheism
-			faith = { has_doctrine_parameter = special_doctrine_gaelic_patron_god_active }
-			faith = faith:brythonic_polytheism
-			faith = { has_doctrine_parameter = special_doctrine_brythonic_patron_god_active }
-			culture = culture:irish
-			culture = culture:manx
-			culture = culture:welsh 
-			culture = culture:gaelic
+
+		AND = {
+			has_title = title:k_high_kingdom_of_ireland
+			has_title = title:k_scotland
+			has_title = title:k_wales
+			has_title = title:k_england
 		}
 		is_imprisoned = no	
 		is_at_war = no
@@ -95,18 +93,6 @@ create_celtic_empire_decision = {
 		has_title = title:k_scotland
 		has_title = title:k_wales
 		has_title = title:k_england
-		OR = {
-			faith = faith:gaelic_polytheism
-			faith = { has_doctrine_parameter = special_doctrine_gaelic_patron_god_active }
-			faith = faith:brythonic_polytheism
-			faith = { has_doctrine_parameter = special_doctrine_brythonic_patron_god_active }
-			culture = culture:irish
-			culture = culture:manx
-			culture = culture:welsh 
-			culture = culture:gaelic
-		}
-		
-		
 	}
 	effect = {
 		add_to_global_variable_list = {
@@ -132,10 +118,10 @@ create_celtic_empire_decision = {
 		}
 		resolve_title_and_vassal_change = scope:title_change
 		
-		title:k_high_kingdom_of_ireland = { set_de_jure_liege_title = title:e_celtic_empire }
-		title:k_scotland = { set_de_jure_liege_title = title:e_celtic_empire }
-		title:k_wales = { set_de_jure_liege_title = title:e_celtic_empire }	 
-		title:k_england = { set_de_jure_liege_title = title:e_celtic_empire }
+		# title:k_high_kingdom_of_ireland = { set_de_jure_liege_title = title:e_celtic_empire }
+		# title:k_scotland = { set_de_jure_liege_title = title:e_celtic_empire }
+		# title:k_wales = { set_de_jure_liege_title = title:e_celtic_empire }	 
+		# title:k_england = { set_de_jure_liege_title = title:e_celtic_empire }
 		hidden_effect = {
 			trigger_event = celtic.004
 		}
@@ -164,123 +150,123 @@ create_celtic_empire_decision = {
 }
 
 #Gaelic restore Irish High Kingdom decision
-restore_high_kingdom ={
-	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
-	major = yes
-	desc =  restore_high_kingdom_desc
-	ai_check_interval = 4
-	is_shown = {
-		has_game_rule = pr_ancient_kingdoms_decisions_on
-		is_ruler = yes
-		is_landed = yes
-		OR = {
-			faith = faith:gaelic_polytheism
-			faith = { has_doctrine_parameter = special_doctrine_gaelic_patron_god_active }
-			faith = faith:brythonic_polytheism
-			faith = { has_doctrine_parameter = special_doctrine_brythonic_patron_god_active }
+# restore_high_kingdom ={
+# 	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
+# 	major = yes
+# 	desc =  restore_high_kingdom_desc
+# 	ai_check_interval = 4
+# 	is_shown = {
+# 		has_game_rule = pr_ancient_kingdoms_decisions_on
+# 		is_ruler = yes
+# 		is_landed = yes
+# 		OR = {
+# 			faith = faith:gaelic_polytheism
+# 			faith = { has_doctrine_parameter = special_doctrine_gaelic_patron_god_active }
+# 			faith = faith:brythonic_polytheism
+# 			faith = { has_doctrine_parameter = special_doctrine_brythonic_patron_god_active }
 
-		}
-		AND = {
-			OR = {
-				culture = culture:irish
-				culture = culture:manx
-				culture = culture:welsh 
-				culture = culture:gaelic
-			}
+# 		}
+# 		AND = {
+# 			OR = {
+# 				culture = culture:irish
+# 				culture = culture:manx
+# 				culture = culture:welsh 
+# 				culture = culture:gaelic
+# 			}
 
-		}
+# 		}
 
 
-		NOT = {
-			is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_recreated_high_kingdom_ireland
-			}
-		}
+# 		NOT = {
+# 			is_target_in_global_variable_list = {
+# 				name = unavailable_unique_decisions
+# 				target = flag:flag_recreated_high_kingdom_ireland
+# 			}
+# 		}
 		
-	}
+# 	}
 
-	is_valid = {
-		completely_controls = title:d_ulster 
-		completely_controls = title:d_meath
-		completely_controls = title:d_connacht		
-		completely_controls = title:d_leinster
-		completely_controls = title:d_munster
+# 	is_valid = {
+# 		completely_controls = title:d_ulster 
+# 		completely_controls = title:d_meath
+# 		completely_controls = title:d_connacht		
+# 		completely_controls = title:d_leinster
+# 		completely_controls = title:d_munster
 		
-		AND = {
-			OR = {
-			faith = faith:gaelic_polytheism
-			faith = { has_doctrine_parameter = special_doctrine_gaelic_patron_god_active }
-			faith = faith:brythonic_polytheism
-			faith = { has_doctrine_parameter = special_doctrine_brythonic_patron_god_active }
-			}
-		}
-		AND = {
-			OR = {
-				culture = culture:irish
-				culture = culture:manx
-				culture = culture:welsh 
-				culture = culture:gaelic
-			}
+# 		AND = {
+# 			OR = {
+# 			faith = faith:gaelic_polytheism
+# 			faith = { has_doctrine_parameter = special_doctrine_gaelic_patron_god_active }
+# 			faith = faith:brythonic_polytheism
+# 			faith = { has_doctrine_parameter = special_doctrine_brythonic_patron_god_active }
+# 			}
+# 		}
+# 		AND = {
+# 			OR = {
+# 				culture = culture:irish
+# 				culture = culture:manx
+# 				culture = culture:welsh 
+# 				culture = culture:gaelic
+# 			}
 
-		}
-		is_imprisoned = no	
-		is_at_war = no
-	}
-	effect = {
-		add_to_global_variable_list = {
-			name = unavailable_unique_decisions
-			target = flag:flag_recreated_high_kingdom_ireland
-		}
-		custom_tooltip = restore_high_kingdom_of_ireland_effect_tooltip
-		title:d_ulster = { save_scope_as = ulster }
-		title:d_meath = { save_scope_as = meath }
-		title:d_connacht = { save_scope_as = connacht }		 
-		title:d_leinster = { save_scope_as = leinster }
-		title:d_munster = { save_scope_as = munster }
-		create_title_and_vassal_change = {
-			type = created
-			save_scope_as = title_change
-			add_claim_on_loss = yes
-		}
-		title:k_high_kingdom_of_ireland ={
-			change_title_holder ={
-				holder = root
-				change = scope:title_change
-			}
-		}
-		resolve_title_and_vassal_change = scope:title_change
-		title:d_ulster = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }
-		title:d_meath = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }
-		title:d_connacht = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }	 
-		title:d_leinster = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }
-		title:d_munster = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }
-		hidden_effect = {
-			title:k_high_kingdom_of_ireland = { set_de_jure_liege_title = title:e_celtic_empire }
-			trigger_event = rhk.001
-		}
-	}
-	cost = {
-		gold = {
-			value = major_gold_value
-			multiply = 0.5
-			round = yes
-		}
-		prestige = {
-			value = major_prestige_gain
-			multiply = 0.5
-			round = yes
-		}
-	}
+# 		}
+# 		is_imprisoned = no	
+# 		is_at_war = no
+# 	}
+# 	effect = {
+# 		add_to_global_variable_list = {
+# 			name = unavailable_unique_decisions
+# 			target = flag:flag_recreated_high_kingdom_ireland
+# 		}
+# 		custom_tooltip = restore_high_kingdom_of_ireland_effect_tooltip
+# 		title:d_ulster = { save_scope_as = ulster }
+# 		title:d_meath = { save_scope_as = meath }
+# 		title:d_connacht = { save_scope_as = connacht }		 
+# 		title:d_leinster = { save_scope_as = leinster }
+# 		title:d_munster = { save_scope_as = munster }
+# 		create_title_and_vassal_change = {
+# 			type = created
+# 			save_scope_as = title_change
+# 			add_claim_on_loss = yes
+# 		}
+# 		title:k_high_kingdom_of_ireland ={
+# 			change_title_holder ={
+# 				holder = root
+# 				change = scope:title_change
+# 			}
+# 		}
+# 		resolve_title_and_vassal_change = scope:title_change
+# 		title:d_ulster = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }
+# 		title:d_meath = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }
+# 		title:d_connacht = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }	 
+# 		title:d_leinster = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }
+# 		title:d_munster = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }
+# 		hidden_effect = {
+# 			title:k_high_kingdom_of_ireland = { set_de_jure_liege_title = title:e_celtic_empire }
+# 			trigger_event = rhk.001
+# 		}
+# 	}
+# 	cost = {
+# 		gold = {
+# 			value = major_gold_value
+# 			multiply = 0.5
+# 			round = yes
+# 		}
+# 		prestige = {
+# 			value = major_prestige_gain
+# 			multiply = 0.5
+# 			round = yes
+# 		}
+# 	}
 
-	ai_potential = {
+# 	ai_potential = {
 
-	}
+# 	}
 
-	ai_will_do = {
-		base = 100
-	}
-}
+# 	ai_will_do = {
+# 		base = 100
+# 	}
+# }
 
 set_capital_dublin_decision = {
 	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
@@ -337,6 +323,678 @@ set_capital_dublin_decision = {
 	}
 
 	ai_will_do = { #Do it always, for coherence.
+		base = 100
+	}
+}
+
+create_lusitania_decision ={
+	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
+	major = yes
+	desc =  create_lusitania_desc
+	ai_check_interval = 4
+	is_shown = {
+		has_game_rule = pr_ancient_kingdoms_decisions_on
+		is_ruler = yes
+		is_landed = yes
+		AND = {
+			OR = {
+				completely_controls = title:d_beja
+				completely_controls = title:d_badajoz
+				completely_controls = title:d_algarve		
+				completely_controls = title:d_coimbra
+			}
+			OR = {
+				religion = religion:celtic_religion
+				religion = religion:iberian_religion
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+			OR = {
+				culture = culture:iberian
+				culture = culture:celtic_iberian
+				culture = culture:roman
+				culture = culture:greek
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_created_lusitania
+			}
+		}
+		
+	}
+
+	is_valid = {
+		completely_controls = title:d_beja
+		completely_controls = title:d_badajoz
+		completely_controls = title:d_algarve		
+		completely_controls = title:d_coimbra
+		#completely_controls = title:d_leon
+		AND = {
+			OR = {
+				religion = religion:celtic_religion
+				religion = religion:iberian_religion
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+		}
+		AND = {
+			OR = {
+				culture = culture:celtic_iberian
+				culture = culture:iberian
+				culture = culture:roman
+				culture = culture:greek
+			}
+
+		}
+		is_imprisoned = no	
+		is_at_war = no
+	}
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:flag_created_lusitania
+		}
+		custom_tooltip = create_lusitania_effect_tooltip
+		title:d_beja = { save_scope_as = beja }
+		title:d_badajoz = { save_scope_as = badajoz }
+		title:d_algarve = { save_scope_as = algarve }		 
+		title:d_coimbra = { save_scope_as = coimbra }
+		#title:d_leon = { save_scope_as = leon }
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = yes
+		}
+		title:k_pr_lusitania ={
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		title:d_beja = { set_de_jure_liege_title = title:k_pr_lusitania }
+		title:d_badajoz = { set_de_jure_liege_title = title:k_pr_lusitania }
+		title:d_algarve = { set_de_jure_liege_title = title:k_pr_lusitania }	 
+		title:d_coimbra = { set_de_jure_liege_title = title:k_pr_lusitania }
+		#title:d_leon = { set_de_jure_liege_title = title:k_pr_lusitania }
+	}
+	cost = {
+		gold = {
+			value = major_gold_value
+			multiply = 0.5
+			round = yes
+		}
+		prestige = {
+			value = major_prestige_gain
+			multiply = 0.5
+			round = yes
+		}
+	}
+
+	ai_potential = {
+
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+create_galicia_decision ={
+	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
+	major = yes
+	desc =  create_galicia_desc
+	ai_check_interval = 4
+	is_shown = {
+		has_game_rule = pr_ancient_kingdoms_decisions_on
+		is_ruler = yes
+		is_landed = yes
+		AND = {
+			OR = {
+				completely_controls = title:d_porto
+				completely_controls = title:d_galicia
+				completely_controls = title:d_asturias		
+				completely_controls = title:d_leon
+			}
+			OR = {
+				religion = religion:celtic_religion
+				religion = religion:iberian_religion
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+			OR = {
+				culture = culture:iberian
+				culture = culture:celtic_iberian
+				culture = culture:roman
+				culture = culture:greek
+			}
+		}
+		NOT = {
+			OR = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:flag_created_galicia
+				}
+				has_title = title:e_celtic_empire
+			}
+
+		}
+		
+	}
+
+	is_valid = {
+		completely_controls = title:d_porto
+		completely_controls = title:d_galicia
+		completely_controls = title:d_asturias		
+		completely_controls = title:d_leon
+		AND = {
+			OR = {
+				religion = religion:celtic_religion
+				religion = religion:iberian_religion
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+		}
+		AND = {
+			OR = {
+				culture = culture:celtic_iberian
+				culture = culture:iberian
+				culture = culture:roman
+				culture = culture:greek
+			}
+
+		}
+		is_imprisoned = no	
+		is_at_war = no
+	}
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:flag_created_galicia
+		}
+		custom_tooltip = create_galicia_effect_tooltip
+		title:d_porto = { save_scope_as = porto }
+		title:d_galicia = { save_scope_as = galicia }
+		title:d_asturias= { save_scope_as = asturias }		 		
+		title:d_leon = { save_scope_as = leon }
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = yes
+		}
+		title:k_pr_galicia ={
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		title:d_porto = { set_de_jure_liege_title = title:k_pr_galicia }
+		title:d_galicia = { set_de_jure_liege_title = title:k_pr_galicia }
+		title:d_asturias = { set_de_jure_liege_title = title:k_pr_galicia }	 
+		title:d_leon = { set_de_jure_liege_title = title:k_pr_galicia }
+	}
+	cost = {
+		gold = {
+			value = major_gold_value
+			multiply = 0.5
+			round = yes
+		}
+		prestige = {
+			value = major_prestige_gain
+			multiply = 0.5
+			round = yes
+		}
+	}
+
+	ai_potential = {
+
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+create_vasconia_decision ={
+	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
+	major = yes
+	desc =  create_vasconia_desc
+	ai_check_interval = 4
+	is_shown = {
+		has_game_rule = pr_ancient_kingdoms_decisions_on
+		is_ruler = yes
+		is_landed = yes
+		AND = {
+			OR = {
+				religion = religion:celtic_religion
+				religion = religion:iberian_religion
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+			OR = {
+				culture = culture:iberian
+				culture = culture:celtic_iberian
+				culture = culture:roman
+				culture = culture:greek
+			}
+			OR = {
+				completely_controls = title:d_navarra
+				completely_controls = title:d_aragon
+				completely_controls = title:d_viscaya
+			}
+		}
+
+		AND = {
+
+
+		}
+
+
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_created_vasconia
+			}
+		}
+		
+	}
+
+	is_valid = {		
+		completely_controls = title:d_navarra
+		completely_controls = title:d_aragon
+		completely_controls = title:d_viscaya
+		AND = {
+			OR = {
+				religion = religion:celtic_religion
+				religion = religion:iberian_religion
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+		}
+		AND = {
+			OR = {
+				culture = culture:celtic_iberian
+				culture = culture:iberian
+				culture = culture:roman
+				culture = culture:greek
+			}
+
+		}
+		is_imprisoned = no	
+		is_at_war = no
+	}
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:flag_created_vasconia
+		}
+		custom_tooltip = create_vasconia_effect_tooltip
+		title:d_aragon = { save_scope_as = aragon }
+		title:d_navarra= { save_scope_as = navarra }
+		title:d_viscaya= { save_scope_as = viscaya }		 
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = yes
+		}
+		title:k_pr_vasconia ={
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		title:d_aragon = { set_de_jure_liege_title = title:k_pr_vasconia }
+		title:d_navarra = { set_de_jure_liege_title = title:k_pr_vasconia }
+		title:d_viscaya = { set_de_jure_liege_title = title:k_pr_vasconia }	 
+	}
+	cost = {
+		gold = {
+			value = major_gold_value
+			multiply = 0.5
+			round = yes
+		}
+		prestige = {
+			value = major_prestige_gain
+			multiply = 0.5
+			round = yes
+		}
+	}
+
+	ai_potential = {
+
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+create_tartessia_decision ={
+	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
+	major = yes
+	desc =  create_tartessia_desc
+	ai_check_interval = 4
+	is_shown = {
+		has_game_rule = pr_ancient_kingdoms_decisions_on
+		is_ruler = yes
+		is_landed = yes
+		AND = {
+			OR = {
+				religion = religion:celtic_religion
+				religion = religion:iberian_religion
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+			OR = {
+				culture = culture:iberian
+				culture = culture:celtic_iberian
+				culture = culture:roman
+				culture = culture:greek
+			}
+			OR = {
+				completely_controls = title:d_sevilla
+				completely_controls = title:d_granada
+				completely_controls = title:d_cordoba
+			}
+	
+	
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:flag_created_tartessia
+				}
+			}
+		}
+	}
+
+	is_valid = {		
+		completely_controls = title:d_sevilla
+		completely_controls = title:d_granada
+		completely_controls = title:d_cordoba
+		AND = {
+			OR = {
+				religion = religion:celtic_religion
+				religion = religion:iberian_religion
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+		}
+		AND = {
+			OR = {
+				culture = culture:celtic_iberian
+				culture = culture:iberian
+				culture = culture:roman
+				culture = culture:greek
+			}
+
+		}
+		is_imprisoned = no	
+		is_at_war = no
+	}
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:flag_created_tartessia
+		}
+		custom_tooltip = create_tartessia_effect_tooltip
+		title:d_sevilla = { save_scope_as = sevilla }
+		title:d_granada = { save_scope_as = granada }
+		title:d_cordoba= { save_scope_as = cordoba }		 
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = yes
+		}
+		title:k_pr_tartessia ={
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		title:d_sevilla = { set_de_jure_liege_title = title:k_pr_tartessia }
+		title:d_granada = { set_de_jure_liege_title = title:k_pr_tartessia }
+		title:d_cordoba = { set_de_jure_liege_title = title:k_pr_tartessia }	 
+
+	}
+	cost = {
+		gold = {
+			value = major_gold_value
+			multiply = 0.5
+			round = yes
+		}
+		prestige = {
+			value = major_prestige_gain
+			multiply = 0.5
+			round = yes
+		}
+	}
+
+	ai_potential = {
+
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+create_celtiberia_decision ={
+	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
+	major = yes
+	desc =  create_celtiberia_desc
+	ai_check_interval = 4
+	is_shown = {
+		has_game_rule = pr_ancient_kingdoms_decisions_on
+		is_ruler = yes
+		is_landed = yes
+		AND = {
+			OR = {
+				religion = religion:celtic_religion
+				religion = religion:iberian_religion
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+			OR = {
+				culture = culture:iberian
+				culture = culture:celtic_iberian
+				culture = culture:roman
+				culture = culture:greek
+			}
+			OR = { 
+				completely_controls = title:d_cantabria
+				completely_controls = title:d_castilla
+				completely_controls = title:d_toledo
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_created_celtiberia
+			}
+		}
+		
+	}
+
+	is_valid = {		
+		completely_controls = title:d_cantabria
+		completely_controls = title:d_castilla
+		completely_controls = title:d_toledo
+		AND = {
+			OR = {
+				religion = religion:celtic_religion
+				religion = religion:iberian_religion
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+		}
+		OR = {
+			culture = culture:celtic_iberian
+			culture = culture:iberian
+			culture = culture:roman
+			culture = culture:greek
+		}
+
+		
+		is_imprisoned = no	
+		is_at_war = no
+	}
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:flag_created_celtiberia
+		}
+		custom_tooltip = create_celtiberia_effect_tooltip
+		title:d_cantabria = { save_scope_as = cantabria }
+		title:d_castilla = { save_scope_as = castilla }
+		title:d_toledo = { save_scope_as = toledo }
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = yes
+		}
+		title:k_pr_celtiberia ={
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		title:d_cantabria = { set_de_jure_liege_title = title:k_pr_celtiberia}
+		title:d_castilla = { set_de_jure_liege_title = title:k_pr_celtiberia}
+		title:d_toledo = { set_de_jure_liege_title = title:k_pr_celtiberia}
+	}
+	cost = {
+		gold = {
+			value = major_gold_value
+			multiply = 0.5
+			round = yes
+		}
+		prestige = {
+			value = major_prestige_gain
+			multiply = 0.5
+			round = yes
+		}
+	}
+
+	ai_potential = {
+
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+create_iberia_decision ={
+	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
+	major = yes
+	desc =  create_iberia_desc
+	ai_check_interval = 4
+	is_shown = {
+		has_game_rule = pr_ancient_kingdoms_decisions_on
+		is_ruler = yes
+		is_landed = yes
+		AND = {
+			OR = {
+				religion = religion:celtic_religion
+				religion = religion:iberian_religion
+				religion = religion:roman_religion
+			}
+			OR = {
+				culture = culture:iberian
+				culture = culture:celtic_iberian
+				culture = culture:roman
+				culture = culture:greek
+			}
+			OR = { 
+				completely_controls = title:d_valencia
+				completely_controls = title:d_barcelona
+				completely_controls = title:d_murcia
+			}
+		}
+
+
+
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_created_iberia
+			}
+		}
+		
+	}
+
+	is_valid = {		
+		completely_controls = title:d_valencia
+		completely_controls = title:d_barcelona
+		completely_controls = title:d_murcia
+		AND = {
+			OR = {
+				religion = religion:celtic_religion
+				religion = religion:iberian_religion
+				religion = religion:roman_religion
+			}
+		}
+		AND = {
+			OR = {
+				culture = culture:celtic_iberian
+				culture = culture:iberian
+				culture = culture:roman
+				culture = culture:greek
+			}
+
+		}
+		is_imprisoned = no	
+		is_at_war = no
+	}
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:flag_created_iberia
+		}
+		custom_tooltip = create_iberia_effect_tooltip
+		title:d_valencia = { save_scope_as = valencia }
+		title:d_barcelona = { save_scope_as = barcelona }
+		title:d_murcia = { save_scope_as = murcia }
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = yes
+		}
+		title:k_pr_iberia ={
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		title:d_valencia = { set_de_jure_liege_title = title:k_pr_iberia}
+		title:d_barcelona = { set_de_jure_liege_title = title:k_pr_iberia}
+		title:d_murcia = { set_de_jure_liege_title = title:k_pr_iberia}
+	}
+	cost = {
+		gold = {
+			value = major_gold_value
+			multiply = 0.5
+			round = yes
+		}
+		prestige = {
+			value = major_prestige_gain
+			multiply = 0.5
+			round = yes
+		}
+	}
+
+	ai_potential = {
+
+	}
+
+	ai_will_do = {
 		base = 100
 	}
 }
@@ -400,8 +1058,8 @@ choose_main_deity_celtic_decision = {
 					}
 					100 = {
 						show_chance = no
-						desc = select_main_deity_celtic_decision.select_the_morrighan
-						add_character_modifier = gaelic_the_morrighan
+						desc = select_main_deity_celtic_decision.select_nemain
+						add_character_modifier = gaelic_nemain
 					}
 					100 = {
 						show_chance = no
@@ -507,8 +1165,8 @@ choose_main_deity_celtic_decision = {
 					}
 					100 = {
 						show_chance = no
-						desc = select_main_deity_celtic_decision.select_arentius
-						add_character_modifier = celtic_iberian_arentius
+						desc = select_main_deity_celtic_decision.select_arancia
+						add_character_modifier = celtic_iberian_arancia
 					}
 					100 = {
 						show_chance = no
@@ -539,7 +1197,7 @@ choose_main_deity_celtic_decision = {
 			has_character_modifier = gaelic_an_dagda
 			has_character_modifier = gaelic_lugh
 			has_character_modifier = gaelic_brigid
-			has_character_modifier = gaelic_the_morrighan
+			has_character_modifier = gaelic_nemain
 			has_character_modifier = gaelic_ecna
 			has_character_modifier = brythonic_taranis 
 			has_character_modifier = brythonic_lugus
@@ -552,7 +1210,7 @@ choose_main_deity_celtic_decision = {
 			has_character_modifier = gaulish_cicolluis 
 			has_character_modifier = gaulish_belisama
 			has_character_modifier = celtic_iberian_reue
-			has_character_modifier = celtic_iberian_arentius
+			has_character_modifier = celtic_iberian_arancia
 			has_character_modifier = celtic_iberian_nabia
 			has_character_modifier = celtic_iberian_lugus
 			has_character_modifier = celtic_iberian_bandua
@@ -743,6 +1401,315 @@ manx_culture_decision = {
 		always = yes
 
 	}
+	ai_will_do = {
+		base = 100
+	}
+}
+
+push_out_the_sassenach_saga_decision = {
+	picture = "gfx/interface/illustrations/decisions/celts.dds"
+	major = yes
+	desc =  push_out_the_sassenach_decision_desc
+	is_shown = {
+		#religion = religion:celtic_religion
+		OR =  {
+			culture = { has_cultural_pillar = heritage_goidelic }
+			culture = { has_cultural_pillar = heritage_brythonic }
+		}
+		OR = {
+			any_neighboring_top_liege_realm_owner = { #If there are neighbouring counts with central germanic culture the decision should be available.
+				culture = { has_cultural_pillar = heritage_central_germanic } 
+				count >= 1
+			}
+			any_neighboring_top_liege_realm_owner = { #If there are neighbouring counts with north germanic culture the decision should be available.
+				culture = { has_cultural_pillar = heritage_north_germanic } 
+				count >= 1
+				
+			}
+
+		}
+		
+	}
+	#cooldown = { years = 10 }
+	is_valid = {
+		OR =  {
+			culture = { has_cultural_pillar = heritage_goidelic }
+			culture = { has_cultural_pillar = heritage_brythonic }
+		}
+
+
+
+	}
+	effect = {
+		trigger_event = celtic.014
+	} 
+	ai_check_interval = 90
+
+	ai_potential = {
+		always = yes
+
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+celtic_reconquest_ireland_decision = {
+	picture = "gfx/interface/illustrations/decisions/celts.dds"
+	major = yes
+	desc =  celtic_reconquest_ireland_decision_desc
+	is_shown = {
+		religion = religion:celtic_religion
+		OR =  {
+			culture = { has_cultural_pillar = heritage_goidelic }
+			culture = { has_cultural_pillar = heritage_brythonic }
+		}
+	
+	}
+
+	is_valid = {
+		completely_controls = title:d_ulster 
+		completely_controls = title:d_meath
+		completely_controls = title:d_connacht		
+		completely_controls = title:d_leinster
+		completely_controls = title:d_munster
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = reconquest_ireland
+			target = flag:flag_reconquest_ireland
+		}
+		trigger_event = celtic.015
+	}
+	ai_check_interval = 90
+
+	ai_potential = {
+		always = yes
+
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+celtic_reconquest_alba_decision = {
+	picture = "gfx/interface/illustrations/decisions/celts.dds"
+	major = yes
+	desc =  push_out_the_sassenach_decision_desc
+	is_shown = {
+		religion = religion:celtic_religion
+		OR =  {
+			culture = { has_cultural_pillar = heritage_goidelic }
+			culture = { has_cultural_pillar = heritage_brythonic }
+		}
+
+	}
+
+	is_valid = {
+		completely_controls = title:d_galloway
+		completely_controls = title:d_lothian
+		completely_controls = title:d_albany	
+		completely_controls = title:d_western_isles
+		completely_controls = title:d_moray
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = reconquest_alba
+			target = flag:flag_reconquest_alba
+		}
+		trigger_event = celtic.015
+	}
+	ai_check_interval = 90
+
+	ai_potential = {
+		always = yes
+
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+celtic_reconquest_wales_decision = {
+	picture = "gfx/interface/illustrations/decisions/celts.dds"
+	major = yes
+	desc =  push_out_the_sassenach_decision_desc
+	is_shown = {
+		AND = {
+			religion = religion:celtic_religion
+			OR =  {
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+			}
+			
+		}
+
+	}
+
+	is_valid = {
+		completely_controls = title:d_gwynedd
+		completely_controls = title:d_powys
+		completely_controls = title:d_deheubarth	
+		completely_controls = title:d_western_isles
+		completely_controls = title:d_moray
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = reconquest_wales
+			target = flag:flag_reconquest_wales
+		}
+		trigger_event = celtic.015
+	}
+	ai_check_interval = 90
+
+	ai_potential = {
+		always = yes
+
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+
+celtic_reconquest_albion_decision = {
+	picture = "gfx/interface/illustrations/decisions/celts.dds"
+	major = yes
+	desc =  celtic_reconquest_albion_decision_desc
+	is_shown = {
+		AND = {
+			religion = religion:celtic_religion
+			OR =  {
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+			}
+			AND = {
+				has_title = title:k_high_kingdom_of_ireland
+				has_title = title:k_high_kingdom_of_scotland
+				has_title = title:k_wales
+			}
+			
+		}
+
+	}
+
+	is_valid = {
+		completely_controls = title:d_york
+		completely_controls = title:d_norfolk
+		completely_controls = title:d_bedford	
+		completely_controls = title:d_canterbury
+		completely_controls = title:d_lancaster
+		completely_controls = title:d_hereford
+		completely_controls = title:d_northumberland
+		completely_controls = title:d_cornwall
+		completely_controls = title:d_gloucester
+		completely_controls = title:d_somerset
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = reconquest_albion
+			target = flag:flag_reconquest_albion
+		}
+		trigger_event = celtic.015
+
+	}
+	ai_check_interval = 90
+
+	ai_potential = {
+		always = yes
+
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+celtic_conquest_brittany_decision = {
+	picture = "gfx/interface/illustrations/decisions/celts.dds"
+	major = yes
+	desc =  celtic_conquest_brittany_decision_desc
+	is_shown = {
+		AND = {
+			religion = religion:celtic_religion
+			OR =  {
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+			}
+			has_title = title:e_celtic_empire
+			
+		}
+
+	}
+
+	is_valid = {
+		completely_controls = title:d_brittany
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = conquest_brittany
+			target = flag:flag_conquest_brittany
+		}
+		trigger_event = celtic.015
+
+	}
+	ai_check_interval = 90
+
+	ai_potential = {
+		always = yes
+
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+celtic_conquest_galicia_decision = {
+	picture = "gfx/interface/illustrations/decisions/celts.dds"
+	major = yes
+	desc =  celtic_conquest_galicia_decision_desc
+	is_shown = {
+		AND = {
+			religion = religion:celtic_religion
+			OR =  {
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+			}
+			has_title = title:e_celtic_empire
+			
+		}
+
+	}
+
+	is_valid = {
+		completely_controls = title:d_galicia
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = conquest_galicia
+			target = flag:flag_conquest_galicia
+		}
+		trigger_event = celtic.015
+
+	}
+	ai_check_interval = 90
+
+	ai_potential = {
+		always = yes
+
+	}
+
 	ai_will_do = {
 		base = 100
 	}

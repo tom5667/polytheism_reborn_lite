@@ -1,0 +1,34 @@
+﻿l_german:
+#####################
+#Made by tom5667 
+######################
+
+ choose_main_deity_hittite_decision:0 "Wählen Sie Ihre Hauptgottheit"
+ choose_main_deity_hittite_decision_tt:0 "Du beginnst, dein Leben nach den Werten von" zu leben
+
+ select_main_deity_hittite_decision.select_tarhunna:0 "Tarhunna Hochgott der Hethiter"
+ select_main_deity_hittite_decision.select_telipinu:0 "Telipinu Göttin der Gesundheit"
+ select_main_deity_hittite_decision.select_halki:0 "Halki Gott des Reichtums"
+ select_main_deity_hittite_decision.select_a_as:0 "A'as Gott der Weisheit"
+ select_main_deity_hittite_decision.select_tashmishu:0 "Tashmishu Gott des Krieges"
+
+ choose_main_deity_hittite_decision_tooltip:1 "Hauptgott(dess) wählen"
+ choose_main_deity_hittite_decision_confirm:1 "Wähle Hauptgott(dess)"
+
+ restore_empire_hittite:0 "Wiederherstellung des Reiches von Hattuscha"
+ restore_empire_hittite_desc:0 "Wir haben die Kontrolle über unsere alten kaiserlichen Länder von Apaša im Westen bis Dimasqu im Süden zurückgewonnen. Nun ist es an der Zeit, das neue Kaiserreich Hattuscha zu erschaffen."
+ create_empire_hittite_effect_tooltip:0 "Wiederhergestelltes Reich von Hattusha"
+ restore_empire_hittite_tooltip:1 "Es ist an der Zeit, ganz Hattusha zurückzuerobern"
+ restore_empire_hittite_confirm:0 "Reich von Hattusha erschaffen"
+
+ kingdom_hittite:0 "Königreich Hattusha wiederherstellen"
+ kingdom_hittite_desc:0 "Viel zu lange war Anatolien, wo unsere Vorfahren lebten und kämpften, unter der Kontrolle unserer Feinde."
+ kingdom_hittite_effect_tooltip:0 "Wiederhergestelltes Königreich von Hattusha"
+ create_hittite_effect_tooltip:1 "Es ist an der Zeit, das Königreich Hattusha zurückzuerobern"
+ kingdom_hittite_tooltip:1 "Es ist an der Zeit, Hattusha zurückzufordern"
+ kingdom_hittite_confirm:0 "Königreich Hattusha erschaffen"
+
+ set_capital_ancyra_decision:0 "Ancyra zur Hauptstadt machen"
+ set_capital_ancyra_decision_desc:0 "Ancyra zur Hauptstadt von Hattusha machen"
+ set_capital_ancyra_decision_tooltip:1 "Hauptstadt in Ancyra ändern"
+ set_capital_ancyra_decision_confirm:0 "Hauptstadt ändern"

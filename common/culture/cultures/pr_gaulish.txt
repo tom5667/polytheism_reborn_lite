@@ -58,7 +58,8 @@ eburones = {
 		35 = caucasian_dark_hair
 	}
 }
-
+#Needs to be changed, aquitanian language and a new namelist 
+#Aquitanian language was the parent of the basque language 
 aquitani = {
 	color = { 38 199 97}
 	created = 101.1.1

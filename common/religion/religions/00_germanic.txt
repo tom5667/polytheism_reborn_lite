@@ -74,6 +74,9 @@
 			doctrine = doctrine_clerical_marriage_allowed
 			doctrine = doctrine_clerical_succession_temporal_appointment
 
+			#Funeral tradition
+			doctrine = doctrine_funeral_cremation
+
 			doctrine = special_doctrine_ecumenical_germanic_roman 
 
 			reserved_male_names = {
@@ -279,6 +282,9 @@
 			doctrine = doctrine_clerical_marriage_allowed
 			doctrine = doctrine_clerical_succession_temporal_appointment
 
+			#Funeral tradition
+			doctrine = doctrine_funeral_cremation
+
 			reserved_male_names = {
 				Hama Beowulf Eadwald Leofsige
 			}
@@ -340,9 +346,9 @@
 			#FateGod
 			FateGodName = anglo_saxon_fate_god_name
 			FateGodNamePossessive = anglo_saxon_fate_god_name_possessive
-			FateGodSheHe = CHARACTER_SHEHE_THEY
-			FateGodHerHis = CHARACTER_HERHIS_THEIR
-			FateGodHerHim = CHARACTER_HERHIM_THEM
+			FateGodSheHe = CHARACTER_SHEHE_HE
+			FateGodHerHis = CHARACTER_HERHIS_HIS
+			FateGodHerHim = CHARACTER_HERHIM_HIM
 
 			#KnowledgeGod
 			KnowledgeGodName = anglo_saxon_knowledge_god_name
@@ -422,11 +428,11 @@
 			DeathDeitySheHe = CHARACTER_SHEHE_SHE
 			DeathDeityHerHis = CHARACTER_HERHIS_HER
 			WitchGodName = anglo_saxon_evil_god_surtr
-			WitchGodHerHis = CHARACTER_HERHIS_HER
+			WitchGodHerHis = CHARACTER_HERHIS_HIS
 			WitchGodSheHe = CHARACTER_SHEHE_HE
-			WitchGodHerHim = CHARACTER_HERHIM_HER
-			WitchGodMistressMaster = mistress
-			WitchGodMotherFather = mother
+			WitchGodHerHim = CHARACTER_HERHIM_HIM
+			WitchGodMistressMaster = master
+			WitchGodMotherFather = father
 
 
 			GHWName = ghw_great_holy_war
@@ -482,6 +488,8 @@
 				doctrine = doctrine_clerical_marriage_allowed
 				doctrine = doctrine_clerical_succession_temporal_appointment
 
+				#Funeral tradition
+				doctrine = doctrine_funeral_cremation
 
 
 				reserved_male_names = {
@@ -545,9 +553,9 @@
 				#FateGod
 				FateGodName = german_fate_god_name
 				FateGodNamePossessive = german_fate_god_name_possessive
-				FateGodSheHe = CHARACTER_SHEHE_THEY
-				FateGodHerHis = CHARACTER_HERHIS_THEIR
-				FateGodHerHim = CHARACTER_HERHIM_THEM
+				FateGodSheHe = CHARACTER_SHEHE_HE
+				FateGodHerHis = CHARACTER_HERHIS_HIS
+				FateGodHerHim = CHARACTER_HERHIM_HIM
 
 				#KnowledgeGod
 				KnowledgeGodName = german_knowledge_god_name
@@ -627,11 +635,11 @@
 				DeathDeitySheHe = CHARACTER_SHEHE_SHE
 				DeathDeityHerHis = CHARACTER_HERHIS_HER
 				WitchGodName =  german_witch_god_surtr
-				WitchGodHerHis = CHARACTER_HERHIS_HER
+				WitchGodHerHis = CHARACTER_HERHIS_HIS
 				WitchGodSheHe = CHARACTER_SHEHE_HE
-				WitchGodHerHim = CHARACTER_HERHIM_HER
-				WitchGodMistressMaster = mistress
-				WitchGodMotherFather = mother
+				WitchGodHerHim = CHARACTER_HERHIM_HIM
+				WitchGodMistressMaster = master
+				WitchGodMotherFather = father
 
 
 				GHWName = ghw_great_holy_war

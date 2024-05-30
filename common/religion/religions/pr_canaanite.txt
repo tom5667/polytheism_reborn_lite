@@ -21,7 +21,7 @@ canaanite_religion ={
 		prussian_03 
 		ce_pagan_cross_03 ce_pagan_cross_04 ce_pagan_cross_05 ce_pagan_cross_06 ce_pagan_cross_07 ce_pagan_cross_08 ce_pagan_cross_arrows ce_pagan_cross_arrows_02 ce_pagan_cross_arrows_03 ce_pagan_cross_dhata ce_pagan_cross_mara ce_pagan_cross_ognevitsa ce_pagan_cross_svarog ce_pagan_cross_svarog_02 ce_pagan_cross_tursas ce_pagan_cross_tursas_02 ce_pagan_cross_yarovik ce_pagan_cross_yarovrat ce_pagan_dazbog ce_pagan_dodola ce_pagan_endless_knot ce_pagan_endless_knot_square ce_pagan_hands_svarog ce_pagan_hors ce_pagan_jumis ce_pagan_kolovrat ce_pagan_kolovrat_02 ce_pagan_laima ce_pagan_looped_knot ce_pagan_moon_cross ce_pagan_nemiza ce_pagan_perun ce_pagan_rod ce_pagan_rose ce_pagan_saule ce_pagan_star_04 ce_pagan_star_08 ce_pagan_svarga ce_pagan_thunder_cross ce_pagan_usins ce_pagan_usins_02 ce_pagan_vehmic ce_pagan_wheel ce_pagan_wolf_triskel ce_pagan_wotan_cross ce_suomenusko_kazym ce_suomenusko_kondair ce_suomenusko_moon ce_suomenusko_sun ce_suomenusko_sun_02 ce_suomenusko_sun_07 ce_suomenusko_sun_moon ce_suomenusko_udmurt ce_tursansydan ce_ukkokirves ce_ukkos_hammer ce_walknut
 	}
-    holy_order_maa = {Abudrar}
+    holy_order_maa = {war_elephant}
 
     faiths = {
         punic_polytheism ={
@@ -71,6 +71,8 @@ canaanite_religion ={
             doctrine = doctrine_clerical_marriage_allowed
             doctrine = doctrine_clerical_succession_temporal_fixed_appointment
 
+            doctrine = doctrine_funeral_stoic
+
 
             #doctrine = unreformed_faith_doctrine
 
@@ -98,9 +100,9 @@ canaanite_religion ={
                 #Creator
                 CreatorName = punic_polytheism_creator_god_name
                 CreatorNamePossessive = punic_polytheism_creator_god_name_possessive
-                CreatorSheHe = CHARACTER_SHEHE_SHE
-                CreatorHerHis = CHARACTER_HERHIS_HER
-                CreatorHerHim = CHARACTER_HERHIM_HER
+                CreatorSheHe = CHARACTER_SHEHE_HE
+                CreatorHerHis = CHARACTER_HERHIS_HIS
+                CreatorHerHim = CHARACTER_HERHIM_HIM
         
                 #HealthGod
                 HealthGodName = punic_polytheism_health_god_name
@@ -133,23 +135,23 @@ canaanite_religion ={
                 #FateGod
                 FateGodName = punic_polytheism_fate_god_name
                 FateGodNamePossessive = punic_polytheism_fate_god_name_possessive
-                FateGodSheHe = CHARACTER_SHEHE_THEY
-                FateGodHerHis = CHARACTER_HERHIS_THEIR
-                FateGodHerHim = CHARACTER_HERHIM_THEM
+                FateGodSheHe = CHARACTER_SHEHE_HE
+                FateGodHerHis = CHARACTER_HERHIS_HIS
+                FateGodHerHim = CHARACTER_HERHIM_HIM
         
                 #KnowledgeGod
                 KnowledgeGodName = punic_polytheism_knowledge_god_name
                 KnowledgeGodNamePossessive = punic_polytheism_knowledge_god_name_possessive
-                KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-                KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-                KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+                KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+                KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+                KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
         
                 #WarGod
                 WarGodName = punic_polytheism_war_god_name
                 WarGodNamePossessive = punic_polytheism_war_god_name_possessive
-                WarGodSheHe = CHARACTER_SHEHE_HE
-                WarGodHerHis = CHARACTER_HERHIS_HIS
-                WarGodHerHim = CHARACTER_HERHIM_HIM
+                WarGodSheHe = CHARACTER_SHEHE_SHE
+                WarGodHerHis = CHARACTER_HERHIS_HER
+                WarGodHerHim = CHARACTER_HERHIM_HER
         
                 #TricksterGod
                 TricksterGodName = punic_polytheism_trickster_god_name
@@ -214,11 +216,11 @@ canaanite_religion ={
                 DeathDeitySheHe = CHARACTER_SHEHE_HE
                 DeathDeityHerHis = CHARACTER_HERHIS_HIS
                 WitchGodName = punic_polytheism_witchgodname_resjef
-                WitchGodHerHis = CHARACTER_HERHIS_HER
+                WitchGodHerHis = CHARACTER_HERHIS_HIS
                 WitchGodSheHe = CHARACTER_SHEHE_HE
-                WitchGodHerHim = CHARACTER_HERHIM_HER
-                WitchGodMistressMaster = mistress
-                WitchGodMotherFather = mother
+                WitchGodHerHim = CHARACTER_HERHIM_HIM
+                WitchGodMistressMaster = master
+                WitchGodMotherFather = father
                 
                 GHWName = phw_great_holy_war
                 GHWNamePlural = phw_great_holy_wars
@@ -270,6 +272,8 @@ canaanite_religion ={
             doctrine = doctrine_clerical_marriage_allowed
             doctrine = doctrine_clerical_succession_temporal_fixed_appointment
 
+            doctrine = doctrine_funeral_stoic
+
 
             #doctrine = unreformed_faith_doctrine
 
@@ -297,9 +301,9 @@ canaanite_religion ={
                 #Creator
                 CreatorName = semitic_polytheism_creator_god_name
                 CreatorNamePossessive = semitic_polytheism_creator_god_name_possessive
-                CreatorSheHe = CHARACTER_SHEHE_SHE
-                CreatorHerHis = CHARACTER_HERHIS_HER
-                CreatorHerHim = CHARACTER_HERHIM_HER
+                CreatorSheHe = CHARACTER_SHEHE_HE
+                CreatorHerHis = CHARACTER_HERHIS_HIS
+                CreatorHerHim = CHARACTER_HERHIM_HIM
         
                 #HealthGod
                 HealthGodName = semitic_polytheism_health_god_name
@@ -332,23 +336,23 @@ canaanite_religion ={
                 #FateGod
                 FateGodName = semitic_polytheism_fate_god_name
                 FateGodNamePossessive = semitic_polytheism_fate_god_name_possessive
-                FateGodSheHe = CHARACTER_SHEHE_THEY
-                FateGodHerHis = CHARACTER_HERHIS_THEIR
-                FateGodHerHim = CHARACTER_HERHIM_THEM
+                FateGodSheHe = CHARACTER_SHEHE_SHE
+                FateGodHerHis = CHARACTER_HERHIS_HER
+                FateGodHerHim = CHARACTER_HERHIM_HER
         
                 #KnowledgeGod
                 KnowledgeGodName = semitic_polytheism_knowledge_god_name
                 KnowledgeGodNamePossessive = semitic_polytheism_knowledge_god_name_possessive
-                KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
-                KnowledgeGodHerHis = CHARACTER_HERHIS_HER
-                KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+                KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+                KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+                KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
         
                 #WarGod
                 WarGodName = semitic_polytheism_war_god_name
                 WarGodNamePossessive = semitic_polytheism_war_god_name_possessive
-                WarGodSheHe = CHARACTER_SHEHE_HE
-                WarGodHerHis = CHARACTER_HERHIS_HIS
-                WarGodHerHim = CHARACTER_HERHIM_HIM
+                WarGodSheHe = CHARACTER_SHEHE_SHE
+                WarGodHerHis = CHARACTER_HERHIS_HER
+                WarGodHerHim = CHARACTER_HERHIM_HER
         
                 #TricksterGod
                 TricksterGodName = semitic_polytheism_trickster_god_name
@@ -360,9 +364,9 @@ canaanite_religion ={
                 #NightGod
                 NightGodName = semitic_polytheism_night_god_name
                 NightGodNamePossessive = semitic_polytheism_night_god_name_possessive
-                NightGodSheHe = CHARACTER_SHEHE_SHE
-                NightGodHerHis = CHARACTER_HERHIS_HER
-                NightGodHerHim = CHARACTER_HERHIM_HER
+                NightGodSheHe = CHARACTER_SHEHE_HE
+                NightGodHerHis = CHARACTER_HERHIS_HIS
+                NightGodHerHim = CHARACTER_HERHIM_HIM
         
                 #WaterGod
                 WaterGodName = semitic_polytheism_water_god_name
@@ -413,11 +417,11 @@ canaanite_religion ={
                 DeathDeitySheHe = CHARACTER_SHEHE_HE
                 DeathDeityHerHis = CHARACTER_HERHIS_HIS
                 WitchGodName = semitic_polytheism_witchgodname_resjef
-                WitchGodHerHis = CHARACTER_HERHIS_HER
+                WitchGodHerHis = CHARACTER_HERHIS_HE
                 WitchGodSheHe = CHARACTER_SHEHE_HE
-                WitchGodHerHim = CHARACTER_HERHIM_HER
-                WitchGodMistressMaster = mistress
-                WitchGodMotherFather = mother
+                WitchGodHerHim = CHARACTER_HERHIM_HIM
+                WitchGodMistressMaster = master
+                WitchGodMotherFather = father
                 
                 GHWName = phw_great_holy_war
                 GHWNamePlural = phw_great_holy_wars

@@ -1,5 +1,4 @@
 ﻿namespace = cdr
-namespace = cdr_rgg
 namespace = cdr_r
 namespace = cdr_rph_decisions
 namespace = cdr_otv
@@ -18,6 +17,8 @@ namespace = roman_illyrian
 namespace = gallo_roman
 namespace = romano_british
 namespace = romano_germanic
+namespace = romano_hispanic
+namespace = cultus_orientis
 #For all cultures
 namespace = embrace_culture
 
@@ -1586,6 +1587,47 @@ embrace_culture.003= {
 	option = {
 		name = embrace_culture.003.a
 		set_culture = culture:romano_british
+	}
+}
+
+#Embrace Romano Germanic culture
+embrace_culture.004= {
+	type = character_event
+	title = embrace_culture.004.t
+	desc = embrace_culture.004.desc
+	theme = learning
+
+	override_background = {
+		reference = virtues
+	}
+	lower_right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = embrace_culture.004.a
+		set_culture = culture:romano_germanic
+	}
+}
+
+#Embrace Hispano 
+
+embrace_culture.005= {
+	type = character_event
+	title = embrace_culture.005.t
+	desc = embrace_culture.005.desc
+	theme = learning
+
+	override_background = {
+		reference = virtues
+	}
+	lower_right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = embrace_culture.005.a
+		set_culture = culture:romano_hispanic
 	}
 }
 
@@ -3392,6 +3434,172 @@ romano_germanic.002 = {
 	# Opt-Out
 	option = {
 		name = romano_germanic.002.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
+cultus_orientis.001 = { 
+	type = character_event
+	title = cultus_orientalis.001.t
+	desc = cultus_orientalis.001.desc
+	theme = learning
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = cultus_orientalis.001.a
+		set_character_faith = faith:cultus_orientis
+	}
+}
+
+romano_hispanic.001 = { 
+	type = character_event
+	title = cultus_orientalis.001.t
+	desc = cultus_orientalis.001.desc
+	theme = learning
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = cultus_orientalis.001.a
+		set_character_faith = faith:romano_hispanic_polytheism
+	}
+}
+
+#Choose main deity
+romano_hispanic.002 = {
+	type = character_event
+	title = romano_hispanic.002.t
+	desc = romano_hispanic.002.desc
+	theme = faith
+	override_background = { reference = pr_generic_temple }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Jupiter Solutorius
+	option = {
+		name = romano_hispanic.002.select_jupiter_solutorius
+		trigger = {
+			NOT = { has_character_modifier = romano_hispanic_jupiter_solutorius }
+		}
+		set_bhakti_effect = { BHAKTI = romano_hispanic_jupiter_solutorius }
+	}
+
+	#Minerva
+	 option = {
+	 	name = romano_hispanic.002.select_minerva
+	 	trigger = {
+	 		NOT = { has_character_modifier = romano_hispanic_minerva }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = romano_hispanic_minerva }
+	 }
+
+	#Mars Neto
+	option = {
+		name = romano_hispanic.002.select_mars_neto
+		trigger = {
+			NOT = { has_character_modifier = romano_hispanic_mars_neto }
+		}
+		set_bhakti_effect = { BHAKTI = romano_hispanic_mars_neto }
+	}
+
+
+	# lucubo
+	option = {
+		name = romano_hispanic.002.select_lucubo
+		trigger = {
+			NOT = { has_character_modifier = romano_hispanic_lucubo }
+		}
+		set_bhakti_effect = { BHAKTI = romano_hispanic_lucubo }
+	}
+	# Nabia
+	option = {
+		name = romano_hispanic.002.select_nabia
+		trigger = {
+			NOT = { has_character_modifier = romano_hispanic_nabia }
+		}
+		set_bhakti_effect = { BHAKTI = romano_hispanic_nabia }
+	}
+	
+	# Opt-Out
+	option = {
+		name = cultus_orientis.002.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
+#Cultus Orientis
+cultus_orientis.002 = {
+	type = character_event
+	title = cultus_orientis.002.t
+	desc = cultus_orientis.002.desc
+	theme = faith
+	override_background = { reference = pr_generic_temple }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Jupiter Dolichenus
+	option = {
+		name = cultus_orientis.002.select_jupiter_dolichenus
+		trigger = {
+			NOT = { has_character_modifier = cultus_orientis_jupiter_dolichenus }
+		}
+		set_bhakti_effect = { BHAKTI = cultus_orientis_jupiter_dolichenus }
+	}
+
+	#Minerva
+	 option = {
+	 	name = cultus_orientis.002.select_minerva
+	 	trigger = {
+	 		NOT = { has_character_modifier = romano_hispanic_minerva }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = romano_hispanic_minerva }
+	 }
+
+	#Juno Caelestis
+	option = {
+		name = cultus_orientis.002.select_juno_caelestis
+		trigger = {
+			NOT = { has_character_modifier = cultus_orientis_juno_caelestis }
+		}
+		set_bhakti_effect = { BHAKTI = cultus_orientis_juno_caelestis }
+	}
+
+
+	#Mercurius Sobrius
+	option = {
+		name = cultus_orientis.002.select_mercurius_sobrius
+		trigger = {
+			NOT = { has_character_modifier = cultus_orientis_mercurius_sobrius }
+		}
+		set_bhakti_effect = { BHAKTI = cultus_orientis_mercurius_sobrius }
+	}
+	#Eshmun
+	option = {
+		name = cultus_orientis.002.select_eshmun
+		trigger = {
+			NOT = { has_character_modifier = cultus_orientis_eshmun }
+		}
+		set_bhakti_effect = { BHAKTI = cultus_orientis_eshmun }
+	}
+	
+	# Opt-Out
+	option = {
+		name = cultus_orientis.002.optout
 		flavor = religious_decision.0102.flavor
 
 		ai_chance = {

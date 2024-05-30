@@ -1052,3 +1052,46 @@ set_capital_qadisiya_decision = {
 		base = 100
 	}
 }
+
+open_first_brewery_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+
+	desc = open_first_brewery_decision_desc
+	selection_tooltip = open_first_brewery_decision_tooltip
+	major = yes
+
+	is_shown ={
+		religion = religion:mesopotamian_religion
+		NOR={
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions_open_first_brewery
+				target = flag:flag_mspt_ob
+				}
+		 }
+		has_title = title:c_batiha
+
+	}
+
+	cost = {
+		gold = 400
+	}
+
+	effect = {
+		add_piety = 200
+		trigger_event = {
+			id = mspt.004
+		} 
+		hidden_effect={ 
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions_open_first_brewery
+				target = flag:flag_flag_mspt_ob
+			}
+		}
+	}
+	ai_potential={
+
+	}
+	ai_will_do ={
+		base = 0
+	}
+}

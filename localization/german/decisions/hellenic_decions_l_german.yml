@@ -1,0 +1,52 @@
+﻿l_german:
+#####################
+#Made by tom5667
+######################
+
+#choose your main deity hellenic
+choose_main_deity_h_decision:0 "Wählen Sie Ihre Hauptgottheit"
+h_cmd_decision_desc:0 "Für die meisten der alten hellenischen Polytheisten gab es einen bestimmten Gott, der für ihre Familie wichtig war, für die Bauern Demeter, für die Soldaten Ares."
+choose_main_deity_h_decision_tooltip:1 "Das kann man nur einmal im Leben machen, also wähle weise"
+choose_main_deity_h_decision_confirm:1 "Schauen wir mal"
+
+
+choose_main_deity_mycenaean_decision_tt:0 "Du beginnst dein Leben nach den Werten von"
+select_main_deity_mycenaean_decision.select_poseidon:0 "Poseidon hoher Gott des Meeres"
+select_main_deity_mycenaean_decision.select_hermes:0 "Hermes Bote der Götter und des Handels"
+select_main_deity_mycenaean_decision.select_aphrodite:0 "Aphrodite Göttin der Liebe und Schönheit"
+select_main_deity_mycenaean_decision.select_athena:0 "Athene Göttin der Weisheit"
+select_main_deity_mycenaean_decision.select_ares:0 "Mars Gott des Krieges"
+
+hellen_culture_decision:0 "Machen Sie sich die hellenische Kultur zu eigen"
+hellen_culture_decision_desc:0 "Wir haben unsere alte Religion zurück, jetzt ist es an der Zeit, die hellenische Lebensweise wieder einzuführen."
+hellen_culture_decision_tooltip:0 "Rückkehr der hellenischen Kultur"
+hellen_culture_decision_confirm:0 "bestätigen"
+
+pergamon_kingdom_decision:0 "Pergamon-Königreich wiederherstellen"
+pergamon_kingdom_decision_desc:0 "Vor langer Zeit verschenkte Attalus II. Pergamon testamentarisch an die Römer, nun ist es an der Zeit, das alte Königreich Pergamon wieder aufzubauen"
+pergamon_kingdom_decision_effect_tooltip:0 "Wiederhergestelltes Königreich Pergamon"
+create_pergamon_effect_tooltip:1 "Es ist an der Zeit, das Königreich Pergamon zurückzuerobern"
+pergamon_kingdom_decision_tooltip:1 "Es ist an der Zeit, die Ländereien von Pergamon zurückzuerobern"
+pergamon_kingdom_decision_confirm:0 "Pergamon-Königreich erschaffen"
+
+set_capital_pergamon_decision:0 "Pergamon zur Hauptstadt machen"
+set_capital_pergamon_decision_desc:0 "Pergamon zur Hauptstadt des Königreichs Pergamon machen"
+set_capital_pergamon_decision_tooltip:1 "Hauptstadt nach Pergamon ändern"
+set_capital_pergamon_decision_confirm:0 "Hauptstadt ändern"
+
+
+#Nur wenn man dem alexandrinischen Kult folgt.
+select_main_deity_graeco_egyptian_cult_decision.select_alexander:0 "Alexander Megalos"
+#Nur wenn man dem graeco-ägyptischen Glauben folgt
+select_main_deity_graeco_egyptian_decision.select_zeus_amon:0 "Zeus Amon hoher Gott der Graeco Ägypter"
+#Für beide Glaubensrichtungen
+select_main_deity_graeco_egyptian_decision.select_hermes_trismegistus:0 "Hermes Trismegistos allwissend und Gott des Schicksals"
+select_main_deity_graeco_egyptian_decision.select_isis:0 "Isis Göttin der Fruchtbarkeit"
+select_main_deity_graeco_egyptian_decision.select_harpocrates:0 "Harpocrates Gott der Stille und der Geheimnisse"
+select_main_deity_graeco_egyptian_decision.select_ares:0 "Mars Gott des Krieges"
+
+
+convert_to_graeco_egyptian_decision:0 "Ägyptische Götter der Graeco übernehmen"
+convert_to_graeco_egyptian_decision_desc:0 "Nach der Eroberung durch Alexander den Großen ließen sich viele Griechen in Ägypten nieder und übernahmen auch die ägyptischen Götter, so wurde aus Zeus Zeus Amon"
+convert_to_graeco_egyptian_decision_tooltip:1 "Übernimmt ägyptische Götter"
+convert_to_graeco_egyptian_decision_confirm:1 "Übernimmt ägyptische Götter"
