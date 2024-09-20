@@ -155,3 +155,7 @@ celtic.011.a:0 "Great to be Back Home Again"
  celtic.016.a:0 "A normal coronation is sufficient"
  #celtic.016.b:0 "Ask the Arch druid to coronate you"
  celtic.016.c:0 "Not yet"
+ 
+ celtic.017.t:0 "Embrace the Old Irish culture"
+ celtic.017.desc:0 "Long we have strayed away from the old irish gods, as we want to bond again with the gods, it's important to delve into our old traditions.\nThis also means we need to get rit of our christian names and change them to proper old irish ones."
+ celtic.017.a:0 "Embrace the Old Irish culture"

@@ -215,3 +215,8 @@ celtic_conquest_brittany_decision:0 "Celtic conquest of Brittany"
 celtic_conquest_brittany_decision_desc:0 "The celtic empire is complete, now it's time to look across the channel, with the conquest of Brittany we can create the so much needed foothold."
 celtic_conquest_brittany_decision_tooltip:0 "Celtic conquest of Brittany"
 celtic_conquest_brittany_decision_confirm:0 "Brittany is secured"
+
+old_irish_culture_decision:0 "Embrace Old Irish Culture"
+old_irish_culture_decision_desc:0 "As good Gaelic Polytheists we can't keep our Christian names"
+old_irish_culture_decision_tooltip:0 "Embrace Old Irish culture"
+old_irish_culture_decision_confirm:0 "Confirm"

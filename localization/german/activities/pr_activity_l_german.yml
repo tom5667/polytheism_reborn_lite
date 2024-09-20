@@ -1,0 +1,219 @@
+﻿l_german:
+pr_activity_saturnalia:0 "Saturnalien"
+pr_activity_saturnalia_selection_tooltip:0 "Ein [GetActivityType('activity_feast').GetName] wird abgehalten"
+pr_activity_saturnalia_desc:0 "Das Wetter wird kälter, die Erntezeit ist vorbei und jetzt ist es Zeit, Saturnus zu ehren und den Göttern für die Ernte im [ROOT.Char.GetPrimaryTitle.GetName] zu danken."
+pr_activity_saturnalia_host_desc:0 "$BULLET_WITH_TAB$ Teilnehmer können [Frömmigkeit|E] gewinnen\n$BULLET_WITH_TAB$ Teilnehmer können [Meinung|E] anderer Teilnehmer gewinnen\n$BULLET_WITH_TAB$ Teilnehmer können [Stress_Loss_i][Stress|E] verlieren"
+pr_activity_saturnalia_guest_desc: "$pr_activity_saturnalia_host_desc$"
+
+#Celtic
+pr_activity_winter_solstice:0 "Wintersonnenwende"
+pr_activity_winter_solstice_selection_tooltip:0 "Es wird ein [GetActivityType('activity_feast').GetName] abgehalten"
+pr_activity_winter_solstice_desc:0 "Die Luft hat begonnen, sich langsam zu erwärmen, während das neue Jahr beginnt. Eine strahlende Zukunft erwartet die Menschen der [ROOT.Char.GetPrimaryTitle.GetName] Um diese Zukunft sicherzustellen, muss ich die Götter und Geister um ihren Segen bitten, bevor die neue Saison beginnt."
+pr_activity_winter_solstice_host_desc:0 "$BULLET_WITH_TAB$ Teilnehmer können [Frömmigkeit|E] gewinnen\n$BULLET_WITH_TAB$ Teilnehmer können [Meinung|E] anderer Teilnehmer gewinnen\n$BULLET_WITH_TAB$ Teilnehmer können [Stress_loss_i][Stress|E] verlieren"
+pr_activity_winter_solstice_guest_desc: "$pr_activity_winter_solstice_host_desc$"
+
+pr_activity_summer_solstice:0 "Sommersonnenwende"
+pr_activity_summer_solstice_selection_tooltip:0 "Es wird ein [GetActivityType('activity_feast').GetName] abgehalten"
+pr_activity_summer_solstice_desc:0 "Während die Winde nachlassen und die Meere zu steigen beginnen, blickt ein stürmischer Horizont auf die Menschen der [ROOT.Char.GetPrimaryTitle.GetName], Um eine reiche Ernte zu gewährleisten und das Reich vereint zu halten, muss ich eine Audienz bei den Göttern einberufen, bevor die Wintergeister eintreffen und Schnee das Land bedeckt."
+pr_activity_summer_solstice_host_desc:0 "$BULLET_WITH_TAB$ Teilnehmer können [Frömmigkeit|E] gewinnen\n$BULLET_WITH_TAB$ Teilnehmer können [Meinung|E] anderer Teilnehmer gewinnen\n$BULLET_WITH_TAB$ Teilnehmer können [Stress_loss_i][Stress|E] verlieren"
+pr_activity_winter_solstice_germanic_guest_desc: "$pr_activity_winter_solstice_germanic_host_desc$"
+
+#Germanic
+pr_activity_winter_solstice_germanic:0 "Wintersonnenwende"
+pr_activity_winter_solstice_germanic_selection_tooltip:0 "Ein [GetActivityType('activity_feast').GetName] wird abgehalten"
+pr_activity_winter_solstice_germanic_desc:0 "Die Luft hat begonnen, sich langsam zu erwärmen, da das neue Jahr beginnt. Den Menschen von [ROOT.Char.GetPrimaryTitle.GetName] steht eine strahlende Zukunft bevor. Um diese Zukunft sicherzustellen, muss ich die Götter und Geister um ihren Segen bitten, bevor die neue Jahreszeit beginnt."
+pr_activity_winter_solstice_germanic_host_desc:0 "$BULLET_WITH_TAB$ Teilnehmer können [Frömmigkeit|E] gewinnen\n$BULLET_WITH_TAB$ Teilnehmer können [Meinung|E] anderer Teilnehmer gewinnen\n$BULLET_WITH_TAB$ Teilnehmer können [stress_loss_i][stress|E] verlieren"
+pr_activity_winter_solstice_germanic_guest_desc: "$pr_activity_winter_solstice_germanic_host_desc$"
+
+pr_activity_summer_solstice_germanic:0 "Sommersonnenwende"
+pr_activity_summer_solstice_germanic_selection_tooltip:0 "Ein [GetActivityType('activity_feast').GetName] wird abgehalten"
+pr_activity_summer_solstice_germanic_desc:0 "Wenn die Winde zu kühlen beginnen und Die Meere beginnen zu steigen. Ein stürmischer Horizont blickt auf die Menschen von [ROOT.Char.GetPrimaryTitle.GetName]. Um eine reiche Ernte zu gewährleisten und das Reich vereint zu halten, muss ich eine Audienz bei den Göttern einberufen, bevor die Wintergeister eintreffen und Schnee das Land bedeckt."
+pr_activity_summer_solstice_germanic_host_desc:0 "$BULLET_WITH_TAB$ Teilnehmer können [Frömmigkeit|E] gewinnen\n$BULLET_WITH_TAB$ Teilnehmer können [Meinung|E] anderer Teilnehmer gewinnen\n$BULLET_WITH_TAB$ Teilnehmer können [stress_loss_i][stress|E] verlieren"
+pr_activity_summer_germanic_guest_desc: "$pr_activity_summer_solstice_germanic_host$"
+
+pr_activity_kogaionon_pilgrimage:0 "Pilgerfahrt nach Kogaionon"
+pr_activity_kogaionon_pilgrimage_name:0 "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Pilgerfahrt nach Kogaionon"
+
+pr_pilgrimage_type_religious:0 "Religiös Pilgerreise"
+pr_pilgrimage_type_religious_desc:0 "Gehen auf Pilgerreise, um die Gegenwart der Götter zu spüren"
+pr_pilgrimage_type_recreation:0 "Erholung"
+
+pr_activity_kogaionon_pilgrimage_desc:0 "Der alte Berg Kogaionon ist ein heiliger Ort für alle dakisch-thrakischen Polytheisten. Der Ort, an dem $dacian_polytheism_knowledge_god_name$ angeblich drei Jahre lang in einer Höhle gelebt hat."
+Pr_Kogaionon_close_req:0 "Hat ein [realm_capital|E] in der Nähe von Kogaionon"
+
+Pr_Kogaionon_long_req:0 "Ihr [capital|E] liegt in [GetGeographicalRegion('world_europe_south_east').GetName]"
+
+pr_activity_kogaionon_pilgrimage_selection_tooltip: "Mach ein Pilgerreise nach Kogainon.\n\n$pr_kogaionon_go_on_kogaionon_pilgrimage_context_tooltip$"
+
+
+#Kontext-Tooltip für Auswahl-Tooltip
+pr_kogaionon_go_on_kogaionon_pilgrimage_context_tooltip:0 "#Hervorhebung Historischer Kontext:#! Kogaionon, der heilige Berg für die alten dakisch-thrakischen Stämme. Es ist nicht bekannt, wo genau sich der Ort befand, aber moderne Historiker glauben, dass die Berge bei Sarmizegetusa der Ort sein könnten."
+
+pr_activity_kogaionon_pilgrimage_host_desc: "$BULLET_WITH_TAB$ Spüren den Geist von $dacian_polytheism_knowledge_god_name$ und erhalten ein #P useful#! [character_modifier|E]"
+
+pr_activity_kogaionon_pilgrimage_guest_desc: "$pr_activity_kogaionon_pilgrimage_host_desc$"
+
+pr_activity_kogaionon_pilgrimage_province_desc: "Kogaionon, der Berg, auf dem $dacian_polytheism_knowledge_god_name$ residierte."
+
+pr_activity_kogaionon_pilgrimage_destination_selection: "$pr_activity_kogaionon_pilgrimage_province_desc$"
+
+pr_activity_kogaionon_pilgrimage_guest_help_text: "$pr_activity_kogaionon_pilgrimage$"
+
+pr_activity_kogaionon_pilgrimage_predicted_cost: "Die Kosten einer [local_pilgrimage|E] nach [GetTitleByKey('c_hunyad ').GetNameNoTier] hängen von den ausgewählten activity_options|] ab."
+
+pr_activity_kogaionon_pilgrimage_conclusion_desc: "Unsere Pilgerreise ist zu Ende. Und wir haben die Höhle erforscht, in der Zalmoxis lebte."
+
+pr_activity_kogaionon_pilgrimage_completed_log_title:0 "Pilgerreise nach Kogaionon abgeschlossen"
+
+pr_activity_kogaionon_pilgrimage_completed_log:0 "[CHARACTER.GetShortUIName|U] hat [CHARACTER.GetHerHis] [local_pilgrimage|E] nach [GetTitleByKey('c_hunyad').GetNameNoTier] abgeschlossen" # [PROVINCE.GetBaronyNameExplicitly]
+
+pr_activity_kogaionon_pilgrimage_inspired_log_title:0 "Die Höhle inspiriert"
+
+pr_activity_kogaionon_pilgrimage_inspired_log:0 "[CHARACTER.GetShortUIName|U] wurde von der Höhle von inspiriert. Zalmoxis[GetTitleByKey('c_hunyad').GetNameNoTier]"
+
+TRAVEL_NAME_FOR_activity_PR_kogaionon_pilgrimage:0 "[Character.GetFirstNamePossessiveNoTooltip] $pr_activity_kogaionon_pilgrimage$"
+
+pr_activity_kogaionon_pilgrimage_owner:0 "Pilger"
+
+pr_activity_kogaionon_pilgrimage_long_distance_req:0 "Kogaionon ist weit weg, und Ihr [capital|E] liegt in [GetGeographicalRegion('world_europe_south_east').GetName] oder [GetGeographicalRegion('world_europe_east').GetName]"
+
+pr_activity_kogaionon_pilgrimage_inspiration_req:0 "Du hast derzeit kein [character_modifier|E], um sich von der Höhle von inspirieren zu lassen. Zalmoxis"
+
+pr_local_kogaionon_pilgrimage_phase: "$pilgrimage_phase_solo$"
+pr_local_kogaionon_pilgrimage_phase_desc: "$pilgrimage_phase_solo_desc$"
+
+#Keltisch
+pr_activity_cnoc_uisnigh_pilgrimage:0 "Pilgerfahrt nach Uisneach"
+pr_activity_cnoc_uisnigh_pilgrimage_name:0 "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Pilgerfahrt nach Uisneach"
+
+pr_activity_cnoc_uisnigh_pilgrimage_desc:0 "Der alte Hügel von Uisneach war viele Jahrhunderte lang ein heiliger Ort für die Anbeter der Tuatha De, wo Druiden versuchten, die Zeichen des Willens der Götter zu deuten. Außerdem ist es der Ort für eine Vielzahl von Festen wie das Beltane-Fest."
+Pr_cnoc_uisnigh_close_req:0 "Hat ein [realm_capital|E] in der Nähe von Uisneach"
+
+Pr_cnoc_uisnigh_long_req:0 "Ihr [capital|E] ist in [GetGeographicalRegion('world_europe_west_britannia').GetName]"
+
+pr_activity_cnoc_uisnigh_pilgrimage_selection_tooltip: "Mach ein Pilgerreise nach Uisneach.\n\n$pr_cnoc_uisnigh_go_on_cnoc_uisnigh_pilgrimage_context_tooltip$"
+
+#Kontext-Tooltip für Auswahl-Tooltip
+pr_cnoc_uisnigh_go_on_cnoc_uisnigh_pilgrimage_context_tooltip:0 "#Hervorhebung Historischer Kontext:#! Der alte Hügel von Uisneach war viele Jahrhunderte lang ein heiliger Ort für irische Polytheisten und Druiden, die versuchten, die Zeichen der Götter zu deuten. Außerdem ist es der Ort für eine Vielzahl von Festen wie das Beltane-Fest."
+
+pr_activity_cnoc_uisnigh_pilgrimage_host_desc: "$BULLET_WITH_TAB$ Spüren den Geist von $gaelic_polytheism_high_god_name$ und erhalten ein #P beneficial#! [character_modifier|E]"
+
+pr_activity_cnoc_uisnigh_pilgrimage_guest_desc: "$pr_activity_cnoc_uisnigh_pilgrimage_host_desc$"
+
+pr_activity_cnoc_uisnigh_pilgrimage_province_desc: "Hügel Uisneach, wo die Druiden lebten."
+
+pr_activity_cnoc_uisnigh_pilgrimage_destination_selection: "$pr_activity_cnoc_uisnigh_pilgrimage_province_desc$"
+
+pr_activity_cnoc_uisnigh_pilgrimage_guest_help_text: "$pr_activity_cnoc_uisnigh_pilgrimage$"
+
+pr_activity_cnoc_uisnigh_pilgrimage_predicted_cost: "Die Kosten einer [local_pilgrimage|E] nach [GetTitleByKey('c_athlone ').GetNameNoTier] hängt von den ausgewählten Aktivitätsoptionen ab."
+
+pr_activity_cnoc_uisnigh_pilgrimage_conclusion_desc: "Unsere Pilgerreise ist zu Ende. wir erkundeten den Hügel, auf dem die alten Druiden lebten"
+
+pr_activity_cnoc_uisnigh_pilgrimage_completed_log_title:0 "Pilgerfahrt nach Uisneach abgeschlossen"
+
+pr_activity_cnoc_uisnigh_pilgrimage_completed_log:0 "[CHARACTER.GetShortUIName|U] hat die Pilgerfahrt [CHARACTER.GetHerHis] nach [GetTitleByKey('c_athlone').GetNameNoTier] abgeschlossen" # [PROVINCE.GetBaronyNameExplicitly]
+
+pr_activity_cnoc_uisnigh_pilgrimage_inspired_log_title:0 "Inspiriert vom Hügel von Uisneach"
+
+
+pr_activity_cnoc_uisnigh_pilgrimage_inspired_log:0 "[CHARACTER.GetShortUIName|U] wurde von einem Hügel von Uisneach inspiriert [GetTitleByKey('c_athlone').GetNameNoTier]"
+
+TRAVEL_NAME_FOR_activity_PR_cnoc_uisnigh_pilgrimage:0 "[Character.GetFirstNamePossessiveNoTooltip] $pr_activity_cnoc_uisnigh_pilgrimage$"
+
+pr_activity_cnoc_uisnigh_pilgrimage_owner:0 "Pilger"
+
+pr_activity_cnoc_uisnigh_pilgrimage_long_distance_req:0 "Uisneach ist weit weg und Ihr [Hauptstadt|E] liegt in [GetGeographicalRegion('world_europe_west_britannia').GetName] oder [GetGeographicalRegion('world_europe_east').GetName]"
+
+pr_activity_world_europe_west_britannia_pilgrimage_inspiration_req:0 "Du hast derzeit kein [character_modifier|E], um sich vom Hügel von Uisneach inspirieren zu lassen"
+
+pr_local_pilgrimage_worship_intent:0 "Anbetung"
+pr_local_pilgrimage_recreation_intent:0 "Erholung"
+
+pr_local_cnoc_uisnigh_pilgrimage_phase: "$pilgrimage_phase_solo$"
+pr_local_cnoc_uisnigh_pilgrimage_phase_desc: "$pilgrimage_phase_solo_desc$"
+
+#Griechisch
+pr_activity_delphi_pilgrimage:0 "Pilgerfahrt nach Delphi"
+pr_activity_delphi_pilgrimage_name:0 "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Pilgerfahrt nach Delphi"
+
+pr_activity_delphi_pilgrimage_desc:0 "Das antike Heiligtum von Delphi war viele Jahrhunderte lang ein heiliger Ort für die Anbeter des $hellenism_health_god_name$, wo Pythia die Zeichen des Willens von Apollon zu deuten suchte."
+Pr_delphi_close_req:0 "Hat ein [realm_capital|E] in der Nähe von Delphi"
+
+Pr_delphi_long_distance_req:0 "Ihr [capital|E] liegt in [GetGeographicalRegion('world_europe_south_east').GetName]"
+
+pr_activity_delphi_pilgrimage_selection_tooltip: "Mach eine Pilgerreise nach Delphi.\n\n$pr_delphi_go_on_delphi_pilgrimage_context_tooltip$"
+
+TRAVEL_NAME_FOR_pr_activity_delphi_pilgrimage:0 "Pilgerreise nach Delphi"
+
+#Kontext-Tooltip für Auswahl-Tooltip
+pr_delphi_go_on_delphi_pilgrimage_context_tooltip:0 "#Hervorhebung Historischer Kontext:#! Delphi war viele Jahrhunderte lang ein heiliger Ort für Helenes, die die Pythia besuchte, um die Zeichen der Götter zu deuten."
+
+pr_activity_delphi_pilgrimage_host_desc: "$BULLET_WITH_TAB$ Spüren  den Geist von $hellenism_health_god_name$ und erhalten  ein #P useful#! [character_modifier|E]"
+
+pr_activity_delphi_pilgrimage_guest_desc: "$pr_activity_delphi_pilgrimage_host_desc$"
+
+pr_activity_delphi_pilgrimage_province_desc: "Hügel Delphi, wo die Druiden lebten."
+
+pr_activity_delphi_pilgrimage_destination_selection: "$pr_activity_delphi_pilgrimage_province_desc$"
+
+pr_activity_delphi_pilgrimage_guest_help_text: "$pr_activity_delphi_pilgrimage$"
+
+pr_activity_delphi_pilgrimage_predicted_cost: "Die Kosten einer [local_pilgrimage|E] nach [GetTitleByKey('c_boeotia ').GetNameNoTier] hängen von den ausgewählten activity_options|] ab."
+
+pr_activity_delphi_pilgrimage_conclusion_desc: "Unsere Pilgerreise ist zu Ende. Hoffentlich hat die Pythia recht, was die Zukunft angeht."
+
+pr_activity_delphi_pilgrimage_completed_log_title:0 "Pilgerfahrt nach Delphi abgeschlossen"
+
+pr_activity_delphi_pilgrimage_completed_log:0 "[CHARACTER.GetShortUIName|U] hat die Pilgerfahrt [CHARACTER.GetHerHis] nach [GetTitleByKey('c_boeotia').GetNameNoTier] abgeschlossen" # [PROVINCE.GetBaronyNameExplicitly]
+
+pr_activity_delphi_pilgrimage_inspired_log_title:0 "Inspiriert vom Orakel von Delphi"
+
+pr_activity_delphi_pilgrimage_inspired_log:0 "[CHARACTER.GetShortUIName|U] wurde vom Orakel von Delphi [GetTitleByKey('c_boeotia').GetNameNoTier] inspiriert"
+
+TRAVEL_NAME_FOR_activity_PR_delphi_pilgrimage:0 "[Character.GetFirstNamePossessiveNoTooltip] $pr_activity_delphi_pilgrimage$"
+
+pr_activity_delphi_pilgrimage_owner:0 "Pilger"
+
+pr_activity_delphi_pilgrimage_long_distance_req:0 "Delphi ist weit weg und Ihr [capital|E] liegt in [GetGeographicalRegion('world_europe_west_britannia').GetName] oder [GetGeographicalRegion('world_europe_east').GetName]"
+
+pr_activity_world_europe_south_east_pilgrimage_inspiration_req:0 " haben derzeit kein [character_modifier|E], um sich vom Orakel von Delphi inspirieren zu lassen"
+
+pr_local_pilgrimage_worship_intent:0 "Anbetung"
+pr_local_pilgrimage_recreation_intent:0 "Erholung"
+
+pr_local_delphi_pilgrimage_phase: "$pilgrimage_phase_solo$"
+pr_local_delphi_pilgrimage_phase_desc: "$pilgrimage_phase_solo_desc$"
+
+pr_kogaionon_pilgrimage_host_memory_first_perspective:0 "Ich bin auf Pilgerreise zum heiligen Berg Kogaionon gegangen"
+pr_kogaionon_pilgrimage_host_memory_second_perspective:0 "Ich bin auf Pilgerreise zum heiligen Berg Kogaionon gegangen"
+pr_kogaionon_pilgrimage_host_memory_third_perspective:0 "Ich bin auf Pilgerreise zum heiligen Berg Kogaionon gegangen"
+
+pr_kogaionon_pilgrimage_guest_memory_first_perspective:0 "Ich bin auf Pilgerreise zum heiligen Berg Kogaionon gegangen"
+pr_kogaionon_pilgrimage_guest_memory_second_perspective:0 "Ich bin auf Pilgerreise zum heiligen Berg Kogaionon gegangen Kogaionon"
+pr_kogaionon_pilgrimage_guest_memory_third_perspective:0 "Ich pilgerte zum heiligen Berg Kogaionon"
+
+pr_cnoc_uisnigh_pilgrimage_host_memory_first_perspective:0 "Ich bin auf Pilgerreise zum heiligen Hügel Cnoc Uisnigh gegangen"
+pr_cnoc_uisnigh_pilgrimage_host_memory_second_perspective:0 "Ich bin auf Pilgerreise zum heiligen Hügel Cnoc Uisnigh gegangen"
+pr_cnoc_uisnigh_pilgrimage_host_memory_third_perspective:0 "Ich bin auf Pilgerreise zum heiligen Hügel Cnoc Uisnigh gegangen"
+
+pr_cnoc_uisnigh_pilgrimage_guest_memory_first_perspective:0 "Ich bin auf Pilgerreise zum heiligen Hügel Cnoc Uisnigh gegangen"
+pr_cnoc_uisnigh_pilgrimage_guest_memory_second_perspective:0 "Ich bin auf Pilgerreise zum heiligen Hügel Cnoc gegangen Uisnigh"
+pr_cnoc_uisnigh_pilgrimage_guest_memory_third_perspective:0 "Ich pilgerte zum heiligen Hügel Cnoc Uisnigh"
+
+pr_delphi_pilgrimage_host_memory_first_perspective:0 "Ich pilgerte zur alten heiligen Stadt Delphi"
+pr_delphi_pilgrimage_host_memory_first_perspective:0 "Ich pilgerte zur alten heiligen Stadt Delphi"
+pr_delphi_pilgrimage_host_memory_third_perspective:0 "Ich pilgerte zur alten heiligen Stadt Delphi"
+
+pr_delphi_pilgrimage_guest_memory_first_perspective:0 "Ich pilgerte zur alten heiligen Stadt Delphi"
+
+pr_delphi_pilgrimage_guest_memory_first_perspective:0 "Ich pilgerte zur alten heiligen Stadt Delphi"
+pr_delphi_pilgrimage_guest_memory_second_perspective:0 "Ich pilgerte zur alten heiligen Stadt Delphi Delphi"
+pr_delphi_pilgrimage_guest_memory_third_perspective:0 "Ich unternahm eine Pilgerreise in die alte heilige Stadt Delphi"
+
+pr_kogaionon_pilgrimage_host_memory:0 "Pilgerreise zum Kogaionon Gastgeber"
+pr_kogaionon_pilgrimage_guest_memory:0 "Pilgerreise zum Kogaionon Gastgeber"
+pr_cnoc_uisnigh_pilgrimage_host_memory:0 "Pilgerreise zum Cnoc Uisnigh Gastgeber"
+pr_cnoc_uisnigh_pilgrimage_guest_memory:0 "Pilgerreise zum Cnoc Uisnigh Gastgeber"
+pr_delphi_pilgrimage_host_memory:0 "Pilgerreise zum Delphi Gastgeber"
+pr_delphi_pilgrimage_guest_memory:0 "Pilgerreise zum Delphi Gastgeber"

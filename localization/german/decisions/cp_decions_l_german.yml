@@ -163,3 +163,8 @@ celtic_conquest_brittany_decision:0 "Keltische Eroberung der Bretagne"
 celtic_conquest_brittany_decision_desc:0 "Das keltische Reich ist komplett, nun ist es an der Zeit, den Blick über den Kanal zu richten, mit der Eroberung der Bretagne können wir uns das so dringend benötigte Standbein schaffen."
 celtic_conquest_brittany_decision_tooltip:0 "Keltische Eroberung der Bretagne"
 celtic_conquest_brittany_decision_confirm:0 "Bretagne ist gesichert"
+
+old_irish_culture_decision:0 "Umarm die Altirische Kultur"
+old_irish_culture_decision_desc:0 "Als gute gälische Polytheisten können wir unsere Christliche namen nicht behalten"
+old_irish_culture_decision_tooltip:0 "Umarm die Altirische Kultur"
+old_irish_culture_decision_confirm:0 "Bestätigen"

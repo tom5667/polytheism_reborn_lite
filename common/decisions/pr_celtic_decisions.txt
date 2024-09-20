@@ -1225,6 +1225,52 @@ choose_main_deity_celtic_decision = {
 
 
 # hold ritual 
+#Embrace old Irish culture
+old_irish_culture_decision = {
+	picture = "gfx/interface/illustrations/decisions/celts.dds"
+	major = yes
+	desc =  old_irish_culture_decision_desc
+	is_shown = {
+		is_ai = no
+		is_adult = yes
+		is_imprisoned = no
+		And = {
+			OR = {
+				faith = faith:gaelic_polytheism
+				faith = { has_doctrine_parameter = special_doctrine_gaelic_patron_god_active }
+				}
+			culture = culture:irish
+		}
+	NOR = { 
+			culture = culture:old_irish
+		}		
+	}
+	is_valid = {
+		culture = culture:irish
+	}
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_at_war = no
+		is_independent_ruler = yes
+	}
+	cost = {
+		prestige = 100
+	}
+	effect = {
+			trigger_event = celtic.017 
+			save_scope_as = actor
+	} 
+	ai_check_interval = 90
+	
+	ai_potential = {
+		always = yes
+
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
 
 #Embrace ancient local gaulish culture
 gaulish_culture_decision = {

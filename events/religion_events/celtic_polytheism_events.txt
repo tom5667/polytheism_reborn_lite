@@ -2215,3 +2215,20 @@ celtic.016 = {
 		add_prestige = -400
 	}
 }
+
+celtic.017 = {
+	type = character_event
+	title = celtic.017.t
+	desc = celtic.017.desc
+	theme = learning 
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = celtic.017.a
+		set_culture = culture:old_irish
+	}
+
+}

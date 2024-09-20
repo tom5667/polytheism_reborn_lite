@@ -124,6 +124,11 @@
  iberian_prefix:0 "Iberisch"
  iberian_collective_noun:0 "Iberer"
 
+#Irish
+ old_iris:0 "Alt Irisch"
+ old_iris_prefix:0 "Alt Irisch"
+ old_iris_collective_noun:0 "Alt Iren"
+
 
 #Culture history
 graeco_egyptian_heritage_loc:0 "Um das Jahr [DATE.GetYear] aus [CULTURE.GetName] und Kemetisch entstanden" 

@@ -144,3 +144,7 @@ celtic.011.a:0 "Schön, wieder zu Hause zu sein"
  celtic.016.a:0 "Eine normale Krönung genügt"
  #celtic.016.b:0 "Ask the Arch druid to coronate you"
  celtic.016.c:0 "Noch nicht"
+ 
+ celtic.017.t:0 "Umarm die alte Irische Kultur"
+ celtic.017.desc:0 "Wir haben uns lange von den alten irischen Göttern entfernt. Da wir uns wieder mit den Göttern verbinden möchten, ist es wichtig, uns mit unseren alten Traditionen zu befassen.\nDas bedeutet auch, dass wir unsere christliche namen loswerden müsten und sie in richtige alte irische Namen ändern müssen."
+ celtic.017.a:0 "Umarm die alte Irische Kultur"

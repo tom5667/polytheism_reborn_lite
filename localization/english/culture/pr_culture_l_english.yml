@@ -124,6 +124,10 @@
  iberian_prefix:0 "Iberian"
  iberian_collective_noun:0 "Iberians"
 
+#Irish
+ old_irish:0 "Old Irish"
+ old_irish_prefix:0 "Old Irish"
+ old_irish_collective_noun:0 "Old Irish"
 
 #Culture history
 graeco_egyptian_heritage_loc:0 "Formed from [CULTURE.GetName] and Kemetic around the year [DATE.GetYear]"
