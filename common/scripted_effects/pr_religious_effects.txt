@@ -210,89 +210,89 @@ pr_set_bhakti_effect = {
 			add_piety = massive_piety_loss
 		}
 	}
-	else_if = {
-		limit = {
-			religion = religion:egyptian_religion
-		}
-		if = {
-			limit = {
-				has_trait = kemetic_cmd1_religion
-			}
-			remove_trait = kemetic_cmd1_religion
-			add_piety = massive_piety_loss
-		}
-		else_if = {
-			limit = {
-				has_trait = kemetic_cmd2_religion
-			}
-			remove_trait = kemetic_cmd2_religion
-			add_piety = massive_piety_loss
-		}
-		else_if = {
-			limit = {
-				has_trait = kemetic_cmd3_religion
-			}
-			remove_trait = kemetic_cmd3_religion
-			add_piety = massive_piety_loss
-		}
-		else_if = {
-			limit = {
-				has_trait = kemetic_cmd4_religion
-			}
-			remove_trait = kemetic_cmd4_religion
-			add_piety = massive_piety_loss
-		}
-		else_if = {
-			limit = {
-				has_trait = kemetic_cmd5_religions
-			}
-			remove_trait = kemetic_cmd5_religions
-			add_piety = massive_piety_loss
-		}
-	}
-	else_if = {
-		limit = {
-			AND = {
-				religion = religion:hellenism_religion
-				faith = { has_doctrine_parameter = special_doctrine_hellenic_patron_god }
-			}
-		}
-		if = {
-			limit = {
-				has_trait = h_cmd1_religion
-			}
-			remove_trait = h_cmd1_religion
-			add_piety = massive_piety_loss
-		}
-		else_if = {
-			limit = {
-				has_trait = h_cmd2_religion
-			}
-			remove_trait = h_cmd2_religion
-			add_piety = massive_piety_loss
-		}
-		else_if = {
-			limit = {
-				has_trait = h_cmd3_religion
-			}
-			remove_trait = h_cmd3_religion
-			add_piety = massive_piety_loss
-		}
-		else_if = {
-			limit = {
-				has_trait = h_cmd4_religion
-			}
-			remove_trait = h_cmd4_religion
-			add_piety = massive_piety_loss
-		}
-		else_if = {
-			limit = {
-				has_trait = h_cmd5_religion
-			}
-			remove_trait = h_cmd5_religion
-			add_piety = massive_piety_loss
-		}
-	}
+	# else_if = {
+	# 	limit = {
+	# 		religion = religion:egyptian_religion
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			has_trait = kemetic_cmd1_religion
+	# 		}
+	# 		remove_trait = kemetic_cmd1_religion
+	# 		add_piety = massive_piety_loss
+	# 	}
+	# 	else_if = {
+	# 		limit = {
+	# 			has_trait = kemetic_cmd2_religion
+	# 		}
+	# 		remove_trait = kemetic_cmd2_religion
+	# 		add_piety = massive_piety_loss
+	# 	}
+	# 	else_if = {
+	# 		limit = {
+	# 			has_trait = kemetic_cmd3_religion
+	# 		}
+	# 		remove_trait = kemetic_cmd3_religion
+	# 		add_piety = massive_piety_loss
+	# 	}
+	# 	else_if = {
+	# 		limit = {
+	# 			has_trait = kemetic_cmd4_religion
+	# 		}
+	# 		remove_trait = kemetic_cmd4_religion
+	# 		add_piety = massive_piety_loss
+	# 	}
+	# 	else_if = {
+	# 		limit = {
+	# 			has_trait = kemetic_cmd5_religions
+	# 		}
+	# 		remove_trait = kemetic_cmd5_religions
+	# 		add_piety = massive_piety_loss
+	# 	}
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		AND = {
+	# 			religion = religion:hellenism_religion
+	# 			faith = { has_doctrine_parameter = special_doctrine_hellenic_patron_god }
+	# 		}
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			has_trait = h_cmd1_religion
+	# 		}
+	# 		remove_trait = h_cmd1_religion
+	# 		add_piety = massive_piety_loss
+	# 	}
+	# 	else_if = {
+	# 		limit = {
+	# 			has_trait = h_cmd2_religion
+	# 		}
+	# 		remove_trait = h_cmd2_religion
+	# 		add_piety = massive_piety_loss
+	# 	}
+	# 	else_if = {
+	# 		limit = {
+	# 			has_trait = h_cmd3_religion
+	# 		}
+	# 		remove_trait = h_cmd3_religion
+	# 		add_piety = massive_piety_loss
+	# 	}
+	# 	else_if = {
+	# 		limit = {
+	# 			has_trait = h_cmd4_religion
+	# 		}
+	# 		remove_trait = h_cmd4_religion
+	# 		add_piety = massive_piety_loss
+	# 	}
+	# 	else_if = {
+	# 		limit = {
+	# 			has_trait = h_cmd5_religion
+	# 		}
+	# 		remove_trait = h_cmd5_religion
+	# 		add_piety = massive_piety_loss
+	# 	}
+	# }
 	else = {
 		# If no current bhakti, cost is reduced.
 		add_piety = medium_piety_loss
