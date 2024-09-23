@@ -17,7 +17,7 @@ caucasus.001 = {
 		trigger = {
 			NOT = { has_character_modifier = georgian_armzi}
 		}
-		set_bhakti_effect_pr = { BHAKTI = georgian_armzi }
+		set_bhakti_effect = { BHAKTI = georgian_armzi }
 	}
 
 	 #Adgilis Deda
@@ -26,7 +26,7 @@ caucasus.001 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = georgian_adgilis_deda }
 	 	}
-	 	set_bhakti_effect_pr = { BHAKTI = georgian_adgilis_deda}
+	 	set_bhakti_effect = { BHAKTI = georgian_adgilis_deda}
 	 }
 
 	#Kopala
@@ -35,7 +35,7 @@ caucasus.001 = {
 		trigger = {
 			NOT = { has_character_modifier = georgian_kopala }
 		}
-		set_bhakti_effect_pr = { BHAKTI = georgian_kopala }
+		set_bhakti_effect = { BHAKTI = georgian_kopala }
 	}
 
 	#Barbale 
@@ -44,7 +44,7 @@ caucasus.001 = {
 		trigger = {
 			NOT = { has_character_modifier = georgian_the_barbale }
 		}
-		set_bhakti_effect_pr = { BHAKTI = georgian_the_barbale }
+		set_bhakti_effect = { BHAKTI = georgian_the_barbale }
 	}
 
 	# Opt-Out
@@ -74,7 +74,7 @@ caucasus.002 = {
 		trigger = {
 			NOT = { has_character_modifier = armenian_aramazd}
 		}
-		set_bhakti_effect_pr = { BHAKTI = armenian_aramazd }
+		set_bhakti_effect = { BHAKTI = armenian_aramazd }
 	}
 
 	 #Astlik
@@ -83,7 +83,7 @@ caucasus.002 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = armenian_astlik }
 	 	}
-	 	set_bhakti_effect_pr = { BHAKTI = armenian_astlik}
+	 	set_bhakti_effect = { BHAKTI = armenian_astlik}
 	 }
 
 	#Nane
@@ -92,7 +92,7 @@ caucasus.002 = {
 		trigger = {
 			NOT = { has_character_modifier = armenian_nane }
 		}
-		set_bhakti_effect_pr = { BHAKTI = armenian_nane }
+		set_bhakti_effect = { BHAKTI = armenian_nane }
 	}
 
 	#Nvard
@@ -101,7 +101,7 @@ caucasus.002 = {
 		trigger = {
 			NOT = { has_character_modifier = armenian_nvard }
 		}
-		set_bhakti_effect_pr = { BHAKTI = armenian_nvard }
+		set_bhakti_effect = { BHAKTI = armenian_nvard }
 	}
 
 	# Opt-Out

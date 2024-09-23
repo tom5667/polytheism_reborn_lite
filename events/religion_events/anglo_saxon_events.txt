@@ -552,7 +552,7 @@ ascmd.001 = {
 		trigger = {
 			NOT = { has_character_modifier = anglo_saxon_woden }
 		}
-		set_bhakti_effect_pr = { BHAKTI = anglo_saxon_woden }
+		set_bhakti_effect = { BHAKTI = anglo_saxon_woden }
 	}
 
 	# Njǫrd
@@ -561,7 +561,7 @@ ascmd.001 = {
 		trigger = {
 			NOT = { has_character_modifier = anglo_saxon_njord }
 		}
-		set_bhakti_effect_pr = { BHAKTI = anglo_saxon_njord}
+		set_bhakti_effect = { BHAKTI = anglo_saxon_njord}
 	}
 
 	#Frī
@@ -570,7 +570,7 @@ ascmd.001 = {
 		trigger = {
 			NOT = { has_character_modifier = anglo_saxon_fri }
 		}
-		set_bhakti_effect_pr = { BHAKTI = anglo_saxon_fri }
+		set_bhakti_effect = { BHAKTI = anglo_saxon_fri }
 	}
 
 	# Tīwaz
@@ -579,7 +579,7 @@ ascmd.001 = {
 		trigger = {
 			NOT = { has_character_modifier = anglo_saxon_tiwaz }
 		}
-		set_bhakti_effect_pr = { BHAKTI = anglo_saxon_tiwaz }
+		set_bhakti_effect = { BHAKTI = anglo_saxon_tiwaz }
 	}
 
 
@@ -589,7 +589,7 @@ ascmd.001 = {
 		trigger = {
 			NOT = { has_character_modifier = anglo_saxon_seaxneat }
 		}
-		set_bhakti_effect_pr = { BHAKTI = anglo_saxon_seaxneat }
+		set_bhakti_effect = { BHAKTI = anglo_saxon_seaxneat }
 	}
 
 	# Opt-Out
@@ -620,7 +620,7 @@ ascmd.002 = {
 		trigger = {
 			NOT = { has_character_modifier = german_wotan }
 		}
-		set_bhakti_effect_pr = { BHAKTI = german_wotan }
+		set_bhakti_effect = { BHAKTI = german_wotan }
 	}
 
 	# Njordr
@@ -629,7 +629,7 @@ ascmd.002 = {
 		trigger = {
 			NOT = { has_character_modifier = german_njordr }
 		}
-		set_bhakti_effect_pr = { BHAKTI = german_njordr }
+		set_bhakti_effect = { BHAKTI = german_njordr }
 	}
 
 	#Freyr
@@ -638,7 +638,7 @@ ascmd.002 = {
 		trigger = {
 			NOT = { has_character_modifier = german_freyr }
 		}
-		set_bhakti_effect_pr = { BHAKTI = german_freyr }
+		set_bhakti_effect = { BHAKTI = german_freyr }
 	}
 
 	# Nornir
@@ -647,7 +647,7 @@ ascmd.002 = {
 		trigger = {
 			NOT = { has_character_modifier = german_nornir }
 		}
-		set_bhakti_effect_pr = { BHAKTI = german_nornir }
+		set_bhakti_effect = { BHAKTI = german_nornir }
 	}
 
 
@@ -657,7 +657,7 @@ ascmd.002 = {
 		trigger = {
 			NOT = { has_character_modifier = german_mimir }
 		}
-		set_bhakti_effect_pr = { BHAKTI = german_mimir }
+		set_bhakti_effect = { BHAKTI = german_mimir }
 	}
 
 	# Opt-Out

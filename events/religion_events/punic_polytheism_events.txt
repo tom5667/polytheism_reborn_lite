@@ -248,7 +248,7 @@ pcmd.001 = {
 		trigger = {
 			NOT = { has_character_modifier = punic_baal}
 		}
-		set_bhakti_effect_pr = { BHAKTI = punic_baal }
+		set_bhakti_effect = { BHAKTI = punic_baal }
 	}
 
 	 #Kusor
@@ -257,7 +257,7 @@ pcmd.001 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = punic_kusor }
 	 	}
-	 	set_bhakti_effect_pr = { BHAKTI = punic_kusor}
+	 	set_bhakti_effect = { BHAKTI = punic_kusor}
 	 }
 
 	#Astarte
@@ -266,7 +266,7 @@ pcmd.001 = {
 		trigger = {
 			NOT = { has_character_modifier = punic_astarte }
 		}
-		set_bhakti_effect_pr = { BHAKTI = punic_astarte }
+		set_bhakti_effect = { BHAKTI = punic_astarte }
 	}
 
 	# Tanit
@@ -275,7 +275,7 @@ pcmd.001 = {
 		trigger = {
 			NOT = { has_character_modifier = punic_tanit }
 		}
-		set_bhakti_effect_pr = { BHAKTI = punic_tanit }
+		set_bhakti_effect = { BHAKTI = punic_tanit }
 	}
 
 
@@ -285,7 +285,7 @@ pcmd.001 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = punic_melqart }
 	 	}
-	 	set_bhakti_effect_pr = { BHAKTI = punic_melqart }
+	 	set_bhakti_effect = { BHAKTI = punic_melqart }
 	 }
 
 	# Opt-Out
@@ -315,7 +315,7 @@ semitic.001 = {
 		trigger = {
 			NOT = { has_character_modifier = semitic_ba_al_hadad }
 		}
-		set_bhakti_effect_pr = { BHAKTI = semitic_ba_al_hadad  }
+		set_bhakti_effect = { BHAKTI = semitic_ba_al_hadad  }
 	}
 
 	 #Ashera
@@ -324,7 +324,7 @@ semitic.001 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = semitic_ashera }
 	 	}
-	 	set_bhakti_effect_pr = { BHAKTI = semitic_ashera}
+	 	set_bhakti_effect = { BHAKTI = semitic_ashera}
 	 }
 
 	#Dagan
@@ -333,7 +333,7 @@ semitic.001 = {
 		trigger = {
 			NOT = { has_character_modifier = semitic_dagan }
 		}
-		set_bhakti_effect_pr = { BHAKTI = semitic_dagan }
+		set_bhakti_effect = { BHAKTI = semitic_dagan }
 	}
 
 	# Tanit
@@ -342,7 +342,7 @@ semitic.001 = {
 		trigger = {
 			NOT = { has_character_modifier = semitic_el_elyon }
 		}
-		set_bhakti_effect_pr = { BHAKTI = semitic_el_elyon }
+		set_bhakti_effect = { BHAKTI = semitic_el_elyon }
 	}
 
 
@@ -352,7 +352,7 @@ semitic.001 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = semitic_ashtart }
 	 	}
-	 	set_bhakti_effect_pr = { BHAKTI = semitic_ashtart }
+	 	set_bhakti_effect = { BHAKTI = semitic_ashtart }
 	 }
 
 	# Opt-Out

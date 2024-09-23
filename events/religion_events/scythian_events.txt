@@ -16,7 +16,7 @@ scythian.001 = {
 		trigger = {
 			NOT = { has_character_modifier = scythia_papaios }
 		}
-		set_bhakti_effect_pr = { BHAKTI = scythia_papaios }
+		set_bhakti_effect = { BHAKTI = scythia_papaios }
 	}
 
 	#Artimpasa
@@ -25,7 +25,7 @@ scythian.001 = {
 	trigger = {
 		NOT = { has_character_modifier = scythia_artimpasa }
 	}
-	set_bhakti_effect_pr = { BHAKTI = scythia_artimpasa }
+	set_bhakti_effect = { BHAKTI = scythia_artimpasa }
 	}
 
 	# Gaitasura
@@ -34,7 +34,7 @@ scythian.001 = {
 		trigger = {
 			NOT = { has_character_modifier = scythia_gaitasura }
 		}
-		set_bhakti_effect_pr = { BHAKTI = scythia_gaitasura }
+		set_bhakti_effect = { BHAKTI = scythia_gaitasura }
 	}
 
 	#Api
@@ -43,7 +43,7 @@ scythian.001 = {
 		trigger = {
 			NOT = { has_character_modifier = scythia_api }
 		}
-		set_bhakti_effect_pr = { BHAKTI = scythia_api }
+		set_bhakti_effect = { BHAKTI = scythia_api }
 	}
 	 # Pitara Za 
 	 option = {
@@ -51,7 +51,7 @@ scythian.001 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = scythia_pitari_za }
 	 	}
-	 	set_bhakti_effect_pr = { BHAKTI = scythia_pitari_za }
+	 	set_bhakti_effect = { BHAKTI = scythia_pitari_za }
 	 }
 
 	# Opt-Out

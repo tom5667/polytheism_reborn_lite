@@ -69,7 +69,7 @@ pr_illyrian.002 = {
 		trigger = {
 			NOT = { has_character_modifier = illyrian_en  }
 		}
-		set_bhakti_effect_pr = { BHAKTI = illyrian_en  }
+		set_bhakti_effect = { BHAKTI = illyrian_en  }
 	}
 
 	#Medaurus
@@ -78,7 +78,7 @@ pr_illyrian.002 = {
 	trigger = {
 		NOT = { has_character_modifier = illyrian_medaurus }
 	}
-	set_bhakti_effect_pr = { BHAKTI = illyrian_medaurus }
+	set_bhakti_effect = { BHAKTI = illyrian_medaurus }
 	}
 
 	# Anzotica
@@ -87,7 +87,7 @@ pr_illyrian.002 = {
 		trigger = {
 			NOT = { has_character_modifier = illyrian_anzotica }
 		}
-		set_bhakti_effect_pr = { BHAKTI = illyrian_anzotica }
+		set_bhakti_effect = { BHAKTI = illyrian_anzotica }
 	}
 
 	#Bindus
@@ -96,7 +96,7 @@ pr_illyrian.002 = {
 		trigger = {
 			NOT = { has_character_modifier = illyrian_bindus }
 		}
-		set_bhakti_effect_pr = { BHAKTI = illyrian_bindus }
+		set_bhakti_effect = { BHAKTI = illyrian_bindus }
 	}
 	#Tadenus
 	option = {
@@ -104,7 +104,7 @@ pr_illyrian.002 = {
 		trigger = {
 			NOT = { has_character_modifier = illyrian_tadenus }
 		}
-		set_bhakti_effect_pr = { BHAKTI = illyrian_tadenus }
+		set_bhakti_effect = { BHAKTI = illyrian_tadenus }
 	}
 	# Opt-Out
 	option = {

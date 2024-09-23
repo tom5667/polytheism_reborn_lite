@@ -226,7 +226,7 @@ etc.007 = {
 		trigger = {
 			NOT = { has_character_modifier = etruscan_tinia }
 		}
-		set_bhakti_effect_pr = { BHAKTI = etruscan_tinia }
+		set_bhakti_effect = { BHAKTI = etruscan_tinia }
 	}
 
 	 #Norti
@@ -235,7 +235,7 @@ etc.007 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = etruscan_nortia }
 	 	}
-	 	set_bhakti_effect_pr = { BHAKTI = etruscan_nortia }
+	 	set_bhakti_effect = { BHAKTI = etruscan_nortia }
 	 }
 
 	#Turms
@@ -244,7 +244,7 @@ etc.007 = {
 		trigger = {
 			NOT = { has_character_modifier = etruscan_turms}
 		}
-		set_bhakti_effect_pr = { BHAKTI = etruscan_turms}
+		set_bhakti_effect = { BHAKTI = etruscan_turms}
 	}
 
 	# Menvra
@@ -253,7 +253,7 @@ etc.007 = {
 		trigger = {
 			NOT = { has_character_modifier = etruscan_menrva }
 		}
-		set_bhakti_effect_pr = { BHAKTI = etruscan_menrva }
+		set_bhakti_effect = { BHAKTI = etruscan_menrva }
 	}
 
 
@@ -263,7 +263,7 @@ etc.007 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = etruscan_maris }
 	 	}
-	 	set_bhakti_effect_pr = { BHAKTI = etruscan_maris }
+	 	set_bhakti_effect = { BHAKTI = etruscan_maris }
 	 }
 
 	# Opt-Out

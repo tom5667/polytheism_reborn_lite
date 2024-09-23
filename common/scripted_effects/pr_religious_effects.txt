@@ -302,7 +302,7 @@ pr_set_bhakti_effect = {
 }
 #Update vanilla Bhackti effect 
 # Used to set a Hindu's personal god.
-set_bhakti_effect_pr = {
+set_bhakti_effect = {
 	# Remove any previous personal god relation.
 	## HINDUISM
 	if = {
@@ -548,13 +548,13 @@ set_bhakti_effect_pr = {
 			remove_character_modifier = gaelic_brigid
 			add_piety = massive_piety_loss
 		}
-		else_if = {	
-			limit = {
-				has_character_modifier = gaelic_the_morrighan
-			}
-			remove_character_modifier = gaelic_the_morrighan
-			add_piety = massive_piety_loss
-		}
+		# else_if = {	
+		# 	limit = {
+		# 		has_character_modifier = gaelic_the_morrighan 
+		# 	}
+		# 	remove_character_modifier = gaelic_the_morrighan
+		# 	add_piety = massive_piety_loss
+		# }
 		else_if = {	
 			limit = {
 				has_character_modifier = gaelic_ecna

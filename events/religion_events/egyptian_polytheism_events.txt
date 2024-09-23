@@ -346,7 +346,7 @@ kemetic_cmd.001 = {
 		trigger = {
 			NOT = { has_trait = kemetic_cmd1_religion }
 		}
-		pr_set_bhakti_effect_pr = { BHAKTI  = kemetic_cmd1_religion }
+		pr_set_bhakti_effect = { BHAKTI  = kemetic_cmd1_religion }
 	}
 	option = {
 		name = kemetic_cmd.001.b
@@ -354,7 +354,7 @@ kemetic_cmd.001 = {
 		trigger = {
 			NOT = { has_trait = kemetic_cmd2_religion }
 		}
-		pr_set_bhakti_effect_pr = { BHAKTI  = kemetic_cmd2_religion }
+		pr_set_bhakti_effect = { BHAKTI  = kemetic_cmd2_religion }
 
 	}
 	option = {
@@ -363,7 +363,7 @@ kemetic_cmd.001 = {
 		trigger = {
 			NOT = { has_trait = kemetic_cmd3_religion }
 		}
-		pr_set_bhakti_effect_pr = { BHAKTI  = kemetic_cmd3_religion }
+		pr_set_bhakti_effect = { BHAKTI  = kemetic_cmd3_religion }
 	}
 	option = {
 		name = kemetic_cmd.001.d
@@ -371,7 +371,7 @@ kemetic_cmd.001 = {
 		trigger = {
 			NOT = { has_trait = kemetic_cmd4_religion }
 		}
-		pr_set_bhakti_effect_pr = { BHAKTI  = kemetic_cmd4_religion }
+		pr_set_bhakti_effect = { BHAKTI  = kemetic_cmd4_religion }
 
 	}
 	option = {
@@ -380,7 +380,7 @@ kemetic_cmd.001 = {
 		trigger = {
 			NOT = { has_trait = kemetic_cmd5_religion }
 		}
-		pr_set_bhakti_effect_pr = { BHAKTI  = kemetic_cmd5_religion }
+		pr_set_bhakti_effect = { BHAKTI  = kemetic_cmd5_religion }
 
 	}
 	option = {

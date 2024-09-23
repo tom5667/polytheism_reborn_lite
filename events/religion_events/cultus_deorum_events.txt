@@ -40,7 +40,7 @@ cdr.001 = {
 		trigger = {
 			NOT = { has_trait = cdr_cmd1_religion }
 		}
-		pr_set_bhakti_effect_pr_pr_pr = { BHAKTI =  cdr_cmd1_religion }
+		pr_set_bhakti_effect = { BHAKTI =  cdr_cmd1_religion }
 	}
 	option = {
 		name = cdr.001.juno
@@ -48,7 +48,7 @@ cdr.001 = {
 		trigger = {
 			NOT = { has_trait = cdr_cmd2_religion }
 		}
-		pr_set_bhakti_effect_pr_pr_pr = { BHAKTI =  cdr_cmd2_religion }
+		pr_set_bhakti_effect = { BHAKTI =  cdr_cmd2_religion }
 	}
 	option = {
 		name = cdr.001.mars
@@ -56,7 +56,7 @@ cdr.001 = {
 		trigger = {
 			NOT = { has_trait = cdr_cmd3_religion }
 		}
-		pr_set_bhakti_effect_pr_pr_pr = { BHAKTI =  cdr_cmd3_religion }
+		pr_set_bhakti_effect = { BHAKTI =  cdr_cmd3_religion }
 	}
 	option = {
 		name = cdr.001.venus
@@ -64,7 +64,7 @@ cdr.001 = {
 		trigger = {
 			NOT = { has_trait = cdr_cmd4_religion }
 		}
-		pr_set_bhakti_effect_pr_pr_pr = { BHAKTI =  cdr_cmd4_religion }
+		pr_set_bhakti_effect = { BHAKTI =  cdr_cmd4_religion }
 	}
 	option = {
 		name = cdr.001.lares
@@ -72,7 +72,7 @@ cdr.001 = {
 		trigger = {
 			NOT = { has_trait = cdr_cmd5_religion }
 		}
-		pr_set_bhakti_effect_pr_pr_pr = { BHAKTI =  cdr_cmd5_religion }
+		pr_set_bhakti_effect = { BHAKTI =  cdr_cmd5_religion }
 	}
 	option = {
 		name = cdr.001.mercurius
@@ -80,21 +80,21 @@ cdr.001 = {
 		trigger = {
 			NOT = { has_trait = cdr_cmd6_religion }
 		}
-		pr_set_bhakti_effect_pr_pr_pr = { BHAKTI =  cdr_cmd6_religion }
+		pr_set_bhakti_effect = { BHAKTI =  cdr_cmd6_religion }
 	}
 	option = { 
 		name = cdr.001.minerva
 		trigger = {
 			NOT = { has_trait = cdr_cmd7_religion }
 		}
-		pr_set_bhakti_effect_pr_pr_pr = { BHAKTI =  cdr_cmd7_religion }
+		pr_set_bhakti_effect = { BHAKTI =  cdr_cmd7_religion }
 	}
 	option = { 
 		name = cdr.001.apollo
 		trigger = {
 			NOT = { has_trait = cdr_cmd8_religion }
 		}
-		pr_set_bhakti_effect_pr_pr_pr = { BHAKTI =  cdr_cmd8_religion }
+		pr_set_bhakti_effect = { BHAKTI =  cdr_cmd8_religion }
 	}
 	#ToDo (Vulcan,  Diana and Ceres )
 	option = {
@@ -127,21 +127,21 @@ mm_cmd.001 = {
 		trigger = {
 			NOT = { has_trait = mm_cmd1_religion }
 		}
-		pr_set_bhakti_effect_pr_pr_pr = { BHAKTI  = mm_cmd1_religion }
+		pr_set_bhakti_effect = { BHAKTI  = mm_cmd1_religion }
 	}
 	option = {
 		name = mm_cmd.001.arimanius
 		trigger = {
 			NOT = { has_trait = mm_cmd2_religion }
 		}
-		pr_set_bhakti_effect_pr_pr_pr = { BHAKTI  = mm_cmd2_religion }
+		pr_set_bhakti_effect = { BHAKTI  = mm_cmd2_religion }
 	}
 	option = {
 		name = mm_cmd.001.oromazes
 		trigger = {
 			NOT = { has_trait = mm_cmd3_religion }
 		}
-		pr_set_bhakti_effect_pr_pr_pr = { BHAKTI  = mm_cmd3_religion }
+		pr_set_bhakti_effect = { BHAKTI  = mm_cmd3_religion }
 	}
 	option = {
 		name = mm_cmd.001.optout
@@ -2708,7 +2708,7 @@ roman_illyrian.001 = {
 		trigger = {
 			NOT = { has_character_modifier = roman_illyrian_jupiter_parthinus }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = roman_illyrian_jupiter_parthinus }
+		set_bhakti_effect = { BHAKTI = roman_illyrian_jupiter_parthinus }
 	}
 
 	 #Anzotica
@@ -2717,7 +2717,7 @@ roman_illyrian.001 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = roman_illyrian_anzotica }
 	 	}
-	 	set_bhakti_effect_pr_pr_pr = { BHAKTI = roman_illyrian_anzotica }
+	 	set_bhakti_effect = { BHAKTI = roman_illyrian_anzotica }
 	 }
 
 	#Armatus
@@ -2726,7 +2726,7 @@ roman_illyrian.001 = {
 		trigger = {
 			NOT = { has_character_modifier = roman_illyrian_armatus }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = roman_illyrian_armatus }
+		set_bhakti_effect = { BHAKTI = roman_illyrian_armatus }
 	}
 
 	# Bona Dea
@@ -2735,7 +2735,7 @@ roman_illyrian.001 = {
 		trigger = {
 			NOT = { has_character_modifier = roman_illyrian_bona_dea }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = roman_illyrian_bona_dea }
+		set_bhakti_effect = { BHAKTI = roman_illyrian_bona_dea }
 	}
 
 
@@ -2745,7 +2745,7 @@ roman_illyrian.001 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = roman_illyrian_latra }
 	 	}
-	 	set_bhakti_effect_pr_pr_pr = { BHAKTI = roman_illyrian_latra }
+	 	set_bhakti_effect = { BHAKTI = roman_illyrian_latra }
 	 }
 
 	# Opt-Out
@@ -3229,7 +3229,7 @@ gallo_roman.005 = {
 		trigger = {
 			NOT = { has_character_modifier = gallo_roman_jupiter_teranus }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = gallo_roman_jupiter_teranus }
+		set_bhakti_effect = { BHAKTI = gallo_roman_jupiter_teranus }
 	}
 
 		#Minerva Belisama 
@@ -3238,7 +3238,7 @@ gallo_roman.005 = {
 			trigger = {
 				NOT = { has_character_modifier = gallo_roman_minerva_belisama }
 			}
-			set_bhakti_effect_pr_pr_pr = { BHAKTI = gallo_roman_minerva_belisama }
+			set_bhakti_effect = { BHAKTI = gallo_roman_minerva_belisama }
 		}
 
 	#Mercury
@@ -3247,7 +3247,7 @@ gallo_roman.005 = {
 		trigger = {
 			NOT = { has_character_modifier = gallo_roman_mercurius_cissonius }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = gallo_roman_mercurius_cissonius }
+		set_bhakti_effect = { BHAKTI = gallo_roman_mercurius_cissonius }
 	}
 
 	# Venus
@@ -3256,7 +3256,7 @@ gallo_roman.005 = {
 		trigger = {
 			NOT = { has_character_modifier = gallo_roman_venus }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = gallo_roman_venus }
+		set_bhakti_effect = { BHAKTI = gallo_roman_venus }
 	}
 
 
@@ -3266,7 +3266,7 @@ gallo_roman.005 = {
 			trigger = {
 				NOT = { has_character_modifier = gallo_roman_mars_lenus }
 			}
-			set_bhakti_effect_pr_pr_pr = { BHAKTI = gallo_roman_mars_lenus }
+			set_bhakti_effect = { BHAKTI = gallo_roman_mars_lenus }
 		}
 
 	# Opt-Out
@@ -3297,7 +3297,7 @@ romano_british.001 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_british_jupiter_teran }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = romano_british_jupiter_teran }
+		set_bhakti_effect = { BHAKTI = romano_british_jupiter_teran }
 	}
 
 		#Sulis Minerva 
@@ -3306,7 +3306,7 @@ romano_british.001 = {
 			trigger = {
 				NOT = { has_character_modifier = romano_british_sulis_minerva }
 			}
-			set_bhakti_effect_pr_pr_pr = { BHAKTI = romano_british_sulis_minerva }
+			set_bhakti_effect = { BHAKTI = romano_british_sulis_minerva }
 		}
 
 	#Mercury Lugus
@@ -3315,7 +3315,7 @@ romano_british.001 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_british_mercurius_lugus }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = romano_british_mercurius_lugus }
+		set_bhakti_effect = { BHAKTI = romano_british_mercurius_lugus }
 	}
 
 	# Venus
@@ -3324,7 +3324,7 @@ romano_british.001 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_british_venus }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = romano_british_venus }
+		set_bhakti_effect = { BHAKTI = romano_british_venus }
 	}
 
 
@@ -3334,7 +3334,7 @@ romano_british.001 = {
 			trigger = {
 				NOT = { has_character_modifier = romano_british_mars_cocidius }
 			}
-			set_bhakti_effect_pr_pr_pr = { BHAKTI = romano_british_mars_cocidius }
+			set_bhakti_effect = { BHAKTI = romano_british_mars_cocidius }
 		}
 
 	# Opt-Out
@@ -3401,7 +3401,7 @@ romano_germanic.002 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_germanic_mercurius_hranno }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = romano_germanic_mercurius_hranno }
+		set_bhakti_effect = { BHAKTI = romano_germanic_mercurius_hranno }
 	}
 
 	#Hercules Meganusus
@@ -3410,7 +3410,7 @@ romano_germanic.002 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = romano_germanic_hercules_meganusus }
 	 	}
-	 	set_bhakti_effect_pr_pr_pr = { BHAKTI = romano_germanic_hercules_meganusus }
+	 	set_bhakti_effect = { BHAKTI = romano_germanic_hercules_meganusus }
 	 }
 
 	# Isis Freia
@@ -3419,7 +3419,7 @@ romano_germanic.002 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_germanic_isis_freia }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = romano_germanic_isis_freia }
+		set_bhakti_effect = { BHAKTI = romano_germanic_isis_freia }
 	}
 
 
@@ -3429,7 +3429,7 @@ romano_germanic.002 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_germanic_mars_thincsus }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = romano_germanic_mars_thincsus }
+		set_bhakti_effect = { BHAKTI = romano_germanic_mars_thincsus }
 	}
 
 	# Opt-Out
@@ -3491,7 +3491,7 @@ romano_hispanic.002 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_hispanic_jupiter_solutorius }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = romano_hispanic_jupiter_solutorius }
+		set_bhakti_effect = { BHAKTI = romano_hispanic_jupiter_solutorius }
 	}
 
 	#Minerva
@@ -3500,7 +3500,7 @@ romano_hispanic.002 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = romano_hispanic_minerva }
 	 	}
-	 	set_bhakti_effect_pr_pr_pr = { BHAKTI = romano_hispanic_minerva }
+	 	set_bhakti_effect = { BHAKTI = romano_hispanic_minerva }
 	 }
 
 	#Mars Neto
@@ -3509,7 +3509,7 @@ romano_hispanic.002 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_hispanic_mars_neto }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = romano_hispanic_mars_neto }
+		set_bhakti_effect = { BHAKTI = romano_hispanic_mars_neto }
 	}
 
 
@@ -3519,7 +3519,7 @@ romano_hispanic.002 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_hispanic_lucubo }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = romano_hispanic_lucubo }
+		set_bhakti_effect = { BHAKTI = romano_hispanic_lucubo }
 	}
 	# Nabia
 	option = {
@@ -3527,7 +3527,7 @@ romano_hispanic.002 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_hispanic_nabia }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = romano_hispanic_nabia }
+		set_bhakti_effect = { BHAKTI = romano_hispanic_nabia }
 	}
 	
 	# Opt-Out
@@ -3559,7 +3559,7 @@ cultus_orientis.002 = {
 		trigger = {
 			NOT = { has_character_modifier = cultus_orientis_jupiter_dolichenus }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = cultus_orientis_jupiter_dolichenus }
+		set_bhakti_effect = { BHAKTI = cultus_orientis_jupiter_dolichenus }
 	}
 
 	#Minerva
@@ -3568,7 +3568,7 @@ cultus_orientis.002 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = romano_hispanic_minerva }
 	 	}
-	 	set_bhakti_effect_pr_pr_pr = { BHAKTI = romano_hispanic_minerva }
+	 	set_bhakti_effect = { BHAKTI = romano_hispanic_minerva }
 	 }
 
 	#Juno Caelestis
@@ -3577,7 +3577,7 @@ cultus_orientis.002 = {
 		trigger = {
 			NOT = { has_character_modifier = cultus_orientis_juno_caelestis }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = cultus_orientis_juno_caelestis }
+		set_bhakti_effect = { BHAKTI = cultus_orientis_juno_caelestis }
 	}
 
 
@@ -3587,7 +3587,7 @@ cultus_orientis.002 = {
 		trigger = {
 			NOT = { has_character_modifier = cultus_orientis_mercurius_sobrius }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = cultus_orientis_mercurius_sobrius }
+		set_bhakti_effect = { BHAKTI = cultus_orientis_mercurius_sobrius }
 	}
 	#Eshmun
 	option = {
@@ -3595,7 +3595,7 @@ cultus_orientis.002 = {
 		trigger = {
 			NOT = { has_character_modifier = cultus_orientis_eshmun }
 		}
-		set_bhakti_effect_pr_pr_pr = { BHAKTI = cultus_orientis_eshmun }
+		set_bhakti_effect = { BHAKTI = cultus_orientis_eshmun }
 	}
 	
 	# Opt-Out
