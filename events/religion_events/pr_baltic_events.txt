@@ -15,7 +15,7 @@ pr_baltic.001 = {
 		trigger = {
 			NOT = { has_character_modifier = lithuanian_dievas }
 		}
-		set_bhakti_effect = { BHAKTI = lithuanian_dievas }
+		set_bhakti_effect_pr = { BHAKTI = lithuanian_dievas }
 	}
 
 	# Lugh
@@ -24,7 +24,7 @@ pr_baltic.001 = {
 		trigger = {
 			NOT = { has_character_modifier = lithuanian_dalia }
 		}
-		set_bhakti_effect = { BHAKTI = lithuanian_dalia}
+		set_bhakti_effect_pr = { BHAKTI = lithuanian_dalia}
 	}
 
 	#Brigid
@@ -33,7 +33,7 @@ pr_baltic.001 = {
 		trigger = {
 			NOT = { has_character_modifier = lithuanian_perkunas }
 		}
-		set_bhakti_effect = { BHAKTI = lithuanian_perkunas }
+		set_bhakti_effect_pr = { BHAKTI = lithuanian_perkunas }
 	}
 
 	# The Morrighan
@@ -42,7 +42,7 @@ pr_baltic.001 = {
 		trigger = {
 			NOT = { has_character_modifier = lithuanian_zemyna }
 		}
-		set_bhakti_effect = { BHAKTI = lithuanian_zemyna }
+		set_bhakti_effect_pr = { BHAKTI = lithuanian_zemyna }
 	}
 
 
@@ -52,7 +52,7 @@ pr_baltic.001 = {
 		trigger = {
 			NOT = { has_character_modifier = baltic_saule}
 		}
-		set_bhakti_effect = { BHAKTI = baltic_saule}
+		set_bhakti_effect_pr = { BHAKTI = baltic_saule}
 	}
 
 	# Opt-Out
@@ -82,7 +82,7 @@ pr_baltic.002 = {
 		trigger = {
 			NOT = { has_character_modifier = latvian_dievs  }
 		}
-		set_bhakti_effect = { BHAKTI = latvian_dievs  }
+		set_bhakti_effect_pr = { BHAKTI = latvian_dievs  }
 	}
 
 	# Lugus
@@ -91,7 +91,7 @@ pr_baltic.002 = {
 		trigger = {
 			NOT = { has_character_modifier = latvian_jumis }
 		}
-		set_bhakti_effect = { BHAKTI = latvian_jumis }
+		set_bhakti_effect_pr = { BHAKTI = latvian_jumis }
 	}
 
 	#Arianrhod
@@ -100,7 +100,7 @@ pr_baltic.002 = {
 		trigger = {
 			NOT = { has_character_modifier = latvian_perkons  }
 		}
-		set_bhakti_effect = { BHAKTI = latvian_perkons  }
+		set_bhakti_effect_pr = { BHAKTI = latvian_perkons  }
 	}
 
 	#Andraste
@@ -109,7 +109,7 @@ pr_baltic.002 = {
 		trigger = {
 			NOT = { has_character_modifier =  latvian_ceroklis }
 		}
-		set_bhakti_effect = { BHAKTI = latvian_ceroklis }
+		set_bhakti_effect_pr = { BHAKTI = latvian_ceroklis }
 	}
 
 
@@ -119,7 +119,7 @@ pr_baltic.002 = {
 		trigger = {
 			NOT = { has_character_modifier = baltic_saule}
 		}
-		set_bhakti_effect = { BHAKTI = baltic_saule}
+		set_bhakti_effect_pr = { BHAKTI = baltic_saule}
 	}
 
 	# Opt-Out
@@ -149,7 +149,7 @@ pr_baltic.003 = {
 		trigger = {
 			NOT = { has_character_modifier = prussian_deiws}
 		}
-		set_bhakti_effect = { BHAKTI = prussian_deiws}
+		set_bhakti_effect_pr = { BHAKTI = prussian_deiws}
 	}
 
 	# Lughus
@@ -158,7 +158,7 @@ pr_baltic.003 = {
 		trigger = {
 			NOT = { has_character_modifier = prussian_pilwits }
 		}
-		set_bhakti_effect = { BHAKTI = prussian_pilwits }
+		set_bhakti_effect_pr = { BHAKTI = prussian_pilwits }
 	}
 
 	#Rosmerta
@@ -167,7 +167,7 @@ pr_baltic.003 = {
 		trigger = {
 			NOT = { has_character_modifier = prussian_perkuns }
 		}
-		set_bhakti_effect = { BHAKTI = prussian_perkuns }
+		set_bhakti_effect_pr = { BHAKTI = prussian_perkuns }
 	}
 
 	#Cicolluis
@@ -176,7 +176,7 @@ pr_baltic.003 = {
 		trigger = {
 			NOT = { has_character_modifier =  prussian_patrimps }
 		}
-		set_bhakti_effect = { BHAKTI = prussian_patrimps }
+		set_bhakti_effect_pr = { BHAKTI = prussian_patrimps }
 	}
 
 
@@ -186,7 +186,7 @@ pr_baltic.003 = {
 		trigger = {
 			NOT = { has_character_modifier = prussian_ausauts }
 		}
-		set_bhakti_effect = { BHAKTI = prussian_ausauts }
+		set_bhakti_effect_pr = { BHAKTI = prussian_ausauts }
 	}
 
 	# Opt-Out

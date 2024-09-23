@@ -15,7 +15,7 @@ pr_iberian.001 = {
 		trigger = {
 			NOT = { has_character_modifier = lusitanian_reue }
 		}
-		set_bhakti_effect = { BHAKTI = lusitanian_reue }
+		set_bhakti_effect_pr = { BHAKTI = lusitanian_reue }
 	}
 
 	# Arencio
@@ -24,7 +24,7 @@ pr_iberian.001 = {
 		trigger = {
 			NOT = { has_character_modifier = lusitanian_arancio }
 		}
-		set_bhakti_effect = { BHAKTI = lusitanian_arancio }
+		set_bhakti_effect_pr = { BHAKTI = lusitanian_arancio }
 	}
 
 	#Ataegina
@@ -33,7 +33,7 @@ pr_iberian.001 = {
 		trigger = {
 			NOT = { has_character_modifier = lusitanian_ataegina }
 		}
-		set_bhakti_effect = { BHAKTI = lusitanian_ataegina }
+		set_bhakti_effect_pr = { BHAKTI = lusitanian_ataegina }
 	}
 
 	#Lucubo
@@ -42,7 +42,7 @@ pr_iberian.001 = {
 		trigger = {
 			NOT = { has_character_modifier =  lusitanian_lucubo }
 		}
-		set_bhakti_effect = { BHAKTI = lusitanian_lucubo }
+		set_bhakti_effect_pr = { BHAKTI = lusitanian_lucubo }
 	}
 
 
@@ -52,7 +52,7 @@ pr_iberian.001 = {
 		trigger = {
 			NOT = { has_character_modifier = lusitanian_cariocecus }
 		}
-		set_bhakti_effect = { BHAKTI = lusitanian_cariocecus }
+		set_bhakti_effect_pr = { BHAKTI = lusitanian_cariocecus }
 	}
 
 	# Opt-Out

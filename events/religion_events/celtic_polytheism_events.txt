@@ -1069,7 +1069,7 @@ ccmd.001 = {
 		trigger = {
 			NOT = { has_character_modifier = gaelic_an_dagda }
 		}
-		set_bhakti_effect = { BHAKTI = gaelic_an_dagda }
+		set_bhakti_effect_pr = { BHAKTI = gaelic_an_dagda }
 	}
 
 	# Lugh
@@ -1078,7 +1078,7 @@ ccmd.001 = {
 		trigger = {
 			NOT = { has_character_modifier = gaelic_lugh }
 		}
-		set_bhakti_effect = { BHAKTI = gaelic_lugh}
+		set_bhakti_effect_pr = { BHAKTI = gaelic_lugh}
 	}
 
 	#Brigid
@@ -1087,7 +1087,7 @@ ccmd.001 = {
 		trigger = {
 			NOT = { has_character_modifier = gaelic_brigid }
 		}
-		set_bhakti_effect = { BHAKTI = gaelic_brigid }
+		set_bhakti_effect_pr = { BHAKTI = gaelic_brigid }
 	}
 
 	# The Nemain
@@ -1096,7 +1096,7 @@ ccmd.001 = {
 		trigger = {
 			NOT = { has_character_modifier = gaelic_nemain }
 		}
-		set_bhakti_effect = { BHAKTI = gaelic_nemain }
+		set_bhakti_effect_pr = { BHAKTI = gaelic_nemain }
 	}
 
 
@@ -1106,7 +1106,7 @@ ccmd.001 = {
 		trigger = {
 			NOT = { has_character_modifier = gaelic_ecna }
 		}
-		set_bhakti_effect = { BHAKTI = gaelic_ecna }
+		set_bhakti_effect_pr = { BHAKTI = gaelic_ecna }
 	}
 
 	# Opt-Out
@@ -1136,7 +1136,7 @@ ccmd.002 = {
 		trigger = {
 			NOT = { has_character_modifier = brythonic_taranis }
 		}
-		set_bhakti_effect = { BHAKTI = brythonic_taranis }
+		set_bhakti_effect_pr = { BHAKTI = brythonic_taranis }
 	}
 
 	# Lugus
@@ -1145,7 +1145,7 @@ ccmd.002 = {
 		trigger = {
 			NOT = { has_character_modifier = brythonic_lugus }
 		}
-		set_bhakti_effect = { BHAKTI = brythonic_lugus }
+		set_bhakti_effect_pr = { BHAKTI = brythonic_lugus }
 	}
 
 	#Arianrhod
@@ -1154,7 +1154,7 @@ ccmd.002 = {
 		trigger = {
 			NOT = { has_character_modifier = brythonic_arianrhod  }
 		}
-		set_bhakti_effect = { BHAKTI = brythonic_arianrhod  }
+		set_bhakti_effect_pr = { BHAKTI = brythonic_arianrhod  }
 	}
 
 	#Andraste
@@ -1163,7 +1163,7 @@ ccmd.002 = {
 		trigger = {
 			NOT = { has_character_modifier =  brythonic_andraste }
 		}
-		set_bhakti_effect = { BHAKTI = brythonic_andraste }
+		set_bhakti_effect_pr = { BHAKTI = brythonic_andraste }
 	}
 
 
@@ -1173,7 +1173,7 @@ ccmd.002 = {
 		trigger = {
 			NOT = { has_character_modifier = brythonic_brigantia }
 		}
-		set_bhakti_effect = { BHAKTI = brythonic_brigantia }
+		set_bhakti_effect_pr = { BHAKTI = brythonic_brigantia }
 	}
 
 	# Opt-Out
@@ -1203,7 +1203,7 @@ ccmd.003 = {
 		trigger = {
 			NOT = { has_character_modifier = gaulish_toutatis }
 		}
-		set_bhakti_effect = { BHAKTI = gaulish_toutatis }
+		set_bhakti_effect_pr = { BHAKTI = gaulish_toutatis }
 	}
 
 	# Lughus
@@ -1212,7 +1212,7 @@ ccmd.003 = {
 		trigger = {
 			NOT = { has_character_modifier = gaulish_lughus }
 		}
-		set_bhakti_effect = { BHAKTI = gaulish_lughus }
+		set_bhakti_effect_pr = { BHAKTI = gaulish_lughus }
 	}
 
 	#Rosmerta
@@ -1221,7 +1221,7 @@ ccmd.003 = {
 		trigger = {
 			NOT = { has_character_modifier = gaulish_rosmerta }
 		}
-		set_bhakti_effect = { BHAKTI = gaulish_rosmerta }
+		set_bhakti_effect_pr = { BHAKTI = gaulish_rosmerta }
 	}
 
 	#Cicolluis
@@ -1230,7 +1230,7 @@ ccmd.003 = {
 		trigger = {
 			NOT = { has_character_modifier =  gaulish_cicolluis }
 		}
-		set_bhakti_effect = { BHAKTI = gaulish_cicolluis }
+		set_bhakti_effect_pr = { BHAKTI = gaulish_cicolluis }
 	}
 
 
@@ -1240,7 +1240,7 @@ ccmd.003 = {
 		trigger = {
 			NOT = { has_character_modifier = gaulish_belisama }
 		}
-		set_bhakti_effect = { BHAKTI = gaulish_belisama }
+		set_bhakti_effect_pr = { BHAKTI = gaulish_belisama }
 	}
 
 	# Opt-Out
@@ -1271,7 +1271,7 @@ ccmd.004 = {
 		trigger = {
 			NOT = { has_character_modifier = celtic_iberian_reue }
 		}
-		set_bhakti_effect = { BHAKTI = celtic_iberian_reue }
+		set_bhakti_effect_pr = { BHAKTI = celtic_iberian_reue }
 	}
 
 	# Arentius
@@ -1280,7 +1280,7 @@ ccmd.004 = {
 		trigger = {
 			NOT = { has_character_modifier = celtic_iberian_arancia }
 		}
-		set_bhakti_effect = { BHAKTI = celtic_iberian_arancia }
+		set_bhakti_effect_pr = { BHAKTI = celtic_iberian_arancia }
 	}
 
 	#Nabia
@@ -1289,7 +1289,7 @@ ccmd.004 = {
 		trigger = {
 			NOT = { has_character_modifier = celtic_iberian_nabia }
 		}
-		set_bhakti_effect = { BHAKTI = celtic_iberian_nabia }
+		set_bhakti_effect_pr = { BHAKTI = celtic_iberian_nabia }
 	}
 
 	#Lugus
@@ -1298,7 +1298,7 @@ ccmd.004 = {
 		trigger = {
 			NOT = { has_character_modifier =  celtic_iberian_lugus }
 		}
-		set_bhakti_effect = { BHAKTI = celtic_iberian_lugus }
+		set_bhakti_effect_pr = { BHAKTI = celtic_iberian_lugus }
 	}
 
 
@@ -1308,7 +1308,7 @@ ccmd.004 = {
 		trigger = {
 			NOT = { has_character_modifier = celtic_iberian_bandua }
 		}
-		set_bhakti_effect = { BHAKTI = celtic_iberian_bandua }
+		set_bhakti_effect_pr = { BHAKTI = celtic_iberian_bandua }
 	}
 
 	# Opt-Out

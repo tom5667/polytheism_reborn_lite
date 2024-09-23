@@ -16,7 +16,7 @@ ht.001 = {
 		trigger = {
 			NOT = { has_character_modifier = hittite_tarhunna }
 		}
-		set_bhakti_effect = { BHAKTI = hittite_tarhunna  }
+		set_bhakti_effect_pr = { BHAKTI = hittite_tarhunna  }
 	}
 
 	 #Telipinu
@@ -25,7 +25,7 @@ ht.001 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = hittite_telipinu }
 	 	}
-	 	set_bhakti_effect = { BHAKTI = hittite_telipinu }
+	 	set_bhakti_effect_pr = { BHAKTI = hittite_telipinu }
 	 }
 
 	#Halki
@@ -34,7 +34,7 @@ ht.001 = {
 		trigger = {
 			NOT = { has_character_modifier = hittite_halki }
 		}
-		set_bhakti_effect = { BHAKTI = hittite_halki }
+		set_bhakti_effect_pr = { BHAKTI = hittite_halki }
 	}
 
 	# A'as
@@ -43,7 +43,7 @@ ht.001 = {
 		trigger = {
 			NOT = { has_character_modifier = hittite_a_as}
 		}
-		set_bhakti_effect = { BHAKTI = hittite_a_as}
+		set_bhakti_effect_pr = { BHAKTI = hittite_a_as}
 	}
 
 
@@ -53,7 +53,7 @@ ht.001 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = hittite_tashmishu }
 	 	}
-	 	set_bhakti_effect = { BHAKTI = hittite_tashmishu }
+	 	set_bhakti_effect_pr = { BHAKTI = hittite_tashmishu }
 	 }
 
 	# Opt-Out

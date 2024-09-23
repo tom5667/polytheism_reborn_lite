@@ -280,7 +280,7 @@ dcmd.001 = {
 		trigger = {
 			NOT = { has_character_modifier = dacian_gebeleizis}
 		}
-		set_bhakti_effect = { BHAKTI = dacian_gebeleizis }
+		set_bhakti_effect_pr = { BHAKTI = dacian_gebeleizis }
 	}
 
 	 #Zalmoxis
@@ -289,7 +289,7 @@ dcmd.001 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = dacian_zalmoxis }
 	 	}
-	 	set_bhakti_effect = { BHAKTI = dacian_zalmoxis}
+	 	set_bhakti_effect_pr = { BHAKTI = dacian_zalmoxis}
 	 }
 
 	#Dionysus
@@ -298,7 +298,7 @@ dcmd.001 = {
 		trigger = {
 			NOT = { has_character_modifier = dacian_dionysus }
 		}
-		set_bhakti_effect = { BHAKTI = dacian_dionysus }
+		set_bhakti_effect_pr = { BHAKTI = dacian_dionysus }
 	}
 
 	# Pleistoros
@@ -307,7 +307,7 @@ dcmd.001 = {
 		trigger = {
 			NOT = { has_character_modifier = dacian_pleistoros }
 		}
-		set_bhakti_effect = { BHAKTI = dacian_pleistoros }
+		set_bhakti_effect_pr = { BHAKTI = dacian_pleistoros }
 	}
 
 
@@ -317,7 +317,7 @@ dcmd.001 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = dacian_derzelas }
 	 	}
-	 	set_bhakti_effect = { BHAKTI = dacian_derzelas }
+	 	set_bhakti_effect_pr = { BHAKTI = dacian_derzelas }
 	 }
 
 	# Opt-Out

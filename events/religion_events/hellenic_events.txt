@@ -354,7 +354,7 @@ h_cmd.001 = {
 		trigger = {
 			NOT = { has_trait = h_cmd1_religion }
 		}
-		pr_set_bhakti_effect = { BHAKTI  = h_cmd1_religion }
+		pr_set_bhakti_effect_pr = { BHAKTI  = h_cmd1_religion }
 	}
 	option = {
 		name = h_cmd.001.b
@@ -362,7 +362,7 @@ h_cmd.001 = {
 		trigger = {
 			NOT = { has_trait = h_cmd2_religion }
 		}
-		pr_set_bhakti_effect = { BHAKTI  = h_cmd2_religion }
+		pr_set_bhakti_effect_pr = { BHAKTI  = h_cmd2_religion }
 	}
 	option = {
 		name = h_cmd.001.c
@@ -370,7 +370,7 @@ h_cmd.001 = {
 		trigger = {
 			NOT = { has_trait = h_cmd3_religion }
 		}
-		pr_set_bhakti_effect = { BHAKTI  = h_cmd3_religion }
+		pr_set_bhakti_effect_pr = { BHAKTI  = h_cmd3_religion }
 	}
 	option = {
 		name = h_cmd.001.d
@@ -378,7 +378,7 @@ h_cmd.001 = {
 		trigger = {
 			NOT = { has_trait = h_cmd4_religion }
 		}
-		pr_set_bhakti_effect = { BHAKTI  = h_cmd4_religion }
+		pr_set_bhakti_effect_pr = { BHAKTI  = h_cmd4_religion }
 	}
 	option = {
 		name = h_cmd.001.e
@@ -386,7 +386,7 @@ h_cmd.001 = {
 		trigger = {
 			NOT = { has_trait = h_cmd5_religion }
 		}
-		pr_set_bhakti_effect = { BHAKTI  = h_cmd5_religion }
+		pr_set_bhakti_effect_pr = { BHAKTI  = h_cmd5_religion }
 	}
 	option = {
 		name = h_cmd.001.f
@@ -415,7 +415,7 @@ mycenaean.001 = {
 		trigger = {
 			NOT = { has_character_modifier = mycenaean_poseidon }
 		}
-		set_bhakti_effect = { BHAKTI = mycenaean_poseidon }
+		set_bhakti_effect_pr = { BHAKTI = mycenaean_poseidon }
 	}
 
 	# Hermes
@@ -424,7 +424,7 @@ mycenaean.001 = {
 		trigger = {
 			NOT = { has_character_modifier = mycenaean_hermes }
 		}
-		set_bhakti_effect = { BHAKTI = mycenaean_hermes}
+		set_bhakti_effect_pr = { BHAKTI = mycenaean_hermes}
 	}
 
 	#Aphrodite
@@ -433,7 +433,7 @@ mycenaean.001 = {
 		trigger = {
 			NOT = { has_character_modifier = mycenaean_aphrodite }
 		}
-		set_bhakti_effect = { BHAKTI = mycenaean_aphrodite }
+		set_bhakti_effect_pr = { BHAKTI = mycenaean_aphrodite }
 	}
 
 	# Athena
@@ -442,7 +442,7 @@ mycenaean.001 = {
 		trigger = {
 			NOT = { has_character_modifier = mycenaean_athena }
 		}
-		set_bhakti_effect = { BHAKTI = mycenaean_athena }
+		set_bhakti_effect_pr = { BHAKTI = mycenaean_athena }
 	}
 
 
@@ -452,7 +452,7 @@ mycenaean.001 = {
 		trigger = {
 			NOT = { has_character_modifier = mycenaean_ares }
 		}
-		set_bhakti_effect = { BHAKTI = mycenaean_ares }
+		set_bhakti_effect_pr = { BHAKTI = mycenaean_ares }
 	}
 
 	# Opt-Out
@@ -766,7 +766,7 @@ hellenismos.020 = {
 			}
 
 		}
-		set_bhakti_effect = { BHAKTI = graeco_egyptian_zeus_amon }
+		set_bhakti_effect_pr = { BHAKTI = graeco_egyptian_zeus_amon }
 	}
 	#Alexandros Megalos
 	option = {
@@ -780,7 +780,7 @@ hellenismos.020 = {
 				}
 			}
 		}
-		set_bhakti_effect = { BHAKTI = graeco_egyptian_alexander_megalos }
+		set_bhakti_effect_pr = { BHAKTI = graeco_egyptian_alexander_megalos }
 	}
 	
 	# Hermes Trismegistus
@@ -789,7 +789,7 @@ hellenismos.020 = {
 		trigger = {
 			NOT = { has_character_modifier = graeco_egyptian_hermes_trismegistus }
 		}
-		set_bhakti_effect = { BHAKTI = graeco_egyptian_hermes_trismegistus}
+		set_bhakti_effect_pr = { BHAKTI = graeco_egyptian_hermes_trismegistus}
 	}
 
 	#Isis
@@ -798,7 +798,7 @@ hellenismos.020 = {
 		trigger = {
 			NOT = { has_character_modifier = graeco_egyptian_isis }
 		}
-		set_bhakti_effect = { BHAKTI = graeco_egyptian_isis }
+		set_bhakti_effect_pr = { BHAKTI = graeco_egyptian_isis }
 	}
 
 	# Harpocrates
@@ -807,7 +807,7 @@ hellenismos.020 = {
 		trigger = {
 			NOT = { has_character_modifier = graeco_egyptian_harpocrates }
 		}
-		set_bhakti_effect = { BHAKTI = graeco_egyptian_harpocrates }
+		set_bhakti_effect_pr = { BHAKTI = graeco_egyptian_harpocrates }
 	}
 
 
@@ -817,7 +817,7 @@ hellenismos.020 = {
 		trigger = {
 			NOT = { has_character_modifier = mycenaean_ares }
 		}
-		set_bhakti_effect = { BHAKTI = mycenaean_ares }
+		set_bhakti_effect_pr = { BHAKTI = mycenaean_ares }
 	}
 
 	# Opt-Out
