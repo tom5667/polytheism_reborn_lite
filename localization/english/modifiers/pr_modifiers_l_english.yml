@@ -90,8 +90,8 @@ gaelic_lugh_desc:0 "Devotee of Lugh, Associated skill and mastery in multiple di
 gaelic_brigid:0 "Devotee Of Brigid"
 gaelic_brigid_desc:0 "Devotee of Brigid goddess of hearth and home, magic, woman and childbirth"
 
-gaelic_the_morrighan:0 "Devotee Of The Morrighan"
-gaelic_the_morrighan_desc:0 "Devotee of The Morrígan goddess of war and fate"
+gaelic_nemain:0 "Devotee Of Nemain"
+gaelic_nemain_desc:0 "Devotee of Nemain goddess of war"
 
 gaelic_ecna:0 "Devotee Of Ecna"
 gaelic_ecna_desc:0 "Devotee of Ecna goddess of wisdom"
@@ -144,11 +144,11 @@ celtic_iberian_arancia_desc:0 "Devotee of Arancia goddess of health"
 celtic_iberian_nabia:0 "Devotee Of Nabia"
 celtic_iberian_nabia_desc:0 "Devotee of Nabia goddess of fertility"
 
-celtic_iberian_lugus:0 "Devotee Of Lugus"
-celtic_iberian_lugus_desc:0 "Devotee of Lugus god of trade and wealth"
+celtic_iberian_lugus:0 "Devotee Of Lugei"
+celtic_iberian_lugus_desc:0 "Devotee of Lugei god of trade and wealth"
 
-celtic_iberian_bandua:0 "Devotee Of Bandua"
-celtic_iberian_bandua_desc:0 "Devotee of Bandua god of war"
+celtic_iberian_bandua:0 "Devotee Of Teleno"
+celtic_iberian_bandua_desc:0 "Devotee of Teleno god of war"
 
 #Lusitanian
 lusitanian_reue:0 "Devotee Of Reue"

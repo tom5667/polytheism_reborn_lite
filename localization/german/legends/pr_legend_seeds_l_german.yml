@@ -1,0 +1,31 @@
+﻿l_german:
+legend_kay_khosrow: "Erben von Kay Khosrow"
+legend_kay_khosrow_desc: "Kay Khosrow, der legendäre König der Kayan-Dynastie, wurde in der Wüste von Piran dem Weisen, Wesir von Afrasiab, ausgebildet. Nach seiner Rückkehr aus der Wüste wurde er zum Erben des persischen Königreichs ernannt, sein königliches Blut fließt bis heute durch unsere Adern."
+must_own_persia_tt:0 "Sie müssen [GetTitleByKey('e_persia').GetNameNoTier] und eine [GetReligionByKey('zoroastrianism_religion').GetAdjective] Religion vertreten."
+
+legend_ambiorix: "Erben von Ambiorixx"
+legend_ambiorix_desc: "Ambiorix, der berühmteste rebellierende König der Niederlande, vereinte die Stämme innerhalb von Belgae in einem verzweifelten Aufstand gegen Gaius Julius Caesar. Er verlor den Krieg, aber sein Geist wird in unserem Blut weiterleben."
+must_own_belgae_tt:0 "Sie müssen [GetTitleByKey('k_belgica').GetNameNoTier] und den [GetFaithByKey('gaulish_polytheism').GetAdjective] Glauben bewahren."
+
+legend_aeneas: "Aeneas"
+legend_aeneas_desc: "Aeneas, son of Venus, fought against the Greeks in the Trojan war and was cursed by Queen Dido of Carthage.\nLater he founded the city of Lavinium, which would be the origin point of the Latins, from who the Romans would spring from. What inevitably made the future Romans the enemy of the Carthaginians."
+must_own_roman_empire_tt:0 "Sie müssen [GetTitleByKey('e_roman_empire').GetNameNoTier], [GetTitleByKey('e_pr_western_roman_empire').GetNameNoTier] oder [GetTitleByKey('e_byzantium').GetNameNoTier] und die Religion [GetReligionByKey('roman_religion').GetAdjective] vertreten."
+
+legend_achilles: "Nachkommen von Achilles"
+legend_achilles_desc: "Wir, die [ROOT.Char.GetDynasty.GetNameNoTooltip], behaupten, vom legendären Krieger Achilles abzustammen, einem der größten hellenischen Helden des Trojanischen Krieges. Lasst uns der Welt noch einmal den Zorn von Achilles zeigen!"
+must_own_byzantine_empire_tt:0 "Ihr müsst [GetTitleByKey('e_byzantium').GetNameNoTier] und die [GetReligionByKey('hellenism_religion').GetAdjective] Religion vertreten."
+
+legend_venus: "Nachkommen von Venus"
+legend_venus_desc: "Venus, die Göttin der Liebe und Fruchtbarkeit, ihre Kinder wie Aeneas, ein Halbgott, der von Königin Dido verflucht wurde und die Stadt Lavinium gründete, die der Ursprungsort der Latiner sein sollte, aus denen die Römer hervorgingen. Ihr göttliches Blut fließt durch unsere Adern."
+must_own_roman_empire_tt:0 "You must hold [GetTitleByKey('e_roman_empire').GetNameNoTier], [GetTitleByKey('e_pr_western_roman_empire').GetNameNoTier] or [GetTitleByKey('e_byzantium').GetNameNoTier] and the [GetReligionByKey('roman_religion').GetAdjective] religion."
+
+legend_slaine_mac_dela: "Erben von Slaine Mac Dela"
+legend_slaine_mac_dela_desc: "Er eroberte Irland mit 5000 Mann und wurde zum ersten Hochkönig Irlands ernannt. Es ist sein legendäres Blut, das durch unsere Adern fließt."
+must_own_irish_high_kingdom_tt:0 "Sie müssen [GetTitleByKey('k_high_kingdom_of_ireland').GetNameNoTier] und den [GetFaithByKey('gaelic_polytheism').GetAdjective] Glauben bewahren."
+
+legend_hannibal: "Nachkommen von Hannibal"
+legend_hannibal_desc: "er Krieg gegen die Römer mag verloren sein, aber Hannibals Mut wird nie vergessen werden. Wir, die [ROOT.Char.GetDynasty.GetNameNoTooltip], werden Hannibal und die alten Barciden rächen und ihm seinen Ruhm zurückgeben!"
+
+
+demigod_aeneas: "demigod"
+demigod_achilles: "demigod"

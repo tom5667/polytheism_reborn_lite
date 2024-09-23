@@ -1,0 +1,47 @@
+﻿l_french:
+#####################
+#Made by tom5667 
+######################
+
+# Return Cultus Deorum Decision 
+punic_return_decision:0 "Return Punic Polytheism"
+punic_return_decision_desc:0 "I'm wondering what the old punic religion looked like."
+punic_return_decision_tooltip:1 "How did the ancient religion work" 
+punic_return_decision_confirm:1 "Travel to Carthago"
+
+restore_carthago:0 "Restore Carthago"
+restore_carthago_desc:0 "Now all the african duchies are back under one banner we can recreate the kingdom of Carthago."
+restore_carthago_effect_tooltip:0 "Restored Kigdom of Carthago"
+restore_carthago_tooltip:1 "It's time to reclaim Carthago"
+restore_carthago_confirm:0 "Create Carthago"
+
+set_capital_tunis_decision:0 "Make Tunis Capital"
+set_capital_tunis_decision_desc:0 "Make Tunis capital of Carthago."
+set_capital_tunis_decision_tooltip:1 "Change capital to Tunis"
+set_capital_tunis_decision_confirm:0 "Change Capital"
+
+choose_main_deity_punic_decision:0 "Choose your main deity"
+choose_main_deity_punic_decision_tt:0 "You begin to live your life according to the values of"
+select_main_deity_punic_decision.select_baal:0 "Baal Hammon High god of the Carthagenians"
+select_main_deity_punic_decision.select_tanit:0 "Tanit goddess of war and invassion"
+select_main_deity_punic_decision.select_astarte:0 "Astarte goddess of fertility"
+select_main_deity_punic_decision.select_kusor:0 "Kusor god of Wisdom"
+select_main_deity_punic_decision.select_melqart:0 "Melqart god of trade and military"
+choose_main_deity_punic_decision_tooltip:1 "Choose main god(dess)"
+choose_main_deity_punic_decision_confirm:1 "Choose main god(dess)"
+
+choose_main_deity_semitic_decision:0 "Choose your main deity"
+choose_main_deity_semitic_decision_tt:0 "You begin to live your life according to the values of"
+select_main_deity_semitic_decision.select_ba_al_hadad:0 "Ba'al-Hadad High god of the Semitics"
+select_main_deity_semitic_decision.select_ashera:0 "Ashera goddess of fertility"
+select_main_deity_semitic_decision.select_dagan:0 "Dagan god of wealth"
+select_main_deity_semitic_decision.select_el_elyon:0 "El Elyon god of Wisdom"
+select_main_deity_semitic_decision.select_ashtart:0 "Ashtart goddess of war"
+choose_main_deity_semitic_decision_tooltip:1 "Choose main god(dess)"
+choose_main_deity_semitic_decision_confirm:1 "Choose main god(dess)"
+
+#Embrace roman culture 
+embrace_punic_culture_decision:0 "Embrace Punic culture"
+embrace_punic_culture_decision_desc:0 "We have our old religion back now it's time reintroduce the punic virtues."
+embrace_punic_culture_decision_tooltip:0 "Return Punic culture"
+embrace_punic_culture_decision_confirm:0 "Confirm"

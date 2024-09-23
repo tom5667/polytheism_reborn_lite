@@ -1,0 +1,9 @@
+﻿l_french:
+ rule_customizable_ethics_game_rule:0 "#X Religion:#! Customizable Ethics"
+ setting_customizable_ethics_disabled:0 "Disabled"
+ setting_customizable_ethics_disabled_desc:0 "On faith creation it will not be possible to manually select sins and virtues"
+ setting_limited_customizable_ethics_enabled:0 "Limited"
+ setting_limited_customizable_ethics_enabled_desc:0 "On faith creation it will be possible to manually select up to 4 sins and virtues with some limitations"
+ setting_customizable_ethics_enabled:0 "Unlimited"
+ setting_customizable_ethics_enabled_desc:0 "On faith creation it will be possible to manually select up to 16 sins and virtues without limitations"
+

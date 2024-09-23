@@ -1,0 +1,222 @@
+﻿l_french:
+#####################
+#Made by tom5667
+######################
+
+# Return Gaelic polytheism Decision 
+gp_return_decision:0 "Return Gaelic Polytheism"
+gp_return_decision_desc:0 "I'm wondering what the old Gaelic religion looked like"
+gp_return_decision_tooltip:1 "How did the ancient religion work" 
+gp_return_decision_confirm:1 "Let's see what I can find"
+
+
+# Return Brythonic pholytheism Decision 
+bp_return_decision:0 "Return Brythonic Polytheism"
+bp_return_decision_desc:0 "I'm wondering what the old Brythonic religion looked like"
+bp_return_decision_tooltip:1 "How did the ancient religion work" 
+bp_return_decision_confirm:1 "Let's see what I can find"
+
+# Return Gaulish pholytheism Decision 
+gl_return_decision:0 "Return Gaulish Polytheism"
+gl_return_decision_desc:0 "I'm wondering what the old Gaulish religion looked like"
+gl_return_decision_tooltip:1 "How did the ancient religion work" 
+gl_return_decision_confirm:1 "Let's see what I can find"
+
+# Return Celtic Iberian polytheism Decision 
+ci_return_decision:0 "Return Celtic Iberian Polytheism"
+ci_return_decision_desc:0 "I'm wondering what the old Celtic Iberian religion looked like"
+ci_return_decision_tooltip:1 "How did the ancient religion work" 
+ci_return_decision_confirm:1 "Let's see what I can find"
+
+
+#state religion localization 
+
+#Make Gaelic polytheism state religion
+gp_sr_decision:0 "Make Gaelic polytheism state religion"
+gp_sr_decision_desc:0 "It's time to make Gaelic polytheism ones again our state religion"
+gp_sr_decision_tooltip:1 "Making Gaelic polytheism state religion again would be great"
+gp_sr_decision_confirm:1 "Let's do this"
+
+#Make Brythonic pholytheism state religion
+bp_sr_decision:0 "Make Brythonic polytheism state religion"
+bp_sr_decision_desc:0 "It's time to make Brythonic polytheism ones again our state religion"
+bp_sr_decision_tooltip:1 "Making Brythonic polytheism state religion again would be great"
+bp_sr_decision_confirm:1 "Let's do this"
+
+#Make Gaulish pholytheism state religion
+gl_sr_decision:0 "Make Gaulish polytheism state religion"
+gl_sr_decision_desc:0 "It's time to make Gaulish polytheism ones again our state religion"
+gl_sr_decision_tooltip:1 "Making Gaulish polytheism state religion again would be great"
+gl_sr_decision_confirm:1 "Let's do this"
+
+#Make Celtic Iberian pholytheism state religion
+ci_sr_decision:0 "Make Celtic Iberian polytheism state religion"
+ci_sr_decision_desc:0 "It's time to make Celtic Iberian polytheism ones again our state religion"
+ci_sr_decision_tooltip:1 "Making Celtic Iberian polytheism state religion again would be great"
+ci_sr_decision_confirm:1 "Let's do this"
+
+#restore celtic priesthood
+cp_restore_high_priesthood_decision:0 "Restore Celtic Priesthood"
+cp_restore_high_priesthood_decision_confirm:0 "Establish a new religious head"
+cp_restore_high_priesthood_decision_desc:0 "If the [ROOT.Char.GetFaith.GetAdjective] faith gains a foothold in Europe, the time will be ripe for the reinstitution of a proper Druidic Priesthood."
+cp_restore_high_priesthood_decision_tooltip:0 "The [ROOT.Char.GetFaith.GetAdjective] priesthood is established."
+cp_restore_high_priesthood_decision_effect_tooltip:0 "The [THIS.Char.GetFaith.GetAdjective] priesthood is established"
+
+
+#Gaelic restore Irish high kingdom 
+restore_high_kingdom:0 "Restore the Irish High Kingdom"
+restore_high_kingdom_desc:0 "Now all the Irish duchies are back under one banner we can recreate the Old Irish High Kingdom"
+restore_high_kingdom_of_ireland_effect_tooltip:0 "Restored Irish High Kingdom"
+restore_high_kingdom_tooltip:1 "It's time to reclaim the old Irish High Kingdom"
+restore_high_kingdom_confirm:0 "Create High Kingdom"
+
+#Gaelic restore Celtic Empire 
+create_celtic_empire_decision:0 "Create Celtic Empire"
+create_celtic_empire_decision_desc:0 "Now that the [kingdoms |E] Scotland, Ireland, Wales and England are brought together under one banner, we can create the Celtic Empire"
+create_celtic_empire_effect_tooltip:0 "Create the Celtic Empire" 
+create_celtic_empire_decision_tooltip:1 "It's time to reclaim all of the Celtic Isles"
+create_celtic_empire_decision_confirm:0 "Create Celtic Empire"
+
+set_capital_dublin_decision:0 "Make Dublin Capital"
+set_capital_dublin_decision_desc:0 "Make Dublin the capital of Ardrí na hÉireann"
+set_capital_dublin_decision_tooltip:1 "Change capital to Dublin"
+set_capital_dublin_decision_confirm:0 "Change Capital"
+
+#Choose main deity decision 
+choose_main_deity_celtic_decision:0 "Choose your main deity"
+choose_main_deity_celtic_decision_desc:0 "For some extra help in daily life, I can choose one god as my personal main god"
+choose_main_deity_celtic_decision_tooltip:1 "Choose main god(dess)"
+choose_main_deity_celtic_decision_confirm:1 "Choose main god(dess)"
+
+choose_main_deity_celtic_decision_tt:0 "You begin to live your life according to the values of"
+select_main_deity_celtic_decision.select_an_dagda:0 "An Dagda the great god"
+select_main_deity_celtic_decision.select_lugh:0 "Lugh has skill and mastery in multiple diciplines"
+select_main_deity_celtic_decision.select_brigid:0 "Brigid goddess of hearth and home"
+select_main_deity_celtic_decision.select_nemain:0 "The Nemain goddess of war"
+select_main_deity_celtic_decision.select_ecna:0 "Ecna goddess of wisdom"
+
+select_main_deity_celtic_decision.select_taranis:0 "Taranis god of thunder"
+select_main_deity_celtic_decision.select_lugus_brythonic:0 "Lugus god of trade"
+select_main_deity_celtic_decision.select_arianrhod:0 "Arianrhod goddess of fertility and beauty"
+select_main_deity_celtic_decision.select_andraste:0 "Andraste goddess of war, hare nature and guardianship "
+select_main_deity_celtic_decision.select_brigantia:0 "Brigantia goddess of wisdom, forts and society"
+
+select_main_deity_celtic_decision.select_toutatis:0 "Toutatis god of thunder"
+select_main_deity_celtic_decision.select_lughus:0 "Lughus god of trade"
+select_main_deity_celtic_decision.select_rosmerta:0 "Rosmerta goddess of fertility"
+select_main_deity_celtic_decision.select_cicolluis:0 "Cicolluis God of war"
+select_main_deity_celtic_decision.select_belisama:0 "Belisama goddess of wisdom"
+
+select_main_deity_celtic_decision.select_reue:0 "Reue high god and god of thunder"
+select_main_deity_celtic_decision.select_arancia:0 "Arancia god of health"
+select_main_deity_celtic_decision.select_nabia:0 "Nabia goddess of fertility"
+select_main_deity_celtic_decision.select_lugus:0 "Lugei god of trade and wealth"
+select_main_deity_celtic_decision.select_bandua:0 "Teleno god of war"
+
+celtic_solstice_summer_decision:0 "Hold Summer Solstice"
+celtic_solstice_summer_decision_tooltip:1 "Hold Summer Solstice"
+celtic_solstice_summer_decision_desc:0 "As the winds begin to chill and the Seas begin to rise, A stormy Horizon looks to the people of the [ROOT.Char.GetPrimaryTitle.GetName], In order to ensure a bountiful harvest and for keeping the realm united, I must convene an audience with the gods before the Winter-Spirits arrive and Snow covers the land."
+celtic_solstice_summer_decision_confirm:1 "Prepare the Realm"
+
+celtic_solstice_winter_decision:0 "Hold Winter Solstice"
+celtic_solstice_winter_decision_tooltip:1 "Hold Winter Solstice"
+celtic_solstice_winter_decision_desc:0 "The air has begun to warm slowly as the new year begins, A bright future looks to the people of the [ROOT.Char.GetPrimaryTitle.GetName] in order to ensure this future i must ask the gods and the spirits for their blessings before the new season begins. "
+celtic_solstice_winter_decision_confirm:1 "Prepare the Realm"
+
+#Embrace Celtic culture 
+gaulish_culture_decision:0 "Embrace Gaulish culture"
+gaulish_culture_decision_desc:0 "We have our old religion back now it's time reintroduce the Gaulish virtues."
+gaulish_culture_decision_tooltip:0 "Return Gaulish culture"
+gaulish_culture_decision_confirm:0 "Confirm"
+
+eburones_culture_decision:0 "Embrace Eburones culture"
+eburones_culture_decision_desc:0 "We have our old religion back now it's time reintroduce the Eburones virtues."
+eburones_culture_decision_tooltip:0 "Return Eburones culture"
+eburones_culture_decision_confirm:0 "Confirm"
+
+brythonic_culture_decision:0 "Embrace Brythonic culture"
+brythonic_culture_decision_desc:0 "We have our old religion back now it's time reintroduce the Brythonic virtues."
+brythonic_culture_decision_tooltip:0 "Return Brythonic culture"
+brythonic_culture_decision_confirm:0 "Confirm"
+
+manx_culture_decision:0 "Embrace Manx culture"
+manx_culture_decision_desc:0 "We have our old religion back now it's time reintroduce the Manx virtues."
+manx_culture_decision_tooltip:0 "Return Manx culture"
+manx_culture_decision_confirm:0 "Confirm"
+
+create_lusitania_decision:0 "Restore Kingdom of Lusitania"
+create_lusitania_desc:0 "For far too long the Lusitanian lands have been under control of our enemies were our ancestors lived and fought for."
+create_lusitania_effect_tooltip:0 "Restored Kigdom of Lusitania"
+create_lusitania_effect_tooltip:1 "It's time to reclaim the Kingdom of lusitania"
+create_lusitania_decision_tooltip:1 "It's time to reclaim lusitania"
+create_lusitania_decision_confirm:0 "Create Kingdom of lusitania"
+
+create_galicia_decision:0 "Restore Kingdom of Gallaecia"
+create_galicia_decision_desc:0 "For far too long the Gallaecian lands have been under control of our enemies were our ancestors lived and fought for."
+create_galicia_effect_tooltip:0 "Restored Kigdom of Gallaecia"
+create_illyria_effect_tooltip:1 "It's time to reclaim the Kingdom of Gallaecia"
+create_galicia_decision_tooltip:1 "It's time to reclaim Gallaecia"
+create_galicia_decision_confirm:0 "Create Kingdom of Gallaecia"
+
+create_vasconia_decision:0 "Restore Kingdom of Vasconia"
+create_vasconia_desc:0 "For far too long the Vasconian lands have been under control of our enemies were our ancestors lived and fought for."
+create_vasconia_effect_tooltip:0 "Restored Kigdom of Vasconia"
+create_vasconia_effect_tooltip:1 "It's time to reclaim the Kingdom of Vasconia"
+create_vasconia_decision_tooltip:1 "It's time to reclaim Vasconia"
+create_vasconia_decision_confirm:0 "Create Kingdom of Vasconia"
+
+create_tartessia_decision:0 "Restore Kingdom of Turdetania"
+create_tartessia_desc:0 "For far too long the Turdetania lands have been under control of our enemies were our ancestors lived and fought for."
+create_tartessia_effect_tooltip:0 "Restored Kigdom of Turdetania"
+create_tartessia_effect_tooltip:1 "It's time to reclaim the Kingdom of Turdetania"
+create_tartessia_decision_tooltip:1 "It's time to reclaim Turdetania"
+create_tartessia_decision_confirm:0 "Create Kingdom of Turdetania"
+
+create_celtiberia_decision:0 "Restore Kingdom of Celtiberia"
+create_celtiberia_desc0 "For far too long the Celtiberian lands have been under control of our enemies were our ancestors lived and fought for."
+create_celtiberia_effect_tooltip:0 "Restored Kigdom of Celtiberia"
+create_celtiberia_effect_tooltip:1 "It's time to reclaim the Kingdom of Celtiberia"
+create_celtiberia_decision_tooltip:1 "It's time to reclaim Celtiberia"
+create_celtiberia_decision_confirm:0 "Create Kingdom of Celtiberia"
+
+create_iberia_decision:0 "Restore Kingdom of Iberia"
+create_iberia_desc:0 "Our land lost for so long, but now after many years of fighting the lands of our ancestors is back in our hands"
+create_iberia_effect_tooltip:0 "Restored Kigdom of Iberia"
+create_iberia_effect_tooltip:1 "It's time to reclaim the Kingdom of Iberia"
+create_iberia_decision:1 "It's time to reclaim Iberia"
+create_iberia_decision_confirm:0 "Create Kingdom of Iberia"
+
+push_out_the_sassenach_saga_decision:0 "Push out the Sassenach"
+push_out_the_sassenach_decision_desc:0 "Centuries of invassions by germanic tribes has taken it's toll on our way of life, now it's time to take up arms again and drive them out"
+push_out_the_sassenach_saga_decision_tooltip:0 "Push out the Sassenach"
+push_out_the_sassenach_saga_decision_confirm:0 "To war"
+
+celtic_reconquest_ireland_decision:0 "Celtic reconquest of Ireland"
+celtic_reconquest_ireland_decision_desc:0 "Before the viking invassions Ireland only had internal struggles between tribes, but know there is a chance we lose our lands against the invaders, we can't allow that! Fight and reconquer Ireland to build and continue your own saga for a Celtic Empire"
+celtic_reconquest_ireland_decision_tooltip:0 "Reconquest of Ireland"
+celtic_reconquest_ireland_decision_confirm:0 "Confirm"
+
+celtic_reconquest_alba_decision:0 "Celtic reconquest of Scotland"
+celtic_reconquest_alba_decision_desc:0 "The tribes in Scotland are devided fighting over which clan should bring the next king. But now it's time bring everyone together under one crown and be done with all internall struggle. As we have mutual enemy the Sassenach"
+celtic_reconquest_alba_decision_tooltip:0 "Celtic reconquest of Scotland"
+celtic_reconquest_alba_decision_confirm:0 "Ireland is secured"
+
+celtic_reconquest_wales_decision:0 "Celtic reconquest of Wales"
+celtic_reconquest_wales_decision_desc:0 "Sure we could've gone directly for england itself, but they would be way to strong to face head on, as we surround england it will be much easier"
+celtic_reconquest_wales_decision_tooltip:0 "Celtic reconquest of Wales"
+celtic_reconquest_wales_decision_confirm:0 "Wales is secured"
+
+celtic_reconquest_albion_decision:0 "Celtic reconquest of Albion"
+celtic_reconquest_albion_decision_desc:0 "Ireland, Wales and Scotland are all under our control and now England has fallen too"
+celtic_reconquest_albion_decision_tooltip:0 "Celtic reconquest of Albion"
+celtic_reconquest_albion_decision_confirm:0 "England is secured"
+
+celtic_conquest_brittany_decision:0 "Celtic conquest of Brittany"
+celtic_conquest_brittany_decision_desc:0 "The celtic empire is complete, now it's time to look across the channel, with the conquest of Brittany we can create the so much needed foothold."
+celtic_conquest_brittany_decision_tooltip:0 "Celtic conquest of Brittany"
+celtic_conquest_brittany_decision_confirm:0 "Brittany is secured"
+
+old_irish_culture_decision:0 "Embrace Old Irish Culture"
+old_irish_culture_decision_desc:0 "As good Gaelic Polytheists we can't keep our Christian names"
+old_irish_culture_decision_tooltip:0 "Embrace Old Irish culture"
+old_irish_culture_decision_confirm:0 "Confirm"

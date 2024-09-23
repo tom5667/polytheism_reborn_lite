@@ -85,6 +85,11 @@
  avestan:0 "Avestan"
  avestan_prefix:0 "Avestan"
  avestan_collective_noun:0 "Avestaner"
+#Old persian 
+ old_persian:0 "Parsi"
+ old_persian_prefix:0 "Parso"
+ old_persian_collective_noun:0 "Parsians"
+ old_persian_history_loc:0 "Die [iranian|E], nicht-Dari beeinflusste Kultur von Pars während der Zeit des Achämenidenreichs"
 #Graeco Persian
  graeco_persian:0 "Griechisch Persisch"
  graeco_persian_prefix:0 "Griechisch Persisch"
@@ -125,10 +130,9 @@
  iberian_collective_noun:0 "Iberer"
 
 #Irish
- old_iris:0 "Alt Irisch"
- old_iris_prefix:0 "Alt Irisch"
- old_iris_collective_noun:0 "Alt Iren"
-
+old_irish:0 "Alt Irisch"
+old_irish_prefix:0 "Alt Irisch"
+old_irish_collective_noun:0 "Alt Iren"
 
 #Culture history
 graeco_egyptian_heritage_loc:0 "Um das Jahr [DATE.GetYear] aus [CULTURE.GetName] und Kemetisch entstanden" 

@@ -11,14 +11,14 @@ reconstruct_polytheism_decision_confirm:0  "Confirm"
 
 # Return Cultus Deorum Decision 
 return_polytheism_decision:0 "Return Ancient Polytheism Religion"
-return_polytheism_decision_desc:0 "Return ancient polytheistic religion, the culture determes wich ancient religion event will trigger for example irish Gealic polytheism and with Greek you get the events for cultus deorum hellenic etc." 
+return_polytheism_decision_desc:0 "Return ancient polytheistic religion, the culture determents which ancient religion event will trigger for example irish Gaelic polytheism and with Greek you get the events for Cultus Deorum Hellenic etc." 
 return_polytheism_decision_tooltip:1 "How did the ancient religion work" 
 return_polytheism_decision_confirm:1 "Return Ancient Religion"
 
 #Quick menu change religion
 return_polytheism_short_decision:0 "Change religion Quick menu"
 return_polytheism_short_decision_desc:0 "Quick way to change to any of the ancient religions added by Polytheism Reborn."
-return_polytheism_short_decision_tooltip:1 "Quick menu change relgion"
+return_polytheism_short_decision_tooltip:1 "Quick menu change religion"
 return_polytheism_short_decision_confirm:1 "Choose new religion"
 
 
@@ -27,14 +27,14 @@ return_culture_short_decision_desc:0 "Quick way to change to any of the ancient 
 return_culture_short_decision_tooltip:1 "Quick menu change culture"
 return_culture_short_decision_confirm:1 "Choose new culture"
 
-invite_sassanid_relatives_decision_before_last_date:0 "Desicion is aviable until January 1st 790 AD"
+invite_sassanid_relatives_decision_before_last_date:0 "Decision is available until January 1st 790 AD"
 invite_sassanid_relatives_decision:0 "Invite Sassanid relative"
 invite_sassanid_relatives_decision_desc:0 "We have located two of the last Sassanid relatives, they fought in Tokharistan against the Arabs and now there is a chance we can get them over here and help them reclaim the Persian crown."
-invite_sassanid_relatives_decision_tooltip:1 "Help the Sassanids back on their throne."
+invite_sassanid_relatives_decision_tooltip:1 "Help the Sassanid's back on their throne."
 invite_sassanid_relatives_decision_confirm:1 "Send invites"
 
 sassanid_reconquest:0 "Sassanid reconquest"
-sassanid_reconquest_desc:0 "Now we the sassanid family joined our ranks we can press our claim on the Persian Empire, start the Sassanid reqonquest."
+sassanid_reconquest_desc:0 "Now we the sassanid family joined our ranks we can press our claim on the Persian Empire, start the Sassanid reconquest."
 sassanid_reconquest_tooltip:1 "Sassanid reconquest"
 sassanid_reconquest_confirm:1 "Finally"
 

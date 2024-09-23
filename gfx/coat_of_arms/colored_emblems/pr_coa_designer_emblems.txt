@@ -71,7 +71,7 @@ ce_celtiberian.dds = {colors = 1 category = polytheism_reborn}
 ce_moccos.dds = {colors = 1 category = polytheism_reborn}
 ce_boar.dds = {colors = 2 category = polytheism_reborn}
 ce_hittite_sun_disk.dds = {colors = 1 category = polytheism_reborn}
-ce_cyrus_the_great.dds = {colors = 3 category = polytheism_reborn }
+ce_cyrus_the_great.dds = {colors = 1 category = polytheism_reborn }
 ce_cyrus_the_great_border.dds = {colors = 2 category = polytheism_reborn }
 ce_georgian.dds = {colors = 1 category = polytheism_reborn }
 ce_armenian.dds = {colors = 1 category = polytheism_reborn }
@@ -81,3 +81,4 @@ ce_pr_spqr.dds = {colors = 1 category = polytheism_reborn }
 ce_macedonian.dds = {colors = 1 category = polytheism_reborn }
 ce_macedonian_sun.dds = {colors = 1 category = polytheism_reborn }
 ce_welsh_dragon.dds = {colors = 2 category = polytheism_reborn }
+ce_tanit.dds = {colors = 1 category = polytheism_reborn }

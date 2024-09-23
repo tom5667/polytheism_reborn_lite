@@ -1,0 +1,41 @@
+﻿l_french:
+#####################
+#Made by tom5667 
+######################
+
+# Return Etruscan polytheism Decision 
+etc_return_decision:0 "Etruscan Polytheism"
+etc_return_decision_desc:0 "I'm wondering what the old etruscan religion looked like"
+etc_return_decision_tooltip:1 "How did the ancient religion work" 
+etc_return_decision_confirm:1 "Travel to "
+
+#Make Etruscan polytheism state religion
+etc_sr_decision:0 "Make Etruscan polytheism state religion"
+etc_sr_decision_desc:0 "It's time to make Etruscan polytheism ones again our state religion"
+etc_sr_decision_tooltip:1 "Making Etruscan polytheismstate religion again would be great"
+etc_sr_decision_confirm:1 "Let's do this"
+
+#Choose main deity
+choose_main_deity_etruscan_decision:0 "Choose your main deity"
+choose_main_deity_etruscan_decision_desc:0 "For some extra help in daily life, I can choose one god as my personal main god"
+
+select_main_deity_etruscan_decision.select_tinia:0 "Tinia high god of the Etruscans"
+select_main_deity_etruscan_decision.select_nortia:0 "Nortia goddess of fertility"
+select_main_deity_etruscan_decision.select_turms:0 "Turms god of wealth"
+select_main_deity_etruscan_decision.select_menrva:0 "Menrva goddess of wisdom"
+select_main_deity_etruscan_decision.select_maris:0 "Maris god of war"
+choose_main_deity_etruscan_decision_tooltip:1 "Choose main god(dess)"
+choose_main_deity_etruscan_decision_confirm:1 "Choose main god(dess)s"
+
+create_etruria_decision:0 "Create Etruria"
+create_etruria_decision_desc:0 "Etruria a long lost kingdom after centuries of Roman rule and after that the Longobards"
+create_etruria_decision_effect_tooltip:0 "Create [kingdom|E] of Etruria"
+create_etruria_decision_tooltip:0 "Creates [kingdom|E] of Etruria"
+create_etruria_decision_confirm:1 "Create Etruria"
+
+set_capital_pisa_decision:0 "Make Pisa Capital"
+set_capital_pisa_decision_desc:0 "Make Pisa capital of Etruria."
+set_capital_pisa_decision_tooltip:1 "Change capital to Pisa"
+set_capital_pisa_decision_confirm:0 "Change Capital"
+
+

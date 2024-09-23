@@ -78,3 +78,45 @@ scythian = {
 		20 = asian
 	}
 }
+
+#Credits Fangwolf  
+old_persian = { # Achaemenid Persian
+	color = { 0.84 0.76 0.78 }
+
+	history_loc_override = old_persian_history_loc
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_iranian
+	language = language_parthian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_gardening
+	}
+	
+	# FP3 traditions
+	dlc_tradition = {
+		trait = tradition_fp3_enlightened_magnates
+		requires_dlc_flag = legacy_of_persia
+	}
+	dlc_tradition = {
+		trait = tradition_fp3_beacon_of_learning
+		requires_dlc_flag = legacy_of_persia
+	}
+	dlc_tradition = {
+		trait = tradition_fp3_irrigation_experts
+		requires_dlc_flag = legacy_of_persia
+	}
+	
+	
+	name_list = name_list_achaemenid
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx mena_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+			8 = arab
+			5 = mediterranean
+	}
+}

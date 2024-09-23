@@ -4779,7 +4779,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
 		ai_chance = {
-			base = 30
+			base = 35
 		}
 	}
 	option = {

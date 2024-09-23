@@ -946,7 +946,7 @@ demand_conversion_gaelic_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -1560,7 +1560,7 @@ demand_conversion_brythonic_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -2173,7 +2173,7 @@ demand_conversion_gaulish_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -2786,7 +2786,7 @@ demand_conversion_cultus_deorum_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -3400,7 +3400,7 @@ demand_conversion_greco_roman_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -4013,7 +4013,7 @@ demand_conversion_hellenism_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -4627,7 +4627,7 @@ demand_conversion_kemetic_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -5241,7 +5241,7 @@ demand_conversion_atenism_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -5855,7 +5855,7 @@ demand_conversion_dacian_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -6469,7 +6469,7 @@ demand_conversion_zalmoxism_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -7084,7 +7084,7 @@ demand_conversion_babylonian_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -7468,7 +7468,7 @@ demand_conversion_assyrian_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -7853,7 +7853,7 @@ demand_conversion_sumerian_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -8927,7 +8927,7 @@ demand_conversion_punic_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -9540,7 +9540,7 @@ demand_conversion_semitic_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -10152,7 +10152,7 @@ demand_conversion_hittite_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -10765,7 +10765,7 @@ demand_conversion_georgian_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -11379,7 +11379,7 @@ demand_conversion_armenian_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -11993,7 +11993,7 @@ ask_for_conversion_armenian_courtier_interaction = {
 		
  		scope:recipient = {
 			
- 			target_is_liege_or_above = scope:actor
+ 			#target_is_liege_or_above = scope:actor
  			NOT = { faith = scope:actor.faith }
  			is_ai = yes
  			is_ruler = yes
@@ -12607,7 +12607,7 @@ demand_conversion_norse_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -13220,7 +13220,7 @@ demand_conversion_anglo_saxon_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -13834,7 +13834,7 @@ demand_conversion_german_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes
@@ -14448,7 +14448,7 @@ demand_conversion_scythian_vassal_ruler_interaction = {
 		
 		scope:recipient = {
 			
-			target_is_liege_or_above = scope:actor
+			#target_is_liege_or_above = scope:actor
 			NOT = { faith = scope:actor.faith }
 			is_ai = yes
 			is_ruler = yes

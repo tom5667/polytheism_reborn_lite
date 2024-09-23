@@ -437,6 +437,7 @@ cdr_r.009 = {
 	
 }
 
+
 cdr_r.010 = {
 	type = character_event
 	title = cdr_r.010.t

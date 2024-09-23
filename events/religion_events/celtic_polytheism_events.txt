@@ -1731,6 +1731,7 @@ celtic.014 = {
 			uses_supply = no
 			inheritable = no
 		}
+		add_character_flag = triggered_push_out_sassanach_this_lifetime
 	}
 	option = {
 		name = celtic.014.b
@@ -1787,6 +1788,7 @@ celtic.014 = {
 			uses_supply = no
 			inheritable = no
 		}
+		add_character_flag = triggered_push_out_sassanach_this_lifetime
 	}
 }
 
@@ -1853,6 +1855,24 @@ celtic.015 = {
 					}
 				 }
 				desc = celtic.015.desc.galicia
+			}
+			triggered_desc = {
+				trigger = { 
+					is_target_in_global_variable_list = {
+						name = conquest_belgae
+						target =  flag:flag_conquest_belgae
+					}
+				 }
+				desc = celtic.015.desc.belgae
+			}
+			triggered_desc = {
+				trigger = { 
+					is_target_in_global_variable_list = {
+						name = conquest_gaul
+						target =  flag:flag_conquest_gaul
+					}
+				 }
+				desc = celtic.015.desc.celtica
 			}
 			desc = celtic.015.desc.fallback
 		}
@@ -2085,7 +2105,7 @@ celtic.015 = {
 			}
 		
 		 #custom_tooltip = restore_brittany_effect_tooltip
-			title:d_york = { save_scope_as = d_brittany }
+			title:d_brittany = { save_scope_as = brittany }
 			create_title_and_vassal_change = {
 				type = created
 				save_scope_as = title_change
@@ -2113,7 +2133,7 @@ celtic.015 = {
 				target = flag:flag_conquest_galicia
 			}
 		}
-		name = celtic.015.e
+		name = celtic.015.f
 		spawn_army = {
 			name = event_troop_default_name
 			levies = 200
@@ -2153,6 +2173,131 @@ celtic.015 = {
 			remove_list_global_variable = {
 				name = conquest_galicia
 				target = flag:flag_conquest_galicia
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			is_target_in_global_variable_list = {
+				name = celtic_conquest_of_belgae
+				target = flag:flag_conquest_belgae
+			}
+		}
+		name = celtic.015.g
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 150
+			men_at_arms = {
+				type = chariots
+				stacks = 3
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+			}
+			#custom_tooltip = create_galicia_effect_tooltip
+			title:d_julich  = { save_scope_as = julich }
+			title:d_brabant = { save_scope_as = brabant }
+			title:d_luxembourg= { save_scope_as = luxembourg }		 		
+			title:d_zeeland = { save_scope_as = zeeland }
+			title:d_flanders = { save_scope_as = flanders }
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = yes
+			}
+			title:k_belgica ={
+				change_title_holder ={
+					holder = root
+					change = scope:title_change
+				}
+			}
+			resolve_title_and_vassal_change = scope:title_change
+			title:d_julich = { set_de_jure_liege_title = title:k_belgica }
+			title:d_brabant = { set_de_jure_liege_title = title:k_belgica }
+			title:d_luxembourg = { set_de_jure_liege_title = title:k_belgica }	 
+			title:d_zeeland = { set_de_jure_liege_title = title:k_belgica }
+			title:d_flanders = { set_de_jure_liege_title = title:k_belgica }
+
+			title:k_belgica = { set_de_jure_liege_title = title:e_celtic_empire }
+			hidden_effect = {
+			remove_list_global_variable = {
+				name = conquest_belgae
+				target = flag:flag_conquest_belgae
+			}
+		}
+	}
+	option = {
+		trigger = {
+			is_target_in_global_variable_list = {
+				name = celtic_conquest_of_gaul
+				target = flag:flag_conquest_gaul
+			}
+		}
+		name = celtic.015.h
+		# spawn_army = {
+		# 	name = event_troop_default_name
+		# 	levies = 300
+		# 	men_at_arms = {
+		# 		type = chariots
+		# 		stacks = 3
+		# 	}
+		# 	location = root.capital_province
+		# 	uses_supply = no
+		# 	inheritable = no
+		# 	}
+			add_prestige = 500
+			add_piety = 500
+			#custom_tooltip = create_galicia_effect_tooltip
+			title:d_bar = { save_scope_as = bar }
+			title:d_savoie = { save_scope_as = savoie }
+			title:d_berry = { save_scope_as = berry }
+			title:d_transjurania = { save_scope_as = transjurania }
+			title:d_upper_burgundy = { save_scope_as = upper_burgundy }
+			title:d_anjou = { save_scope_as = anjou }
+			title:d_normandy = { save_scope_as = normandy }
+			title:d_orleans = { save_scope_as = oreleans }
+			title:d_champagne = { save_scope_as = champagne }
+			title:d_burgundy = { save_scope_as = burgundy }
+			title:d_brittany = { save_scope_as = brittany }
+			title:d_aquitaine = { save_scope_as = aquitaine }
+			title:d_poitou = { save_scope_as = poitou }
+			title:d_auvergne = { save_scope_as = auvergne }
+			title:d_bourbon = { save_scope_as = bourboun }
+		
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = yes
+			}
+			title:k_celtica ={
+				change_title_holder ={
+					holder = root
+					change = scope:title_change
+				}
+			}
+			resolve_title_and_vassal_change = scope:title_change
+			title:d_bar = { set_de_jure_liege_title = title:k_celtica}
+			title:d_savoie = { set_de_jure_liege_title = title:k_celtica}
+			title:d_berry = { set_de_jure_liege_title = title:k_celtica}
+			title:d_transjurania = { set_de_jure_liege_title = title:k_celtica}
+			title:d_upper_burgundy = { set_de_jure_liege_title = title:k_celtica}
+			title:d_anjou = { set_de_jure_liege_title = title:k_celtica}
+			title:d_normandy = { set_de_jure_liege_title = title:k_celtica}
+			title:d_orleans = { set_de_jure_liege_title = title:k_celtica}
+			title:d_champagne = { set_de_jure_liege_title = title:k_celtica}
+			title:d_burgundy = { set_de_jure_liege_title = title:k_celtica}
+			title:d_brittany = { set_de_jure_liege_title = title:k_celtica}
+			title:d_aquitaine = { set_de_jure_liege_title = title:k_celtica}
+			title:d_poitou = { set_de_jure_liege_title = title:k_celtica}
+			title:d_auvergne = { set_de_jure_liege_title = title:k_celtica}
+			title:d_bourbon = { set_de_jure_liege_title = title:k_celtica}
+
+			hidden_effect = {
+			remove_list_global_variable = {
+				name = conquest_belgae
+				target = flag:flag_conquest_belgae
 			}
 		}
 	}

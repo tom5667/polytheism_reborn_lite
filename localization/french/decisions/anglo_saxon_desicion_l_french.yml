@@ -1,0 +1,36 @@
+﻿l_french:
+
+# Return Cultus Deorum Decision 
+anglo_saxon_return_decision:0 "Return Anglo Saxon Polytheism"
+anglo_saxon_return_decision_desc:0 "I'm wondering what the old Saxon religion looked like."
+anglo_saxon_return_decision_tooltip:1 "How did the ancient religion work" 
+anglo_saxon_return_decision_confirm:1 "Travel to Paderborn"
+
+german_return:0 "Return German Polytheism"
+german_return_desc:0 "Today a Volva of the old norse religion asked for audience."
+german_return_tooltip:1 "Norse volva asking for audience" 
+german_return_confirm:1 "Decide fate Volva"
+
+select_personal_deity_germanic_decision.select_woden:0 "Wōden god of wisdom"
+select_personal_deity_germanic_decision.select_fri:0 "Frī goddess of fertility"
+select_personal_deity_germanic_decision.select_:0 "Njǫrd god of wealth and trade"
+select_personal_deity_germanic_decision.select_tiwaz:0 "Tīwaz god of war"
+select_personal_deity_germanic_decision.select_seaxneat:0 "Seaxnēat protector of the Saxons"
+
+select_personal_deity_germanic_decision.select_wotan:0 "Wotan god of wisdom"
+select_personal_deity_germanic_decision.select_freyr:0 "Freyr goddess of fertility"
+select_personal_deity_germanic_decision.select_njordr:0 "Njordr god of wealth and trade"
+select_personal_deity_germanic_decision.select_nornir:0 "Nornir god of War"
+select_personal_deity_germanic_decision.select_mimir:0 "Mímir although he's not always recognized as god he has much knowledge"
+
+
+solstice_summer_decision:0 "Hold Summer Solstice"
+solstice_summer_decision_tooltip:1 "Hold Summer Solstice"
+solstice_summer_decision_desc:0 "As the winds begin to chill and the Seas begin to rise, A stormy Horizon looks to the people of the [ROOT.Char.GetPrimaryTitle.GetName], In order to ensure a bountiful harvest and for keeping the realm united, I must convene an audience with the gods before the Winter-Spirits arrive and Snow covers the land."
+solstice_summer_decision_confirm:1 "Prepare the Realm"
+
+solstice_winter_decision:0 "Hold Winter Solstice"
+solstice_winter_decision_tooltip:1 "Hold Winter Solstice"
+solstice_winter_decision_desc:0 "The air has begun to warm slowly as the new year begins, A bright future looks to the people of the [ROOT.Char.GetPrimaryTitle.GetName] in order to ensure this future i must ask the gods and the spirits for their blessings before the new season begins."
+solstice_decision_confirm:0 "Gather the realm for the Solstice"
+solstice_winter_decision_confirm:1 "Prepare the Realm"

@@ -1,0 +1,10 @@
+﻿l_french:
+#####################
+#Made by tom5667 
+######################
+
+#Request Auspice decision -> pr_decision_view_widget_request_auspice.gui
+REQUEST_AUSPICE_DECISION_SELECT_AUSPICE_TITLE:0 "Auspices"
+auspice_info:0 "Auspices"
+PR_DECISION_SELECT_Decision_TITLE:0 "Choose Offer"
+prdecision_info:0 "Offers"

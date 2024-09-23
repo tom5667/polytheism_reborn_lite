@@ -862,6 +862,7 @@ e_spain = {
 			OR = {
 				religion = religion:roman_religion
 				religion = religion:hellenism_religion
+				religion = religion:celtic_religion
 			}
 			
 		}
@@ -871,6 +872,7 @@ e_spain = {
 					OR = {
 						religion = religion:roman_religion
 						religion = religion:hellenism_religion
+						religion = religion:celtic_religion
 					}	
 				}
 				add = @correct_culture_primary_score
@@ -898,6 +900,7 @@ e_spain = {
 			OR = {
 				religion = religion:roman_religion
 				religion = religion:hellenism_religion
+				religion = religion:celtic_religion
 			}
 			
 		}
@@ -907,10 +910,75 @@ e_spain = {
 					OR = {
 						religion = religion:roman_religion
 						religion = religion:hellenism_religion
+						religion = religion:celtic_religion
 					}	
 				}
 				add = @correct_culture_primary_score
 			}
+		}
+	}
+}
+
+k_pr_galatia = {
+	color = { 199 102 50 }
+	capital = c_galatia
+	definite_form = yes
+	can_be_named_after_dynasty = no
+	ruler_uses_title_name = yes
+	landless = no
+
+	can_create = {
+		OR = {
+			religion = religion:celtic_religion
+			religion = religion:roman_religion
+			religion = religion:hellenism_religion
+		}
+		
+	}
+	d_pr_galatia_inferior = {
+		capital = c_hadrianopolis
+		definite_form = yes
+		can_be_named_after_dynasty = no
+		ruler_uses_title_name = yes
+		landless = no
+	
+		can_create = {
+			OR = {
+				religion = religion:celtic_religion
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+			
+		}
+	}
+
+	d_pr_galatia_superior = {
+		capital = c_lower_galatia
+		definite_form = yes
+		can_be_named_after_dynasty = no
+		ruler_uses_title_name = yes
+		landless = no
+	
+		can_create = {
+			OR = {
+				religion = religion:celtic_religion
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+			
+		}
+	}
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					religion = religion:celtic_religion
+					religion = religion:roman_religion
+					religion = religion:hellenism_religion
+				}	
+			}
+			add = @correct_culture_primary_score
 		}
 	}
 }

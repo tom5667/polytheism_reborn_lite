@@ -1271,7 +1271,6 @@ old_irish_culture_decision = {
 		base = 100
 	}
 }
-
 #Embrace ancient local gaulish culture
 gaulish_culture_decision = {
 	picture = "gfx/interface/illustrations/decisions/celts.dds"
@@ -1458,25 +1457,30 @@ push_out_the_sassenach_saga_decision = {
 	desc =  push_out_the_sassenach_decision_desc
 	is_shown = {
 		#religion = religion:celtic_religion
-		OR =  {
-			culture = { has_cultural_pillar = heritage_goidelic }
-			culture = { has_cultural_pillar = heritage_brythonic }
-		}
-		OR = {
-			any_neighboring_top_liege_realm_owner = { #If there are neighbouring counts with central germanic culture the decision should be available.
-				culture = { has_cultural_pillar = heritage_central_germanic } 
-				count >= 1
+		And = {
+			Not = {
+				has_character_flag = triggered_push_out_sassanach_this_lifetime
+			}	
+			OR =  {
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_brythonic }
 			}
-			any_neighboring_top_liege_realm_owner = { #If there are neighbouring counts with north germanic culture the decision should be available.
-				culture = { has_cultural_pillar = heritage_north_germanic } 
-				count >= 1
-				
-			}
+			OR = {
+				any_neighboring_top_liege_realm_owner = { #If there are neighbouring counts with central germanic culture the decision should be available.
+					culture = { has_cultural_pillar = heritage_central_germanic } 
+					count >= 1
+				}
+				any_neighboring_top_liege_realm_owner = { #If there are neighbouring counts with north germanic culture the decision should be available.
+					culture = { has_cultural_pillar = heritage_north_germanic } 
+					count >= 1
+					
+				}
 
+			}
 		}
 		
 	}
-	#cooldown = { years = 10 }
+	#cooldown = 
 	is_valid = {
 		OR =  {
 			culture = { has_cultural_pillar = heritage_goidelic }
@@ -1745,6 +1749,112 @@ celtic_conquest_galicia_decision = {
 		add_to_global_variable_list = {
 			name = conquest_galicia
 			target = flag:flag_conquest_galicia
+		}
+		trigger_event = celtic.015
+
+	}
+	ai_check_interval = 90
+
+	ai_potential = {
+		always = yes
+
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+celtic_conquest_of_belgae = {
+	picture = "gfx/interface/illustrations/decisions/celts.dds"
+	major = yes
+	desc =  celtic_conquest_galicia_decision_desc
+	is_shown = {
+		AND = {
+			religion = religion:celtic_religion
+			OR =  {
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_brythonic } 
+			}
+			has_title = title:e_celtic_empire
+			has_title = title:k_brittany
+
+		}
+
+	}
+	is_valid = { 
+		completely_controls = title:d_julich 
+		completely_controls = title:b_geldern
+		completely_controls = title:d_brabant
+		completely_controls = title:d_luxembourg
+		completely_controls = title:c_zeeland
+		completely_controls = title:d_flanders
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = conquest_belgae
+			target = flag:flag_conquest_belgae
+		}
+		trigger_event = celtic.015
+
+	}
+	ai_check_interval = 90
+
+	ai_potential = {
+		always = yes
+
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+
+}
+
+celtic_conquest_of_gaul = { 
+	picture = "gfx/interface/illustrations/decisions/celts.dds"
+	major = yes
+	desc =  celtic_conquest_galicia_decision_desc
+	is_shown = {
+		AND = {
+			religion = religion:celtic_religion
+			OR =  {
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+			}
+			has_title = title:e_celtic_empire
+			has_title = title:k_brittany
+			has_title = title:k_belgica
+		}
+
+	}
+
+	is_valid = {
+		completely_controls = title:d_valois
+		# completely_controls = title:d_upper_lorraine
+		# completely_controls = title:d_lower_lorraine
+		completely_controls = title:d_bar
+		completely_controls = title:d_savoie
+		completely_controls = title:d_berry
+		completely_controls = title:d_transjurania
+		completely_controls = title:d_upper_burgundy
+		completely_controls = title:d_anjou 
+		completely_controls = title:d_normandy
+		completely_controls = title:d_orleans
+		completely_controls = title:d_champagne
+		completely_controls = title:d_burgundy
+		completely_controls = title:d_brittany
+		completely_controls = title:d_aquitaine
+		completely_controls = title:d_poitou
+		completely_controls = title:d_auvergne
+		completely_controls = title:d_bourbon
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = conquest_gaul
+			target = flag:flag_conquest_gaul
 		}
 		trigger_event = celtic.015
 

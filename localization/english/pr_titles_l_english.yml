@@ -6,6 +6,11 @@
  #High kingdom of ireland 
  k_high_kingdom_of_ireland:0 "High Kingdom of Ireland"
 
+
+ d_pr_galatia_inferior:0 "Galatia Inferior"
+ d_pr_galatia_superior:0 "Galatia Superior"
+ k_pr_galatia:0 "Galatia"
+
  #Celtic empire
  e_celtic_empire:0 "Celtic"
  #Kingdom of Carthago

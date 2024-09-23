@@ -85,6 +85,11 @@
  avestan:0 "Avestan"
  avestan_prefix:0 "Avestan"
  avestan_collective_noun:0 "Avestans"
+#Old persian 
+ old_persian:0 "Parsi"
+ old_persian_prefix:0 "Parso"
+ old_persian_collective_noun:0 "Parsians"
+ old_persian_history_loc:0 "The [iranian|E], Non-Dari influenced culture of Pars during the time of the Achaemenid Empire"
 #Graeco Persian
  graeco_persian:0 "Graeco Persian"
  graeco_persian_prefix:0 "Graeco Persian"

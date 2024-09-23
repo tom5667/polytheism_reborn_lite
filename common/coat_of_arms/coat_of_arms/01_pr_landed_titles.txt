@@ -52,17 +52,77 @@ k_high_kingdom_of_ireland = {
 }
 #Scotland
 k_scotland_polytheistic = {
-	pattern =  "pattern_solid.dds"
-	color1 = "green_light"
 
-	colored_emblem = {
-		texture = "ce_scotland_polytheism.dds"
-		color1 = "yellow"
-		color2 = "red"
-		color3 = "black"
-		instance = { position = { 0.5 0.40 } scale = { 0.75 0.75 }  }
+	pattern="pattern__solid_designer.dds"
+	color1=green_light
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=white
+		texture="ce_triskel.dds"
+		instance={
+			position={ 0.270000 0.200000 }
+			scale={ 0.380000 0.380000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=blue
+		color3=blue_light
+		texture="ce_lion_rampant_holding_sword.dds"
+		instance={
+			position={ 0.605000 0.490000 }
+			scale={ 0.780000 0.780000 }
+			depth=1.010000
+		}
 	}
 }
+
+k_wales_polytheistic = {
+	pattern="pattern_horizontal_split_01.dds"
+	color1=white
+	color2=green_light
+	color3=black
+	colored_emblem={
+		color1=red
+		color2=white
+		texture="ce_welsh_dragon.dds"
+		instance={
+			position={ 0.500000 0.495000 }
+			scale={ 0.770000 0.770000 }
+		}
+	}
+}
+
+k_england_polytheistic = {
+	pattern="pattern_solid.dds"
+	color1=green_light
+	color2=yellow
+	color3=black
+	colored_emblem={
+		color1=yellow_light
+		texture="ce_runic_circle_frame.dds"
+		instance={
+			position={ 0.490000 0.495000 }
+			scale={ 0.630000 0.630000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow_light
+		texture="ce_triskel_02.dds"
+		instance={
+			scale={ 0.510000 0.510000 }
+			depth=1.010000
+		}
+
+	}
+}
+
+
 #Kingdom of Carthago
 k_carthago = {
 	pattern =  "pattern_solid.dds"
@@ -133,15 +193,31 @@ k_lower_egypt = {
 }
 
 #Greek polytheistic 
+# e_byzantium_polytheistic ={ 
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "purple"
+# 	colored_emblem = {
+# 		texture = "ce_alternative_byzantine_laurels.dds"
+# 		color1 = "yellow"
+# 		color2 = "yellow"
+# 		color3 = "red"
+# 		instance = {position = { 0.50 0.40 } scale = { 0.9 0.9 } }
+# 	}
+# }
+
 e_byzantium_polytheistic ={ 
-	pattern = "pattern_solid.dds"
-	color1 = "purple"
-	colored_emblem = {
-		texture = "ce_alternative_byzantine_laurels.dds"
-		color1 = "yellow"
-		color2 = "yellow"
-		color3 = "red"
-		instance = {position = { 0.50 0.40 } scale = { 0.9 0.9 } }
+	pattern="pattern_solid.dds"
+	color1=purple
+	colored_emblem={
+		color1=yellow_light
+		color2=yellow
+		color3=red
+		texture="ce_roman_eagle.dds"
+		instance={
+			position={ 0.480000 0.470000 }
+			scale={ 0.880000 0.880000 }
+		}
+
 	}
 }
 
@@ -829,6 +905,17 @@ k_africa_polytheistic = {
 		instance = {position = { 0.5 0.39 } scale = { 0.8 0.8 } }
 	}
 }
+
+k_africa_canaanite = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_tanit.dds"
+		color1 = "red" 
+		instance = {position = { 0.48 0.45 } scale = { 0.8 0.8 } }
+	}
+}
+
 
 e_roman_empire_polytheistic = {
 	pattern = "pattern_solid.dds"

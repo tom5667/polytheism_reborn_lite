@@ -142,6 +142,22 @@ k_scotland = {
 		coat_of_arms = k_scotland_polytheistic
 	}
 }
+k_wales = {
+	item = {
+		trigger = {
+			coa_switch_to_polytheism_trigger = yes
+		}
+		coat_of_arms = k_wales_polytheistic
+	}
+}
+k_england = {
+	item = {
+		trigger = {
+			coa_switch_to_polytheism_trigger = yes
+		}
+		coat_of_arms = k_england_polytheistic
+	}
+}
 d_ephese = {
 	item = {
 		trigger = {

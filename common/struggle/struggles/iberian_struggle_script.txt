@@ -14,6 +14,7 @@
 		aragonese
 		celtic_iberian
 		iberian
+		romano_hispanic
 		# Southern
 		andalusian
 		
@@ -34,7 +35,7 @@
 		ashari muwalladi
 
 		#Polytheistic 
-		celtic_iberian_polytheism lusitanian_polytheism
+		celtic_iberian_polytheism lusitanian_polytheism romano_hispanic_polytheism
 	}
 	regions = { world_europe_west_iberia }
 

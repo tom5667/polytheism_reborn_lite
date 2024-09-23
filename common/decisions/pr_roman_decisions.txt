@@ -1852,9 +1852,10 @@ pr_offer_to_a_god_decision = {
 
  		OR = {
 			AND = {
-				has_trait = cdr_cmd1_religion #Iupiter
+				has_trait = cdr_cmd1_religion #Iupiter			
 				any_character_artifact = {
 					has_artifact_modifier = pr_statue_jupiter
+					#has_variable = pr_jupiter_statue
 				}
 			}
  			AND = {
@@ -1921,6 +1922,7 @@ pr_offer_to_a_god_decision = {
 				ai_chance = {
 					value = 30
 				}
+				save_scope_as = prdecision_incense_offering 
 			}
 			#Wine
 			item = {
@@ -2127,7 +2129,7 @@ pr_offer_to_a_god_decision = {
 		effect = {
 			if = {
 				limit = {
-					scope:prdecision_wine_offering= yes
+					scope:pr_wine_offering = yes
 				}
 				set_variable = {
 					name = pr_ritual
@@ -2137,7 +2139,7 @@ pr_offer_to_a_god_decision = {
 			}
 			else_if = {
 				limit = {
-					scope:prdecision_milk_offering = yes
+					scope:pr_milk_offering = yes
 				}
 				set_variable = {
 					name = pr_ritual 
@@ -2146,7 +2148,9 @@ pr_offer_to_a_god_decision = {
 			}
 			else_if = {
 				limit = {
-					scope:prdecision_incense_offering = yes
+					
+					#scope:prdecision_incense_offering = yes
+					scope:pr_incense_offering = yes
 				}
 				set_variable = {
 					name = pr_ritual 
@@ -2155,7 +2159,7 @@ pr_offer_to_a_god_decision = {
 			}
 			else_if = {
 				limit = {
-					scope:prdecision_figs_offering = yes
+					scope:pr_figs_offering = yes
 				}
 				set_variable = {
 					name = pr_ritual 
@@ -2164,7 +2168,7 @@ pr_offer_to_a_god_decision = {
 			}
 			else_if = {
 				limit = {
-					scope:prdecision_roses_offering = yes
+					scope:pr_roses_offering = yes
 				}
 				set_variable = {
 					name = pr_ritual 
@@ -2173,7 +2177,7 @@ pr_offer_to_a_god_decision = {
 			}
 			else_if = {
 				limit = {
-					scope:prdecision_fruit_offering = yes
+					scope:pr_fruit_offering = yes
 				}
 				set_variable = {
 					name = pr_ritual 
@@ -2182,7 +2186,7 @@ pr_offer_to_a_god_decision = {
 			}
 			else_if = {
 				limit = {
-					scope:prdecision_vegetables_offering = yes
+					scope:pr_vegetables_offering = yes
 				}
 				set_variable = {
 					name = pr_ritual 
@@ -2191,7 +2195,7 @@ pr_offer_to_a_god_decision = {
 			}
 			else_if = {
 				limit = {
-					scope:prdecision_spelt_offering = yes
+					scope:pr_spelt_offering = yes
 				}
 				set_variable = {
 					name = pr_ritual 
@@ -2200,7 +2204,7 @@ pr_offer_to_a_god_decision = {
 			}
 			else_if = {
 				limit = {
-					scope:prdecision_olives_offering = yes
+					scope:pr_olives_offering = yes
 				}
 				set_variable = {
 					name = pr_ritual 
@@ -2209,7 +2213,7 @@ pr_offer_to_a_god_decision = {
 			}
 			else_if = {
 				limit = {
-					scope:prdecision_honey_offering = yes
+					scope:pr_honey_offering = yes
 				}
 				set_variable = {
 					name = pr_ritual 
@@ -2602,6 +2606,194 @@ pr_western_roman_empire = {
 		prestige = {
 			value = major_prestige_gain
 			multiply = 0.5
+			round = yes
+		}
+	}
+
+	ai_potential = {
+
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+reform_galatia_part_decision = {
+	major = yes
+	desc = reform_galatie_decision_desc
+	selection_tooltip = reform_galatie_decision_tooltip
+	picture = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
+	ai_check_interval = 4
+	is_shown = {
+		has_game_rule = pr_ancient_kingdoms_decisions_on
+		is_ruler = yes
+		is_landed = yes
+		AND = {
+			OR = {
+				has_title = title:e_byzantium
+				has_title = title:e_pr_western_roman_empire
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:flag_reform_galatie
+			}
+		}
+	}
+	is_valid = {
+		AND = {
+			OR = {
+				religion = religion:hellenism_religion
+				religion = religion:roman_religion
+			}
+			OR = {
+				has_title = title:e_byzantium
+				has_title = title:e_pr_western_roman_empire
+			}
+		}
+
+		completely_controls = title:c_galatia
+		completely_controls = title:c_galatia_inferior
+		completely_controls = title:c_galatia_salutaris
+		completely_controls = title:c_pacatiana 
+		completely_controls = title:c_philomelium 
+		completely_controls = title:c_lycaonia
+		completely_controls = title:c_lower_galatia
+	}
+    is_valid_showing_failures_only = {
+    	is_capable_adult = yes
+    	is_imprisoned = no
+    	is_independent_ruler = yes
+    }
+	effect = {
+		title:c_galatia = { save_scope_as = galatia }
+		title:c_galatia_inferior = { save_scope_as = galatia_inferior }
+		title:c_galatia_salutaris = { save_scope_as = galatia_salutaris }
+		title:c_pacatiana  = { save_scope_as = pacatiana }
+		title:c_philomelium  = { save_scope_as = philomelium }
+		title:c_lycaonia  = { save_scope_as = lycaonia }
+		title:c_lower_galatia  = { save_scope_as = lower_galatia }
+		title:c_hadrianopolis = { save_scope_as = hadrianopolis}
+		title:c_pompeiopolis = { save_scope_as = pompeiopolis}
+
+
+		custom_tooltip = create_reform_galatia_effect_tooltip
+
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = yes
+		}
+		title:c_galatia= {
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		title:c_galatia_inferior= {
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		title:c_galatia_salutaris= {
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		title:c_pacatiana = {
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		title:c_philomelium = {
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		title:c_lycaonia = {
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		title:c_lower_galatia = {
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		title:c_hadrianopolis = {
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		title:c_pompeiopolis = {
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		title:d_pr_galatia_inferior= {
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		title:d_pr_galatia_superior= {
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		title:k_pr_galatia = {
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+	    
+		resolve_title_and_vassal_change = scope:title_change
+		#d_pr_galatia_inferior 
+		#d_pr_galatia_superior
+
+		title:c_galatia = { set_de_jure_liege_title = title:d_pr_galatia_inferior   }
+		title:c_galatia_inferior = { set_de_jure_liege_title = title:d_pr_galatia_inferior  }
+		title:c_hadrianopolis  = { set_de_jure_liege_title = title:d_pr_galatia_inferior  }
+		title:c_pompeiopolis = { set_de_jure_liege_title = title:d_pr_galatia_inferior  }
+		title:c_galatia_salutaris = { set_de_jure_liege_title = title:d_pr_galatia_superior }
+		title:c_c_lycaonia= { set_de_jure_liege_title = title:d_pr_galatia_superior }
+		title:c_lower_galatia = { set_de_jure_liege_title = title:d_pr_galatia_superior   }
+		title:c_philomelium = { set_de_jure_liege_title = title:d_pr_galatia_superior  }
+		title:c_pacatiana = { set_de_jure_liege_title = title:d_pr_galatia_superior  }
+		#title:c_galatia = { set_de_jure_liege_title = title:d_pr_galatia_superior   }
+
+		title:d_pr_galatia_inferior = { set_de_jure_liege_title = title:k_pr_galatia }
+		title:d_pr_galatia_superior = { set_de_jure_liege_title = title:k_pr_galatia }
+		title:k_pr_galatia = { set_de_jure_liege_title = title:e_byzantium }
+
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_reform_galatie
+			}
+		}
+	}
+	cost = {
+		gold = {
+			value = major_gold_value
+			multiply = 0.9
+			round = yes
+		}
+		prestige = {
+			value = major_prestige_gain
+			multiply = 0.6
 			round = yes
 		}
 	}

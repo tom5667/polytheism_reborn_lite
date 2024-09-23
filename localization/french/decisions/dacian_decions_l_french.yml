@@ -1,0 +1,48 @@
+﻿l_french:
+#####################
+#Made by tom5667 
+######################
+
+# Choose main deity
+choose_main_deity_dacian_decision:0 "Choose your main deity"
+choose_main_deity_dacian_decision_tt:0 "You begin to live your life according to the values of"
+select_main_deity_dacian_decision.select_gebeleizis:0 "Gebeleizis high god of the dacians"
+select_main_deity_dacian_decision.select_zalmoxis:0 "Zalmoxis god of afterlife and wisdom"
+select_main_deity_dacian_decision.select_dionysus:0 "Dionysus god of fertility and harvest"
+select_main_deity_dacian_decision.select_pleistoros:0 "Pleistoros god of war"
+select_main_deity_dacian_decision.select_derzelas:0 "Derzales god of health"
+choose_main_deity_dacian_decision_tooltip:1 "Choose main god(dess)"
+choose_main_deity_dacian_decision_confirm:1 "Choose main god(dess)"
+
+dacian_edc_decision:0 "Embrace Daciand or Thracian Culture"
+dacian_edc_decision_desc:0 "We have our old religion back now it's time reintroduce the Dacian or Thracian virtues."
+dacian_edc_decision_tooltip:0 "Return one of the cultures"
+dacian_edc_decision_confirm:0 "confirm"
+
+kingdom_of_dacia:0 "Restore Kingdom of Dacia"
+kingdom_of_dacia_desc:0 "For far too long the Carpathian has been under control of our enemies were our ancestors lived and fought for."
+kingdom_of_dacia_effect_tooltip:0 "Restored Kigdom of Dacia"
+create_dacia_effect_tooltip:1 "It's time to reclaim the Kingdom of Dacia"
+kingdom_of_dacia_tooltip:1 "It's time to reclaim Dacia"
+kingdom_of_dacia_confirm:0 "Create Kingdom of Dacia"
+
+odrysian_kingdom_decision:0 "Restore Odrysian Kingdom"
+odrysian_kingdom_decision_desc:0 "For far too long the Odrysian lands has been under control of our enemies were our ancestors lived and fought for."
+odrysian_kingdom_decision_effect_tooltip:0 "Restored Odrysian Kingdom"
+create_dacia_effect_tooltip:1 "It's time to reclaim the Odrysian Kingdom"
+odrysian_kingdom_decision_tooltip:1 "It's time to reclaim Odrysian lands"
+odrysian_kingdom_decision_confirm:0 "Create Odrysian Kingdom"
+
+set_capital_sarmizegetusa_decision:0 "Make Sarmizegetusa Capital"
+set_capital_sarmizegetusa_decision_desc:0 "Make Sarmizegetusa the capital of Dacia"
+set_capital_sarmizegetusa_decision_tooltip:1 "Change capital to Sarmizegetusa"
+set_capital_sarmizegetusa_decision_confirm:0 "Change Capital"
+
+set_capital_seuthopolis_decision:0 "Make Seuthopolis Capital"
+set_capital_seuthopolis_decision_desc:0 "Make Seuthopolis the capital of the Odrysian kingdom"
+set_capital_seuthopolis_decision_tooltip:1 "Change capital to Seuthopolis"
+set_capital_seuthopolis_decision_confirm:0 "Change Capital"
+
+zalmoxism_human_sacrifice_decision:0 "Human Sacrifice To Zalmoxis"
+zalmoxism_human_sacrifice_desc:0 "As we are at war, we can choose to perform a human sacrifice to Zalmoxis. This will give our armies a significant bonus in battle."
+zalmoxism_human_sacrifice_decision_confirm:0 "Choose Fierest Warrior"
