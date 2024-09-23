@@ -548,13 +548,13 @@ set_bhakti_effect = {
 			remove_character_modifier = gaelic_brigid
 			add_piety = massive_piety_loss
 		}
-		# else_if = {	
-		# 	limit = {
-		# 		has_character_modifier = gaelic_the_morrighan 
-		# 	}
-		# 	remove_character_modifier = gaelic_the_morrighan
-		# 	add_piety = massive_piety_loss
-		# }
+		else_if = {	
+			limit = {
+				has_character_modifier = gaelic_nemain
+			}
+			remove_character_modifier = gaelic_nemain
+			add_piety = massive_piety_loss
+		}
 		else_if = {	
 			limit = {
 				has_character_modifier = gaelic_ecna
