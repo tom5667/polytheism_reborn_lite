@@ -6,3 +6,12 @@
 		}
 	}
 }
+
+coa_switch_to_roman_trigger = {
+	holder = {
+		NOT = {
+			faith.religion = religion:christianity_religion
+		}
+	}
+
+}

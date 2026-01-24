@@ -318,7 +318,7 @@ embrace_culture.005.a:0 "Embrace the Hispano Roman culture"
   cdr_otv.001.a:0 "Finaly the ethernal flame burns again"
 
   saturnalia.001.t:0 "Saturnalia"
-  saturnalia.001.desc:0 "The 17th of december has finally come, all businesses are closed and all harvests are in. Today we honer Saturn and do we thank the gods for the harvest of this year. After we held the rituals we exchanged gifts with eachother and is it time for the festivities."
+  saturnalia.001.desc:0 "The 17th of December has finally arrived, marking the closure of businesses and the completion of the year's harvest. Today, we honor Saturn and express our gratitude to the gods for the bountiful harvest. Following the sacred rituals, we exchange gifts with one another and immerse ourselves in joyous festivities."
   saturnalia.001.a:0 "Gather the realm for Saturnalia"
 
   cult.001.t:0 "Cults"
@@ -329,6 +329,7 @@ embrace_culture.005.a:0 "Embrace the Hispano Roman culture"
   cult.001.eluesinian:0 "Eluesinian Cult"
   cult.001.sol_invictus:0 "Sol Invictus cult"
   cult.001.imperial:0 "Imperial cult"
+  cult.001.cybele:0 "Cybele cult"
   cult.001.optout:0 "Maybe now isn't the right time"
 
   #Join Mithras cult 
@@ -357,15 +358,15 @@ embrace_culture.005.a:0 "Embrace the Hispano Roman culture"
 
   #Isis cult
   cult.007.t:0 "The Dream"
-  cult.007.desc:0 "Some days ago I had a dream about a goddess, She told me to travel to Tithorea a city in greece. When I to go to the Isis temple there."
-  cult.007.a:0 "Travel to Tithorea"
+  cult.007.desc:0 "I had the strangest dream last night. It felt so real, like a message. Whispers of a powerful goddess, Isis, reached me on the wind. The dream urged me to travel to Tithorea in Greece, to find her temple. It feels like more than just a dream; it feels like a calling."
+  cult.007.a:0 "Follow the Whispers"
 
   cult.008.t:0 "Arriving At Tithorea"
-  cult.008.desc:0 "I Finaly arrived in Tithorea and managed to find the temple of Isis there."
+  cult.008.desc:0 "The journey to Tithorea was long, but the dream's pull was undeniable.\n\nFinally, I stand before the Temple of Isis. It's weathered and ancient, holding secrets I can almost feel in the air. A sense of anticipation, and maybe a little fear, grips me as I approach the entrance."
   cult.008.a:0 "Enter the temple"
 
   cult.009.t:0 "Temple Of Isis"
-  cult.009.desc:0 "Welcome to the temple of The great mother goddess Isis./nAs you know she is goddess of healing and magic, So you say you saw the goddess in your dream and she told you to go here? good, after paying 100 gold you may proceed you will need to undergo the initiation. I want you to know that you still may honor other gods and goddesses next to Isis and this initiation will take 10 days. When you're ready we can start, follow me downstars further into the temple."
+  cult.009.desc:0 "Inside, the air is thick with incense and the murmur of unseen worshippers. A priestess, her eyes deep and knowing, greets me. She seems to have been expecting me. 'The Mother has called you,' she says, her voice a silken whisper. 'Are you ready to embrace her mysteries?' A shiver runs down my spine. This is far beyond a simple pilgrimage; this is a true test."
   cult_009.a.tt:0 "Historical context, the real initiation has not been preserved, there are sources that say a initiation wasn't necessary.So it's a bit guessing and pure fiction."
   cult.009.a:0 "start the initiation"
 
@@ -376,73 +377,85 @@ embrace_culture.005.a:0 "Embrace the Hispano Roman culture"
 
   #Serapis Cult
   cult.011.t:0 "Preparations"
-  cult.011.desc:0 "Travel to a nearby Serapeum to get in contact with the priest to get your initiation into the cult"
-  cult.011.a:0 "Travel to the Serapeum"
+  cult.011.desc:0 "For weeks, my sleep has been plagued by the same vision. A majestic, bearded figure, a grain-measure resting on his head like a crown, sits enthroned. At his feet lies the monstrous three-headed hound, Cerberus. He does not speak, but his gaze is heavy with unspoken meaning, a mix of promise and warning. He shows me fleeting images":" fields of golden wheat, a ship laden with grain, and a peaceful journey into a sunlit afterlife. The dream leaves me feeling both hopeful and deeply unsettled. I must understand its meaning."
+  cult.011.a:0 "I will seek an interpreter of dreams."
 
-  cult.012.t:0 "Arriving At Serapeum"
-  cult.012.desc:0 "I Finaly arrived the local Serapeum."
-  cult.012.a:0 "Enter the Serapeum"
+  cult.012.t:0 "The Seeker's Path"
+  cult.012.desc:0 "The dream interpreter, a wise old mystic, listened intently. 'This is no mere dream,' she whispered, her eyes wide. 'It is a summons from the Great Serapis. He is a guide for souls and a bringer of plenty. He calls you to his temple, not one of grand stone, but a hidden place of quiet devotion. The path is not on any map; you must let the memory of your dream guide you.' Following this cryptic advice, I set out, my heart a mix of trepidation and purpose."
+  cult.012.a:0 "My journey begins."
 
   cult.013.t:0 "The Serapeum"
-  cult.013.desc:0 "Welcome to the temple of Serapis, you want to get initiated into the cult, great follow me downstairs you will be amased by the prosperty Serapis brings to his true followers."
+  cult.013.desc:0 "After what felt like an eternity, I found it. Tucked away in a secluded valley, a modest temple stood, its entrance flanked by statues matching the figures from my dream. A priest, his face serene, greeted me as if I were an old friend. 'The dream has led you true,' he said. 'Serapis has chosen you. He offers a life of abundance and a tranquil afterlife, but initiation demands a test of faith. You must spend a night in the incubation chamber, to dream once more and receive his final blessing. Are you prepared?'"
   cult.013.a.tt:0 "Historical context, the real initiation has not been preserved so it's a bit guessing and pure fiction."
-  cult.013.a:0 "Start the initiation"
+  cult.013.a:0 "I will face the dream."
 
   cult.014.t:0 "The Initiation"
-  cult.014.desc:0 "We stand before the statue of Serapis,Now ofer in a proper way to Serapis and say the following words, I swear I will always follow the ways of Serapis and will never betray my brothers and sisters. A few moments later it's all done."
-  cult.014.trait:0 "Finaly I'm part of the Serapis cult"
-  cult.014.religion:0 "Finaly I'm part of the Serapis cult"
+  cult.014.desc:0 "I was led to a small, dark chamber and left alone. As I drifted to sleep, the dream returned, clearer than ever. Serapis smiled, and the hound at his feet seemed to nod in approval. I awoke to the priest standing over me. 'You have been accepted,' he declared. I was then led to the inner sanctum, where I was anointed with oils and shared a meal of bread and wine with the other devotees. I swore an oath of secrecy and brotherhood. The priest placed a hand on my shoulder. 'Welcome, child of Serapis. May your life be as bountiful as the Nile.'"
+  cult.014.trait:0 "I am reborn in the eyes of Serapis!"
+
 
 
   #Eluesinian mysteries 
-  cult.015.t:0 "Prepartion"
-  cult.015.desc:0 "Since the GreacoRoman religions are back the elusinian mysteries are growing fast in numbers, it's time i'm to take a closer look at it."
-  cult.015.a:0 "Travel to Eleusis"
+  cult.015.t:0 "A Glimmer of Hope"
+  cult.015.desc:0 "Lately, my thoughts have been consumed by the grim finality of death. The tales of the shadowy, joyless underworld offer no comfort. In my search for solace, I have heard whispers of the Eleusinian Mysteries, a sacred cult dedicated to Demeter and Persephone. They say that for initiates, the afterlife is not a place of gloom, but one of blissful reunion. The path to this understanding begins with a pilgrimage to the holy site of Eleusis. I must know more."
+  cult.015.a:0 "I will make the journey to Eleusis."
 
-  cult.016.t:0 "Arriving At Eleusís"
-  cult.016.desc:0 "Once I got to Eleusis there where festivities going on, after watching the it for a few minutes a priestess came to me."
-  cult.016.a:0 "Talk with the priestess"
+  cult.016.t:0 "The Sacred Way"
+  cult.016.desc:0 "I arrive in Eleusis to find a procession underway. A priestess, a Hierophant, notices my searching gaze. 'You seek to understand the cycle of life and death, do you not? You seek the hope that Demeter grants to her children. The path of the initiate is one of purification and revelation. You must first be cleansed and taught the Lesser Mysteries, preparing your soul for the great truth that awaits. Are you ready to take the first step?'"
+  cult.016.a:0 "I am. Guide me."
 
-  cult.017.t:0 "Eluesinian Priestess"
-  cult.017.desc:0 "Greetings, it seems you're interested in the festivities ? If you like I could tell you more about it.\nSome time later, you asked the priestess if you could do the initiation."
+  cult.017.t:0 "The Kykeon"
+  cult.017.desc:0 "After days of fasting and ritual cleansing, the Hierophant leads me to the entrance of the Telesterion, the great initiation hall. 'You have been purified,' she intones. 'Now, you must drink the 'italic kykeon'!, the sacred brew that parts the veil between our world and the divine. It will open your mind to what must be seen. Do not be afraid. Demeter's light will guide you through the darkness.' She offers me a simple earthenware cup containing a grainy, mint-scented mixture."
   cult_017.a.tt:0 "Historical context, the real initiation has not been preserved so it's a bit guessing and pure fiction."
-  cult.017.a:0 "start the initiation"
+  cult.017.a:0 "I drink without hesitation."
 
-  cult.018.t:0 "The Initiation"
-  cult.018.desc:0 "We stand before the statue of Persephone and Demeter,Now ofer in a proper way to both and say the following words, I swear I will always follow the ways of Demeter and Persephone and will never betray my brothers and sisters. A few moments later it's all done."
-  cult.018.trait:0 "Finaly I'm part of the Eleusinian cult"
-  cult.018.religion:0 "Finaly I'm part of the Eleusinian cult"
-  
+  cult.018.t:0 "The Vision"
+  cult.018.desc:0 "The world dissolves into a whirlwind of light and shadow. I witness the sorrow of a mother's loss, the descent into the darkness of the underworld, and the glorious, vibrant rebirth of spring. I see Persephone, crowned with asphodel, and Demeter, her face radiant with joy. The vision is overwhelming, a profound truth that words cannot capture. When I return to my senses, the Hierophant is smiling. 'You have seen. You are one of us now. Carry this hope in your heart, for you no longer need to fear the final journey.'"
+  cult.018.trait:0 "I have seen the truth of the Mysteries."
+
   #Sol invictus cult
-  cult.019.t:0 "Prepartion"
-  cult.019.desc:0 "The cult of Sol is one of the oldest cults of the Roman empire, given a new popularity boost by Emperor Aurelian in 274 CE.\nI realy want to know more about it."
-  cult.019.a:0 "Travel to local temple of Sol"
+ cult.019.t:0 "The Weight of a Crown"
+  cult.019.desc:0 "My realm is a tapestry of dissent and chaos. Vassals scheme in the shadows, and the loyalty of my subjects feels as fleeting as a summer breeze. In search of a solution, I have buried myself in the histories of the great emperors. I have just finished reading an account of Aurelian, 'Restorer of the World.' He faced an empire on the brink of collapse and, through sheer will, brought it back to glory. The chronicler notes that a key to his success was the establishment of the cult of Sol Invictus, the Unconquered Sun, as a divine anchor for the state. An idea takes root in my mind":" perhaps this is the unifying light my own realm needs."
+  cult.019.a:0 "I must find the inheritors of this Unconquered Sun."
 
-  cult.020.t:0 "Arriving At Temple Of Sol"
-  cult.020.desc:0 "When arriving at the local temple there is a major difference between the traditional temples and the one for sol (Invictus), it's an open air temple."
-  cult.020.a:0 "enter the temple"
+  cult.020.t:0 "The Fading Embers"
+  cult.020.desc:0 "My search for the followers of Sol Invictus has been arduous. The cult, once the heart of an empire, has faded into obscurity. After many dead ends, my agents finally located a small, secluded community that still honors the Unconquered Sun. They are led by a man who calls himself the Hierophant, a former soldier who claims his lineage traces back to the priests of Aurelian. He has agreed to meet me, but his message was clear":" 'Only those who truly understand the burden of rule are worthy of Sol's light.'"
+  cult.020.a:0 "I will meet this Hierophant."
 
-  cult.021.t:0 "Sol Priest"
-  cult.021.desc:0 "Greetings, what brings you here today? you want to know more about this cult, sure. after some time the priest asked, If you want you can join me in a  offer to the Unconquered Sun. After you have done this you can name yourself part of the Sol cult,"
+  cult.021.t:0 "The Radiance of Power"
+  cult.021.desc:0 "The Hierophant is a man forged from steel and sunlight, his eyes burning with an intense fire. 'You seek order in chaos, strength in division,' he states, not as a question, but as a fact. 'Sol Invictus is not a god of petty favors. He is the divine principle of order, the eternal victor, the soul of the Empire. To follow him is to embody his radiance, to become an unconquerable pillar for your people. The initiation is simple, yet profound":" you must swear an oath, not just of loyalty, but of purpose. To uphold order, to be a light against the darkness, and to recognize the divine fire within yourself as a reflection of the Sun.' He extends a hand, upon which rests a simple bronze medallion depicting a radiant sun."
   cult_021.a.tt:0 "Historical context, Couldn't find any info about an initiation so this event is fictional, if someone has some more info let me know on steam or discord."
-  cult.021.trait:0 "Finaly I'm part of the Sol cult"
-  cult.021.religion:0 "Finaly I'm part of the Sol cult"
+  cult.021.trait:0 "I swear the oath. I will be Unconquered!"
 
 
   #Imperial cult 
-  cult.022.t:0 "Prepartion"
-  cult.022.desc:0 "Since the GreacoRoman religions are back the Imperial cult of couldn't stay behind of course, It's not only a religion but also a way to pay respect to a emperor and empress./n Everyone can join so it shouldn't be a problem."
-  cult.022.a:0 "Travel to local Imperial temple"
+  cult.022.t:0 "The Foundation of Power"
+  cult.022.desc:0 "My authority feels fragile, my legacy uncertain. My vassals whisper in the shadows, and the common folk are fickle. I have been studying the annals of the Roman Empire, seeking the source of its enduring strength. It was not just legions and laws, but something deeper":" the Imperial Cult. By elevating the Emperor to a divine status, they forged a bond of absolute loyalty that held the vast empire together. Perhaps this is the key to securing my own dynasty's future."
+  cult.022.a:0 "I must understand this divine mandate."
 
-  cult.023.t:0 "The Imeprial Temple"
-  cult.023.desc:0 "It's bussy in front of the temple almost like there is some kind of meeting. you walk pass the people and enter the temple."
-  cult.023.a:0 "enter the temple"
+  cult.023.t:0 "The Augustales"
+  cult.023.desc:0 "My inquiries lead me to a secluded college of priests, the Sodales Augustales. They have preserved the sacred rites of the Imperial Cult through the centuries. Their leader, a man of immense dignity, greets me. 'You seek to walk the path of the Divi, the deified emperors,' he says, his voice resonating with ancient authority. 'This is not a path of personal salvation, but of civic duty. It is to bind your soul to the fate of your realm, to become the living embodiment of its stability and glory. Are you prepared to bear such a weight?'"
+  cult.023.a:0 "I am."
 
-  cult.024.t:0 "Sacredos Augustales"
-  cult.024.desc:0 "Greetings, what brings you here today? you want to know more about this cult, sure. after some time the Augustales asked If you want to offer to the passed away emperors and empresses. After you have done this you can name yourself part of the Imperial cult, honor the emperors as you honor your ancestors and the gods."
+  cult.024.t:0 "The Divine Genius"
+  cult.024.desc:0 "The priest leads me to a grand temple, its walls adorned with the images of deified emperors of old. 'To join the Imperial Cult is to acknowledge the divine spark within you, your 'italic Genius'!,' he proclaims. 'It is the spirit that guides your hand and protects your people. You must make an offering not to a distant god, but to the divine potential of your own rule and the memory of those who came before.' He gestures to a grand altar. 'Swear an oath to uphold the prosperity of your realm, and you will be one of us. Your rule will be sacred, your legacy, eternal.'"
   cult_024.a.tt:0 "Historical context, Couldn't find any info about an initiation so this event is fictional, if someone has some more info let me know on steam or discord."
-  cult.024.trait:0 "Finaly I'm part of the imperial cult"
-  cult.024.religion:0 "Finaly I'm part of the imperial cult"
+  cult.024.trait:0 "My rule is divine. My legacy is secure."
+  cult.024.religion:0 "My rule is divine. My legacy is secure."
+
+  #Cybele Cult
+  cult.050.t:0 "A Primal Calling"
+  cult.050.desc:0 "My lands feel barren, my dynasty fragile. I feel a deep disquiet, a sense that the civilized gods have grown deaf to my prayers. Lately, when walking in the wild places of my domain, I hear it — a faint, rhythmic drumming on the wind, a sound that seems to rise from the very earth. It is a primal, powerful call that speaks of untamed nature, of life, death, and ferocious rebirth. Whispers among the peasantry speak of the Magna Mater, the Great Mother, whose power is as ancient and untamed as the mountains themselves."
+  cult.050.a:0 "I must find the source of this sound."
+
+  cult.051.t:0 "The Ecstatic Procession"
+  cult.051.desc:0 "Drawn by the incessant drumming, I find a procession snaking through a dark forest. It is a wild, frenzied affair. Cymbals clash, flutes shriek, and devotees, their eyes wide with ecstasy, dance and whirl. At their head is a figure of imposing authority, an Archigallus, who carries a statue of a goddess crowned with towers. He sees me and approaches. 'You feel the call of the Great Mother, Cybele,' he says, his voice surprisingly calm amidst the chaos. 'She is the earth, the mountain, the lion. She offers boundless life, but demands total surrender. Her path is not for the faint of heart.'"
+  cult.051.a:0 "I wish to understand this power."
+  cult.051.b:0 "This is madness. I must leave."
+
+  cult.052.t:0 "The Taurobolium"
+  cult.052.desc:0 "The Archigallus leads me to a sacred pit. 'To be reborn in the eyes of the Magna Mater, you must be washed in the lifeblood of her sacred beast,' he explains. I am instructed to stand in the pit as a great bull is led onto a perforated platform above me. With a final prayer, the priests sacrifice the animal. Warm, crimson blood pours down, drenching me in a torrent of life and death. I emerge, gasping, feeling the raw power of the earth coursing through my veins."
+  cult.052.a:0 "Bathe me in blood! I am reborn!"
 
   restore_altar.001.t:0 "The Senate"
   restore_altar.001.desc:0 "I take a deep breath when i stand before the senate doors. Inside a senate who is more devided than ever christians, polytheists who accept or not accept others beliefs and here i am with a proposition to bring back the altar of Victoria to the senate building."
@@ -660,26 +673,34 @@ embrace_culture.005.a:0 "Embrace the Hispano Roman culture"
   cdr.023.apollo:0 "$cdr_polytheism_good_god_apollo$"
   cdr.023.cancel:0 "Maybe not now"
 
-  cult.025.t:0 "The Mithreaum"
-  cult.025.corax.desc:0 "The meeting of the Corax is once a week, here we do small rituals for Mithras who helps us in battle. but also see who is ready to proceed in rank. Today the pater steps forward and says "By the might of Mithras the following persons are granted the ritual of the initiation of the following rank Nymphus" It's always a special moment.Maybe I can proceed soon too. Also no one can speak about what happens within the cult to outsiders."
-  cult.025.nymphus.desc:0 "The meeting of the Nymphus is once a week, here we do rituals for Mithras who helps us in battle. but also see who is ready to proceed in rank. Today the pater steps forward and says "By the might of Mithras the following persons are granted the ritual of the initiation of the following rank Nymphus" It's always a special moment.Maybe I can proceed soon too."
-  cult.025.miles.desc:0 "The meeting of the Nymphus is once a week, here we do rituals for Mithras who helps us in battle. but also see who is ready to advance in rank. Today the Father steps forward and says, "By the power of Mithras, the following persons have been given the rite of initiation of the next rank of Nymphus." It is always a special moment. Maybe I'll be able to move on soon too, because it's a real milestone, I'm halfway there, so when the time comes, I really want to live the moment."
-  cult.025.leo.desc:0 "The meeting of the Leo is once a week, here we do rituals for Mithras who helps us in battle. but also see who is ready to proceed in rank. Today the pater steps forward and says "By the might of Mithras the following persons are granted the ritual of the initiation of the following rank Perses" It's always a special moment.Maybe I can proceed soon too. As I get higher in rank it gets more difficult."
-  cult.025.perses.desc:0 "The meeting of the Perses is once a week, here we do rituals for Mithras who helps us in battle. but also see who is ready to proceed in rank. Today the pater steps forward and says "By the might of Mithras the following persons are granted the ritual of the initiation of the following rank Heliodromus" It's always a special moment.Maybe I can proceed soon too."
-  cult.025.heliodromus.desc:0 "The meeting of the Heliodromus is once a week, here we do some major rituals for Mithras who helps us in battle. but also see who is ready to proceed in rank. Today the pater steps forward and says "By the might of Mithras the following persons are granted the ritual of the initiation of the following rank Pater" Even though I've come a long way it's still a special moment. We also speak about the deeds of the lower rank and who is ready to proceed to the next rank" 
+  cult.025.t:0 "The Call to Advance"
+  cult.025.corax.desc:0 "As a Corax, I have served my brothers in the Mithraeum, carrying the ritual food and drink. I have learned humility and the importance of service. The Pater tells me that I have shown the diligence of Mercury and that the path to the next grade, that of Nymphus, is open to me. It is a trial of symbolic union and purity, representing Venus."
+  cult.025.nymphus.desc:0 "As a Nymphus, I have tended the sacred lamps, ensuring the light of the Mithraeum never falters. I have learned of the soul's purity and its mystical marriage to the divine. The Pater says I am ready to face the trial of the Soldier, the Miles. This grade, under the protection of Mars, requires a test of loyalty and endurance."
+  cult.025.miles.desc:0 "As a Miles, I have proven my endurance and loyalty, refusing the earthly crown to declare Mithras as my only king. I have stood vigil and shown my strength. The Pater now calls me to the trial of the Leo, the Lion. Protected by Jupiter, this grade requires a trial by fire, a purification of the spirit."
+  cult.025.leo.desc:0 "As a Leo, I have handled the sacred fire, offering libations of honey to purify my hands and tongue. I have learned to control my passions and act with the strength of the Lion. The Pater believes I am ready to become a Perses, a Persian. This grade, under the Moon, is one of guardianship over the sacred fruits of the earth."
+  cult.025.perses.desc:0 "As a Perses, I have guarded the sacred honey, a symbol of preservation and the bounty of the earth. I have learned the secrets of the harvest and the cycles of nature. The Pater now calls me to the grade of Heliodromus, the Sun-Runner. This trial, under the Sun itself, is a test of my ability to guide others as Mithras guides the cosmos."
+  cult.0s.heliodromus.desc:0 "As a Heliodromus, I have carried the light of the Sun, participating in the sacred drama of the solar journey. I have learned to embody the light and order that Mithras brings to the world. The Pater, seeing my wisdom and dedication, has declared me ready for the final step":" to become a Pater, a Father to the community, under the guidance of Saturn, the keeper of time and wisdom."
   cult.025.fallback.desc:0 "This is a bug please report it on steam or on discord"
 
-  cult.025.corax:0 "Finally I'm ready to proceed to the Nymphus rank!"
-  cult.025.nymphus:0 "Finally I'm ready to proceed to the Miles rank!"
-  cult.025.miles:0 "Let the initiation begin"
-  cult.025.leo:0 "Finally I'm ready to proceed to the Perses rank!"
-  cult.025.perses:0 "Finally I'm ready to proceed to the Heliodromus rank!"
-  cult.025.heliodromus:0 "Finally I'm ready to proceed to the Pater rank!"
+  cult.025.corax.a:0 "I am ready for the trial of the Bridegroom."
+  cult.025.corax.a.tt:0 "I will become a Nymphus, a Bridegroom. I will be veiled and presented with a lamp, symbolizing the soul's search for divine light."
+  cult.025.nymphus.a:0 "I am ready for the trial of the Soldier."
+  cult.025.miles.a:0 "I am ready for the trial of the Lion."
+  cult.025.leo.a:0 "I am ready for the trial of the Persian."
+  cult.025.leo.a.tt:0 "I will become a Perses, a Persian. I will be entrusted with the guardianship of the sacred honey, symbolizing the preservation of life."
+  cult.025.perses.a:0 "I am ready for the trial of the Sun-Runner."
+  cult.025.perses.a.tt:0 "I will become a Heliodromus, the Sun-Runner. I will participate in the sacred drama, carrying a torch to represent the light of the Sun."
+  cult.025.heliodromus.a:0 "I am ready to become a Father."
+  cult.025.heliodromus.a.tt:0 "I will become a Pater, the highest grade. I will take on the role of a wise leader, guiding my brothers in the mysteries of Mithras."
   cult.025.standard:0 "Great meeting with my fellow brothers and sisters"
 
   cult.026.t:0 "The Initiation"
   cult.026.desc:0 "For the initiation to the Leo rank I need to recitate of a catechism, where I need to answer on a serie of questions. The pater of the cult started\n\n"...He will say 'Where  ...?'" Very sharp and ...\n"'... is he at a loss there?' Say'...'" Much. He will say\n"... Say'Night'. He will say 'Where ...?'" '... of the hot and cold'. He will say '...?'\n"... Say 'All things ...'" red linen. He will say Why? Say\n"Are you called? Say Because of the summery" Red border the linen, however,\n"Having become he/it has the fiery ones"  has been wrapped? Say the savior's\n"did you receive?' Say 'In a pit'. He will say 'Where is your ...'?" He will say 'Who is the father?' Say'The one who begets everything'\nIn the Leonteion. He will say 'Will you gird ...?'" He will say 'How did you become a Leo?' Say 'By the ... of the father ...'\n'"... death'. He will say 'Why, having girded yourself, ...?'" Say 'Drink and food'. He will say'...?'\n"... this has four tassels." ... in the seven-...\n\n After the recitate is done I'm welcomed into the rank of Leo"
   cult.026.a:0 "I'm part of the Leo rank!"
+
+  cult.027.t:0 "The Trial of the Soldier"
+  cult.027.desc:0 "The Pater leads me to the center of the Mithraeum. He presents me with a crown on the tip of a sword. 'Aurelian offered a crown to the Unconquered Sun,' he proclaims. 'Now, a crown is offered to you.' I know the rite. I must push the crown away and declare my loyalty to a higher power.\n\n'My only crown is Mithras!' I shout. The Pater nods in approval. 'You have shown your loyalty. You are now a Miles, a soldier of the Unconquered God.'"
+  cult.027.a:0 "My only crown is Mithras!"
 
   cdr.026.t:0 "The Latin Speaker"
   cdr.026.desc:0 "After the Latin speaker arrived, he began to unroll some ancient scrolls written by Roman statesmen such as Cicero and Livius. He also placed a book of the Gallic Wars, Commentarii de bello Gallico, written by Gaius Julius Caesar, on the table.\n\nAfter a few days of learning, the teacher said, "You now know the basics of Latin. Keep working on your Latin, and you will get better every day.\n\nAs a present, I am giving you this book about the Gallic Wars."\n\nAnd so, I am finally done, and I can finally reintroduce the Latin language in court if I want to."
@@ -696,12 +717,12 @@ embrace_culture.005.a:0 "Embrace the Hispano Roman culture"
  cdr.027.d.acceptance:0 "@piety_level_3_icon_islam! [old_pontifex.GetTitledFirstNameNoTooltip] $cdr.027.acceptance_body$"
  
  cdr.029.t:0 "The Sibylline Books"
- cdr.029.desc:0 "As our priests are starting to kick out the Nazerene priests and their zealots out of our lands and temples, many aristocrats and priests believe it is time to search for the remnants of the Sibylline Books that had been destroyed by the general Stilicho in 405 AD/1158 AUC.\n\nSo this is how we proceed answered [religious_head.GetTitledFirstNameNoTooltip] "If we are going through with this, it will take about a year to complete the books. Of course I will personally oversee the safety of the oracle and make sure they can do their work without interferrence of others. The choice is yours.""
+ cdr.029.desc:0 "As our priests are starting to kick out the Nazerene priests and their zealots out of our lands and temples, many aristocrats and priests believe it is time to search for the remnants of the Sibylline Books that had been destroyed by the general Stilicho in 405 AD/1158 AUC.\n\nSo this is how we proceed answered [ROOT.Char.GetFaith.ReligiousHeadName] "If we are going through with this, it will take about a year to complete the books. Of course I will personally oversee the safety of the oracle and make sure they can do their work without interferrence of others. The choice is yours.""
  cdr.029.a:0 "You may proceed" 
  cdr.029.cancel:0 "Never mind"
 
  cdr.030.t:0 "The new Sybelline Books"
- cdr.030.desc:0 "While sitting on your throne, your [religious_head.GetTitledFirstNameNoTooltip] suddenly rushes into the hall shouting "Good news, everyone! The Oracle in Graecia had deemed the new Sibylline Books finished!"\n\n"Where would we store it?" You ask after the celebratory clutter ends. "I thought you might have had an idea about that, my liege...""
+ cdr.030.desc:0 "While sitting on your throne, your [ROOT.Char.GetFaith.ReligiousHeadName] suddenly rushes into the hall shouting "Good news, everyone! The Oracle in Graecia had deemed the new Sibylline Books finished!"\n\n"Where would we store it?" You ask after the celebratory clutter ends. "I thought you might have had an idea about that, my liege...""
  cdr.030.jupiter:0 "The Temple of $cdr_polytheism_high_god_name$!"
  cdr.030.mars:0 "The Temple of $cdr_polytheism_war_god_name$!"
  cdr.030.venus:0 "The Temple of $cdr_polytheism_fertility_god_name$!"
@@ -713,3 +734,206 @@ embrace_culture.005.a:0 "Embrace the Hispano Roman culture"
  cdr.031.christian_nick:0 "Apostate"
  cdr.031.philosopher_nick:0 "The Philosopher"
  cdr.031.jewish_nick:0 "The Hellen"
+
+ ep3_roman_restoration.0100.c:0 "The way of the great Emperor Augustus"
+
+ cdr.032.t:0 "Romanize the [pagan.GetCulture.GetCollectiveNounNoTooltip]"
+ cdr.032.desc:0 "Romanization brings prosperity and protection to people, but our neighbor, [pagan.GetTitledFirstName], is blissfully unaware of it, and persists in believing in only their gods who can't protect them forevor from the christians.\n\nSaving [pagan.GetHerHis] soul and those of [pagan.GetHerHis] people is a noble endeavor in itself, but there also #EMP earthly#! advantages to their conversion — for starters, reducing their hostility towards us and bringing them into our own sphere of influence.\n\nMy chosen missionary, [evangelizer.GetFirstName], is ready to go."
+ cdr.032.a:0 "May [ROOT.Char.GetFaith.HighGodName] guide you!"
+ cdr.032.a.tt: "[evangelizer.GetFirstNameNoTooltip] departs for [pagan.GetTitledFirstNamePossessiveNoTooltip] capital."
+ 
+
+ cdr.034.desc: "Emissaries from our neighbors come and go frequently enough that they all mix together in my mind. However, today's envoy from [GetTitleByKey('e_byzantium').GetName] sticks out like none before.\n\n[evangelizer.GetSheHe|U] seems to be some sort of holy [evangelizer.GetWomanMan], for starters, and instead of advancing political demands, this [evangelizer.GetFirstName] preaches of an omnipotent God, honored in temples of gold and silver that always smell of incense."
+ cdr.034.a: "Please tell me more"
+ cdr.034.a.tt: "You create an [alliance|E] with [evangelizer.GetTitledFirstNamePossessiveNoTooltip] liege, [sender.GetTitledFirstName]"
+ cdr.034.b: "We don't need new gods."
+ cdr.034.c: "Ridiculous!"
+ cdr.034.c.tt: "This is sure to send a message: your preachers are not welcome here! But we should be ready for retaliation..."
+
+ cdr.035.t: "" #AI event, leave empty
+ cdr.035.desc: "" #AI event, leave empty
+ cdr.035.a: "" #AI event, leave empty
+ 
+ cdr.037.desc_new: "My predecessor [sender.GetFirstName] had invested into the spreading of the [pagan.GetCulture.GetCollectiveNounNoTooltip] but, unfortunately for [sender.GetHerHim], it is I who will reap the benefits of [sender.GetHerHis] efforts. [sender.GetHerHis|U] missionary [evangelizer.GetFirstName], in fact, has just returned."
+ cdr.037.desc_old: "Months ago, I sent my trusted [evangelizer.GetFirstName] to bring the knowledge about the Gods to the [pagan.GetCulture.GetCollectiveNounNoTooltip]. It is with great joy that I welcome [sender.GetHerHim] back today, as I've been eagerly waiting for [evangelizer.GetHerHis] report."
+ cdr.037.desc_success: "\n\n"I bring great news, my liege! [pagan.GetTitledFirstName|U] was eager to hear the Glad Tidings, and converted to [evangelizer.GetFaith.GetName], accompanied by many of [pagan.GetHerHis] people."
+ cdr.037.desc_failure: "\n\n"I bring somber news, my liege. Unfortunately, [pagan.GetTitledFirstName] was most unresponsive to the Word of the gods, and sent me away empty-handed.""
+ cdr.037.a: "Excellent!"
+ cdr.037.b: "It's only a temporary setback."
+ cdr.037.a.tt: "You create an [alliance|E] with the newly-converted [pagan.GetTitledFirstName]."
+
+cdr.038.desc: "Terrible tidings!\n\nNews has come from the land of [pagan.GetCulture.GetCollectiveNounNoTooltip] and, apparently, my missionary [evangelizer.GetFirstName] was killed but the barbarian [pagan.GetTitledFirstName], who wasn't satisfied with rebuking any conversion attempts, but went as far as committing the final desecration and murder a [evangelizer.GetWomanMan] of the Gods!"
+cdr.038.a: "Outrageous!"
+
+cdr.039.t: "Pantheon of Constantinople"
+cdr.039.desc: "With the Hagia sophia demolished we have space to build a pantheon like the one in Rome, a proper place to worship the gods "
+cdr.039.a: "Open the Pantheon"
+
+cdr.040.t: "Reopening of Pantheon"
+cdr.040.desc: "Centuries have gone by, with ulitmatly giving away the pantheon by Emperor  to the Pope. All christian signs and statues are removed and replaced by marble statues of the gods./n/nFrom now on the proper gods will be worshiped here again !"
+cdr.040.a: "Open the Pantheon"
+
+cdr.041.t:0 "A Sacred Duty"
+cdr.041.desc:0 "Today, I have made the momentous decision to send my beloved daughter to serve as a Vestal Virgin. It is both an honor and a sacrifice for our family, but I know that her service will bring great favor from the gods and eternal glory to our name. As she departs for the temple of Vesta, I pray that she will uphold the sacred flame and fulfill her duty with dignity and devotion."
+cdr.041.a:0 "May Vesta watch over her"
+cdr.041.cancel:0 "Maybe not now"
+
+cult.042.t:0 "The cults"
+cult.042.desc:0 "Centuries ago the cults where many, but with the growth of christianity the cults where baned. As ruler I have the power to restore the cults.\n\nI could restore all of them but if that is a smart thing to ? Only the gods know."
+cult.042.mithras:0 "Mithras"
+cult.042.sol_invictus:0 "Sol Invictus"
+cult.042.isis:0 "Isis"
+cult.042.serapis:0 "Serapis"
+cult.042.eleusinian:0 "Eleusinian"
+cult.042.imperial:0 "Imperial"
+cult.042.bacchus:0 "Bacchus"
+cult.042.cybele:0 "Cybele"
+
+cult.028.t:0 "Restoration of Mithras Cult" 
+cult.028.desc:0 "In the forgotten crypts and buried garrisons of a bygone era, tales persist of a hidden lord, born from stone, who struck down the primordial bull. This is Mithras, the Unconquered Guide, whose mysteries once forged unbreakable bonds among soldiers and merchants, instilling discipline, cosmic understanding, and unwavering loyalty. For centuries, his sacred caves have remained sealed, his seven grades of initiation lost to time, known only through obscure fragments and whispered legends.\n\nMy most daring spies and dedicated scholars have hinted at the rediscovery of a hidden Mithraeum, or perhaps a ciphered text revealing the true path to his ancient wisdom. To seek out this obscured truth is to undertake a perilous quest, fraught with secrecy and demanding an iron will. It will require immense personal risk, significant investment, and a dedication to an order that transcends mere mortal ambition. Yet, the promise of the strength, foresight, and unbreakable loyalty that the Mysteries of Mithras once bestowed... it beckons with a potent, almost forgotten power."
+cult.028.a:0 "Praise Mithras"
+
+cult.043.t:0 "Restoration of Isis Cult"
+cult.043.desc:0 "Rumours have reached my ear, from distant lands and ancient wisdom. They speak of Isis, the powerful goddess, queen of heaven and earth, whose embrace brings forth life and whose favour protects prosperity. Decades, perhaps even centuries, her mysteries have remained hidden, her temples neglected, her hymns silenced in this land. Yet, the echo of her name lingers on the wind, calling with the promise of abundance, fertility, and safe journeys.\n\nMy scholars and spies have uncovered ancient texts fragments of rituals, prayers, and references to secret initiations. It seems the key to her forgotten worship lies within reach, an opportunity to once again invoke her divine grace upon my realm and my people.\n\nThis is no fleeting endeavour, but a profound undertaking that will demand my dedication and resources. But imagine the blessings a reawakened Isis could bestow..."
+cult.043.a:0 "Restore the cult"
+
+cult.044.t:0 "Restoration of Cybele Cult"
+cult.044.desc:0 "In the wildest parts of my domain, where civilization's grip is weakest, whispers of an ancient and formidable power have resurfaced. This is the domain of the Magna Mater, the Great Mother Cybele, a deity of untamed nature, of life, death, and ferocious rebirth. Her worship, once a vibrant and ecstatic force, has long been suppressed, its rites driven into the shadows.\n\nMy most trusted agents have uncovered a hidden community that has preserved the core of her mysteries. They speak of the Taurobolium, a baptism of blood, and of the Archigallus, the high priest who embodies the goddess's untamed spirit. To restore this cult is to embrace a primal power, one that promises immense vitality and a deep connection to the earth, but it is a path that demands absolute surrender and walks the line between divine ecstasy and madness."
+cult.044.a:0 "Let the Great Mother's drums beat again!"
+
+
+cult.045.t:0 "Restoration Sol Invictus Cult"
+cult.045.desc:0 "For generations, the grand tales of the Roman emperors and their celestial patrons have faded into legend, whispers in crumbling ruins and forgotten texts. Yet, amidst these ancient fragments, my scholars have unearthed a recurring symbol the radiant visage of Sol, the Unconquered Sun. This was not merely a god amongst many, but the divine companion of emperors, the very essence of victory, light, and enduring power.\n\nThe knowledge required to rekindle his sacred fire is immense, scattered across lost provinces and buried beneath centuries of dust.\n\nBut I feel its pull a calling to restore this ancient patron, to bring his unifying light back to a world that has strayed far from his influence. To undertake this task is to embrace a destiny of order and might, to reforge a spiritual bedrock for an empire, or indeed, for any realm seeking true invincibility. It will demand immense personal sacrifice, vast resources, and a will as unyielding as the sun itself. Yet, the promise of his eternal favour... it is alluring beyond measure."
+cult.045.a:0 "Solis Invicti!"
+
+cult.031.t:0 "Restoration Serapis Cult"
+cult.031.desc:0 "Even through the mists of time, where the gods of old seem but echoes, persistent whispers speak of a deity whose wisdom encompassed life and death, and whose bounty promised sustenance for all. This is Serapis, the lord of the fertile soil and the benevolent guide of souls through the underworld. His temples, once bustling centres of healing and prophecy, now lie silent, their sacred knowledge fragmented, passed down only through obscure lore.\n\nMy advisors speak of ancient scrolls unearthed, or perhaps a vision granted during a period of deep contemplation, hinting at the profound rituals required to reawaken his grace. The path to his restoration promises not only bountiful harvests and freedom from pestilence for my lands, but also solace for the weary and insight into the mysteries of existence.\n\nIt is a long and arduous journey, demanding dedication, substantial resources, and an understanding that transcends mere mortal concerns. But the thought of his benevolent hand guiding my realm towards unparalleled prosperity and well-being... it is a future worth striving for."
+cult.031.a:0 "Restore the cult"
+
+cult.046.t:0 "Restoration Eleusinian Cult"
+cult.046.desc:0 "From the depths of ancient lore and the forgotten wisdom of the earth, whispers surface of the Eleusinian Mysteries. This was once a sacred path, illuminated by Demeter and Persephone, promising not just abundant harvests for the living, but also solace and hope for the souls journey beyond this mortal coil. Its grand rites, once held annually in hallowed Eleusis, have been lost to the ages, their profound secrets concealed by time and the silence of crumbling temples.\n\nMy most dedicated scholars speak of obscure references in philosophical texts, or perhaps the rediscovery of a hidden chamber beneath ancient ruins, hinting at the profound knowledge required to re-establish these Mysteries. To undertake this restoration is to delve into the very essence of existence, to reconnect my realm with the primal forces of life, death, and renewal. It will demand immense scholarly effort, spiritual purity, significant resources, and a reverence for the cycles that govern all things. Yet, the promise of fertile lands, inner peace, and a clearer vision of what lies beyond... it calls with a quiet, yet powerful, certainty."
+cult.046.a:0 "Praise Demeter"
+
+cult.033.t:0 "Restoration Bacchus Cult"
+cult.033.desc:0 "Even in the long shadows cast by forgotten eras, whispers persist of a primal force, a deity whose ecstatic rites transcended the boundaries of civilization and unleashed the wild spirit within. This is Bacchus, the god of wine, frenzy, and liberation, whose mysterious followers, the Bacchanals, once roamed the night, shedding the shackles of mundane life. Their rites, once a hidden undercurrent in the heart of empires, were driven underground by fear and societal condemnation, their knowledge splintered into dangerous fragments.\n\nMy curiosity has been piqued by strange findings ancient tablets describing delirious dances and secret oaths, or perhaps a clandestine meeting with a shadowy figure claiming lineage to forgotten Dionysian traditions. The path to reawakening this ancient revelry is fraught with peril. It promises liberation and potent insight into the untamed aspects of existence, but at the cost of societal disapproval, moral decay, and the very real threat of scandal. It demands a spirit bold enough to embrace chaos, and resources to fund what many would deem utter madness. Yet, the allure of such untamed power, the shedding of inhibitions... it holds a dangerous fascination."
+cult.033.a:0 "Freedom!"
+
+cult.034.t:0 "Restoration Imperial Cult"
+cult.034.desc:0 "Though the sun of Rome may have set in the West centuries ago, and its Christian flame burns on in the East, the profound truth of its ancient power lingers in the annals of history the mightiest realms were bound not just by laws and legions, but by the divine aura of their rulers. The Pagan Imperial Cult, that sacred tradition of venerating the 'genius' or the very person of the Emperor, was the spiritual bedrock upon which the vast Roman world once stood united. Its grand temples and solemn rites, once the beating heart of loyalty and civic order, have crumbled or been repurposed, their original pagan purpose forgotten by all but the most dedicated antiquarians.\n\nMy most esteemed advisors, after arduous study of unearthed decrees and and monumental inscriptions, have deciphered the hidden mechanisms of this ancient system. This undertaking, however, is monumental. It demands unprecedented wealth, unwavering Piety, and a soul prepared to ascend to a station beyond mortal men. It will reshape the very fabric of my realm, binding all subjects in sacred loyalty, yet offering the promise of an unshakeable dominion and an eternal legacy, echoing the true power of ancient Rome."
+cult.034.a:0 "Ave Augustus"
+
+cult.042.close:0 "Close"
+
+
+cult.047.t:0 "The New Vestalis Maxima"
+cult.047.desc:0 "After the death of the last Vestalis Maxima, a new vestalis maxima has been chosen by the vestal virgins. Hopefully she will stay in office for a long time and keep the sacred flame burning."
+cult.047.a:0 "Praise Vesta!"
+
+
+cult.053.t:0 "The New Hierophant of Isis"
+cult.053.desc:0 "The previous Hierophant of Isis has journeyed to the afterlife, but the Great Mother's work is eternal. From among the most devout priestesses, a new leader has been chosen to interpret her will and guide her followers. May she be a worthy successor, blessed with wisdom and magic."
+cult.053.a:0 "May Isis guide her hand."
+
+
+cult.054.t:0 "The New Hierophant of Serapis"
+cult.054.desc:0 "The guiding hand of the last Hierophant of Serapis has fallen still. From the ranks of the faithful, a new leader has been chosen to oversee the rites of the benevolent god of the afterlife and abundance. May he ensure our prosperity in this life and the next."
+cult.054.a:0 "Praise be to Serapis!"
+
+
+cult.055.t:0 "The New Hierophant of Sol Invictus"
+cult.055.desc:0 "The light of the previous Hierophant has been extinguished, but the Unconquered Sun never sets. A new leader, strong and resolute, has been chosen to carry the solar flame. May his leadership be as radiant and unwavering as the sun itself."
+cult.055.a:0 "The Sun is Unconquered!"
+
+
+cult.056.t:0 "The New Hierophant of Eleusis"
+cult.056.desc:0 "The keeper of the Mysteries has passed into the great mystery itself. A new Hierophant has been selected to lead the sacred rites of Demeter and Persephone, to guide new initiates, and to preserve the sacred hope of a blissful afterlife. May she guard the secrets well."
+cult.056.a:0 "The cycle of life continues."
+
+
+cult.057.t:0 "The New Hierophant of Bacchus"
+cult.057.desc:0 "The wild revels of the last Hierophant have ended. A new master of ceremonies has been chosen to lead the followers of Bacchus in their ecstatic worship. May his festivals be joyous and his wine ever-flowing, bringing liberation to all who follow him."
+cult.057.a:0 "Let the revelry begin anew!"
+
+cult.058.t:0 "The New Archigallus of Cybele"
+cult.058.desc:0 "The primal cry of the last Archigallus has faded. A new high priest has been chosen to lead the frenzied worship of the Great Mother, Cybele. May his devotion be as fierce as the lions that pull her chariot, and may he bring vitality to the land."
+cult.058.a:0 "The Great Mother provides!"
+
+
+cult.059.t:0 "The New Pater of Mithras"
+cult.059.desc:0 "The Father of our Mithraeum has completed his final trial. From among the most worthy Heliodromi, a new Pater has been chosen to lead our brotherhood. May he guide us with the strength and discipline of Mithras himself, and may our bonds remain unbreakable."
+cult.059.a:0 "For Mithras, the Unconquered Guide!"
+
+cult.060.t:0 "The New Augustalis"
+cult.060.desc:0 "The previous Augustalis, who upheld the divine authority of the Emperor, has passed from this world. A new priest has been chosen to lead the Imperial Cult, to ensure the 'Genius' of the ruler is venerated and the stability of the realm is secured through divine mandate. May he serve the empire with unwavering loyalty."
+cult.060.a:0 "For the glory of the Empire!"
+
+cult.061.t:0 "The Cave of Whispers"
+cult.061.desc:0 "While surveying a remote part of my domain, my men stumbled upon a hidden cave. The entrance, obscured by overgrown vines, revealed a narrow passage descending into the earth. Inside, they found not a simple cavern, but a perfectly preserved Mithraeum, untouched for centuries.\n\nThe air is still and heavy with the scent of ancient incense. A magnificent Tauroctony dominates the far wall, its colors still vibrant. This place feels holy, a direct link to the earliest days of our brotherhood. I feel a pull to study its secrets, to understand the wisdom left behind by our ancestors."
+cult.061.a:0 "I will personally investigate this sacred place."
+cult.061.b:0 "Seal the entrance. Some secrets should remain buried."
+
+cult.062.t:0 "The Heart of the Mithraeum"
+cult.062.desc:0 "Days spent in the silent dark of the ancient Mithraeum have yielded a profound discovery. Behind a false wall in the altar, I found a small, lead-lined chest. Inside, resting on faded silk, is not gold or jewels, but a series of clay tablets inscribed with astronomical charts and philosophical texts that deepen the mysteries of Mithras beyond anything I have ever known.\n\nHowever, the chest itself is heavy... far too heavy. Prying open the lead lining reveals a hidden compartment filled with ancient gold coins, a treasure of immense value. The tablets are a gift to the spirit, the gold a temptation for the flesh. What is the true treasure of this sacred place?"
+cult.062.a:0 "The wisdom is the true treasure. The gold will fund a new temple."
+cult.062.b:0 "Mithras rewards the strong. The gold is mine."
+
+cult.063.t:0 "Drums in the Woods"
+cult.063.desc:0 "A frantic, rhythmic drumming echoes from the woods tonight, a sound that stirs something primal in my soul. My scouts report a wild gathering not far from the castle — men and women dancing with abandon around a great bonfire, their faces painted, their cries lost in the cacophony of drums and flutes.\n\nThey are followers of the Great Mother, Cybele, lost in one of her ecstatic rites. The energy is both terrifying and alluring. This is the raw, untamed power I pledged to understand."
+cult.063.a:0 "Join them! Let the Great Mother's spirit take me!"
+cult.063.b:0 "I will watch from a safe distance."
+cult.063.c:0 "This is chaos! Disperse them immediately!"
+
+cybele_ecstatic_revelry:0 "Ecstatic Revelry"
+cybele_ecstatic_revelry_desc:0 "This character has recently participated in a wild, ecstatic ritual in honor of the Great Mother, feeling the primal energy of nature flow through them."
+
+eleusinian_vision:0 "Eleusinian Vision"
+eleusinian_vision_desc:0 "This character has had a profound vision related to the Eleusinian Mysteries, granting them a sense of peace about the afterlife."
+
+bacchus_divine_madness:0 "Divine Madness"
+bacchus_divine_madness_desc:0 "This character has recently indulged in a divinely inspired revelry, feeling the liberating joy of Bacchus."
+
+serapis_ferryman_token:0 "Ferryman's Token"
+serapis_ferryman_token_desc:0 "This character possesses what they believe to be a token from Serapis, easing their fears of the afterlife."
+
+isis_whispering_reed:0 "Whispering Reed"
+isis_whispering_reed_desc:0 "This character has been gifted a sacred reed from a priestess of Isis, which seems to whisper ancient secrets, sharpening their mind."
+
+cult.064.t:0 "The Eleusinian Dream"
+cult.064.desc:0 "I dreamt last night of a field of asphodel under a sky with two suns. A veiled woman, who I knew to be Persephone, offered me a single pomegranate seed. 'Eat, and know what is to come,' she whispered. The dream was so vivid, so real, that I awoke with the taste of the seed still on my tongue.\n\nI feel as though I have glimpsed a truth that lies beyond the veil of this world. The Mysteries are not just rituals; they are a doorway."
+cult.064.a:0 "I have seen a glimpse of the afterlife."
+cult.064.b:0 "It was only a dream."
+
+cult.065.t:0 "The Unexpected Vintage"
+cult.065.desc:0 "A traveling merchant has arrived at court with a truly remarkable vintage of wine. He claims it was made from grapes grown on a mountainside where a follower of Bacchus had a vision. The wine is said to induce a state of joyful madness and clarity.\n\n'A single cup,' the merchant says with a sly grin, 'and you will dance with the god himself.' The temptation is strong, but the stories of the Bacchanalia are a warning as much as an invitation."
+cult.065.a:0 "Pour me a cup! Tonight, I dance!"
+cult.065.b:0 "Such indulgence is for lesser men."
+
+cult.066.t:0 "The Ferryman's Coin"
+cult.066.desc:0 "While walking by the river, I found a small, worn coin, unlike any in my treasury. On one side is the crowned head of Serapis, and on the other, the three-headed hound Cerberus. It feels cold to the touch, and holding it, I feel a strange sense of peace, as if the anxieties of this life are a distant shore.\n\nIt feels like a token, a promise from the god who guides souls that my own journey into the afterlife will be a tranquil one."
+cult.066.a:0 "A comforting sign from the Great God."
+cult.066.b:0 "It is just an old coin."
+
+cult.067.t:0 "The Whispering Reed"
+cult.067.desc:0 "A priestess of Isis has brought me a gift":" a single, hollow reed from the banks of a sacred river. 'Hold it to your ear,' she instructed, 'and the Mother will whisper her secrets to you.'\n\nDoing so, I hear not words, but a sound like the rustling of a thousand wings, the gentle lapping of water, and the sigh of the wind. It is a language older than words, a magic that calms my soul and sharpens my mind. I feel the goddess's protection around me."
+cult.067.a:0 "I am blessed by her magic."
+cult.067.b:0 "It is just the wind in a reed."
+
+cult.035.t:0 ""
+cult.035.desc:0 "For this religion there is no cult available"
+cult.035.a:0 "Okay...."
+
+cult.068.t:0 "The Call of the Vine"
+cult.068.desc:0 "The wine flows freely tonight, and the music is a wild, intoxicating rhythm. I feel a strange pull, a desire to lose myself in the revelry, to let go of all restraint. It is as if Bacchus himself is calling to me, inviting me to taste a deeper, more dangerous joy."
+cult.068.a:0 "Indulge further."
+cult.068.b:0 "Withdraw from the revelry."
+
+cult.069.t:0 "The Vision of Bacchus"
+cult.069.desc:0 "As the world spins around me, I see him. Bacchus, crowned with ivy, his eyes filled with a terrifying, beautiful madness. He offers me a cup, not of wine, but of pure, liquid light. 'Drink,' he whispers, 'and see the world as it truly is: a chaotic, glorious dance.'"
+cult.069.a:0 "Embrace the vision."
+cult.069.b:0 "Dismiss it as a drunken dream."
+
+bacchus_vision_cooldown:0 "Vision Cooldown"
+bacchus_vision_cooldown_desc:0 "This character has recently sought a vision from Bacchus and must wait before doing so again."
+
+bacchus_divine_insight:0 "Divine Insight"
+bacchus_divine_insight_desc:0 "This character has received a profound insight from a vision of Bacchus, granting them a deeper understanding of the chaotic nature of the world."

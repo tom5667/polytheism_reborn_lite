@@ -108,3 +108,4 @@ dismantle_patriarchate_decision_tooltip:0 "The Patriarchate will be permanently 
 dismantle_patriarchate_decision_effect_tooltip:0 "The Patriarchate will be permanently destroyed"
 dismantle_patriarchate_decision_confirm:1 "Let the Patriarchate of Constantinople burn!"
 
+decision_group_type_polytheism:0 "Polytheism"

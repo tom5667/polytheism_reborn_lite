@@ -94,6 +94,7 @@
 			localization = {
 				#High God Name
 				HighGodName = hellenism_high_god_name
+				HighGodName2 = hellenism_high_god_name_2
 				HighGodNamePossessive = hellenism_high_god_name_possessive
 				HighGodNameSheHe = CHARACTER_SHEHE_HE
 				HighGodHerselfHimself = CHARACTER_HIMSELF
@@ -181,6 +182,8 @@
 		
 		
 				PantheonTerm = religion_the_gods
+				PantheonTerm2 = religion_the_gods_2
+				PantheonTerm3 = religion_the_gods_3
 				PantheonTermHasHave = pantheon_term_have
 				GoodGodNames = { hellenism_good_god_poseidon hellenism_good_god_athena hellenism_good_god_ares hellenism_good_god_hera hellenism_good_god_apollo hellenism_good_god_artemis hellenism_good_god_hermes hellenism_good_god_aphrodite }
 				DevilName = hellenism_devil_name
@@ -190,9 +193,15 @@
 				DevilHerselfHimself = CHARACTER_HIMSELF
 				EvilGodNames = { hellenism_evil_god_menoetius hellenism_evil_god_erinyes }
 				HouseOfWorship = paganism_house_of_worship
+				HouseOfWorship2 = paganism_house_of_worship_2
+				HouseOfWorship3 = paganism_house_of_worship_3
 				HouseOfWorshipPlural = paganism_house_of_worship_plural
 				ReligiousSymbol = hellenism_religious_symbol
+				ReligiousSymbol2 = hellenism_religious_symbol_2
+				ReligiousSymbol3 = hellenism_religious_symbol_3
 				ReligiousText = hellenism_religious_text
+				ReligiousText2 = hellenism_religious_text_2
+				ReligiousText3 = hellenism_religious_text_3
 				ReligiousHeadName = hellenism_religious_head_title
 				ReligiousHeadTitleName = dualism_religious_head_title_name
 				DevoteeMale = paganism_devotee
@@ -221,7 +230,9 @@
 				DeathDeityNamePossessive = hellenism_death_deity_name_possessive
 				DeathDeitySheHe = CHARACTER_SHEHE_HE
 				DeathDeityHerHis = CHARACTER_HERHIS_HIS
+				DeathDeityHerHim = CHARACTER_HERHIM_HIM
 				WitchGodName = hellenism_witchgodname_hekate
+				WitchGodNamePossessive = hellenism_witchgodname_hekate_possessive
 				WitchGodHerHis = CHARACTER_HERHIS_HER
 				WitchGodSheHe = CHARACTER_SHEHE_HE
 				WitchGodHerHim = CHARACTER_HERHIM_HER

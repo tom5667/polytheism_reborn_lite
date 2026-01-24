@@ -1,2 +1,52 @@
-﻿
+﻿pr_crowned_by_religious_head = {
+	index = 97543
+	vassal_opinion = 5
+	clergy_opinion = 10
+	monthly_piety =  0.1
+	monthly_prestige = 0.1
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = crowned_by_religious_head.dds
+			}
+			desc = crowned_by_religious_head.dds
+		}
+	}
+}
 
+druidic_circle_leader = {
+	index = 97544
+	fame = yes 
+	monthly_prestige = 0.3 
+	same_faith_opinion = 5
+	learning =  4
+	diplomacy = 2
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = druid.dds
+			}
+			desc = druid.dds
+		}
+	}
+}
+
+druid = {
+	index = 97545
+	fame = yes 
+	monthly_prestige = 0.3 
+	same_faith_opinion = 5
+	learning =  2
+	diplomacy = 1
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = druid.dds
+			}
+			desc = druid.dds
+		}
+	}
+}

@@ -3,58 +3,6 @@
 #Made by tom5667
 ######################
 
-# Return Gaelic polytheism Decision 
-gp_return_decision:0 "Return Gaelic Polytheism"
-gp_return_decision_desc:0 "I'm wondering what the old Gaelic religion looked like"
-gp_return_decision_tooltip:1 "How did the ancient religion work" 
-gp_return_decision_confirm:1 "Let's see what I can find"
-
-
-# Return Brythonic pholytheism Decision 
-bp_return_decision:0 "Return Brythonic Polytheism"
-bp_return_decision_desc:0 "I'm wondering what the old Brythonic religion looked like"
-bp_return_decision_tooltip:1 "How did the ancient religion work" 
-bp_return_decision_confirm:1 "Let's see what I can find"
-
-# Return Gaulish pholytheism Decision 
-gl_return_decision:0 "Return Gaulish Polytheism"
-gl_return_decision_desc:0 "I'm wondering what the old Gaulish religion looked like"
-gl_return_decision_tooltip:1 "How did the ancient religion work" 
-gl_return_decision_confirm:1 "Let's see what I can find"
-
-# Return Celtic Iberian polytheism Decision 
-ci_return_decision:0 "Return Celtic Iberian Polytheism"
-ci_return_decision_desc:0 "I'm wondering what the old Celtic Iberian religion looked like"
-ci_return_decision_tooltip:1 "How did the ancient religion work" 
-ci_return_decision_confirm:1 "Let's see what I can find"
-
-
-#state religion localization 
-
-#Make Gaelic polytheism state religion
-gp_sr_decision:0 "Make Gaelic polytheism state religion"
-gp_sr_decision_desc:0 "It's time to make Gaelic polytheism ones again our state religion"
-gp_sr_decision_tooltip:1 "Making Gaelic polytheism state religion again would be great"
-gp_sr_decision_confirm:1 "Let's do this"
-
-#Make Brythonic pholytheism state religion
-bp_sr_decision:0 "Make Brythonic polytheism state religion"
-bp_sr_decision_desc:0 "It's time to make Brythonic polytheism ones again our state religion"
-bp_sr_decision_tooltip:1 "Making Brythonic polytheism state religion again would be great"
-bp_sr_decision_confirm:1 "Let's do this"
-
-#Make Gaulish pholytheism state religion
-gl_sr_decision:0 "Make Gaulish polytheism state religion"
-gl_sr_decision_desc:0 "It's time to make Gaulish polytheism ones again our state religion"
-gl_sr_decision_tooltip:1 "Making Gaulish polytheism state religion again would be great"
-gl_sr_decision_confirm:1 "Let's do this"
-
-#Make Celtic Iberian pholytheism state religion
-ci_sr_decision:0 "Make Celtic Iberian polytheism state religion"
-ci_sr_decision_desc:0 "It's time to make Celtic Iberian polytheism ones again our state religion"
-ci_sr_decision_tooltip:1 "Making Celtic Iberian polytheism state religion again would be great"
-ci_sr_decision_confirm:1 "Let's do this"
-
 #restore celtic priesthood
 cp_restore_high_priesthood_decision:0 "Restore Celtic Priesthood"
 cp_restore_high_priesthood_decision_confirm:0 "Establish a new religious head"
@@ -186,18 +134,23 @@ create_iberia_effect_tooltip:1 "It's time to reclaim the Kingdom of Iberia"
 create_iberia_decision:1 "It's time to reclaim Iberia"
 create_iberia_decision_confirm:0 "Create Kingdom of Iberia"
 
+create_noricum_kingdom_decision:0 "Restore Noricum Kingdom"
+create_noricum_kingdom_decision_desc:0 "For far too long the Noricum lands have been under control of our enemies were our ancestors lived and fought for."
+create_noricum_kingdom_effect_tooltip:0 "It's time to reclaim the Noricum kingdom"
+create_iberia_decision_confirm:0 "Create the Noricum kingdom"
+
 push_out_the_sassenach_saga_decision:0 "Push out the Sassenach"
-push_out_the_sassenach_decision_desc:0 "Centuries of invassions by germanic tribes has taken it's toll on our way of life, now it's time to take up arms again and drive them out"
+push_out_the_sassenach_decision_desc:0 "Centuries of invasions by germanic tribes has taken it's toll on our way of life, now it's time to take up arms again and drive them out"
 push_out_the_sassenach_saga_decision_tooltip:0 "Push out the Sassenach"
 push_out_the_sassenach_saga_decision_confirm:0 "To war"
 
 celtic_reconquest_ireland_decision:0 "Celtic reconquest of Ireland"
-celtic_reconquest_ireland_decision_desc:0 "Before the viking invassions Ireland only had internal struggles between tribes, but know there is a chance we lose our lands against the invaders, we can't allow that! Fight and reconquer Ireland to build and continue your own saga for a Celtic Empire"
+celtic_reconquest_ireland_decision_desc:0 "Before the viking invasions Ireland only had internal struggles between tribes, but know there is a chance we lose our lands against the invaders, we can't allow that! Fight and reconquer Ireland to build and continue your own saga for a Celtic Empire"
 celtic_reconquest_ireland_decision_tooltip:0 "Reconquest of Ireland"
 celtic_reconquest_ireland_decision_confirm:0 "Confirm"
 
 celtic_reconquest_alba_decision:0 "Celtic reconquest of Scotland"
-celtic_reconquest_alba_decision_desc:0 "The tribes in Scotland are devided fighting over which clan should bring the next king. But now it's time bring everyone together under one crown and be done with all internall struggle. As we have mutual enemy the Sassenach"
+celtic_reconquest_alba_decision_desc:0 "The tribes in Scotland are divided fighting over which clan should bring the next king. But now it's time bring everyone together under one crown and be done with all internal struggle. As we have mutual enemy the Sassenach"
 celtic_reconquest_alba_decision_tooltip:0 "Celtic reconquest of Scotland"
 celtic_reconquest_alba_decision_confirm:0 "Ireland is secured"
 
@@ -216,7 +169,33 @@ celtic_conquest_brittany_decision_desc:0 "The celtic empire is complete, now it'
 celtic_conquest_brittany_decision_tooltip:0 "Celtic conquest of Brittany"
 celtic_conquest_brittany_decision_confirm:0 "Brittany is secured"
 
+celtic_conquest_galicia_decision:0 "Celtic conquest of Galicia"
+celtic_conquest_galicia_decision_desc:0 "Our forefathers fled here for the Sassenach now we are back, not to flee but to get a stronghold for further expansion into iberia."
+celtic_conquest_galicia_decision_tooltip:0 "Celtic conquest of Galicia"
+celtic_conquest_galicia_decision_confirm:0 "The iberian foothold"
+
+celtic_conquest_of_belgae:0 "Celtic conquest of belgae"
+celtic_conquest_belgae_decision_desc:0 "The mighty Ambiorix once was chosen to rule the tribes to protect them from the romans, we need that might to conquer the Belgian lands."
+celtic_conquest_of_belgae_tooltip:0 "Celtic conquest of Belgae"
+celtic_conquest_of_belgae_confirm:0 "Reclaim the land of Ambiorix"
+
+celtic_conquest_of_gaul:0 "Conquest of Gaul"
+celtic_conquest_gaul_decision_desc:0 "The biggest piece of land to reconquer is by far the ancient celtic lands of the gaulish tribes, now with footholds in both Belgium and Brittany It was finally possible to invade"
+celtic_conquest_of_gaul_tooltip:0 "Celtic conquest of Gaul"
+celtic_conquest_of_gaul_confirm:0 "For Gaul!"
+
+
 old_irish_culture_decision:0 "Embrace Old Irish Culture"
 old_irish_culture_decision_desc:0 "As good Gaelic Polytheists we can't keep our Christian names"
 old_irish_culture_decision_tooltip:0 "Embrace Old Irish culture"
 old_irish_culture_decision_confirm:0 "Confirm"
+
+create_gathering_place_for_druids:0 "Create a Gathering Place For Druids"
+create_gathering_place_for_druids_desc:0 "Long ago the druids had locations where they would gather. The Romans destroyed Ynys Môn (Anglesey) centuries ago "
+create_gathering_place_for_druids_confirm:0 "Confirm"
+create_gathering_place_for_druids_tooltip:0 "Ynys Môn was destroyed in 60 AD/CE by the romans to break the druidic influence and power in Wales and England."
+
+send_son_to_druids_decision:0 "Send Son To Druids"
+send_son_to_druids_decision_desc:0 "The druids are the learned class of the [ROOT.Char.GetFaith.GetAdjective] religion, by sending my son to them he will learn much and become wiser, maybe even become a druid himself"
+send_son_to_druids_decision_tooltip:0 "Send son to druids"
+send_son_to_druids_decision_confirm:0 "Confirm"

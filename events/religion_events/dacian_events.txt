@@ -770,3 +770,22 @@ dacian.011 ={
 		}
 	}
 }
+
+
+dacian.012 = {
+	type = character_event
+	title = dacian.012.t
+	desc = dacian.012.desc
+	theme = emperor
+
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	option = {
+		name = dacian.012.a
+		title:c_hunyad.title_province = {
+		add_special_building = kogaionon_altar
+		}
+	}
+}

@@ -2,3 +2,24 @@
 	opinion = -40
 	years = 40
 }
+trusted_druidic_judgment_opinion = {
+	monthly_change = 0.1 
+	decaying = yes 
+	stacking = yes 
+}
+rejected_druidic_judgment_opinion = {
+	monthly_change = -0.1 
+	decaying = yes 
+	stacking = yes 
+}
+impressed_by_fair_judgment_opinion = {
+	monthly_change = 0.1 
+	decaying = yes 
+	stacking = yes 
+}
+
+generic_opinion_negative = {
+	monthly_change = -0.1 
+	decaying = yes 
+	stacking = yes 
+}

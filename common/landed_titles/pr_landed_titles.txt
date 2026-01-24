@@ -683,8 +683,8 @@ k_pergamon ={
 	}
 }
 e_spain = {
-	color = { 233 200 20 }
-
+	#color = { 233 200 20 }
+	color = { 255 163 78 }
 	capital = c_toledo # Toledo
 	can_be_named_after_dynasty = no
 
@@ -699,6 +699,7 @@ e_spain = {
 		name_list_andalusian = cn_isbaniya
 		name_list_yemeni = cn_isbaniya
 		name_list_celtic_iberian = pr_celitberian_hispania
+		name_list_visigothic = pr_visigothic_empire
 	}
 	k_pr_lusitania ={
 		#color = {230 208 }
@@ -737,7 +738,7 @@ e_spain = {
 		}
 	}
 
-	k_pr_galicia ={
+	k_pr_galicia ={#Galicia
 		color = { 164 230 96  }
 		capital = c_astorga
 		definite_form = yes
@@ -772,7 +773,7 @@ e_spain = {
 		}
 	}
 
-	k_pr_vasconia = {
+	k_pr_vasconia = { #Vasconia
 		#color = { 230 202 85 }
 		color = { 230 191 83 }
 		capital = c_navarra
@@ -808,7 +809,7 @@ e_spain = {
 		}
 	}
 
-	k_pr_tartessia = {
+	k_pr_tartessia = { #Baetica
 		color = { 229 158 45 }
 		capital = c_cordoba
 		definite_form = yes
@@ -844,7 +845,7 @@ e_spain = {
 		}
 	}
 
-	k_pr_iberia = {
+	k_pr_iberia = { #Eastern Iberia 
 		color = { 230 124 46 }
 		capital = c_barcelona
 		definite_form = yes
@@ -983,6 +984,19 @@ k_pr_galatia = {
 	}
 }
 
+d_laamp_pr_agiadai_867 = {
+	color = { 220 41 17 }
+	capital = c_laconia
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
 #Added to change empire name for both Roman and Greek 
 e_byzantium = {
     color =  hsv{ 0.9 1 0.3 } #hsv{ 0.73 0.8 0.4 }  #hsv{ 0.77 0.8 0.6 } #{ 143 12 125 }
@@ -995,4 +1009,125 @@ e_byzantium = {
         name_list_roman = pr_roman_eastern_roman_empire
         name_list_greek = pr_greek_eastern_roman_empire
     }
+}
+
+k_tarraconensis = {
+	color = { 210 180 140 } # Sandy color
+    definite_form = yes
+    ruler_uses_title_name = no
+    landless = no
+    capital = c_tarragona
+
+    # cultural_names = {
+    #     name_list_celtic_iberian = pr_celtiberian_tarraconensis
+    #     name_list_roman = pr_roman_tarraconensis
+    # }
+
+    can_create = {
+        OR = {
+            religion = religion:roman_religion
+            religion = religion:hellenism_religion
+			culture = culture:visigothic
+        }
+    }
+
+    ai_primary_priority = {
+        if = {
+            limit = {
+                OR = {
+					religion = religion:roman_religion
+					religion = religion:hellenism_religion
+					culture = culture:visigothic
+                }
+            }
+            add = @correct_culture_primary_score
+        }
+    }
+}
+
+k_carthaginensis = {
+	color = { 244 164 96 } # Sandy brown color
+    definite_form = yes
+    ruler_uses_title_name = no
+    landless = no
+    capital = c_cartagena
+
+    # cultural_names = {
+    #     name_list_celtic_iberian = pr_celtiberian_carthaginensis
+    #     name_list_roman = pr_roman_carthaginensis
+    # }
+
+    can_create = {
+        OR = {
+            religion = religion:roman_religion
+            religion = religion:hellenism_religion
+			culture = culture:visigothic
+        }
+    }
+
+    ai_primary_priority = {
+        if = {
+            limit = {
+                OR = {
+					religion = religion:roman_religion
+					religion = religion:hellenism_religion
+					culture = culture:visigothic
+                }
+            }
+            add = @correct_culture_primary_score
+        }
+    }
+}
+
+k_german_confederation = {
+	color = { 198 208 227 } 
+	definite_form = yes
+    ruler_uses_title_name = no
+    landless = no
+	capital = c_paderborn 
+
+	can_create = {
+		OR = {
+			faith = faith:german_polytheism
+			faith = faith:anglo_saxon_polytheism
+		}
+
+	}
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					faith = faith:german_polytheism
+					faith = faith:anglo_saxon_polytheism
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}
+
+k_noricum = { #Magdalensberg, capital Noreia in game klagenfurt
+	color = { 255 249 198 }
+	definite_form = yes 
+	capital = c_karnten 
+	ruler_uses_title_name = no
+	landless = no
+
+	can_create = {
+		OR = {
+			religion = religion:roman_religion
+			religion = religion:celtic_religion
+		}
+	}
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					religion = religion:roman_religion
+					religion = religion:celtic_religion
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
 }

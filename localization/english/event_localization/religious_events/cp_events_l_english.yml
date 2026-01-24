@@ -22,10 +22,10 @@
 
 
  rhk.001.t:0 "Creating kingdom"
- rhk.001.desc:0 "After years of fighting between all the Irish tribes and keeping out invidaders, It's finnaly time to Restore Ardrí na hÉireann also known as The Irish high kingdom."
+ rhk.001.desc:0 "After years of fighting between all the Irish tribes and keeping out invaders, It's finally time to Restore Ardrí na hÉireann also known as The Irish high kingdom."
  rhk.001.a:0 "Ardrí na hÉireann is once more"
  ccmd.001.t:0 "Choose main deity"
- ccmd.001.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or godesses."
+ ccmd.001.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or goddesses."
  ccmd.001.an_dagda:0 "An Dagda"
  ccmd.001.lugh:0 "Lugh"
  ccmd.001.brigid:0 "Brigid"
@@ -34,7 +34,7 @@
  ccmd.001.optout:0 "Maybe now isn't the right time"
 
  ccmd.002.t:0 "Choose main deity"
- ccmd.002.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or godesses."
+ ccmd.002.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or goddesses."
  ccmd.002.taranis:0 "Taranis"
  ccmd.002.lugus:0 "Lugus"
  ccmd.002.arianrhod:0 "Arianrhod"
@@ -43,7 +43,7 @@
  ccmd.002.optout:0 "Maybe now isn't the right time"
 
  ccmd.003.t:0 "Choose main deity"
- ccmd.003.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or godesses."
+ ccmd.003.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or goddesses."
  ccmd.003.toutatis:0 "Toutatis"
  ccmd.003.lughus:0 "Lughus"
  ccmd.003.rosmerta:0 "Rosmerta"
@@ -52,7 +52,7 @@
  ccmd.003.optout:0 "Maybe now isn't the right time"
 
  ccmd.004.t:0 "Choose main deity"
- ccmd.004.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or godesses."
+ ccmd.004.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or goddesses."
  ccmd.004.reue:0 "$celtic_iberian_polytheism_high_god_name$"
  ccmd.004.arancia:0 "$celtic_iberian_polytheism_health_god_name$"
  ccmd.004.nabia:0 "$celtic_iberian_polytheism_fertility_god_name$" 
@@ -73,8 +73,8 @@
  solstice.005.a:0 "Gather the realm for the Solstice"
 
  solstice.006.t:0 "Tairisem"
- solstice.006.desc:0 "Finaly mid-summer, time to start festivities for the goddess of the sun Éatain Eachraidhe to banish the demons and evil spirits from the land.\nMay her warmth grant us good harvest and may relationships be blessed."
- solstice.006.a:0 "Gather the realm for the Grainstad"
+ solstice.006.desc:0 "Finally mid-summer, time to start festivities for the goddess of the sun Éatain Eachraidhe to banish the demons and evil spirits from the land.\nMay her warmth grant us good harvest and may relationships be blessed."
+ solstice.006.a:0 "Gather the realm for the Solstice"
 
  solstice.007.t:0 "Alban Hefin"
  solstice.007.desc:0 "Finaly mid-summe, time to start festivities for the goddess of the sun Rhiannon to banish the demons and evil spirits from the land.\nMay her warmth grant us good harvest and may relationships be blessed."
@@ -100,11 +100,11 @@
  celtic.003.a:0 "Embrace the Gaulish culture"
  #Celtic Empire
  celtic.004.t:0 "Celtic Empire"
- celtic.004.desc:0 "By the glory of the celtic gods finaly our Celtic Brothers and Sisters are united under one banner, finally the Sassenach's are gone from our Islands"
+ celtic.004.desc:0 "By the glory of the celtic gods finally our Celtic Brothers and Sisters are united under one banner, finally the Sassenach's are gone from our Islands"
  celtic.004.a:0 "The Celtic lands are United"
 
  celtic.005.t:0 "Druidic Circle"
- celtic.005.desc:0 "We stand at an crosspoint a new faith. My fellow [ROOT.Char.GetFaith.GetAdherentNamePlural] certainly don't expect me to declare our submission to the existing druidic circle.\n\nYet, perhaps by pledging allegiance to the old Druidic circle we stand stronger against our enemies..."
+ celtic.005.desc:0 "We stand at an cross point of a new faith. My fellow [ROOT.Char.GetFaith.GetAdherentNamePlural] certainly don't expect me to declare our submission to the existing druidic circle.\n\nYet, perhaps by pledging allegiance to the old Druidic circle we stand stronger against our enemies..."
  celtic.005.a:0 "$head_of_faith.0021.a$"
  celtic.005.d:0 "We must continue cleaving to [old_druid.GetFaith.GetAdjectiveNoTooltip] authority!"
  celtic.005.rejection_body:0 "rejects the pledge"
@@ -114,7 +114,7 @@
  celtic.005.d.acceptance:0 "@piety_level_3_icon_pagan! [old_druid.GetTitledFirstNameNoTooltip] $celtic.005.acceptance_body$"
 
 celtic.009.t:0 "Arival Uisneach"
-celtic.009.desc:0 "It took quite a bit of travelling but finally... We're here! The holy hill of Uisneach. let's get up the hill and set camp. Maybe we can explore a little while the servants are setting up camp."
+celtic.009.desc:0 "It took quite a bit of traveling but finally... We're here! The holy hill of Uisneach. let's get up the hill and set camp. Maybe we can explore a little while the servants are setting up camp."
 celtic.009.a:0 "Get to the Top"
 
 celtic.010.t:0 "Uisneach"
@@ -138,11 +138,11 @@ celtic.011.a:0 "Great to be Back Home Again"
 
  celtic.015.t:0 "The Reconquest Saga"
  celtic.015.desc.eire:0 "Years of fighting vikings and other Irish tribes our reconquest is off to a good start, now our island is safe we can look at invading our next target.\n\nBut first it's time enjoy the moment that Ardrí na hÉireann also known as The Irish high kingdom is back in Celtic hands."
- celtic.015.desc.alba:0 "Scotland was never conquerd by the Romans, but nevertheless we have Sassenach invassions, by creating the kingdom of Scotland we can protect ourself better against invassions. When Scotland, Ireland and Wales are under one banner we can invade england or better said in scotisch gaelic Sasainn"
- celtic.015.desc.wales:0 "Wales conquered by the romans, reconquerd by the scotish tribes after the fall of the Roman Empire. Now combined under the banner of Wales."
- celtic.015.desc.albion:0 "Victory at last, all Sassenach are gone, the lands of our ancestors are finaly free.\n\nYou would think this is our final stop but no, we Celts once ruled the lands of what is now ruled by frankish kings and emperors.\nIt's within our right to reconquer those lost territories and bring back the golden age for the Celtic people!"
+ celtic.015.desc.alba:0 "Scotland was never conquered by the Romans, but nevertheless we have Sassenach invasions, by creating the kingdom of Scotland we can protect ourself better against invasions. When Scotland, Ireland and Wales are under one banner we can invade england or better said in Scottish gaelic Sasainn"
+ celtic.015.desc.wales:0 "Wales conquered by the romans, reconquered by the Scottish tribes after the fall of the Roman Empire. Now combined under the banner of Wales."
+ celtic.015.desc.albion:0 "Victory at last, all Sassenach are gone, the lands of our ancestors are finally free.\n\nYou would think this is our final stop but no, we Celts once ruled the lands of what is now ruled by frankish kings and emperors.\nIt's within our right to reconquer those lost territories and bring back the golden age for the Celtic people!"
  celtic.015.desc.brittany:0 "Our celtic ancestors fled across the channel for the Sassenach centuries ago, now they give us a new foothold on the mainland."
- celtic.015.desc.galicia:0 "A few centuries ago our Caledonian ancestors fled to these lands for safety against the sassenachs, even though it's some time ago we should feel at home here. From here the road is open to the old celtiberian lands!"
+ celtic.015.desc.galicia:0 "A few centuries ago our Caledonian ancestors fled to these lands for safety against the sassenachs, even though it's some time ago we should feel at home here. From here the road is open to the old Celtiberian lands!"
  celtic.015.desc.belgae:0 "The of Belgae once proud defenders of the Celtic world, the most famous of all Ambiorix who rebelled against Roman rule."
  celtic.015.desc.celtica:0 "Celtica, Vercingetorix once ruled these lands as leader of the combined gaulish tribes ready to fight of the the Romans. He ended up in Rome in a prison\nNow with the most of the old Celtic lands under control it's up to us to decide what happens next"
  
@@ -157,7 +157,7 @@ celtic.011.a:0 "Great to be Back Home Again"
  celtic.015.h:0 "[ROOT.Char.GetFaith.HighGodName] be Praised!"
 
  celtic.016.t:0 "The Celtic Empire"
- celtic.016.desc:0 "After reconquest of the islands, the kingdoms of Ireland, Scotland, Wales and England are united but also still seperated.\n\nEvery year the most notable lords come together to speak about the future. And now to bring stability to the realms it's important to bring the kingdoms under one complete realm like the Romans did.\n\n The most influencileader of the lords stood up from his chair and said "Today my lord we want to ask you to take the Crown of the united Celtic Empire, with all it's duties and powers. Will you accept this honor? What will be your answer?"  "
+ celtic.016.desc:0 "After reconquest of the islands, the kingdoms of Ireland, Scotland, Wales and England are united but also still separated.\n\nEvery year the most notable lords come together to speak about the future. And now to bring stability to the realms it's important to bring the kingdoms under one complete realm like the Romans did.\n\n The most influenceable leader of the lords stood up from his chair and said "Today my lord we want to ask you to take the Crown of the united Celtic Empire, with all it's duties and powers. Will you accept this honor? What will be your answer?"  "
  accepted_crown_of_celtic_empire_effect_tooltip:0 "Accept the crown of the Celtic Empire"
  celtic.016.a:0 "A normal coronation is sufficient"
  #celtic.016.b:0 "Ask the Arch druid to coronate you"
@@ -166,3 +166,32 @@ celtic.011.a:0 "Great to be Back Home Again"
  celtic.017.t:0 "Embrace the Old Irish culture"
  celtic.017.desc:0 "Long we have strayed away from the old irish gods, as we want to bond again with the gods, it's important to delve into our old traditions.\nThis also means we need to get rit of our christian names and change them to proper old irish ones."
  celtic.017.a:0 "Embrace the Old Irish culture"
+ 
+ celtic.018.t:0 "Druidic circle"
+ celtic.018.desc:0 "The echoes of a long-forgotten age resonate once again. Anglesey, a land long abandoned, is now back in the hands of the Celtic peoples. With the island reclaimed, ancient rituals are being restored and the druidic circle is being reborn. The first new druids have broken the silence and begun their studies, so that one day they might once again explain the gods' sacred words to the people. Their task is to restore Celtic polytheism, the faith in [ROOT.Char.GetFaith.HighGodName] and the others, and to lead the people back to the old ways."
+ celtic.018.a:0 "May [ROOT.Char.GetFaith.HighGodName] be praised!"
+
+ celtic.020.t:0 "A sacred Duty"
+ celtic.020.desc:0 "Today is a special day, I can send one of my children to the druidic circle to become a druid, this is a sacred duty and honor for the whole family.\n\nThe druids are the spiritual leaders of our people, they interpret the will of the gods, lead rituals and ceremonies, and provide guidance to the community.\n\nBy sending one of my children to become a druid, I am ensuring that our family has a direct connection to the divine and that we will always have someone who can help us navigate the challenges of life."
+ celtic.020.a:0 "Send a child to the druidic circle"
+ celtic.020.cancel:0 "Maybe not now"
+
+ celtic.021.t:0 "The New Druidic Leader"
+ celtic.021.desc:0 "After the death of the last Druidic leader, a new leader has been chosen by the Druids. Hopefully he will stay in office for a long time and keep the ancient knowledge alive."
+ celtic.021.a:0 "Praise [ROOT.Char.GetFaith.HighGodName] !"
+
+
+
+celtic.022.t:0 "A vassal dispute"
+celtic.022.desc:0 "A bitter dispute over land rights and sworn oaths has erupted between two of my most powerful vassals, [vassal_1.GetTitledFirstName] and [vassal_2.GetTitledFirstName]. My own laws offer a clumsy solution at best, and any judgment I make is sure to anger one of them.\n\nMy court druid, [druidic_leader.GetFirstName], has approached me with a solution. 'My lord,' [druidic_leader.GetSheHe] says calmly, 'these matters are tangled in traditions that predate your laws. The ancient ways of our people have clear precedents for such things. Allow me to mediate. I will render a judgment according to the sacred laws that have guided our people for generations, a judgment that both must accept.'"
+celtic.022.a:0 "Very well, let the old laws decide this."
+celtic.022.b:0 "I will not have my authority undermined."
+
+celtic.023.t:0 "The Druid's Judgment"
+celtic.023.desc:0 "After days of hearing testimony and reciting ancient legal verses from memory, my court druid [druidic_leader.GetFirstName] has rendered [druidic_leader.GetHerHis] judgment. The ruling is complex, weaving together precedent, spiritual obligation, and a deep understanding of the land itself. It is a solution I would never have conceived of.\n\n[vassal_1.GetTitledFirstName] and [vassal_2.GetTitledFirstName] listen intently. As the final words are spoken, a silence falls over the court. Then, to my surprise, both nod in acceptance. The matter is settled, not by the sword, but by the weight of tradition."
+celtic.023.a:0 "A wise and fair judgment."
+
+celtic.024.t:0 "The Fading Verse"
+celtic.024.desc:0 "My court druid, [court_druid.GetFirstName], has requested an audience, a look of deep concern on [court_druid.GetHerHis] face. 'My lord,' [court_druid.GetSheHe] begins, 'our knowledge is a library carried in memory. The genealogies of kings, the laws of the land, the cycles of the stars, and the stories of the gods... all are held in verse, passed from teacher to student. But we are few, and memories can fail.'\n\n'I fear that if we do not act, this great ocean of knowledge will evaporate. I ask for your patronage to establish a school, a place where I can dedicate myself to training a new generation. It is a process that takes twenty years for a single student, but it is the only way to ensure our past is not forgotten.'"
+celtic.024.a:0 "An excellent idea. You have my support."
+celtic.024.b:0 "We have more pressing concerns."

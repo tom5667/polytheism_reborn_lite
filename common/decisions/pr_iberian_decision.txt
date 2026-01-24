@@ -1,6 +1,8 @@
 ﻿choose_main_deity_iberian_decision = {
-	picture = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
-
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
+	}
+	decision_group_type = polytheism
 	#desc = choose_main_deity_celtic_decision_desc
 	desc = select_personal_deity_germanic_decision_desc
 	selection_tooltip = choose_main_iberian_decision_tooltip

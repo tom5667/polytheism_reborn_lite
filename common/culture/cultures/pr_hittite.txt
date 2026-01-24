@@ -1,5 +1,5 @@
 ﻿hittite = {
-	color = greek
+	color = { 180 130 60 } # Bronze/Clay color representing Hittite Anatolia
 	
 	ethos = ethos_bellicose
 	heritage = heritage_hittite

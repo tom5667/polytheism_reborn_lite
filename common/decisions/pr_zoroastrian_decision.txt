@@ -1,14 +1,203 @@
-﻿pr_commission_te_avesta_decision = {
+﻿####################################################################################################################################
+#Update decision from infromation from link below -> engough information to make a decision for the earliest bookmark of bookmarks+
+#https://forum.paradoxplaza.com/forum/threads/the-sassanids-in-charlemagne-one-final-love-letter.1429937/
+#dynasty id of the sassanids 1029100 
+####################################################################################################################################
+invite_sassanid_relatives_decision ={
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/Sassanid.dds"
+	}
+	decision_group_type = major
+ 	is_shown ={
+ 		is_adult = yes
+		is_landed = yes
+ 		is_imprisoned = no
+  		is_at_war = no
+		
+ 		culture = { has_cultural_pillar = heritage_iranian }
+		current_date <= 790.1.1
+		NOR={
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions_invite_relative
+				target = flag:flag_restored_pr_invite_relative
+			}
+			has_dlc_feature = roads_to_power #As adventurer you can conquer the realm yourself so that would make more sense 
+		}
+ 	}	
+ 	is_valid ={
+		custom_description = {
+			text = invite_sassanid_relatives_decision_before_last_date
+			current_date <= 790.1.1
+		}
+		#exists = character:180643
+		# AND={
+		# 	scope:mahrzad={
+		# 		character = character:180643
+		# 	}
+		# 	is_alive = yes
+		# }
+		has_religion = religion:zoroastrianism_religion
+ 		OR={	
+			dynasty = dynasty:1042112
+			dynasty = dynasty:7331
+			dynasty = dynasty:100685
+ 		}
+ 	}
+	cost={#The remaining sassanids are already above 50 so no to high costs 
+		piety = 100
+		gold = 25
+	}
+	effect={
+		trigger_event = prsr.001
+
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions_invite_relative
+				target = flag:flag_restored_pr_invite_relative
+			}
+		}
+	}
+ }
+
+ #Decisions to make the reconquest of the sassanid empire more fun, Keeping in mind the age of the last recorded Sassanids 
+ #If Mehrzad get's children who can continue the reconquest will be fine. 
+
+ #Start the reconquest in Zuranje
+ sassanid_reconquest={
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/Sassanid.dds"
+	}
+	decision_group_type = polytheism
+	is_shown={
+		OR = {
+			dynasty = dynasty:1029100
+			dynasty = dynasty:100685
+		}
+		NOR={
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions_reconquest
+				target = flag:flag_restored_pr_reconquest
+			}
+		}
+	}
+	is_valid={
+		OR = {
+			dynasty = dynasty:1029100
+			dynasty = dynasty:100685
+		}
+		has_religion = religion:zoroastrianism_religion
+		has_title = title:d_balkh
+
+	} # Note needs some more work, if this doesn't work more decisions are needed.
+	effect={
+		if={
+			limit={#First reconquest goal
+				has_title = title:d_balkh
+			}
+			trigger_event = sassanid_reconquest.001
+			hidden_effect = {
+				add_to_global_variable_list = {
+					name = unavailable_unique_decisions_reconquest
+					target = flag:flag_restored_pr_reconquest
+				}
+			}
+		}
+	}
 	
-	picture = "gfx/interface/illustrations/decisions/fp3/fp3_decision_foundation.dds"
+ }
+ 
+ #Send envoys to afrighids and dabuyids if available
+ send_envoy_to_afrighids_decision={
+	desc = send_envoy_to_afrighids_decision_desc
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/Sassanid_envoys.dds"
+	}
+	decision_group_type = polytheism
+	is_shown={
+		title:d_khorezm.holder = {
+			religion = religion:zoroastrianism_religion 
+			dynasty = dynasty:1042112
+		}
+		is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions_reconquest
+			target = flag:flag_restored_pr_reconquest
+		}
+		NOR={
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions_send_envoys_to_afrighids
+				target = flag:flag_restored_pr_send_envoys_to_afrighids
+			}
+		}
+	}
+	is_valid={
+		has_religion = religion:zoroastrianism_religion
+		has_title = title:d_sistan
+
+	} 
+	effect={
+		trigger_event = zoroastrianism.004
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions_send_envoys_to_afrighids
+				target = flag:flag_restored_pr_send_envoys_to_afrighids
+			}
+		}
+ 	}
+ }
+
+ send_envoy_to_dabuyids_decision={
+	desc = send_envoy_to_dabuyids_decision_desc
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/Sassanid_envoys.dds"
+	}
+	decision_group_type = polytheism
+	is_shown={
+		title:d_tabaristan.holder = {
+			religion = religion:zoroastrianism_religion 
+			dynasty_house = house_dabuyid
+		}
+		is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions_reconquest
+			target = flag:flag_restored_pr_reconquest
+		}
+		NOR={
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions_send_envoys_to_dabuyids
+				target = flag:flag_restored_pr_send_envoys_to_dabuyids
+			}
+		}
+	}
+	is_valid={
+		has_religion = religion:zoroastrianism_religion
+		has_title = title:d_sistan
+
+	}
+	effect={
+		trigger_event = zoroastrianism.008
+
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions_send_envoys_to_dabuyids
+				target = flag:flag_restored_pr_send_envoys_to_dabuyids
+			}
+
+		}
+	}
+	
+ }
+
+
+pr_commission_te_avesta_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_foundation.dds"
+	}
+	decision_group_type = polytheism
 	desc = pr_commission_te_avesta_decision_desc
 	selection_tooltip = pr_commission_te_avesta_decision_tooltip
-	major = yes
+
 	is_shown = {
 		religion = religion:zoroastrianism_religion
 		is_landed = yes
-
-		major = yes
 		#exists = root.faith.religious_head
 		NOR={
 			is_target_in_global_variable_list = {
@@ -51,6 +240,62 @@
 			add_to_global_variable_list = {
 				name = unavailable_unique_decisions_avesta
 				target = flag:flag_restored_pr_avesta
+			}
+		}
+	}
+}
+pr_reintroduce_old_persian_names = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_foundation.dds"
+	}
+	decision_group_type = polytheism
+	desc = pr_reintroduce_old_persian_names_desc
+	selection_tooltip = pr_reintroduce_old_persian_names_tooltip
+
+	is_shown = {
+		religion = religion:zoroastrianism_religion
+		is_landed = yes
+		#exists = root.faith.religious_head
+		is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions_avesta
+			target = flag:flag_restored_pr_avesta
+		}
+		NOR={
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions_old_persian_names
+				target = flag:flag_restored_pr_old_persian_names
+			}
+			#faith = { has_doctrine = doctrine_no_head } 
+		
+		}
+	}
+	is_valid = {
+		AND = {
+			religion = religion:zoroastrianism_religion
+			exists = faith.religious_head
+			#has_title = title:e_persia 
+			piety_level >= high_piety_level
+			completely_controls = title:c_baghdad
+			has_trait = trait_scholar 
+		}
+
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+		is_at_war = no
+	}
+	cost = {
+		gold = 150
+	}
+	effect = {
+		trigger_event = zoroastrianism.003
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions_old_persian_names
+				target = flag:flag_restored_pr_old_persian_names
 			}
 		}
 	}

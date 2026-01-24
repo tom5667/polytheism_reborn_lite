@@ -209,9 +209,9 @@ convert_to_romano_hispanic_decision_confirm:1 "Adopt Iberian gods"
 
 
 #Request auspice
-request_auspice_decision:0 "Request a Auspice"
+request_auspice_decision:0 "Request an Auspice"
 request_auspice_decision_desc:0 "With everything we do in life we want to be sure the gods aprove what we do. If they don't aprove who knows what happens if we still continue."
-request_auspice_decision_tooltip:0 "Request a auspice"
+request_auspice_decision_tooltip:0 "Request an auspice"
 request_auspice_decision_confirm:0 "Request Auspice"
 REQUEST_AUSPICE_NEXT_STEP_BUTTON:0 "Choose Auspice"
 auspice_type:0 "Choose Auspice"
@@ -305,3 +305,23 @@ reform_galatie_decision_desc:0 "Galatia was a Celtic stronghold centuries ago, t
 reform_galatie_decision_tooltip:0 "Reform Galatia"
 create_reform_galatia_effect_tooltip:0 "Create the kingdom of Galatia"
 reform_galatia_part_decision_confirm:0 "Reform Galatia"
+
+romanize_the_slavs_decision:0 "Romanize the Neighbors"
+romanize_the_slavs_decision_desc:0 "As the depositary of the [ROOT.Char.GetFaith.GetAdjective] Faith, it is [GetTitleByKey('e_byzantium').GetNamePossessive] duty to Romanize the neighboring realms and welcome them into the fold of our religion so they can be protected against the Christians. This is all the more relevant as they live just beyond our borders and menace the integrity and security of the empire."
+romanize_the_slavs_decision_tooltip:0 "Send a missionary to romanize your neighbors"
+romanize_the_slavs_decision_confirm:0 "Send the Missionary"
+
+build_temple_jupiter_constantinople:0 "Build Pantheon of Constantinople"
+build_temple_jupiter_constantinople_desc:0 "The [ROOT.Char.GetFaith.GetAdjective] is the main religion of the Roman Empire once more let's honor the gods with a temple only seen in Rome!"
+build_temple_jupiter_constantinople_tooltip:0 "Build a new pantheon in Constantinople"
+build_temple_jupiter_constantinople_confirm:0 "Confirm"
+
+build_temple_jupiter_rome:0 "Reopen Pantheon of Rome"
+build_temple_jupiter_rome_desc:0 "Soldiers remove the chrisitian figures from the pantheon"
+build_temple_jupiter_rome_tooltip:0 "Reopen the Pantheon"
+build_temple_jupiter_rome_confirm:0 "Confirm"
+
+send_daughter_to_temple_of_vesta_decision:0 "Send your daughter to the temple of Vesta"
+send_daughter_to_temple_of_vesta_decision_desc:0 "Send your daughter to the temple of Vesta, so she can become a Vestal Virgin and serve the goddess Vesta."
+send_daughter_to_temple_of_vesta_decision_tooltip:0 "Send your daughter to the temple of Vesta"
+send_daughter_to_temple_of_vesta_decision_confirm:0 "Send her to the temple"

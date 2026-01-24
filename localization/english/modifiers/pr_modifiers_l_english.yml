@@ -96,9 +96,9 @@ gaelic_nemain_desc:0 "Devotee of Nemain goddess of war"
 gaelic_ecna:0 "Devotee Of Ecna"
 gaelic_ecna_desc:0 "Devotee of Ecna goddess of wisdom"
 
-#Daco Thracian pilgrimage 
+#Celtic pilgrimage 
 celtic_cnoc_uisnigh_godly_presence :0 "Felt The Presence Of The Gods"
-celtic_cnoc_uisnigh_godly_presence _desc:0 "This character has felt the presence gods An Dagda and Brigid on the holy hill of Uisneach"
+celtic_cnoc_uisnigh_godly_presence _desc:0 "This character has felt the presence of An Dagda and Brigid on the holy hill of Uisneach"
 celtic_cnoc_uisnigh_hill:0 "Visited The hill of Uisneach"
 celtic_cnoc_uisnigh_hill_desc:0 "This character visited the holy hill of Uisneach"
 
@@ -167,12 +167,14 @@ lusitanian_cariocecus:0 "Devotee Of Cariocecus"
 lusitanian_cariocecus_desc:0 "Devotee of Cariocecus god of war"
 
 #Germanic
+
+
 #Anglo Saxon
 anglo_saxon_woden:0 "Devotee Of Wōden"
 anglo_saxon_woden_desc:0 "Devotee of Wōden allfather and god of wisdom"
 
-anglo_saxon_njord:0 "Devotee Of Njǫrd"
-anglo_saxon_njord_desc:0 "Devotee of Njǫrd god of wealth and trade"
+anglo_saxon_njord:0 "Devotee Of Njord"
+anglo_saxon_njord_desc:0 "Devotee of Njord god of wealth and trade"
 
 anglo_saxon_fri:0 "Devotee Of Frī"
 anglo_saxon_fri_desc:0 "Devotee of Frī goddess of fertility"
@@ -582,6 +584,11 @@ idol_of_freyja_desc:0 "This character has carved a small woden idol of Freyja"
 blessed_army:0 "Blessed Army"
 blessed_army_desc:0 "This characters army is blessed by the gods!"
 
+germanic_opfermoor_vogtei_godly_presence :0 "Felt The Presence Of The Gods"
+germanic_opfermoor_vogtei_godly_presence _desc:0 "This character has felt the presence gods in the holy moor of Vogtei"
+germanic_opfermoor_vogtei:0 "Visited opfermoor Vogtei"
+germanic_opfermoor_vogtei_desc:0 "This character visited the holy moor of Vogtei"
+
 #Hellenic
 favoured_by_zeus:0 "Blessed By Zeus"
 favoured_by_zeus_desc:0 "Zeus helps this character to rule the realm"
@@ -682,3 +689,41 @@ graeco_egyptian_harpocrates_desc:0 "Devotee of Harpocrates, god of silence and s
 
 graeco_egyptian_alexander_megalos:0 "Devotee of Alexandros Megalos"
 graeco_egyptian_alexander_megalos_desc:0 "Devotee of Alexandros Megalos, who was deified by the people"
+
+druidic_knowledge:0 "Druidic Knowledge"
+druidic_knowledge_desc:0 "Thist character is guided by the ancient wisdom of the druids"
+
+#Random event modifiers Canaanite 
+offering_to_baal_hamon:0 "Favoured by Baal Hammon"
+offering_to_baal_hamon_desc:0 "This character made an offering to Baal Hammon"
+
+favoured_by_tanit:0 "Favoured by Tanit"
+favoured_by_tanit_desc:0 "This character is favoured by Tanit"
+
+unfavoured_by_tanit :0 "Unfavoured by Tanit"
+unfavoured_by_tanit_desc:0 "This character is not favoured by Tanit"
+
+mithraic_revelation:0 "Mithraic Revelation"
+mithraic_revelation_desc:0 "This character had a revelation from Mithras"
+
+cybele_ecstatic_revelry:0 "Cybele Ecstatic Revelry"
+cybele_ecstatic_revelry_desc:0 "This character has recently participated in a wild, ecstatic ritual in honor of the Great Mother, feeling the primal energy of nature flow through them."
+
+eleusinian_vision:0"Eleusinian Vision"
+eleusinian_vision_desc:0 "This character has had a profound vision related to the Eleusinian Mysteries, granting them a sense of peace about the afterlife."
+
+bacchus_divine_madness:0"Bacchus Divine Madness"
+bacchus_divine_madness_desc:0 "This character has recently indulged in a divinely inspired revelry, feeling the liberating joy of Bacchus."
+
+serapis_ferryman_token:0"Serapis Ferryman Token"
+serapis_ferryman_token_desc:0 "This character possesses what they believe to be a token from Serapis, easing their fears of the afterlife."
+
+isis_whispering_reed:0"Isis Whispering Reed"
+isis_whispering_reed_desc:0 "This character has been gifted a sacred reed from a priestess of Isis, which seems to whisper ancient secrets, sharpening their mind."
+
+#Opinion modifiers
+trusted_druidic_judgment_opinion:0 "Trusted druidic judgment"
+rejected_druidic_judgment_opinion:0 "Rejected druidic judgment"
+impressed_by_fair_judgment_opinion:0 "Impressed by fair judgment"
+generic_opinion_negative:0 "Hmm maybe not that good"
+supported_druidic_school_opinion:0 "Supported druidic school"

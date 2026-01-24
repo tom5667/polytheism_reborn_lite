@@ -604,7 +604,7 @@ rpcs.005 = {
 	}
 	option = {
 		name = rpcs.005.celtiberian
-		set_culture = culture:celtic_berian
+		set_culture = culture:celtic_iberian
 	}
 	option = {
 		name = rpcs.005.back
@@ -988,6 +988,17 @@ sassanid_reconquest.001={
 	option={
 		name = sassanid_reconquest.001.a
 		add_prestige = 100
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 200
+			men_at_arms = {
+				type = ayyar
+				stacks = 3
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+			}
 	}
 }
 

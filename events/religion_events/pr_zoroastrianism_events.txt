@@ -122,7 +122,7 @@ zoroastrianism.001 = {
 	type = character_event
 	title = zoroastrianism.001.t
 	desc = zoroastrianism.001.desc
-	theme = hunt_activity
+	override_background = throne_room_east
 	right_portrait = {
 		character = root
 		animation = personality_callous
@@ -142,7 +142,7 @@ zoroastrianism.002 = {
 	type = character_event
 	title = zoroastrianism.002.t
 	desc = zoroastrianism.002.desc
-	theme = hunt_activity
+	override_background = throne_room_east
 	right_portrait = {
 		character = root
 		animation = personality_callous
@@ -160,5 +160,230 @@ zoroastrianism.002 = {
 			modifier = pr_book_avesta
 			quality = scope:quality
 		}
+	}
+}
+
+zoroastrianism.003 = {
+
+	type = character_event
+	title = zoroastrianism.003.t
+
+	desc = zoroastrianism.003.desc
+	theme = faith
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	option = {
+		name = zoroastrianism.003.a
+		set_culture = culture:middle_persian
+	}
+}
+ 
+zoroastrianism.004 = {
+	type = character_event
+	title = zoroastrianism.004.t
+	desc = zoroastrianism.004.desc
+	override_background = throne_room_east
+	theme = faith
+	immediate = {
+		title:d_khorezm.holder = {
+			religion = religion:zoroastrianism_religion 
+			dynasty = dynasty:1042112
+			save_scope_as = receiver
+		}
+		create_character = {
+			employer = root
+			dynasty = generate
+			religion = mazdayasna
+			culture = culture:middle_persian
+			random_traits = yes
+			save_scope_as = envoy
+			age = {20 40}
+			
+		}
+	}
+	right_portrait = {
+		character = scope:envoy
+		animation = personality_honorable
+	}
+	left_portrait = {
+
+		character = scope:receiver
+		animation = personality_cynical
+	}
+
+
+	option = {
+		name = zoroastrianism.004.a
+		decide_fate_off_envoy = yes
+			# clear_saved_scope = scope:receiver
+			# remove_list_global_variable = {
+			# 	name = unavailable_unique_decisions_send_envoys_to_afrighids
+			# 	target = flag:flag_restored_pr_send_envoys_to_afrighids
+			# }
+			# remove_list_global_variable = {
+			# 	name = unavailable_unique_decisions_send_envoys_to_dabuyids
+			# 	target = flag:flag_restored_pr_send_envoys_to_dabuyids
+			# }
+		
+
+	}
+}
+
+zoroastrianism.008 = {
+	type = character_event
+	title = zoroastrianism.004.t
+	desc = zoroastrianism.004.desc
+	override_background = throne_room_east
+	theme = faith
+	immediate = {
+		title:d_tabaristan.holder = {
+			religion = religion:zoroastrianism_religion 
+			dynasty_house = house_dabuyid
+			save_scope_as = receiver
+		}
+		create_character = {
+			employer = root
+			dynasty = generate
+			religion = mazdayasna
+			culture = culture:middle_persian
+			random_traits = yes
+			save_scope_as = envoy
+			age = {20 40}
+			learning = {8 25}
+		}
+	}
+	right_portrait = {
+		character = scope:envoy
+		animation = personality_honorable
+	}
+	left_portrait = {
+
+		character = scope:receiver
+		animation = personality_cynical
+	}
+
+
+	option = {
+		name = zoroastrianism.004.a
+		decide_fate_off_envoy = yes
+			# clear_saved_scope = scope:receiver
+			# remove_list_global_variable = {
+			# 	name = unavailable_unique_decisions_send_envoys_to_afrighids
+			# 	target = flag:flag_restored_pr_send_envoys_to_afrighids
+			# }
+			# remove_list_global_variable = {
+			# 	name = unavailable_unique_decisions_send_envoys_to_dabuyids
+			# 	target = flag:flag_restored_pr_send_envoys_to_dabuyids
+			# }
+		
+
+	}
+}
+
+
+zoroastrianism.005 = {
+	type = character_event
+	title = zoroastrianism.005.t
+	desc = zoroastrianism.005.desc
+	override_background = throne_room_east
+
+	theme = faith
+	right_portrait = {
+		character = scope:envoy
+		animation = personality_honorable
+	}
+	left_portrait = {
+		character = scope:receiver
+		animation = personality_honorable
+	}
+	option = {#Make the alliance happen
+		name = zoroastrianism.005.a
+		create_alliance = {
+			target = scope:khorezm_holder
+			allied_through_owner = scope:khorezm_holder
+			allied_through_target = root
+		} 
+		scope:khorezm_holder = {
+			add_pressed_claim = title:d_merv 
+		}
+		scope:root = {
+			add_opinion = {
+				target = scope:khorezm_holder
+				modifier = event_negotiated_alliance_opinion
+
+			}
+		}
+		scope:envoy= {
+			death = {
+				death_reason = death_vanished
+			}
+		}
+	}
+}
+
+zoroastrianism.006 = {
+	type = character_event
+	title = zoroastrianism.006.t
+	desc = zoroastrianism.006.desc
+	override_background = throne_room_east
+	theme = faith
+	right_portrait = {
+		character = scope:receiver
+		animation = personality_cynical
+	}
+	left_portrait = {
+		character = scope:envoy
+		animation = personality_cynical
+	}
+	option = {#Alliance is not an option, give small opinion boost instead
+		name = zoroastrianism.006.a
+		scope:root = {
+			add_opinion = {
+				target = scope:receiver
+				modifier = event_negotiated_alliance_opinion
+
+			}
+		}
+		scope:envoy= {
+			death = {
+				death_reason = death_vanished
+			}
+		}
+	}
+}
+
+zoroastrianism.007 = {
+	type = character_event
+	title = zoroastrianism.007.t
+	desc = zoroastrianism.007.desc
+	override_background = throne_room_east
+	theme = faith
+	right_portrait = {
+			character =  scope:receiver
+			animation = threatening
+	}
+	left_portrait = {
+		character = scope:envoy
+		animation = beg
+	}
+	option = {#Send back his head 
+		name = zoroastrianism.007.a
+		scope:root = {
+			add_opinion = {
+				target = scope:receiver
+				modifier = refused_alliance_opinion 
+
+			}
+		}
+
+		scope:envoy= {
+			death = {
+				death_reason = death_decapitated
+				killer = scope:receiver
+			}
+		}
+
 	}
 }

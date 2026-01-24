@@ -1,7 +1,9 @@
 ﻿#Patron deity decision from vanilla game, override: removed needing the personal deity doctrine 
 select_personal_deity_germanic_decision = {
-	picture = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
-
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
+	}
+	decision_group_type = polytheism
 	desc = select_personal_deity_germanic_decision_desc
 	selection_tooltip = select_personal_deity_germanic_decision_tooltip
 
@@ -110,9 +112,11 @@ select_personal_deity_germanic_decision = {
 		}
 		else_if ={
 			limit = {
-				faith = faith:german_polytheism
-				faith = { has_doctrine_parameter = special_doctrine_german_patron_god_active }
-
+				OR = { 
+					faith = faith:german_polytheism
+					faith = { has_doctrine_parameter = special_doctrine_german_patron_god_active }
+	
+				}
 			}
 							# Show the possible options.
 							show_as_tooltip = {
@@ -173,6 +177,307 @@ select_personal_deity_germanic_decision = {
 		}
 	}
 
+	ai_will_do = {
+		base = 100
+	}
+}
+
+place_new_irminsul_paderborn = {
+	decision_group_type = polytheism
+	desc = place_new_irminsul_paderborn_desc
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+	is_shown = {
+		faith = faith:anglo_saxon_polytheism
+		NOT = { has_global_variable = pr_new_irminsul }
+		NOT = { has_global_variable = PR_BM_700_is_loaded } 
+	}
+	is_valid = {
+		completely_controls = title:d_westfalen
+	}
+
+	effect = {
+		set_global_variable = {
+			name = pr_new_irminsul
+			value = yes
+		}
+		trigger_event = pr_germanic.012
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+#Reconquest for german faith, first target paderborn
+german_holy_reconquest_decision = {
+	decision_group_type = polytheism
+	desc = german_holy_reconquest_decision_desc
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/saxon_army.dds"
+	}
+	is_shown = {
+		OR = {
+			faith = faith:anglo_saxon_polytheism
+			faith = { has_doctrine_parameter = special_doctrine_anglo_saxon_patron_god_active }
+			faith = faith:german_polytheism
+			faith = { has_doctrine_parameter = special_doctrine_german_patron_god_active }
+
+		}
+		NOR={
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions_holy_reconquest
+				target = flag:flag_restored_pr_holy_reconquest
+			}
+			has_title = title:k_saxony
+		}
+	}
+	is_valid = {
+		completely_controls = title:c_paderborn
+		
+	}
+	effect = {
+		trigger_event = pr_germanic.013 
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions_holy_reconquest
+				target = flag:flag_restored_pr_holy_reconquest
+			}
+		}
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+#Reconquest for german faith, second target westfalen
+german_holy_reconquest_westfalen_decision = {
+	decision_group_type = polytheism
+	desc = german_holy_reconquest_westfalen_decision_desc
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/saxon_army.dds"
+	}
+	is_shown = {
+		OR = {
+			faith = faith:anglo_saxon_polytheism
+			faith = { has_doctrine_parameter = special_doctrine_anglo_saxon_patron_god_active }
+			faith = faith:german_polytheism
+			faith = { has_doctrine_parameter = special_doctrine_german_patron_god_active }
+
+		}
+		is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions_holy_reconquest
+			target = flag:flag_restored_pr_holy_reconquest
+		}
+		NOR = {
+			is_target_in_global_variable_list = {
+				name = navailable_unique_decisions_holy_reconquest_westfalen
+				target = flag:flag_restored_pr_holy_reconquest_westfalen
+			}
+		}
+	}
+	is_valid = {
+		completely_controls = title:d_westfalen
+		
+	}
+	effect = {
+		trigger_event = pr_germanic.014 
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions_holy_reconquest_westfalen
+				target = flag:flag_restored_pr_holy_reconquest_westfalen
+			}
+		}
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+
+
+german_holy_reconquest_angria_decision = {
+	decision_group_type = polytheism
+	desc = german_holy_reconquest_westfalen_decision_desc
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/saxon_army.dds"
+	}
+	is_shown = {
+		OR = {
+			faith = faith:anglo_saxon_polytheism
+			faith = { has_doctrine_parameter = special_doctrine_anglo_saxon_patron_god_active }
+			faith = faith:german_polytheism
+			faith = { has_doctrine_parameter = special_doctrine_german_patron_god_active }
+
+		}
+		is_target_in_global_variable_list = {
+			name = navailable_unique_decisions_holy_reconquest_westfalen
+			target = flag:flag_restored_pr_holy_reconquest_westfalen
+		}
+		NOR = {
+			is_target_in_global_variable_list = {
+				name = navailable_unique_decisions_holy_reconquest_angria
+				target = flag:flag_restored_pr_holy_reconquest_angria
+			}
+		}
+	}
+	is_valid = {
+		completely_controls = title:d_angria
+		
+	}
+	effect = {
+		trigger_event = pr_germanic.015 
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions_holy_reconquest_angria
+				target = flag:flag_restored_pr_holy_reconquest_angria
+			}
+		}
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+
+german_holy_reconquest_holstein_decision = {
+	decision_group_type = polytheism
+	desc = german_holy_reconquest_holstein_decision_desc
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/saxon_army.dds"
+	}
+	is_shown = {
+		OR = {
+			faith = faith:anglo_saxon_polytheism
+			faith = { has_doctrine_parameter = special_doctrine_anglo_saxon_patron_god_active }
+			faith = faith:german_polytheism
+			faith = { has_doctrine_parameter = special_doctrine_german_patron_god_active }
+
+		}
+		is_target_in_global_variable_list = {
+			name = navailable_unique_decisions_holy_reconquest_angria
+			target = flag:flag_restored_pr_holy_reconquest_angria
+		}
+		NOR = {
+			is_target_in_global_variable_list = {
+				name = navailable_unique_decisions_holy_reconquest_holstein
+				target = flag:flag_restored_pr_holy_reconquest_holstein
+			}
+		}
+	}
+	is_valid = {
+		completely_controls = title:d_holstein
+		
+	}
+	effect = {
+		trigger_event = pr_germanic.016 
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions_holy_reconquest_holstein
+				target = flag:flag_restored_pr_holy_reconquest_holstein
+			}
+		}
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+
+german_holy_reconquest_ostfalen_decision = {
+	decision_group_type = polytheism
+	desc = german_holy_reconquest_ostfalen_decision_desc
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/saxon_army.dds"
+	}
+	is_shown = {
+		OR = {
+			faith = faith:anglo_saxon_polytheism
+			faith = { has_doctrine_parameter = special_doctrine_anglo_saxon_patron_god_active }
+			faith = faith:german_polytheism
+			faith = { has_doctrine_parameter = special_doctrine_german_patron_god_active }
+
+		}
+		is_target_in_global_variable_list = {
+			name = navailable_unique_decisions_holy_reconquest_holstein
+			target = flag:flag_restored_pr_holy_reconquest_holstein
+		}
+		NOR = {
+			is_target_in_global_variable_list = {
+				name = navailable_unique_decisions_holy_reconquest_ostfalen
+				target = flag:flag_restored_pr_holy_reconquest_ostfalen
+			}
+		}
+	}
+	is_valid = {
+		completely_controls = title:d_ostfalen
+		
+	}
+	effect = {
+		trigger_event = pr_germanic.017
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions_holy_reconquest_ostfalen
+				target = flag:flag_restored_pr_holy_reconquest_ostfalen
+			}
+		}
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+
+german_holy_reconquest_anhalt_decision = {
+	decision_group_type = polytheism
+	desc = german_holy_reconquest_anhalt_decision_desc
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/saxon_army.dds"
+	}
+	is_shown = {
+		OR = {
+			faith = faith:anglo_saxon_polytheism
+			faith = { has_doctrine_parameter = special_doctrine_anglo_saxon_patron_god_active }
+			faith = faith:german_polytheism
+			faith = { has_doctrine_parameter = special_doctrine_german_patron_god_active }
+
+		}
+		is_target_in_global_variable_list = {
+			name = navailable_unique_decisions_holy_reconquest_ostfalen
+			target = flag:flag_restored_pr_holy_reconquest_ostfalen
+		}
+		NOR = {
+			is_target_in_global_variable_list = {
+				name = navailable_unique_decisions_holy_reconquest_anhalt
+				target = flag:flag_restored_pr_holy_reconquest_anhalt
+			}
+		}
+	}
+	is_valid = {
+		completely_controls = title:d_anhalt
+		trigger_if = {
+			limit = {
+				exists = faith.religious_head
+				NOT = { root = root.faith.religious_head }
+			}
+			faith.religious_head = {
+				opinion = {
+					target = root
+					value >= {
+						value = 15
+						if = {
+							limit = { is_ai = no }
+					 		add = high_positive_opinion
+						}
+					}
+				}
+			}
+		}
+		
+	}
+	effect = {
+		trigger_event = pr_germanic.018
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions_holy_reconquest_anhalt
+				target = flag:flag_restored_pr_holy_reconquest_anhalt
+			}
+		}
+	}
 	ai_will_do = {
 		base = 100
 	}

@@ -13,7 +13,7 @@ german_return_confirm:1 "Decide fate Volva"
 
 select_personal_deity_germanic_decision.select_woden:0 "Wōden god of wisdom"
 select_personal_deity_germanic_decision.select_fri:0 "Frī goddess of fertility"
-select_personal_deity_germanic_decision.select_:0 "Njǫrd god of wealth and trade"
+select_personal_deity_germanic_decision.select_njord:0 "Njord god of wealth and trade"
 select_personal_deity_germanic_decision.select_tiwaz:0 "Tīwaz god of war"
 select_personal_deity_germanic_decision.select_seaxneat:0 "Seaxnēat protector of the Saxons"
 
@@ -34,3 +34,37 @@ solstice_winter_decision_tooltip:1 "Hold Winter Solstice"
 solstice_winter_decision_desc:0 "The air has begun to warm slowly as the new year begins, A bright future looks to the people of the [ROOT.Char.GetPrimaryTitle.GetName] in order to ensure this future i must ask the gods and the spirits for their blessings before the new season begins."
 solstice_decision_confirm:0 "Gather the realm for the Solstice"
 solstice_winter_decision_confirm:1 "Prepare the Realm"
+
+place_new_irminsul_paderborn_desc:0 "Following extensive discussion and reflection, it was determined that the re-establishment of the Irminsul would serve as a powerful testament to the enduring strength of our faith and cultural identity."
+place_new_irminsul_paderborn_tooltip:1 "Re-Errect the Irminsul"
+place_new_irminsul_paderborn_confirm:0 "Make our ancestors proud"
+
+german_holy_reconquest_decision:0 "Holy Reconquest"
+german_holy_reconquest_decision_desc:0 "The time has come to reclaim the lands of our ancestors and restore the faith of our forefathers. The gods have spoken, and they demand that we take up arms and fight for our rightful place in the world."
+german_holy_reconquest_decision_tooltip:1 "Holy Reconquest"
+german_holy_reconquest_decision_confirm:1 "Begin the Reconquest"
+
+german_holy_reconquest_westfalen_decision:0 "Holy Reconquest of Westfalen"
+german_holy_reconquest_westfalen_decision_desc:0 "Westfalen is the first step on our path to reclaiming the lands of our ancestors."
+german_holy_reconquest_westfalen_decision_tooltip:1 "Holy Reconquest of Westfalen"
+german_holy_reconquest_westfalen_decision_confirm:1 "Begin the Reconquest"
+
+german_holy_reconquest_angria_decision:0 "Holy Reconquest of Angria"
+german_holy_reconquest_angria_decision_desc:0 "Angria is the next step on our path to reclaiming the lands of our ancestors."
+german_holy_reconquest_angria_decision_tooltip:1 "Holy Reconquest of Angria"
+german_holy_reconquest_angria_decision_confirm:1 "Begin the Reconquest"
+
+german_holy_reconquest_holstein_decision:0 "Holy Reconquest of Holstein"
+german_holy_reconquest_holstein_decision_desc:0 "Holstein is the next step on our path to reclaiming the lands of our ancestors."
+german_holy_reconquest_holstein_decision_tooltip:1 "Holy Reconquest of Holstein"
+german_holy_reconquest_holstein_decision_confirm:1 "Begin the Reconquest"
+
+german_holy_reconquest_ostfalen_decision:0 "Holy Reconquest of Ostfalen"
+german_holy_reconquest_ostfalen_decision_desc:0 "Ostfalen is the next step on our path to reclaiming the lands of our ancestors."
+german_holy_reconquest_ostfalen_decision_tooltip:1 "Holy Reconquest of Ostfalen"
+german_holy_reconquest_ostfalen_decision_confirm:1 "Begin the Reconquest"
+
+german_holy_reconquest_anhalt_decision:0 "Holy Reconuest of Anhalt"
+german_holy_reconquest_anhalt_decision_desc:0 "Anhalt is our last stop before we can reclaim a confederation of Germanic tribes."
+german_holy_reconquest_anhalt_decision_tooltip:1 "Holy Reconquest of Anhalt"
+german_holy_reconquest_anhalt_decision_confirm:1 "Begin the Reconquest"

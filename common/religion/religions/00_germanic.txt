@@ -241,10 +241,12 @@
 
 			icon = irminsul_new
 			reformed_icon = irminsul_new_reformed
-			holy_site = york
+			#holy_site = york
 			holy_site = suffolk
 			holy_site = london
-			holy_site = devon
+			#holy_site = devon
+			holy_site = slesvig
+			holy_site = paderborn
 			holy_site = oxford
 
 			doctrine = tenet_unrelenting_faith

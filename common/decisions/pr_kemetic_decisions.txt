@@ -1,13 +1,21 @@
 ﻿#Restore kindom of Mehu (lower egypt)
 kingdom_of_lower_egypt = {
-	picture = "gfx/interface/illustrations/decisions/Memphis.dds"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/Memphis.dds"
+	}
+	decision_group_type = major
 	desc =  kingdom_of_lower_egypt_desc
 	ai_check_interval = 4
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 		#has_culture_group = culture_group:berber_group 
 		OR = {
 			religion = religion:egyptian_religion
@@ -99,14 +107,22 @@ kingdom_of_lower_egypt = {
 }
 #Restore kingdom of Shema (upper egypt) 
 kingdom_of_upper_egypt = {
-	picture = "gfx/interface/illustrations/decisions/Memphis.dds"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/Memphis.dds"
+	}
+	decision_group_type = major
 	desc =  kingdom_of_upper_egypt_desc
 	ai_check_interval = 4
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 		#has_culture_group = culture_group:berber_group 
 		AND = {
 			OR = {
@@ -198,14 +214,22 @@ kingdom_of_upper_egypt = {
 
 
 restore_egyptus ={
-	picture = "gfx/interface/illustrations/decisions/Memphis.dds"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/Memphis.dds"
+	}
+	decision_group_type = major
 	desc =  restore_egyptus_desc
 	ai_check_interval = 4
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 		#has_culture_group = culture_group:berber_group 
 		OR = {
 			religion = religion:egyptian_religion
@@ -287,8 +311,10 @@ restore_egyptus ={
 #choose your main deity decision only Kemetic
 
 choose_main_deity_kemetic_decision = {
-	picture = "gfx/interface/illustrations/decisions/egyptian_temple.dds"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/egyptian_temple.dds"
+	}
+	decision_group_type = major
 	desc =  kemetic_cmd_decision_desc
 	#selection_tooltip = choose_main_deity_kemetic_decision_tooltip
 	is_shown = {

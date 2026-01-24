@@ -1,4 +1,4 @@
-﻿@smCastleX = 0.27
+@smCastleX = 0.27
 @smCastleY = 0.23
 @smLysX = 0.23
 @smLysY = 0.26
@@ -241,6 +241,46 @@ b_kos_polytheitic = {
 	}
 }
 
+b_kos ={
+	pattern="pattern_vertical_split_01.dds"
+	color1=yellow
+	color2=white
+	colored_emblem={
+		color1=black
+		color2=yellow
+		texture="ce_ordinary_cross_5.dds"
+	}
+
+	colored_emblem={
+		color1=red
+		color2=green
+		texture="ce_cross_patriarchal_hungary.dds"
+		instance={
+			position={ 0.250000 0.200000 }
+			scale={ 0.350000 0.350000 }
+		}
+
+		instance={
+			position={ 0.250000 0.800000 }
+			scale={ 0.350000 0.350000 }
+		}
+
+		instance={
+			position={ 0.750000 0.200000 }
+			scale={ 0.350000 0.350000 }
+		}
+
+		instance={
+			position={ 0.750000 0.800000 }
+			scale={ 0.350000 0.350000 }
+		}
+
+	}
+
+}
+
+
+
 c_rhodos_polytheistic = {
 	pattern = "pattern_solid.dds"
 	color1 = "blue_light"
@@ -250,6 +290,46 @@ c_rhodos_polytheistic = {
 		color2 = "white"
 		color3 = "white"
 		instance = {position = { 0.50 0.48 } scale = { 0.9.5 0.9.5 } }
+	}
+}
+#Needed for backup
+c_rhodos = {
+	pattern="pattern_chief.dds"
+	color1=blue
+	color2=yellow
+	color3=yellow
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		color3=blue
+		texture="ce_cross_potenty_random.dds"
+		instance={
+			position={ 0.250000 0.150000 }
+			scale={ 0.220000 0.220000 }
+		}
+
+		instance={
+			position={ 0.500000 0.150000 }
+			scale={ 0.220000 0.220000 }
+		}
+
+		instance={
+			position={ 0.750000 0.150000 }
+			scale={ 0.220000 0.220000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=blue
+		color2=blue
+		color3=yellow
+		texture="ce_bull_rampant.dds"
+		instance={
+			position={ 0.500000 0.600000 }
+			scale={ 0.550000 0.550000 }
+		}
+
 	}
 }
 
@@ -272,6 +352,42 @@ c_attica_polytheistic = {
 		instance = {position = { 0.53 0.48 } scale = { 0.8 0.8 } }
 	}
 }
+c_attica = {
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=yellow
+	color3=yellow
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		color3=red
+		texture="ce_ophiotaurus.dds"
+		instance={
+			scale={ 0.800000 0.800000 }
+		}
+
+	}
+}
+
+
+c_korinthos={
+	pattern="pattern_solid.dds"
+	color1=green
+	color2=white
+	color3=white
+	colored_emblem={
+		color1=white
+		color2=white
+		color3=green
+		texture="ce_ophiotaurus.dds"
+		instance={
+			scale={ 0.800000 0.800000 }
+		}
+
+	}
+
+}
+
 
 d_achaia_polytheistic = {
 	pattern = "pattern_solid.dds"
@@ -304,7 +420,45 @@ c_roma_polytheistic = {
 	}
 }
 
-c_nova_roma_polytheistic = {
+c_byzantion = {
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=blue
+	colored_emblem={
+		color1=white
+		color2=blue
+		texture="ce_ordinary_cross_5.dds"
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=white
+		texture="ce_star_08.dds"
+		instance={
+			position={ 0.250000 0.200000 }
+			scale={ 0.350000 0.350000 }
+		}
+
+		instance={
+			position={ 0.250000 0.800000 }
+			scale={ 0.350000 0.350000 }
+		}
+
+		instance={
+			position={ 0.750000 0.200000 }
+			scale={ 0.350000 0.350000 }
+		}
+
+		instance={
+			position={ 0.750000 0.800000 }
+			scale={ 0.350000 0.350000 }
+		}
+
+	}
+}
+
+
+c_byzantion_polytheistic = {
 	pattern = "pattern_solid.dds"
 	color1 = "green"
 	colored_emblem = {
@@ -749,15 +903,20 @@ e_spain_polytheistic = {
 }
 
 k_etruria = {
-	pattern = "pattern_solid.dds"
-	color1 = {250 244 207}
-	colored_emblem = {
-		texture = "ce_etruscan.dds"
-		color1 =  {251 235 133} 
-		color2 = "red"	
-		color3 = "black"
-		instance = {position = { 0.50 0.40 } scale = { 0.8 0.8 } }
+	pattern="pattern_solid.dds"
+	color1=grey
+	colored_emblem={
+		color1=rgb { 251 235 133 }
+		color2=red
+		color3=black
+		texture="ce_etruscan.dds"
+		instance={
+			position={ 0.500000 0.400000 }
+			scale={ 0.800000 0.800000 }
+		}
+
 	}
+
 }
 
 d_ephese_polytheistic ={ 
@@ -782,14 +941,14 @@ d_anatolia_polytheistic = {
 	}
 }
 
-k_pr_anatolia_polytheistic = {
+k_anatolia_polytheistic = {
 	pattern = "pattern_solid.dds"
 	color1 = "red"
 	colored_emblem = {
 		texture = "ce_pr_galatia.dds"
 		color1 =  "yellow_light"
 		color2 = "red"	
-		instance = {position = { 0.50 0.40 } scale = { 0.8 0.8 } }
+		instance = {position = { 0.50 0.50 } scale = { 0.9 0.9 } }
 	}
 }
 
@@ -924,7 +1083,7 @@ e_roman_empire_polytheistic = {
 	colored_emblem = {
 		texture = "ce_roman3.dds"
 		color1 = "yellow_light"
-		instance = {position = {0.5 0.47}  scale = { 0.85 0.85 } }
+		instance = {position = {0.5 0.4}  scale = { 0.85 0.85 } }
 	}
 }
 
@@ -1068,3 +1227,191 @@ k_pergamon = {
 		instance = {position = { 0.45 0.45 } scale = { 0.85 0.85 } }
 	}
 }
+
+d_laamp_pr_agiadai_867 ={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=white
+	color3=yellow
+	colored_emblem={
+		color1=yellow
+		texture="ce_macedonian.dds"
+		instance={
+			position={ 0.500000 0.440000 }
+			scale={ 0.890000 0.890000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow_light
+		color2=red
+		color3=white
+		texture="ce_lambda.dds"
+		instance={
+			position={ 0.500000 0.415000 }
+			scale={ 0.485000 0.485000 }
+			depth=1.010000
+		}
+
+	}
+}
+
+agiadai ={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=white
+	color3=yellow
+	colored_emblem={
+		color1=yellow
+		texture="ce_macedonian.dds"
+		instance={
+			position={ 0.500000 0.440000 }
+			scale={ 0.890000 0.890000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow_light
+		color2=red
+		color3=white
+		texture="ce_lambda.dds"
+		instance={
+			position={ 0.500000 0.415000 }
+			scale={ 0.485000 0.485000 }
+			depth=1.010000
+		}
+
+	}
+}
+
+k_tarraconensis = {
+	pattern="pattern__solid_designer.dds"
+	color1=white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=orange
+		color2=black
+		color3=black
+		texture="ce_roman_spain.dds"
+		instance={
+			position={ 0.500000 0.400000 }
+			scale={ 0.755000 0.755000 }
+		}
+
+	}
+}
+
+k_carthaginensis = {
+	pattern="pattern_solid.dds"
+	color1=orange
+	color2=blue
+	colored_emblem={
+		color1=white
+		texture="ce_ship_mast.dds"
+		instance={
+			scale={ 0.800000 0.800000 }
+		}
+
+	}
+}
+k_german_confederation ={
+	custom=yes
+	pattern="pattern_horizontal_split_02.dds"
+	color1=rgb { 209 151 14 }
+	color2=black
+	color3=red
+	colored_emblem={
+		color1=white
+		color2=white
+		color3=black
+		texture="ce_horse_rampant.dds"
+		instance={
+			position={ 0.220000 0.515000 }
+			scale={ -0.540000 0.540000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.780000 0.515000 }
+			scale={ 0.540000 0.540000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=brown
+		color2=green
+		texture="ce_irminsul.dds"
+		instance={
+			scale={ 0.615000 0.615000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_pr_german_crown.dds"
+		instance={
+			position={ 0.500000 0.140000 }
+			scale={ 0.590000 0.590000 }
+		}
+
+	}
+
+}
+
+
+
+
+# k_german_confedration={
+# 	custom=yes
+# 	pattern="pattern_horizontal_split_02.dds"
+# 	color1=rgb { 209 151 14 }
+# 	color2=black
+# 	color3=red
+# 	colored_emblem={
+# 		color1=yellow
+# 		texture="ce_crown_small.dds"
+# 		instance={
+# 			position={ 0.500000 0.160000 }
+# 			scale={ 0.340000 0.340000 }
+# 		}
+
+# 	}
+
+# 	colored_emblem={
+# 		color1=white
+# 		color2=white
+# 		color3=black
+# 		texture="ce_horse_rampant.dds"
+# 		instance={
+# 			position={ 0.220000 0.515000 }
+# 			scale={ -0.540000 0.540000 }
+# 			depth=1.010000
+# 		}
+
+# 		instance={
+# 			position={ 0.780000 0.515000 }
+# 			scale={ 0.540000 0.540000 }
+# 			depth=2.010000
+# 		}
+
+# 	}
+
+# 	colored_emblem={
+# 		color1=brown
+# 		color2=green
+# 		texture="ce_irminsul.dds"
+# 		instance={
+# 			scale={ 0.615000 0.615000 }
+# 			depth=3.010000
+# 		}
+
+# 	}
+
+# }

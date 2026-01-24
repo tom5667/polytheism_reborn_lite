@@ -439,8 +439,9 @@ mspt.004 = {
 	theme = faith
 	option={
 		name = mspt.004.a
-		title:c_batiha ={
-			add_county_modifier = open_1st_beer_brewery
+		title:c_batiha.title_province ={
+			#add_county_modifier = open_1st_beer_brewery
+			add_special_building = first_mesopotamian_brewery
 		}
 		clear_global_variable_list = unavailable_unique_decisions_open_first_brewery
 	}

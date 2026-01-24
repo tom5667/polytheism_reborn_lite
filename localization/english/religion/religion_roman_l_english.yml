@@ -47,7 +47,7 @@
 
     #Creater god Localization
     cdr_polytheism_creator_god_name:0 "Chaos"
-    cdr_polytheism_creator_god_name_possessive:0 "Chaos's"
+    cdr_polytheism_creator_god_name_possessive:0 "Chaos"
 
     #Health Goddess Bona Dea
     cdr_polytheism_health_god_name:0 "Bona Dea"
@@ -55,19 +55,19 @@
 
     #Fertility Goddess Ceres Localization
     cdr_polytheism_fertility_god_name:0 "Venus"
-    cdr_polytheism_fertility_god_name_possessive:0 "Venus's"
+    cdr_polytheism_fertility_god_name_possessive:0 "Venus"
 
     #Wealth god Mercurius Localization
     cdr_polytheism_wealth_god_name:0 "Mercurius"
-    cdr_polytheism_wealth_god_name_possessive:0 "Mercurius's"
+    cdr_polytheism_wealth_god_name_possessive:0 "Mercurius"
  
     #Household god Lares 
     cdr_polytheism_household_god_name:0 "Lares"
-    cdr_polytheism_household_god_name_possessive:0 "Lares's"
+    cdr_polytheism_household_god_name_possessive:0 "Lares"
 
     #Fate god Janus Localization
     cdr_polytheism_fate_god_name:0 "Janus"
-    cdr_polytheism_fate_god_name_possessive:0 "Janus's"
+    cdr_polytheism_fate_god_name_possessive:0 "Janus"
 
     #knowledge god Minerva Localization
     cdr_polytheism_knowledge_god_name:0 "Minerva"
@@ -75,11 +75,11 @@
 
     #War god Mars Localization
     cdr_polytheism_war_god_name:0 "Mars"
-    cdr_polytheism_war_god_name_possessive:0 "Mars's"
+    cdr_polytheism_war_god_name_possessive:0 "Mars"
 
     #Trickster god Mendacius Localization
     cdr_polytheism_trickster_god_name:0 "Mendacius"
-    cdr_polytheism_trickster_god_name_possessive:0 "Mendacius's"
+    cdr_polytheism_trickster_god_name_possessive:0 "Mendacius"
 
     #Night goddess Nox Localization
     cdr_polytheism_night_god_name:0 "Nox"
@@ -87,7 +87,7 @@
 
     #Water god Neptunus Localization
     cdr_polytheism_water_god_name:0 "Neptunus"
-    cdr_polytheism_water_god_name_possessive:0 "Neptunus's"
+    cdr_polytheism_water_god_name_possessive:0 "Neptunus"
 
     #evil gods names 
     cdr_polytheism_evil_god_trivia:0 "Diana Trivia" 
@@ -163,14 +163,14 @@
     eluesinian_mysteries_high_god_name:0 "Demeter"
     eluesinian_mysteries_high_god_name_possessive:0 "Demeter's"
     eluesinian_mysteries_high_god_name_alternate:0 "Demeter Pelasgis"
-    eluesinian_mysteries_high_god_name_alternate_possessive:0 "Demeter Pelasgis's"
+    eluesinian_mysteries_high_god_name_alternate_possessive:0 "Demeter Pelasgis"
     eluesinian_mysteries_high_god_shehe:0 "She"
     eluesinian_mysteries_high_god_herselfhimself:0 "Herself"
     eluesinian_mysteries_high_god_herhis:0 "Her"
 
     #Creater god Localization
     eluesinian_mysteries_creator_god_name:0 "Chaos"
-    eluesinian_mysteries_creator_god_name_possessive:0 "Chaos's"
+    eluesinian_mysteries_creator_god_name_possessive:0 "Chaos"
 
     #Health Goddess Bona Dea
     eluesinian_mysteries_health_god_name:0 "Bona Dea"
@@ -178,19 +178,19 @@
 
     #Fertility Goddess Ceres Localization
     eluesinian_mysteries_fertility_god_name:0 "Venus"
-    eluesinian_mysteries_fertility_god_name_possessive:0 "Venus's"
+    eluesinian_mysteries_fertility_god_name_possessive:0 "Venus"
 
     #Wealth god Mercurius Localization
     eluesinian_mysteries_wealth_god_name:0 "Mercurius"
-    eluesinian_mysteries_god_name_possessive:0 "Mercurius's"
+    eluesinian_mysteries_god_name_possessive:0 "Mercurius"
 
     #Household god Lares 
     eluesinian_mysteries_household_god_name:0 "Lares"
-    eluesinian_mysteries_household_god_name_possessive:0 "Lares's"
+    eluesinian_mysteries_household_god_name_possessive:0 "Lares"
 
     #Fate god Janus Localization
     eluesinian_mysteries_fate_god_name:0 "Janus"
-    eluesinian_mysteries_fate_god_name_possessive:0 "Janus's"
+    eluesinian_mysteries_fate_god_name_possessive:0 "Janus"
 
     #knowledge god Minerva Localization
     eluesinian_mysteries_knowledge_god_name:0 "Minerva"
@@ -198,11 +198,11 @@
 
     #War god Mars Localization
     eluesinian_mysteries_war_god_name:0 "Mars"
-    eluesinian_mysteries_war_god_name_possessive:0 "Mars's"
+    eluesinian_mysteries_war_god_name_possessive:0 "Mars"
 
     #Trickster god Mendacius Localization
     eluesinian_mysteries_trickster_god_name:0 "Mendacius"
-    eluesinian_mysteries_trickster_god_name_possessive:0 "Mendacius's"
+    eluesinian_mysteries_trickster_god_name_possessive:0 "Mendacius"
 
     #Night goddess Latona Localization
     eluesinian_mysteries_night_god_name:0 "Nox"
@@ -210,7 +210,7 @@
 
     #Water god Neptunus Localization
     eluesinian_mysteries_water_god_name:0 "Neptunus"
-    eluesinian_mysteries_water_god_name_possessive:0 "Neptunus's"
+    eluesinian_mysteries_water_god_name_possessive:0 "Neptunus"
 
     #evil gods names 
     eluesinian_mysteries_evil_god_trivia:0 "Diana Trivia" 
@@ -218,7 +218,7 @@
 
     #Devil god   
     eluesinian_mysteries_devil_name:0 "Orcus" 
-    eluesinian_mysteries_devil_name_possessive:0 "Orcus's"
+    eluesinian_mysteries_devil_name_possessive:0 "Orcus"
 
     #witch goddess
     eluesinian_mysteries_witchgodname_trivia:0 "Diana Trivia"
@@ -270,16 +270,16 @@
 
     #Mithras Localization
     mithraic_mysteries_high_god_name:0 "Mithras"
-    mithraic_mysteries_high_god_name_possessive:0 "Mithras's"
+    mithraic_mysteries_high_god_name_possessive:0 "Mithras"
     mithraic_mysteries_high_god_name_alternate:0 "Mithras"
-    mithraic_mysteries_high_god_name_alternate_possessive:0 "Mithras's"
+    mithraic_mysteries_high_god_name_alternate_possessive:0 "Mithras"
     mithraic_mysteries_high_god_shehe:0 "He"
     mithraic_mysteries_high_god_herselfhimself:0 "Himself"
     mithraic_mysteries_high_god_herhis:0 "His"
 
     #Creater god Localization
     mithraic_mysteries_creator_god_name:0 "Chaos"
-    mithraic_mysteries_creator_god_name_possessive:0 "Chaos's"
+    mithraic_mysteries_creator_god_name_possessive:0 "Chaos"
 
     #Health Goddess Bona Dea
     mithraic_mysteries_health_god_name:0 "Bona Dea"
@@ -287,19 +287,19 @@
 
     #Fertility Goddess Ceres Localization
     mithraic_mysteries_fertility_god_name:0 "Venus"
-    mithraic_mysteries_fertility_god_name_possessive:0 "Venus's"
+    mithraic_mysteries_fertility_god_name_possessive:0 "Venus"
 
     #Wealth god Mercurius Localization
     mithraic_mysteries_wealth_god_name:0 "Mercurius"
-    mithraic_mysteries_god_name_possessive:0 "Mercurius's"
+    mithraic_mysteries_god_name_possessive:0 "Mercurius"
 
     #Household god Lares 
     mithraic_mysteries_household_god_name:0 "Lares"
-    mithraic_mysteries_household_god_name_possessive:0 "Lares's"
+    mithraic_mysteries_household_god_name_possessive:0 "Lares"
 
     #Fate god Janus Localization
     mithraic_mysteries_fate_god_name:0 "Janus"
-    mithraic_mysteries_fate_god_name_possessive:0 "Janus's"
+    mithraic_mysteries_fate_god_name_possessive:0 "Janus"
 
     #knowledge god Minerva Localization
     mithraic_mysteries_knowledge_god_name:0 "Minerva"
@@ -307,11 +307,11 @@
 
     #War god Mars Localization
     mithraic_mysteries_war_god_name:0 "Mars"
-    mithraic_mysteries_war_god_name_possessive:0 "Mars's"
+    mithraic_mysteries_war_god_name_possessive:0 "Mars"
 
     #Trickster god Mendacius Localization
     mithraic_mysteries_trickster_god_name:0 "Mendacius"
-    mithraic_mysteries_trickster_god_name_possessive:0 "Mendacius's"
+    mithraic_mysteries_trickster_god_name_possessive:0 "Mendacius"
 
     #Night goddess Latona Localization
     mithraic_mysteries_night_god_name:0 "Nox"
@@ -331,7 +331,7 @@
 
     #Devil god   
     mithraic_mysteries_devil_name:0 "Orcus" 
-    mithraic_mysteries_devil_name_possessive:0 "Orcus's"
+    mithraic_mysteries_devil_name_possessive:0 "Orcus"
 
     #Death god Dīs Pater 
     mithraic_mysteries_death_deity_name:0 "Dīs Pater"
@@ -378,16 +378,16 @@
 
     #Isis Localization
     mysteries_of_isis_high_god_name:0 "Isis"
-    mysteries_of_isis_high_god_name_possessive:0 "Isis's"
+    mysteries_of_isis_high_god_name_possessive:0 "Isis"
     mysteries_of_isis_high_god_name_alternate:0 "Isis"
-    mysteries_of_isis_high_god_name_alternate_possessive:0 "Isis's"
+    mysteries_of_isis_high_god_name_alternate_possessive:0 "Isis"
     mysteries_of_isis_high_god_shehe:0 "She"
     mysteries_of_isis_high_god_herselfhimself:0 "Herself"
     mysteries_of_isis_high_god_herhis:0 "Her"
 
     #Creater god Localization
     mysteries_of_isis_creator_god_name:0 "Chaos"
-    mysteries_of_isis_creator_god_name_possessive:0 "Chaos's"
+    mysteries_of_isis_creator_god_name_possessive:0 "Chaos"
 
     #Health Goddess Bona Dea
     mysteries_of_isis_health_god_name:0 "Bona Dea"
@@ -395,7 +395,7 @@
 
     #Fertility Goddess Ceres Localization
     mysteries_of_isis_fertility_god_name:0 "Venus"
-    mysteries_of_isis_fertility_god_name_possessive:0 "Venus's"
+    mysteries_of_isis_fertility_god_name_possessive:0 "Venus"
 
     #Wealth god Mercurius Localization
     mysteries_of_isis_wealth_god_name:0 "Mercurius"
@@ -403,11 +403,11 @@
 
     #Household god Lares 
     mysteries_of_isis_household_god_name:0 "Lares"
-    mysteries_of_isis_household_god_name_possessive:0 "Lares's"
+    mysteries_of_isis_household_god_name_possessive:0 "Lares"
 
     #Fate god Janus Localization
     mysteries_of_isis_fate_god_name:0 "Janus"
-    mysteries_of_isis_fate_god_name_possessive:0 "Janus's"
+    mysteries_of_isis_fate_god_name_possessive:0 "Janus"
 
     #knowledge god Minerva Localization
     mysteries_of_isis_knowledge_god_name:0 "Minerva"
@@ -415,11 +415,11 @@
 
     #War god Mars Localization
     mysteries_of_isis_war_god_name:0 "Mars"
-    mysteries_of_isis_war_god_name_possessive:0 "Mars's"
+    mysteries_of_isis_war_god_name_possessive:0 "Mars"
 
     #Trickster god Mendacius Localization
     mysteries_of_isis_trickster_god_name:0 "Mendacius"
-    mysteries_of_isis_trickster_god_name_possessive:0 "Mendacius's"
+    mysteries_of_isis_trickster_god_name_possessive:0 "Mendacius"
 
     #Night goddess Nox Localization
     mysteries_of_isis_night_god_name:0 "Nox"
@@ -427,7 +427,7 @@
 
     #Water god Neptunus Localization
     mysteries_of_isis_water_god_name:0 "Neptunus"
-    mysteries_of_isis_water_god_name_possessive:0 "Neptunus's"
+    mysteries_of_isis_water_god_name_possessive:0 "Neptunus"
 
     #evil gods names 
     mysteries_of_isis_evil_god_trivia:0 "Diana Trivia" 
@@ -435,7 +435,7 @@
 
     #Devil god   
     mysteries_of_isis_devil_name:0 "Orcus" 
-    mysteries_of_isis_devil_name_possessive:0 "Orcus's"
+    mysteries_of_isis_devil_name_possessive:0 "Orcus"
 
     #witch goddess
     mysteries_of_isis_witchgodname_trivia:0 "Diana Trivia"
@@ -461,7 +461,7 @@
     mysteries_of_isis_priest_male_plural:0 "Isis mysterie priests"
     #Isis Mysteries priestess 
     mysteries_of_isis_female:0 "Isis mysterie priestess" 
-    mysteries_of_isis_priest_female_plural:0 "Isis mysterie priestess's" 
+    mysteries_of_isis_priest_female_plural:0 "Isis mysterie priestess" 
 
     #holy order Isis Mysteries 
     holy_order_protectors_of_isis_mysteries:0 "Protectors of Isis Mysteries"
@@ -486,16 +486,16 @@
 
     #Serapis Cult Localization
     cult_of_serapis_high_god_name:0 "Serapis"
-    cult_of_serapis_high_god_name_possessive:0 "Serapis's"
+    cult_of_serapis_high_god_name_possessive:0 "Serapis"
     cult_of_serapis_high_god_name_alternate:0 "Serapis"
-    cult_of_serapis_high_god_name_alternate_possessive:0 "Serapis's"
+    cult_of_serapis_high_god_name_alternate_possessive:0 "Serapis"
     cult_of_serapis_high_god_shehe:0 "He"
     cult_of_serapis_high_god_herselfhimself:0 "Himself"
     cult_of_serapis_high_god_herhis:0 "His"
 
     #Creater god Localization
     cult_of_serapis_creator_god_name:0 "Chaos"
-    cult_of_serapis_creator_god_name_possessive:0 "Chaos's"
+    cult_of_serapis_creator_god_name_possessive:0 "Chaos"
 
     #Health Goddess Bona Dea
     cult_of_serapis_health_god_name:0 "Bona Dea"
@@ -503,19 +503,19 @@
 
     #Fertility Goddess Ceres Localization
     cult_of_serapis_fertility_god_name:0 "Venus"
-    cult_of_serapis_fertility_god_name_possessive:0 "Venus's"
+    cult_of_serapis_fertility_god_name_possessive:0 "Venus"
 
     #Wealth god Mercurius Localization
     cult_of_serapis_wealth_god_name:0 "Mercurius"
-    cult_of_serapis_god_name_possessive:0 "Mercurius's"
+    cult_of_serapis_god_name_possessive:0 "Mercurius"
 
     #Household god Lares 
     cult_of_serapis_household_god_name:0 "Lares"
-    cult_of_serapis_household_god_name_possessive:0 "Lares's"
+    cult_of_serapis_household_god_name_possessive:0 "Lares"
 
     #Fate god Janus Localization
     cult_of_serapis_fate_god_name:0 "Janus"
-    cult_of_serapis_fate_god_name_possessive:0 "Janus's"
+    cult_of_serapis_fate_god_name_possessive:0 "Janus"
 
     #knowledge god Minerva Localization
     cult_of_serapis_knowledge_god_name:0 "Minerva"
@@ -527,7 +527,7 @@
 
     #Trickster god Mendacius Localization
     cult_of_serapis_trickster_god_name:0 "Mendacius"
-    cult_of_serapis_trickster_god_name_possessive:0 "Mendacius's"
+    cult_of_serapis_trickster_god_name_possessive:0 "Mendacius"
 
     #Night goddess Nox Localization
     cult_of_serapis_night_god_name:0 "Nox"
@@ -535,7 +535,7 @@
 
     #Water god Neptunus Localization
     cult_of_serapis_water_god_name:0 "Neptunus"
-    cult_of_serapis_water_god_name_possessive:0 "Neptunus's"
+    cult_of_serapis_water_god_name_possessive:0 "Neptunus"
 
     #evil gods names 
     cult_of_serapis_evil_god_trivia:0 "Diana Trivia" 
@@ -543,7 +543,7 @@
 
     #Devil god   
     cult_of_serapis_devil_name:0 "Orcus" 
-    cult_of_serapis_devil_name_possessive:0 "Orcus's"
+    cult_of_serapis_devil_name_possessive:0 "Orcus"
 
     #witch goddess
     cult_of_serapis_witchgodname_trivia:0 "Diana Trivia"
@@ -569,7 +569,7 @@
     cult_of_serapis_priest_male_plural:0 "Serapist priests"
     #Serapis cult priestess 
     cult_of_serapis_female:0 "Serapist priestess" 
-    cult_of_serapis_priest_female_plural:0 "Serapis priesterss's" 
+    cult_of_serapis_priest_female_plural:0 "Serapis priesterss" 
 
     #holy order Serapis cult
     holy_order_protectors_of_serapis_cult:0 "Protectors of Serapis"
@@ -603,7 +603,7 @@
 
     #Creater god Localization
     sol_invictus_cult_creator_god_name:0 "Chaos"
-    sol_invictus_cult_creator_god_name_possessive:0 "Chaos's"
+    sol_invictus_cult_creator_god_name_possessive:0 "Chaos"
 
     #Health Goddess Bona Dea
     sol_invictus_cult_health_god_name:0 "Bona Dea"
@@ -611,7 +611,7 @@
 
     #Fertility Goddess Ceres Localization
     sol_invictus_cult_fertility_god_name:0 "Venus"
-    sol_invictus_cult_fertility_god_name_possessive:0 "Venus's"
+    sol_invictus_cult_fertility_god_name_possessive:0 "Venus"
 
     #Wealth god Mercurius Localization
     sol_invictus_cult_wealth_god_name:0 "Mercurius"
@@ -619,11 +619,11 @@
 
     #Household god Lares 
     sol_invictus_cult_household_god_name:0 "Lares"
-    sol_invictus_cult_household_god_name_possessive:0 "Lares's"
+    sol_invictus_cult_household_god_name_possessive:0 "Lares"
 
     #Fate god Janus Localization
     sol_invictus_cult_fate_god_name:0 "Janus"
-    sol_invictus_cult_fate_god_name_possessive:0 "Janus's"
+    sol_invictus_cult_fate_god_name_possessive:0 "Janus"
 
     #knowledge god Minerva Localization
     sol_invictus_cult_knowledge_god_name:0 "Minerva"
@@ -631,11 +631,11 @@
 
     #War god Mars Localization
     sol_invictus_cult_war_god_name:0 "Mars"
-    sol_invictus_cult_war_god_name_possessive:0 "Mars's"
+    sol_invictus_cult_war_god_name_possessive:0 "Mars"
 
     #Trickster god Mendacius Localization
     sol_invictus_cult_trickster_god_name:0 "Mendacius"
-    sol_invictus_cult_trickster_god_name_possessive:0 "Mendacius's"
+    sol_invictus_cult_trickster_god_name_possessive:0 "Mendacius"
 
     #Night goddess Nox Localization
     sol_invictus_cult_night_god_name:0 "Nox"
@@ -655,7 +655,7 @@
 
     #Devil god   
     sol_invictus_cult_devil_name:0 "Orcus" 
-    sol_invictus_cult_devil_name_possessive:0 "Orcus's"
+    sol_invictus_cult_devil_name_possessive:0 "Orcus"
 
     #Death god Dīs Pater 
     sol_invictus_cult_death_deity_name:0 "Dīs Pater"
@@ -677,7 +677,7 @@
     sol_invictus_cult_priest_male_plural:0 "Sol Invictuspriests"
     #Serapis cult priestess 
     sol_invictus_cult_female:0 "Sol Invictus priestess" 
-    sol_invictus_cult_priest_female_plural:0 "Sol Invictus priesterss's" 
+    sol_invictus_cult_priest_female_plural:0 "Sol Invictus priesterss" 
 
     #holy order of Sol Invictus 
     holy_order_protectors_of_sol_invictus:0 "Protectors of Sol Invictus"
@@ -708,14 +708,14 @@
     imperial_cult_high_god_name:0 "Augustus "
     imperial_cult_high_god_name_possessive:0 "Augustus s"
     imperial_cult_high_god_name_alternate:0 "Divus Augustus"
-    imperial_cult_high_god_name_alternate_possessive:0 "Divus Augustus's"
+    imperial_cult_high_god_name_alternate_possessive:0 "Divus Augustus"
     imperial_cult_high_god_shehe:0 "He"
     imperial_cult_high_god_herselfhimself:0 "Himself"
     imperial_cult_high_god_herhis:0 "His"
 
     #Creater god Localization
     imperial_cult_creator_god_name:0 "Chaos"
-    imperial_cult_creator_god_name_possessive:0 "Chaos's"
+    imperial_cult_creator_god_name_possessive:0 "Chaos"
 
     #Health Goddess Bona Dea
     imperial_cult_health_god_name:0 "Bona Dea"
@@ -723,7 +723,7 @@
 
     #Fertility Goddess Ceres Localization
     imperial_cult_fertility_god_name:0 "Venus"
-    imperial_cult_fertility_god_name_possessive:0 "Venus's"
+    imperial_cult_fertility_god_name_possessive:0 "Venus"
 
     #Wealth god Mercurius Localization
     imperial_cult_wealth_god_name:0 "Mercurius"
@@ -731,11 +731,11 @@
 
     #Household god Lares 
     imperial_cult_household_god_name:0 "Lares"
-    imperial_cult_household_god_name_possessive:0 "Lares's"
+    imperial_cult_household_god_name_possessive:0 "Lares"
 
     #Fate god Janus Localization
     imperial_cult_fate_god_name:0 "Janus"
-    imperial_cult_fate_god_name_possessive:0 "Janus's"
+    imperial_cult_fate_god_name_possessive:0 "Janus"
 
     #knowledge god Minerva Localization
     imperial_cult_knowledge_god_name:0 "Minerva"
@@ -747,7 +747,7 @@
 
     #Trickster god Mendacius Localization
     imperial_cult_trickster_god_name:0 "Mendacius"
-    imperial_cult_trickster_god_name_possessive:0 "Mendacius's"
+    imperial_cult_trickster_god_name_possessive:0 "Mendacius"
 
     #Night goddess Nox Localization
     imperial_cult_night_god_name:0 "Nox"
@@ -767,7 +767,7 @@
 
     #Devil god   
     imperial_cult_devil_name:0 "Orcus" 
-    imperial_cult_devil_name_possessive:0 "Orcus's"
+    imperial_cult_devil_name_possessive:0 "Orcus"
 
     #Death god Dīs Pater 
     imperial_cult_death_deity_name:0 "Dīs Pater"
@@ -822,20 +822,20 @@
 
     #jupiter parthinus Localization
     roman_illyrian_polytheism_high_god_name:0 "Jupiter Parthinus"
-    roman_illyrian_polytheism_high_god_name_possessive:0 "Jupiter Parthinus's"
+    roman_illyrian_polytheism_high_god_name_possessive:0 "Jupiter Parthinus"
     roman_illyrian_polytheism_high_god_name_alternate:0 "Pater Jupiter Parhinus"
-    roman_illyrian_polytheism_high_god_name_alternate_possessive:0 "Pater Jupiter Parthinus's"
+    roman_illyrian_polytheism_high_god_name_alternate_possessive:0 "Pater Jupiter Parthinus"
     roman_illyrian_polytheism_high_god_shehe:0 "He"
     roman_illyrian_polytheism_high_god_herselfhimself:0 "Himself"
     roman_illyrian_polytheism_high_god_herhis:0 "His"
 
     #Creater god Localization
     roman_illyrian_polytheism_creator_god_name:0 "Chaos"
-    roman_illyrian_polytheism_creator_god_name_possessive:0 "Chaos's"
+    roman_illyrian_polytheism_creator_god_name_possessive:0 "Chaos"
 
     #Health Goddess Bona Dea
     roman_illyrian_polytheism_health_god_name:0 "Bona Dea"
-    roman_illyrian_polytheism_health_god_name_possessive:0 "Bona Dea"
+    roman_illyrian_polytheism_health_god_name_possessive:0 "Bona Dea's"
 
     #Fertility Goddess Anzotica Localization
     roman_illyrian_polytheism_fertility_god_name:0 "Anzotica"
@@ -847,11 +847,11 @@
 
     #Household god Lares 
     roman_illyrian_polytheism_household_god_name:0 "Lares"
-    roman_illyrian_polytheism_household_god_name_possessive:0 "Lares's"
+    roman_illyrian_polytheism_household_god_name_possessive:0 "Lares"
 
     #Fate god Janus Localization
     roman_illyrian_polytheism_fate_god_name:0 "Janus"
-    roman_illyrian_polytheism_fate_god_name_possessive:0 "Janus's"
+    roman_illyrian_polytheism_fate_god_name_possessive:0 "Janus"
 
     #knowledge god Minerva Localization
     roman_illyrian_polytheism_knowledge_god_name:0 "Minerva"
@@ -859,11 +859,11 @@
 
     #War god Armatus Localization
     roman_illyrian_polytheism_war_god_name:0 "Armatus"
-    roman_illyrian_polytheism_war_god_name_possessive:0 "Armatus's"
+    roman_illyrian_polytheism_war_god_name_possessive:0 "Armatus"
 
     #Trickster god Mendacius Localization
     roman_illyrian_polytheism_trickster_god_name:0 "Mendacius"
-    roman_illyrian_polytheism_trickster_god_name_possessive:0 "Mendacius's"
+    roman_illyrian_polytheism_trickster_god_name_possessive:0 "Mendacius"
 
     #Night goddess Nox Localization
     roman_illyrian_polytheism_night_god_name:0 "Nox"
@@ -883,7 +883,7 @@
 
     #Devil god   
     roman_illyrian_polytheism_devil_name:0 "Orcus" 
-    roman_illyrian_polytheism_devil_name_possessive:0 "Orcus's"
+    roman_illyrian_polytheism_devil_name_possessive:0 "Orcus"
 
     #Death god Dīs Pater 
     roman_illyrian_polytheism_death_deity_name:0 "Dīs Pater"
@@ -967,11 +967,11 @@
 
     #Wealth god Hermes Localization
     mycenaean_polytheism_wealth_god_name:0 "Hermes"
-    mycenaean_polytheism_wealth_god_name_possessive:0 "Hermes's"
+    mycenaean_polytheism_wealth_god_name_possessive:0 "Hermes"
 
     #Household god Despotas 
     mycenaean_polytheism_household_god_name:0 "Despotas"
-    mycenaean_polytheism_household_god_name_possessive:0 "Despotas's"
+    mycenaean_polytheism_household_god_name_possessive:0 "Despotas"
 
     #Fate god the Moirai Localization
     mycenaean_polytheism_fate_god_name:0 "the Moirai"
@@ -983,15 +983,15 @@
 
     #War god Ares Localization
     mycenaean_polytheism_war_god_name:0 "Ares"
-    mycenaean_polytheism_war_god_name_possessive:0 "Ares's"
+    mycenaean_polytheism_war_god_name_possessive:0 "Ares"
 
     #Trickster god Mendacius Localization
     mycenaean_polytheism_trickster_god_name:0 "Mendacius"
-    mycenaean_polytheism_trickster_god_name_possessive:0 "Mendacius's"
+    mycenaean_polytheism_trickster_god_name_possessive:0 "Mendacius"
 
     #Night goddess Nyx Localization
     mycenaean_polytheism_night_god_name:0 "Nyx"
-    mycenaean_polytheism_night_god_name_possessive:0 "$mycenaean_polytheism_night_god_nam$'s"
+    mycenaean_polytheism_night_god_name_possessive:0 "$mycenaean_polytheism_night_god_name$'s"
 
     #Water god Poseidon Localization
     mycenaean_polytheism_water_god_name:0 "Poseidon"
@@ -1007,11 +1007,11 @@
 
     #Devil god   
     mycenaean_polytheism_devil_name:0 "Orcus" 
-    mycenaean_polytheism_devil_name_possessive:0 "Orcus's"
+    mycenaean_polytheism_devil_name_possessive:0 "Orcus"
 
     #Death god Dīs Pater 
     mycenaean_polytheism_death_deity_name:0 "Hades"
-    mycenaean_polytheism_death_deity_name_possessive:0 "Hades's"
+    mycenaean_polytheism_death_deity_name_possessive:0 "Hades"
 
     #Good gods names 
     mycenaean_polytheism_good_god_zeus:0 "Zeus" 
@@ -1069,36 +1069,36 @@
 
     #jupiter parthinus Localization
     gallo_roman_polytheism_high_god_name:0 "Jupiter Teranus"
-    gallo_roman_polytheism_high_god_name_possessive:0 "Jupiter Teranus's"
+    gallo_roman_polytheism_high_god_name_possessive:0 "Jupiter Teranus"
     gallo_roman_polytheism_high_god_name_alternate:0 "Jupiter Teranus"
-    gallo_roman_polytheism_high_god_name_alternate_possessive:0 "Jupiter Teranus's"
+    gallo_roman_polytheism_high_god_name_alternate_possessive:0 "Jupiter Teranus"
     gallo_roman_polytheism_high_god_shehe:0 "He"
     gallo_roman_polytheism_high_god_herselfhimself:0 "Himself"
     gallo_roman_polytheism_high_god_herhis:0 "His"
 
     #Creater god Localization
     gallo_roman_polytheism_creator_god_name:0 "Chaos"
-    gallo_roman_polytheism_creator_god_name_possessive:0 "Chaos's"
+    gallo_roman_polytheism_creator_god_name_possessive:0 "Chaos"
 
     #Health Goddess Apollo Grannus
     gallo_roman_polytheism_health_god_name:0 "Apollo Grannus"
-    gallo_roman_polytheism_health_god_name_possessive:0 "Apollo Grannus's"
+    gallo_roman_polytheism_health_god_name_possessive:0 "Apollo Grannus"
 
     #Fertility Goddess Venus Localization
     gallo_roman_polytheism_fertility_god_name:0 "Venus"
-    gallo_roman_polytheism_fertility_god_name_possessive:0 "Venus's"
+    gallo_roman_polytheism_fertility_god_name_possessive:0 "Venus"
 
     #Wealth god Latra Localization
     gallo_roman_polytheism_wealth_god_name:0 "Mercurius Cissonius"
-    gallo_roman_polytheism_wealth_god_name_possessive:0 "Mercurius Cissonius's"
+    gallo_roman_polytheism_wealth_god_name_possessive:0 "Mercurius Cissonius"
 
     #Household god Lares 
     gallo_roman_polytheism_household_god_name:0 "Lares"
-    gallo_roman_polytheism_household_god_name_possessive:0 "Lares's"
+    gallo_roman_polytheism_household_god_name_possessive:0 "Lares"
 
     #Fate god Janus Localization
     gallo_roman_polytheism_fate_god_name:0 "Janus"
-    gallo_roman_polytheism_fate_god_name_possessive:0 "Janus's"
+    gallo_roman_polytheism_fate_god_name_possessive:0 "Janus"
 
     #knowledge god Minerva Localization
     gallo_roman_polytheism_knowledge_god_name:0 "Minerva Belisama"
@@ -1106,11 +1106,11 @@
 
     #War god Mars Localization
     gallo_roman_polytheism_war_god_name:0 "Mars Lenus"
-    gallo_roman_polytheism_war_god_name_possessive:0 "Mars Lenus's"
+    gallo_roman_polytheism_war_god_name_possessive:0 "Mars Lenus"
 
     #Trickster god Mercurius Cissonius Localization
     gallo_roman_polytheism_trickster_god_name:0 "Mercurius Cissonius"
-    gallo_roman_polytheism_trickster_god_name_possessive:0 "Mercurius Cissonius's"
+    gallo_roman_polytheism_trickster_god_name_possessive:0 "Mercurius Cissonius"
 
     #Night goddess Nox Localization
     gallo_roman_polytheism_night_god_name:0 "Nox"
@@ -1118,7 +1118,7 @@
 
     #Water god Neptunus Localization
     gallo_roman_polytheism_water_god_name:0 "Neptunus"
-    gallo_roman_polytheism_water_god_name_possessive:0 "Neptunus's"
+    gallo_roman_polytheism_water_god_name_possessive:0 "Neptunus"
 
     #evil gods names 
     gallo_roman_polytheism_evil_god_trivia:0 "Diana Trivia" 
@@ -1130,7 +1130,7 @@
 
     #Devil god   
     gallo_roman_polytheism_devil_name:0 "Orcus" 
-    gallo_roman_polytheism_devil_name_possessive:0 "Orcus's"
+    gallo_roman_polytheism_devil_name_possessive:0 "Orcus"
 
     #Death god Dīs Pater 
     gallo_roman_polytheism_death_deity_name:0 "Dīs Pater"
@@ -1200,7 +1200,7 @@
 
     #Creater god Localization
     romano_british_polytheism_creator_god_name:0 "Chaos"
-    romano_british_polytheism_creator_god_name_possessive:0 "Chaos's"
+    romano_british_polytheism_creator_god_name_possessive:0 "Chaos"
 
     #Health God Apollo Belenus
     romano_british_polytheism_health_god_name:0 "Apollo Belenus"
@@ -1208,19 +1208,19 @@
 
     #Fertility Goddess Venus Localization
     romano_british_polytheism_fertility_god_name:0 "Venus"
-    romano_british_polytheism_fertility_god_name_possessive:0 "Venus's"
+    romano_british_polytheism_fertility_god_name_possessive:0 "Venus"
 
     #Wealth god Latra Localization
     romano_british_polytheism_wealth_god_name:0 "Mercurius Lugus"
-    romano_british_polytheism_wealth_god_name_possessive:0 "Mercurius Lugus's"
+    romano_british_polytheism_wealth_god_name_possessive:0 "Mercurius Lugus"
 
     #Household god Lares 
     romano_british_polytheism_household_god_name:0 "Lares"
-    romano_british_polytheism_household_god_name_possessive:0 "Lares's"
+    romano_british_polytheism_household_god_name_possessive:0 "Lares"
 
     #Fate god Janus Localization
     romano_british_polytheism_fate_god_name:0 "Janus"
-    romano_british_polytheism_fate_god_name_possessive:0 "Janus's"
+    romano_british_polytheism_fate_god_name_possessive:0 "Janus"
 
     #knowledge god Minerva Localization
     romano_british_polytheism_knowledge_god_name:0 "Sulis Minerva"
@@ -1228,11 +1228,11 @@
 
     #War god Mars Localization
     romano_british_polytheism_war_god_name:0 "Mars Cocidius"
-    romano_british_polytheism_war_god_name_possessive:0 "Mars Cocidius's"
+    romano_british_polytheism_war_god_name_possessive:0 "Mars Cocidius"
 
     #Trickster god Mercurius Cissonius Localization
     romano_british_polytheism_trickster_god_name:0 "Mercurius Lugus"
-    romano_british_polytheism_trickster_god_name_possessive:0 "Mercurius Lugus's"
+    romano_british_polytheism_trickster_god_name_possessive:0 "Mercurius Lugus"
 
     #Night goddess Nox Localization
     romano_british_polytheism_night_god_name:0 "Nox"
@@ -1240,7 +1240,7 @@
 
     #Water god Neptunus Localization
     romano_british_polytheism_water_god_name:0 "Neptunus"
-    romano_british_polytheism_water_god_name_possessive:0 "Neptunus's"
+    romano_british_polytheism_water_god_name_possessive:0 "Neptunus"
 
     #evil gods names 
     romano_british_polytheism_evil_god_trivia:0 "Diana Trivia" 
@@ -1252,7 +1252,7 @@
 
     #Devil god   
     romano_british_polytheism_devil_name:0 "Orcus" 
-    romano_british_polytheism_devil_name_possessive:0 "Orcus's"
+    romano_british_polytheism_devil_name_possessive:0 "Orcus"
 
     #Death god Dīs Pater 
     romano_british_polytheism_death_deity_name:0 "Dīs Pater"

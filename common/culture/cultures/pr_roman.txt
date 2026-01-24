@@ -94,9 +94,9 @@ romano_germanic = {
  	unit_gfx = { eastern_unit_gfx } 
 
  	ethnicities = {
- 		5 = caucasian_blond
- 		30 = caucasian_ginger
- 		35 = caucasian_brown_hair
+ 		15 = caucasian_blond
+ 		25 = caucasian_ginger
+ 		25 = caucasian_brown_hair
  		30 = caucasian_dark_hair
 	}
 }
@@ -104,7 +104,7 @@ romano_hispanic = {
 	parents = { roman }
 	history_loc_override = romano_hispanic_heritage_loc
 
-	color = { 39 230 44 }
+	color = { 255 165 0 } # A shade of orange to represent Roman Hispanic culture
 	created = 1.1.1
 	ethos = ethos_stoic
 	heritage = heritage_latin
@@ -130,5 +130,70 @@ romano_hispanic = {
 		30 = caucasian_ginger
 		35 = caucasian_brown_hair
 		30 = caucasian_dark_hair
+   }
+}
+
+afro_roman = {
+	parents = { roman }
+	history_loc_override = afro_roman_heritage_loc
+
+	color = { 255 232 140 }
+	created = 1.1.1
+	ethos = ethos_stoic
+	heritage = heritage_latin
+	language = language_latin
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_formation_fighting
+		tradition_legalistic
+		tradition_hill_dwellers
+		tradition_horse_breeder
+	}
+   
+	name_list = name_list_roman #No real different namelist for now 
+   
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx } 
+	building_gfx = { mediterranean_building_gfx } 
+	clothing_gfx = { byzantine_clothing_gfx } 
+	clothing_gfx = { western_clothing_gfx } 
+	unit_gfx = { eastern_unit_gfx } 
+
+	ethnicities = {
+		5 = caucasian_blond
+		10 = caucasian_ginger
+		45 = caucasian_brown_hair
+		40 = caucasian_dark_hair
+   }
+}
+
+romano_egyptian = {
+	parents = { roman }
+	history_loc_override = romano_egyptian_heritage_loc
+
+	color = { 255 232 140 }
+	created = 1.1.1
+	ethos = ethos_stoic
+	heritage = heritage_latin
+	language = language_latin
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_formation_fighting
+		tradition_legalistic
+		tradition_agrarian # Cybr: One word: Nile
+		tradition_dryland_dwellers # Cybr: Living in the desert is hard
+	}
+   
+	name_list = name_list_roman #No real different namelist for now 
+   
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx } 
+	building_gfx = { mediterranean_building_gfx } 
+	clothing_gfx = { byzantine_clothing_gfx } 
+	clothing_gfx = { western_clothing_gfx } 
+	unit_gfx = { eastern_unit_gfx } 
+
+	ethnicities = {
+		3 = arab
+		5 = mediterranean
+		4 = mediterranean_byzantine
    }
 }

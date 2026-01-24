@@ -31,9 +31,11 @@
     hellenism_health_god_name:0 "Appolo"
     hellenism_health_god_name_possessive:0 "Appolo's"
     hellenism_devil_name:0 "Eris"
-    hellenism_devil_name_possessive:0 "Eris's"
+    hellenism_devil_name_possessive:0 "Eris"
     hellenism_fertility_god_name:0 "Aphrodite"
     hellenism_fertility_god_name_possessive:0 "Aphrodite's"
+
+    greek_religion_negative_afterlive:0 "Hades realm"
 #Norse
     germanic_religion:1 "Germanic"
     germanic_religion_adj:1 "Germanic"

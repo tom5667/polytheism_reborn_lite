@@ -87,9 +87,10 @@
 	}
 
 	male_names = {
-		Gaius_Jullius_Caesar Gaius_Jullius Marcus Gaius Publius Sextus Appius Gnaeus Caius Agrippa Titus Vitus Albus Tiberius Lucius Nero Antonius
-		Felix Atticus Cassius Aurelius Aloysius Rufus Remus Romulus Marius Maximus Cornelius Cato Brutus Septimus Silvanus Junius Flavius Vitus Antoninus
-		Livius
+		Agrippa Albus Antoninus Antonius Appius Atticus Aurelius Brutus Caesar Caius Cassius Cato Cornelius Felix Gaius Gnaeus Junius Julius
+        Lucius Marcus Gaius_Marius Publius Remus Romulus Septimus Sextus Silvanus Tiberius Titus Vitus Gaius_Julius Decimus 
+		Quintus Agrippa Caeso Faustus Hostus Mamercus Nonus Octavius Opiter Paullus Postumus Proculus Septimus
+		Sertor Statius Tullus Vibius Volesus Volero Vopiscus Vulso Vulturius Aulus Quintus Servius Spurius
 	}
 	female_names = {
 		Fabia Hadriana Agrippina Julia_Agrippina Julia Mariana Octavia Valentina Tiberia Antonia Aemilia Amanda Camilla Caecilia Claudia 

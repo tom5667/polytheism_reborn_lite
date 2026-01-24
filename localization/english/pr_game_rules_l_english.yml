@@ -59,6 +59,8 @@
  rule_pr_ancient_kingdoms_decisions:0 "Ancient Kingdom Decisions"
  setting_pr_ancient_kingdoms_decisions_on:0 "Default"
  setting_pr_ancient_kingdoms_decisions_on_desc:0 "Decisions to restore ancient kingdoms are available"
+ setting_pr_ancient_kingdoms_decisions_player:0 "Player only"
+ setting_pr_ancient_kingdoms_decision_player_desc:0 "Decisions will only be available for player"
  setting_pr_ancient_kingdoms_decisions_off:0 "Off"
  setting_pr_ancient_kingdoms_decisions_off_desc:0 "Decisions to restore ancient kingdoms are not available"
 
@@ -66,4 +68,4 @@
  setting_pr_semi_historical_events_on:0 "Default"
  setting_pr_semi_historical_events_on_desc:0 "Makes events like finding the treaty of Kadesh events available"
  setting_pr_semi_historical_events_off:0 "Off"
- setting_pr_semi_historical_events_off_desc:0 "Dissables the less historical accurate events. Important$:$ This doesn't dissable random events for religions"
+ setting_pr_semi_historical_events_off_desc:0 "Disables the less historical accurate events. Important$:$ This doesn't disable random events for religions"

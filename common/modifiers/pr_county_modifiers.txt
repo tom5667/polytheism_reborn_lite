@@ -13,3 +13,10 @@ open_1st_beer_brewery = {
 	islam_religion_opinion = -10
 	
 }
+
+open_druidic_place = {
+	icon = outdoors_positive
+	county_opinion_add = 5
+	monthly_county_control_change_add = 0.2
+	pagan_religion_opinion = -10 
+}

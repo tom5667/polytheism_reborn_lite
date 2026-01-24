@@ -168,3 +168,32 @@ pr_delphi_pilgrimage_guest_memory = {
 		years = memory_default_duration
 	}
 }
+
+vastal_daughter_memory = {
+	categories = { positive minor religious }
+	icon = "vestalis_maxima.dds"
+
+	description = {
+		random_valid = {
+			desc = vastal_daughter_memory_first_perspective
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = vastal_daughter_memory_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = vastal_daughter_memory_third_perspective
+		}
+	}
+
+	participants = { host }
+
+	duration = {
+		years = memory_default_duration
+	}
+}

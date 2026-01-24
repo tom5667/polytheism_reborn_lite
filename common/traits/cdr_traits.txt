@@ -275,7 +275,26 @@ h_cmd5_religion = {
 		}
 	}
 }
+#Athena
+h_cmd6_religion  = {
+	index = 57428
+	fame = yes 
+	learning = 2
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
 
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = minerva.dds
+			}
+			desc = minerva.dds
+		}
+	}
+}
 #Mithras
 mm_cmd1_religion = {
 	index = 58422
@@ -341,28 +360,6 @@ mm_cmd3_religion = {
 		}
 	}
 }
-
-hellenismos_state_religion = {
-	index = 57428
-	fame = yes 
-	inherit_chance = 0
-	inherit_from_real_father = no
-	same_faith_opinion = 5
-	monthly_prestige = 0.3
-	monthly_piety = 0.5
-
-	
-	icon = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { NOT = { exists = this } }
-				desc = Hellenic_State_religion.dds
-			}
-			desc = Hellenic_State_religion.dds
-		}
-	}
-}
-
 
 
 #Cult traits
@@ -479,6 +476,46 @@ pr_heliodromus_mithras = {
 		}
 	}
 }
+vestalis_maxima = {
+	index = 60009
+	fame = yes 
+	monthly_prestige = 0.3 
+	same_faith_opinion = 5
+	fertility = -1
+	learning =  4
+	diplomacy = 2
+	flag = can_not_marry
+	inheritance_blocker = all
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = vestalis_maxima.dds
+			}
+			desc = vestalis_maxima.dds
+		}
+	}
+}
+vestalis = {
+	index = 60012
+	fame = yes 
+	monthly_prestige = 0.1 
+	same_faith_opinion = 5
+	fertility = -1
+	learning = 2
+	diplomacy = 1
+	flag = can_not_marry
+	inheritance_blocker = all
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = vestalis_maxima.dds
+			}
+			desc = vestalis_maxima.dds
+		}
+	}
+}
 pr_pater_mithras = {
 	index = 61006
 	fame = yes 
@@ -522,6 +559,61 @@ mithras_cult = {
 	}
 }
 
+hierophant_bacchus = {
+	index = 60011
+	fame = yes 
+	same_faith_opinion = 5
+	monthly_prestige = -0.2
+	monthly_piety = -0.2
+	inherit_chance = 0
+	inherit_from_real_father = no 
+	stress_gain_mult = -0.6
+
+	christianity_religion_opinion = -25
+	islam_religion_opinion  = -25
+	#roman_religion_opinion = -10
+
+	fertility = 0.5
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = bacchus_cult.dds
+			}
+			desc = bacchus_cult.dds
+		}
+	}
+
+}
+
+bacchus_cult = {
+	index = 60010
+	fame = yes 
+	same_faith_opinion = 5
+	monthly_prestige = -0.1
+	monthly_piety = -0.1
+	inherit_chance = 0
+	inherit_from_real_father = no 
+	stress_gain_mult = -0.3
+
+	christianity_religion_opinion = -20
+	islam_religion_opinion  = -20
+	roman_religion_opinion = -5
+
+	fertility = 0.3
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = bacchus_cult.dds
+			}
+			desc = bacchus_cult.dds
+		}
+	}
+}
+
 isis_cult = { 
 	index = 60001
 	fame = yes 
@@ -547,7 +639,31 @@ isis_cult = {
 		}
 	}
 }
+hierophant_isis = {
+	index = 60013
+	fame = yes 
+	same_faith_opinion = 5
+	monthly_prestige = 0.2
+	monthly_piety = 0.2
+	inherit_chance = 0
+	inherit_from_real_father = no 
+	health = 0.5
+	negate_health_penalty_add = 0.25
+	learning = 3
 
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = isis_cult.dds
+			}
+			desc = isis_cult.dds
+		}
+	}
+}
 serapis_cult = {
 	index = 60002
 	fame = yes 
@@ -572,9 +688,58 @@ serapis_cult = {
 		}
 	}
 }
+hierophant_serapis = {
+	index = 60014
+	fame = yes 
+	same_faith_opinion = 5
+	monthly_prestige = 0.2
+	monthly_piety = 0.2
+	inherit_chance = 0
+	inherit_from_real_father = no 
+	stewardship = 3
+	monthly_income_mult = 0.1
+
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = serapis_cult.dds
+			}
+			desc = serapis_cult.dds
+		}
+	}
+}
 
  eleusinian_cult = {
 	index = 60003
+	fame = yes 
+	same_faith_opinion = 5
+	monthly_prestige = 0.2
+	monthly_piety = 0.2
+	inherit_chance = 0
+	inherit_from_real_father = no 
+	stress_gain_mult = -0.2
+	tax_mult = 0.15
+
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = eluesinian_cult.dds
+			}
+			desc = eluesinian_cult.dds
+		}
+	}
+}
+
+hierophant_eleusinian= {
+	index = 60015
 	fame = yes 
 	same_faith_opinion = 5
 	monthly_prestige = 0.2
@@ -622,6 +787,31 @@ sol_invictus_cult = {
 	}
 }
 
+hierophant_sol_invictus = {
+	index = 60016
+	fame = yes 
+	same_faith_opinion = 5
+	monthly_prestige = 0.2
+	monthly_piety = 0.2
+	inherit_chance = 0
+	inherit_from_real_father = no 
+	martial = 4
+
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = sol_invictus_cult.dds
+			}
+			desc = sol_invictus_cult.dds
+		}
+	}
+}
+
+
 imperial_cult = {
 	index = 60005
 	fame = yes 
@@ -642,6 +832,153 @@ imperial_cult = {
 				desc = imperial_cult.dds
 			}
 			desc = imperial_cult.dds
+		}
+	}
+}
+
+augustalis_imperial_cult = {
+	index = 60019
+	fame = yes 
+	inherit_chance = 0
+	same_faith_opinion = 5
+	monthly_prestige = 0.2
+	monthly_piety = 0.2
+	inherit_from_real_father = no 
+	vassal_opinion = 25
+
+	christianity_religion_opinion = -10
+	islam_religion_opinion  = -10
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = imperial_cult.dds
+			}
+			desc = imperial_cult.dds
+		}
+	}
+}
+
+cybele_cult = {
+	index = 60017
+	fame = yes 
+	same_faith_opinion = 5
+	monthly_prestige = 0.2
+	monthly_piety = 0.2
+	inherit_chance = 0
+	inherit_from_real_father = no 
+	intrigue  = 1
+
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = cybele_cult.dds
+			}
+			desc = cybele_cult.dds
+		}
+	}
+}
+
+hierophant_cybele = {
+	index = 60018
+	fame = yes 
+	same_faith_opinion = 5
+	monthly_prestige = 0.2
+	monthly_piety = 0.2
+	inherit_chance = 0
+	inherit_from_real_father = no 
+	intrigue  = 4
+
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = cybele_cult.dds
+			}
+			desc = cybele_cult.dds
+		}
+	}
+}
+
+crowned_by_religious_head = {
+	index = 60008
+	fame = yes 
+	inherit_chance = 0
+	same_faith_opinion = 5
+	monthly_prestige = 0.2
+	monthly_piety = 0.2
+	inherit_from_real_father = no 
+	vassal_opinion = 10
+
+	christianity_religion_opinion = -10
+	islam_religion_opinion  = -10
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = crowned_by_religious_head.dds
+			}
+			desc = crowned_by_religious_head.dds
+		}
+	}
+}
+
+#Aoa traits 
+kingdom_in_turmoil = {
+	index = 60006
+	fame = yes 
+	monthly_prestige = -0.2
+	inherit_chance = 0
+	inherit_from_real_father = no 
+	legitimacy = -1
+	short_reign_duration_mult = 0.5
+	legitimacy_loss_mult = 0.25
+	ruler_designer_cost = 40
+	vassal_levy_contribution_add = -0.30
+	vassal_opinion = -50
+	county_opinion_add = -10
+	levy_size = -0.15
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = kingdom_in_turmoil.dds
+			}
+			desc = kingdom_in_turmoil.dds
+		}
+	}
+}
+
+roman_pretender = {
+	index = 60007
+	fame = yes 
+	monthly_prestige = 0.4
+	inherit_chance = 0
+	inherit_from_real_father = no 
+	legitimacy = 1
+	short_reign_duration_mult = -0.5
+	legitimacy_gain_mult = 0.25
+	ruler_designer_cost = 40
+	vassal_levy_contribution_add = 0.50
+	levy_size = 0.2
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = roman_pretender.dds
+			}
+			desc = roman_pretender.dds
 		}
 	}
 }

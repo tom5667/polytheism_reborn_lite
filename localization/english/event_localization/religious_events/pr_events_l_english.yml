@@ -450,7 +450,7 @@ prsr.001.send_away:0 "Send them back"
 
 #Sassanid Reconquest
 sassanid_reconquest.001.t:0 "Start of the reconquest"
-sassanid_reconquest.001_desc:0 "Finaly years after the conquest of Persia by the Arabs, we finally have a bridge from Afrighids lands to Tokharistan. From now on we are a fors to be reconed with again. Search for we can search for extra allies or go on like we do now."
+sassanid_reconquest.001.desc:0 "The time has come to reclaim the Persian Empire under the Sassanids, starting with the province of Merv. This marks the beginning of our reconquest, as we strive to restore the glory of our ancestors and drive out the invaders.
 sassanid_reconquest.001.a:0 "Praise Ahura Mazda"
 
  prctv.001.t:0 "Close the temple of Vesta"

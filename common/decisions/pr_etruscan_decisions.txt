@@ -56,8 +56,10 @@
 
 #Choose main deity Etruscan Polytheism 
 choose_main_deity_etruscan_decision = {
-	picture = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
-
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
+	}
+	decision_group_type = polytheism
 	#desc = choose_main_deity_celtic_decision_desc
 	desc = select_personal_deity_germanic_decision_desc
 	selection_tooltip = choose_main_deity_etruscan_decision_tooltip
@@ -134,14 +136,22 @@ choose_main_deity_etruscan_decision = {
 }
 
 create_etruria_decision = {
-	picture = "gfx/interface/illustrations/decisions/etruscan.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/etruscan.dds"
+	}
 	desc = create_etruria_decision_desc
-	major = yes
+	decision_group_type = major
 	ai_check_interval = 4
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 		AND = {
 			OR = {
 				religion = religion:etruscan_religion
@@ -198,12 +208,8 @@ create_etruria_decision = {
 			}
 		}
 		resolve_title_and_vassal_change = scope:title_change
-		title:d_toscana = { set_de_jure_liege_title = k_etruria }
-		title:d_pisa = { set_de_jure_liege_title = k_etruria }
-		
-		hidden_effect = {
-			trigger_event = etc.008
-		}
+		title:d_toscana = { set_de_jure_liege_title = title:k_etruria  }
+		title:d_pisa = { set_de_jure_liege_title = title:k_etruria  }
 	}
 
 	cost = {
@@ -230,11 +236,13 @@ create_etruria_decision = {
 
 
  set_capital_pisa_decision = {
-	picture = "gfx/interface/illustrations/decisions/etruscan.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/etruscan.dds"
+	}
 
 	desc = set_capital_pisa_decision_desc
 	selection_tooltip = set_capital_pisa_decision_tooltip
-	major = yes
+	decision_group_type = major
 
 	ai_check_interval = 12
 

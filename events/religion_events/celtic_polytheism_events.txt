@@ -23,7 +23,7 @@ gp.001 = {
 	title = gp.001.t
 	desc = gp.001.desc
 	theme ==hunt_activity
-	 =right_portrait = {
+	right_portrait = {
 			character = root
 			animation = personality_content
 	}
@@ -450,7 +450,7 @@ ci.005 = {
 #make state religion events 
 
 #Reinstate Gaelic polytheism as state religion 
-scripted_effect gp_sr_notify_players_effectt = {
+scripted_effect gp_sr_notify_players_effect = {
 	every_player = {
 		limit = {
 			Not = {this = root}  
@@ -1628,7 +1628,7 @@ celtic.011 = {
 	
 	option = { 
 		name = celtic.011.a
-		pr_activity_kogaionon_pilgrimage_completed_log_entry_effect = yes
+		pr_activity_cnoc_uisnigh_pilgrimage_completed_log_entry_effect = yes
 	}
 
 
@@ -1805,8 +1805,11 @@ celtic.015 = {
 			triggered_desc = {
 				trigger = { 
 					is_target_in_global_variable_list = {
-						name = reconquest_ireland
+						name = unavailable_unique_decisions
 						target =  flag:flag_reconquest_ireland
+					}
+					NOT = {
+						has_title = title:k_high_kingdom_of_ireland
 					}
 				 }
 				desc = celtic.015.desc.eire
@@ -1814,17 +1817,24 @@ celtic.015 = {
 			triggered_desc = {
 				trigger = { 
 					is_target_in_global_variable_list = {
-						name = reconquest_alba
+						name = unavailable_unique_decisions
 						target =  flag:flag_reconquest_alba
 					}
+					NOT = {
+						has_title = title:k_scotland
+					}
 				 }
+
 				desc = celtic.015.desc.alba
 			}
 			triggered_desc = {
 				trigger = { 
 					is_target_in_global_variable_list = {
-						name = reconquest_wales
+						name = unavailable_unique_decisions
 						target =  flag:flag_reconquest_wales
+					}
+					NOT = {
+						has_title = title:k_wales
 					}
 				 }
 				desc = celtic.015.desc.wales
@@ -1832,8 +1842,11 @@ celtic.015 = {
 			triggered_desc = {
 				trigger = { 
 					is_target_in_global_variable_list = {
-						name = reconquest_albion
+						name = unavailable_unique_decisions
 						target =  flag:flag_reconquest_albion
+					}
+					NOT = {
+						has_title = title:k_england
 					}
 				 }
 				desc = celtic.015.desc.albion
@@ -1841,8 +1854,11 @@ celtic.015 = {
 			triggered_desc = {
 				trigger = { 
 					is_target_in_global_variable_list = {
-						name = conquest_brittany
-						target =  flag:flag_conquest_brittany
+						name = unavailable_unique_decisions
+						target =  flag:flag_reconquest_brittany
+					}
+					NOT = {
+						has_title = title:k_brittany
 					}
 				 }
 				desc = celtic.015.desc.brittany
@@ -1850,8 +1866,11 @@ celtic.015 = {
 			triggered_desc = {
 				trigger = { 
 					is_target_in_global_variable_list = {
-						name = conquest_galicia
-						target =  flag:flag_conquest_galicia
+						name = unavailable_unique_decisions
+						target =  flag:flag_reconquest_galicia
+					}
+					NOT = {
+						has_title = title:k_pr_galicia
 					}
 				 }
 				desc = celtic.015.desc.galicia
@@ -1859,8 +1878,11 @@ celtic.015 = {
 			triggered_desc = {
 				trigger = { 
 					is_target_in_global_variable_list = {
-						name = conquest_belgae
-						target =  flag:flag_conquest_belgae
+						name = unavailable_unique_decisions
+						target =  flag:flag_reconquest_belgae
+					}
+					NOT = {
+						has_title = title:k_belgica
 					}
 				 }
 				desc = celtic.015.desc.belgae
@@ -1868,8 +1890,11 @@ celtic.015 = {
 			triggered_desc = {
 				trigger = { 
 					is_target_in_global_variable_list = {
-						name = conquest_gaul
-						target =  flag:flag_conquest_gaul
+						name = unavailable_unique_decisions
+						target =  flag:flag_reconquest_gaul
+					}
+					NOT = {
+						has_title = title:k_celtica
 					}
 				 }
 				desc = celtic.015.desc.celtica
@@ -1885,8 +1910,11 @@ celtic.015 = {
 	option = {
 		trigger = {
 			is_target_in_global_variable_list = {
-				name = reconquest_ireland
+				name = unavailable_unique_decisions
 				target = flag:flag_reconquest_ireland
+			}
+			NOT = {
+				has_title = title:k_high_kingdom_of_ireland
 			}
 		}
 		name = celtic.015.a
@@ -1940,10 +1968,12 @@ celtic.015 = {
 	option = {
 		trigger ={ 
 			is_target_in_global_variable_list = {
-				name = reconquest_alba
+				name = unavailable_unique_decisions
 				target =  flag:flag_reconquest_alba
 			}
-			
+			NOT = {
+				has_title = title:k_scotland
+			}
 		}
 		name = celtic.015.b
 		add_prestige = 500 
@@ -1989,8 +2019,11 @@ celtic.015 = {
 	option = {
 		trigger = {
 			is_target_in_global_variable_list = {
-				name = reconquest_wales
+				name = unavailable_unique_decisions
 				target = flag:flag_reconquest_wales
+			}
+			NOT = {
+				has_title = title:k_wales
 			}
 		}
 		name = celtic.015.c
@@ -2036,8 +2069,11 @@ celtic.015 = {
 	option = {
 		trigger = {
 			is_target_in_global_variable_list = {
-				name = reconquest_albion
+				name = unavailable_unique_decisions
 				target = flag:flag_reconquest_albion
+			}
+			NOT = {
+				has_title = title:k_england
 			}
 		}
 		name = celtic.015.d
@@ -2087,8 +2123,11 @@ celtic.015 = {
 	option = {
 		trigger = {
 			is_target_in_global_variable_list = {
-				name = conquest_brittany
-				target = flag:flag_conquest_brittany
+				name = unavailable_unique_decisions
+				target = flag:flag_reconquest_brittany
+			}
+			NOT = {
+				has_title = title:k_brittany
 			}
 		}
 		name = celtic.015.e
@@ -2122,15 +2161,15 @@ celtic.015 = {
 		hidden_effect = {
 			remove_list_global_variable = {
 				name = reconquest_albion
-				target = flag:flag_reconquest_albion
+				target = flag:flag_reconquest_brittany
 			}
 		}	
 	}
 	option = {
 		trigger = {
 			is_target_in_global_variable_list = {
-				name = conquest_galicia
-				target = flag:flag_conquest_galicia
+				name = unavailable_unique_decisions
+				target = flag:flag_reconquest_galicia
 			}
 		}
 		name = celtic.015.f
@@ -2180,8 +2219,11 @@ celtic.015 = {
 	option = {
 		trigger = {
 			is_target_in_global_variable_list = {
-				name = celtic_conquest_of_belgae
-				target = flag:flag_conquest_belgae
+				name = unavailable_unique_decisions
+				target = flag:flag_reconquest_belgae
+			}
+			NOT = {
+				has_title = title:k_belgica
 			}
 		}
 		name = celtic.015.g
@@ -2231,8 +2273,11 @@ celtic.015 = {
 	option = {
 		trigger = {
 			is_target_in_global_variable_list = {
-				name = celtic_conquest_of_gaul
-				target = flag:flag_conquest_gaul
+				name = unavailable_unique_decisions
+				target = flag:flag_reconquest_gaul
+			}
+			NOT = {
+				has_title = title:k_celtica
 			}
 		}
 		name = celtic.015.h
@@ -2376,4 +2421,344 @@ celtic.017 = {
 		set_culture = culture:old_irish
 	}
 
+}
+
+celtic.018 = {
+	type = character_event
+	title = celtic.018.t
+	desc = celtic.018.desc
+	theme = learning 
+	override_background = { reference = pr_druidic_place }
+	immediate = {
+		create_character = {
+			employer = root
+			age = { 35 50}
+			random_traits = no
+			save_scope_as = druid
+			learning = { 20 25 }
+			diplomacy = { 8 13 }
+			gender = male
+			trait = zealous
+			dynasty = generate
+			trait = druidic_circle_leader
+			trait = druid
+		}
+	}
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+	right_portrait = {
+		character = scope:druid 
+		animation = personality_zealous
+	}
+	option = {
+		name = celtic.018.a
+		title:c_anglesey.title_province = {
+			add_special_building = druidic_circle
+		}
+		title:c_anglesey ={
+			add_county_modifier = open_druidic_place
+		}
+		add_character_modifier = druidic_knowledge
+		hidden_effect = {
+			scope:druid = {
+				give_nickname = nick_archdruid
+			}
+		}
+	}
+
+}
+
+celtic.019 = {
+	type = character_event
+	title = celtic.019.t
+	desc = celtic.019.desc
+	theme = learning
+	immediate = {
+		root = {save_scope_as = ruler }
+	}
+	left_portrait = {
+		character = scope:ruler
+		animation = personality_content
+	}
+
+	option = {
+		name = celtic.019.a
+		title:d_karnten = { save_scope_as = kartnen }
+		title:d_steyermark = { save_scope_as = steyermark }
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = yes
+		}
+		title:k_noricum ={
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		#title:k_noricum = { set_de_jure_liege_title = title:e_celtic_empire }
+	}
+}
+
+# This scripted effect saves up to 4 valid daughters into separate scopes: daughter_1, daughter_2, etc.
+scripted_effect select_valid_son_and_save_scope = {
+
+	# Loop through children and save up to 4 valid daughters
+	root = {
+		every_living_character = {
+			limit = {
+				any_parent = { this = root }
+				#count > 0
+				is_male = yes
+				religion = religion:celtic_religion
+				age = { 12 16 }
+				NOT= { has_trait = druid }
+			}
+			save_scope_as = son
+		}
+	}
+
+}
+
+celtic.020 = {
+	type = character_event
+	title = celtic.020.t
+	desc = celtic.020.desc
+	theme = emperor
+	immediate = {
+		select_valid_son_and_save_scope = yes
+	}
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	right_portrait = {
+		character = scope:son
+		animation = personality_content
+	}
+	option = {
+		trigger = {
+			exists = scope:son 
+		}
+		name = celtic.020.a
+		scope:son = {
+			add_trait = druid
+		}
+		add_prestige = 150
+		add_piety = 150
+		
+
+	}
+	option = {
+		name = celtic.020.cancel
+	}
+
+}
+
+scripted_effect choose_new_druidic_circle_leader = {
+	random_living_character = {
+		limit = {
+			has_trait = druid
+			age = { 35 50 }
+
+		}
+		save_scope_as =  new_druidic_circle_leader
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = scope:new_druidic_circle_leader
+			}
+		}
+		create_character = {
+			employer = root
+			age = { 35 50}
+			random_traits = no
+			save_scope_as = druid
+			learning = { 20 25 }
+			diplomacy = { 8 13 }
+			gender = male
+			trait = zealous
+			dynasty = generate
+			trait = druidic_circle_leader
+			trait = druid
+		}
+	}
+}
+celtic.021 = {
+  	type = character_event
+	title = celtic.021.t
+	desc = celtic.021.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_druidic_place }
+	immediate = {
+		choose_new_druidic_circle_leader = yes
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:new_druidic_circle_leader
+		animation = personality_rational
+	}
+	option = {
+		name = celtic.021.a
+		scope:new_druidic_circle_leader = {
+			give_nickname = nick_archdruid
+		}
+	}
+}
+
+# Druidic Random Events - Druid as Judge
+celtic.022 = {
+	type = character_event
+	title = celtic.022.t # A Thorny Dispute
+	desc = celtic.022.desc
+	theme = law_focus
+	override_background = { reference = throne_room }
+
+	immediate = {
+		random_vassal = {
+			save_scope_as = vassal_1
+		}
+		random_vassal = {
+			save_scope_as = vassal_2
+		}
+		every_living_character = {
+			limit = {
+				has_trait = druidic_circle_leader
+			}
+			save_scope_as = druidic_leader
+		}
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:druidic_leader
+		animation = personality_content
+	}
+
+	option = {
+		name = celtic.022.a # Very well, let the old laws decide this.
+		add_piety = minor_piety_gain
+		scope:druidic_leader = {
+			add_opinion = {
+				opinion = 20 
+				modifier = trusted_druidic_judgment_opinion
+				target = root
+			}
+		}
+		trigger_event = {
+			id = celtic.023
+			days = { 15 30 }
+		}
+	}
+
+	option = {
+		name = celtic.022.b # I will not have my authority undermined.
+		add_stress = minor_stress_impact_gain
+		add_stewardship_lifestyle_xp = 75
+		scope:druidic_leader= {
+			add_opinion = {
+				modifier = rejected_druidic_judgment_opinion
+				opinion = -20
+				target = root
+			}
+		}
+	}
+}
+
+celtic.023 = {
+	type = character_event
+	title = celtic.023.t # The Druid's Judgment
+	desc = celtic.023.desc
+	theme = faith 
+	override_background = { reference = throne_room }
+
+
+	left_portrait = {
+		character = scope:vassal_1
+		animation = personality_content
+	}
+	right_portrait = {
+		character = scope:vassal_2
+		animation = personality_content
+	}
+	lower_center_portrait = {
+		character = scope:druidic_leader
+		animation = personality_rational
+	}
+
+	option = {
+		name = celtic.023.a # A wise and fair judgment.
+		add_prestige = medium_prestige_gain
+		add_piety = medium_piety_gain
+		scope:vassal_1 = { add_opinion = { modifier = impressed_by_fair_judgment_opinion opinion = 10 target = root } }
+		scope:vassal_2 = { add_opinion = { modifier = impressed_by_fair_judgment_opinion opinion = 10 target = root } }
+	}
+}
+
+# Druidic Random Events - Druid as Teacher
+celtic.024 = {
+	type = character_event
+	title = celtic.024.t # The Fading Verse
+	desc = celtic.024.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = library }
+
+	immediate = {
+		every_living_character = {
+			limit = {
+				has_trait = druidic_circle_leader
+			}
+			save_scope_as = druidic_leader
+		}
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:druidic_leader
+		animation = personality_content
+	}
+
+	option = {
+		name = celtic.024.a # An excellent idea. You have my support.
+		remove_short_term_gold = 150
+		add_piety = medium_piety_gain
+		capital_province = {
+			add_county_modifier = {
+				modifier = druidic_school_modifier
+				years = 25
+			}
+		}
+		scope:druidic_leader = {
+			add_opinion = {
+				modifier = supported_druidic_school_opinion
+				target = root
+			}
+		}
+	}
+
+	option = {
+		name = celtic.024.b # We have more pressing concerns.
+		add_piety = minor_piety_loss
+		add_stress = minor_stress_impact_gain
+		scope:druidic_leader = {
+			add_opinion = {
+				modifier = generic_opinion_negative
+				opinion = -5
+				target = root
+			}
+		}
+	}
 }

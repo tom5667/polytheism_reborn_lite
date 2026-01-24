@@ -46,3 +46,8 @@ set_capital_seuthopolis_decision_confirm:0 "Change Capital"
 zalmoxism_human_sacrifice_decision:0 "Human Sacrifice To Zalmoxis"
 zalmoxism_human_sacrifice_desc:0 "As we are at war, we can choose to perform a human sacrifice to Zalmoxis. This will give our armies a significant bonus in battle."
 zalmoxism_human_sacrifice_decision_confirm:0 "Choose Fierest Warrior"
+
+place_altar_in_kogaionon:0 "Place Altar to Zalmoxis"
+place_altar_in_kogaionon_desc:0 "The place where Zalmoxis lived for years "
+place_altar_in_kogaionon_tooltip:0 "Place altar to Zalmoxis"
+place_altar_in_kogaionon_confirm:0 "Confirm"

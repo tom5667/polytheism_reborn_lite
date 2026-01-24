@@ -3,7 +3,34 @@
 #Made by tom5667 
 ######################
 
+invite_sassanid_relatives_decision_before_last_date:0 "Desicion is aviable until January 1st 790 AD"
+invite_sassanid_relatives_decision:0 "Invite Sassanid relative"
+invite_sassanid_relatives_decision_desc:0 "We have located two of the last Sassanid relatives, they fought in Tokharistan against the Arabs and now there is a chance we can get them over here and help them reclaim the Persian crown."
+invite_sassanid_relatives_decision_tooltip:1 "Help the Sassanids back on their throne."
+invite_sassanid_relatives_decision_confirm:1 "Send invites"
+
+sassanid_reconquest:0 "Sassanid reconquest"
+sassanid_reconquest_desc:0 "As a proud member of the Sassanid dynasty, it is time to reclaim our rightful place on the Persian throne. Begin the Sassanid reconquest and restore the glory of our empire."
+sassanid_reconquest_tooltip:1 "Sassanid reconquest"
+sassanid_reconquest_confirm:1 "Begin the reconquest"
+
+
 pr_commission_te_avesta_decision:0 "Commission the 3rd Avesta"
 pr_commission_te_avesta_decision_desc:0 "The original Avesta was lost after the Sack of Parsa by Gizistag Aleksandar-i-Hromayig. The Avesta was recomposed and revised during the reign of Khosrow Anushiruwan.\n\nBut following the invasion of the Tazigs. Now, both the Eranshahr and the Priesthood has been restored by the [ROOT.Char.GetDynasty.GetBaseName] [dynasty|E], and many had began showing their support of a new composition of the Avesta, one that would not be destroyed by a foreign invader!"
+
 pr_commission_te_avesta_decision_tooltip:0 "Commission the 3rd Avesta"
 pr_commission_te_avesta_decision_confirm:0 "Confirm"
+
+
+pr_reintroduce_old_persian_names_decision:0 "Reintroduce Old Persian Names"
+pr_reintroduce_old_persian_names_decision_desc:0 "The Old Persian language was the language of the Sassanid Empire, and was used in the Avesta. The language was replaced by Middle Persian after the fall of the Empire, and was later replaced by New Persian after the Arab invasion."
+
+send_envoy_to_afrighids_decision:0 "Send Envoy to Afrighids"
+send_envoy_to_afrighids_decision_desc:0 "The Afrighids, alongside the Dabuyids, are among the last remnants of the Sassanid dynasty. Ruling over the region of Khorasan, they have managed to resist Arab conquest. Sending an envoy to them could secure their support in our efforts to restore the Persian Empire and reclaim our shared heritage."
+send_envoy_to_afrighids_decision_tooltip:0 "Send Envoy to Afrighids"
+send_envoy_to_afrighids_decision_confirm:1 "Send Envoy"
+
+send_envoy_to_dabuyids_decision:0 "Send Envoy to Dabuyids"
+send_envoy_to_dabuyids_decision_desc:0 "The Dabuyids, alongside the Afrighids, are among the last remnants of the Sassanid dynasty. Ruling over the region of Tabaristan, they have managed to resist Arab conquest. Sending an envoy to them could secure their support in our efforts to restore the Persian Empire and reclaim our shared heritage."
+send_envoy_to_dabuyids_decision_tooltip:0 "Send Envoy to Dabuyids"
+send_envoy_to_dabuyids_decision_confirm:1 "Send Envoy" 

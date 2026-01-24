@@ -1,13 +1,21 @@
 ﻿
 restore_carthago ={
-	picture = "gfx/interface/illustrations/decisions/carthago.dds"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/carthago.dds"
+	}
+	decision_group_type = major
 	desc =  restore_carthago_desc
 	ai_check_interval = 4
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 		OR = {
 			faith = faith:punic_polytheism
 			faith = { has_doctrine_parameter = special_doctrine_punic_patron_god_active }
@@ -57,6 +65,7 @@ restore_carthago ={
 		title:d_gabes  = { save_scope_as = gabes }
 		title:d_tripolitania = { save_scope_as = tripolitania }
 		title:d_syrte = { save_scope_as = syrte }
+		title:d_jerid = { save_scope_as = jarid}
 		create_title_and_vassal_change = {
 			type = created
 			save_scope_as = title_change
@@ -75,6 +84,7 @@ restore_carthago ={
 		title:d_gabes  = { set_de_jure_liege_title = title:k_carthago }
 		title:d_tripolitania = { set_de_jure_liege_title = title:k_carthago }
 		title:d_syrte = { set_de_jure_liege_title = title:k_carthago }
+		title:d_jerid = { set_de_jure_liege_title = title:k_carthago }
 		hidden_effect = {
 			trigger_event =  rc.001
 		}
@@ -104,11 +114,13 @@ restore_carthago ={
 }
 
 set_capital_tunis_decision = {
-	picture = "gfx/interface/illustrations/decisions/carthago.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/carthago.dds"
+	} 
 
 	desc = set_capital_tunis_decision_desc
 	selection_tooltip = set_capital_tunis_decision_tooltip
-	major = yes
+	decision_group_type = major 
 
 	ai_check_interval = 12
 
@@ -164,12 +176,14 @@ set_capital_tunis_decision = {
 
 #Choose main deity Punic Polytheism 
 choose_main_deity_punic_decision = {
-	picture = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
-
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
+	}
+	decision_group_type = polytheism
 	#desc = choose_main_deity_celtic_decision_desc
 	desc = select_personal_deity_germanic_decision_desc
 	selection_tooltip = choose_main_deity_punic_decision_tooltip
-
+	
 	is_shown = {
 		# DLC check.
 		has_fp1_dlc_trigger = yes
@@ -246,8 +260,10 @@ choose_main_deity_punic_decision = {
 
 #Choose main deity Semitic Polytheism 
 choose_main_deity_semitic_decision = {
-	picture = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
-
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
+	}
+	decision_group_type = polytheism
 	#desc = choose_main_deity_celtic_decision_desc
 	desc = select_personal_deity_germanic_decision_desc
 	selection_tooltip = choose_main_deity_semitic_decision_tooltip
@@ -328,7 +344,10 @@ choose_main_deity_semitic_decision = {
 
 #embrace punic culture 
 embrace_punic_culture_decision = {
-	picture = "gfx/interface/illustrations/decisions/carthago.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/carthago.dds"
+	} 
+	decision_group_type = polytheism
 	desc =  embrace_punic_culture_decision_desc
 	is_shown = {
 		is_ai = no
@@ -339,6 +358,7 @@ embrace_punic_culture_decision = {
 				name = unavailable_unique_decisions
 				target = flag:flag_restored_punic_culture
 			}
+			culture = culture:punic
 		}
 	}
 	is_valid = {
@@ -376,4 +396,29 @@ embrace_punic_culture_decision = {
 			}
 		}
 	} 
+}
+
+#Build the temple of Tanit 
+build_temple_of_tanit = {
+	decision_group_type = major
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+	is_shown = {
+		NOT = { has_global_variable = pr_temple_of_tanit }
+		religion = religion:canaanite_religion
+	}
+	is_valid = {
+		completely_controls = title:d_tunis
+	}
+	cost = {
+		gold = 2000
+	}
+	effect = {
+		set_global_variable = {
+			name = pr_temple_of_tanit
+			value = yes
+		}
+		trigger_event = punic.001
+	}
 }

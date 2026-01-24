@@ -10,13 +10,13 @@
     anglo_saxon_polytheism_adj:0 "Anglo Saxon" 
     anglo_saxon_polytheism_adherent:0 "Anglo Saxon polytheist"
     anglo_saxon_polytheism_adherent_plural:0 "Anglo Saxon polytheists"
-    anglo_saxon_polytheism_desc:0 "Anglo Saxon Polytheism is an in basic animistic religion with spirits and other none human entities. Next to that they have major deities although most interaction would be with spirits an none human entities." 
+    anglo_saxon_polytheism_desc:0 "Anglo-Saxon polytheism was a largely animistic faith, recognizing numerous spirits and non-human entities alongside major deities. While gods and goddesses were revered, interaction with these other spiritual beings played a significant role in religious practice." 
 
     anglo_saxon_polytheism_old:0 "Anglo Saxon Old"
     anglo_saxon_polytheism_old_adj:0 "Anglo Saxon Old" 
     anglo_saxon_polytheism_adherent_old:0 "Old Anglo Saxon polytheist"
     anglo_saxon_polytheism_old_adherent_plural:0 "Old Anglo Saxon polytheists"
-    anglo_saxon_polytheism_old_desc:0 "Anglo Saxon Polytheism is an in basic animistic religion with spirits and other none human entities, next to that they have major deities although most interaction would be with spirits an none human entities." 
+    anglo_saxon_polytheism_old_desc:0 "Anglo-Saxon polytheism was a largely animistic faith, recognizing numerous spirits and non-human entities alongside major deities. While gods and goddesses were revered, interaction with these other spiritual beings played a significant role in religious practice." 
 
     anglo_saxon_religious_head_title:0 "High Priest"
     anglo_saxon_religious_head_title_name:0 "High Priesthood"
@@ -153,8 +153,8 @@
     #high god Localization
     german_high_god_name:0 "Wotan"
     german_high_god_name_possessive:0 "Wotans"
-    german_high_god_name_alternate:0 "All father Wotan"
-    german_high_god_name_alternate_possessive:0 "All father Wotan"
+    german_high_god_alternate:0 "All father Wotan"
+    german_high_god_alternate_possessive:0 "All father Wotan"
     german_high_god_shehe:0 "He"
     german_high_god_herselfhimself:0 "Himself"
     german_high_god_herhis:0 "His"
@@ -249,7 +249,7 @@
     reserved_male_names:0 "Germanic male names"
     #Female 
     reserved_female_names:0 "Germanic female names"
-    holy_order_wodan_valkyrie:0 "Wodan Valkyrie"
+    holy_order_wodan_valkyries:0 "Wodan Valkyrie"
     holy_order_faithful_of_tiwaz:0 "Faithful of Tīwaz"
     holy_order_chosen_of_fri:0 "Chosen of Fri"
 

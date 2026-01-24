@@ -216,3 +216,55 @@ language_celtic_iberian = {
 	
 	color = { 245 242 220 }
 }
+
+language_middle_persian = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_middle_persian
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_middle_persian }
+			multiply = 10
+		}
+	}
+	
+	color = { 142 76 245 }
+}
+
+language_ripuarian = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_ripuarian
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_ripuarian }
+			multiply = 10
+		}
+	}
+	color = { 238 245 246  }
+}
+
+language_moselle = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_moselle
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_moselle }
+			multiply = 10
+		}
+	}
+	color = { 245 245 255 }
+}

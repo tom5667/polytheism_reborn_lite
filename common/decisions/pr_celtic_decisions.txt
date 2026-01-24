@@ -1,10 +1,11 @@
 ﻿#Restore celtic Priesthood
 cp_restore_high_priesthood_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
-
+	picture = {
+	reference = "gfx/interface/illustrations/decisions/celtic_druid.dds"
+	}
 	desc = cp_restore_high_priesthood_decision_desc
 	selection_tooltip = cp_restore_high_priesthood_decision_tooltip
-	major = yes
+	decision_group_type = polytheism
 
 	ai_check_interval = 120
 
@@ -63,14 +64,22 @@ cp_restore_high_priesthood_decision = {
 }
 
 create_celtic_empire_decision = { 
-	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
-	major = yes
+	picture = {
+	reference = "gfx/interface/illustrations/decisions/celtic_fort.dds"
+	}
+	decision_group_type = polytheism
 	desc =  create_celtic_empire_decision_desc
 	ai_check_interval = 4
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 
 		AND = {
 			has_title = title:k_high_kingdom_of_ireland
@@ -269,11 +278,12 @@ create_celtic_empire_decision = {
 # }
 
 set_capital_dublin_decision = {
-	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
-
+	picture = {
+		reference ="gfx/interface/illustrations/decisions/celtic_fort.dds"
+	}
 	desc = set_capital_dublin_decision_desc
 	selection_tooltip = set_capital_dublin_decision_tooltip
-	major = yes
+	decision_group_type = major
 
 	ai_check_interval = 12
 
@@ -328,12 +338,20 @@ set_capital_dublin_decision = {
 }
 
 create_lusitania_decision ={
-	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/celtic_fort.dds"
+	}
+	decision_group_type = major
 	desc =  create_lusitania_desc
 	ai_check_interval = 4
 	is_shown = {
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 		is_ruler = yes
 		is_landed = yes
 		AND = {
@@ -443,12 +461,22 @@ create_lusitania_decision ={
 }
 
 create_galicia_decision ={
-	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
-	major = yes
+	picture = {
+		 reference =  "gfx/interface/illustrations/decisions/celtic_fort.dds"
+	}
+	decision_group_type = major 
 	desc =  create_galicia_desc
 	ai_check_interval = 4
 	is_shown = {
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
+
+
 		is_ruler = yes
 		is_landed = yes
 		AND = {
@@ -559,12 +587,20 @@ create_galicia_decision ={
 }
 
 create_vasconia_decision ={
-	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/celtic_fort.dds"
+	}
+	decision_group_type = major
 	desc =  create_vasconia_desc
 	ai_check_interval = 4
 	is_shown = {
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 		is_ruler = yes
 		is_landed = yes
 		AND = {
@@ -674,12 +710,20 @@ create_vasconia_decision ={
 }
 
 create_tartessia_decision ={
-	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/celtic_fort.dds"
+	}
+	decision_group_type = major
 	desc =  create_tartessia_desc
 	ai_check_interval = 4
 	is_shown = {
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 		is_ruler = yes
 		is_landed = yes
 		AND = {
@@ -784,12 +828,20 @@ create_tartessia_decision ={
 }
 
 create_celtiberia_decision ={
-	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/celtic_fort.dds"
+	}
+	decision_group_type = major
 	desc =  create_celtiberia_desc
 	ai_check_interval = 4
 	is_shown = {
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 		is_ruler = yes
 		is_landed = yes
 		AND = {
@@ -891,12 +943,20 @@ create_celtiberia_decision ={
 }
 
 create_iberia_decision ={
-	picture = "gfx/interface/illustrations/decisions/celtic_fort.dds"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/celtic_fort.dds"
+	}
+	decision_group_type = major
 	desc =  create_iberia_desc
 	ai_check_interval = 4
 	is_shown = {
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 		is_ruler = yes
 		is_landed = yes
 		AND = {
@@ -1005,12 +1065,13 @@ create_iberia_decision ={
 
 #Choose main deity Celtic Polytheism 
 choose_main_deity_celtic_decision = {
-	picture = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
-
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
+	}
 	#desc = choose_main_deity_celtic_decision_desc
 	desc = select_personal_deity_germanic_decision_desc
 	selection_tooltip = choose_main_deity_celtic_decision_tooltip
-
+    decision_group_type = polytheism
 	is_shown = {
 		# DLC check.
 		has_fp1_dlc_trigger = yes
@@ -1227,8 +1288,10 @@ choose_main_deity_celtic_decision = {
 # hold ritual 
 #Embrace old Irish culture
 old_irish_culture_decision = {
-	picture = "gfx/interface/illustrations/decisions/celts.dds"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/celts.dds"
+	} 
+	decision_group_type = polytheism
 	desc =  old_irish_culture_decision_desc
 	is_shown = {
 		is_ai = no
@@ -1273,8 +1336,10 @@ old_irish_culture_decision = {
 }
 #Embrace ancient local gaulish culture
 gaulish_culture_decision = {
-	picture = "gfx/interface/illustrations/decisions/celts.dds"
-	major = yes
+	picture ={
+		reference = "gfx/interface/illustrations/decisions/celts.dds"
+	}
+	decision_group_type = polytheism
 	desc =  gaulish_culture_decision_desc
 	is_shown = {
 		is_ai = no
@@ -1318,8 +1383,10 @@ gaulish_culture_decision = {
 
 #Brythonic culture 
 brythonic_culture_decision = {
-	picture = "gfx/interface/illustrations/decisions/celts.dds"
-	major = yes
+	picture ={
+		reference = "gfx/interface/illustrations/decisions/celts.dds"
+	}
+	decision_group_type = polytheism
 	desc =  brythonic_culture_decision_desc
 	is_shown = {
 		is_ai = no
@@ -1363,8 +1430,10 @@ brythonic_culture_decision = {
 
 #Embrace ancient local eburones culture
 eburones_culture_decision = {
-	picture = "gfx/interface/illustrations/decisions/celts.dds"
-	major = yes
+	picture ={
+		reference = "gfx/interface/illustrations/decisions/celts.dds"
+	}
+	decision_group_type = polytheism
 	desc =  eburones_culture_decision_desc
 	is_shown = {
 		is_ai = no
@@ -1408,8 +1477,10 @@ eburones_culture_decision = {
 }
 #Embrace ancient local manx culture
 manx_culture_decision = {
-	picture = "gfx/interface/illustrations/decisions/celts.dds"
-	major = yes
+	picture ={
+		reference = "gfx/interface/illustrations/decisions/celts.dds"
+	}
+	decision_group_type = polytheism
 	desc =  manx_culture_decision_desc
 	is_shown = {
 		is_ai = no
@@ -1452,8 +1523,10 @@ manx_culture_decision = {
 }
 
 push_out_the_sassenach_saga_decision = {
-	picture = "gfx/interface/illustrations/decisions/celts.dds"
-	major = yes
+	picture ={
+		reference = "gfx/interface/illustrations/decisions/celts.dds"
+	}
+	decision_group_type = polytheism
 	desc =  push_out_the_sassenach_decision_desc
 	is_shown = {
 		#religion = religion:celtic_religion
@@ -1506,16 +1579,26 @@ push_out_the_sassenach_saga_decision = {
 }
 
 celtic_reconquest_ireland_decision = {
-	picture = "gfx/interface/illustrations/decisions/celts.dds"
-	major = yes
+	picture ={
+		reference = "gfx/interface/illustrations/decisions/celts.dds"
+	}
+	decision_group_type = polytheism
 	desc =  celtic_reconquest_ireland_decision_desc
 	is_shown = {
-		religion = religion:celtic_religion
-		OR =  {
-			culture = { has_cultural_pillar = heritage_goidelic }
-			culture = { has_cultural_pillar = heritage_brythonic }
-		}
+		AND = {
+			religion = religion:celtic_religion
+			OR =  {
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+			}
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:flag_reconquest_ireland
+				}
+			}
 	
+		}
 	}
 
 	is_valid = {
@@ -1527,10 +1610,11 @@ celtic_reconquest_ireland_decision = {
 	}
 
 	effect = {
-		add_to_global_variable_list = {
-			name = reconquest_ireland
-			target = flag:flag_reconquest_ireland
-		}
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_reconquest_ireland
+			}
+
 		trigger_event = celtic.015
 	}
 	ai_check_interval = 90
@@ -1546,16 +1630,26 @@ celtic_reconquest_ireland_decision = {
 }
 
 celtic_reconquest_alba_decision = {
-	picture = "gfx/interface/illustrations/decisions/celts.dds"
-	major = yes
-	desc =  push_out_the_sassenach_decision_desc
+	picture ={
+		reference = "gfx/interface/illustrations/decisions/celts.dds"
+	}
+	decision_group_type = polytheism
+	desc =  celtic_conquest_alba_decision_desc
 	is_shown = {
-		religion = religion:celtic_religion
-		OR =  {
-			culture = { has_cultural_pillar = heritage_goidelic }
-			culture = { has_cultural_pillar = heritage_brythonic }
+		AND = {
+			religion = religion:celtic_religion
+			OR =  {
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+			}
+	
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:flag_reconquest_alba
+				}
+			}
 		}
-
 	}
 
 	is_valid = {
@@ -1568,7 +1662,7 @@ celtic_reconquest_alba_decision = {
 
 	effect = {
 		add_to_global_variable_list = {
-			name = reconquest_alba
+			name = unavailable_unique_decisions
 			target = flag:flag_reconquest_alba
 		}
 		trigger_event = celtic.015
@@ -1586,9 +1680,11 @@ celtic_reconquest_alba_decision = {
 }
 
 celtic_reconquest_wales_decision = {
-	picture = "gfx/interface/illustrations/decisions/celts.dds"
-	major = yes
-	desc =  push_out_the_sassenach_decision_desc
+	picture ={
+		reference = "gfx/interface/illustrations/decisions/celts.dds"
+	}
+	decision_group_type = polytheism
+	desc =  celtic_conquest_wales_decision_desc
 	is_shown = {
 		AND = {
 			religion = religion:celtic_religion
@@ -1598,6 +1694,12 @@ celtic_reconquest_wales_decision = {
 			}
 			
 		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_reconquest_wales
+			}
+		}
 
 	}
 
@@ -1605,13 +1707,11 @@ celtic_reconquest_wales_decision = {
 		completely_controls = title:d_gwynedd
 		completely_controls = title:d_powys
 		completely_controls = title:d_deheubarth	
-		completely_controls = title:d_western_isles
-		completely_controls = title:d_moray
 	}
 
 	effect = {
 		add_to_global_variable_list = {
-			name = reconquest_wales
+			name = unavailable_unique_decisions
 			target = flag:flag_reconquest_wales
 		}
 		trigger_event = celtic.015
@@ -1630,8 +1730,10 @@ celtic_reconquest_wales_decision = {
 
 
 celtic_reconquest_albion_decision = {
-	picture = "gfx/interface/illustrations/decisions/celts.dds"
-	major = yes
+	picture ={
+		reference = "gfx/interface/illustrations/decisions/celts.dds"
+	}
+	decision_group_type = polytheism
 	desc =  celtic_reconquest_albion_decision_desc
 	is_shown = {
 		AND = {
@@ -1647,7 +1749,12 @@ celtic_reconquest_albion_decision = {
 			}
 			
 		}
-
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_reconquest_albion
+			}
+		}
 	}
 
 	is_valid = {
@@ -1665,7 +1772,7 @@ celtic_reconquest_albion_decision = {
 
 	effect = {
 		add_to_global_variable_list = {
-			name = reconquest_albion
+			name = unavailable_unique_decisions
 			target = flag:flag_reconquest_albion
 		}
 		trigger_event = celtic.015
@@ -1684,8 +1791,10 @@ celtic_reconquest_albion_decision = {
 }
 
 celtic_conquest_brittany_decision = {
-	picture = "gfx/interface/illustrations/decisions/celts.dds"
-	major = yes
+	picture ={
+		reference = "gfx/interface/illustrations/decisions/celts.dds"
+	}
+	decision_group_type = polytheism
 	desc =  celtic_conquest_brittany_decision_desc
 	is_shown = {
 		AND = {
@@ -1697,7 +1806,12 @@ celtic_conquest_brittany_decision = {
 			has_title = title:e_celtic_empire
 			
 		}
-
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_reconquest_brittany
+			}
+		}
 	}
 
 	is_valid = {
@@ -1706,8 +1820,8 @@ celtic_conquest_brittany_decision = {
 
 	effect = {
 		add_to_global_variable_list = {
-			name = conquest_brittany
-			target = flag:flag_conquest_brittany
+			name = unavailable_unique_decisions
+			target = flag:flag_reconquest_brittany
 		}
 		trigger_event = celtic.015
 
@@ -1725,8 +1839,10 @@ celtic_conquest_brittany_decision = {
 }
 
 celtic_conquest_galicia_decision = {
-	picture = "gfx/interface/illustrations/decisions/celts.dds"
-	major = yes
+	picture ={
+		reference = "gfx/interface/illustrations/decisions/celts.dds"
+	}
+	decision_group_type = polytheism
 	desc =  celtic_conquest_galicia_decision_desc
 	is_shown = {
 		AND = {
@@ -1738,7 +1854,12 @@ celtic_conquest_galicia_decision = {
 			has_title = title:e_celtic_empire
 			
 		}
-
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_reconquest_galicia
+			}
+		}
 	}
 
 	is_valid = {
@@ -1747,8 +1868,8 @@ celtic_conquest_galicia_decision = {
 
 	effect = {
 		add_to_global_variable_list = {
-			name = conquest_galicia
-			target = flag:flag_conquest_galicia
+			name = unavailable_unique_decisions
+			target = flag:flag_reconquest_galicia
 		}
 		trigger_event = celtic.015
 
@@ -1766,9 +1887,11 @@ celtic_conquest_galicia_decision = {
 }
 
 celtic_conquest_of_belgae = {
-	picture = "gfx/interface/illustrations/decisions/celts.dds"
-	major = yes
-	desc =  celtic_conquest_galicia_decision_desc
+	picture ={
+		reference = "gfx/interface/illustrations/decisions/celts.dds"
+	}
+	decision_group_type = polytheism
+	desc =  celtic_conquest_belgae_decision_desc
 	is_shown = {
 		AND = {
 			religion = religion:celtic_religion
@@ -1780,7 +1903,12 @@ celtic_conquest_of_belgae = {
 			has_title = title:k_brittany
 
 		}
-
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_reconquest_belgae
+			}
+		}
 	}
 	is_valid = { 
 		completely_controls = title:d_julich 
@@ -1793,8 +1921,8 @@ celtic_conquest_of_belgae = {
 
 	effect = {
 		add_to_global_variable_list = {
-			name = conquest_belgae
-			target = flag:flag_conquest_belgae
+			name = unavailable_unique_decisions
+			target = flag:flag_reconquest_belgae
 		}
 		trigger_event = celtic.015
 
@@ -1813,9 +1941,11 @@ celtic_conquest_of_belgae = {
 }
 
 celtic_conquest_of_gaul = { 
-	picture = "gfx/interface/illustrations/decisions/celts.dds"
-	major = yes
-	desc =  celtic_conquest_galicia_decision_desc
+	picture ={
+		reference = "gfx/interface/illustrations/decisions/celts.dds"
+	}
+	decision_group_type = polytheism
+	desc =  celtic_conquest_gaul_decision_desc
 	is_shown = {
 		AND = {
 			religion = religion:celtic_religion
@@ -1826,6 +1956,12 @@ celtic_conquest_of_gaul = {
 			has_title = title:e_celtic_empire
 			has_title = title:k_brittany
 			has_title = title:k_belgica
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:flag_reconquest_gaul
+				}
+			}
 		}
 
 	}
@@ -1853,8 +1989,8 @@ celtic_conquest_of_gaul = {
 
 	effect = {
 		add_to_global_variable_list = {
-			name = conquest_gaul
-			target = flag:flag_conquest_gaul
+			name = unavailable_unique_decisions
+			target = flag:flag_reconquest_gaul
 		}
 		trigger_event = celtic.015
 
@@ -1868,5 +2004,105 @@ celtic_conquest_of_gaul = {
 
 	ai_will_do = {
 		base = 100
+	}
+}
+
+create_gathering_place_for_druids = {
+	desc = create_gathering_place_for_druids_desc
+	decision_group_type = polytheism
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+	is_shown = {
+		religion = religion:celtic_religion
+		NOR ={
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions_create_gathering_place_for_druids
+				target = flag:flag_cp_cgpfd
+			}
+		}
+	}
+	is_valid = {
+		completely_controls = title:d_gwynedd
+	}
+	cost = {
+		gold = 800
+	}
+	effect = {
+		set_global_variable = {
+			name = pr_druid_place
+			value = yes
+		}
+		trigger_event = celtic.018
+		hidden_effect={ 
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions_create_gathering_place_for_druids
+				target = flag:flag_cp_cgpfd
+			}
+		}
+	} 
+	ai_will_do = {
+		base = 100
+	}
+}
+
+create_noricum_kingdom_decision = {
+	desc = create_noricum_kingdom_decision_desc
+	decision_group_type = polytheism
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+	is_shown = {
+		religion = religion:celtic_religion
+		NOT = { has_global_variable = pr_noricum_kingdom }
+	}
+	is_valid = {
+		completely_controls = title:d_karnten
+		completely_controls = title:d_steyermark
+	}
+	effect = {
+		set_global_variable = {
+			name = pr_noricum_kingdom
+			value = yes
+		}
+		trigger_event = celtic.019
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+
+send_son_to_druids_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/druid.dds"
+	}
+	decision_group_type = polytheism
+	desc = send_son_to_druids_decision_desc
+
+	is_shown = {
+		religion = religion:celtic_religion
+		is_target_in_global_variable_list = {
+			name = unavailable_unique_decisions_create_gathering_place_for_druids
+			target = flag:flag_cp_cgpfd
+		}
+	}
+
+	is_valid = {
+		is_adult = yes	
+
+		
+	}
+
+	effect = {
+		trigger_event = {
+			id = celtic.020 
+		}
+	}
+	ai_check_interval = 90
+	ai_potential = {
+		always = yes
+	}
+	ai_will_do = {
+		base = 80
 	}
 }

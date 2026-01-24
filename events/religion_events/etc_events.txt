@@ -277,16 +277,4 @@ etc.007 = {
 	}
 }
 #Etruria
-etc.008 = {
-	type = character_event
-	title = etc.008.t
-	desc = etc.008.desc
-	theme = claim_throne_scheme
-	right_portrait = {
-			character = root
-			animation = personality_content
-	}
-	option = {
-		name = etc.008.a
-	}
-}
+

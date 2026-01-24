@@ -34,10 +34,10 @@ illyrian_religion = {
 			icon = illyrian
 			reformed_icon = illyrian_reformed
 
-			holy_site = ragusa
 			holy_site = arduba #b_travnik -> closest to Zeniva that is close to arduba the last city of the Great Illyrian revolt
-			holy_site = delminium #b_duvno -> closest to delminium ancient capital of the Dalmatians 
+			holy_site = delminium #b_duvno -> closest to delminium ancient capital of the Dalmatians
 			holy_site = segestica #b_sisak -> modern day sisak -> probably slavic/croatian name for Segestica
+			holy_site = dyrachion
 			
 			doctrine = unreformed_faith_doctrine
 			doctrine = special_doctrine_illyrian_patron_god

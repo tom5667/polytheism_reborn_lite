@@ -679,6 +679,16 @@ london = {
 	}
  }
 
+ slesvig = {
+	county = c_slesvig
+
+	character_modifier = {
+		name = holy_site_spli_effect_name
+		diplomacy = 1
+		martial = 1
+	}
+ }
+
  devon = {
 	county = c_devon
 

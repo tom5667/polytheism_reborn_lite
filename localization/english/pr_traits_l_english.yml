@@ -50,6 +50,9 @@
   trait_h_cmd5_religion:0 "Devotee of Hermes"
   trait_h_cmd5_religion_desc:0 "Devotee of Hermes, God of trade"
 
+  trait_h_cmd6_religion:0 "Devotee of Athena"
+  trait_h_cmd6_religion_desc:0 "Devotee of Athena, goddess of wisdom"
+
   #choose main deity Mithraic Mysteries traits localization 
   trait_mm_cmd1_religion:0 "Devotee of Mithras"
   trait_mm_cmd1_religion_desc:0 "Devotee of Mithras, god of war"
@@ -130,3 +133,54 @@
   #Hathor
   trait_kemetic_cmd5_religion:0 "Devotee of Hathor"
   trait_kemetic_cmd5_religion_desc:0 "Devotee of the goddess of motherhood, love and fertility Hathor"
+ 
+  trait_crowned_by_religious_head:0 "Crowned by the religious head"
+  trait_crowned_by_religious_head_desc:0 "This character has been crowned by the religious head of the faith"
+
+  trait_kingdom_in_turmoil:0 "Kingdom in turmoil"
+  trait_kingdom_in_turmoil_desc:0 "This character's kingdom is in turmoil, the people are unhappy and the kingdom is in a state of unrest"
+
+  trait_roman_pretender:0 "Roman Pretender"
+  trait_roman_pretender_desc:0 "This character is a pretender to the Roman throne, they are trying to take the throne from the current emperor"
+
+  #Vestal virgins (cult)
+  trait_vestalis_maxima:0 "Vestalis Maxima"
+  trait_vestalis_maxima_desc:0 "Head of the vestal virgins"
+ 
+  trait_vestalis:0 "Vestal Virgin"
+  trait_vestalis_desc:0 "A vestal virgin is a priestess of Vesta, the goddess of the hearth, home, and family in ancient Roman religion. The vestal virgins were responsible for maintaining the sacred fire in the Temple of Vesta and were considered to be the embodiment of the Roman state."  
+
+  trait_bacchus_cult:0 "Bacchus cultist"
+  trait_bacchus_cult_desc:0 "The cult of Bacchus was a mystery cult that worshiped the god Bacchus, the god of wine and fertility. The cult was known for its ecstatic rituals and its emphasis on the power of wine to bring about spiritual transformation."
+  
+  trait_hierophant_bacchus:0 "Hierophant of Bacchus"
+  trait_hierophant_bacchus_desc:0 "The Hierophant of Bacchus is the leader of the cult of Bacchus, the god of wine and fertility. The Hierophant is responsible for leading the cult's rituals and ceremonies, and for interpreting the will of Bacchus."
+
+ trait_druidic_circle_leader:0 "Druidic Leader"
+ trait_druidic_circle_leader_desc:0 "The Druidic Leader is the head of a druidic circle, a group of druids who follow the old ways of nature worship. The leader is responsible for leading the rituals and ceremonies, and for interpreting the will of the gods."
+
+  trait_druid:0 "Druid"
+  trait_druid_desc:0 "This character is a druid and member of the druidic circle, a group of druids who follow the old ways of nature worship"
+
+ trait_augustalis_imperial_cult:0 "Augustalis"
+ trait_augustalis_imperial_cult_desc:0 "Priest of the Imperial cult"
+
+ trait_hierophant_cybele:0 "Archigallus"
+ trait_hierophant_cybele_desc:0 "Archigallus of the Cybele cult"
+ trait_cybele_cult:0 "Cybele Cultist"
+ trait_cybele_cult_desc:0 "Cybele cult"
+ 
+ trait_hierophant_eleusinian:0 "Hierophant Eleusinian"
+ trait_hierophant_eleusinian_desc:0 "High priest of the Eleusinian cult"
+  
+ trait_hierophant_serapis:0 "Hierophant Serapis Cult" 
+ trait_hierophant_serapis_desc:0 "High priest of the Serapis cult"
+
+ trait_hierophant_sol_invictus:0 "Hierophant Sol Invictus"
+ trait_hierophant_sol_invictus_desc:0 "High priest of the Sol Invictus cult"
+ 
+ trait_hierophant_isis:0 "Hierophant Isis"
+ trait_hierophant_isis_desc:0 "High priest of the Isis cult"
+ 
+ trait_pr_crowned_by_religious_head:0 "Crowned by the religious head"
+ trait_pr_crowned_by_religious_head_desc:0 "This character is crowned by the religious head of the faith"

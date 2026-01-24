@@ -4,7 +4,7 @@
 ascmd.001.t:0 "Choose main deity"
 ascmd.001.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or godesses"
 ascmd.001.woden:0 "Wōden"
-ascmd.001.njord:0 "Njǫrd"
+ascmd.001.njord:0 "Njord"
 ascmd.001.fri:0 "Frī"
 ascmd.001.tiwaz:0 "Tīwaz"
 ascmd.001.seaxneat:0 "Seaxnēat"
@@ -76,3 +76,48 @@ pr_germanic.11.t:0 "The Huldufólk"
 pr_germanic.011.desc:0 "I leave some butter on a stone close by my garden for the hidden people like elves to help with the growth of the crops and flowers."
 pr_germanic.011.a:0 "Spread the butter on the stone"
 
+pr.germanic.012.t:0 "The irminsul"
+pr.germanic.012.desc:0 "Upon the sacred ground of Paderborn, where the original Irminsul once towered, a new symbol of our faith has been erected. This monument honors the gods and commemorates the deeds of our people."
+pr.germanic.012.a:0 "Witness the Re-Erection"
+
+pr_germanic.013.t:0 "Reconquest of Paderborn"
+pr_germanic.013.desc:0 "With Paderborn reclaimed, the sacred lands of our ancestors are once again under our protection. The gods smile upon us as we restore their honor and rebuild the spiritual heart of our people. This victory marks the beginning of a new chapter in our ancient heritage, one of strength, faith, and unity.\n\n The local tribes have sent aditional warriors to help us in our cause."
+pr_germanic.013.a:0 "Begin the Reconquest"
+
+pr_germanic.014.t:0 "Conquest of Westfalen"
+pr_germanic.014.desc:0 "The fighting was fierce and we lost many soldiers, but in the end, the lands of Westfalen are ours. The gods have blessed our efforts and we have emerged victorious. The people of Westfalen have been brought under our rule and the faith of our ancestors has been restored to their lands."
+pr_germanic.014.a:0 "Westfalen is ours"
+
+pr_germanic.015.t:0 "Conquest of Angria"
+pr_germanic.015.desc:0 "With the defeat of the Angrians, their lands now fall under our dominion. The gods have shown their favor, granting us triumph in this endeavor. The ancient faith of our forebears has been rekindled in Angria, and its people now stand united under our rule."
+pr_germanic.015.a:0 "Angria is ours"
+
+pr_germanic.016.t:0 "Conquest of Holstein"
+pr_germanic.016.desc:0 "The people of Holstein have been vanquished and their lands now belong to us. The gods have smiled upon our efforts, granting us victory in this struggle.\n\nWith Holstein under our rule, we have secured a vital foothold in the north, strengthening our position and paving the way for future conquests.""
+pr_germanic.016.a:0 "Holstein is ours"
+#For later use
+#This also opens up a new path to seek new allies in scandanavia the feasome vikings, if they are still following the old ways.
+#pr_germanic.016.b:0 "Send envoy to the vikings"
+
+pr_germanic.017.t:0 "Conquest of Ostfalen"
+pr_germanic.017.desc:0 "Ostfalen, a land of ancient forests and hidden groves, now falls under our dominion. The spirits of the old ways whisper through the trees, rejoicing in the return of their faithful. With this victory, we not only claim the land but rekindle the sacred bond between the people and the gods. Let the fires of our ancestors burn bright once more in Ostfalen!"
+pr_germanic.017.a:0 "Ostfalen is ours"
+
+pr_germanic.018.t:0 "Conquest of Anhalt"
+pr_germanic.018.desc_religous_head:0 "Anhalt the most southern lands on our route of reconquest have been taken, now to finish our conquest of the lands of our ancestors. We need restore the germanic confederation and the faith of our forefathers. Request the head of faith [religious_head.GetName] to come to the capital to celebrate the victory and proclaim me the rightful ruler of the germanic confederation."
+pr_germanic.018.desc:0 "Anhalt the most southern lands on our route of reconquest have been taken, now to finish our conquest of the lands of our ancestors. We need restore the germanic confederation and the faith of our forefathers. now all old germanic tribes are under our rule we can proclaim te germanic confederation"
+pr_germanic.018.a:0 "Praise the gods"
+pr_germanic.018.b:0 "Praise the gods"
+
+pr_germanic.019.t:0 "Arival at Opfermoor Vogtei"
+pr_germanic.019.desc:0 "I have arrived at the Opfermoor Vogtei, a sacred site of worship and sacrifice. The air is thick with the scent of incense and the sound of chanting fills the air. The preist begin to prepare for the rituals that will take place here, offering their prayers and sacrifices to the gods."
+pr_germanic.019.a:0 "Behold the sacred site"
+
+pr_germanic.020.t:0 "Opfermoor Vogtei"
+pr_germanic.020.desc.zealous:0 "As I witness the sacred rituals at the Opfermoor Vogtei, my heart swells with fervent devotion. The priests, steadfast in their faith, chant prayers that echo through the hallowed grounds, their voices a bridge between the mortal and the divine. The air is thick with the sacred aroma of incense, and every gesture, every offering, feels imbued with the gods' presence. Truly, this is a testament to the boundless glory of our faith."
+pr_germanic.020.desc.opfermoor:0 "As I stand amidst the sacred grounds of the Opfermoor Vogtei, the rituals come to an end. The priests gather, their blessings and prayers filling the air with a solemn reverence. The faint scent of incense lingers, and the soft murmur of chants resonates in my ears. I watch as they prepare for the next ceremonies, their devotion to the gods unwavering and deeply moving."
+pr_germanic.020.a:0 "Watch the ritual"
+
+pr_germanic.021.t:0 "The way home"
+pr_germanic.021.desc:0 "As I prepare to leave the Opfermoor Vogtei, I take a moment to reflect on the journey that has brought me here. The sacred rituals, the blessings of the priests, and the connection to the gods have all left a profound impact on my spirit. I feel a renewed sense of purpose and determination as I make my way back home, ready to share the wisdom and strength I have gained."
+pr_germanic.021.a:0 "Return home"

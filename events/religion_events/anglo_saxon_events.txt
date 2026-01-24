@@ -1084,6 +1084,409 @@ pr_germanic.011 = {
 
 #Carve a god Pole 
 
+pr_germanic.012 = {
+	type = character_event
+	title = pr_germanic.012.t
+	desc = pr_germanic.012.desc
+	theme = learning 
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_germanic.012.a
+		title:c_paderborn.title_province = {
+			add_special_building = paderborn_irminsul
+		}
+
+	}
+}
+
+#German faith Revival 
+pr_germanic.013 = {
+	type = character_event
+	title = pr_germanic.013.t
+	desc = pr_germanic.013.desc
+	theme = learning 
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_germanic.013.a
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 200
+			men_at_arms = {
+				type = light_infantry
+				stacks = 3
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+		}
+
+	}
+}
+
+pr_germanic.014 = {
+	type = character_event
+	title = pr_germanic.014.t
+	desc = pr_germanic.014.desc
+	theme = learning 
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_germanic.014.a
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 200
+			men_at_arms = {
+				type = light_infantry
+				stacks = 2
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+		}
+
+	}
+}
+
+pr_germanic.015 = {
+	type = character_event
+	title = pr_germanic.015.t
+	desc = pr_germanic.015.desc
+	theme = learning 
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_germanic.015.a
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 200
+			men_at_arms = {
+				type = light_infantry
+				stacks = 2
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+		}
+
+	}
+}
 
 
 
+pr_germanic.016 = {
+	type = character_event
+	title = pr_germanic.016.t
+	desc = pr_germanic.016.desc
+	theme = learning 
+
+	# immediate = {
+	# 	any_neighboring_realm_same_rank_owner = {
+	# 		is_landed = yes 
+	# 		independent = yes
+	# 		religion = religion:germanic_religion
+	# 		in_diplomatic_range = root 
+	# 		NOT = { liege = root }
+	# 		save_scope_as = ruler_neigboring_realm
+	# 	}
+	# }
+
+	right_portrait = {
+		character = scope:ruler_neigboring_realm
+		animation = personality_content
+	}
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_germanic.016.a
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 200
+			men_at_arms = {
+				type = light_infantry
+				stacks = 2
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+		}
+
+	}
+	#possible but not sure how to implement it
+	# option = {#Send envoy to denmark if possible 
+	# 	name = pr_germanic.016.b
+
+	# }
+}
+
+pr_germanic.017 = {
+	type = character_event
+	title = pr_germanic.017.t
+	desc = pr_germanic.017.desc
+	theme = learning 
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_germanic.017.a
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 400
+			men_at_arms = {
+				type = light_infantry
+				stacks = 3
+			}
+			location = root.capital_province
+			uses_supply = no
+			inheritable = no
+		}
+
+	}
+}
+
+
+pr_germanic.018 = {
+	type = character_event
+	title = pr_germanic.018.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					#limit = {
+						exists = faith.religious_head
+					#}
+					
+				}
+				desc = pr_germanic.018.desc_religous_head
+			}
+			desc = pr_germanic.018.desc
+		}
+
+		
+	}
+	theme = learning 
+	immediate = {
+		root.faith.religious_head = {
+			save_scope_as = religious_head
+		}
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:religious_head 
+		animation = personality_zealous
+	}
+	option = { #add kingdom Germanic confederation, with religious head 
+		trigger = {
+			exists = root.faith.religious_head
+		}
+		name = pr_germanic.018.a
+		title:d_westfalen= { save_scope_as = westfalen }
+		title:d_anhalt = { save_scope_as = anhalt }
+		title:d_ostfalen = { save_scope_as = ostfalen }
+		title:d_holstein = { save_scope_as = holstein }
+		title:d_angria = { save_scope_as = angria }
+
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = yes
+		}
+		title:k_german_confederation ={
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		title:k_german_confederation = { set_de_jure_liege_title = title:e_germany }
+
+		add_trait = crowned_by_religious_head 
+	}
+	option = {
+		name = pr_germanic.018.b
+		trigger = {
+			NOT = {
+				exists = root.faith.religious_head
+			}
+		}
+		name = pr_germanic.018.a
+		title:d_westfalen= { save_scope_as = westfalen }
+		title:d_anhalt = { save_scope_as = anhalt }
+		title:d_ostfalen = { save_scope_as = ostfalen }
+		title:d_holstein = { save_scope_as = holstein }
+		title:d_angria = { save_scope_as = angria }
+
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = yes
+		}
+		title:k_german_confederation ={
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		title:k_german_confederation = { set_de_jure_liege_title = title:e_germany }
+
+	}
+}
+
+pr_germanic.019 = {
+	type = activity_event
+	title = pr_germanic.019.t
+	desc = pr_germanic.019.desc
+	override_background = { reference = wilderness_forest_pine }
+
+	
+	right_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	
+	option = {
+		name = pr_germanic.019.a
+		trigger_event = {
+			id = pr_germanic.020
+			days = { 4 12 }
+		}
+	}
+}
+
+pr_germanic.020 = {
+	type = activity_event
+	title = pr_germanic.020.t
+	theme = faith
+	override_background = { reference = wilderness_forest_pine }
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_character_modifier = germanic_vogtei_godly_presence
+				}
+				desc = pr_germanic.020.desc.zealous
+			}
+			triggered_desc = {
+				trigger = {
+					has_character_modifier = germanic_opfermoor_vogtei
+				}
+				desc = pr_germanic.020.desc.opfermoor
+			}
+		}
+	}
+	right_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	immediate = {
+		play_music_cue = mx_cue_sacredrite
+		random_list = {
+			20 = {
+				modifier = {
+					add = 5
+					has_trait = content
+				}
+				modifier = {
+					add = 5
+					has_trait = temperate
+				}
+				scope:activity = {
+					add_activity_log_entry = {
+						key = pr_vogtei_pilgrimage_inspired_log
+						tags = { good }
+						# this line below adds the entry to the Effects section of the conclusion UI
+						show_in_conclusion = yes
+						character = root
+						scope:host = {
+							add_character_modifier = {
+								modifier = germanic_opfermoor_vogtei
+								years = 10
+							}
+						}
+					}
+				}
+			}
+			20 = {
+				modifier = {
+					add = 5
+					has_trait = just
+				}
+				modifier = {
+					add = 5
+					has_trait = zealous
+				}
+				scope:activity = {
+					add_activity_log_entry = {
+
+						key = pr_vogtei_pilgrimage_inspired_log
+						tags = { good }
+						# this line below adds the entry to the Effects section of the conclusion UI
+						show_in_conclusion = yes
+						character = root
+						scope:host = {
+							add_character_modifier = {
+								modifier = germanic_vogtei_godly_presence
+								years = 10
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	option = { 
+		name = pr_germanic.020.a
+		trigger_event = {
+			id = pr_germanic.021
+			days = { 4 12 }
+		}
+	}
+}
+
+pr_germanic.021 = {
+	type = activity_event
+	title = pr_germanic.021.t
+	desc = pr_germanic.021.desc
+	theme = friendly
+	override_background = { reference = wilderness_forest_pine }
+	
+	right_portrait = {
+		character = root
+		animation = happiness
+	}
+	
+	option = { 
+		name = pr_germanic.021.a
+		pr_activity_vogtei_pilgrimage_completed_log_entry_effect = yes
+	}
+
+
+	after = {
+		hidden_effect = {
+			scope:activity = {
+				hidden_effect = { skip_activity_phase = yes }
+			}
+		}
+	}
+}

@@ -3,8 +3,10 @@
 ################################
 reconstruct_polytheism_decision = {
 	desc = reconstruct_polytheism_decision_desc
-	picture = "gfx/interface/illustrations/decisions/room_with_scrolls.tga"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/room_with_scrolls.tga"
+	}
+	decision_group_type = polytheism
 	is_shown = {
 		#current_date >= 769.1.1
 		AND = {
@@ -339,6 +341,10 @@ reconstruct_polytheism_decision = {
 
 #Decision for fast conversion 
 return_polytheism_short_decision={
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = polytheism
 	desc = return_polytheism_short_decision_desc
 	is_shown ={
 		is_adult = yes
@@ -361,6 +367,10 @@ return_polytheism_short_decision={
 }
 #Decision for fast culture conversion
 return_culture_short_decision = {
+	decision_group_type = polytheism
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
 	is_shown = {
 		is_adult = yes
 		is_imprisoned = no
@@ -380,110 +390,14 @@ return_culture_short_decision = {
 		base = 0
 	}
 }
-####################################################################################################################################
-#Update decision from infromation from link below -> engough information to make a decision for the earliest bookmark of bookmarks+
-#https://forum.paradoxplaza.com/forum/threads/the-sassanids-in-charlemagne-one-final-love-letter.1429937/
-#dynasty id of the sassanids 1029100 
-####################################################################################################################################
- invite_sassanid_relatives_decision ={
-	picture = "gfx/interface/illustrations/decisions/Sassanid.dds"
- 	is_shown ={
- 		is_adult = yes
-		is_landed = yes
- 		is_imprisoned = no
-  		is_at_war = no
-		major = yes
- 		culture = { has_cultural_pillar = heritage_iranian }
-		current_date <= 790.1.1
-		NOR={
-			is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions_invite_relative
-				target = flag:flag_restored_pr_invite_relative
-			}
-		}
- 	}	
- 	is_valid ={
-		custom_description = {
-			text = invite_sassanid_relatives_decision_before_last_date
-			current_date <= 790.1.1
-		}
-		#exists = character:180643
-		# AND={
-		# 	scope:mahrzad={
-		# 		character = character:180643
-		# 	}
-		# 	is_alive = yes
-		# }
-		has_religion = religion:zoroastrianism_religion
- 		OR={	
-			dynasty = dynasty:1042112
-			dynasty = dynasty:7331
-			dynasty = dynasty:100685
- 		}
- 	}
-	cost={#The remaining sassanids are already above 50 so no to high costs 
-		piety = 100
-		gold = 25
-	}
-	effect={
-		trigger_event = prsr.001
 
-		hidden_effect = {
-			add_to_global_variable_list = {
-				name = unavailable_unique_decisions_invite_relative
-				target = flag:flag_restored_pr_invite_relative
-			}
-		}
-	}
- }
-
- #Decisions to make the reconquest of the sassanid empire more fun, Keeping in mind the age of the last recorded Sassanids 
- #If Mehrzad get's children who can continue the reconquest will be fine. 
- sassanid_reconquest={
-	picture = "gfx/interface/illustrations/decisions/Sassanid.dds"
-	is_shown={
-		OR = {
-			dynasty = dynasty:1029100
-			dynasty = dynasty:100685
-		}
-		NOR={
-			is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions_reconquest
-				target = flag:flag_restored_pr_reconquest
-			}
-		}
-	}
-	is_valid={
-		OR = {
-			dynasty = dynasty:1029100
-			dynasty = dynasty:100685
-		}
-		has_religion = religion:zoroastrianism_religion
-	    OR={
-			has_title = title:d_merv
-			has_title = title:d_guzgan
-		}
-	} # Note needs some more work, if this doesn't work more decisions are needed.
-	effect={
-		if={
-			limit={#First reconquest goal
-				has_title = title:d_merv
-				has_title = title:d_guzgan 
-			}
-			trigger_event = sassanid_reconquest.001
-			hidden_effect = {
-				add_to_global_variable_list = {
-					name = unavailable_unique_decisions_reconquest
-					target = flag:flag_restored_pr_reconquest
-				}
-			}
-		}
-	}
-	
- }
 
  close_temple_of_vesta_decision ={
-	picture = "gfx/interface/illustrations/decisions/temple_of_vesta.dds"
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/temple_of_vesta.dds"
+	}
+	decision_group_type = major
 	is_shown={
 		OR={
 			religion = religion:christianity_religion
@@ -764,11 +678,12 @@ return_culture_short_decision = {
 
 
  dismantle_papacy_decision = { #For Muslims and Pagans.
-	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
-
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+	decision_group_type = polytheism
 	desc = dismantle_papacy_decision_desc
 	selection_tooltip = dismantle_papacy_decision_tooltip
-	major = yes
 
 	ai_check_interval = 60
 
@@ -863,8 +778,10 @@ return_culture_short_decision = {
 }
 
 dismantle_patriarchate_decision = { #For Muslims and Pagans.
-		picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
-
+		picture = {
+			reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+		}
+		decision_group_type = polytheism
 		desc = dismantle_patriarchate_decision_desc
 		selection_tooltip = dismantle_patriarchate_decision_tooltip
 		major = yes
@@ -968,13 +885,22 @@ dismantle_patriarchate_decision = { #For Muslims and Pagans.
 
 #Gaulish stuff Also usable for roman culture but need to rework that a bit so that they get their own custom event
 create_celtica_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	decision_group_type = major
 	desc = create_celtica_decision_desc
 	ai_check_interval = 4
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 		AND = {
 			OR = {
 				faith = faith:gaulish_polytheism
@@ -1106,11 +1032,20 @@ create_celtica_decision = {
 	}
 }
  create_belgica_decision = { 
-	picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	decision_group_type = major
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 		AND = {
 			OR = {
 				faith = faith:gaulish_polytheism
@@ -1202,12 +1137,21 @@ create_celtica_decision = {
 
 
  create_narbonensis_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	decision_group_type = major
 	ai_check_interval = 4
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 		AND = {
 			OR = {
 				faith = faith:gaulish_polytheism
@@ -1293,12 +1237,21 @@ create_celtica_decision = {
  }
 
  create_aquitania_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	decision_group_type = major
 	ai_check_interval = 4
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 		AND = {
 			OR = {
 				faith = faith:gaulish_polytheism
@@ -1380,12 +1333,21 @@ create_celtica_decision = {
  }
 
  create_empire_gaul_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	decision_group_type = major
 	ai_check_interval = 4
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 		AND = {
 			OR = {
 				faith = faith:gaulish_polytheism
@@ -1476,12 +1438,21 @@ create_celtica_decision = {
 
 
  create_cisalpine_gaul_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	decision_group_type = major
 	ai_check_interval = 4
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
-		has_game_rule = pr_ancient_kingdoms_decisions_on
+		OR = {
+			has_game_rule = pr_ancient_kingdoms_decisions_on
+			AND = {
+				has_game_rule = pr_ancient_kingdoms_decisions_player
+				is_ai  = no
+			}
+		}
 		AND = {
 			OR = {
 				faith = faith:gaulish_polytheism
@@ -1555,6 +1526,7 @@ create_celtica_decision = {
 		title:d_verona = { set_de_jure_liege_title = title:k_cisalpina }
 		title:d_venice= { set_de_jure_liege_title = title:k_cisalpina }
 		title:d_friuli = { set_de_jure_liege_title = title:k_cisalpina }
+		
 	}
 	cost = {
 		gold = {
@@ -1581,7 +1553,10 @@ create_celtica_decision = {
  #Only for ai based on fervor of either christian or muslim faith 
  #No event text needed as only ai uses it 
  pr_ai_polyteism_reconstruction_decision = {
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	decision_group_type = major
 	is_shown = {
 		#is_ai = yes
 		is_ruler = yes
@@ -1625,7 +1600,10 @@ create_celtica_decision = {
  }
 
  pr_ai_polyteism_more_variety_religions_in_realm_decision = {
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	decision_group_type = major
 	is_shown = {
 		is_ai = yes
 		is_ruler = yes

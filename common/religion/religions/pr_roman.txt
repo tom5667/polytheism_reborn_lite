@@ -92,10 +92,11 @@ roman_religion ={
 
             doctrine = unreformed_faith_doctrine
 
-			      doctrine = tenet_ancestor_worship
+            doctrine = tenet_ancestor_worship
             doctrine = tenet_animal_sacrifice
-			      doctrine = tenet_warmonger
+            doctrine = tenet_warmonger
             
+                
             
             holy_order_names = {
                     { name = "holy_order_sons_of_mars" }
@@ -1491,11 +1492,11 @@ roman_religion ={
 		icon = roman_illyrian
         reformed_icon = roman_illyrian_reformed
 		religious_head = d_pontifex_polytheistic
-		holy_site = rome
-		holy_site = dyrrachion
-		holy_site = split
-		holy_site = venice
-		holy_site = ragusa
+        holy_site = rome
+        holy_site = split
+        holy_site = arduba #b_travnik -> closest to Zeniva that is close to arduba the last city of the Great Illyrian revolt
+        holy_site = delminium #b_duvno -> closest to delminium ancient capital of the Dalmatians
+        holy_site = segestica #b_sisak -> modern day sisak -> probably slavic/croatian name for Segestica
 
         doctrine = unreformed_faith_doctrine
 			reserved_male_names = {

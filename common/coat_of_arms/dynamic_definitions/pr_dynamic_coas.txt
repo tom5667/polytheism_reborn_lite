@@ -1,4 +1,4 @@
-﻿e_byzantium = {
+e_byzantium = {
 	item = {
 		trigger = {
 			coa_switch_to_polytheism_trigger = yes
@@ -37,8 +37,15 @@ b_kos = {
 		coat_of_arms = b_kos_polytheitic
 	}
 }
-
-c_rhodos = {
+c_hereford = {
+	item = {
+		trigger = {
+			coa_switch_to_polytheism_trigger = yes
+		}
+		coat_of_arms = c_rhodos_polytheistic
+	}
+}
+c_rhodos= {
 	item = {
 		trigger = {
 			coa_switch_to_polytheism_trigger = yes
@@ -92,9 +99,9 @@ c_roma = {
 c_byzantion = { 
 	item = {
 		trigger = {
-			coa_switch_to_polytheism_trigger = yes
+			coa_switch_to_roman_trigger = yes
 		}
-		coat_of_arms = c_nova_roma_polytheistic
+		coat_of_arms = c_byzantion_polytheistic
 	}
 }
 
@@ -180,7 +187,7 @@ k_anatolia = {
 		trigger = {
 			coa_switch_to_polytheism_trigger = yes
 		}
-		coat_of_arms = k_pr_anatolia_polytheistic
+		coat_of_arms = k_anatolia_polytheistic
 	}
 }
 

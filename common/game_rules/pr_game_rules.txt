@@ -25,11 +25,11 @@ more_doctrines  = {
 	categories = {
 		polytheism_reborn
 	}
-	default = more_doctrines_on 
-	# more_doctrines_on = {
+	default = pr_more_doctrines_enabled
+	pr_more_doctrines_enabled = {
 
-	# }
-	more_doctrines_off = {
+	}
+	pr_more_doctrines_disabled = {
 
 	}
 }
@@ -90,17 +90,17 @@ customizable_ethics_game_rule = {
 	categories = {
 		polytheism_reborn
 	}
-	default = customizable_ethics_disabled
+	default = pr_customizable_ethics_disabled
 
-	customizable_ethics_disabled = {
+	pr_customizable_ethics_disabled = {
 		flag = customizable_ethics_disabled
 		flag = GG_can_change_rule
 	}
 
-	# customizable_ethics_enabled = {
-	# 	flag = customizable_ethics_enabled
-	# 	flag = GG_can_change_rule
-	# }
+	pr_customizable_ethics_enabled = {
+		flag = customizable_ethics_enabled
+		flag = GG_can_change_rule
+	}
 }
 
 pr_more_tenets_game_rule = {
@@ -109,10 +109,10 @@ pr_more_tenets_game_rule = {
 	}
 	default = pr_more_tenets_disabled
 
-	# pr_more_tenets_enabled = {
-	# 	flag = pr_more_tenets_enabled
-	# 	flag = GG_can_change_rule
-	# }
+	pr_more_tenets_enabled = {
+		flag = pr_more_tenets_enabled
+		flag = GG_can_change_rule
+	}
 
 	pr_more_tenets_disabled = {
 		flag = pr_more_tenets_disabled
@@ -132,6 +132,10 @@ pr_ancient_kingdoms_decisions = {
 	pr_ancient_kingdoms_decisions_on = {
 		flag = GG_can_change_rule
 	}
+	pr_ancient_kingdoms_decisions_player = {
+		flag = GG_can_change_rule
+	}
+
 
 	pr_ancient_kingdoms_decisions_off = {
 		flag = GG_can_change_rule
@@ -153,3 +157,20 @@ pr_semi_historical_events = {
 		flag = GG_can_change_rule
 	}
 }
+
+# pr_historical_names ={
+	
+# 	categories = {
+# 		polytheism_reborn
+# 	}
+
+# 	default = pr_historical_names_on
+
+# 	pr_historical_names_on = {
+# 		flag = GG_can_change_rule
+# 	}
+
+# 	pr_historical_names_off = {
+# 		flag = GG_can_change_rule
+# 	}
+# }

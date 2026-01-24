@@ -1,5 +1,4 @@
-﻿#Cultus Deorum 
-
+#Cultus Deorum 
 held_ritual_for_jupiter_incense = {
 	icon = jupiter_positive
 	monthly_piety = 0.05
@@ -155,6 +154,16 @@ burning_flame_of_vesta ={
 	same_faith_opinion = 5
 	christianity_religion_opinion = -5
 	islam_religion_opinion = -5
+}
+
+bacchus_vision_cooldown = {
+	icon = magic_negative
+}
+
+bacchus_divine_insight = {
+	icon = magic_positive
+	fertility = 0.5
+	piety = 0.2
 }
 
 #Hellenismos
@@ -1825,6 +1834,18 @@ blessed_army = {
 	knight_effectiveness_mult = 0.5
 	advantage = 1
 }
+germanic_opfermoor_vogtei = {
+	icon = piety_positive
+	monthly_piety = 0.5
+	learning  = 1
+}
+
+germanic_vogtei_godly_presence = {
+	icon = piety_positive
+	monthly_piety = 0.5
+	stress_loss_mult = 0.1
+}
+
 
 #Hellenic random event modifiers 
 favoured_by_zeus = {
@@ -1989,3 +2010,75 @@ hellenic_apollo_presence = {
 	stress_loss_mult = 0.1
 }
 
+druidic_knowledge = {
+	icon = piety_positive
+	learning = 1
+	religious_head_opinion = 5
+	same_faith_opinion = 5
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+#modifiers random events 
+offering_to_baal_hammon = {
+	icon = magic_positive
+	monthly_piety = 0.05
+	prestige = 0.15
+	religious_head_opinion = 4
+	same_faith_opinion = 1
+}
+
+favoured_by_tanit = {
+	icon = magic_positive
+	monthly_county_control_change_add = 0.2
+	direct_vassal_opinion = 15
+}
+unfavoured_by_tanit = {
+	icon = magic_negative
+	monthly_county_control_change_add = -0.2
+	direct_vassal_opinion = -15
+}
+
+mithraic_revelation = {
+		icon = learning_positive
+	learning = 2
+	monthly_learning_lifestyle_xp_gain_mult = 0.15
+	monthly_piety = 0.5
+	martial = 1
+	same_faith_opinion = 5
+}
+
+cybele_ecstatic_revelry = {
+	icon = fertility_positive
+	fertility = 0.1
+	intrigue = 1
+	diplomacy = -1
+}
+
+eleusinian_vision = {
+	icon = learning_positive
+	learning = 2
+	piety_gain_factor = 0.1
+	stress_loss = 10
+
+}
+
+bacchus_divine_madness = {
+	icon = magic_positive
+	diplomacy = 2
+	intrigue = 1
+	stewardship = -2
+	stress_loss = 15
+}
+
+serapis_ferryman_token = {
+	icon = magic_positive
+	piety_gain_factor = 0.05
+	stress_loss = 10
+	learning = 1
+}
+
+isis_whispering_reed = {
+	learning = 2
+	intrigue = 1
+	monthly_learning_lifestyle_xp_gain_add = 0.2
+}

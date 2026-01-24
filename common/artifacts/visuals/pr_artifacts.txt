@@ -34,12 +34,14 @@ pr_apollo_statue = {
 	asset = ep1_western_statue_01_male_entity
 }
 
+
 pr_treaty_of_kadesh = {
 	icon = "pr_treaty_of_kadesh.dds"
 	pedestal = "tall_pillow"
 	asset = {
 		trigger = { artifact_should_use_gfx_type_trigger = { TYPE = indian_building } }
 		reference = ep1_indian_scroll_01_a_entity
+
 	}
 	asset = {
 		trigger = {

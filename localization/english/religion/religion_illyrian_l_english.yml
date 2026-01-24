@@ -1,8 +1,8 @@
 ﻿l_english:
 
-# #####################
-# #Made by tom5667
-# ###################### 
+    # #####################
+    # #Made by tom5667
+    # ######################
 
     illyrian_religion:0 "Illyrian"
     illyrian_religion_adj:2 "Illyrian"
@@ -15,13 +15,13 @@
     illyrian_polytheism_adj:0 "Illyrian"
     illyrian_polytheism_adherent:0 "Illyrian polytheist"
     illyrian_polytheism_adherent_plural:0 "Illyrian polytheists"
-    illyrian_polytheism_desc:0 "The Illyrian faith is a powerful force in Illyrian society, and it plays an important role in the lives of the Illyrian people. The Illyrian faith helps to unite the Illyrian people, and it provides them with a sense of identity and purpose. The Illyrians have maintained their own unique religious traditions for centuries." 
+    illyrian_polytheism_desc:0 "The Illyrian faith is a powerful force in Illyrian society, and it plays an important role in the lives of the Illyrian people. The Illyrian faith helps to unite the Illyrian people, and it provides them with a sense of identity and purpose. The Illyrians have maintained their own unique religious traditions for centuries."
 
     illyrian_polytheism_old:0 "Illyrian Old"
     illyrian_polytheism_old_adj:0 "Illyrian Old"
     illyrian_polytheism_adherent_old:0 "Old Illyrian polytheist"
     illyrian_polytheism_old_adherent_plural:0 "Old Illyrian polytheists"
-    illyrian_polytheism_old_desc:0 "Illyrian gods and goddesses are honored with rituals and ceremonies, so they may bless their polytheists and lead them to greatness" 
+    illyrian_polytheism_old_desc:0 "Illyrian gods and goddesses are honored with rituals and ceremonies, so they may bless their polytheists and lead them to greatness"
 
     illyrian_polytheism_religious_head_title:0 "Supreme priest"
     illyrian_polytheism_divine_realm:0 "Vdekje"
@@ -32,8 +32,8 @@
     #dacian gods/goddesses Localization
 
     #En Localization
-    illyrian_polytheism_high_god_name:0 "En"
-    illyrian_polytheism_high_god_name_possessive:0 "En's"
+    illyrian_polytheism_high_god_name:0 "Dei-pátrous""
+    illyrian_polytheism_high_god_name_possessive:0 "$illyrian_polytheism_high_god_name$'s"
     illyrian_polytheism_high_god_name_alternate:0 "$illyrian_polytheism_high_god_name$"
     illyrian_polytheism_high_god_name_alternate_possessive:0 "$illyrian_polytheism_high_god_name$'s"
     illyrian_polytheism_high_god_shehe:0 "He"
@@ -44,7 +44,7 @@
     illyrian_polytheism_creator_god_name:0 "$illyrian_polytheism_high_god_name$"
     illyrian_polytheism_creator_god_name_possessive:0 "$illyrian_polytheism_high_god_name$'s"
 
-    #Health Goddess 
+    #Health Goddess
     illyrian_polytheism_health_god_name:0 "Tadenus"
     illyrian_polytheism_health_god_name_possessive:0 "$illyrian_polytheism_health_god_name$'s"
 
@@ -84,23 +84,23 @@
     illyrian_polytheism_water_god_name:0 "Bindus"
     illyrian_polytheism_water_god_name_possessive:0 "$illyrian_polytheism_water_god_name$'s"
 
-    #evil gods names 
-    illyrian_polytheism_evil_god_antaios:0 "Antaios" 
-    
+    #evil gods names
+    illyrian_polytheism_evil_god_antaios:0 "Antaios"
+
 
     #witch goddess
     illyrian_polytheism_witchgodname_serpant:0 "Serpant"
     illyrian_polytheism_witchgodname_serpant_possesive:0 "$illyrian_polytheism_witchgodname_serpant$'s"
 
     #Devil god   #For now there is just no thing like a devil god in the dacian religion
-    illyrian_polytheism_devil_name:0 "Antaios" 
+    illyrian_polytheism_devil_name:0 "Antaios"
     illyrian_polytheism_devil_name_possessive:0 "$illyrian_polytheism_devil_name$'s"
 
-    #Death god Zalmoxis 
-    illyrian_polytheism_death_deity_name:0 "Hades"
+    #Death god Zalmoxis
+    illyrian_polytheism_death_deity_name:0 "En"
     illyrian_polytheism_death_deity_name_possessive:0 "$illyrian_polytheism_death_deity_name$'s"
 
-    
+
     #dacian priest flamen vestals
 
     #dacian priest 
@@ -108,12 +108,12 @@
     illyrian_polytheism_priest_male_plural:0 "Priests"
 
     #dacian priestess 
-    illyrian_polytheism_priest_female:0 "Priestess" 
-    illyrian_polytheism_priest_female_plural:0 "Priestesses" 
+    illyrian_polytheism_priest_female:0 "Priestess"
+    illyrian_polytheism_priest_female_plural:0 "Priestesses"
 
     #dacian high priest
-    illyrian_polytheism_bishop_male:0 "Priest" 
-    illyrian_polytheism_bishop_male_plural:0 "Priests" 
+    illyrian_polytheism_bishop_male:0 "Priest"
+    illyrian_polytheism_bishop_male_plural:0 "Priests"
 
     illyrian_polytheism_religious_head_title:0 "High Priest"
 

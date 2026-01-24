@@ -21,3 +21,18 @@ semitic.001.dagan:0 "Dagan"
 semitic.001.el_elyon:0 "El Elyon"
 semitic.001.ashtart:0 "Ashtart"
 semitic.001.optout:0 "Maybe now isn't the right time"
+
+punic.002.t:0 "Opening Temple"
+punic.002.desc:0 "The best architects and artists of the realm were asked to build the new temple, crowds joined us for this beautiful day.\nThe priest opened the temple with a ritual to invite Tanit to the temple and guide the people to glory."
+punic.002.a:0 "Praise Tanit!" 
+
+punic.003.t:0 "Offering to Baal Hammon"
+punic.003.desc:0 "The priests of Baal Hammon have asked for a great offering to be made to the god, so that he may bless us with his favor and protection."
+punic.003.a:0 "Offer a great sacrifice to Baal Hammon"
+
+punic.005.t:0 "Visiting the temple of Tanit"
+punic.005.desc:0 "Today is a day of celebration, as the temple of Tanit is now open to the public. The priests have prepared a grand feast and invited all the citizens to come and pay their respects. I will attend the festivities and ask the priests to make offers to Tanit on my behalf."
+punic.005.a:0 "Ask the priests to make an offering"
+
+punic.005.message.positive:0 "Favored by Tanit"
+punic.005.message.negative:0 "Unfavored by Tanit"

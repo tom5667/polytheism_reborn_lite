@@ -1,7 +1,9 @@
 ﻿#Choose main deity Caucasus Polytheism 
 choose_main_deity_caucasus_decision = {
-	picture = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
-
+	picture = { 
+		reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
+	}
+	decision_group_type = polytheism
 	desc = select_personal_deity_germanic_decision_desc
 	selection_tooltip = choose_main_deity_celtic_decision_tooltip
 

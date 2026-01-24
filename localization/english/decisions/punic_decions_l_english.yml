@@ -45,3 +45,8 @@ embrace_punic_culture_decision:0 "Embrace Punic culture"
 embrace_punic_culture_decision_desc:0 "We have our old religion back now it's time reintroduce the punic virtues."
 embrace_punic_culture_decision_tooltip:0 "Return Punic culture"
 embrace_punic_culture_decision_confirm:0 "Confirm"
+
+build_temple_of_tanit:0 "Build Temple Of Tanit"
+build_temple_of_tanit_desc:0 "The day has come to build the old temple of Tanit the symbol of Carthago."
+build_temple_of_tanit_tooltip:0 "Build the temple of Tanit"
+build_temple_of_tanit_confirm:0 "Confirm"

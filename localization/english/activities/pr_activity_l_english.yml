@@ -1,7 +1,8 @@
 ﻿l_english:
+pr_activity_saturnalia_host_an_a:0 "Feast of"
 pr_activity_saturnalia:0 "Saturnalia"
 pr_activity_saturnalia_selection_tooltip:0 "A [GetActivityType('activity_feast').GetName] will be held"
-pr_activity_saturnalia_desc:0 "The weather gets colder, the harvest season is done and now it's time to honor Saturnus and thank the gods for the harvest within the [ROOT.Char.GetPrimaryTitle.GetName]."
+pr_activity_saturnalia_desc:0 "As the days grow shorter and the chill of winter sets in, the people of [ROOT.Char.GetPrimaryTitle.GetName] gather to honor Saturnus. This joyous festival celebrates the end of the harvest season with feasting, merriment, and gratitude to the gods for their blessings."
 pr_activity_saturnalia_host_desc:0 "$BULLET_WITH_TAB$ Participants may gain [piety|E]\n$BULLET_WITH_TAB$ Participants may gain [opinion|E] of other participants\n$BULLET_WITH_TAB$ Participants may lose [stress_loss_i][stress|E]"
 pr_activity_saturnalia_guest_desc: "$pr_activity_saturnalia_host_desc$"
 
@@ -157,7 +158,7 @@ pr_activity_delphi_pilgrimage_host_desc: "$BULLET_WITH_TAB$ Feel the spirit of $
 
 pr_activity_delphi_pilgrimage_guest_desc: "$pr_activity_delphi_pilgrimage_host_desc$"
 
-pr_activity_delphi_pilgrimage_province_desc: "Hill Delphi Where the druids resided."
+pr_activity_delphi_pilgrimage_province_desc: "Delphi the place where the Pythia's resided."
 
 pr_activity_delphi_pilgrimage_destination_selection: "$pr_activity_delphi_pilgrimage_province_desc$"
 
@@ -221,3 +222,38 @@ pr_cnoc_uisnigh_pilgrimage_host_memory:0 "Pilgrimage To Cnoc Uisnigh Host"
 pr_cnoc_uisnigh_pilgrimage_guest_memory:0 "Pilgrimage To Cnoc Uisnigh Guest"
 pr_delphi_pilgrimage_host_memory:0 "Pilgrimage To Delphi Host"
 pr_delphi_pilgrimage_guest_memory:0 "Pilgrimage To Delphi Guest"
+pr_niederdorla_pilgrimage_host_memory:0 "Pilgrimage To Niederdorla Host"
+pr_niederdorla_pilgrimage_guest_memory:0 "Pilgrimage To Niederdorla Guest"
+
+
+pr_activity_vogtei_pilgrimage_host_an_a: "$host_activity_a$"
+TRAVEL_NAME_FOR_activity_pr_vogtei_pilgrimage:0 "[Character.GetFirstNamePossessiveNoTooltip] $pr_activity_vogtei_pilgrimage$"
+pr_activity_vogtei_selection_tooltip:0 "A [GetActivityType('activity_pilgrimage').GetName] will be held"
+
+
+pr_local_Vogtei_pilgrimage_phase: "$pilgrimage_phase_solo$"
+pr_local_Vogtei_pilgrimage_phase_desc: "$pilgrimage_phase_solo_desc$"
+
+host_pr_activity_vogtei_pilgrimage_host_an_p:0 "Pilgrimage to Opfermoor Vogtei"
+pr_activity_vogtei_pilgrimage:0 "Pilgrimage to Opfermoor Vogtei"
+pr_activity_vogtei_pilgrimage_name:0 "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Pilgrimage to Vogtei"
+pr_activity_vogtei_pilgrimage_desc:0 "The ancient Opfermoor Vogtei for many Centuries a holy place for the worshippers of the germanic gods, Where the people brought offers to the gods and spirits of the land."" 
+Pr_vogtei_close_req:0 "Has a [realm_capital|E] close to Vogtei"
+Pr_vogtei_long_distance_req:0 "Your [capital|E] is in [GetGeographicalRegion('world_europe_west').GetName]"
+pr_activity_vogtei_pilgrimage_selection_tooltip: "Go on a pilgrimage to Opfermoor Vogtei.\n\n$pr_vogtei_go_on_vogtei_pilgrimage_context_tooltip$"
+pr_activity_vogtei_pilgrimage_host_desc: "$BULLET_WITH_TAB$ Feel the spirit of [ROOT.Char.GetFaith.HealthGodName] and receive a #P beneficial#! [character_modifier|E]"
+
+pr_activity_vogtei_pilgrimage_province_desc: "Vogtei the place where the ancient people brought offers to the gods."
+pr_activity_vogtei_pilgrimage_destination_selection: "$pr_activity_vogtei_pilgrimage_province_desc$"
+
+pr_vogtei_pilgrimage_host_memory_first_perspective:0 "I went on pilgrimage to the ancient holy city of Vogtei"
+pr_vogtei_pilgrimage_host_memory_first_perspective:0 "I went on pilgrimage to the ancient holy city of Vogtei"
+pr_Vogtei_pilgrimage_host_memory_third_perspective:0 "I went on pilgrimage to the ancient holy city of Vogtei"
+
+
+pr_vogtei_pilgrimage_guest_memory_first_perspective:0 "I went on pilgrimage to the holy sanctioary Vogtei"
+pr_vogtei_pilgrimage_guest_memory_second_perspective:0 "I went on pilgrimage to the holy sanctioary Vogtei"
+pr_vogtei_pilgrimage_guest_memory_third_perspective:0 "I went on pilgrimage to the holy sanctioary Vogtei"
+
+travel_name_for_activity_pr_vogtei_pilgrimage:0 "[Character.GetFirstNamePossessiveNoTooltip] $pr_activity_vogtei_pilgrimage$"
+

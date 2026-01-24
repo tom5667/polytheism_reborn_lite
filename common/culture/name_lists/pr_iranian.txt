@@ -1,197 +1,91 @@
 ﻿name_list_parthian = {
     	cadet_dynasty_names = {
-		"dynn_KA_rawA_n"
-		"dynn_Jorjani"
-		"dynn_Samanid"
-		"dynn_Tahirid"
-		"dynn_Kartid"
-		"dynn_Qutlugh-Khan"
-		"dynn_Nasrid"
-		"dynn_Mihrabanid"
-		"dynn_Safavid"
-		"dynn_Gilani"
-		"dynn_Sarbadar"
-		"dynn_Kazeruni"
-		"dynn_Tahirids"
-		"dynn_Ummayyads"
-		"dynn_Samanid"
-		"dynn_Muqannid"
-		"dynn_Sunpadh"
-		"dynn_Khurramites"
-		"dynn_Khorramdin"
-		"dynn_Maziar"
-		"dynn_Mardavij"
-		"dynn_Ustadh"
-		"dynn_Saffari"
-		"dynn_Laith"
-		"dynn_Ferdowsi"
-		"dynn_Tamerlane"
-		"dynn_Hulagu"
-		"dynn_Ajami"
-		"dynn_Rumi"
-		"dynn_Hamadan"
-		"dynn_Parthi"
-		"dynn_Kubra"
-		"dynn_Naqshband"
-		"dynn_Bukhari"
-		"dynn_Hanifa"
-		"dynn_Khaldun"
-		"dynn_Dinid"
-		"dynn_Tusid"
-		"dynn_Khusrawid"
-		"dynn_Birunid"
-		"dynn_Maraghid"
-		"dynn_Muqaffid"
-		"dynn_Ashkan"
-		"dynn_KhurA_sA_nI_"
-		"dynn_MA_zindarA_nI_"
-		"dynn_TihrA_nI_"
-		"dynn_ShI_rA_zI_"
-		"dynn_AhvazI_"
-		"dynn_RazavI_"
-		"dynn_MA_shadI_"
-		"dynn_KermahadI_"
-		"dynn_Gaznin"
-		"dynn_Ka_usiya"
-		{ "dynnp_al-" "dynn_Ghazali" }
-		{ "dynnp_al-" "dynn_Qazwini" }
-		{ "dynnp_al-" "dynn_Juwayni" }
-		{ "dynnp_al-" "dynn_Farisi" }
-		"dynn_Hamadani"
-		"dynn_Ganjavi"
-		{ "dynnp_al-" "dynn_Amuli" }
-		"dynn_Balkhi"
-		"dynn_Bukhari"
-		"dynn_Suhrawardi"
-		{ "dynnp_al-" "dynn_Abhari" }
-		{ "dynnp_al-" "dynn_Tusi" }
-		"dynn_Hamadani"
-		{ "dynnp_al-" "dynn_Shirazi" }
-		"dynn_Gorgani"
-		"dynn_Mustawfi"
-		"dynn_Ansari"
-		{ "dynnp_al-" "dynn_Kashi" }
-		"dynn_Kubra"
-		"dynn_KhayyA_m"
-		{ "dynnp_al-" "dynn_Razi" }
-		"dynn_Sina"
-		{ "dynnp_al-" "dynn_Jaldaki" }
-		"dynn_Ishaqid"
-		"dynn_Shi"
-		"dynn_Al-Dawla"
-		"dynn_Yalavach"
-		"dynn_Wardanrid"
-		"dynn_Kakuyid"
-		"dynn_Sughnan"
-		"dynn_Mirs"
-		"dynn_Roshan"
-		"dynn_Gorno"
-		"dynn_Guliab"
-		"dynn_Zulcarnei"
+		"dynn_Ahmadānān_Aršakīgān"
+		"dynn_Ahmadānān_Mihrbānīhān"
+		"dynn_Ahmadānīgān_Pahlawīgān"
+		"dynn_Aršakīgān_Kāzerūnīgān"
+		"dynn_Aršakīgān_Kārawānān"
+		"dynn_Awestādān_Pālēzigān"
+		"dynn_Bāxdrīgān_Boxārāīgān"
+		"dynn_Bērōnān_Hrōmāyīgān"
+		"dynn_Boxārāīgān_Dēnān"
+		"dynn_Dēnān_Ganǰīgān"
+		"dynn_Ganǰīgān_Mādayārān"
+		"dynn_Gurgānīgān_Xwarāsānīgān"
+		"dynn_Hrōmāyīgān_Kāzerūnīgān"
+		"dynn_Husrawān_Pārsīgān"
+		"dynn_Hūzestānīgān_Wizīdanān"
+		"dynn_Kārawānān_Tapurstānīgān"
+		"dynn_Kāzerūnīgān_Shirāzīgān"
+		"dynn_Mādayārān_Pardēzigān"
+		"dynn_Mardīgān_Pahlawīgān"
+		"dynn_Mihrbānīhān_Rayīgān"
+		"dynn_Pahlawīgān_Pālēzigān"
+		"dynn_Pālēzigān_Suhrābwardīgān"
+		"dynn_Pardēzigān_Rōšnān"
+		"dynn_Pārsīgān_Sāmānān"
+		"dynn_Rayīgān_Gurgānīgān"
+		"dynn_Rōšnān_Bērōnān"
+		"dynn_Sāmānān_Ahmadānān"
+		"dynn_Shirāzīgān_Kārawānān"
+		"dynn_Suhrābwardīgān_Mādayārān"
+		"dynn_Tapurstānīgān_Boxārāīgān"
+		"dynn_Wizīdanān_Aršakīgān"
+		"dynn_Xwarāsānīgān_Husrawān"
 	}
 
 	dynasty_names = {
-		"dynn_KA_rawA_n"
-		"dynn_Jorjani"
-		"dynn_Samanid"
-		"dynn_Tahirid"
-		"dynn_Kartid"
-		"dynn_Qutlugh-Khan"
-		"dynn_Nasrid"
-		"dynn_Mihrabanid"
-		"dynn_Safavid"
-		"dynn_Gilani"
-		"dynn_Sarbadar"
-		"dynn_Kazeruni"
-		"dynn_Tahirids"
-		"dynn_Ummayyads"
-		"dynn_Samanid"
-		"dynn_Muqannid"
-		"dynn_Sunpadh"
-		"dynn_Khurramites"
-		"dynn_Khorramdin"
-		"dynn_Maziar"
-		"dynn_Mardavij"
-		"dynn_Ustadh"
-		"dynn_Saffari"
-		"dynn_Laith"
-		"dynn_Ferdowsi"
-		"dynn_Tamerlane"
-		"dynn_Hulagu"
-		"dynn_Ajami"
-		"dynn_Rumi"
-		"dynn_Hamadan"
-		"dynn_Parthi"
-		"dynn_Kubra"
-		"dynn_Naqshband"
-		"dynn_Bukhari"
-		"dynn_Hanifa"
-		"dynn_Khaldun"
-		"dynn_Dinid"
-		"dynn_Tusid"
-		"dynn_Khusrawid"
-		"dynn_Birunid"
-		"dynn_Maraghid"
-		"dynn_Muqaffid"
-		"dynn_Ashkan"
-		"dynn_KhurA_sA_nI_"
-		"dynn_MA_zindarA_nI_"
-		"dynn_TihrA_nI_"
-		"dynn_ShI_rA_zI_"
-		"dynn_AhvazI_"
-		"dynn_RazavI_"
-		"dynn_MA_shadI_"
-		"dynn_KermahadI_"
-		"dynn_Gaznin"
-		"dynn_Ka_usiya"
-		{ "dynnp_al-" "dynn_Ghazali" }
-		{ "dynnp_al-" "dynn_Qazwini" }
-		{ "dynnp_al-" "dynn_Juwayni" }
-		{ "dynnp_al-" "dynn_Farisi" }
-		"dynn_Hamadani"
-		"dynn_Ganjavi"
-		{ "dynnp_al-" "dynn_Amuli" }
-		"dynn_Balkhi"
-		"dynn_Bukhari"
-		"dynn_Suhrawardi"
-		{ "dynnp_al-" "dynn_Abhari" }
-		{ "dynnp_al-" "dynn_Tusi" }
-		"dynn_Hamadani"
-		{ "dynnp_al-" "dynn_Shirazi" }
-		"dynn_Gorgani"
-		"dynn_Mustawfi"
-		"dynn_Ansari"
-		{ "dynnp_al-" "dynn_Kashi" }
-		"dynn_Kubra"
-		"dynn_KhayyA_m"
-		{ "dynnp_al-" "dynn_Razi" }
-		"dynn_Sina"
-		{ "dynnp_al-" "dynn_Jaldaki" }
-		"dynn_Ishaqid"
-		"dynn_Shi"
-		"dynn_Al-Dawla"
-		"dynn_Yalavach"
-		"dynn_Wardanrid"
-		"dynn_Kakuyid"
-		"dynn_Sughnan"
-		"dynn_Mirs"
-		"dynn_Roshan"
-		"dynn_Gorno"
-		"dynn_Guliab"
-		"dynn_Zulcarnei"
+		"dynn_Ahmadānān"
+		"dynn_Ahmadānīgān"
+		"dynn_Aršakīgān"
+		"dynn_Awestādān"
+		"dynn_Bāxdrīgān"
+		"dynn_Bērōnān"
+		"dynn_Boxārāīgān"
+		"dynn_Dēnān"
+		"dynn_Ganǰīgān"
+		"dynn_Gurgānīgān"
+		"dynn_Hrōmāyīgān"
+		"dynn_Husrawān"
+		"dynn_Hūzestānīgān"
+		"dynn_Kārawānān"
+		"dynn_Kāzerūnīgān"
+		"dynn_Mādayārān"
+		"dynn_Mardīgān"
+		"dynn_Mihrbānīhān"
+		"dynn_Pahlawīgān"
+		"dynn_Pālēzigān"
+		"dynn_Pardēzigān"
+		"dynn_Pārsīgān"
+		"dynn_Rayīgān"
+		"dynn_Rōšnān"
+		"dynn_Sāmānān"
+		"dynn_Shirāzīgān"
+		"dynn_Suhrābwardīgān"
+		"dynn_Tapurstānīgān"
+		"dynn_Wizīdanān"
+		"dynn_Xwarāsānīgān"
+
 	}
 
 	male_names = {
 		Spanddatak Wahman Wahmanak Ardaxshahr Arshak Shapuhr Aryabarzan Artahshtir Bagdat Werod Warahram Wahram Mihrdat Narisah Spandat Pakur Rastak Tiridat Ardawan Walagash Parthamasir Gotarz Wardan Frahat Karen Friyapat Bagayasha Wahbarz Wadfradad Wahshir Manchihr Napad Nambad Gozihr 
+		Aršak Ardaxšahr Artaxštīr Ardabān Bagdād Frahāt Fryapat Gōtarz Kārēn Manōčihr Mihrdāt Narisaxw Šāpuhr Spentōdata Vādfradād Wahrām Wahsir Wardān Wērōd
+		Ahurmazd Anōšagarwān Ârâm Arēš Baxšīr Dārā Farrahzādig Frahburz Frahrox Frahroxzādig Frāz Frēdōn Gayōmard Gōtarzak Guštasp Hazārasp Hōšang Humāy Husrōy Jāmāsp Jamšēd Kambūz
+		Kamrān Kāyhusrōy Kāykāwād Kāyūs Kersāsp Kuruš Mādayār Marzwān Mihrzādig Nayzag Niwē Ōšyār Papāk Pārēz Paryōž Paryōžīft Rōdstahm Šāhrox Šāhrōz Tahmāsp
+		Wehrōz Wištāsp Xwadād Yāwēd Xšērš Xwadyāwar Yazdgird Zardušt
 	}
 	female_names = {
 		Denag Puran Azarmi Gordiya Shirin Murrod Rodag Mihrgohar Ambar Mahgohar Farrah Morwarid Adurgul Banug Zarrbanug Yasaman Radtan Adrina Parvaneh Rudabe
+		Ādurina Atrinā Ādurgōl Āzarmīg Bānūg Dēnag Gurdīya Māhgōhar Mihrgōhar Morwārīd Parwānag Bōrān Rādtan Rôdag
+		Afsāg Āhūg Anāhīd Argwān Aryānduxt Āzarmīgduxt Āzāt Bōrānduxt Ēwaktāg Hamdam ǰuwānag Māhduxt Parwēn Rōšn Rōšnârâ Šāhzādig Šīrēn Wahār Wanafšag Wâršān
+		Wārnāz Wârwahār Wehnāz Xšahrzādig Yāsaman Zarnenduxt Zrēh Zyrdbar
 	}
 	
 	founder_named_dynasties = yes
 
-	patronym_suffix_male = "dynnpat_suf_zade"
-	patronym_suffix_female = "dynnpat_suf_dokht"
+	patronym_suffix_male = "dynnpat_suf_Zadag"
+	patronym_suffix_female = "dynnpat_suf_Duxt"
 	
 	
 
@@ -394,8 +288,8 @@ name_list_avestan = {
 
 	founder_named_dynasties = yes
 
-	patronym_suffix_male = "dynnpat_suf_zade"
-	patronym_suffix_female = "dynnpat_suf_dokht"
+	patronym_suffix_male = "dynnpat_suf_Zata"
+	patronym_suffix_female = "dynnpat_suf_Dugdar"
 
 
 
@@ -403,6 +297,107 @@ name_list_avestan = {
 		{ name = "mercenary_company_band_of_medes" }
 		{ name = "mercenary_company_immortals_of_place" }
 	}
+}
+#
+name_list_middle_persian = {
+
+	cadet_dynasty_names = {
+		"dynn_Kārawānān_Mihrbānīhān"
+		"dynn_Mihrbānīhān_Tapurstānīgān"
+		"dynn_Kāzerūnīgān_Mādayārān"
+		"dynn_Awestādān_Pālēzigān"
+		"dynn_Pardēzigān_Hrōmāyīgān"
+		"dynn_Ahmadānān_Pahlawīgān"
+		"dynn_Boxārāīgān_Dēnān"
+		"dynn_Husrōyān_Bērōnān"
+		"dynn_Kārawānān_Tapurstānīgān"
+		"dynn_Mihrbānīhān_Kāzerūnīgān"
+		"dynn_Mādayārān_Awestādān"
+		"dynn_Pālēzigān_Pardēzigān"
+		"dynn_Hrōmāyīgān_Ahmadānān"
+		"dynn_Pahlawīgān_Boxārāīgān"
+		"dynn_Dēnān_Husrōyān"
+		"dynn_Bērōnān_Kārawānān"
+		"dynn_Tapurstānīgān_Mihrbānīhān"
+		"dynn_Kāzerūnīgān_Mādayārān"
+		"dynn_Awestādān_Pālēzigān"
+		"dynn_Pardēzigān_Hrōmāyīgān"
+		"dynn_Ahmadānān_Pahlawīgān"
+		"dynn_Boxārāīgān_Dēnān"
+		"dynn_Husrōyān_Bērōnān"
+		"dynn_Kārawānān_Awestādān"
+		"dynn_Mihrbānīhān_Pardēzigān"
+		"dynn_Kāzerūnīgān_Hrōmāyīgān"
+		"dynn_Mādayārān_Ahmadānān"
+		"dynn_Pālēzigān_Boxārāīgān"
+		"dynn_Dēnān_Husrōyān"
+		"dynn_Bērōnān_Tapurstānīgān"
+		"dynn_Kārawānān_Kāzerūnīgān"
+		"dynn_Mihrbānīhān_Mādayārān"
+		"dynn_Awestādān_Pālēzigān"
+		"dynn_Pardēzigān_Hrōmāyīgān"
+		"dynn_Ahmadānān_Pahlawīgān"
+		"dynn_Boxārāīgān_Dēnān"
+		"dynn_Husrōyān_Bērōnān"
+		"dynn_Kārawānān_Boxārāīgān"
+		"dynn_Mihrbānīhān_Husrōyān"
+		"dynn_Kāzerūnīgān_Bērōnān"
+		"dynn_Mādayārān_Tapurstānīgān"
+		"dynn_Pālēzigān_Kārawānān"
+		"dynn_Dēnān_Mihrbānīhān"
+		"dynn_Bērōnān_Awestādān"
+	}
+
+	dynasty_names = {
+		"dynn_Kārawānān"	
+		"dynn_Gurgānīgān"
+		"dynn_Sāmānān"
+		"dynn_Mihrbānīhān"
+		"dynn_Tapurstānīgān"
+		"dynn_Kāzerūnīgān"
+		"dynn_Mādayārān"
+		"dynn_Awestādān"
+		"dynn_Pālēzigān"
+		"dynn_Pardēzigān"
+		"dynn_Hrōmāyīgān"
+		"dynn_Ahmadānān"
+		"dynn_Pahlawīgān"
+		"dynn_Boxārāīgān"
+		"dynn_Dēnān"
+		"dynn_Husrōyān"
+		"dynn_Bērōnān"
+		"dynn_Aškānīgān"
+		"dynn_Xwarāsānīgān"
+		"dynn_Shirāzīgān"
+		"dynn_Hūzestānīgān"
+		"dynn_Wizīdanān"
+		"dynn_Pārsīgān"
+		"dynn_Ahmadānīgān"
+		"dynn_Ganǰīgān"
+		"dynn_Mardīgān"
+		"dynn_Baxlīgān"
+		"dynn_Suhrābwardīgān"
+		"dynn_Rayīgān"
+		"dynn_Rōšnān"
+	}
+
+	male_names = {
+		Anōšagruwān Ârâm Ardavān Ardaxšīr Abrang Pābag Wahman Wahrām Baxtyar Behroz Wuzurg Daniš Dārā Dariush Jāmāsp Spandadāt Iskandar Framarz Frāz Farhad Farrahburz Farrox Farroxzādag
+		Farrahzādag Pērōzīh Pardēz Pālēz Frēdōn Gōdarz Guštāsp Hazār Ōšyār Ōhramazdē Hormozd Humāy Jamšēd Jāwēd Kâmbujiya Kamran Kāy_Us Kaykawad Kayhusrōy Xšayāršā Kawad Xwadāy Husrōy Xwadyâvar Kuruš
+		Manōčihr Marzobān Mādayār Mihrzādag Nēw Niwē Parwēz Hōšang Rōdstahm Šāhēn Šāhrām Šāhroxw Šāhrōz Šāpuhr Šābuhr Šāyān Tahmāsp Kirsāsp Wištāsp Yazdegerd zidahāg Zand Zarduxšt Abarwēz Dahāg
+		Azidahāg Eraš Frāsiyāb Kayōmart Nēzag Nēwardaxšīr Aršak Sarm Tahmōref Ērič Nōzar
+	}
+	female_names = {
+		Afsānag Āhūg Argawān Āzarmīgduxt Āzād Wahār Wanafšag Weh Bōrān Drayāb Dilbart Elnaz Farrah Pērōzan Gulwahār Gulnāz
+		Gulparīg Gulšan Hamdam Ērānduxt ǰuwānag Māhduxt Māhtāp Parwānag Parwēz Partownihāl Bōrānduxt Rōšnârâ Rōšn Šahrzādag Šāhzādag
+		Šīrēn Tūrān Tūrānduxt Yāsaman Ēwaktāg Zarrenduxt Anāhīd Humag Hutaosā Rāmwahišt Senduxt Rōdag Dēnag Šahrbānūg Šāhēnduxt
+	}
+	
+	founder_named_dynasties = yes
+
+	patronym_suffix_male = "dynnpat_suf_Zadag"
+	patronym_suffix_female = "dynnpat_suf_Duxt"
+
 }
 
 # Based on Achaemenid Era Persian
@@ -440,12 +435,12 @@ name_list_achaemenid = {
 	}
 	female_names = {
 		Amastri Anahita Anausha Artakama Artatstuna Artazaushtri Ava Giti Huparviya Hutauta Jamaspia      
-		 Parushyatish Parvaneh Rauxshana Umati Vista Youtab
+		Parushyatish Parvaneh Rauxshana Umati Vista Youtab
 	}
 	
 	founder_named_dynasties = yes
 
-	patronym_suffix_male = "dynnpat_suf_zade"
-	patronym_suffix_female = "dynnpat_suf_dokht"
+	patronym_suffix_male = "dynnpat_suf_Zatah"
+	patronym_suffix_female = "dynnpat_suf_Dyxci"
 
 }
