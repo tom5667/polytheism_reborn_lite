@@ -21,7 +21,7 @@ choose_main_deity_cdr_decision = {
 	cost = {
 		piety = 150
 	}
-	cooldown = { years = 1 }
+	#cooldown = { years = 1 }
 
 	effect = {
 		trigger_event = cdr.001 

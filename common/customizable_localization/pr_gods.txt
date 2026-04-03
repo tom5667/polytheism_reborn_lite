@@ -1,0 +1,268 @@
+pr_jupiter_name = {
+    type = character
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_illyrian
+            }
+        }
+        localization_key = jupiter_illyrian_name
+    }
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_gaulish
+            }
+        }
+        localization_key = jupiter_gaulish_name
+    }
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_celtic_iberian
+            }
+        }
+        localization_key = jupiter_celtic_iberian_name
+    }
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_brythonic
+            }
+        }
+            localization_key = jupiter_brythonic_name
+    }
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_latin
+            }
+        }
+        localization_key = jupiter_roman_name
+    }
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_phoenician
+            }
+        }
+        localization_key = jupiter_phoenician_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_jupiter_name
+    }
+}
+pr_mars_name = {
+    type = character
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_gaulish
+            }
+
+
+        }
+        localization_key = mars_gaulish_name
+    }
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_celtic_iberian
+            }
+
+        }
+        localization_key = mars_celtic_iberian_name
+    }
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_brythonic
+            }
+
+        }
+        localization_key = mars_brythonic_name
+    }
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_phoenician
+            }
+
+
+        }
+        localization_key = mars_phoenician_name
+    }
+    text = {
+        trigger = {
+            or = {
+                culture = {
+                    has_cultural_pillar = language_central_germanic
+                }
+                culture = {
+                    has_cultural_pillar = language_norse
+                }
+
+            }
+
+
+        }
+        localization_key = mars_germanic_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_mars_name
+    }
+
+}
+pr_venus_name = {
+    type = character
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_phoenician
+            }
+        }
+        localization_key = venus_phoenician_name
+    }
+    text = {
+        trigger = {
+
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_central_germanic
+                }
+                culture = {
+                    has_cultural_pillar = language_norse
+                }
+            }
+        }
+        localization_key = venus_germanic_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_venus_name
+    }
+}
+pr_mercurius_name = {
+    type = character
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_phoenician
+            }
+        }
+        localization_key = mercurius_phoenician_name
+    }
+    # text = {
+    #     trigger = {
+    #         OR = {
+    #             culture = {
+    #                 has_cultural_pillar = language_central_germanic
+    #             }
+    #             culture = {
+    #                 has_cultural_pillar = language_norse
+    #             }
+    #         }
+    #     }
+    #     localization_key = mercurius_germanic_name
+    # }
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_gaulish
+            }
+        }
+        localization_key = mercurius_gaulish_name
+
+    }
+    # text = {
+    #     trigger = {
+    #         culture = {
+    #             has_cultural_pillar = language_celtic_iberian
+    #         }
+    #     }
+    #     localization_key = mercurius_celtic_iberian_name
+    # }
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_brythonic
+            }
+        }
+        localization_key = mercurius_brythonic_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_mercurius_name
+    }
+
+}
+pr_apollo_name = {
+    type = character
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_gaulish
+            }
+        }
+        localization_key = apollo_gaulish_name
+    }
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_celtic_iberian
+            }
+            }
+        localization_key = apollo_celtic_iberian_name
+    }
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_phoenician
+            }
+        }
+        localization_key = apollo_phoenician_name
+    }
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_central_germanic
+                }
+                culture = {
+                    has_cultural_pillar = language_norse
+                }
+            }
+        }
+        localization_key =  apollo_germanic_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_apollo_name
+    }
+}
+
+pr_minerva_name = {
+    type = character
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_brythonic
+            }
+        }
+        localization_key = minerva_brythonic_name
+    }
+    text = {
+        trigger = {
+            culture = {
+                has_cultural_pillar = language_gaulish
+            }
+        }
+        localization_key = minerva_gaulish_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_minerva_name
+    }
+}

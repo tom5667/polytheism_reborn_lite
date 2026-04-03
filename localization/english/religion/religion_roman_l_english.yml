@@ -34,13 +34,53 @@
   
 
     #Cdr gods/goddesses Localization
+    #Custom loc for gods, saves 2 to 4 religions in the end
+    #But first a test version to check if all works well.
+    jupiter_illyrian_name:0 "Jupiter Parthinus"
+    jupiter_gaulish_name:0 "Jupiter Teranis"
+    jupiter_brythonic_name:0 "Jupiter Teran"
+    jupiter_germanic_name:0 "Mercurius Hranno"
+    jupiter_celtic_iberian_name:0 "Jupiter Solutorius"
+    jupiter_phoenician_name:0 "Jupiter Dolichenus"
+    fallback_jupiter_name:0 "Jupiter"
+    jupiter_roman_name:0 "Iupiter"
 
-    #jupiter Localization
-    cdr_polytheism_high_god_name:0 "Jupiter"
-    cdr_polytheism_high_god_name_2:0 "Jove"
-    cdr_polytheism_high_god_name_possessive:0 "Jupiter's"
-    cdr_polytheism_high_god_name_alternate:0 "Jupiter The Best and Greatest"
-    cdr_polytheism_high_god_name_alternate_possessive:0 "$cdr_polytheism_high_god_name_alternate$'s"
+    mars_celtic_iberian_name:0 "Mars Neto"
+    mars_germanic_name:0 "Mars Thincsus"
+    mars_gaulish_name:0 "Mars Lenus"
+    mars_brythonic_name:0 "Mars Cocidius"
+    mars_phoenician_name:0 "Juno Caelestis"
+    fallback_mars_name:0 "Mars"
+
+    #apollo_roman_name:0 ""
+    #apollo_germanic_name:0 ""
+    apollo_gaulish_name:0 "Apollo Anextlomarus"
+    #apollo_celtic_iberian_name:0 ""
+   # apollo_phoenician_name:0 ""
+    apollo_brythonic_name:0 "Apollo Belenus"
+    fallback_apollo_name:0 "Apollo"
+
+    venus_germanic_name:0 "Isis Freia"
+    #venus_celtic_iberian_name:0 ""
+    venus_phoenician_name:0 "Juno Caelestis"
+    fallback_venus_name:0 "Venus"
+
+    fallback_mercurius_name:0 "Mercurius"
+    mercurius_gaulish_name:0 "Mercurius Cissonius"
+    mercurius_brythonic_name:0 "Mercurius Lugus"
+    mercurius_phoenician_name:0 "Mercurius Sobrius"
+
+
+    fallback_minerva_name:0 "Minerva"
+    minerva_brythonic_name:0 "Sulis Minerva"
+    minerva_gaulish_name:0 "Minerva Belisama"
+
+    #cdr_polytheism_high_god_name:0 "Jupiter"
+    cdr_polytheism_high_god_name:0 "[GetPlayer.Custom('pr_jupiter_name') |U]"
+    cdr_polytheism_high_god_name_2:0 "$cdr_polytheism_high_god_name$"
+    cdr_polytheism_high_god_name_possessive:0 "$cdr_polytheism_high_god_name$"s"
+    cdr_polytheism_high_god_name_alternate:0 "$cdr_polytheism_high_god_name$"
+    cdr_polytheism_high_god_name_alternate_possessive:0 "$cdr_polytheism_high_god_name$'s"
     cdr_polytheism_high_god_shehe:0 "He"
     cdr_polytheism_high_god_herselfhimself:0 "Himself"
     cdr_polytheism_high_god_herhis:0 "His"
@@ -50,16 +90,16 @@
     cdr_polytheism_creator_god_name_possessive:0 "Chaos"
 
     #Health Goddess Bona Dea
-    cdr_polytheism_health_god_name:0 "Bona Dea"
-    cdr_polytheism_health_god_name_possessive:0 "Bona Dea's"
+    cdr_polytheism_health_god_name:0 "[GetPlayer.Custom('pr_apollo_name') |U]"
+    cdr_polytheism_health_god_name_possessive:0 "$cdr_polytheism_health_god_name$'s"
 
     #Fertility Goddess Ceres Localization
-    cdr_polytheism_fertility_god_name:0 "Venus"
-    cdr_polytheism_fertility_god_name_possessive:0 "Venus"
+    cdr_polytheism_fertility_god_name:0 "[GetPlayer.Custom('pr_venus_name') |U]"
+    cdr_polytheism_fertility_god_name_possessive:0 "$cdr_polytheism_fertility_god_name$'s"
 
     #Wealth god Mercurius Localization
-    cdr_polytheism_wealth_god_name:0 "Mercurius"
-    cdr_polytheism_wealth_god_name_possessive:0 "Mercurius"
+    cdr_polytheism_wealth_god_name:0 "[GetPlayer.Custom('pr_mercurius_name') |U]"
+    cdr_polytheism_wealth_god_name_possessive:0 "$cdr_polytheism_wealth_god_name$'s"
  
     #Household god Lares 
     cdr_polytheism_household_god_name:0 "Lares"
@@ -70,24 +110,24 @@
     cdr_polytheism_fate_god_name_possessive:0 "Janus"
 
     #knowledge god Minerva Localization
-    cdr_polytheism_knowledge_god_name:0 "Minerva"
-    cdr_polytheism_knowledge_god_name_possessive:0 "Minerva's"
+    cdr_polytheism_knowledge_god_name:0 "[GetPlayer.Custom('pr_minerva_name') |U]"
+    cdr_polytheism_knowledge_god_name_possessive:0 "$cdr_polytheism_knowledge_god_name$'s"
 
     #War god Mars Localization
-    cdr_polytheism_war_god_name:0 "Mars"
-    cdr_polytheism_war_god_name_possessive:0 "Mars"
+    cdr_polytheism_war_god_name:0 "[GetPlayer.Custom('pr_mars_name') |U]"
+    cdr_polytheism_war_god_name_possessive:0 "$cdr_polytheism_war_god_name$'s"
 
     #Trickster god Mendacius Localization
-    cdr_polytheism_trickster_god_name:0 "Mendacius"
-    cdr_polytheism_trickster_god_name_possessive:0 "Mendacius"
+    cdr_polytheism_trickster_god_name:0 "[GetPlayer.custom('pr_mendacius_name') |U]"
+    cdr_polytheism_trickster_god_name_possessive:0 "$cdr_polytheism_trickster_god_name$'s"
 
     #Night goddess Nox Localization
     cdr_polytheism_night_god_name:0 "Nox"
     cdr_polytheism_night_god_name_possessive:0 "Nox's"
 
     #Water god Neptunus Localization
-    cdr_polytheism_water_god_name:0 "Neptunus"
-    cdr_polytheism_water_god_name_possessive:0 "Neptunus"
+    cdr_polytheism_water_god_name:0 "[GetPlayer.Custom('pr_neptune_name') |U]"
+    cdr_polytheism_water_god_name_possessive:0 "$cdr_polytheism_water_god_name$'s"
 
     #evil gods names 
     cdr_polytheism_evil_god_trivia:0 "Diana Trivia" 

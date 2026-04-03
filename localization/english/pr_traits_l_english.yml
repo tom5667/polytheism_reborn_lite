@@ -9,29 +9,30 @@
 ######################
   
   #choose main deity traits localization 
-  trait_cdr_cmd1_religion:0 "Devotee of Iupiter"
-  trait_cdr_cmd1_religion_desc:0 "Devotee of Iupiter, god of thunder and Husband of Iuno"
+  #trait_cdr_cmd1_religion:0 "Devotee of Iupiter"
+  trait_cdr_cmd1_religion:0 "Devotee of $cdr_polytheism_high_god_name$"
+  trait_cdr_cmd1_religion_desc:0 "Devotee of $cdr_polytheism_high_god_name$, god of thunder and Husband of $cdr_polytheism_good_god_juno$"
 
-  trait_cdr_cmd2_religion:0 "Devotee of Iuno"
-  trait_cdr_cmd2_religion_desc:0 "Devotee of Juno, protector of the woman of Rome and wife of Jupiter"
+  trait_cdr_cmd2_religion:0 "Devotee of $cdr_polytheism_good_god_juno$"
+  trait_cdr_cmd2_religion_desc:0 "Devotee of $cdr_polytheism_good_god_juno$, protector of the woman of Rome and wife of $cdr_polytheism_high_god_name$"
 
-  trait_cdr_cmd3_religion:0 "Devotee of Mars"
-  trait_cdr_cmd3_religion_desc:0 "Devotee of Mars, god of war"
+  trait_cdr_cmd3_religion:0 "Devotee of $cdr_polytheism_war_god_name$"
+  trait_cdr_cmd3_religion_desc:0 "Devotee of $cdr_polytheism_war_god_name$, god of war"
 
-  trait_cdr_cmd4_religion:0 "Devotee of Venus"
-  trait_cdr_cmd4_religion_desc:0 "Devotee of Venus, goddess of love and fertility"
+  trait_cdr_cmd4_religion:0 "Devotee of $cdr_polytheism_fertility_god_name$"
+  trait_cdr_cmd4_religion_desc:0 "Devotee of $cdr_polytheism_fertility_god_name$, goddess of love and fertility"
 
-  trait_cdr_cmd5_religion:0 "Devotee of Lares"
-  trait_cdr_cmd5_religion_desc:0 "Devotee of the Lares, protector of the household"
+  trait_cdr_cmd5_religion:0 "Devotee of $cdr_polytheism_household_god_name$"
+  trait_cdr_cmd5_religion_desc:0 "Devotee of the $cdr_polytheism_household_god_name$, protector of the household"
 
-  trait_cdr_cmd6_religion:0 "Devotee of Mercurius"
-  trait_cdr_cmd6_religion_desc:0 "Devotee of Mercurius, god of trade"
+  trait_cdr_cmd6_religion:0 "Devotee of $cdr_polytheism_wealth_god_name$"
+  trait_cdr_cmd6_religion_desc:0 "Devotee of $cdr_polytheism_wealth_god_name$, god of trade"
 
-  trait_cdr_cmd7_religion:0 "Devotee of Minerva"
-  trait_cdr_cmd7_religion_desc:0 "Devotee of Minerva, goddess of wisdom"
+  trait_cdr_cmd7_religion:0 "Devotee of $cdr_polytheism_knowledge_god_name$"
+  trait_cdr_cmd7_religion_desc:0 "Devotee of $cdr_polytheism_knowledge_god_name$, goddess of wisdom"
 
-  trait_cdr_cmd8_religion:0 "Devotee of Apollo"
-  trait_cdr_cmd8_religion_desc:0 "Devotee of Apollo, god of healing"
+  trait_cdr_cmd8_religion:0 "Devotee of $cdr_polytheism_health_god_name$"
+  trait_cdr_cmd8_religion_desc:0 "Devotee of $cdr_polytheism_health_god_name$, god of healing"
 
 
   #choose main deity traits hellenic localization 
@@ -45,7 +46,7 @@
   trait_h_cmd3_religion_desc:0 "Devotee of Ares, god of war"
 
   trait_h_cmd4_religion:0 "Devotee of Aphrodite"
-  trait_h_cmd4_religion_desc:0 "Devotee of Aphrodite, Godess of love and fertility"
+  trait_h_cmd4_religion_desc:0 "Devotee of Aphrodite, Goddess of love and fertility"
 
   trait_h_cmd5_religion:0 "Devotee of Hermes"
   trait_h_cmd5_religion_desc:0 "Devotee of Hermes, God of trade"
