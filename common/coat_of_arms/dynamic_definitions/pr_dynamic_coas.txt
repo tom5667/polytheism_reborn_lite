@@ -292,6 +292,14 @@ e_spain =  {
 		coat_of_arms = e_spain_polytheistic
 	}
 }
+e_spain = {
+	item = {
+		trigger = {
+			coa_switch_to_visigothic_trigger = yes
+		}
+		coat_of_arms = e_spain_visigothic
+	}
+}
 
 #TFE dynamic titles 
 

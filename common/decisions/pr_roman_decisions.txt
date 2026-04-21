@@ -1120,413 +1120,413 @@ choose_main_deity_cultus_orientis_decision = {
 	}
  }
 
- convert_to_roman_illyrian_decision = { 
-	picture = { 
-		reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
-	}
-	decision_group_type = polytheism
-	desc = convert_to_roman_illyrian_decision_desc
-	is_shown = {
-		#is_ai = no
-		is_landed = yes
-		religion = religion:roman_religion
-		AND = {
-			OR = { 
-			culture = culture:bosnian
-			culture = culture:croatian
-			culture = culture:serbian
-			#More bookmarks/cultures expanded 
-			culture = culture:dalmatian_ce
-			culture = culture:illyrian
-			culture = culture:illyrian_slavic
-			#TFE cultures 
-			culture = culture:illyro_roman
+ # convert_to_roman_illyrian_decision = {
+	# picture = {
+	# 	reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
+	# }
+	# decision_group_type = polytheism
+	# desc = convert_to_roman_illyrian_decision_desc
+	# is_shown = {
+	# 	#is_ai = no
+	# 	is_landed = yes
+	# 	religion = religion:roman_religion
+	# 	AND = {
+	# 		OR = {
+	# 		culture = culture:bosnian
+	# 		culture = culture:croatian
+	# 		culture = culture:serbian
+	# 		#More bookmarks/cultures expanded
+	# 		culture = culture:dalmatian_ce
+	# 		culture = culture:illyrian
+	# 		culture = culture:illyrian_slavic
+	# 		#TFE cultures
+	# 		culture = culture:illyro_roman
+ #
+	# 		}
+	# 	}
+	# 	NOR = {
+	# 			faith = faith:roman_illyrian_polytheism
+	# 		}
+	# }
+	# is_valid = {
+	# 	religion = religion:roman_religion
+	# 	AND ={
+	# 		OR = {
+	# 			culture = culture:bosnian
+	# 			culture = culture:croatian
+	# 			culture = culture:serbian
+	# 			#More bookmarks/cultures expanded
+	# 			culture = culture:dalmatian_ce
+	# 			culture = culture:illyrian
+	# 			culture = culture:illyrian_slavic
+	# 			culture = culture:arberian
+	# 			#TFE cultures
+	# 			culture = culture:illyro_roman
+ #
+	# 		}
+	# 	}
+ #
+	# }
+	# effect = {
+	# 	trigger_event = roman_illyrian.002
+	# }
+	#
+	# ai_check_interval = 90
+	#
+	# ai_potential = {
+	# 	always = yes
+ #
+	# }
+ #
+	# ai_will_do = {
+	# 	base = 100
+	# }
+ # }
 
-			}
-		}
-		NOR = { 
-				faith = faith:roman_illyrian_polytheism
-			}
-	}
-	is_valid = {
-		religion = religion:roman_religion
-		AND ={ 
-			OR = { 
-				culture = culture:bosnian
-				culture = culture:croatian
-				culture = culture:serbian
-				#More bookmarks/cultures expanded
-				culture = culture:dalmatian_ce
-				culture = culture:illyrian
-				culture = culture:illyrian_slavic
-				culture = culture:arberian
-				#TFE cultures 
-				culture = culture:illyro_roman
-
-			}
-		}
-
-	}
-	effect = { 
-		trigger_event = roman_illyrian.002
-	}
-	
-	ai_check_interval = 90
-	
-	ai_potential = {
-		always = yes
-
-	}
-
-	ai_will_do = {
-		base = 100
-	}
- }
-
- convert_to_gallo_roman_decision = { 
-	picture = { 
-		reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
-	}
-	decision_group_type = polytheism
-	desc = convert_to_gallo_roman_decision_desc
-	is_shown = {
-		#is_ai = no
-		is_landed = yes
-		religion = religion:roman_religion
-		AND = {
-			OR = { 
-			culture = culture:gaulish
-			culture = culture:french
-			culture = culture:frankish
-			culture = culture:occitan
-			culture = culture:gallo_roman
-			#TFE cultures
-			culture = culture:gallo_roman
-			}
-		}
-		NOR = { 
-				faith = faith:gallo_roman_polytheism
-			}
-	}
-	is_valid = {
-		religion = religion:roman_religion
-		AND ={ 
-			OR = { 
-				culture = culture:gaulish
-				culture = culture:french
-				culture = culture:frankish
-				culture = culture:occitan
-				culture = culture:gallo_roman
-				#TFE cultures
-				culture = culture:gallo_roman
-
-			}
-		}
-
-	}
-	effect = { 
-		trigger_event = gallo_roman.002
-	}
-	
-	ai_check_interval = 90
-	
-	ai_potential = {
-		always = yes
-
-	}
-
-	ai_will_do = {
-		base = 100
-	}
- }
-
- convert_to_romano_british_decision = { 
-	picture = { 
-		reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
-	}
-	decision_group_type = polytheism
-	desc = convert_to_romano_british_decision_desc
-
-	is_shown = {
-		#is_ai = no
-		is_landed = yes
-		religion = religion:roman_religion
-		AND = {
-			OR = { 
-			culture = culture:welsh
-			culture = culture:romano_british
-			#TFE cultures
-			culture = culture:britano_roman
-
-			}
-		}
-		NOR = { 
-				faith = faith:romano_british_polytheism
-			}
-	}
-	is_valid = {
-		religion = religion:roman_religion
-		AND ={ 
-			OR = { 
-				culture = culture:welsh
-				culture = culture:romano_british
-				#TFE cultures
-				culture = culture:britano_roman
-			}
-		}
-
-	}
-	effect = { 
-		trigger_event = cdr_r.014
-	}
-	
-	ai_check_interval = 90
-	
-	ai_potential = {
-		always = yes
-
-	}
-
-	ai_will_do = {
-		base = 100
-	}
- }
-#Romano Germanic Decisions 
- convert_to_romano_germanic_decision = { 
-	picture = { 
-		reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
-	}
-	decision_group_type = polytheism
-	desc = convert_to_romano_germanic_decision_desc
-
-	is_shown = {
-		#is_ai = no
-		is_landed = yes
-		religion = religion:roman_religion
-		AND = {
-			OR = { 
-			culture = culture:swabian
-			culture = culture:franconian
-			culture = culture:bavarian
-
-			culture = culture:romano_germanic
-			}
-		}
-		NOR = { 
-				faith = faith:romano_germanic_polytheism
-			}
-	}
-	is_valid = {
-		religion = religion:roman_religion
-		AND ={ 
-			OR = { 
-				culture = culture:swabian
-				culture = culture:franconian
-				culture = culture:bavarian
-				culture = culture:frissian
-				culture = culture:dutch
-				culture = culture:romano_germanic
-				# #More bookmarks/cultures expanded
-				# culture = culture:dalmatian_ce
-				# culture = culture:illyrian
-				# culture = culture:illyrian_slavic
-				# culture = culture:arberian
-			}
-		}
-
-	}
-	effect = { 
-		trigger_event = romano_germanic.001
-	}
-	
-	ai_check_interval = 90
-	
-	ai_potential = {
-		always = yes
-
-	}
-
-	ai_will_do = {
-		base = 100
-	}
- }
-
- convert_to_cultus_orientis_decision = { 
-	picture = { 
-		reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
-	}
-	decision_group_type = polytheism
-	desc = convert_to_cultus_orientis_decision_desc
-	is_shown = {
-		#is_ai = no
-		is_landed = yes
-		religion = religion:roman_religion
-		AND = {
-			OR = { 
-			culture = culture:afro_roman
-			# culture = culture:franconian
-			# culture = culture:bavarian
-
-			#culture = culture:romano_germanic
-			}
-		}
-		NOR = { 
-				faith = faith:cultus_orientis
-			}
-	}
-	is_valid = {
-		AND = {
-			religion = religion:roman_religion
-			culture = culture:afro_roman
-		}
-
-	}
-	effect = { 
-		trigger_event = cultus_orientis.001
-	}
-	
-	ai_check_interval = 90
-	
-	ai_potential = {
-		always = yes
-
-	}
-
-	ai_will_do = {
-		base = 100
-	}
- }
-
- convert_to_romano_hispanic_decision = { 
-	picture = { 
-		reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
-	}
-	decision_group_type = polytheism
-	desc = convert_to_romano_hispanic_decision_desc
-	is_shown = {
-		#is_ai = no
-		is_landed = yes
-		religion = religion:roman_religion
-		culture = culture:hispano_roman
-			# culture = culture:franconian
-			# culture = culture:bavarian
-
-			#culture = culture:romano_germanic
-		NOR = { 
-				faith = faith:romano_hispanic_polytheism
-			}
-	}
-	is_valid = {
-		AND = {
-			religion = religion:roman_religion
-			culture = culture:hispano_roman
-		}
-
-	}
-	effect = { 
-		trigger_event = romano_hispanic.001
-	}
-	
-	ai_check_interval = 90
-	
-	ai_potential = {
-		always = yes
-
-	}
-
-	ai_will_do = {
-		base = 100
-	}
- }
-
-
- choose_main_deity_romano_germanic_decision = {
-	picture = { 
-		reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
-	}
-	decision_group_type = polytheism
-
-	#desc = choose_main_deity_celtic_decision_desc
-	desc = select_personal_deity_germanic_decision_desc
-	selection_tooltip = choose_main_deity_romano_germanic_decision_tooltip
-
-	is_shown = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Following a valid religion & faith.
-		OR = {
-			faith = faith:romano_germanic_polytheism
-			faith = { has_doctrine_parameter = special_doctrine_romano_germanic_patron_god_active }
-			
-		}
-	}
-
-	is_valid = {
-	}
-
-	is_valid_showing_failures_only = {
-		# Have to at _least_ not be in piety debt.
-		piety >= 0
-	}
-
-	cooldown = { years = 1 }
-
-	effect = {
-		# Show the possible options.
-			show_as_tooltip = {
-				random_list = {
-					desc = choose_main_deity_romano_germanic_decision_tt
-					100 = {
-						show_chance = no
-						desc = select_main_deity_romano_germanic_decision.select_mercurius_hranno
-						add_character_modifier = romano_germanic_mercurius_hranno
-					}
-					# 100 = {
-					# 	show_chance = no
-					# 	desc = select_main_deity_romano_germanic_decision.select_sulis_minerva
-					# 	add_character_modifier = romano_germanic_sulis_minerva
-					# }
-					100 = {
-						show_chance = no
-						desc = select_main_deity_romano_germanic_decision.select_mars_thincsus
-						add_character_modifier = romano_germanic_mars_thincsus
-					}
-				   100 = {
-						show_chance = no
-						desc = select_main_deity_romano_germanic_decision.select_hercules_meganusus
-						add_character_modifier = romano_germanic_hercules_meganusus
-				   }
-					
-					100 = {
-						show_chance = no
-						desc = select_main_deity_romano_germanic_decision.select_isis_freia
-						add_character_modifier = romano_germanic_isis_freia
-					}
-				}
-			}
-			trigger_event = romano_germanic.002
-	}
-	ai_check_interval = 96
-	
-	ai_potential = {
-		piety >= minor_piety_value
-		 NOR = {
-			#correct
-		 	has_character_modifier = romano_germanic_mercurius_hranno
-		 	#Correct
-			has_character_modifier = romano_germanic_hercules_meganusus
-			#Correct
-		 	has_character_modifier = romano_germanic_mars_thincsus
-			#90% Correct there is information about Isis in germanic religion and that she was equalized with Freia 
-			has_character_modifier = romano_germanic_isis_freia
-			
-		 }
-	}
-
-	ai_will_do = {
-		base = 100
-	}
-}
+#  convert_to_gallo_roman_decision = {
+# 	picture = {
+# 		reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
+# 	}
+# 	decision_group_type = polytheism
+# 	desc = convert_to_gallo_roman_decision_desc
+# 	is_shown = {
+# 		#is_ai = no
+# 		is_landed = yes
+# 		religion = religion:roman_religion
+# 		AND = {
+# 			OR = {
+# 			culture = culture:gaulish
+# 			culture = culture:french
+# 			culture = culture:frankish
+# 			culture = culture:occitan
+# 			culture = culture:gallo_roman
+# 			#TFE cultures
+# 			culture = culture:gallo_roman
+# 			}
+# 		}
+# 		NOR = {
+# 				faith = faith:gallo_roman_polytheism
+# 			}
+# 	}
+# 	is_valid = {
+# 		religion = religion:roman_religion
+# 		AND ={
+# 			OR = {
+# 				culture = culture:gaulish
+# 				culture = culture:french
+# 				culture = culture:frankish
+# 				culture = culture:occitan
+# 				culture = culture:gallo_roman
+# 				#TFE cultures
+# 				culture = culture:gallo_roman
+#
+# 			}
+# 		}
+#
+# 	}
+# 	effect = {
+# 		trigger_event = gallo_roman.002
+# 	}
+#
+# 	ai_check_interval = 90
+#
+# 	ai_potential = {
+# 		always = yes
+#
+# 	}
+#
+# 	ai_will_do = {
+# 		base = 100
+# 	}
+#  }
+#
+#  convert_to_romano_british_decision = {
+# 	picture = {
+# 		reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
+# 	}
+# 	decision_group_type = polytheism
+# 	desc = convert_to_romano_british_decision_desc
+#
+# 	is_shown = {
+# 		#is_ai = no
+# 		is_landed = yes
+# 		religion = religion:roman_religion
+# 		AND = {
+# 			OR = {
+# 			culture = culture:welsh
+# 			culture = culture:romano_british
+# 			#TFE cultures
+# 			culture = culture:britano_roman
+#
+# 			}
+# 		}
+# 		NOR = {
+# 				faith = faith:romano_british_polytheism
+# 			}
+# 	}
+# 	is_valid = {
+# 		religion = religion:roman_religion
+# 		AND ={
+# 			OR = {
+# 				culture = culture:welsh
+# 				culture = culture:romano_british
+# 				#TFE cultures
+# 				culture = culture:britano_roman
+# 			}
+# 		}
+#
+# 	}
+# 	effect = {
+# 		trigger_event = cdr_r.014
+# 	}
+#
+# 	ai_check_interval = 90
+#
+# 	ai_potential = {
+# 		always = yes
+#
+# 	}
+#
+# 	ai_will_do = {
+# 		base = 100
+# 	}
+#  }
+# #Romano Germanic Decisions
+#  convert_to_romano_germanic_decision = {
+# 	picture = {
+# 		reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
+# 	}
+# 	decision_group_type = polytheism
+# 	desc = convert_to_romano_germanic_decision_desc
+#
+# 	is_shown = {
+# 		#is_ai = no
+# 		is_landed = yes
+# 		religion = religion:roman_religion
+# 		AND = {
+# 			OR = {
+# 			culture = culture:swabian
+# 			culture = culture:franconian
+# 			culture = culture:bavarian
+#
+# 			culture = culture:romano_germanic
+# 			}
+# 		}
+# 		NOR = {
+# 				faith = faith:romano_germanic_polytheism
+# 			}
+# 	}
+# 	is_valid = {
+# 		religion = religion:roman_religion
+# 		AND ={
+# 			OR = {
+# 				culture = culture:swabian
+# 				culture = culture:franconian
+# 				culture = culture:bavarian
+# 				culture = culture:frissian
+# 				culture = culture:dutch
+# 				culture = culture:romano_germanic
+# 				# #More bookmarks/cultures expanded
+# 				# culture = culture:dalmatian_ce
+# 				# culture = culture:illyrian
+# 				# culture = culture:illyrian_slavic
+# 				# culture = culture:arberian
+# 			}
+# 		}
+#
+# 	}
+# 	effect = {
+# 		trigger_event = romano_germanic.001
+# 	}
+#
+# 	ai_check_interval = 90
+#
+# 	ai_potential = {
+# 		always = yes
+#
+# 	}
+#
+# 	ai_will_do = {
+# 		base = 100
+# 	}
+#  }
+#
+#  convert_to_cultus_orientis_decision = {
+# 	picture = {
+# 		reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
+# 	}
+# 	decision_group_type = polytheism
+# 	desc = convert_to_cultus_orientis_decision_desc
+# 	is_shown = {
+# 		#is_ai = no
+# 		is_landed = yes
+# 		religion = religion:roman_religion
+# 		AND = {
+# 			OR = {
+# 			culture = culture:afro_roman
+# 			# culture = culture:franconian
+# 			# culture = culture:bavarian
+#
+# 			#culture = culture:romano_germanic
+# 			}
+# 		}
+# 		NOR = {
+# 				faith = faith:cultus_orientis
+# 			}
+# 	}
+# 	is_valid = {
+# 		AND = {
+# 			religion = religion:roman_religion
+# 			culture = culture:afro_roman
+# 		}
+#
+# 	}
+# 	effect = {
+# 		trigger_event = cultus_orientis.001
+# 	}
+#
+# 	ai_check_interval = 90
+#
+# 	ai_potential = {
+# 		always = yes
+#
+# 	}
+#
+# 	ai_will_do = {
+# 		base = 100
+# 	}
+#  }
+#
+#  convert_to_romano_hispanic_decision = {
+# 	picture = {
+# 		reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
+# 	}
+# 	decision_group_type = polytheism
+# 	desc = convert_to_romano_hispanic_decision_desc
+# 	is_shown = {
+# 		#is_ai = no
+# 		is_landed = yes
+# 		religion = religion:roman_religion
+# 		culture = culture:hispano_roman
+# 			# culture = culture:franconian
+# 			# culture = culture:bavarian
+#
+# 			#culture = culture:romano_germanic
+# 		NOR = {
+# 				faith = faith:romano_hispanic_polytheism
+# 			}
+# 	}
+# 	is_valid = {
+# 		AND = {
+# 			religion = religion:roman_religion
+# 			culture = culture:hispano_roman
+# 		}
+#
+# 	}
+# 	effect = {
+# 		trigger_event = romano_hispanic.001
+# 	}
+#
+# 	ai_check_interval = 90
+#
+# 	ai_potential = {
+# 		always = yes
+#
+# 	}
+#
+# 	ai_will_do = {
+# 		base = 100
+# 	}
+#  }
+#
+#
+#  choose_main_deity_romano_germanic_decision = {
+# 	picture = {
+# 		reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
+# 	}
+# 	decision_group_type = polytheism
+#
+# 	#desc = choose_main_deity_celtic_decision_desc
+# 	desc = select_personal_deity_germanic_decision_desc
+# 	selection_tooltip = choose_main_deity_romano_germanic_decision_tooltip
+#
+# 	is_shown = {
+# 		# DLC check.
+# 		has_fp1_dlc_trigger = yes
+# 		# Following a valid religion & faith.
+# 		OR = {
+# 			faith = faith:romano_germanic_polytheism
+# 			faith = { has_doctrine_parameter = special_doctrine_romano_germanic_patron_god_active }
+#
+# 		}
+# 	}
+#
+# 	is_valid = {
+# 	}
+#
+# 	is_valid_showing_failures_only = {
+# 		# Have to at _least_ not be in piety debt.
+# 		piety >= 0
+# 	}
+#
+# 	cooldown = { years = 1 }
+#
+# 	effect = {
+# 		# Show the possible options.
+# 			show_as_tooltip = {
+# 				random_list = {
+# 					desc = choose_main_deity_romano_germanic_decision_tt
+# 					100 = {
+# 						show_chance = no
+# 						desc = select_main_deity_romano_germanic_decision.select_mercurius_hranno
+# 						add_character_modifier = romano_germanic_mercurius_hranno
+# 					}
+# 					# 100 = {
+# 					# 	show_chance = no
+# 					# 	desc = select_main_deity_romano_germanic_decision.select_sulis_minerva
+# 					# 	add_character_modifier = romano_germanic_sulis_minerva
+# 					# }
+# 					100 = {
+# 						show_chance = no
+# 						desc = select_main_deity_romano_germanic_decision.select_mars_thincsus
+# 						add_character_modifier = romano_germanic_mars_thincsus
+# 					}
+# 				   100 = {
+# 						show_chance = no
+# 						desc = select_main_deity_romano_germanic_decision.select_hercules_meganusus
+# 						add_character_modifier = romano_germanic_hercules_meganusus
+# 				   }
+#
+# 					100 = {
+# 						show_chance = no
+# 						desc = select_main_deity_romano_germanic_decision.select_isis_freia
+# 						add_character_modifier = romano_germanic_isis_freia
+# 					}
+# 				}
+# 			}
+# 			trigger_event = romano_germanic.002
+# 	}
+# 	ai_check_interval = 96
+#
+# 	ai_potential = {
+# 		piety >= minor_piety_value
+# 		 NOR = {
+# 			#correct
+# 		 	has_character_modifier = romano_germanic_mercurius_hranno
+# 		 	#Correct
+# 			has_character_modifier = romano_germanic_hercules_meganusus
+# 			#Correct
+# 		 	has_character_modifier = romano_germanic_mars_thincsus
+# 			#90% Correct there is information about Isis in germanic religion and that she was equalized with Freia
+# 			has_character_modifier = romano_germanic_isis_freia
+#
+# 		 }
+# 	}
+#
+# 	ai_will_do = {
+# 		base = 100
+# 	}
+# }
 
 embrace_romano_germanic_culture_decision = {
 

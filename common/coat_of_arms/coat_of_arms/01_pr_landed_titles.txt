@@ -901,7 +901,22 @@ e_spain_polytheistic = {
 		}
 	}
 }
+e_spain_visigothic = {
+	pattern="pattern_solid.dds"
+	color1=brown
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=rgb { 251 193 0 }
+		color2=rgb { 104 61 37 }
+		texture="ce_pr_gothic_1.dds"
+		instance={
+			position={ 0.500000 0.455000 }
+			scale={ 0.870000 0.870000 }
+		}
 
+	}
+}
 k_etruria = {
 	pattern="pattern_solid.dds"
 	color1=grey

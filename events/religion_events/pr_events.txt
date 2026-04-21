@@ -183,22 +183,22 @@ rps.002={
 		name = rps.002.mycenaean
 		set_character_faith = faith:mycenaean_polytheism
 	}
-	option={
-		name = rps.002.mithras
-		set_character_faith = faith:mithraic_mysteries
-	}
-	option={
-		name = rps.002.eluesinian
-		set_character_faith = faith:eluesinian_mysteries
-	}
-	option={
-		name = rps.002.serapis
-		set_character_faith = faith:cult_of_serapis
-	}
-	option={
-		name = rps.002.sol_invictus
-		set_character_faith = faith:sol_invictus_cult
-	}
+	# option={
+	# 	name = rps.002.mithras
+	# 	set_character_faith = faith:mithraic_mysteries
+	# }
+	# option={
+	# 	name = rps.002.eluesinian
+	# 	set_character_faith = faith:eluesinian_mysteries
+	# }
+	# option={
+	# 	name = rps.002.serapis
+	# 	set_character_faith = faith:cult_of_serapis
+	# }
+	# option={
+	# 	name = rps.002.sol_invictus
+	# 	set_character_faith = faith:sol_invictus_cult
+	# }
 	option={
 		name = rps.002.next
 		trigger_event = rps.012
@@ -214,30 +214,30 @@ rps.012 = {
 	desc = rps.012.desc
 	theme = learning_scholarship_focus
 
-	option={
-		name = rps.012.isis
-		set_character_faith = faith:mysteries_of_isis
-	}
-	option={
-		name = rps.012.imperial
-		set_character_faith = faith:imperial_cult
-	}
-	option={
-		name = rps.012.roman_illyrian
-		set_character_faith = faith:roman_illyrian_polytheism
-	}
-	option={
-		name = rps.012.romano_british
-		set_character_faith = faith:romano_british_polytheism
-	}
-	option={
-		name = rps.012.gallo_roman
-		set_character_faith = faith:gallo_roman_polytheism
-	}
-	option={
-		name = rps.012.romano_germanic
-		set_character_faith = faith:romano_germanic_polytheism 
-	}
+	# option={
+	# 	name = rps.012.isis
+	# 	set_character_faith = faith:mysteries_of_isis
+	# }
+	# option={
+	# 	name = rps.012.imperial
+	# 	set_character_faith = faith:imperial_cult
+	# }
+	# option={
+	# 	name = rps.012.roman_illyrian
+	# 	set_character_faith = faith:roman_illyrian_polytheism
+	# }
+	# option={
+	# 	name = rps.012.romano_british
+	# 	set_character_faith = faith:romano_british_polytheism
+	# }
+	# option={
+	# 	name = rps.012.gallo_roman
+	# 	set_character_faith = faith:gallo_roman_polytheism
+	# }
+	# option={
+	# 	name = rps.012.romano_germanic
+	# 	set_character_faith = faith:romano_germanic_polytheism
+	# }
 	option={
 		name = rps.012.graeco_egyptian_polytheism
 		set_character_faith = faith:graeco_egyptian_polytheism
@@ -4736,8 +4736,10 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 	option = {
 		name = pr.051.roman
 		trigger = {
-			
+			AND = {
+				culture = { has_cultural_pillar = heritage_byzantine }
 				culture = { has_cultural_pillar = heritage_latin }
+			}
 		}
 		set_character_faith_with_conversion = faith:cdr_polytheism
 		hidden_effect = {
@@ -4763,22 +4765,22 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 			base = 30
 		}
 	}
-	option = {
-		name = pr.051.hellenic_roman
-		trigger = {
-				AND = {
-					culture = { has_cultural_pillar = heritage_byzantine }
-					culture = { has_cultural_pillar = language_greek }
-				}
-		}
-		set_character_faith_with_conversion = faith:cdr_polytheism
-		hidden_effect = {
-			add_character_flag = converted_pr_religion_this_lifetime
-		}
-		ai_chance = {
-			base = 30
-		}
-	}
+	# option = {
+	# 	name = pr.051.hellenic_roman
+	# 	trigger = {
+	# 			AND = {
+	# 				culture = { has_cultural_pillar = heritage_byzantine }
+	# 				culture = { has_cultural_pillar = language_greek }
+	# 			}
+	# 	}
+	# 	set_character_faith_with_conversion = faith:cdr_polytheism
+	# 	hidden_effect = {
+	# 		add_character_flag = converted_pr_religion_this_lifetime
+	# 	}
+	# 	ai_chance = {
+	# 		base = 30
+	# 	}
+	# }
 	option = {
 		name = pr.051.goidelic
 		trigger = {
