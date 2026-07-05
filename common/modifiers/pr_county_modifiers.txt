@@ -20,3 +20,10 @@ open_druidic_place = {
 	monthly_county_control_change_add = 0.2
 	pagan_religion_opinion = -10 
 }
+
+pax_romana_modifier = {
+	icon = county_modifier_opinion_positive
+	county_opinion_add = 5
+	county_fertility_growth_mult = small_county_fertility_growth_gain
+	build_gold_cost = -0.15
+}

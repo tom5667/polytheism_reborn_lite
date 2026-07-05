@@ -51,6 +51,7 @@ celtic_religion ={
                 doctrine = doctrine_pluralism_pluralistic
                 doctrine = doctrine_theocracy_lay_clergy
                 doctrine = doctrine_pilgrimage_encouraged
+                doctrine = doctrine_polytheist
                 #doctrine = unreformed_faith_doctrine
     
                 #mariage 
@@ -258,7 +259,7 @@ celtic_religion ={
                 doctrine = doctrine_pluralism_pluralistic
                 doctrine = doctrine_theocracy_lay_clergy
                 doctrine = doctrine_pilgrimage_encouraged
-
+                doctrine = doctrine_polytheist
                 # Special doctrine
                 doctrine = special_doctrine_ecumenical_celtic_roman 
                 doctrine = special_doctrine_brythonic_patron_god
@@ -468,7 +469,7 @@ celtic_religion ={
             doctrine = doctrine_pilgrimage_forbidden
             #doctrine = unreformed_faith_doctrine
             doctrine = special_doctrine_gaulish_patron_god
-
+            doctrine = doctrine_polytheist
             #mariage 
             doctrine = doctrine_consanguinity_cousins
             doctrine = doctrine_bastardry_legitimization
@@ -669,6 +670,8 @@ celtic_religion ={
             doctrine = doctrine_pluralism_pluralistic
             doctrine = doctrine_theocracy_lay_clergy
             doctrine = doctrine_pilgrimage_forbidden
+            doctrine = doctrine_polytheist
+
             
             doctrine = special_doctrine_celtic_iberian_patron_god
 
@@ -702,6 +705,7 @@ celtic_religion ={
             doctrine = special_doctrine_ecumenical_celtic_roman 
             doctrine = special_doctrine_ecumenical_hispano_roman 
             doctrine = unreformed_faith_doctrine
+            doctrine = doctrine_anointment_permitted
 
             doctrine = doctrine_funeral_stoic
             #test doctrine 

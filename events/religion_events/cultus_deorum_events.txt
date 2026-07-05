@@ -1867,10 +1867,6 @@ cdr_otv.001 = {
 	}
 	option={
 		name = cdr_otv.001.a
-		title:c_roma ={
-			add_county_modifier = open_temple_of_vesta
-		}
-		add_character_modifier = burning_flame_of_vesta
 		clear_global_variable_list = unavailable_unique_decisions_close_temple_of_vesta
 		hidden_effect = {
 			scope:vestalis_maxima = {
@@ -6876,6 +6872,36 @@ cdr.041 = {
 }
 
 
+cdr.042 = {
+	type = character_event
+	title = cdr.042.t
+	desc = cdr.042.desc
+	theme = war
+
+	right_portrait = {
+		character = root
+		animation = personality_martial
+	}
+
+	option = {
+		name = cdr.042.a
+	}
+}
+cdr.043 = {
+	type = character_event
+	title = cdr.043.t
+	desc = cdr.043.desc
+	theme = diplomacy
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = cdr.043.a
+	}
+}
 #Restore cults events
 
 cult.042 = {

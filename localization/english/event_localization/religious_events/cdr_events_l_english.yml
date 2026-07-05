@@ -937,3 +937,11 @@ bacchus_vision_cooldown_desc:0 "This character has recently sought a vision from
 
 bacchus_divine_insight:0 "Divine Insight"
 bacchus_divine_insight_desc:0 "This character has received a profound insight from a vision of Bacchus, granting them a deeper understanding of the chaotic nature of the world."
+
+cdr.042.t:0 "The Gates of Janus are Open"
+cdr.042.desc:0 "As is tradition, [ROOT.Char.GetTitledFirstName] has unbarred the Gates of Janus, the ancient symbol of war. The heavy bronze doors groan open, and the gaze of the two-faced god falls upon the world. Janus goes with our soldiers to war, his divine presence a promise of the victories to come."
+cdr.042.a:0 "May Janus grant us swift victory!"
+
+ cdr.043.t:0 "The Gates of Janus are Closed"
+ cdr.043.desc:0 "As is tradition, [ROOT.Char.GetTitledFirstName] has barred the Gates of Janus, the ancient symbol of war. The heavy bronze doors groan shut, and the gaze of the two-faced god turns inward. Janus now watches over a world at peace, his divine presence a promise that the bloodshed has ceased."
+ cdr.043.a:0 "May Janus keep the peace as steadfastly as he once guided our soldiers!"

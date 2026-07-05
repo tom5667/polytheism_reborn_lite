@@ -52,6 +52,8 @@
 			doctrine = doctrine_gender_male_dominated
 			doctrine = doctrine_pluralism_pluralistic
 			doctrine = doctrine_theocracy_temporal
+			doctrine = doctrine_polytheist
+
 
 
 			doctrine = doctrine_concubines
@@ -73,6 +75,7 @@
 			doctrine = doctrine_clerical_gender_either
 			doctrine = doctrine_clerical_marriage_allowed
 			doctrine = doctrine_clerical_succession_temporal_appointment
+			doctrine = doctrine_anointment_permitted
 
 			#Funeral tradition
 			doctrine = doctrine_funeral_cremation
@@ -261,6 +264,7 @@
 			doctrine = doctrine_gender_male_dominated
 			doctrine = doctrine_pluralism_pluralistic
 			doctrine = doctrine_theocracy_temporal
+			doctrine = doctrine_polytheist
 
 			doctrine = unreformed_faith_doctrine
 
@@ -283,6 +287,7 @@
 			doctrine = doctrine_clerical_gender_either
 			doctrine = doctrine_clerical_marriage_allowed
 			doctrine = doctrine_clerical_succession_temporal_appointment
+			doctrine = doctrine_anointment_permitted
 
 			#Funeral tradition
 			doctrine = doctrine_funeral_cremation
@@ -463,6 +468,8 @@
 				doctrine = doctrine_gender_male_dominated
 				doctrine = doctrine_pluralism_pluralistic
 				doctrine = doctrine_theocracy_temporal
+				doctrine = doctrine_polytheist
+
 
 				doctrine = unreformed_faith_doctrine
 				
@@ -489,6 +496,7 @@
 				doctrine = doctrine_clerical_gender_either
 				doctrine = doctrine_clerical_marriage_allowed
 				doctrine = doctrine_clerical_succession_temporal_appointment
+				doctrine = doctrine_anointment_permitted
 
 				#Funeral tradition
 				doctrine = doctrine_funeral_cremation

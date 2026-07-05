@@ -1,0 +1,163 @@
+﻿############################
+# Polytheism Reborn Tenets #
+############################
+tenet_sacrificial_appeasement = {
+	# name = {
+	# 	first_valid = {
+	# 		triggered_desc = {
+	# 			trigger = { religion_tag = germanic_religion }
+	# 			desc = tenet_gruesome_festivals_blot_name
+	# 		}
+	# 		desc = tenet_gruesome_festivals_name
+	# 	}
+	# }
+	desc = tenet_sacrificial_appeasement_desc
+
+	icon = core_tenet_gruesome_festivals
+
+	piety_cost = {
+		# If you've already got human sacrifice, this is a nice and easy jump.
+		if = {
+			limit = {
+				has_doctrine = tenet_human_sacrifice
+			}
+			value = faith_tenet_cost_low
+		}
+		# Otherwise, follow the same pricing tiers as tenet_human_sacrifice.
+		else_if = {
+			limit = {
+				has_doctrine = pagan_hostility_doctrine
+			}
+			value = faith_tenet_cost_mid
+		}
+		else_if = {
+			limit = {
+				religion_tag = hinduism_religion
+			}
+			value = faith_tenet_cost_high
+		}
+		else = {
+			value = faith_tenet_cost_massive
+		}
+
+		# Multiplier for keeping same tenet
+		if = {
+			limit = { has_doctrine = tenet_gruesome_festivals }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+	}
+
+	is_shown = {
+		# No HumSac for Abrahamics: 'tis literally the religion-namer.
+		NOR = {
+			religion_tag = christianity_religion
+			religion_tag = judaism_religion
+			religion_tag = islam_religion
+		}
+		# And DLC required.
+		has_fp1_dlc_trigger = yes
+	}
+
+	can_pick = {
+		custom_description = {
+			text = incompatible_tenet_pacifism_trigger
+			NOT = {
+				doctrine:tenet_pacifism = { is_in_list = selected_doctrines }
+			}
+		}
+		custom_description = {
+			text = incompatible_tenet_dharmic_pacifism_trigger
+			NOT = {
+				doctrine:tenet_dharmic_pacifism = { is_in_list = selected_doctrines }
+			}
+		}
+		custom_description = {
+			text = incompatible_tenet_human_sacrifice_trigger
+			NOT = {
+				doctrine:tenet_human_sacrifice = { is_in_list = selected_doctrines }
+			}
+		}
+		custom_description = {
+			text = incompatible_tenet_sacrificial_ceremonies_trigger
+			NOT = {
+				doctrine:tenet_sacrificial_ceremonies = { is_in_list = selected_doctrines }
+			}
+		}
+	}
+
+	parameters = {
+		#human_sacrifice_active = yes
+		gruesome_festivals_active = yes
+	}
+
+}
+
+tenet_animal_sacrifice = {
+
+	desc = tenet_animal_sacrifice_desc
+
+	icon = core_tenet_gruesome_festivals
+
+	piety_cost = {
+		# If you've already got human sacrifice, this is a nice and easy jump.
+		if = {
+			limit = {
+				has_doctrine = tenet_human_sacrifice
+			}
+			value = faith_tenet_cost_low
+		}
+		# Otherwise, follow the same pricing tiers as tenet_human_sacrifice.
+		else_if = {
+			limit = {
+				has_doctrine = pagan_hostility_doctrine
+			}
+			value = faith_tenet_cost_mid
+		}
+		else = {
+			value = faith_tenet_cost_massive
+		}
+
+		# Multiplier for keeping same tenet
+		if = {
+			limit = { has_doctrine = tenet_gruesome_festivals }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+	}
+
+	is_shown = {
+		# No HumSac for Abrahamics: 'tis literally the religion-namer.
+		NOR = {
+			religion_tag = christianity_religion
+			religion_tag = judaism_religion
+			religion_tag = islam_religion
+		}
+		# And DLC required.
+		has_fp1_dlc_trigger = yes
+	}
+
+	can_pick = {
+		custom_description = {
+			text = incompatible_tenet_pacifism_trigger
+			NOT = {
+				doctrine:tenet_pacifism = { is_in_list = selected_doctrines }
+			}
+		}
+		custom_description = {
+			text = incompatible_tenet_dharmic_pacifism_trigger
+			NOT = {
+				doctrine:tenet_dharmic_pacifism = { is_in_list = selected_doctrines }
+			}
+		}
+		custom_description = {
+			text = incompatible_tenet_human_sacrifice_trigger
+			NOT = {
+				doctrine:tenet_human_sacrifice = { is_in_list = selected_doctrines }
+			}
+		}
+	}
+
+	parameters = {
+		gruesome_festivals_active = yes
+	}
+}
+

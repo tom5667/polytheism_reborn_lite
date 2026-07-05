@@ -325,3 +325,13 @@ send_daughter_to_temple_of_vesta_decision:0 "Send your daughter to the temple of
 send_daughter_to_temple_of_vesta_decision_desc:0 "Send your daughter to the temple of Vesta, so she can become a Vestal Virgin and serve the goddess Vesta."
 send_daughter_to_temple_of_vesta_decision_tooltip:0 "Send your daughter to the temple of Vesta"
 send_daughter_to_temple_of_vesta_decision_confirm:0 "Send her to the temple"
+
+open_gates_of_janus_decision:0 "Open the Gates of Janus"
+open_gates_of_janus_decision_desc:0 "The Gates of Janus, a symbol of war and peace, have long stood closed. To open them is to declare to the world that Rome is at war, to invoke the god Janus to march with our legions and grant us victory."
+open_gates_of_janus_decision_tooltip:0 "Opening the Gates of Janus will grant a powerful, but temporary, bonus to your armies."
+open_gates_of_janus_decision_confirm:0 "Let Janus witness our struggle!"
+
+close_gates_of_janus_decision:0 "Close the Gates of Janus"
+close_gates_of_janus_decision_desc:0 "The wars are over, the rebellions crushed. For the first time in living memory, the Empire is at peace. Now is the time to close the Gates of Janus, to show the world that a new Pax Romana has begun."
+close_gates_of_janus_decision_tooltip:0 "Closing the Gates of Janus will grant a permanent bonus to your prestige, piety, and the loyalty of your subjects."
+close_gates_of_janus_decision_confirm:0 "Let the era of peace begin!"

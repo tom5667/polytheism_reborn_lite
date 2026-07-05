@@ -51,6 +51,8 @@ egyptian_religion ={
 			doctrine = doctrine_gender_equal #Women could hold jobs and buisnesses and where treated with respect although men had more rights, so it's a bit up to debate. 
 			doctrine = doctrine_pluralism_pluralistic
 			doctrine = doctrine_theocracy_lay_clergy
+			doctrine = doctrine_polytheist
+
 
 			#mariage 
 			doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
@@ -269,6 +271,7 @@ egyptian_religion ={
 		doctrine = doctrine_clerical_gender_either
 		doctrine = doctrine_clerical_marriage_allowed
 		doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+
 		
 		#tenets
 		doctrine = tenet_unrelenting_faith

@@ -61,8 +61,9 @@
 			doctrine = tenet_animal_sacrifice
 			doctrine = tenet_esotericism
 			doctrine = doctrine_pilgrimage_encouraged
-      doctrine = special_doctrine_ecumenical_greaco_roman 
+      		doctrine = special_doctrine_ecumenical_greaco_roman
 			doctrine = doctrine_funeral_cremation
+			doctrine = doctrine_polytheist
         
       doctrine = special_doctrine_greek_syncretism
 			#Main Group
@@ -90,6 +91,7 @@
 			doctrine = doctrine_clerical_gender_either
 			doctrine = doctrine_clerical_marriage_allowed
 			doctrine = doctrine_clerical_succession_temporal_appointment
+			doctrine = doctrine_anointment_permitted
 
 			localization = {
 				#High God Name
@@ -297,13 +299,15 @@
             doctrine = doctrine_clerical_succession_temporal_fixed_appointment
             doctrine = doctrine_curtailed 
             doctrine = doctrine_monk_not_clergy_enforced
+			doctrine = doctrine_anointment_permitted
 
             #doctrine = unreformed_faith_doctrine
 
             doctrine = tenet_esotericism
             doctrine = tenet_sacrificial_appeasement
             doctrine = tenet_ritual_celebrations
-            doctrine = special_doctrine_ecumenical_greaco_roman 
+            doctrine = special_doctrine_ecumenical_greaco_roman
+
 
             
             # religious_head = 
@@ -505,6 +509,7 @@
 			doctrine = doctrine_clerical_gender_male_only
 			doctrine = doctrine_clerical_marriage_allowed
 			doctrine = doctrine_clerical_succession_spiritual_appointment
+			doctrine = doctrine_anointment_permitted
 		
 			localization = {
 				#High God Name

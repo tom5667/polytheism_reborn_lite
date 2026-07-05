@@ -60,6 +60,8 @@ daco_thracian_religion = {
 			doctrine = doctrine_gender_male_dominated
 			doctrine = doctrine_pluralism_pluralistic
 			doctrine = doctrine_theocracy_temporal
+			doctrine = doctrine_polytheist
+
 			
 			#mariage 
 			doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
@@ -248,6 +250,8 @@ daco_thracian_religion = {
 			doctrine = doctrine_gender_male_dominated
 			doctrine = doctrine_pluralism_pluralistic
 			doctrine = doctrine_theocracy_temporal
+			doctrine = doctrine_polytheist
+
 			
 		
 			#mariage 

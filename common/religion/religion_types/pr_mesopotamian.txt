@@ -57,6 +57,8 @@
 			doctrine = doctrine_gender_male_dominated
 			doctrine = doctrine_pluralism_pluralistic
 			doctrine = doctrine_theocracy_temporal
+			doctrine = doctrine_polytheist
+
 
 			#mariage 
 			doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
@@ -77,6 +79,7 @@
 			doctrine = doctrine_clerical_gender_either
 			doctrine = doctrine_clerical_marriage_allowed
 			doctrine = doctrine_clerical_succession_temporal_appointment
+			doctrine = doctrine_anointment_permitted
 
 			doctrine = doctrine_funeral_stoic
 
@@ -258,6 +261,8 @@
 			doctrine = doctrine_gender_male_dominated
 			doctrine = doctrine_priest_king_yes
 			doctrine = doctrine_deification_dead_exceptional_only
+			doctrine = doctrine_polytheist
+
 
 			#Mortuary Practices
 			doctrine = doctrine_burial_practice_burial
@@ -285,6 +290,7 @@
 			#Clerical Functions
 			doctrine = doctrine_clerical_gender_either
 			doctrine = doctrine_clerical_marriage_disallowed
+			doctrine = doctrine_anointment_permitted
 
 			localization = {
 				HighGodName = sumerian_polytheism_high_god_name
@@ -454,6 +460,8 @@
 			doctrine = doctrine_gender_male_dominated
 			doctrine = doctrine_priest_king_yes
 			doctrine = doctrine_deification_dead_exceptional_only
+			doctrine = doctrine_polytheist
+
 
 			#Mortuary Practices
 			doctrine = doctrine_burial_practice_burial
@@ -481,6 +489,7 @@
 			#Clerical Functions
 			doctrine = doctrine_clerical_gender_either
 			doctrine = doctrine_clerical_marriage_disallowed
+			doctrine = doctrine_anointment_permitted
 
 			localization = {
 				HighGodName = assyrian_polytheism_high_god_name

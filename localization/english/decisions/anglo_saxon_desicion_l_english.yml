@@ -35,6 +35,7 @@ solstice_winter_decision_desc:0 "The air has begun to warm slowly as the new yea
 solstice_decision_confirm:0 "Gather the realm for the Solstice"
 solstice_winter_decision_confirm:1 "Prepare the Realm"
 
+place_new_irminsul_paderborn:0 "Re-establish Irminsul in Paderborn"
 place_new_irminsul_paderborn_desc:0 "Following extensive discussion and reflection, it was determined that the re-establishment of the Irminsul would serve as a powerful testament to the enduring strength of our faith and cultural identity."
 place_new_irminsul_paderborn_tooltip:1 "Re-Errect the Irminsul"
 place_new_irminsul_paderborn_confirm:0 "Make our ancestors proud"

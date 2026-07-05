@@ -1,0 +1,119 @@
+# # Gates of Janus Decisions
+# open_gates_of_janus_decision = {
+#     picture = {
+#         reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+#     }
+#     decision_group_type = polytheism
+#
+#     desc = open_gates_of_janus_decision_desc
+#     selection_tooltip = open_gates_of_janus_decision_tooltip
+#
+#     is_shown = {
+#         is_ruler = yes
+#         is_landed = yes
+#         OR = {
+#             faith = faith:cdr_polytheism
+#             faith = { has_doctrine_parameter = special_doctrine_roman_patron_god_active }
+#         }
+#         completely_controls = title:c_roma
+#         is_at_peace = yes
+#         NOT = { has_character_modifier = gates_of_janus_closed }
+#     }
+#
+#     is_valid = {
+#        piety_level >= 3 # Devoted Servant
+#     }
+#
+#     is_valid_showing_failures_only = {
+#         is_capable_adult = yes
+#         is_imprisoned = no
+#         is_independent_ruler = yes
+#     }
+#
+#     cost = {
+#         piety = 250
+#         prestige = 500
+#     }
+#
+#     effect = {
+# 		add_character_modifier = {
+# 			modifier = wars_threshold_modifier
+# 			years = 15
+# 		}
+#         add_character_flag = gates_of_janus_open
+#         trigger_event = cdr.042
+#     }
+#
+#     ai_potential = {
+#         always = no # AI should not take this decision for now
+#     }
+#
+#     ai_will_do = {
+#         base = 0
+#     }
+# }
+#
+# close_gates_of_janus_decision = {
+#     picture = {
+#         reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+#     }
+#     decision_group_type = polytheism
+#
+#     desc = close_gates_of_janus_decision_desc
+#     selection_tooltip = close_gates_of_janus_decision_tooltip
+#
+#     is_shown = {
+#         is_ruler = yes
+#         is_landed = yes
+#         OR = {
+#             faith = faith:cdr_polytheism
+#             faith = { has_doctrine_parameter = special_doctrine_roman_patron_god_active }
+#         }
+#         completely_controls = title:c_roma
+#         has_character_flag = gates_of_janus_open
+#         is_at_peace = yes
+#         every_vassal_or_below = {
+#             is_at_peace = yes
+#         }
+#     }
+#
+#     is_valid = {
+#         piety_level >= 4 # Religious Icon
+#     }
+#
+#     is_valid_showing_failures_only = {
+#         is_capable_adult = yes
+#         is_imprisoned = no
+#         is_independent_ruler = yes
+#     }
+#
+#     cost = {
+#         piety = 500
+#         prestige = 1000
+#     }
+#
+#     effect = {
+#         remove_character_flag = gates_of_janus_open
+#         add_character_modifier = {
+#             modifier = bringer_of_peace_modifier
+#             years = 9999 # Effectively permanent
+#         }
+#         capital_county = {
+#             add_county_modifier = {
+#                 modifier = pax_romana_modifier
+#                 years = 9999 # Effectively permanent
+#             }
+#         }
+#         add_prestige = 2000
+#         add_piety = 2000
+#         trigger_event = roman_religious.002
+#     }
+#
+#     ai_potential = {
+#         always = no # AI should not take this decision for now
+#     }
+#
+#     ai_will_do = {
+#         base = 0
+#     }
+# }

@@ -1,4 +1,4 @@
-######################################################
+﻿######################################################
 ################### FAITH WINDOW #####################
 ######################################################
 
@@ -274,7 +274,6 @@ window = {
 			#Polytheism Reborn Cults
 			button_tab = {
 				shortcut = "tab_3"
-				#layoutpolicy_horizontal = expanding
 				visible = "[Faith.GetReligion.HasPaganRoots]"
 				onclick = "[GetVariableSystem.Set( 'faith_view_tabs', 'cults' )]"
 				onclick = "[GetScriptedGui('get_cultists_list_mithraism').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
@@ -286,7 +285,6 @@ window = {
 
 				using = tooltip_below
 			}
-
 		}
 
 		vbox = {
@@ -936,7 +934,249 @@ window = {
 				expand = {}
 			}
 		}
+		## Cults
+		scrollbox = {
+			margin_top = 10
 
+			name = "tab_cults"
+			text = "MITHRAS_CULT_EXPLANATION"
+			visible = "[GetVariableSystem.HasValue( 'faith_view_tabs', 'cults' )]"
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			#datacontext = "[GetIllustration( 'religion_holding' )]"
+
+			blockoverride "scrollbox_background" {}
+			blockoverride "scrollbox_background_fade" {}
+
+			state = {
+				name = _show
+				using = Animation_FadeIn_Quick
+			}
+
+			state = {
+				name = _hide
+				alpha = 0
+			}
+
+			background = {
+				alpha = 0.5
+				fittype = end
+				texture = "[Illustration.GetTexture( FaithWindow.GetFaith.MakeScope )]"
+
+				modify_texture = {
+					mirror = vertical
+					blend_mode = alphamultiply
+					texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+				}
+			}
+
+			blockoverride "scrollbox_content"
+			{
+				vbox = {
+
+					text_multi = {
+						#datacontext = "[FaithWindow.GetFaith]"
+						layoutpolicy_horizontal = expanding
+						size = { 0 45 }
+						text = FAITH_CULTS_EXPLANATION
+						default_format = "#weak"
+						margin = { 0 5 }
+						margin_bottom = 15
+						align = center
+						max_width = 560
+						autoresize = yes
+
+						state = {
+							name = "faith_view_refresh"
+							using = Animation_Refresh_FadeOut
+						}
+
+						state = {
+							using = Animation_Refresh_FadeIn
+						}
+					}
+					spacing = 10
+					margin_bottom = 30
+					margin_top = 5
+					layoutpolicy_horizontal = expanding
+				}
+				vbox = {
+					vbox = {
+						text_multi = {
+							#datacontext = "[FaithWindow.GetFaith]"
+							layoutpolicy_horizontal = expanding
+							size = { 0 45 }
+							text = CULTS_EXPLANATION
+							default_format = "#weak"
+							margin = { 0 5 }
+							margin_bottom = 15
+							align = center
+							max_width = 560
+							autoresize = yes
+							fontsize = 20
+							state = {
+								name = "faith_view_refresh"
+								using = Animation_Refresh_FadeOut
+							}
+
+							state = {
+								using = Animation_Refresh_FadeIn
+							}
+						}
+					}
+
+					spacing = 10
+					margin_bottom = 30
+					margin_top = 5
+					layoutpolicy_horizontal = expanding
+					#Datamodel to load all heads of the cults
+					datamodel = "[GetPlayer.MakeScope.GetList('pr_head_of_cult_list')]"
+
+					item = {
+
+						vbox = {
+							layoutpolicy_horizontal = expanding
+							background = {
+								using = Background_Area
+							}
+
+							hbox = {
+								datacontext = "[Scope.GetCharacter]"
+								portrait_head_small = {}
+								layoutpolicy_horizontal = expanding
+								layoutpolicy_vertical = expanding
+								#margin_bottom = 8
+								margin_top = 0
+								vbox = {
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									text_multi = {
+										layoutpolicy_horizontal = expanding
+										fontsize = 18
+										text = "HEAD_OF_CULT"
+									}
+								}
+							}
+						}
+					}
+				}
+				hbox = {
+					margin_bottom = 10
+					margin_top = 8
+					layoutpolicy_horizontal = expanding
+					button_standard = {
+						name = "RestoreCult"
+						minimumsize = { 240 0 }
+						#visible = "[NotEqualTo_uint32( Faith.GetID, GetPlayer.GetFaith.GetID )]"
+						text = "RESTORE_CULT"
+						onclick = "[GetScriptedGui('restore_cult').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
+						#using = tooltip_nw
+					}
+					button_standard = {
+						visible = "[DataModelHasItems(GetPlayer.MakeScope.GetList('pr_head_of_cult_list'))]"
+						name = "GoToMeeting"
+						minimumsize = { 240 0 }
+						#visible = "[NotEqualTo_uint32( Faith.GetID, GetPlayer.GetFaith.GetID )]"
+						text = "CULT_MEETING"
+						onclick = "[GetScriptedGui('cult_meeting').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
+						#using = tooltip_nw
+					}
+
+				}
+				hbox = {
+					margin_bottom = 60
+					margin_top = 8
+					layoutpolicy_horizontal = expanding
+					#visible = "[Not(DataModelHasItems(GetPlayer.MakeScope.GetList('pr_head_of_cult_list')))]"
+					#margin_left = -60
+
+					button_standard = {
+						name = "JoinCult"
+						minimumsize = { 240 0 }
+						visible = "[GetGlobalVariable('can_join_cult').IsSet]"
+						#visible = "[NotEqualTo_uint32( Faith.GetID, GetPlayer.GetFaith.GetID )]"
+						text = "JOIN_CULT"
+						onclick = "[GetScriptedGui('show_cults_to_join').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
+						#using = tooltip_nw
+					}
+					button_standard = {
+						visible = "[DataModelHasItems(GetPlayer.MakeScope.GetList('pr_head_of_cult_list'))]"
+						name = "ShowMembers"
+						minimumsize = { 240 0 }
+						#visible = "[NotEqualTo_uint32( Faith.GetID, GetPlayer.GetFaith.GetID )]"
+						text = "SHOW_CULT_MEMBERS"
+						datacontext = "[Scope.GetCharacter]"
+						onclick = "[ExecuteConsoleCommand( Select_CString( GetVariableSystem.Exists('pr_custom_window_open'), 'gui.ClearWidgets pr_custom_window', 'gui.createwidget gui/custom_windows/pr_cult_window.gui pr_custom_window' ) )]"
+						onclick = "[GetScriptedGui('get_cultists_list').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
+						onclick = "[GetVariableSystem.Toggle('pr_custom_window_open')]"
+						#using = tooltip_nw
+					}
+					# button_standard = {
+					# 	visible = "[DataModelHasItems(GetPlayer.MakeScope.GetList('pr_head_of_cult_list'))]"
+					# 	name = "LeaveCult"
+
+					# 	minimumsize = { 240 0 }
+					# 	#visible = "[NotEqualTo_uint32( Faith.GetID, GetPlayer.GetFaith.GetID )]"
+					# 	#This should have severe consequences, cult uprising or murder plot
+					# 	#Still up to debate if it's doable and if there even should be an option to leave the cult
+					# 	text = "LEAVE_A_CULT"
+					# 	onclick = "[GetScriptedGui('leave_the_cult').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
+					# 	#using = tooltip_nw
+					# }
+
+				}
+				vbox = {
+					spacing = 10
+					margin_bottom = 30
+					margin_top = 5
+					layoutpolicy_horizontal = expanding
+					#Datamodel to load all head of Druids and Vesta
+					datamodel = "[GetPlayer.MakeScope.GetList('pr_vesta_druid_head_list')]"
+
+					item = {
+
+						vbox = {
+							layoutpolicy_horizontal = expanding
+							background = {
+								using = Background_Area
+							}
+
+							hbox = {
+								datacontext = "[Scope.GetCharacter]"
+								portrait_head_small = {}
+								layoutpolicy_horizontal = expanding
+								layoutpolicy_vertical = expanding
+								#margin_bottom = 8
+								margin_top = 0
+								vbox = {
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									text_multi = {
+										layoutpolicy_horizontal = expanding
+										fontsize = 18
+										text = "HEAD_OF_VESTA_DRUID"
+									}
+								}
+							}
+						}
+					}
+				}
+				hbox = {
+					visible = "[DataModelHasItems(GetPlayer.MakeScope.GetList('pr_vesta_druid_head_list'))]"
+					margin_bottom = 10
+					margin_top = 8
+					layoutpolicy_horizontal = expanding
+					button_standard = {
+						name = "GoToMeeting"
+						minimumsize = { 240 0 }
+						#visible = "[NotEqualTo_uint32( Faith.GetID, GetPlayer.GetFaith.GetID )]"
+						text = "VISIT_VESTA_DRUIDIC"
+						onclick = "[GetScriptedGui('vesta_druidic_visit').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
+						#using = tooltip_nw
+					}
+				}
+			}
+		}
 		## HOLY SITES
 		scrollbox = {
 			name = "tab_holy_sites"

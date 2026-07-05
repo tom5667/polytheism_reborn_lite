@@ -195,3 +195,12 @@ celtic.024.t:0 "The Fading Verse"
 celtic.024.desc:0 "My court druid, [court_druid.GetFirstName], has requested an audience, a look of deep concern on [court_druid.GetHerHis] face. 'My lord,' [court_druid.GetSheHe] begins, 'our knowledge is a library carried in memory. The genealogies of kings, the laws of the land, the cycles of the stars, and the stories of the gods... all are held in verse, passed from teacher to student. But we are few, and memories can fail.'\n\n'I fear that if we do not act, this great ocean of knowledge will evaporate. I ask for your patronage to establish a school, a place where I can dedicate myself to training a new generation. It is a process that takes twenty years for a single student, but it is the only way to ensure our past is not forgotten.'"
 celtic.024.a:0 "An excellent idea. You have my support."
 celtic.024.b:0 "We have more pressing concerns."
+
+celtic.025.t:0 "The Assembly at Tara"
+celtic.025.desc:0 "The title of High King of Ireland, the Ardrí, is not one of inheritance, but of acclaim and strength. With the loyalty of the clans wavering, the great rulers of Éire have gathered at the sacred Hill of Tara to choose who among them is worthy to lead.\n\nI have made my ambitions clear, and my name is spoken with both respect and fear. Now is the time to formally declare my claim before the assembly. The other chieftains will be forced to acknowledge my supremacy, or challenge it."
+celtic.025.a:0 "It is my destiny to rule as High King."
+
+celtic.026.t:0 "The High King's Demand"
+celtic.026.desc:0 "[new_high_king.GetTitledFirstName] has been proclaimed the new Ardrí, the High King of all Ireland. From the peak of the Hill of Tara, [new_high_king.GetSheHe] now demands that all other rulers of the isle acknowledge [new_high_king.GetHerHis] authority.\n\nA messenger bearing the High King's standard has arrived in my court. The message is simple: I am to become a tributary, contributing to the High King's wealth and power, or I will be made an example of. My warriors look to me, their hands resting on the hilts of their swords, awaiting my command."
+celtic.026.a:0 "I will bend the knee. It is wiser to pay tribute than to spill blood."
+celtic.026.b:0 "I answer to no king but myself! To war!"

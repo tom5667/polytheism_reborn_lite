@@ -1,0 +1,5 @@
+pax_romana_modifier = {
+    icon = "gfx/interface/icons/character_modifiers/modifier_positive.dds"
+    control_growth_factor = 0.20
+    development_growth_factor = 0.15
+}

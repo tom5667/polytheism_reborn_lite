@@ -2106,3 +2106,70 @@ send_son_to_druids_decision = {
 		base = 80
 	}
 }
+
+claim_irish_high_kingdom_decision = {
+	desc = claim_irish_high_kingdom_decision_desc
+	decision_group_type = polytheism
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/pr_elect_high_king_decision.dds"
+	}
+	is_shown = {
+		is_independent_ruler = yes
+		AND = {
+			OR = {
+				culture = culture:irish
+				culture = culture:old_irish
+			}
+		}
+	}
+	is_valid = {
+		prestige_level >= medium_prestige_level
+		is_tributary = no
+		OR = {
+			has_title = title:k_brega
+			has_title = title:k_connacht
+			has_title = title:k_munster
+			has_title = title:k_meath
+			has_title = title:k_oriel
+			has_title = title:k_ailech
+			# has_title = title:d_munster
+			# has_title = title:d_connacht
+			# has_title = title:d_meath
+			# has_title = title:d_ulster
+			# has_title = title:c_dublin
+			# has_title = title:c_connacht
+			# has_title = title:c_breifne
+			# has_title = title:c_thomond
+			# has_title = title:c_desmond
+		}
+		AND = {
+			OR = {
+				culture = culture:irish
+				culture = culture:old_irish
+			}
+		}
+		NOR = {
+			has_title = title:k_high_kingdom_of_ireland
+		}
+	}
+	cooldown = { years = 20 }
+
+	cost = { prestige = 500 }
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+		is_available_adult = yes
+		is_at_war = no
+	}
+	effect = {
+		trigger_event = {
+			id = celtic.025
+		}
+	}
+	ai_potential = {
+		always = yes
+	}
+	ai_check_interval = 90
+	ai_will_do = {
+		base = 100
+	}
+}

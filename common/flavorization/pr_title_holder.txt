@@ -1,0 +1,54 @@
+﻿# #Visigothic
+# pr_visigothic_empire = {
+# 	type = title
+# 	tier = empire
+# 	priority = 147
+# 	titles = { e_spain }
+# 	name_lists = { name_list_visigothic }
+# }
+
+high_king_male_k_high_kingdom_of_ireland_irish = { # High King
+    type = character
+    gender = male
+    special = holder
+    priority = 47
+    name_lists = { name_list_irish }
+    governments = { tribal_government clan_government feudal_government administrative_government }
+    titles = { k_high_kingdom_of_ireland  }
+    flavourization_rules = {
+        only_independent = yes
+    }
+}
+high_queen_female_k_high_kingdom_of_ireland = {
+    type = character
+    gender = female
+    special = holder
+    priority = 49
+    titles = { k_high_kingdom_of_ireland  }
+    name_lists = { name_list_irish }
+    governments = { tribal_government clan_government feudal_government administrative_government }
+
+}
+
+pr_high_prince_k_high_kingdom_of_ireland = {
+    type = character
+    gender = male
+    special = ruler_child
+    top_liege = no
+    priority = 60
+    titles = { k_high_kingdom_of_ireland }
+    governments = { feudal_government clan_government tribal_government }
+    #faiths = { gaelic_polytheism }
+    name_lists = { name_list_irish }
+}
+
+pr_high_princess_k_high_kingdom_of_ireland = {
+    type = character
+    gender = female
+    special = ruler_child
+    priority = 60
+   titles = { k_high_kingdom_of_ireland }
+    governments = { feudal_government clan_government tribal_government }
+    name_lists = { name_list_irish }
+    top_liege = no
+}

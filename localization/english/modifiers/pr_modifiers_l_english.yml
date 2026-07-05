@@ -727,3 +727,9 @@ rejected_druidic_judgment_opinion:0 "Rejected druidic judgment"
 impressed_by_fair_judgment_opinion:0 "Impressed by fair judgment"
 generic_opinion_negative:0 "Hmm maybe not that good"
 supported_druidic_school_opinion:0 "Supported druidic school"
+
+wars_threshold_modifier:0 "War's Threshold"
+wars_threshold_modifier_desc:0 "This character has opened the Gates of Janus, signaling a time of war and earning the favor of the gods of battle."
+
+bringer_of_peace_modifier:0 "Bringer of Peace"
+bringer_of_peace_modifier_desc:0 "This character has closed the Gates of Janus, ushering in an era of peace and prosperity for the entire realm."

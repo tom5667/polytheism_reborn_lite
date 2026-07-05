@@ -30,6 +30,7 @@ return_culture_short_decision_confirm:1 "Choose new culture"
 #Close temple of Vesta 
 close_temple_of_vesta_decision:0 "Close down the temple of Vesta"
 close_temple_of_vesta_decision_desc:0 "Those pagans have no need for a heathen temple."
+close_temple_of_vesta_decision_decision_tooltip:0 "Close the temple of Vesta"
 close_temple_of_vesta_decision_confirm:1 "Close down the temple"
 
 #Gaelic Settlers 

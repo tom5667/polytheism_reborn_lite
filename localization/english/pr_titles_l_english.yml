@@ -127,7 +127,37 @@ k_noricum:0 "Noricum"
 
 
 d_laamp_pr_agiadai_867:0 "Agiadai"
+cn_dubhlinn:0 "Baile Átha Cliath"
+
 
 #Coa Category 
 COA_DESIGNER_CATEGORY_polytheism_reborn:0 "Polytheism Reborn"
 
+#700CE
+ #England
+ k_mercia:0 "Mercia"
+ k_westsaxons:0 "Wessex"
+ k_east_anglia:0 "East Anglia"
+ k_northumbria:0 "Northumbria"
+ k_eastsaxons:0 "East Seaxe"
+ k_southsaxons:0 "South Seaxe"
+ k_kent:0 "Kent"
+ k_hwicce:0 "Hwicce"
+ k_dumnonia:0 "Dumnonia"
+ #Ireland
+ k_connacht:0 "Connacht"
+ k_munster:0 "Munster"
+ k_leinster:0 "Leinster"
+ k_ulaid:0 "Ulaid"
+ k_ulster:0 "Ulster"
+ k_oriel:0 "Oriel"
+ k_meath:0 "Meath"
+ k_dalriada:0 "Dalriada"
+ k_ailech:0 "Ailech"
+ k_brega:0 "Brega"
+ k_turkic_khaganate:0 "Turkic"
+ k_turgesh_khaganate:0 "Türgesh"
+ k_turkic_khaganate:0 "Turkic"
+ k_german_confederation:0 "German Confederation"
+ k_german_confederation_adj:0 "$k_german_confederation$"
+ k_beja:0 "Beja"

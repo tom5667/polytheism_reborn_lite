@@ -199,3 +199,18 @@ send_son_to_druids_decision:0 "Send Son To Druids"
 send_son_to_druids_decision_desc:0 "The druids are the learned class of the [ROOT.Char.GetFaith.GetAdjective] religion, by sending my son to them he will learn much and become wiser, maybe even become a druid himself"
 send_son_to_druids_decision_tooltip:0 "Send son to druids"
 send_son_to_druids_decision_confirm:0 "Confirm"
+
+ claim_irish_high_kingdom_decision:0 "Claim the Ard-Rí na hÉireann"
+ claim_irish_high_kingdom_decision_desc:0 "The time of petty kings and fractured loyalties must end. It is time for one ruler to rise above the rest and claim the ancient mantle of the Ard-Rí na hÉireann, the High King of Ireland. Through strength and prestige, I will force the other Irish rulers to acknowledge my supremacy or face the consequences."
+ claim_irish_high_kingdom_decision_tooltip:0 "You will attempt to claim the High Kingship of Ireland, demanding submission from other independent Irish rulers."
+ claim_irish_high_kingdom_decision_confirm:0 "Call the Assembly at Tara"
+
+ open_gates_of_janus_decision:0 "Open the Gates of Janus"
+ open_gates_of_janus_decision_desc:0 "The Temple of Janus Geminus stands as a potent symbol of our empire's state. In times of peace, its doors are closed, a sign of prosperity and stability. But when the trumpets of war sound, we must throw them open, calling upon Janus to march with our legions and grant us victory."
+ open_gates_of_janus_decision_tooltip:0 "Opening the Gates of Janus will signal to the entire realm that we are in a state of war, granting our armies the favor of the gods."
+ open_gates_of_janus_decision_confirm:0 "Unbar the Gates"
+
+ wars_threshold_modifier:0 "War's Threshold"
+ roman.001.t:0 "The Gates of Janus are Open"
+ roman.001.desc:0 "By my decree, the heavy bronze doors of the Temple of Janus have been swung open. The air itself seems to crackle with newfound energy as the god of war is released to walk among our soldiers.\n\nLet our enemies tremble, for Janus is with us. The legions march under the watchful eyes of the gods, and victory will be ours."
+ roman.001.a:0 "For Rome and for Victory!"

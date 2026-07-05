@@ -1914,7 +1914,7 @@ celtic.015 = {
 				target = flag:flag_reconquest_ireland
 			}
 			NOT = {
-				has_title = title:k_high_kingdom_of_ireland
+				has_title = title:k_ireland
 			}
 		}
 		name = celtic.015.a
@@ -1943,18 +1943,18 @@ celtic.015 = {
 				save_scope_as = title_change
 				add_claim_on_loss = yes
 			}
-			title:k_high_kingdom_of_ireland ={
+			title:k_ireland ={
 				change_title_holder ={
 					holder = root
 					change = scope:title_change
 				}
 			}
 			resolve_title_and_vassal_change = scope:title_change
-			title:d_ulster = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }
-			title:d_meath = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }
-			title:d_connacht = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }	 
-			title:d_leinster = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }
-			title:d_munster = { set_de_jure_liege_title = title:k_high_kingdom_of_ireland }
+			title:d_ulster = { set_de_jure_liege_title = title:k_ireland }
+			title:d_meath = { set_de_jure_liege_title = title:k_ireland }
+			title:d_connacht = { set_de_jure_liege_title = title:k_ireland }
+			title:d_leinster = { set_de_jure_liege_title = title:k_ireland }
+			title:d_munster = { set_de_jure_liege_title = title:k_ireland }
 			hidden_effect = {
 			title:k_high_kingdom_of_ireland = { set_de_jure_liege_title = title:e_celtic_empire }
 			hidden_effect = {
@@ -2760,5 +2760,163 @@ celtic.024 = {
 				target = root
 			}
 		}
+	}
+}
+scripted_effect declare_high_king_discussion_effect = {
+	every_ruler = {
+		limit = {
+			AND = {
+				is_independent_ruler = yes
+				is_mercenary_company = no
+				is_landless_adventurer = no
+				Not = {this = root}
+				NOT = { is_allied_to = root }
+				capital_province = {
+					geographical_region = world_europe_west_britannia
+				}
+				has_culture = culture:irish
+			}
+
+		}
+		root = {save_scope_as = new_high_king}
+		trigger_event = celtic.026
+
+	}
+}
+
+#High kindom election
+celtic.025 = {
+	type = character_event
+	title = celtic.025.t
+	desc = celtic.025.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_hill_of_tara }
+	immediate = {
+		hidden_effect = {
+			destroy_title = title:k_high_kingdom_of_ireland
+		}
+
+	}
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = celtic.025.a
+		declare_high_king_discussion_effect = yes
+
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = yes
+
+		}
+		title:k_high_kingdom_of_ireland = {
+			change_title_holder ={
+				holder = root
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+	}
+
+}
+
+
+
+celtic.026 = {
+	type = character_event
+	title = celtic.026.t
+	desc = celtic.026.desc
+	theme = learning_scholarship
+	override_background = { reference = throne_room }
+	immediate = {
+		root = { save_scope_as = ruler }
+	}
+	right_portrait = {
+		character = scope:new_high_king
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:ruler
+		animation = personality_rational
+	}
+
+	option = {
+		name = celtic.026.a
+		trigger = {
+			is_ai = no
+		}
+		start_tributary_interaction_effect = {
+			TRIBUTARY =  scope:ruler
+			SUZERAIN = scope:new_high_king
+		}
+	}
+	option = {
+		name = celtic.026.b
+		trigger = {
+			is_ai = no
+		}
+		scope:new_high_king = {
+			add_character_flag = new_high_king_tributary_war
+			start_war = {
+				cb = make_tributary_cb
+				target = scope:ruler
+				claimant = scope:new_high_kingi
+			}
+		}
+	}
+	option = {
+		name = celtic.026.c
+		trigger = {
+			is_ai = yes
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 40
+				has_trait = craven
+			}
+			compare_modifier = {
+				value = diplomacy
+				offset = scope:ruler.diplomacy
+				multiplier = 2.5
+			}
+		}
+		start_tributary_interaction_effect = {
+			TRIBUTARY =  scope:ruler
+			SUZERAIN = scope:new_high_king
+		}
+	}
+	option = {
+		name = celtic.026.d
+		trigger = {
+			is_ai = yes
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 20
+				has_trait = brave
+			}
+			modifier = {
+				add = 10
+				has_trait = vengeful
+			}
+			modifier = {
+				add = 30
+				has_trait = arogant
+			}
+		}
+		scope:new_high_king = {
+			add_character_flag = new_high_king_tributary_war
+			start_war = {
+				cb = make_tributary_cb
+				target = scope:ruler
+				claimant = scope:new_high_king
+			}
+		}
+
 	}
 }

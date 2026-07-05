@@ -1,0 +1,320 @@
+﻿@correct_culture_primary_score = 100
+@better_than_the_alternatives_score = 50
+@always_primary_score = 1000
+
+#Cultus deorum duchy title
+
+
+# d_laamp_pr_agiadai_867 = {
+# 	color = { 220 41 17 }
+# 	capital = c_laconia
+
+# 	definite_form = yes
+# 	landless = yes
+# 	ruler_uses_title_name = no
+# 	no_automatic_claims = yes
+# 	destroy_if_invalid_heir = yes
+
+# 	ai_primary_priority = { add = @never_primary_score }
+# }
+
+# e_high_kingdom_of_ireland = {
+# 	color = {22 92 29 }
+# 	color2 = { 255 255 255 }
+# 	definite_form = yes
+# 	ruler_uses_title_name = yes
+# 	landless = no
+# 	can_be_named_after_dynasty = no
+# 	capital = c_dublin
+#
+# 	cultural_names = {
+# 		name_list_irish = pr_high_kingdom_of_ireland
+# 	}
+# 	can_create = {
+# 		#faith = faith:gaelic_polytheism
+# 	}
+# 	ai_primary_priority = {
+# 		if = {
+# 			limit = {
+# 				AND = {
+# 					culture = culture:irish
+# 					OR = {
+# 						faith = { has_doctrine_parameter = special_doctrine_gaelic_patron_god_active }
+# 						faith = faith:gaelic_polytheism
+# 					}
+# 				}
+# 			}
+# 			add = @correct_culture_primary_score
+# 		}
+# 	}
+# }
+#Ireland
+k_connacht = {#Connacht
+	color = { 139 237 78 }
+	capital = c_connacht
+}
+k_brega = {
+	color = { 6 127 2 }
+	capital = c_dublin
+}
+
+k_munster = { #Mumha
+	color = {9 102 243}
+	capital = c_thomond
+}
+k_meath = { # Midde or southern neill
+	color = {0 194 20 }
+	capital = c_dublin
+}
+k_leinster = { # Laigin
+	color = {228 29 21}
+	capital = c_leinster
+}
+
+k_oriel = { #Airgialla, Northern Neill
+	color = {245 192 18}
+	capital = c_oriel
+}
+k_ulaid = {
+	color = {245 206 7 }
+	capital = c_ulster
+	
+}
+k_ailech = {
+	color = {232 145 32}
+	capital = c_ailech
+
+}
+k_dalriada = { 
+	color = { 225 120 30 }
+	capital = c_inner_hebrides
+}
+
+
+
+#England 
+k_mercia = {
+	color = { 43 139 235 }
+	capital = c_warwickshire
+	can_create_on_partition = { always = no }
+}
+
+k_northumbria = {
+	color = { 235 162 17 }
+	capital = c_northumberland
+	#can_create_on_partition = { always = no }
+}
+#44 191 230
+k_east_anglia = { 
+	color = { 244 46 29  }
+	capital = c_norfolk
+	can_create_on_partition = { always = no }
+}#
+
+k_wessex = {
+	color = { 229 58 33 }
+	capital = c_hampton
+	#can_create_on_partition = { always = no }
+}
+
+k_eastsaxons = {
+	color = { 250 1 1 }
+	capital = c_essex 
+	#can_create_on_partition = { always = no }
+}
+
+k_westsaxons = {
+	color = { 232 39 12}
+	capital = c_hampton
+	#can_create_on_partition = { always = no }
+}
+
+k_southsaxons = {
+	color = { 234 81 71 }
+	capital = c_sussex
+	#can_create_on_partition = { always = no }
+}
+
+k_kent = {
+	color = { 234 49 42 }
+	capital = c_kent
+	#can_create_on_partition = { always = no }
+}
+
+k_hwicce = {
+	color = { 235 183 84 }
+	capital = c_gloucestershire
+	#can_create_on_partition = { always = no }
+}
+
+k_dumnonia = {
+	color = { 181 60 10 } 
+	capital = c_devon
+	#can_create_on_partition = { always = no }
+} 
+#South of egypt
+k_beja = {
+	color = {240 194 156}
+	capital = c_kassala
+}
+
+k_tarraconensis = {
+	color = { 210 180 140 } # Sandy color
+    definite_form = yes
+    ruler_uses_title_name = no
+    landless = no
+    capital = c_tarragona
+
+    # cultural_names = {
+    #     name_list_celtic_iberian = pr_celtiberian_tarraconensis
+    #     name_list_roman = pr_roman_tarraconensis
+    # }
+
+    can_create = {
+        OR = {
+            religion = religion:roman_religion
+            religion = religion:hellenism_religion
+			culture = culture:visigothic
+        }
+    }
+
+    ai_primary_priority = {
+        if = {
+            limit = {
+                OR = {
+					religion = religion:roman_religion
+					religion = religion:hellenism_religion
+					culture = culture:visigothic
+                }
+            }
+            add = @correct_culture_primary_score
+        }
+    }
+}
+
+k_carthaginensis = {
+	color = { 244 164 96 } # Sandy brown color
+    definite_form = yes
+    ruler_uses_title_name = no
+    landless = no
+    capital = c_cartagena
+
+    # cultural_names = {
+    #     name_list_celtic_iberian = pr_celtiberian_carthaginensis
+    #     name_list_roman = pr_roman_carthaginensis
+    # }
+
+    can_create = {
+        OR = {
+            religion = religion:roman_religion
+            religion = religion:hellenism_religion
+			culture = culture:visigothic
+        }
+    }
+
+    ai_primary_priority = {
+        if = {
+            limit = {
+                OR = {
+					religion = religion:roman_religion
+					religion = religion:hellenism_religion
+					culture = culture:visigothic
+                }
+            }
+            add = @correct_culture_primary_score
+        }
+    }
+}
+
+#Spain 
+# k_visigothic = {
+# 	color = { 255 163 78 }
+# 	capital = c_toledo
+# 	can_create_on_partition = { always = no }
+# }
+
+# k_lombardy = {
+# 	 color = { 244 227 160 }
+# 	 capital = c_lombardia 
+# 	 de_jure_drift_disabled = yes
+# 	 #can_create_on_partition = { always = no }
+# }
+
+
+
+k_german_confederation = {
+	color = { 198 208 227 } 
+	definite_form = yes
+    ruler_uses_title_name = no
+    landless = no
+	capital = c_paderborn 
+
+	can_creatt = {
+		OR = {
+			faith = faith:german_polytheism
+			faith = faith:anglo_saxon_polytheism
+		}
+
+	}
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					faith = faith:german_polytheism
+					faith = faith:anglo_saxon_polytheism
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}
+k_noricum = { #Magdalensberg, capital Noreia in game klagenfurt
+	color = { 255 249 198 }
+	definite_form = yes 
+	capital = c_karnten 
+	ruler_uses_title_name = no
+	landless = no
+
+	can_create = {
+		OR = {
+			religion = religion:roman_religion
+			religion = religion:celtic_religion
+		}
+	}
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					religion = religion:roman_religion
+					religion = religion:celtic_religion
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}
+
+
+k_turkic_khaganate = {
+	color = { 1 68 33}
+	capital = c_karabalgasun
+
+	definite_form = yes
+	ruler_uses_title_name = no
+	can_use_nomadic_naming = no
+
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+k_turgesh_khaganate = {
+	color = { 232 208 151 }
+	capital = c_taraz
+
+	definite_form = yes
+	ruler_uses_title_name = no
+	can_use_nomadic_naming = no
+
+
+
+	ai_primary_priority = { add = @never_primary_score }
+}
