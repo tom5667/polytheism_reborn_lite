@@ -2767,7 +2767,8 @@ scripted_effect declare_high_king_discussion_effect = {
 		limit = {
 			AND = {
 				is_independent_ruler = yes
-				is_mercenary_company = no
+				#is_mercenary_company = no
+				primary_title ?= { is_mercenary_company = no }
 				is_landless_adventurer = no
 				Not = {this = root}
 				NOT = { is_allied_to = root }

@@ -733,3 +733,13 @@ wars_threshold_modifier_desc:0 "This character has opened the Gates of Janus, si
 
 bringer_of_peace_modifier:0 "Bringer of Peace"
 bringer_of_peace_modifier_desc:0 "This character has closed the Gates of Janus, ushering in an era of peace and prosperity for the entire realm."
+
+
+pr_ordeal_success_modifier:0 "Blessed by Ahura Mazda"
+pr_ordeal_success_modifier_desc:0 "Your trial by fire has proven your devotion. Your piety grows, and your soldiers fight with renewed conviction."
+
+pr_ordeal_failure_modifier:0 "Marked as Unworthy"
+pr_ordeal_failure_modifier_desc:0 "You failed the trial by fire. Your standing among your people has suffered, and your devotion falters."
+
+pr_impure_trait:0 "Impure"
+pr_impure_trait_desc:0 "This person failed a sacred trial and is considered spiritually unclean."
