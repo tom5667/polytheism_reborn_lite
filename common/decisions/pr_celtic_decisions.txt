@@ -2165,11 +2165,17 @@ claim_irish_high_kingdom_decision = {
 			id = celtic.025
 		}
 	}
-	ai_potential = {
-		always = yes
+	# ai_potential = {
+	# 	always = yes
+	#}
+    ai_potential = {
+		always = no
 	}
-	ai_check_interval = 90
+	# ai_check_interval = 90
+	# ai_will_do = {
+	# 	base = 100
+	# }
 	ai_will_do = {
-		base = 100
+		base = 0
 	}
 }

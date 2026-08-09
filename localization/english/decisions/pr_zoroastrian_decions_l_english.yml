@@ -35,10 +35,4 @@ send_envoy_to_dabuyids_decision_desc:0 "The Dabuyids, alongside the Afrighids, a
 send_envoy_to_dabuyids_decision_tooltip:0 "Send Envoy to Dabuyids"
 send_envoy_to_dabuyids_decision_confirm:1 "Send Envoy"
 
-pr_ordeal_of_ahura_mazda_decision:0 "Undergo the Ordeal of Fire"
-pr_ordeal_of_ahura_mazda_decision_desc:0 "You may walk through the sacred fire of Ahura Mazda to prove your righteousness. If your soul is pure, the Wise Lord will grant you His favor. If you are unworthy, you will be marked as impure before your people."
-pr_ordeal_of_ahura_mazda_tt:0 "You will attempt a ritual trial. On success you gain a temporary blessing; on failure you will suffer a temporary punishment and be marked as [pr_impure_trait|E]."
-
-pr_ordeal_outcome_success_desc:0 "The flames part before you - Ahura Mazda has judged you worthy."
-pr_ordeal_outcome_failure_desc:0 "The fire burns you where you stand - your unworthiness is plain for all to see."
 

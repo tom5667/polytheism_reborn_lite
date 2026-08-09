@@ -301,90 +301,70 @@ pr_reintroduce_old_persian_names = {
 	}
 }
 
-pr_ordeal_of_ahura_mazda_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_zoroastrian_fire.dds"
-	major = yes
-
-	is_shown = {
-		is_ruler = yes
-		religion = religion:zoro
-	}
-
-	is_valid = {
-		is_available_ordeal_of_ahura_mazda_trigger = yes
-		NOT = { has_character_modifier = pr_ordeal_cooldown_modifier }
-	}
-
-	is_valid_showing_failures_only = {
-		is_adult = yes
-		is_incapable = no
-	}
-
-	cost = {
-		piety = 200
-	}
-
-	ai_check_interval = 60
-
-	ai_will_do = {
-		base = 20
-		modifier = { factor = 2   has_trait = zealous }
-		modifier = { factor = 1.5 piety_level >= 2 }
-		modifier = { factor = 0.3 has_trait = craven }
-	}
-
-	effect = {
-		random_list = {
-			50 = { # --- SUCCES ---
-				modifier = { add = 15  has_trait = zealous }
-				modifier = { add = 10  piety_level >= 2 }
-				modifier = { add = 5   piety_level = 1 }
-				modifier = { add = 10  learning >= 12 }
-				modifier = { add = 5   learning >= 8 }
-				modifier = { add = -10 has_trait = cynical }
-				modifier = { add = -15 has_trait = craven }
-
-				desc = pr_ordeal_outcome_success_desc
-
-				add_piety_level = 1
-				add_character_modifier = {
-					modifier = pr_ordeal_success_modifier
-					years = 1
-				}
-				add_character_modifier = {
-					modifier = pr_ordeal_cooldown_modifier
-					years = 5
-				}
-			}
-			50 = { # --- FALEN ---
-				modifier = { add = -15 has_trait = zealous }
-				modifier = { add = -10 piety_level >= 2 }
-				modifier = { add = -5  piety_level = 1 }
-				modifier = { add = -10 learning >= 12 }
-				modifier = { add = -5  learning >= 8 }
-				modifier = { add = 10  has_trait = cynical }
-				modifier = { add = 15  has_trait = craven }
-
-				desc = pr_ordeal_outcome_failure_desc
-
-				add_character_modifier = {
-					modifier = pr_ordeal_failure_modifier
-					years = 1
-				}
-				add_character_modifier = {
-					modifier = pr_ordeal_cooldown_modifier
-					years = 5
-				}
-				add_trait = pr_impure_trait
-				# Trait wordt automatisch na 1 jaar verwijderd via de
-				# on_action hieronder (pr_impure_trait_removal_pulse).
-			}
-		}
-	}
-
-	custom_tooltip = pr_ordeal_of_ahura_mazda_tt
-
-	ai_potential = {
-		is_landed = yes
-	}
-}
+# pr_ordeal_of_ahura_mazda_decision = {
+# 	picture = "gfx/interface/illustrations/decisions/decision_zoroastrian_fire.dds"
+# 	decision_group_type = polytheism
+# 	desc = pr_ordeal_of_ahura_mazda_decision_desc
+#
+# 	is_shown = {
+# 		religion = religion:zoroastrian_religion
+# 	}
+#
+# 	is_valid = {
+# 		piety >= 200
+# 	}
+#
+# 	is_valid_showing_failures_only = {
+# 		is_capable_adult = yes
+# 		is_imprisoned = no
+# 		is_at_war = no
+# 	}
+#
+# 	cost = {
+# 		piety = 200
+# 	}
+#
+# 	cooldown = { years = 5 }
+#
+# 	ai_check_interval = 60
+# 	ai_will_do = {
+# 		base = 20
+# 		modifier = { factor = 2 has_trait = zealous }
+# 		modifier = { factor = 1.5 piety_level >= 2 }
+# 		modifier = { factor = 0.3 has_trait = craven }
+# 	}
+#
+# 	effect = {
+# 		random_list = {
+# 			50 = {
+# 				modifier = { add = 15 has_trait = zealous }
+# 				modifier = { add = 10 piety_level >= 2 }
+# 				modifier = { add = 5 piety_level = 1 }
+# 				modifier = { add = 10 learning >= 12 }
+# 				modifier = { add = 5 learning >= 8 }
+# 				modifier = { add = -10 has_trait = cynical }
+# 				modifier = { add = -15 has_trait = craven }
+#
+# 				add_piety = 300
+# 				add_character_modifier = {
+# 					name = pr_ordeal_success_modifier
+# 					years = 1
+# 				}
+# 			}
+# 			50 = {
+# 				modifier = { add = -15 has_trait = zealous }
+# 				modifier = { add = -10 piety_level >= 2 }
+# 				modifier = { add = -5 piety_level = 1 }
+# 				modifier = { add = -10 learning >= 12 }
+# 				modifier = { add = -5 learning >= 8 }
+# 				modifier = { add = 10 has_trait = cynical }
+# 				modifier = { add = 15 has_trait = craven }
+#
+# 				add_character_modifier = {
+# 					name = pr_ordeal_failure_modifier
+# 					years = 1
+# 				}
+# 			}
+# 		}
+# 	}
+# }

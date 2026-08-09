@@ -1767,7 +1767,7 @@ close_gates_of_janus_decision = {
 		}
 		add_prestige = 2000
 		add_piety = 2000
-		trigger_event = roman_religious.002
+		trigger_event = cdr.043
 	}
 
 	ai_potential = {
