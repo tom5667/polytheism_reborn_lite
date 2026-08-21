@@ -382,15 +382,15 @@ name_list_middle_persian = {
 	}
 
 	male_names = {
-		Anōšagruwān Ârâm Ardavān Ardaxšīr Abrang Pābag Wahman Wahrām Baxtyar Behroz Wuzurg Daniš Dārā Dariush Jāmāsp Spandadāt Iskandar Framarz Frāz Farhad Farrahburz Farrox Farroxzādag
-		Farrahzādag Pērōzīh Pardēz Pālēz Frēdōn Gōdarz Guštāsp Hazār Ōšyār Ōhramazdē Hormozd Humāy Jamšēd Jāwēd Kâmbujiya Kamran Kāy_Us Kaykawad Kayhusrōy Xšayāršā Kawad Xwadāy Husrōy Xwadyâvar Kuruš
-		Manōčihr Marzobān Mādayār Mihrzādag Nēw Niwē Parwēz Hōšang Rōdstahm Šāhēn Šāhrām Šāhroxw Šāhrōz Šāpuhr Šābuhr Šāyān Tahmāsp Kirsāsp Wištāsp Yazdegerd zidahāg Zand Zarduxšt Abarwēz Dahāg
-		Azidahāg Eraš Frāsiyāb Kayōmart Nēzag Nēwardaxšīr Aršak Sarm Tahmōref Ērič Nōzar
+		Anōšagruwān Ārām Ardavān Ardaxšīr Abrang Pābag Wahman Wahrām Baxtyar Behroz Wuzurg Daniš Dārā Dariush Jāmāsp Spandadāt Iskandar Framarz Frāz Farhad Farrahburz Farrox Farroxzādag
+		Farrahzādag Pērōzīh Pardēz Pālēz Frēdōn Gōdarz Guštāsp Hazār Ōšyār Ōhramazdē Hormozd Hazārasp  Humāy Jamšēd Jāwēd Kâmbiz Kamrān Kāyūs Kaykawad Kāwād Kāyhusrōy  Kāykāwād Xwadād Husrōy Xwadyâvar Kuruš
+		Manōčihr Marzobān Mādayār Mihrzādag Nēw Niwē Hōšang Rōdstahm Šāhēn Šāhrām Šāhroxw Šāhrōz Šāpuhr Šābuhr Šāyān Tahmāsp Kirsāsp Wištāsp Yazdegerd zidahāg Zand Zardušt Abarwēz Dahāg
+		Azidahāg Ēraš Frāsiyāb Kayōmart Nēzag Nēwardaxšīr Aršak Sarm Šērš Tahmōref Ērič Nōzar
 	}
 	female_names = {
-		Afsānag Āhūg Argawān Āzarmīgduxt Āzād Wahār Wanafšag Weh Bōrān Drayāb Dilbart Elnaz Farrah Pērōzan Gulwahār Gulnāz
-		Gulparīg Gulšan Hamdam Ērānduxt ǰuwānag Māhduxt Māhtāp Parwānag Parwēz Partownihāl Bōrānduxt Rōšnârâ Rōšn Šahrzādag Šāhzādag
-		Šīrēn Tūrān Tūrānduxt Yāsaman Ēwaktāg Zarrenduxt Anāhīd Humag Hutaosā Rāmwahišt Senduxt Rōdag Dēnag Šahrbānūg Šāhēnduxt
+		Afsānag Āhūg Argawān Āzarmīgduxt Āzād Wahār Wanafšag Wehnāz Bōrānduxt Drayāb Dilbart Elnaz Farrah Pērōzan Gulwahār Gulnāz
+		Gulparīg Gulšan Hamdam Ērānduxt ǰuwānag Māhduxt Māhtāp Parwānag Parwēn Partownihāl Bōrānduxt Rōšnârâ Rōšn Šahrzādag Šāhzādag
+		Šīrēn Tūrān Tūrānduxt Yāsaman Ēwaktāg Zarrenduxt Anāhīd Humāy Hutaosā Rāmwahišt Senduxt Rōdag Dēnag Šahrbānūg Šāhēnduxt
 	}
 	
 	founder_named_dynasties = yes

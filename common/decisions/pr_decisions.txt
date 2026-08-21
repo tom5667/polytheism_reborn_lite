@@ -700,12 +700,6 @@ return_culture_short_decision = {
 			faith.religion = faith:slavic_pagan.religion
 			faith.religion = faith:baltic_pagan.religion
 			faith.religion = faith:cdr_polytheism.religion
-			# faith.religion = faith:eluesinian_mysteries.religion
-			# faith.religion = faith:mithraic_mysteries.religion
-			# faith.religion = faith:mysteries_of_isis.religion
-			# faith.religion = faith:cult_of_serapis.religion
-			# faith.religion = faith:sol_invictus_cult.religion
-			# faith.religion = faith:imperial_cult.religion
 			faith.religion = faith:gaelic_polytheism.religion
 			faith.religion = faith:brythonic_polytheism.religion
 			faith.religion = faith:gaulish_polytheism.religion
@@ -723,10 +717,6 @@ return_culture_short_decision = {
 			faith.religion = faith:sumerian_polytheism.religion
 			faith.religion = faith:hittite_polytheism.religion
 			faith.religion = faith:semitic_polytheism.religion
-			# faith.religion = faith:romano_british_polytheism.religion
-			# faith.religion = faith:gallo_roman_polytheism.religion
-			# faith.religion = faith:roman_illyrian_polytheism.religion
-			# faith.religion = faith:romano_germanic_polytheism.religion
 		}
 		highest_held_title_tier > 3 #Only Kings and Emperors
 		capital_province = { #Indians could not possibly care...

@@ -47,17 +47,14 @@ legionaries = {
 	provision_cost = @provisions_cost_infantry_cheap
 
 	can_recruit = {
-		OR = {
-			AND = {
-				culture = {
-					has_innovation = innovation_quilted_armor
-				}
-				culture ?= { has_cultural_pillar  = heritage_latin }
-				religion = religion:roman_religion
-				NOT = { is_landless_adventurer = yes }
-				religion = religion:roman_religion
+		AND = {
+			culture = {
+				has_innovation = innovation_quilted_armor
 			}
-			domicile ?= { has_domicile_parameter = camp_reinforce_elephant_regiments_anywhere }
+			culture ?= { has_cultural_pillar  = heritage_latin }
+			religion = religion:roman_religion
+			NOT = { is_landless_adventurer = yes }
+			religion = religion:roman_religion
 		}
 	}
 
@@ -134,14 +131,14 @@ equites = {
 	}
 
 	can_recruit = {
-		OR = {
-			AND = {
-				culture ?= { has_cultural_pillar  = heritage_latin }
-				religion = religion:roman_religion
-				NOT = { is_landless_adventurer = yes }
-				religion = religion:roman_religion
+		AND = {
+			culture = {
+				has_innovation = innovation_quilted_armor
 			}
-			domicile ?= { has_domicile_parameter = camp_reinforce_elephant_regiments_anywhere }
+			culture ?= { has_cultural_pillar  = heritage_latin }
+			religion = religion:roman_religion
+			NOT = { is_landless_adventurer = yes }
+			religion = religion:roman_religion
 		}
 	}
 	illustration = {
@@ -163,6 +160,9 @@ sagatarii = {
 	type = archers
 	can_recruit = {
 		AND = {
+			culture = {
+				has_innovation = innovation_quilted_armor
+			}
 			culture ?= { has_cultural_pillar  = heritage_latin }
 			religion = religion:roman_religion
 			NOT = { is_landless_adventurer = yes }
