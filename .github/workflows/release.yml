@@ -1,0 +1,162 @@
+name: Release
+
+# Automatically bumps the mod version and cuts a GitHub Release on every
+# push to main. Bump type (patch/minor/major) is derived from the commit
+# messages since the last tag:
+#   - a commit containing "BREAKING CHANGE:" -> major
+#   - a commit subject starting with "feat:"/"feature:" -> minor
+#   - otherwise -> patch (safe fallback, never blocks a release)
+#
+# The version-bump commit this workflow makes includes "[skip release]" in
+# its message, which the first step checks for, to avoid re-triggering
+# itself in an infinite loop.
+#
+# See AGENTS.md ("Release- en versiebeheer (Lite)") in the pr_dev repo for
+# the full policy this implements.
+
+"on":
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip release]')"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Determine previous version and commit range
+        id: prev
+        run: |
+          TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+          if [ -z "$TAG" ]; then
+            TAG="V2.3.1"
+            RANGE=""
+          else
+            RANGE="$TAG..HEAD"
+          fi
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "range=$RANGE" >> "$GITHUB_OUTPUT"
+
+      - name: Compute bump type and new version
+        id: version
+        env:
+          PREV_VERSION: ${{ steps.prev.outputs.tag }}
+          COMMIT_RANGE: ${{ steps.prev.outputs.range }}
+        run: |
+          python3 - <<'PYEOF'
+          import os
+          import re
+          import subprocess
+
+          prev = os.environ["PREV_VERSION"]
+          commit_range = os.environ["COMMIT_RANGE"]
+
+          if commit_range:
+              log = subprocess.run(
+                  ["git", "log", commit_range, "--format=%s%n%b%x00"],
+                  capture_output=True, text=True, check=True,
+              ).stdout
+              commits = [c for c in log.split("\x00") if c.strip()]
+          else:
+              commits = []
+
+          def detect_bump(messages):
+              for msg in messages:
+                  if "BREAKING CHANGE:" in msg:
+                      return "major"
+              for msg in messages:
+                  stripped = msg.strip()
+                  if not stripped:
+                      continue
+                  first_line = stripped.splitlines()[0]
+                  if re.match(r"^(feat|feature)(\(.+\))?:", first_line):
+                      return "minor"
+              return "patch"
+
+          bump = detect_bump(commits)
+
+          match = re.match(r"V(\d+)\.(\d+)\.(\d+)", prev)
+          major, minor, patch = (int(x) for x in match.groups())
+          if bump == "major":
+              new_version = f"V{major + 1}.0.0"
+          elif bump == "minor":
+              new_version = f"V{major}.{minor + 1}.0"
+          else:
+              new_version = f"V{major}.{minor}.{patch + 1}"
+
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"bump={bump}\n")
+              f.write(f"new_version={new_version}\n")
+
+          print(f"Previous version: {prev}")
+          print(f"Commits considered: {len(commits)}")
+          print(f"Detected bump: {bump}")
+          print(f"New version: {new_version}")
+          PYEOF
+
+      - name: Update descriptor.mod
+        env:
+          NEW_VERSION: ${{ steps.version.outputs.new_version }}
+        run: |
+          python3 - <<'PYEOF'
+          import os
+          import re
+
+          new_version = os.environ["NEW_VERSION"]
+          path = "descriptor.mod"
+          text = open(path, encoding="utf-8").read()
+          updated = re.sub(r'^version="[^"]*"', f'version="{new_version}"', text, flags=re.M)
+          open(path, "w", encoding="utf-8", newline="").write(updated)
+          PYEOF
+
+      - name: Save current CHANGELOG.md as release notes
+        run: |
+          if [ -s CHANGELOG.md ]; then
+            cp CHANGELOG.md /tmp/release_notes.md
+          else
+            echo "No changelog entries recorded for this release." > /tmp/release_notes.md
+          fi
+
+      - name: Reset CHANGELOG.md for the next cycle
+        run: |
+          cat > CHANGELOG.md <<'EOF'
+          # Polytheism Reborn — Changelog
+
+          ## New
+
+          ## Fixes & historical accuracy
+          EOF
+
+      - name: Commit version bump
+        env:
+          NEW_VERSION: ${{ steps.version.outputs.new_version }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add descriptor.mod CHANGELOG.md
+          git commit -m "chore(release): ${NEW_VERSION} [skip release]"
+          git push origin HEAD:main
+
+      - name: Tag release
+        env:
+          NEW_VERSION: ${{ steps.version.outputs.new_version }}
+        run: |
+          git tag "${NEW_VERSION}"
+          git push origin "${NEW_VERSION}"
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NEW_VERSION: ${{ steps.version.outputs.new_version }}
+        run: |
+          gh release create "${NEW_VERSION}" \
+            --title "${NEW_VERSION}" \
+            --notes-file /tmp/release_notes.md
