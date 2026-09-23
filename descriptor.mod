@@ -1,4 +1,4 @@
-version="V1.0"
+version="V2.3.2"
 tags={
 	"Religion"
 	"Historical"
