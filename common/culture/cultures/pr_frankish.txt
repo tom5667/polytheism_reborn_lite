@@ -1,0 +1,69 @@
+﻿##################################################
+# Polytheism Reborn - Frankish Sub-Cultures
+##################################################
+
+pr_ripuarian = {
+	color = { 238 245 246 }
+	created = 400.1.1
+	parents = { frankish }
+	history_loc_override = pr_ripuarian_heritage_loc
+
+	ethos = ethos_communal
+	heritage = heritage_frankish
+	language = language_pr_ripuarian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_warrior_culture
+		tradition_hereditary_hierarchy
+		tradition_stand_and_fight
+		tradition_artisans
+	}
+
+	name_list = name_list_pr_ripuarian
+
+	coa_gfx = { frankish_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { french_clothing_gfx western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		10 = caucasian_blond
+		5 = caucasian_ginger
+		45 = caucasian_brown_hair
+		35 = caucasian_dark_hair
+	}
+}
+
+pr_moselle = {
+	color = { 220 230 235 }
+	created = 400.1.1
+	parents = { frankish }
+	history_loc_override = pr_moselle_heritage_loc
+
+	ethos = ethos_communal
+	heritage = heritage_frankish
+	language = language_pr_moselle
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_warrior_culture
+		tradition_hereditary_hierarchy
+		tradition_stand_and_fight
+		tradition_castle_keepers
+	}
+
+	name_list = name_list_pr_moselle
+
+	coa_gfx = { frankish_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { french_clothing_gfx western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		10 = caucasian_blond
+		5 = caucasian_ginger
+		45 = caucasian_brown_hair
+		35 = caucasian_dark_hair
+	}
+}

@@ -1,0 +1,28 @@
+l_german:
+  # =============================================
+  # Polytheism Reborn - Kanaanäische Entscheidungen
+  # Lokalisierung für pr_canaanite_decisions.txt
+  # =============================================
+
+  # --- Hauptgottheit wählen ---
+  pr_canaanite_choose_main_deity_decision:0 "Wähle Hauptgottheit"
+  pr_canaanite_choose_main_deity_decision_desc:0 "#F Die Götter des semitischen Pantheons wachen über mich, jeder bietet seinen einzigartigen Segen.#!/n\nIch muss entscheiden, welche Gottheit ich als meinen primären Schutzpatron ehren werde, der meine Herrschaft leitet und meine Hingabe empfängt."
+  pr_canaanite_choose_main_deity_decision_tt:0 "Wähle eine Hauptgottheit aus dem semitischen Pantheon, um göttlichen Segen zu erhalten"
+  pr_canaanite_choose_main_deity_decision_confirm:0 "Wähle Hauptgottheit!"
+  pr_canaanite_choose_main_deity_decision.select_ba_al_hadad:0 "Ba'al Hadad, der Sturmgott"
+  pr_canaanite_choose_main_deity_decision.select_ashera:0 "Ashera, Muttergöttin"
+  pr_canaanite_choose_main_deity_decision.select_dagan:0 "Dagan, Gott der Fruchtbarkeit"
+  pr_canaanite_choose_main_deity_decision.select_el_elyon:0 "El Elyon, der Allerhöchste"
+  pr_canaanite_choose_main_deity_decision.select_ashtart:0 "Ashtart, Göttin der Liebe und des Krieges"
+
+  # --- Punische Kultur annehmen ---
+  pr_canaanite_embrace_punic_culture_decision:0 "Nimm die punische Kultur an"
+  pr_canaanite_embrace_punic_culture_decision_desc:0 "#F Obwohl das punische Volk längst von anderen aufgenommen wurde, lebt sein Erbe im Blut und Gedächtnis Nordafrikas weiter. Der Ruhm Karthagos mag eine ferne Erinnerung sein, doch sein Geist kann wiedererweckt werden.#!/n\nIndem ich die alte punische Kultur annehme, werde ich die Traditionen meiner Vorfahren wiederbeleben und die Identität wiederherstellen, die Karthago einst groß machte."
+  pr_canaanite_embrace_punic_culture_decision_tooltip:0 "Nimm die punische Kultur an und verbinde dich wieder mit dem Erbe des alten Karthago"
+  pr_canaanite_embrace_punic_culture_decision_confirm:0 "Nimm die punische Kultur an!"
+
+  # --- Tempel der Tanit bauen ---
+  pr_canaanite_build_temple_of_tanit_decision:0 "Baue den Tempel der Tanit"
+  pr_canaanite_build_temple_of_tanit_decision_desc:0 "#F Tanit, die große Göttin von Karthago, empfing einst die Hingabe unserer Vorfahren in ihrem prächtigen Tempel. Obwohl die Steine vielleicht zerfallen sind, lebt ihre Macht im Herzen des kanaanäischen Volkes weiter.#!/n\nIndem ich einen neuen Tempel für Tanit in Tunis baue, werde ich die heilige Verbindung zwischen meinem Volk und dem Göttlichen wiederherstellen und ihren Segen für kommende Generationen sichern."
+  pr_canaanite_build_temple_of_tanit_decision_tooltip:0 "Errichte einen großen Tempel, der Tanit gewidmet ist, der Schutzgöttin von Karthago"
+  pr_canaanite_build_temple_of_tanit_decision_confirm:0 "Baue den Tempel der Tanit!"

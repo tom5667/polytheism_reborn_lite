@@ -1,0 +1,40 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Scythian Decisions
+  # Localization for pr_scythian_decisions.txt
+  # =============================================
+
+  # --- Choose Main Deity Decision ---
+  pr_scythian_choose_main_deity_decision:0 "Choose Main Deity"
+  pr_scythian_choose_main_deity_decision_desc:0 "#F The gods of the Scythian people call for a champion to represent their will in the mortal realm. As a follower of the Scythian faith, I must select a patron deity who will guide my actions and bless my rule with divine favor.#!\nBy choosing a main deity, I shall establish a personal connection with the divine, gaining unique blessings and modifiers that reflect the nature of my chosen god or goddess."
+  pr_scythian_choose_main_deity_decision_tooltip:0 "#T Select a patron deity from your Scythian faith to gain divine blessings#!"
+  pr_scythian_choose_main_deity_decision_confirm:0 "Choose Main Deity!"
+  pr_scythian_choose_main_deity_decision_tt:0 "#T Available Deities for [ROOT.Char.GetFaith.GetName]#!"
+
+  # --- Main Deity Selection Descriptions: Scythian ---
+  select_main_deity_scythia_decision.select_papaios:0 "#T Papaios#!\n#P The sky father, supreme god of the Scythian pantheon#!"
+  select_main_deity_scythia_decision.select_artimpasa:0 "#T Artimpasa#!\n#P Goddess of fertility, love, and sovereignty#!"
+  select_main_deity_scythia_decision.select_gaitasura:0 "#T Goitosyros / Gaitasura#!\n#P God of wealth, cattle, and the sun#!"
+  select_main_deity_scythia_decision.select_api:0 "#T Api#!\n#P Earth goddess, mother of all that lives#!"
+  select_main_deity_scythia_decision.select_pitara_za:0 "#T Targitaus / Pitara Za#!\n#P Ancestor god of war and the divine lineage of the Scythians#!"
+
+  # --- Create Kingdom of Scythia Decision ---
+  pr_scythian_create_scythia_decision:0 "Create the Kingdom of Scythia"
+  pr_scythian_create_scythia_decision_desc:0 "#F The ancient kingdom of Scythia once stretched across the vast steppes from the Danube to the Don, its horsemen feared and its rulers revered. From the plains of the Black Sea coast to the windswept lands of the interior, our people have endured through the ages. Now, as the ruler who controls these historic lands, I shall revive the kingdom of Scythia and restore its former glory.#!\nBy creating Scythia, I shall establish a new kingdom that unites the steppe duchies under a single banner, forging a realm that honors our shared Scythian heritage and strength."
+  pr_scythian_create_scythia_decision_tooltip:0 "#T Form the ancient kingdom of Scythia by uniting the steppe duchies#!"
+  pr_scythian_create_scythia_decision_confirm:0 "Create the Kingdom of Scythia!"
+  pr_scythian_create_scythia_decision_effect_tooltip:0 "#P The kingdom of Scythia will be formed as a new title#!\n$EFFECT_LIST_BULLET$ Requires significant [gold|E] and [prestige|E] investment @warning_icon! #X This action cannot be undone!#"
+
+  # --- Create Kingdom of Indo-Scythia Decision ---
+  pr_scythian_create_indo_scythia_decision:0 "Create the Kingdom of Indo-Scythia"
+  pr_scythian_create_indo_scythia_decision_desc:0 "#F The Indo-Scythian kingdom once bridged the worlds of the steppe and the subcontinent, its rulers carving a realm from the mountains of Gandhara to the plains of Mathura. Born of migration and conquest, this kingdom blended Scythian traditions with the rich cultures of the east. Now, as the ruler who controls these historic lands, I shall revive the kingdom of Indo-Scythia and restore its former glory.#!\nBy creating Indo-Scythia, I shall establish a new kingdom that unites these historic duchies under a single banner, forging a realm that honors our Scythian heritage and the eastern lands we have made our own."
+  pr_scythian_create_indo_scythia_decision_tooltip:0 "#T Form the ancient kingdom of Indo-Scythia by uniting the eastern duchies#!"
+  pr_scythian_create_indo_scythia_decision_confirm:0 "Create the Kingdom of Indo-Scythia!"
+  pr_scythian_create_indo_scythia_decision_effect_tooltip:0 "#P The kingdom of Indo-Scythia will be formed as a new title#!\n$EFFECT_LIST_BULLET$ Requires significant [gold|E] and [prestige|E] investment @warning_icon! #X This action cannot be undone!#"
+
+  # --- Restore Scythian Empire Decision ---
+  pr_scythian_restore_scythia_empire_decision:0 "Restore the Scythian Empire"
+  pr_scythian_restore_scythia_empire_decision_desc:0 "#F The Scythian Empire once spanned the greater part of the Eurasian steppe, from the borders of the civilized world to the heart of the continent. Its horse archers were the terror of nations, and its khans ruled a realm without equal in the age of its greatness. Now, with the kingdoms of Scythia and Indo-Scythia restored under my rule, I shall unite all the steppe lands and reclaim the imperial mantle of our forebears.#!\nBy restoring the Scythian Empire, I shall forge a realm that spans the breadth of the steppe, honoring the legacy of the great khans and the ancient power of the Scythian people."
+  pr_scythian_restore_scythia_empire_decision_tooltip:0 "#T Restore the ancient Scythian Empire by uniting the steppe kingdoms#!"
+  pr_scythian_restore_scythia_empire_decision_confirm:0 "Restore the Scythian Empire!"
+  pr_scythian_restore_scythia_empire_decision_effect_tooltip:0 "#P The Scythian Empire will be formed as a new title#!\n$EFFECT_LIST_BULLET$ Requires significant [gold|E] and [prestige|E] investment @warning_icon! #X This action cannot be undone!#"

@@ -1,0 +1,7 @@
+﻿l_english:
+#####################
+#Made by tom5667
+#####################
+# Override of vanilla name key (character_names_l_english.yml has the typo "Abdosi"),
+# used by the Punic name lists (name_list_pr_punic + name_list_carthaginian).
+Abdosir:0 "Abdosir"

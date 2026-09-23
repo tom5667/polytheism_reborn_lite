@@ -1,0 +1,207 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Celtic Decisions
+  # Localization for pr_celtic_decisions.txt
+  # =============================================
+
+  # --- Restore High Priesthood Decision ---
+  pr_celtic_restore_high_priesthood_decision:0 "Restore the High Priesthood"
+  pr_celtic_restore_high_priesthood_decision_desc:0 "#F The ancient druidic traditions of our people call for a High Priest to guide the faithful. Though the old ways have been scattered by time and invasion, the sacred groves still whisper the names of those who once led our people in communion with the divine.#!\nBy restoring the High Priesthood, I shall unite the Celtic faiths under a single spiritual leader, reviving the ancient authority of the druids and ensuring the gods receive proper devotion once more."
+  pr_celtic_restore_high_priesthood_decision_tooltip:0 "Restore the High Priesthood to lead the Celtic faiths"
+  pr_celtic_restore_high_priesthood_decision_confirm:0 "Restore the High Priesthood!"
+  pr_celtic_restore_high_priesthood_decision_effect_tooltip:0 "#P A High Priest will be appointed to lead the Celtic faiths#!$EFFECT_LIST_BULLET$The High Priest will have spiritual authority over all Celtic faithful $EFFECT_LIST_BULLET$Requires significant piety investment @warning_icon! #X This decision can only be taken once per game!#"
+
+  # --- Create Celtic Empire Decision ---
+  pr_celtic_create_empire_decision:0 "Create Celtic Empire"
+  pr_celtic_create_empire_decision_desc:0 "#F The time has come to unite the Celtic peoples under one banner. From the misty isles of Ireland to the ancient lands of Gaul, our people have stood strong against the tides of history. Now, as the High King of Ireland, Scotland, Wales, and England, I shall forge a new empire that rivals the great powers of the age.#!/n\nBy creating the Celtic Empire, I shall establish a realm that encompasses all the Celtic lands, restoring our people to their rightful place among the great nations of the world."
+  pr_celtic_create_empire_decision_tooltip:0 "Form the Celtic Empire and unite the Celtic kingdoms"
+  pr_celtic_create_empire_decision_confirm:0 "Create Celtic Empire!"
+  pr_celtic_create_empire_decision_effect_tooltip:0 "#P The Celtic Empire will be formed as a new empire-tier title#!/n$EFFECT_LIST_BULLET$[title_k_high_kingdom_of_ireland.GetNameNoTier], [title_k_scotland.GetNameNoTier], [title_k_wales.GetNameNoTier], and [title_k_england.GetNameNoTier] will become part of the Celtic Empire $EFFECT_LIST_BULLET$ Requires significant gold and prestige @warning_icon! #X This action cannot be undone!#"
+  
+  # Custom description text
+  restore_high_priesthood_holy_sites:0 "#F To restore the High Priesthood, you must control at least 3 holy sites of your faith or its branches.#!"
+
+  # --- Create Lusitania Decision ---
+  pr_celtic_create_lusitania_decision:0 "Create Lusitania"
+  pr_celtic_create_lusitania_decision_desc:0 "#F The ancient kingdom of Lusitania once stood as a beacon of Iberian resistance and culture. From the rugged hills of Beja to the coastal plains of Algarve, our people have maintained their unique identity against the tides of history. Now, as the ruler who controls the key duchies of this historic land, I shall revive Lusitania and restore its former glory.#!/nBy creating Lusitania, I shall establish a new kingdom that unites the Iberian duchies under a single banner, forging a realm that honors our shared heritage and strength."
+  pr_celtic_create_lusitania_decision_tooltip:0 "#T Form the ancient kingdom of Lusitania by uniting the Iberian duchies#!"
+  pr_celtic_create_lusitania_decision_confirm:0 "Create Lusitania!"
+  pr_celtic_create_lusitania_decision_effect_tooltip:0 "#P The kingdom of Lusitania will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_beja.GetNameNoTier], [title_d_badajoz.GetNameNoTier], [title_d_algarve.GetNameNoTier], and [title_d_coimbra.GetNameNoTier] will become part of Lusitania $EFFECT_LIST_BULLET$ Requires significant gold and prestige investment @warning_icon! #X This action cannot be undone!#"
+
+  # --- Create Galicia Decision ---
+  pr_celtic_create_galicia_decision:0 "Create Galicia"
+  pr_celtic_create_galicia_decision_desc:0 "#F The ancient kingdom of Galicia once stood as a proud realm in the northwest of Iberia. From the sacred city of Santiago de Compostela to the rugged coasts of Porto, our people have maintained their Celtic heritage through the centuries. Now, as the ruler who controls the key duchies of this historic land, I shall revive the kingdom of Galicia and restore its former glory. By creating Galicia, I shall establish a new kingdom that unites the northwestern Iberian duchies under a single banner, forging a realm that honors our shared Celtic-Iberian heritage and strength.#!"
+  pr_celtic_create_galicia_decision_tooltip:0 "#T Form the ancient kingdom of Galicia by uniting the northwestern Iberian duchies#!"
+  pr_celtic_create_galicia_decision_confirm:0 "Create Galicia!"
+  pr_celtic_create_galicia_decision_effect_tooltip:0 "#P The kingdom of Galicia will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_porto.GetNameNoTier], [title_d_galicia.GetNameNoTier], [title_d_asturias.GetNameNoTier], and [title_d_leon.GetNameNoTier] will become part of Galicia $EFFECT_LIST_BULLET$ Requires significant gold and prestige investment @warning_icon! #X This action cannot be undone!#"
+
+  # --- Create Vasconia Decision ---
+  pr_celtic_create_vasconia_decision:0 "Create Vasconia"
+  pr_celtic_create_vasconia_decision_desc:0 "#F The ancient kingdom of Vasconia once thrived as a powerful realm spanning the lands between the Pyrenees and the Ebro. From the rugged highlands of Navarra to the fertile valleys of Aragon and the coastal regions of Viscaya, our people have maintained their unique Basque and Celtic heritage through the ages. Now, as the ruler who controls these historic duchies, I shall revive the kingdom of Vasconia and restore its former glory. By creating Vasconia, I shall establish a new kingdom that unites these lands under a single banner, forging a realm that honors our shared heritage and strength.#!"
+  pr_celtic_create_vasconia_decision_tooltip:0 "#T Form the ancient kingdom of Vasconia by uniting Navarra, Aragon, and Viscaya#!"
+  pr_celtic_create_vasconia_decision_confirm:0 "Create Vasconia!"
+  pr_celtic_create_vasconia_decision_effect_tooltip:0 "#P The kingdom of Vasconia will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_navarra.GetNameNoTier], [title_d_aragon.GetNameNoTier], and [title_d_viscaya.GetNameNoTier] will become part of Vasconia $EFFECT_LIST_BULLET$ Requires significant gold and prestige investment @warning_icon! #X This action cannot be undone!#"
+
+  # --- Create Tartessia Decision ---
+  pr_celtic_create_tartessia_decision:0 "Create Tartessia"
+  pr_celtic_create_tartessia_decision_desc:0 "#F The legendary kingdom of Tartessia once flourished as a center of wealth and culture in the southern Iberian peninsula. From the golden city of Sevilla to the strategic strongholds of Granada and Cordoba, our people have maintained their rich heritage through millennia. Now, as the ruler who controls these historic duchies, I shall revive the kingdom of Tartessia and restore its former glory. By creating Tartessia, I shall establish a new kingdom that unites these lands under a single banner, forging a realm that honors our shared Celtic-Iberian legacy.#!"
+  pr_celtic_create_tartessia_decision_tooltip:0 "#T Form the ancient kingdom of Tartessia by uniting Sevilla, Granada, and Cordoba#!"
+  pr_celtic_create_tartessia_decision_confirm:0 "Create Tartessia!"
+  pr_celtic_create_tartessia_decision_effect_tooltip:0 "#P The kingdom of Tartessia will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_sevilla.GetNameNoTier], [title_d_granada.GetNameNoTier], and [title_d_cordoba.GetNameNoTier] will become part of Tartessia $EFFECT_LIST_BULLET$ Requires significant gold and prestige investment @warning_icon! #X This action cannot be undone!#"
+
+  # --- Create Celtiberia Decision ---
+  pr_celtic_create_celtiberia_decision:0 "Create Celtiberia"
+  pr_celtic_create_celtiberia_decision_desc:0 "#F The mighty kingdom of Celtiberia once stood as a bulwark of Celtic culture in the heart of Iberia. From the mountain strongholds of Cantabria to the strategic plains of Castilla and the historic city of Toledo, our people have maintained their fierce independence and rich traditions through the ages. Now, as the ruler who controls these historic duchies, I shall revive the kingdom of Celtiberia and restore its former glory. By creating Celtiberia, I shall establish a new kingdom that unites these lands under a single banner, forging a realm that honors our shared Celtic-Iberian heritage.#!"
+  pr_celtic_create_celtiberia_decision_tooltip:0 "#T Form the ancient kingdom of Celtiberia by uniting Cantabria, Castilla, and Toledo#!"
+  pr_celtic_create_celtiberia_decision_confirm:0 "Create Celtiberia!"
+  pr_celtic_create_celtiberia_decision_effect_tooltip:0 "#P The kingdom of Celtiberia will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_cantabria.GetNameNoTier], [title_d_castilla.GetNameNoTier], and [title_d_toledo.GetNameNoTier] will become part of Celtiberia $EFFECT_LIST_BULLET$ Requires significant gold and prestige investment @warning_icon! #X This action cannot be undone!#"
+
+  # --- Create Iberia Decision ---
+  pr_celtic_create_iberia_decision:0 "Create Iberia"
+  pr_celtic_create_iberia_decision_desc:0 "#F The ancient kingdom of Iberia once united the diverse peoples of the peninsula under a single banner. From the Mediterranean coasts of Valencia to the bustling streets of Barcelona and the fertile lands of Murcia, our people have built a rich tapestry of cultures and traditions. Now, as the ruler who controls these historic duchies, I shall revive the kingdom of Iberia and restore its former glory. By creating Iberia, I shall establish a new kingdom that unites these lands under a single banner, forging a realm that honors our shared heritage.#!"
+  pr_celtic_create_iberia_decision_tooltip:0 "#T Form the ancient kingdom of Iberia by uniting Valencia, Barcelona, and Murcia#!"
+  pr_celtic_create_iberia_decision_confirm:0 "Create Iberia!"
+  pr_celtic_create_iberia_decision_effect_tooltip:0 "#P The kingdom of Iberia will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_valencia.GetNameNoTier], [title_d_barcelona.GetNameNoTier], and [title_d_murcia.GetNameNoTier] will become part of Iberia $EFFECT_LIST_BULLET$ Requires significant gold and prestige investment @warning_icon! #X This action cannot be undone!#"
+
+  # --- Choose Main Deity Decision ---
+  pr_celtic_choose_main_deity_decision:0 "Choose Main Deity"
+  pr_celtic_choose_main_deity_decision_desc:0 "#F The gods of our people call for a champion to represent their will in the mortal realm. As a ruler of the Celtic faith, I must select a patron deity who will guide my actions and bless my rule with divine favor.#!/nBy choosing a main deity, I shall establish a personal connection with the divine, gaining unique blessings and modifiers that reflect the nature of my chosen god or goddess."
+  pr_celtic_choose_main_deity_decision_tooltip:0 "#T Select a patron deity from your Celtic faith to gain divine blessings#!"
+  pr_celtic_choose_main_deity_decision_confirm:0 "Choose Main Deity!"
+  pr_celtic_choose_main_deity_decision_tt:0 "#T Available Deities for [ROOT.Char.GetFaith.GetName]#!"
+
+  # --- Main Deity Selection Descriptions: Gaelic ---
+  select_main_deity_celtic_decision.select_an_dagda:0 "#T An Dagda#!\n#P The All-Father of the Tuatha Dé Danann#!"
+  select_main_deity_celtic_decision.select_lugh:0 "#T Lugh#!\n#P Master of all arts and crafts#!"
+  select_main_deity_celtic_decision.select_brigid:0 "#T Brigid#!\n#P Goddess of poetry, healing, and the forge's fire#!"
+  select_main_deity_celtic_decision.select_nemain:0 "#T Nemain#!\n#P Goddess of battle frenzy#!"
+  select_main_deity_celtic_decision.select_ecna:0 "#T Ecna#!\n#P Goddess of wisdom and intellect#!"
+
+  # --- Main Deity Selection Descriptions: Brythonic ---
+  select_main_deity_celtic_decision.select_taranis:0 "#T Taranis#!\n#P The Thunderer, lord of the wheel#!"
+  select_main_deity_celtic_decision.select_lugus_brythonic:0 "#T Lugus#!\n#P Master of light and skill#!"
+  select_main_deity_celtic_decision.select_arianrhod:0 "#T Arianrhod#!\n#P Goddess of the silver wheel and stars#!"
+  select_main_deity_celtic_decision.select_andraste:0 "#T Andraste#!\n#P Goddess of victory and the dawn#!"
+  select_main_deity_celtic_decision.select_brigantia:0 "#T Brigantia#!\n#P Goddess of victory and the highlands#!"
+
+  # --- Main Deity Selection Descriptions: Gaulish ---
+  select_main_deity_celtic_decision.select_toutatis:0 "#T Toutatis#!\n#P Protector of the tribe#!"
+  select_main_deity_celtic_decision.select_lughus:0 "#T Lughus#!\n#P The radiant master of arts#!"
+  select_main_deity_celtic_decision.select_rosmerta:0 "#T Rosmerta#!\n#P Goddess of abundance and plenty#!"
+  select_main_deity_celtic_decision.select_cicolluis:0 "#T Cicolluis#!\n#P God of war and healing#!"
+  select_main_deity_celtic_decision.select_belisama:0 "#T Belisama#!\n#P The radiant one, lady of fire#!"
+
+  # --- Main Deity Selection Descriptions: Celtic Iberian ---
+  select_main_deity_celtic_decision.select_reue:0 "#T Reue#!\n#P The supreme sky father#!"
+  select_main_deity_celtic_decision.select_arancia:0 "#T Arancia#!\n#P Guardian of the wild#!"
+  select_main_deity_celtic_decision.select_nabia:0 "#T Nabia#!\n#P Goddess of rivers and waters#!"
+  select_main_deity_celtic_decision.select_lugus:0 "#T Lugus#!\n#P Master of light and skill#!"
+  select_main_deity_celtic_decision.select_bandua:0 "#T Bandua#!\n#P God of war and the citadel#!"
+
+  # --- Old Irish Culture Decision ---
+  pr_celtic_old_irish_culture_decision:0 "Embrace Old Irish Culture"
+  pr_celtic_old_irish_culture_decision_desc:0 "#F The ancient Irish traditions of our forebears still echo through the land, carried by the bards and kept alive in the old tongue.#!\n\nI shall reclaim the heritage of Old Ireland and revive the ways of my ancestors."
+  pr_celtic_old_irish_culture_decision_tooltip:0 "#T Embrace the ancient Old Irish [culture|E]#!"
+  pr_celtic_old_irish_culture_decision_confirm:0 "Embrace Old Irish Culture"
+
+  # --- Gaulish Culture Decision ---
+  pr_celtic_gaulish_culture_decision:0 "Embrace Gaulish Culture"
+  pr_celtic_gaulish_culture_decision_desc:0 "#F The proud Gaulish people once ruled the heart of Europe, their warriors and druids famed across the ancient world.#!\n\nBy embracing the Gaulish heritage, I shall reclaim the legacy of our Gallic ancestors and restore their ancient ways."
+  pr_celtic_gaulish_culture_decision_tooltip:0 "#T Embrace the ancient Gaulish [culture|E]#!"
+  pr_celtic_gaulish_culture_decision_confirm:0 "Embrace Gaulish Culture"
+
+  # --- Brythonic Culture Decision ---
+  pr_celtic_brythonic_culture_decision:0 "Embrace Brythonic Culture"
+  pr_celtic_brythonic_culture_decision_desc:0 "#F The Brythonic peoples once held the island of Britain from the southern shores to the highland north, their kingdoms rooted in the old gods.#!\n\nI shall revive the ancient Brythonic culture and reclaim the heritage of the Britons."
+  pr_celtic_brythonic_culture_decision_tooltip:0 "#T Embrace the ancient Brythonic [culture|E]#!"
+  pr_celtic_brythonic_culture_decision_confirm:0 "Embrace Brythonic Culture"
+
+  # --- Eburones Culture Decision ---
+  pr_celtic_eburones_culture_decision:0 "Embrace Eburones Culture"
+  pr_celtic_eburones_culture_decision_desc:0 "#F The Eburones were a fierce Gallic tribe who defied the legions of Rome and fought for their freedom in the forests of the Rhineland.#!\n\nI shall reclaim the heritage of the Eburones and revive their ancient spirit."
+  pr_celtic_eburones_culture_decision_tooltip:0 "#T Embrace the ancient Eburones [culture|E]#!"
+  pr_celtic_eburones_culture_decision_confirm:0 "Embrace Eburones Culture"
+
+  # --- Manx Culture Decision ---
+  pr_celtic_manx_culture_decision:0 "Embrace Manx Culture"
+  pr_celtic_manx_culture_decision_desc:0 "#F The Isle of Man has long been a crossroads of Celtic peoples, where Gaelic and Norse influences shaped a unique culture.#!\n\nI shall embrace the Manx heritage and revive the ancient ways of the island."
+  pr_celtic_manx_culture_decision_tooltip:0 "#T Embrace the ancient Manx [culture|E]#!"
+  pr_celtic_manx_culture_decision_confirm:0 "Embrace Manx Culture"
+
+  # --- Push Out the Sassenach Saga Decision ---
+  pr_celtic_push_out_the_sassenach_saga_decision:0 "Push Out the Sassenach"
+  pr_celtic_push_out_the_sassenach_saga_decision_desc:0 "#F Centuries of invasions by Germanic tribes have taken their toll on our way of life.#!\n\nNow it is time to take up arms again and drive them out."
+  pr_celtic_push_out_the_sassenach_saga_decision_tooltip:0 "#T Push out the Sassenach#!"
+  pr_celtic_push_out_the_sassenach_saga_decision_confirm:0 "To war"
+
+  # --- Reconquest Ireland Decision ---
+  pr_celtic_reconquest_ireland_decision:0 "Reconquer Ireland"
+  pr_celtic_reconquest_ireland_decision_desc:0 "#F The five kingdoms of Ireland have long been the heartland of our people, yet foreign influence has fractured our ancient bonds.#!\n\nI shall reunite the duchies of Ulster, Meath, Connacht, Leinster, and Munster under one Celtic ruler."
+  pr_celtic_reconquest_ireland_decision_tooltip:0 "#T Reunite the five kingdoms of Ireland#!"
+  pr_celtic_reconquest_ireland_decision_confirm:0 "Reconquer Ireland"
+
+  # --- Reconquest Alba Decision ---
+  pr_celtic_reconquest_alba_decision:0 "Reconquer Alba"
+  pr_celtic_reconquest_alba_decision_desc:0 "#F The highlands and lowlands of Alba were once ruled by Celtic kings who answered to no foreign power.#!\n\nI shall reclaim Galloway, Lothian, Albany, the Western Isles, and Moray, restoring the ancient kingdom of Alba."
+  pr_celtic_reconquest_alba_decision_tooltip:0 "#T Reunite the ancient kingdom of Alba#!"
+  pr_celtic_reconquest_alba_decision_confirm:0 "Reconquer Alba"
+
+  # --- Reconquest Wales Decision ---
+  pr_celtic_reconquest_wales_decision:0 "Reconquer Wales"
+  pr_celtic_reconquest_wales_decision_desc:0 "#F The Welsh principalities of Gwynedd, Powys, and Deheubarth once stood as the last bastion of Brythonic rule in Britain.#!\n\nI shall reunite the Welsh lands and restore their ancient sovereignty."
+  pr_celtic_reconquest_wales_decision_tooltip:0 "#T Reunite the ancient principalities of Wales#!"
+  pr_celtic_reconquest_wales_decision_confirm:0 "Reconquer Wales"
+
+  # --- Reconquest Albion Decision ---
+  pr_celtic_reconquest_albion_decision:0 "Reconquer Albion"
+  pr_celtic_reconquest_albion_decision_desc:0 "#F The island of Albion was once wholly Celtic, from the northern highlands to the southern cliffs of Cornwall.#!\n\nHaving secured Ireland, Alba, and Wales, I shall now drive the invaders from the remaining duchies of England and restore the full Celtic dominion over the island."
+  pr_celtic_reconquest_albion_decision_tooltip:0 "#T Complete the reconquest of Albion#!"
+  pr_celtic_reconquest_albion_decision_confirm:0 "Reconquer Albion"
+
+  # --- Conquest Brittany Decision ---
+  pr_celtic_conquest_brittany_decision:0 "Conquer Brittany"
+  pr_celtic_conquest_brittany_decision_desc:0 "#F Brittany, the ancient Armorica, was settled by Brythonic peoples fleeing the Saxon invasions.#!\n\nAs emperor of the Celtic peoples, I shall bring Brittany back under our banner and restore its ancient ties to the Celtic world."
+  pr_celtic_conquest_brittany_decision_tooltip:0 "#T Bring Brittany into the Celtic Empire#!"
+  pr_celtic_conquest_brittany_decision_confirm:0 "Conquer Brittany"
+
+  # --- Conquest Galicia Decision ---
+  pr_celtic_conquest_galicia_decision:0 "Conquer Galicia"
+  pr_celtic_conquest_galicia_decision_desc:0 "#F The Celtic heritage of Galicia stretches back to ancient times, when its people traded tin and copper across the Atlantic.#!\n\nAs emperor of the Celtic peoples, I shall bring Galicia back under our banner and reclaim its ancient Celtic legacy."
+  pr_celtic_conquest_galicia_decision_tooltip:0 "#T Bring Galicia into the Celtic Empire#!"
+  pr_celtic_conquest_galicia_decision_confirm:0 "Conquer Galicia"
+
+  # --- Conquest Belgae Decision ---
+  pr_celtic_conquest_of_belgae_decision:0 "Conquer Belgae"
+  pr_celtic_conquest_of_belgae_decision_desc:0 "#F The Belgae were among the fiercest of the Celtic peoples, ruling the lands between the Rhine and the Seine.#!\n\nHaving secured Brittany, I shall now press into the Low Countries and reclaim the ancient lands of the Belgae."
+  pr_celtic_conquest_of_belgae_decision_tooltip:0 "#T Conquer the ancient lands of the Belgae#!"
+  pr_celtic_conquest_of_belgae_decision_confirm:0 "Conquer Belgae"
+
+  # --- Conquest Gaul Decision ---
+  pr_celtic_conquest_of_gaul_decision:0 "Conquer Gaul"
+  pr_celtic_conquest_of_gaul_decision_desc:0 "#F Gaul was the heartland of the Celtic world, from the plains of Aquitaine to the forests of Burgundy and the shores of Normandy.#!\n\nHaving secured Brittany and Belgica, I shall now complete the reconquest of Gaul and restore the full Celtic dominion over the heart of Europe."
+  pr_celtic_conquest_of_gaul_decision_tooltip:0 "#T Complete the conquest of Gaul#!"
+  pr_celtic_conquest_of_gaul_decision_confirm:0 "Conquer Gaul"
+
+  # --- Establish Druidic Gathering Place Decision ---
+  pr_celtic_create_gathering_place_for_druids_decision:0 "Establish a Druidic Gathering Place"
+  pr_celtic_create_gathering_place_for_druids_decision_desc:0 "#F The druids are the keepers of our sacred lore, yet they wander without a central seat where the faithful may gather to honour the old gods.#!\n\nBy founding a great gathering place in the hills of Gwynedd, I shall give the Celtic faith a heart from which its traditions can spread once more."
+  pr_celtic_create_gathering_place_for_druids_decision_tooltip:0 "Found a sacred gathering place for the druids"
+  pr_celtic_create_gathering_place_for_druids_decision_confirm:0 "Establish the Gathering Place!"
+
+  # --- Found Noricum Decision ---
+  pr_celtic_create_noricum_kingdom_decision:0 "Found the Kingdom of Noricum"
+  pr_celtic_create_noricum_kingdom_decision_desc:0 "#F The Alpine lands of Noricum were once home to Celtic tribes whose iron and courage shaped the heart of Europe.#!\n\nHolding the duchies of Carinthia and Styria, I shall revive the kingdom of Noricum and restore the Celtic legacy in the eastern mountains."
+  pr_celtic_create_noricum_kingdom_decision_tooltip:0 "Form the kingdom of Noricum by uniting Carinthia and Styria"
+  pr_celtic_create_noricum_kingdom_decision_confirm:0 "Found Noricum!"
+
+  # --- Send Son to Druids Decision ---
+  pr_celtic_send_son_to_druids_decision:0 "Send Your Son to the Druids"
+  pr_celtic_send_son_to_druids_decision_desc:0 "#F A gathering place of the druids now stands among our people, a rare sanctuary of the old wisdom.#!\n\nI shall send my child to learn at the druids' feet, that the ancient lore may pass to a new generation."
+  pr_celtic_send_son_to_druids_decision_tooltip:0 "Send your child to study with the druids at the gathering place"
+  pr_celtic_send_son_to_druids_decision_confirm:0 "Send Him to the Druids!"
+
+  # --- Claim Irish High Kingdom Decision ---
+  pr_celtic_claim_irish_high_kingdom_decision:0 "Claim the Irish High Kingship"
+  pr_celtic_claim_irish_high_kingdom_decision_desc:0 "#F The high kingship of Ireland has stood empty for too long, its five kingdoms divided while pretenders eye the ancient throne.#!\n\nAs a ruler of Irish blood holding one of the kingdoms, I shall press my claim and unite the Irish under a single high king once more."
+  pr_celtic_claim_irish_high_kingdom_decision_tooltip:0 "Press your claim to the High Kingship of Ireland"
+  pr_celtic_claim_irish_high_kingdom_decision_confirm:0 "Claim the High Kingship!"

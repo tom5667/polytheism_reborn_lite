@@ -1,0 +1,109 @@
+﻿# Polytheism Reborn — Cult Members Window
+window = {
+	name = "pr_custom_window"
+	widgetid = "pr_custom_window"
+	size = { 400 600 }
+	using = Window_Background_Sidebar
+	movable = yes
+
+	attachto = {
+		widgetid = "faith_window"
+		inherit_visibility = no
+	}
+
+	state = {
+		name = _show
+		position = { 600 120 }
+		on_start = "[GetVariableSystem.Set( 'pr_custom_window_open', 'true' )]"
+		using = Animation_FadeIn_Quick
+		using = Sound_WindowShow_Standard
+	}
+
+	state = {
+		name = _hide
+		position = { -60 0 }
+		on_start = "[GetVariableSystem.Clear( 'pr_custom_window_open' )]"
+		using = Animation_FadeOut_Quick
+		using = Sound_WindowHide_Standard
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/tile_window_background_subwindow.dds"
+		spriteType = Corneredtiled
+		spriteborder = { 18 18 }
+		texture_density = 3
+	}
+
+	vbox = {
+		header_pattern = {
+			layoutpolicy_horizontal = expanding
+
+			blockoverride "header_text"
+			{
+				text = "CULT_VIEW_HEADING"
+			}
+
+			blockoverride "button_close"
+			{
+				onclick = "[ExecuteConsoleCommand('gui.ClearWidgets pr_custom_window')]"
+			}
+
+			blockoverride "button_back"
+			{
+				visible = no
+			}
+		}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+
+			scrollbox = {
+				layoutpolicy_vertical = expanding
+				layoutpolicy_horizontal = expanding
+				size = { 400 250 }
+
+				blockoverride "scrollbox_content"
+				{
+					fixedgridbox = {
+						name = "cultists_list"
+						datamodel = "[GetPlayer.MakeScope.GetList('pr_cultists_list')]"
+						flipdirection = yes
+						addcolumn = 200
+						addrow = 140
+						setitemsizefromcell = yes
+						datamodel_wrap = 2
+						maxhorizontalslots = -1
+						maxverticalslots = -1
+						layoutpolicy_vertical = expanding
+						layoutpolicy_horizontal = expanding
+
+						state = {
+							name = "faith_view_refresh"
+							using = Animation_Refresh_FadeOut
+						}
+
+						state = {
+							using = Animation_Refresh_FadeIn
+						}
+
+						item = {
+							vbox = {
+								datacontext = "[Scope.GetCharacter]"
+								portrait_head_small = {}
+								margin_bottom = 8
+								margin_top = 0
+								text_multi = {
+									text = "CULT_MEMBER_NAME"
+									layoutpolicy_horizontal = expanding
+									align = left
+									fontsize_min = 10
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+l_german:
+  # =============================================
+  # Polytheism Reborn - Illyrische Entscheidungen
+  # Lokalisierung für pr_illyrian_decisions.txt
+  # =============================================
+
+  # --- Hauptgottheit wählen (Illyrisch) ---
+  pr_illyrian_choose_main_deity_decision:0 "Wähle Hauptgottheit"
+  pr_illyrian_choose_main_deity_decision_desc:0 "#F Die Götter des illyrischen Pantheons verlangen einen Champion, der ihren Willen in der sterblichen Welt vertritt. Als Herrscher des illyrischen Glaubens muss ich eine Schutzgottheit auswählen, die meine Handlungen leitet und meine Herrschaft mit göttlichem Segen bedenkt.#!/n\nDurch die Wahl einer Hauptgottheit werde ich eine persönliche Verbindung mit dem Göttlichen herstellen und einzigartige Segnungen und Modifikatoren erhalten, die die Natur meiner gewählten Gottheit oder Göttin widerspiegeln."
+  pr_illyrian_choose_main_deity_decision_tooltip:0 "#T Wähle eine Schutzgottheit aus deinem illyrischen Glauben, um göttliche Segnungen zu erhalten#!/"
+  pr_illyrian_choose_main_deity_decision_confirm:0 "Wähle Hauptgottheit!"
+  pr_illyrian_choose_main_deity_decision_tt:0 "#T Verfügbare Gottheiten für [ROOT.Char.GetFaith.GetName]#!/"
+
+  # --- Auswahlbeschreibungen der Hauptgottheit: Illyrisch ---
+  select_main_deity_illyrian_decision.select_en:0 "#T En#!/\n#P Der höchste Gott, Vater des illyrischen Pantheons#!/"
+  select_main_deity_illyrian_decision.select_medaurus:0 "#T Medaurus#!/\n#P Gott des Krieges und des heiligen Kriegespfades#!/"
+  select_main_deity_illyrian_decision.select_anzotica:0 "#T Anzotica#!/\n#P Göttin der Fruchtbarkeit und des Mondlichts#!/"
+  select_main_deity_illyrian_decision.select_bindus:0 "#T Bindus#!/\n#P Gott des Wassers, der Quellen und der Heilgewässer#!/"
+  select_main_deity_illyrian_decision.select_tadenus:0 "#T Tadenus#!/\n#P Gott der Gesundheit und der heiligen Haine#!/"
+
+  # --- Königreich Illyrien gründen ---
+  pr_illyrian_kingdom_of_illyria_decision:0 "Gründe das Königreich Illyrien"
+  pr_illyrian_kingdom_of_illyria_decision_desc:0 "#F Die alten Lande Illyriens, die sich entlang der adriatischen Küste von Dalmatien bis zu den Hochländern des Binnenlandes erstrecken, sind lange unter verfeindeten Stämmen aufgeteilt gewesen. einst regierten die illyrischen Könige diese Länder mit Stolz und Tapferkeit.#!/n\nDurch die Gründung des Königreichs Illyrien werde ich die illyrischen Völker unter einem einzigen Banner vereinen und den Ruhm unserer Vorfahren wiederherstellen."
+  pr_illyrian_kingdom_of_illyria_decision_tooltip:0 "#T Bilde das Königreich Illyrien, indem du die adriatischen Länder vereinst#!/"
+  pr_illyrian_kingdom_of_illyria_decision_confirm:0 "Gründe das Königreich Illyrien!"
+  pr_illyrian_kingdom_of_illyria_decision_effect_tooltip:0 "#P Das Königreich Illyrien wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_dalmatia.GetNameNoTier], [title_d_dyrrachion.GetNameNoTier], [title_d_duklja.GetNameNoTier] und [title_d_usora.GetNameNoTier] werden [de_jure|E] Teil von Illyrien$EFFECT_LIST_BULLET$Erfordert erhebliche Investitionen in [gold|E] und [prestige|E]@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Illyrische Kultur annehmen ---
+  pr_illyrian_culture_decision:0 "Nimm die illyrische Kultur an"
+  pr_illyrian_culture_decision_desc:0 "#F Die illyrische Kultur mit ihren stolzen Kriegertraditionen und der tiefen Verbindung zur adriatischen Küste steht als Zeugnis der Widerstandsfähigkeit unseres Volkes. Durch die Annahme dieses alten Erbes werde ich mein Volk in ein goldenes Zeitalter der kulturellen und spirituellen Erneuerung führen.#!/n\nDurch diese Entscheidung werde ich die Traditionen Illyriens fördern und die Bindungen zwischen meinem Reich und den alten Göttern stärken."
+  pr_illyrian_culture_decision_tooltip:0 "#T Nimm die illyrischen kulturellen Traditionen an und stärke das Erbe deines Reiches#!/"
+  pr_illyrian_culture_decision_confirm:0 "Nimm die illyrische Kultur an!"

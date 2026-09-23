@@ -1,0 +1,286 @@
+﻿namespace = pr_mesopotamian
+
+##################################################
+# Polytheism Reborn - Mesopotamian Events
+# Refactored from mesopotamian_events.txt (old namespaces: m_r, m_sr, mspt, embrace_culture)
+# Kept: patron god selection (mspt.001-003) + open first brewery (mspt.004)
+# Removed: Return Cultus Deorum intro chain (m_r.001-003), state religion events (m_sr.001-002),
+#          orphaned embrace_culture events (embrace_culture.005-007)
+##################################################
+
+# --- Embrace Culture Events (0001-0099) ---
+
+# Embrace Babylonian Culture
+pr_mesopotamian.0001 = {
+	type = character_event
+	title = pr_mesopotamian.0001.t
+	desc = pr_mesopotamian.0001.desc
+	theme = realm
+
+	left_portrait = {
+		character = root
+		animation = storyteller
+	}
+
+	option = {
+		name = pr_mesopotamian.0001.a
+		set_culture = culture:pr_babylonian
+		add_prestige = 100
+	}
+}
+
+# Embrace Assyrian Culture
+pr_mesopotamian.0002 = {
+	type = character_event
+	title = pr_mesopotamian.0002.t
+	desc = pr_mesopotamian.0002.desc
+	theme = realm
+
+	left_portrait = {
+		character = root
+		animation = storyteller
+	}
+
+	option = {
+		name = pr_mesopotamian.0002.a
+		set_culture = culture:pr_assyrian
+		add_prestige = 100
+	}
+}
+
+# Embrace Sumerian Culture
+pr_mesopotamian.0003 = {
+	type = character_event
+	title = pr_mesopotamian.0003.t
+	desc = pr_mesopotamian.0003.desc
+	theme = realm
+
+	left_portrait = {
+		character = root
+		animation = storyteller
+	}
+
+	option = {
+		name = pr_mesopotamian.0003.a
+		set_culture = culture:pr_sumerian
+		add_prestige = 100
+	}
+}
+
+# --- Patron God Selection (0100-0199) ---
+
+# Choose Main Deity: Babylonian
+pr_mesopotamian.0100 = {
+	type = character_event
+	title = pr_mesopotamian.0100.t
+	desc = pr_mesopotamian.0100.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Marduk
+	option = {
+		name = pr_mesopotamian.0100.marduk
+		trigger = {
+			NOT = { has_character_modifier = babylonian_marduk }
+		}
+		set_bhakti_effect = { BHAKTI = babylonian_marduk }
+	}
+
+	#Ishtar
+	option = {
+		name = pr_mesopotamian.0100.ishtar
+		trigger = {
+			NOT = { has_character_modifier = mesopotamian_ishtar }
+		}
+		set_bhakti_effect = { BHAKTI = mesopotamian_ishtar }
+	}
+
+	#Ninhegal
+	option = {
+		name = pr_mesopotamian.0100.ninhegal
+		trigger = {
+			NOT = { has_character_modifier = mesopotamian_ninhegal }
+		}
+		set_bhakti_effect = { BHAKTI = mesopotamian_ninhegal }
+	}
+
+	#Nabu
+	option = {
+		name = pr_mesopotamian.0100.nabu
+		trigger = {
+			NOT = { has_character_modifier = mesopotamian_nabu }
+		}
+		set_bhakti_effect = { BHAKTI = mesopotamian_nabu }
+	}
+
+	#Nergal
+	option = {
+		name = pr_mesopotamian.0100.nergal
+		trigger = {
+			NOT = { has_character_modifier = babylonian_nergal }
+		}
+		set_bhakti_effect = { BHAKTI = babylonian_nergal }
+	}
+
+	#Opt-Out
+	option = {
+		name = pr_mesopotamian.0100.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# Choose Main Deity: Assyrian
+pr_mesopotamian.0101 = {
+	type = character_event
+	title = pr_mesopotamian.0101.t
+	desc = pr_mesopotamian.0101.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Ashur
+	option = {
+		name = pr_mesopotamian.0101.ashur
+		trigger = {
+			NOT = { has_character_modifier = assyrian_ashur }
+		}
+		set_bhakti_effect = { BHAKTI = assyrian_ashur }
+	}
+
+	#Ishtar
+	option = {
+		name = pr_mesopotamian.0101.ishtar
+		trigger = {
+			NOT = { has_character_modifier = mesopotamian_ishtar }
+		}
+		set_bhakti_effect = { BHAKTI = mesopotamian_ishtar }
+	}
+
+	#Ninhegal
+	option = {
+		name = pr_mesopotamian.0101.ninhegal
+		trigger = {
+			NOT = { has_character_modifier = mesopotamian_ninhegal }
+		}
+		set_bhakti_effect = { BHAKTI = mesopotamian_ninhegal }
+	}
+
+	#Nabu
+	option = {
+		name = pr_mesopotamian.0101.nabu
+		trigger = {
+			NOT = { has_character_modifier = mesopotamian_nabu }
+		}
+		set_bhakti_effect = { BHAKTI = mesopotamian_nabu }
+	}
+
+	#Ninkarrak
+	option = {
+		name = pr_mesopotamian.0101.ninkarrak
+		trigger = {
+			NOT = { has_character_modifier = assyrian_ninkarrak }
+		}
+		set_bhakti_effect = { BHAKTI = assyrian_ninkarrak }
+	}
+
+	#Opt-Out
+	option = {
+		name = pr_mesopotamian.0101.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# Choose Main Deity: Sumerian
+pr_mesopotamian.0102 = {
+	type = character_event
+	title = pr_mesopotamian.0102.t
+	desc = pr_mesopotamian.0102.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Enlil
+	option = {
+		name = pr_mesopotamian.0102.enlil
+		trigger = {
+			NOT = { has_character_modifier = sumerian_enlil }
+		}
+		set_bhakti_effect = { BHAKTI = sumerian_enlil }
+	}
+
+	#Inanna
+	option = {
+		name = pr_mesopotamian.0102.inanna
+		trigger = {
+			NOT = { has_character_modifier = sumerian_inanna }
+		}
+		set_bhakti_effect = { BHAKTI = sumerian_inanna }
+	}
+
+	#Ninhegal
+	option = {
+		name = pr_mesopotamian.0102.ninhegal
+		trigger = {
+			NOT = { has_character_modifier = mesopotamian_ninhegal }
+		}
+		set_bhakti_effect = { BHAKTI = mesopotamian_ninhegal }
+	}
+
+	#Nisaba
+	option = {
+		name = pr_mesopotamian.0102.nisaba
+		trigger = {
+			NOT = { has_character_modifier = sumerian_nisaba }
+		}
+		set_bhakti_effect = { BHAKTI = sumerian_nisaba }
+	}
+
+	#Ninurta
+	option = {
+		name = pr_mesopotamian.0102.ninurta
+		trigger = {
+			NOT = { has_character_modifier = sumerian_ninurta }
+		}
+		set_bhakti_effect = { BHAKTI = sumerian_ninurta }
+	}
+
+	#Opt-Out
+	option = {
+		name = pr_mesopotamian.0102.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# --- Open First Brewery (0200) ---
+pr_mesopotamian.0200 = {
+	type = character_event
+	title = pr_mesopotamian.0200.t
+	desc = pr_mesopotamian.0200.desc
+	theme = faith
+	option = {
+		name = pr_mesopotamian.0200.a
+		title:c_batiha.title_province = {
+			add_special_building = first_mesopotamian_brewery
+		}
+		clear_global_variable_list = unavailable_unique_decisions_open_first_brewery
+	}
+}

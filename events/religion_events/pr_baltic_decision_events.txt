@@ -1,0 +1,212 @@
+﻿namespace = pr_baltic_decision
+
+##################################################
+# Polytheism Reborn - Baltic Decision Events
+# Events gekoppeld aan pr_baltic_decisions.txt
+##################################################
+
+# =============================================
+# Decision Outcome Events (0001-0099)
+# =============================================
+
+
+#--- Choose Lithuanian Personal Deity (0001) ---
+pr_baltic_decision.0001 = {
+	type = character_event
+	title = pr_baltic_decision.0001.t
+	desc = pr_baltic_decision.0001.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	# Dievas
+	option = {
+		name = pr_baltic_decision.0001.dievas
+		trigger = {
+			NOT = { has_character_modifier = lithuanian_dievas }
+		}
+		set_bhakti_effect = { BHAKTI = lithuanian_dievas }
+	}
+
+	# Dalia
+	option = {
+		name = pr_baltic_decision.0001.dalia
+		trigger = {
+			NOT = { has_character_modifier = lithuanian_dalia }
+		}
+		set_bhakti_effect = { BHAKTI = lithuanian_dalia }
+	}
+
+	# Perkunas
+	option = {
+		name = pr_baltic_decision.0001.perkunas
+		trigger = {
+			NOT = { has_character_modifier = lithuanian_perkunas }
+		}
+		set_bhakti_effect = { BHAKTI = lithuanian_perkunas }
+	}
+
+	# Zemyna
+	option = {
+		name = pr_baltic_decision.0001.zemyna
+		trigger = {
+			NOT = { has_character_modifier = lithuanian_zemyna }
+		}
+		set_bhakti_effect = { BHAKTI = lithuanian_zemyna }
+	}
+
+	# Saule
+	option = {
+		name = pr_baltic_decision.0001.saule
+		trigger = {
+			NOT = { has_character_modifier = baltic_saule }
+		}
+		set_bhakti_effect = { BHAKTI = baltic_saule }
+	}
+
+	# Opt-Out
+	option = {
+		name = pr_baltic_decision.0001.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#--- Choose Latvian Personal Deity (0002) ---
+pr_baltic_decision.0002 = {
+	type = character_event
+	title = pr_baltic_decision.0002.t
+	desc = pr_baltic_decision.0002.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	# Dievs
+	option = {
+		name = pr_baltic_decision.0002.dievs
+		trigger = {
+			NOT = { has_character_modifier = latvian_dievs }
+		}
+		set_bhakti_effect = { BHAKTI = latvian_dievs }
+	}
+
+	# Jumis
+	option = {
+		name = pr_baltic_decision.0002.jumis
+		trigger = {
+			NOT = { has_character_modifier = latvian_jumis }
+		}
+		set_bhakti_effect = { BHAKTI = latvian_jumis }
+	}
+
+	# Perkons
+	option = {
+		name = pr_baltic_decision.0002.perkons
+		trigger = {
+			NOT = { has_character_modifier = latvian_perkons }
+		}
+		set_bhakti_effect = { BHAKTI = latvian_perkons }
+	}
+
+	# Ceroklis
+	option = {
+		name = pr_baltic_decision.0002.ceroklis
+		trigger = {
+			NOT = { has_character_modifier = latvian_ceroklis }
+		}
+		set_bhakti_effect = { BHAKTI = latvian_ceroklis }
+	}
+
+	# Saule
+	option = {
+		name = pr_baltic_decision.0002.saule
+		trigger = {
+			NOT = { has_character_modifier = baltic_saule }
+		}
+		set_bhakti_effect = { BHAKTI = baltic_saule }
+	}
+
+	# Opt-Out
+	option = {
+		name = pr_baltic_decision.0002.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#--- Choose Prussian Personal Deity (0003) ---
+pr_baltic_decision.0003 = {
+	type = character_event
+	title = pr_baltic_decision.0003.t
+	desc = pr_baltic_decision.0003.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	# Deiws
+	option = {
+		name = pr_baltic_decision.0003.deiws
+		trigger = {
+			NOT = { has_character_modifier = prussian_deiws }
+		}
+		set_bhakti_effect = { BHAKTI = prussian_deiws }
+	}
+
+	# Pilwits
+	option = {
+		name = pr_baltic_decision.0003.pilwits
+		trigger = {
+			NOT = { has_character_modifier = prussian_pilwits }
+		}
+		set_bhakti_effect = { BHAKTI = prussian_pilwits }
+	}
+
+	# Perkuns
+	option = {
+		name = pr_baltic_decision.0003.perkuns
+		trigger = {
+			NOT = { has_character_modifier = prussian_perkuns }
+		}
+		set_bhakti_effect = { BHAKTI = prussian_perkuns }
+	}
+
+	# Patrimps
+	option = {
+		name = pr_baltic_decision.0003.patrimps
+		trigger = {
+			NOT = { has_character_modifier = prussian_patrimps }
+		}
+		set_bhakti_effect = { BHAKTI = prussian_patrimps }
+	}
+
+	# Ausauts
+	option = {
+		name = pr_baltic_decision.0003.ausauts
+		trigger = {
+			NOT = { has_character_modifier = prussian_ausauts }
+		}
+		set_bhakti_effect = { BHAKTI = prussian_ausauts }
+	}
+
+	# Opt-Out
+	option = {
+		name = pr_baltic_decision.0003.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}

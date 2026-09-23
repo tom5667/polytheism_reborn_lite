@@ -3,16 +3,16 @@
 #Made by tom5667 
 ######################
 
-heritage_daco_thracian_name:0 "Daco-Thracian"
-heritage_gaulish_name:0 "Gaulish"
-heritage_mycenaean_name:0 "Mycanaean"
-heritage_etruscan_name:0 "Etruscan"
-heritage_mesopotamian_name:0 "Mesopotamian"
-heritage_hittite_name:0 "Hittite"
-heritage_phoenician_name:0 "Phoenician"
-heritage_illyrian_name:0 "Illyrian"
+heritage_pr_daco_thracian_name:0 "Daco-Thracian"
+heritage_pr_gaulish_name:0 "Gaulish"
+heritage_pr_mycenaean_name:0 "Mycenaean"
+heritage_pr_etruscan_name:0 "Etruscan"
+heritage_pr_mesopotamian_name:0 "Mesopotamian"
+heritage_pr_hittite_name:0 "Hittite"
+heritage_pr_phoenician_name:0 "Phoenician"
+heritage_pr_illyrian_name:0 "Illyrian"
 heritage_pr_greek_name:0 "Hellen"
-heritage_celtic_iberian_name:0 "Celtiberian"
+heritage_pr_celtic_iberian_name:0 "Celtiberian"
 heritage_iberian_name:0 "Iberian"
 
 

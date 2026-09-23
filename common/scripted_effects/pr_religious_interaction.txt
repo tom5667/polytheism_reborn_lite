@@ -1,4 +1,11 @@
-﻿demand_gaelic_conversion_interaction_effect = {
+﻿# =============================================
+# Polytheism Reborn - Religious Conversion Interaction Effects
+# File: pr_religious_interaction.txt
+# Each effect handles faith conversion for a specific polytheistic religion
+# =============================================
+
+# --- Gaelic ---
+demand_gaelic_conversion_interaction_effect = {
 	# Spouses convert
 	scope:recipient = {
 		every_spouse = {
@@ -2144,4 +2151,4 @@ demand_scythian_conversion_interaction_effect = {
 			}
 		}
 	}
-}
+}

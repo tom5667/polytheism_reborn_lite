@@ -1,0 +1,205 @@
+l_german:
+  # =============================================
+  # Polytheism Reborn - Keltische Entscheidungen
+  # Lokalisierung für pr_celtic_decisions.txt
+  # =============================================
+
+  # --- Hohepriestertum wiederherstellen ---
+  pr_celtic_restore_high_priesthood_decision:0 "Stelle das Hohepriestertum wieder her"
+  pr_celtic_restore_high_priesthood_decision_desc:0 "#F Die alten druidischen Traditionen unseres Volkes verlangen einen Hohen Priester, der die Gläubigen führt. Obwohl die alten Wege durch Zeit und Invasion zerstreut wurden, flüstern die heiligen Haine noch immer die Namen derer, die einst unser Volk in Verbindung mit dem Göttlichen führten.#!/n\nDurch die Wiederherstellung des Hohen Priestertums werde ich die keltischen Glaubensrichtungen unter einem einzigen geistlichen Führer vereinen, die alte Autorität der Druiden wiederbeleben und sicherstellen, dass die Götter erneut die gebührende Hingabe erhalten."
+  pr_celtic_restore_high_priesthood_decision_tooltip:0 "Stelle das Hohepriestertum wieder her, um die keltischen Glaubensrichtungen zu führen"
+  pr_celtic_restore_high_priesthood_decision_confirm:0 "Stelle das Hohepriestertum wieder her!"
+  pr_celtic_restore_high_priesthood_decision_effect_tooltip:0 "#P Ein Hohepriester wird ernannt, um die keltischen Glaubensrichtungen zu führen#!$EFFECT_LIST_BULLET$Der Hohepriester wird geistliche Autorität über alle keltischen Gläubigen haben $EFFECT_LIST_BULLET$Erfordert erhebliche Investitionen in Frömmigkeit@warning_icon! #X Diese Entscheidung kann nur einmal pro Spiel getroffen werden!#"
+  restore_high_priesthood_holy_sites:0 "#F Um das Hohepriestertum wiederherzustellen, musst du mindestens 3 heilige Stätten deines Glaubens oder seiner Zweige kontrollieren.#!"
+
+  # --- Keltisches Imperium gründen ---
+  pr_celtic_create_empire_decision:0 "Gründe das Keltische Imperium"
+  pr_celtic_create_empire_decision_desc:0 "#F Die Zeit ist gekommen, die keltischen Völker unter einem Banner zu vereinen. Von den nebligen Inseln Irlands bis zu den alten Ländern Galliens haben unsere Völker standgehalten gegen die Strömungen der Geschichte. Nun, als Hochkönig von Irland, Schottland, Wales und England, werde ich ein neues Imperium schmieden, das den großen Mächten des Zeitalters EBENBÜRTIG ist.#!/n\nDurch die Gründung des Keltischen Imperiums werde ich ein Reich schaffen, das alle keltischen Länder umfasst und unser Volk an seinen rechtmäßigen Platz unter den großen Nationen der Welt zurückführt."
+  pr_celtic_create_empire_decision_tooltip:0 "Bilde das Keltische Imperium und vereine die keltischen Königreiche"
+  pr_celtic_create_empire_decision_confirm:0 "Gründe das Keltische Imperium!"
+  pr_celtic_create_empire_decision_effect_tooltip:0 "#P Das Keltische Imperium wird als neuer Titel auf Imperiumsebene gegründet#/n$EFFECT_LIST_BULLET$[title_k_high_kingdom_of_ireland.GetNameNoTier], [title_k_scotland.GetNameNoTier], [title_k_wales.GetNameNoTier] und [title_k_england.GetNameNoTier] werden Teil des Keltischen Imperiums $EFFECT_LIST_BULLET$ Erfordert erhebliche Investitionen in Gold und Ansehen@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Lusitanien gründen ---
+  pr_celtic_create_lusitania_decision:0 "Gründe Lusitanien"
+  pr_celtic_create_lusitania_decision_desc:0 "#F Das alte Königreich Lusitanien stand einst als Leuchtfeuer des iberischen Widerstands und der Kultur. Von den rauen Hügeln Bejas bis zu den Küstenebenen des Algarve hat unser Volk seine einzigartige Identität gegen die Strömungen der Geschichte bewahrt. Nun, als Herrscher, der die wichtigsten Herzogtümer dieses historischen Landes kontrolliert, werde ich Lusitanien wiederbeleben und zu alter Größe zurückführen.#!/nDurch die Gründung Lusitaniens werde ich ein neues Königreich schaffen, das die iberischen Herzogtümer unter einem einzigen Banner vereint und ein Reich schmiedet, das unser gemeinsames Erbe und unsere Stärke ehrt."
+  pr_celtic_create_lusitania_decision_tooltip:0 "#T Bilde das alte Königreich Lusitanien, indem du die iberischen Herzogtümer vereinst#!"
+  pr_celtic_create_lusitania_decision_confirm:0 "Gründe Lusitanien!"
+  pr_celtic_create_lusitania_decision_effect_tooltip:0 "#P Das Königreich Lusitanien wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_beja.GetNameNoTier], [title_d_badajoz.GetNameNoTier], [title_d_algarve.GetNameNoTier] und [title_d_coimbra.GetNameNoTier] werden Teil von Lusitanien $EFFECT_LIST_BULLET$ Erfordert erhebliche Investitionen in Gold und Ansehen@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Galicien gründen ---
+  pr_celtic_create_galicia_decision:0 "Gründe Galicien"
+  pr_celtic_create_galicia_decision_desc:0 "#F Das alte Königreich Galicien stand einst als stolzes Reich im Nordwesten Iberiens. Von der heiligen Stadt Santiago de Compostela bis zu den rauen Küsten Portos hat unser Volk sein keltisches Erbe durch die Jahrhunderte bewahrt. Nun, als Herrscher, der die wichtigsten Herzogtümer dieses historischen Landes kontrolliert, werde ich das Königreich Galicien wiederbeleben und zu alter Größe zurückführen. Durch die Gründung Galiciens werde ich ein neues Königreich schaffen, das die nordwestiberischen Herzogtümer unter einem einzigen Banner vereint und ein Reich schmiedet, das unser gemeinsames keltisch-iberische Erbe und unsere Stärke ehrt.#!"
+  pr_celtic_create_galicia_decision_tooltip:0 "#T Bilde das alte Königreich Galicien, indem du die nordwestiberischen Herzogtümer vereinst#!"
+  pr_celtic_create_galicia_decision_confirm:0 "Gründe Galicien!"
+  pr_celtic_create_galicia_decision_effect_tooltip:0 "#P Das Königreich Galicien wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_porto.GetNameNoTier], [title_d_galicia.GetNameNoTier], [title_d_asturias.GetNameNoTier] und [title_d_leon.GetNameNoTier] werden Teil von Galicien $EFFECT_LIST_BULLET$ Erfordert erhebliche Investitionen in Gold und Ansehen@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Vasconien gründen ---
+  pr_celtic_create_vasconia_decision:0 "Gründe Vasconien"
+  pr_celtic_create_vasconia_decision_desc:0 "#F Das alte Königreich Vasconien gedieh einst als mächtiges Reich, das sich von den Pyrenäen bis zum Ebro erstreckte. Von den rauen Hochlanden Navarras bis zu den fruchtbaren Tälern Aragons und den Küstenregionen Viscayas hat unser Volk sein einzigartiges baskisches und keltisches Erbe durch die Jahrhunderte bewahrt. Nun, als Herrscher, der diese historischen Herzogtümer kontrolliert, werde ich das Königreich Vasconien wiederbeleben und zu alter Größe zurückführen. Durch die Gründung Vasconiens werde ich ein neues Königreich schaffen, das diese Länder unter einem einzigen Banner vereint und ein Reich schmiedet, das unser gemeinsames Erbe und unsere Stärke ehrt.#!"
+  pr_celtic_create_vasconia_decision_tooltip:0 "#T Bilde das alte Königreich Vasconien, indem du Navarra, Aragon und Viscaya vereinst#!"
+  pr_celtic_create_vasconia_decision_confirm:0 "Gründe Vasconien!"
+  pr_celtic_create_vasconia_decision_effect_tooltip:0 "#P Das Königreich Vasconien wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_navarra.GetNameNoTier], [title_d_aragon.GetNameNoTier] und [title_d_viscaya.GetNameNoTier] werden Teil von Vasconien $EFFECT_LIST_BULLET$ Erfordert erhebliche Investitionen in Gold und Ansehen@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Tartessien gründen ---
+  pr_celtic_create_tartessia_decision:0 "Gründe Tartessien"
+  pr_celtic_create_tartessia_decision_desc:0 "#F Das legendäre Königreich Tartessien gedieh einst als Zentrum von Reichtum und Kultur auf der südlichen iberischen Halbinsel. Von der goldenen Stadt Sevilla bis zu den strategischen Festungen Granadas und Córdoba hat unser Volk sein reiches Erbe durch Jahrtausende bewahrt. Nun, als Herrscher, der diese historischen Herzogtümer kontrolliert, werde ich das Königreich Tartessien wiederbeleben und zu alter Größe zurückführen. Durch die Gründung Tartessiens werde ich ein neues Königreich schaffen, das diese Länder unter einem einzigen Banner vereint und ein Reich schmiedet, das unser gemeinsames keltisch-iberisches Erbe ehrt.#!/n"
+  pr_celtic_create_tartessia_decision_tooltip:0 "#T Bilde das alte Königreich Tartessien, indem du Sevilla, Granada und Cordoba vereinst#!"
+  pr_celtic_create_tartessia_decision_confirm:0 "Gründe Tartessien!"
+  pr_celtic_create_tartessia_decision_effect_tooltip:0 "#P Das Königreich Tartessien wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_sevilla.GetNameNoTier], [title_d_granada.GetNameNoTier] und [title_d_cordoba.GetNameNoTier] werden Teil von Tartessien $EFFECT_LIST_BULLET$ Erfordert erhebliche Investitionen in Gold und Ansehen@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Celtiberien gründen ---
+  pr_celtic_create_celtiberia_decision:0 "Gründe Celtiberien"
+  pr_celtic_create_celtiberia_decision_desc:0 "#F Das mächtige Königreich Celtiberien stand einst als Bollwerk der keltischen Kultur im Herzen Iberiens. Von den Bergfestungen Kantabriens bis zu den strategischen Ebenen Kastiliens und der historischen Stadt Toledo hat unser Volk seine tapfere Unabhängigkeit und reichen Traditionen durch die Jahrhunderte bewahrt. Nun, als Herrscher, der diese historischen Herzogtümer kontrolliert, werde ich das Königreich Celtiberien wiederbeleben und zu alter Größe zurückführen. Durch die Gründung Celtiberiens werde ich ein neues Königreich schaffen, das diese Länder unter einem einzigen Banner vereint und ein Reich schmiedet, das unser gemeinsames keltisch-iberisches Erbe ehrt.#!/n"
+  pr_celtic_create_celtiberia_decision_tooltip:0 "#T Bilde das alte Königreich Celtiberien, indem du Kantabrien, Kastilien und Toledo vereinst#!"
+  pr_celtic_create_celtiberia_decision_confirm:0 "Gründe Celtiberien!"
+  pr_celtic_create_celtiberia_decision_effect_tooltip:0 "#P Das Königreich Celtiberien wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_cantabria.GetNameNoTier], [title_d_castilla.GetNameNoTier] und [title_d_toledo.GetNameNoTier] werden Teil von Celtiberien $EFFECT_LIST_BULLET$ Erfordert erhebliche Investitionen in Gold und Ansehen@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Iberien gründen ---
+  pr_celtic_create_iberia_decision:0 "Gründe Iberien"
+  pr_celtic_create_iberia_decision_desc:0 "#F Das alte Königreich Iberien vereinte einst die verschiedenen Völker der Halbinsel unter einem einzigen Banner. Von den Mittelmeerküsten Valencias bis zu den belebten Straßen Barcelonas und den fruchtbaren Ländern Murcias hat unser Volk ein reiches Geflecht aus Kulturen und Traditionen geschaffen. Nun, als Herrscher, der diese historischen Herzogtümer kontrolliert, werde ich das Königreich Iberien wiederbeleben und zu alter Größe zurückführen. Durch die Gründung Iberiens werde ich ein neues Königreich schaffen, das diese Länder unter einem einzigen Banner vereint und ein Reich schmiedet, das unser gemeinsames Erbe ehrt.#!/n"
+  pr_celtic_create_iberia_decision_tooltip:0 "#T Bilde das alte Königreich Iberien, indem du Valencia, Barcelona und Murcia vereinst#!"
+  pr_celtic_create_iberia_decision_confirm:0 "Gründe Iberien!"
+  pr_celtic_create_iberia_decision_effect_tooltip:0 "#P Das Königreich Iberien wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_valencia.GetNameNoTier], [title_d_barcelona.GetNameNoTier] und [title_d_murcia.GetNameNoTier] werden Teil von Iberien $EFFECT_LIST_BULLET$ Erfordert erhebliche Investitionen in Gold und Ansehen@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Hauptgottheit wählen ---
+  pr_celtic_choose_main_deity_decision:0 "Wähle Hauptgottheit"
+  pr_celtic_choose_main_deity_decision_desc:0 "#F Die Götter unseres Volkes verlangen einen Champion, der ihren Willen in der sterblichen Welt vertritt. Als Herrscher des keltischen Glaubens muss ich eine Schutzgottheit auswählen, die meine Handlungen leitet und meine Herrschaft mit göttlichem Segen bedenkt.#!/n\nDurch die Wahl einer Hauptgottheit werde ich eine persönliche Verbindung mit dem Göttlichen herstellen und einzigartige Segnungen und Modifikatoren erhalten, die die Natur meiner gewählten Gottheit oder Göttin widerspiegeln."
+  pr_celtic_choose_main_deity_decision_tooltip:0 "#T Wähle eine Schutzgottheit aus deinem keltischen Glauben, um göttliche Segnungen zu erhalten#!"
+  pr_celtic_choose_main_deity_decision_confirm:0 "Wähle Hauptgottheit!"
+  pr_celtic_choose_main_deity_decision_tt:0 "#T Verfügbare Gottheiten für [ROOT.Char.GetFaith.GetName]#!"
+
+  # --- Auswahlbeschreibungen der Hauptgottheit: Gälisch ---
+  select_main_deity_celtic_decision.select_an_dagda:0 "#T An Dagda#!\n#P Der Allvater der Tuatha Dé Danann#!"
+  select_main_deity_celtic_decision.select_lugh:0 "#T Lugh#!\n#P Meister aller Künste und Handwerke#!"
+  select_main_deity_celtic_decision.select_brigid:0 "#T Brigid#!\n#P Göttin der Dichtung, Heilung und des Schmiedefeuers#!/"
+  select_main_deity_celtic_decision.select_nemain:0 "#T Nemain#!\n#P Göttin der Schlachtraserei#!/"
+  select_main_deity_celtic_decision.select_ecna:0 "#T Ecna#!\n#P Göttin der Weisheit und des Verstandes#!/"
+
+  # --- Auswahlbeschreibungen der Hauptgottheit: Britisch ---
+  select_main_deity_celtic_decision.select_taranis:0 "#T Taranis#!\n#P Der Donnerer, Herr des Rades#!/"
+  select_main_deity_celtic_decision.select_lugus_brythonic:0 "#T Lugus#!\n#P Meister des Lichts und der Fertigkeit#!/"
+  select_main_deity_celtic_decision.select_arianrhod:0 "#T Arianrhod#!\n#P Göttin des silbernen Rades und der Sterne#!/"
+  select_main_deity_celtic_decision.select_andraste:0 "#T Andraste#!\n#P Göttin des Sieges und der Morgendämmerung#!/"
+  select_main_deity_celtic_decision.select_brigantia:0 "#T Brigantia#!\n#P Göttin des Sieges und der Hochländer#!/"
+
+  # --- Auswahlbeschreibungen der Hauptgottheit: Gallisch ---
+  select_main_deity_celtic_decision.select_toutatis:0 "#T Toutatis#!\n#P Beschützer des Stammes#!/"
+  select_main_deity_celtic_decision.select_lughus:0 "#T Lughus#!\n#P Der strahlende Meister der Künste#!/"
+  select_main_deity_celtic_decision.select_rosmerta:0 "#T Rosmerta#!\n#P Göttin des Überflusses und der Fülle#!/"
+  select_main_deity_celtic_decision.select_cicolluis:0 "#T Cicolluis#!\n#P Gott des Krieges und der Heilung#!/"
+  select_main_deity_celtic_decision.select_belisama:0 "#T Belisama#!\n#P Die Strahlende, Herrin des Feuers#!/"
+
+  # --- Auswahlbeschreibungen der Hauptgottheit: Keltisch-Iberisch ---
+  select_main_deity_celtic_decision.select_reue:0 "#T Reue#!\n#P Der höchste Himmelsvater#!/"
+  select_main_deity_celtic_decision.select_arancia:0 "#T Arancia#!\n#P Hüterin der Wildnis#!/"
+  select_main_deity_celtic_decision.select_nabia:0 "#T Nabia#!\n#P Göttin der Flüsse und Gewässer#!/"
+  select_main_deity_celtic_decision.select_lugus:0 "#T Lugus#!\n#P Meister des Lichts und der Fertigkeit#!/"
+  select_main_deity_celtic_decision.select_bandua:0 "#T Bandua#!\n#P Gott des Krieges und der Festung#!/"
+
+  # --- Altirische Kultur ---
+  pr_celtic_old_irish_culture_decision:0 "Nimm die altirische Kultur an"
+  pr_celtic_old_irish_culture_decision_desc:0 "#F Die alten irischen Traditionen unserer Vorfahren hallen noch immer durch das Land, bewahrt durch die Barden und am Leben gehalten in der alten Sprache.#!/n\nIch werde das Erbe Altirlands zurückerobern und die Wege meiner Vorfahren wiederbeleben."
+  pr_celtic_old_irish_culture_decision_tooltip:0 "#T Nimm die alte irische [Kultur|E] an#!"
+  pr_celtic_old_irish_culture_decision_confirm:0 "Nimm die altirische Kultur an"
+
+  # --- Gallische Kultur ---
+  pr_celtic_gaulish_culture_decision:0 "Nimm die gallische Kultur an"
+  pr_celtic_gaulish_culture_decision_desc:0 "#F Das stolze gallische Volk herrschte einst über das Herz Europas, seine Krieger und Druiden in der alten Welt berühmt.#!/n\nDurch die Annahme des gallischen Erbes werde ich das Vermächtnis unserer gallischen Vorfahren zurückerobern und ihre alten Wege wiederherstellen."
+  pr_celtic_gaulish_culture_decision_tooltip:0 "#T Nimm die alte gallische [Kultur|E] an#!"
+  pr_celtic_gaulish_culture_decision_confirm:0 "Nimm die gallische Kultur an"
+
+  # --- Britische Kultur ---
+  pr_celtic_brythonic_culture_decision:0 "Nimm die britische Kultur an"
+  pr_celtic_brythonic_culture_decision_desc:0 "#F Die britischen Völker beherrschten einst die Insel Großbritannien von den südlichen Küsten bis zu den Hochlanden des Nordens, ihre Königreiche verwurzelt in den alten Göttern.#!/n\nIch werde die alte britische Kultur wiederbeleben und das Erbe der Briten zurückerobern."
+  pr_celtic_brythonic_culture_decision_tooltip:0 "#T Nimm die alte britische [Kultur|E] an#!/"
+  pr_celtic_brythonic_culture_decision_confirm:0 "Nimm die britische Kultur an"
+
+  # --- Eburonen-Kultur ---
+  pr_celtic_eburones_culture_decision:0 "Nimm die Eburonen-Kultur an"
+  pr_celtic_eburones_culture_decision_desc:0 "#F Die Eburonen waren ein tapferer gallischer Stamm, der die Legionen Roms trotzte und für seine Freiheit in den Wäldern des Rheinlands kämpfte.#!/n\nIch werde das Erbe der Eburonen zurückerobern und ihren alten Geist wiederbeleben."
+  pr_celtic_eburones_culture_decision_tooltip:0 "#T Nimm die alte Eburonen-[Kultur|E] an#!/"
+  pr_celtic_eburones_culture_decision_confirm:0 "Nimm die Eburonen-Kultur an"
+
+  # --- Manx-Kultur ---
+  pr_celtic_manx_culture_decision:0 "Nimm die Manx-Kultur an"
+  pr_celtic_manx_culture_decision_desc:0 "#F Die Isle of Man war lange Zeit ein Schnittpunkt keltischer Völker, wo sich gälische und nordische Einflüsse zu einer einzigartigen Kultur verbanden.#!/n\nIch werde das Manx-Erbe annehmen und die alten Wege der Insel wiederbeleben."
+  pr_celtic_manx_culture_decision_tooltip:0 "#T Nimm die alte Manx-[Kultur|E] an#!/"
+  pr_celtic_manx_culture_decision_confirm:0 "Nimm die Manx-Kultur an"
+
+  # --- Vertreibe die Sassenach-Saga ---
+  pr_celtic_push_out_the_sassenach_saga_decision:0 "Vertreibe die Sassenach"
+  pr_celtic_push_out_the_sassenach_saga_decision_desc:0 "#F Jahrhunderte der Invasionen durch germanische Stämme haben unseren Lebensstil stark beeinträchtigt.#!/n\nJetzt ist es Zeit, wieder zu den Waffen zu greifen und sie zu vertreiben."
+  pr_celtic_push_out_the_sassenach_saga_decision_tooltip:0 "#T Vertreibe die Sassenach#!/"
+  pr_celtic_push_out_the_sassenach_saga_decision_confirm:0 "In den Krieg"
+
+  # --- Irland zurückerobern ---
+  pr_celtic_reconquest_ireland_decision:0 "erobere Irland zurück"
+  pr_celtic_reconquest_ireland_decision_desc:0 "#F Die fünf Königreiche Irlands waren lange Zeit das Herzland unseres Volkes, doch fremder Einfluss hat unsere alten Bindungen zerrüttet.#!/n\nIch werde die Herzogtümer Ulster, Meath, Connacht, Leinster und Munster unter einem keltischen Herrscher vereinen."
+  pr_celtic_reconquest_ireland_decision_tooltip:0 "#T Vereinige die fünf Königreiche Irlands#!/"
+  pr_celtic_reconquest_ireland_decision_confirm:0 "erobere Irland zurück"
+
+  # --- Alba zurückerobern ---
+  pr_celtic_reconquest_alba_decision:0 "erobere Alba zurück"
+  pr_celtic_reconquest_alba_decision_desc:0 "#F Die Highlands und Lowlands von Alba wurden einst von keltischen Königen regiert, die keiner fremden Macht unterstanden.#!/n\nIch werde Galloway, Lothian, Albany, die Western Isles und Moray zurückerobern und das alte Königreich Alba wiederherstellen."
+  pr_celtic_reconquest_alba_decision_tooltip:0 "#T Vereinige das alte Königreich Alba#!/"
+  pr_celtic_reconquest_alba_decision_confirm:0 "erobere Alba zurück"
+
+  # --- Wales zurückerobern ---
+  pr_celtic_reconquest_wales_decision:0 "erobere Wales zurück"
+  pr_celtic_reconquest_wales_decision_desc:0 "#F Die walisischen Fürstentümer Gwynedd, Powys und Deheubarth standen einst als letzte Bastion brythonischer Herrschaft in Britannien.#!/n\nIch werde die walisischen Länder vereinen und ihre alte Souveränität wiederherstellen."
+  pr_celtic_reconquest_wales_decision_tooltip:0 "#T Vereinige die alten Fürstentümer von Wales#!/"
+  pr_celtic_reconquest_wales_decision_confirm:0 "erobere Wales zurück"
+
+  # --- Albion zurückerobern ---
+  pr_celtic_reconquest_albion_decision:0 "erobere Albion zurück"
+  pr_celtic_reconquest_albion_decision_desc:0 "#F Die Insel Albion war einst ganz keltisch, von den nordischen Highlands bis zu den südlichen Klippen Cornwalls.#!/n\nNach der Sicherung Irlands, Albas und Wales werde ich nun die Eindringlinge aus den verbleibenden Herzogtümern Englands vertreiben und die volle keltische Vorherrschaft über die Insel wiederherstellen."
+  pr_celtic_reconquest_albion_decision_tooltip:0 "#T Vollende die Rückeroberung Albions#!/"
+  pr_celtic_reconquest_albion_decision_confirm:0 "erobere Albion zurück"
+
+  # --- Bretagne erobern ---
+  pr_celtic_conquest_brittany_decision:0 "Erobere die Bretagne"
+  pr_celtic_conquest_brittany_decision_desc:0 "#F Die Bretagne, das alte Armorica, wurde von brythonischen Völkern besiedelt, die vor den sächsischen Invasionen flohen.#!/n\nAls Kaiser der keltischen Völker werde ich die Bretagne wieder unter unser Banner bringen und ihre alten Bindungen zur keltischen Welt wiederherstellen."
+  pr_celtic_conquest_brittany_decision_tooltip:0 "#T Bringe die Bretagne in das Keltische Imperium#!/"
+  pr_celtic_conquest_brittany_decision_confirm:0 "Erobere die Bretagne"
+
+  # --- Galicien erobern ---
+  pr_celtic_conquest_galicia_decision:0 "Erobere Galicien"
+  pr_celtic_conquest_galicia_decision_desc:0 "#F Das keltische Erbe Galiciens reicht bis in die Antike zurück, als sein Volk Zinn und Kupfer über den Atlantik handelte.#!/n\nAls Kaiser der keltischen Völker werde ich Galicien wieder unter unser Banner bringen und sein altes keltisches Erbe zurückfordern."
+  pr_celtic_conquest_galicia_decision_tooltip:0 "#T Bringe Galicien in das Keltische Imperium#!/"
+  pr_celtic_conquest_galicia_decision_confirm:0 "Erobere Galicien"
+
+  # --- Belgae erobern ---
+  pr_celtic_conquest_of_belgae_decision:0 "Erobere Belgae"
+  pr_celtic_conquest_of_belgae_decision_desc:0 "#F Die Belger zählen zu den tapfersten der keltischen Völker und herrschten über die Länder zwischen Rhein und Seine.#!/n\nNach der Sicherung der Bretagne werde ich nun in die Niederlande vordringen und die alten Länder der Belger zurückerobern."
+  pr_celtic_conquest_of_belgae_decision_tooltip:0 "#T Erobere die alten Länder der Belger#!/"
+  pr_celtic_conquest_of_belgae_decision_confirm:0 "Erobere Belgae"
+
+  # --- Gallien erobern ---
+  pr_celtic_conquest_of_gaul_decision:0 "Erobere Gallien"
+  pr_celtic_conquest_of_gaul_decision_desc:0 "#F Gallien war das Herzland der keltischen Welt, von den Ebenen Aquitaniens bis zu den Wäldern Burgunds und den Küsten der Normandie.#!/n\nNach der Sicherung der Bretagne und Belgicas werde ich nun die Eroberung Galliens vollenden und die volle keltische Vorherrschaft über das Herz Europas wiederherstellen."
+  pr_celtic_conquest_of_gaul_decision_tooltip:0 "#T Vollende die Eroberung Galliens#!/"
+  pr_celtic_conquest_of_gaul_decision_confirm:0 "Erobere Gallien"
+
+  # --- Druidische Versammlungsstätte gründen ---
+  pr_celtic_create_gathering_place_for_druids_decision:0 "Gründe einen druidischen Versammlungsort"
+  pr_celtic_create_gathering_place_for_druids_decision_desc:0 "#F Die Druiden sind die Hüter unserer heiligen Überlieferungen, doch sie wandern ohne einen zentralen Ort, an dem die Gläubigen sich versammeln können, um die alten Götter zu ehren.#!/n\nDurch die Gründung eines großen Versammlungsorts in den Hügeln von Gwynedd werde ich dem keltischen Glauben ein Herz geben, von dem aus sich seine Traditionen erneut ausbreiten können."
+  pr_celtic_create_gathering_place_for_druids_decision_tooltip:0 "Gründe einen heiligen Versammlungsort für die Druiden"
+  pr_celtic_create_gathering_place_for_druids_decision_confirm:0 "Gründe den Versammlungsort!"
+
+  # --- Königreich Noricum gründen ---
+  pr_celtic_create_noricum_kingdom_decision:0 "Gründe das Königreich Noricum"
+  pr_celtic_create_noricum_kingdom_decision_desc:0 "#F Die Alpenländer Noricums waren einst die Heimat keltischer Stämme, deren Eisen und Mut das Herz Europas prägten.#!/n\nMit den Herzogtümern Kärnten und Steiermark unter meiner Kontrolle werde ich das Königreich Noricum wiederbeleben und das keltische Erbe in den östlichen Bergen wiederherstellen."
+  pr_celtic_create_noricum_kingdom_decision_tooltip:0 "Bilde das Königreich Noricum, indem du Kärnten und Steiermark vereinst"
+  pr_celtic_create_noricum_kingdom_decision_confirm:0 "Gründe Noricum!"
+
+  # --- Sohn zu den Druiden schicken ---
+  pr_celtic_send_son_to_druids_decision:0 "Schicke deinen Sohn zu den Druiden"
+  pr_celtic_send_son_to_druids_decision_desc:0 "#F Ein Versammlungsort der Druiden steht nun unter unserem Volk, ein seltener Zufluchtsort der alten Weisheit.#!/n\nIch werde mein Kind zu den Druiden schicken, damit die alte Lehre an eine neue Generation weitergegeben wird."
+  pr_celtic_send_son_to_druids_decision_tooltip:0 "Schicke dein Kind zu den Druiden am Versammlungsort, um zu studieren"
+  pr_celtic_send_son_to_druids_decision_confirm:0 "Schicke ihn zu den Druiden!"
+
+  # --- Anspruch auf irisches Hochkönigtum erheben ---
+  pr_celtic_claim_irish_high_kingdom_decision:0 "Erhebe Anspruch auf das irische Hochkönigtum"
+  pr_celtic_claim_irish_high_kingdom_decision_desc:0 "#F Das Hochkönigtum Irlands steht seit zu langer Zeit leer, seine fünf Königreiche gespalten, während Prätendenten den alten Thron betrachten.#!/n\nAls Herrscher irischen Blutes, der eines der Königreiche hält, werde ich meinen Anspruch geltend machen und die Iren unter einem einzigen Hochkönig vereinen."
+  pr_celtic_claim_irish_high_kingdom_decision_tooltip:0 "Setze deinen Anspruch auf das Hochkönigtum Irlands durch"
+  pr_celtic_claim_irish_high_kingdom_decision_confirm:0 "Erhebe Anspruch auf das Hochkönigtum!"

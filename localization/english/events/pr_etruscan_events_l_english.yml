@@ -1,0 +1,15 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Etruscan Events
+  # Localization for pr_etruscan_decision_events.txt
+  # =============================================
+
+  # --- Choose Etruscan Personal Deity (0001) ---
+  pr_etruscan_decision.0001.t:0 "Deciding on a Deity"
+  pr_etruscan_decision.0001.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
+  pr_etruscan_decision.0001.tinia:0 "Tinia, Supreme Sky God and Lord of Thunder!"
+  pr_etruscan_decision.0001.nortia:0 "Nortia, Goddess of Fortune and Fate!"
+  pr_etruscan_decision.0001.turms:0 "Turms, Messenger of the Gods and Patron of Trade!"
+  pr_etruscan_decision.0001.menrva:0 "Menrva, Goddess of Wisdom and War!"
+  pr_etruscan_decision.0001.maris:0 "Maris, God of War and Fertility!"
+  pr_etruscan_decision.0001.optout:0 "$religious_decision.0102.flavor$"

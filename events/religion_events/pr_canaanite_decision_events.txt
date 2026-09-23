@@ -1,0 +1,450 @@
+﻿namespace = pr_canaanite
+
+#Punic
+
+
+
+
+
+
+#pr_punic
+
+pr_canaanite.0001 = {
+	type = character_event
+	title = pr_canaanite.0001.t
+	desc = pr_canaanite.0001.desc
+	theme = learning 
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_canaanite.0001.a
+		title:c_tunis.title_province = {
+			add_special_building = temple_to_tanit
+		}
+
+	}
+}
+
+
+pr_canaanite.0100 = {
+	type = character_event
+	title = pr_canaanite.0100.t
+	desc = pr_canaanite.0100.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Baal
+	option = {
+		name = pr_canaanite.0100.baal
+		trigger = {
+			NOT = { has_character_modifier = punic_baal}
+		}
+		set_bhakti_effect = { BHAKTI = punic_baal }
+	}
+
+	 #Kusor
+	 option = {
+	 	name = pr_canaanite.0100.kusor
+	 	trigger = {
+	 		NOT = { has_character_modifier = punic_kusor }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = punic_kusor}
+	 }
+
+	#Astarte
+	option = {
+		name = pr_canaanite.0100.astarte
+		trigger = {
+			NOT = { has_character_modifier = punic_astarte }
+		}
+		set_bhakti_effect = { BHAKTI = punic_astarte }
+	}
+
+	# Tanit
+	option = {
+		name = pr_canaanite.0100.tanit
+		trigger = {
+			NOT = { has_character_modifier = punic_tanit }
+		}
+		set_bhakti_effect = { BHAKTI = punic_tanit }
+	}
+
+
+	 # Melqart
+	 option = {
+	 	name = pr_canaanite.0100.melqart
+	 	trigger = {
+	 		NOT = { has_character_modifier = punic_melqart }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = punic_melqart }
+	 }
+
+	# Opt-Out
+	option = {
+		name = pr_canaanite.0100.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
+pr_canaanite.0200 = {
+	type = character_event
+	title = pr_canaanite.0200.t
+	desc = pr_canaanite.0200.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Ba al hadad
+	option = {
+		name = pr_canaanite.0200.ba_al_hadad
+		trigger = {
+			NOT = { has_character_modifier = semitic_ba_al_hadad }
+		}
+		set_bhakti_effect = { BHAKTI = semitic_ba_al_hadad  }
+	}
+
+	 #Ashera
+	 option = {
+	 	name = pr_canaanite.0200.ashera
+	 	trigger = {
+	 		NOT = { has_character_modifier = semitic_ashera }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = semitic_ashera}
+	 }
+
+	#Dagan
+	option = {
+		name = pr_canaanite.0200.dagan
+		trigger = {
+			NOT = { has_character_modifier = semitic_dagan }
+		}
+		set_bhakti_effect = { BHAKTI = semitic_dagan }
+	}
+
+	# Tanit
+	option = {
+		name = pr_canaanite.0200.el_elyon
+		trigger = {
+			NOT = { has_character_modifier = semitic_el_elyon }
+		}
+		set_bhakti_effect = { BHAKTI = semitic_el_elyon }
+	}
+
+
+	 # Ashtart
+	 option = {
+	 	name = pr_canaanite.0200.ashtart
+	 	trigger = {
+	 		NOT = { has_character_modifier = semitic_ashtart }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = semitic_ashtart }
+	 }
+
+	# Opt-Out
+	option = {
+		name = pr_canaanite.0200.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
+pr_canaanite.0002 = {
+	type = character_event
+	title = pr_canaanite.0002.t
+	desc = pr_canaanite.0002.desc
+	theme = learning 
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_canaanite.0002.a
+		title:c_tunis.title_province = {
+			add_special_building = temple_to_tanit 
+		}
+
+	}
+}
+
+#Random events 
+pr_canaanite.0003 = {
+	type = character_event
+	title = pr_canaanite.0003.t
+	desc = pr_canaanite.0003.desc
+	theme = learning
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_canaanite.0003.a
+		add_character_modifier = {
+			modifier = offering_to_baal_hammon
+			years = 5
+		}	
+	}
+}
+
+#Visiting Temple of Tanit
+pr_canaanite.0005 = {
+	type = character_event
+	title = pr_canaanite.0005.t
+	desc = pr_canaanite.0005.desc
+	theme = learning
+	override_background = { reference = temple_generic }
+	immediate = {
+		hidden_effect={
+			cp:councillor_court_chaplain = {
+				save_scope_as = tanit_priest
+			}
+		}
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:tanit_priest
+		animation = personality_content
+	}
+	option = {
+		name = pr_canaanite.0005.a
+		hidden_effect = {
+			random_list = {
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_canaanite.0005.message.positive
+						add_character_modifier = {
+							modifier = favoured_by_tanit
+							years = 2
+						}
+					}
+				}
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_canaanite.0005.message.negative
+						add_character_modifier = {
+							modifier = unfavoured_by_tanit
+							years = 2
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+
+# pr_canaanite.0004 = {
+# 	type = character_event
+# 	title = pr_canaanite.0004.t
+# 	desc = pr_canaanite.0004.desc
+# 	theme = faith
+# 	override_background = { reference = farmland }
+	
+# 	left_portrait = {
+# 		character = root
+# 		animation = personality_rational
+# 	}
+		
+# 	weight_multiplier = {
+# 		base = 1
+# 		modifier = {
+# 			add = 0.2
+# 			has_trait = brave
+# 		}
+# 		modifier = {
+# 			add = -0.2
+# 			has_trait = craven
+# 		}
+# 		modifier = {
+# 			add = 0.2
+# 			has_trait = trusting
+# 		}
+# 		modifier = {
+# 			add = -0.2
+# 			has_trait = paranoid
+# 		}
+# 		modifier = {
+# 			add = 0.2
+# 			has_trait = diligent
+# 		}
+# 		modifier = {
+# 			add = -0.2
+# 			has_trait = lazy
+# 		}
+# 	}
+	
+# 	option = { # No need
+# 		name = pr_canaanite.0004.a
+# 		stress_impact = {
+# 			zealous = minor_stress_impact_gain
+# 		}
+# 	}
+	
+# 	option = { # Small offering
+# 		name = pr_canaanite.0004.b
+# 		trigger = {
+# 			OR = {
+# 				is_ai = no
+# 				gold >= 30
+# 			}
+# 		}
+# 		remove_short_term_gold = 30
+# 		custom_tooltip = pr_canaanite.0004.tooltip
+# 		hidden_effect = {
+# 			random_list = {
+# 				70 = {
+# 					send_interface_toast = {
+# 						type = event_toast_effect_good
+# 						left_icon = ROOT
+# 						title = pr_canaanite.0004.message.small
+# 						add_character_modifier = {
+# 							modifier = VIET_celtic_sequana_blessing_minor
+# 							years = 8
+# 						}
+# 					}
+# 				}
+# 				20 = {
+# 					send_interface_toast = {
+# 						type = event_toast_effect_good
+# 						left_icon = ROOT
+# 						title = pr_canaanite.0004.message.medium
+# 						add_character_modifier = {
+# 							modifier = VIET_celtic_sequana_blessing_decent
+# 							years = 8
+# 						}
+# 					}
+# 				}
+# 				10 = {
+# 					send_interface_toast = {
+# 						type = event_toast_effect_good
+# 						left_icon = ROOT
+# 						title = pr_canaanite.0004.message.large
+# 						add_character_modifier = {
+# 							modifier = VIET_celtic_sequana_blessing_major
+# 							years = 8
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+	
+# 	option = { # Medium offering
+# 		name = pr_canaanite.0004.c
+# 		trigger = {
+# 			OR = {
+# 				is_ai = no
+# 				gold >= 60
+# 			}
+# 		}
+# 		remove_short_term_gold = 60
+# 		custom_tooltip = pr_canaanite.0004.tooltip
+# 		hidden_effect = {
+# 			random_list = {
+# 				50 = {
+# 					send_interface_toast = {
+# 						type = event_toast_effect_good
+# 						left_icon = ROOT
+# 						title = pr_canaanite.0004.message.small
+# 						add_character_modifier = {
+# 							modifier = VIET_celtic_sequana_blessing_minor
+# 							years = 8
+# 						}
+# 					}
+# 				}
+# 				30 = {
+# 					send_interface_toast = {
+# 						type = event_toast_effect_good
+# 						left_icon = ROOT
+# 						title = pr_canaanite.0004.message.medium
+# 						add_character_modifier = {
+# 							modifier = VIET_celtic_sequana_blessing_decent
+# 							years = 8
+# 						}
+# 					}
+# 				}
+# 				20 = {
+# 					send_interface_toast = {
+# 						type = event_toast_effect_good
+# 						left_icon = ROOT
+# 						title = pr_canaanite.0004.message.large
+# 						add_character_modifier = {
+# 							modifier = VIET_celtic_sequana_blessing_major
+# 							years = 8
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+	
+# 	option = { # Large offering
+# 		name = pr_canaanite.0004.d
+# 		trigger = {
+# 			OR = {
+# 				is_ai = no
+# 				gold >= 90
+# 			}
+# 		}
+# 		remove_short_term_gold = 90
+# 		custom_tooltip = pr_canaanite.0004.tooltip
+# 		hidden_effect = {
+# 			random_list = {
+# 				30 = {
+# 					send_interface_toast = {
+# 						type = event_toast_effect_good
+# 						left_icon = ROOT
+# 						title = pr_canaanite.0004.message.small
+# 						add_character_modifier = {
+# 							modifier = VIET_celtic_sequana_blessing_minor
+# 							years = 8
+# 						}
+# 					}
+# 				}
+# 				40 = {
+# 					send_interface_toast = {
+# 						type = event_toast_effect_good
+# 						left_icon = ROOT
+# 						title = pr_canaanite.0004.message.medium
+# 						add_character_modifier = {
+# 							modifier = VIET_celtic_sequana_blessing_decent
+# 							years = 8
+# 						}
+# 					}
+# 				}
+# 				30 = {
+# 					send_interface_toast = {
+# 						type = event_toast_effect_good
+# 						left_icon = ROOT
+# 						title = pr_canaanite.0004.message.large
+# 						add_character_modifier = {
+# 							modifier = VIET_celtic_sequana_blessing_major
+# 							years = 8
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# }

@@ -30,7 +30,7 @@ canaanite_religion ={
             icon = punic 
 			reformed_icon = punic_reformed
             holy_site = carthage
-			holy_site = cartagena
+			holy_site = pr_cartagena
             holy_site = tyre    
             holy_site = sidon
             holy_site = palermo
@@ -91,6 +91,7 @@ canaanite_religion ={
             localization = {
                 #High God Name
                 HighGodName = punic_polytheism_high_god_name
+                HighGodName2 = punic_polytheism_high_god_name_2
                 HighGodNamePossessive = punic_polytheism_high_god_name_possessive
                 HighGodNameSheHe = CHARACTER_SHEHE_HE
                 HighGodHerselfHimself = CHARACTER_HIMSELF
@@ -114,7 +115,7 @@ canaanite_religion ={
                 
                 #FertilityGod
                 FertilityGodName = punic_polytheism_fertility_god_name
-                FertilityGodNamePossessive = punic_fertility_god_name_possessive
+                FertilityGodNamePossessive = punic_polytheism_fertility_god_name_possessive
                 FertilityGodSheHe = CHARACTER_SHEHE_SHE
                 FertilityGodHerHis = CHARACTER_HERHIS_HER
                 FertilityGodHerHim = CHARACTER_HERHIM_HER
@@ -176,6 +177,8 @@ canaanite_religion ={
                 WaterGodHerHim = CHARACTER_HERHIM_HIM
 
                 PantheonTerm = religion_the_gods
+                PantheonTerm2 = religion_the_gods_2
+                PantheonTerm3 = religion_the_gods_3
                 PantheonTermHasHave = pantheon_term_have
                 GoodGodNames = {punic_polytheism_good_god_baal punic_polytheism_good_god_reshef punic_polytheism_good_god_kusor punic_polytheism_good_god_melqart punic_polytheism_good_god_eshum punic_polytheism_good_god_yam punic_polytheism_good_god_tanit punic_polytheism_good_god_semes}
                 DevilName = punic_polytheism_devil_name
@@ -185,9 +188,15 @@ canaanite_religion ={
                 DevilHerselfHimself = CHARACTER_HIMSELF
                 EvilGodNames = {punic_polytheism_evil_god_resjef punic_polytheism_evil_god_resjef  }
                 HouseOfWorship = paganism_house_of_worship
+                HouseOfWorship2 = paganism_house_of_worship_2
+                HouseOfWorship3 = paganism_house_of_worship_3
                 HouseOfWorshipPlural = paganism_house_of_worship_plural
                 ReligiousSymbol = punic_polytheism_religious_symbol
+                ReligiousSymbol2 = punic_polytheism_religious_symbol_2
+                ReligiousSymbol3 = punic_polytheism_religious_symbol_3
                 ReligiousText = punic_polytheism_religious_text
+                ReligiousText2 = punic_polytheism_religious_text_2
+                ReligiousText3 = punic_polytheism_religious_text_3
                 ReligiousHeadName = punic_polytheism_religious_head_title
                 ReligiousHeadTitleName = dualism_religious_head_title_name
                 DevoteeMale = paganism_devotee
@@ -210,21 +219,29 @@ canaanite_religion ={
                 BishopNeuter = punic_polytheism_priest_male
                 BishopNeuterPlural = punic_polytheism_priest_male_plural
                 DivineRealm = punic_polytheism_divine_realm
+                DivineRealm2 = punic_polytheism_divine_realm_2
+                DivineRealm3 = punic_polytheism_divine_realm_3
                 PositiveAfterLife = punic_polytheism_death_deity_name
+                PositiveAfterLife2 = punic_polytheism_death_deity_name_2
+                PositiveAfterLife3 = punic_polytheism_death_deity_name_3
                 NegativeAfterLife = punic_polytheism_death_deity_name
+                NegativeAfterLife2 = punic_polytheism_death_deity_name_2
+                NegativeAfterLife3 = punic_polytheism_death_deity_name_3
                 DeathDeityName = punic_polytheism_death_deity_name
                 DeathDeityNamePossessive = punic_polytheism_death_deity_name_possessive
                 DeathDeitySheHe = CHARACTER_SHEHE_HE
                 DeathDeityHerHis = CHARACTER_HERHIS_HIS
+                DeathDeityHerHim = CHARACTER_HERHIM_HIM
                 WitchGodName = punic_polytheism_witchgodname_resjef
+                WitchGodNamePossessive = punic_polytheism_witchgodname_resjef_possessive
                 WitchGodHerHis = CHARACTER_HERHIS_HIS
                 WitchGodSheHe = CHARACTER_SHEHE_HE
                 WitchGodHerHim = CHARACTER_HERHIM_HIM
                 WitchGodMistressMaster = master
                 WitchGodMotherFather = father
                 
-                GHWName = phw_great_holy_war
-                GHWNamePlural = phw_great_holy_wars
+                GHWName = ghw_great_holy_war
+                GHWNamePlural = ghw_great_holy_wars
             }
         }
         semitic_polytheism ={
@@ -293,12 +310,13 @@ canaanite_religion ={
             localization = {
                 #High God Name
                 HighGodName = semitic_polytheism_high_god_name
+                HighGodName2 = semitic_polytheism_high_god_name_2
                 HighGodNamePossessive = semitic_polytheism_high_god_name_possessive
                 HighGodNameSheHe = CHARACTER_SHEHE_HE
                 HighGodHerselfHimself = CHARACTER_HIMSELF
                 HighGodHerHis = CHARACTER_HERHIS_HIS
-                HighGodNameAlternate = punic_polytheism_high_god_name_alternate
-                HighGodNameAlternatePossessive = punic_polytheism_high_god_name_alternate_possessive
+                HighGodNameAlternate = semitic_polytheism_high_god_name_alternate
+                HighGodNameAlternatePossessive = semitic_polytheism_high_god_name_alternate_possessive
 
                 #Creator
                 CreatorName = semitic_polytheism_creator_god_name
@@ -316,7 +334,7 @@ canaanite_religion ={
                 
                 #FertilityGod
                 FertilityGodName = semitic_polytheism_fertility_god_name
-                FertilityGodNamePossessive = semitic_polytheism_god_name_possessive
+                FertilityGodNamePossessive = semitic_polytheism_fertility_god_name_possessive
                 FertilityGodSheHe = CHARACTER_SHEHE_SHE
                 FertilityGodHerHis = CHARACTER_HERHIS_HER
                 FertilityGodHerHim = CHARACTER_HERHIM_HER
@@ -378,18 +396,26 @@ canaanite_religion ={
                 WaterGodHerHim = CHARACTER_HERHIM_HIM
 
                 PantheonTerm = religion_the_gods
+                PantheonTerm2 = religion_the_gods_2
+                PantheonTerm3 = religion_the_gods_3
                 PantheonTermHasHave = pantheon_term_have
-                GoodGodNames = {semetic_polytheism_good_god_baal punic_polytheism_good_god_reshef punic_polytheism_good_god_kusor punic_polytheism_good_god_melqart punic_polytheism_good_god_eshum punic_polytheism_good_god_yam punic_polytheism_good_god_tanit punic_polytheism_good_god_semes}
+                GoodGodNames = {semitic_polytheism_good_god_baal semitic_polytheism_good_god_reshef semitic_polytheism_good_god_kusor semitic_polytheism_good_god_melqart semitic_polytheism_good_god_eshum semitic_polytheism_good_god_yam semitic_polytheism_good_god_tanit semitic_polytheism_good_god_semes}
                 DevilName = semitic_polytheism_devil_name
                 DevilNamePossessive = semitic_polytheism_devil_name_possessive
                 DevilSheHe = CHARACTER_SHEHE_HE
                 DevilHerHis = CHARACTER_HERHIS_HIS
                 DevilHerselfHimself = CHARACTER_HIMSELF
-                EvilGodNames = {punic_polytheism_evil_god_resjef punic_polytheism_evil_god_resjef  }
+                EvilGodNames = {semitic_polytheism_evil_god_yam semitic_polytheism_evil_god_mot  }
                 HouseOfWorship = paganism_house_of_worship
+                HouseOfWorship2 = paganism_house_of_worship_2
+                HouseOfWorship3 = paganism_house_of_worship_3
                 HouseOfWorshipPlural = paganism_house_of_worship_plural
                 ReligiousSymbol = semitic_polytheism_religious_symbol
+                ReligiousSymbol2 = semitic_polytheism_religious_symbol_2
+                ReligiousSymbol3 = semitic_polytheism_religious_symbol_3
                 ReligiousText = semitic_polytheism_religious_text
+                ReligiousText2 = semitic_polytheism_religious_text_2
+                ReligiousText3 = semitic_polytheism_religious_text_3
                 ReligiousHeadName = semitic_polytheism_religious_head_title
                 ReligiousHeadTitleName = dualism_religious_head_title_name
                 DevoteeMale = paganism_devotee
@@ -412,21 +438,29 @@ canaanite_religion ={
                 BishopNeuter = semitic_polytheism_priest_male
                 BishopNeuterPlural = semitic_polytheism_priest_male_plural
                 DivineRealm = semitic_polytheism_divine_realm
+                DivineRealm2 = semitic_polytheism_divine_realm_2
+                DivineRealm3 = semitic_polytheism_divine_realm_3
                 PositiveAfterLife = semitic_polytheism_death_deity_name
+                PositiveAfterLife2 = semitic_polytheism_death_deity_name_2
+                PositiveAfterLife3 = semitic_polytheism_death_deity_name_3
                 NegativeAfterLife = semitic_polytheism_death_deity_name
+                NegativeAfterLife2 = semitic_polytheism_death_deity_name_2
+                NegativeAfterLife3 = semitic_polytheism_death_deity_name_3
                 DeathDeityName = semitic_polytheism_death_deity_name
                 DeathDeityNamePossessive = semitic_polytheism_death_deity_name_possessive
                 DeathDeitySheHe = CHARACTER_SHEHE_HE
                 DeathDeityHerHis = CHARACTER_HERHIS_HIS
-                WitchGodName = semitic_polytheism_witchgodname_resjef
-                WitchGodHerHis = CHARACTER_HERHIS_HE
+                DeathDeityHerHim = CHARACTER_HERHIM_HIM
+                WitchGodName = semitic_polytheism_witchgodname_moloch
+                WitchGodNamePossessive = semitic_polytheism_witchgodname_moloch_possessive
+                WitchGodHerHis = CHARACTER_HERHIS_HIS
                 WitchGodSheHe = CHARACTER_SHEHE_HE
                 WitchGodHerHim = CHARACTER_HERHIM_HIM
                 WitchGodMistressMaster = master
                 WitchGodMotherFather = father
                 
-                GHWName = phw_great_holy_war
-                GHWNamePlural = phw_great_holy_wars
+                GHWName = ghw_great_holy_war
+                GHWNamePlural = ghw_great_holy_wars
             }
         }
     }

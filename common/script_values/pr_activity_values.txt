@@ -1,0 +1,420 @@
+﻿# =============================================
+# Polytheism Reborn - Activity Script Values
+# Shared script values for all PR activities
+# =============================================
+
+pr_feast_ai_will_do_value = {
+		add = {
+			value = 30
+			desc = "Base"
+		}
+		add = {
+            value = ai_greed
+            multiply = -0.25
+            desc = "ai_greed"
+        }
+        add = {
+        	value = ai_sociability
+        	multiply = 0.5
+        	desc = "ai_sociability"
+        }
+		if = {
+			limit = {
+				ai_energy < 0
+			}
+			add = {
+				add = ai_energy
+				desc = "ai_energy"
+			}
+		}
+		if = {
+			limit = { has_trait = gregarious }
+			add = {
+				value = 10
+				desc = "Is gregarious"
+			}
+		}
+		if = {
+			limit = { has_trait = shy }
+			add = {
+				value = -30
+				desc = "Is shy"
+			}
+		}
+		if = {
+			limit = { has_trait = inappetetic }
+			add = {
+				value = -30
+				desc = "Is inappetetic"
+			}
+		}
+		if = {
+			limit = { has_trait = reclusive }
+			add = {
+				value = -30
+				desc = "Is reclusive"
+			}
+		}
+		if = {
+			limit = {
+				short_term_gold >= feast_activity_cost
+				short_term_gold >= major_gold_value
+			}
+			add = {
+				value = 30
+				desc = "Got gold to burn"
+			}
+		}
+		if = {
+			limit = { has_trait = lifestyle_reveler }
+			add = {
+				value = 20
+				desc = "Is Reveler"
+			}
+		}
+		if = {
+			limit = {
+				has_royal_court = yes 
+				has_court_type = court_intrigue
+				}
+			add = {
+				value = 10
+				desc = "Intrigue court trait"
+			}
+		}
+		if = {
+			limit = { has_trait = comfort_eater }
+			add = {
+				value = 10
+				desc = "Is Comfort Eater"
+			}
+		}
+		if = {
+			limit = { has_trait = drunkard }
+			add = {
+				value = 10
+				desc = "Is Drunkard"
+			}
+		}
+		if = {
+			limit = { has_trait = gluttonous }
+			add = {
+				value = 10
+				desc = "Is Gluttonous"
+			}
+		}
+		if = {
+			limit = { has_trait = hashishiyah }
+			add = {
+				value = 10
+				desc = "Has Munchies"
+			}
+		}
+		# Stress
+		if = { # Low Stress
+            limit = {
+				stress >= lower_than_baseline_stress
+				NOT = { has_trait = shy }
+			}
+            add = {
+            	value = 10
+            	desc = "lower_than_baseline_stress"
+            }
+        }
+        if = { # High Stress
+        	limit = {
+				stress >= higher_than_baseline_stress
+				NOT = { has_trait = shy }
+			}
+        	add = {
+        		value = 10
+        		desc = "higher_than_baseline_stress"
+        	}
+        }
+        if = { # Very High Stress
+        	limit = {
+				stress >= high_stress
+				NOT = { has_trait = shy }
+			}
+        	add = {
+        		value = 10
+        		desc = "high_stress"
+        	}
+        }
+		if = {
+			limit = {
+				culture = {
+					has_cultural_tradition = tradition_culinary_art
+				}
+			}
+			add = {
+				value = 20
+				desc = "Host culture has Culinary Artists Cultural Tradition"
+			}
+		}
+		if = {
+			limit = {
+				faith = { has_doctrine = tenet_ritual_celebrations }
+			}
+			add = {
+				value = 35
+				desc = "Host culture has Ritual Celebrations Cultural Tradition"
+			}
+		}
+		if = {
+			limit = {
+				faith = { has_doctrine = tenet_hedonistic }
+			}
+			add = {
+				value = 35
+				desc = "Host faith has Hedonistic Tenet"
+			}
+		}
+		if = {
+			limit = {
+				host.faith = {
+					has_doctrine = tenet_asceticism
+				}
+			}
+			add = {
+				value = -20
+				desc = "Host faith has Asceticism tenet"
+			}
+		}
+        if = {
+        	limit = { has_character_flag = feasts_a_lot }
+        	add = {
+            	value = 500
+            	desc = "feasts a lot"
+            }
+        }
+		if = {
+			limit = {
+				is_independent_ruler = no
+				has_vassal_stance = courtly
+			}
+			add = {
+				value = 10
+				desc = courtly
+			}
+		}
+        if = {
+        	limit = { ai_has_warlike_personality = yes }
+        	add = {
+            	value = -30
+            	desc = "Warlike"
+            }
+        }
+		# Struggles.
+		if = {
+			limit = {
+				any_character_struggle = {
+					involvement = involved
+					phase_has_catalyst = catalyst_invite_diff_faith_culture_to_feast
+				}
+			}
+			# Escalating.
+			if = {
+				limit = { has_character_flag = agenda_towards_escalation }
+				add = {
+					value = -25
+					desc = debug_gui.activity_weight.struggle.wants_to_escalate
+				}
+			}
+			# Deescalating.
+			if = {
+				limit = { has_character_flag = agenda_towards_deescalation }
+				add = {
+					value = 50
+					desc = debug_gui.activity_weight.struggle.wants_to_deescalate
+				}
+			}
+		}
+        if = {
+        	limit = {
+				ai_has_warlike_personality = yes
+				war_chest_gold < war_chest_gold_maximum
+			}
+        	multiply = {
+            	value = 0.25
+            	desc = "Warlike"
+            }
+        }
+        # Economic Archetype
+		if = { # Too busy booming the economy
+            limit = {
+                OR = {
+                    ai_has_economical_boom_personality = yes
+                    has_character_flag = ai_boom
+                }
+            }
+            add = {
+            	value = -200
+            	desc = "Builder"
+            }
+        }
+}
+
+pr_feast_province_score_value = {
+		value = 0
+		# BUILDINGS
+		# Triple good / +++
+		if = {
+			limit = { has_building_or_higher = citadel_of_aleppo_01 }
+			add = 100
+		}
+		if = {
+			limit = { has_building_or_higher = palace_of_aachen_01 }
+			add = 100
+		}
+		if = {
+			limit = { has_building_or_higher = doges_palace_01 }
+			add = 100
+		}
+		if = {
+			limit = { has_building_or_higher = leisure_palace_01 }
+			add = 100
+		}
+		if = {
+			limit = { has_building_or_higher = alhambra_01 }
+			add = 100
+		}
+		# Double good / ++
+		if = {
+			limit = { has_building_or_higher = farm_estates_01 }
+			add = 50
+		}
+		# Good / +
+		if = {
+			limit = { has_building_or_higher = longhouses_01 }
+			add = 25
+		}
+		if = {
+			limit = { has_building_or_higher = orchards_01 }
+			add = 25
+		}
+		if = {
+			limit = { has_building_or_higher = cereal_fields_01 }
+			add = 25
+		}
+		if = {
+			limit = { has_building_or_higher = plantations_01 }
+			add = 25
+		}
+}
+
+pr_feast_ai_will_select_province_value = {
+		# Base
+		value = 0
+		# Buildings
+		## Tribal
+		### Gathering Halls
+		if = {
+			limit = { has_building_or_higher = longhouses_01 }
+			add = {
+				value = @weight_up_ai_select_province_small
+				desc = activity_feast_province_desc_longhouses
+			}
+		}
+		## Terrain
+		### Manor Houses
+		if = {
+			limit = { has_building_or_higher = farm_estates_01 }
+			add = {
+				value = @weight_up_ai_select_province_medium
+				desc = activity_feast_province_desc_farm_estates
+			}
+		}
+		### Orchards
+		if = {
+			limit = { has_building_or_higher = orchards_01 }
+			add = {
+				value = @weight_up_ai_select_province_small
+				desc = activity_feast_province_desc_orchards
+			}
+		}
+		### Farms & Fields
+		if = {
+			limit = { has_building_or_higher = cereal_fields_01 }
+			add = {
+				value = @weight_up_ai_select_province_small
+				desc = activity_feast_province_desc_cereal_fields
+			}
+		}
+		### Hill Farms
+		if = {
+			limit = { has_building_or_higher = hill_farms_01 }
+			add = {
+				value = @weight_up_ai_select_province_small
+				desc = debug_gui.location_weight.building.hill_farms
+			}
+		}
+		### Desert Agriculture
+		if = {
+			limit = { has_building_or_higher = plantations_01 }
+			add = {
+				value = @weight_up_ai_select_province_small
+				desc = activity_feast_province_desc_plantations
+			}
+		}
+		## Duchy
+		### Leisure Palaces
+		if = {
+			limit = { has_building_or_higher = leisure_palace_01 }
+			add = {
+				value = @weight_up_ai_select_province_large
+				desc = activity_feast_province_desc_leisure_palace
+			}
+		}
+		## Special
+		### Doge's Palace
+		if = {
+			limit = { has_building_or_higher = doges_palace_01 }
+			add = {
+				value = @weight_up_ai_select_province_massive
+				desc = activity_feast_province_desc_doges_palace
+			}
+		}
+		### Palace of Aachen
+		if = {
+			limit = { has_building_or_higher = palace_of_aachen_01 }
+			add = {
+				value = @weight_up_ai_select_province_large
+				desc = activity_feast_province_desc_palace_of_aachen
+			}
+		}
+		### Royal Palace of Alhambra
+		if = {
+			limit = { has_building_or_higher = alhambra_01 }
+			add = {
+				value = @weight_up_ai_select_province_massive
+				desc = activity_feast_province_desc_alhambra
+			}
+		}
+		### Citadel of Aleppo
+		if = {
+			limit = { has_building_or_higher = citadel_of_aleppo_01 }
+			add = {
+				value = @weight_up_ai_select_province_massive
+				desc = activity_feast_province_desc_citadel_of_aleppo
+			}
+		}
+		### Theodosian Walls
+		#### Standing in for "Constantinople's guts" because otherwise we'd use the Hagia Sophia, and that would be weird.
+		if = {
+			limit = { has_building_or_higher = theodosian_walls_01 }
+			add = {
+				value = @weight_up_ai_select_province_massive
+				desc = activity_feast_province_desc_theodosian_walls
+			}
+		}
+		### Hall of Heroes
+		if = {
+			limit = { has_building_or_higher = hall_of_heroes_01 }
+			add = {
+				value = @weight_up_ai_select_province_medium
+				desc = activity_feast_province_desc_hall_of_heroes
+			}
+		}
+}
+

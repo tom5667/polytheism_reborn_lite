@@ -1,4 +1,4 @@
-pr_ancestral_glory_not_in_history = { #This should only be used for seeds
+﻿pr_ancestral_glory_not_in_history = { #This should only be used for seeds
 	name = {
 		first_valid = {
 			# Seed names
@@ -26,6 +26,7 @@ pr_ancestral_glory_not_in_history = { #This should only be used for seeds
 				}
 				desc = legend_slaine_mac_dela
 			}
+			desc = legend_ancestral_glory_name
 		}
 	}
 	description = {
@@ -55,6 +56,7 @@ pr_ancestral_glory_not_in_history = { #This should only be used for seeds
 				}
 				desc = legend_slaine_mac_dela_desc
 			}
+			desc = legend_ancestral_glory_desc
 		}
 	}
 	portrait_animation = personality_honorable
@@ -80,7 +82,7 @@ pr_godly_descent = {
 			triggered_desc = {
 				trigger = {
 					scope:god = flag:cdr_polytheism_fertility_god_name
-					scope:title = title:e_roman_empire
+					scope:title = title:h_roman_empire
 				}
 				desc = legend_venus
 			}
@@ -98,7 +100,7 @@ pr_godly_descent = {
 			triggered_desc = {
 				trigger = {
 					scope:god = flag:cdr_polytheism_fertility_god_name
-					scope:title = title:e_roman_empire
+					scope:title = title:h_roman_empire
 				}
 				desc = legend_venus_desc
 			}
@@ -177,4 +179,4 @@ pr_mythical_descent = {
 		extra_deed = legend_chapter_extra_deed_mythical_descent
 		conclusion = legend_chapter_conclusion_generic
 	}
-}
+}

@@ -1,0 +1,109 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Germanic Events
+  # Localization for pr_germanic_decision_events.txt
+  # =============================================
+
+  # --- Choose Anglo-Saxon Personal Deity (0001) ---
+  pr_germanic_decision.0001.t:0 "Deciding on a Deity"
+  pr_germanic_decision.0001.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
+  pr_germanic_decision.0001.woden:0 "Wōden, Lord of the Wild Hunt!"
+  pr_germanic_decision.0001.njord:0 "Njǫrd, Lord of Sea and Wind!"
+  pr_germanic_decision.0001.fri:0 "Frī, Lady of Love and Fertility!"
+  pr_germanic_decision.0001.tiwaz:0 "Tīwaz, God of Law and Honor!"
+  pr_germanic_decision.0001.seaxneat:0 "Seaxnēat, Patron of the Saxons!"
+  pr_germanic_decision.0001.optout:0 "$religious_decision.0102.flavor$"
+
+  # --- Choose German Personal Deity (0002) ---
+  pr_germanic_decision.0002.t:0 "Deciding on a Deity"
+  pr_germanic_decision.0002.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
+  pr_germanic_decision.0002.wotan:0 "Wotan, All-Father of Wisdom and War!"
+  pr_germanic_decision.0002.njordr:0 "Njordr, Lord of Seafaring and Abundance!"
+  pr_germanic_decision.0002.freyr:0 "Freyr, Lord of Prosperity and Peace!"
+  pr_germanic_decision.0002.nornir:0 "Nornir, Weavers of Fate and Destiny!"
+  pr_germanic_decision.0002.mimir:0 "Mímir, Keeper of the Well of Knowledge!"
+  pr_germanic_decision.0002.optout:0 "$religious_decision.0102.flavor$"
+
+  # --- Place New Irminsul at Paderborn (0012) ---
+  pr_germanic_decision.0012.t:0 "The New Irminsul Rises"
+  pr_germanic_decision.0012.desc:0 "#F A great pillar of wood and iron rises above the fields of Paderborn, where the old Irminsul once stood as the bond between gods and men.#!\n\nThe faithful gather from across the land to witness the consecration of the new Irminsul. Priests chant the ancient prayers, and the scent of burning offerings fills the air. The sacred pillar stands once more, a symbol that the old faith has not been forgotten."
+  pr_germanic_decision.0012.a:0 "The gods are with us."
+
+  # --- Holy Reconquest: Paderborn (0013) ---
+  pr_germanic_decision.0013.t:0 "Paderborn Reclaimed"
+  pr_germanic_decision.0013.desc:0 "#F The banners of the old faith fly once more over Paderborn, the first step in the holy reconquest of our ancestral lands.#!\n\nThe faithless have been driven from the sacred city, and the groves and holy sites are restored to their rightful purpose. The gods watch with favor as the reconquest begins."
+  pr_germanic_decision.0013.a:0 "The first step is taken."
+
+  # --- Holy Reconquest: Westfalen (0014) ---
+  pr_germanic_decision.0014.t:0 "Westfalen Reclaimed"
+  pr_germanic_decision.0014.desc:0 "#F The rich farmlands of Westfalen bow once more to the old gods, their ancient holy sites cleansed of foreign taint.#!\n\nThe reconquest presses onward. With each league of reclaimed land, the bonds between our people and the gods grow stronger."
+  pr_germanic_decision.0014.a:0 "Onward, in the gods' name."
+
+  # --- Holy Reconquest: Angria (0015) ---
+  pr_germanic_decision.0015.t:0 "Angria Reclaimed"
+  pr_germanic_decision.0015.desc:0 "#F The heartland of the Saxons, Angria, is restored to the faithful. Its sacred groves echo once more with the chants of the old religion.#!\n\nThe faithless flee before the reconquest, and the ancient holy sites are reconsecrated. The gods are pleased with our devotion."
+  pr_germanic_decision.0015.a:0 "The gods favor our cause."
+
+  # --- Holy Reconquest: Holstein (0016) ---
+  pr_germanic_decision.0016.t:0 "Holstein Reclaimed"
+  pr_germanic_decision.0016.desc:0 "#F Holstein, gateway to the north, falls under the banner of the old faith. The northern approaches are secured at last.#!\n\nThe reconquest reaches the frontier of our ancestral lands. With Holstein in our grasp, the path is clear for the final push."
+  pr_germanic_decision.0016.a:0 "The north is ours."
+
+  # --- Holy Reconquest: Ostfalen (0017) ---
+  pr_germanic_decision.0017.t:0 "Ostfalen Reclaimed"
+  pr_germanic_decision.0017.desc:0 "#F The eastern reaches of the Saxon heartland, Ostfalen, are reclaimed for the old gods. Only one territory remains.#!\n\nThe reconquest nears its culmination. The gods have watched each step of our sacred journey, and soon the task shall be complete."
+  pr_germanic_decision.0017.a:0 "One final step remains."
+
+  # --- Holy Reconquest: Anhalt (0018) ---
+  pr_germanic_decision.0018.t:0 "The Holy Reconquest Complete"
+  pr_germanic_decision.0018.desc:0 "#F Anhalt, the last bastion of the faithless, has fallen. The holy reconquest is complete, and all our ancestral lands are restored to the old gods.#!\n\nFrom Paderborn to Anhalt, the banners of the old faith fly over every sacred grove and holy site. The gods look down with favor upon the ruler who has fulfilled this sacred duty. Songs will be sung of this reconquest for generations to come."
+  pr_germanic_decision.0018.a:0 "The gods are well pleased."
+  
+  
+  pr_germanic.0001.t:0 "Visit the Volva"
+  pr_germanic.0001.desc:0 "#F The winds of war blow uncertain, and I seek counsel from those who can read the threads of fate.#!\n\nToday I visit [realm_priest.GetCouncilTitle] [realm_priest.GetName], a wise Volva who can peer beyond the veil and tell me whether the gods favour my cause."
+  pr_germanic.0001.a:0 "Ask the [realm_priest.GetCouncilTitle]"
+  pr_germanic.0001.positive:0 "A favourable omen"
+  pr_germanic.0001.negative:0 "An ill omen"
+  
+  pr_germanic.0002.t:0 "Offering to [ROOT.Char.GetFaith.HighGodName]"
+  pr_germanic.0002.desc:0 "#F Ruling my realm demands wisdom, strength, and the favour of the gods.#!\n\nToday I bring an offering to [ROOT.Char.GetFaith.HighGodName], that the All-Father may guide my hand and grant me the fortitude to lead my people through the trials ahead."
+  pr_germanic.0002.a:0 "Make the offering"
+  #Converted a part of Cybrkxhan event of Celts and Romans
+  pr_germanic.0003.t:0 "Romans and Germans"
+  pr_germanic.0003.desc:0 "#F I am reading ancient historical accounts of the peoples of Germania, who fought off the Roman invaders — sometimes successfully, many times not.#!\n\nAs I worship the same gods those ancient peoples did, I am their spiritual descendant. It is sad to think they were conquered in such a way. But was it all bad? Some of our practices were influenced by the Romans too, which helped enrich our spiritual worldview and connections to the gods."
+  pr_germanic.0003.a:0 "The Romans were ruthless, bloodthirsty conquerors, nothing more!"
+  pr_germanic.0003.b:0 "The Romans and Germans learned much from each other."
+  
+  pr_germanic.0004.t:0 "Carving [ROOT.Char.GetFaith.FertilityGodName]"
+  pr_germanic.0004.desc:0 "#F My hands are steady, the wood is fine, and my heart is devoted.#!\n\nToday I carve a small idol of wood for [ROOT.Char.GetFaith.FertilityGodName], goddess of love and fertility, to honour her and forge a closer bond between my house and her blessings."
+  pr_germanic.0004.a:0 "Carve the idol"
+  
+  pr_germanic.0005.t:0 "Dreams of Ragnarok"
+  pr_germanic.0005.desc:0 "#F The sky splits apart, the fire of Muspelheim devours the world, and I watch as the gods fall one by one.#!\n\nI cry out but no sound escapes my lips. The world crumbles to ash and the cold of Fimbulwinter grips my soul...\n\nI wake with a gasp, drenched in sweat. It was only a dream — but the fear lingers still."
+  pr_germanic.0005.a:0 "It was only a dream... or a warning?"
+  
+  pr_germanic.0006.t:0 "The Falcon"
+  pr_germanic.0006.desc:0 "#F Today I walked through the woods, and normally falcons fly away at the slightest approach, but this one stayed and watched me until I passed.#!\n\nMinutes later, the falcon flew above me until I emerged from the forest. This must be a sign — [ROOT.Char.GetFaith.FertilityGodName] is watching over me!"
+  pr_germanic.0006.a:0 "Thank you for watching over me, [ROOT.Char.GetFaith.FertilityGodName]"
+  
+  pr_germanic.0007.t:0 "Shrine to [ROOT.Char.GetFaith.WealthGodName]"
+  pr_germanic.0007.desc:0 "#F I wish to build a bond with [ROOT.Char.GetFaith.WealthGodName], lord of abundance and the bounty of the sea.#!\n\nI have decided to build a small shrine in his honour, a place where I and my household can leave offerings and seek his blessing for prosperity."
+  pr_germanic.0007.a:0 "The shrine is complete"
+  
+  pr_germanic.0008.t:0 "Call for the Rune Carvers"
+  pr_germanic.0008.desc:0 "#F The knowledge of the runes is an ever-changing tradition, yet it has been with us since times immemorial. Each rune, regardless of how it is arranged, is nothing short of a powerful manifestation of the gods made reality.#!\n\nA [ROOT.Char.GetFaith.PriestMale] must be called so that such gifts may be bestowed upon our knights.\n\nI could either visit the local Volva to understand what the spinners weave for me and what destiny the gods see fit — or I could seek out Rune Carvers and [ROOT.Char.GetFaith.PriestNeuterPlural] to ensure the success of all our knights with equipment imbued by such special powers."
+  pr_germanic.0008.a:0 "I should visit the local Volva [german_volva.GetName]"
+  pr_germanic.0008.b:0 "I shall scout out Rune Carvers and [ROOT.Char.GetFaith.PriestNeuterPlural]"
+  
+  pr_germanic.0009.t:0 "The Volva's Sigil"
+  pr_germanic.0009.desc:0 "#F As the Volva [german_volva.GetName] is called in, I summon a blacksmith who provides me with a helmet. Upon great meditation, the gods reveal to me a great sigil to be carved upon each of my knights' helmets.#!\n\nHowever, the blacksmith and Volva [german_volva.GetName] seem to disagree on how the incorporation of such a rune might affect the aesthetics of the helm."
+  pr_germanic.0009.a:0 "The blessings of the gods are with us!"
+  
+  pr_germanic.0010.t:0 "The Priest's Counsel"
+  pr_germanic.0010.desc:0 "#F As the [ROOT.Char.GetFaith.PriestNeuterPlural] recognises the importance of a well-armoured army, he subtly hints at reshaping the armour design, somewhat removed from my own idea.#!\n\nAt first he seems to dislike the notion that a sigil cannot be carved upon the helmets, but he suggests and nudges the blacksmith towards another idea — an artwork which he blesses with the powers of the gods themselves. The blacksmith agrees, regardless."
+  pr_germanic.0010.a:0 "We have been blessed by the cunning of [ROOT.Char.GetFaith.HighGodName]"
+  
+  pr_germanic.0011.t:0 "The Huldufolk"
+  pr_germanic.0011.desc:0 "#F In the quiet of the evening, I leave some butter on a stone near my garden for the Huldufolk — the hidden people, the elves who dwell unseen among us.#!\n\nIt is an old custom: a small gift to ask their aid with the growth of the crops and the blooming of the flowers. Whether they truly exist or not, the tradition brings comfort, and the garden has always thrived."
+  pr_germanic.0011.a:0 "Spread the butter on the stone"

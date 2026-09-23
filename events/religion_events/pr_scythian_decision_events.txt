@@ -1,0 +1,68 @@
+﻿namespace = pr_scythian
+
+pr_scythian.0001 = {
+	type = character_event
+	title = pr_scythian.0001.t
+	desc = pr_scythian.0001.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Papaios
+	option = {
+		name = pr_scythian.0001.papaios 
+		trigger = {
+			NOT = { has_character_modifier = scythia_papaios }
+		}
+		set_bhakti_effect = { BHAKTI = scythia_papaios }
+	}
+
+	#Artimpasa
+	option = {
+	name = pr_scythian.0001.artimpasa
+	trigger = {
+		NOT = { has_character_modifier = scythia_artimpasa }
+	}
+	set_bhakti_effect = { BHAKTI = scythia_artimpasa }
+	}
+
+	# Gaitasura
+	option = {
+		name = pr_scythian.0001.gaitasura 
+		trigger = {
+			NOT = { has_character_modifier = scythia_gaitasura }
+		}
+		set_bhakti_effect = { BHAKTI = scythia_gaitasura }
+	}
+
+	#Api
+	option = {
+		name = pr_scythian.0001.api 
+		trigger = {
+			NOT = { has_character_modifier = scythia_api }
+		}
+		set_bhakti_effect = { BHAKTI = scythia_api }
+	}
+	 # Pitara Za 
+	 option = {
+	 	name = pr_scythian.0001.pitara_za
+	 	trigger = {
+	 		NOT = { has_character_modifier = scythia_pitari_za }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = scythia_pitari_za }
+	 }
+
+	# Opt-Out
+	option = {
+		name = pr_scythian.0001.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
+

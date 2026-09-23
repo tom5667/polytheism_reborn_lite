@@ -28,4 +28,4 @@ kemetic = {
 		2 = mediterranean
 		2 = mediterranean_byzantine
 	}
-}
+}

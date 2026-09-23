@@ -1,109 +1,114 @@
-﻿parthian = {
+﻿##################################################
+# Polytheism Reborn - Iranian Cultures
+##################################################
+
+pr_parthian = {
 	color = { 162 32 112 }
-	
+	created = 100.1.1
+
 	ethos = ethos_bellicose
 	heritage = heritage_iranian
-	language = language_parthian
+	language = language_pr_parthian
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	traditions = {
 		tradition_pastoralists
 		tradition_hit_and_run
 		tradition_horse_breeder
 		tradition_horse_lords
 	}
-	
-	name_list = name_list_parthian
-	
-	coa_gfx = {
-		iranian_group_coa_gfx
-	}
-	building_gfx = {
-		iranian_building_gfx
-		#mena_building_gfx
-	}
-	clothing_gfx = {
-		iranian_clothing_gfx
-		#mena_clothing_gfx
-	}
-	unit_gfx = {
-		iranian_unit_gfx
-	}
-	
+
+	name_list = name_list_pr_parthian
+
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+
 	ethnicities = {
-		8 = arab
-		5 = mediterranean
+		50 = arab
+		30 = mediterranean
+		20 = turkic_west
 	}
 }
 
-avestan = {
+pr_avestan = {
 	color = { 42 191 48 }
-	
-	ethos = ethos_spiritual 
+	created = 100.1.1
+
+	ethos = ethos_spiritual
 	heritage = heritage_iranian
-	language = language_avestan
+	language = language_pr_avestan
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	traditions = {
 		tradition_agrarian
 		tradition_modest
 		tradition_language_scholars
 		tradition_faith_bound
 	}
-	
-	name_list = name_list_avestan
-	
+
+	name_list = name_list_pr_avestan
+
 	coa_gfx = { iranian_group_coa_gfx }
-	building_gfx = { iranian_building_gfx}
-	clothing_gfx = { iranian_clothing_gfx}
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx }
 	unit_gfx = { iranian_unit_gfx }
-	
+
 	ethnicities = {
-		8 = arab
-		5 = mediterranean
+		50 = arab
+		30 = mediterranean
+		20 = turkic_west
 	}
 }
 
-scythian = {
+pr_scythian = {
 	color = { 245 167 10 }
-	
+	created = 100.1.1
+	history_loc_override = pr_scythian_heritage_loc
+
 	ethos = ethos_bellicose
 	heritage = heritage_iranian
-    language = language_scythian
+	language = language_scythian
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	traditions = {
 		tradition_pastoralists
 		tradition_hit_and_run
 		tradition_horse_breeder
 		tradition_horse_lords
 	}
-	
-	name_list = name_list_scythian
-	
+
+	name_list = name_list_pr_scythian
+
 	coa_gfx = { iranian_group_coa_gfx }
 	building_gfx = { steppe_building_gfx }
 	clothing_gfx = { mongol_clothing_gfx }
 	unit_gfx = { mongol_unit_gfx }
-	
+
 	ethnicities = {
-		80 = arab
-		20 = asian
+		50 = asian
+		30 = turkic
+		20 = arab
 	}
 }
 
-#Credits Fangwolf  
-old_persian = { # Achaemenid Persian
-	color = { 0.84 0.76 0.78 }
+pr_old_persian = {
+	color = { 200 150 120 }
+	created = 100.1.1
+	history_loc_override = pr_old_persian_history_loc
 
-	history_loc_override = old_persian_history_loc
-	
 	ethos = ethos_bureaucratic
 	heritage = heritage_iranian
-	language = language_parthian
+	language = language_pr_parthian
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	traditions = {
 		tradition_gardening
+		tradition_hit_and_run
+		tradition_warriors_of_the_dry
+		tradition_zealous_people
 	}
-	
-	# FP3 traditions
 	dlc_tradition = {
 		trait = tradition_fp3_enlightened_magnates
 		requires_dlc_flag = legacy_of_persia
@@ -116,34 +121,36 @@ old_persian = { # Achaemenid Persian
 		trait = tradition_fp3_irrigation_experts
 		requires_dlc_flag = legacy_of_persia
 	}
-	traditions = {
-		tradition_hit_and_run
-		tradition_warriors_of_the_dry
-		tradition_zealous_people
-	}
-	
-	name_list = name_list_achaemenid
-	
+
+	name_list = name_list_pr_achaemenid
+
 	coa_gfx = { iranian_group_coa_gfx }
 	building_gfx = { iranian_building_gfx mena_building_gfx }
 	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
 	unit_gfx = { iranian_unit_gfx }
-	
+
 	ethnicities = {
-			8 = arab
-			5 = mediterranean
+		50 = arab
+		30 = mediterranean
+		20 = turkic_west
 	}
 }
 
-middle_persian = {
-	color = { 0.72 0.45 0.20 }
-	history_loc_override = middle_persian_history_loc
+pr_middle_persian = {
+	color = { 180 100 50 }
+	created = 100.1.1
+	history_loc_override = pr_middle_persian_history_loc
 
 	ethos = ethos_bureaucratic
 	heritage = heritage_iranian
-	language = language_middle_persian
+	language = language_pr_middle_persian
 	martial_custom = martial_custom_male_only
-	# FP3 traditions
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_hit_and_run
+		tradition_warriors_of_the_dry
+		tradition_zealous_people
+	}
 	dlc_tradition = {
 		trait = tradition_fp3_enlightened_magnates
 		requires_dlc_flag = legacy_of_persia
@@ -156,29 +163,17 @@ middle_persian = {
 		trait = tradition_fp3_irrigation_experts
 		requires_dlc_flag = legacy_of_persia
 	}
-	traditions = {
-		tradition_hit_and_run
-		tradition_warriors_of_the_dry
-		tradition_zealous_people
-	}
-	name_list = name_list_middle_persian
 
-	coa_gfx = {
-		iranian_group_coa_gfx
-	}
-	building_gfx = {
-		iranian_building_gfx
-		#mena_building_gfx
-	}
-	clothing_gfx = {
-		iranian_clothing_gfx
-		#mena_clothing_gfx
-	}
-	unit_gfx = {
-		iranian_unit_gfx
-	}
+	name_list = name_list_pr_middle_persian
+
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+
 	ethnicities = {
-		8 = arab
-		5 = mediterranean
+		50 = arab
+		30 = mediterranean
+		20 = turkic_west
 	}
 }

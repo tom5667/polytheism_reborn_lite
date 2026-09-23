@@ -1,0 +1,22 @@
+﻿l_english:
+#####################
+#Made by tom5667 
+######################
+
+#Cult view -> window_faith.gui
+FAITH_CULTS:0 "Cults"
+FAITH_CULTS_EXPLANATION:0 "Cults are a special part of a faith. Many ancient religions had cults that were dedicated to a specific deity or aspect of the faith. Cults can be used to gain special bonuses, but they can also cause problems if they become too powerful or if their beliefs conflict with the main faith."
+MITHRAS_PATER:0 "Pater"
+CULTS_EXPLANATION:0 "Cults within your own religion"
+RESTORE_CULT:0 "Restore Cult"
+JOIN_CULT:0 "Join a Cult"
+LEAVE_A_CULT:0 "Leave a Cult"
+CULT_MEETING:0 "Cult Meeting"
+TOGGLE_CULT_VIEW:0 "Members"
+CULT_VIEW_HEADING:0 "Cult Members"
+CULT_MEMBERS_DESC:0 "This are the active members within the cult"
+SHOW_CULT_MEMBERS:0 "Cult Members"
+HEAD_OF_CULT:0 "[Character.GetNameNoTooltip] [Character.GetNicknameNoTooltip]"
+HEAD_OF_VESTA_DRUID:0 "[Character.GetNameNoTooltip] [Character.GetNicknameNoTooltip]"
+CULT_MEMBER_NAME:0 "[Character.GetNameNoTooltip] [Character.GetNicknameNoTooltip]" 
+VISIT_VESTA_DRUIDIC:0 "Visit"

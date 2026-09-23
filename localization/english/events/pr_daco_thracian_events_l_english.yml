@@ -1,0 +1,56 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Daco-Thracian Events
+  # Localization for pr_daco_thracian_decision_events.txt
+  # =============================================
+
+  # --- Choose Dacian Personal Deity (0001) ---
+  pr_daco_thracian_decision.0001.t:0 "Deciding on a Deity"
+  pr_daco_thracian_decision.0001.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
+  pr_daco_thracian_decision.0001.gebeleizis:0 "Gebeleizis, Thunderer of Storm and Rain!"
+  pr_daco_thracian_decision.0001.zalmoxis:0 "Zalmoxis, God of the Afterlife and Immortality!"
+  pr_daco_thracian_decision.0001.dionysus:0 "Dionysus, God of Wine and Ecstasy!"
+  pr_daco_thracian_decision.0001.pleistoros:0 "Pleistoros, God of War and Battle!"
+  pr_daco_thracian_decision.0001.derzelas:0 "Derzelas, God of the Underworld and Abundance!"
+  pr_daco_thracian_decision.0001.optout:0 "$religious_decision.0102.flavor$"
+
+  # --- Embrace Dacian Culture (0002) ---
+  pr_daco_thracian_decision.0002.t:0 "The Old Blood Awakens"
+  pr_daco_thracian_decision.0002.desc:0 "#F The ancient Dacian blood flows through my veins, a heritage that stretches back to the time of Zalmoxis and the sacred mountain of Kogaionon. The customs of my forebears, long suppressed by foreign conquerors, stir once more in the hearts of my people.#!\n\nBy embracing the old culture, I shall revive the traditions of the past and forge a realm that honors the old ways."
+  pr_daco_thracian_decision.0002.a:0 "Embrace the Dacian ways."
+  pr_daco_thracian_decision.0002.b:0 "Embrace the Thracian ways."
+  
+  pr_daco_thracian.0007.t:0 "Offering To Ursitoare"
+  pr_daco_thracian.0007.desc:0 "#F Nothing is more important than the future of my dynasty and my realm. Therefore today, I bring an offering to $pr_dacian_polytheism_fate_god_name$, god of fate, and pray that he will bend fate to my wishes.#!"
+  pr_daco_thracian.0007.a:0 "Make an offering to $pr_dacian_polytheism_fate_god_name$"
+  
+  
+  pr_daco_thracian.0008.t:0 "Visit Shrine To Gebeleizis"
+  pr_daco_thracian.0008.desc:0 "I have decided today to go on a visit to the local shrine to $pr_dacian_polytheism_high_god_name$. When I arrived, the local priest had said that "I will offer this goat in your name" and afterwards its liver and entrails would be read in accordance to the gods' will."
+  pr_daco_thracian.0008.a:0 "Let the Priest make the sacrifice"
+  pr_daco_thracian.0008.message.positive:0 "Blessed by $pr_dacian_polytheism_high_god_name$"
+  pr_daco_thracian.0008.message.negative:0 "Unfavoured by $pr_dacian_polytheism_high_god_name$"
+  
+  pr_daco_thracian.0009.t:0 "Build A Local Shrine"
+  pr_daco_thracian.0009.desc:0 "The Court Priest came to me today with the request to build a new shrine, what to do?"
+  pr_daco_thracian.0009.a:0 "Pay for everything"
+  pr_daco_thracian.0009.b:0 "Pay for the materials"
+  pr_daco_thracian.0009.c:0 "The priest is on his own"
+
+  # --- Zalmoxis Human Sacrifice (0010) ---
+  pr_daco_thracian_decision.0010.t:0 "The Sacrifice to Zalmoxis"
+  pr_daco_thracian_decision.0010.desc:0 "#F The teachings of Zalmoxis promise that those who send a worthy soul to the god shall be granted passage beyond the veil, freed from the cycle of mortal suffering. In times of war, when the blood of our enemies flows freely, the path to the divine stands open.#!\n\nA warrior has been chosen, ready to be sent as a messenger to Zalmoxis. The gods await my decision."
+  pr_daco_thracian_decision.0010.a:0 "Send the warrior to Zalmoxis."
+  pr_daco_thracian_decision.0010.b:0 "Stop the sacrifice."
+
+  # --- Zalmoxis Sacrifice Result (0011) ---
+  pr_daco_thracian_decision.0011.t:0 "The Warrior's Farewell"
+  pr_daco_thracian_decision.0011.desc:0 "#F The chosen warrior stands before me, his eyes alight with the fire of devotion. He knows his fate, and he accepts it willingly, for the path to Zalmoxis is one of honor.#!\n\nThe ritual is complete. The gods have received our offering, and their will shall be made known."
+  pr_daco_thracian_decision.0011.a:0 "Zalmoxis receives his messenger."
+  pr_daco_thracian_decision.0011.message.positive:0 "The gods smile upon our offering!"
+  pr_daco_thracian_decision.0011.message.negative:0 "The gods are displeased with our offering."
+
+  # --- Place Altar in Kogaionon (0012) ---
+  pr_daco_thracian_decision.0012.t:0 "The Altar of Kogaionon"
+  pr_daco_thracian_decision.0012.desc:0 "#F The sacred mountain of Kogaionon, the dwelling place of Zalmoxis, has long been the spiritual heart of the Dacian people. Here, among the caves and peaks of Transylvania, the ancient priests once communed with the divine.#!\n\nNow, as the ruler who holds these sacred lands, I shall restore the altar of Zalmoxis and rekindle the old covenant between the Dacian people and their god."
+  pr_daco_thracian_decision.0012.a:0 "The old covenant is renewed."

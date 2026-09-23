@@ -1,0 +1,15 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Scythian Events
+  # Localization for pr_scythian_decision_events.txt
+  # =============================================
+
+  # --- Choose Main Deity (0001) ---
+  pr_scythian.0001.t:0 "Choose Main Deity"
+  pr_scythian.0001.desc:0 "#F The gods of the steppe are many, and their favour is fickle. To guide my people through the trials ahead, I would do well to devote myself to one of the great deities of the Scythian pantheon.#!\n\nPapaios, father of the gods and lord of the sky, watches from above. Artimpasa, goddess of fertility and sovereignty, blesses those who earn her favour. Gaitasura, god of wealth and the hearth, grants prosperity to the faithful. Api, god of the earth and waters, sustains the land. Pitara Za, the ancestral spirit, guards the traditions of our forebears.\n\nWhich path shall I walk?"
+  pr_scythian.0001.papaios:0 "Papaios, Father of the Gods"
+  pr_scythian.0001.artimpasa:0 "Artimpasa, Lady of Sovereignty"
+  pr_scythian.0001.gaitasura:0 "Gaitasura, Lord of Wealth"
+  pr_scythian.0001.api:0 "Api, Lord of Earth and Water"
+  pr_scythian.0001.pitara_za:0 "Pitara Za, Guardian of Ancestors"
+  pr_scythian.0001.optout:0 "Maybe now isn't the right time"

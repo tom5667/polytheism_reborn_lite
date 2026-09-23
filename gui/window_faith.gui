@@ -271,14 +271,15 @@ window = {
 					down = "[GetVariableSystem.HasValue( 'faith_view_tabs', 'holy_sites' )]"
 				}
 			}
-			#Polytheism Reborn Cults
+
+			# Polytheism Reborn — Cults
 			button_tab = {
 				shortcut = "tab_3"
 				visible = "[Faith.GetReligion.HasPaganRoots]"
 				onclick = "[GetVariableSystem.Set( 'faith_view_tabs', 'cults' )]"
-				onclick = "[GetScriptedGui('get_cultists_list_mithraism').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
-				onclick = "[GetScriptedGui('get_head_of_cult').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
-				onclick = "[GetScriptedGui('get_vesta_druid_head').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
+				onclick = "[GetScriptedGui('pr_get_cultists_list').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
+				onclick = "[GetScriptedGui('pr_get_head_of_cult').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
+				onclick = "[GetScriptedGui('pr_get_vesta_druid_head').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
 				down = "[GetVariableSystem.HasValue( 'faith_view_tabs', 'cults' )]"
 				text = "FAITH_CULTS"
 				default_format = "#low"
@@ -934,7 +935,8 @@ window = {
 				expand = {}
 			}
 		}
-		## Cults
+
+		## Cults (Polytheism Reborn)
 		scrollbox = {
 			margin_top = 10
 
@@ -943,7 +945,6 @@ window = {
 			visible = "[GetVariableSystem.HasValue( 'faith_view_tabs', 'cults' )]"
 			layoutpolicy_horizontal = expanding
 			layoutpolicy_vertical = expanding
-			#datacontext = "[GetIllustration( 'religion_holding' )]"
 
 			blockoverride "scrollbox_background" {}
 			blockoverride "scrollbox_background_fade" {}
@@ -973,9 +974,7 @@ window = {
 			blockoverride "scrollbox_content"
 			{
 				vbox = {
-
 					text_multi = {
-						#datacontext = "[FaithWindow.GetFaith]"
 						layoutpolicy_horizontal = expanding
 						size = { 0 45 }
 						text = FAITH_CULTS_EXPLANATION
@@ -1003,7 +1002,6 @@ window = {
 				vbox = {
 					vbox = {
 						text_multi = {
-							#datacontext = "[FaithWindow.GetFaith]"
 							layoutpolicy_horizontal = expanding
 							size = { 0 45 }
 							text = CULTS_EXPLANATION
@@ -1029,11 +1027,10 @@ window = {
 					margin_bottom = 30
 					margin_top = 5
 					layoutpolicy_horizontal = expanding
-					#Datamodel to load all heads of the cults
+					# Datamodel to load all heads of the cults
 					datamodel = "[GetPlayer.MakeScope.GetList('pr_head_of_cult_list')]"
 
 					item = {
-
 						vbox = {
 							layoutpolicy_horizontal = expanding
 							background = {
@@ -1045,7 +1042,6 @@ window = {
 								portrait_head_small = {}
 								layoutpolicy_horizontal = expanding
 								layoutpolicy_vertical = expanding
-								#margin_bottom = 8
 								margin_top = 0
 								vbox = {
 									layoutpolicy_horizontal = expanding
@@ -1067,74 +1063,49 @@ window = {
 					button_standard = {
 						name = "RestoreCult"
 						minimumsize = { 240 0 }
-						#visible = "[NotEqualTo_uint32( Faith.GetID, GetPlayer.GetFaith.GetID )]"
 						text = "RESTORE_CULT"
-						onclick = "[GetScriptedGui('restore_cult').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
-						#using = tooltip_nw
+						onclick = "[GetScriptedGui('pr_restore_cult').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
 					}
 					button_standard = {
 						visible = "[DataModelHasItems(GetPlayer.MakeScope.GetList('pr_head_of_cult_list'))]"
 						name = "GoToMeeting"
 						minimumsize = { 240 0 }
-						#visible = "[NotEqualTo_uint32( Faith.GetID, GetPlayer.GetFaith.GetID )]"
 						text = "CULT_MEETING"
-						onclick = "[GetScriptedGui('cult_meeting').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
-						#using = tooltip_nw
+						onclick = "[GetScriptedGui('pr_cult_meeting').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
 					}
-
 				}
 				hbox = {
 					margin_bottom = 60
 					margin_top = 8
 					layoutpolicy_horizontal = expanding
-					#visible = "[Not(DataModelHasItems(GetPlayer.MakeScope.GetList('pr_head_of_cult_list')))]"
-					#margin_left = -60
 
 					button_standard = {
 						name = "JoinCult"
 						minimumsize = { 240 0 }
 						visible = "[GetGlobalVariable('can_join_cult').IsSet]"
-						#visible = "[NotEqualTo_uint32( Faith.GetID, GetPlayer.GetFaith.GetID )]"
 						text = "JOIN_CULT"
-						onclick = "[GetScriptedGui('show_cults_to_join').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
-						#using = tooltip_nw
+						onclick = "[GetScriptedGui('pr_show_cults_to_join').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
 					}
 					button_standard = {
 						visible = "[DataModelHasItems(GetPlayer.MakeScope.GetList('pr_head_of_cult_list'))]"
 						name = "ShowMembers"
 						minimumsize = { 240 0 }
-						#visible = "[NotEqualTo_uint32( Faith.GetID, GetPlayer.GetFaith.GetID )]"
 						text = "SHOW_CULT_MEMBERS"
 						datacontext = "[Scope.GetCharacter]"
 						onclick = "[ExecuteConsoleCommand( Select_CString( GetVariableSystem.Exists('pr_custom_window_open'), 'gui.ClearWidgets pr_custom_window', 'gui.createwidget gui/custom_windows/pr_cult_window.gui pr_custom_window' ) )]"
-						onclick = "[GetScriptedGui('get_cultists_list').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
+						onclick = "[GetScriptedGui('pr_get_cultists_list').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
 						onclick = "[GetVariableSystem.Toggle('pr_custom_window_open')]"
-						#using = tooltip_nw
 					}
-					# button_standard = {
-					# 	visible = "[DataModelHasItems(GetPlayer.MakeScope.GetList('pr_head_of_cult_list'))]"
-					# 	name = "LeaveCult"
-
-					# 	minimumsize = { 240 0 }
-					# 	#visible = "[NotEqualTo_uint32( Faith.GetID, GetPlayer.GetFaith.GetID )]"
-					# 	#This should have severe consequences, cult uprising or murder plot
-					# 	#Still up to debate if it's doable and if there even should be an option to leave the cult
-					# 	text = "LEAVE_A_CULT"
-					# 	onclick = "[GetScriptedGui('leave_the_cult').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
-					# 	#using = tooltip_nw
-					# }
-
 				}
 				vbox = {
 					spacing = 10
 					margin_bottom = 30
 					margin_top = 5
 					layoutpolicy_horizontal = expanding
-					#Datamodel to load all head of Druids and Vesta
+					# Datamodel to load all head of Druids and Vesta
 					datamodel = "[GetPlayer.MakeScope.GetList('pr_vesta_druid_head_list')]"
 
 					item = {
-
 						vbox = {
 							layoutpolicy_horizontal = expanding
 							background = {
@@ -1146,7 +1117,6 @@ window = {
 								portrait_head_small = {}
 								layoutpolicy_horizontal = expanding
 								layoutpolicy_vertical = expanding
-								#margin_bottom = 8
 								margin_top = 0
 								vbox = {
 									layoutpolicy_horizontal = expanding
@@ -1169,14 +1139,13 @@ window = {
 					button_standard = {
 						name = "GoToMeeting"
 						minimumsize = { 240 0 }
-						#visible = "[NotEqualTo_uint32( Faith.GetID, GetPlayer.GetFaith.GetID )]"
 						text = "VISIT_VESTA_DRUIDIC"
-						onclick = "[GetScriptedGui('vesta_druidic_visit').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
-						#using = tooltip_nw
+						onclick = "[GetScriptedGui('pr_vesta_druidic_visit').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('faith', FaithWindow.GetFaith.MakeScope).End)]"
 					}
 				}
 			}
 		}
+
 		## HOLY SITES
 		scrollbox = {
 			name = "tab_holy_sites"

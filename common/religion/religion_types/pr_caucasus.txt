@@ -29,18 +29,18 @@ caucasus_religion ={
 				icon = georgian
 				reformed_icon = georgian_reformed
 	
-				holy_site = dvin
+				holy_site = pr_dvin
 				holy_site = mtskheta
 				holy_site = kutaisi
 				holy_site = tortomi
 				holy_site = hereti
 				
-				reserved_male_names = {
-					Eannatum Eannatum Sargon Rimush Manishtushu Shulgi Kurigalzu Nabopolassar Shalmaneser Esarhaddon Darius
-				}
-				reserved_female_names = {
-					Anatu Belatsunat Mmu Zirratbanit Beltis Davke Sabitum
-				}
+				# reserved_male_names = {
+					# Eannatum Eannatum Sargon Rimush Manishtushu Shulgi Kurigalzu Nabopolassar Shalmaneser Esarhaddon Darius
+				# }
+				# reserved_female_names = {
+					# Anatu Belatsunat Mmu Zirratbanit Beltis Davke Sabitum
+				# }
 			
 	
 				doctrine = unreformed_faith_doctrine
@@ -87,6 +87,7 @@ caucasus_religion ={
 				localization = {
 					#High God Name
 					HighGodName = georgian_polytheism_high_god_name
+					HighGodName2 = georgian_polytheism_high_god_name_2
 					HighGodNamePossessive = georgian_polytheism_high_god_name_possessive
 					HighGodNameSheHe = CHARACTER_SHEHE_HE
 					HighGodHerselfHimself = CHARACTER_HIMSELF
@@ -174,6 +175,8 @@ caucasus_religion ={
 			
 			
 					PantheonTerm = religion_the_gods
+					PantheonTerm2 = religion_the_gods_2
+					PantheonTerm3 = religion_the_gods_3
 					PantheonTermHasHave = pantheon_term_have
 					GoodGodNames = { georgian_polytheism_good_god_ghmerti georgian_polytheism_good_god_ainina_and_danina georgian_polytheism_good_god_dali georgian_polytheism_good_god_kamar georgian_polytheism_good_god_samdzimari georgian_polytheism_good_god_adgilis_deda georgian_polytheism_good_god_armazi georgian_polytheism_good_god_zaden}
 					DevilName = georgian_polytheism_devil_name
@@ -183,9 +186,15 @@ caucasus_religion ={
 					DevilHerselfHimself = CHARACTER_HIMSELF
 					EvilGodNames = { georgian_polytheism_evil_god_gveleshapi georgian_polytheism_evil_god_dobilni }
 					HouseOfWorship = paganism_house_of_worship
+					HouseOfWorship2 = paganism_house_of_worship_2
+					HouseOfWorship3 = paganism_house_of_worship_3
 					HouseOfWorshipPlural = paganism_house_of_worship_plural
 					ReligiousSymbol = georgian_polytheism_religious_symbol
+					ReligiousSymbol2 = georgian_polytheism_religious_symbol_2
+					ReligiousSymbol3 = georgian_polytheism_religious_symbol_3
 					ReligiousText = georgian_polytheism_religious_text
+					ReligiousText2 = georgian_polytheism_religious_text_2
+					ReligiousText3 = georgian_polytheism_religious_text_3
 					ReligiousHeadName = georgian_polytheism_religious_head_title
 					ReligiousHeadTitleName = dualism_religious_head_title_name
 					DevoteeMale = paganism_devotee
@@ -208,13 +217,21 @@ caucasus_religion ={
 					BishopNeuter = georgian_polytheism_priest_male
 					BishopNeuterPlural = georgian_polytheism_priest_male_plural
 					DivineRealm = georgian_polytheism_divine_realm
+					DivineRealm2 = georgian_polytheism_divine_realm_2
+					DivineRealm3 = georgian_polytheism_divine_realm_3
 					PositiveAfterLife = georgian_polytheism_death_deity_name
+					PositiveAfterLife2 = georgian_polytheism_death_deity_name_2
+					PositiveAfterLife3 = georgian_polytheism_death_deity_name_3
 					NegativeAfterLife = georgian_polytheism_death_deity_name
+					NegativeAfterLife2 = georgian_polytheism_death_deity_name_2
+					NegativeAfterLife3 = georgian_polytheism_death_deity_name_3
 					DeathDeityName = georgian_polytheism_death_deity_name
 					DeathDeityNamePossessive = georgian_polytheism_death_deity_name_possessive
 					DeathDeitySheHe = CHARACTER_SHEHE_HE
 					DeathDeityHerHis = CHARACTER_HERHIS_HIS
+					DeathDeityHerHim = CHARACTER_HERHIM_HIM
 					WitchGodName = georgian_polytheism_witchgodname_kudiani
+					WitchGodNamePossessive = georgian_polytheism_witchgodname_kudiani_possessive
 					WitchGodHerHis = CHARACTER_HERHIS_HER
 					WitchGodSheHe = CHARACTER_SHEHE_HE
 					WitchGodHerHim = CHARACTER_HERHIM_HER
@@ -228,22 +245,22 @@ caucasus_religion ={
 			}
 
 		armenian_polytheism = {
-			color = { 219  183 50  }
+			color = { 191 110 46 }
 			icon = armenian
 			reformed_icon = armenian_reformed
 
-			holy_site = dvin
+			holy_site = pr_dvin
 			holy_site = mtskheta
 			holy_site = kutaisi
 			holy_site = tortomi
 			holy_site = hereti
 			
-			reserved_male_names = {
-				Eannatum Eannatum Sargon Rimush Manishtushu Shulgi Kurigalzu Nabopolassar Shalmaneser Esarhaddon Darius
-			}
-			reserved_female_names = {
-				Anatu Belatsunat Mmu Zirratbanit Beltis Davke Sabitum
-			}
+			# reserved_male_names = {
+				# Eannatum Eannatum Sargon Rimush Manishtushu Shulgi Kurigalzu Nabopolassar Shalmaneser Esarhaddon Darius
+			# }
+			# reserved_female_names = {
+				# Anatu Belatsunat Mmu Zirratbanit Beltis Davke Sabitum
+			# }
 		
 
 			doctrine = unreformed_faith_doctrine
@@ -291,6 +308,7 @@ caucasus_religion ={
 			localization = {
 				#High God Name
 				HighGodName = armenian_polytheism_high_god_name
+				HighGodName2 = armenian_polytheism_high_god_name_2
 				HighGodNamePossessive = armenian_polytheism_high_god_name_possessive
 				HighGodNameSheHe = CHARACTER_SHEHE_HE
 				HighGodHerselfHimself = CHARACTER_HIMSELF
@@ -378,6 +396,8 @@ caucasus_religion ={
 		
 		
 				PantheonTerm = religion_the_gods
+				PantheonTerm2 = religion_the_gods_2
+				PantheonTerm3 = religion_the_gods_3
 				PantheonTermHasHave = pantheon_term_have
 				GoodGodNames = { armenian_polytheism_good_god_aramazd armenian_polytheism_good_god_nane armenian_polytheism_good_god_tir armenian_polytheism_good_god_astlik armenian_polytheism_good_god_tsovinar armenian_polytheism_good_god_adgilis_vanatur armenian_polytheism_good_god_arubani armenian_polytheism_good_god_haldi }
 				DevilName = armenian_polytheism_devil_name
@@ -387,9 +407,15 @@ caucasus_religion ={
 				DevilHerselfHimself = CHARACTER_HIMSELF
 				EvilGodNames = { armenian_polytheism_evil_god_alk armenian_polytheism_evil_god_nhang }
 				HouseOfWorship = paganism_house_of_worship
+				HouseOfWorship2 = paganism_house_of_worship_2
+				HouseOfWorship3 = paganism_house_of_worship_3
 				HouseOfWorshipPlural = paganism_house_of_worship_plural
 				ReligiousSymbol = armenian_polytheism_religious_symbol
+				ReligiousSymbol2 = armenian_polytheism_religious_symbol_2
+				ReligiousSymbol3 = armenian_polytheism_religious_symbol_3
 				ReligiousText = armenian_polytheism_religious_text
+				ReligiousText2 = armenian_polytheism_religious_text_2
+				ReligiousText3 = armenian_polytheism_religious_text_3
 				ReligiousHeadName = armenian_polytheism_religious_head_title
 				ReligiousHeadTitleName = dualism_religious_head_title_name
 				DevoteeMale = paganism_devotee
@@ -412,13 +438,21 @@ caucasus_religion ={
 				BishopNeuter = armenian_polytheism_priest_male
 				BishopNeuterPlural = armenian_polytheism_priest_male_plural
 				DivineRealm = armenian_polytheism_divine_realm
+				DivineRealm2 = armenian_polytheism_divine_realm_2
+				DivineRealm3 = armenian_polytheism_divine_realm_3
 				PositiveAfterLife = armenian_polytheism_death_deity_name
+				PositiveAfterLife2 = armenian_polytheism_death_deity_name_2
+				PositiveAfterLife3 = armenian_polytheism_death_deity_name_3
 				NegativeAfterLife = armenian_polytheism_death_deity_name
+				NegativeAfterLife2 = armenian_polytheism_death_deity_name_2
+				NegativeAfterLife3 = armenian_polytheism_death_deity_name_3
 				DeathDeityName = armenian_polytheism_death_deity_name
 				DeathDeityNamePossessive = armenian_polytheism_death_deity_name_possessive
 				DeathDeitySheHe = CHARACTER_SHEHE_HE
 				DeathDeityHerHis = CHARACTER_HERHIS_HIS
+				DeathDeityHerHim = CHARACTER_HERHIM_HIM
 				WitchGodName = armenian_polytheism_witchgodname_aralez
+				WitchGodNamePossessive = armenian_polytheism_witchgodname_aralez_possessive
 				WitchGodHerHis = CHARACTER_HERHIS_HIS
 				WitchGodSheHe = CHARACTER_SHEHE_HE
 				WitchGodHerHim = CHARACTER_HERHIM_HIM

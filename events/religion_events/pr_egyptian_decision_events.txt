@@ -1,0 +1,325 @@
+﻿namespace = pr_egyptian_decision
+namespace = pr_egyptian
+
+##################################################
+# Polytheism Reborn - Egyptian Decision Events
+# Events gekoppeld aan pr_egyptian_decisions.txt
+##################################################
+
+# =============================================
+# Decision Outcome Events (0001-0099)
+# =============================================
+
+
+#--- Choose Kemetic Personal Deity (0001) ---
+pr_egyptian_decision.0001 = {
+	type = character_event
+	title = pr_egyptian_decision.0001.t
+	desc = pr_egyptian_decision.0001.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	# Amun-Ra
+	option = {
+		name = pr_egyptian_decision.0001.amun_ra
+		trigger = {
+			NOT = { has_trait = pr_kemetic_amun_ra }
+		}
+		pr_set_bhakti_effect = { BHAKTI = pr_kemetic_amun_ra }
+	}
+
+	# Ra
+	option = {
+		name = pr_egyptian_decision.0001.ra
+		trigger = {
+			NOT = { has_trait = pr_kemetic_ra }
+		}
+		pr_set_bhakti_effect = { BHAKTI = pr_kemetic_ra }
+	}
+
+	# Isis
+	option = {
+		name = pr_egyptian_decision.0001.isis
+		trigger = {
+			NOT = { has_trait = pr_kemetic_isis }
+		}
+		pr_set_bhakti_effect = { BHAKTI = pr_kemetic_isis }
+	}
+
+	# Montu
+	option = {
+		name = pr_egyptian_decision.0001.montu
+		trigger = {
+			NOT = { has_trait = pr_kemetic_montu }
+		}
+		pr_set_bhakti_effect = { BHAKTI = pr_kemetic_montu }
+	}
+
+	# Hathor
+	option = {
+		name = pr_egyptian_decision.0001.hathor
+		trigger = {
+			NOT = { has_trait = pr_kemetic_hathor }
+		}
+		pr_set_bhakti_effect = { BHAKTI = pr_kemetic_hathor }
+	}
+
+	# Opt-Out
+	option = {
+		name = pr_egyptian_decision.0001.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# --- Create Kingdom of Upper Egypt (0006) ---
+pr_egyptian_decision.0006 = {
+	type = character_event
+	theme = realm
+
+	title = pr_egyptian_decision.0006.t
+	desc = pr_egyptian_decision.0006.desc
+
+	left_portrait = {
+		character = root
+		animation = storyteller
+	}
+
+	option = {
+		name = pr_egyptian_decision.0006.a
+		add_prestige = 200
+		add_piety = 100
+	}
+}
+
+# --- Create Kingdom of Lower Egypt (0007) ---
+pr_egyptian_decision.0007 = {
+	type = character_event
+	theme = realm
+
+	title = pr_egyptian_decision.0007.t
+	desc = pr_egyptian_decision.0007.desc
+
+	left_portrait = {
+		character = root
+		animation = storyteller
+	}
+
+	option = {
+		name = pr_egyptian_decision.0007.a
+		add_prestige = 200
+		add_piety = 100
+	}
+}
+
+# =============================================
+# Empire Restoration Events (0100-0199)
+# =============================================
+
+# --- Restore Empire of Egyptus (0100) ---
+pr_egyptian_decision.0100 = {
+	type = character_event
+	theme = realm
+
+	title = pr_egyptian_decision.0100.t
+	desc = pr_egyptian_decision.0100.desc
+
+	left_portrait = {
+		character = root
+		animation = storyteller
+	}
+
+	option = {
+		name = pr_egyptian_decision.0100.a
+		add_prestige = 500
+		add_piety = 300
+	}
+}
+
+
+pr_egyptian.0008 = {
+	type = character_event
+	title = pr_egyptian.0008.t
+	desc = pr_egyptian.0008.desc
+	theme = claim_throne_scheme
+	immediate = {
+		create_character = {
+			faith = faith:kemetic_polytheism
+			employer = root
+			age = {30 50}
+			trait = zealous
+			save_scope_as = priest_of_ra
+		}
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:priest_of_ra
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_egyptian.0008.a
+		add_trait = zealous
+		add_piety = 100
+		remove_short_term_gold = 100
+		hidden_effect = {
+			scope:priest_of_ra = {
+				death = {
+					death_reason = death_vanished
+				}
+			}
+		}
+	}
+	option = {
+		name = pr_egyptian.0008.a
+		add_piety = -250
+		add_trait = cynical
+		hidden_effect = {
+			scope:priest_of_ra = {
+				death = {
+					death_reason = death_vanished
+				}
+			}
+		}
+	}
+}
+
+pr_egyptian.0009 = {
+	type = character_event
+	title = pr_egyptian.0009.t
+	desc = pr_egyptian.0009.desc
+	theme = faith
+	override_background = {
+		reference = corridor_night
+	}
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:priest_of_ra
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_egyptian.0009.a
+		add_trait = honest
+		add_piety = 100
+		add_prestige = -100
+		stress_impact = {
+			cynical = miniscule_stress_impact_gain
+		}
+	}
+	option = {
+		name = pr_egyptian.0009.b
+		add_piety = -100
+		remove_short_term_gold = 200
+		add_trait = greedy
+		add_prestige = 100
+		stress_impact = {
+			zealous = miniscule_stress_impact_gain
+		}
+	}
+}
+
+pr_egyptian.0010 = {
+	type = character_event
+	title = pr_egyptian.0010.t
+	desc = pr_egyptian.0010.desc
+	theme = faith
+	override_background = {
+		reference = throne_room
+	}
+	immediate = {
+		create_character = {
+			faith = faith:kemetic_polytheism
+			employer = root
+			gender = female
+			age = {30 50}
+			trait = zealous
+			save_scope_as = priestess_of_isis
+		}
+	}
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:priestess_of_isis
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_egyptian.0010.a
+		add_piety = 100
+		remove_short_term_gold = 50
+		stress_impact = {
+			cynical = miniscule_stress_impact_gain
+		}
+		hidden_effect = {
+			scope:priestess_of_isis = {
+				death = {
+					death_reason = death_vanished
+				}
+			}
+		}
+	}
+	option = {
+		name = pr_egyptian.0010.b
+		add_piety = -50
+		add_prestige = 100
+		stress_impact = {
+			zealous = miniscule_stress_impact_gain
+		}
+		hidden_effect = {
+			scope:priestess_of_isis = {
+				death = {
+					death_reason = death_vanished
+				}
+			}
+		}
+	}
+}
+
+pr_egyptian.0011 = {
+	type = character_event
+	title = pr_egyptian.0011.t
+	desc = pr_egyptian.0011.desc
+	theme = faith
+	override_background = {
+		reference = garden
+	}
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_egyptian.0011.a
+		add_piety = 50
+		#remove_short_term_gold = 10
+		stress_impact = {
+			cynical = sub_medium_stress_impact_gain
+		}
+	}
+	option = {
+		name = pr_egyptian.0011.b
+		#dd_piety = 25
+		add_prestige = 50
+		stress_impact = {
+			cynical = miniscule_stress_impact_gain
+		}
+	}
+}

@@ -1,0 +1,422 @@
+﻿# Roman Decision Scripted Effects
+pr_romano_british_sr_notify_players_effect = {
+	every_player = {
+		limit = {
+			Not = {this = root}
+			capital_province = {
+			geographical_region = world_europe_south_east
+			}
+		}
+		trigger_event = pr_roman.0117
+	}
+}
+ select_or_create_cult_leader_mithras_effect = {
+	root = {
+		every_vassal_or_below = {
+			limit = {
+				AND = {
+					has_trait = mithras_cult
+					has_trait = pr_pater_mithras
+					religion = religion:roman_religion
+				}
+			}
+		}
+		save_scope_as = cult_leader_mithras
+	}
+	root = {
+		every_courtier = {
+			limit = {
+				AND = {
+					has_trait = mithras_cult
+					has_trait = pr_pater_mithras
+					religion = religion:roman_religion
+				}
+			}
+			save_scope_as = cult_leader_mithras
+		}
+	}
+	liege = {
+		every_vassal_or_below = {
+			limit = {
+				AND = {
+					has_trait = mithras_cult
+					has_trait = pr_pater_mithras
+					religion = religion:roman_religion
+				}
+			}
+			save_scope_as = cult_leader_mithras
+		}
+	}
+	liege = {
+		every_courtier = {
+			limit = {
+				AND = {
+					has_trait = mithras_cult
+					has_trait = pr_pater_mithras
+					religion = religion:roman_religion
+				}
+			}
+			save_scope_as = cult_leader_mithras
+		}
+	}
+}
+ select_or_create_cult_leader_isis_effect = {
+	root = {
+		every_vassal_or_below = {
+			limit = {
+				AND = {
+					has_trait = isis_cult
+					has_trait = hierophant_isis
+					OR = {
+						religion = religion:roman_religion
+						religion = religion:hellenism_religion
+						faith = faith:kemetic_polytheism
+					}
+				}
+			}
+		}
+		save_scope_as = cult_leader_isis
+	}
+	root = {
+		every_courtier = {
+			limit = {
+				AND = {
+					has_trait = isis_cult
+					has_trait = hierophant_isis
+					OR = {
+						religion = religion:roman_religion
+						religion = religion:hellenism_religion
+						faith = faith:kemetic_polytheism
+					}
+				}
+			}
+			save_scope_as = cult_leader_isis
+		}
+	}
+	liege = {
+		every_vassal_or_below = {
+			limit = {
+				AND = {
+					has_trait = isis_cult
+					has_trait = hierophant_isis
+					OR = {
+						religion = religion:roman_religion
+						religion = religion:hellenism_religion
+						faith = faith:kemetic_polytheism
+					}
+				}
+			}
+			save_scope_as = cult_leader_isis
+		}
+	}
+	liege = {
+		every_courtier = {
+			limit = {
+				AND = {
+					has_trait = isis_cult
+					has_trait = hierophant_isis
+					OR = {
+						religion = religion:roman_religion
+						religion = religion:hellenism_religion
+						faith = faith:kemetic_polytheism
+					}
+				}
+			}
+			save_scope_as = cult_leader_isis
+		}
+	}
+}
+roman_illyrian_sr_notify_players_effect = {
+	every_player = {
+		limit = {
+			Not = {this = root}
+			capital_province = {
+			geographical_region = world_europe_south_east
+			}
+		}
+		trigger_event = pr_roman_culture.0004
+	}
+}
+pr_gallo_roman_sr_notify_players_effect = {
+	every_player = {
+		limit = {
+			Not = {this = root}
+			capital_province = {
+			geographical_region = world_europe_south_east
+			}
+		}
+		trigger_event = pr_roman_culture.0102
+	}
+}
+select_valid_daughter_and_save_scope = {
+
+	# Loop through children and save up to 4 valid daughters
+	root = {
+		every_living_character = {
+			limit = {
+				any_parent = { this = root }
+				#count > 0
+				is_female = yes
+				religion = religion:roman_religion
+				age < 10
+				NOT= { has_trait = vestalis }
+			}
+			save_scope_as = daughter
+		}
+	}
+
+}
+choose_new_vestalis_maxima = {
+	random_living_character = {
+		limit = {
+			has_trait = vestalis
+			age = { 30 41 }
+
+		}
+		save_scope_as =  new_vestalis_maxima
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = scope:new_vestalis_maxima
+			}
+		}
+		create_character = {
+			employer = root
+			random_traits = no
+			gender = female
+			age = {30 40}
+			save_scope_as = new_vestalis_maxima
+			trait = vestalis_maxima
+			trait = vestalis
+		}
+	}
+}
+scope_archigallus_cybele_cult = {
+	root= {
+		random_living_character = {
+			limit = {
+				has_trait = hierophant_cybele
+			}
+			save_scope_as = cult_leader_cybele
+		}
+	}
+
+}
+choose_new_cult_leader_isis= {
+	random_living_character = {
+		limit = {
+			has_trait = isis_cult
+			age = { 30 41 }
+
+		}
+		save_scope_as =  new_cult_leader_isis
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = scope:new_cult_leader_isis
+			}
+		}
+		create_character = {
+			employer = root
+			random_traits = no
+			gender = female
+			age = {30 40}
+			save_scope_as = new_cult_leader_isis
+			trait = hierophant_isis
+			trait = isis_cult
+		}
+	}
+}
+choose_new_cult_leader_serapis= {
+	random_living_character = {
+		limit = {
+			has_trait = serapis_cult
+			age = { 30 41 }
+
+		}
+		save_scope_as =  new_cult_leader_serapis
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = scope:new_cult_leader_serapis
+			}
+		}
+		create_character = {
+			random_traits = no
+			save_scope_as = new_cult_leader_serapis
+			learning =  21
+			gender  = male
+			trait = serapis_cult
+			trait = zealous
+			dynasty = generate
+			trait = hierophant_serapis
+		}
+	}
+}
+choose_new_cult_leader_sol_invictus= {
+	random_living_character = {
+		limit = {
+			has_trait = sol_invictus_cult
+			age = { 30 41 }
+
+		}
+		save_scope_as =  new_cult_leader_sol_invictus
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = scope:new_cult_leader_sol_invictus
+			}
+		}
+		create_character = {
+			employer = root
+			random_traits = no
+			gender = male
+			age = {30 40}
+			save_scope_as = new_cult_leader_sol_invictus
+			trait = hierophant_sol_invictus
+			trait = sol_invictus_cult
+		}
+	}
+}
+choose_new_cult_leader_eleusinian= {
+	random_living_character = {
+		limit = {
+			has_trait = eleusinian_cult
+			age = { 30 41 }
+
+		}
+		save_scope_as =  new_cult_leader_eleusinian
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = scope:new_cult_leader_eleusinian
+			}
+		}
+		create_character = {
+			random_traits = no
+			save_scope_as = new_cult_leader_eleusinian
+			learning =  21
+			trait = eleusinian_cult
+			trait = zealous
+			dynasty = generate
+			trait = hierophant_eleusinian
+		}
+	}
+}
+choose_new_cult_leader_bacchus= {
+	random_living_character = {
+		limit = {
+			has_trait = bacchus_cult
+			age = { 30 41 }
+
+		}
+		save_scope_as =  new_cult_leader_bacchus
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = scope:new_cult_leader_bacchus
+			}
+		}
+		create_character = {
+				random_traits = no
+				save_scope_as = new_cult_leader_bacchus
+				learning =  21
+				gender  = male
+				trait = bacchus_cult
+				trait = zealous
+				dynasty = generate
+				trait = hierophant_bacchus
+		}
+	}
+}
+choose_new_cult_leader_cybele= {
+	random_living_character = {
+		limit = {
+			has_trait = cybele_cult
+			age = { 30 41 }
+
+		}
+		save_scope_as =  new_cult_leader_cybele
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = scope:new_cult_leader_cybele
+			}
+		}
+		create_character = {
+			age = {30 50}
+			random_traits = no
+			save_scope_as = new_cult_leader_cybele
+			diplomacy =  21
+			gender  = male
+			trait = cybele_cult
+			trait = zealous
+			dynasty = generate
+			trait = beardless_eunuch
+			trait = hierophant_cybele
+		}
+	}
+}
+choose_new_cult_leader_mithras= {
+	random_living_character = {
+		limit = {
+			has_trait = pr_pater_mithras
+			age = { 30 41 }
+
+		}
+		save_scope_as =  new_cult_leader_mithras
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = scope:new_cult_leader_mithras
+			}
+		}
+		create_character = {
+			template = new_commander_character
+			random_traits = no
+			save_scope_as = new_cult_leader_mithras
+			martial  = 20
+			learning =  8
+			gender  = male
+			trait = mithras_cult
+			trait = zealous
+			dynasty = generate
+			trait = pr_pater_mithras
+		}
+	}
+}
+choose_new_cult_leader_imperial= {
+	random_living_character = {
+		limit = {
+			has_trait = imperial_cult
+			age = { 30 41 }
+
+		}
+		save_scope_as =  new_cult_leader_imperial
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = scope:new_cult_leader_imperial
+			}
+		}
+		create_character = {
+			random_traits = no
+			save_scope_as = new_cult_leader_imperial
+			diplomacy =  21
+			gender  = male
+			trait = imperial_cult
+			trait = zealous
+			dynasty = generate
+			trait = augustalis_imperial_cult
+		}
+	}
+}

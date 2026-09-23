@@ -1,0 +1,98 @@
+﻿namespace = pr_hittite
+
+pr_hittite.0001 = {
+	type = character_event
+	title = pr_hittite.0001.t
+	desc = pr_hittite.0001.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Tarhunna
+	option = {
+		name = pr_hittite.0001.tarhunna
+		trigger = {
+			NOT = { has_character_modifier = hittite_tarhunna }
+		}
+		set_bhakti_effect = { BHAKTI = hittite_tarhunna  }
+	}
+
+	 #Telipinu
+	 option = {
+	 	name = pr_hittite.0001.telipinu
+	 	trigger = {
+	 		NOT = { has_character_modifier = hittite_telipinu }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = hittite_telipinu }
+	 }
+
+	#Halki
+	option = {
+		name = pr_hittite.0001.halki
+		trigger = {
+			NOT = { has_character_modifier = hittite_halki }
+		}
+		set_bhakti_effect = { BHAKTI = hittite_halki }
+	}
+
+	# A'as
+	option = {
+		name = pr_hittite.0001.a_as
+		trigger = {
+			NOT = { has_character_modifier = hittite_a_as}
+		}
+		set_bhakti_effect = { BHAKTI = hittite_a_as}
+	}
+
+
+	 # Tashmishu
+	 option = {
+	 	name = pr_hittite.0001.tashmishu
+	 	trigger = {
+	 		NOT = { has_character_modifier = hittite_tashmishu }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = hittite_tashmishu }
+	 }
+
+	# Opt-Out
+	option = {
+		name = pr_hittite.0001.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
+pr_hittite.0002 = {
+	type = character_event
+	title = pr_hittite.0002.t
+	desc = pr_hittite.0002.desc
+	theme = learning
+
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_hittite.0002.a
+		save_scope_as = owner
+		set_artifact_rarity_illustrious  = yes
+		create_artifact = {
+			name = treaty_of_kadesh
+			description = treaty_of_kadesh_description
+			type = miscellaneous
+			modifier = pr_treaty_of_kadesh
+			visuals = pr_treaty_of_kadesh
+			save_scope_as = pr_treaty_of_kadesh
+			quality = scope:quality
+		}
+	}
+
+}
+

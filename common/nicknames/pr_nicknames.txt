@@ -1,0 +1,16 @@
+﻿#############################################
+# PR Nicknames
+#############################################
+
+nick_templorum_restaurator = {}
+nick_the_hellen = {}
+nick_vestalis_maxima = {}
+nick_pater_mithras = {}
+nick_hierophant_bacchus = {}
+nick_hierophant_isis = {}
+nick_hierophant_eleusinian = {}
+nick_hierophant_serapis = {}
+nick_hierophant_sol_invictus = {}
+nick_augustalis_imperial = {}
+nick_hierophant_cybele = {}
+nick_archdruid = {}

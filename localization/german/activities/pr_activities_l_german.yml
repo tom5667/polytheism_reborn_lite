@@ -1,0 +1,150 @@
+l_german:
+
+  # =============================================
+  # PR Aktivitäten - Festaktivitäten
+  # =============================================
+
+  # --- Saturnalia (Römisch) ---
+  pr_activity_saturnalia:0 "Saturnalien"
+  pr_activity_saturnalia_desc:0 "Ehre Saturn mit einem großen Fest des Schmausens, Glücksspiels und der Rollenumkehr — das fröhlichste der römischen Feiertage."
+  pr_activity_saturnalia_phase_meal:0 "Das Saturnalienfest"
+  pr_activity_saturnalia_phase_toast:0 "Trinksprüche auf Saturn"
+  pr_activity_saturnalia_province_desc:0 "Eine Provinz, die würdig ist, eine Saturnalienfeier auszurichten."
+  pr_activity_saturnalia_host_desc:0 "Du wirst ein Saturnalienfest zu Ehren Saturns ausrichten."
+  pr_activity_saturnalia_conclusion_desc:0 "Die Saturnalien sind vorbei. Möge Saturn deine Herrschaft segnen."
+
+  # --- Wintersonnenwende (Keltisch) ---
+  pr_activity_winter_solstice:0 "Wintersonnenwendefest"
+  pr_activity_winter_solstice_desc:0 "Versammle deine Sippe und Vasallen zu einem großen Fest, um die Wintersonnenwende, die längste Nacht des Jahres, zu feiern."
+  pr_activity_winter_solstice_phase_meal:0 "Das Sonnenwendefest"
+  pr_activity_winter_solstice_phase_toast:0 "Sonnenwendetrinksprüche"
+  pr_activity_winter_solstice_province_desc:0 "Eine Provinz, die würdig ist, eine Wintersonnenwendefeier auszurichten."
+  pr_activity_winter_solstice_host_desc:0 "Du wirst ein Wintersonnenwendefest ausrichten."
+  pr_activity_winter_solstice_conclusion_desc:0 "Das Wintersonnenwendefest ist vorbei. Das Licht kehrt zurück."
+
+  # --- Sommersonnenwende (Keltisch) ---
+  pr_activity_summer_solstice:0 "Sommersonnenwendefest"
+  pr_activity_summer_solstice_desc:0 "Feiere den Höhepunkt des Sommers mit einem großen Fest unter dem längsten Tag, zu Ehren der Sonne und der alten Götter."
+  pr_activity_summer_solstice_phase_meal:0 "Das Mittsommerfest"
+  pr_activity_summer_solstice_phase_toast:0 "Mittsommertrinksprüche"
+  pr_activity_summer_solstice_province_desc:0 "Eine Provinz, die würdig ist, eine Sommersonnenwendefeier auszurichten."
+  pr_activity_summer_solstice_host_desc:0 "Du wirst ein Sommersonnenwendefest ausrichten."
+  pr_activity_summer_solstice_conclusion_desc:0 "Das Sommersonnenwendefest ist vorbei. Die Sonne scheint über dein Reich."
+
+  # --- Wintersonnenwende (Germanisch) ---
+  pr_activity_winter_solstice_germanic:0 "Julfest"
+  pr_activity_winter_solstice_germanic_desc:0 "Versammle dich um das Herdfeuer für ein großes Julfest, schwöre Eide und ehre die Götter während der dunkelsten Nächte des Winters."
+  pr_activity_winter_solstice_germanic_phase_meal:0 "Das Julfest"
+  pr_activity_winter_solstice_germanic_phase_toast:0 "Jul-Eide"
+  pr_activity_winter_solstice_germanic_province_desc:0 "Eine Provinz, die würdig ist, eine Julfeier auszurichten."
+  pr_activity_winter_solstice_germanic_host_desc:0 "Du wirst ein Julfest ausrichten."
+  pr_activity_winter_solstice_germanic_conclusion_desc:0 "Das Julfest ist vorbei. Die Götter haben deine Eide gehört."
+
+  # --- Sommersonnenwende (Germanisch) ---
+  pr_activity_summer_solstice_germanic:0 "Mittsommer-Blot"
+  pr_activity_summer_solstice_germanic_desc:0 "Halte ein großes Sommer-Blot ab — ein Fest des Opfers und der Feier, um die Götter auf dem Höhepunkt der Wachstumszeit zu ehren."
+  pr_activity_summer_solstice_germanic_phase_meal:0 "Das Blot-Fest"
+  pr_activity_summer_solstice_germanic_phase_toast:0 "Trinksprüche auf die Götter"
+  pr_activity_summer_solstice_germanic_province_desc:0 "Eine Provinz, die würdig ist, ein Sommer-Blot auszurichten."
+  pr_activity_summer_solstice_germanic_host_desc:0 "Du wirst ein Sommer-Blot-Fest ausrichten."
+  pr_activity_summer_solstice_germanic_conclusion_desc:0 "Das Sommer-Blot ist vorbei. Die Götter sind zufrieden."
+
+  # =============================================
+  # PR Aktivitäten - Pilgerfahrten
+  # =============================================
+
+  # --- Kogaionon-Pilgerfahrt (Dako-Thrakisch) ---
+  pr_activity_kogaionon_pilgrimage:0 "Pilgerfahrt nach Kogaionon"
+  pr_activity_kogaionon_pilgrimage_desc:0 "Reise zum heiligen Berg Kogaionon, dem heiligen Sitz des Zalmoxis, um mit dem Göttlichen zu kommunizieren."
+  pr_local_kogaionon_pilgrimage_phase:0 "Die heilige Reise"
+  pr_activity_kogaionon_pilgrimage_province_desc:0 "Ein Ziel, das einer Pilgerfahrt nach Kogaionon würdig ist."
+  pr_activity_kogaionon_pilgrimage_host_desc:0 "Du wirst eine Pilgerfahrt nach Kogaionon anführen."
+  pr_activity_kogaionon_pilgrimage_conclusion_desc:0 "Deine Pilgerfahrt nach Kogaionon ist abgeschlossen. Zalmoxis wacht über dich."
+
+  # --- Uisneach-Pilgerfahrt (Keltisch) ---
+  pr_activity_cnoc_uisnigh_pilgrimage:0 "Pilgerfahrt nach Uisneach"
+  pr_activity_cnoc_uisnigh_pilgrimage_desc:0 "Reise zum heiligen Hügel von Uisneach, dem Nabel Irlands, wo die Götter die Welt der Sterblichen treffen."
+  pr_local_cnoc_uisnigh_pilgrimage_phase:0 "Die heilige Reise"
+  pr_activity_cnoc_uisnigh_pilgrimage_province_desc:0 "Ein Ziel, das einer Pilgerfahrt nach Uisneach würdig ist."
+  pr_activity_cnoc_uisnigh_pilgrimage_host_desc:0 "Du wirst eine Pilgerfahrt nach Uisneach anführen."
+  pr_activity_cnoc_uisnigh_pilgrimage_conclusion_desc:0 "Deine Pilgerfahrt nach Uisneach ist abgeschlossen. Die alten Götter gehen mit dir."
+
+  # --- Delphi-Pilgerfahrt (Hellenisch) ---
+  pr_activity_delphi_pilgrimage:0 "Pilgerfahrt nach Delphi"
+  pr_activity_delphi_pilgrimage_desc:0 "Reise zum alten Orakel von Delphi, dem Nabel der Welt, um die Weisheit Apollos zu suchen."
+  pr_local_delphi_pilgrimage_phase:0 "Die heilige Reise"
+  pr_activity_delphi_pilgrimage_province_desc:0 "Ein Ziel, das einer Pilgerfahrt nach Delphi würdig ist."
+  pr_activity_delphi_pilgrimage_host_desc:0 "Du wirst eine Pilgerfahrt nach Delphi anführen."
+  pr_activity_delphi_pilgrimage_conclusion_desc:0 "Deine Pilgerfahrt nach Delphi ist abgeschlossen. Das Orakel hat gesprochen."
+
+  # --- Irminsul-Pilgerfahrt (Germanisch) ---
+  pr_activity_vogtei_pilgrimage:0 "Pilgerfahrt zur Irminsul"
+  pr_activity_vogtei_pilgrimage_desc:0 "Reise zur großen Irminsul, der Weltsäule, die den Himmel trägt, um die alten germanischen Götter zu ehren."
+  pr_local_vogtei_pilgrimage_phase:0 "Die heilige Reise"
+  pr_activity_vogtei_pilgrimage_province_desc:0 "Ein Ziel, das einer Pilgerfahrt zur Irminsul würdig ist."
+  pr_activity_vogtei_pilgrimage_host_desc:0 "Du wirst eine Pilgerfahrt zur Irminsul anführen."
+  pr_activity_vogtei_pilgrimage_conclusion_desc:0 "Deine Pilgerfahrt zur Irminsul ist abgeschlossen. Die Götter haben deine Hingabe empfangen."
+
+  # =============================================
+  # PR Pilgerfahrt-Optionen
+  # =============================================
+  pr_pilgrimage_type_religious:0 "Religiöse Pilgerfahrt"
+  pr_pilgrimage_type_religious_desc:0 "Unternehme diese Pilgerfahrt als Akt der Hingabe an die Götter."
+  pr_pilgrimage_type_recreation:0 "Erholungsreise"
+  pr_pilgrimage_type_recreation_desc:0 "Reise aus Neugier und weltlicher Erfahrung statt aus reiner Hingabe."
+
+  # =============================================
+  # PR Pilgerfahrt-Absichten
+  # =============================================
+  pr_local_pilgrimage_worship_intent:0 "Verehrung"
+  pr_local_pilgrimage_worship_intent_desc:0 "Suche spirituelle Erleuchtung durch Hingabe und Gebet."
+  pr_local_pilgrimage_curiosity_intent:0 "Neugier"
+  pr_local_pilgrimage_curiosity_intent_desc:0 "Reise, um die Welt und ihre Wunder kennenzulernen."
+
+  # =============================================
+  # PR Grausames Fest (Kostenbeschreibung Fix)
+  # =============================================
+  pr_gruesome_festival_cost_desc:0 "Grundkosten"
+
+  # =============================================
+  # PR Charaktererinnerungen - Pilgerfahrt
+  # =============================================
+
+  # --- Kogaionon-Pilgerfahrt (Dako-Thrakisch) ---
+  pr_kogaionon_pilgrimage_host_memory_desc:0 "führte eine Pilgerfahrt zum heiligen Berg Kogaionon durch, um mit Zalmoxis zu kommunizieren"
+  pr_kogaionon_pilgrimage_host_memory_desc_second_perspective:0 "du führen eine Pilgerfahrt zum heiligen Berg Kogaionon durch, um mit Zalmoxis zu kommunizieren"
+  pr_kogaionon_pilgrimage_host_memory_desc_third_perspective:0 "[owner.GetName] führte eine Pilgerfahrt zum heiligen Berg Kogaionon durch, um mit Zalmoxis zu kommunizieren"
+  pr_kogaionon_pilgrimage_guest_memory_desc:0 "begleitete [host.GetName] auf einer Pilgerfahrt zum heiligen Berg Kogaionon"
+  pr_kogaionon_pilgrimage_guest_memory_desc_second_perspective:0 "du begleitest [host.GetName] auf einer Pilgerfahrt zum heiligen Berg Kogaionon"
+  pr_kogaionon_pilgrimage_guest_memory_desc_third_perspective:0 "[owner.GetName] begleitete [host.GetName] auf einer Pilgerfahrt zum heiligen Berg Kogaionon"
+
+  # --- Uisneach-Pilgerfahrt (Keltisch) ---
+  pr_cnoc_uisnigh_pilgrimage_host_memory_desc:0 "führte eine Pilgerfahrt zum heiligen Hügel von Uisneach durch, dem Nabel Irlands"
+  pr_cnoc_uisnigh_pilgrimage_host_memory_desc_second_perspective:0 "du führten eine Pilgerfahrt zum heiligen Hügel von Uisneach durch, dem Nabel Irlands"
+  pr_cnoc_uisnigh_pilgrimage_host_memory_desc_third_perspective:0 "[owner.GetName] führte eine Pilgerfahrt zum heiligen Hügel von Uisneach durch, dem Nabel Irlands"
+  pr_cnoc_uisnigh_pilgrimage_guest_memory_desc:0 "begleitete [host.GetName] auf einer Pilgerfahrt zum heiligen Hügel von Uisneach"
+  pr_cnoc_uisnigh_pilgrimage_guest_memory_desc_second_perspective:0 "du begleitetest [host.GetName] auf einer Pilgerfahrt zum heiligen Hügel von Uisneach"
+  pr_cnoc_uisnigh_pilgrimage_guest_memory_desc_third_perspective:0 "[owner.GetName] begleitete [host.GetName] auf einer Pilgerfahrt zum heiligen Hügel von Uisneach"
+
+  # --- Delphi-Pilgerfahrt (Hellenisch) ---
+  pr_delphi_pilgrimage_host_memory_desc:0 "führte eine Pilgerfahrt nach Delphi durch, um die Weisheit des Orakels von Apollo zu suchen"
+  pr_delphi_pilgrimage_host_memory_desc_second_perspective:0 "du führtest eine Pilgerfahrt nach Delphi durch, um die Weisheit des Orakels von Apollo zu suchen"
+  pr_delphi_pilgrimage_host_memory_desc_third_perspective:0 "[owner.GetName] führte eine Pilgerfahrt nach Delphi durch, um die Weisheit des Orakels von Apollo zu suchen"
+  pr_delphi_pilgrimage_guest_memory_desc:0 "begleitete [host.GetName] auf einer Pilgerfahrt nach Delphi, um die Weisheit des Orakels zu suchen"
+  pr_delphi_pilgrimage_guest_memory_desc_second_perspective:0 "du begleitetest [host.GetName] auf einer Pilgerfahrt nach Delphi, um die Weisheit des Orakels zu suchen"
+  pr_delphi_pilgrimage_guest_memory_desc_third_perspective:0 "[owner.GetName] begleitete [host.GetName] auf einer Pilgerfahrt nach Delphi, um die Weisheit des Orakels zu suchen"
+
+  # --- Irminsul-Pilgerfahrt (Germanisch) ---
+  pr_vogtei_pilgrimage_host_memory_desc:0 "führte eine Pilgerfahrt zur Irminsul durch, der großen Weltsäule, um die alten Götter zu ehren"
+  pr_vogtei_pilgrimage_host_memory_desc_second_perspective:0 "du führtest eine Pilgerfahrt zur Irminsul durch, der großen Weltsäule, um die alten Götter zu ehren"
+  pr_vogtei_pilgrimage_host_memory_desc_third_perspective:0 "[owner.GetName] führte eine Pilgerfahrt zur Irminsul durch, der großen Weltsäule, um die alten Götter zu ehren"
+  pr_vogtei_pilgrimage_guest_memory_desc:0 "begleitete [host.GetName] auf einer Pilgerfahrt zur Irminsul, der großen Weltsäule"
+  pr_vogtei_pilgrimage_guest_memory_desc_second_perspective:0 "du begleitetest [host.GetName] auf einer Pilgerfahrt zur Irminsul, der großen Weltsäule"
+  pr_vogtei_pilgrimage_guest_memory_desc_third_perspective:0 "[owner.GetName] begleitete [host.GetName] auf einer Pilgerfahrt zur Irminsul, der großen Weltsäule"
+
+  # =============================================
+  # PR Charaktererinnerungen - Religiös
+  # =============================================
+  pr_vestal_daughter_memory_desc:0 "wurde als Vestalin-Tochter eingeweiht, dem Dienst an Vesta geschworen"
+  pr_vestal_daughter_memory_desc_second_perspective:0 "du wurdest als Vestalin-Tochter eingeweiht, dem Dienst an Vesta geschworen"
+  pr_vestal_daughter_memory_desc_third_perspective:0 "[owner.GetName] wurde als Vestalin-Tochter eingeweiht, dem Dienst an Vesta geschworen"

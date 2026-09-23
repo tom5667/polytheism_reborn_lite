@@ -1,0 +1,23 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Caucasus Events
+  # Localization for pr_caucasus_decision_events.txt
+  # =============================================
+
+  # --- Choose Georgian Personal Deity (0001) ---
+  pr_caucasus_decision.0001.t:0 "Deciding on a Deity"
+  pr_caucasus_decision.0001.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
+  pr_caucasus_decision.0001.armzi:0 "Armzi, God of the Moon!"
+  pr_caucasus_decision.0001.adgilis_deda:0 "Adgilis Deda, Mother of the Land!"
+  pr_caucasus_decision.0001.kopala:0 "Kopala, God of the Hunt!"
+  pr_caucasus_decision.0001.barbale:0 "Barbale, Goddess of Fertility!"
+  pr_caucasus_decision.0001.optout:0 "$religious_decision.0102.flavor$"
+
+  # --- Choose Armenian Personal Deity (0002) ---
+  pr_caucasus_decision.0002.t:0 "Deciding on a Deity"
+  pr_caucasus_decision.0002.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
+  pr_caucasus_decision.0002.aramazd:0 "Aramazd, Sky Father and Creator!"
+  pr_caucasus_decision.0002.astlik:0 "Astlik, Goddess of Love and Beauty!"
+  pr_caucasus_decision.0002.nane:0 "Nane, Goddess of Wisdom and War!"
+  pr_caucasus_decision.0002.nvard:0 "Nvard, Goddess of War and Victory!"
+  pr_caucasus_decision.0002.optout:0 "$religious_decision.0102.flavor$"

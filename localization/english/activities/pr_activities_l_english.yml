@@ -1,0 +1,159 @@
+﻿l_english:
+
+  # =============================================
+  # PR Activities - Feast Activities
+  # =============================================
+
+  # --- Saturnalia (Roman) ---
+  pr_activity_saturnalia:0 "Saturnalia"
+  pr_activity_saturnalia_desc:0 "Honor Saturn with a great festival of feasting, gambling, and role reversal — the most joyful of Roman holidays."
+  pr_activity_saturnalia_phase_meal:0 "The Saturnalia Feast"
+  pr_activity_saturnalia_phase_toast:0 "Toasts to Saturn"
+  pr_activity_saturnalia_province_desc:0 "A province worthy of hosting a Saturnalia celebration."
+  pr_activity_saturnalia_host_desc:0 "You will host a Saturnalia feast in honor of Saturn."
+  pr_activity_saturnalia_conclusion_desc:0 "The Saturnalia has concluded. May Saturn bless your reign."
+
+  # --- Winter Solstice (Celtic) ---
+  pr_activity_winter_solstice:0 "Winter Solstice Feast"
+  pr_activity_winter_solstice_desc:0 "Gather your kin and vassals for a great feast to celebrate the winter solstice, the longest night of the year."
+  pr_activity_winter_solstice_phase_meal:0 "The Solstice Feast"
+  pr_activity_winter_solstice_phase_toast:0 "Solstice Toasts"
+  pr_activity_winter_solstice_province_desc:0 "A province worthy of hosting a winter solstice celebration."
+  pr_activity_winter_solstice_host_desc:0 "You will host a winter solstice feast."
+  pr_activity_winter_solstice_conclusion_desc:0 "The winter solstice feast has concluded. The light returns."
+
+  # --- Summer Solstice (Celtic) ---
+  pr_activity_summer_solstice:0 "Summer Solstice Feast"
+  pr_activity_summer_solstice_desc:0 "Celebrate the height of summer with a grand feast beneath the longest day, honoring the sun and the old gods."
+  pr_activity_summer_solstice_phase_meal:0 "The Midsummer Feast"
+  pr_activity_summer_solstice_phase_toast:0 "Midsummer Toasts"
+  pr_activity_summer_solstice_province_desc:0 "A province worthy of hosting a summer solstice celebration."
+  pr_activity_summer_solstice_host_desc:0 "You will host a summer solstice feast."
+  pr_activity_summer_solstice_conclusion_desc:0 "The summer solstice feast has concluded. The sun shines upon your realm."
+
+  # --- Winter Solstice (Germanic) ---
+  pr_activity_winter_solstice_germanic:0 "Yule Feast"
+  pr_activity_winter_solstice_germanic_desc:0 "Gather around the hearth for a great Yule feast, swearing oaths and honoring the gods through the darkest nights of winter."
+  pr_activity_winter_solstice_germanic_phase_meal:0 "The Yule Feast"
+  pr_activity_winter_solstice_germanic_phase_toast:0 "Yule Oaths"
+  pr_activity_winter_solstice_germanic_province_desc:0 "A province worthy of hosting a Yule celebration."
+  pr_activity_winter_solstice_germanic_host_desc:0 "You will host a Yule feast."
+  pr_activity_winter_solstice_germanic_conclusion_desc:0 "The Yule feast has concluded. The gods have heard your oaths."
+
+  # --- Summer Solstice (Germanic) ---
+  pr_activity_summer_solstice_germanic:0 "Midsummer Blot"
+  pr_activity_summer_solstice_germanic_desc:0 "Hold a great summer blot — a feast of sacrifice and celebration to honor the gods at the height of the growing season."
+  pr_activity_summer_solstice_germanic_phase_meal:0 "The Blot Feast"
+  pr_activity_summer_solstice_germanic_phase_toast:0 "Toasts to the Gods"
+  pr_activity_summer_solstice_germanic_province_desc:0 "A province worthy of hosting a summer blot."
+  pr_activity_summer_solstice_germanic_host_desc:0 "You will host a summer blot feast."
+  pr_activity_summer_solstice_germanic_conclusion_desc:0 "The summer blot has concluded. The gods are pleased."
+
+  # =============================================
+  # PR Activities - Pilgrimage Activities
+  # =============================================
+
+  # --- Kogaionon Pilgrimage (Daco-Thracian) ---
+  pr_activity_kogaionon_pilgrimage:0 "Pilgrimage to Kogaionon"
+  pr_activity_kogaionon_pilgrimage_desc:0 "Journey to the sacred mountain of Kogaionon, the holy seat of Zalmoxis, to commune with the divine."
+  pr_local_kogaionon_pilgrimage_phase:0 "The Sacred Journey"
+  pr_activity_kogaionon_pilgrimage_province_desc:0 "A destination worthy of a pilgrimage to Kogaionon."
+  pr_activity_kogaionon_pilgrimage_host_desc:0 "You will lead a pilgrimage to Kogaionon."
+  pr_activity_kogaionon_pilgrimage_conclusion_desc:0 "Your pilgrimage to Kogaionon is complete. Zalmoxis watches over you."
+
+  # --- Cnoc Uisnigh Pilgrimage (Celtic) ---
+  pr_activity_cnoc_uisnigh_pilgrimage:0 "Pilgrimage to Uisneach"
+  pr_activity_cnoc_uisnigh_pilgrimage_desc:0 "Journey to the sacred hill of Uisneach, the navel of Ireland, where the gods meet the world of mortals."
+  pr_local_cnoc_uisnigh_pilgrimage_phase:0 "The Sacred Journey"
+  pr_activity_cnoc_uisnigh_pilgrimage_province_desc:0 "A destination worthy of a pilgrimage to Uisneach."
+  pr_activity_cnoc_uisnigh_pilgrimage_host_desc:0 "You will lead a pilgrimage to Uisneach."
+  pr_activity_cnoc_uisnigh_pilgrimage_conclusion_desc:0 "Your pilgrimage to Uisneach is complete. The old gods walk with you."
+
+  # --- Delphi Pilgrimage (Hellenic) ---
+  pr_activity_delphi_pilgrimage:0 "Pilgrimage to Delphi"
+  pr_activity_delphi_pilgrimage_desc:0 "Travel to the ancient oracle at Delphi, the navel of the world, to seek the wisdom of Apollo."
+  pr_local_delphi_pilgrimage_phase:0 "The Sacred Journey"
+  pr_activity_delphi_pilgrimage_province_desc:0 "A destination worthy of a pilgrimage to Delphi."
+  pr_activity_delphi_pilgrimage_host_desc:0 "You will lead a pilgrimage to Delphi."
+  pr_activity_delphi_pilgrimage_conclusion_desc:0 "Your pilgrimage to Delphi is complete. The oracle has spoken."
+
+  # --- Vogtei Pilgrimage (Germanic) ---
+  pr_activity_vogtei_pilgrimage:0 "Pilgrimage to the Irminsul"
+  pr_activity_vogtei_pilgrimage_desc:0 "Journey to the great Irminsul, the world pillar that holds the heavens, to honor the old Germanic gods."
+  pr_local_vogtei_pilgrimage_phase:0 "The Sacred Journey"
+  pr_activity_vogtei_pilgrimage_province_desc:0 "A destination worthy of a pilgrimage to the Irminsul."
+  pr_activity_vogtei_pilgrimage_host_desc:0 "You will lead a pilgrimage to the Irminsul."
+  pr_activity_vogtei_pilgrimage_conclusion_desc:0 "Your pilgrimage to the Irminsul is complete. The gods have received your devotion."
+
+  # =============================================
+  # PR Pilgrimage Options
+  # =============================================
+  pr_pilgrimage_type_religious:0 "Religious Pilgrimage"
+  pr_pilgrimage_type_religious_desc:0 "Undertake this pilgrimage as an act of devotion to the gods."
+  pr_pilgrimage_type_recreation:0 "Recreational Journey"
+  pr_pilgrimage_type_recreation_desc:0 "Travel for curiosity and worldly experience rather than pure devotion."
+
+  # =============================================
+  # PR Pilgrimage Intents
+  # =============================================
+  pr_local_pilgrimage_worship_intent:0 "Worship"
+  pr_local_pilgrimage_worship_intent_desc:0 "Seek spiritual enlightenment through devotion and prayer."
+  pr_local_pilgrimage_curiosity_intent:0 "Curiosity"
+  pr_local_pilgrimage_curiosity_intent_desc:0 "Travel to learn about the world and its wonders."
+
+  # =============================================
+  # PR Gruesome Festival (cost desc fix)
+  # =============================================
+  pr_gruesome_festival_cost_desc:0 "Base Cost"
+
+  # =============================================
+  # PR Character Memories - Pilgrimage
+  # =============================================
+
+  # --- Kogaionon Pilgrimage (Daco-Thracian) ---
+  pr_kogaionon_pilgrimage_host_memory:0 "led a pilgrimage to the sacred mountain of Kogaionon to commune with Zalmoxis"
+  pr_kogaionon_pilgrimage_host_memory_desc:0 "led a pilgrimage to the sacred mountain of Kogaionon to commune with Zalmoxis"
+  pr_kogaionon_pilgrimage_host_memory_desc_second_perspective:0 "you led a pilgrimage to the sacred mountain of Kogaionon to commune with Zalmoxis"
+  pr_kogaionon_pilgrimage_host_memory_desc_third_perspective:0 "[owner.GetName] led a pilgrimage to the sacred mountain of Kogaionon to commune with Zalmoxis"
+  pr_kogaionon_pilgrimage_guest_memory:0 "accompanied [host.GetName] on a pilgrimage to the sacred mountain of Kogaionon"
+  pr_kogaionon_pilgrimage_guest_memory_desc:0 "accompanied [host.GetName] on a pilgrimage to the sacred mountain of Kogaionon"
+  pr_kogaionon_pilgrimage_guest_memory_desc_second_perspective:0 "you accompanied [host.GetName] on a pilgrimage to the sacred mountain of Kogaionon"
+  pr_kogaionon_pilgrimage_guest_memory_desc_third_perspective:0 "[owner.GetName] accompanied [host.GetName] on a pilgrimage to the sacred mountain of Kogaionon"
+
+  # --- Cnoc Uisnigh Pilgrimage (Celtic) ---
+  pr_cnoc_uisnigh_pilgrimage_host_memory:0 "led a pilgrimage to the sacred hill of Uisneach, the navel of Ireland"
+  pr_cnoc_uisnigh_pilgrimage_host_memory_desc:0 "led a pilgrimage to the sacred hill of Uisneach, the navel of Ireland"
+  pr_cnoc_uisnigh_pilgrimage_host_memory_desc_second_perspective:0 "you led a pilgrimage to the sacred hill of Uisneach, the navel of Ireland"
+  pr_cnoc_uisnigh_pilgrimage_host_memory_desc_third_perspective:0 "[owner.GetName] led a pilgrimage to the sacred hill of Uisneach, the navel of Ireland"
+  pr_cnoc_uisnigh_pilgrimage_guest_memory:0 "accompanied [host.GetName] on a pilgrimage to the sacred hill of Uisneach"
+  pr_cnoc_uisnigh_pilgrimage_guest_memory_desc:0 "accompanied [host.GetName] on a pilgrimage to the sacred hill of Uisneach"
+  pr_cnoc_uisnigh_pilgrimage_guest_memory_desc_second_perspective:0 "you accompanied [host.GetName] on a pilgrimage to the sacred hill of Uisneach"
+  pr_cnoc_uisnigh_pilgrimage_guest_memory_desc_third_perspective:0 "[owner.GetName] accompanied [host.GetName] on a pilgrimage to the sacred hill of Uisneach"
+
+  # --- Delphi Pilgrimage (Hellenic) ---
+  pr_delphi_pilgrimage_host_memory:0 "led a pilgrimage to Delphi to seek the wisdom of the oracle of Apollo"
+  pr_delphi_pilgrimage_host_memory_desc:0 "led a pilgrimage to Delphi to seek the wisdom of the oracle of Apollo"
+  pr_delphi_pilgrimage_host_memory_desc_second_perspective:0 "you led a pilgrimage to Delphi to seek the wisdom of the oracle of Apollo"
+  pr_delphi_pilgrimage_host_memory_desc_third_perspective:0 "[owner.GetName] led a pilgrimage to Delphi to seek the wisdom of the oracle of Apollo"
+  pr_delphi_pilgrimage_guest_memory:0 "accompanied [host.GetName] on a pilgrimage to Delphi, seeking the wisdom of the oracle"
+  pr_delphi_pilgrimage_guest_memory_desc:0 "accompanied [host.GetName] on a pilgrimage to Delphi, seeking the wisdom of the oracle"
+  pr_delphi_pilgrimage_guest_memory_desc_second_perspective:0 "you accompanied [host.GetName] on a pilgrimage to Delphi, seeking the wisdom of the oracle"
+  pr_delphi_pilgrimage_guest_memory_desc_third_perspective:0 "[owner.GetName] accompanied [host.GetName] on a pilgrimage to Delphi, seeking the wisdom of the oracle"
+
+  # --- Vogtei Pilgrimage (Germanic) ---
+  pr_vogtei_pilgrimage_host_memory:0 "led a pilgrimage to the Irminsul, the great world pillar, to honor the old gods"
+  pr_vogtei_pilgrimage_host_memory_desc:0 "led a pilgrimage to the Irminsul, the great world pillar, to honor the old gods"
+  pr_vogtei_pilgrimage_host_memory_desc_second_perspective:0 "you led a pilgrimage to the Irminsul, the great world pillar, to honor the old gods"
+  pr_vogtei_pilgrimage_host_memory_desc_third_perspective:0 "[owner.GetName] led a pilgrimage to the Irminsul, the great world pillar, to honor the old gods"
+  pr_vogtei_pilgrimage_guest_memory:0 "accompanied [host.GetName] on a pilgrimage to the Irminsul, the great world pillar"
+  pr_vogtei_pilgrimage_guest_memory_desc:0 "accompanied [host.GetName] on a pilgrimage to the Irminsul, the great world pillar"
+  pr_vogtei_pilgrimage_guest_memory_desc_second_perspective:0 "you accompanied [host.GetName] on a pilgrimage to the Irminsul, the great world pillar"
+  pr_vogtei_pilgrimage_guest_memory_desc_third_perspective:0 "[owner.GetName] accompanied [host.GetName] on a pilgrimage to the Irminsul, the great world pillar"
+
+  # =============================================
+  # PR Character Memories - Religious
+  # =============================================
+  pr_vestal_daughter_memory:0 "was inducted as a Vestal daughter, sworn to the service of Vesta"
+  pr_vestal_daughter_memory_desc:0 "was inducted as a Vestal daughter, sworn to the service of Vesta"
+  pr_vestal_daughter_memory_desc_second_perspective:0 "you were inducted as a Vestal daughter, sworn to the service of Vesta"
+  pr_vestal_daughter_memory_desc_third_perspective:0 "[owner.GetName] was inducted as a Vestal daughter, sworn to the service of Vesta"

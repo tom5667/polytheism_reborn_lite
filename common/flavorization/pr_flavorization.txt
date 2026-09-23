@@ -1,0 +1,74 @@
+﻿# Polytheism Reborn - Flavorization
+# High Kingdom of Ireland: High King/Queen and High Prince/Princess titles
+# Culture: Irish (name_list_irish)
+# Title: k_high_kingdom_of_ireland
+
+# =============================================
+# HIGH KING / HIGH QUEEN
+# =============================================
+
+pr_high_king_male_irish = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	name_lists = { name_list_irish }
+	governments = { tribal_government clan_government feudal_government administrative_government }
+	titles = { k_high_kingdom_of_ireland }
+
+	flavourization_rules = {
+		only_independent = yes
+		top_liege = no
+	}
+}
+
+pr_high_queen_female_irish = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	name_lists = { name_list_irish }
+	governments = { tribal_government clan_government feudal_government administrative_government }
+	titles = { k_high_kingdom_of_ireland }
+
+	flavourization_rules = {
+		only_independent = yes
+		top_liege = no
+	}
+}
+
+# =============================================
+# HIGH PRINCE / HIGH PRINCESS (children of High King/Queen)
+# =============================================
+
+pr_high_prince_male_irish = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = kingdom
+	priority = 60
+	name_lists = { name_list_irish }
+	governments = { feudal_government clan_government tribal_government }
+	titles = { k_high_kingdom_of_ireland }
+
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+
+pr_high_princess_female_irish = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = kingdom
+	priority = 60
+	name_lists = { name_list_irish }
+	governments = { feudal_government clan_government tribal_government }
+	titles = { k_high_kingdom_of_ireland }
+
+	flavourization_rules = {
+		top_liege = no
+	}
+}

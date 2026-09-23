@@ -26,4 +26,4 @@ pax_romana_modifier = {
 	county_opinion_add = 5
 	county_fertility_growth_mult = small_county_fertility_growth_gain
 	build_gold_cost = -0.15
-}
+}

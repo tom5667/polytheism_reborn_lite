@@ -1,7 +1,7 @@
 ﻿
 #Choose main deity Kemetic
 #Amun Ra
-kemetic_cmd1_religion = {
+pr_kemetic_amun_ra = {
 	index = 67422
 	fame = yes 
 	same_faith_opinion = 10
@@ -16,14 +16,14 @@ kemetic_cmd1_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = AmunRa.dds
+				desc = pr_kemetic_amun_ra.dds
 			}
-			desc = AmunRa.dds
+			desc = pr_kemetic_amun_ra.dds
 		}
 	}
 }
 #Ra 
-kemetic_cmd2_religion = {
+pr_kemetic_ra = {
 	index = 67423
 	fame = yes 
 	same_faith_opinion = 10
@@ -38,15 +38,15 @@ kemetic_cmd2_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Ra.dds
+				desc = pr_kemetic_ra.dds
 			}
-			desc = Ra.dds
+			desc = pr_kemetic_ra.dds
 		}
 	}
 }
 
 #Isis
-kemetic_cmd3_religion = {
+pr_kemetic_isis = {
 	index = 67424
 	fame = yes 
 	same_faith_opinion = 5
@@ -63,15 +63,15 @@ kemetic_cmd3_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Isis.dds
+				desc = pr_kemetic_isis.dds
 			}
-			desc = Isis.dds
+			desc = pr_kemetic_isis.dds
 		}
 	}
 }
 
 #Montu
-kemetic_cmd4_religion = {
+pr_kemetic_montu = {
 	index = 67425
 	fame = yes 
 	same_faith_opinion = 5
@@ -86,15 +86,15 @@ kemetic_cmd4_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Montu.dds
+				desc = pr_kemetic_montu.dds
 			}
-			desc = Montu.dds
+			desc = pr_kemetic_montu.dds
 		}
 	}
 
 }
 #Hathor
-kemetic_cmd5_religion = {
+pr_kemetic_hathor = {
 	index = 67426
 	fame = yes 
 	same_faith_opinion = 5
@@ -106,9 +106,9 @@ kemetic_cmd5_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Hathor.dds
+				desc = pr_kemetic_hathor.dds
 			}
-			desc = Hathor.dds
+			desc = pr_kemetic_hathor.dds
 		}
 	}
 }

@@ -1,761 +1,755 @@
-﻿namespace = rps
-namespace = rpcs
-namespace = prsr
-namespace = sassanid_reconquest
-namespace = prctv
+﻿
 namespace = pr
 namespace = RICEmisc
-#all return events religions are put here 
+#all return events religions are put here
+#Reconstruct polytheistic religion
 #Polytheism reborn short religion change events
-rps.001={
+pr.0100={
 	type = character_event
-	title = rps.001.t
-	desc = rps.001.desc
+	title = pr.0100.t
+	desc = pr.0100.desc
 	theme = learning_scholarship_focus
 	option={ #Hellenic/Roman
-		name = rps.001.greek_roman
-		trigger_event = rps.002
+		name = pr.0100.greek_roman
+		trigger_event = pr.0101
 	}
 	option={ #Etruscan
-	name = rps.001.etruscan
-	trigger_event = rps.003
+	name = pr.0100.pr_etruscan
+	trigger_event = pr.0102
 	}
 	option={ #Egyptian
-	name = rps.001.egyptian 
-	trigger_event = rps.004
+	name = pr.0100.egyptian 
+	trigger_event = pr.0103
 	}
 	option={ #Celtic
-	name = rps.001.celtic 
-	trigger_event = rps.005
+	name = pr.0100.celtic 
+	trigger_event = pr.0104
 	}
 	option={ #Germanic
-	name = rps.001.germanic
-	trigger_event = rps.006
+	name = pr.0100.germanic
+	trigger_event = pr.0105
 	}
 	option={
-		name = rps.001.next
-		trigger_event = rps.011
+		name = pr.0100.next
+		trigger_event = pr.0110
 	}
 	option={
-		name = rps.001.optout
+		name = pr.0100.optout
 	}
 }
-rps.011={
+pr.0110={
 	type = character_event
-	title = rps.011.t
-	desc = rps.011.desc
+	title = pr.0110.t
+	desc = pr.0110.desc
 	theme = learning_scholarship_focus
 	option={ #Canaanite
-	name = rps.011.canaanite
-	trigger_event = rps.007
+	name = pr.0110.canaanite
+	trigger_event = pr.0106
 	}
 	option={ #Mesopotamian
-	name = rps.011.mesopotamian
-	trigger_event = rps.008
+	name = pr.0110.mesopotamian
+	trigger_event = pr.0107
 	}
 	option = {  #Daco Thracian
-	name = rps.011.daco_thracian
-	trigger_event = rps.009
+	name = pr.0110.daco_thracian
+	trigger_event = pr.0108
 	}
 	option = {  #Caucasus
-	name = rps.011.caucasus
-	trigger_event = rps.010
+	name = pr.0110.caucasus
+	trigger_event = pr.0109
 	}
 	option = {  #Hittite
-	name = rps.011.hittite
-	trigger_event = rps.014
+	name = pr.0110.pr_hittite
+	trigger_event = pr.0113
 	}
 	option = {  #Scythian
-	name = rps.011.scythian
-	trigger_event = rps.013
+	name = pr.0110.pr_scythian
+	trigger_event = pr.0112
 	}
 	
 	option={
-		name = rps.011.back
-		trigger_event = rps.001
+		name = pr.0110.back
+		trigger_event = pr.0100
 	}
 	option = {
-		name = rps.011.next 
-		trigger_event = rps.015
+		name = pr.0110.next 
+		trigger_event = pr.0114
 	}
 	option={
-		name = rps.011.optout
+		name = pr.0110.optout
 	}
 }
-rps.015={
+pr.0114={
 	type = character_event
-	title = rps.015.t
-	desc = rps.015.desc
+	title = pr.0114.t
+	desc = pr.0114.desc
 	theme = learning_scholarship_focus
     
 	option = {
-		name = rps.015.illyrian
-		trigger_event = rps.016
+		name = pr.0114.pr_illyrian
+		trigger_event = pr.0115
 	}
 	option = {
-		name = rps.015.baltic
-		trigger_event = rps.017
+		name = pr.0114.baltic
+		trigger_event = pr.0116
 	}
 	option = {  #Iberian
-	name = rps.015.iberian
-	trigger_event = rps.018
+	name = pr.0114.pr_iberian
+	trigger_event = pr.0117
 	}
 	option={
-		name = rps.015.back
-		trigger_event = rps.011
+		name = pr.0114.back
+		trigger_event = pr.0110
 		
 	}
 	option={
-		name = rps.015.optout
+		name = pr.0114.optout
 	}
 }
 
-rps.016={
+pr.0115={
 	type = character_event
-	title = rps.016.t
-	desc = rps.016.desc
+	title = pr.0115.t
+	desc = pr.0115.desc
 	theme = learning_scholarship_focus
 	option={
-		name = rps.016.illyrian
+		name = pr.0115.pr_illyrian
 		set_character_faith = faith:illyrian_polytheism
 	}
 	option={
-		name = rps.016.back
-		trigger_event = rps.015
+		name = pr.0115.back
+		trigger_event = pr.0114
 	}
 }
 
-rps.017 = {
+pr.0116 = {
 	type = character_event
-	title = rps.017.t
-	desc = rps.017.desc
+	title = pr.0116.t
+	desc = pr.0116.desc
 	theme = learning_scholarship_focus
 	option={
-		name = rps.017.lithuanian
+		name = pr.0116.lithuanian
 		set_character_faith = faith:baltic_pagan
 	}
 	option={
-		name = rps.017.latvian
+		name = pr.0116.latvian
 		set_character_faith = faith:latvian_pagan
 	}
 	option={
-		name = rps.017.prussian
+		name = pr.0116.prussian
 		set_character_faith = faith:prussian_pagan
 	}
 	option={
-		name = rps.017.back
-		trigger_event = rps.015
+		name = pr.0116.back
+		trigger_event = pr.0114
 	}
 }
 
-rps.018 = {
+pr.0117 = {
 	type = character_event
-	title = rps.018.t
-	desc = rps.018.desc
+	title = pr.0117.t
+	desc = pr.0117.desc
 	theme = learning_scholarship_focus
 	option={
-		name = rps.018.lusitanian
+		name = pr.0117.lusitanian
 		set_character_faith = faith:lusitanian_polytheism
 	}
 	option={
-		name = rps.018.back
-		trigger_event = rps.015
+		name = pr.0117.back
+		trigger_event = pr.0114
 	}
 }
 
-
-
 #Hellenic/Roman
-rps.002={
+pr.0101={
 	type = character_event
-	title = rps.002.t
-	desc = rps.002.desc
+	title = pr.0101.t
+	desc = pr.0101.desc
 	theme = learning_scholarship_focus
 	option={
-		name = rps.002.roman
+		name = pr.0101.roman
 		set_character_faith = faith:cdr_polytheism
 	}
 	option={
-		name = rps.002.greek
+		name = pr.0101.greek
 		set_character_faith = faith:hellenic_pagan
 	}
 	option={
-		name = rps.002.mycenaean
+		name = pr.0101.pr_mycenaean
 		set_character_faith = faith:mycenaean_polytheism
 	}
-	# option={
-	# 	name = rps.002.mithras
-	# 	set_character_faith = faith:mithraic_mysteries
-	# }
-	# option={
-	# 	name = rps.002.eluesinian
-	# 	set_character_faith = faith:eluesinian_mysteries
-	# }
-	# option={
-	# 	name = rps.002.serapis
-	# 	set_character_faith = faith:cult_of_serapis
-	# }
-	# option={
-	# 	name = rps.002.sol_invictus
-	# 	set_character_faith = faith:sol_invictus_cult
-	# }
 	option={
-		name = rps.002.next
-		trigger_event = rps.012
+		name = pr.0101.next
+		trigger_event = pr.0111
 	}
 	option={
-		name = rps.002.back
-		trigger_event = rps.001
+		name = pr.0101.back
+		trigger_event = pr.0100
 	}
 }
-rps.012 = {
+pr.0111 = {
 	type = character_event
-	title = rps.012.t
-	desc = rps.012.desc
+	title = pr.0111.t
+	desc = pr.0111.desc
 	theme = learning_scholarship_focus
-
-	# option={
-	# 	name = rps.012.isis
-	# 	set_character_faith = faith:mysteries_of_isis
-	# }
-	# option={
-	# 	name = rps.012.imperial
-	# 	set_character_faith = faith:imperial_cult
-	# }
-	# option={
-	# 	name = rps.012.roman_illyrian
-	# 	set_character_faith = faith:roman_illyrian_polytheism
-	# }
-	# option={
-	# 	name = rps.012.romano_british
-	# 	set_character_faith = faith:romano_british_polytheism
-	# }
-	# option={
-	# 	name = rps.012.gallo_roman
-	# 	set_character_faith = faith:gallo_roman_polytheism
-	# }
-	# option={
-	# 	name = rps.012.romano_germanic
-	# 	set_character_faith = faith:romano_germanic_polytheism
-	# }
 	option={
-		name = rps.012.graeco_egyptian_polytheism
+		name = pr.0111.pr_graeco_egyptian_polytheism
 		set_character_faith = faith:graeco_egyptian_polytheism
 	}
 	option={
-		name = rps.012.alexandrian_cult
+		name = pr.0111.alexandrian_cult
 		set_character_faith = faith:alexandrian_cult
 	}
 	option={
-		name = rps.012.back
-		trigger_event = rps.002
+		name = pr.0111.back
+		trigger_event = pr.0101
 	}
 	option={
-		name = rps.012.main
-		trigger_event = rps.001
+		name = pr.0111.main
+		trigger_event = pr.0100
 	}
 }
 #Etruscan
-rps.003={
+pr.0102={
 	type = character_event
-	title = rps.003.t
-	desc = rps.003.desc
+	title = pr.0102.t
+	desc = pr.0102.desc
 	theme = learning_scholarship_focus
 	option={
-		name = rps.003.etruscan
+		name = pr.0102.pr_etruscan
 		set_character_faith = faith:etc_polytheism
 	}
 	option={
-		name = rps.003.back
-		trigger_event = rps.001
+		name = pr.0102.back
+		trigger_event = pr.0100
 	}
 }
 #Egyptian
-rps.004={
+pr.0103={
 	type = character_event
-	title = rps.004.t
-	desc = rps.004.desc
+	title = pr.0103.t
+	desc = pr.0103.desc
 	theme = learning_scholarship_focus
 	option={
-		name = rps.004.kemetic
+		name = pr.0103.kemetic
 		set_character_faith = faith:kemetic_polytheism
 	}
 	option={
-		name = rps.004.atenism
+		name = pr.0103.atenism
 		set_character_faith = faith:atenism
 	}
 	option={
-		name = rps.004.back
-		trigger_event = rps.001
+		name = pr.0103.back
+		trigger_event = pr.0100
 	}
 }
 #Celtic
-rps.005={
+pr.0104={
 	type = character_event
-	title = rps.005.t
-	desc = rps.005.desc
+	title = pr.0104.t
+	desc = pr.0104.desc
 	theme = learning_scholarship_focus
 	option={
-		name = rps.005.gaelic 
+		name = pr.0104.gaelic 
 		set_character_faith = faith:gaelic_polytheism
 	}
 	option={
-		name = rps.005.brythonic 
+		name = pr.0104.brythonic 
 		set_character_faith = faith:brythonic_polytheism
 	}
 	option={
-		name = rps.005.gaulish 
+		name = pr.0104.pr_gaulish 
 		set_character_faith = faith:gaulish_polytheism
 	}
 	option={
-		name = rps.005.celtic_iberian 
+		name = pr.0104.pr_celtic_iberian 
 		set_character_faith = faith:celtic_iberian_polytheism
 	}
 	option={
-		name = rps.005.back
-		trigger_event = rps.001
+		name = pr.0104.back
+		trigger_event = pr.0100
 	}
 }
 #Germanic
-rps.006={
+pr.0105={
 	type = character_event
-	title = rps.006.t
-	desc = rps.006.desc
+	title = pr.0105.t
+	desc = pr.0105.desc
 	theme = learning_scholarship_focus
 	option={
-		name = rps.006.anglo_saxon
+		name = pr.0105.anglo_saxon
 		set_character_faith = faith:anglo_saxon_polytheism
 	}
 	option={
-		name = rps.006.german
+		name = pr.0105.german
 		set_character_faith = faith:german_polytheism
 	}
 	option={
-		name = rps.006.back
-		trigger_event = rps.001
+		name = pr.0105.back
+		trigger_event = pr.0100
 	}
 }
 #Punic
-rps.007={
+pr.0106={
 	type = character_event
-	title = rps.007.t
-	desc = rps.007.desc
+	title = pr.0106.t
+	desc = pr.0106.desc
 	theme = learning_scholarship_focus
 	option={
-		name = rps.007.punic
+		name = pr.0106.pr_punic
 		set_character_faith = faith:punic_polytheism
 	}
 	option = {
-		name = rps.007.semitic
+		name = pr.0106.semitic
 		set_character_faith = faith:semitic_polytheism
 	}
 	option={
-		name = rps.007.back
-		trigger_event = rps.001
+		name = pr.0106.back
+		trigger_event = pr.0100
 	}
 }
 #Mesopotamian
-rps.008={
+pr.0107={
 	type = character_event
-	title = rps.008.t
-	desc = rps.008.desc
+	title = pr.0107.t
+	desc = pr.0107.desc
 	theme = learning_scholarship_focus
 	option={
-		name = rps.008.babylonian
+		name = pr.0107.pr_babylonian
 		set_character_faith = faith:babylonian_polytheism
 	}
 	option={
-		name = rps.008.sumerian
+		name = pr.0107.pr_sumerian
 		set_character_faith = faith:sumerian_polytheism
 	}
 	option = {
-		name = rps.008.assyrian
+		name = pr.0107.assyrian
 		set_character_faith = faith:assyrian_polytheism
 	}
 	option={
-		name = rps.008.back
-		trigger_event = rps.001
+		name = pr.0107.back
+		trigger_event = pr.0100
 	}
 }
 
 #Paleo Balkan
-rps.009={
+pr.0108={
 	type = character_event
-	title = rps.009.t
-	desc = rps.009.desc
+	title = pr.0108.t
+	desc = pr.0108.desc
 	theme = learning_scholarship_focus
 	option={
-		name = rps.009.dacian
+		name = pr.0108.pr_dacian
 		set_character_faith = faith:dacian_polytheism
 	}
 	option={
-		name = rps.009.zalmoxism
+		name = pr.0108.zalmoxism
 		set_character_faith = faith:zalmoxism
 	}
 	option={
-		name = rps.009.back
-		trigger_event = rps.001
+		name = pr.0108.back
+		trigger_event = pr.0100
 	}
 }
 
 #Caucasus
-rps.010={
+pr.0109={
 	type = character_event
-	title = rps.010.t
-	desc = rps.010.desc
+	title = pr.0109.t
+	desc = pr.0109.desc
 	theme = learning_scholarship_focus
 	option={
-		name = rps.010.georgian
+		name = pr.0109.georgian
 		set_character_faith = faith:georgian_polytheism
 	}
 	option = {
-		name = rps.010.armenian
+		name = pr.0109.armenian
 		set_character_faith = faith:armenian_polytheism
 	}
 	option={
-		name = rps.010.back
-		trigger_event = rps.001
+		name = pr.0109.back
+		trigger_event = pr.0100
 	}
 }
 
 #Hittite
-rps.014={
+pr.0113={
 	type = character_event
-	title = rps.014.t
-	desc = rps.014.desc
+	title = pr.0113.t
+	desc = pr.0113.desc
 	theme = learning_scholarship_focus
 	option={
-		name = rps.014.hittite
+		name = pr.0113.pr_hittite
 		set_character_faith = faith:hittite_polytheism
 	}
 	option={
-		name = rps.014.back
-		trigger_event = rps.001
+		name = pr.0113.back
+		trigger_event = pr.0100
 	}
 }
 #Scythian
-rps.013={
+pr.0112={
 	type = character_event
-	title = rps.013.t
-	desc = rps.013.desc
+	title = pr.0112.t
+	desc = pr.0112.desc
 	theme = learning_scholarship_focus
 	option={
-		name = rps.013.scythian
+		name = pr.0112.pr_scythian
 		set_character_faith = faith:scythian_polytheism
 	}
 	option={
-		name = rps.013.back
-		trigger_event = rps.001
+		name = pr.0112.back
+		trigger_event = pr.0100
 	}
 }
 
 #Short menu polytheism reborn cultures 
-rpcs.001= {
+pr.0200= {
 	type = character_event
-	title = rpcs.001.t
-	desc = rpcs.001.desc
+	title = pr.0200.t
+	desc = pr.0200.desc
 	theme = learning_scholarship_focus
 
 	option = {
-		name = rpcs.001.greek_roman
-		trigger_event = rpcs.003
+		name = pr.0200.greek_roman
+		trigger_event = pr.0202
 	}
 	option = {
-		name = rpcs.001.celtic
-		trigger_event = rpcs.004
+		name = pr.0200.celtic
+		trigger_event = pr.0203
 	}
 	option = {
-		name = rpcs.001.illyrian
-		trigger_event = rpcs.006
+		name = pr.0200.pr_illyrian
+		trigger_event = pr.0205
 	}
 	option = {
-		name = rpcs.001.daco_thracian
-		trigger_event = rpcs.007
+		name = pr.0200.daco_thracian
+		trigger_event = pr.0206
 	}
 	option = {
-		name  = rpcs.001.next
-		trigger_event = rpcs.002
+		name  = pr.0200.next
+		trigger_event = pr.0201
 	}
 	option = {
-		name = rpcs.001.optout
+		name = pr.0200.optout
 	}
 }
 
-rpcs.002= {
+pr.0201= {
 	type = character_event
-	title = rpcs.002.t
-	desc = rpcs.002.desc
+	title = pr.0201.t
+	desc = pr.0201.desc
 	theme = learning_scholarship_focus
 
 	option = {
-		name = rpcs.002.egyptian
-		trigger_event = rpcs.008
+		name = pr.0201.egyptian
+		trigger_event = pr.0207
 	}
 	option = {
-		name = rpcs.002.mesopotamian
-		trigger_event = rpcs.009
+		name = pr.0201.mesopotamian
+		trigger_event = pr.0208
 	}
 	option = {
-		name = rpcs.002.etruscan
-		trigger_event = rpcs.010
+		name = pr.0201.pr_etruscan
+		trigger_event = pr.0209
 	}
 	option = {
-		name = rpcs.002.punic
-		trigger_event = rpcs.011
+		name = pr.0201.pr_punic
+		trigger_event = pr.0210
 	}
 	option = {
-		name = rpcs.002.hittite
-		trigger_event = rpcs.012
+		name = pr.0201.pr_hittite
+		trigger_event = pr.0211
 	}
 	option = {
-		name = rpcs.002.iberian
-		trigger_event = rpcs.013
+		name = pr.0201.pr_iberian
+		trigger_event = pr.0212
 	}
 	option = {
-		name = rpcs.002.back
+		name = pr.0201.back
 		
-		trigger_event = rpcs.001
+		trigger_event = pr.0200
 	}
 	option = {
-		name = rcps.002.optout
+		name = pr.0201.optout
 	}
 }
 
-rpcs.003 = {
+pr.0202 = {
 	type = character_event
-	title = rpcs.003.t
-	desc = rpcs.003.desc
+	title = pr.0202.t
+	desc = pr.0202.desc
 	theme = learning_scholarship_focus
 
 	option = {
-		name = rpcs.003.mycenaean
-		set_culture = culture:mycenaean
+		name = pr.0202.pr_mycenaean
+		set_culture = culture:pr_mycenaean
 	}
 	option = {
-		name = rpcs.003.roman
+		name = pr.0202.roman
 		set_culture = culture:roman
 	}
 	option = {
-		name = rpcs.003.graeco_persian
-		set_culture = culture:graeco_persian
+		name = pr.0202.pr_graeco_persian
+		set_culture = culture:pr_graeco_persian
 
 	}
 	option = {
-		name = rpcs.003.graeco_egyptian
+		name = pr.0202.pr_graeco_egyptian
 		set_culture = culture:pr_graeco_egyptian
 
 	}
 	option = {
-		name = rpcs.003.greek
+		name = pr.0202.greek
 		set_culture = culture:greek
 	}
 	option = {
-		name = rpcs.003.back
-		trigger_event = rpcs.001
+		name = pr.0202.next
+		trigger_event = pr.0213
+	}
+	option = {
+		name = pr.0202.back
+		trigger_event = pr.0200
 	}
 }
 
-rpcs.004 = {
+pr.0213 = {
 	type = character_event
-	title = rpcs.004.t
-	desc = rpcs.004.desc
+	title = pr.0213.t
+	desc = pr.0213.desc
+	theme = learning_scholarship_focus
+
+	option = {
+		name = pr.0213.gallo_roman
+		set_culture = culture:pr_gallo_roman
+	}
+	option = {
+		name = pr.0213.romano_hispanic
+		set_culture = culture:pr_romano_hispanic
+	}
+	option = {
+		name = pr.0213.britano_roman
+		set_culture = culture:pr_romano_british
+	}
+	option = {
+		name = pr.0213.afro_roman
+		set_culture = culture:pr_afro_roman
+	}
+	option = {
+		name = pr.0213.romano_egyptian
+		set_culture = culture:pr_romano_egyptian
+	}
+	option = {
+		name = pr.0213.romano_germanic
+		set_culture = culture:pr_romano_germanic
+	}
+	option = {
+		name = pr.0213.back
+		trigger_event = pr.0202
+	}
+}
+
+pr.0203 = {
+	type = character_event
+	title = pr.0203.t
+	desc = pr.0203.desc
 	theme = learning_scholarship_focus
 	
 	option = {
-		name = rpcs.004.manx
-		set_culture = culture:manx
+		name = pr.0203.pr_manx
+		set_culture = culture:pr_manx
 	}
 	option = {
-		name = rpcs.004.irish
+		name = pr.0203.irish
 		set_culture = culture:irish
 
 	}
 	option = {
-		name = rpcs.004.gaelic
+		name = pr.0203.gaelic
 		set_culture = culture:gaelic
 	}
 	option = {
-		name = rpcs.004.next
-		trigger_event = rpcs.005
+		name = pr.0203.next
+		trigger_event = pr.0204
 	}
 	option = {
-		name = rpcs.004.back
-		trigger_event = rpcs.001
-	}
-}
-
-rpcs.005 = {
-	type = character_event
-	title = rpcs.005.t
-	desc = rpcs.005.desc
-	theme = learning_scholarship_focus
-
-	option = {
-		name = rpcs.005.gaulish
-		set_culture = culture:gaulish
-	}
-	option = {
-		name = rpcs.005.belgae
-		set_culture = culture:belgae
-	}
-	option = {
-		name = rpcs.005.eburones
-		set_culture = culture:eburones
-	}
-	option = {
-		name = rpcs.005.celtiberian
-		set_culture = culture:celtic_iberian
-	}
-	option = {
-		name = rpcs.005.back
-		trigger_event = rpcs.004
+		name = pr.0203.back
+		trigger_event = pr.0200
 	}
 }
 
-rpcs.006 = {
+pr.0204 = {
 	type = character_event
-	title = rpcs.006.t
-	desc = rpcs.006.desc
+	title = pr.0204.t
+	desc = pr.0204.desc
 	theme = learning_scholarship_focus
 
 	option = {
-		name = rpcs.006.illyrian
-		set_culture = culture:illyrian
+		name = pr.0204.pr_gaulish
+		set_culture = culture:pr_gaulish
 	}
 	option = {
-		name = rpcs.006.back
-		trigger_event = rpcs.001
+		name = pr.0204.pr_belgae
+		set_culture = culture:pr_belgae
+	}
+	option = {
+		name = pr.0204.pr_eburones
+		set_culture = culture:pr_eburones
+	}
+	option = {
+		name = pr.0204.celtiberian
+		set_culture = culture:pr_celtic_iberian
+	}
+	option = {
+		name = pr.0204.back
+		trigger_event = pr.0203
 	}
 }
 
-rpcs.007 = {
+pr.0205 = {
 	type = character_event
-	title = rpcs.007.t
-	desc = rpcs.007.desc
+	title = pr.0205.t
+	desc = pr.0205.desc
 	theme = learning_scholarship_focus
 
 	option = {
-		name = rpcs.007.dacian
-		set_culture = culture:dacian
+		name = pr.0205.pr_illyrian
+		set_culture = culture:pr_illyrian
 	}
 	option = {
-		name = rpcs.007.thracian
-		set_culture = culture:thracian
-	}
-	option = {
-		name = rpcs.007.back
-		trigger_event = rpcs.001
+		name = pr.0205.back
+		trigger_event = pr.0200
 	}
 }
-rpcs.008 = {
+
+pr.0206 = {
 	type = character_event
-	title = rpcs.008.t
-	desc = rpcs.008.desc
+	title = pr.0206.t
+	desc = pr.0206.desc
 	theme = learning_scholarship_focus
 
 	option = {
-		name = rpcs.008.kemetic
+		name = pr.0206.pr_dacian
+		set_culture = culture:pr_dacian
+	}
+	option = {
+		name = pr.0206.pr_thracian
+		set_culture = culture:pr_thracian
+	}
+	option = {
+		name = pr.0206.back
+		trigger_event = pr.0200
+	}
+}
+pr.0207 = {
+	type = character_event
+	title = pr.0207.t
+	desc = pr.0207.desc
+	theme = learning_scholarship_focus
+
+	option = {
+		name = pr.0207.kemetic
 		set_culture = culture:kemetic
 	}
 	option = {
-		name = rpcs.008.back
-		trigger_event = rpcs.002
+		name = pr.0207.back
+		trigger_event = pr.0201
 	}
 }
 
-rpcs.009 = {
+pr.0208 = {
 	type = character_event
-	title = rpcs.009.t
-	desc = rpcs.009.desc
+	title = pr.0208.t
+	desc = pr.0208.desc
 	theme = learning_scholarship_focus
 
 	option = {
-		name = rpcs.009.babylonian
-		set_culture = culture:babylonian
+		name = pr.0208.pr_babylonian
+		set_culture = culture:pr_babylonian
 	}
 	option = {
-		name = rpcs.009.assyrian
+		name = pr.0208.assyrian
 		set_culture = culture:pr_assyrian
 	}
 	option = {
-		name = rpcs.009.sumerian
-		set_culture = culture:sumerian
+		name = pr.0208.pr_sumerian
+		set_culture = culture:pr_sumerian
 	}
 	option = {
-		name = rpcs.009.back
-		trigger_event = rpcs.002
-	}
-}
-
-rpcs.010 = {
-	type = character_event
-	title = rpcs.010.t
-	desc = rpcs.010.desc
-	theme = learning_scholarship_focus
-
-	option = {
-		name = rpcs.010.etruscan
-		set_culture = culture:etruscan
-	}
-	option = {
-		name = rpcs.010.back
-		trigger_event = rpcs.002
+		name = pr.0208.back
+		trigger_event = pr.0201
 	}
 }
 
-rpcs.011 = {
+pr.0209 = {
 	type = character_event
-	title = rpcs.011.t
-	desc = rpcs.011.desc
+	title = pr.0209.t
+	desc = pr.0209.desc
 	theme = learning_scholarship_focus
 
 	option = {
-		name = rpcs.011.punic
-		set_culture = culture:punic
+		name = pr.0209.pr_etruscan
+		set_culture = culture:pr_etruscan
 	}
 	option = {
-		name = rpcs.011.back
-		trigger_event = rpcs.002
+		name = pr.0209.back
+		trigger_event = pr.0201
 	}
 }
 
-rpcs.012 = {
+pr.0210 = {
 	type = character_event
-	title = rpcs.012.t
-	desc = rpcs.012.desc
+	title = pr.0210.t
+	desc = pr.0210.desc
 	theme = learning_scholarship_focus
 
 	option = {
-		name = rpcs.012.hittite
-		set_culture = culture:hittite
+		name = pr.0210.pr_punic
+		set_culture = culture:pr_punic
 	}
 	option = {
-		name = rpcs.012.back
-		trigger_event = rpcs.002
+		name = pr.0210.back
+		trigger_event = pr.0201
 	}
 }
 
-rpcs.013 = {
+pr.0211 = {
 	type = character_event
-	title = rpcs.013.t
-	desc = rpcs.013.desc
+	title = pr.0211.t
+	desc = pr.0211.desc
 	theme = learning_scholarship_focus
 
 	option = {
-		name = rpcs.013.iberian
-		set_culture = culture:iberian
+		name = pr.0211.pr_hittite
+		set_culture = culture:pr_hittite
 	}
 	option = {
-		name = rpcs.013.back
-		trigger_event = rpcs.002
+		name = pr.0211.back
+		trigger_event = pr.0201
+	}
+}
+
+pr.0212 = {
+	type = character_event
+	title = pr.0212.t
+	desc = pr.0212.desc
+	theme = learning_scholarship_focus
+
+	option = {
+		name = pr.0212.pr_iberian
+		set_culture = culture:pr_iberian
+	}
+	option = {
+		name = pr.0212.back
+		trigger_event = pr.0201
 	}
 }
 
 #Polytheism reborn sassanid relative
-prsr.001 ={
+pr.0400 ={
 	type = character_event
-	title = prsr.001.t
-	desc = prsr.001.desc
+	title = pr.0400.t
+	desc = pr.0400.desc
 	theme = learning_scholarship_focus
 	immediate = {
 		hidden_effect = {
@@ -776,11 +770,11 @@ prsr.001 ={
 		animation = idle
 	}
 	option={
-		name = prsr.001.stay
+		name = pr.0400.stay
 		add_prestige = 300
 	}
 	option = {
-		name = prsr.001.abdicate_samani
+		name = pr.0400.abdicate_samani
 		trigger = {
 			completely_controls = title:c_balkh
 		}
@@ -886,7 +880,7 @@ prsr.001 ={
 
 	}
 	option = {
-		name = prsr.001.abdicate_afrighid
+		name = pr.0400.abdicate_afrighid
 		trigger = {
 			completely_controls = title:c_gurganj
 		}
@@ -967,7 +961,7 @@ prsr.001 ={
 		}
 	}
 	option={
-		name = prsr.001.send_away
+		name = pr.0400.send_away
 		remove_courtier_or_guest = character:180643
 		remove_courtier_or_guest = character:180642
 		ai_chance={
@@ -976,17 +970,17 @@ prsr.001 ={
 	}
 }
 
-sassanid_reconquest.001={
+pr.0500={
 	type = character_event
-	title = sassanid_reconquest.001.t
-	desc = sassanid_reconquest.001.desc
+	title = pr.0500.t
+	desc = pr.0500.desc
 	theme = learning_scholarship_focus
 	right_portrait ={
 		character = root
 		animation = idle
 	}
 	option={
-		name = sassanid_reconquest.001.a
+		name = pr.0500.a
 		add_prestige = 100
 		spawn_army = {
 			name = event_troop_default_name
@@ -1002,14 +996,14 @@ sassanid_reconquest.001={
 	}
 }
 
-prctv.001={
+pr.0300={
 	type = character_event
-	title = prctv.001.t
-	desc = prctv.001.desc
+	title = pr.0300.t
+	desc = pr.0300.desc
 	theme = faith
 	
 	option={
-		name = prctv.001.a 
+		name = pr.0300.a 
 		title:c_roma ={
 			remove_county_modifier = open_temple_of_vesta
 		}
@@ -1020,10 +1014,10 @@ prctv.001={
 }
 
 
-pr.001 = { 
+pr.0001 = { 
 	type = character_event
-	title = pr.001.t
-	desc = pr.001.desc
+	title = pr.0001.t
+	desc = pr.0001.desc
 	theme = faith
 	left_portrait = {
 		character = scope:scoped_ruler
@@ -1037,95 +1031,34 @@ pr.001 = {
 	}
 	
 	option = {
-		name = pr.001.a
+		name = pr.0001.a
 		every_player = {
 			limit = {
 				NOT = { this = root }
 			}
-			trigger_event = pr.002
+			trigger_event = pr.0002
 		}
 	}
 }
-#Gaelic Settlers
-pr.002 = { 
+
+# Notifies other players that scope:scoped_ruler (from pr.0001) welcomed foreign settlers.
+pr.0002 = {
 	type = character_event
-	title = pr.002.t
+	title = pr.0002.t
 	desc = {
 		first_valid = {
-			# Vassal reaction.
 			triggered_desc = {
 				trigger = {
-					target_is_liege_or_above = scope:scoped_ruler
+					root = { is_vassal_of = scope:scoped_ruler }
 				}
-				desc = pr.002.desc.vassals
+				desc = pr.0002.desc.vassals
 			}
-			desc = pr.002.desc.others
-		}
-	}
-	theme = faith
-	left_portrait = {
-		character = scope:scoped_ruler
-		animation = personality_rational
-	}
-	
-	option = {
-		name = {
-			trigger = {
-				target_is_liege_or_above = scope:scoped_ruler
-			}	
-			text = pr.002.a
-		}
-		name = {
-			trigger = {
-				NAND = {
-					target_is_liege_or_above = scope:scoped_ruler
-				}
-			}
-			text = pr.002.b
-		}
-	}
-}
-#Brythonic Settlers
-pr.014 = { 
-	type = character_event
-	title = pr.014.t
-	desc = pr.014.desc
-	theme = faith
-	left_portrait = {
-		character = scope:scoped_ruler
-		animation = personality_rational
-	}
-	
-	immediate = {
-		play_music_cue = "mx_cue_faith_conversion"
-		save_scope_as = scoped_ruler
-		promote_brythonic_settlement_decision_scripted_effect = yes
-	}
-	
-	option = {
-		name = pr.014.a
-		every_player = {
-			limit = {
-				NOT = { this = root }
-			}
-			trigger_event = pr.015
-		}
-	}
-}
-
-pr.015 = { 
-	type = character_event
-	title =  pr.015.t
-	desc = {
-		first_valid = {
-			# Vassal reaction.
 			triggered_desc = {
 				trigger = {
-					target_is_liege_or_above = scope:scoped_ruler
+					NOT = { root = { is_vassal_of = scope:scoped_ruler } }
 				}
-				desc =  pr.015.desc.vassals
+				desc = pr.0002.desc.others
 			}
-			desc =  pr.015.desc.others
 		}
 	}
 	theme = faith
@@ -1133,344 +1066,112 @@ pr.015 = {
 		character = scope:scoped_ruler
 		animation = personality_rational
 	}
-	
+
 	option = {
-		name = {
-			trigger = {
-				target_is_liege_or_above = scope:scoped_ruler
-			}	
-			text = pr.015.a
-		}
-		name = {
-			trigger = {
-				NAND = {
-					target_is_liege_or_above = scope:scoped_ruler
-				}
-			}
-			text = pr.015.b
-		}
+		name = pr.0002.a
+	}
+	option = {
+		name = pr.0002.b
 	}
 }
 
-#Gaulish Settlers
-pr.016 = { 
-	type = character_event
-	title = pr.016.t
-	desc = pr.016.desc
-	theme = faith
-	left_portrait = {
-		character = scope:scoped_ruler
-		animation = personality_rational
-	}
-	
-	immediate = {
-		play_music_cue = "mx_cue_faith_conversion"
-		save_scope_as = scoped_ruler
-		promote_gaulish_settlement_decision_scripted_effect = yes
-	}
-	
-	option = {
-		name = pr.016.a
-		every_player = {
-			limit = {
-				NOT = { this = root }
-			}
-			trigger_event = pr.017
-		}
-	}
-}
 
-pr.017 = { 
-	type = character_event
-	title =  pr.017.t
-	desc = {
-		first_valid = {
-			# Vassal reaction.
-			triggered_desc = {
-				trigger = {
-					target_is_liege_or_above = scope:scoped_ruler
-				}
-				desc =  pr.017.desc.vassals
-			}
-			desc =  pr.017.desc.others
-		}
-	}
-	theme = faith
-	left_portrait = {
-		character = scope:scoped_ruler
-		animation = personality_rational
-	}
-	
-	option = {
-		name = {
-			trigger = {
-				target_is_liege_or_above = scope:scoped_ruler
-			}	
-			text = pr.017.a
-		}
-		name = {
-			trigger = {
-				NAND = {
-					target_is_liege_or_above = scope:scoped_ruler
-				}
-			}
-			text = pr.017.b
-		}
-	}
-}
-
-#Celtica
-pr.003 = {
-	type = character_event
-	title = pr.003.t
-	desc = pr.003.desc
-	theme = claim_throne_scheme
-	right_portrait = {
-			character = root
-			animation = personality_content
-	}
-	option = {
-		name = pr.003.a
-		create_title_and_vassal_change = {
-			type = created
-			save_scope_as = title_change
-			add_claim_on_loss = yes
-		}
-		title:k_celtica = {
-			change_title_holder ={
-				holder = root
-				change = scope:title_change
-			}
-		}
-		resolve_title_and_vassal_change = scope:title_change
-	}
-}
-#Belgica
-pr.004 = {
-	type = character_event
-	title = pr.004.t
-	desc = pr.004.desc
-	theme = claim_throne_scheme
-	right_portrait = {
-			character = root
-			animation = personality_content
-	}
-	option = {
-		name = pr.004.a
-		create_title_and_vassal_change = {
-			type = created
-			save_scope_as = title_change
-			add_claim_on_loss = yes
-		}
-		title:k_belgica = {
-			change_title_holder ={
-				holder = root
-				change = scope:title_change
-			}
-		}
-		resolve_title_and_vassal_change = scope:title_change
-	}
-}
-#Narbonensis
-pr.005 = {
-	type = character_event
-	title = pr.005.t
-	desc = pr.005.desc
-	theme = claim_throne_scheme
-	right_portrait = {
-			character = root
-			animation = personality_content
-	}
-	option = {
-		name = pr.005.a
-		create_title_and_vassal_change = {
-			type = created
-			save_scope_as = title_change
-			add_claim_on_loss = yes
-		}
-		title:k_narbonensis = {
-			change_title_holder ={
-				holder = root
-				change = scope:title_change
-			}
-		}
-		resolve_title_and_vassal_change = scope:title_change
-	}
-}
-#Aquitania
-pr.006 = {
-	type = character_event
-	title = pr.006.t
-	desc = pr.006.desc
-	theme = claim_throne_scheme
-	right_portrait = {
-			character = root
-			animation = personality_content
-	}
-	option = {
-		name = pr.006.a
-		create_title_and_vassal_change = {
-			type = created
-			save_scope_as = title_change
-			add_claim_on_loss = yes
-		}
-		title:k_aquitania = {
-			change_title_holder ={
-				holder = root
-				change = scope:title_change
-			}
-		}
-		resolve_title_and_vassal_change = scope:title_change
-	}
-}
-#Gaulish empire
-pr.007 = {
-	type = character_event
-	title = pr.007.t
-	desc = pr.007.desc
-	theme = claim_throne_scheme
-	right_portrait = {
-			character = root
-			animation = personality_content
-	}
-	option = {
-		name = pr.007.a
-		create_title_and_vassal_change = {
-			type = created
-			save_scope_as = title_change
-			add_claim_on_loss = yes
-		}
-		title:e_gaul = {
-			change_title_holder ={
-				holder = root
-				change = scope:title_change
-			}
-		}
-		resolve_title_and_vassal_change = scope:title_change
-	}
-}
-#Liguria/Cisalpine 
-pr.008 = {
-	type = character_event
-	title = pr.008.t
-	desc = pr.008.desc
-	theme = claim_throne_scheme
-	right_portrait = {
-			character = root
-			animation = personality_content
-	}
-	option = {
-		name = pr.008.a
-		create_title_and_vassal_change = {
-			type = created
-			save_scope_as = title_change
-			add_claim_on_loss = yes
-		}
-		title:k_cisalpina = {
-			change_title_holder ={
-				holder = root
-				change = scope:title_change
-			}
-		}
-		resolve_title_and_vassal_change = scope:title_change
-	}
-}
 #Reconstruct polytheistic religion
-pr.018 = {
+pr.0018 = {
 	type = character_event
-	title = pr.018.t
-	desc = pr.018.desc
+	title = pr.0018.t
+	desc = pr.0018.desc
 	theme = learning_scholarship_focus
 	option={ #Hellenic/Roman
-		name = pr.018.greek_roman 
-		trigger_event = pr.020
+		name = pr.0018.greek_roman 
+		trigger_event = pr.0020
 	}
 	option={ #Etruscan
-	name = pr.018.etruscan
-	trigger_event = pr.021
+	name = pr.0018.pr_etruscan
+	trigger_event = pr.0021
 	}
 	option={ #Egyptian
-	name = pr.018.egyptian
-	trigger_event = pr.022
+	name = pr.0018.egyptian
+	trigger_event = pr.0022
 	}
 	option={ #Celtic
-	name = pr.018.celtic
-	trigger_event = pr.023
+	name = pr.0018.celtic
+	trigger_event = pr.0023
 
 	}
 	option={ #Germanic
-	name = pr.018.germanic
-	trigger_event = pr.024
+	name = pr.0018.germanic
+	trigger_event = pr.0024
 	}
 	option = {
-		name = pr.018.iberian
-		trigger_event = pr.052
+		name = pr.0018.pr_iberian
+		trigger_event = pr.0052
 	}
 	option={
-		name = pr.018.next
-		trigger_event = pr.019
+		name = pr.0018.next
+		trigger_event = pr.0019
 	}
 	option={
-		name = pr.018.optout
+		name = pr.0018.optout
 	}
 }
 
-pr.019={
+pr.0019={
 	type = character_event
-	title = pr.019.t
-	desc = pr.019.desc
+	title = pr.0019.t
+	desc = pr.0019.desc
 	theme = learning_scholarship_focus
 	option={ #Punic
-	name = pr.019.canaanite
-	trigger_event = pr.025
+	name = pr.0019.canaanite
+	trigger_event = pr.0025
 	}
 	option={ #Mesopotamian
-	name = pr.019.mesopotamian
-	trigger_event = pr.026
+	name = pr.0019.mesopotamian
+	trigger_event = pr.0026
 	}
 	option = {  #Daco Thracian
-	name = pr.019.daco_thracian
-	trigger_event = pr.027
+	name = pr.0019.daco_thracian
+	trigger_event = pr.0027
 	}
 	option = {  #Caucasus
-	name = pr.019.caucasus
-	trigger_event = pr.028
+	name = pr.0019.caucasus
+	trigger_event = pr.0028
 	}
-	option = {  #hittite
-	name = pr.019.hittite
-	trigger_event = pr.029
-	}
-	option = {
-		name = pr.019.scythian
-		trigger_event = pr.047
+	option = {  #pr_hittite
+	name = pr.0019.pr_hittite
+	trigger_event = pr.0029
 	}
 	option = {
-		name = pr.019.illyrian
-		trigger_event = pr.048
+		name = pr.0019.pr_scythian
+		trigger_event = pr.0047
 	}
 	option = {
-		name = pr.019.baltic
-		trigger_event = pr.049
+		name = pr.0019.pr_illyrian
+		trigger_event = pr.0048
+	}
+	option = {
+		name = pr.0019.baltic
+		trigger_event = pr.0049
 	}
 	option={
-		name = pr.019.back
-		trigger_event = pr.018
+		name = pr.0019.back
+		trigger_event = pr.0018
 	}
 	option={
-		name = pr.019.optout
+		name = pr.0019.optout
 	}
 }
 #Set religion scopes 
 #Hellenic/Roman
-pr.020={
+pr.0020={
 	type = character_event
-	title = pr.020.t
-	desc = pr.020.desc
+	title = pr.0020.t
+	desc = pr.0020.desc
 	theme = learning_scholarship_focus
 	option={
-		name = pr.020.roman
+		name = pr.0020.roman
 		#set_character_faith = faith:cdr_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 	
 		add_to_global_variable_list ={
 			name = research_roman
@@ -1478,9 +1179,9 @@ pr.020={
 		}
 	}
 	option={
-		name = pr.020.greek
+		name = pr.0020.greek
 		#set_character_faith = faith:hellenic_pagan
-		trigger_event = pr.030
+		trigger_event = pr.0030
 
 		add_to_global_variable_list ={
 			name = research_greek
@@ -1488,86 +1189,86 @@ pr.020={
 		}
 	}
 	option={
-		name = pr.020.mycenaean
-		trigger_event = pr.030
+		name = pr.0020.pr_mycenaean
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_mycenaean
 			target = flag:flag_research_mycenaean
 		}
 	}
 	option={
-		name = pr.020.graeco_egyptian
-		trigger_event = pr.030
+		name = pr.0020.pr_graeco_egyptian
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_graeco_egyptian
 			target = flag:flag_research_graeco_egyptian
 		}
 	}
 	option={
-		name = pr.020.back
-		trigger_event = pr.018
+		name = pr.0020.back
+		trigger_event = pr.0018
 	}
 }
 #Etruscan
-pr.021={
+pr.0021={
 	type = character_event
-	title = pr.021.t
-	desc = pr.021.desc
+	title = pr.0021.t
+	desc = pr.0021.desc
 	theme = learning_scholarship_focus
 	option={
-		name = pr.021.etruscan
+		name = pr.0021.pr_etruscan
 		#set_character_faith = faith:etc_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_etruscan
 			target = flag:flag_research_etruscan
 		}
 	}
 	option={
-		name = pr.021.back
-		trigger_event = pr.018
+		name = pr.0021.back
+		trigger_event = pr.0018
 		
 	}
 }
 #Egyptian
-pr.022={
+pr.0022={
 	type = character_event
-	title = pr.022.t
-	desc = pr.022.desc
+	title = pr.0022.t
+	desc = pr.0022.desc
 	theme = learning_scholarship_focus
 	option={
-		name = pr.022.kemetic
+		name = pr.0022.kemetic
 		#set_character_faith = faith:kemetic_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_kemetic
 			target = flag:flag_research_kemetic
 		}
 	}
 	option={
-		name = pr.022.atenism
+		name = pr.0022.atenism
 		#set_character_faith = faith:atenism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_atenism
 			target = flag:flag_research_atenism
 		}
 	}
 	option={
-		name = pr.022.back
-		trigger_event = pr.018
+		name = pr.0022.back
+		trigger_event = pr.0018
 	}
 }
 #Celtic
-pr.023={
+pr.0023={
 	type = character_event
-	title = pr.023.t
-	desc = pr.023.desc
+	title = pr.0023.t
+	desc = pr.0023.desc
 	theme = learning_scholarship_focus
 	option={
-		name = pr.023.gaelic
+		name = pr.0023.gaelic
 		#set_character_faith = faith:gaelic_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_gaelic
 			target = flag:flag_research_gaelic
@@ -1575,315 +1276,315 @@ pr.023={
 
 	}
 	option={
-		name = pr.023.brythonic
+		name = pr.0023.brythonic
 		#set_character_faith = faith:brythonic_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_brythonic
 			target = flag:flag_research_brythonic
 		}
 	}
 	option={
-		name = pr.023.gaulish
+		name = pr.0023.pr_gaulish
 		#set_character_faith = faith:gaulish_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_gaulish
 			target = flag:flag_research_gaulish
 		}
 	}
 	option={
-		name = pr.023.celtic_iberian
+		name = pr.0023.pr_celtic_iberian
 		#set_character_faith = faith:celtic_iberian_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_celtic_iberian
 			target = flag:flag_research_celtic_iberian
 		}
 	}
 	option={
-		name = pr.023.back
-		trigger_event = pr.018
+		name = pr.0023.back
+		trigger_event = pr.0018
 	}
 }
 #Germanic
-pr.024={
+pr.0024={
 	type = character_event
-	title = pr.024.t
-	desc = pr.024.desc
+	title = pr.0024.t
+	desc = pr.0024.desc
 	theme = learning_scholarship_focus
 	option={
-		name = pr.024.anglo_saxon
+		name = pr.0024.anglo_saxon
 		#set_character_faith = faith:anglo_saxon_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_anglo_saxon
 			target = flag:flag_research_anglo_saxon
 		}
 	}
 	option={
-		name = pr.024.german
+		name = pr.0024.german
 		#set_character_faith = faith:german_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_german
 			target = flag:flag_research_german
 		}
 	}
 	option={
-		name = pr.024.back
-		trigger_event = pr.018
+		name = pr.0024.back
+		trigger_event = pr.0018
 	}
 }
 
 #Iberian
-pr.052={
+pr.0052={
 	type = character_event
-	title = pr.052.t
-	desc = pr.052.desc
+	title = pr.0052.t
+	desc = pr.0052.desc
 	theme = learning_scholarship_focus
 	option={
-		name = pr.052.lusitanian
+		name = pr.0052.lusitanian
 		#set_character_faith = faith:anglo_saxon_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_lusitanian
 			target = flag:flag_research_lusitanian
 		}
 	}
 	option={
-		name = pr.052.back
-		trigger_event = pr.018
+		name = pr.0052.back
+		trigger_event = pr.0018
 	}
 }
 #Punic
-pr.025={
+pr.0025={
 	type = character_event
-	title = pr.025.t
-	desc = pr.025.desc
+	title = pr.0025.t
+	desc = pr.0025.desc
 	theme = learning_scholarship_focus
 	option={
-		name = pr.025.punic
+		name = pr.0025.pr_punic
 		#set_character_faith = faith:punic_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_punic
 			target = flag:flag_research_punic
 		}
 	}
 	option = {
-		name = pr.025.semitic
-		trigger_event = pr.030
+		name = pr.0025.semitic
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_semitic
 			target = flag:flag_research_semitic
 		}
 	}
 	option={
-		name = pr.025.back
-		trigger_event = pr.019
+		name = pr.0025.back
+		trigger_event = pr.0019
 	}
 }
 #Mesopotamian
-pr.026={
+pr.0026={
 	type = character_event
-	title = pr.026.t
-	desc = pr.026.desc
+	title = pr.0026.t
+	desc = pr.0026.desc
 	theme = learning_scholarship_focus
 	option={
-		name = pr.026.babylonian
+		name = pr.0026.pr_babylonian
 		#set_character_faith = faith:babylonian_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_babylonian
 			target = flag:flag_research_babylonian
 		}
 	}
 	option={
-		name = pr.026.sumerian
+		name = pr.0026.pr_sumerian
 		#set_character_faith = faith:sumerian_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_sumerian
 			target = flag:flag_research_sumerian
 		}
 	}
 	option={
-		name = pr.026.assyrian
+		name = pr.0026.assyrian
 		#set_character_faith = faith:sumerian_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_assyrian
 			target = flag:flag_research_assyrian
 		}
 	}
 	option={
-		name = pr.026.back
-		trigger_event = pr.019
+		name = pr.0026.back
+		trigger_event = pr.0019
 	}
 }
 
 #Daco Thracian
-pr.027={
+pr.0027={
 	type = character_event
-	title = pr.027.t
-	desc = pr.027.desc
+	title = pr.0027.t
+	desc = pr.0027.desc
 	theme = learning_scholarship_focus
 	option={
-		name = pr.027.dacian
+		name = pr.0027.pr_dacian
 		#set_character_faith = faith:dacian_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_dacian
 			target = flag:flag_research_dacian
 		}
 	}
 	option={
-		name = pr.027.zalmoxism
+		name = pr.0027.zalmoxism
 		#set_character_faith = faith:zalmoxism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_zalmoxism
 			target = flag:flag_research_zalmoxism
 		}
 	}
 	option={
-		name = pr.027.back
-		trigger_event = pr.019
+		name = pr.0027.back
+		trigger_event = pr.0019
 	}
 }
 
 #Caucasus
-pr.028={
+pr.0028={
 	type = character_event
-	title = pr.028.t
-	desc = pr.028.desc
+	title = pr.0028.t
+	desc = pr.0028.desc
 	theme = learning_scholarship_focus
 	option={
-		name = pr.028.georgian
+		name = pr.0028.georgian
 		#set_character_faith = faith:georgian_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_georgian
 			target = flag:flag_research_georgian
 		}
 	}
 	option = {
-		name = pr.028.armenian
+		name = pr.0028.armenian
 		#set_character_faith = faith:armenian_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_armenian
 			target = flag:flag_research_armenian
 		}
 	}
 	option={
-		name = pr.028.back
-		trigger_event = pr.001
+		name = pr.0028.back
+		trigger_event = pr.0001
 	}
 }
 #Hittite
-pr.029 = {
+pr.0029 = {
 	type = character_event
-	title = pr.029.t
-	desc = pr.029.desc
+	title = pr.0029.t
+	desc = pr.0029.desc
 	theme = learning_scholarship_focus
 	option={
-		name = pr.029.hittite
+		name = pr.0029.pr_hittite
 		#set_character_faith = faith:hittite_polytheism
-		trigger_event = pr.030
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_hittite
 			target = flag:flag_research_hittite
 		}
 	}
 	option={
-		name = pr.029.back
-		trigger_event = pr.019
+		name = pr.0029.back
+		trigger_event = pr.0019
 	}
 }
 
-pr.047={
+pr.0047={
 	type = character_event
-	title = pr.047.t
-	desc = pr.047.desc
+	title = pr.0047.t
+	desc = pr.0047.desc
 	theme = learning_scholarship_focus
 	option={
-		name = pr.047.scythian
-		trigger_event = pr.030
+		name = pr.0047.pr_scythian
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_scythian
 			target = flag:flag_research_scythian
 		}
 	}
 	option={
-		name = pr.047.back
-		trigger_event = pr.019
+		name = pr.0047.back
+		trigger_event = pr.0019
 		
 	}
 }
 
-pr.048={
+pr.0048={
 	type = character_event
-	title = pr.048.t
-	desc = pr.048.desc
+	title = pr.0048.t
+	desc = pr.0048.desc
 	theme = learning_scholarship_focus
 	option={
-		name = pr.048.illyrian
-		trigger_event = pr.030
+		name = pr.0048.pr_illyrian
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_illyrian
 			target = flag:flag_research_illyrian
 		}
 	}
 	option={
-		name = pr.048.back
-		trigger_event = pr.019
+		name = pr.0048.back
+		trigger_event = pr.0019
 		
 	}
 }
 
-pr.049={
+pr.0049={
 	type = character_event
-	title = pr.049.t
-	desc = pr.049.desc
+	title = pr.0049.t
+	desc = pr.0049.desc
 	theme = learning_scholarship_focus
 	option={
-		name = pr.049.lithuanian
-		trigger_event = pr.030
+		name = pr.0049.lithuanian
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_lithuanian
 			target = flag:flag_research_lithuanian
 		}
 	}
 	option = {
-		name = pr.049.latvian
-		trigger_event = pr.030
+		name = pr.0049.latvian
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_latvian
 			target = flag:flag_research_latvian
 		}
 	}
 	option = {
-		name = pr.049.prussian
-		trigger_event = pr.030
+		name = pr.0049.prussian
+		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_prussian
 			target = flag:flag_research_prussian
 		}
 	}
 	option={
-		name = pr.048.back
-		trigger_event = pr.019
+		name = pr.0048.back
+		trigger_event = pr.0019
 		
 	}
 }
 
 
-pr.030 = {#Choose library
+pr.0030 = {#Choose library
 	type = character_event
-	title = pr.030.t
-	desc = pr.030.desc
+	title = pr.0030.t
+	desc = pr.0030.desc
 	theme = learning_scholarship_focus
 	override_background = { reference = council_chamber }
 	right_portrait = {
@@ -1915,7 +1616,7 @@ pr.030 = {#Choose library
 		}
 	}
 	option = {
-		name = pr.030.alexandria
+		name = pr.0030.alexandria
 		remove_short_term_gold = 250
 		set_global_variable = {
 			name = research_great_library
@@ -1924,7 +1625,7 @@ pr.030 = {#Choose library
 		pr_research_ancient_religion_events_great_library_effect = yes
 	}
 	option = {
-		name = pr.030.athens
+		name = pr.0030.athens
 		remove_short_term_gold = 250
 		set_global_variable = {
 			name = research_great_library
@@ -1933,7 +1634,7 @@ pr.030 = {#Choose library
 		pr_research_ancient_religion_events_great_library_effect = yes
 	}
 	option = {
-		name = pr.030.vatican
+		name = pr.0030.vatican
 		remove_short_term_gold = 250
 		set_global_variable = {
 			name = research_great_library
@@ -1942,7 +1643,7 @@ pr.030 = {#Choose library
 		pr_research_ancient_religion_events_great_library_effect = yes
 	}
 	option = {
-		name = pr.030.minor_library
+		name = pr.0030.minor_library
 		remove_short_term_gold = 100
 		set_global_variable = {
 			name = research_small_library
@@ -1952,10 +1653,10 @@ pr.030 = {#Choose library
 	}
 
 }
-pr.031 = {#Historian finds information
+pr.0031 = {#Historian finds information
 	type = character_event
-	title = pr.031.t
-	desc = pr.031.desc
+	title = pr.0031.t
+	desc = pr.0031.desc
 	theme = learning_scholarship_focus
 	override_background = { reference = council_chamber }
 	right_portrait = {
@@ -1967,14 +1668,14 @@ pr.031 = {#Historian finds information
 			animation = personality_content
 	}
 	option={
-		name = pr.031.a #Talk with Historian
-		trigger_event = pr.033
+		name = pr.0031.a #Talk with Historian
+		trigger_event = pr.0033
 	}
 }
-pr.032 = {#Historian didn't find information
+pr.0032 = {#Historian didn't find information
 	type = character_event
-	title = pr.032.t
-	desc = pr.032.desc
+	title = pr.0032.t
+	desc = pr.0032.desc
 	theme = learning_scholarship_focus
 	override_background = { reference = council_chamber }
 	right_portrait = {
@@ -1982,21 +1683,21 @@ pr.032 = {#Historian didn't find information
 			animation = personality_content
 	}
 	option={
-		name = pr.032.a #Invite a book merchant 
+		name = pr.0032.a #Invite a book merchant 
 		 trigger_event = {
-		 	id = pr.034
+		 	id = pr.0034
 		 	days = 5 
 		 } 
 	}
 	option={
-		name = pr.032.b #Leave it as it is 
+		name = pr.0032.b #Leave it as it is 
 		
 	}
 }
-pr.033 = {#Talk with historian
+pr.0033 = {#Talk with historian
 	type = character_event
-	title = pr.033.t
-	desc = pr.033.desc
+	title = pr.0033.t
+	desc = pr.0033.desc
 	theme = learning_scholarship_focus
 	override_background = { reference = council_chamber }
 	right_portrait = {
@@ -2008,21 +1709,21 @@ pr.033 = {#Talk with historian
 		animation = personality_content
 	}
 	option={
-		name = pr.033.a #
-		trigger_event = pr.035
+		name = pr.0033.a #
+		trigger_event = pr.0035
 	}
 	option={
-		name = pr.033.b 	
+		name = pr.0033.b 	
 		add_character_modifier = { 
 			modifier = knowledge_of_ancient_religion
 	    } 
 	}
 }
 
-pr.035 = {#Court chaplain finds out
+pr.0035 = {#Court chaplain finds out
 	type = character_event
-	title = pr.035.t
-	desc = pr.035.desc
+	title = pr.0035.t
+	desc = pr.0035.desc
 	theme = learning_scholarship_focus
 	override_background = { reference = council_chamber }
 	right_portrait = {
@@ -2047,22 +1748,22 @@ pr.035 = {#Court chaplain finds out
 		}
 	}
 	option={
-		name = pr.035.a #Start debate
+		name = pr.0035.a #Start debate
 		#Need to make a random event that checks if learning is >= as 18 
 		#learning >=18 convert court chaplain 100% good outcome
 		#learning < 18 60% chance you win the debate but you imprison the court chaplain 
 		pr_research_ancient_religion_events_debate_effect = yes
 	}
 	option={
-		name = pr.035.b #Just repent
-		trigger_event = pr.043
+		name = pr.0035.b #Just repent
+		trigger_event = pr.0043
 	}
 }
 
-pr.036 = {#Outcome debate good
+pr.0036 = {#Outcome debate good
 	type = character_event
-	title = pr.036.t
-	desc = pr.036.desc
+	title = pr.0036.t
+	desc = pr.0036.desc
 	theme = learning_scholarship_focus
 	override_background = { reference = council_chamber }
 	right_portrait = {
@@ -2074,7 +1775,7 @@ pr.036 = {#Outcome debate good
 		animation = personality_content
 	}
 	option={
-		name = pr.036.a #Won the debate
+		name = pr.0036.a #Won the debate
 		if = {
 			limit = {
 				is_target_in_global_variable_list = {
@@ -2082,8 +1783,6 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_roman
 				}
 			}
-			#set_character_faith = faith:cdr_polytheism
-			#add_trait = pr_secret_faith_roman
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:cdr_polytheism }
 			scope:realm_priest = {
 				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:cdr_polytheism }
@@ -2095,7 +1794,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_roman
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 		}
 		if = {
 			limit ={
@@ -2116,7 +1815,7 @@ pr.036 = {#Outcome debate good
 				}
 			}
 
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 		}
 		if = {
 			limit ={
@@ -2136,7 +1835,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_mycenaean
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 		}
 				if = {
 			limit ={
@@ -2156,7 +1855,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_graeco_egyptian
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 		}
 		if = {
 			limit = {
@@ -2176,7 +1875,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_gaelic
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 		}
 		if = {
 			limit = {
@@ -2196,7 +1895,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_brythonic
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2218,7 +1917,7 @@ pr.036 = {#Outcome debate good
 				}
 			}
 
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 		}
 		if = {
 			limit = {
@@ -2238,7 +1937,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_celtic_iberian
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2259,7 +1958,7 @@ pr.036 = {#Outcome debate good
 						target = flag:flag_research_anglo_saxon
 					}
 				}
-				# trigger_event = pr.039
+				# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2280,7 +1979,7 @@ pr.036 = {#Outcome debate good
 						target = flag:flag_research_german
 					}
 				}
-				# trigger_event = pr.039
+				# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2301,7 +2000,7 @@ pr.036 = {#Outcome debate good
 						target = flag:flag_research_lusitanian
 					}
 				}
-				# trigger_event = pr.039
+				# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2322,7 +2021,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_etruscan
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2343,7 +2042,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_kemetic
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2364,7 +2063,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_atenism
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2385,7 +2084,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_punic
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2395,7 +2094,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_semitic
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:semitic_polytheisme }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:semitic_polytheism }
 			scope:realm_priest = {
 				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:semitic_polytheism }
 			}
@@ -2406,7 +2105,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_semitic
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2427,7 +2126,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_babylonian
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2448,7 +2147,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_sumerian
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2469,7 +2168,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_assyrian
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2490,7 +2189,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_dacian
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2511,7 +2210,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_zalmoxism
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2533,7 +2232,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_georgian
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2554,7 +2253,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_armenian
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2576,7 +2275,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_hittite
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2597,7 +2296,7 @@ pr.036 = {#Outcome debate good
 					target = flag:flag_research_scythian
 				}
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 
 		}
 		if = {
@@ -2611,7 +2310,7 @@ pr.036 = {#Outcome debate good
 			scope:realm_priest = {
 				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:illyrian_polytheism }
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
 				remove_list_global_variable = {
@@ -2632,7 +2331,7 @@ pr.036 = {#Outcome debate good
 			scope:realm_priest = {
 				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:baltic_pagan }
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
 				remove_list_global_variable = {
@@ -2653,7 +2352,7 @@ pr.036 = {#Outcome debate good
 			scope:realm_priest = {
 				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:latvian_pagan }
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
 				remove_list_global_variable = {
@@ -2674,7 +2373,7 @@ pr.036 = {#Outcome debate good
 			scope:realm_priest = {
 				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:prussian_pagan }
 			}
-			# trigger_event = pr.039
+			# trigger_event = pr.0039
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
 				remove_list_global_variable = {
@@ -2686,10 +2385,10 @@ pr.036 = {#Outcome debate good
 		}
 	}
 }
-pr.037 = {#Outcome debate medium
+pr.0037 = {#Outcome debate medium
 	type = character_event
-	title = pr.037.t
-	desc = pr.037.desc
+	title = pr.0037.t
+	desc = pr.0037.desc
 	theme = learning_scholarship_focus
 	override_background = { reference = council_chamber }
 	right_portrait = {
@@ -2701,7 +2400,7 @@ pr.037 = {#Outcome debate medium
 		animation = personality_angry
 	}
 	option={
-		name = pr.037.a #A small win
+		name = pr.0037.a #A small win
 		if = {
 			limit = {
 				is_target_in_global_variable_list = {
@@ -2721,7 +2420,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_roman
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -2744,7 +2443,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_greek
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -2767,7 +2466,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_mycenaean
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -2790,7 +2489,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_graeco_egyptian
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -2812,7 +2511,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_gaelic
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -2834,7 +2533,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_gaulish
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -2857,7 +2556,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_brythonic
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -2879,7 +2578,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_celtic_iberian
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -2901,7 +2600,7 @@ pr.037 = {#Outcome debate medium
 						target = flag:flag_research_anglo_saxon
 					}
 				}
-				trigger_event = pr.039
+				trigger_event = pr.0039
 
 		}
 		if = {
@@ -2923,7 +2622,7 @@ pr.037 = {#Outcome debate medium
 						target = flag:flag_research_german
 					}
 				}
-				trigger_event = pr.039
+				trigger_event = pr.0039
 
 		}
 		if = {
@@ -2945,7 +2644,7 @@ pr.037 = {#Outcome debate medium
 						target = flag:flag_research_lusitanian
 					}
 				}
-				trigger_event = pr.039
+				trigger_event = pr.0039
 
 		}
 		if = {
@@ -2968,7 +2667,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_etruscan
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -2991,7 +2690,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_kemetic
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -3014,7 +2713,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_atenism
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -3037,7 +2736,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_punic
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -3048,7 +2747,7 @@ pr.037 = {#Outcome debate medium
 				}
 			}
 			#set_character_faith = faith:semitic_polytheism
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:semetic_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:semitic_polytheism }
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
 				IMPRISONER = root
@@ -3060,7 +2759,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_semitic
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -3083,7 +2782,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_babylonian
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -3106,7 +2805,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_sumerian
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -3129,7 +2828,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_assyrian
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -3152,7 +2851,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_dacian
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -3175,7 +2874,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_zalmoxism
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -3198,7 +2897,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_georgian
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -3220,7 +2919,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_armenian
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -3243,7 +2942,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_hittite
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -3266,7 +2965,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_scythian
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -3288,7 +2987,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_illyrian
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 		if = {
@@ -3310,7 +3009,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_lithuanian
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 		}
 		if = {
 			limit = {
@@ -3331,7 +3030,7 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_latvian
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 		}
 		if = {
 			limit = {
@@ -3352,13 +3051,13 @@ pr.037 = {#Outcome debate medium
 					target = flag:flag_research_prussian
 				}
 			}
-			trigger_event = pr.039
+			trigger_event = pr.0039
 
 		}
 	}
 	option={
-		name = pr.037.b #Repent 
-		trigger_event = pr.043
+		name = pr.0037.b #Repent 
+		trigger_event = pr.0043
 		remove_list_global_variable = {
 			name = research_lithuanian
 			target = flag:flag_research_lithuanian
@@ -3473,10 +3172,10 @@ pr.037 = {#Outcome debate medium
 		}
 	}
 }
-pr.038 = {#Outcome debate bad
+pr.0038 = {#Outcome debate bad
 	type = character_event
-	title = pr.038.t
-	desc = pr.038.desc
+	title = pr.0038.t
+	desc = pr.0038.desc
 	theme = learning_scholarship_focus
 	override_background = { reference = council_chamber }
 	right_portrait = {
@@ -3488,14 +3187,14 @@ pr.038 = {#Outcome debate bad
 		animation = personality_angry
 	}
 	option={
-		name = pr.038.a #Lost the debate repending is the only solution
-		trigger_event = pr.043
+		name = pr.0038.a #Lost the debate repending is the only solution
+		trigger_event = pr.0043
 	}
 }
-pr.039 = {#after debate moderate
+pr.0039 = {#after debate moderate
 	type = character_event
-	title = pr.039.t
-	desc = pr.039.desc
+	title = pr.0039.t
+	desc = pr.0039.desc
 	theme = learning_scholarship_focus
 	override_background = { reference = dungeon }
 	right_portrait = {
@@ -3507,15 +3206,15 @@ pr.039 = {#after debate moderate
 		animation = personality_content
 	}
 	option={
-		name = pr.039.a #The end 
+		name = pr.0039.a #The end 
 		
 		
 	}
 }
-pr.034 = {#Book merchant 
+pr.0034 = {#Book merchant 
 	type = character_event
-	title = pr.034.t
-	desc = pr.034.desc
+	title = pr.0034.t
+	desc = pr.0034.desc
 	theme = learning_scholarship_focus
 	override_background = { reference = council_chamber }
 	right_portrait = {
@@ -3527,7 +3226,7 @@ pr.034 = {#Book merchant
 		animation = personality_content
 	}
 	option={
-		name = pr.034.a #Buy the book from the merchant 
+		name = pr.0034.a #Buy the book from the merchant 
 		remove_short_term_gold = 70
 		set_global_variable = {
 			name = bought_book
@@ -3536,15 +3235,18 @@ pr.034 = {#Book merchant
 		pr_bought_book_event_effect = yes
 	}
 	option={
-		name = pr.034.b #Don't buy the book
-		clear_global_variable_list = reconstruct_polytheism_decision
+		name = pr.0034.b #Don't buy the book
+		remove_list_global_variable = {
+			name = unavailable_unique_decisions
+			target = flag:pr_return_polytheism_decision
+		}
 	}
 }
 
-pr.040 = {#Bought book good  
+pr.0040 = {#Bought book good  
 	type = character_event
-	title = pr.040.t
-	desc = pr.040.desc
+	title = pr.0040.t
+	desc = pr.0040.desc
 	theme = learning_scholarship_focus
 	override_background = { reference = council_chamber }
 	right_portrait = {
@@ -3562,19 +3264,22 @@ pr.040 = {#Bought book good
 		}
 	}
 	option={
-		name = pr.040.a 
-		trigger_event = pr.042
+		name = pr.0040.a 
+		trigger_event = pr.0042
 	}
 	option={
-		name = pr.040.b #this is all I want to know
-		clear_global_variable_list = reconstruct_polytheism_decision
+		name = pr.0040.b #this is all I want to know
+		remove_list_global_variable = {
+			name = unavailable_unique_decisions
+			target = flag:pr_return_polytheism_decision
+		}
 	}
 }
 
-pr.041 = {#Bought book bad  
+pr.0041 = {#Bought book bad  
 	type = character_event
-	title = pr.041.t
-	desc = pr.041.desc
+	title = pr.0041.t
+	desc = pr.0041.desc
 	theme = learning_scholarship_focus
 	override_background = { reference = council_chamber }
 	right_portrait = {
@@ -3591,8 +3296,11 @@ pr.041 = {#Bought book bad
 		}
 	}
 	option={
-		name = pr.041.a #Better luck next time I hope
-		clear_global_variable_list = reconstruct_polytheism_decision
+		name = pr.0041.a #Better luck next time I hope
+		remove_list_global_variable = {
+			name = unavailable_unique_decisions
+			target = flag:pr_return_polytheism_decision
+		}
 		remove_list_global_variable = {
 			name = research_lithuanian
 			target = flag:flag_research_lithuanian
@@ -3708,10 +3416,10 @@ pr.041 = {#Bought book bad
 	}
 }
 
-pr.042 = {#
+pr.0042 = {#
 	type = character_event
-	title = pr.042.t
-	desc = pr.042.desc
+	title = pr.0042.t
+	desc = pr.0042.desc
 	theme = learning_scholarship_focus
 	override_background = { reference = council_chamber }
 	right_portrait = {
@@ -3719,7 +3427,7 @@ pr.042 = {#
 			animation = personality_content
 	}
 	option={
-		name = pr.042.a #It's time to convert to the true faith
+		name = pr.0042.a #It's time to convert to the true faith
 		if = {
 			limit = {
 				is_target_in_global_variable_list = {
@@ -4204,10 +3912,10 @@ pr.042 = {#
 	}
 }
 
-pr.043 = {#after debate moderate
+pr.0043 = {#after debate moderate
 	type = character_event
-	title = pr.043.t
-	desc = pr.043.desc
+	title = pr.0043.t
+	desc = pr.0043.desc
 	theme = learning_scholarship_focus
 	override_background = { reference = temple_generic }
 	right_portrait = {
@@ -4219,15 +3927,15 @@ pr.043 = {#after debate moderate
 		animation = personality_content
 	}
 	option={
-		name = pr.043.a #The end 
+		name = pr.0043.a #The end 
 		add_trait = zealous
 		add_piety = 100 
 	}
 }
 
-pr.044 = {
+pr.0044 = {
 	type = character_event
-	title = pr.044.t
+	title = pr.0044.t
 	desc = {
 		first_valid = {
 			# Muslim Reaction
@@ -4235,7 +3943,7 @@ pr.044 = {
 				trigger = {
 					root.faith.religion = faith:ashari.religion
 				}
-				desc = pr.044.desc.muslim
+				desc = pr.0044.desc.muslim
 			}
 			# Hellenic Reaction
 			triggered_desc = {
@@ -4245,7 +3953,7 @@ pr.044 = {
 						root.religion = religion:roman_religion
 					}
 				}
-				desc = pr.044.desc.hellenic
+				desc = pr.0044.desc.hellenic
 			}
 			# And the rest
 			triggered_desc = {
@@ -4256,7 +3964,7 @@ pr.044 = {
 						root.religion = religion:roman_religion
 					}
 				}
-				desc = pr.044.desc.fallback
+				desc = pr.0044.desc.fallback
 			}
 		}
 		first_valid = {
@@ -4267,7 +3975,7 @@ pr.044 = {
 						exists = scope:scoped_patriarch
 					}
 				}
-				desc = pr.044.desc.no_patriarch
+				desc = pr.0044.desc.no_patriarch
 			}
 			# Current patriarch is crucified
 			triggered_desc = {
@@ -4277,7 +3985,7 @@ pr.044 = {
 						root.religion = religion:roman_religion
 					}
 				}
-				desc = pr.044.desc.patriarch.crucifixion
+				desc = pr.0044.desc.patriarch.crucifixion
 			}
 			# Current patriarch is sacrificed
 			triggered_desc = {
@@ -4286,10 +3994,10 @@ pr.044 = {
 						has_doctrine_parameter = human_sacrifice_active
 					}
 				}
-				desc = pr.044.desc.patriarch.sacrificed
+				desc = pr.0044.desc.patriarch.sacrificed
 			}
 			# Current patriarch converts
-			desc = pr.044.desc.patriarch.submission
+			desc = pr.0044.desc.patriarch.submission
 		}
 	}
 	theme = faith
@@ -4329,7 +4037,7 @@ pr.044 = {
 			trigger = {
 				faith.religion = faith:ashari.religion
 			}
-			text = pr.044.a.a
+			text = pr.0044.a.a
 		}
 		name = {
 			trigger = {
@@ -4338,7 +4046,7 @@ pr.044 = {
 					religion = religion:roman_religion
 				}
 			}
-			text = pr.044.a.b
+			text = pr.0044.a.b
 		}
 		name = {
 			trigger = {
@@ -4348,7 +4056,7 @@ pr.044 = {
 					religion = religion:roman_religion
 				}
 			}
-			text = pr.044.a.c
+			text = pr.0044.a.c
 		}
 		every_player = {
 			limit = {
@@ -4358,15 +4066,15 @@ pr.044 = {
 					faith.religion = root.faith.religion
 				}
 			}
-			trigger_event = pr.045 # Notification.
+			trigger_event = pr.0045 # Notification.
 		}
 	}
 }
 
 # Other players notified.
-pr.045 = {
+pr.0045 = {
 	type = character_event
-	title = pr.044.t
+	title = pr.0044.t
 	desc = {
 		first_valid = {
 			# Muslim/Pagan Reaction
@@ -4374,14 +4082,14 @@ pr.045 = {
 				trigger = {
 					root.faith.religion = scope:scoped_destroyer.faith.religion
 				}
-				desc = pr.045.desc.faithful
+				desc = pr.0045.desc.faithful
 			}
 			# Christian Reaction
 			triggered_desc = {
 				trigger = {
 					root.faith.religion = faith:orthodox.religion
 				}
-				desc = pr.045.desc.christians
+				desc = pr.0045.desc.christians
 			}
 			# Fallback
 			triggered_desc = {
@@ -4391,7 +4099,7 @@ pr.045 = {
 						root.faith.religion = scope:scoped_destroyer.faith.religion
 					}
 				}
-				desc = pr.045.desc.fallback
+				desc = pr.0045.desc.fallback
 			}
 		}
 	}
@@ -4424,13 +4132,13 @@ pr.045 = {
 			trigger = {
 				faith.religion = scope:scoped_destroyer.faith.religion
 			}
-			text = pr.045.a.a
+			text = pr.0045.a.a
 		}
 		name = {
 			trigger = {
 				faith.religion = faith:orthodox.religion
 			}
-			text = pr.045.a.b
+			text = pr.0045.a.b
 		}
 		name = {
 			trigger = {
@@ -4439,7 +4147,7 @@ pr.045 = {
 					faith.religion = scope:scoped_destroyer.faith.religion
 				}
 			}
-			text = pr.045.a.c
+			text = pr.0045.a.c
 		}
 		if = {
 			limit = {
@@ -4458,10 +4166,10 @@ pr.045 = {
 	}
 }
 
-pr.046 = {
+pr.0046 = {
 	type = character_event
-	desc = pr.046.desc
-	title = pr.046.t 
+	desc = pr.0046.desc
+	title = pr.0046.t 
 	theme = learning_scholarship_focus
 	right_portrait = {
 		character = root
@@ -4469,7 +4177,7 @@ pr.046 = {
 	}
 
 	option = {
-		name = pr.046.a
+		name = pr.0046.a
 		set_character_faith = faith:cdr_polytheism
 	}
 
@@ -4514,10 +4222,10 @@ RICEmisc.0010 = {
 }
 
 
-pr.050 = { #For Ai reconstruct polytheism
+pr.0050 = { #For Ai reconstruct polytheism
 	type = character_event
-	desc = pr.050.desc
-	title = pr.050.t 
+	desc = pr.0050.desc
+	title = pr.0050.t 
 	theme = learning_scholarship_focus
 	right_portrait = {
 		character = root
@@ -4525,7 +4233,7 @@ pr.050 = { #For Ai reconstruct polytheism
 	}
 
 	option = {
-		name = pr.050.german
+		name = pr.0050.german
 		trigger = {
 			OR = {
 				culture = { has_cultural_pillar = heritage_central_germanic }
@@ -4539,7 +4247,7 @@ pr.050 = { #For Ai reconstruct polytheism
 		}
 	}
 	option = {
-		name = pr.050.anglo_saxon
+		name = pr.0050.anglo_saxon
 		trigger = {
 				AND = {
 					culture = { has_cultural_pillar = heritage_central_germanic }
@@ -4552,7 +4260,7 @@ pr.050 = { #For Ai reconstruct polytheism
 		}
 	}
 	option = {
-		name = pr.050.norse
+		name = pr.0050.norse
 		trigger = {
 			
 				culture = { has_cultural_pillar = heritage_north_germanic }
@@ -4563,7 +4271,7 @@ pr.050 = { #For Ai reconstruct polytheism
 		}
 	}
 	option = {
-		name = pr.050.roman
+		name = pr.0050.roman
 		trigger = {
 			
 				culture = { has_cultural_pillar = heritage_latin }
@@ -4574,7 +4282,7 @@ pr.050 = { #For Ai reconstruct polytheism
 		}
 	}
 	option = {
-		name = pr.050.hellenic
+		name = pr.0050.hellenic
 		trigger = {
 				AND = {
 					culture = { has_cultural_pillar = heritage_byzantine }
@@ -4587,7 +4295,7 @@ pr.050 = { #For Ai reconstruct polytheism
 		}
 	}
 	option = {
-		name = pr.050.goidelic
+		name = pr.0050.goidelic
 		trigger = {
 			
 				culture = { has_cultural_pillar = heritage_goidelic }
@@ -4598,7 +4306,7 @@ pr.050 = { #For Ai reconstruct polytheism
 		}
 	}
 	option = {
-		name = pr.050.brythonic
+		name = pr.0050.brythonic
 		trigger = {
 			culture = { has_cultural_pillar = heritage_brythonic}
 		}
@@ -4608,10 +4316,10 @@ pr.050 = { #For Ai reconstruct polytheism
 		}
 	}
 	option = {
-		name = pr.050.gaulish
+		name = pr.0050.pr_gaulish
 		trigger = {
 			#OR = {
-				culture = { has_cultural_pillar = heritage_gaulish}
+				culture = { has_cultural_pillar = heritage_pr_gaulish}
 				#culture = { has_cultural_pillar = heritage_celtic}
 			#}
 		}
@@ -4621,7 +4329,7 @@ pr.050 = { #For Ai reconstruct polytheism
 		}
 	}
 	option = {
-		name = pr.050.latvian
+		name = pr.0050.latvian
 		trigger = {
 			culture = {  has_name_list = name_list_latgalian } 
 		}
@@ -4631,7 +4339,7 @@ pr.050 = { #For Ai reconstruct polytheism
 		}
 	}
 	option = {
-		name = pr.050.latvian
+		name = pr.0050.latvian
 		trigger = {
 			culture = {  has_name_list = name_list_lithuanian } 
 		}
@@ -4641,7 +4349,7 @@ pr.050 = { #For Ai reconstruct polytheism
 		}
 	}
 	option = {
-		name = pr.050.prussian
+		name = pr.0050.prussian
 		trigger = {
 			culture = {  has_name_list = name_list_prussian } 
 		}
@@ -4651,7 +4359,7 @@ pr.050 = { #For Ai reconstruct polytheism
 		}
 	}
 	option = {
-		name = pr.050.armenian
+		name = pr.0050.armenian
 		trigger = {
 				AND = {
 					culture = { has_cultural_pillar = heritage_byzantine }
@@ -4664,7 +4372,7 @@ pr.050 = { #For Ai reconstruct polytheism
 		}
 	}
 	option = { #debuging option only
-		name = pr.050.debug
+		name = pr.0050.debug
 		trigger = {
 			is_ai = no
 		}
@@ -4672,10 +4380,10 @@ pr.050 = { #For Ai reconstruct polytheism
 }
 
 
-pr.051 = { #For Ai to get more variety in polytheistic religions within realm
+pr.0051 = { #For Ai to get more variety in polytheistic religions within realm
 	type = character_event
-	desc = pr.051.desc
-	title = pr.051.t 
+	desc = pr.0051.desc
+	title = pr.0051.t 
 	theme = learning_scholarship_focus
 	right_portrait = {
 		character = root
@@ -4683,7 +4391,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 	}
 
 	option = {
-		name = pr.051.german
+		name = pr.0051.german
 		trigger = {
 
 
@@ -4704,7 +4412,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 		}
 	}
 	option = {
-		name = pr.051.anglo_saxon
+		name = pr.0051.anglo_saxon
 		trigger = {
 				AND = {
 					culture = { has_cultural_pillar = heritage_central_germanic }
@@ -4720,7 +4428,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 		}
 	}
 	option = {
-		name = pr.051.norse
+		name = pr.0051.norse
 		trigger = {
 			
 				culture = { has_cultural_pillar = heritage_north_germanic }
@@ -4734,7 +4442,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 		}
 	}
 	option = {
-		name = pr.051.roman
+		name = pr.0051.roman
 		trigger = {
 			AND = {
 				culture = { has_cultural_pillar = heritage_byzantine }
@@ -4750,7 +4458,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 		}
 	}
 	option = {
-		name = pr.051.hellenic
+		name = pr.0051.hellenic
 		trigger = {
 				AND = {
 					culture = { has_cultural_pillar = heritage_byzantine }
@@ -4766,7 +4474,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 		}
 	}
 	# option = {
-	# 	name = pr.051.hellenic_roman
+	# 	name = pr.0051.hellenic_roman
 	# 	trigger = {
 	# 			AND = {
 	# 				culture = { has_cultural_pillar = heritage_byzantine }
@@ -4782,7 +4490,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 	# 	}
 	# }
 	option = {
-		name = pr.051.goidelic
+		name = pr.0051.goidelic
 		trigger = {
 			
 			culture = { has_cultural_pillar = heritage_goidelic }
@@ -4796,7 +4504,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 		}
 	}
 	option = {
-		name = pr.051.brythonic
+		name = pr.0051.brythonic
 		trigger = {
 			culture = { has_cultural_pillar = heritage_brythonic}
 		}
@@ -4809,10 +4517,10 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 		}
 	}
 	option = {
-		name = pr.051.gaulish
+		name = pr.0051.pr_gaulish
 		trigger = {
 			#OR = {
-				culture = { has_cultural_pillar = heritage_gaulish}
+				culture = { has_cultural_pillar = heritage_pr_gaulish}
 				#culture = { has_cultural_pillar = heritage_celtic}
 			#}
 		}
@@ -4825,7 +4533,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 		}
 	}
 	option = {
-		name = pr.051.latvian
+		name = pr.0051.latvian
 		trigger = {
 			culture = {  has_name_list = name_list_latgalian } 
 		}
@@ -4838,7 +4546,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 		}
 	}
 	option = {
-		name = pr.051.latvian
+		name = pr.0051.latvian
 		trigger = {
 			culture = {  has_name_list = name_list_lithuanian } 
 		}
@@ -4851,7 +4559,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 		}
 	}
 	option = {
-		name = pr.051.prussian
+		name = pr.0051.prussian
 		trigger = {
 			culture = {  has_name_list = name_list_prussian } 
 		}
@@ -4864,7 +4572,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 		}
 	}
 	option = {
-		name = pr.051.armenian
+		name = pr.0051.armenian
 		trigger = {
 				AND = {
 					culture = { has_cultural_pillar = heritage_byzantine }
@@ -4880,7 +4588,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 		}
 	}
 	option = {
-		name = pr.051.georgian
+		name = pr.0051.georgian
 		trigger = {
 				AND = {
 					culture = { has_cultural_pillar = heritage_byzantine }
@@ -4896,7 +4604,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 		}
 	}
 	option = {
-		name = pr.051.kemetic
+		name = pr.0051.kemetic
 		trigger = {
 				OR = {
 					culture = {  has_name_list = name_list_egyptian }
@@ -4913,7 +4621,7 @@ pr.051 = { #For Ai to get more variety in polytheistic religions within realm
 	}
 	option = { #Most chance of not doing as we otherwise get to much people that change religion
 			   #Needs play testing
-		name = pr.051.debug
+		name = pr.0051.debug
 		ai_chance = {
 			base = 70
 		}

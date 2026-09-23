@@ -1,4 +1,10 @@
-﻿#All Credits to cybrxkhan
+﻿# =============================================
+# Polytheism Reborn - Pilgrimage Effects
+# File: pr_pilgrimage_effect.txt
+# Credits: cybrxkhan
+# =============================================
+
+# --- Kogaionon Pilgrimage Completion Log ---
 pr_activity_kogaionon_pilgrimage_completed_log_entry_effect = {
 	scope:activity = {
 		add_activity_log_entry = {
@@ -46,4 +52,4 @@ pr_local_pilgrimage_generic_host_effect = {
 			diligent = miniscule_stress_impact_loss
 		}
 	}
-}
+}

@@ -1,0 +1,74 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Germanic Decisions
+  # Localization for pr_germanic_decisions.txt
+  # =============================================
+
+  # --- Select Personal Deity (Germanic) Decision ---
+  pr_germanic_select_personal_deity_decision:0 "Select Personal Deity"
+  pr_germanic_select_personal_deity_decision_desc:0 "#F The gods of the Germanic pantheon call for a champion to represent their will in the mortal realm. As a ruler of the Germanic faith, I must select a patron deity who will guide my actions and bless my rule with divine favor.#!\nBy choosing a personal deity, I shall establish a personal connection with the divine, gaining unique blessings and modifiers that reflect the nature of my chosen god or goddess."
+  pr_germanic_select_personal_deity_decision_tooltip:0 "#T Select a patron deity from your Germanic faith to gain divine blessings#!"
+  pr_germanic_select_personal_deity_decision_confirm:0 "Select Personal Deity!"
+  pr_germanic_select_personal_deity_decision_tt:0 "#T Available Deities for [ROOT.Char.GetFaith.GetName]#!"
+
+  # --- Main Deity Selection Descriptions: Norse ---
+  select_personal_deity_germanic_decision.select_odin:0 "#T Odin#!\n#P The All-Father, god of wisdom, war, and death#!"
+  select_personal_deity_germanic_decision.select_ullr:0 "#T Ullr#!\n#P God of the hunt, archery, and the wild#!"
+  select_personal_deity_germanic_decision.select_tyr:0 "#T Tyr#!\n#P God of law, justice, and sacrifice#!"
+  select_personal_deity_germanic_decision.select_thor:0 "#T Thor#!\n#P Thunderer, protector of mankind#!"
+  select_personal_deity_germanic_decision.select_freyr:0 "#T Freyr#!\n#P God of fertility, prosperity, and peace#!"
+
+  # --- Main Deity Selection Descriptions: Anglo-Saxon ---
+  select_personal_deity_germanic_decision.select_woden:0 "#T Woden#!\n#P The All-Father, god of wisdom and the wild hunt#!"
+  select_personal_deity_germanic_decision.select_fri:0 "#T Fri#!\n#P Goddess of love, fertility, and the hearth#!"
+  select_personal_deity_germanic_decision.select_njord:0 "#T Njord#!\n#P God of the sea, wind, and wealth#!"
+  select_personal_deity_germanic_decision.select_tiwaz:0 "#T Tiwaz#!\n#P God of law, honor, and single combat#!"
+  select_personal_deity_germanic_decision.select_seaxneat:0 "#T Seaxneat#!\n#P God of the Saxons, patron of the knife and the harvest#!"
+
+  # --- Main Deity Selection Descriptions: German ---
+  select_personal_deity_germanic_decision.select_wotan:0 "#T Wotan#!\n#P The All-Father, god of wisdom, magic, and war#!"
+  select_personal_deity_germanic_decision.select_njordr:0 "#T Njordr#!\n#P God of seafaring, wind, and abundance#!"
+  select_personal_deity_germanic_decision.select_nornir:0 "#T Nornir#!\n#P The Norns, weavers of fate and destiny#!"
+  select_personal_deity_germanic_decision.select_mimir:0 "#T Mimir#!\n#P The wise one, keeper of the well of knowledge#!"
+
+  # --- Place New Irminsul at Paderborn Decision ---
+  pr_germanic_place_new_irminsul_paderborn_decision:0 "Place a New Irminsul at Paderborn"
+  pr_germanic_place_new_irminsul_paderborn_decision_desc:0 "#F The Irminsul, the great pillar of the Saxon faith, once stood as the sacred bond between gods and men. Though the original was destroyed, its spirit endures in the hearts of the faithful.#!\nBy raising a new Irminsul at Paderborn, I shall restore this symbol of our faith and strengthen the bonds between my people and the gods."
+  pr_germanic_place_new_irminsul_paderborn_decision_tooltip:0 "#T Raise a new Irminsul at Paderborn to restore the sacred pillar of the Saxon faith#!"
+  pr_germanic_place_new_irminsul_paderborn_decision_confirm:0 "Raise the New Irminsul!"
+
+  # --- German Holy Reconquest: Paderborn Decision ---
+  pr_germanic_holy_reconquest_decision:0 "Begin the Holy Reconquest"
+  pr_germanic_holy_reconquest_decision_desc:0 "#F The sacred lands of our forefathers have fallen into the hands of unbelievers. It is our duty to reclaim what was lost and restore the old faith to its rightful heartlands.#!\nBy launching a holy reconquest from Paderborn, I shall begin the sacred task of driving out the faithless and reclaiming our ancestral lands for the gods."
+  pr_germanic_holy_reconquest_decision_tooltip:0 "#T Begin the holy reconquest of the Germanic homelands starting from Paderborn#!"
+  pr_germanic_holy_reconquest_decision_confirm:0 "Begin the Holy Reconquest!"
+
+  # --- German Holy Reconquest: Westfalen Decision ---
+  pr_germanic_holy_reconquest_westfalen_decision:0 "Reclaim Westfalen"
+  pr_germanic_holy_reconquest_westfalen_decision_desc:0 "#F The reconquest continues. Westfalen, with its rich farmlands and ancient holy sites, must be brought back under the banner of the old faith.#!\nBy reclaiming Westfalen, I shall secure another vital piece of our ancestral homeland and continue the sacred task of restoration."
+  pr_germanic_holy_reconquest_westfalen_decision_tooltip:0 "#T Continue the holy reconquest by reclaiming Westfalen#!"
+  pr_germanic_holy_reconquest_westfalen_decision_confirm:0 "Reclaim Westfalen!"
+
+  # --- German Holy Reconquest: Angria Decision ---
+  pr_germanic_holy_reconquest_angria_decision:0 "Reclaim Angria"
+  pr_germanic_holy_reconquest_angria_decision_desc:0 "#F The lands of Angria, ancient heartland of the Saxons, await liberation from the faithless. Their holy groves and sacred sites cry out for restoration.#!\nBy reclaiming Angria, I shall push the reconquest further into our ancestral territories and honor the gods with each step."
+  pr_germanic_holy_reconquest_angria_decision_tooltip:0 "#T Continue the holy reconquest by reclaiming Angria#!"
+  pr_germanic_holy_reconquest_angria_decision_confirm:0 "Reclaim Angria!"
+
+  # --- German Holy Reconquest: Holstein Decision ---
+  pr_germanic_holy_reconquest_holstein_decision:0 "Reclaim Holstein"
+  pr_germanic_holy_reconquest_holstein_decision_desc:0 "#F Holstein, the gateway to the north, stands as a bastion of our faith's frontier. Its reclamation will secure the northern approaches and strengthen our position.#!\nBy reclaiming Holstein, I shall extend the holy reconquest to the northern reaches of our ancestral lands."
+  pr_germanic_holy_reconquest_holstein_decision_tooltip:0 "#T Continue the holy reconquest by reclaiming Holstein#!"
+  pr_germanic_holy_reconquest_holstein_decision_confirm:0 "Reclaim Holstein!"
+
+  # --- German Holy Reconquest: Ostfalen Decision ---
+  pr_germanic_holy_reconquest_ostfalen_decision:0 "Reclaim Ostfalen"
+  pr_germanic_holy_reconquest_ostfalen_decision_desc:0 "#F Ostfalen, the eastern reaches of the Saxon heartland, remains in the hands of the faithless. The reconquest cannot be complete until these lands are restored.#!\nBy reclaiming Ostfalen, I shall bring the holy reconquest ever closer to its culmination."
+  pr_germanic_holy_reconquest_ostfalen_decision_tooltip:0 "#T Continue the holy reconquest by reclaiming Ostfalen#!"
+  pr_germanic_holy_reconquest_ostfalen_decision_confirm:0 "Reclaim Ostfalen!"
+
+  # --- German Holy Reconquest: Anhalt Decision ---
+  pr_germanic_holy_reconquest_anhalt_decision:0 "Reclaim Anhalt"
+  pr_germanic_holy_reconquest_anhalt_decision_desc:0 "#F Anhalt, the final bastion of our reconquest, stands as the last test of our devotion to the old gods. With its reclamation, the holy reconquest shall be complete.#!\nBy reclaiming Anhalt, I shall fulfill the sacred duty of restoring all our ancestral lands to the old faith."
+  pr_germanic_holy_reconquest_anhalt_decision_tooltip:0 "#T Complete the holy reconquest by reclaiming Anhalt#!"
+  pr_germanic_holy_reconquest_anhalt_decision_confirm:0 "Reclaim Anhalt!"

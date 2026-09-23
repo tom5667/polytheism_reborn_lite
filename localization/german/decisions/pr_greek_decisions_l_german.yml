@@ -1,0 +1,52 @@
+l_german:
+  # =============================================
+  # Polytheism Reborn - Griechische Entscheidungen
+  # Lokalisierung für pr_greek_decisions.txt
+  # =============================================
+
+  # --- Hauptgottheit wählen (Griechisch) ---
+  pr_greek_choose_main_deity_decision:0 "Wähle Hauptgottheit"
+  pr_greek_choose_main_deity_decision_desc:0 "#F Die Götter des hellenischen Pantheons verlangen einen Champion, der ihren Willen in der sterblichen Welt vertritt. Als Herrscher des hellenischen Glaubens muss ich eine Schutzgottheit auswählen, die meine Handlungen leitet und meine Herrschaft mit göttlichem Segen bedenkt.#!/n\nDurch die Wahl einer Hauptgottheit werde ich eine persönliche Verbindung mit dem Göttlichen herstellen und einzigartige Segnungen und Modifikatoren erhalten, die die Natur meiner gewählten Gottheit oder Göttin widerspiegeln."
+  pr_greek_choose_main_deity_decision_tooltip:0 "#T Wähle eine Schutzgottheit aus deinem hellenischen Glauben, um göttliche Segnungen zu erhalten#!/"
+  pr_greek_choose_main_deity_decision_confirm:0 "Wähle Hauptgottheit!"
+  pr_greek_choose_main_deity_mycenaean_decision_tt:0 "#T Verfügbare Gottheiten für [ROOT.Char.GetFaith.GetName]#!/"
+  pr_greek_choose_main_deity_graeco_egyptian_decision_tt:0 "#T Verfügbare Gottheiten für [ROOT.Char.GetFaith.GetName]#!/"
+
+  # --- Auswahlbeschreibungen der Hauptgottheit: Mykenisch ---
+  select_main_deity_mycenaean_decision.select_poseidon:0 "#T Poseidon#!/\n#P Herr des Meeres, der Erdbeben und der Pferde#!/"
+  select_main_deity_mycenaean_decision.select_hermes:0 "#T Hermes#!/\n#P Bote der Götter, Schutzpatron der Reisenden und des Handels#!/"
+  select_main_deity_mycenaean_decision.select_aphrodite:0 "#T Aphrodite#!/\n#P Göttin der Liebe, Schönheit und Begierde#!/"
+  select_main_deity_mycenaean_decision.select_athena:0 "#T Athena#!/\n#P Göttin der Weisheit, Kriegsführung und der Künste#!/"
+  select_main_deity_mycenaean_decision.select_ares:0 "#T Ares#!/\n#P Gott des Krieges, des Mutes und des Blutes#!/"
+
+  # --- Auswahlbeschreibungen der Hauptgottheit: Gräko-Ägyptisch ---
+  select_main_deity_graeco_egyptian_decision.select_zeus_amon:0 "#T Zeus-Ammon#!/\n#P Synkretistischer König der Götter, Herr des Himmels und des Orakels#!/"
+  select_main_deity_graeco_egyptian_decision.select_hermes_trismegistus:0 "#T Hermes Trismegistos#!/\n#P Dreimal größter Hermes, Meister der Weisheit und Alchemie#!/"
+  select_main_deity_graeco_egyptian_decision.select_isis:0 "#T Isis#!/\n#P Göttin der Magie, Fruchtbarkeit und Mutterschaft#!/"
+  select_main_deity_graeco_egyptian_decision.select_harpocrates:0 "#T Harpokrates#!/\n#P Gott des Schweigens, der Geheimnisse und der aufgehenden Sonne#!/"
+  select_main_deity_graeco_egyptian_decision.select_ares:0 "#T Ares#!/\n#P Gott des Krieges, des Mutes und des Blutes#!/"
+
+  # --- Hellenische Kultur annehmen ---
+  pr_greek_hellen_culture_decision:0 "Nimm die hellenische Kultur an"
+  pr_greek_hellen_culture_decision_desc:0 "#F Die hellenische Kultur, geboren in der Wiege Attikas, steht als Leuchtfeuer der Zivilisation, Philosophie und Kunst. Durch die Annahme dieses alten Erbes werde ich mein Volk in ein goldenes Zeitalter des Lernens und kultureller Verfeinerung führen.#!/n\nDurch diese Entscheidung werde ich die Traditionen Hellas' fördern und die Bindungen zwischen meinem Reich und den alten Göttern stärken."
+  pr_greek_hellen_culture_decision_tooltip:0 "#T Nimm die hellenischen kulturellen Traditionen an und stärke das Erbe deines Reiches#!/"
+  pr_greek_hellen_culture_decision_confirm:0 "Nimm die hellenische Kultur an!"
+
+  # --- Königreich Pergamon gründen ---
+  pr_greek_pergamon_kingdom_decision:0 "Gründe das Königreich Pergamon"
+  pr_greek_pergamon_kingdom_decision_desc:0 "#F Die alten Länder Kleinasiens, einst Heimat der großen hellenischen Königreiche, warten auf einen neuen Herrscher, der sie unter einem einzigen Banner vereint. Von den ägäischen Inseln bis zu den fruchtbaren Ebenen Anatoliens sind diese Gebiete lange Zeit geteilt gewesen.#!/n\nDurch die Gründung des Königreichs Pergamon werde ich die hellenische Herrschaft über diese historischen Länder wiederherstellen und eine neue Macht im Osten schaffen."
+  pr_greek_pergamon_kingdom_decision_tooltip:0 "#T Bilde das Königreich Pergamon, indem du die hellenischen Länder Kleinasiens vereinst#!/"
+  pr_greek_pergamon_kingdom_decision_confirm:0 "Gründe das Königreich Pergamon!"
+  pr_greek_pergamon_kingdom_decision_effect_tooltip:0 "#P Das Königreich Pergamon wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_aegean_islands.GetNameNoTier], [title_d_ephese.GetNameNoTier], [title_d_thracesia.GetNameNoTier], [title_d_opsikion.GetNameNoTier] und [title_d_anatolia.GetNameNoTier] werden [de_jure|E] Teil von Pergamon$EFFECT_LIST_BULLET$Erfordert erhebliche Investitionen in [gold|E] und [prestige|E]@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Hauptstadt nach Pergamon verlegen ---
+  pr_greek_set_capital_pergamon_decision:0 "Verlege die Hauptstadt nach Pergamon"
+  pr_greek_set_capital_pergamon_decision_desc:0 "#F Pergamon, Juwel Kleinasiens, steht als natürliches Herz unseres Reiches. Durch die Verlegung unserer Hauptstadt in diese alte Stadt werde ich unsere Macht in den Ländern, die wir zurückerobert haben, zentrieren und unseren Griff auf die Region stärken.#!/n\nDiese Entscheidung wird Pergamon zum Sitz unserer Macht und zum Herz unserer Verwaltung machen."
+  pr_greek_set_capital_pergamon_decision_tooltip:0 "#T Verlege die Hauptstadt deines Reiches nach Pergamon#!/"
+  pr_greek_set_capital_pergamon_decision_confirm:0 "Verlege die Hauptstadt nach Pergamon!"
+
+  # --- Zum Gräko-Ägyptischen Glauben konvertieren ---
+  pr_greek_convert_to_graeco_egyptian_decision:0 "Konvertiere zum gräko-ägyptischen Glauben"
+  pr_greek_convert_to_graeco_egyptian_decision_desc:0 "#F Der synkretistische Glaube des gräko-ägyptischen Polytheismus verbindet die Weisheit des hellenischen und ägyptischen Pantheons und bietet einen Pfad, der sowohl Zeus als auch Ammon, sowohl Hermes als auch Thot ehrt.#!/n\nDurch die Annahme dieses synkretistischen Glaubens werde ich die spirituellen Traditionen von Ost und West unter meiner Herrschaft vereinen."
+  pr_greek_convert_to_graeco_egyptian_decision_tooltip:0 "#T Nimm den gräko-ägyptischen synkretistischen Glauben an#!/"
+  pr_greek_convert_to_graeco_egyptian_decision_confirm:0 "Konvertiere zum gräko-ägyptischen Glauben!"

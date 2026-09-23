@@ -1,0 +1,164 @@
+﻿# Polytheism Reborn - Decision Values
+# Standaard kosten voor decisions
+# Gebaseerd op CK3 basis game analyse
+
+# =============================================
+# KINGDOM FORMING COSTS (UITZONDERING: zie Rules)
+# =============================================
+# NOTE: restore_carthage_decision bestaat al in vanilla CK3
+# (in 80_major_decisions.txt). Deze hoeven we niet te dupliceren.
+# Voor andere kingdom forming decisions, gebruik onderstaande standaard.
+
+# Standaard waarden voor kingdom forming (schaalt met realm_size)
+@pr_kingdom_restore_base_gold = 1500
+@pr_kingdom_restore_base_prestige = 2000
+@pr_kingdom_restore_gold_per_realm = 30
+@pr_kingdom_restore_prestige_per_realm = 50
+
+# Dynamische kosten voor kingdom forming (schaalt met realm_size)
+pr_kingdom_restore_gold_cost = {
+    value = @pr_kingdom_restore_base_gold
+    add = {
+        value = @pr_kingdom_restore_gold_per_realm
+        multiply = realm_size
+    }
+    round = yes
+    min = @pr_kingdom_restore_base_gold
+    max = 3500
+}
+
+pr_kingdom_restore_prestige_cost = {
+    value = @pr_kingdom_restore_base_prestige
+    add = {
+        value = @pr_kingdom_restore_prestige_per_realm
+        multiply = realm_size
+    }
+    round = yes
+    min = @pr_kingdom_restore_base_prestige
+    max = 3000
+}
+
+# =============================================
+# CULTURE CHANGE COSTS
+# =============================================
+
+# Embrace Punic Culture - Basis waarden
+@pr_culture_embrace_base_prestige = 500
+@pr_culture_embrace_prestige_per_domain = 50
+
+pr_culture_embrace_prestige_cost = {
+    value = @pr_culture_embrace_base_prestige
+    add = {
+        value = @pr_culture_embrace_prestige_per_domain
+        multiply = domain_size
+    }
+    round = yes
+    min = @pr_culture_embrace_base_prestige
+    max = 2000
+}
+
+# =============================================
+# TEMPLE BUILDING COSTS
+# =============================================
+
+# Build Temple of Tanit - Basis waarden
+@pr_temple_build_base_gold = 1000
+@pr_temple_build_gold_per_domain = 50
+
+pr_temple_build_gold_cost = {
+    value = @pr_temple_build_base_gold
+    add = {
+        value = @pr_temple_build_gold_per_domain
+        multiply = domain_size
+    }
+    round = yes
+    min = @pr_temple_build_base_gold
+    max = 2500
+}
+
+# =============================================
+# EMPIRE FORMING COSTS
+# =============================================
+
+# Standaard waarden voor empire forming (schaalt met realm_size)
+@pr_empire_restore_base_gold = 3000
+@pr_empire_restore_base_prestige = 2000
+@pr_empire_restore_gold_per_realm = 100
+@pr_empire_restore_prestige_per_realm = 50
+
+pr_empire_restore_gold_cost = {
+    value = @pr_empire_restore_base_gold
+    add = {
+        value = @pr_empire_restore_gold_per_realm
+        multiply = realm_size
+    }
+    round = yes
+    min = @pr_empire_restore_base_gold
+    max = 5000
+}
+
+pr_empire_restore_prestige_cost = {
+    value = @pr_empire_restore_base_prestige
+    add = {
+        value = @pr_empire_restore_prestige_per_realm
+        multiply = realm_size
+    }
+    round = yes
+    min = @pr_empire_restore_base_prestige
+    max = 3000
+}
+
+# =============================================
+# RELIGIOUS DECISION COSTS
+# =============================================
+
+# Choose Main Deity - Statische kosten
+@pr_choose_deity_piety_cost = 250
+
+# Restore High Priesthood - Statische kosten
+@pr_high_priesthood_piety_cost = 500
+
+pr_high_priesthood_piety_cost = {
+    value = @pr_high_priesthood_piety_cost
+    round = yes
+}
+
+# Commission Sibylline Books - Statische kosten
+@pr_sibylline_books_gold_cost = 150
+
+pr_sibylline_books_gold_cost = {
+    value = @pr_sibylline_books_gold_cost
+    round = yes
+}
+
+# Zalmoxis Human Sacrifice - Statische kosten
+@pr_zalmoxis_sacrifice_piety_cost = 250
+
+pr_zalmoxis_sacrifice_piety_cost = {
+    value = @pr_zalmoxis_sacrifice_piety_cost
+    round = yes
+}
+
+# =============================================
+# CONVERSION DECISION COSTS
+# =============================================
+
+# Return to Polytheism - Statische kosten
+@pr_return_polytheism_piety_cost = 500
+@pr_return_polytheism_prestige_cost = 25
+@pr_return_polytheism_gold_cost = 20
+
+pr_return_polytheism_piety_cost = {
+    value = @pr_return_polytheism_piety_cost
+    round = yes
+}
+
+pr_return_polytheism_prestige_cost = {
+    value = @pr_return_polytheism_prestige_cost
+    round = yes
+}
+
+pr_return_polytheism_gold_cost = {
+    value = @pr_return_polytheism_gold_cost
+    round = yes
+}

@@ -1,0 +1,78 @@
+﻿namespace = pr_etruscan_decision
+
+##################################################
+# Polytheism Reborn - Etruscan Decision Events
+# Events gekoppeld aan pr_etruscan_decisions.txt
+##################################################
+
+# =============================================
+# Decision Outcome Events (0001-0099)
+# =============================================
+
+
+#--- Choose Etruscan Personal Deity (0001) ---
+pr_etruscan_decision.0001 = {
+	type = character_event
+	title = pr_etruscan_decision.0001.t
+	desc = pr_etruscan_decision.0001.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	# Tinia
+	option = {
+		name = pr_etruscan_decision.0001.tinia
+		trigger = {
+			NOT = { has_character_modifier = etruscan_tinia }
+		}
+		set_bhakti_effect = { BHAKTI = etruscan_tinia }
+	}
+
+	# Nortia
+	option = {
+		name = pr_etruscan_decision.0001.nortia
+		trigger = {
+			NOT = { has_character_modifier = etruscan_nortia }
+		}
+		set_bhakti_effect = { BHAKTI = etruscan_nortia }
+	}
+
+	# Turms
+	option = {
+		name = pr_etruscan_decision.0001.turms
+		trigger = {
+			NOT = { has_character_modifier = etruscan_turms }
+		}
+		set_bhakti_effect = { BHAKTI = etruscan_turms }
+	}
+
+	# Menrva
+	option = {
+		name = pr_etruscan_decision.0001.menrva
+		trigger = {
+			NOT = { has_character_modifier = etruscan_menrva }
+		}
+		set_bhakti_effect = { BHAKTI = etruscan_menrva }
+	}
+
+	# Maris
+	option = {
+		name = pr_etruscan_decision.0001.maris
+		trigger = {
+			NOT = { has_character_modifier = etruscan_maris }
+		}
+		set_bhakti_effect = { BHAKTI = etruscan_maris }
+	}
+
+	# Opt-Out
+	option = {
+		name = pr_etruscan_decision.0001.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}

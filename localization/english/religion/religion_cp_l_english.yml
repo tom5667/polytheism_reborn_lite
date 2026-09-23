@@ -6,10 +6,12 @@
     celtic_religion_adj:0 "Celtic"
     celtic_religion_adherent:0 "Celtic"
     celtic_religion_adherent_plural:0 "Celts"
-    celtic_religion_desc:0 "Religions of the Ancient celtic people."
+    celtic_religion_desc:0 "The old religions of the Celtic peoples, spanning Gaul, Britain, Ireland and Celtiberia — each region honoring its own gods, yet bound by shared roots, rites and reverence for sacred groves and waters."
     celtic_pantheon_the_gods:0 "Celtic Pantheon of gods"
     #Gaulish and celtiberian don't have a known name for the afterlife so they get the generic other world as they believed the souls go to the other world
     celtic_afterlife:0 "Other World"
+    celtic_afterlife_2:0 "$celtic_afterlife$"
+    celtic_afterlife_3:0 "$celtic_afterlife$"
 
     holy_order_sons_of_the_morrighan:0 "Sons of The Morrighan"
     holy_order_protectors_of_the_other_world:0 "Protectors of the other world"
@@ -28,15 +30,26 @@
 
     gaelic_polytheism_religious_head_title:0 "High Druid"
     gaelic_polytheism_divine_realm:0 "Tuath Dé"
+    gaelic_polytheism_divine_realm_2:0 "$gaelic_polytheism_divine_realm$"
+    gaelic_polytheism_divine_realm_3:0 "$gaelic_polytheism_divine_realm$"
     gaelic_polytheism_religious_symbol:0 "Celtic knot"
+    gaelic_polytheism_religious_symbol_2:0 "$gaelic_polytheism_religious_symbol$"
+    gaelic_polytheism_religious_symbol_3:0 "$gaelic_polytheism_religious_symbol$"
     gaelic_polytheism_religious_text:0 "Rituals, passage tombs"
+    gaelic_polytheism_religious_text_2:0 "$gaelic_polytheism_religious_text$"
+    gaelic_polytheism_religious_text_3:0 "$gaelic_polytheism_religious_text$"
     gaelic_afterlife_positive:0 "Tír na nÓg"
+    gaelic_afterlife_positive_2:0 "$gaelic_afterlife_positive$"
+    gaelic_afterlife_positive_3:0 "$gaelic_afterlife_positive$"
     gaelic_afterlife:0 "Tech Duinn"
+    gaelic_afterlife_2:0 "$gaelic_afterlife$"
+    gaelic_afterlife_3:0 "$gaelic_afterlife$"
 
     #Gaelic gods/goddesses Localization
 
     #An Dagda Localization
     gaelic_polytheism_high_god_name:0 "An Dagda"
+    gaelic_polytheism_high_god_name_2:0 "$gaelic_polytheism_high_god_name$"
     gaelic_polytheism_high_god_name_possessive:0 "An Dagda's"
     gaelic_polytheism_high_god_name_alternate:0 "Ruad Rofhessa"
     gaelic_polytheism_high_god_name_alternate_possessive:0 "Ruad Rofhessa's"
@@ -92,6 +105,7 @@
     gaelic_polytheism_evil_god_carman:0 "Carman"
 
     gaelic_polytheism_witchgodname_leanan_sidhe:0 "Leanan Sidhe"
+    gaelic_polytheism_witchgodname_leanan_sidhe_possessive:0 "$gaelic_polytheism_witchgodname_leanan_sidhe$'s"
 
     #Devil god   
     gaelic_polytheism_devil_name:0 "Balor" 
@@ -132,23 +146,32 @@
     brythonic_polytheism:0 "Brythonic"
     brythonic_polytheism_adj:0 "Brythonic"
     brythonic_afterlife:0 "Annwn"
+    brythonic_afterlife_2:0 "$brythonic_afterlife$"
+    brythonic_afterlife_3:0 "$brythonic_afterlife$"
     brythonic_polytheism_adherent:0 "Brythonic polytheist"
     brythonic_polytheism_adherent_plural:0 "Brythonic polytheists"
-    brythonic_polytheism_desc:0 "The Brythonic gods honored by rites and ceremonies to bond with the gods, and get their help or guidance." 
+    brythonic_polytheism_desc:0 "In Britain, the Brythonic gods are called upon through rites at sacred wells and hilltop shrines, sought for protection of the land, victory in war, and the favor of the Otherworld." 
 
     brythonic_polytheism_old:0 "Brythonic Old"
     brythonic_polytheism_adj_old:0 "Brythonic Old"
     brythonic_polytheism_adherent_old:0 "Old Brythonic polytheist"
     brythonic_polytheism_old_adherent_plural:0 "Old Brythonic polytheists"
-    brythonic_polytheism_old_desc:0 "The Brythonic gods honored by rites and ceremonies to bond with the gods, and get their help or guidance." 
+    brythonic_polytheism_old_desc:0 "Before Rome's eagles crossed the Channel, the Brythonic tribes honored their gods through rites at sacred wells and hillforts alone, bound by druidic wisdom passed down through generations." 
 
     brythonic_polytheism_divine_realm:0 "Tuath Dé"
+    brythonic_polytheism_divine_realm_2:0 "$brythonic_polytheism_divine_realm$"
+    brythonic_polytheism_divine_realm_3:0 "$brythonic_polytheism_divine_realm$"
     brythonic_polytheism_religious_symbol:0 "Celtic knot"
+    brythonic_polytheism_religious_symbol_2:0 "$brythonic_polytheism_religious_symbol$"
+    brythonic_polytheism_religious_symbol_3:0 "$brythonic_polytheism_religious_symbol$"
     brythonic_polytheism_religious_text:0 "rituals, passage tombs"
+    brythonic_polytheism_religious_text_2:0 "$brythonic_polytheism_religious_text$"
+    brythonic_polytheism_religious_text_3:0 "$brythonic_polytheism_religious_text$"
     brythonic_polytheism_religious_head_title:0 "High Druid"
 
     #An Dagda Localization
     brythonic_polytheism_high_god_name:0 "Taran"
+    brythonic_polytheism_high_god_name_2:0 "$brythonic_polytheism_high_god_name$"
     brythonic_polytheism_high_god_name_possessive:0 "Taran's"
     brythonic_polytheism_high_god_name_alternate:0 "Taran"
     brythonic_polytheism_high_god_name_alternate_possessive:0 "Taran's"
@@ -204,6 +227,7 @@
     brythonic_polytheism_evil_god_carman:0 "Carman"
     
     brythonic_polytheism_witchgodname_gwydion:0 "Gwydion"
+    brythonic_polytheism_witchgodname_gwydion_possessive:0 "$brythonic_polytheism_witchgodname_gwydion$'s"
 
     #Devil god   
     brythonic_polytheism_devil_name:0 "Pwyll" 
@@ -220,8 +244,8 @@
     brythonic_polytheism_good_god_lugus:0 "Lugus" 
     brythonic_polytheism_good_god_belisama:0 "Belisama" 
     brythonic_polytheism_good_god_andraste:0 "Andraste" 
-    brythonic_polytheism_good_god_dewi:0 "Dewi" 
-    brythonic_polytheism_good_god_taranis:0 "Taranis"
+    brythonic_polytheism_good_god_dewi:0 "Dewi"
+    brythonic_polytheism_good_god_water:0 "Coventina"
 
     #Brythonic male priests  
     brythonic_polytheism_priest_male:0 "Druid"
@@ -244,22 +268,29 @@
     gaulish_polytheism_adj:0 "Gaulish"
     gaulish_polytheism_adherent:0 "Gaulish polytheist"
     gaulish_polytheism_adherent_plural:0 "Gaulish polytheists"
-    gaulish_polytheism_desc:0 "The Gaulish gods honored by rites and ceremonies to bond with the gods, and get their help or guidance." 
+    gaulish_polytheism_desc:0 "Across Gaul, druids lead their people in rites to Taranis, Belisama and the wider pantheon, weaving worship into every aspect of tribal life from war to harvest." 
 
     gaulish_polytheism_old:0 "Gaulish Old"
     gaulish_polytheism_old_adj:0 "Gaulish Old"
     gaulish_polytheism_adherent_old:0 "Old Gaulish polytheist"
     gaulish_polytheism_old_adherent_plural:0 "Old Gaulish polytheists"
-    gaulish_polytheism_old_desc:0 "The Gaulish gods honored by rites and ceremonies to bond with the gods, and get their help or guidance." 
+    gaulish_polytheism_old_desc:0 "In the years before Caesar's legions marched into Gaul, druids led their people in rites to Taranis and the wider pantheon, untouched by the growing shadow of Rome." 
 
     gaulish_polytheism_divine_realm:0 "Other World"
+    gaulish_polytheism_divine_realm_2:0 "$gaulish_polytheism_divine_realm$"
+    gaulish_polytheism_divine_realm_3:0 "$gaulish_polytheism_divine_realm$"
     gaulish_polytheism_religious_symbol:0 "wild boar"
+    gaulish_polytheism_religious_symbol_2:0 "$gaulish_polytheism_religious_symbol$"
+    gaulish_polytheism_religious_symbol_3:0 "$gaulish_polytheism_religious_symbol$"
     gaulish_polytheism_religious_text:0 "rituals"
+    gaulish_polytheism_religious_text_2:0 "$gaulish_polytheism_religious_text$"
+    gaulish_polytheism_religious_text_3:0 "$gaulish_polytheism_religious_text$"
 
     gaulish_polytheism_religious_head_title:0 "High Druid"
 
     #Toutatis Localization
     gaulish_polytheism_high_god_name:0 "Toutatis"
+    gaulish_polytheism_high_god_name_2:0 "$gaulish_polytheism_high_god_name$"
     gaulish_polytheism_high_god_name_possessive:0 "Toutatis's"
     gaulish_polytheism_high_god_name_alternate:0 "Toutatis"
     gaulish_polytheism_high_god_name_alternate_possessive:0 "Toutatis's"
@@ -316,6 +347,7 @@
     gaulish_polytheism_evil_god_carman:0 "Carman"
 
     gaulish_polytheism_witchgodname_sidhe:0 "sidhe"
+    gaulish_polytheism_witchgodname_sidhe_possessive:0 "$gaulish_polytheism_witchgodname_sidhe$'s"
 
     #Devil god   
     gaulish_polytheism_devil_name:0 "Erecura" 
@@ -357,17 +389,23 @@
     celtic_iberian_polytheism_adj:0 "Celtiberian"
     celtic_iberian_polytheism_adherent:0 "Celtiberian polytheist"
     celtic_iberian_polytheism_adherent_plural:0 "Celtiberian polytheists"
-    celtic_iberian_polytheism_desc:0 "The Celtic Iberian gods honored by rites and ceremonies to bond with the gods, and get their help or guidance." 
+    celtic_iberian_polytheism_desc:0 "In the highlands of Celtiberia, warrior-gods like Neto are honored through blood and battle, their favor won by courage as much as by offering." 
 
     celtic_iberian_polytheism_old:0 "Celtiberian Old"
     celtic_iberian_polytheism_old_adj:0 "Celtiberian Old"
     celtic_iberian_polytheism_adherent_old:0 "Old Celtiberian polytheist"
     celtic_iberian_polytheism_old_adherent_plural:0 "Old Celtiberian polytheists"
-    celtic_iberian_polytheism_old_desc:0 "The Celtic Iberian gods honored by rites and ceremonies to bond with the gods, and get their help or guidance." 
+    celtic_iberian_polytheism_old_desc:0 "Before Rome's conquest of Hispania, the warrior-gods of Celtiberia were honored through blood and battle alone, their favor won by raiders and hillfort chieftains alike."
 
     celtic_iberian_polytheism_divine_realm:0 "Other world"
+    celtic_iberian_polytheism_divine_realm_2:0 "$celtic_iberian_polytheism_divine_realm$"
+    celtic_iberian_polytheism_divine_realm_3:0 "$celtic_iberian_polytheism_divine_realm$"
     celtic_iberian_polytheism_religious_symbol:0 "wild boar"
+    celtic_iberian_polytheism_religious_symbol_2:0 "$celtic_iberian_polytheism_religious_symbol$"
+    celtic_iberian_polytheism_religious_symbol_3:0 "$celtic_iberian_polytheism_religious_symbol$"
     celtic_iberian_polytheism_religious_text:0 "rituals"
+    celtic_iberian_polytheism_religious_text_2:0 "$celtic_iberian_polytheism_religious_text$"
+    celtic_iberian_polytheism_religious_text_3:0 "$celtic_iberian_polytheism_religious_text$"
     celtic_iberian_polytheism_religious_head_title:0 "High Druid"
     holy_order_sons_of_reue:0 "Sons of Reo"
     holy_order_sons_of_lugh:0 "Sons of Lugei"
@@ -376,6 +414,7 @@
 
     #Reue Localization historical correct
     celtic_iberian_polytheism_high_god_name:0 "Reo"
+    celtic_iberian_polytheism_high_god_name_2:0 "$celtic_iberian_polytheism_high_god_name$"
     celtic_iberian_polytheism_high_god_name_possessive:0 "Reo's"
     celtic_iberian_polytheism_high_god_name_alternate:0 "Reo"
     celtic_iberian_polytheism_high_god_name_alternate_possessive:0 "Reo's"
@@ -433,6 +472,7 @@
 
 
     celtic_iberian_witchgodname_ataecina:0 "Ataecina"
+    celtic_iberian_witchgodname_ataecina_possessive:0 "$celtic_iberian_witchgodname_ataecina$'s"
 
     #Devil god   
     celtic_iberian_polytheism_devil_name:0 "Ataecina" 

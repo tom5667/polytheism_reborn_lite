@@ -1,0 +1,28 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Canaanite Decisions
+  # Localization for pr_canaanite_decisions.txt
+  # =============================================
+
+  # --- Choose Main Deity Decision ---
+  pr_canaanite_choose_main_deity_decision:0 "Choose Main Deity"
+  pr_canaanite_choose_main_deity_decision_desc:0 "#F The gods of the Semitic pantheon watch over me, each offering their unique blessings.#!/n\nI must choose which deity to honor as my primary patron, guiding my rule and receiving my devotion."
+  pr_canaanite_choose_main_deity_decision_tt:0 "Select a main deity from the Semitic pantheon to receive divine favor"
+  pr_canaanite_choose_main_deity_decision_confirm:0 "Choose Main Deity!"
+  pr_canaanite_choose_main_deity_decision.select_ba_al_hadad:0 "Ba'al Hadad, the Storm God"
+  pr_canaanite_choose_main_deity_decision.select_ashera:0 "Ashera, Mother Goddess"
+  pr_canaanite_choose_main_deity_decision.select_dagan:0 "Dagan, God of Fertility"
+  pr_canaanite_choose_main_deity_decision.select_el_elyon:0 "El Elyon, the Most High"
+  pr_canaanite_choose_main_deity_decision.select_ashtart:0 "Ashtart, Goddess of Love and War"
+
+  # --- Embrace Punic Culture Decision ---
+  pr_canaanite_embrace_punic_culture_decision:0 "Embrace Punic Culture"
+  pr_canaanite_embrace_punic_culture_decision_desc:0 "#F Though the Punic people have long since been absorbed by others, their legacy endures in the blood and memory of North Africa. The glory of Carthage may be a distant memory, but its spirit can be rekindled.#!/n\nBy embracing the ancient Punic culture, I shall revive the traditions of my forebears and restore the identity that once made Carthage great."
+  pr_canaanite_embrace_punic_culture_decision_tooltip:0 "Adopt Punic culture and reconnect with the heritage of ancient Carthage"
+  pr_canaanite_embrace_punic_culture_decision_confirm:0 "Embrace Punic Culture!"
+
+  # --- Build Temple of Tanit Decision ---
+  pr_canaanite_build_temple_of_tanit_decision:0 "Build Temple of Tanit"
+  pr_canaanite_build_temple_of_tanit_decision_desc:0 "#F Tanit, the great goddess of Carthage, once received the devotion of our ancestors in her magnificent temple. Though the stones may have crumbled, her power endures in the hearts of the Canaanite people.#!/n\nBy building a new temple to Tanit in Tunis, I shall restore the sacred bond between my people and the divine, ensuring her favor for generations to come."
+  pr_canaanite_build_temple_of_tanit_decision_tooltip:0 "Construct a grand temple dedicated to Tanit, the patron goddess of Carthage"
+  pr_canaanite_build_temple_of_tanit_decision_confirm:0 "Build Temple of Tanit!"

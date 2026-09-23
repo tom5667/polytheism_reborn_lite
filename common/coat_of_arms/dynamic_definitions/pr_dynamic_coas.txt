@@ -1,4 +1,4 @@
-e_byzantium = {
+﻿e_byzantium = {
 	item = {
 		trigger = {
 			coa_switch_to_polytheism_trigger = yes
@@ -8,14 +8,41 @@ e_byzantium = {
 	}		
 }
 
-e_roman_empire = {
+h_roman_empire = {
 	item = {
 		trigger  = {
 			coa_switch_to_polytheism_trigger = yes
 		}
-		coat_of_arms = e_roman_empire_polytheistic
+		coat_of_arms = h_roman_empire_polytheistic
 	}
 }
+
+k_aquitaine = {
+	item = {
+		trigger  = {
+			culture = { has_cultural_pillar = heritage_latin }
+		}
+		coat_of_arms = k_aquitaine_roman
+	}
+}
+
+k_france = {
+	item = {
+		trigger  = {
+			culture = { has_cultural_pillar = heritage_latin }
+		}
+		coat_of_arms = k_celtic
+	}
+}
+e_france = {
+	item = {
+		trigger  = {
+			culture = { has_cultural_pillar = heritage_latin }
+		}
+		coat_of_arms = e_gaul
+	}
+}
+
 
 e_egyptus = {
 	item = {

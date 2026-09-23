@@ -1,0 +1,317 @@
+﻿name_list_pr_brythonic = {
+
+	dynasty_names = {
+		"dynn_Wotadin"
+		"dynn_Briganti"
+		"dynn_Textowerdi"
+		"dynn_Parisi"
+		"dynn_Corieltauwi"
+		"dynn_Catuwellauni"
+		"dynn_Defodi"
+		"dynn_Ordowici"
+		"dynn_Selgowi"
+		"dynn_Echen"
+		"dynn_Trinowanti"
+		"dynn_Duriotriges"
+		"dynn_Bodunni"
+	}
+
+	male_names = {
+		#Historical
+		Edern Cadwobri Catuwellaunos Conmarch Dubnowal Artognou Prastagus Caratacos Cassiuelauwos
+		#Reconstructed
+		Brigomaglos Broccomaglos Cunobelinos Gwinnluwiyos Kadno Maglocunos Toutorix Tudowal
+	}
+	female_names = {
+		#Historical
+		Aanor Abertha Aelwen Ragnell Matrona Delwen Eiriana Boudika Cartimandua 
+		#Reconstructed 
+		Cunobelina
+
+	}
+	
+	dynasty_of_location_prefix = ""
+	
+	
+	patronym_prefix_male = "dynnpat_pre_ap"
+	patronym_prefix_male_vowel = "dynnpat_pre_vow_ab"
+	patronym_prefix_female = "dynnpat_pre_ferch"	
+	always_use_patronym = yes
+
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 80
+	mat_grf_name_chance = 0
+	father_name_chance = 0
+	
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 50
+	mother_name_chance = 0
+	
+	
+
+	mercenary_names = {
+		{ name = "mercenary_company_lawgochs_followers" }
+		{ name = "mercenary_company_band_of_horned_welshmen" }
+	}
+}
+name_list_pr_gaulish = {
+		dynasty_names = {
+			"dynn_Aiduoi"
+			"dynn_Arelicoi"
+			"dynn_Bituriges"
+			"dynn_Brigantioi"
+			"dynn_Parisioi"
+			"dynn_Uiromanduoi"
+			"dynn_Cauaroi"
+			"dynn_Lexsuoioi"
+			"dynn_Redones"
+			"dynn_Riedones"
+			"dynn_Nitiobrogis"
+			"dynn_Allobrogis"
+			"dynn_Lemouices"
+			"dynn_Pictones"
+
+			"dynn_Aiduogenos"
+			"dynn_Arelicogenetos"
+			"dynn_Brigantiogenos"
+			"dynn_Brigantiogenetos"
+			"dynn_Parisigenos"
+			"dynn_Parisiogenetos"
+			"dynn_Cauarogenos"
+			"dynn_Cauarogenetos"
+			"dynn_Lexsuogenos"
+			"dynn_Lexsuogenetos"
+			"dynn_Redogenos"
+			"dynn_Redogenetos"
+			"dynn_Riedogenos"
+			"dynn_Riedogenetos"
+			"dynn_Limogenos"
+			"dynn_Eburogenos"
+			"dynn_Eburowices"
+			"dynn_Pritani"
+
+			
+		}
+
+
+	male_names = {
+		Ambiorix Abbo Acco Argiotalus Ariogaisos Arleno Atebodwos Attalus Axrotalus Bilios Brennos
+		Brogimaros Camulos Carmanos Carmo Caturix Celunno Cerdo Cilurnos Contessilo Conteddios Corios Dagodubnos Damos
+		Dosso Drutalos Garomaros Garos Iantumaros Katumaros Kintugenos Kintugnatos Leno Lukotorix Lutumaros Maguno Oclinos
+		Samo Samorix Segomaros Talos Tanisios Tinos Toccos Cassiwellaunos Catuolcos Adyantumaros Carantos Dagomaros
+		Iestinos Leucos Mogurix Uros Toutowalos
+	}
+	female_names = {
+		Abrexta Acaunissa Aculia Adbugissa Banna Baulia Blanda Boudia  Abbula Cantismerta boudilatis Carata Cauaria Cloustria 
+		Continuda Coria Dousonna Elantia Litogena Lubitiata Luguselwa Scotta Sucaria Uesuca Uinda Uindilla Uiscareua Luguselwa
+
+		#New
+		Boudika Dewognata Boudilatis Catta Dunnonia Leucia Uiscareua
+	}
+
+	dynasty_of_location_prefix = "dynnp_de"
+
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 50
+	mat_grf_name_chance = 5
+	father_name_chance = 10
+	
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 50
+	mother_name_chance = 5
+
+	
+}
+name_list_pr_celtic_iberian = {
+	dynasty_names = {
+		"dynn_Kellendogenos"
+		"dynn_Kellendogenetos"
+		"dynn_Bellogenos"
+		"dynn_Bellogenetos"
+		"dynn_Arevacogenos"
+		"dynn_Vacogenos"
+		"dynn_Vacogenetos"
+		"dynn_Nemetogenos"
+		"dynn_Lobetanoi"
+		"dynn_Allotrigoi"
+		"dynn_Albiyogenos"
+		"dynn_Albiyogenetos"
+		"dynn_Kwerkwernogenos"
+		"dynn_Wakwogenetos"
+		"dynn_Brigantiogenos"
+		"dynn_Brigantiogenetos"
+		"dynn_Lemawoigenos"
+		"dynn_Calubrigogenos"
+		"dynn_Coelobrigogenos"
+		"dynn_Coelobrigogenetos"
+		"dynn_Aiduogenos"
+		"dynn_Aiduogenetos"
+		"dynn_Textokwerkoi"
+		"dynn_Eburowices"
+		"dynn_Eburogenos"
+	}
+
+
+male_names = {
+	Lubbo Letondo  Lesso Babbo Ablón Segilo Uxentio Turibas
+	Teitabas Caciro Caro Leucón Ambón Viriato Retugenos	Medugenos
+
+}
+female_names = {
+	#Used Gaulish names as we don't have female names
+	Abrexta Acaunissa Aculia Adbugissa Banna Baulia Blanda Boudia  Abbula Cantismerta boudilatis Carata Cauaria Cloustria 
+	Continuda Coria Dousonna Elantia Litogena Lubitiata Luguselwa Scotta Sucaria Uesuca Uinda Uindilla Uiscareua Luguselwa
+	Boudika Dewognata Boudilatis Catta Dunnonia Leucia Uiscareua 
+	#Female names reconstructed from male names 
+	Retugena Medugena
+}
+
+dynasty_of_location_prefix = "dynnp_de"
+
+# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+pat_grf_name_chance = 50
+mat_grf_name_chance = 5
+father_name_chance = 10
+
+# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+pat_grm_name_chance = 10
+mat_grm_name_chance = 50
+mother_name_chance = 5
+
+
+}
+name_list_pr_old_irish = {
+
+	cadet_dynasty_names = {
+
+		{ "dynnp_pr_ui" "dynn_Neill" } 
+		{ "dynnp_pr_ui" "dynn_Neill_Moir" }
+		{ "dynnp_pr_ui" "dynn_Briuin_Seola" }
+		{ "dynnp_pr_ui" "dynn_Briuin_Breifne" }
+		{ "dynnp_pr_ui" "dynn_Briuin_Ai" }
+
+
+		{ "dynnp_pr_ua" "dynn_Conchobair_Sligig" }
+		{ "dynnp_pr_ua" "dynn_Conchobair_Ruad" }
+		{ "dynnp_pr_ua" "dynn_Conchobair_Donn" }
+		{ "dynnp_pr_ua" "dynn_Labrathar_Ban" }
+		{ "dynnp_pr_ua" "dynn_Labrathar_Ruad" }
+		{ "dynnp_pr_ua" "dynn_Labrathar_Tren" }
+
+
+	}
+
+	dynasty_names = {
+		#Uí
+		{ "dynnp_pr_ui" "dynn_Neill" } 
+		{ "dynnp_pr_ui" "dynn_Maine" } 
+		{ "dynnp_pr_ui" "dynn_Garrchon" } 
+		{ "dynnp_pr_ui" "dynn_Briuin" } 
+		{ "dynnp_pr_ui" "dynn_Briain" } 
+
+		#Úa 
+		{ "dynnp_pr_ua" "dynn_Braenain" }
+		{ "dynnp_pr_ua" "dynn_Murchada" }
+		{ "dynnp_pr_ua" "dynn_Faelain" }
+		{ "dynnp_pr_ua" "dynn_Faelain" }
+		{ "dynnp_pr_ua" "dynn_Conchobair"}
+		{ "dynnp_pr_ua" "dynn_Baegill" }
+		{ "dynnp_pr_ua" "dynn_Dochartaich" }
+		{ "dynnp_pr_ua" "dynn_hEchtigirn" }
+		{ "dynnp_pr_ua" "dynn_Beargha" }
+		{ "dynnp_pr_ua" "dynn_Braonain" }
+		{ "dynnp_pr_ua" "dynn_Braein" }
+		{ "dynnp_pr_ua" "dynn_Cathail" }
+		{ "dynnp_pr_ua" "dynn_Cerbaill" }
+		{ "dynnp_pr_ua" "dynn_Cathasaaigh" }
+		{ "dynnp_pr_ua" "dynn_Flannchaid" }
+		{ "dynnp_pr_ua" "dynn_Congalaigh" }
+		{ "dynnp_pr_ua" "dynn_Craoidhlaoich" }
+		{ "dynnp_pr_ua" "dynn_Diummusaich" }
+		{ "dynnp_pr_ua" "dynn_Aedacain" }
+		{ "dynnp_pr_ua" "dynn_Gallcobair" }
+		{ "dynnp_pr_ua" "dynn_Labrathar" }
+		{ "dynnp_pr_ua" "dynn_Dubhagain" }
+		{ "dynnp_pr_ua" "dynn_Dhomnhaill" }
+		{ "dynnp_pr_ua" "dynn_Ruairc" }
+		{ "dynnp_pr_ua" "dynn_Mail" }
+		{ "dynnp_pr_ua" "dynn_Cearbhaill" }
+		{ "dynnp_pr_ua" "dynn_Mordha" }
+		{ "dynnp_pr_ua" "dynn_Cadhlaide" }
+		{ "dynnp_pr_ua" "dynn_Carthaigh" }
+		{ "dynnp_pr_ua" "dynn_Mescaeill" }
+		{ "dynnp_pr_ua" "dynn_Laidhgnen" }
+		{ "dynnp_pr_ua" "dynn_Baothgeallain" }
+		{ "dynnp_pr_ua" "dynn_hEighnigh" }
+		{ "dynnp_pr_ua" "dynn_Dalaich" }
+		#Ní
+		{ "dynnp_pr_macc" "dynn_Diarmata" }
+		{ "dynnp_pr_macc" "dynn_Mathgamna" }
+		{ "dynnp_pr_macc" "dynn_Murchada" }
+		{ "dynnp_pr_macc" "dynn_Aeda" }
+		{ "dynnp_pr_macc" "dynn_An_tSaoir" }
+		{ "dynnp_pr_macc" "dynn_Dalaich" }
+		{ "dynnp_pr_macc" "dynn_Flannacain" }
+		{ "dynnp_pr_macc" "dynn_Laigin" }
+		{ "dynnp_pr_macc" "dynn_Carthaigh" }
+		{ "dynnp_pr_macc" "dynn_Murchada_Caemanach" }
+
+		{ "dynnp_pr_ni" "dynn_Rodain" }
+
+
+		"dynn_Seanachain"
+		"dynn_Ceiteach"
+		"dynn_Linn"
+		"dynn_Creig"
+		"dynn_Lorc"
+		"dynn_Laigin"
+		"dynn_Connachta"
+		"dynn_Muintir_Murchada"
+	}
+
+	male_names = {
+		Áed Áedgen Áeducán Áedán OíngusÁilchú Áildobur Áilgel Áilgenán Áilgus Ailill Ailpin Ainbchellach Áindle Ainftech Airechtach Airfhindán Airleid Airmedach Amalgaid Anfudan Anlón Anmchaid Ánrothán 
+		Ardgal Ardgar Art Artbran Artgal Artgus Artucán Artúr Assiucc Augaire Aurthuile Báethgalach Báethine Baetán Béoáed Barrfhind Beccán Berrach Báthair Bláthmacc Bran Brandub Brangen Bressal Brian Briccéne
+		Briccine Broccán Bruatur Bruide Brénaind Brénainn Bróen Búaidbéo Caicher Caileach Cailte Cairbre Caisséne Caissin Caissine Canann Canannán Cathal Cathalán Cathassach Cathbad Cathmál Cathnio
+		Cathub Cailte Cainchomrac Caindelbán Ceothernach Cellach Cellachán Cenn-Fáelad Cennlachán Cerball Cernach Cernachán Cían Ciarán Cináed Cobthach Coripre Colcu Conall Conallán Conamail Conán Conchenn Conchobar
+        Condla Congal Congalach Congus Congal Conmacc Conn Connla Conrí Corbb Corccán Corcrán Cormacc Coscrach Crimthann Crónán Cuilén Cummascach Cóemgein Cuánán Dalbach Dallán Dathal Dathgus Demmán Diarmait Doedgus 
+		Domangart Domnall Donn Donnchad Donncuan Donndubán Donngal Donnucán Doélgus Drost Drust Dub-Dá-Lethe Dubcenn Dubgenn Dub Dubgall Dubglais Dubthach Dubáed Dubán Duiblesc Duibne Dúnáed Dálach Dicuill Diglach Dúnacán
+		Dúnadach Dúnchad Dúngal Dúngalach Echmarcach Échtgal Échtgus Echtigern Echuid Éicnech Éicnechán Éanna Énri Éochad Eochaid Eochu Eochucán Éogán Erc Ercaid Éremón Érennach Eterscél Failbe Ferghus Fechtnach Fedach Ferchar
+		Fedelmid Feirgil Fer-Fugaill Feradach Fergal Fionngall Fiachna Fionnchú Findbárr Findlaich Fingen Finnguine Fionn Fionnacán Fionnbárr Fionnchú Fionnlagh Finnachta Fionnteine Flaithbertach Flaithem Flaithemán Flaithgus Flaithrí 
+		Flann Flannacán Flannchad Flannán Forgatach Folachtach Forannán Forbassach Fothad Fothud Fubthad Fuirechtach Fáelcar Fáelchad Fáelchú Fáeldobur Fáelgus Fáelán Fáelbe Fíadchú Finsnechta Fócarta Gabrán Garbith Glaschú Glún-Íairn
+		Gormacán Gormgus Gormán Guaire Gáethán Gaethine Íarlaithe Imchad Indrechtach Labraithir Lachtna Lachtnán Lachtnéne Laidcenn Laidgenn Laidine Laisrén Lennán Lethdobur Lochlann Loingsech Lonán Lorcán Lugh Lugaid Lugáed Lochéne Lochine
+		Lóeguire Mac-Lasair Maine Mathgamain Matudán Minchán Mo-Lua Móenach Morand Mugrón Muirchertach Muirecán Muiredach Mirgius Murchú Máthair Múadán Nádárchú Natfráech Nattfráich NechtánNiall Niallgus Niallán NúaduOdrán Óengus Óenucán Olcán Ólchobar
+		Onchú Orthanach Oscar Rechtabra Ríacán Riaguil Rogallach Rogellach Ruah Ruaidrí Rigán Ríán Ródán Rónchú Rónán Rúadacán Ségdae Séafra Sechnassach Selbach Senchán Seoán Slébine Snedgus Suibne Sóerbrethach Séigine Sétna Tadg Taithlech Talorc
+		Talorcán Tigernach Tigernán Tirpraiti Tomaltach Torccán Trenchad Trengus Tressach Tuathalán Tuireann Talán Túathal Ualgarg Ualán Úannachán Uargal Uargalach Uargus Ultán 	
+	}
+	female_names = {
+		Ablach Áedammair Áine Anflaith Aróc Barrdub Ben-Laigin Ben-Mide Ben-Mumán Ben-Ulad Brigit Bé-Fáil Bébinn Cacht Cadhla Cailech-Fhinnéin Cainnech Caisséne Caintigern Cairech Cathán Cellach Ciar Cnes Coblaith Cobflaith
+		Conchenn Condál Crinóch Commann Derdriu Der-bForgaill Derbáil Derborgaill Der-Ilei Der-LugdachDianaim Dub-Dil Dub-Essa Dub-Lemna Dubgilla Dúinsech Dúnlaith Echrad Éibhleann Eithne Ellbrig Emer Étaín Failenn Fedelm Feidelm ionneacht 
+		Fionnguala Flann Forbflaith Fine Garbh Gelgéis Gerróc Gnáthnád Gormflaith Gormlaith Gráinne Imag íte Lann Lasairfionna Lathir Leathan Ligach Muadhnait Muirenn Muirgel Muirn Mór Mór-Mumán Nárbflaith Nuala Órflaith Órlaith Fionnghuala 
+		Órnat Sadb Samthann Scáthach Sébdann Selblaith Seonaid Sineach Sisuile Sláine Sorcha Suaibsech Sáerlaith Sétach Sithamaith Tailltiu Temair Tuathflaith Tómnat Uallach Uasal Úna	
+	}
+	
+	patronym_prefix_male = "dynnpat_pre_mac"
+	patronym_prefix_male_vowel = "dynnpat_pre_vow_mag"
+	patronym_prefix_female = "dynnpat_pre_nic"
+	patronym_prefix_female_vowel = "dynnpat_pre_vow_nig"
+	
+	always_use_patronym = yes	
+
+	
+	pat_grf_name_chance = 30
+	mat_grf_name_chance = 15
+	father_name_chance = 5
+	
+	pat_grm_name_chance = 30
+	mat_grm_name_chance = 15
+	mother_name_chance = 10
+
+	mercenary_names = {
+		{ name = mercenary_company_band_of_kerns }
+		{ name = mercenary_company_madhmanns_company }
+		{ name = mercenary_company_company_of_shield_and_scian }
+	}
+}

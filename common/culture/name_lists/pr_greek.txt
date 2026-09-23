@@ -10,9 +10,8 @@
 			"dynn_Bakkhiadai"
 			"dynn_Aleuadae"
 			"dynn_Diodotid"
-			"dynn_Spartokidaí"
+			"dynn_Spartokidai"
 			"dynn_Alcmaionidai"
-			"dynn_Philaidae"
 			"dynn_Atreidai"
 			"dynn_Euryclids"
 			"dynn_Attalidon"
@@ -59,23 +58,23 @@
 name_list_pr_graeco_egyptian = {
 
 	dynasty_names = {
-		"dynn_Sarápioi"
+		"dynn_Sarapioi"
 		"dynn_Hermaioi"
-		"dynn_Harpokrátidai"
-		"dynn_Areoí"
-		"dynn_Hermaí"
-		"dynn_Pakhómioi"
-		"dynn_Harpaesíoi"
-		"dynn_Achillaí"
-		"dynn_Aléxandroi"
-		"dynn_Apollónidai"
-		"dynn_Eudaímonioi"
-		"dynn_Achilléioi"
-		"dynn_Petósirioi"
+		"dynn_Harpokratidai"
+		"dynn_Areoi"
+		"dynn_Hermai"
+		"dynn_Pakhomioi"
+		"dynn_Harpaesioi"
+		"dynn_Achillai"
+		"dynn_Alexandroi"
+		"dynn_Apollonidai"
+		"dynn_Eudaimonioi"
+		"dynn_Achilleioi"
+		"dynn_Petosirioi"
 		"dynn_Orsenouphidai"
-		"dynn_Diódoroi"
-		"dynn_Horionidaí"
-		"dynn_Eutykhidaí"
+		"dynn_Diodoroi"
+		"dynn_Horionidai"
+		"dynn_Eutykhidai"
 		
 	}
 
@@ -112,7 +111,7 @@ name_list_pr_graeco_egyptian = {
 }
 }
 
-name_list_mycenaean = {
+name_list_pr_mycenaean = {
 		dynasty_names = {
 			"dynn_Archidamou"
 			"dynn_Seleukidai"
@@ -123,9 +122,8 @@ name_list_mycenaean = {
 			"dynn_Bakkhiadai"
 			"dynn_Aleuadae"
 			"dynn_Diodotid"
-			"dynn_Spartokidaí"
+			"dynn_Spartokidai"
 			"dynn_Alcmaionidai"
-			"dynn_Philaidae"
 			"dynn_Atreidai"
 			"dynn_Euryclids"
 			"dynn_Attalidon"
@@ -163,7 +161,7 @@ name_list_mycenaean = {
 	}
 }
 
-name_list_greco_persian = {
+name_list_pr_greco_persian = {
 		cadet_dynasty_names = {
 			"dynn_Kantakouzenos"
 			"dynn_Palaiologos"
@@ -1262,4 +1260,4 @@ name_list_greco_persian = {
 			{ name = "mercenary_company_heruli" }
 			{ name = "mercenary_company_hoplites_of_place" }
 	}
-}
+}

@@ -30,4 +30,4 @@ language_kemetic = {
 	}
 	
 	color = { 0.75 0.85 0.30 }
-}
+}

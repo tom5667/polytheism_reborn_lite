@@ -1,4 +1,4 @@
-﻿name_list_punic= {
+﻿name_list_pr_punic = {
 
 	cadet_dynasty_names = {
 		"dynn_KA_rawA_n"

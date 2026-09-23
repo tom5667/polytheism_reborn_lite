@@ -1,0 +1,39 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Baltic Decisions
+  # Localization for pr_baltic_decisions.txt
+  # =============================================
+
+  # --- Defenders of High God Decision (Vanilla) ---
+  defenders_of_highgod_decision:0 "Defenders of the High God"
+  defenders_of_highgod_decision_desc:0 "#F The old gods still watch over our lands from their sacred groves and holy sites. Though the world has changed, our faith remains strong.#!\n\nBy taking this decision, I shall declare myself a defender of the High God and rally the faithful to preserve our ancient traditions. The gods will smile upon our realm, and our people will stand united against those who would see our beliefs erased."
+  defenders_of_highgod_decision_tooltip:0 "Declare yourself a defender of the High God and gain divine favor"
+  defenders_of_highgod_decision_confirm:0 "Become a Defender of the High God!"
+  defenders_of_highgod_decision_effects:0 "#P You will gain prestige and spiritual benefits#!$EFFECT_LIST_BULLET$Holy sites will receive special bonuses$EFFECT_LIST_BULLET$Powerful vassals will respect your divine mandate$EFFECT_LIST_BULLET$Requires control of at least one holy site and loyal powerful vassals@warning_icon!"
+
+  # --- Choose Main Deity Decision ---
+  pr_baltic_choose_main_deity_decision:0 "Choose Main Deity"
+  pr_baltic_choose_main_deity_decision_desc:0 "#F The gods of our ancestors call to us, each offering their unique blessings. As a ruler of the Baltic faith, I must choose which deity will guide my path and grant me their divine favor.#!\n\nBy selecting a main deity, I will receive special bonuses and modifiers that reflect their domain and influence."
+  pr_baltic_choose_main_deity_decision_tooltip:0 "Select a patron deity to receive divine blessings"
+  pr_baltic_choose_main_deity_decision_confirm:0 "Choose my Main Deity!"
+  pr_baltic_choose_main_deity_decision_tt:0 "#F Select a deity to receive their blessing#"
+
+  # Lithuanian Deities
+  pr_baltic_choose_main_deity_decision.select_dievas:0 "Dievas"
+  pr_baltic_choose_main_deity_decision.select_dalia:0 "Dalia"
+  pr_baltic_choose_main_deity_decision.select_perkunas:0 "Perkunas"
+  pr_baltic_choose_main_deity_decision.select_zemyna:0 "Zemyna"
+  pr_baltic_choose_main_deity_decision.select_saule:0 "Saule"
+
+  # Latvian Deities
+  pr_baltic_choose_main_deity_decision.select_dievs:0 "Dievs"
+  pr_baltic_choose_main_deity_decision.select_jumis:0 "Jumis"
+  pr_baltic_choose_main_deity_decision.select_perkons:0 "Perkons"
+  pr_baltic_choose_main_deity_decision.select_ceroklis:0 "Ceroklis"
+
+  # Prussian Deities
+  pr_baltic_choose_main_deity_decision.select_deiws:0 "Deiws"
+  pr_baltic_choose_main_deity_decision.select_pilwits:0 "Pilwits"
+  pr_baltic_choose_main_deity_decision.select_perkuns:0 "Perkuns"
+  pr_baltic_choose_main_deity_decision.select_patrimps:0 "Patrimps"
+  pr_baltic_choose_main_deity_decision.select_ausauts:0 "Ausauts"

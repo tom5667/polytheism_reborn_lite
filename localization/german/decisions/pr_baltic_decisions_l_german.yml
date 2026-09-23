@@ -1,0 +1,39 @@
+l_german:
+  # =============================================
+  # Polytheism Reborn - Baltische Entscheidungen
+  # Lokalisierung für pr_baltic_decisions.txt
+  # =============================================
+
+  # --- Beschützer des Hohen Gottes (Vanilla) ---
+  defenders_of_highgod_decision:0 "Beschützer des Hohen Gottes"
+  defenders_of_highgod_decision_desc:0 "#F Die alten Götter wachen noch immer über unsere Lande von ihren heiligen Hainen und Stätten. Obwohl sich die Welt verändert hat, bleibt unser Glaube stark.#!\n\nDurch diese Entscheidung erkläre ich mich zum Beschützer des Hohen Gottes und vereine die Gläubigen, um unsere alten Traditionen zu bewahren. Die Götter werden unser Reich segnen, und unser Volk wird vereint gegen diejenigen stehen, die unsere Überzeugungen auslöschen wollen."
+  defenders_of_highgod_decision_tooltip:0 "Erkläre dich zum Beschützer des Hohen Gottes und erhalte göttliche Gunst"
+  defenders_of_highgod_decision_confirm:0 "Werde ein Beschützer des Hohen Gottes!"
+  defenders_of_highgod_decision_effects:0 "#P Du erhältst Ansehen und spirituelle Vorteile#!$EFFECT_LIST_BULLET$Heilige Stätten erhalten spezielle Boni$EFFECT_LIST_BULLET$Mächtige Vasallen werden dein göttliches Mandat respektieren$EFFECT_LIST_BULLET$Erfordert die Kontrolle über mindestens eine heilige Stätte und loyale mächtige Vasallen@warning_icon!"
+
+  # --- Hauptgottheit wählen ---
+  pr_baltic_choose_main_deity_decision:0 "Wähle Hauptgottheit"
+  pr_baltic_choose_main_deity_decision_desc:0 "#F Die Götter unserer Vorfahren rufen uns, jeder bietet seinen einzigartigen Segen. Als Herrscher des baltischen Glaubens muss ich entscheiden, welche Gottheit meinen Pfad lenken und mir ihren göttlichen Segen gewähren wird.#!\n\nDurch die Auswahl einer Hauptgottheit erhalte ich spezielle Boni und Modifikatoren, die ihr Wesen und ihren Einfluss widerspiegeln."
+  pr_baltic_choose_main_deity_decision_tooltip:0 "Wähle eine Schutzgottheit, um göttliche Segnungen zu erhalten"
+  pr_baltic_choose_main_deity_decision_confirm:0 "Wähle meine Hauptgottheit!"
+  pr_baltic_choose_main_deity_decision_tt:0 "#F Wähle eine Gottheit, um ihren Segen zu erhalten#"
+
+  # Litauische Gottheiten
+  pr_baltic_choose_main_deity_decision.select_dievas:0 "Dievas"
+  pr_baltic_choose_main_deity_decision.select_dalia:0 "Dalia"
+  pr_baltic_choose_main_deity_decision.select_perkunas:0 "Perkunas"
+  pr_baltic_choose_main_deity_decision.select_zemyna:0 "Zemyna"
+  pr_baltic_choose_main_deity_decision.select_saule:0 "Saule"
+
+  # Lettische Gottheiten
+  pr_baltic_choose_main_deity_decision.select_dievs:0 "Dievs"
+  pr_baltic_choose_main_deity_decision.select_jumis:0 "Jumis"
+  pr_baltic_choose_main_deity_decision.select_perkons:0 "Perkons"
+  pr_baltic_choose_main_deity_decision.select_ceroklis:0 "Ceroklis"
+
+  # Preußische Gottheiten
+  pr_baltic_choose_main_deity_decision.select_deiws:0 "Deiws"
+  pr_baltic_choose_main_deity_decision.select_pilwits:0 "Pilwits"
+  pr_baltic_choose_main_deity_decision.select_perkuns:0 "Perkuns"
+  pr_baltic_choose_main_deity_decision.select_patrimps:0 "Patrimps"
+  pr_baltic_choose_main_deity_decision.select_ausauts:0 "Ausauts"

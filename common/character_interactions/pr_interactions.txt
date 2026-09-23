@@ -1,4 +1,15 @@
-﻿join_vestal_virgins_interaction = {
+﻿# =============================================
+# Polytheism Reborn - Character Interactions
+# File: pr_interactions.txt
+# Contains: vestal virgins, conversion menu,
+#           demand/ask conversion for all PR faiths
+# =============================================
+
+# =============================================
+# Section 1: Vestal Virgins
+# =============================================
+
+join_vestal_virgins_interaction = {
 	category = interaction_category_friendly
 
 	ai_maybe = yes
@@ -85,9 +96,9 @@
 				name = vows_piety_spent
 				value = ask_to_take_vows_piety_cost
 				days = 10
- 			}
- 		}
- 	}
+			}
+		}
+	}
 
 	on_accept = {
 		scope:actor = {
@@ -199,19 +210,19 @@
 				limit = {
 					scope:recipient = {
 						has_variable = vows_piety_spent
- 					}
- 				}
+					}
+				}
 				scope:actor = {
 					add_piety_no_experience = {
 						value = scope:recipient.var:vows_piety_spent
- 					}
+					}
 				}
 				scope:recipient = {
 					remove_variable = vows_piety_spent
- 				}
- 			}
- 		}
- 	}
+				}
+			}
+		}
+	}
 
 	auto_accept = no
 
@@ -848,9 +859,13 @@
 		}
 	}
 }
-#To keep it a bit clean, interaction to open and close the menu 
+# =============================================
+# Section 2: Conversion Menu (Open/Close)
+# =============================================
+
+#To keep it a bit clean, interaction to open and close the menu
 #For compatibility and as it are religious interactions it will be added in the religion category
-open_convertion_to_polytheism_menu = {
+open_conversion_to_polytheism_menu = {
 	category = interaction_category_religion
 	common_interaction = yes
 
@@ -860,9 +875,9 @@ open_convertion_to_polytheism_menu = {
 	is_shown = {
 		scope:actor = {
 			is_ai = no
-			has_game_rule = pr_convertion_to_polytheism_menu_on
+			has_game_rule = pr_conversion_to_polytheism_menu_on
 			NOT = {
-				has_character_flag = open_demand_convertion_to_polytheism_menu
+				has_character_flag = open_demand_conversion_to_polytheism_menu
 				OR = { 
 					has_religion = religion:christianity_religion
 					has_religion = religion:islam_religion
@@ -873,37 +888,41 @@ open_convertion_to_polytheism_menu = {
 	
 	on_send = {
 		scope:actor = {
-			add_character_flag = open_demand_convertion_to_polytheism_menu
+			add_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 }
 
-close_convertion_to_polytheism_menu = {
+close_conversion_to_polytheism_menu = {
 	category = interaction_category_religion
 	common_interaction = yes
-	has_game_rule = pr_convertion_to_polytheism_menu_on
 	auto_accept = yes
 	ignores_pending_interaction_block = yes
 	
 	is_shown = {
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_game_rule = pr_conversion_to_polytheism_menu_on
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 	
 	on_send = {
 		scope:actor = {
-			remove_character_flag = open_demand_convertion_to_polytheism_menu
+			remove_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 }
 
-#demand to change to ancient religion
-#Gaelic 
+# =============================================
+# Section 3: Demand Conversion (Vassal Rulers)
+# Each interaction converts a vassal ruler to a
+# specific polytheistic faith via scripted effect
+# =============================================
+
+# --- Gaelic ---
 demand_conversion_gaelic_vassal_ruler_interaction = {
 	category = interaction_category_religion
-	desc = demand_conversion_gaelic_vassal_ruler_interaction_desc
 	ai_maybe = yes
 	ai_min_reply_days = 4
 	ai_max_reply_days = 9
@@ -953,7 +972,7 @@ demand_conversion_gaelic_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -978,122 +997,17 @@ demand_conversion_gaelic_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_gaelic_vassal_ruler_interaction_effect
 		}
-		demand_conversion_gaelic_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_gaelic_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -1283,7 +1197,13 @@ demand_conversion_gaelic_vassal_ruler_interaction = {
 		}
 	}
 }
-#Gaelic Ask courtier like spouse 
+# =============================================
+# Section 4: Ask for Conversion (Courtiers)
+# Each interaction converts a courtier to a
+# specific polytheistic faith via scripted effect
+# =============================================
+
+# --- Gaelic ---
 ask_for_conversion_gaelic_courtier_interaction = {
 	category = interaction_category_religion
 
@@ -1322,7 +1242,7 @@ ask_for_conversion_gaelic_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -1349,46 +1269,13 @@ ask_for_conversion_gaelic_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_gaelic_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_gaelic_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_gaelic_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -1567,7 +1454,7 @@ demand_conversion_brythonic_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -1592,122 +1479,17 @@ demand_conversion_brythonic_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_brythonic_vassal_ruler_interaction_effect
 		}
-		demand_conversion_brythonic_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_brythonic_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -1937,7 +1719,7 @@ ask_for_conversion_brythonic_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -1964,46 +1746,13 @@ ask_for_conversion_brythonic_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_brythonic_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_brythonic_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_brythonic_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -2180,7 +1929,7 @@ demand_conversion_gaulish_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -2205,122 +1954,17 @@ demand_conversion_gaulish_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_gaulish_vassal_ruler_interaction_effect
 		}
-		demand_conversion_gaulish_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_gaulish_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -2550,7 +2194,7 @@ ask_for_conversion_gaulish_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -2577,46 +2221,13 @@ ask_for_conversion_gaulish_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_gaulish_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_gaulish_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_gaulish_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -2793,7 +2404,7 @@ demand_conversion_cultus_deorum_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -2818,122 +2429,17 @@ demand_conversion_cultus_deorum_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_cultus_deorum_vassal_ruler_interaction_effect
 		}
-		demand_conversion_cultus_deorum_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_cultus_deorum_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -3163,7 +2669,7 @@ ask_for_conversion_cultus_deorum_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -3190,46 +2696,13 @@ ask_for_conversion_cultus_deorum_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_cultus_deorum_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_cultus_deorum_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_cultus_deorum_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -3407,7 +2880,7 @@ demand_conversion_greco_roman_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -3432,122 +2905,17 @@ demand_conversion_greco_roman_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_greco_roman_vassal_ruler_interaction_effect
 		}
-		demand_conversion_greco_roman_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_greco_roman_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -3777,7 +3145,7 @@ ask_for_conversion_greco_roman_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -3804,46 +3172,13 @@ ask_for_conversion_greco_roman_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_greco_roman_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_greco_roman_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_greco_roman_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -4020,7 +3355,7 @@ demand_conversion_hellenism_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -4045,122 +3380,17 @@ demand_conversion_hellenism_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_hellenism_vassal_ruler_interaction_effect
 		}
-		demand_conversion_hellenism_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_hellenism_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -4390,7 +3620,7 @@ ask_for_conversion_hellenism_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -4417,46 +3647,13 @@ ask_for_conversion_hellenism_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_hellenism_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_hellenism_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_hellenism_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -4634,7 +3831,7 @@ demand_conversion_kemetic_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -4659,122 +3856,17 @@ demand_conversion_kemetic_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_kemetic_vassal_ruler_interaction_effect
 		}
-		demand_conversion_kemetic_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_kemetic_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -5004,7 +4096,7 @@ ask_for_conversion_kemetic_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -5031,46 +4123,13 @@ ask_for_conversion_kemetic_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_kemetic_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_kemetic_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_kemetic_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -5248,7 +4307,7 @@ demand_conversion_atenism_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -5273,122 +4332,17 @@ demand_conversion_atenism_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_atenism_vassal_ruler_interaction_effect
 		}
-		demand_conversion_atenism_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_atenism_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -5618,7 +4572,7 @@ ask_for_conversion_atenism_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -5645,46 +4599,13 @@ ask_for_conversion_atenism_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_atenism_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_atenism_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_atenism_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -5862,7 +4783,7 @@ demand_conversion_dacian_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -5887,122 +4808,17 @@ demand_conversion_dacian_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_dacian_vassal_ruler_interaction_effect
 		}
-		demand_conversion_dacian_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_dacian_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -6232,7 +5048,7 @@ ask_for_conversion_dacian_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -6259,46 +5075,13 @@ ask_for_conversion_dacian_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_dacian_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_dacian_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_dacian_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -6476,7 +5259,7 @@ demand_conversion_zalmoxism_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -6501,122 +5284,17 @@ demand_conversion_zalmoxism_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_zalmoxism_vassal_ruler_interaction_effect
 		}
-		demand_conversion_zalmoxism_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_zalmoxism_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -6846,7 +5524,7 @@ ask_for_conversion_zalmoxism_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -6873,46 +5551,13 @@ ask_for_conversion_zalmoxism_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_zalmoxism_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_zalmoxism_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_zalmoxism_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -7091,7 +5736,7 @@ demand_conversion_babylonian_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -7116,122 +5761,17 @@ demand_conversion_babylonian_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_babylonian_vassal_ruler_interaction_effect
 		}
-		demand_conversion_babylonian_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_babylonian_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -7475,7 +6015,7 @@ demand_conversion_assyrian_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -7500,122 +6040,17 @@ demand_conversion_assyrian_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_assyrian_vassal_ruler_interaction_effect
 		}
-		demand_conversion_assyrian_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_assyrian_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -7860,7 +6295,7 @@ demand_conversion_sumerian_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -7885,122 +6320,17 @@ demand_conversion_sumerian_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_sumerian_vassal_ruler_interaction_effect
 		}
-		demand_conversion_sumerian_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_sumerian_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -8231,7 +6561,7 @@ ask_for_conversion_babylonian_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -8258,46 +6588,13 @@ ask_for_conversion_babylonian_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_babylonian_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_babylonian_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_babylonian_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -8460,7 +6757,7 @@ ask_for_conversion_assyrian_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -8487,46 +6784,13 @@ ask_for_conversion_assyrian_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_assyrian_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_assyrian_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_assyrian_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -8690,7 +6954,7 @@ ask_for_conversion_sumerian_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -8717,46 +6981,13 @@ ask_for_conversion_sumerian_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_sumerian_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_sumerian_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_sumerian_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -8934,7 +7165,7 @@ demand_conversion_punic_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -8959,122 +7190,17 @@ demand_conversion_punic_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_punic_vassal_ruler_interaction_effect
 		}
-		demand_conversion_punic_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_punic_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -9304,7 +7430,7 @@ ask_for_conversion_punic_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -9331,46 +7457,13 @@ ask_for_conversion_punic_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_punic_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_punic_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_punic_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -9547,7 +7640,7 @@ demand_conversion_semitic_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -9572,122 +7665,17 @@ demand_conversion_semitic_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_semitic_vassal_ruler_interaction_effect
 		}
-		demand_conversion_semitic_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_semitic_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -9917,7 +7905,7 @@ ask_for_conversion_semitic_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -9944,46 +7932,13 @@ ask_for_conversion_semitic_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_semitic_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_semitic_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_semitic_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -10159,7 +8114,7 @@ demand_conversion_hittite_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -10184,122 +8139,17 @@ demand_conversion_hittite_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_hittite_vassal_ruler_interaction_effect
 		}
-		demand_conversion_hittite_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_hittite_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -10529,7 +8379,7 @@ ask_for_conversion_hittite_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -10556,46 +8406,13 @@ ask_for_conversion_hittite_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_hittite_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_hittite_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_hittite_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -10772,7 +8589,7 @@ demand_conversion_georgian_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -10797,122 +8614,17 @@ demand_conversion_georgian_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_georgian_vassal_ruler_interaction_effect
 		}
-		demand_conversion_georgian_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_georgian_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -11142,7 +8854,7 @@ ask_for_conversion_georgian_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -11169,46 +8881,13 @@ ask_for_conversion_georgian_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_georgian_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_georgian_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_georgian_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -11386,7 +9065,7 @@ demand_conversion_armenian_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -11411,122 +9090,17 @@ demand_conversion_armenian_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_armenian_vassal_ruler_interaction_effect
 		}
-		demand_conversion_armenian_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_armenian_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -11756,7 +9330,7 @@ ask_for_conversion_armenian_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -11783,46 +9357,13 @@ ask_for_conversion_armenian_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_armenian_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_armenian_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_armenian_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -11949,615 +9490,477 @@ ask_for_conversion_armenian_courtier_interaction = {
 
  #Etruscan
  demand_conversion_etruscan_vassal_ruler_interaction = {
- 	category = interaction_category_religion
+	category = interaction_category_religion
 
- 	ai_maybe = yes
- 	ai_min_reply_days = 4
- 	ai_max_reply_days = 9
- 	can_send_despite_rejection = yes
- 	ai_accept_negotiation = yes
- 	popup_on_receive = yes
+	ai_maybe = yes
+	ai_min_reply_days = 4
+	ai_max_reply_days = 9
+	can_send_despite_rejection = yes
+	ai_accept_negotiation = yes
+	popup_on_receive = yes
 
- 	ai_targets = {
- 		ai_recipients = vassals
- 	}
- 	ai_target_quick_trigger = {
- 		adult = yes
- 	}
- 	ai_frequency = 12
+	ai_targets = {
+		ai_recipients = vassals
+	}
+	ai_target_quick_trigger = {
+		adult = yes
+	}
+	ai_frequency = 12
 
- 	desc = {
- 		desc = ask_for_conversion_interaction_desc
- 		desc = line_break
- 		triggered_desc = {
- 			trigger = {
- 				NOT = { scope:recipient = { is_imprisoned_by = scope:actor } }
- 			}
- 			desc = might_ask_for_something_in_return_warning
- 		}
- 		triggered_desc = {
- 			trigger = {
- 				scope:actor = {
- 					refusing_conversion_is_crime_trigger = {
- 						CHARACTER = scope:recipient
- 					}
- 				}
- 			}
- 			desc = demand_conversion_vassal_ruler_is_crime
- 		}
- 	}
+	desc = {
+		desc = ask_for_conversion_interaction_desc
+		desc = line_break
+		triggered_desc = {
+			trigger = {
+				NOT = { scope:recipient = { is_imprisoned_by = scope:actor } }
+			}
+			desc = might_ask_for_something_in_return_warning
+		}
+		triggered_desc = {
+			trigger = {
+				scope:actor = {
+					refusing_conversion_is_crime_trigger = {
+						CHARACTER = scope:recipient
+					}
+				}
+			}
+			desc = demand_conversion_vassal_ruler_is_crime
+		}
+	}
 
- 	on_decline_summary = stop_attacker_vassal_war_decline_summary
+	on_decline_summary = stop_attacker_vassal_war_decline_summary
 
- 	is_shown = {
+	is_shown = {
 		
- 		scope:recipient = {
+		scope:recipient = {
 			
- 			#target_is_liege_or_above = scope:actor
- 			NOT = { faith = scope:actor.faith }
- 			is_ai = yes
- 			is_ruler = yes
- 		}
- 		scope:actor = {
- 			is_ai = no
- 			has_character_flag = open_demand_convertion_to_polytheism_menu
- 		}
- 	}
+			#target_is_liege_or_above = scope:actor
+			NOT = { faith = scope:actor.faith }
+			is_ai = yes
+			is_ruler = yes
+		}
+		scope:actor = {
+			is_ai = no
+			has_character_flag = open_demand_conversion_to_polytheism_menu
+		}
+	}
 
- 	cooldown_against_recipient = { years = 15 }
+	cooldown_against_recipient = { years = 15 }
 
- 	is_valid_showing_failures_only = {
- 		valid_demand_conversion_conditions_trigger = yes
- 	}
+	is_valid_showing_failures_only = {
+		valid_demand_conversion_conditions_trigger = yes
+	}
 
- 	auto_accept = {
- 		custom_description = {
- 			text = "spending_hook"
- 			subject = scope:actor
- 			object = scope:recipient
- 			scope:hook = yes
- 			scope:actor = { has_strong_hook = scope:recipient }
- 		}
- 	}
+	auto_accept = {
+		custom_description = {
+			text = "spending_hook"
+			subject = scope:actor
+			object = scope:recipient
+			scope:hook = yes
+			scope:actor = { has_strong_hook = scope:recipient }
+		}
+	}
 
- 	on_send = {
- 	}
+	on_send = {
+	}
 
 
- 	on_accept = {
- 		scope:actor = {
- 			trigger_event = religious_interaction.2002
- 		}
- 		demand_conversion_etruscan_vassal_ruler_interaction_effect  = yes
- 	}
+	on_accept = {
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_etruscan_vassal_ruler_interaction_effect
+		}
+	}
 
- 	on_decline = {
- 		scope:recipient = {
- 			hidden_effect = {
- 				random_list = {
- 					80 = { # Conditional acceptance
-						modifier = {
- 							factor = 0 # Heresiarchs never agree to convert
- 							scope:recipient = {
- 								has_trait = heresiarch
- 							}
- 						}
- 						ai_value_modifier = {
- 							ai_greed = 0.5
- 						}
- 						random_list = {
- 							50 = { #They ask for gold
- 								modifier = {
- 									add = 50 # More likely to ask for gold if they're poor
- 									scope:recipient.short_term_gold < medium_gold_value
- 								}
- 								modifier = {
- 									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
- 										value = 50
- 										if = {
- 											# Especially true if they're in debt!
- 											limit = { gold < 0 }
- 											add = 150
- 										}
- 									}									
- 									is_at_war = yes
- 									any_character_war = {
- 										is_war_leader = scope:recipient
- 									}
- 								}
- 								scope:actor = {
- 									trigger_event = {
- 										id = religious_interaction.2011
- 									}
- 								}
- 							}
- 							500 = { #They ask for a favor
- 								trigger = {
- 									exists = scope:recipient.capital_county
- 									NOT = { has_hook = scope:actor }
- 								}
- 								# Direct feudal vassals appreciate favors more (they can improve their contract).
- 								modifier = {
- 									add = {
- 										value = 50
- 										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
- 										if = {
- 											limit = { is_powerful_vassal_of = scope:actor }
- 											add = 100
- 										}
- 									}
- 									this.liege = scope:actor
- 									has_government = feudal_government
- 								}
- 								scope:actor = {
- 									trigger_event = {
- 										id = religious_interaction.2012
- 									}
- 								}
- 							}
- 						}
+	on_decline = {
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_etruscan_vassal_ruler_interaction_effect
+		}
+	}
 
- 					}
- 					20 = { # Full refuse
- 						modifier = {
- 							add = 20
- 							scope:recipient.demand_conversion_likelihood_calculation < 40
- 						}
- 						modifier = {
- 							add = 20
- 							scope:recipient.demand_conversion_likelihood_calculation < 20
- 						}
- 						modifier = {
- 							add = 50
- 							scope:recipient.demand_conversion_likelihood_calculation < 0
- 						}
- 						scope:actor = {
- 							trigger_event = {
- 								id = religious_interaction.2003
- 							}
- 						}
- 					}
- 				}
- 			}
- 			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
- 			show_as_tooltip = {
- 				#Negative opinions
- 				add_opinion = {
- 					modifier = demanded_my_conversion_opinion
- 					target = scope:actor
- 					opinion = -10
- 				}
- 				scope:actor = {
- 					if = {
- 						limit = {
- 							refusing_conversion_is_crime_trigger = {
- 								CHARACTER = scope:recipient
- 							}
- 						}
- 						custom_tooltip = action_can_lawfully_imprison_label
- 					}
- 				}
- 			}
- 		}
- 	}
+	ai_potential = {
+		is_adult = yes
+	}
 	
- 	ai_potential = {
- 		is_adult = yes
- 	}
-	
- 	# Use hook
- 	send_option = {
- 		is_valid = {
- 			scope:actor = {
- 				has_usable_hook = scope:recipient
- 			}
- 			NOT = {
- 				scope:recipient = { is_imprisoned_by = scope:actor }
- 			}
- 		}
- 		flag = hook
- 		localization = SCHEME_HOOK
- 	}
- 	should_use_extra_icon = {
- 		scope:actor = { has_usable_hook = scope:recipient }
- 	}
- 	extra_icon = "gfx/interface/icons/character_interactions/hook_icon.dds"
+	# Use hook
+	send_option = {
+		is_valid = {
+			scope:actor = {
+				has_usable_hook = scope:recipient
+			}
+			NOT = {
+				scope:recipient = { is_imprisoned_by = scope:actor }
+			}
+		}
+		flag = hook
+		localization = SCHEME_HOOK
+	}
+	should_use_extra_icon = {
+		scope:actor = { has_usable_hook = scope:recipient }
+	}
+	extra_icon = "gfx/interface/icons/character_interactions/hook_icon.dds"
 
- 	send_options_exclusive = no
+	send_options_exclusive = no
 
 	ai_will_do = {
 		base = 100
 		
 		modifier = { # Make sure the AI uses hooks for this as it's % based
- 			scope:hook = yes
- 			add = 1
- 		}
+			scope:hook = yes
+			add = 1
+		}
 		
- 		modifier = {
- 			factor = 0
- 			scope:recipient.demand_conversion_likelihood_calculation < 10
- 			NOT = {
- 				scope:actor = {
- 					refusing_conversion_is_crime_trigger = {
- 						CHARACTER = scope:recipient
- 					}
- 				}
- 			}
- 		}
+		modifier = {
+			factor = 0
+			scope:recipient.demand_conversion_likelihood_calculation < 10
+			NOT = {
+				scope:actor = {
+					refusing_conversion_is_crime_trigger = {
+						CHARACTER = scope:recipient
+					}
+				}
+			}
+		}
 		
- 		modifier = {
- 			factor = 0
- 			scope:recipient.demand_conversion_likelihood_calculation < 70
- 			scope:actor = {
- 				gold < demand_conversion_bribe_size
- 			}
- 		}
+		modifier = {
+			factor = 0
+			scope:recipient.demand_conversion_likelihood_calculation < 70
+			scope:actor = {
+				gold < demand_conversion_bribe_size
+			}
+		}
 
- 		modifier = {
- 			factor = 0
- 			scope:recipient.demand_conversion_likelihood_calculation < 90
- 			scope:actor = {
- 				culture = {
- 					has_cultural_parameter = less_likely_to_force_conversion
- 				}
- 			}
- 		}
+		modifier = {
+			factor = 0
+			scope:recipient.demand_conversion_likelihood_calculation < 90
+			scope:actor = {
+				culture = {
+					has_cultural_parameter = less_likely_to_force_conversion
+				}
+			}
+		}
 
- 		modifier = { # Do not convert Righteous faith subjects, unless disturbingly zealous
- 			factor = 0
- 			scope:actor = {
- 				ai_zeal < 100
- 				faith = {
- 					faith_hostility_level = {
- 						target = scope:recipient.faith
- 						value <= faith_fully_accepted_level
- 					}
- 				}
- 			}
- 			NOT = { # If the subject has one of your holy sites, always try to convert
- 				scope:recipient = {
- 					any_sub_realm_county = {
- 						any_county_province = {
- 							barony = {
- 								is_holy_site_of = scope:actor.faith
- 							}
- 						}
- 					}
- 				}
- 			}
- 			NOT = {
- 				scope:recipient = {
- 					is_close_family_of = scope:actor
- 				}
- 			}
- 		}
-
- 		modifier = { # Astray faiths require specific circumstances to demand conversion of
- 			factor = 0
- 			scope:actor = {
- 				has_tolerant_faith_or_culture_trigger = yes
- 				ai_zeal < 50
- 				faith = {
- 					faith_hostility_level = {
- 						target = scope:recipient.faith
- 						value <= faith_astray_level
- 					}
- 				}
- 			}
- 			NOT = { # If the subject has one of your holy sites, always try to convert
- 				scope:recipient = {
- 					any_sub_realm_county = {
+		modifier = { # Do not convert Righteous faith subjects, unless disturbingly zealous
+			factor = 0
+			scope:actor = {
+				ai_zeal < 100
+				faith = {
+					faith_hostility_level = {
+						target = scope:recipient.faith
+						value <= faith_fully_accepted_level
+					}
+				}
+			}
+			NOT = { # If the subject has one of your holy sites, always try to convert
+				scope:recipient = {
+					any_sub_realm_county = {
 						any_county_province = {
- 							barony = {
- 								is_holy_site_of = scope:actor.faith
- 							}
- 						}
- 					}
- 				}
- 			}
- 			NOT = {
- 				scope:recipient = {
- 					is_close_family_of = scope:actor
- 				}
- 			}
- 		}
+							barony = {
+								is_holy_site_of = scope:actor.faith
+							}
+						}
+					}
+				}
+			}
+			NOT = {
+				scope:recipient = {
+					is_close_family_of = scope:actor
+				}
+			}
+		}
 
- 		modifier = { # Astray faiths require specific circumstances to demand conversion of
- 			factor = 0
- 			scope:actor = {
- 				faith = { has_doctrine = doctrine_pluralism_fundamentalist }
- 				ai_zeal < -10
- 				faith = {
- 					faith_hostility_level = {
- 						target = scope:recipient.faith
- 						value <= faith_astray_level
- 					}
- 				}
- 			}
- 			NOT = { # If the subject has one of your holy sites, always try to convert
- 				scope:recipient = {
- 					any_sub_realm_county = {
- 						any_county_province = {
- 							barony = {
- 								is_holy_site_of = scope:actor.faith
- 							}
- 						}
- 					}
- 				}
- 			}
- 			NOT = {
- 				scope:recipient = {
- 					is_close_family_of = scope:actor
- 				}
- 			}
- 		}
+		modifier = { # Astray faiths require specific circumstances to demand conversion of
+			factor = 0
+			scope:actor = {
+				has_tolerant_faith_or_culture_trigger = yes
+				ai_zeal < 50
+				faith = {
+					faith_hostility_level = {
+						target = scope:recipient.faith
+						value <= faith_astray_level
+					}
+				}
+			}
+			NOT = { # If the subject has one of your holy sites, always try to convert
+				scope:recipient = {
+					any_sub_realm_county = {
+						any_county_province = {
+							barony = {
+								is_holy_site_of = scope:actor.faith
+							}
+						}
+					}
+				}
+			}
+			NOT = {
+				scope:recipient = {
+					is_close_family_of = scope:actor
+				}
+			}
+		}
 
- 		modifier = { # Astray faiths require specific circumstances to demand conversion of
- 			factor = 0
- 			scope:actor = {
- 				NOR = {
- 					faith = { has_doctrine = doctrine_pluralism_fundamentalist }
- 					has_tolerant_faith_or_culture_trigger = yes
- 				}
- 				ai_zeal < 0
- 				faith = {
- 					faith_hostility_level = {
- 						target = scope:recipient.faith
- 						value <= faith_astray_level
- 					}
- 				}
- 			}
- 			NOT = { # If the subject has one of your holy sites, always try to convert
- 				scope:recipient = {
- 					any_sub_realm_county = {
- 						any_county_province = {
- 							barony = {
- 								is_holy_site_of = scope:actor.faith
- 							}
- 						}
- 					}
- 				}
- 			}
- 		}
- 	}
- 	ai_accept = {
- 		base = 0
- 		religion_demand_conversion_default_modifier = yes
- 		modifier = {
- 			desc = might_ask_for_something_in_return_warning_line_break
- 			add = 0
- 		}
- 	}
+		modifier = { # Astray faiths require specific circumstances to demand conversion of
+			factor = 0
+			scope:actor = {
+				faith = { has_doctrine = doctrine_pluralism_fundamentalist }
+				ai_zeal < -10
+				faith = {
+					faith_hostility_level = {
+						target = scope:recipient.faith
+						value <= faith_astray_level
+					}
+				}
+			}
+			NOT = { # If the subject has one of your holy sites, always try to convert
+				scope:recipient = {
+					any_sub_realm_county = {
+						any_county_province = {
+							barony = {
+								is_holy_site_of = scope:actor.faith
+							}
+						}
+					}
+				}
+			}
+			NOT = {
+				scope:recipient = {
+					is_close_family_of = scope:actor
+				}
+			}
+		}
+
+		modifier = { # Astray faiths require specific circumstances to demand conversion of
+			factor = 0
+			scope:actor = {
+				NOR = {
+					faith = { has_doctrine = doctrine_pluralism_fundamentalist }
+					has_tolerant_faith_or_culture_trigger = yes
+				}
+				ai_zeal < 0
+				faith = {
+					faith_hostility_level = {
+						target = scope:recipient.faith
+						value <= faith_astray_level
+					}
+				}
+			}
+			NOT = { # If the subject has one of your holy sites, always try to convert
+				scope:recipient = {
+					any_sub_realm_county = {
+						any_county_province = {
+							barony = {
+								is_holy_site_of = scope:actor.faith
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	ai_accept = {
+		base = 0
+		religion_demand_conversion_default_modifier = yes
+		modifier = {
+			desc = might_ask_for_something_in_return_warning_line_break
+			add = 0
+		}
+	}
  }
 
 #Etruscan ask courtiers like spouse to convert
  ask_for_conversion_etruscan_courtier_interaction = {
- 	category = interaction_category_religion
+	category = interaction_category_religion
 
- 	special_interaction = request_conversion_interaction
+	special_interaction = request_conversion_interaction
 	
- 	desc = {
- 		desc = ask_for_conversion_interaction_desc
- 		triggered_desc = {
- 			trigger = {
- 				scope:actor = {
- 					refusing_conversion_is_crime_trigger = {
- 						CHARACTER = scope:recipient
+	desc = {
+		desc = ask_for_conversion_interaction_desc
+		triggered_desc = {
+			trigger = {
+				scope:actor = {
+					refusing_conversion_is_crime_trigger = {
+						CHARACTER = scope:recipient
 					}
- 				}
- 				scope:recipient = {
- 					target_is_liege_or_above = scope:actor
- 				}
- 			}
- 			desc = demand_conversion_vassal_ruler_is_crime
- 		}
- 	}
+				}
+				scope:recipient = {
+					target_is_liege_or_above = scope:actor
+				}
+			}
+			desc = demand_conversion_vassal_ruler_is_crime
+		}
+	}
 	
- 	ai_targets = {
- 		ai_recipients = courtiers
- 		chance = 0.25
- 	}
- 	ai_target_quick_trigger = {
- 		adult = yes
- 	}
- 	ai_frequency = 12
+	ai_targets = {
+		ai_recipients = courtiers
+		chance = 0.25
+	}
+	ai_target_quick_trigger = {
+		adult = yes
+	}
+	ai_frequency = 12
 	
- 	is_shown = {
- 		NOT = { scope:actor.faith = scope:recipient.faith }
- 		scope:recipient = { is_courtier_of = scope:actor }
- 		scope:recipient = { is_ruler = no }
- 		scope:recipient = { is_imprisoned = no }
- 		scope:actor = {
- 			is_ai = no
- 			has_character_flag = open_demand_convertion_to_polytheism_menu
- 		}
- 	}
+	is_shown = {
+		NOT = { scope:actor.faith = scope:recipient.faith }
+		scope:recipient = { is_courtier_of = scope:actor }
+		scope:recipient = { is_ruler = no }
+		scope:recipient = { is_imprisoned = no }
+		scope:actor = {
+			is_ai = no
+			has_character_flag = open_demand_conversion_to_polytheism_menu
+		}
+	}
 
- 	is_valid_showing_failures_only = {
- 		valid_demand_conversion_conditions_trigger = yes
- 	}
+	is_valid_showing_failures_only = {
+		valid_demand_conversion_conditions_trigger = yes
+	}
 
- 	ai_accept = {
- 		base = 0
- 		religion_demand_conversion_default_modifier = yes
- 	}
+	ai_accept = {
+		base = 0
+		religion_demand_conversion_default_modifier = yes
+	}
 	
- 	auto_accept = {
- 		custom_description = {
- 			text = "spending_hook"
- 			subject = scope:actor
- 			object = scope:recipient
- 			scope:hook = yes
- 			scope:actor = { has_strong_hook = scope:recipient }
- 		}
- 	}
+	auto_accept = {
+		custom_description = {
+			text = "spending_hook"
+			subject = scope:actor
+			object = scope:recipient
+			scope:hook = yes
+			scope:actor = { has_strong_hook = scope:recipient }
+		}
+	}
 	
- 	ai_min_reply_days = 1
- 	ai_max_reply_days = 5
+	ai_min_reply_days = 1
+	ai_max_reply_days = 5
 	
- 	on_accept = {
- 		demand_etruscan_conversion_interaction_effect = yes
- 		hidden_effect = {
- 			scope:actor = {
- 				send_interface_message = {	
- 					title = ask_for_conversion_courtier_interaction.tt
- 					left_icon = scope:recipient
- 					scope:recipient = {
- 						show_as_tooltip = { demand_etruscan_conversion_interaction_effect = yes }
- 					}
- 				}
- 			}
- 		}
- 		if = {
- 			limit = { scope:hook = yes }
- 			scope:actor = {
- 				if = {
- 					limit = {
- 						has_usable_hook = scope:recipient
- 					}
- 					use_hook = scope:recipient
- 				}
- 			}
- 			scope:recipient = {
- 				trigger_event = char_interaction.0180
- 			}
- 		}
- 		if = {
- 			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
- 			scope:recipient = { release_from_prison = yes }
- 			scope:recipient = {
- 				trigger_event = char_interaction.0180
- 			}
- 		}
- 	}
+	on_accept = {
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_etruscan_conversion_interaction_effect
+		}
+	}
 
- 	on_decline = {
- 		send_interface_toast = {
- 			title = ask_for_conversion_decline_notification
- 			left_icon = scope:recipient
- 		}
- 	}
+	on_decline = {
+		pr_ask_conversion_decline_effect = yes
+	}
 
- 	# Use hook
- 	send_option = {
- 		is_valid = {
- 			scope:actor = {
- 				has_usable_hook = scope:recipient
- 			}
- 			NOT = {
- 				scope:recipient = { is_imprisoned_by = scope:actor }
- 			}
- 		}
- 		flag = hook
- 		localization = SCHEME_HOOK
- 	}
- 	should_use_extra_icon = {
- 		scope:actor = { has_usable_hook = scope:recipient }
- 	}
- 	extra_icon = "gfx/interface/icons/character_interactions/hook_icon.dds"
- 	send_options_exclusive = no
-
-	
- 	ai_potential = {
- 		is_adult = yes
- 	}
-	
- 	ai_will_do = {
- 		base = 100
-		
- 		modifier = { # The AI will only use a Hook if they couldn't otherwise do this
- 			scope:hook = yes
- 			add = -1
- 		}
-		
- 		modifier = { # The AI doesn't really want to convert Diasporic culture courtiers
- 			scope:recipient = {
- 				faith.religion = religion:judaism_religion
- 				culture = {
- 					has_cultural_tradition = tradition_diasporic
- 				}
- 			}
- 			factor = 0
- 		}
-
- 		modifier = { # Do not convert Righteous faith subjects, unless disturbingly zealous
- 			factor = 0
+	# Use hook
+	send_option = {
+		is_valid = {
 			scope:actor = {
- 				ai_zeal < 100
- 				faith = {
- 					faith_hostility_level = {
- 						target = scope:recipient.faith
- 						value <= faith_fully_accepted_level
- 					}
- 				}
- 			}
- 			NOT = {
- 				scope:recipient = {
- 					is_close_family_of = scope:actor
- 				}
- 			}
- 		}
+				has_usable_hook = scope:recipient
+			}
+			NOT = {
+				scope:recipient = { is_imprisoned_by = scope:actor }
+			}
+		}
+		flag = hook
+		localization = SCHEME_HOOK
+	}
+	should_use_extra_icon = {
+		scope:actor = { has_usable_hook = scope:recipient }
+	}
+	extra_icon = "gfx/interface/icons/character_interactions/hook_icon.dds"
+	send_options_exclusive = no
 
- 		modifier = { # Astray faiths require specific circumstances to demand conversion of
- 			factor = 0
- 			scope:actor = {
- 				has_tolerant_faith_or_culture_trigger = yes
- 				ai_zeal < 50
- 				faith = {
- 					faith_hostility_level = {
- 						target = scope:recipient.faith
- 						value <= faith_astray_level
- 					}
- 				}
- 			}
- 			NOT = {
- 				scope:recipient = {
- 					is_close_family_of = scope:actor
- 				}
- 			}
- 		}
+	
+	ai_potential = {
+		is_adult = yes
+	}
+	
+	ai_will_do = {
+		base = 100
+		
+		modifier = { # The AI will only use a Hook if they couldn't otherwise do this
+			scope:hook = yes
+			add = -1
+		}
+		
+		modifier = { # The AI doesn't really want to convert Diasporic culture courtiers
+			scope:recipient = {
+				faith.religion = religion:judaism_religion
+				culture = {
+					has_cultural_tradition = tradition_diasporic
+				}
+			}
+			factor = 0
+		}
 
- 		modifier = { # Astray faiths require specific circumstances to demand conversion of
- 			factor = 0
- 			scope:actor = {
- 				faith = { has_doctrine = doctrine_pluralism_fundamentalist }
- 				ai_zeal < -10
- 				faith = {
- 					faith_hostility_level = {
- 						target = scope:recipient.faith
- 						value <= faith_astray_level
- 					}
- 				}
- 			}
- 			NOT = {
- 				scope:recipient = {
- 					is_close_family_of = scope:actor
- 				}
- 			}
- 		}
+		modifier = { # Do not convert Righteous faith subjects, unless disturbingly zealous
+			factor = 0
+			scope:actor = {
+				ai_zeal < 100
+				faith = {
+					faith_hostility_level = {
+						target = scope:recipient.faith
+						value <= faith_fully_accepted_level
+					}
+				}
+			}
+			NOT = {
+				scope:recipient = {
+					is_close_family_of = scope:actor
+				}
+			}
+		}
 
- 		modifier = { # Astray faiths require specific circumstances to demand conversion of
- 			factor = 0
- 			scope:actor = {
- 				NOR = {
- 					faith = { has_doctrine = doctrine_pluralism_fundamentalist }
- 					has_tolerant_faith_or_culture_trigger = yes
- 				}
- 				ai_zeal < 0
- 				faith = {
- 					faith_hostility_level = {
- 						target = scope:recipient.faith
- 						value <= faith_astray_level
- 					}
- 				}
- 			}
- 			NOT = {
- 				scope:recipient = {
- 					is_close_family_of = scope:actor
- 				}
- 			}
- 		}
- 	}
+		modifier = { # Astray faiths require specific circumstances to demand conversion of
+			factor = 0
+			scope:actor = {
+				has_tolerant_faith_or_culture_trigger = yes
+				ai_zeal < 50
+				faith = {
+					faith_hostility_level = {
+						target = scope:recipient.faith
+						value <= faith_astray_level
+					}
+				}
+			}
+			NOT = {
+				scope:recipient = {
+					is_close_family_of = scope:actor
+				}
+			}
+		}
+
+		modifier = { # Astray faiths require specific circumstances to demand conversion of
+			factor = 0
+			scope:actor = {
+				faith = { has_doctrine = doctrine_pluralism_fundamentalist }
+				ai_zeal < -10
+				faith = {
+					faith_hostility_level = {
+						target = scope:recipient.faith
+						value <= faith_astray_level
+					}
+				}
+			}
+			NOT = {
+				scope:recipient = {
+					is_close_family_of = scope:actor
+				}
+			}
+		}
+
+		modifier = { # Astray faiths require specific circumstances to demand conversion of
+			factor = 0
+			scope:actor = {
+				NOR = {
+					faith = { has_doctrine = doctrine_pluralism_fundamentalist }
+					has_tolerant_faith_or_culture_trigger = yes
+				}
+				ai_zeal < 0
+				faith = {
+					faith_hostility_level = {
+						target = scope:recipient.faith
+						value <= faith_astray_level
+					}
+				}
+			}
+			NOT = {
+				scope:recipient = {
+					is_close_family_of = scope:actor
+				}
+			}
+		}
+	}
  }
 
 #Germanic
@@ -12614,7 +10017,7 @@ demand_conversion_norse_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -12639,122 +10042,17 @@ demand_conversion_norse_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_norse_vassal_ruler_interaction_effect
 		}
-		demand_conversion_norse_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_norse_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -12984,7 +10282,7 @@ ask_for_conversion_norse_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -13011,46 +10309,13 @@ ask_for_conversion_norse_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_norse_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_norse_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_norse_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -13227,7 +10492,7 @@ demand_conversion_anglo_saxon_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -13252,122 +10517,17 @@ demand_conversion_anglo_saxon_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_anglo_saxon_vassal_ruler_interaction_effect
 		}
-		demand_conversion_anglo_saxon_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_anglo_saxon_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -13597,7 +10757,7 @@ ask_for_conversion_anglo_saxon_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -13624,46 +10784,13 @@ ask_for_conversion_anglo_saxon_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_anglo_saxon_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_anglo_saxon_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_anglo_saxon_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -13841,7 +10968,7 @@ demand_conversion_german_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -13866,122 +10993,17 @@ demand_conversion_german_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_german_vassal_ruler_interaction_effect
 		}
-		demand_conversion_german_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_german_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -14211,7 +11233,7 @@ ask_for_conversion_german_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -14238,46 +11260,13 @@ ask_for_conversion_german_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_german_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_german_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_german_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -14455,7 +11444,7 @@ demand_conversion_scythian_vassal_ruler_interaction = {
 		}
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -14480,122 +11469,17 @@ demand_conversion_scythian_vassal_ruler_interaction = {
 
 
 	on_accept = {
-		scope:actor = {
-			trigger_event = religious_interaction.2002
+		pr_demand_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_conversion_scythian_vassal_ruler_interaction_effect
 		}
-		demand_conversion_scythian_vassal_ruler_interaction_effect  = yes
 	}
 
 	on_decline = {
-		scope:recipient = {
-			hidden_effect = {
-				random_list = {
-					80 = { # Conditional acceptance
-						modifier = {
-							factor = 0 # Heresiarchs never agree to convert
-							scope:recipient = {
-								has_trait = heresiarch
-							}
-						}
-						ai_value_modifier = {
-							ai_greed = 0.5
-						}
-						random_list = {
-							50 = { #They ask for gold
-								modifier = {
-									add = 50 # More likely to ask for gold if they're poor
-									scope:recipient.short_term_gold < medium_gold_value
-								}
-								modifier = {
-									add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
-										value = 50
-										if = {
-											# Especially true if they're in debt!
-											limit = { gold < 0 }
-											add = 150
-										}
-									}									
-									is_at_war = yes
-									any_character_war = {
-										is_war_leader = scope:recipient
-									}
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2011
-									}
-								}
-							}
-							500 = { #They ask for a favor
-								trigger = {
-									exists = scope:recipient.capital_county
-									NOT = { has_hook = scope:actor }
-								}
-								# Direct feudal vassals appreciate favors more (they can improve their contract).
-								modifier = {
-									add = {
-										value = 50
-										# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
-										if = {
-											limit = { is_powerful_vassal_of = scope:actor }
-											add = 100
-										}
-									}
-									this.liege = scope:actor
-									has_government = feudal_government
-								}
-								scope:actor = {
-									trigger_event = {
-										id = religious_interaction.2012
-									}
-								}
-							}
-						}
-
-					}
-					20 = { # Full refuse
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 40
-						}
-						modifier = {
-							add = 20
-							scope:recipient.demand_conversion_likelihood_calculation < 20
-						}
-						modifier = {
-							add = 50
-							scope:recipient.demand_conversion_likelihood_calculation < 0
-						}
-						scope:actor = {
-							trigger_event = {
-								id = religious_interaction.2003
-							}
-						}
-					}
-				}
-			}
-			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
-			show_as_tooltip = {
-				#Negative opinions
-				add_opinion = {
-					modifier = demanded_my_conversion_opinion
-					target = scope:actor
-					opinion = -10
-				}
-				scope:actor = {
-					if = {
-						limit = {
-							refusing_conversion_is_crime_trigger = {
-								CHARACTER = scope:recipient
-							}
-						}
-						custom_tooltip = action_can_lawfully_imprison_label
-					}
-				}
-			}
+		pr_demand_conversion_decline_effect = {
+			CONVERSION_EFFECT = demand_conversion_scythian_vassal_ruler_interaction_effect
 		}
 	}
-	
+
 	ai_potential = {
 		is_adult = yes
 	}
@@ -14825,7 +11709,7 @@ ask_for_conversion_scythian_courtier_interaction = {
 		scope:recipient = { is_imprisoned = no }
 		scope:actor = {
 			is_ai = no
-			has_character_flag = open_demand_convertion_to_polytheism_menu
+			has_character_flag = open_demand_conversion_to_polytheism_menu
 		}
 	}
 
@@ -14852,46 +11736,13 @@ ask_for_conversion_scythian_courtier_interaction = {
 	ai_max_reply_days = 5
 	
 	on_accept = {
-		demand_scythian_conversion_interaction_effect = yes
-		hidden_effect = {
-			scope:actor = {
-				send_interface_message = {	
-					title = ask_for_conversion_courtier_interaction.tt
-					left_icon = scope:recipient
-					scope:recipient = {
-						show_as_tooltip = { demand_scythian_conversion_interaction_effect = yes }
-					}
-				}
-			}
-		}
-		if = {
-			limit = { scope:hook = yes }
-			scope:actor = {
-				if = {
-					limit = {
-						has_usable_hook = scope:recipient
-					}
-					use_hook = scope:recipient
-				}
-			}
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
-		}
-		if = {
-			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
-			scope:recipient = { release_from_prison = yes }
-			scope:recipient = {
-				trigger_event = char_interaction.0180
-			}
+		pr_ask_conversion_accept_effect = {
+			CONVERSION_EFFECT = demand_scythian_conversion_interaction_effect
 		}
 	}
 
 	on_decline = {
-		send_interface_toast = {
-			title = ask_for_conversion_decline_notification
-			left_icon = scope:recipient
-		}
+		pr_ask_conversion_decline_effect = yes
 	}
 
 	# Use hook
@@ -15014,4 +11865,4 @@ ask_for_conversion_scythian_courtier_interaction = {
 			}
 		}
 	}
-}
+}

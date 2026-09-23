@@ -1,0 +1,51 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Daco-Thracian Decisions
+  # Localization for pr_daco_thracian_decisions.txt
+  # =============================================
+
+  # --- Choose Main Deity Decision ---
+  pr_daco_thracian_choose_main_deity_decision:0 "Choose Main Deity"
+  pr_daco_thracian_choose_main_deity_decision_desc:0 "#F The gods of the Dacian people call for a champion to represent their will in the mortal realm. As a follower of the Dacian faith, I must select a patron deity who will guide my actions and bless my rule with divine favor.#!/nBy choosing a main deity, I shall establish a personal connection with the divine, gaining unique blessings and modifiers that reflect the nature of my chosen god or goddess."
+  pr_daco_thracian_choose_main_deity_decision_tooltip:0 "#T Select a patron deity from your Dacian faith to gain divine blessings#!"
+  pr_daco_thracian_choose_main_deity_decision_confirm:0 "Choose Main Deity!"
+  pr_daco_thracian_choose_main_deity_decision_tt:0 "#T Available Deities for [ROOT.Char.GetFaith.GetName]#!"
+
+  # --- Main Deity Selection Descriptions: Dacian ---
+  select_main_deity_dacian_decision.select_gebeleizis:0 "#T Gebeleizis#!\n#P The thunderer, lord of storm and rain#!"
+  select_main_deity_dacian_decision.select_zalmoxis:0 "#T Zalmoxis#!\n#P God of the afterlife and immortality#!"
+  select_main_deity_dacian_decision.select_dionysus:0 "#T Dionysus#!\n#P God of wine, ecstasy, and the wild#!"
+  select_main_deity_dacian_decision.select_pleistoros:0 "#T Pleistoros#!\n#P God of war and battle#!"
+  select_main_deity_dacian_decision.select_derzelas:0 "#T Derzelas#!\n#P God of the underworld and abundance#!"
+
+  # --- Embrace Dacian Culture Decision ---
+  pr_daco_thracian_embrace_dacian_culture_decision:0 "Embrace Dacian Culture"
+  pr_daco_thracian_embrace_dacian_culture_decision_desc:0 "#F The ancient Dacian people once held sway over the Carpathian lands, their culture a tapestry woven from the wisdom of Zalmoxis and the strength of their warriors. Though the centuries have dimmed these traditions, the spirit of Dacia endures in the land itself.#!\nBy embracing the ancient Dacian culture, I shall revive the customs of my forebears and rekindle the flame of our heritage, forging a realm that honors the old ways of the Dacian people."
+  pr_daco_thracian_embrace_dacian_culture_decision_tooltip:0 "Revive the ancient Dacian culture and rekindle its traditions"
+  pr_daco_thracian_embrace_dacian_culture_decision_confirm:0 "Embrace Dacian Culture!"
+
+  # --- Create Kingdom of Dacia Decision ---
+  pr_daco_thracian_create_dacia_decision:0 "Create the Kingdom of Dacia"
+  pr_daco_thracian_create_dacia_decision_desc:0 "#F The ancient kingdom of Dacia once stood as a proud realm in the heart of the Carpathians, its warriors feared and its wise men revered. From the mountain strongholds of Transylvania to the fertile valleys of the Temes, our people have endured through the ages. Now, as the ruler who controls these historic lands, I shall revive the kingdom of Dacia and restore its former glory.#!\nBy creating Dacia, I shall establish a new kingdom that unites the Carpathian duchies under a single banner, forging a realm that honors our shared Dacian heritage and strength."
+  pr_daco_thracian_create_dacia_decision_tooltip:0 "#T Form the ancient kingdom of Dacia by uniting the Carpathian duchies#!"
+  pr_daco_thracian_create_dacia_decision_confirm:0 "Create the Kingdom of Dacia!"
+  pr_daco_thracian_create_dacia_decision_effect_tooltip:0 "#P The kingdom of Dacia will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_temes.GetNameNoTier], [title_d_transylvania.GetNameNoTier], [title_d_transylvanian_alps.GetNameNoTier], [title_d_transcarpathia.GetNameNoTier], and [title_d_bihar.GetNameNoTier] will become part of Dacia $EFFECT_LIST_BULLET$ Requires significant [gold|E] and [prestige|E] investment @warning_icon! #X This action cannot be undone!#"
+
+  # --- Create Kingdom of Odrysia Decision ---
+  pr_daco_thracian_create_odrysia_decision:0 "Create the Kingdom of Odrysia"
+  pr_daco_thracian_create_odrysia_decision_desc:0 "#F The ancient kingdom of Odrysia once stood as the dominant Thracian power, uniting the tribes of the Hebrus valley and the Black Sea coast under a single wise and warlike rule. From the plains of Philippopolis to the shores of Dobrudja, our people have endured the tides of conquest and time. Now, as the ruler who controls these historic lands, I shall revive the kingdom of Odrysia and restore its former glory.#!\nBy creating Odrysia, I shall establish a new kingdom that unites the Thracian lands under a single banner, forging a realm that honors our shared Daco-Thracian heritage and strength."
+  pr_daco_thracian_create_odrysia_decision_tooltip:0 "#T Form the ancient kingdom of Odrysia by uniting the Thracian lands#!"
+  pr_daco_thracian_create_odrysia_decision_confirm:0 "Create the Kingdom of Odrysia!"
+  pr_daco_thracian_create_odrysia_decision_effect_tooltip:0 "#P The kingdom of Odrysia will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_thrace.GetNameNoTier], [title_d_philippopolis.GetNameNoTier], [title_d_dobrudja.GetNameNoTier], and [title_d_turnovo.GetNameNoTier] will become part of Odrysia $EFFECT_LIST_BULLET$ Requires significant [gold|E] and [prestige|E] investment @warning_icon! #X This action cannot be undone!#"
+
+  # --- Zalmoxis Human Sacrifice Decision ---
+  pr_daco_thracian_zalmoxis_sacrifice_decision:0 "Perform the Zalmoxis Sacrifice"
+  pr_daco_thracian_zalmoxis_sacrifice_decision_desc:0 "#F The teachings of Zalmoxis promise that those who offer a worthy soul to the god shall be granted passage beyond the veil, freed from the cycle of mortal suffering. In times of war, when the blood of our enemies flows freely, the path to the divine stands open.#!\nBy performing the sacred sacrifice, I shall send a chosen captive to Zalmoxis as a messenger, seeking his blessing and the promise of immortality for our people."
+  pr_daco_thracian_zalmoxis_sacrifice_decision_tooltip:0 "#T Offer a human sacrifice to Zalmoxis during wartime for divine favor#!"
+  pr_daco_thracian_zalmoxis_sacrifice_decision_confirm:0 "Perform the Sacrifice!"
+
+  # --- Place Altar in Kogaionon Decision ---
+  pr_daco_thracian_place_kogaionon_altar_decision:0 "Place the Altar in the Kogaionon"
+  pr_daco_thracian_place_kogaionon_altar_decision_desc:0 "#F The sacred mountain of Kogaionon, the dwelling place of Zalmoxis, has long been the spiritual heart of the Dacian people. Here, among the caves and peaks of Transylvania, the ancient priests once communed with the divine. Now, as the ruler who holds these sacred lands, I shall restore the altar of Zalmoxis and rekindle the old covenant.#!\nBy placing the altar in the Kogaionon, I shall establish a holy site of great power, honoring the ancient pact between the Dacian people and their god."
+  pr_daco_thracian_place_kogaionon_altar_decision_tooltip:0 "#T Restore the sacred altar of Zalmoxis in the Kogaionon#!"
+  pr_daco_thracian_place_kogaionon_altar_decision_confirm:0 "Restore the Altar!"

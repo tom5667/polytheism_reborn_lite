@@ -1,0 +1,19 @@
+l_german:
+  # =============================================
+  # Polytheism Reborn - Iberische Entscheidungen
+  # Lokalisierung für pr_iberian_decisions.txt
+  # =============================================
+
+  # --- Hauptgottheit wählen (Iberisch) ---
+  pr_iberian_choose_main_deity_decision:0 "Wähle Hauptgottheit"
+  pr_iberian_choose_main_deity_decision_desc:0 "#F Die Götter des iberischen Pantheons verlangen einen Champion, der ihren Willen in der sterblichen Welt vertritt. Als Herrscher des iberischen Glaubens muss ich eine Schutzgottheit auswählen, die meine Handlungen leitet und meine Herrschaft mit göttlichem Segen bedenkt.#!/n\nDurch die Wahl einer Hauptgottheit werde ich eine persönliche Verbindung mit dem Göttlichen herstellen und einzigartige Segnungen und Modifikatoren erhalten, die die Natur meiner gewählten Gottheit oder Göttin widerspiegeln."
+  pr_iberian_choose_main_deity_decision_tooltip:0 "#T Wähle eine Schutzgottheit aus deinem iberischen Glauben, um göttliche Segnungen zu erhalten#!/"
+  pr_iberian_choose_main_deity_decision_confirm:0 "Wähle Hauptgottheit!"
+  pr_iberian_choose_main_deity_decision_tt:0 "#T Verfügbare Gottheiten für [ROOT.Char.GetFaith.GetName]#!/"
+
+  # --- Auswahlbeschreibungen der Hauptgottheit: Iberisch ---
+  select_main_deity_iberian_decision.select_reue:0 "#T Reue#!/\n#P Der höchste Himmelsgott, Vater des iberischen Pantheons#!/"
+  select_main_deity_iberian_decision.select_cariocecus:0 "#T Cariocecus#!/\n#P Gott des Krieges und des heiligen Kriegespfades#!/"
+  select_main_deity_iberian_decision.select_ataegina:0 "#T Ataegina#!/\n#P Göttin der Fruchtbarkeit, Wiedergeburt und der Morgendämmerung#!/"
+  select_main_deity_iberian_decision.select_lucubo:0 "#T Lucubo#!/\n#P Gott des Reichtums, Handels und Wohlstands#!/"
+  select_main_deity_iberian_decision.select_arancio:0 "#T Arancio#!/\n#P Gott der Heilung und der fließenden Gewässer#!/"

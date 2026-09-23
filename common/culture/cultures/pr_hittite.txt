@@ -1,26 +1,33 @@
-﻿hittite = {
-	color = { 180 130 60 } # Bronze/Clay color representing Hittite Anatolia
-	
+﻿##################################################
+# Polytheism Reborn - Hittite Culture
+##################################################
+
+pr_hittite = {
+	color = { 180 130 60 }
+	created = 100.1.1
+
 	ethos = ethos_bellicose
-	heritage = heritage_hittite
-	language = language_hittite
+	heritage = heritage_pr_hittite
+	language = language_pr_hittite
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	traditions = {
 		tradition_horse_breeder
 		tradition_hereditary_hierarchy
 		tradition_legalistic
 		tradition_mountain_homes
 	}
-	
-	name_list = name_list_hittite
-	
+
+	name_list = name_list_pr_hittite
+
 	coa_gfx = { byzantine_group_coa_gfx western_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
-	
+
 	ethnicities = {
-		5 = mediterranean_byzantine
-		5 = arab
+		50 = mediterranean_byzantine
+		30 = mediterranean
+		20 = arab
 	}
 }

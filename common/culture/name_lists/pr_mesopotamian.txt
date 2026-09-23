@@ -1,4 +1,4 @@
-﻿name_list_babylonian = {
+﻿name_list_pr_babylonian = {
 
 	cadet_dynasty_names = {
 		"dynn_KA_rawA_n"
@@ -407,7 +407,7 @@ name_list_pr_assyrian = {
 	}
 }
 
-name_list_sumerian = {
+name_list_pr_sumerian = {
 
 	cadet_dynasty_names = {
 		"dynn_KA_rawA_n"
@@ -610,4 +610,4 @@ name_list_sumerian = {
 		{ name = "mercenary_company_band_of_medes" }
 		{ name = "mercenary_company_immortals_of_place" }
 	}
-}
+}

@@ -1,0 +1,40 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Egyptian Decisions
+  # Localization for pr_egyptian_decisions.txt
+  # =============================================
+
+  # --- Create Kingdom of Lower Egypt Decision ---
+  pr_egyptian_kingdom_of_lower_egypt_decision:0 "Create the Kingdom of Lower Egypt"
+  pr_egyptian_kingdom_of_lower_egypt_decision_desc:0 "#F The fertile lands of the Nile Delta, once the heartland of Lower Egypt, have long awaited a ruler worthy of their ancient legacy. From the great city of Alexandria to the bustling markets of Cairo, these lands have been divided for too long.#!\nBy creating the Kingdom of Lower Egypt, I shall restore the ancient legacy of the pharaohs and unite the Delta under my rule."
+  pr_egyptian_kingdom_of_lower_egypt_decision_tooltip:0 "#T Form the Kingdom of Lower Egypt by uniting the Nile Delta#!"
+  pr_egyptian_kingdom_of_lower_egypt_decision_confirm:0 "Create the Kingdom of Lower Egypt!"
+  pr_egyptian_kingdom_of_lower_egypt_decision_effect_tooltip:0 "#P The Kingdom of Lower Egypt will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_cairo.GetNameNoTier], [title_d_sinai.GetNameNoTier], [title_d_delta.GetNameNoTier], and [title_d_alexandria.GetNameNoTier] will become [de_jure|E] part of Lower Egypt$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"
+
+  # --- Create Kingdom of Upper Egypt Decision ---
+  pr_egyptian_kingdom_of_upper_egypt_decision:0 "Create the Kingdom of Upper Egypt"
+  pr_egyptian_kingdom_of_upper_egypt_decision_desc:0 "#F The ancient lands of Upper Egypt, once the cradle of pharaonic civilization, stretch along the Nile from the cataracts to the borders of the Delta. These lands, with their sacred temples and ancient monuments, have long been divided.#!\nBy creating the Kingdom of Upper Egypt, I shall restore the southern legacy of the pharaohs and unite the Upper Nile under my rule."
+  pr_egyptian_kingdom_of_upper_egypt_decision_tooltip:0 "#T Form the Kingdom of Upper Egypt by uniting the Upper Nile lands#!"
+  pr_egyptian_kingdom_of_upper_egypt_decision_confirm:0 "Create the Kingdom of Upper Egypt!"
+  pr_egyptian_kingdom_of_upper_egypt_decision_effect_tooltip:0 "#P The Kingdom of Upper Egypt will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_al-said.GetNameNoTier], [title_d_eastern_desert.GetNameNoTier], and [title_d_al-wahat.GetNameNoTier] will become [de_jure|E] part of Upper Egypt$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"
+
+  # --- Restore Egyptus Empire Decision ---
+  pr_egyptian_restore_egyptus_decision:0 "Restore the Empire of Egyptus"
+  pr_egyptian_restore_egyptus_decision_desc:0 "#F The dual kingdoms of Upper and Lower Egypt, once united under the crown of the pharaohs, formed the greatest empire the ancient world had ever known. From the cataracts of Nubia to the shores of the Mediterranean, the Empire of Egyptus stood as a beacon of civilization and divine kingship.#!\nBy restoring the Empire of Egyptus, I shall unite both kingdoms under a single banner and reclaim the full glory of the pharaohs."
+  pr_egyptian_restore_egyptus_decision_tooltip:0 "#T Restore the Empire of Egyptus by uniting Upper and Lower Egypt#!"
+  pr_egyptian_restore_egyptus_decision_confirm:0 "Restore the Empire of Egyptus!"
+  pr_egyptian_restore_egyptus_decision_effect_tooltip:0 "#P The Empire of Egyptus will be formed as a new [empire|E] title#!/n$EFFECT_LIST_BULLET$[title_k_upper_egypt.GetNameNoTier] and [title_k_lower_egypt.GetNameNoTier] will become [de_jure|E] part of the empire$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"
+
+  # --- Choose Main Deity (Kemetic) Decision ---
+  pr_egyptian_choose_main_deity_decision:0 "Choose Main Deity"
+  pr_egyptian_choose_main_deity_decision_desc:0 "#F The gods of the Kemetic pantheon call for a champion to represent their will in the mortal realm. As a ruler of the Kemetic faith, I must select a patron deity who will guide my actions and bless my rule with divine favor.#!\nBy choosing a main deity, I shall establish a personal connection with the divine, gaining unique blessings and modifiers that reflect the nature of my chosen god or goddess."
+  pr_egyptian_choose_main_deity_decision_tooltip:0 "#T Select a patron deity from your Kemetic faith to gain divine blessings#!"
+  pr_egyptian_choose_main_deity_decision_confirm:0 "Choose Main Deity!"
+  pr_egyptian_choose_main_deity_decision_tt:0 "#T Available Deities for [ROOT.Char.GetFaith.GetName]#!"
+
+  # --- Main Deity Selection Descriptions: Kemetic ---
+  select_main_deity_kemetic_decision.select_amun_ra:0 "#T Amun-Ra#!\n#P The king of the gods, lord of creation and the hidden wind#!"
+  select_main_deity_kemetic_decision.select_ra:0 "#T Ra#!\n#P The sun god, lord of the noon sun and divine kingship#!"
+  select_main_deity_kemetic_decision.select_isis:0 "#T Isis#!\n#P Goddess of magic, motherhood, and fertility#!"
+  select_main_deity_kemetic_decision.select_montu:0 "#T Montu#!\n#P God of war, valor, and the falcon's might#!"
+  select_main_deity_kemetic_decision.select_hathor:0 "#T Hathor#!\n#P Goddess of love, music, beauty, and joy#!"

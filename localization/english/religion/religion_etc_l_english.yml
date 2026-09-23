@@ -6,25 +6,31 @@
     etruscan_religion_adj:0 "Etruscan"
     etruscan_religion_adherent:0 "Etruscan"
     etruscan_religion_adherent_plural:0 "Etruscans"
-    etruscan_religion_desc:0 "The Etruscan pantheon was a unique existence, having substantial Indo-European yet is not. The Etruscans worshipped Greek deities and heroes as their own, but that did not save them from being integrated into the emerging Roman state"
+    etruscan_religion_desc:0 "The Etruscan pantheon stood apart from its Indo-European neighbors, drawing on both a distinct native tradition and heavy borrowing from Greek gods and heroes — a uniqueness that did not save the Etruscans from being absorbed into the rising Roman state."
 
     #etc
     etc_polytheism:0 "Etruscan"
     etc_polytheism_adj:0 "Etruscan"
     etc_polytheism_adherent:0 "Etruscan Polytheist follower"
     etc_polytheism_adherent_plural:0 "Etruscan Polytheism followers"
-    etc_polytheism_desc:0 "The Etruscan pantheon was a unique existence, having substantial Indo-European yet is not. The Etruscans worshipped Greek deities and heroes as their own, but that did not save them from being integrated into the emerging Roman state" 
+    etc_polytheism_desc:0 "The Etruscan pantheon stood apart from its Indo-European neighbors, drawing on both a distinct native tradition and heavy borrowing from Greek gods and heroes — a uniqueness that did not save the Etruscans from being absorbed into the rising Roman state." 
 
     etc_polytheism_old:0 "Etruscan Old"
     etc_polytheism_old_adj:0 "Etruscan Old"
     etc_polytheism_adherent_old:0 "Old Etruscan Polytheist follower"
     etc_polytheism_old_adherent_plural:0 "Old Etruscan Polytheism followers"
-    etc_polytheism_desc:0 "The Etruscan pantheon was a unique existence, having substantial Indo-European yet is not. The Etruscans worshipped Greek deities and heroes as their own, but that did not save them from being integrated into the emerging Roman state"
+    etc_polytheism_old_desc:0 "In the earlier centuries of Etruscan civilization, before Rome's rise, the twelve cities of Etruria each kept their own priesthoods and rites, bound together by a shared reverence for the same gods and the sacred art of divination."
 
     #etc_polytheism_religious_head_title:0 "Pontifex Maximus"
     etc_polytheism_divine_realm:0 "Realm of the Etruscan gods"
+    etc_polytheism_divine_realm_2:0 "$etc_polytheism_divine_realm$"
+    etc_polytheism_divine_realm_3:0 "$etc_polytheism_divine_realm$"
     etc_polytheism_religious_symbol:0 "Etruscan Lion"
+    etc_polytheism_religious_symbol_2:0 "$etc_polytheism_religious_symbol$"
+    etc_polytheism_religious_symbol_3:0 "$etc_polytheism_religious_symbol$"
     etc_polytheism_religious_text:0 "Ritus and Caerimoniae"
+    etc_polytheism_religious_text_2:0 "$etc_polytheism_religious_text$"
+    etc_polytheism_religious_text_3:0 "$etc_polytheism_religious_text$"
 
     etc_polytheism_religious_head_title:0 "High Priest"
     etc_polytheism_religious_head_title_name:0 "High Priesthood"
@@ -33,6 +39,7 @@
 
     #jupiter Localization
     etc_polytheism_high_god_name:0 "Tinia"
+    etc_polytheism_high_god_name_2:0 "$etc_polytheism_high_god_name$"
     etc_polytheism_high_god_name_possessive:0 "Tinia's"
     etc_polytheism_high_god_name_alternate:0 "Tinia"
     etc_polytheism_high_god_name_alternate_possessive:0 "Tinia's"
@@ -89,6 +96,7 @@
     etc_polytheism_evil_god_discordia:0 "Charu"
 
     etc_polytheism_witchgodname_trivia:0 "Diana Trivia"
+    etc_polytheism_witchgodname_trivia_possessive:0 "$etc_polytheism_witchgodname_trivia$'s"
 
     #Devil god   
     etc_polytheism_devil_name:0 "Calu" 
@@ -96,6 +104,8 @@
 
     #Death god Aita
     etc_polytheism_death_deity_name:0 "Aita"
+    etc_polytheism_death_deity_name_2:0 "$etc_polytheism_death_deity_name$"
+    etc_polytheism_death_deity_name_3:0 "$etc_polytheism_death_deity_name$"
     etc_polytheism_death_deity_name_possessive:0 "Aita's"
 
     #Good gods names 

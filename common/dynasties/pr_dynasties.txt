@@ -1,0 +1,4 @@
+﻿agiadai = {
+	name = "dynn_Agiadai"
+	culture = greek
+}

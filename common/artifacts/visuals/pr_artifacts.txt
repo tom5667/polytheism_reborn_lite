@@ -1,16 +1,20 @@
-﻿#Made with photos from own collection 
-#image copyrights Tom5667 
+﻿# PR Artifact Visuals
+# Images: own collection, copyrights Tom5667
+
+# --- Roman God Statues ---
+
+pr_jupiter_statue = {
+	icon = "pr_artifact_jupiter.dds"
+	asset = ep1_western_statue_01_male_entity
+}
+
 pr_juno_statue = {
 	icon = "pr_artifact_juno.dds"
 	asset = ep1_western_statue_01_female_entity
 }
+
 pr_mars_statue = {
 	icon = "pr_artifact_mars.dds"
-	asset = ep1_western_statue_01_male_entity
-}
-
-pr_jupiter_statue = {
-	icon = "pr_artifact_jupiter.dds"
 	asset = ep1_western_statue_01_male_entity
 }
 
@@ -34,6 +38,7 @@ pr_apollo_statue = {
 	asset = ep1_western_statue_01_male_entity
 }
 
+# --- Historical Artifacts ---
 
 pr_treaty_of_kadesh = {
 	icon = "pr_treaty_of_kadesh.dds"
@@ -41,7 +46,6 @@ pr_treaty_of_kadesh = {
 	asset = {
 		trigger = { artifact_should_use_gfx_type_trigger = { TYPE = indian_building } }
 		reference = ep1_indian_scroll_01_a_entity
-
 	}
 	asset = {
 		trigger = {
@@ -66,7 +70,6 @@ pr_treaty_of_kadesh = {
 		trigger = {
 			OR = {
 				artifact_should_use_gfx_type_trigger = { TYPE = mediterranean_building }
-				artifact_should_use_gfx_type_trigger = { TYPE = iranian_building }
 				artifact_should_use_gfx_type_trigger = { TYPE = iberian_building }
 			}
 		}

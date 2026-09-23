@@ -1,0 +1,32 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Illyrian Decisions
+  # Localization for pr_illyrian_decisions.txt
+  # =============================================
+
+  # --- Choose Main Deity (Illyrian) Decision ---
+  pr_illyrian_choose_main_deity_decision:0 "Choose Main Deity"
+  pr_illyrian_choose_main_deity_decision_desc:0 "#F The gods of the Illyrian pantheon call for a champion to represent their will in the mortal realm. As a ruler of the Illyrian faith, I must select a patron deity who will guide my actions and bless my rule with divine favor.#!\nBy choosing a main deity, I shall establish a personal connection with the divine, gaining unique blessings and modifiers that reflect the nature of my chosen god or goddess."
+  pr_illyrian_choose_main_deity_decision_tooltip:0 "#T Select a patron deity from your Illyrian faith to gain divine blessings#!"
+  pr_illyrian_choose_main_deity_decision_confirm:0 "Choose Main Deity!"
+  pr_illyrian_choose_main_deity_decision_tt:0 "#T Available Deities for [ROOT.Char.GetFaith.GetName]#!"
+
+  # --- Main Deity Selection Descriptions: Illyrian ---
+  select_main_deity_illyrian_decision.select_en:0 "#T En#!\n#P The supreme god, father of the Illyrian pantheon#!"
+  select_main_deity_illyrian_decision.select_medaurus:0 "#T Medaurus#!\n#P God of war and the sacred warrior's path#!"
+  select_main_deity_illyrian_decision.select_anzotica:0 "#T Anzotica#!\n#P Goddess of fertility and the moon's light#!"
+  select_main_deity_illyrian_decision.select_bindus:0 "#T Bindus#!\n#P God of water, springs, and healing waters#!"
+  select_main_deity_illyrian_decision.select_tadenus:0 "#T Tadenus#!\n#P God of health and the sacred groves#!"
+
+  # --- Create Kingdom of Illyria Decision ---
+  pr_illyrian_kingdom_of_illyria_decision:0 "Create the Kingdom of Illyria"
+  pr_illyrian_kingdom_of_illyria_decision_desc:0 "#F The ancient lands of Illyria, stretching along the Adriatic coast from Dalmatia to the highlands of the interior, have long been divided among warring tribes. Once, the Illyrian kings ruled these lands with pride and valor.#!\nBy creating the Kingdom of Illyria, I shall unite the Illyrian peoples under a single banner and restore the glory of our ancestors."
+  pr_illyrian_kingdom_of_illyria_decision_tooltip:0 "#T Form the Kingdom of Illyria by uniting the Adriatic lands#!"
+  pr_illyrian_kingdom_of_illyria_decision_confirm:0 "Create the Kingdom of Illyria!"
+  pr_illyrian_kingdom_of_illyria_decision_effect_tooltip:0 "#P The Kingdom of Illyria will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_dalmatia.GetNameNoTier], [title_d_dyrrachion.GetNameNoTier], [title_d_duklja.GetNameNoTier], and [title_d_usora.GetNameNoTier] will become [de_jure|E] part of Illyria$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"
+
+  # --- Embrace Illyrian Culture Decision ---
+  pr_illyrian_culture_decision:0 "Embrace the Illyrian Culture"
+  pr_illyrian_culture_decision_desc:0 "#F The Illyrian culture, with its proud warrior traditions and deep connection to the Adriatic coast, stands as a testament to the resilience of our people. By embracing this ancient heritage, I shall lead my people toward a golden age of cultural and spiritual renewal.#!\nThrough this decision, I shall foster the traditions of Illyria and strengthen the bonds between my realm and the old gods."
+  pr_illyrian_culture_decision_tooltip:0 "#T Embrace the Illyrian cultural traditions and strengthen your realm's heritage#!"
+  pr_illyrian_culture_decision_confirm:0 "Embrace the Illyrian Culture!"

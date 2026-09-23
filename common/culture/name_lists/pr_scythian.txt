@@ -1,4 +1,4 @@
-name_list_scythian = {
+﻿name_list_pr_scythian = {
 
 	cadet_dynasty_names = {
 		#Real
@@ -200,4 +200,4 @@ name_list_scythian = {
 	
 	patronym_suffix_male = "dynnpat_suf_y_fyrt"
 	patronym_suffix_female = "dynnpat_suf_y_chyzg"
-}
+}

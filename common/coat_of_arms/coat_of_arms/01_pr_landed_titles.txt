@@ -1,4 +1,4 @@
-@smCastleX = 0.27
+﻿CastleX = 0.27
 @smCastleY = 0.23
 @smLysX = 0.23
 @smLysY = 0.26
@@ -669,7 +669,7 @@ k_narbonensis = {
 		}
 	}
 }
-k_aquitania = {
+k_aquitaine_roman = {
 	pattern="pattern_vertical_stripes_02.dds"
 	color1=red
 	color2=white
@@ -1091,7 +1091,7 @@ k_africa_canaanite = {
 }
 
 
-e_roman_empire_polytheistic = {
+h_roman_empire_polytheistic = {
 	pattern = "pattern_solid.dds"
 	color1 = "red"
 	

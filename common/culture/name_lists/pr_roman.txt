@@ -112,7 +112,7 @@
 	mat_grm_name_chance = 50
 	mother_name_chance = 0
 }
-name_list_gallo_roman = {
+name_list_pr_gallo_roman = {
 	cadet_dynasty_names = {
 		"dynn_Juli-Claudii"
 		"dynn_Juli-Vipsanii"
@@ -125,93 +125,90 @@ name_list_gallo_roman = {
 	dynasty_names = {
 		#template
 		#"dynn_"
-		"dynn_Antonii"
-		"dynn_Abutii"
-		"dynn_Aemilii"
-		"dynn_Aqullii"
-		"dynn_Aternii"
-		"dynn_Atilii"
-		"dynn_Claudii"
-		"dynn_Cloelii"
-		"dynn_Cornelii"
-		"dynn_Curtii"
-		"dynn_Fabii"
-		"dynn_Foslii"
-		"dynn_Furii"
-		"dynn_Geganii"
-		"dynn_Genucii"
-		"dynn_Herminii"
-		"dynn_Horatii"
-		"dynn_Julii"
-		"dynn_Lartii"
-		"dynn_Lucretii"
-		"dynn_Manlii"
-		"dynn_Menenii"
-		"dynn_Metilii"
-		"dynn_Minucii"
-		"dynn_Mucii"
-		"dynn_Nautii"
-		"dynn_Numicii"
-		"dynn_Papirii"
-		"dynn_Pinarii"
-		"dynn_Pollii"
-		"dynn_Postumii"
-		"dynn_Potitii"
-		"dynn_Quinctii"
-		"dynn_Quinctilii"
-		"dynn_Romilii"
-		"dynn_Sempronii"
-		"dynn_Sergii"
-		"dynn_Servilii"
-		"dynn_Sebstii"
-		"dynn_Siccii"
-		"dynn_Sulpicii"
-		"dynn_Tarpeii"
-		"dynn_Tarquitii"
-		"dynn_Tullii"
-		"dynn_Valerii"
-		"dynn_Verginii"
-		"dynn_Veturii"
-		"dynn_Vitellii"
-		"dynn_Volumnii"
-		"dynn_Antonii"
-		"dynn_Cassii"
-		"dynn_Cominii"
-		"dynn_Curiatii"
-		"dynn_Hostilli"
-		"dynn_Junii"
-		"dynn_Marcii"
-		"dynn_Vipsanii"
-		"dynn_Flavii"
-		"dynn_Aelii"
-		"dynn_Hadriani"
-		"dynn_Symmachi"
-		"dynn_Pompeia"
-		"dynn_Diocletianus"
-		"dynn_Ulpii"
-		"dynn_Traianus"
-		"dynn_Nerva"
-		"dynn_Octavii"
-		"dynn_Caecilii"
-		"dynn_Brutii"
-		"dynn_Tarquinii"
-		"dynn_Aurelii"
-		"dynn_Licinii"
-		"dynn_Porcii"
+		"dynn_Abbiī"
+		"dynn_Accoruges"
+		"dynn_Aegiī"
+		"dynn_Aeliī"
+		"dynn_Antōnīnī"
+		"dynn_Areleniī"
+		"dynn_Aurēliī"
+		"dynn_Carantiī"
+		"dynn_Carmaniī"
+		"dynn_Carmiī"
+		"dynn_Casivellauniī"
+		"dynn_Cassiī"
+		"dynn_Cassianiī"
+		"dynn_Casticiī"
+		"dynn_Caturīgis"
+		"dynn_Catuvolciī"
+		"dynn_Cingetorīgis"
+		"dynn_Cintugeniī"
+		"dynn_Claudiī"
+		"dynn_Conteddiī"
+		"dynn_Coriī"
+		"dynn_Cornēliī"
+		"dynn_Critasiriī"
+		"dynn_Cudiī"
+		"dynn_Danotaliī"
+		"dynn_Dioclētiānī"
+		"dynn_Diviaciī"
+		"dynn_Domitiī"
+		"dynn_Dossiī"
+		"dynn_Drutaliī"
+		"dynn_Dubnorīgis"
+		"dynn_Dumnorīgis"
+		"dynn_Dunniī"
+		"dynn_Fabiī"
+		"dynn_Flāviī"
+		"dynn_Gariī"
+		"dynn_Garomariī"
+		"dynn_Iestiniī"
+		"dynn_Iūliī"
+		"dynn_Iūniī"
+		"dynn_Lasciī"
+		"dynn_Leniī"
+		"dynn_Leuciī"
+		"dynn_Licinī"
+		"dynn_Litavicciī"
+		"dynn_Lucteriī"
+		"dynn_Lutomarīgis"
+		"dynn_Maguniī"
+		"dynn_Magurīgis"
+		"dynn_Orgetorīgis"
+		"dynn_Pompeiī"
+		"dynn_Roscilliī"
+		"dynn_Samorīgis"
+		"dynn_Segomarīgis"
+		"dynn_Sennius"
+		"dynn_Suadurīgis"
+		"dynn_Taliī"
+		"dynn_Tasciī"
+		"dynn_Tasgetiī"
+		"dynn_Teutovaliī"
+		"dynn_Tulliī"
+		"dynn_Ulpiī"
+		"dynn_Valeriī"
+		"dynn_Vercassivellauniī"
+		"dynn_Viridomariī"
+
 	}
 	male_names = {
 		#Real gallo roman names 
 		Indutiomarus Liscus Litaviccus Lucterius Aegus Roscillus Tasgetius Viridomarus Divico Diviacus Critasirus Comontorius Casticus Brennus
-		#Converted gaulish to gallo roman names 
-		Tincomarus Suadurex Axrotalius Catuvolcius Abbius Accorux Arlenius Virogalus Acco Adietumarus Argiotalus Areleno Arelenus Atebodvus Attelus Axtrotalus Bilius Brennus
+		#Converted pr_gaulish to gallo roman names 
+		Tincomarus Suadurex Axrotalius Catuvolcius Abbius Accorux Arlenius Virogalus Acco Adietumarus Argiotalus Areleno Arelenus Ateboduus Attallus Axtrotalus Bilius Brennus
 		Brogimarus Camulus Carantus Carmanus Carmus Caturex Celunnus Cerdus Cerdo Cilurnus Contessilus Corius Cudius Dagodubnus Dagomarus Damus Dosso Dossus
-		Drutalus Dubnorex Dubnorix Dunnius Garomarus Garus Lantumarus Catumaros Cintugenus Cintugnatus Lascius Leno Lenus Leucus Luctorex Lutomarus Maguno Magunus Magurex Oclinus
-		Samo Samus Samorex Segomarus Talos Tanisius Tasco Tascus Tinus Toccus Scottus Uercassiuellaunus Urus Virogalus Tanisius  
+		Drutalus Dubnorex Dumnorīx Dunnius Garomarus Garus Lantumarus Catumaros Cintugenus Cintugnatus Lascius Leno Lenus Leucus Luctorex Lutomarus Maguno Magunus Magurex Oclinus
+		Samo Samus Samorex Segomarus Talos Tanisius Tasco Tascus Tinus Toccus Scottus Vercassivellaunus Urus Virogalus Tanisius
+		Aelius Antōnīnus Ariogaesus Aurēlius Camalus Camulaeus Casivellaunus Cassius Cingetorix Claudius Conteddius Cornēlius Dioclētiānus Domitius	Fabius Flāvius
+		Iestinus Iūlius Iūnius Orgetorix Pompeius Teutovalus Tullius Ulpius Valerius
 	}
 	female_names = {
-		#No real gallo roman names available so we converted them from the gaulish names 
+		#No real gallo roman names available so we converted them from the pr_gaulish names 
 		Caturecselva Luguselva Abrexta Acaunissa Acaunissa Aculia Adbugissa Banna Baulia Blanda Boudia Boudicca Abbula Cantismerta boudilatis Carata Cauaria Cloustria Continuda Coria
-		Elantia Litogena Lubitiata Scotta Sucaria Uesuca Uinda Uindilla Uiscareua
+		Elantia Litogena Lubitiata Scotta Sucaria Uesuca Vinda Vindilla Viscareva
+		Aelia Antōnīna Aurēlia Betua Cassia Catta Claudia Cornēlia Dioclētia Domitia Dousonna Dewognata Dumnonia Fabia Flāvia Iūlia Iūnia
+		Leucia Luguselva Pompeia Tullia Ulpia Valeria
 	}
 	dynasty_of_location_prefix = "dynnp_of"
 	patronym_prefix_male = "dynnpat_pre_filius"
@@ -226,7 +223,7 @@ name_list_gallo_roman = {
 	mat_grm_name_chance = 50
 	mother_name_chance = 0
 }
-name_list_romano_british = {
+name_list_pr_romano_british = {
 	cadet_dynasty_names = {
 		"dynn_Juli-Claudii"
 		"dynn_Juli-Vipsanii"
@@ -340,7 +337,7 @@ name_list_romano_british = {
 	mat_grm_name_chance = 50
 	mother_name_chance = 0
 }
-name_list_romano_germanic = {
+name_list_pr_romano_germanic = {
 	cadet_dynasty_names = {
 		"dynn_Juli-Claudii"
 		"dynn_Juli-Vipsanii"
@@ -452,7 +449,7 @@ name_list_romano_germanic = {
 	mother_name_chance = 0
 }
 
-name_list_romano_hispanic = {
+name_list_pr_romano_hispanic = {
 	cadet_dynasty_names = {
 		"dynn_Juli-Claudii"
 		"dynn_Juli-Vipsanii"
@@ -542,12 +539,12 @@ name_list_romano_hispanic = {
 	}
 
 	male_names = {
-		#Latinized names from celtiberian and iberian names
+		#Latinized names from celtiberian and pr_iberian names
 		Viriathus Segilus Carus Lessus Uxentius Lethundus Ambonius Ambonidus Teitabas Leucus Turibas Sanibelisarius Vamargibus Estopelaus Torsinus Irsecellus Nescaesar Gaunus Escariarus
 		Balcacaus Turtumelisus Vergidarus Gurtarnus Arraneus Vermagibas Bellesus Nalbadenus Turinnus Ordmellus Bastugitus Vamarillinus Beleneus Atullus Balciadinus Ilurtibas Sosinademus
 	}
 	female_names = {
-		#Latinized names from celtiberian and iberian names
+		#Latinized names from celtiberian and pr_iberian names
 		Calturania Socediana Bastagunia Asterdomma Urcatela Biuratela Silibura Tannepasa Anucabira Ceresina Tannegadinia Gesaldina Turciradina Cereina Syrastenia Desalia Tavaculla
 		Agritilia Voconiagellia Cosconiagia Coniagellia
 	}

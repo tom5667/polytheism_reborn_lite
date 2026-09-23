@@ -57,7 +57,6 @@
 
 
 			doctrine = doctrine_concubines
-			doctrine = doctrine_monogamy
 			doctrine = doctrine_divorce_allowed
 			doctrine = doctrine_bastardry_legitimization
 			doctrine = doctrine_consanguinity_cousins
@@ -80,7 +79,7 @@
 			#Funeral tradition
 			doctrine = doctrine_funeral_cremation
 
-			doctrine = special_doctrine_ecumenical_germanic_roman 
+			doctrine = special_doctrine_ecumenical_germanic_roman
 
 			reserved_male_names = {
 				Anund Asbjörn Aslak Audun Bagge Balder Brage Egil Emund Frej Gnupa Gorm Gudmund Gudröd Hardeknud Helge Odd Orm
@@ -101,6 +100,7 @@
 			localization = {
 			#HighGodName
 			HighGodName = germanic_high_god_name
+			HighGodName2 = germanic_high_god_name_2
 			HighGodNamePossessive = germanic_high_god_name_possessive
 			HighGodNameSheHe = CHARACTER_SHEHE_HE
 			HighGodHerselfHimself = CHARACTER_HIMSELF
@@ -187,6 +187,8 @@
 
 
 			PantheonTerm = religion_the_gods
+			PantheonTerm2 = religion_the_gods_2
+			PantheonTerm3 = religion_the_gods_3
 			PantheonTermHasHave = pantheon_term_have
 			GoodGodNames = { germanic_good_god_thor germanic_good_god_baldr germanic_good_god_freyja germanic_good_god_tyr germanic_good_god_sif}
 			DevilName = germanic_devil_name
@@ -196,9 +198,15 @@
 			DevilHerselfHimself = CHARACTER_HIMSELF
 			EvilGodNames = { germanic_evil_god_surtr germanic_evil_god_ymir }
 			HouseOfWorship = paganism_house_of_worship
+			HouseOfWorship2 = paganism_house_of_worship_2
+			HouseOfWorship3 = paganism_house_of_worship_3
 			HouseOfWorshipPlural = paganism_house_of_worship_plural
 			ReligiousSymbol = germanic_religious_symbol
+			ReligiousSymbol2 = germanic_religious_symbol_2
+			ReligiousSymbol3 = germanic_religious_symbol_3
 			ReligiousText = germanic_religious_text
+			ReligiousText2 = germanic_religious_text_2
+			ReligiousText3 = germanic_religious_text_3
 			ReligiousHeadName = germanic_religious_head_title
 			ReligiousHeadTitleName = germanic_religious_head_title_name
 			DevoteeMale = paganism_devotee
@@ -221,15 +229,23 @@
 			BishopNeuter = germanic_bishop_neuter
 			BishopNeuterPlural = germanic_bishop_neuter_plural
 			DivineRealm = germanic_divine_realm
+			DivineRealm2 = germanic_divine_realm_2
+			DivineRealm3 = germanic_divine_realm_3
 			PositiveAfterLife = germanic_positive_afterlife
+			PositiveAfterLife2 = germanic_positive_afterlife_2
+			PositiveAfterLife3 = germanic_positive_afterlife_3
 			NegativeAfterLife = germanic_death_deity_name
+			NegativeAfterLife2 = germanic_death_deity_name_2
+			NegativeAfterLife3 = germanic_death_deity_name_3
 			DeathDeityName = germanic_death_deity_name
 			DeathDeityNamePossessive = germanic_death_deity_name_possessive
 			DeathDeitySheHe = CHARACTER_SHEHE_SHE
 			DeathDeityHerHis = CHARACTER_HERHIS_HER
+			DeathDeityHerHim = CHARACTER_HERHIM_HER
 			WitchGodName = germanic_good_god_freyja
+			WitchGodNamePossessive = germanic_good_god_freyja_possessive
 			WitchGodHerHis = CHARACTER_HERHIS_HER
-			WitchGodSheHe = CHARACTER_SHEHE_HE
+			WitchGodSheHe = CHARACTER_SHEHE_SHE
 			WitchGodHerHim = CHARACTER_HERHIM_HER
 			WitchGodMistressMaster = mistress
 			WitchGodMotherFather = mother
@@ -269,7 +285,6 @@
 			doctrine = unreformed_faith_doctrine
 
 			doctrine = doctrine_concubines
-			doctrine = doctrine_monogamy
 			doctrine = doctrine_divorce_allowed
 			doctrine = doctrine_bastardry_legitimization
 			doctrine = doctrine_consanguinity_cousins
@@ -308,12 +323,13 @@
 			localization = {
 			#HighGodName
 			HighGodName = anglo_saxon_high_god_name
+			HighGodName2 = anglo_saxon_high_god_name_2
 			HighGodNamePossessive = anglo_saxon_high_god_name_possessive
 			HighGodNameSheHe = CHARACTER_SHEHE_HE
 			HighGodHerselfHimself = CHARACTER_HIMSELF
 			HighGodHerHis = CHARACTER_HERHIS_HIS
-			HighGodNameAlternate = anglo_saxon_high_god_alternate
-			HighGodNameAlternatePossessive = anglo_saxon_high_god_alternate_possessive
+			HighGodNameAlternate = anglo_saxon_high_god_name_alternate
+			HighGodNameAlternatePossessive = anglo_saxon_high_god_name_alternate_possessive
 
 			#Creator
 			CreatorName = anglo_saxon_creator_god_name
@@ -394,6 +410,8 @@
 
 
 			PantheonTerm = religion_the_gods
+			PantheonTerm2 = religion_the_gods_2
+			PantheonTerm3 = religion_the_gods_3
 			PantheonTermHasHave = pantheon_term_have
 			GoodGodNames = {anglo_saxon_good_god_fri anglo_saxon_good_god_asteron anglo_saxon_good_god_seaxneat anglo_saxon_good_god_fricco anglo_saxon_good_god_tuisto anglo_saxon_good_god_ingwaz anglo_saxon_good_god_sunna anglo_saxon_good_god_nehalennia }
 			DevilName = anglo_saxon_devil_name
@@ -403,9 +421,15 @@
 			DevilHerselfHimself = CHARACTER_HIMSELF
 			EvilGodNames = { anglo_saxon_evil_god_jormungandr anglo_saxon_evil_god_surtrr }
 			HouseOfWorship = paganism_house_of_worship
+			HouseOfWorship2 = paganism_house_of_worship_2
+			HouseOfWorship3 = paganism_house_of_worship_3
 			HouseOfWorshipPlural = paganism_house_of_worship_plural
-			ReligiousSymbol = anglo_saxon_religious_symbol
+			ReligiousSymbol = anglo_saxon_polytheism_religious_symbol
+			ReligiousSymbol2 = anglo_saxon_polytheism_religious_symbol_2
+			ReligiousSymbol3 = anglo_saxon_polytheism_religious_symbol_3
 			ReligiousText = anglo_saxon_religious_text
+			ReligiousText2 = anglo_saxon_religious_text_2
+			ReligiousText3 = anglo_saxon_religious_text_3
 			ReligiousHeadName = anglo_saxon_religious_head_title
 			ReligiousHeadTitleName = anglo_saxon_religious_head_title_name
 			DevoteeMale = paganism_devotee
@@ -428,13 +452,21 @@
 			BishopNeuter = anglo_saxon_bishop_neuter
 			BishopNeuterPlural = anglo_saxon_bishop_neuter_plural
 			DivineRealm = anglo_saxon_divine_realm
+			DivineRealm2 = anglo_saxon_divine_realm_2
+			DivineRealm3 = anglo_saxon_divine_realm_3
 			PositiveAfterLife = germanic_positive_afterlife
+			PositiveAfterLife2 = germanic_positive_afterlife_2
+			PositiveAfterLife3 = germanic_positive_afterlife_3
 			NegativeAfterLife = anglo_saxon_death_deity_name
+			NegativeAfterLife2 = anglo_saxon_death_deity_name_2
+			NegativeAfterLife3 = anglo_saxon_death_deity_name_3
 			DeathDeityName = anglo_saxon_death_deity_name
 			DeathDeityNamePossessive = anglo_saxon_death_deity_name_possessive
 			DeathDeitySheHe = CHARACTER_SHEHE_SHE
 			DeathDeityHerHis = CHARACTER_HERHIS_HER
+			DeathDeityHerHim = CHARACTER_HERHIM_HER
 			WitchGodName = anglo_saxon_evil_god_surtr
+			WitchGodNamePossessive = anglo_saxon_evil_god_surtr_possessive
 			WitchGodHerHis = CHARACTER_HERHIS_HIS
 			WitchGodSheHe = CHARACTER_SHEHE_HE
 			WitchGodHerHim = CHARACTER_HERHIM_HIM
@@ -474,15 +506,10 @@
 				doctrine = unreformed_faith_doctrine
 				
 
-				doctrine = doctrine_no_restrictions
-				doctrine = doctrine_atonement_none
-				doctrine = doctrine_almsgiving_none
 				doctrine = doctrine_concubines
-				doctrine = doctrine_monogamy
 				doctrine = doctrine_divorce_allowed
 				doctrine = doctrine_bastardry_legitimization
 				doctrine = doctrine_consanguinity_cousins
-				doctrine = doctrine_none_marriage
 				#Crimes
 				doctrine = doctrine_homosexuality_crime
 				doctrine = doctrine_adultery_men_crime
@@ -518,6 +545,7 @@
 				localization = {
 				#HighGodName
 				HighGodName = german_high_god_name
+				HighGodName2 = german_high_god_name_2
 				HighGodNamePossessive = german_high_god_name_possessive
 				HighGodNameSheHe = CHARACTER_SHEHE_HE
 				HighGodHerselfHimself = CHARACTER_HIMSELF
@@ -604,6 +632,8 @@
 
 
 				PantheonTerm = religion_the_gods
+				PantheonTerm2 = religion_the_gods_2
+				PantheonTerm3 = religion_the_gods_3
 				PantheonTermHasHave = pantheon_term_have
 				GoodGodNames = {german_good_god_ran german_good_god_rhenus german_good_god_donar german_good_god_woden german_good_god_eir german_good_god_njord german_good_god_mimir german_good_god_frija}
 				DevilName = german_devil_name
@@ -613,9 +643,15 @@
 				DevilHerselfHimself = CHARACTER_HIMSELF
 				EvilGodNames = {german_evil_god_nidhogg german_evil_god_surtr }
 				HouseOfWorship = paganism_house_of_worship
+				HouseOfWorship2 = paganism_house_of_worship_2
+				HouseOfWorship3 = paganism_house_of_worship_3
 				HouseOfWorshipPlural = paganism_house_of_worship_plural
-				ReligiousSymbol = german_religious_symbol
+				ReligiousSymbol = german_polytheism_religious_symbol
+				ReligiousSymbol2 = german_polytheism_religious_symbol_2
+				ReligiousSymbol3 = german_polytheism_religious_symbol_3
 				ReligiousText = german_religious_text
+				ReligiousText2 = german_religious_text_2
+				ReligiousText3 = german_religious_text_3
 				ReligiousHeadName = german_religious_head_title
 				ReligiousHeadTitleName = german_religious_head_title_name
 				DevoteeMale = paganism_devotee
@@ -638,13 +674,21 @@
 				BishopNeuter = german_bishop_neuter
 				BishopNeuterPlural = german_bishop_neuter_plural
 				DivineRealm = german_divine_realm
+				DivineRealm2 = german_divine_realm_2
+				DivineRealm3 = german_divine_realm_3
 				PositiveAfterLife = germanic_positive_afterlife
+				PositiveAfterLife2 = germanic_positive_afterlife_2
+				PositiveAfterLife3 = germanic_positive_afterlife_3
 				NegativeAfterLife = german_death_deity_name
+				NegativeAfterLife2 = german_death_deity_name_2
+				NegativeAfterLife3 = german_death_deity_name_3
 				DeathDeityName = german_death_deity_name
 				DeathDeityNamePossessive = german_death_deity_name_possessive
 				DeathDeitySheHe = CHARACTER_SHEHE_SHE
 				DeathDeityHerHis = CHARACTER_HERHIS_HER
+				DeathDeityHerHim = CHARACTER_HERHIM_HER
 				WitchGodName =  german_witch_god_surtr
+				WitchGodNamePossessive = german_witch_god_surtr_possessive
 				WitchGodHerHis = CHARACTER_HERHIS_HIS
 				WitchGodSheHe = CHARACTER_SHEHE_HE
 				WitchGodHerHim = CHARACTER_HERHIM_HIM

@@ -1,0 +1,74 @@
+l_german:
+  # =============================================
+  # Polytheism Reborn - Germanische Entscheidungen
+  # Lokalisierung für pr_germanic_decisions.txt
+  # =============================================
+
+  # --- Persönliche Gottheit wählen ---
+  pr_germanic_select_personal_deity_decision:0 "Wähle persönliche Gottheit"
+  pr_germanic_select_personal_deity_decision_desc:0 "#F Die Götter des germanischen Pantheons verlangen einen Champion, der ihren Willen in der sterblichen Welt vertritt. Als Herrscher des germanischen Glaubens muss ich eine Schutzgottheit auswählen, die meine Handlungen leitet und meine Herrschaft mit göttlichem Segen bedenkt.#!/n\nDurch die Wahl einer persönlichen Gottheit werde ich eine persönliche Verbindung mit dem Göttlichen herstellen und einzigartige Segnungen und Modifikatoren erhalten, die die Natur meiner gewählten Gottheit oder Göttin widerspiegeln."
+  pr_germanic_select_personal_deity_decision_tooltip:0 "#T Wähle eine Schutzgottheit aus deinem germanischen Glauben, um göttliche Segnungen zu erhalten#!/"
+  pr_germanic_select_personal_deity_decision_confirm:0 "Wähle persönliche Gottheit!"
+  pr_germanic_select_personal_deity_decision_tt:0 "#T Verfügbare Gottheiten für [ROOT.Char.GetFaith.GetName]#!/"
+
+  # --- Auswahlbeschreibungen der Hauptgottheit: Nordisch ---
+  select_personal_deity_germanic_decision.select_odin:0 "#T Odin#!/\n#P Der Allvater, Gott der Weisheit, des Krieges und des Todes#!/"
+  select_personal_deity_germanic_decision.select_ullr:0 "#T Ullr#!/\n#P Gott der Jagd, des Bogenschießens und der Wildnis#!/"
+  select_personal_deity_germanic_decision.select_tyr:0 "#T Tyr#!/\n#P Gott des Gesetzes, der Gerechtigkeit und des Opfers#!/"
+  select_personal_deity_germanic_decision.select_thor:0 "#T Thor#!/\n#P Der Donnerer, Beschützer der Menschheit#!/"
+  select_personal_deity_germanic_decision.select_freyr:0 "#T Freyr#!/\n#P Gott der Fruchtbarkeit, des Wohlstands und des Friedens#!/"
+
+  # --- Auswahlbeschreibungen der Hauptgottheit: Angelsächsisch ---
+  select_personal_deity_germanic_decision.select_woden:0 "#T Woden#!/\n#P Der Allvater, Gott der Weisheit und der Wilden Jagd#!/"
+  select_personal_deity_germanic_decision.select_fri:0 "#T Fri#!/\n#P Göttin der Liebe, Fruchtbarkeit und des Herdes#!/"
+  select_personal_deity_germanic_decision.select_njord:0 "#T Njord#!/\n#P Gott des Meeres, des Windes und des Reichtums#!/"
+  select_personal_deity_germanic_decision.select_tiwaz:0 "#T Tiwaz#!/\n#P Gott des Gesetzes, der Ehre und des Einzelkampfs#!/"
+  select_personal_deity_germanic_decision.select_seaxneat:0 "#T Seaxneat#!/\n#P Gott der Sachsen, Schutzpatron des Messers und der Ernte#!/"
+
+  # --- Auswahlbeschreibungen der Hauptgottheit: Deutsch ---
+  select_personal_deity_germanic_decision.select_wotan:0 "#T Wotan#!/\n#P Der Allvater, Gott der Weisheit, Magie und des Krieges#!/"
+  select_personal_deity_germanic_decision.select_njordr:0 "#T Njordr#!/\n#P Gott der Seefahrt, des Windes und des Überflusses#!/"
+  select_personal_deity_germanic_decision.select_nornir:0 "#T Nornir#!/\n#P Die Nornen, Weberinnen von Schicksal und Bestimmung#!/"
+  select_personal_deity_germanic_decision.select_mimir:0 "#T Mimir#!/\n#P Der Weise, Hüter des Brunnen der Erkenntnis#!/"
+
+  # --- Neue Irminsul in Paderborn errichten ---
+  pr_germanic_place_new_irminsul_paderborn_decision:0 "Errichte eine neue Irminsul in Paderborn"
+  pr_germanic_place_new_irminsul_paderborn_decision_desc:0 "#F Die Irminsul, die große Säule des sächsischen Glaubens, stand einst als heilige Verbindung zwischen Göttern und Menschen. Obwohl das Original zerstört wurde, lebt ihr Geist im Herzen der Gläubigen weiter.#!/n\nDurch die Errichtung einer neuen Irminsul in Paderborn werde ich dieses Symbol unseres Glaubens wiederherstellen und die Bindungen zwischen meinem Volk und den Göttern stärken."
+  pr_germanic_place_new_irminsul_paderborn_decision_tooltip:0 "#T Errichte eine neue Irminsul in Paderborn, um die heilige Säule des sächsischen Glaubens wiederherzustellen#!/"
+  pr_germanic_place_new_irminsul_paderborn_decision_confirm:0 "Errichte die neue Irminsul!"
+
+  # --- Heilige Rückeroberung: Paderborn ---
+  pr_germanic_holy_reconquest_decision:0 "Beginne die Heilige Rückeroberung"
+  pr_germanic_holy_reconquest_decision_desc:0 "#F Die heiligen Lande unserer Vorfahren sind in die Hände von Ungläubigen gefallen. Es ist unsere Pflicht, das zu verlieren, was verloren ging, und den alten Glauben in seine rechtmäßigen Herzlande zurückzubringen.#!/n\nDurch den Start einer heiligen Rückeroberung von Paderborn aus werde ich die heilige Aufgabe beginnen, die Glaubenslosen zu vertreiben und unsere angestammten Länder für die Götter zurückzufordern."
+  pr_germanic_holy_reconquest_decision_tooltip:0 "#T Beginne die heilige Rückeroberung der germanischen Heimatländer, beginnend in Paderborn#!/"
+  pr_germanic_holy_reconquest_decision_confirm:0 "Beginne die Heilige Rückeroberung!"
+
+  # --- Heilige Rückeroberung: Westfalen ---
+  pr_germanic_holy_reconquest_westfalen_decision:0 "erobere Westfalen zurück"
+  pr_germanic_holy_reconquest_westfalen_decision_desc:0 "#F Die Rückeroberung geht weiter. Westfalen, mit seinen reichen Ackerländern und alten heiligen Stätten, muss wieder unter das Banner des alten Glaubens gebracht werden.#!/n\nDurch die Rückeroberung Westfalens werde ich ein weiteres lebenswichtiges Stück unserer angestammten Heimat sichern und die heilige Aufgabe der Wiederherstellung fortsetzen."
+  pr_germanic_holy_reconquest_westfalen_decision_tooltip:0 "#T Setze die heilige Rückeroberung fort, indem du Westfalen zurückeroberst#!/"
+  pr_germanic_holy_reconquest_westfalen_decision_confirm:0 "erobere Westfalen zurück!"
+
+  # --- Heilige Rückeroberung: Angria ---
+  pr_germanic_holy_reconquest_angria_decision:0 "erobere Angria zurück"
+  pr_germanic_holy_reconquest_angria_decision_desc:0 "#F Die Länder von Angria, das alte Herzland der Sachsen, warten darauf, von den Glaubenslosen befreit zu werden. Ihre heiligen Haine und heiligen Stätten schreien nach Wiederherstellung.#!/n\nDurch die Rückeroberung Angrias werde ich die Rückeroberung weiter in unsere angestammten Gebiete vorantreiben und die Götter mit jedem Schritt ehren."
+  pr_germanic_holy_reconquest_angria_decision_tooltip:0 "#T Setze die heilige Rückeroberung fort, indem du Angria zurückeroberst#!/"
+  pr_germanic_holy_reconquest_angria_decision_confirm:0 "erobere Angria zurück!"
+
+  # --- Heilige Rückeroberung: Holstein ---
+  pr_germanic_holy_reconquest_holstein_decision:0 "erobere Holstein zurück"
+  pr_germanic_holy_reconquest_holstein_decision_desc:0 "#F Holstein, das Tor zum Norden, steht als Bollwerk des Glaubens an der Grenze. Seine Rückeroberung wird die nördlichen Zugänge sichern und unsere Position stärken.#!/n\nDurch die Rückeroberung Holsteins werde ich die heilige Rückeroberung bis in die nördlichen Gebiete unserer angestammten Länder ausdehnen."
+  pr_germanic_holy_reconquest_holstein_decision_tooltip:0 "#T Setze die heilige Rückeroberung fort, indem du Holstein zurückeroberst#!/"
+  pr_germanic_holy_reconquest_holstein_decision_confirm:0 "erobere Holstein zurück!"
+
+  # --- Heilige Rückeroberung: Ostfalen ---
+  pr_germanic_holy_reconquest_ostfalen_decision:0 "erobere Ostfalen zurück"
+  pr_germanic_holy_reconquest_ostfalen_decision_desc:0 "#F Ostfalen, die östlichen Gebiete des sächsischen Herzlandes, befinden sich noch immer in den Händen der Glaubenslosen. Die Rückeroberung kann nicht vollendet sein, bis diese Länder wiederhergestellt sind.#!/n\nDurch die Rückeroberung Ostfalens werde ich die heilige Rückeroberung ihrem Höhepunkt immer näher bringen."
+  pr_germanic_holy_reconquest_ostfalen_decision_tooltip:0 "#T Setze die heilige Rückeroberung fort, indem du Ostfalen zurückeroberst#!/"
+  pr_germanic_holy_reconquest_ostfalen_decision_confirm:0 "erobere Ostfalen zurück!"
+
+  # --- Heilige Rückeroberung: Anhalt ---
+  pr_germanic_holy_reconquest_anhalt_decision:0 "erobere Anhalt zurück"
+  pr_germanic_holy_reconquest_anhalt_decision_desc:0 "#F Anhalt, die letzte Bastion unserer Rückeroberung, steht als letzte Prüfung unserer Hingabe an die alten Götter. Mit seiner Rückeroberung wird die heilige Rückeroberung vollendet sein.#!/n\nDurch die Rückeroberung Anhalts werde ich die heilige Pflicht erfüllen, alle unsere angestammten Länder dem alten Glauben zurückzugeben."
+  pr_germanic_holy_reconquest_anhalt_decision_tooltip:0 "#T Vollende die heilige Rückeroberung, indem du Anhalt zurückeroberst#!/"
+  pr_germanic_holy_reconquest_anhalt_decision_confirm:0 "erobere Anhalt zurück!"

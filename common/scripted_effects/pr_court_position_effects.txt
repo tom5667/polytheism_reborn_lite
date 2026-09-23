@@ -1,54 +1,137 @@
-﻿# Sets variable 'target_court_position' for which court position a character should recieve suited to their skills
-# Saves scope:old_holder as existing holder if they exist
+﻿# =============================================
+# Polytheism Reborn - Court Position Scripted Effects
+# File: pr_court_position_effects.txt
+# =============================================
+
+# =============================================
+# SECTION 1: GENERIC APPOINT EFFECT
+# =============================================
+
+# Generic court position assignment effect
+# Replaces 12 identical set_court_*_effect blocks
+# Parameters:
+#   $CANDIDATE$ — character to assign to the position
+#   $POSITION$  — court position type (e.g. pr_court_augur_court_position)
+#   $EMPLOYER$  — the court owner (liege)
+# Scope: works from any scope, all scopes passed via parameters
+pr_appoint_court_position_effect = {
+	$CANDIDATE$ = {
+		if = {
+			limit = {
+				NOR = {
+					is_vassal_of = $EMPLOYER$
+					is_courtier_of = $EMPLOYER$
+					employer = $EMPLOYER$
+				}
+			}
+			$EMPLOYER$ = { add_courtier = $CANDIDATE$ }
+		}
+	}
+	$EMPLOYER$ = {
+		if = {
+			limit = {
+				employs_court_position = $POSITION$
+				any_court_position_holder = {
+					type = $POSITION$
+					count > 0
+				}
+			}
+			every_court_position_holder = {
+				type = $POSITION$
+				save_temporary_scope_as = old_position_holder
+
+				$EMPLOYER$ = {
+					replace_court_position = {
+						recipient = $CANDIDATE$
+						holder = scope:old_position_holder
+						court_position = $POSITION$
+					}
+					reverse_add_opinion = {
+						target = scope:old_position_holder
+						modifier = disappointed_opinion
+						opinion = -15
+					}
+					reverse_add_opinion = {
+						target = $CANDIDATE$
+						modifier = hired_me_opinion
+					}
+				}
+			}
+		}
+		else = {
+			appoint_court_position = {
+				recipient = $CANDIDATE$
+				court_position = $POSITION$
+			}
+			reverse_add_opinion = {
+				target = $CANDIDATE$
+				modifier = hired_me_opinion
+			}
+		}
+	}
+}
+
+# =============================================
+# SECTION 2: TARGET VARIABLE EFFECT
+# =============================================
+
+# Determines which court position best suits a character based on skills/traits
+# Sets variable 'target_court_position' with a flag for the appropriate position
+# Parameters: $EMPLOYER$ — the court owner
+# Scope: character being evaluated for a position
 pr_court_position_target_variable_effect = {
 	random_list = {
-			#Polytheism reborn 
-			6 = { # COURT Augur
-				trigger = { court_position_learning_trigger = yes }
-				modifier = {
-					add = 4
-					has_trait = scholar
-				}
-				modifier = {
-					add = 4
-					has_trait = theologian
-				}
-				modifier = {
-					add = 4
-					has_trait = education_learning_1
-				}
-				modifier = {
-					add = 5
-					has_trait = education_learning_2
-				}
-				modifier = {
-					add = 10
-					has_trait = education_learning_3
-				}
-				modifier = {
-					add = 2
-					has_trait = mystic_1
-				}
-				modifier = {
-					add = 4
-					has_trait = mystic_2
-				}
-				modifier = {
-					add = 4
-					has_trait = mystic_3
-				}
-				modifier = {
-					factor = 0.5
-					$EMPLOYER$ = { employs_court_position = pr_court_augur_court_position }
-				}
-				modifier = { factor = learning }
-				set_variable = {
-					name = target_court_position
-					value = flag:court_augur
-				}
-				court_position_old_holder_effect = { POS = pr_court_augur_court_position EMPLOYER = $EMPLOYER$ }
+		# COURT AUGUR
+		6 = {
+			trigger = { court_position_learning_trigger = yes }
+			modifier = {
+				add = 4
+				has_trait = scholar
 			}
-			6 = { # COURT Flamen Mars
+			modifier = {
+				add = 4
+				has_trait = theologian
+			}
+			modifier = {
+				add = 4
+				has_trait = education_learning_1
+			}
+			modifier = {
+				add = 5
+				has_trait = education_learning_2
+			}
+			modifier = {
+				add = 10
+				has_trait = education_learning_3
+			}
+			modifier = {
+				add = 2
+				has_trait = mystic_1
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_2
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_3
+			}
+			modifier = {
+				factor = 0.5
+				$EMPLOYER$ = { employs_court_position = pr_court_augur_court_position }
+			}
+			modifier = { factor = learning }
+			set_variable = {
+				name = target_court_position
+				value = flag:court_augur
+			}
+			pr_court_position_old_holder_effect = {
+				POS = pr_court_augur_court_position
+				EMPLOYER = $EMPLOYER$
+			}
+		}
+		# COURT FLAMEN MARS
+		6 = {
 			trigger = { court_position_learning_trigger = yes }
 			modifier = {
 				add = 4
@@ -91,1092 +174,499 @@ pr_court_position_target_variable_effect = {
 				name = target_court_position
 				value = flag:court_flamen_mars
 			}
-			court_position_old_holder_effect = { POS = pr_court_flamen_mars_court_position EMPLOYER = $EMPLOYER$ }
-		}
-		6 = { # COURT Flamen Augustus
-		trigger = { court_position_learning_trigger = yes }
-		modifier = {
-			add = 4
-			has_trait = scholar
-		}
-		modifier = {
-			add = 4
-			has_trait = theologian
-		}
-		modifier = {
-			add = 4
-			has_trait = education_learning_1
-		}
-		modifier = {
-			add = 5
-			has_trait = education_learning_2
-		}
-		modifier = {
-			add = 10
-			has_trait = education_learning_3
-		}
-		modifier = {
-			add = 2
-			has_trait = mystic_1
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_2
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_3
-		}
-		modifier = {
-			factor = 0.5
-			$EMPLOYER$ = { employs_court_position = pr_court_flamen_augustus_court_position }
-		}
-		modifier = { factor = learning }
-		set_variable = {
-			name = target_court_position
-			value = flag:court_flamen_augustus
-		}
-		court_position_old_holder_effect = { POS = pr_court_flamen_augustus_court_position EMPLOYER = $EMPLOYER$ }
-		}
-		6 = { # COURT Flamen Carmentis
-		trigger = { court_position_learning_trigger = yes }
-		modifier = {
-			add = 4
-			has_trait = scholar
-		}
-		modifier = {
-			add = 4
-			has_trait = theologian
-		}
-		modifier = {
-			add = 4
-			has_trait = education_learning_1
-		}
-		modifier = {
-			add = 5
-			has_trait = education_learning_2
-		}
-		modifier = {
-			add = 10
-			has_trait = education_learning_3
-		}
-		modifier = {
-			add = 2
-			has_trait = mystic_1
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_2
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_3
-		}
-		modifier = {
-			factor = 0.5
-			$EMPLOYER$ = { employs_court_position = pr_court_flamen_carmentis_court_position }
-		}
-		modifier = { factor = learning }
-		set_variable = {
-			name = target_court_position
-			value = flag:court_flamen_carmentis
-		}
-		court_position_old_holder_effect = { POS = pr_court_flamen_carmentis_court_position EMPLOYER = $EMPLOYER$ }
-		}
-		6 = { # COURT Flamen ceres
-		trigger = { court_position_learning_trigger = yes }
-		modifier = {
-			add = 4
-			has_trait = scholar
-		}
-		modifier = {
-			add = 4
-			has_trait = theologian
-		}
-		modifier = {
-			add = 4
-			has_trait = education_learning_1
-		}
-		modifier = {
-			add = 5
-			has_trait = education_learning_2
-		}
-		modifier = {
-			add = 10
-			has_trait = education_learning_3
-		}
-		modifier = {
-			add = 2
-			has_trait = mystic_1
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_2
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_3
-		}
-		modifier = {
-			factor = 0.5
-			$EMPLOYER$ = { employs_court_position = pr_court_flamen_ceres_court_position }
-		}
-		modifier = { factor = learning }
-		set_variable = {
-			name = target_court_position
-			value = flag:court_flamen_ceres
-		}
-		court_position_old_holder_effect = { POS = pr_court_flamen_ceres_court_position EMPLOYER = $EMPLOYER$ }
-		}
-		6 = { # COURT Flamen Flora
-		trigger = { court_position_learning_trigger = yes }
-		modifier = {
-			add = 4
-			has_trait = scholar
-		}
-		modifier = {
-			add = 4
-			has_trait = theologian
-		}
-		modifier = {
-			add = 4
-			has_trait = education_learning_1
-		}
-		modifier = {
-			add = 5
-			has_trait = education_learning_2
-		}
-		modifier = {
-			add = 10
-			has_trait = education_learning_3
-		}
-		modifier = {
-			add = 2
-			has_trait = mystic_1
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_2
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_3
-		}
-		modifier = {
-			factor = 0.5
-			$EMPLOYER$ = { employs_court_position = pr_court_flamen_flora_court_position }
-		}
-		modifier = { factor = learning }
-		set_variable = {
-			name = target_court_position
-			value = flag:court_flamen_flora
-		}
-		court_position_old_holder_effect = { POS = pr_court_flamen_flora_court_position EMPLOYER = $EMPLOYER$ }
-		}
-		6 = { # COURT Flamen Furrina
-		trigger = { court_position_learning_trigger = yes }
-		modifier = {
-			add = 4
-			has_trait = scholar
-		}
-		modifier = {
-			add = 4
-			has_trait = theologian
-		}
-		modifier = {
-			add = 4
-			has_trait = education_learning_1
-		}
-		modifier = {
-			add = 5
-			has_trait = education_learning_2
-		}
-		modifier = {
-			add = 10
-			has_trait = education_learning_3
-		}
-		modifier = {
-			add = 2
-			has_trait = mystic_1
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_2
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_3
-		}
-		modifier = {
-			factor = 0.5
-			$EMPLOYER$ = { employs_court_position = pr_court_flamen_furrina_court_position }
-		}
-		modifier = { factor = learning }
-		set_variable = {
-			name = target_court_position
-			value = flag:court_flamen_furrina
-		}
-		court_position_old_holder_effect = { POS = pr_court_flamen_furrina_court_position EMPLOYER = $EMPLOYER$ }
-		}
-		6 = { # COURT Flamen Pomona
-		trigger = { court_position_learning_trigger = yes }
-		modifier = {
-			add = 4
-			has_trait = scholar
-		}
-		modifier = {
-			add = 4
-			has_trait = theologian
-		}
-		modifier = {
-			add = 4
-			has_trait = education_learning_1
-		}
-		modifier = {
-			add = 5
-			has_trait = education_learning_2
-		}
-		modifier = {
-			add = 10
-			has_trait = education_learning_3
-		}
-		modifier = {
-			add = 2
-			has_trait = mystic_1
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_2
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_3
-		}
-		modifier = {
-			factor = 0.5
-			$EMPLOYER$ = { employs_court_position = pr_court_flamen_pomona_court_position }
-		}
-		modifier = { factor = learning }
-		set_variable = {
-			name = target_court_position
-			value = flag:court_flamen_pomona
-		}
-		court_position_old_holder_effect = { POS = pr_court_flamen_pomona_court_position EMPLOYER = $EMPLOYER$ }
-		}
-		6 = { # COURT Flamen Portunus
-		trigger = { court_position_learning_trigger = yes }
-		modifier = {
-			add = 4
-			has_trait = scholar
-		}
-		modifier = {
-			add = 4
-			has_trait = theologian
-		}
-		modifier = {
-			add = 4
-			has_trait = education_learning_1
-		}
-		modifier = {
-			add = 5
-			has_trait = education_learning_2
-		}
-		modifier = {
-			add = 10
-			has_trait = education_learning_3
-		}
-		modifier = {
-			add = 2
-			has_trait = mystic_1
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_2
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_3
-		}
-		modifier = {
-			factor = 0.5
-			$EMPLOYER$ = { employs_court_position = pr_court_flamen_portunus_court_position }
-		}
-		modifier = { factor = learning }
-		set_variable = {
-			name = target_court_position
-			value = flag:court_flamen_portunus
-		}
-		court_position_old_holder_effect = { POS = pr_court_flamen_portunus_court_position EMPLOYER = $EMPLOYER$ }
-		}
-		6 = { # COURT Flamen Vulcan
-		trigger = { court_position_learning_trigger = yes }
-		modifier = {
-			add = 4
-			has_trait = scholar
-		}
-		modifier = {
-			add = 4
-			has_trait = theologian
-		}
-		modifier = {
-			add = 4
-			has_trait = education_learning_1
-		}
-		modifier = {
-			add = 5
-			has_trait = education_learning_2
-		}
-		modifier = {
-			add = 10
-			has_trait = education_learning_3
-		}
-		modifier = {
-			add = 2
-			has_trait = mystic_1
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_2
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_3
-		}
-		modifier = {
-			factor = 0.5
-			$EMPLOYER$ = { employs_court_position = pr_court_flamen_vulcan_court_position }
-		}
-		modifier = { factor = learning }
-		set_variable = {
-			name = target_court_position
-			value = flag:court_flamen_vulcan
-		}
-		court_position_old_holder_effect = { POS = pr_court_flamen_vulcan_court_position EMPLOYER = $EMPLOYER$ }
-		}	
-		6 = { # COURT Flamen Volturnus
-		trigger = { court_position_learning_trigger = yes }
-		modifier = {
-			add = 4
-			has_trait = scholar
-		}
-		modifier = {
-			add = 4
-			has_trait = theologian
-		}
-		modifier = {
-			add = 4
-			has_trait = education_learning_1
-		}
-		modifier = {
-			add = 5
-			has_trait = education_learning_2
-		}
-		modifier = {
-			add = 10
-			has_trait = education_learning_3
-		}
-		modifier = {
-			add = 2
-			has_trait = mystic_1
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_2
-		}
-		modifier = {
-			add = 4
-			has_trait = mystic_3
-		}
-		modifier = {
-			factor = 0.5
-			$EMPLOYER$ = { employs_court_position = pr_court_flamen_volturnus_court_position }
-		}
-		modifier = { factor = learning }
-		set_variable = {
-			name = target_court_position
-			value = flag:court_flamen_volturnus
-		}
-		court_position_old_holder_effect = { POS = pr_court_flamen_volturnus_court_position EMPLOYER = $EMPLOYER$ }
-		}
-		6 = { # COURT Pater Mithras
-		trigger = { court_position_garuda_trigger = yes }
-		modifier = {
-			add = 25
-			has_trait = lifestyle_blademaster
-		}
-		modifier = {
-			factor = 0.5
-			$EMPLOYER$ = { employs_court_position = pr_court_pater_mithras_court_position }
-		}
-		modifier = { factor = prowess }
-		set_variable = {
-			name = target_court_position
-			value = flag:garuda
-		}
-		court_position_old_holder_effect = { POS = pr_court_pater_mithras_court_position EMPLOYER = $EMPLOYER$ }
-		}
-	}
-}
-
-### COURT Augur MANAGEMENT ###
-
-set_court_augur_effect = {
-	$AUGUR$ = {
-		if = {
-			limit = { 
-				NOT = { liege = $EMPLOYER$ }
-			}
-			$EMPLOYER$ = { add_courtier = $AUGUR$ }
-		}
-	}
-	$EMPLOYER$ = {
-		#Replace existing court augur if one exists
-		if = {
-			limit = {
-				employs_court_position = pr_court_augur_court_position
-				any_court_position_holder = {
-					type = pr_court_augur_court_position
-					count > 0
-				}
-			}
-			every_court_position_holder = {
-				type = pr_court_augur_court_position
-				save_temporary_scope_as = old_augur
-
-				$EMPLOYER$ = {
-					replace_court_position = {
-						recipient = $AUGUR$
-						holder = scope:old_augur
-						court_position = pr_court_augur_court_position
-					}
-					reverse_add_opinion = {
-						target = scope:old_augur
-						modifier = disappointed_opinion
-						opinion = -15
-					}
-					reverse_add_opinion = {
-						target = $AUGUR$
-						modifier = hired_me_opinion
-					}
-				}
+			pr_court_position_old_holder_effect = {
+				POS = pr_court_flamen_mars_court_position
+				EMPLOYER = $EMPLOYER$
 			}
 		}
-		#Else just straight up appoint
-		else = {
-			appoint_court_position = {
-				recipient = $AUGUR$
-				court_position = pr_court_augur_court_position
+		# COURT FLAMEN AUGUSTUS
+		6 = {
+			trigger = { court_position_learning_trigger = yes }
+			modifier = {
+				add = 4
+				has_trait = scholar
 			}
-			reverse_add_opinion = {
-				target = $AUGUR$
-				modifier = hired_me_opinion
+			modifier = {
+				add = 4
+				has_trait = theologian
 			}
-		}
-	}
-}
-### COURT FLAMEN MANAGEMENT ###
-set_court_flamen_mars_effect = {
-	$MARS$ = {
-		if = {
-			limit = { 
-				NOT = { liege = $EMPLOYER$ }
+			modifier = {
+				add = 4
+				has_trait = education_learning_1
 			}
-			$EMPLOYER$ = { add_courtier = $MARS$ }
-		}
-	}
-	$EMPLOYER$ = {
-		#Replace existing court flamen_mars if one exists
-		if = {
-			limit = {
-				employs_court_position = pr_court_flamen_mars_court_position
-				any_court_position_holder = {
-					type = pr_court_flamen_mars_court_position
-					count > 0
-				}
+			modifier = {
+				add = 5
+				has_trait = education_learning_2
 			}
-			every_court_position_holder = {
-				type = pr_court_flamen_mars_court_position
-				save_temporary_scope_as = old_flamen_mars
-
-				$EMPLOYER$ = {
-					replace_court_position = {
-						recipient = $MARS$
-						holder = scope:old_flamen_mars
-						court_position = pr_court_flamen_mars_court_position
-					}
-					reverse_add_opinion = {
-						target = scope:old_flamen_mars
-						modifier = disappointed_opinion
-						opinion = -15
-					}
-					reverse_add_opinion = {
-						target = $MARS$
-						modifier = hired_me_opinion
-					}
-				}
+			modifier = {
+				add = 10
+				has_trait = education_learning_3
+			}
+			modifier = {
+				add = 2
+				has_trait = mystic_1
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_2
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_3
+			}
+			modifier = {
+				factor = 0.5
+				$EMPLOYER$ = { employs_court_position = pr_court_flamen_augustus_court_position }
+			}
+			modifier = { factor = learning }
+			set_variable = {
+				name = target_court_position
+				value = flag:court_flamen_augustus
+			}
+			pr_court_position_old_holder_effect = {
+				POS = pr_court_flamen_augustus_court_position
+				EMPLOYER = $EMPLOYER$
 			}
 		}
-		#Else just straight up appoint
-		else = {
-			appoint_court_position = {
-				recipient = $MARS$
-				court_position = pr_court_flamen_mars_court_position
+		# COURT FLAMEN CARMENTIS
+		6 = {
+			trigger = { court_position_learning_trigger = yes }
+			modifier = {
+				add = 4
+				has_trait = scholar
 			}
-			reverse_add_opinion = {
-				target = $MARS$
-				modifier = hired_me_opinion
+			modifier = {
+				add = 4
+				has_trait = theologian
+			}
+			modifier = {
+				add = 4
+				has_trait = education_learning_1
+			}
+			modifier = {
+				add = 5
+				has_trait = education_learning_2
+			}
+			modifier = {
+				add = 10
+				has_trait = education_learning_3
+			}
+			modifier = {
+				add = 2
+				has_trait = mystic_1
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_2
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_3
+			}
+			modifier = {
+				factor = 0.5
+				$EMPLOYER$ = { employs_court_position = pr_court_flamen_carmentis_court_position }
+			}
+			modifier = { factor = learning }
+			set_variable = {
+				name = target_court_position
+				value = flag:court_flamen_carmentis
+			}
+			pr_court_position_old_holder_effect = {
+				POS = pr_court_flamen_carmentis_court_position
+				EMPLOYER = $EMPLOYER$
+			}
+		}
+		# COURT FLAMEN CERES
+		6 = {
+			trigger = { court_position_learning_trigger = yes }
+			modifier = {
+				add = 4
+				has_trait = scholar
+			}
+			modifier = {
+				add = 4
+				has_trait = theologian
+			}
+			modifier = {
+				add = 4
+				has_trait = education_learning_1
+			}
+			modifier = {
+				add = 5
+				has_trait = education_learning_2
+			}
+			modifier = {
+				add = 10
+				has_trait = education_learning_3
+			}
+			modifier = {
+				add = 2
+				has_trait = mystic_1
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_2
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_3
+			}
+			modifier = {
+				factor = 0.5
+				$EMPLOYER$ = { employs_court_position = pr_court_flamen_ceres_court_position }
+			}
+			modifier = { factor = learning }
+			set_variable = {
+				name = target_court_position
+				value = flag:court_flamen_ceres
+			}
+			pr_court_position_old_holder_effect = {
+				POS = pr_court_flamen_ceres_court_position
+				EMPLOYER = $EMPLOYER$
+			}
+		}
+		# COURT FLAMEN FLORA
+		6 = {
+			trigger = { court_position_learning_trigger = yes }
+			modifier = {
+				add = 4
+				has_trait = scholar
+			}
+			modifier = {
+				add = 4
+				has_trait = theologian
+			}
+			modifier = {
+				add = 4
+				has_trait = education_learning_1
+			}
+			modifier = {
+				add = 5
+				has_trait = education_learning_2
+			}
+			modifier = {
+				add = 10
+				has_trait = education_learning_3
+			}
+			modifier = {
+				add = 2
+				has_trait = mystic_1
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_2
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_3
+			}
+			modifier = {
+				factor = 0.5
+				$EMPLOYER$ = { employs_court_position = pr_court_flamen_flora_court_position }
+			}
+			modifier = { factor = learning }
+			set_variable = {
+				name = target_court_position
+				value = flag:court_flamen_flora
+			}
+			pr_court_position_old_holder_effect = {
+				POS = pr_court_flamen_flora_court_position
+				EMPLOYER = $EMPLOYER$
+			}
+		}
+		# COURT FLAMEN FURRINA
+		6 = {
+			trigger = { court_position_learning_trigger = yes }
+			modifier = {
+				add = 4
+				has_trait = scholar
+			}
+			modifier = {
+				add = 4
+				has_trait = theologian
+			}
+			modifier = {
+				add = 4
+				has_trait = education_learning_1
+			}
+			modifier = {
+				add = 5
+				has_trait = education_learning_2
+			}
+			modifier = {
+				add = 10
+				has_trait = education_learning_3
+			}
+			modifier = {
+				add = 2
+				has_trait = mystic_1
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_2
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_3
+			}
+			modifier = {
+				factor = 0.5
+				$EMPLOYER$ = { employs_court_position = pr_court_flamen_furrina_court_position }
+			}
+			modifier = { factor = learning }
+			set_variable = {
+				name = target_court_position
+				value = flag:court_flamen_furrina
+			}
+			pr_court_position_old_holder_effect = {
+				POS = pr_court_flamen_furrina_court_position
+				EMPLOYER = $EMPLOYER$
+			}
+		}
+		# COURT FLAMEN POMONA
+		6 = {
+			trigger = { court_position_learning_trigger = yes }
+			modifier = {
+				add = 4
+				has_trait = scholar
+			}
+			modifier = {
+				add = 4
+				has_trait = theologian
+			}
+			modifier = {
+				add = 4
+				has_trait = education_learning_1
+			}
+			modifier = {
+				add = 5
+				has_trait = education_learning_2
+			}
+			modifier = {
+				add = 10
+				has_trait = education_learning_3
+			}
+			modifier = {
+				add = 2
+				has_trait = mystic_1
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_2
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_3
+			}
+			modifier = {
+				factor = 0.5
+				$EMPLOYER$ = { employs_court_position = pr_court_flamen_pomona_court_position }
+			}
+			modifier = { factor = learning }
+			set_variable = {
+				name = target_court_position
+				value = flag:court_flamen_pomona
+			}
+			pr_court_position_old_holder_effect = {
+				POS = pr_court_flamen_pomona_court_position
+				EMPLOYER = $EMPLOYER$
+			}
+		}
+		# COURT FLAMEN PORTUNUS
+		6 = {
+			trigger = { court_position_learning_trigger = yes }
+			modifier = {
+				add = 4
+				has_trait = scholar
+			}
+			modifier = {
+				add = 4
+				has_trait = theologian
+			}
+			modifier = {
+				add = 4
+				has_trait = education_learning_1
+			}
+			modifier = {
+				add = 5
+				has_trait = education_learning_2
+			}
+			modifier = {
+				add = 10
+				has_trait = education_learning_3
+			}
+			modifier = {
+				add = 2
+				has_trait = mystic_1
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_2
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_3
+			}
+			modifier = {
+				factor = 0.5
+				$EMPLOYER$ = { employs_court_position = pr_court_flamen_portunus_court_position }
+			}
+			modifier = { factor = learning }
+			set_variable = {
+				name = target_court_position
+				value = flag:court_flamen_portunus
+			}
+			pr_court_position_old_holder_effect = {
+				POS = pr_court_flamen_portunus_court_position
+				EMPLOYER = $EMPLOYER$
+			}
+		}
+		# COURT FLAMEN VULCAN
+		6 = {
+			trigger = { court_position_learning_trigger = yes }
+			modifier = {
+				add = 4
+				has_trait = scholar
+			}
+			modifier = {
+				add = 4
+				has_trait = theologian
+			}
+			modifier = {
+				add = 4
+				has_trait = education_learning_1
+			}
+			modifier = {
+				add = 5
+				has_trait = education_learning_2
+			}
+			modifier = {
+				add = 10
+				has_trait = education_learning_3
+			}
+			modifier = {
+				add = 2
+				has_trait = mystic_1
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_2
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_3
+			}
+			modifier = {
+				factor = 0.5
+				$EMPLOYER$ = { employs_court_position = pr_court_flamen_vulcan_court_position }
+			}
+			modifier = { factor = learning }
+			set_variable = {
+				name = target_court_position
+				value = flag:court_flamen_vulcan
+			}
+			pr_court_position_old_holder_effect = {
+				POS = pr_court_flamen_vulcan_court_position
+				EMPLOYER = $EMPLOYER$
+			}
+		}
+		# COURT FLAMEN VOLTURNUS
+		6 = {
+			trigger = { court_position_learning_trigger = yes }
+			modifier = {
+				add = 4
+				has_trait = scholar
+			}
+			modifier = {
+				add = 4
+				has_trait = theologian
+			}
+			modifier = {
+				add = 4
+				has_trait = education_learning_1
+			}
+			modifier = {
+				add = 5
+				has_trait = education_learning_2
+			}
+			modifier = {
+				add = 10
+				has_trait = education_learning_3
+			}
+			modifier = {
+				add = 2
+				has_trait = mystic_1
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_2
+			}
+			modifier = {
+				add = 4
+				has_trait = mystic_3
+			}
+			modifier = {
+				factor = 0.5
+				$EMPLOYER$ = { employs_court_position = pr_court_flamen_volturnus_court_position }
+			}
+			modifier = { factor = learning }
+			set_variable = {
+				name = target_court_position
+				value = flag:court_flamen_volturnus
+			}
+			pr_court_position_old_holder_effect = {
+				POS = pr_court_flamen_volturnus_court_position
+				EMPLOYER = $EMPLOYER$
+			}
+		}
+		# COURT PATER MITHRAS (prowess-based)
+		6 = {
+			trigger = { court_position_garuda_trigger = yes }
+			modifier = {
+				add = 25
+				has_trait = lifestyle_blademaster
+			}
+			modifier = {
+				factor = 0.5
+				$EMPLOYER$ = { employs_court_position = pr_court_pater_mithras_court_position }
+			}
+			modifier = { factor = prowess }
+			set_variable = {
+				name = target_court_position
+				value = flag:garuda
+			}
+			pr_court_position_old_holder_effect = {
+				POS = pr_court_pater_mithras_court_position
+				EMPLOYER = $EMPLOYER$
 			}
 		}
 	}
 }
 
+# =============================================
+# SECTION 3: OLD HOLDER EFFECT
+# =============================================
 
-
-set_court_flamen_augustus_effect = {
-	$AUGUST$ = {
-		if = {
-			limit = { 
-				NOT = { liege = $EMPLOYER$ }
-			}
-			$EMPLOYER$ = { add_courtier = $AUGUST$ }
-		}
-	}
+# Saves the current holder of a court position as scope:old_holder
+# Parameters:
+#   $POS$      — court position type (e.g. pr_court_augur_court_position)
+#   $EMPLOYER$ — the court owner
+# Scope: works from any scope
+pr_court_position_old_holder_effect = {
 	$EMPLOYER$ = {
-		#Replace existing court flamen_augustus if one exists
 		if = {
 			limit = {
-				employs_court_position = pr_court_flamen_augustus_court_position
+				employs_court_position = $POS$
 				any_court_position_holder = {
-					type = pr_court_flamen_augustus_court_position
+					type = $POS$
 					count > 0
 				}
 			}
 			every_court_position_holder = {
-				type = pr_court_flamen_augustus_court_position
-				save_temporary_scope_as = old_flamen_augustus
-
-				$EMPLOYER$ = {
-					replace_court_position = {
-						recipient = $AUGUST$
-						holder = scope:old_flamen_augustus
-						court_position = pr_court_flamen_augustus_court_position
-					}
-					reverse_add_opinion = {
-						target = scope:old_flamen_augustus
-						modifier = disappointed_opinion
-						opinion = -15
-					}
-					reverse_add_opinion = {
-						target = $AUGUST$
-						modifier = hired_me_opinion
-					}
-				}
-			}
-		}
-		#Else just straight up appoint
-		else = {
-			appoint_court_position = {
-				recipient = $AUGUST$
-				court_position = pr_court_flamen_augustus_court_position
-			}
-			reverse_add_opinion = {
-				target = $AUGUST$
-				modifier = hired_me_opinion
-			}
-		}
-	}
-}
-
-set_court_flamen_carmentis_effect = {
-	$CARMENTIS$ = {
-		if = {
-			limit = { 
-				NOT = { liege = $EMPLOYER$ }
-			}
-			$EMPLOYER$ = { add_courtier = $CARMENTIS$ }
-		}
-	}
-	$EMPLOYER$ = {
-		#Replace existing court flamen_carmentis if one exists
-		if = {
-			limit = {
-				employs_court_position = pr_court_flamen_carmentis_court_position
-				any_court_position_holder = {
-					type = pr_court_flamen_carmentis_court_position
-					count > 0
-				}
-			}
-			every_court_position_holder = {
-				type = pr_court_flamen_carmentis_court_position
-				save_temporary_scope_as = old_flamen_carmentis
-
-				$EMPLOYER$ = {
-					replace_court_position = {
-						recipient = $CARMENTIS$
-						holder = scope:old_flamen_carmentis
-						court_position = pr_court_flamen_carmentis_court_position
-					}
-					reverse_add_opinion = {
-						target = scope:old_flamen_carmentis
-						modifier = disappointed_opinion
-						opinion = -15
-					}
-					reverse_add_opinion = {
-						target = $CARMENTIS$
-						modifier = hired_me_opinion
-					}
-				}
-			}
-		}
-		#Else just straight up appoint
-		else = {
-			appoint_court_position = {
-				recipient = $CARMENTIS$
-				court_position = pr_court_flamen_carmentis_court_position
-			}
-			reverse_add_opinion = {
-				target = $CARMENTIS$
-				modifier = hired_me_opinion
-			}
-		}
-	}
-}
-
-set_court_flamen_ceres_effect = {
-	$CERES$ = {
-		if = {
-			limit = { 
-				NOT = { liege = $EMPLOYER$ }
-			}
-			$EMPLOYER$ = { add_courtier = $CERES$ }
-		}
-	}
-	$EMPLOYER$ = {
-		#Replace existing court flamen_ceres if one exists
-		if = {
-			limit = {
-				employs_court_position = pr_court_flamen_ceres_court_position
-				any_court_position_holder = {
-					type = pr_court_flamen_ceres_court_position
-					count > 0
-				}
-			}
-			every_court_position_holder = {
-				type = pr_court_flamen_ceres_court_position
-				save_temporary_scope_as = old_flamen_ceres
-
-				$EMPLOYER$ = {
-					replace_court_position = {
-						recipient = $CERES$
-						holder = scope:old_flamen_ceres
-						court_position = pr_court_flamen_ceres_court_position
-					}
-					reverse_add_opinion = {
-						target = scope:old_flamen_ceres
-						modifier = disappointed_opinion
-						opinion = -15
-					}
-					reverse_add_opinion = {
-						target = $CERES$
-						modifier = hired_me_opinion
-					}
-				}
-			}
-		}
-		#Else just straight up appoint
-		else = {
-			appoint_court_position = {
-				recipient = $CERES$
-				court_position = pr_court_flamen_ceres_court_position
-			}
-			reverse_add_opinion = {
-				target = $CERES$
-				modifier = hired_me_opinion
-			}
-		}
-	}
-}
-
-set_court_flamen_flora_effect = {
-	$FLORA$ = {
-		if = {
-			limit = { 
-				NOT = { liege = $EMPLOYER$ }
-			}
-			$EMPLOYER$ = { add_courtier = $FLORA$ }
-		}
-	}
-	$EMPLOYER$ = {
-		#Replace existing court flamen_flora if one exists
-		if = {
-			limit = {
-				employs_court_position = pr_court_flamen_flora_court_position
-				any_court_position_holder = {
-					type = pr_court_flamen_flora_court_position
-					count > 0
-				}
-			}
-			every_court_position_holder = {
-				type = pr_court_flamen_flora_court_position
-				save_temporary_scope_as = old_flamen_flora
-
-				$EMPLOYER$ = {
-					replace_court_position = {
-						recipient = $FLORA$
-						holder = scope:old_flamen_flora
-						court_position = pr_court_flamen_flora_court_position
-					}
-					reverse_add_opinion = {
-						target = scope:old_flamen_flora
-						modifier = disappointed_opinion
-						opinion = -15
-					}
-					reverse_add_opinion = {
-						target = $FLORA$
-						modifier = hired_me_opinion
-					}
-				}
-			}
-		}
-		#Else just straight up appoint
-		else = {
-			appoint_court_position = {
-				recipient = $FLORA$
-				court_position = pr_court_flamen_flora_court_position
-			}
-			reverse_add_opinion = {
-				target = $FLORA$
-				modifier = hired_me_opinion
-			}
-		}
-	}
-}
-
-set_court_flamen_furrina_effect = {
-	$FURINA$ = {
-		if = {
-			limit = { 
-				NOT = { liege = $EMPLOYER$ }
-			}
-			$EMPLOYER$ = { add_courtier = $FURINA$ }
-		}
-	}
-	$EMPLOYER$ = {
-		#Replace existing court flamen_furrina if one exists
-		if = {
-			limit = {
-				employs_court_position = pr_court_flamen_furrina_court_position
-				any_court_position_holder = {
-					type = pr_court_flamen_furrina_court_position
-					count > 0
-				}
-			}
-			every_court_position_holder = {
-				type = pr_court_flamen_furrina_court_position
-				save_temporary_scope_as = old_flamen_furrina
-
-				$EMPLOYER$ = {
-					replace_court_position = {
-						recipient = $FURINA$
-						holder = scope:old_flamen_furrina
-						court_position = pr_court_flamen_furrina_court_position
-					}
-					reverse_add_opinion = {
-						target = scope:old_flamen_furrina
-						modifier = disappointed_opinion
-						opinion = -15
-					}
-					reverse_add_opinion = {
-						target = $FURINA$
-						modifier = hired_me_opinion
-					}
-				}
-			}
-		}
-		#Else just straight up appoint
-		else = {
-			appoint_court_position = {
-				recipient = $FURINA$
-				court_position = pr_court_flamen_furrina_court_position
-			}
-			reverse_add_opinion = {
-				target = $FURINA$
-				modifier = hired_me_opinion
-			}
-		}
-	}
-}
-
-set_court_flamen_pomona_effect = {
-	$POMONA$ = {
-		if = {
-			limit = { 
-				NOT = { liege = $EMPLOYER$ }
-			}
-			$EMPLOYER$ = { add_courtier = $POMONA$ }
-		}
-	}
-	$EMPLOYER$ = {
-		#Replace existing court flamen_pomona if one exists
-		if = {
-			limit = {
-				employs_court_position = pr_court_flamen_pomona_court_position
-				any_court_position_holder = {
-					type = pr_court_flamen_pomona_court_position
-					count > 0
-				}
-			}
-			every_court_position_holder = {
-				type = pr_court_flamen_pomona_court_position
-				save_temporary_scope_as = old_flamen_pomona
-
-				$EMPLOYER$ = {
-					replace_court_position = {
-						recipient = $POMONA$
-						holder = scope:old_flamen_pomona
-						court_position = pr_court_flamen_pomona_court_position
-					}
-					reverse_add_opinion = {
-						target = scope:old_flamen_pomona
-						modifier = disappointed_opinion
-						opinion = -15
-					}
-					reverse_add_opinion = {
-						target = $POMONA$
-						modifier = hired_me_opinion
-					}
-				}
-			}
-		}
-		#Else just straight up appoint
-		else = {
-			appoint_court_position = {
-				recipient = $POMONA$
-				court_position = pr_court_flamen_pomona_court_position
-			}
-			reverse_add_opinion = {
-				target = $POMONA$
-				modifier = hired_me_opinion
-			}
-		}
-	}
-}
-
-set_court_flamen_portunus_effect = {
-	$PORTUNUS$ = {
-		if = {
-			limit = { 
-				NOT = { liege = $EMPLOYER$ }
-			}
-			$EMPLOYER$ = { add_courtier = $PORTUNUS$ }
-		}
-	}
-	$EMPLOYER$ = {
-		#Replace existing court flamen_portunus if one exists
-		if = {
-			limit = {
-				employs_court_position = pr_court_flamen_portunus_court_position
-				any_court_position_holder = {
-					type = pr_court_flamen_portunus_court_position
-					count > 0
-				}
-			}
-			every_court_position_holder = {
-				type = pr_court_flamen_portunus_court_position
-				save_temporary_scope_as = old_flamen_portunus
-
-				$EMPLOYER$ = {
-					replace_court_position = {
-						recipient = $PORTUNUS$
-						holder = scope:old_flamen_portunus
-						court_position = pr_court_flamen_portunus_court_position
-					}
-					reverse_add_opinion = {
-						target = scope:old_flamen_portunus
-						modifier = disappointed_opinion
-						opinion = -15
-					}
-					reverse_add_opinion = {
-						target = $PORTUNUS$
-						modifier = hired_me_opinion
-					}
-				}
-			}
-		}
-		#Else just straight up appoint
-		else = {
-			appoint_court_position = {
-				recipient = $PORTUNUS$
-				court_position = pr_court_flamen_portunus_court_position
-			}
-			reverse_add_opinion = {
-				target = $PORTUNUS$
-				modifier = hired_me_opinion
-			}
-		}
-	}
-}
-
-set_court_flamen_vulcan_effect = {
-	$VULCAN$ = {
-		if = {
-			limit = { 
-				NOT = { liege = $EMPLOYER$ }
-			}
-			$EMPLOYER$ = { add_courtier = $VULCAN$ }
-		}
-	}
-	$EMPLOYER$ = {
-		#Replace existing court flamen_vulcan if one exists
-		if = {
-			limit = {
-				employs_court_position = pr_court_flamen_vulcan_court_position
-				any_court_position_holder = {
-					type = pr_court_flamen_vulcan_court_position
-					count > 0
-				}
-			}
-			every_court_position_holder = {
-				type = pr_court_flamen_vulcan_court_position
-				save_temporary_scope_as = old_flamen_vulcan
-
-				$EMPLOYER$ = {
-					replace_court_position = {
-						recipient = $VULCAN$
-						holder = scope:old_flamen_vulcan
-						court_position = pr_court_flamen_vulcan_court_position
-					}
-					reverse_add_opinion = {
-						target = scope:old_flamen_vulcan
-						modifier = disappointed_opinion
-						opinion = -15
-					}
-					reverse_add_opinion = {
-						target = $VULCAN$
-						modifier = hired_me_opinion
-					}
-				}
-			}
-		}
-		#Else just straight up appoint
-		else = {
-			appoint_court_position = {
-				recipient = $VULCAN$
-				court_position = pr_court_flamen_vulcan_court_position
-			}
-			reverse_add_opinion = {
-				target = $VULCAN$
-				modifier = hired_me_opinion
-			}
-		}
-	}
-}
-
-set_court_flamen_volturnus_effect = {
-	$VOLTURNUS$ = {
-		if = {
-			limit = { 
-				NOT = { liege = $EMPLOYER$ }
-			}
-			$EMPLOYER$ = { add_courtier = $VOLTURNUS$ }
-		}
-	}
-	$EMPLOYER$ = {
-		#Replace existing court flamen_volturnus if one exists
-		if = {
-			limit = {
-				employs_court_position = pr_court_flamen_volturnus_court_position
-				any_court_position_holder = {
-					type = pr_court_flamen_volturnus_court_position
-					count > 0
-				}
-			}
-			every_court_position_holder = {
-				type = pr_court_flamen_volturnus_court_position
-				save_temporary_scope_as = old_flamen_volturnus
-
-				$EMPLOYER$ = {
-					replace_court_position = {
-						recipient = $VOLTURNUS$
-						holder = scope:old_flamen_volturnus
-						court_position = pr_court_flamen_volturnus_court_position
-					}
-					reverse_add_opinion = {
-						target = scope:old_flamen_volturnus
-						modifier = disappointed_opinion
-						opinion = -15
-					}
-					reverse_add_opinion = {
-						target = $VOLTURNUS$
-						modifier = hired_me_opinion
-					}
-				}
-			}
-		}
-		#Else just straight up appoint
-		else = {
-			appoint_court_position = {
-				recipient = $VOLTURNUS$
-				court_position = pr_court_flamen_volturnus_court_position
-			}
-			reverse_add_opinion = {
-				target = $VOLTURNUS$
-				modifier = hired_me_opinion
-			}
-		}
-	}
-}
-
-set_court_pater_mithras_effect = {
-	$MITHRAS$ = {
-		if = {
-			limit = { 
-				NOT = { liege = $EMPLOYER$ }
-			}
-			$EMPLOYER$ = { add_courtier = $MITHRAS$ }
-		}
-	}
-	$EMPLOYER$ = {
-		#Replace existing court pater_mithras if one exists
-		if = {
-			limit = {
-				employs_court_position = pr_court_pater_mithras_court_position
-				any_court_position_holder = {
-					type = pr_court_pater_mithras_court_position
-					count > 0
-				}
-			}
-			every_court_position_holder = {
-				type = pr_court_pater_mithras_court_position
-				save_temporary_scope_as = old_pater_mithras
-
-				$EMPLOYER$ = {
-					replace_court_position = {
-						recipient = $MITHRAS$
-						holder = scope:old_pater_mithras
-						court_position = pr_court_pater_mithras_court_position
-					}
-					reverse_add_opinion = {
-						target = scope:old_pater_mithras
-						modifier = disappointed_opinion
-						opinion = -15
-					}
-					reverse_add_opinion = {
-						target = $MITHRAS$
-						modifier = hired_me_opinion
-					}
-				}
-			}
-		}
-		#Else just straight up appoint
-		else = {
-			appoint_court_position = {
-				recipient = $MITHRAS$
-				court_position = pr_court_pater_mithras_court_position
-			}
-			reverse_add_opinion = {
-				target = $MITHRAS$
-				modifier = hired_me_opinion
+				type = $POS$
+				limit = { is_physically_able = yes }
+				save_scope_as = old_holder
 			}
 		}
 	}

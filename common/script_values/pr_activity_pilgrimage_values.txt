@@ -1,0 +1,57 @@
+﻿# =============================================
+# Polytheism Reborn - Activity Pilgrimage Values
+# Shared script values for all PR pilgrimage activities
+# =============================================
+
+pr_pilgrimage_ai_will_do_value = {
+		value = 50
+		
+		if = {
+			limit = {
+				has_trait = cynical
+			}
+			add = -25
+		}
+		if = {
+			limit = {
+				has_trait = zealous
+			}
+			add = 25
+		}
+		
+		#Can you actually afford this?
+		if = {
+			limit = {
+				NOT = { can_make_expensive_purchase_trigger = { PRICE = PR_activity_cost } }
+			}
+			add = -50
+		}
+}
+
+pr_pilgrimage_ai_will_select_province_value = {
+		value = 10
+}
+
+pr_pilgrimage_cost_value = {
+		gold = {
+			add = {
+				value = 0
+				add = {
+					value = PR_activity_cost
+					desc = hunt_base_cost
+				}
+			}
+		}
+}
+
+pr_pilgrimage_ui_predicted_cost_value = {
+		gold = {
+			value = PR_activity_cost
+
+			# Make it a multiple of 5 (rounded up)
+			divide = 5 
+			ceiling = yes 
+			multiply = 5
+		}
+}
+

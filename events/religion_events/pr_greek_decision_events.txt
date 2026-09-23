@@ -1,0 +1,419 @@
+﻿namespace = pr_greek_decision
+namespace = pr_greek
+
+##################################################
+# Polytheism Reborn - Greek Decision Events
+# Events gekoppeld aan pr_greek_decisions.txt
+##################################################
+
+# =============================================
+# Decision Outcome Events (0001-0099)
+# =============================================
+
+
+#--- Choose Hellenic Personal Deity (0001) ---
+pr_greek_decision.0001 = {
+	type = character_event
+	title = pr_greek_decision.0001.t
+	desc = pr_greek_decision.0001.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	# Olympian Triad (Zeus, Hera, Athena)
+	option = {
+		name = pr_greek_decision.0001.zeus
+		trigger = {
+			NOT = { has_trait = pr_hellenic_zeus }
+		}
+		pr_set_bhakti_effect = { BHAKTI = pr_hellenic_zeus }
+	}
+
+	# Hera
+	option = {
+		name = pr_greek_decision.0001.hera
+		trigger = {
+			NOT = { has_trait = pr_hellenic_hera }
+		}
+		pr_set_bhakti_effect = { BHAKTI = pr_hellenic_hera }
+	}
+
+	# Athena
+	option = {
+		name = pr_greek_decision.0001.athena
+		trigger = {
+			NOT = { has_trait = pr_hellenic_athena }
+		}
+		pr_set_bhakti_effect = { BHAKTI = pr_hellenic_athena }
+	}
+
+	option = {
+		name = pr_greek_decision.0001.more
+		trigger_event = pr_greek_decision.0019
+	}
+
+	# Opt-Out
+	option = {
+		name = pr_greek_decision.0001.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# Other gods (Ares, Aphrodite, Hermes)
+pr_greek_decision.0019 = {
+	type = character_event
+	title = pr_greek_decision.0019.t
+	desc = pr_greek_decision.0019.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	# Ares
+	option = {
+		name = pr_greek_decision.0019.ares
+		trigger = {
+			NOT = { has_trait = pr_hellenic_ares }
+		}
+		pr_set_bhakti_effect = { BHAKTI = pr_hellenic_ares }
+	}
+
+	# Aphrodite
+	option = {
+		name = pr_greek_decision.0019.aphrodite
+		trigger = {
+			NOT = { has_trait = pr_hellenic_aphrodite }
+		}
+		pr_set_bhakti_effect = { BHAKTI = pr_hellenic_aphrodite }
+	}
+
+	# Hermes
+	option = {
+		name = pr_greek_decision.0019.hermes
+		trigger = {
+			NOT = { has_trait = pr_hellenic_hermes }
+		}
+		pr_set_bhakti_effect = { BHAKTI = pr_hellenic_hermes }
+	}
+
+	# Demeter
+	option = {
+		name = pr_greek_decision.0019.demeter
+		trigger = {
+			NOT = { has_trait = pr_hellenic_demeter }
+		}
+		pr_set_bhakti_effect = { BHAKTI = pr_hellenic_demeter }
+	}
+
+	option = {
+		name = pr_greek_decision.0019.back
+		trigger_event = pr_greek_decision.0001
+	}
+
+	# Opt-Out
+	option = {
+		name = pr_greek_decision.0019.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#--- Choose Mycenaean Personal Deity (0002) ---
+pr_greek_decision.0002 = {
+	type = character_event
+	title = pr_greek_decision.0002.t
+	desc = pr_greek_decision.0002.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	# Poseidon
+	option = {
+		name = pr_greek_decision.0002.poseidon
+		trigger = {
+			NOT = { has_character_modifier = mycenaean_poseidon }
+		}
+		set_bhakti_effect = { BHAKTI = mycenaean_poseidon }
+	}
+
+	# Hermes
+	option = {
+		name = pr_greek_decision.0002.hermes
+		trigger = {
+			NOT = { has_character_modifier = mycenaean_hermes }
+		}
+		set_bhakti_effect = { BHAKTI = mycenaean_hermes }
+	}
+
+	# Aphrodite
+	option = {
+		name = pr_greek_decision.0002.aphrodite
+		trigger = {
+			NOT = { has_character_modifier = mycenaean_aphrodite }
+		}
+		set_bhakti_effect = { BHAKTI = mycenaean_aphrodite }
+	}
+
+	# Athena
+	option = {
+		name = pr_greek_decision.0002.athena
+		trigger = {
+			NOT = { has_character_modifier = mycenaean_athena }
+		}
+		set_bhakti_effect = { BHAKTI = mycenaean_athena }
+	}
+
+	# Ares
+	option = {
+		name = pr_greek_decision.0002.ares
+		trigger = {
+			NOT = { has_character_modifier = mycenaean_ares }
+		}
+		set_bhakti_effect = { BHAKTI = mycenaean_ares }
+	}
+
+	# Opt-Out
+	option = {
+		name = pr_greek_decision.0002.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#--- Choose Graeco-Egyptian Personal Deity (0003) ---
+pr_greek_decision.0003 = {
+	type = character_event
+	title = pr_greek_decision.0003.t
+	desc = pr_greek_decision.0003.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	# Zeus-Ammon
+	option = {
+		name = pr_greek_decision.0003.zeus_amon
+		trigger = {
+			NOT = { has_character_modifier = graeco_egyptian_zeus_amon }
+		}
+		set_bhakti_effect = { BHAKTI = graeco_egyptian_zeus_amon }
+	}
+
+	# Hermes Trismegistus
+	option = {
+		name = pr_greek_decision.0003.hermes_trismegistus
+		trigger = {
+			NOT = { has_character_modifier = graeco_egyptian_hermes_trismegistus }
+		}
+		set_bhakti_effect = { BHAKTI = graeco_egyptian_hermes_trismegistus }
+	}
+
+	# Isis
+	option = {
+		name = pr_greek_decision.0003.isis
+		trigger = {
+			NOT = { has_character_modifier = graeco_egyptian_isis }
+		}
+		set_bhakti_effect = { BHAKTI = graeco_egyptian_isis }
+	}
+
+	# Harpocrates
+	option = {
+		name = pr_greek_decision.0003.harpocrates
+		trigger = {
+			NOT = { has_character_modifier = graeco_egyptian_harpocrates }
+		}
+		set_bhakti_effect = { BHAKTI = graeco_egyptian_harpocrates }
+	}
+
+	# Ares
+	option = {
+		name = pr_greek_decision.0003.ares
+		trigger = {
+			NOT = { has_character_modifier = mycenaean_ares }
+		}
+		set_bhakti_effect = { BHAKTI = mycenaean_ares }
+	}
+
+	# Opt-Out
+	option = {
+		name = pr_greek_decision.0003.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#--- Embrace Hellen Culture (0004) ---
+pr_greek_decision.0004 = {
+	type = character_event
+	title = pr_greek_decision.0004.t
+	desc = pr_greek_decision.0004.desc
+	theme = realm
+
+	left_portrait = {
+		character = root
+		animation = storyteller
+	}
+
+	option = {
+		name = pr_greek_decision.0004.a
+		set_culture = culture:pr_greek
+		add_prestige = 100
+	}
+}
+
+#--- Convert to Graeco-Egyptian Faith (0005) ---
+pr_greek_decision.0005 = {
+	type = character_event
+	title = pr_greek_decision.0005.t
+	desc = pr_greek_decision.0005.desc
+	theme = faith
+
+	left_portrait = {
+		character = root
+		animation = storyteller
+	}
+
+	option = {
+		name = pr_greek_decision.0005.a
+		faith = faith:graeco_egyptian_polytheism
+		add_piety = 100
+	}
+}
+
+#Visit temple of Zeus
+pr_greek.0007 = {
+	type = character_event
+	title = pr_greek.0007.t
+	desc = pr_greek.0007.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_temple_jupiter }
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name =pr_greek.0007.a
+		hidden_effect = {
+			random_list = {
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_greek.0007.message.positive
+						add_character_modifier = {
+							modifier = favoured_by_zeus
+							years = 2
+						}
+					}
+				}
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_greek.0007.message.negative
+						add_character_modifier = {
+							modifier = unfavoured_by_zeus
+							years = 2
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#Buy book about Greek Mythology
+pr_greek.0008= {
+	trigger = {
+		NOT = {
+			any_character_artifact = {
+				has_artifact_modifier = pr_book_about_mythology
+			}
+		}
+	}
+	type = character_event
+	title = pr_greek.0008.t
+	desc = pr_greek.0008.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = market_west }
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_greek.0008.a
+		remove_short_term_gold = 15
+		create_artifact = {
+			name = greek_mythology_book
+			description = greek_mythology_book_description
+			type = miscellaneous
+			visuals = book
+			modifier = pr_book_about_mythology
+		}
+
+	}
+}
+
+#Offering to Demeter
+pr_greek.0013 = {
+	type = character_event
+	title = pr_greek.0013.t
+	desc = pr_greek.0013.desc
+	theme = learning
+	override_background = { reference = garden }
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_greek.0013.a
+		hidden_effect = {
+			random_list = {
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_greek.0013.message.positive
+						add_character_modifier = {
+							modifier = favoured_by_demeter
+							years = 2
+						}
+					}
+				}
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_greek.0013.message.negative
+						add_character_modifier = {
+							modifier = unfavoured_by_demeter
+							years = 2
+						}
+					}
+				}
+			}
+		}
+	}
+}

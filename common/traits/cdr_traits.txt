@@ -1,7 +1,7 @@
 ﻿#choose main deity traits 
 
 #Iupiter
-cdr_cmd1_religion = {
+pr_cdr_iupiter = {
 	index = 57422
 	fame = yes 
 	same_faith_opinion = 10
@@ -14,14 +14,14 @@ cdr_cmd1_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Iupiter.dds
+				desc = pr_iupiter.dds
 			}
-			desc = Iupiter.dds
+			desc = pr_iupiter.dds
 		}
 	}
 }
 #Iuno
-cdr_cmd2_religion = {
+pr_cdr_iuno = {
 	index = 57423
 	fame = yes 
 	same_faith_opinion = 5
@@ -34,14 +34,14 @@ cdr_cmd2_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Iuno.dds
+				desc = pr_iuno.dds
 			}
-			desc = Iuno.dds
+			desc = pr_iuno.dds
 		}
 	}
 }
 #Mars
-cdr_cmd3_religion = {
+pr_cdr_mars = {
 	index = 57424
 	fame = yes 
 	same_faith_opinion = 5
@@ -54,15 +54,15 @@ cdr_cmd3_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Mars.dds
+				desc = pr_mars.dds
 			}
-			desc = Mars.dds
+			desc = pr_mars.dds
 		}
 	}
 }
 
 #Venus
-cdr_cmd4_religion = {
+pr_cdr_venus = {
 	index = 57425
 	fame = yes 
 	same_faith_opinion = 5
@@ -75,14 +75,14 @@ cdr_cmd4_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Venus1.dds
+				desc = pr_venus.dds
 			}
-			desc = Venus1.dds
+			desc = pr_venus.dds
 		}
 	}
 }
 #House Lares
-cdr_cmd5_religion = {
+pr_cdr_lares = {
 	index = 57426
 	fame = yes 
 	same_faith_opinion = 5
@@ -97,15 +97,15 @@ cdr_cmd5_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = House_Laren.dds
+				desc = pr_lares.dds
 			}
-			desc = House_Laren.dds
+			desc = pr_lares.dds
 		}
 	}
 }
 
 # Mercurius
-cdr_cmd6_religion = {
+pr_cdr_mercurius = {
 	index = 57427
 	fame = yes 
 	same_faith_opinion = 5
@@ -119,14 +119,14 @@ cdr_cmd6_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Mercurius.dds
+				desc = pr_mercurius.dds
 			}
-			desc = Mercurius.dds
+			desc = pr_mercurius.dds
 		}
 	}
 }
 #Minerva 
-cdr_cmd7_religion = {
+pr_cdr_minerva = {
 	index = 57428
 	fame = yes 
 	learning = 2
@@ -139,14 +139,14 @@ cdr_cmd7_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = minerva.dds
+				desc = pr_minerva.dds
 			}
-			desc = minerva.dds
+			desc = pr_minerva.dds
 		}
 	}
 }
 #Apollo 
-cdr_cmd8_religion = {
+pr_cdr_apollo = {
 	index = 57429
 	fame = yes 
 	negate_health_penalty_add = 0.6
@@ -159,16 +159,37 @@ cdr_cmd8_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = apollo.dds
+				desc = pr_apollo.dds
 			}
-			desc = apollo.dds
+			desc = pr_apollo.dds
+		}
+	}
+}
+
+#Ceres
+pr_cdr_ceres = {
+	index = 57430
+	fame = yes
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	stewardship = 2
+	fertility = 0.1
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = pr_ceres.dds
+			}
+			desc = pr_ceres.dds
 		}
 	}
 }
 
 #hellenic
 #Zeus
-h_cmd1_religion = {
+pr_hellenic_zeus = {
 	index = 77422
 	fame = yes 
 	same_faith_opinion = 10
@@ -181,15 +202,15 @@ h_cmd1_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Iupiter.dds
+				desc = pr_iupiter.dds
 			}
-			desc = Iupiter.dds
+			desc = pr_iupiter.dds
 		}
 	}
 
 }
 #Hera
-h_cmd2_religion = {
+pr_hellenic_hera = {
 	index = 77423
 	fame = yes 
 	same_faith_opinion = 5
@@ -202,15 +223,15 @@ h_cmd2_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Iuno.dds
+				desc = pr_iuno.dds
 			}
-			desc = Iuno.dds
+			desc = pr_iuno.dds
 		}
 	}
 
 }
 #Ares
-h_cmd3_religion = {
+pr_hellenic_ares = {
 	index = 77424
 	fame = yes 
 	same_faith_opinion = 5
@@ -224,14 +245,14 @@ h_cmd3_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Mars.dds
+				desc = pr_mars.dds
 			}
-			desc = Mars.dds
+			desc = pr_mars.dds
 		}
 	}
 }
 #Aphrodite
-h_cmd4_religion = {
+pr_hellenic_aphrodite = {
 	index = 77425
 	fame = yes 
 	same_faith_opinion = 5
@@ -246,9 +267,9 @@ h_cmd4_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Venus1.dds
+				desc = pr_venus.dds
 			}
-			desc = Venus1.dds
+			desc = pr_venus.dds
 		}
 	}
 
@@ -256,7 +277,7 @@ h_cmd4_religion = {
 }
 
 # Hermes
-h_cmd5_religion = {
+pr_hellenic_hermes = {
 	index = 77426
 	fame = yes 
 	same_faith_opinion = 5
@@ -269,16 +290,16 @@ h_cmd5_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Mercurius.dds
+				desc = pr_mercurius.dds
 			}
-			desc = Mercurius.dds
+			desc = pr_mercurius.dds
 		}
 	}
 }
 #Athena
-h_cmd6_religion  = {
-	index = 57428
-	fame = yes 
+pr_hellenic_athena  = {
+	index = 77427
+	fame = yes
 	learning = 2
 	same_faith_opinion = 5
 	monthly_piety = 0.5
@@ -289,14 +310,34 @@ h_cmd6_religion  = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = minerva.dds
+				desc = pr_minerva.dds
 			}
-			desc = minerva.dds
+			desc = pr_minerva.dds
+		}
+	}
+}
+#Demeter
+pr_hellenic_demeter = {
+	index = 77428
+	fame = yes
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	stewardship = 2
+	fertility = 0.1
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = pr_ceres.dds
+			}
+			desc = pr_ceres.dds
 		}
 	}
 }
 #Mithras
-mm_cmd1_religion = {
+pr_mithras_mithras = {
 	index = 58422
 	fame = yes 
 	same_faith_opinion = 10
@@ -311,13 +352,13 @@ mm_cmd1_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Mithras.dds
+				desc = pr_mithras_mithras.dds
 			}
-			desc = Mithras.dds
+			desc = pr_mithras_mithras.dds
 		}
 	}
 }
-mm_cmd2_religion = {
+pr_mithras_arimanius = {
 	index = 58423
 	fame = yes 
 	same_faith_opinion = 10
@@ -332,14 +373,14 @@ mm_cmd2_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Arimanius.dds
+				desc = pr_mithras_arimanius.dds
 			}
-			desc = Arimanius.dds
+			desc = pr_mithras_arimanius.dds
 		}
 	}
 }
 
-mm_cmd3_religion = {
+pr_mithras_oromazes = {
 	index = 58424
 	fame = yes 
 	same_faith_opinion = 10
@@ -354,9 +395,9 @@ mm_cmd3_religion = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = Oromazes.dds
+				desc = pr_mithras_oromazes.dds
 			}
-			desc = Oromazes.dds
+			desc = pr_mithras_oromazes.dds
 		}
 	}
 }

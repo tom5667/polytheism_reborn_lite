@@ -1,127 +1,9 @@
-﻿namespace = z_r
-namespace = zoroastrianism 
-namespace = z_sr
+﻿namespace = pr_zoroastrian
 
-z_r.001 = { 
+pr_zoroastrian.0001 = {
 	type = character_event
-	title = z_r.001.t
-	desc = z_r.001.desc
-	theme = hunt_activity
-	right_portrait = {
-		character = root
-		animation = personality_callous
-	}
-	#proceed
-	option = {
-		name = z_r.001.a
-		# trigger_event = {
-		# 	id = z_sr.001
-		# 	months = 2 
-		# }
-		set_character_faith = mazdayasna
-	}	
-}
-
-#Reinstate Cultus Deorum as state religion 
-scripted_effect z_sr_notify_players_effectt = {
-	every_player = {
-		limit = {
-			Not = {this = root}  
-			capital_province = {
-			geographical_region = world_middle_east_persia
-			}
-		}
-		trigger_event = m_sr.002
-	}
-}
-
-z_sr.001 = {
-	type = character_event
-	title = z_sr.001.t
-	desc = z_sr.001.desc
-	theme = faith
-	right_portrait = {
-		character = scope:scoped_ruler
-		animation = personality_zealous	
-		}
-		override_background = { reference = throne_room }
-
-	immediate = {
-		play_music_cue = "mx_cue_faith_conversion"
-		save_scope_as = scoped_ruler
-		faith = { save_scope_as = old_faith }
-		return_z_sr_decision_scripted_effect = yes
-	}
-
-	option = {
-		name = z_sr.001.a
-		#Get a nice reward for your adherence to the true faith.
-		add_piety_level = 1
-		#Sort notification copy for players.
-		save_scope_value_as = {
-			name = m_return
-			value = flag:vanilla
-		}
-		m_sr_notify_players_effect = yes 
-		
-	}	
-}
-
-z_sr.002 = {
-	type = character_event
-	title = z_sr.002.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { top_liege = root }
-				desc = z_sr.002.desc.vassals
-			}
-			desc = z_sr.002.desc.outsiders
-		}
-		desc = z_sr.002.desc.intro
-		triggered_desc = {
-			trigger = { scope:m_return = flag:vanilla }
-			desc = z_sr.002.desc_vanilla
-		}
-	}
-	theme = faith
-	left_portrait = scope:scoped_ruler
-	override_background = { reference = throne_room }
-	#Roman polyteist are happy about this unexpected turn of events!
-	option = {
-		name = z_sr.002.a
-		trigger = { religion = religion:mesopotamian_polytheism}
-		add_stress = minor_stress_loss
-	}
-	#Vassals who do not follow the faith may decide to convert after all.
-	option = {
-		name = z_sr.002.b
-		trigger = {
-			top_liege = root
-			NOT = { religion = religion:mesopotamian_polytheism}
-		}
-		set_character_faith_with_conversion = faith:mesopotamian_polytheism
-		
-	}
-	#Those who aren't polytheist are probably horrified.
-	option = {
-		name = z_sr.002.c
-		trigger = {
-			NOT = {
-				religion = { is_in_family = rf_pagan}
-			}
-		}
-	}
-	#And, as a fallback, some people just won't care.
-	option = { 
-		name = z_sr.002.d 
-	}
-}
-
-zoroastrianism.001 = {
-	type = character_event
-	title = zoroastrianism.001.t
-	desc = zoroastrianism.001.desc
+	title = pr_zoroastrian.0001.t
+	desc = pr_zoroastrian.0001.desc
 	override_background = throne_room_east
 	right_portrait = {
 		character = root
@@ -129,26 +11,26 @@ zoroastrianism.001 = {
 	}
 	#proceed
 	option = {
-		name = zoroastrianism.001.a
+		name = pr_zoroastrian.0001.a
 		
 		trigger_event = { 
-			id = zoroastrianism.002
+			id = pr_zoroastrian.0002
 			years = 1
 		}	
 	}
 }
 
-zoroastrianism.002 = {
+pr_zoroastrian.0002 = {
 	type = character_event
-	title = zoroastrianism.002.t
-	desc = zoroastrianism.002.desc
+	title = pr_zoroastrian.0002.t
+	desc = pr_zoroastrian.0002.desc
 	override_background = throne_room_east
 	right_portrait = {
 		character = root
 		animation = personality_callous
 	}
 	option = {
-		name = zoroastrianism.002.a
+		name = pr_zoroastrian.0002.a
 		add_piety = 100 
 		set_artifact_rarity_illustrious  = yes
 		save_scope_as = owner
@@ -163,27 +45,27 @@ zoroastrianism.002 = {
 	}
 }
 
-zoroastrianism.003 = {
+pr_zoroastrian.0003 = {
 
 	type = character_event
-	title = zoroastrianism.003.t
+	title = pr_zoroastrian.0003.t
 
-	desc = zoroastrianism.003.desc
+	desc = pr_zoroastrian.0003.desc
 	theme = faith
 	right_portrait = {
 		character = root
 		animation = personality_callous
 	}
 	option = {
-		name = zoroastrianism.003.a
-		set_culture = culture:middle_persian
+		name = pr_zoroastrian.0003.a
+		set_culture = culture:pr_middle_persian
 	}
 }
  
-zoroastrianism.004 = {
+pr_zoroastrian.0004 = {
 	type = character_event
-	title = zoroastrianism.004.t
-	desc = zoroastrianism.004.desc
+	title = pr_zoroastrian.0004.t
+	desc = pr_zoroastrian.0004.desc
 	override_background = throne_room_east
 	theme = faith
 	immediate = {
@@ -196,7 +78,7 @@ zoroastrianism.004 = {
 			employer = root
 			dynasty = generate
 			religion = mazdayasna
-			culture = culture:middle_persian
+			culture = culture:pr_middle_persian
 			random_traits = yes
 			save_scope_as = envoy
 			age = {20 40}
@@ -215,7 +97,7 @@ zoroastrianism.004 = {
 
 
 	option = {
-		name = zoroastrianism.004.a
+		name = pr_zoroastrian.0004.a
 		decide_fate_off_envoy = yes
 			# clear_saved_scope = scope:receiver
 			# remove_list_global_variable = {
@@ -231,10 +113,10 @@ zoroastrianism.004 = {
 	}
 }
 
-zoroastrianism.008 = {
+pr_zoroastrian.0008 = {
 	type = character_event
-	title = zoroastrianism.004.t
-	desc = zoroastrianism.004.desc
+	title = pr_zoroastrian.0008.t
+	desc = pr_zoroastrian.0008.desc
 	override_background = throne_room_east
 	theme = faith
 	immediate = {
@@ -247,7 +129,7 @@ zoroastrianism.008 = {
 			employer = root
 			dynasty = generate
 			religion = mazdayasna
-			culture = culture:middle_persian
+			culture = culture:pr_middle_persian
 			random_traits = yes
 			save_scope_as = envoy
 			age = {20 40}
@@ -266,7 +148,7 @@ zoroastrianism.008 = {
 
 
 	option = {
-		name = zoroastrianism.004.a
+		name = pr_zoroastrian.0008.a
 		decide_fate_off_envoy = yes
 			# clear_saved_scope = scope:receiver
 			# remove_list_global_variable = {
@@ -283,10 +165,10 @@ zoroastrianism.008 = {
 }
 
 
-zoroastrianism.005 = {
+pr_zoroastrian.0005 = {
 	type = character_event
-	title = zoroastrianism.005.t
-	desc = zoroastrianism.005.desc
+	title = pr_zoroastrian.0005.t
+	desc = pr_zoroastrian.0005.desc
 	override_background = throne_room_east
 
 	theme = faith
@@ -299,46 +181,15 @@ zoroastrianism.005 = {
 		animation = personality_honorable
 	}
 	option = {#Make the alliance happen
-		name = zoroastrianism.005.a
+		name = pr_zoroastrian.0005.a
 		create_alliance = {
-			target = scope:khorezm_holder
-			allied_through_owner = scope:khorezm_holder
+			target = scope:receiver
+			allied_through_owner = scope:receiver
 			allied_through_target = root
 		} 
-		scope:khorezm_holder = {
+		scope:receiver = {
 			add_pressed_claim = title:d_merv 
 		}
-		scope:root = {
-			add_opinion = {
-				target = scope:khorezm_holder
-				modifier = event_negotiated_alliance_opinion
-
-			}
-		}
-		scope:envoy= {
-			death = {
-				death_reason = death_vanished
-			}
-		}
-	}
-}
-
-zoroastrianism.006 = {
-	type = character_event
-	title = zoroastrianism.006.t
-	desc = zoroastrianism.006.desc
-	override_background = throne_room_east
-	theme = faith
-	right_portrait = {
-		character = scope:receiver
-		animation = personality_cynical
-	}
-	left_portrait = {
-		character = scope:envoy
-		animation = personality_cynical
-	}
-	option = {#Alliance is not an option, give small opinion boost instead
-		name = zoroastrianism.006.a
 		scope:root = {
 			add_opinion = {
 				target = scope:receiver
@@ -354,10 +205,41 @@ zoroastrianism.006 = {
 	}
 }
 
-zoroastrianism.007 = {
+pr_zoroastrian.0006 = {
 	type = character_event
-	title = zoroastrianism.007.t
-	desc = zoroastrianism.007.desc
+	title = pr_zoroastrian.0006.t
+	desc = pr_zoroastrian.0006.desc
+	override_background = throne_room_east
+	theme = faith
+	right_portrait = {
+		character = scope:receiver
+		animation = personality_cynical
+	}
+	left_portrait = {
+		character = scope:envoy
+		animation = personality_cynical
+	}
+	option = {#Alliance is not an option, give small opinion boost instead
+		name = pr_zoroastrian.0006.a
+		scope:root = {
+			add_opinion = {
+				target = scope:receiver
+				modifier = event_negotiated_alliance_opinion
+
+			}
+		}
+		scope:envoy= {
+			death = {
+				death_reason = death_vanished
+			}
+		}
+	}
+}
+
+pr_zoroastrian.0007 = {
+	type = character_event
+	title = pr_zoroastrian.0007.t
+	desc = pr_zoroastrian.0007.desc
 	override_background = throne_room_east
 	theme = faith
 	right_portrait = {
@@ -369,7 +251,7 @@ zoroastrianism.007 = {
 		animation = beg
 	}
 	option = {#Send back his head 
-		name = zoroastrianism.007.a
+		name = pr_zoroastrian.0007.a
 		scope:root = {
 			add_opinion = {
 				target = scope:receiver

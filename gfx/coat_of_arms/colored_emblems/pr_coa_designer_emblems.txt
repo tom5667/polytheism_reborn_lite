@@ -95,4 +95,4 @@ ce_awen_symbol.dds = { colors = 1 category = polytheism_reborn }
 ce_wheel_of_taranis.dds = { colors = 1 category = polytheism_reborn }
 ce_celtic_bull.dds = { colors = 1 category = polytheism_reborn }
 ce_celtic_griffin.dds = { colors = 1 category = polytheism_reborn }
-ce_celtic_dragon.dds = { colors = 1 category = polytheism_reborn }
+ce_celtic_dragon.dds = { colors = 1 category = polytheism_reborn }

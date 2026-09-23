@@ -21,7 +21,7 @@ egyptian_religion ={
 		prussian_03 
 		ce_pagan_cross_03 ce_pagan_cross_04 ce_pagan_cross_05 ce_pagan_cross_06 ce_pagan_cross_07 ce_pagan_cross_08 ce_pagan_cross_arrows ce_pagan_cross_arrows_02 ce_pagan_cross_arrows_03 ce_pagan_cross_dhata ce_pagan_cross_mara ce_pagan_cross_ognevitsa ce_pagan_cross_svarog ce_pagan_cross_svarog_02 ce_pagan_cross_tursas ce_pagan_cross_tursas_02 ce_pagan_cross_yarovik ce_pagan_cross_yarovrat ce_pagan_dazbog ce_pagan_dodola ce_pagan_endless_knot ce_pagan_endless_knot_square ce_pagan_hands_svarog ce_pagan_hors ce_pagan_jumis ce_pagan_kolovrat ce_pagan_kolovrat_02 ce_pagan_laima ce_pagan_looped_knot ce_pagan_moon_cross ce_pagan_nemiza ce_pagan_perun ce_pagan_rod ce_pagan_rose ce_pagan_saule ce_pagan_star_04 ce_pagan_star_08 ce_pagan_svarga ce_pagan_thunder_cross ce_pagan_usins ce_pagan_usins_02 ce_pagan_vehmic ce_pagan_wheel ce_pagan_wolf_triskel ce_pagan_wotan_cross ce_suomenusko_kazym ce_suomenusko_kondair ce_suomenusko_moon ce_suomenusko_sun ce_suomenusko_sun_02 ce_suomenusko_sun_07 ce_suomenusko_sun_moon ce_suomenusko_udmurt ce_tursansydan ce_ukkokirves ce_ukkos_hammer ce_walknut
 	}
-    holy_order_maa = {Abudrar}
+    holy_order_maa = {abudrar}
 
 	faiths = {
 		kemetic_polytheism ={
@@ -88,6 +88,7 @@ egyptian_religion ={
 			localization = {
 				#High God Name
 				HighGodName = kemetic_polytheism_high_god_name
+				HighGodName2 = kemetic_polytheism_high_god_name_2
 				HighGodNamePossessive = kemetic_polytheism_high_god_name_possessive
 				HighGodNameSheHe = CHARACTER_SHEHE_HE
 				HighGodHerselfHimself = CHARACTER_HIMSELF
@@ -111,7 +112,7 @@ egyptian_religion ={
 				
 				#FertilityGod
 				FertilityGodName = kemetic_polytheism_fertility_god_name
-				FertilityGodNamePossessive = kemetic_fertility_god_name_possessive
+				FertilityGodNamePossessive = kemetic_polytheism_fertility_god_name_possessive
 				FertilityGodSheHe = CHARACTER_SHEHE_SHE
 				FertilityGodHerHis = CHARACTER_HERHIS_HER
 				FertilityGodHerHim = CHARACTER_HERHIM_HER
@@ -173,18 +174,26 @@ egyptian_religion ={
 				WaterGodHerHim = CHARACTER_HERHIM_HER
 
 				PantheonTerm = religion_the_gods
+				PantheonTerm2 = religion_the_gods_2
+				PantheonTerm3 = religion_the_gods_3
 				PantheonTermHasHave = pantheon_term_have
 				GoodGodNames = {kemetic_polytheism_good_god_isis kemetic_polytheism_good_god_horus kemetic_polytheism_good_god_mut kemetic_polytheism_good_god_sekhmet kemetic_polytheism_good_god_geb kemetic_polytheism_good_god_ptah kemetic_polytheism_good_god_re kemetic_polytheism_good_god_anubis}
 				DevilName = kemetic_polytheism_devil_name
-				DevilNamePossessive = kemetic_devil_name_possessive
+				DevilNamePossessive = kemetic_polytheism_devil_name_possessive
 				DevilSheHe = CHARACTER_SHEHE_HE
 				DevilHerHis = CHARACTER_HERHIS_HIS
 				DevilHerselfHimself = CHARACTER_HIMSELF
 				EvilGodNames = {kemetic_polytheism_evil_god_apophis kemetic_polytheism_evil_god_apep }
 				HouseOfWorship = paganism_house_of_worship
+				HouseOfWorship2 = paganism_house_of_worship_2
+				HouseOfWorship3 = paganism_house_of_worship_3
 				HouseOfWorshipPlural = paganism_house_of_worship_plural
 				ReligiousSymbol = kemetic_polytheism_religious_symbol
+				ReligiousSymbol2 = kemetic_polytheism_religious_symbol_2
+				ReligiousSymbol3 = kemetic_polytheism_religious_symbol_3
 				ReligiousText = kemetic_polytheism_religious_text
+				ReligiousText2 = kemetic_polytheism_religious_text_2
+				ReligiousText3 = kemetic_polytheism_religious_text_3
 				ReligiousHeadName = kemetic_polytheism_religious_head_title
 				ReligiousHeadTitleName = dualism_religious_head_title_name
 				DevoteeMale = paganism_devotee
@@ -207,20 +216,28 @@ egyptian_religion ={
 				BishopNeuter = kemetic_polytheism_priest_male
 				BishopNeuterPlural = kemetic_polytheism_priest_male_plural
 				DivineRealm = kemetic_polytheism_divine_realm
+				DivineRealm2 = kemetic_polytheism_divine_realm_2
+				DivineRealm3 = kemetic_polytheism_divine_realm_3
 				PositiveAfterLife = kemetic_polytheism_death_deity_name
+				PositiveAfterLife2 = kemetic_polytheism_death_deity_name_2
+				PositiveAfterLife3 = kemetic_polytheism_death_deity_name_3
 				NegativeAfterLife = kemetic_polytheism_death_deity_name
+				NegativeAfterLife2 = kemetic_polytheism_death_deity_name_2
+				NegativeAfterLife3 = kemetic_polytheism_death_deity_name_3
 				DeathDeityName = kemetic_polytheism_death_deity_name
 				DeathDeityNamePossessive = kemetic_polytheism_death_deity_name_possessive
 				DeathDeitySheHe = CHARACTER_SHEHE_HE
 				DeathDeityHerHis = CHARACTER_HERHIS_HIS
+				DeathDeityHerHim = CHARACTER_HERHIM_HIM
 				WitchGodName = kemetic_polytheism_witchgodname_apophis
+				WitchGodNamePossessive = kemetic_polytheism_witchgodname_apophis_possessive
 				WitchGodHerHis = CHARACTER_HERHIS_HIS
 				WitchGodSheHe = CHARACTER_SHEHE_HE
 				WitchGodHerHim = CHARACTER_HERHIM_HIM
 				WitchGodMistressMaster = master
 				WitchGodMotherFather = father
 				
-				GHWName = ghw_great_holy_wars
+				GHWName = ghw_great_holy_war
 				GHWNamePlural = ghw_great_holy_wars
 
 				}
@@ -248,6 +265,7 @@ egyptian_religion ={
 		doctrine = doctrine_gender_equal #Women could hold jobs and buisnesses and where treated with respect although men had more rights, so it's a bit up to debate. 
 		doctrine = doctrine_pluralism_pluralistic
 		doctrine = doctrine_theocracy_lay_clergy
+		doctrine = doctrine_monotheist
 		doctrine = special_doctrine_no_patron_god
 		doctrine = doctrine_pilgrimage_encouraged
 		doctrine = doctrine_funeral_mummification
@@ -286,6 +304,7 @@ egyptian_religion ={
 		localization = {
 			#High God Name
 			HighGodName = atenism_high_god_name
+			HighGodName2 = atenism_high_god_name_2
 			HighGodNamePossessive = atenism_high_god_name_possessive
 			HighGodNameSheHe = CHARACTER_SHEHE_HE
 			HighGodHerselfHimself = CHARACTER_HIMSELF
@@ -309,7 +328,7 @@ egyptian_religion ={
 			
 			#FertilityGod
 			FertilityGodName = atenism_fertility_god_name
-			FertilityGodNamePossessive = kemetic_fertility_god_name_possessive
+			FertilityGodNamePossessive = atenism_fertility_god_name_possessive
 			FertilityGodSheHe = CHARACTER_SHEHE_HE
 			FertilityGodHerHis = CHARACTER_HERHIS_HIS
 			FertilityGodHerHim = CHARACTER_HERHIM_HIM
@@ -371,18 +390,26 @@ egyptian_religion ={
 			WaterGodHerHim = CHARACTER_HERHIM_HIM
 
 			PantheonTerm = religion_the_gods
+			PantheonTerm2 = religion_the_gods_2
+			PantheonTerm3 = religion_the_gods_3
 			PantheonTermHasHave = pantheon_term_have
 			GoodGodNames = {atenism_good_god_isis atenism_good_god_horus atenism_good_god_mut atenism_good_god_sekhmet atenism_good_god_geb atenism_good_god_ptah atenism_good_god_re atenism_good_god_anubis}
 			DevilName = atenism_devil_name
-			DevilNamePossessive = kemetic_devil_name_possessive
+			DevilNamePossessive = atenism_devil_name_possessive
 			DevilSheHe = CHARACTER_SHEHE_HE
 			DevilHerHis = CHARACTER_HERHIS_HIS
 			DevilHerselfHimself = CHARACTER_HIMSELF
 			EvilGodNames = {atenism_evil_god_apophis atenism_evil_god_apep }
 			HouseOfWorship = paganism_house_of_worship
+			HouseOfWorship2 = paganism_house_of_worship_2
+			HouseOfWorship3 = paganism_house_of_worship_3
 			HouseOfWorshipPlural = paganism_house_of_worship_plural
 			ReligiousSymbol = atenism_religious_symbol
+			ReligiousSymbol2 = atenism_religious_symbol_2
+			ReligiousSymbol3 = atenism_religious_symbol_3
 			ReligiousText = atenism_religious_text
+			ReligiousText2 = atenism_religious_text_2
+			ReligiousText3 = atenism_religious_text_3
 			ReligiousHeadName = atenism_religious_head_title
 			ReligiousHeadTitleName = dualism_religious_head_title_name
 			DevoteeMale = paganism_devotee
@@ -405,20 +432,28 @@ egyptian_religion ={
 			BishopNeuter = atenism_priest_male
 			BishopNeuterPlural = atenism_priest_male_plural
 			DivineRealm = atenism_divine_realm
+			DivineRealm2 = atenism_divine_realm_2
+			DivineRealm3 = atenism_divine_realm_3
 			PositiveAfterLife = atenism_death_deity_name
+			PositiveAfterLife2 = atenism_death_deity_name_2
+			PositiveAfterLife3 = atenism_death_deity_name_3
 			NegativeAfterLife = atenism_death_deity_name
+			NegativeAfterLife2 = atenism_death_deity_name_2
+			NegativeAfterLife3 = atenism_death_deity_name_3
 			DeathDeityName = atenism_death_deity_name
 			DeathDeityNamePossessive = atenism_death_deity_name_possessive
 			DeathDeitySheHe = CHARACTER_SHEHE_HE
 			DeathDeityHerHis = CHARACTER_HERHIS_HIS
+			DeathDeityHerHim = CHARACTER_HERHIM_HIM
 			WitchGodName = atenism_witchgodname_apophis
+			WitchGodNamePossessive = atenism_witchgodname_apophis_possessive
 			WitchGodHerHis = CHARACTER_HERHIS_HER
 			WitchGodSheHe = CHARACTER_SHEHE_HE
 			WitchGodHerHim = CHARACTER_HERHIM_HIM
 			WitchGodMistressMaster = master
 			WitchGodMotherFather = father
 			
-			GHWName = ghw_great_holy_wars
+			GHWName = ghw_great_holy_war
 			GHWNamePlural = ghw_great_holy_wars
 
 			}

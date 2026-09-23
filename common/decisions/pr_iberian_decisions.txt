@@ -1,0 +1,81 @@
+﻿##################################################
+# Polytheism Reborn - Iberian Decisions
+# Specifieke besluiten voor de Iberian geloofsgroep
+# made by tom5667
+##################################################
+
+# --- Choose Main Deity (Iberian) Decision ---
+pr_iberian_choose_main_deity_decision = {
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
+    }
+    desc = pr_iberian_choose_main_deity_decision_desc
+    decision_tooltip = pr_iberian_choose_main_deity_decision_tooltip
+    decision_group_type = polytheism
+
+    is_shown = {
+        has_fp1_dlc_trigger = yes
+        religion = religion:iberian_religion
+    }
+
+    is_valid = {
+    }
+
+    is_valid_showing_failures_only = {
+        piety >= 0
+    }
+
+    cooldown = { years = 2 }
+
+    effect = {
+        show_as_tooltip = {
+            random_list = {
+                desc = pr_iberian_choose_main_deity_decision_tt
+                100 = {
+                    show_chance = no
+                    desc = select_main_deity_iberian_decision.select_reue
+                    add_character_modifier = lusitanian_reue
+                }
+                100 = {
+                    show_chance = no
+                    desc = select_main_deity_iberian_decision.select_cariocecus
+                    add_character_modifier = lusitanian_cariocecus
+                }
+                100 = {
+                    show_chance = no
+                    desc = select_main_deity_iberian_decision.select_ataegina
+                    add_character_modifier = lusitanian_ataegina
+                }
+                100 = {
+                    show_chance = no
+                    desc = select_main_deity_iberian_decision.select_lucubo
+                    add_character_modifier = lusitanian_lucubo
+                }
+                100 = {
+                    show_chance = no
+                    desc = select_main_deity_iberian_decision.select_arancio
+                    add_character_modifier = lusitanian_arancio
+                }
+            }
+        }
+        trigger_event = pr_iberian.0100
+    }
+
+    ai_check_interval = 96
+
+    ai_potential = {
+        piety >= minor_piety_value
+        NOR = {
+            has_character_modifier = lusitanian_reue
+            has_character_modifier = lusitanian_cariocecus
+            has_character_modifier = lusitanian_ataegina
+            has_character_modifier = lusitanian_lucubo
+            has_character_modifier = lusitanian_arancio
+        }
+    }
+
+    ai_will_do = {
+        base = 100
+    }
+}
+

@@ -1,36 +1,62 @@
-pr_jupiter_name = {
+﻿pr_jupiter_name = {
     type = character
     text = {
         trigger = {
-            culture = {
-                has_cultural_pillar = language_illyrian
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_illyrian
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_illyrian
+                }
             }
         }
         localization_key = jupiter_illyrian_name
     }
     text = {
         trigger = {
-            culture = {
-                has_cultural_pillar = language_gaulish
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_gaulish
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_gaulish
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_gallo_romance
+                }
             }
         }
         localization_key = jupiter_gaulish_name
     }
     text = {
         trigger = {
-            culture = {
-                has_cultural_pillar = language_celtic_iberian
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_celtic_iberian
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_celtic_iberian
+                }
             }
         }
         localization_key = jupiter_celtic_iberian_name
     }
     text = {
         trigger = {
-            culture = {
-                has_cultural_pillar = language_brythonic
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_brythonic
+                }
+                culture = {
+                    has_cultural_pillar = heritage_brythonic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_british_latin
+                }
             }
         }
-            localization_key = jupiter_brythonic_name
+        localization_key = jupiter_brythonic_name
     }
     text = {
         trigger = {
@@ -42,11 +68,51 @@ pr_jupiter_name = {
     }
     text = {
         trigger = {
-            culture = {
-                has_cultural_pillar = language_phoenician
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_phoenician
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_phoenician
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_african_romance
+                }
             }
         }
         localization_key = jupiter_phoenician_name
+    }
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = heritage_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_coptic
+                }
+            }
+        }
+        localization_key = jupiter_kemetic_name
+    }
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_iberian
+                }
+                culture = {
+                    has_cultural_pillar = heritage_iberian
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_hispano_romance
+                }
+            }
+        }
+        localization_key = jupiter_iberian_name
     }
     text = {
         fallback = yes
@@ -57,77 +123,67 @@ pr_mars_name = {
     type = character
     text = {
         trigger = {
-            culture = {
-                has_cultural_pillar = language_gaulish
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_gaulish
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_gaulish
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_gallo_romance
+                }
             }
-
-
         }
         localization_key = mars_gaulish_name
     }
     text = {
         trigger = {
-            culture = {
-                has_cultural_pillar = language_celtic_iberian
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_celtic_iberian
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_celtic_iberian
+                }
             }
-
         }
         localization_key = mars_celtic_iberian_name
     }
     text = {
         trigger = {
-            culture = {
-                has_cultural_pillar = language_brythonic
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_brythonic
+                }
+                culture = {
+                    has_cultural_pillar = heritage_brythonic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_british_latin
+                }
             }
-
         }
         localization_key = mars_brythonic_name
     }
     text = {
         trigger = {
-            culture = {
-                has_cultural_pillar = language_phoenician
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_phoenician
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_phoenician
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_african_romance
+                }
             }
-
-
         }
         localization_key = mars_phoenician_name
     }
     text = {
         trigger = {
-            or = {
-                culture = {
-                    has_cultural_pillar = language_central_germanic
-                }
-                culture = {
-                    has_cultural_pillar = language_norse
-                }
-
-            }
-
-
-        }
-        localization_key = mars_germanic_name
-    }
-    text = {
-        fallback = yes
-        localization_key = fallback_mars_name
-    }
-
-}
-pr_venus_name = {
-    type = character
-    text = {
-        trigger = {
-            culture = {
-                has_cultural_pillar = language_phoenician
-            }
-        }
-        localization_key = venus_phoenician_name
-    }
-    text = {
-        trigger = {
-
             OR = {
                 culture = {
                     has_cultural_pillar = language_central_germanic
@@ -135,9 +191,102 @@ pr_venus_name = {
                 culture = {
                     has_cultural_pillar = language_norse
                 }
+                culture = {
+                    has_cultural_pillar = heritage_west_germanic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_moselle
+                }
+            }
+        }
+        localization_key = mars_germanic_name
+    }
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_iberian
+                }
+                culture = {
+                    has_cultural_pillar = heritage_iberian
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_hispano_romance
+                }
+            }
+        }
+        localization_key = mars_iberian_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_mars_name
+    }
+}
+pr_venus_name = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_illyrian
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_illyrian
+                }
+            }
+        }
+        localization_key = venus_illyrian_name
+    }
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_phoenician
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_phoenician
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_african_romance
+                }
+            }
+        }
+        localization_key = venus_phoenician_name
+    }
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_central_germanic
+                }
+                culture = {
+                    has_cultural_pillar = language_norse
+                }
+                culture = {
+                    has_cultural_pillar = heritage_west_germanic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_moselle
+                }
             }
         }
         localization_key = venus_germanic_name
+    }
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = heritage_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_coptic
+                }
+            }
+        }
+        localization_key = venus_kemetic_name
     }
     text = {
         fallback = yes
@@ -148,28 +297,70 @@ pr_mercurius_name = {
     type = character
     text = {
         trigger = {
-            culture = {
-                has_cultural_pillar = language_phoenician
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_phoenician
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_phoenician
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_african_romance
+                }
             }
         }
         localization_key = mercurius_phoenician_name
     }
     text = {
         trigger = {
-            culture = {
-                has_cultural_pillar = language_gaulish
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_gaulish
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_gaulish
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_gallo_romance
+                }
             }
         }
         localization_key = mercurius_gaulish_name
-
     }
     text = {
         trigger = {
-            culture = {
-                has_cultural_pillar = language_brythonic
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_central_germanic
+                }
+                culture = {
+                    has_cultural_pillar = language_norse
+                }
+                culture = {
+                    has_cultural_pillar = heritage_west_germanic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_moselle
+                }
             }
         }
-        localization_key = mercurius_brythonic_name
+        localization_key = mercurius_germanic_name
+    }
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = heritage_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_coptic
+                }
+            }
+        }
+        localization_key = mercurius_kemetic_name
     }
     text = {
         fallback = yes
@@ -181,40 +372,19 @@ pr_apollo_name = {
     type = character
     text = {
         trigger = {
-            culture = {
-                has_cultural_pillar = language_gaulish
-            }
-        }
-        localization_key = apollo_gaulish_name
-    }
-    text = {
-        trigger = {
-            culture = {
-                has_cultural_pillar = language_celtic_iberian
-            }
-            }
-        localization_key = apollo_celtic_iberian_name
-    }
-    text = {
-        trigger = {
-            culture = {
-                has_cultural_pillar = language_phoenician
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_phoenician
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_phoenician
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_african_romance
+                }
             }
         }
         localization_key = apollo_phoenician_name
-    }
-    text = {
-        trigger = {
-            OR = {
-                culture = {
-                    has_cultural_pillar = language_central_germanic
-                }
-                culture = {
-                    has_cultural_pillar = language_norse
-                }
-            }
-        }
-        localization_key =  apollo_germanic_name
     }
     text = {
         fallback = yes
@@ -226,16 +396,32 @@ pr_minerva_name = {
     type = character
     text = {
         trigger = {
-            culture = {
-                has_cultural_pillar = language_brythonic
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_brythonic
+                }
+                culture = {
+                    has_cultural_pillar = heritage_brythonic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_british_latin
+                }
             }
         }
         localization_key = minerva_brythonic_name
     }
     text = {
         trigger = {
-            culture = {
-                has_cultural_pillar = language_gaulish
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_gaulish
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_gaulish
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_gallo_romance
+                }
             }
         }
         localization_key = minerva_gaulish_name
@@ -243,5 +429,283 @@ pr_minerva_name = {
     text = {
         fallback = yes
         localization_key = fallback_minerva_name
+    }
+}
+pr_neptune_name = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_illyrian
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_illyrian
+                }
+            }
+        }
+        localization_key = neptune_illyrian_name
+    }
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = heritage_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_coptic
+                }
+            }
+        }
+        localization_key = neptune_kemetic_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_neptune_name
+    }
+}
+pr_mendacius_name = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_gaulish
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_gaulish
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_gallo_romance
+                }
+            }
+        }
+        localization_key = mendacius_gaulish_name
+    }
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_phoenician
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_phoenician
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_african_romance
+                }
+            }
+        }
+        localization_key = mendacius_phoenician_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_mendacius_name
+    }
+}
+pr_juno_name = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = language_pr_phoenician
+                }
+                culture = {
+                    has_cultural_pillar = heritage_pr_phoenician
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_african_romance
+                }
+            }
+        }
+        localization_key = juno_phoenician_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_juno_name
+    }
+}
+pr_zeus_name = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = heritage_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_coptic
+                }
+            }
+        }
+        localization_key = zeus_egyptian_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_zeus_name
+    }
+}
+pr_asclepius_name = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = heritage_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_coptic
+                }
+            }
+        }
+        localization_key = asclepius_egyptian_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_asclepius_name
+    }
+}
+pr_demeter_name = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = heritage_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_coptic
+                }
+            }
+        }
+        localization_key = demeter_egyptian_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_demeter_name
+    }
+}
+pr_hades_name = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = heritage_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_coptic
+                }
+            }
+        }
+        localization_key = hades_egyptian_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_hades_name
+    }
+}
+pr_hestia_name = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = heritage_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_coptic
+                }
+            }
+        }
+        localization_key = hestia_egyptian_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_hestia_name
+    }
+}
+pr_moirai_name = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = heritage_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_coptic
+                }
+            }
+        }
+        localization_key = moirai_egyptian_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_moirai_name
+    }
+}
+pr_athena_name = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = heritage_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_coptic
+                }
+            }
+        }
+        localization_key = athena_egyptian_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_athena_name
+    }
+}
+pr_poseidon_name = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = heritage_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_coptic
+                }
+            }
+        }
+        localization_key = poseidon_egyptian_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_poseidon_name
+    }
+}
+pr_eris_name = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                culture = {
+                    has_cultural_pillar = heritage_kemetic
+                }
+                culture = {
+                    has_cultural_pillar = language_pr_coptic
+                }
+            }
+        }
+        localization_key = eris_egyptian_name
+    }
+    text = {
+        fallback = yes
+        localization_key = fallback_eris_name
     }
 }

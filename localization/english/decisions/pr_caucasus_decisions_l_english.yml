@@ -1,0 +1,24 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Caucasus Decisions
+  # Localization for pr_caucasus_decisions.txt
+  # =============================================
+
+  # --- Choose Main Deity Decision ---
+  pr_caucasus_choose_main_deity_decision:0 "Choose Main Deity"
+  pr_caucasus_choose_main_deity_decision_desc:0 "#F The gods of the Caucasus pantheon watch over me, each offering their unique blessings.#!/n\nI must choose which deity to honor as my primary patron, guiding my rule and receiving my devotion."
+  pr_caucasus_choose_main_deity_decision_tooltip:0 "Select a main deity from the Caucasus pantheon to receive divine favor"
+  pr_caucasus_choose_main_deity_decision_confirm:0 "Choose Main Deity!"
+  pr_caucasus_choose_main_deity_decision_tt:0 "Select a main deity to receive divine favor"
+
+  # Georgian Polytheism Deities
+  pr_caucasus_choose_main_deity_decision.select_armzi:0 "Armzi, God of the Moon"
+  pr_caucasus_choose_main_deity_decision.select_adgilis_deda:0 "Adgilis Deda, Mother Goddess"
+  pr_caucasus_choose_main_deity_decision.select_kopala:0 "Kopala, God of the Hunt"
+  pr_caucasus_choose_main_deity_decision.select_barbale:0 "Barbale, Goddess of Fertility"
+
+  # Armenian Polytheism Deities
+  pr_caucasus_choose_main_deity_decision.select_aramazd:0 "Aramazd, Sky God"
+  pr_caucasus_choose_main_deity_decision.select_astlik:0 "Astlik, Goddess of Love"
+  pr_caucasus_choose_main_deity_decision.select_nane:0 "Nane, Goddess of Wisdom"
+  pr_caucasus_choose_main_deity_decision.select_nvard:0 "Nvard, Goddess of War"

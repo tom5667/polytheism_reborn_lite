@@ -1,0 +1,76 @@
+l_german:
+  # =============================================
+  # Polytheism Reborn - Allgemeine Entscheidungen
+  # Lokalisierung für pr_decisions.txt
+  # =============================================
+
+  # --- Rückkehr zum Polytheismus ---
+  pr_return_polytheism_decision:0 "Kehr zu den alten Göttern zurück"
+  pr_return_polytheism_decision_desc:0 "#F Der Glaube unserer Vorfahren ruft zu uns aus vergangenen Zeiten. Bevor das Kreuz oder der Halbmond in unsere Lande kamen, ehrten unsere Vorfahren die Götter des Himmels und der Erde, der Flüsse und Berge. Nun, da die alten Wege erneut in den Herzen unserer Sippe erwachen, spüre ich den Ruf des alten Glaubens.#!\nIch werde die fremden Götter verwerfen und zur Verehrung meiner Ahnen zurückkehren und den Weg des Polytheismus beschreiten, wie es meine Vorfahren in alter Zeit taten."
+  pr_return_polytheism_decision_tooltip:0 "#T Verlasse deinen aktuellen Glauben und kehre zu den alten polytheistischen Traditionen deines Volkes zurück#!"
+  pr_return_polytheism_decision_confirm:0 "Kehr zu den alten Göttern zurück!"
+
+  # --- Rückkehr zum Polytheismus (Kurz) ---
+  pr_return_polytheism_short_decision:0 "Kehr zu den alten Göttern zurück"
+  pr_return_polytheism_short_decision_desc:0 "#F Die Götter von einst haben uns nicht vergessen, selbst als die Jahrhunderte ihre Tempel haben verfallen lassen und ihre Priester zerstreut. Ich spüre ihre Gegenwart im Wind und Regen, im Wechsel der Jahreszeiten und den Rufen der Wildnis.#!\nIch werde die ersten Schritte auf dem Weg zurück zum alten Glauben gehen, auf der Suche nach der Weisheit der Alten."
+  pr_return_polytheism_short_decision_tooltip:0 "#T Beginne deine Reise zurück zum alten polytheistischen Glauben#!"
+  pr_return_polytheism_short_decision_confirm:0 "Beginne die Reise!"
+
+  # --- Alte Kultur annehmen ---
+  pr_return_culture_short_decision:0 "Nimm die alte Kultur an"
+  pr_return_culture_short_decision_desc:0 "#F Die Bräuche und Traditionen meiner Ahnen haben überdauert, durch die Generationen in Liedern und Geschichten weitergegeben, in der Art, wie wir den Boden bestellen und wie wir unsere Toten ehren. Obwohl sich die Welt um uns herum verändert hat, lebt die alte Kultur in den Herzen unseres Volkes weiter.#!\nIch werde die Kultur meiner Vorfahren zurückerobern und die Wege annehmen, die unser Volk im Zeitalter der Götter prägten."
+  pr_return_culture_short_decision_tooltip:0 "#T Beginne deine Reise, um die alte Kultur deines Volkes zurückzuerobern#!"
+  pr_return_culture_short_decision_confirm:0 "Nimm die alte Kultur an!"
+
+  # --- Vestatempel schließen ---
+  pr_close_temple_of_vesta_decision:0 "Schließe den Vestatempel"
+  pr_close_temple_of_vesta_decision_desc:0 "#F Die ewige Flamme der Vesta brennt seit Jahrhunderten, gepflegt von den hingebungsvollen Vestalinnen im Herzen Roms. Doch nun, da Rom sich von den alten Göttern abgewendet hat, steht der Tempel als Relikt einer vergessenen Vergangenheit, seine heilige Flamme ein Symbol des Widerstands gegen die neue Ordnung.#!\nIch werde die ewige Flamme löschen und den Vestatempel schließen und damit eine alte Tradition beenden, die keinen Platz mehr in unserer Welt hat."
+  pr_close_temple_of_vesta_decision_tooltip:0 "#T Schließe den Vestatempel und lösche seine ewige Flamme#!"
+  pr_close_temple_of_vesta_decision_confirm:0 "Lösche die Flamme!"
+
+  # --- Patriarchat abbauen ---
+  pr_dismantle_patriarchate_decision:0 "Baue das Patriarchat ab"
+  pr_dismantle_patriarchate_decision_desc:0 "#F Das orthodoxe Patriarchat beansprucht seit langem die geistliche Vorherrschaft über die östlichen Gläubigen, sein Einfluss wirft einen Schatten über die alten Länder Griechenlands und Anatoliens. Nun, da diese Länder unter die Kontrolle des [ROOT.Char.GetFaith.GetAdjective] gefallen sind, ist die Zeit gekommen, den Kern ihrer Autorität anzugreifen.#!\nIch werde das Patriarchat abbauen und seinen Griff über unser Volk brechen, damit die alten Wege ungehindert gedeihen können."
+  pr_dismantle_patriarchate_decision_tooltip:0 "#T Baue das orthodoxe Patriarchat ab und zerstöre seine geistliche Autorität für immer#!"
+  pr_dismantle_patriarchate_decision_confirm:0 "Lass das Patriarchat fallen!"
+  pr_dismantle_patriarchate_decision_effect_tooltip:0 "Das Patriarchat wird für immer zerstört"
+
+  # --- Königreich Keltika gründen ---
+  pr_create_celtica_decision:0 "Gründe das Königreich Keltika"
+  pr_create_celtica_decision_desc:0 "#F Die alten Länder des keltischen Galliens erstreckten sich einst vom Atlantik bis zum Rhein, ein weites Bündnis von Stämmen, verbunden durch gemeinsame Götter und gemeinsames Blut. Von den fruchtbaren Tälern Aquitaniens bis zu den rauen Hochlanden der Auvergne hat unser Volk die Flut der römischen Eroberung und der germanischen Wanderung überstanden. Nun, als der Herrscher, der diese historischen Länder kontrolliert, werde ich das Königreich Keltika wiederbeleben und zu alter Größe zurückführen.#!\nDurch die Gründung Keltikas werde ich ein neues Königreich schaffen, das die gallischen Länder unter einem einzigen Banner vereint und ein Reich schmieden, das unser gemeinsames keltisches Erbe und unsere Stärke ehrt."
+  pr_create_celtica_decision_tooltip:0 "#T Bilde das alte Königreich Keltika, indem du die gallischen Herzogtümer vereinst#!"
+  pr_create_celtica_decision_confirm:0 "Gründe Keltika!"
+  pr_create_celtica_decision_effect_tooltip:0 "#P Das Königreich Keltika wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_valois.GetNameNoTier], [title_d_savoie.GetNameNoTier], [title_d_aquitaine.GetNameNoTier] und andere werden Teil von Keltika $EFFECT_LIST_BULLET$ Erfordert erhebliche Investitionen in [gold|E] und [prestige|E] @warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Königreich Belgika gründen ---
+  pr_create_belgica_decision:0 "Gründe das Königreich Belgika"
+  pr_create_belgica_decision_desc:0 "#F Das alte Land Belgika stand einst als nördliche Grenze des keltischen Galliens, seine tapferen Stämme hielten die Linie gegen die vordringenden germanischen Völker. Von den Niederungen Flanderns bis zu den befestigten Gebieten Brabants und Luxemburgs hat unser Volk sein Erbe gegen die Strömungen der Zeit bewahrt. Nun, als der Herrscher, der diese historischen Länder kontrolliert, werde ich das Königreich Belgika wiederbeleben und zu alter Größe zurückführen.#!\nDurch die Gründung Belgikas werde ich ein neues Königreich schaffen, das die nördlichen gallischen Länder unter einem einzigen Banner vereint und ein Reich schmieden, das unser gemeinsames keltisches Erbe ehrt."
+  pr_create_belgica_decision_tooltip:0 "#T Bilde das alte Königreich Belgika, indem du die nördlichen gallischen Herzogtümer vereinst#!"
+  pr_create_belgica_decision_confirm:0 "Gründe Belgika!"
+  pr_create_belgica_decision_effect_tooltip:0 "#P Das Königreich Belgika wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_brabant.GetNameNoTier], [title_d_luxembourg.GetNameNoTier], [title_d_flanders.GetNameNoTier] und [title_d_julich.GetNameNoTier] werden Teil von Belgika $EFFECT_LIST_BULLET$ Erfordert erhebliche Investitionen in [gold|E] und [prestige|E] @warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Königreich Narbonensis gründen ---
+  pr_create_narbonensis_decision:0 "Gründe das Königreich Narbonensis"
+  pr_create_narbonensis_decision_desc:0 "#F Die alte Provinz Gallia Narbonensis, der erste römische Brückenkopf in Gallien, stand einst als Leuchtfeuer der Zivilisation an der Mittelmeerküste. Von den sonnendurchfluteten Weinbergen der Provence bis zu den belebten Häfen von Languedoc und Toulouse hat unser Volk sein gallisches Erbe durch die Jahrhunderte bewahrt. Nun, als der Herrscher, der diese historischen Länder kontrolliert, werde ich das Königreich Narbonensis wiederbeleben und zu alter Größe zurückführen.#!\nDurch die Gründung von Narbonensis werde ich ein neues Königreich schaffen, das die südlichen gallischen Länder unter einem einzigen Banner vereint und ein Reich schmieden, das unser gemeinsames keltisches Erbe ehrt."
+  pr_create_narbonensis_decision_tooltip:0 "#T Bilde das alte Königreich Narbonensis, indem du die südlichen gallischen Herzogtümer vereinst#!"
+  pr_create_narbonensis_decision_confirm:0 "Gründe Narbonensis!"
+  pr_create_narbonensis_decision_effect_tooltip:0 "#P Das Königreich Narbonensis wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_provence.GetNameNoTier], [title_d_languedoc.GetNameNoTier], [title_d_toulouse.GetNameNoTier] und [title_d_dauphine.GetNameNoTier] werden Teil von Narbonensis $EFFECT_LIST_BULLET$ Erfordert erhebliche Investitionen in [gold|E] und [prestige|E] @warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Königreich Cisalpinisches Gallien gründen ---
+  pr_create_cisalpine_gaul_decision:0 "Gründe das Königreich Cisalpinisches Gallien"
+  pr_create_cisalpine_gaul_decision_desc:0 "#F Das alte Land des cisalpinischen Galliens, das gallische Herzland südlich der Alpen, stand einst als Brücke zwischen der keltischen Welt und dem Mittelmeer. Von den wohlhabenden Handelsstädten Genua und Venedig bis zu den fruchtbaren Ebenen der Lombardei und Emilia hat unser Volk sein Erbe gegen die Flut der römischen Eroberung bewahrt. Nun, als der Herrscher, der diese historischen Länder kontrolliert, werde ich das Königreich Cisalpinisches Gallien wiederbeleben und zu alter Größe zurückführen.#!\nDurch die Gründung von Cisalpinischem Gallien werde ich ein neues Königreich schaffen, das die nördlichen italienischen gallischen Länder unter einem einzigen Banner vereint und ein Reich schmieden, das unser gemeinsames keltisches Erbe ehrt."
+  pr_create_cisalpine_gaul_decision_tooltip:0 "#T Bilde das alte Königreich Cisalpinisches Gallien, indem du die nördlichen italienischen Herzogtümer vereinst#!"
+  pr_create_cisalpine_gaul_decision_confirm:0 "Gründe Cisalpinisches Gallien!"
+  pr_create_cisalpine_gaul_decision_effect_tooltip:0 "#P Das Königreich Cisalpinisches Gallien wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_genoa.GetNameNoTier], [title_d_lombardia.GetNameNoTier], [title_d_venice.GetNameNoTier] und [title_d_friuli.GetNameNoTier] werden Teil von Cisalpinischem Gallien $EFFECT_LIST_BULLET$ Erfordert erhebliche Investitionen in [gold|E] und [prestige|E] @warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Alten Glauben rekonstruieren (AI) ---
+  pr_ai_polyteism_reconstruction_decision:0 "Rekonstruiere den alten Glauben"
+  pr_ai_polyteism_reconstruction_decision_desc:0 "#F Wenn der Eifer des vorherrschenden Glaubens nachlässt und das Volk nach geistiger Erneuerung ruft, könnten die alten Götter wieder willige Ohren unter den Herrschern der Welt finden.#!"
+  pr_ai_polyteism_reconstruction_decision_tooltip:0 "#T KI-Entscheidung: Rekonstruiere Polytheismus, wenn der Glaubenseifer niedrig ist#!"
+  pr_ai_polyteism_reconstruction_decision_confirm:0 "Rekonstruiere den alten Glauben"
+
+  # --- Religionale Vielfalt fördern (AI) ---
+  pr_ai_polyteism_more_variety_religions_in_realm_decision:0 "Fördere religiöse Vielfalt"
+  pr_ai_polyteism_more_variety_religions_in_realm_decision_desc:0 "#F Ein Reich gedeiht, wenn viele Glaubensrichtungen unter dem Blick eines weisen Herrschers koexistieren. Indem ich religiöse Vielfalt in meinem Reich fördere, werden die alten Götter neue Anhänger unter meinem Volk finden.#!"
+  pr_ai_polyteism_more_variety_religions_in_realm_decision_tooltip:0 "#T KI-Entscheidung: Fördere mehr religiöse Vielfalt innerhalb des Reiches#!"
+  pr_ai_polyteism_more_variety_religions_in_realm_decision_confirm:0 "Fördere religiöse Vielfalt"

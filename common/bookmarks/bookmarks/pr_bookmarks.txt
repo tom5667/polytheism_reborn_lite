@@ -1,0 +1,40 @@
+﻿bm_867_pr_adventurers = {
+	start_date = 867.1.1
+	group = bm_group_867
+	is_playable = yes
+	requires_dlc_flag = landless_playable
+
+	# character = {
+	# 	name = "bookmark_pr_769_mehrzad"
+	# 	dynasty = 1029100
+	# 	dynasty_splendor_level = 1
+	# 	type = male
+	# 	birth = 712.1.1
+	# 	title = d_laamp_pr_sassani
+	# 	government = clan_government
+	# 	culture = persian
+	# 	religion = mazdayasna
+	# 	difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+	# 	history_id = 180643
+	# 	position = { 1100 400 }
+		
+	# 	animation = war_over_win
+	# }
+	character = {
+		name = "bookmark_pr_867_epimakhos"
+		dynasty = agiadai
+		dynasty_splendor_level = 1
+		type = male
+		birth = 841.2.5
+		title = d_laamp_pr_agiadai_867
+		government = administrative_government
+		culture = greek
+		religion = hellenic_pagan
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = pr_epimakhos
+		position = { 250 540 }
+		
+		animation = war_over_win
+	}
+
+}

@@ -44,4 +44,4 @@ PR_activity_cost = {
 	}
 	min = 25
 	max = 100
-}
+}

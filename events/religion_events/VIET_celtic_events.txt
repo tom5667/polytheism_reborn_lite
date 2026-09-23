@@ -137,7 +137,6 @@ VIETceltic.0003 = {
 		OR = {
 			has_faith = faith:brythonic_polytheism
 			faith = { has_doctrine_parameter = special_doctrine_brythonic_patron_god_active }
-			has_faith = faith:romano_british_polytheism
 			faith = { has_doctrine_parameter = special_doctrine_romano_british_patron_god_active }
 		}
 	}
@@ -209,7 +208,6 @@ VIETceltic.0004 = {
 		OR = {
 			has_faith = faith:gaulish_polytheism
 			faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
-			has_faith = faith:gallo_roman_polytheism
 			faith = { has_doctrine_parameter = special_doctrine_gallo_roman_patron_god_active }
 		}
 	}
@@ -269,7 +267,6 @@ VIETceltic.0005 = {
 		OR = {
 			has_faith = faith:brythonic_polytheism
 			faith = { has_doctrine_parameter = special_doctrine_brythonic_patron_god_active }
-			has_faith = faith:romano_british_polytheism
 			faith = { has_doctrine_parameter = special_doctrine_romano_british_patron_god_active }
 		}
 	}
@@ -535,7 +532,6 @@ VIETceltic.0007 = {
 		OR = {
 			has_faith = faith:brythonic_polytheism
 			faith = { has_doctrine_parameter = special_doctrine_brythonic_patron_god_active }
-			has_faith = faith:romano_british_polytheism
 			faith = { has_doctrine_parameter = special_doctrine_romano_british_patron_god_active }
 		}
 	}
@@ -975,7 +971,6 @@ VIETceltic.0014 = {
 		OR = {
 			has_faith = faith:gaulish_polytheism
 			faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
-			has_faith = faith:gallo_roman_polytheism
 			faith = { has_doctrine_parameter = special_doctrine_gallo_roman_patron_god_active }
 		}
 	}
@@ -1038,9 +1033,7 @@ VIETceltic.0015 = {
 			faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
 			has_faith = faith:brythonic_polytheism
 			faith = { has_doctrine_parameter =  special_doctrine_brythonic_patron_god_active }
-			has_faith = faith:romano_british_polytheism
 			faith = { has_doctrine_parameter = special_doctrine_romano_british_patron_god_active }
-			has_faith = faith:gallo_roman_polytheism
 			faith = { has_doctrine_parameter = special_doctrine_gallo_roman_patron_god_active }
 		}
 	}

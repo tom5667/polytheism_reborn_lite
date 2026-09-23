@@ -2,4 +2,4 @@
     modifier = {
         religion = religion:roman_religion
     }
-}
+}

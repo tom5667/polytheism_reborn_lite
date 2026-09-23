@@ -8,31 +8,38 @@
     daco_thracian_religion_adj:2 "Daco-Thracian"
     daco_thracian_religion_adherent:2 "Daco-Thracian"
     daco_thracian_religion_adherent_plural:2 "Daco-Thracians"
-    daco_thracian_religion_desc:0 "The old religions of the mighty Daco-Thracian tribes. With the Thracians more monotheistic Zalmoxism and the Dacians Polytheistic"
+    daco_thracian_religion_desc:0 "The old religions of the mighty Daco-Thracian tribes, split between the polytheistic Dacians and the more monotheistic Thracian followers of Zalmoxis."
 
     #dacian
     dacian_polytheism:0 "Dacian"
     dacian_polytheism_adj:0 "Dacian"
     dacian_polytheism_adherent:0 "Dacian polytheist"
     dacian_polytheism_adherent_plural:0 "Dacian polytheists"
-    dacian_polytheism_desc:0 "Dacian gods and goddesses are honored with rituals and ceremonies, so they may bless their polytheists and lead them to greatness" 
+    dacian_polytheism_desc:0 "The Dacian gods are honored through fire and sacrifice on mountain sanctuaries, their favor sought by a people who see themselves as chosen for greatness among the tribes of the lower Danube." 
 
     dacian_polytheism_old:0 "Dacian Old"
     dacian_polytheism_old_adj:0 "Dacian Old"
     dacian_polytheism_adherent_old:0 "Old Dacian polytheist"
     dacian_polytheism_old_adherent_plural:0 "Old Dacian polytheists"
-    dacian_polytheism_old_desc:0 "Dacian gods and goddesses are honored with rituals and ceremonies, so they may bless their polytheists and lead them to greatness" 
+    dacian_polytheism_old_desc:0 "In the days before Rome's legions crossed the Danube, the Dacian tribes worshipped their gods freely on high mountain sanctuaries, their priest-kings serving as the living bridge between mortals and the divine."
 
     dacian_polytheism_religious_head_title:0 "High Priest"
     dacian_polytheism_divine_realm:0 "Zalmoxis Realm"
+    dacian_polytheism_divine_realm_2:0 "$dacian_polytheism_divine_realm$"
+    dacian_polytheism_divine_realm_3:0 "$dacian_polytheism_divine_realm$"
     dacian_polytheism_religious_symbol:0 "Dacian draco"
+    dacian_polytheism_religious_symbol_2:0 "$dacian_polytheism_religious_symbol$"
+    dacian_polytheism_religious_symbol_3:0 "$dacian_polytheism_religious_symbol$"
     dacian_polytheism_religious_text:0 "Rituals and ceremonies"
+    dacian_polytheism_religious_text_2:0 "$dacian_polytheism_religious_text$"
+    dacian_polytheism_religious_text_3:0 "$dacian_polytheism_religious_text$"
     #roman_pantheon_the_gods:0 "Roman pantheon of gods"
 
     #dacian gods/goddesses Localization
 
     #Gebeleizis Localization
     dacian_polytheism_high_god_name:0 "Gebeleizis"
+    dacian_polytheism_high_god_name_2:0 "$dacian_polytheism_high_god_name$"
     dacian_polytheism_high_god_name_possessive:0 "Gebeleizis's"
     dacian_polytheism_high_god_name_alternate:0 "Gebeleizis"
     dacian_polytheism_high_god_name_alternate_possessive:0 "Gebeleizis's"
@@ -90,6 +97,7 @@
 
     #witch goddess
     dacian_polytheism_witchgodname_zalmoxis:0 "Zalmoxis"
+    dacian_polytheism_witchgodname_zalmoxis_possessive:0 "$dacian_polytheism_witchgodname_zalmoxis$'"
     dacian_polytheism_witchgodname_zalmoxis_possesive:0 "Zalmoxis's"
 
     #Devil god   #For now there is just no thing like a devil god in the dacian religion
@@ -98,6 +106,8 @@
 
     #Death god Zalmoxis 
     dacian_polytheism_death_deity_name:0 "Zalmoxis"
+    dacian_polytheism_death_deity_name_2:0 "$dacian_polytheism_death_deity_name$"
+    dacian_polytheism_death_deity_name_3:0 "$dacian_polytheism_death_deity_name$"
     dacian_polytheism_death_deity_name_possessive:0 "Zalmoxis's"
 
     #Good gods names 
@@ -140,24 +150,31 @@
     zalmoxism_adj:0 "Zalmoxism"
     zalmoxism_adherent:0 "Zalmoxism follower"
     zalmoxism_adherent_plural:0 "Zalmoxism followers"
-    zalmoxism_desc:0 "The Thracians where mostly monotheistic with Zalmoxis as Supreme and only deity" 
+    zalmoxism_desc:0 "The Thracians were largely monotheistic, holding Zalmoxis as their supreme and only god, a divine figure said to promise his followers immortality among the stars." 
 
     zalmoxism_old:0 "Zalmoxism Old"
     zalmoxism_old_adj:0 "Zalmoxism Old"
     zalmoxism_adherent_old:0 "Old Zalmoxism follower"
     zalmoxism_old_adherent_plural:0 "Old Zalmoxism followers"
-    zalmoxism_old_desc:0 "The Thracians where mostly monotheistic with Zalmoxis as Supreme and only deity" 
+    zalmoxism_old_desc:0 "In the years before Rome's power reached the lower Danube, the Thracians already held Zalmoxis as their supreme and only god, a divine figure said to promise his followers immortality among the stars."
 
     zalmoxism_religious_head_title:0 "High Priest"
     zalmoxism_divine_realm:0 "Zalmoxis Realm"
+    zalmoxism_divine_realm_2:0 "$zalmoxism_divine_realm$"
+    zalmoxism_divine_realm_3:0 "$zalmoxism_divine_realm$"
     zalmoxism_religious_symbol:0 "Dacian draco"
+    zalmoxism_religious_symbol_2:0 "$zalmoxism_religious_symbol$"
+    zalmoxism_religious_symbol_3:0 "$zalmoxism_religious_symbol$"
     zalmoxism_religious_text:0 "Rituals and ceremonies"
+    zalmoxism_religious_text_2:0 "$zalmoxism_religious_text$"
+    zalmoxism_religious_text_3:0 "$zalmoxism_religious_text$"
     #roman_pantheon_the_gods:0 "Roman pantheon of gods"
 
     #dacian gods/goddesses Localization
 
     #Gebeleizis Localization
     zalmoxism_high_god_name:0 "Zalmoxis"
+    zalmoxism_high_god_name_2:0 "$zalmoxism_high_god_name$"
     zalmoxism_high_god_name_possessive:0 "Zalmoxis's"
     zalmoxism_high_god_name_alternate:0 "Zalmoxis"
     zalmoxism_high_god_name_alternate_possessive:0 "Zalmoxis's"
@@ -215,7 +232,7 @@
 
     #witch goddess
     zalmoxism_witchgodname_zalmoxis:0 "$zalmoxism_high_god_name$"
-    zalmoxism_witchgodname_zalmoxis_possesive:0 "$zalmoxism_high_god_name_possessive$"
+    zalmoxism_witchgodname_zalmoxis_possessive:0 "$zalmoxism_witchgodname_zalmoxis$'"
 
     #Devil god   #For now there is just no thing like a devil god in the dacian religion
     zalmoxism_devil_name:0 "$zalmoxism_high_god_name$" 
@@ -223,6 +240,8 @@
 
     #Death god Zalmoxis 
     zalmoxism_death_deity_name:0 "$zalmoxism_high_god_name$"
+    zalmoxism_death_deity_name_2:0 "$zalmoxism_death_deity_name$"
+    zalmoxism_death_deity_name_3:0 "$zalmoxism_death_deity_name$"
     zalmoxism_death_deity_name_possessive:0 "$zalmoxism_high_god_name_possessive$"
 
     #Good gods names 

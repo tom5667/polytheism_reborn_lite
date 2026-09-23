@@ -56,4 +56,4 @@ pr_hill_of_tara = {
 		environment = "environment_event_hill_of_tara"
 		ambience = "event:/SFX/Events/Backgrounds/meetingchamber_western"
 	}
-}
+}

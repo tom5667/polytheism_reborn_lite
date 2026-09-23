@@ -1,0 +1,39 @@
+﻿# =============================================
+# Polytheism Reborn - Activity Pilgrimage Triggers
+# Shared triggers for all PR pilgrimage activities
+# =============================================
+
+pr_pilgrimage_is_valid_trigger = {
+		NOT = {
+			has_variable = activity_invalidated
+		}
+		scope:host = {
+			is_landed = yes
+			NOT = { is_incapable = yes }
+		}
+		scope:activity = {
+			OR = {
+				NOT = { has_variable = starting_faith }
+				# We could check whether the place you're going to is still a holy site in the new faith, but then that messes up all the people moving with you, so we just cancel the whole thing.
+				scope:host.faith = var:starting_faith
+			}
+		}
+}
+
+pr_pilgrimage_can_be_activity_guest_trigger = {
+		faith.religion = scope:host.faith.religion
+		is_adult = yes
+		is_available = yes
+		in_diplomatic_range = scope:host
+		is_landed = no
+}
+
+pr_pilgrimage_is_location_valid_trigger = {
+		trigger_if = {
+			limit = {
+				exists = barony
+			}
+			barony = title:b_vajdahunyad
+		}
+}
+

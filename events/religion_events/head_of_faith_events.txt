@@ -1,6 +1,6 @@
 ﻿namespace = head_of_faith
-namespace = cdr
-namespace = celtic
+namespace = pr_roman
+namespace = pr_celtic_decision
 
 ##################################################
 # #Islamic Caliphate Configuration
@@ -789,10 +789,10 @@ scripted_effect grab_existing_pontifex_effect = {
 
 
 
-cdr.027 = {
+pr_roman.0800 = {
 	type = character_event
-	title = cdr.027.t
-	desc = cdr.027.desc
+	title = pr_roman.0800.t
+	desc = pr_roman.0800.desc
 	theme = faith
 	left_portrait = {
 		character = root
@@ -833,7 +833,7 @@ cdr.027 = {
 
 	# Go our own way.
 	option = {
-		name = cdr.027.a
+		name = pr_roman.0800.a
 
 		# Another splinter faith enters the ring.
 		faith = { remove_religious_head_title = yes }
@@ -857,7 +857,7 @@ cdr.027 = {
 
 	# Follow scope:old_faith's pontifex.
 	option = {
-		name = cdr.027.d
+		name = pr_roman.0800.d
 		trigger = {
 			exists = scope:old_pontifex
 			#valid_prior_pontifex_available_trigger = yes
@@ -912,10 +912,10 @@ scripted_effect grab_existing_druid_effect = {
 	}
 }
 
-celtic.005 = {
+pr_celtic_decision.0005 = {
 	type = character_event
-	title = celtic.005.t
-	desc = celtic.005.desc
+	title = pr_celtic_decision.0005.t
+	desc = pr_celtic_decision.0005.desc
 	theme = faith
 	left_portrait = {
 		character = root
@@ -956,7 +956,7 @@ celtic.005 = {
 
 	# Go our own way.
 	option = {
-		name = celtic.005.a
+		name = pr_celtic_decision.0005.a
 
 		# Another splinter faith enters the ring.
 		faith = { remove_religious_head_title = yes }
@@ -980,7 +980,7 @@ celtic.005 = {
 
 	# Follow scope:old_faith's druid.
 	option = {
-		name = celtic.005.d
+		name = pr_celtic_decision.0005.d
 		trigger = {
 			exists = scope:old_druid
 			#valid_prior_druid_available_trigger = yes

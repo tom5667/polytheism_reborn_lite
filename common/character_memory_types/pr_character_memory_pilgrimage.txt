@@ -1,22 +1,33 @@
-﻿pr_kogaionon_pilgrimage_host_memory = {
-	categories = { positive minor religious }
-	icon = "RICE_pilgrimage.dds"
+﻿# =============================================
+# Polytheism Reborn - Character Memory Types
+# Pilgrimage memories for PR custom activities
+# =============================================
+
+# =============================================
+# Pilgrimage Host Memories
+# The host led a pilgrimage to a sacred site
+# =============================================
+
+pr_kogaionon_pilgrimage_host_memory = {
+	categories = { positive minor religious travel }
+
+	icon = "religious.dds"
 
 	description = {
-		random_valid = {
-			desc = pr_kogaionon_pilgrimage_host_memory_first_perspective
+		first_valid = {
+			desc = pr_kogaionon_pilgrimage_host_memory_desc
 		}
 	}
 
 	second_perspective_description = {
-		random_valid = {
-			desc = pr_kogaionon_pilgrimage_host_memory_second_perspective
+		first_valid = {
+			desc = pr_kogaionon_pilgrimage_host_memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
-		random_valid = {
-			desc = pr_kogaionon_pilgrimage_host_memory_third_perspective
+		first_valid = {
+			desc = pr_kogaionon_pilgrimage_host_memory_desc_third_perspective
 		}
 	}
 
@@ -25,57 +36,119 @@
 	}
 }
 
-pr_kogaionon_pilgrimage_guest_memory = {
-	categories = { positive minor religious }
-	icon = "RICE_pilgrimage.dds"
+pr_cnoc_uisnigh_pilgrimage_host_memory = {
+	categories = { positive minor religious travel }
+
+	icon = "religious.dds"
 
 	description = {
-		random_valid = {
-			desc = pr_kogaionon_pilgrimage_guest_memory_first_perspective
+		first_valid = {
+			desc = pr_cnoc_uisnigh_pilgrimage_host_memory_desc
 		}
 	}
 
 	second_perspective_description = {
-		random_valid = {
-			desc = pr_kogaionon_pilgrimage_guest_memory_second_perspective
+		first_valid = {
+			desc = pr_cnoc_uisnigh_pilgrimage_host_memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
-		random_valid = {
-			desc = pr_kogaionon_pilgrimage_guest_memory_third_perspective
+		first_valid = {
+			desc = pr_cnoc_uisnigh_pilgrimage_host_memory_desc_third_perspective
+		}
+	}
+
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+pr_delphi_pilgrimage_host_memory = {
+	categories = { positive minor religious travel }
+
+	icon = "religious.dds"
+
+	description = {
+		first_valid = {
+			desc = pr_delphi_pilgrimage_host_memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		first_valid = {
+			desc = pr_delphi_pilgrimage_host_memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		first_valid = {
+			desc = pr_delphi_pilgrimage_host_memory_desc_third_perspective
+		}
+	}
+
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+pr_vogtei_pilgrimage_host_memory = {
+	categories = { positive minor religious travel }
+
+	icon = "religious.dds"
+
+	description = {
+		first_valid = {
+			desc = pr_vogtei_pilgrimage_host_memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		first_valid = {
+			desc = pr_vogtei_pilgrimage_host_memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		first_valid = {
+			desc = pr_vogtei_pilgrimage_host_memory_desc_third_perspective
+		}
+	}
+
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+# =============================================
+# Pilgrimage Guest Memories
+# The guest accompanied the host on a pilgrimage
+# =============================================
+
+pr_kogaionon_pilgrimage_guest_memory = {
+	categories = { positive minor religious travel }
+
+	icon = "religious.dds"
+
+	description = {
+		first_valid = {
+			desc = pr_kogaionon_pilgrimage_guest_memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		first_valid = {
+			desc = pr_kogaionon_pilgrimage_guest_memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		first_valid = {
+			desc = pr_kogaionon_pilgrimage_guest_memory_desc_third_perspective
 		}
 	}
 
 	participants = { host }
-
-	duration = {
-		years = memory_default_duration
-	}
-}
-
-
-pr_cnoc_uisnigh_pilgrimage_host_memory = {
-	categories = { positive minor religious }
-	icon = "RICE_pilgrimage.dds"
-
-	description = {
-		random_valid = {
-			desc = pr_cnoc_uisnigh_pilgrimage_host_memory_first_perspective
-		}
-	}
-
-	second_perspective_description = {
-		random_valid = {
-			desc = pr_cnoc_uisnigh_pilgrimage_host_memory_second_perspective
-		}
-	}
-
-	third_perspective_description = {
-		random_valid = {
-			desc = pr_cnoc_uisnigh_pilgrimage_host_memory_third_perspective
-		}
-	}
 
 	duration = {
 		years = memory_default_duration
@@ -83,57 +156,29 @@ pr_cnoc_uisnigh_pilgrimage_host_memory = {
 }
 
 pr_cnoc_uisnigh_pilgrimage_guest_memory = {
-	categories = { positive minor religious }
-	icon = "RICE_pilgrimage.dds"
+	categories = { positive minor religious travel }
+
+	icon = "religious.dds"
 
 	description = {
-		random_valid = {
-			desc = pr_cnoc_uisnigh_pilgrimage_guest_memory_first_perspective
+		first_valid = {
+			desc = pr_cnoc_uisnigh_pilgrimage_guest_memory_desc
 		}
 	}
 
 	second_perspective_description = {
-		random_valid = {
-			desc = pr_cnoc_uisnigh_pilgrimage_guest_memory_second_perspective
+		first_valid = {
+			desc = pr_cnoc_uisnigh_pilgrimage_guest_memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
-		random_valid = {
-			desc = pr_cnoc_uisnigh_pilgrimage_guest_memory_third_perspective
+		first_valid = {
+			desc = pr_cnoc_uisnigh_pilgrimage_guest_memory_desc_third_perspective
 		}
 	}
 
 	participants = { host }
-
-	duration = {
-		years = memory_default_duration
-	}
-}
-
-
-
-pr_delphi_pilgrimage_host_memory = {
-	categories = { positive minor religious }
-	icon = "RICE_pilgrimage.dds"
-
-	description = {
-		random_valid = {
-			desc = pr_delphi_pilgrimage_host_memory_first_perspective
-		}
-	}
-
-	second_perspective_description = {
-		random_valid = {
-			desc = pr_delphi_pilgrimage_host_memory_second_perspective
-		}
-	}
-
-	third_perspective_description = {
-		random_valid = {
-			desc = pr_delphi_pilgrimage_host_memory_third_perspective
-		}
-	}
 
 	duration = {
 		years = memory_default_duration
@@ -141,24 +186,25 @@ pr_delphi_pilgrimage_host_memory = {
 }
 
 pr_delphi_pilgrimage_guest_memory = {
-	categories = { positive minor religious }
-	icon = "RICE_pilgrimage.dds"
+	categories = { positive minor religious travel }
+
+	icon = "religious.dds"
 
 	description = {
-		random_valid = {
-			desc = pr_delphi_pilgrimage_guest_memory_first_perspective
+		first_valid = {
+			desc = pr_delphi_pilgrimage_guest_memory_desc
 		}
 	}
 
 	second_perspective_description = {
-		random_valid = {
-			desc = pr_delphi_pilgrimage_guest_memory_second_perspective
+		first_valid = {
+			desc = pr_delphi_pilgrimage_guest_memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
-		random_valid = {
-			desc = pr_delphi_pilgrimage_guest_memory_third_perspective
+		first_valid = {
+			desc = pr_delphi_pilgrimage_guest_memory_desc_third_perspective
 		}
 	}
 
@@ -169,25 +215,26 @@ pr_delphi_pilgrimage_guest_memory = {
 	}
 }
 
-vastal_daughter_memory = {
-	categories = { positive minor religious }
-	icon = "vestalis_maxima.dds"
+pr_vogtei_pilgrimage_guest_memory = {
+	categories = { positive minor religious travel }
+
+	icon = "religious.dds"
 
 	description = {
-		random_valid = {
-			desc = vastal_daughter_memory_first_perspective
+		first_valid = {
+			desc = pr_vogtei_pilgrimage_guest_memory_desc
 		}
 	}
 
 	second_perspective_description = {
-		random_valid = {
-			desc = vastal_daughter_memory_second_perspective
+		first_valid = {
+			desc = pr_vogtei_pilgrimage_guest_memory_desc_second_perspective
 		}
 	}
 
 	third_perspective_description = {
-		random_valid = {
-			desc = vastal_daughter_memory_third_perspective
+		first_valid = {
+			desc = pr_vogtei_pilgrimage_guest_memory_desc_third_perspective
 		}
 	}
 

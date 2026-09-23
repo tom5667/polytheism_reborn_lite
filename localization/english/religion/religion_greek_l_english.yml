@@ -1,0 +1,31 @@
+﻿l_english:
+#####################
+#Made by tom5667
+######################
+
+zeus_egyptian_name:0 "Zeus Amon"
+fallback_zeus_name:0 "Zeus"
+
+asclepius_egyptian_name:0 "Imhotep"
+fallback_asclepius_name:0 "Asclepius"
+
+demeter_egyptian_name:0 "Isis"
+fallback_demeter_name:0 "Demeter"
+
+hades_egyptian_name:0 "Hermes"
+fallback_hades_name:0 "Hades"
+
+hestia_egyptian_name:0 "Agathos Daimon"
+fallback_hestia_name:0 "Hestia"
+
+moirai_egyptian_name:0 "Hermes Trismegistos"
+fallback_moirai_name:0 "the Moirai"
+
+athena_egyptian_name:0 "Hermes Trismegistos"
+fallback_athena_name:0 "Athena"
+
+poseidon_egyptian_name:0 "Isis Pelagia"
+fallback_poseidon_name:0 "Poseidon"
+
+eris_egyptian_name:0 "Typhon"
+fallback_eris_name:0 "Eris"

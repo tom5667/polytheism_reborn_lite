@@ -1,0 +1,71 @@
+﻿# Scripted Effects
+select_valid_son_and_save_scope = {
+
+	# Loop through children and save up to 4 valid daughters
+	root = {
+		every_living_character = {
+			limit = {
+				any_parent = { this = root }
+				#count > 0
+				is_male = yes
+				religion = religion:celtic_religion
+				age = { 12 16 }
+				NOT= { has_trait = druid }
+			}
+			save_scope_as = son
+		}
+	}
+
+}
+choose_new_druidic_circle_leader = {
+	random_living_character = {
+		limit = {
+			has_trait = druid
+			age = { 35 50 }
+
+		}
+		save_scope_as =  new_druidic_circle_leader
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = scope:new_druidic_circle_leader
+			}
+		}
+		create_character = {
+			employer = root
+			age = { 35 50}
+			random_traits = no
+			save_scope_as = druid
+			learning = { 20 25 }
+			diplomacy = { 8 13 }
+			gender = male
+			trait = zealous
+			dynasty = generate
+			trait = druidic_circle_leader
+			trait = druid
+		}
+	}
+}
+declare_high_king_discussion_effect = {
+	every_ruler = {
+		limit = {
+			AND = {
+				is_independent_ruler = yes
+				#is_mercenary_company = no
+				primary_title ?= { is_mercenary_company = no }
+				is_landless_adventurer = no
+				Not = {this = root}
+				NOT = { is_allied_to = root }
+				capital_province = {
+					geographical_region = world_europe_west_britannia
+				}
+				has_culture = culture:irish
+			}
+
+		}
+		root = {save_scope_as = new_high_king}
+		trigger_event = pr_celtic.0425
+
+	}
+}

@@ -1,0 +1,427 @@
+﻿oracle = {
+	type_icon = "icon_structure_oracle.dds"
+	
+	construction_time = slow_construction_time
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder = {
+			religion = religion:roman_religion
+		}
+	}
+	is_enabled = {
+		OR = {
+			scope:holder = {
+				religion = religion:roman_religion
+			}
+			scope:holder = {
+				religion = religion:hellenism_religion
+			}
+			#
+		}
+	}
+	cost_gold = 1400
+	county_holder_character_modifier = {
+		monthly_piety = 0.3
+		negate_health_penalty_add = 0.1
+		clergy_opinion = 15
+		same_faith_opinion = 10
+	}
+	county_modifier = {
+		stress_gain_mult = 0.2
+		clergy_opinion = 15
+		legitimacy_gain_mult = 0.2
+	}
+	ai_value = {
+		base = 100
+	}
+	flag = travel_point_of_interest_religious
+	type = duchy_capital
+}
+#Build temple of Jupiter Constantinople 
+temple_jupiter_capitoline = {
+	type_icon = "icon_structure_temple_jupiter_1.dds"
+	construction_time = slow_construction_time
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		scope:holder = {
+			religion = religion:roman_religion
+		}
+	}
+	is_enabled = {
+		OR = {
+			scope:holder = {
+				religion = religion:roman_religion
+			}
+			scope:holder = {
+				religion = religion:hellenism_religion
+			}
+			#
+		}
+	}
+	cost_gold = 1400
+	county_holder_character_modifier = {
+		monthly_piety = 1
+		court_grandeur_baseline_add = 6
+		zealot_levy_contribution_mult = 0.2
+		owned_legend_spread_mult = 0.4
+		legitimacy_gain_mult = 0.2
+	}
+	county_modifier = {
+		monthly_county_control_growth_add = 0.25
+	}
+	ai_value = {
+		base = 100
+	}
+	flag = travel_point_of_interest_religious
+	type = duchy_capital
+}
+temple_to_all_gods_rome = {
+	type_icon = "icon_structure_temple_jupiter.dds"
+	construction_time = slow_construction_time
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		OR = {
+			scope:holder = {
+				religion = religion:roman_religion
+			}
+			scope:holder = {
+				religion = religion:hellenism_religion
+			}
+		} 
+	}
+	is_enabled = {
+		OR = {
+			scope:holder = {
+				religion = religion:roman_religion
+			}
+			scope:holder = {
+				religion = religion:hellenism_religion
+			}
+			
+		}
+	}
+	
+	cost_gold = 1000
+
+	character_modifier = {
+		monthly_piety_gain_per_knight_add = 0.1
+		intrigue_per_prestige_level = 2
+		learning = 2
+		knight_limit = 2
+		knight_effectiveness_mult = 0.2
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+	ai_value = {
+		base = 100
+	}
+	flag = travel_point_of_interest_religious
+	type = special
+}
+
+temple_to_all_gods_constantinople = {
+	type_icon = "icon_structure_temple_jupiter.dds"
+	construction_time = slow_construction_time
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		OR = {
+			scope:holder = {
+				religion = religion:roman_religion
+			}
+			scope:holder = {
+				religion = religion:hellenism_religion
+			}
+		} 
+	}
+	is_enabled = {
+		OR = {
+			scope:holder = {
+				religion = religion:roman_religion
+			}
+			scope:holder = {
+				religion = religion:hellenism_religion
+			}
+			
+		}
+	}
+	
+	cost_gold = 1000
+
+	character_modifier = {
+		monthly_piety_gain_per_knight_add = 0.1
+		intrigue_per_prestige_level = 2
+		learning = 2
+		knight_limit = 2
+		knight_effectiveness_mult = 0.2
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+	ai_value = {
+		base = 100
+	}
+	flag = travel_point_of_interest_religious
+	type = special
+}
+
+
+#Sacred grove Celtic
+sacred_grove = {
+	type_icon = "icon_structure_sacred_grove.dds"
+
+	construction_time = slow_construction_time
+	can_construct_potential = {
+		has_building_or_higher = tribe_01
+		scope:holder = {
+			religion = religion:celtic_religion
+		}
+	}
+	can_construct = {
+		has_building_or_higher = tribe_01
+		scope:holder = {
+			religion = religion:celtic_religion
+		}
+	}
+	is_enabled = {
+		scope:holder = {
+			religion = religion:celtic_religion
+		}
+	}
+	cost_gold = 1400
+	county_holder_character_modifier = {
+		monthly_piety = 0.4
+		monthly_county_control = 0.3
+
+	}
+	county_modifier = {
+		tax_mult = 0.4
+	}
+	ai_value = {
+		base = 100
+	}
+	#flag = travel_point_of_interest_religious
+	type = duchy_capital
+ }
+
+ #Druidic circle anglesey 
+druidic_circle = {
+	type_icon = "icon_structure_druidic_circle.dds"
+	construction_time = slow_construction_time
+	can_construct_potential = {
+		scope:holder = {
+			religion = religion:celtic_religion
+		}
+	}
+	can_construct = {
+		scope:holder = {
+			religion = religion:celtic_religion
+		}
+	}
+	is_enabled = {
+		scope:holder = {
+			religion = religion:celtic_religion
+		}
+	}
+
+	cost_gold = 1000
+
+	character_modifier = {
+		monthly_piety_gain_per_knight_add = 0.1
+		intrigue_per_prestige_level = 2
+		learning = 1
+		diplomacy = 1
+		levy_reinforcement_rate = 0.1
+		monthly_county_control_growth_factor = 0.05
+		monthly_dynasty_prestige_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+	ai_value = {
+		base = 100
+	}
+	flag = travel_point_of_interest_religious
+	type = special
+}
+
+
+#Temple of tanit Carthago
+temple_to_tanit = {
+	type_icon = "icon_structure_temple_tanit.dds"
+	construction_time = slow_construction_time
+	can_construct_potential = {
+		scope:holder = {
+			religion = religion:canaanite_religion
+		}
+	}
+	can_construct = {
+		scope:holder = {
+			religion = religion:canaanite_religion
+		}
+	}
+	is_enabled = {
+		scope:holder = {
+			religion = religion:canaanite_religion
+		}
+	}
+
+	cost_gold = 1000
+
+	character_modifier = {
+		monthly_piety_gain_per_knight_add = 0.1
+		intrigue_per_prestige_level = 2
+		learning = 2
+		knight_limit = 2
+		knight_effectiveness_mult = 0.2
+		monthly_dynasty_prestige_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+	ai_value = {
+		base = 100
+	}
+	flag = travel_point_of_interest_religious
+	type = special
+}
+#Mesopotamian brewery
+first_mesopotamian_brewery = {
+	type_icon = "icon_structure_brewery.dds"
+	construction_time = slow_construction_time
+	can_construct_potential = {
+		scope:holder = {
+			religion = religion:mesopotamian_religion
+		}
+	}
+	can_construct = {
+		scope:holder = {
+			religion = religion:mesopotamian_religion
+		}
+	}
+	is_enabled = {
+		scope:holder = {
+			religion = religion:mesopotamian_religion
+		}
+	}
+
+	cost_gold = 1000
+
+	character_modifier = {
+		monthly_piety = 0.25
+		monthly_dynasty_prestige_mult = 0.05
+		knight_effectiveness_mult = 0.15
+		stewardship = 2
+	}
+
+	county_modifier = {
+		development_growth_factor = 0.2
+		tax_mult = 0.1
+	}
+	ai_value = {
+		base = 100
+	}
+	flag = travel_point_of_interest_religious
+	type = special
+}
+#Zalmoxis cave
+kogaionon_altar = {
+	type_icon = "icon_structure_zalmoxis_cave.dds"
+	construction_time = slow_construction_time
+	can_construct_potential = {
+		scope:holder = {
+			religion = religion:daco_thracian_religion
+		}
+	}
+	can_construct = {
+		scope:holder = {
+			religion = religion:daco_thracian_religion
+		}
+	}
+	is_enabled = {
+		scope:holder = {
+			religion = religion:daco_thracian_religion
+		}
+	}
+	
+	cost_gold = 1000
+
+	character_modifier = {
+		monthly_piety_gain_per_knight_add = 0.1
+		prowess_per_prestige_level  = 2
+		learning = 2
+		knight_limit = 2
+		knight_effectiveness_mult = 0.2
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+	ai_value = {
+		base = 100
+	}
+	flag = travel_point_of_interest_religious
+	type = special
+}
+
+paderborn_irminsul = {
+	type_icon = "icon_structure_irminsul.dds"
+	construction_time = slow_construction_time
+	can_construct_potential = {
+		scope:holder = {
+			OR = {
+				faith = faith:anglo_saxon_polytheism
+				faith = faith:german_polytheism
+			}
+		}
+	}
+	can_construct = {
+		OR = {
+			faith = faith:anglo_saxon_polytheism
+			faith = faith:german_polytheism
+		}
+	}
+	is_enabled = {
+		scope:holder = {
+			OR = {
+				faith = faith:anglo_saxon_polytheism
+				faith = faith:german_polytheism
+			}
+		}
+	}
+
+	cost_gold = 1000
+
+	character_modifier = {
+		monthly_piety_gain_per_knight_add = 0.1
+		prowess_per_prestige_level = 2
+		martial = 2
+		knight_limit = 2
+		knight_effectiveness_mult = 0.2
+		monthly_dynasty_prestige_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+	ai_value = {
+		base = 100
+	}
+	flag = travel_point_of_interest_religious
+	type = special
+}

@@ -77,6 +77,7 @@
 
 	localization = {
 		HighGodName = baltic_high_god_name
+		HighGodName2 = baltic_high_god_name_2
 		HighGodNamePossessive = baltic_high_god_name_possessive
 		HighGodNameSheHe = CHARACTER_SHEHE_HE
 		HighGodHerselfHimself = CHARACTER_HIMSELF
@@ -162,6 +163,8 @@
 		WaterGodHerHim = CHARACTER_HERHIM_HIM
 
 		PantheonTerm = religion_the_gods
+		PantheonTerm2 = religion_the_gods_2
+		PantheonTerm3 = religion_the_gods_3
 		PantheonTermHasHave = pantheon_term_have
 		GoodGodNames = { baltic_good_god_Ausrine baltic_good_god_Austrinis baltic_good_god_Bicbirbis baltic_good_god_Dalia baltic_good_god_Dimstipatis baltic_good_god_Ezerinis baltic_good_god_Gabija baltic_good_god_Laima baltic_good_god_Laukpatis baltic_good_god_Menulis baltic_good_god_Perkunas baltic_good_god_Saule baltic_good_god_Vaizgantas baltic_good_god_Vakarine baltic_good_god_Zemepatis baltic_good_god_Zemyna }
 		DevilName = baltic_devil_name
@@ -171,9 +174,15 @@
 		DevilHerselfHimself = CHARACTER_HIMSELF
 		EvilGodNames = { baltic_evil_god_Aitvaras baltic_evil_god_Bangputys baltic_evil_god_Drebkulis baltic_evil_god_Giltine baltic_evil_god_Magyla baltic_evil_god_Medeina baltic_evil_god_Pagirnis baltic_evil_god_Pinciukas baltic_evil_god_Ragana baltic_evil_god_Slogutis baltic_evil_god_Vejopatis baltic_evil_god_Veliona baltic_evil_god_Velnias }
 		HouseOfWorship = baltic_house_of_worship
+		HouseOfWorship2 = baltic_house_of_worship_2
+		HouseOfWorship3 = baltic_house_of_worship_3
 		HouseOfWorshipPlural = baltic_house_of_worship_plural
 		ReligiousSymbol = baltic_religious_symbol
+		ReligiousSymbol2 = baltic_religious_symbol_2
+		ReligiousSymbol3 = baltic_religious_symbol_3
 		ReligiousText = baltic_religious_text
+		ReligiousText2 = baltic_religious_text_2
+		ReligiousText3 = baltic_religious_text_3
 		ReligiousHeadName = baltic_religious_head_title
 		ReligiousHeadTitleName = baltic_religious_head_title_name
 		DevoteeMale = baltic_devotee_male
@@ -196,13 +205,21 @@
 		BishopNeuter = baltic_priest_neuter
 		BishopNeuterPlural = baltic_priest_neuter_plural
 		DivineRealm = baltic_divine_realm
+		DivineRealm2 = baltic_divine_realm_2
+		DivineRealm3 = baltic_divine_realm_3
 		PositiveAfterLife = baltic_positive_afterlife
+		PositiveAfterLife2 = baltic_positive_afterlife_2
+		PositiveAfterLife3 = baltic_positive_afterlife_3
 		NegativeAfterLife = baltic_negative_afterlife
+		NegativeAfterLife2 = baltic_negative_afterlife_2
+		NegativeAfterLife3 = baltic_negative_afterlife_3
 		DeathDeityName = baltic_death_deity_name
 		DeathDeityNamePossessive = baltic_death_deity_name_possessive
 		DeathDeitySheHe = CHARACTER_SHEHE_SHE
 		DeathDeityHerHis = CHARACTER_HERHIS_HER
+		DeathDeityHerHim = CHARACTER_HERHIM_HER
 		WitchGodName = baltic_witch_god_name
+		WitchGodNamePossessive = baltic_witch_god_name_possessive
 		WitchGodSheHe = CHARACTER_SHEHE_SHE
 		WitchGodHerHim = CHARACTER_HERHIM_HER
 		WitchGodMistressMaster = mistress
@@ -220,7 +237,7 @@
 			reformed_icon = baltic_reformed
 
 			holy_site = elkukalni
-			holy_site = pokaini
+			holy_site = pr_pokaini
 			holy_site = kukaveitis
 			#holy_site = palemono_kalnas
 			holy_site = stelmuze
@@ -241,7 +258,7 @@
 
 			# holy_site = aglona
 			holy_site = elkukalni
-			holy_site = pokaini
+			holy_site = pr_pokaini
 			holy_site = kukaveitis
 			holy_site = stelmuze
 			holy_site = romowe
@@ -257,6 +274,7 @@
 
 			localization = {
 				HighGodName = latvian_high_god_name
+				HighGodName2 = latvian_high_god_name_2
 				HighGodNamePossessive = latvian_high_god_name_possessive
 				HighGodNameSheHe = CHARACTER_SHEHE_HE
 				HighGodHerselfHimself = CHARACTER_HIMSELF
@@ -349,9 +367,15 @@
 				DevilHerselfHimself = CHARACTER_HIMSELF
 				EvilGodNames = { latvian_evil_god_Lauma latvian_evil_god_Lietuvens latvian_evil_god_Mara latvian_evil_god_Ragana latvian_evil_god_Vadatajs latvian_evil_god_Velns }
 				HouseOfWorship = latvian_house_of_worship
+				HouseOfWorship2 = latvian_house_of_worship_2
+				HouseOfWorship3 = latvian_house_of_worship_3
 				HouseOfWorshipPlural = latvian_house_of_worship_plural
 				ReligiousSymbol = latvian_religious_symbol
+				ReligiousSymbol2 = latvian_religious_symbol_2
+				ReligiousSymbol3 = latvian_religious_symbol_3
 				ReligiousText = latvian_religious_text
+				ReligiousText2 = latvian_religious_text_2
+				ReligiousText3 = latvian_religious_text_3
 				ReligiousHeadName = latvian_religious_head_title
 				ReligiousHeadTitleName = latvian_religious_head_title_name
 				DevoteeMale = latvian_devotee_male
@@ -374,13 +398,21 @@
 				BishopNeuter = latvian_priest_neuter
 				BishopNeuterPlural = latvian_priest_neuter_plural
 				DivineRealm = latvian_divine_realm
+				DivineRealm2 = latvian_divine_realm_2
+				DivineRealm3 = latvian_divine_realm_3
 				PositiveAfterLife = latvian_positive_afterlife
+				PositiveAfterLife2 = latvian_positive_afterlife_2
+				PositiveAfterLife3 = latvian_positive_afterlife_3
 				NegativeAfterLife = latvian_negative_afterlife
+				NegativeAfterLife2 = latvian_negative_afterlife_2
+				NegativeAfterLife3 = latvian_negative_afterlife_3
 				DeathDeityName = latvian_death_deity_name
 				DeathDeityNamePossessive = latvian_death_deity_name_possessive
 				DeathDeitySheHe = CHARACTER_SHEHE_SHE
 				DeathDeityHerHis = CHARACTER_HERHIS_HER
+				DeathDeityHerHim = CHARACTER_HERHIM_HER
 				WitchGodName = latvian_witch_god_name
+				WitchGodNamePossessive = latvian_witch_god_name_possessive
 				WitchGodSheHe = CHARACTER_SHEHE_SHE
 				WitchGodHerHim = CHARACTER_HERHIM_HER
 				WitchGodMistressMaster = mistress
@@ -394,7 +426,7 @@
 			reformed_icon = prussian_01_reformed
 
 			holy_site = elkukalni
-			holy_site = pokaini
+			holy_site = pr_pokaini
 			holy_site = stelmuze
 			holy_site = rambynas
 			holy_site = romowe
@@ -410,6 +442,7 @@
 
 			localization = {
 				HighGodName = prussian_high_god_name
+				HighGodName2 = prussian_high_god_name_2
 				HighGodNamePossessive = prussian_high_god_name_possessive
 				HighGodNameSheHe = CHARACTER_SHEHE_HE
 				HighGodHerselfHimself = CHARACTER_HIMSELF
@@ -502,9 +535,15 @@
 				DevilHerselfHimself = CHARACTER_HIMSELF
 				EvilGodNames = { prussian_evil_god_Bangputtis prussian_evil_god_Kauks prussian_evil_god_Patals prussian_evil_god_Pikuls prussian_evil_god_Wetra }
 				HouseOfWorship = prussian_house_of_worship
+				HouseOfWorship2 = prussian_house_of_worship_2
+				HouseOfWorship3 = prussian_house_of_worship_3
 				HouseOfWorshipPlural = prussian_house_of_worship_plural
 				ReligiousSymbol = prussian_religious_symbol
+				ReligiousSymbol2 = prussian_religious_symbol_2
+				ReligiousSymbol3 = prussian_religious_symbol_3
 				ReligiousText = prussian_religious_text
+				ReligiousText2 = prussian_religious_text_2
+				ReligiousText3 = prussian_religious_text_3
 				ReligiousHeadName = prussian_religious_head_title
 				ReligiousHeadTitleName = prussian_religious_head_title_name
 				DevoteeMale = prussian_devotee_male
@@ -527,18 +566,26 @@
 				BishopNeuter = prussian_priest_neuter
 				BishopNeuterPlural = prussian_priest_neuter_plural
 				DivineRealm = prussian_divine_realm
+				DivineRealm2 = prussian_divine_realm_2
+				DivineRealm3 = prussian_divine_realm_3
 				PositiveAfterLife = prussian_positive_afterlife
+				PositiveAfterLife2 = prussian_positive_afterlife_2
+				PositiveAfterLife3 = prussian_positive_afterlife_3
 				NegativeAfterLife = prussian_negative_afterlife
+				NegativeAfterLife2 = prussian_negative_afterlife_2
+				NegativeAfterLife3 = prussian_negative_afterlife_3
 				DeathDeityName = prussian_death_deity_name
 				DeathDeityNamePossessive = prussian_death_deity_name_possessive
 				DeathDeitySheHe = CHARACTER_SHEHE_HE
 				DeathDeityHerHis = CHARACTER_HERHIS_HIS
+				DeathDeityHerHim = CHARACTER_HERHIM_HIM
 				WitchGodName = prussian_witch_god_name
+				WitchGodNamePossessive = prussian_witch_god_name_possessive
 				WitchGodSheHe = CHARACTER_SHEHE_HE
-				WitchGodHerHim = CHARACTER_HERHIS_HIS
+				WitchGodHerHim = CHARACTER_HERHIM_HIM
 				WitchGodMistressMaster = master
 				WitchGodMotherFather = father
-				WitchGodHerHis = CHARACTER_HERHIS_HER
+				WitchGodHerHis = CHARACTER_HERHIS_HIS
 			}
 		}
 

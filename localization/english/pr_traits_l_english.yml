@@ -8,61 +8,80 @@
 #V0.4 Added beta version of return roman polytheism decision. 
 ######################
   
-  #choose main deity traits localization 
-  #trait_cdr_cmd1_religion:0 "Devotee of Iupiter"
-  trait_cdr_cmd1_religion:0 "Devotee of $cdr_polytheism_high_god_name$"
-  trait_cdr_cmd1_religion_desc:0 "Devotee of $cdr_polytheism_high_god_name$, god of thunder and Husband of $cdr_polytheism_good_god_juno$"
+  #choose main deity traits localization
+  trait_pr_cdr_iupiter:0 "Devotee of $cdr_polytheism_high_god_name$"
+  trait_pr_cdr_iupiter_desc:0 "Devotee of $cdr_polytheism_high_god_name$, god of thunder and Husband of $cdr_polytheism_good_god_juno$"
 
-  trait_cdr_cmd2_religion:0 "Devotee of $cdr_polytheism_good_god_juno$"
-  trait_cdr_cmd2_religion_desc:0 "Devotee of $cdr_polytheism_good_god_juno$, protector of the woman of Rome and wife of $cdr_polytheism_high_god_name$"
+  trait_pr_cdr_iuno:0 "Devotee of $cdr_polytheism_good_god_juno$"
+  trait_pr_cdr_iuno_desc:0 "Devotee of $cdr_polytheism_good_god_juno$, protector of the woman of Rome and wife of $cdr_polytheism_high_god_name$"
 
-  trait_cdr_cmd3_religion:0 "Devotee of $cdr_polytheism_war_god_name$"
-  trait_cdr_cmd3_religion_desc:0 "Devotee of $cdr_polytheism_war_god_name$, god of war"
+  trait_pr_cdr_mars:0 "Devotee of $cdr_polytheism_war_god_name$"
+  trait_pr_cdr_mars_desc:0 "Devotee of $cdr_polytheism_war_god_name$, god of war"
 
-  trait_cdr_cmd4_religion:0 "Devotee of $cdr_polytheism_fertility_god_name$"
-  trait_cdr_cmd4_religion_desc:0 "Devotee of $cdr_polytheism_fertility_god_name$, goddess of love and fertility"
+  trait_pr_cdr_venus:0 "Devotee of $cdr_polytheism_fertility_god_name$"
+  trait_pr_cdr_venus_desc:0 "Devotee of $cdr_polytheism_fertility_god_name$, goddess of love and fertility"
 
-  trait_cdr_cmd5_religion:0 "Devotee of $cdr_polytheism_household_god_name$"
-  trait_cdr_cmd5_religion_desc:0 "Devotee of the $cdr_polytheism_household_god_name$, protector of the household"
+  trait_pr_cdr_lares:0 "Devotee of $cdr_polytheism_household_god_name$"
+  trait_pr_cdr_lares_desc:0 "Devotee of the $cdr_polytheism_household_god_name$, protector of the household"
 
-  trait_cdr_cmd6_religion:0 "Devotee of $cdr_polytheism_wealth_god_name$"
-  trait_cdr_cmd6_religion_desc:0 "Devotee of $cdr_polytheism_wealth_god_name$, god of trade"
+  trait_pr_cdr_mercurius:0 "Devotee of $cdr_polytheism_wealth_god_name$"
+  trait_pr_cdr_mercurius_desc:0 "Devotee of $cdr_polytheism_wealth_god_name$, god of trade"
 
-  trait_cdr_cmd7_religion:0 "Devotee of $cdr_polytheism_knowledge_god_name$"
-  trait_cdr_cmd7_religion_desc:0 "Devotee of $cdr_polytheism_knowledge_god_name$, goddess of wisdom"
+  trait_pr_cdr_minerva:0 "Devotee of $cdr_polytheism_knowledge_god_name$"
+  trait_pr_cdr_minerva_desc:0 "Devotee of $cdr_polytheism_knowledge_god_name$, goddess of wisdom"
 
-  trait_cdr_cmd8_religion:0 "Devotee of $cdr_polytheism_health_god_name$"
-  trait_cdr_cmd8_religion_desc:0 "Devotee of $cdr_polytheism_health_god_name$, god of healing"
+  trait_pr_cdr_apollo:0 "Devotee of $cdr_polytheism_health_god_name$"
+  trait_pr_cdr_apollo_desc:0 "Devotee of $cdr_polytheism_health_god_name$, god of healing"
 
+  trait_pr_cdr_ceres:0 "Devotee of Ceres"
+  trait_pr_cdr_ceres_desc:0 "Devotee of Ceres, goddess of agriculture and grain"
 
-  #choose main deity traits hellenic localization 
-  trait_h_cmd1_religion:0 "Devotee of Zeus"
-  trait_h_cmd1_religion_desc:0 "Devotee of Zeus, god of thunder and highest God. Husband of Hera"
+  #choose main deity traits hellenic localization
+  trait_pr_hellenic_zeus:0 "Devotee of $hellenism_high_god_name$"
+  trait_pr_hellenic_zeus_desc:0 "Devotee of $hellenism_high_god_name$, god of thunder and highest God. Husband of $hellenism_good_god_hera$"
 
-  trait_h_cmd2_religion:0 "Devotee of Hera"
-  trait_h_cmd2_religion_desc:0 "Devotee of Hera, Wife of Zeus and protector of Woman"
+  trait_pr_hellenic_hera:0 "Devotee of $hellenism_good_god_hera$"
+  trait_pr_hellenic_hera_desc:0 "Devotee of $hellenism_good_god_hera$, Wife of $hellenism_high_god_name$ and protector of Woman"
 
-  trait_h_cmd3_religion:0 "Devotee of Ares"
-  trait_h_cmd3_religion_desc:0 "Devotee of Ares, god of war"
+  trait_pr_hellenic_ares:0 "Devotee of $hellenism_war_god_name$"
+  trait_pr_hellenic_ares_desc:0 "Devotee of $hellenism_war_god_name$, god of war"
 
-  trait_h_cmd4_religion:0 "Devotee of Aphrodite"
-  trait_h_cmd4_religion_desc:0 "Devotee of Aphrodite, Goddess of love and fertility"
+  trait_pr_hellenic_aphrodite:0 "Devotee of $hellenism_good_god_aphrodite$"
+  trait_pr_hellenic_aphrodite_desc:0 "Devotee of $hellenism_good_god_aphrodite$, Goddess of love and fertility"
 
-  trait_h_cmd5_religion:0 "Devotee of Hermes"
-  trait_h_cmd5_religion_desc:0 "Devotee of Hermes, God of trade"
+  trait_pr_hellenic_hermes:0 "Devotee of $hellenism_wealth_god_name$"
+  trait_pr_hellenic_hermes_desc:0 "Devotee of $hellenism_wealth_god_name$, God of trade"
 
-  trait_h_cmd6_religion:0 "Devotee of Athena"
-  trait_h_cmd6_religion_desc:0 "Devotee of Athena, goddess of wisdom"
+  trait_pr_hellenic_athena:0 "Devotee of $hellenism_knowledge_god_name$"
+  trait_pr_hellenic_athena_desc:0 "Devotee of $hellenism_knowledge_god_name$, deity of wisdom"
+  trait_pr_hellenic_demeter:0 "Devotee of $hellenism_fertility_god_name$"
+  trait_pr_hellenic_demeter_desc:0 "Devotee of $hellenism_fertility_god_name$, goddess of agriculture and grain"
 
-  #choose main deity Mithraic Mysteries traits localization 
-  trait_mm_cmd1_religion:0 "Devotee of Mithras"
-  trait_mm_cmd1_religion_desc:0 "Devotee of Mithras, god of war"
+  #choose main deity Kemetic traits localization
+  trait_pr_kemetic_amun_ra:0 "Devotee of Amun Ra"
+  trait_pr_kemetic_amun_ra_desc:0 "Devotee of the Highest god Amun Ra"
 
-  trait_mm_cmd2_religion:0 "Devotee of Arimanius"
-  trait_mm_cmd2_religion_desc:0 "Devotee of Arimanius, the purported lion headed god, is the Helleno-Romanized form of the Zoroastrian spirit Angra Mainyu. Despite originally being a representation of evil as attested by Plutarch, the Mithraic Arimanius' divine properties are highly disputed and still in question."
+  trait_pr_kemetic_ra:0 "Devotee of Ra"
+  trait_pr_kemetic_ra_desc:0 "Devotee of sun god Ra"
 
-  trait_mm_cmd3_religion:0 "Devotee of Oromazes"
-  trait_mm_cmd3_religion_desc:0 "Devotee of Oromazes, originally the Zoroastrian god Ahura Mazda, isn't that attested to in Mithraic documentation, but it's safe to assume he did have some representation within the Mithraic cult."
+  trait_pr_kemetic_isis:0 "Devotee of Isis"
+  trait_pr_kemetic_isis_desc:0 "Devotee of Isis, protector of kingdoms and goddess of wisdom "
+
+  trait_pr_kemetic_montu:0 "Devotee of Montu"
+  trait_pr_kemetic_montu_desc:0 "Devotee of war god Montu"
+
+  trait_pr_kemetic_hathor:0 "Devotee of Hathor"
+  trait_pr_kemetic_hathor_desc:0 "Devotee of the goddess of motherhood, love and fertility Hathor"
+
+  #choose main deity Mithraic Mysteries traits localization
+  trait_pr_mithras_mithras:0 "Devotee of Mithras"
+  trait_pr_mithras_mithras_desc:0 "Devotee of Mithras, god of war"
+
+  trait_pr_mithras_arimanius:0 "Devotee of Arimanius"
+  trait_pr_mithras_arimanius_desc:0 "Devotee of Arimanius, the purported lion headed god, is the Helleno-Romanized form of the Zoroastrian spirit Angra Mainyu. Despite originally being a representation of evil as attested by Plutarch, the Mithraic Arimanius' divine properties are highly disputed and still in question."
+
+  trait_pr_mithras_oromazes:0 "Devotee of Oromazes"
+  trait_pr_mithras_oromazes_desc:0 "Devotee of Oromazes, originally the Zoroastrian god Ahura Mazda, isn't that attested to in Mithraic documentation, but it's safe to assume he did have some representation within the Mithraic cult."
 
   #cult traits 
   trait_mithras_cult:0 "Mithras cultist"
@@ -114,27 +133,6 @@
   trait_pr_pater_mithras:0 "Pater"
   trait_pr_pater_mithras_desc:0 "This character holds the title Pater, the highest rank of the Mithras cult"
 
-  #Kemetic choose main deity traits
-  #Amun Ra
-  trait_kemetic_cmd1_religion:0 "Devotee of Amun Ra"
-  trait_kemetic_cmd1_religion_desc:0 "Devotee of the Highest god Amun Ra"
-  
-  #Ra
-  trait_kemetic_cmd2_religion:0 "Devotee of Ra"
-  trait_kemetic_cmd2_religion_desc:0 "Devotee of sun god Ra"
-
-  #Isis
-  trait_kemetic_cmd3_religion:0 "Devotee of Isis"
-  trait_kemetic_cmd3_religion_desc:0 "Devotee of Isis, protector of kingdoms and goddess of wisdom "
-
-  #Montu
-  trait_kemetic_cmd4_religion:0 "Devotee of Montu"
-  trait_kemetic_cmd4_religion_desc:0 "Devotee of war god Montu"
-   
-  #Hathor
-  trait_kemetic_cmd5_religion:0 "Devotee of Hathor"
-  trait_kemetic_cmd5_religion_desc:0 "Devotee of the goddess of motherhood, love and fertility Hathor"
- 
   trait_crowned_by_religious_head:0 "Crowned by the religious head"
   trait_crowned_by_religious_head_desc:0 "This character has been crowned by the religious head of the faith"
 
@@ -184,4 +182,4 @@
  trait_hierophant_isis_desc:0 "High priest of the Isis cult"
  
  trait_pr_crowned_by_religious_head:0 "Crowned by the religious head"
- trait_pr_crowned_by_religious_head_desc:0 "This character is crowned by the religious head of the faith"
+ trait_pr_crowned_by_religious_head_desc:0 "This character is crowned by the religious head of the faith"

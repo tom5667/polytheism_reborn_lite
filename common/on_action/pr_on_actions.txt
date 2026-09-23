@@ -1,4 +1,14 @@
-﻿on_game_start = {
+﻿# =============================================
+# Polytheism Reborn - On_Actions
+# File: pr_on_actions.txt
+# =============================================
+
+# =============================================
+# SECTION 1: GAME START HOOKS
+# =============================================
+
+# Root = none (empty scope)
+on_game_start = {
 	on_actions = {
 		PR_check
 		TFE_check
@@ -7,59 +17,14 @@
 	}
 }
 
-
-three_year_playable_pulse = {
+# Root = none (empty scope)
+on_game_start_after_lobby = {
 	on_actions = {
-		#Credits to Cybrkxhan
-		delay = { days = { 13 333 } }
-		VIET_celtic_events_tri_yearly_pulse
-		#Polytheism reborn
-		delay = { days = { 13 333 } }
-		PR_roman_events_tri_yearly_pulse
-		delay = {days = { 13 333 } }
-		PR_germanic_events_tri_yearly_pulse
-		delay = {days = { 13 333 }}
-		PR_dacian_events_tri_yearly_pulse
-		delay = {days = { 13 333 }}
-		PR_hellenic_events_tri_yearly_pulse
-		delay = {days = { 13 333 }}
-		PR_kemetic_events_tri_yearly_pulse
-		delay = {days = { 13 333 }}
-		PR_augur_not_requested_tri_yearly_pulse
-		delay = {days = { 13 333 }}
-		PR_cult_events_tri_yearly_pulse
-		delay = {days = { 13 333 }}
-		PR_druidic_events_tri_yearly_pulse
+		polytheism_reborn_on_game_start
 	}
 }
 
-yearly_playable_pulse = {
- 	on_actions = {
-		PR_roman_events_yearly_pulse
-		#PR_augur_not_requested 
-		#Check ruler of Rome for temple of vesta
-		PR_check_temple_of_vesta_owner_roma_yearly_pulse
-		#Check if there are rulers that died or lost rome 
-		PR_check_death_or_lost_roma_temple_of_vesta_yearly_pulse
-		#Check if there are rulers that died or lost anglesey for druidic circle
-		PR_check_death_or_lost_anglesey_druid_island_yearly_pulse
-		#Activate later it also needs more requirements as we don't want 100's of this artifact 
-		PR_check_owner_damascus_yearly_pulse
-		#Celtic Empire check 
-		PR_check_if_celtic_empire_exists_yearly_pulse
-		PR_check_vestalis_maxima_yearly_pulse
-		PR_check_druidic_circle_leader_yearly_pulse
-		PR_check_isis_cult_leader_yearly_pulse
-		PR_check_serapis_cult_leader_yearly_pulse
-		PR_check_sol_invictus_cult_leader_yearly_pulse
-		PR_check_bacchus_cult_leader_yearly_pulse
-		PR_check_cybele_cult_leader_yearly_pulse
-		PR_check_eleusinian_cult_leader_yearly_pulse
-		PR_check_mithras_cult_leader_yearly_pulse
-		PR_check_imperial_cult_leader_yearly_pulse
-
- 	}
-}
+# --- Mod Load Checks ---
 
 PR_check = {
 	effect = {
@@ -68,16 +33,13 @@ PR_check = {
 			value = yes
 		}
 	}
-	if ={
-		limit = {
-			exists = global_var:PR_is_loaded
-		}
-	}
 }
+
+# Bookmark 700 AD check
 PR_BM_700_check = {
 	effect = {
 		if = {
-			limit  =  {
+			limit = {
 				current_date < 865.1.1
 			}
 			set_global_variable = {
@@ -88,7 +50,7 @@ PR_BM_700_check = {
 	}
 }
 
-
+# The Fallen Empire mod check
 TFE_check = {
 	effect = {
 		if = {
@@ -103,12 +65,13 @@ TFE_check = {
 	}
 }
 
+# RICE mod check
 RICE_check = {
 	effect = {
 		if = {
 			limit = {
 				OR = {
-					exists = global_var = is_RICE_loaded_global_variable
+					exists = global_var:is_RICE_loaded_global_variable
 					exists = religion:inuit_religion
 				}
 			}
@@ -117,301 +80,169 @@ RICE_check = {
 	}
 }
 
-on_game_start_after_lobby = {
-	on_actions = {
-		polytheism_reborn_on_game_start
-	}
-}
+# --- Game Start Events ---
 
-#Heresey events 
-#Reference faith_heresy_events_pulse on_action
-#Needs to be edited 
-# pr_faith_heresy_events_pulse = {
-# 	trigger = {
-# 		fervor <= 40
-# 		NOR = {
-# 			has_doctrine_parameter = unreformed
-# 			has_variable = current_heresy
-# 		}
-# 	}
-
-# 	random_events = {
-# 		chance_to_happen = 25
-# 		chance_of_no_event = {
-# 			if = {
-# 				limit = { fervor > 30 }
-# 				value = 90
-# 			}
-# 			else_if = {
-# 				limit = { fervor > 20 }
-# 				value = 70
-# 			}
-# 			else_if = {
-# 				limit = { fervor > 10 }
-# 				value = 40
-# 			}
-# 		}
-# 		#Referencee heresy.0001
-# 		100 = pr_heresy.0001
-# 		100 = pr_heresy.0005
-# 	}
-# }
-
+# Root = none (empty scope)
 polytheism_reborn_on_game_start = {
 	effect = {
-		#Let player choose a nickname for Emperor Julian
+		# Emperor Julian nickname choice
 		if = {
 			limit = {
 				game_start_date = 361.11.17
 			}
-			title:e_roman_empire.holder ?= {
-				trigger_event = cdr.031
+			title:h_roman_empire.holder ?= {
+				trigger_event = pr_roman.0031
 			}
-		}	
-		# if = {
-		# 	limit = {
-		# 		start_date = 700.1.1
-		# 	}
-		# 	title:e_spain.holder ?= {
-		# 		trigger_event = visigothic.001
-		# 	}
-		# }
+		}
 	}
 }
 
+# =============================================
+# SECTION 2: PERIODIC PULSE HOOKS
+# =============================================
 
-#Research ancient religions on actions 
-pr_research_ancient_religion_events_great_library = {
-	random_events = {
-		10 = pr.031 
-		2 = pr.032
-	}
-}
-pr_research_ancient_religion_events_small_library  = {
-	random_events = {
-		10 = pr.031 
-		10 = pr.032
-	}
-}
-pr_research_ancient_religion_events_debate = {
-	random_events = {
-		10 = pr.036
-	}
-}
-pr_research_ancient_religion_events_debate_moderate_bad = {
-	random_events = {
-		7 = pr.037
-		3 = pr.038
-	}	
-}
-pr_bought_book_event = {
-	random_events = {
-		7 = pr.040
-		3 = pr.041
+# Root = playable character (count+)
+three_year_playable_pulse = {
+	on_actions = {
+		# Credits to Cybrkxhan
+		delay = { days = { 13 333 } }
+		VIET_celtic_events_tri_yearly_pulse
+		# Polytheism Reborn
+		delay = { days = { 13 333 } }
+		PR_roman_events_tri_yearly_pulse
+		delay = { days = { 13 333 } }
+		PR_germanic_events_tri_yearly_pulse
+		delay = { days = { 13 333 } }
+		PR_dacian_events_tri_yearly_pulse
+		delay = { days = { 13 333 } }
+		PR_hellenic_events_tri_yearly_pulse
+		delay = { days = { 13 333 } }
+		PR_kemetic_events_tri_yearly_pulse
+		delay = { days = { 13 333 } }
+		PR_cult_events_tri_yearly_pulse
+		delay = { days = { 13 333 } }
+		PR_druidic_events_tri_yearly_pulse
+		delay = { days = { 13 333 } }
+		PR_illyrian_events_tri_yearly_pulse
+		delay = { days = { 13 333 } }
+		PR_canaanite_events_tri_yearly_pulse
+		delay = { days = { 13 333 } }
+		PR_augur_not_requested_tri_yearly_pulse
 	}
 }
 
-#Temple of vesta 
+# Root = playable character (count+)
+yearly_playable_pulse = {
+	on_actions = {
+		PR_roman_events_yearly_pulse
+		PR_check_temple_of_vesta_owner_roma_yearly_pulse
+		PR_check_death_or_lost_roma_temple_of_vesta_yearly_pulse
+		PR_check_death_or_lost_anglesey_druid_island_yearly_pulse
+		PR_check_owner_damascus_yearly_pulse
+		PR_check_if_celtic_empire_exists_yearly_pulse
+		PR_check_vestalis_maxima_yearly_pulse
+		PR_check_druidic_circle_leader_yearly_pulse
+		PR_check_isis_cult_leader_yearly_pulse
+		PR_check_serapis_cult_leader_yearly_pulse
+		PR_check_sol_invictus_cult_leader_yearly_pulse
+		PR_check_bacchus_cult_leader_yearly_pulse
+		PR_check_cybele_cult_leader_yearly_pulse
+		PR_check_eleusinian_cult_leader_yearly_pulse
+		PR_check_mithras_cult_leader_yearly_pulse
+		PR_check_imperial_cult_leader_yearly_pulse
+	}
+}
+
+# =============================================
+# SECTION 3: YEARLY MAINTENANCE PULSES
+# =============================================
+
+# --- Temple of Vesta ---
+
+# Root = character who holds Roma
 PR_check_temple_of_vesta_owner_roma_yearly_pulse = {
-	trigger ={ 
+	trigger = {
 		has_title = title:c_roma
-		title:c_roma = {has_county_modifier = open_temple_of_vesta }
-		NOR ={
+		title:c_roma = { has_county_modifier = open_temple_of_vesta }
+		NOR = {
 			has_character_modifier = burning_flame_of_vesta
-		}	
-	}	
-	effect ={
+		}
+	}
+	effect = {
 		add_character_modifier = burning_flame_of_vesta
-		
-	}
-} 		
-PR_check_death_or_lost_anglesey_druid_island_yearly_pulse = {
-	trigger = {
-		has_title = title:c_anglesey
-		title:c_anglesey = {has_county_modifier = open_druidic_place }
-		NOR ={
-			has_character_modifier = druidic_knowledge
-		}	
-	}
-	effect ={
-		add_character_modifier = druidic_knowledge
-		
-	}
-}
-PR_check_vestalis_maxima_yearly_pulse = {
-	trigger = {
-		title:c_roma = {has_county_modifier = open_vestalis_maxima }
-		religion = religion:roman_religion
-	}
-	effect = {
-		vestal_vergins_maintenance_effect = yes
-	}
-}
-PR_check_druidic_circle_leader_yearly_pulse = {
-	trigger = {
-		title:c_anglesey = {has_county_modifier = open_druidic_place }
-		religion = religion:celtic_religion
-	}
-	effect = {
-		druidic_circle_leader_maintenance_effect = yes
-	}
-}
-#Cults Yearly pulses 
-PR_check_isis_cult_leader_yearly_pulse = {
-	trigger = {
-		AND = {
-			exists = global_var:restored_isis_cult
-			OR = { 
-				religion = religion:roman_religion
-				religion = religion:hellenism_religion
-				faith = faith:kemetic_polytheism
-			}
-		}
-
-	}
-	effect = {
-		isis_cult_leader_maintenance_effect = yes 
 	}
 }
 
-PR_check_serapis_cult_leader_yearly_pulse = {
-	trigger = {
-		AND = {
-			exists = global_var:restored_serapis_cult
-			OR = { 
-				religion = religion:roman_religion
-				religion = religion:hellenism_religion
-				faith = faith:kemetic_polytheism
-			}
-		}
-
-	}
-	effect = {
-		serapis_cult_leader_maintenance_effect = yes 
-	}
-}
-
-PR_check_sol_invictus_cult_leader_yearly_pulse = {
-	trigger = {
-		AND = {
-			exists = global_var:restored_sol_invictus
-			religion = religion:roman_religion
-		}
-	}
-	effect = {
-		sol_invictus_cult_leader_maintenance_effect = yes 
-	}
-}
-
-PR_check_bacchus_cult_leader_yearly_pulse = {
-	trigger = {
-		AND = {
-			exists = global_var:restored_bacchus_cult
-			religion = religion:roman_religion
-		}
-	}
-	effect = {
-		bacchus_cult_leader_maintenance_effect = yes 
-	}
-}
-
-PR_check_cybele_cult_leader_yearly_pulse = {
-	trigger = {
-		AND = {
-			exists = global_var:restored_cybele_cult
-			OR = {
-				religion = religion:roman_religion
-				religion = hellenism_religion
-			}
-		}
-	}
-	effect = {
-		cybele_cult_leader_maintenance_effect = yes	
-	}
-}
-
-PR_check_eleusinian_cult_leader_yearly_pulse = {
-	trigger = {
-		AND = {
-			exists = global_var:restored_eleusinian_cult
-			religion = religion:roman_religion
-		}
-	}
-	effect = {
-		eleusinian_cult_leader_maintenance_effect = yes 
-	}
-}
-
-PR_check_mithras_cult_leader_yearly_pulse = {
-	trigger = {
-		AND = {
-			exists = global_var:restored_mithras_cult
-			OR = {
-				religion = religion:roman_religion
-				religion = hellenism_religion
-			}
-		}
-	}
-	effect = {
-		mithras_cult_leader_maintenance_effect = yes 
-	}
-}
-PR_check_imperial_cult_leader_yearly_pulse = {
-	trigger = {
-		AND = {
-			exists = global_var:restored_imperial_cult
-			OR = {
-				religion = religion:roman_religion
-				religion = hellenism_religion
-				faith = faith:kemetic_polytheism
-			}
-		}
-	}
-	effect = {
-		imperial_cult_leader_maintenance_effect = yes 
-	}
-}
-
+# Root = character who lost Roma or changed religion
 PR_check_death_or_lost_roma_temple_of_vesta_yearly_pulse = {
 	trigger = {
 		OR = {
-		  AND = {
-			has_character_modifier = burning_flame_of_vesta
-			NOT = {
-				has_title = title:c_roma
+			AND = {
+				has_character_modifier = burning_flame_of_vesta
+				NOT = {
+					has_title = title:c_roma
+				}
 			}
-		  }
-		  AND = {
-			has_character_modifier = burning_flame_of_vesta
-			NOT = {
-				religion = religion:roman_religion
+			AND = {
+				has_character_modifier = burning_flame_of_vesta
+				NOT = {
+					religion = religion:roman_religion
+				}
 			}
-		  }
 		}
-		
 	}
 	effect = {
 		remove_character_modifier = burning_flame_of_vesta
 	}
 }
 
+# Root = character who holds Anglesey
+PR_check_death_or_lost_anglesey_druid_island_yearly_pulse = {
+	trigger = {
+		has_title = title:c_anglesey
+		title:c_anglesey = { has_county_modifier = open_druidic_place }
+		NOR = {
+			has_character_modifier = druidic_knowledge
+		}
+	}
+	effect = {
+		add_character_modifier = druidic_knowledge
+	}
+}
+
+# Root = Roman religion character with open vestalis maxima in Roma
+PR_check_vestalis_maxima_yearly_pulse = {
+	trigger = {
+		title:c_roma = { has_county_modifier = open_vestalis_maxima }
+		religion = religion:roman_religion
+	}
+	effect = {
+		vestal_vergins_maintenance_effect = yes
+	}
+}
+
+# Root = Celtic religion character with open druidic place in Anglesey
+PR_check_druidic_circle_leader_yearly_pulse = {
+	trigger = {
+		title:c_anglesey = { has_county_modifier = open_druidic_place }
+		religion = religion:celtic_religion
+	}
+	effect = {
+		druidic_circle_leader_maintenance_effect = yes
+	}
+}
+
+# --- Hittite / Damascus ---
+
+# Root = player character of Hittite religion holding Damascus
 PR_check_owner_damascus_yearly_pulse = {
-	# trigger = {
-	# 	has_title = title:c_damascus
-	# 	#religion = religion:hittite_religion
-	# 	# NOR = {
-			
-	# 	# }
-	# }
-	trigger = {  
+	trigger = {
 		AND = {
 			has_game_rule = pr_semi_historical_events_on
 			religion = religion:hittite_religion
 			has_title = title:c_damascus
 			ai = no
-		}                                                                                                                                                                                                
-
-		
+		}
 		NOT = {
 			any_character_artifact = {
 				has_artifact_modifier = pr_treaty_of_kadesh
@@ -419,121 +250,223 @@ PR_check_owner_damascus_yearly_pulse = {
 		}
 	}
 	effect = {
-		# limit = {
-		# 	has_title = title:c_damascus
-		# }
-		set_global_variable = {
-			name = test_damascus
-			value = yes
-			}
-		trigger_event = ht.002
-		# trigger_event = {
-		# 	id = ht.002	
-		# 	#days = 10
-		# }
+		trigger_event = pr_hittite.0002
 	}
 }
 
-#Augur event on_action 
-PR_augur_not_requested_tri_yearly_pulse  = {
+# =============================================
+# SECTION 4: CULT LEADER MAINTENANCE PULSES
+# =============================================
+
+PR_check_isis_cult_leader_yearly_pulse = {
 	trigger = {
+		exists = global_var:restored_isis_cult
+		OR = {
 			religion = religion:roman_religion
-			has_game_rule = pr_augury_on 
-			NOT ={
-				has_character_modifier = pr_good_auspice_sacred_hens
-				has_character_modifier = pr_bad_auspice_sacred_hens
-				has_character_modifier = pr_good_auspice_crows
-				has_character_modifier = pr_bad_auspice_crows
-				has_character_modifier = pr_good_auspice_eagle
-				has_character_modifier = pr_bad_auspice_eagle
-				has_character_modifier = pr_augur_not_requested
+			religion = religion:hellenism_religion
+			faith = faith:kemetic_polytheism
 		}
 	}
 	effect = {
-		trigger_event = {
-			id = cdr.022	
-			#days = 10
-		}
+		isis_cult_leader_maintenance_effect = yes
 	}
 }
 
-pr_augur_auspice_event = {
-	random_events = {
-		9 = cdr.016
-		1 = cdr.020
-		2 = cdr.021
+PR_check_serapis_cult_leader_yearly_pulse = {
+	trigger = {
+		exists = global_var:restored_serapis_cult
+		OR = {
+			religion = religion:roman_religion
+			religion = religion:hellenism_religion
+			faith = faith:kemetic_polytheism
+		}
 	}
-} 
-pr_chance_augur_accepts = {
-	random_events = {
-		6 = cdr.017
-		4 = cdr.018
+	effect = {
+		serapis_cult_leader_maintenance_effect = yes
 	}
 }
-# pr_random_vesta_events = {
-# 	random_events = {
-# 		10 = cdr.023
-# 		10 = cdr.024
-# 		10 = cdr.025
-# 	}
-# }
-#Festivals as Lupercalia can be triggered every year 
-PR_roman_events_yearly_pulse = {
+
+PR_check_sol_invictus_cult_leader_yearly_pulse = {
 	trigger = {
-		basic_is_valid_for_yearly_events_trigger = yes 
+		exists = global_var:restored_sol_invictus
 		religion = religion:roman_religion
 	}
-	random_events = {
-		#Lupercalia
-		10 = cdr.009
+	effect = {
+		sol_invictus_cult_leader_maintenance_effect = yes
 	}
 }
-PR_check_if_celtic_empire_exists_yearly_pulse = {
+
+PR_check_bacchus_cult_leader_yearly_pulse = {
 	trigger = {
-		basic_is_valid_for_yearly_events_trigger = yes 
-		religion = religion:celtic_religion
+		exists = global_var:restored_bacchus_cult
+		religion = religion:roman_religion
 	}
-	random_events = {
-		10 = celtic.016
+	effect = {
+		bacchus_cult_leader_maintenance_effect = yes
 	}
 }
-PR_druidic_events_tri_yearly_pulse = {
+
+PR_check_cybele_cult_leader_yearly_pulse = {
 	trigger = {
-		title:c_anglesey = {has_county_modifier = open_druidic_place }
-		religion = religion:celtic_religion
-		basic_is_valid_for_yearly_events_trigger = yes 
+		exists = global_var:restored_cybele_cult
+		OR = {
+			religion = religion:roman_religion
+			religion = religion:hellenism_religion
+		}
+	}
+	effect = {
+		cybele_cult_leader_maintenance_effect = yes
+	}
+}
+
+PR_check_eleusinian_cult_leader_yearly_pulse = {
+	trigger = {
+		exists = global_var:restored_eleusinian_cult
+		religion = religion:roman_religion
+	}
+	effect = {
+		eleusinian_cult_leader_maintenance_effect = yes
+	}
+}
+
+PR_check_mithras_cult_leader_yearly_pulse = {
+	trigger = {
+		exists = global_var:restored_mithras_cult
+		OR = {
+			religion = religion:roman_religion
+			religion = religion:hellenism_religion
+		}
+	}
+	effect = {
+		mithras_cult_leader_maintenance_effect = yes
+	}
+}
+
+PR_check_imperial_cult_leader_yearly_pulse = {
+	trigger = {
+		exists = global_var:restored_imperial_cult
+		OR = {
+			religion = religion:roman_religion
+			religion = religion:hellenism_religion
+			faith = faith:kemetic_polytheism
+		}
+	}
+	effect = {
+		imperial_cult_leader_maintenance_effect = yes
+	}
+}
+
+# =============================================
+# SECTION 5: TRI-YEARLY FLAVOR EVENT PULSES
+# =============================================
+
+# --- Roman Religion ---
+# Root = playable character (count+)
+PR_roman_events_tri_yearly_pulse = {
+	trigger = {
+		basic_is_valid_for_yearly_events_trigger = yes
+		religion = religion:roman_religion
 	}
 	random_events = {
 		chance_of_no_event = {
 			value = 30
 		}
-		70 = 0 
-		10 = cult.022
-		10 = cult.024
+		70 = 0
+		10 = pr_roman.0002   # Temple sacrilege
+		10 = pr_roman.0003   # Lemuria
+		10 = pr_roman.0004   # Offering to Dis Pater
+		10 = pr_roman.0005   # Visit temple of Jupiter
+		10 = pr_roman.0006   # Ludi Plebeii
+		10 = pr_roman.0007   # Offering to Lares
+		10 = pr_roman.0008   # Offering to Ceres
+		10 = pr_roman.0012   # Buy book about Roman mythology
+		10 = pr_roman.0013   # Story of Aeneas
 	}
 }
-#Hellenic Religion random flavor events 
+
+# --- Germanic Religion ---
+# Root = playable character (count+)
+PR_germanic_events_tri_yearly_pulse = {
+	trigger = {
+		basic_is_valid_for_yearly_events_trigger = yes
+		religion = religion:germanic_religion
+	}
+	random_events = {
+		chance_of_no_event = {
+			value = 30
+		}
+		70 = 0
+		10 = pr_germanic.0001   # Consult Volva
+		10 = pr_germanic.0002   # Offer to Wotan/Woden/Odin
+		10 = pr_germanic.0003   # Germans vs Romans
+		10 = pr_germanic.0004   # Carve an idol for Freyja
+		10 = pr_germanic.0005   # Dreams of Ragnarok
+		10 = pr_germanic.0006   # Sign of presence of Freyja
+		10 = pr_germanic.0007   # Build a shrine for Njord
+		10 = pr_germanic.0008   # Rune carver
+		10 = pr_germanic.0011   # The Huldufolk
+	}
+}
+
+# --- Daco-Thracian Religion ---
+# Root = playable character (count+)
+PR_dacian_events_tri_yearly_pulse = {
+	trigger = {
+		basic_is_valid_for_yearly_events_trigger = yes
+		religion = religion:daco_thracian_religion
+	}
+	random_events = {
+		chance_of_no_event = {
+			value = 30
+		}
+		70 = 0
+		10 = pr_daco_thracian.0007
+		10 = pr_daco_thracian.0008
+		10 = pr_daco_thracian.0009
+	}
+}
+
+# --- Hellenic Religion ---
+# Root = playable character (count+)
 PR_hellenic_events_tri_yearly_pulse = {
 	trigger = {
-		basic_is_valid_for_yearly_events_trigger = yes 
+		basic_is_valid_for_yearly_events_trigger = yes
 		religion = religion:hellenism_religion
 	}
 	random_events = {
 		chance_of_no_event = {
-			value = 30 
+			value = 30
 		}
-		70 = 0 
-		#Offer to Zeus
-		10 = hellenismos.007
-		#Buy book about Greek Mythology
-		10 = hellenismos.008
-		#Offer to Demeter
-		#10 = hellenismos.010
+		70 = 0
+		10 = pr_greek.0007   # Offer to Zeus
+		10 = pr_greek.0008   # Buy book about Greek mythology
 	}
 }
+
+# --- Kemetic Religion ---
+# Root = playable character (count+)
+PR_kemetic_events_tri_yearly_pulse = {
+	trigger = {
+		basic_is_valid_for_yearly_events_trigger = yes
+		faith = faith:kemetic_polytheism
+	}
+	random_events = {
+		chance_of_no_event = {
+			value = 30
+		}
+		70 = 0
+		10 = pr_egyptian.0008   # Solar eclipse
+		10 = pr_egyptian.0009   # Visit from Anubis
+		10 = pr_egyptian.0010   # The priestess of Isis
+		10 = pr_egyptian.0011   # The blessing of Ma'at
+	}
+}
+
+# --- Cult Events (Roman/Hellenic/Kemetic) ---
+# Root = playable character (count+)
 PR_cult_events_tri_yearly_pulse = {
 	trigger = {
-		basic_is_valid_for_yearly_events_trigger = yes 
+		basic_is_valid_for_yearly_events_trigger = yes
 		OR = {
 			religion = religion:roman_religion
 			religion = religion:hellenism_religion
@@ -544,138 +477,38 @@ PR_cult_events_tri_yearly_pulse = {
 		chance_of_no_event = {
 			value = 30
 		}
-		70 = 0 
-		#mithras random event
-		10 = cult.061
-		#cybele random event
-		10 = cult.063
-		#eleusinian random event
-		10 = cult.064
-		#bacchus random event
-		10 = cult.065
-		#serapis random event
-		10 = cult.066
-		#isis random event
-		10 = cult.067
-		#Vestalis random event
-		10 = cult.068
-
-
+		70 = 0
+		10 = pr_roman_cult.0061   # Mithras random event
+		10 = pr_roman_cult.0063   # Cybele random event
+		10 = pr_roman_cult.0064   # Eleusinian random event
+		10 = pr_roman_cult.0065   # Bacchus random event
+		10 = pr_roman_cult.0066   # Serapis random event
+		10 = pr_roman_cult.0067   # Isis random event
+		10 = pr_roman_cult.0068   # Vestalis random event
 	}
 }
 
-#Roman Religion random flavor events
-PR_roman_events_tri_yearly_pulse = {
+# --- Druidic Events ---
+# Root = playable character (count+)
+PR_druidic_events_tri_yearly_pulse = {
 	trigger = {
-		basic_is_valid_for_yearly_events_trigger = yes 
-		religion = religion:roman_religion
+		basic_is_valid_for_yearly_events_trigger = yes
+		title:c_anglesey = { has_county_modifier = open_druidic_place }
+		religion = religion:celtic_religion
 	}
 	random_events = {
 		chance_of_no_event = {
 			value = 30
 		}
-		70 = 0 
-		#Temple sacriledge
-		10 = cdr.002
-		#Lemuria
-		10 = cdr.003
-		#offering to Dis Pater
-		10 = cdr.004
-		#Visit temple of Jupiter 
-		10 = cdr.005
-		#Ludi Plebeii
-		10 = cdr.006
-		#Offering to lares 
-		10 = cdr.007
-		#Offering to Ceres
-		10 = cdr.008
-		#Buy book about Roman mythology
-		10 = cdr.012
-		#Story of Aeneas
-		10 = cdr.013
-		#War bad/good omen 
-		#10 = cdr.026
-		
-		#Buy book about Roman Religion 
-
-		#Buy book with Roman prayers 
-
-		#Parentalia
-
-		#Vestalia 
+		70 = 0
+		10 = pr_roman_cult.0022
+		10 = pr_roman_cult.0024
 	}
 }
-#Kemetic Religion random flavor events
-PR_kemetic_events_tri_yearly_pulse = {
-	trigger = {
-		basic_is_valid_for_yearly_events_trigger = yes 
-		faith = faith:kemetic_polytheism
-	}
-	random_events = {
-		chance_of_no_event = {
-			value = 30
-		}
-		70 = 0 
-		#Solar eclipse
-		10 = kemetic.008
-		#Visit from Anubis
-		10 = kemetic.009
-		#The priestess of Isis
-		10 = kemetic.010
-		#The blessing of Ma'at
-		10 = kemetic.011
 
-	}
-}
-PR_germanic_events_tri_yearly_pulse = {
-	trigger = {
-		basic_is_valid_for_yearly_events_trigger = yes 
-		religion = religion:germanic_religion
-	}
-	random_events = {
-		chance_of_no_event = {
-			value = 30
-		}
-	}
-	70 = 0 
-	#Consult Volva
-	10 = pr_germanic.001
-	#Offer to Wotan Woden Odin
-	10 = pr_germanic.002
-	#Germans vs Romans
-	10 = pr_germanic.003
-    #Carve a idol for Freyja
-	10 = pr_germanic.004
-	#Dreams of Ragnarok
-	10 = pr_germanic.005
-    #Sign of prensence of Freyja
-	10 = pr_germanic.006
-	#Build a shrine for Njord
-	10 = pr_germanic.007
-	#Rune carver 
-	10 = pr_germanic.008
-	#The Huldufólk 
-	10 = pr_germanic.011
-
-}
-
-PR_dacian_events_tri_yearly_pulse = {
-	trigger = {
-		basic_is_valid_for_yearly_events_trigger = yes 
-		religion = religion:daco_thracian_religion
-	}
-	random_events = {
-		chance_of_no_event = {
-			value = 30
-		}
-	}
-	70 = 0
-	10 = dacian.007
-	10 = dacian.008
-	10 = dacian.009
-}
-
-pr_illyrian_events_tri_yearly_pulse = {
+# --- Illyrian Religion ---
+# Root = playable character (count+)
+PR_illyrian_events_tri_yearly_pulse = {
 	trigger = {
 		basic_is_valid_for_yearly_events_trigger = yes
 		religion = religion:illyrian_religion
@@ -684,25 +517,31 @@ pr_illyrian_events_tri_yearly_pulse = {
 		chance_of_no_event = {
 			value = 30
 		}
-		70 = 0 
-		10 = pr_illyrian.001
-		10 = pr_illyrian.003
-		
+		70 = 0
+		10 = pr_illyrian.0001
+		10 = pr_illyrian.0003
 	}
-}
-pr_punic_events_tri_yearly_pulse = {
-	trigger = {
-		basic_is_valid_for_yearly_events_trigger = yes 
-		religion = religion:canaanite_religion
-	}
-	70 = 0
-	10 = punic.003
-	#10 = punic.004
-	10 = punic.005
 }
 
-#Credits to Cybrkxhan
-# VIET Celtic Flavor Events
+# --- Canaanite Religion ---
+# Root = playable character (count+)
+PR_canaanite_events_tri_yearly_pulse = {
+	trigger = {
+		basic_is_valid_for_yearly_events_trigger = yes
+		religion = religion:canaanite_religion
+	}
+	random_events = {
+		chance_of_no_event = {
+			value = 30
+		}
+		70 = 0
+		10 = pr_canaanite.0003
+		10 = pr_canaanite.0005
+	}
+}
+
+# --- VIET Celtic Flavor Events (Credits to Cybrkxhan) ---
+# Root = playable character (count+)
 VIET_celtic_events_tri_yearly_pulse = {
 	trigger = {
 		basic_is_valid_for_yearly_events_trigger = yes
@@ -712,32 +551,137 @@ VIET_celtic_events_tri_yearly_pulse = {
 		chance_of_no_event = {
 			value = 30
 		}
-		
 		70 = 0
-		
-		10 = VIETceltic.0001		# Holy spring sacred to Celtic pagans discovered nearby
-		10 = VIETceltic.0002		# Make an offering of a shield and helmet to the waters
-		10 = VIETceltic.0003		# Servant caught trying to curse another through Sulis
-		10 = VIETceltic.0004		# Come across a tiny shrine to Sirona on the road
-		10 = VIETceltic.0005		# Make an offering to Sequana or not?
-		10 = VIETceltic.0006		# Reading about Romans vs Celts
-		10 = VIETceltic.0007		# Worship Belatucadros and Cocidius like the common soldiers?
-		10 = VIETceltic.0008		# Worship Vosegus
-		10 = VIETceltic.0009		# Nuts are a symbol of Vosegus
-		10 = VIETceltic.0010		# Eye irritation - ask for help from Belenus
-		10 = VIETceltic.0011		# Folklore about Belenus helping protect a town
-		10 = VIETceltic.0012		# Dedicate an altar to Boann
-		10 = VIETceltic.0013		# Dreamt of Manannán
-		10 = VIETceltic.0014		# Shrine to Atepomarus
-		10 = VIETceltic.0015		# Statues of Sucellus and Nantosuelta given as gifts
-		10 = VIETceltic.0016		# Reflecting on Ogmios
-		10 = VIETceltic.0017		# Boar feast
-		10 = VIETceltic.0018		# Shoemakers make offering to Lugh
-		10 = VIETceltic.0019		# Make votive offering to Lugh
-		10 = VIETceltic.0020		# Sacred tree nearby should be given offerings
-		10 = VIETceltic.0021		# Offering to Taranis by throwing a little stone wheel into a river
-		
+		10 = VIETceltic.0001   # Holy spring sacred to Celtic pagans discovered nearby
+		10 = VIETceltic.0002   # Make an offering of a shield and helmet to the waters
+		10 = VIETceltic.0003   # Servant caught trying to curse another through Sulis
+		10 = VIETceltic.0004   # Come across a tiny shrine to Sirona on the road
+		10 = VIETceltic.0005   # Make an offering to Sequana or not?
+		10 = VIETceltic.0006   # Reading about Romans vs Celts
+		10 = VIETceltic.0007   # Worship Belatucadros and Cocidius like the common soldiers?
+		10 = VIETceltic.0008   # Worship Vosegus
+		10 = VIETceltic.0009   # Nuts are a symbol of Vosegus
+		10 = VIETceltic.0010   # Eye irritation - ask for help from Belenus
+		10 = VIETceltic.0011   # Folklore about Belenus helping protect a town
+		10 = VIETceltic.0012   # Dedicate an altar to Boann
+		10 = VIETceltic.0013   # Dreamt of Manannan
+		10 = VIETceltic.0014   # Shrine to Atepomarus
+		10 = VIETceltic.0015   # Statues of Sucellus and Nantosuelta given as gifts
+		10 = VIETceltic.0016   # Reflecting on Ogmios
+		10 = VIETceltic.0017   # Boar feast
+		10 = VIETceltic.0018   # Shoemakers make offering to Lugh
+		10 = VIETceltic.0019   # Make votive offering to Lugh
+		10 = VIETceltic.0020   # Sacred tree nearby should be given offerings
+		10 = VIETceltic.0021   # Offering to Taranis by throwing a little stone wheel into a river
 	}
 }
 
+# =============================================
+# SECTION 6: YEARLY FLAVOR EVENT PULSES
+# =============================================
 
+# --- Roman Festivals (Yearly) ---
+# Root = playable character (count+)
+PR_roman_events_yearly_pulse = {
+	trigger = {
+		basic_is_valid_for_yearly_events_trigger = yes
+		religion = religion:roman_religion
+	}
+	random_events = {
+		10 = pr_roman.0009   # Lupercalia
+	}
+}
+
+# --- Celtic Empire Check (Yearly) ---
+# Root = playable character (count+)
+PR_check_if_celtic_empire_exists_yearly_pulse = {
+	trigger = {
+		basic_is_valid_for_yearly_events_trigger = yes
+		religion = religion:celtic_religion
+	}
+	random_events = {
+		10 = pr_celtic.0415
+	}
+}
+
+# =============================================
+# SECTION 7: AUGUR EVENTS
+# =============================================
+
+# Root = Roman religion character with augury game rule
+PR_augur_not_requested_tri_yearly_pulse = {
+	trigger = {
+		basic_is_valid_for_yearly_events_trigger = yes
+		religion = religion:roman_religion
+		has_game_rule = pr_augury_on
+		NOR = {
+			has_character_modifier = pr_good_auspice_sacred_hens
+			has_character_modifier = pr_bad_auspice_sacred_hens
+			has_character_modifier = pr_good_auspice_crows
+			has_character_modifier = pr_bad_auspice_crows
+			has_character_modifier = pr_good_auspice_eagle
+			has_character_modifier = pr_bad_auspice_eagle
+			has_character_modifier = pr_augur_not_requested
+		}
+	}
+	effect = {
+		trigger_event = {
+			id = pr_roman.0022
+		}
+	}
+}
+
+# Event-driven: fired via trigger_event = { on_action = pr_augur_auspice_event }
+pr_augur_auspice_event = {
+	random_events = {
+		9 = pr_roman.0016
+		1 = pr_roman.0020
+		2 = pr_roman.0021
+	}
+}
+
+# Event-driven: fired via trigger_event = { on_action = pr_chance_augur_accepts }
+pr_chance_augur_accepts = {
+	random_events = {
+		6 = pr_roman.0017
+		4 = pr_roman.0018
+	}
+}
+
+# =============================================
+# SECTION 8: RESEARCH EVENTS (Event-Driven)
+# =============================================
+
+pr_research_ancient_religion_events_great_library = {
+	random_events = {
+		10 = pr.0031
+		2 = pr.0032
+	}
+}
+
+pr_research_ancient_religion_events_small_library = {
+	random_events = {
+		10 = pr.0031
+		10 = pr.0032
+	}
+}
+
+pr_research_ancient_religion_events_debate = {
+	random_events = {
+		10 = pr.0036
+	}
+}
+
+pr_research_ancient_religion_events_debate_moderate_bad = {
+	random_events = {
+		7 = pr.0037
+		3 = pr.0038
+	}
+}
+
+pr_bought_book_event = {
+	random_events = {
+		7 = pr.0040
+		3 = pr.0041
+	}
+}

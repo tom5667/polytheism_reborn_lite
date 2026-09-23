@@ -1,4 +1,4 @@
-﻿name_list_hittite = {
+﻿name_list_pr_hittite = {
 	cadet_dynasty_names = {
 		"dynn_Kantakouzenos"
 		"dynn_Palaiologos"
@@ -140,4 +140,4 @@
 		{ name = "mercenary_company_heruli" }
 		{ name = "mercenary_company_hoplites_of_place" }
 	}
-}
+}

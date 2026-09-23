@@ -1,4 +1,4 @@
-﻿name_list_illyrian = {
+﻿name_list_pr_illyrian = {
 
 	cadet_dynasty_names = {
 		"dynn_Basarab"
@@ -106,13 +106,13 @@
 	male_names = {
 		#Historical correct 
 		Acritus Agron Bardylis Cleitus Grabos Labeatis Pleuratus Scerdilaidas Ballaios Pinnes Bardylis Bato Diocletian Gentius Cratillus Machatas Illyrius
-		#Reconstructed based on known illyrian names 
+		#Reconstructed based on known pr_illyrian names 
 		Dalmatus Abrupodes Partinus Taulantius
 	}
 	female_names = {
 		#historical correct
 		Arpi Bessa Daorsa Gentiana Illyra Teuta Triteuta Audata Bircenna
-		#Reconstructed based on known illyrian names 
+		#Reconstructed based on known pr_illyrian names 
 		Dalmatina Bardana Caeria Etuta Taulantina Partina
 		
 	}
@@ -135,4 +135,4 @@
 	mercenary_names = {
 		{ name = "mercenary_company_sheperds_of_the_romans" }
 	}
-}
+}

@@ -1,6 +1,6 @@
-#Based on vanilla pilgrimage and work done by cybrxkhan
+﻿#Based on vanilla pilgrimage and work done by cybrxkhan
 
-pr_activity_kogaionon_pilgrimage= {
+pr_activity_kogaionon_pilgrimage = {
 	is_shown = {
 		highest_held_title_tier > tier_barony
 		is_landed = yes
@@ -66,70 +66,15 @@ pr_activity_kogaionon_pilgrimage= {
 	}
 
 	is_valid = {
-		NOT = {
-			has_variable = activity_invalidated
-		}
-		scope:host = {
-			is_landed = yes
-			NOT = { is_incapable = yes }
-		}
-		scope:activity = {
-			OR = {
-				NOT = { has_variable = starting_faith }
-				# We could check whether the place you're going to is still a holy site in the new faith, but then that messes up all the people moving with you, so we just cancel the whole thing.
-				scope:host.faith = var:starting_faith
-			}
-		}
+		pr_pilgrimage_is_valid_trigger = yes
 	}
 
 	on_invalidated = {
-		# Host becomes unlanded
-		if = {
-			limit = {
-				scope:host = { is_landed = no }
-			}
-			scope:activity = {
-				activity_type = { save_scope_as = activity_type }
-			}
-			every_attending_character = {
-				trigger_event = activity_system.0320
-			}
-		}
-		if = {
-			limit = {
-				scope:host = { is_incapable = yes }
-			}
-			scope:activity = {
-				activity_type = { save_scope_as = activity_type }
-			}
-			scope:host = {
-				trigger_event = activity_system.0330
-			}
-			every_attending_character = {
-				limit = { NOT = { this = scope:host } }
-				trigger_event = activity_system.0331
-			}
-		}
-		if = {
-			limit = {
-				NOT = { scope:host.faith = var:starting_faith }
-			}
-			scope:activity = {
-				activity_type = { save_scope_as = activity_type }
-				activity_location = { save_scope_as = location }
-			}
-			every_attending_character = {
-				trigger_event = RICEmisc.0010
-			}
-		}
+		pr_pilgrimage_on_invalidated_effect = yes
 	}
 
 	on_host_death = {
-		scope:activity = {
-			set_variable = {
-				name = activity_invalidated
-			}
-		}
+		pr_pilgrimage_on_host_death_effect = yes
 	}
 
 	province_filter = all
@@ -211,44 +156,14 @@ pr_activity_kogaionon_pilgrimage= {
 	max_guest_arrival_delay_time = { months = 1 }
 
 	# desc is only shown in debug AI watch window
-	ai_will_do = {
-		value = 50
-		
-		if = {
-			limit = {
-				has_trait = cynical
-			}
-			add = -25
-		}
-		if = {
-			limit = {
-				has_trait = zealous
-			}
-			add = 25
-		}
-		
-		#Can you actually afford this?
-		if = {
-			limit = {
-				NOT = { can_make_expensive_purchase_trigger = { PRICE = PR_activity_cost } }
-			}
-			add = -50
-		}
-	}
+	ai_will_do = pr_pilgrimage_ai_will_do_value
 
 	ai_check_interval = 60
 
-	ai_will_select_province = {
-		value = 10
-	}
+	ai_will_select_province = pr_pilgrimage_ai_will_select_province_value
 	
 	is_location_valid = {
-		trigger_if = {
-			limit = {
-				exists = barony
-			}
-			barony = title:b_vajdahunyad
-		}
+		pr_pilgrimage_is_location_valid_trigger = yes
 	}
 
 	max_province_icons = 1
@@ -264,28 +179,9 @@ pr_activity_kogaionon_pilgrimage= {
 		}
 	}
 	
-	cost = {
-		gold = {
-			add = {
-				value = 0
-				add = {
-					value = PR_activity_cost
-					desc = hunt_base_cost
-				}
-			}
-		}
-	}
+	cost = pr_pilgrimage_cost_value
 
-	ui_predicted_cost = {
-		gold = {
-			value = PR_activity_cost
-
-			# Make it a multiple of 5 (rounded up)
-			divide = 5 
-			ceiling = yes 
-			multiply = 5
-		}
-	}
+	ui_predicted_cost = pr_pilgrimage_ui_predicted_cost_value
 	cooldown = { days = 3650 }
 	
 	###################
@@ -300,7 +196,7 @@ pr_activity_kogaionon_pilgrimage= {
 	# }
 
 	on_enter_passive_state = {
-		
+		pr_pilgrimage_on_enter_passive_state_effect = yes
 	}
 
 	###################
@@ -334,11 +230,7 @@ pr_activity_kogaionon_pilgrimage= {
 	}
 
 	can_be_activity_guest = {
-		faith.religion = scope:host.faith.religion
-		is_adult = yes
-		is_available = yes
-		in_diplomatic_range = scope:host
-		is_landed = no
+		pr_pilgrimage_can_be_activity_guest_trigger = yes
 	}
 
 	host_intents = {
@@ -569,7 +461,7 @@ pr_activity_kogaionon_pilgrimage= {
 	}
 }
 
-pr_activity_cnoc_uisnigh_pilgrimage= {
+pr_activity_cnoc_uisnigh_pilgrimage = {
 	is_shown = {
 		highest_held_title_tier > tier_barony
 		is_landed = yes
@@ -627,70 +519,15 @@ pr_activity_cnoc_uisnigh_pilgrimage= {
 	}
 
 	is_valid = {
-		NOT = {
-			has_variable = activity_invalidated
-		}
-		scope:host = {
-			is_landed = yes
-			NOT = { is_incapable = yes }
-		}
-		scope:activity = {
-			OR = {
-				NOT = { has_variable = starting_faith }
-				# We could check whether the place you're going to is still a holy site in the new faith, but then that messes up all the people moving with you, so we just cancel the whole thing.
-				scope:host.faith = var:starting_faith
-			}
-		}
+		pr_pilgrimage_is_valid_trigger = yes
 	}
 
 	on_invalidated = {
-		# Host becomes unlanded
-		if = {
-			limit = {
-				scope:host = { is_landed = no }
-			}
-			scope:activity = {
-				activity_type = { save_scope_as = activity_type }
-			}
-			every_attending_character = {
-				trigger_event = activity_system.0320
-			}
-		}
-		if = {
-			limit = {
-				scope:host = { is_incapable = yes }
-			}
-			scope:activity = {
-				activity_type = { save_scope_as = activity_type }
-			}
-			scope:host = {
-				trigger_event = activity_system.0330
-			}
-			every_attending_character = {
-				limit = { NOT = { this = scope:host } }
-				trigger_event = activity_system.0331
-			}
-		}
-		if = {
-			limit = {
-				NOT = { scope:host.faith = var:starting_faith }
-			}
-			scope:activity = {
-				activity_type = { save_scope_as = activity_type }
-				activity_location = { save_scope_as = location }
-			}
-			every_attending_character = {
-				trigger_event = RICEmisc.0010
-			}
-		}
+		pr_pilgrimage_on_invalidated_effect = yes
 	}
 
 	on_host_death = {
-		scope:activity = {
-			set_variable = {
-				name = activity_invalidated
-			}
-		}
+		pr_pilgrimage_on_host_death_effect = yes
 	}
 
 	province_filter = all
@@ -772,44 +609,14 @@ pr_activity_cnoc_uisnigh_pilgrimage= {
 	max_guest_arrival_delay_time = { months = 1 }
 
 	# desc is only shown in debug AI watch window
-	ai_will_do = {
-		value = 50
-		
-		if = {
-			limit = {
-				has_trait = cynical
-			}
-			add = -25
-		}
-		if = {
-			limit = {
-				has_trait = zealous
-			}
-			add = 25
-		}
-		
-		#Can you actually afford this?
-		if = {
-			limit = {
-				NOT = { can_make_expensive_purchase_trigger = { PRICE = PR_activity_cost } }
-			}
-			add = -50
-		}
-	}
+	ai_will_do = pr_pilgrimage_ai_will_do_value
 
 	ai_check_interval = 60
 
-	ai_will_select_province = {
-		value = 10
-	}
+	ai_will_select_province = pr_pilgrimage_ai_will_select_province_value
 	
 	is_location_valid = {
-		trigger_if = {
-			limit = {
-				exists = barony
-			}
-			barony = title:b_uisneach
-		}
+		pr_pilgrimage_is_location_valid_trigger = yes
 	}
 
 	max_province_icons = 1
@@ -825,28 +632,9 @@ pr_activity_cnoc_uisnigh_pilgrimage= {
 		}
 	}
 	
-	cost = {
-		gold = {
-			add = {
-				value = 0
-				add = {
-					value = PR_activity_cost
-					desc = hunt_base_cost
-				}
-			}
-		}
-	}
+	cost = pr_pilgrimage_cost_value
 
-	ui_predicted_cost = {
-		gold = {
-			value = PR_activity_cost
-
-			# Make it a multiple of 5 (rounded up)
-			divide = 5 
-			ceiling = yes 
-			multiply = 5
-		}
-	}
+	ui_predicted_cost = pr_pilgrimage_ui_predicted_cost_value
 	cooldown = { days = 3650 }
 	
 	###################
@@ -861,7 +649,7 @@ pr_activity_cnoc_uisnigh_pilgrimage= {
 	# }
 
 	on_enter_passive_state = {
-		
+		pr_pilgrimage_on_enter_passive_state_effect = yes
 	}
 
 	###################
@@ -895,11 +683,7 @@ pr_activity_cnoc_uisnigh_pilgrimage= {
 	}
 
 	can_be_activity_guest = {
-		faith.religion = scope:host.faith.religion
-		is_adult = yes
-		is_available = yes
-		in_diplomatic_range = scope:host
-		is_landed = no
+		pr_pilgrimage_can_be_activity_guest_trigger = yes
 	}
 
 	host_intents = {
@@ -1140,7 +924,7 @@ pr_activity_cnoc_uisnigh_pilgrimage= {
 
 
 #Delphi
-pr_activity_delphi_pilgrimage= {
+pr_activity_delphi_pilgrimage = {
 	is_shown = {
 		highest_held_title_tier > tier_barony
 		is_landed = yes
@@ -1198,70 +982,15 @@ pr_activity_delphi_pilgrimage= {
 	}
 
 	is_valid = {
-		NOT = {
-			has_variable = activity_invalidated
-		}
-		scope:host = {
-			is_landed = yes
-			NOT = { is_incapable = yes }
-		}
-		scope:activity = {
-			OR = {
-				NOT = { has_variable = starting_faith }
-				# We could check whether the place you're going to is still a holy site in the new faith, but then that messes up all the people moving with you, so we just cancel the whole thing.
-				scope:host.faith = var:starting_faith
-			}
-		}
+		pr_pilgrimage_is_valid_trigger = yes
 	}
 
 	on_invalidated = {
-		# Host becomes unlanded
-		if = {
-			limit = {
-				scope:host = { is_landed = no }
-			}
-			scope:activity = {
-				activity_type = { save_scope_as = activity_type }
-			}
-			every_attending_character = {
-				trigger_event = activity_system.0320
-			}
-		}
-		if = {
-			limit = {
-				scope:host = { is_incapable = yes }
-			}
-			scope:activity = {
-				activity_type = { save_scope_as = activity_type }
-			}
-			scope:host = {
-				trigger_event = activity_system.0330
-			}
-			every_attending_character = {
-				limit = { NOT = { this = scope:host } }
-				trigger_event = activity_system.0331
-			}
-		}
-		if = {
-			limit = {
-				NOT = { scope:host.faith = var:starting_faith }
-			}
-			scope:activity = {
-				activity_type = { save_scope_as = activity_type }
-				activity_location = { save_scope_as = location }
-			}
-			every_attending_character = {
-				trigger_event = RICEmisc.0010
-			}
-		}
+		pr_pilgrimage_on_invalidated_effect = yes
 	}
 
 	on_host_death = {
-		scope:activity = {
-			set_variable = {
-				name = activity_invalidated
-			}
-		}
+		pr_pilgrimage_on_host_death_effect = yes
 	}
 
 	province_filter = all
@@ -1343,44 +1072,14 @@ pr_activity_delphi_pilgrimage= {
 	max_guest_arrival_delay_time = { months = 1 }
 
 	# desc is only shown in debug AI watch window
-	ai_will_do = {
-		value = 50
-		
-		if = {
-			limit = {
-				has_trait = cynical
-			}
-			add = -25
-		}
-		if = {
-			limit = {
-				has_trait = zealous
-			}
-			add = 25
-		}
-		
-		#Can you actually afford this?
-		if = {
-			limit = {
-				NOT = { can_make_expensive_purchase_trigger = { PRICE = PR_activity_cost } }
-			}
-			add = -50
-		}
-	}
+	ai_will_do = pr_pilgrimage_ai_will_do_value
 
 	ai_check_interval = 60
 
-	ai_will_select_province = {
-		value = 10
-	}
+	ai_will_select_province = pr_pilgrimage_ai_will_select_province_value
 	
 	is_location_valid = {
-		trigger_if = {
-			limit = {
-				exists = barony
-			}
-			barony = title:b_amfissa
-		}
+		pr_pilgrimage_is_location_valid_trigger = yes
 	}
 
 	max_province_icons = 1
@@ -1396,28 +1095,9 @@ pr_activity_delphi_pilgrimage= {
 		}
 	}
 	
-	cost = {
-		gold = {
-			add = {
-				value = 0
-				add = {
-					value = PR_activity_cost
-					desc = hunt_base_cost
-				}
-			}
-		}
-	}
+	cost = pr_pilgrimage_cost_value
 
-	ui_predicted_cost = {
-		gold = {
-			value = PR_activity_cost
-
-			# Make it a multiple of 5 (rounded up)
-			divide = 5 
-			ceiling = yes 
-			multiply = 5
-		}
-	}
+	ui_predicted_cost = pr_pilgrimage_ui_predicted_cost_value
 	cooldown = { days = 3650 }
 	
 	###################
@@ -1432,7 +1112,7 @@ pr_activity_delphi_pilgrimage= {
 	# }
 
 	on_enter_passive_state = {
-		
+		pr_pilgrimage_on_enter_passive_state_effect = yes
 	}
 
 	###################
@@ -1466,11 +1146,7 @@ pr_activity_delphi_pilgrimage= {
 	}
 
 	can_be_activity_guest = {
-		faith.religion = scope:host.faith.religion
-		is_adult = yes
-		is_available = yes
-		in_diplomatic_range = scope:host
-		is_landed = no
+		pr_pilgrimage_can_be_activity_guest_trigger = yes
 	}
 
 	host_intents = {
@@ -1702,7 +1378,7 @@ pr_activity_delphi_pilgrimage= {
 }
 
 #Opfermoor Vogtei  Vogtei
-pr_activity_vogtei_pilgrimage= {
+pr_activity_vogtei_pilgrimage = {
 	is_shown = {
 		highest_held_title_tier > tier_barony
 		is_landed = yes
@@ -1734,7 +1410,7 @@ pr_activity_vogtei_pilgrimage= {
 		OR = {
 			custom_description = {
 				text = Pr_vogtei_close_req
-				title:c_gleichenstein = {
+				title:c_paderborn = {
 					squared_distance = {
 						target = root.capital_province
 						value <= squared_distance_small
@@ -1760,70 +1436,15 @@ pr_activity_vogtei_pilgrimage= {
 	}
 
 	is_valid = {
-		NOT = {
-			has_variable = activity_invalidated
-		}
-		scope:host = {
-			is_landed = yes
-			NOT = { is_incapable = yes }
-		}
-		scope:activity = {
-			OR = {
-				NOT = { has_variable = starting_faith }
-				# We could check whether the place you're going to is still a holy site in the new faith, but then that messes up all the people moving with you, so we just cancel the whole thing.
-				scope:host.faith = var:starting_faith
-			}
-		}
+		pr_pilgrimage_is_valid_trigger = yes
 	}
 
 	on_invalidated = {
-		# Host becomes unlanded
-		if = {
-			limit = {
-				scope:host = { is_landed = no }
-			}
-			scope:activity = {
-				activity_type = { save_scope_as = activity_type }
-			}
-			every_attending_character = {
-				trigger_event = activity_system.0320
-			}
-		}
-		if = {
-			limit = {
-				scope:host = { is_incapable = yes }
-			}
-			scope:activity = {
-				activity_type = { save_scope_as = activity_type }
-			}
-			scope:host = {
-				trigger_event = activity_system.0330
-			}
-			every_attending_character = {
-				limit = { NOT = { this = scope:host } }
-				trigger_event = activity_system.0331
-			}
-		}
-		if = {
-			limit = {
-				NOT = { scope:host.faith = var:starting_faith }
-			}
-			scope:activity = {
-				activity_type = { save_scope_as = activity_type }
-				activity_location = { save_scope_as = location }
-			}
-			every_attending_character = {
-				trigger_event = RICEmisc.0010
-			}
-		}
+		pr_pilgrimage_on_invalidated_effect = yes
 	}
 
 	on_host_death = {
-		scope:activity = {
-			set_variable = {
-				name = activity_invalidated
-			}
-		}
+		pr_pilgrimage_on_host_death_effect = yes
 	}
 
 	province_filter = all
@@ -1886,7 +1507,7 @@ pr_activity_vogtei_pilgrimage= {
 
 	phases = {
 		
-		pr_local_Vogtei_pilgrimage_phase = {
+		pr_local_vogtei_pilgrimage_phase = {
 			is_predefined = yes
 			
 			on_phase_active = {
@@ -1905,44 +1526,14 @@ pr_activity_vogtei_pilgrimage= {
 	max_guest_arrival_delay_time = { months = 1 }
 
 	# desc is only shown in debug AI watch window
-	ai_will_do = {
-		value = 50
-		
-		if = {
-			limit = {
-				has_trait = cynical
-			}
-			add = -25
-		}
-		if = {
-			limit = {
-				has_trait = zealous
-			}
-			add = 25
-		}
-		
-		#Can you actually afford this?
-		if = {
-			limit = {
-				NOT = { can_make_expensive_purchase_trigger = { PRICE = PR_activity_cost } }
-			}
-			add = -50
-		}
-	}
+	ai_will_do = pr_pilgrimage_ai_will_do_value
 
 	ai_check_interval = 60
 
-	ai_will_select_province = {
-		value = 10
-	}
+	ai_will_select_province = pr_pilgrimage_ai_will_select_province_value
 	
 	is_location_valid = {
-		trigger_if = {
-			limit = {
-				exists = barony
-			}
-			barony = title:b_muhlhausen
-		}
+		pr_pilgrimage_is_location_valid_trigger = yes
 	}
 
 	max_province_icons = 1
@@ -1958,28 +1549,9 @@ pr_activity_vogtei_pilgrimage= {
 		}
 	}
 	
-	cost = {
-		gold = {
-			add = {
-				value = 0
-				add = {
-					value = PR_activity_cost
-					desc = hunt_base_cost
-				}
-			}
-		}
-	}
+	cost = pr_pilgrimage_cost_value
 
-	ui_predicted_cost = {
-		gold = {
-			value = PR_activity_cost
-
-			# Make it a multiple of 5 (rounded up)
-			divide = 5 
-			ceiling = yes 
-			multiply = 5
-		}
-	}
+	ui_predicted_cost = pr_pilgrimage_ui_predicted_cost_value
 	cooldown = { days = 3650 }
 	
 	###################
@@ -1994,7 +1566,7 @@ pr_activity_vogtei_pilgrimage= {
 	# }
 
 	on_enter_passive_state = {
-		
+		pr_pilgrimage_on_enter_passive_state_effect = yes
 	}
 
 	###################
@@ -2028,11 +1600,7 @@ pr_activity_vogtei_pilgrimage= {
 	}
 
 	can_be_activity_guest = {
-		faith.religion = scope:host.faith.religion
-		is_adult = yes
-		is_available = yes
-		in_diplomatic_range = scope:host
-		is_landed = no
+		pr_pilgrimage_can_be_activity_guest_trigger = yes
 	}
 
 	host_intents = {
@@ -2058,12 +1626,12 @@ pr_activity_vogtei_pilgrimage= {
 		if = {
 			limit = { this = scope:host }
 			create_character_memory = {
-				type = pr_delphi_pilgrimage_host_memory
+				type = pr_vogtei_pilgrimage_host_memory
 			}
 		}
 		else = {			
 			create_character_memory = {
-				type = pr_delphi_pilgrimage_guest_memory
+				type = pr_vogtei_pilgrimage_guest_memory
 				participants = {
 					host = scope:host
 				}
@@ -2261,4 +1829,4 @@ pr_activity_vogtei_pilgrimage= {
 			}
 		}
 	}
-}
+}

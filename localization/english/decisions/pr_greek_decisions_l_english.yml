@@ -1,0 +1,52 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Greek Decisions
+  # Localization for pr_greek_decisions.txt
+  # =============================================
+
+  # --- Choose Main Deity (Greek) Decision ---
+  pr_greek_choose_main_deity_decision:0 "Choose Main Deity"
+  pr_greek_choose_main_deity_decision_desc:0 "#F The gods of the Hellenic pantheon call for a champion to represent their will in the mortal realm. As a ruler of the Hellenic faith, I must select a patron deity who will guide my actions and bless my rule with divine favor.#!\nBy choosing a main deity, I shall establish a personal connection with the divine, gaining unique blessings and modifiers that reflect the nature of my chosen god or goddess."
+  pr_greek_choose_main_deity_decision_tooltip:0 "#T Select a patron deity from your Hellenic faith to gain divine blessings#!"
+  pr_greek_choose_main_deity_decision_confirm:0 "Choose Main Deity!"
+  pr_greek_choose_main_deity_mycenaean_decision_tt:0 "#T Available Deities for [ROOT.Char.GetFaith.GetName]#!"
+  pr_greek_choose_main_deity_graeco_egyptian_decision_tt:0 "#T Available Deities for [ROOT.Char.GetFaith.GetName]#!"
+
+  # --- Main Deity Selection Descriptions: Mycenaean ---
+  select_main_deity_mycenaean_decision.select_poseidon:0 "#T Poseidon#!\n#P Lord of the sea, earthquakes, and horses#!"
+  select_main_deity_mycenaean_decision.select_hermes:0 "#T Hermes#!\n#P Messenger of the gods, patron of travelers and commerce#!"
+  select_main_deity_mycenaean_decision.select_aphrodite:0 "#T Aphrodite#!\n#P Goddess of love, beauty, and desire#!"
+  select_main_deity_mycenaean_decision.select_athena:0 "#T Athena#!\n#P Goddess of wisdom, warfare, and the crafts#!"
+  select_main_deity_mycenaean_decision.select_ares:0 "#T Ares#!\n#P God of war, courage, and bloodshed#!"
+
+  # --- Main Deity Selection Descriptions: Graeco-Egyptian ---
+  select_main_deity_graeco_egyptian_decision.select_zeus_amon:0 "#T Zeus-Ammon#!\n#P Syncretic king of the gods, lord of sky and oracle#!"
+  select_main_deity_graeco_egyptian_decision.select_hermes_trismegistus:0 "#T Hermes Trismegistus#!\n#P Thrice-greatest Hermes, master of wisdom and alchemy#!"
+  select_main_deity_graeco_egyptian_decision.select_isis:0 "#T Isis#!\n#P Goddess of magic, fertility, and motherhood#!"
+  select_main_deity_graeco_egyptian_decision.select_harpocrates:0 "#T Harpocrates#!\n#P God of silence, secrecy, and the rising sun#!"
+  select_main_deity_graeco_egyptian_decision.select_ares:0 "#T Ares#!\n#P God of war, courage, and bloodshed#!"
+
+  # --- Embrace Hellen Culture Decision ---
+  pr_greek_hellen_culture_decision:0 "Embrace the Hellen Culture"
+  pr_greek_hellen_culture_decision_desc:0 "#F The Hellenic culture, birthed in the cradle of Attica, stands as a beacon of civilization, philosophy, and art. By embracing this ancient heritage, I shall lead my people toward a golden age of learning and cultural refinement.#!\nThrough this decision, I shall foster the traditions of Hellas and strengthen the bonds between my realm and the old gods."
+  pr_greek_hellen_culture_decision_tooltip:0 "#T Embrace the Hellenic cultural traditions and strengthen your realm's heritage#!"
+  pr_greek_hellen_culture_decision_confirm:0 "Embrace the Hellen Culture!"
+
+  # --- Create Pergamon Kingdom Decision ---
+  pr_greek_pergamon_kingdom_decision:0 "Create the Kingdom of Pergamon"
+  pr_greek_pergamon_kingdom_decision_desc:0 "#F The ancient lands of Asia Minor, once home to the great Hellenic kingdoms, await a new ruler to unite them under a single banner. From the Aegean islands to the fertile plains of Anatolia, these territories have long been divided.#!\nBy creating the Kingdom of Pergamon, I shall restore Hellenic rule over these historic lands and forge a new power in the east."
+  pr_greek_pergamon_kingdom_decision_tooltip:0 "#T Form the Kingdom of Pergamon by uniting the Hellenic lands of Asia Minor#!"
+  pr_greek_pergamon_kingdom_decision_confirm:0 "Create the Kingdom of Pergamon!"
+  pr_greek_pergamon_kingdom_decision_effect_tooltip:0 "#P The kingdom of Pergamon will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_aegean_islands.GetNameNoTier], [title_d_ephese.GetNameNoTier], [title_d_thracesia.GetNameNoTier], [title_d_opsikion.GetNameNoTier], and [title_d_anatolia.GetNameNoTier] will become [de_jure|E] part of Pergamon$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"
+
+  # --- Set Capital Pergamon Decision ---
+  pr_greek_set_capital_pergamon_decision:0 "Move Capital to Pergamon"
+  pr_greek_set_capital_pergamon_decision_desc:0 "#F Pergamon, jewel of Asia Minor, stands as the natural heart of our realm. By moving our capital to this ancient city, I shall center our power in the lands we have reclaimed and strengthen our grip on the region.#!\nThis decision will establish Pergamon as the seat of our power and the heart of our administration."
+  pr_greek_set_capital_pergamon_decision_tooltip:0 "#T Move your realm capital to Pergamon#!"
+  pr_greek_set_capital_pergamon_decision_confirm:0 "Move Capital to Pergamon!"
+
+  # --- Convert to Graeco-Egyptian Decision ---
+  pr_greek_convert_to_graeco_egyptian_decision:0 "Convert to Graeco-Egyptian Faith"
+  pr_greek_convert_to_graeco_egyptian_decision_desc:0 "#F The syncretic faith of Graeco-Egyptian polytheism blends the wisdom of the Hellenic and Egyptian pantheons, offering a path that honors both Zeus and Ammon, both Hermes and Thoth.#!\nBy embracing this syncretic faith, I shall unite the spiritual traditions of east and west under my rule."
+  pr_greek_convert_to_graeco_egyptian_decision_tooltip:0 "#T Embrace the Graeco-Egyptian syncretic faith#!"
+  pr_greek_convert_to_graeco_egyptian_decision_confirm:0 "Convert to Graeco-Egyptian Faith!"

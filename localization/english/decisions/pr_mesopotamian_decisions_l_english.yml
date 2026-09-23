@@ -1,0 +1,57 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Mesopotamian Decisions
+  # Localization for pr_mesopotamian_decisions.txt
+  # =============================================
+
+  # --- Embrace Babylonian Culture Decision ---
+  pr_mesopotamian_embrace_babylonian_culture_decision:0 "Embrace the Babylonian Culture"
+  pr_mesopotamian_embrace_babylonian_culture_decision_desc:0 "#F The Babylonian culture, heir to the glory of ancient Mesopotamia, stands as a beacon of learning, law, and civilization. By embracing this ancient heritage, I shall lead my people toward a golden age of wisdom and cultural refinement.#!\nThrough this decision, I shall foster the traditions of Babylon and strengthen the bonds between my realm and the old gods."
+  pr_mesopotamian_embrace_babylonian_culture_decision_tooltip:0 "#T Embrace the Babylonian cultural traditions and strengthen your realm's heritage#!"
+  pr_mesopotamian_embrace_babylonian_culture_decision_confirm:0 "Embrace the Babylonian Culture!"
+
+  # --- Embrace Assyrian Culture Decision ---
+  pr_mesopotamian_embrace_assyrian_culture_decision:0 "Embrace the Assyrian Culture"
+  pr_mesopotamian_embrace_assyrian_culture_decision_desc:0 "#F The Assyrian culture, with its proud martial traditions and legacy of empire, stands as a testament to the power and discipline of the ancient world. By embracing this heritage, I shall lead my people toward an age of strength and conquest.#!\nThrough this decision, I shall foster the traditions of Assyria and strengthen the bonds between my realm and the old gods."
+  pr_mesopotamian_embrace_assyrian_culture_decision_tooltip:0 "#T Embrace the Assyrian cultural traditions and strengthen your realm's heritage#!"
+  pr_mesopotamian_embrace_assyrian_culture_decision_confirm:0 "Embrace the Assyrian Culture!"
+
+  # --- Embrace Sumerian Culture Decision ---
+  pr_mesopotamian_embrace_sumerian_culture_decision:0 "Embrace the Sumerian Culture"
+  pr_mesopotamian_embrace_sumerian_culture_decision_desc:0 "#F The Sumerian culture, cradle of civilization and mother of writing, stands as the foundation upon which all Mesopotamian greatness was built. By embracing this most ancient heritage, I shall lead my people toward a golden age of knowledge and spiritual renewal.#!\nThrough this decision, I shall foster the traditions of Sumer and strengthen the bonds between my realm and the old gods."
+  pr_mesopotamian_embrace_sumerian_culture_decision_tooltip:0 "#T Embrace the Sumerian cultural traditions and strengthen your realm's heritage#!"
+  pr_mesopotamian_embrace_sumerian_culture_decision_confirm:0 "Embrace the Sumerian Culture!"
+
+  # --- Create Kingdom of Babylon Decision ---
+  pr_mesopotamian_kingdom_of_babylon_decision:0 "Create the Kingdom of Babylon"
+  pr_mesopotamian_kingdom_of_babylon_decision_desc:0 "#F The ancient lands of Mesopotamia, once ruled by the mighty kings of Babylon, await a new ruler to restore their former glory. From the banks of the Tigris to the shores of the Euphrates, these territories have long been divided.#!\nBy creating the Kingdom of Babylon, I shall restore the Babylonian legacy and forge a new power in the heart of Mesopotamia."
+  pr_mesopotamian_kingdom_of_babylon_decision_tooltip:0 "#T Form the Kingdom of Babylon by uniting the Mesopotamian heartlands#!"
+  pr_mesopotamian_kingdom_of_babylon_decision_confirm:0 "Create the Kingdom of Babylon!"
+  pr_mesopotamian_kingdom_of_babylon_decision_effect_tooltip:0 "#P The Kingdom of Babylon will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_kufa.GetNameNoTier], [title_d_basra.GetNameNoTier], [title_d_samarra.GetNameNoTier], [title_d_wasit.GetNameNoTier], and [title_d_baghdad.GetNameNoTier] will become [de_jure|E] part of Babylon$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"
+
+  # --- Create Kingdom of Sumer Decision ---
+  pr_mesopotamian_kingdom_of_sumer_decision:0 "Create the Kingdom of Sumer"
+  pr_mesopotamian_kingdom_of_sumer_decision_desc:0 "#F The ancient lands of Sumer, cradle of civilization and mother of cities, await a new ruler to restore their former glory. From the marshes of the south to the great ziggurats of old, these lands have long been divided.#!\nBy creating the Kingdom of Sumer, I shall restore the Sumerian legacy and reclaim the birthright of the first civilization."
+  pr_mesopotamian_kingdom_of_sumer_decision_tooltip:0 "#T Form the Kingdom of Sumer by uniting the southern Mesopotamian lands#!"
+  pr_mesopotamian_kingdom_of_sumer_decision_confirm:0 "Create the Kingdom of Sumer!"
+  pr_mesopotamian_kingdom_of_sumer_decision_effect_tooltip:0 "#P The Kingdom of Sumer will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_kufa.GetNameNoTier] and [title_d_basra.GetNameNoTier] will become [de_jure|E] part of Sumer$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"
+
+  # --- Create Kingdom of Assyria Decision ---
+  pr_mesopotamian_kingdom_of_assyria_decision:0 "Create the Kingdom of Assyria"
+  pr_mesopotamian_kingdom_of_assyria_decision_desc:0 "#F The ancient lands of Assyria, once home to the greatest military power the world had known, await a new ruler to restore their martial glory. From the highlands of Kurdistan to the plains of the Tigris, these territories have long been divided.#!\nBy creating the Kingdom of Assyria, I shall restore the Assyrian legacy and forge a new power in the north of Mesopotamia."
+  pr_mesopotamian_kingdom_of_assyria_decision_tooltip:0 "#T Form the Kingdom of Assyria by uniting the northern Mesopotamian lands#!"
+  pr_mesopotamian_kingdom_of_assyria_decision_confirm:0 "Create the Kingdom of Assyria!"
+  pr_mesopotamian_kingdom_of_assyria_decision_effect_tooltip:0 "#P The Kingdom of Assyria will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_diyarrabia.GetNameNoTier], [title_d_kurdistan.GetNameNoTier], [title_d_samarra.GetNameNoTier], and [title_d_euphrates.GetNameNoTier] will become [de_jure|E] part of Assyria$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"
+
+  # --- Restore Mesopotamian Empire Decision ---
+  pr_mesopotamian_restore_empire_decision:0 "Restore the Mesopotamian Empire"
+  pr_mesopotamian_restore_empire_decision_desc:0 "#F The three kingdoms of Babylon, Sumer, and Assyria, once united under the crown of the great empires of old, formed the mightiest civilization the ancient world had known. From the Mediterranean to the Persian Gulf, the Mesopotamian Empire stood as a beacon of law, learning, and divine kingship.#!\nBy restoring the Mesopotamian Empire, I shall unite all three kingdoms under a single banner and reclaim the full glory of the ancient kings."
+  pr_mesopotamian_restore_empire_decision_tooltip:0 "#T Restore the Mesopotamian Empire by uniting Babylon, Sumer, and Assyria#!"
+  pr_mesopotamian_restore_empire_decision_confirm:0 "Restore the Mesopotamian Empire!"
+  pr_mesopotamian_restore_empire_decision_effect_tooltip:0 "#P The Mesopotamian Empire will be formed as a new [empire|E] title#!/n$EFFECT_LIST_BULLET$[title_k_babylon.GetNameNoTier], [title_k_sumer.GetNameNoTier], and [title_k_assyria.GetNameNoTier] will become [de_jure|E] part of the empire$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"
+
+  # --- Open First Brewery Decision ---
+  pr_mesopotamian_open_first_brewery_decision:0 "Open the First Brewery"
+  pr_mesopotamian_open_first_brewery_decision_desc:0 "#F The ancient Sumerians were the first to brew beer, a gift from the gods that has sustained civilization for millennia. By opening the first brewery of the new age, I shall honor this ancient tradition and bring joy to my people.#!\nThis decision will establish a brewery and gain the favor of the gods through the sacred art of brewing."
+  pr_mesopotamian_open_first_brewery_decision_tooltip:0 "#T Open the first brewery and honor the ancient Sumerian tradition of beer-making#!"
+  pr_mesopotamian_open_first_brewery_decision_confirm:0 "Open the First Brewery!"

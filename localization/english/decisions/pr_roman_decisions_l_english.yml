@@ -1,0 +1,214 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Roman Decisions
+  # Localization for pr_roman_decisions.txt
+  # =============================================
+
+  # --- Choose Main Deity (Roman) Decision ---
+  pr_roman_choose_main_deity_decision:0 "Choose Main Deity"
+  pr_roman_choose_main_deity_decision_desc:0 "#F The gods of the Roman pantheon call for a champion to represent their will in the mortal realm. As a ruler of the Roman faith, I must select a patron deity who will guide my actions and bless my rule with divine favor.#!\nBy choosing a main deity, I shall establish a personal connection with the divine, gaining unique blessings and modifiers that reflect the nature of my chosen god or goddess."
+  pr_roman_choose_main_deity_decision_tooltip:0 "#T Select a patron deity from your Roman faith to gain divine blessings#!"
+  pr_roman_choose_main_deity_decision_confirm:0 "Choose Main Deity!"
+  pr_roman_choose_main_deity_decision_tt:0 "#T Available Deities for [ROOT.Char.GetFaith.GetName]#!"
+
+  # --- Main Deity Selection Descriptions: Roman (CDR) ---
+  select_main_deity_cdr_decision.select_iupiter:0 "#T Iupiter#!\n#P King of the gods, lord of sky, thunder, and law#!"
+  select_main_deity_cdr_decision.select_iuno:0 "#T Iuno#!\n#P Queen of the gods, protector of women and the home#!"
+  select_main_deity_cdr_decision.select_mars:0 "#T Mars#!\n#P God of war, agriculture, and the founding of Rome#!"
+  select_main_deity_cdr_decision.select_venus:0 "#T Venus#!\n#P Goddess of love, beauty, and desire#!"
+  select_main_deity_cdr_decision.select_house_lares:0 "#T The Lares#!\n#P The household gods, protectors of family and hearth#!"
+  select_main_deity_cdr_decision.select_mercurius:0 "#T Mercurius#!\n#P God of commerce, travelers, and messengers#!"
+  select_main_deity_cdr_decision.select_minerva:0 "#T Minerva#!\n#P Goddess of wisdom, crafts, and strategic warfare#!"
+  select_main_deity_cdr_decision.select_apollo:0 "#T Apollo#!\n#P God of light, healing, prophecy, and the arts#!"
+  select_main_deity_cdr_decision.select_ceres:0 "#T Ceres#!\n#P Goddess of agriculture, grain, and fertility#!"
+
+  # --- Embrace Roman Culture Decision ---
+  pr_roman_embrace_roman_culture_decision:0 "Embrace the Roman Culture"
+  pr_roman_embrace_roman_culture_decision_desc:0 "#F The Roman culture, heir to the glory of the Eternal City, stands as a beacon of law, civilization, and imperial power. By embracing this ancient heritage, I shall lead my people toward a golden age of Roman renewal.#!\nThrough this decision, I shall foster the traditions of Rome and strengthen the bonds between my realm and the old gods."
+  pr_roman_embrace_roman_culture_decision_tooltip:0 "#T Embrace the Roman cultural traditions and strengthen your realm's heritage#!"
+  pr_roman_embrace_roman_culture_decision_confirm:0 "Embrace the Roman Culture!"
+
+  # --- Embrace Gallo-Roman Culture Decision ---
+  pr_roman_embrace_gallo_roman_culture_decision:0 "Embrace the Gallo-Roman Culture"
+  pr_roman_embrace_gallo_roman_culture_decision_desc:0 "#F The Gallo-Roman culture, born from the fusion of Celtic and Roman traditions, stands as a testament to the adaptability and resilience of our people. By embracing this hybrid heritage, I shall lead my people toward a golden age of cultural synthesis.#!\nThrough this decision, I shall foster the traditions of Gaul and Rome united, and strengthen the bonds between my realm and the old gods."
+  pr_roman_embrace_gallo_roman_culture_decision_tooltip:0 "#T Embrace the Gallo-Roman cultural traditions and strengthen your realm's heritage#!"
+  pr_roman_embrace_gallo_roman_culture_decision_confirm:0 "Embrace the Gallo-Roman Culture!"
+
+  # --- Embrace Romano-British Culture Decision ---
+  pr_roman_embrace_romano_british_culture_decision:0 "Embrace the Romano-British Culture"
+  pr_roman_embrace_romano_british_culture_decision_desc:0 "#F The Romano-British culture, forged in the crucible of Roman Britain, blends the martial pride of the Celts with the civilizing spirit of Rome. By embracing this heritage, I shall lead my people toward a golden age of cultural renewal.#!\nThrough this decision, I shall foster the traditions of Roman Britain and strengthen the bonds between my realm and the old gods."
+  pr_roman_embrace_romano_british_culture_decision_tooltip:0 "#T Embrace the Romano-British cultural traditions and strengthen your realm's heritage#!"
+  pr_roman_embrace_romano_british_culture_decision_confirm:0 "Embrace the Romano-British Culture!"
+
+  # --- Restore Roman High Priesthood Decision ---
+  pr_roman_restore_high_priesthood_decision:0 "Restore the High Priesthood"
+  pr_roman_restore_high_priesthood_decision_desc:0 "#F The ancient priesthood of Rome, once the spiritual heart of the Republic and Empire, has fallen into disrepair. The sacred flames grow dim, and the voices of the gods grow faint. By restoring the High Priesthood, I shall rekindle the sacred fires and renew the bond between my realm and the divine.#!\nThis decision requires control of at least three holy sites and great piety."
+  pr_roman_restore_high_priesthood_decision_tooltip:0 "#T Restore the High Priesthood of the Roman faith by controlling sacred holy sites#!"
+  pr_roman_restore_high_priesthood_decision_confirm:0 "Restore the High Priesthood!"
+  pr_roman_restore_high_priesthood_decision_effect_tooltip:0 "#P The High Priesthood will be restored#!\n$EFFECT_LIST_BULLET$The [faith|E] will gain a [religious_head|E]$EFFECT_LIST_BULLET$Requires control of at least 3 [holy_sites|E]@warning_icon! #X This action cannot be undone!#"
+
+  # --- Open Temple of Vesta Decision ---
+  pr_roman_open_temple_of_vesta_decision:0 "Open the Temple of Vesta"
+  pr_roman_open_temple_of_vesta_decision_desc:0 "#F The Temple of Vesta, keeper of the sacred flame that has burned since the founding of Rome, stands silent and abandoned. By reopening its doors, I shall rekindle the eternal flame and restore the worship of the goddess who guards the hearth of the Eternal City.#!\nThis decision will establish the Temple of Vesta in Rome and grant the blessing of the sacred flame."
+  pr_roman_open_temple_of_vesta_decision_tooltip:0 "#T Open the Temple of Vesta and rekindle the sacred flame#!"
+  pr_roman_open_temple_of_vesta_decision_confirm:0 "Open the Temple of Vesta!"
+
+  # --- Send Daughter to Temple of Vesta Decision ---
+  pr_roman_send_daughter_to_temple_of_vesta_decision:0 "Send Daughter to the Temple of Vesta"
+  pr_roman_send_daughter_to_temple_of_vesta_decision_desc:0 "#F The Vestal Virgins, priestesses of Vesta, tend the sacred flame that guards the eternal fire of Rome. By sending my daughter to serve in the Temple of Vesta, I shall honor the goddess and earn divine favor for my realm.#!\nThis decision will send a daughter to serve as a Vestal Virgin, bringing honor and piety to your house."
+  pr_roman_send_daughter_to_temple_of_vesta_decision_tooltip:0 "#T Send your daughter to serve as a Vestal Virgin#!"
+  pr_roman_send_daughter_to_temple_of_vesta_decision_confirm:0 "Send Daughter to the Temple of Vesta!"
+
+  # --- Join Cult Decision ---
+  pr_roman_join_cult_decision:0 "Join a Mystery Cult"
+  pr_roman_join_cult_decision_desc:0 "#F The mystery cults of the Roman world offer a path to deeper communion with the divine, promising secret knowledge and sacred rites to those worthy of initiation.#!\nBy joining a cult, I shall dedicate myself to one of the great mystery traditions and gain the favor of its patron deity."
+  pr_roman_join_cult_decision_tooltip:0 "#T Join one of the Roman mystery cults to gain divine favor#!"
+  pr_roman_join_cult_decision_confirm:0 "Join a Mystery Cult!"
+  pr_roman_join_cult_decision_tt:0 "#T Available Cults for [ROOT.Char.GetFaith.GetName]#!"
+
+  # --- Cult Selection Descriptions ---
+  join_cult_decision.mithraic_mysteries:0 "#T Mithraic Mysteries#!\n#P The cult of Mithras, god of light and the cosmic bull#!"
+  join_cult_decision.isis_mysteries:0 "#T Mysteries of Isis#!\n#P The cult of Isis, goddess of magic and rebirth#!"
+  join_cult_decision.serapis_cult:0 "#T Cult of Serapis#!\n#P The syncretic cult of Serapis, lord of healing and the afterlife#!"
+  join_cult_decision.eluesinian_mysteries:0 "#T Eleusinian Mysteries#!\n#P The ancient Greek mysteries of Demeter and Persephone#!"
+  join_cult_decision.sol_invictus_cult:0 "#T Sol Invictus#!\n#P The cult of the Unconquered Sun, lord of light and victory#!"
+  join_cult_decision.imperial_cult:0 "#T Imperial Cult#!\n#P The worship of the divine emperor and the spirit of Rome#!"
+
+  # --- Restore Altar of Victoria Decision ---
+  pr_roman_restore_altar_of_victoria_decision:0 "Restore the Altar of Victoria"
+  pr_roman_restore_altar_of_victoria_decision_desc:0 "#F The Altar of Victoria, once housed in the Senate House of Rome, stood as a symbol of the eternal favor of the goddess of victory upon the Roman people. Removed by those who turned from the old gods, its absence has left a void in the spiritual heart of the Eternal City.#!\nBy restoring the Altar of Victoria, I shall reclaim the blessing of the goddess and renew the bond between Rome and her ancient patron."
+  pr_roman_restore_altar_of_victoria_decision_tooltip:0 "#T Restore the Altar of Victoria to the Senate House of Rome#!"
+  pr_roman_restore_altar_of_victoria_decision_confirm:0 "Restore the Altar of Victoria!"
+
+  # --- Embrace Romano-Germanic Culture Decision ---
+  pr_roman_embrace_romano_germanic_culture_decision:0 "Embrace the Romano-Germanic Culture"
+  pr_roman_embrace_romano_germanic_culture_decision_desc:0 "#F The Romano-Germanic culture, born from the meeting of Roman civilization and Germanic tradition, blends the discipline of the legions with the fierce independence of the frontier tribes. By embracing this heritage, I shall forge a new identity for my people.#!\nThrough this decision, I shall foster the traditions of a united Romano-Germanic realm and strengthen the bonds between my people and the old gods."
+  pr_roman_embrace_romano_germanic_culture_decision_tooltip:0 "#T Embrace the Romano-Germanic cultural traditions#!"
+  pr_roman_embrace_romano_germanic_culture_decision_confirm:0 "Embrace the Romano-Germanic Culture!"
+
+  # --- Embrace Hispano-Roman Culture Decision ---
+  pr_roman_embrace_hispano_roman_culture_decision:0 "Embrace the Hispano-Roman Culture"
+  pr_roman_embrace_hispano_roman_culture_decision_desc:0 "#F The Hispano-Roman culture, forged in the crucible of Roman Spain, blends the passion and pride of the Iberian peoples with the civilizing spirit of Rome. By embracing this heritage, I shall lead my people toward a golden age of cultural renewal.#!\nThrough this decision, I shall foster the traditions of Roman Hispania and strengthen the bonds between my realm and the old gods."
+  pr_roman_embrace_hispano_roman_culture_decision_tooltip:0 "#T Embrace the Hispano-Roman cultural traditions#!"
+  pr_roman_embrace_hispano_roman_culture_decision_confirm:0 "Embrace the Hispano-Roman Culture!"
+
+  # --- Open Gates of Janus Decision ---
+  pr_roman_open_gates_of_janus_decision:0 "Open the Gates of Janus"
+  pr_roman_open_gates_of_janus_decision_desc:0 "#F The Gates of Janus, the twin-doored temple of the god of beginnings and transitions, stand closed in times of peace. In times of war, they are opened wide, signaling that Rome marches to battle with the blessing of the gods.#!\nBy opening the Gates of Janus, I shall declare that Rome is at war and call upon the god of doors to bless our campaigns."
+  pr_roman_open_gates_of_janus_decision_tooltip:0 "#T Open the Gates of Janus to signal times of war#!"
+  pr_roman_open_gates_of_janus_decision_confirm:0 "Open the Gates of Janus!"
+
+  # --- Close Gates of Janus Decision ---
+  pr_roman_close_gates_of_janus_decision:0 "Close the Gates of Janus"
+  pr_roman_close_gates_of_janus_decision_desc:0 "#F With war ended and peace restored to the realm, the Gates of Janus must be closed once more. This sacred act signals that Rome has returned to a state of harmony, and honors the god of doors for guiding us through the trials of war.#!\nBy closing the Gates of Janus, I shall declare an era of peace and earn the lasting favor of the gods."
+  pr_roman_close_gates_of_janus_decision_tooltip:0 "#T Close the Gates of Janus to signal times of peace#!"
+  pr_roman_close_gates_of_janus_decision_confirm:0 "Close the Gates of Janus!"
+
+  # --- Request Auspice Decision ---
+  pr_roman_request_auspice_decision:0 "Request an Auspice"
+  pr_roman_request_auspice_decision_desc:0 "#F The augurs of Rome, interpreters of the divine will, read the signs of the gods in the flight of birds and the feeding of sacred chickens. By requesting an auspice, I shall call upon my court augur to divine the favor of the heavens before undertaking a great endeavor.#!\nThis decision requires an augur in your court and will interpret the will of the gods through sacred observation."
+  pr_roman_request_auspice_decision_tooltip:0 "#T Request your court augur to take an auspice and divine the will of the gods#!"
+  pr_roman_request_auspice_decision_confirm:0 "Request an Auspice!"
+
+  # --- Auspice Selection Keys (Request an Auspice) ---
+  auspice_type:0 "Choose Auspice"
+  flying_eagle:0 "#T Flying of the Eagle#!\n$flying_eagle_desc$"
+  flying_eagle_desc:0 "The Eagle will be let free of the cage,\nwill it fly high or low?"
+  eating_patterns:0 "#T Eating Pattern of the Sacred Hens#!\n$eating_patterns_desc$"
+  eating_patterns_desc:0 "Will the Sacred Hens come out of the cage\nor will they stay inside?"
+  auspice_eating_patterns_not_at_war:0 ""
+  singing_of_crow:0 "#T Singing of the Crows#!\n$singing_of_crow_desc$"
+  singing_of_crow_desc:0 "How will the song of the Crows change?"
+
+  # --- Hire Augur Decision ---
+  pr_roman_hire_augur_decision:0 "Hire an Augur"
+  pr_roman_hire_augur_decision_desc:0 "#F The augurs of Rome, keepers of the sacred art of divination, serve as the voice of the gods in the mortal realm. Without an augur in my court, I am blind to the will of the heavens. By hiring an augur, I shall gain a trusted advisor who can interpret the signs of the divine.#!\nThis decision will recruit an augur to your court, enabling the request of auspices and other sacred rites."
+  pr_roman_hire_augur_decision_tooltip:0 "#T Hire an augur for your court to enable divine divination#!"
+  pr_roman_hire_augur_decision_confirm:0 "Hire an Augur!"
+  pr_roman_hire_augur_decision_effect_tooltip:0 "#P An augur will be recruited to your court#!\n$EFFECT_LIST_BULLET$Enables the Request Auspice [decision|E]$EFFECT_LIST_BULLET$Requires [gold|E] for recruitment"
+
+  # --- Build Lararium Decision ---
+  pr_roman_build_lararium_decision:0 "Build a Lararium"
+  pr_roman_build_lararium_decision_desc:0 "#F The lararium, the sacred shrine of the household gods, stands at the heart of every Roman home. By building a lararium, I shall honor the Lares and Penates who guard my family and realm, and earn their divine favor.#!\nThis decision will construct a lararium and allow the acquisition of sacred statues for your patron deity."
+  pr_roman_build_lararium_decision_tooltip:0 "#T Build a lararium to honor the household gods and acquire sacred statues#!"
+  pr_roman_build_lararium_decision_confirm:0 "Build a Lararium!"
+
+  # --- Offer to a God Decision ---
+  pr_roman_offer_to_a_god_decision:0 "Make an Offering to the Gods"
+  pr_roman_offer_to_a_god_decision_desc:0 "#F The gods of Rome demand offerings worthy of their greatness. From the sweet smoke of incense to the fruits of the harvest, each deity accepts specific gifts that honor their nature. By making an offering to your patron deity, you shall earn their divine favor and blessing.#!\nThis decision requires a sacred statue of your patron deity and allows you to choose an appropriate offering."
+  pr_roman_offer_to_a_god_decision_tooltip:0 "#T Make a ritual offering to your patron deity at their sacred shrine#!"
+  pr_roman_offer_to_a_god_decision_confirm:0 "Make an Offering!"
+
+  # --- Offering Selection Keys (Offer to a God) ---
+  prdecision_type:0 "Choose Offering"
+  pr_milk_offering:0 "#T Offer Milk#!\n$pr_milk_offering_desc$"
+  pr_milk_offering_desc:0 "Offer milk to the gods"
+  pr_wine_offering:0 "#T Offer Wine#!\n$pr_wine_offering_desc$"
+  pr_wine_offering_desc:0 "Offer wine to the gods"
+  pr_fig_offering:0 "#T Offer Figs#!\n$pr_fig_offering_desc$"
+  pr_fig_offering_desc:0 "Offer figs to $cdr_polytheism_good_god_juno$"
+  pr_incense_offering:0 "#T Offer Frankincense#!\n$pr_incense_offering_desc$"
+  pr_incense_offering_desc:0 "Offer frankincense to the gods"
+  pr_roses_offering:0 "#T Offer Roses#!\n$pr_roses_offering_desc$"
+  pr_roses_offering_desc:0 "Offer roses to Venus"
+  pr_fruit_offering:0 "#T Offer Fruit#!\n$pr_fruit_offering_desc$"
+  pr_fruit_offering_desc:0 "Offer fruit to the gods"
+  pr_vegetables_offering:0 "#T Offer Vegetables#!\n$pr_vegetables_offering_desc$"
+  pr_vegetables_offering_desc:0 "Offer vegetables to Mercurius"
+  pr_spelt_offering:0 "#T Offer Spelt Flour#!\n$pr_spelt_offering_desc$"
+  pr_spelt_offering_desc:0 "Offer spelt flour to Mars"
+  pr_olives_offering:0 "#T Offer Olives#!\n$pr_olives_offering_desc$"
+  pr_olives_offering_desc:0 "Offer olives to Minerva"
+  pr_honey_offering:0 "#T Offer Honey#!\n$pr_honey_offering_desc$"
+  pr_honey_offering_desc:0 "Offer honey to Apollo"
+
+  # --- Initiation Mithras Cult Decision ---
+  pr_roman_initiation_mithras_cult_decision:0 "Seek Initiation into the Mithraic Mysteries"
+  pr_roman_initiation_mithras_cult_decision_desc:0 "#F The Mithraic Mysteries, the most sacred and secretive of all the Roman cults, promise spiritual enlightenment to those who prove worthy. Through seven grades of initiation, the faithful ascend from Corax the Raven to Pater the Father, each step bringing them closer to the divine truth of Mithras, the unconquered god of light.#!\nBy seeking initiation, I shall take the first step on the path of Mithras and begin my ascent through the sacred mysteries."
+  pr_roman_initiation_mithras_cult_decision_tooltip:0 "#T Seek initiation into the Mithraic Mysteries and begin your ascent through the seven grades#!"
+  pr_roman_initiation_mithras_cult_decision_confirm:0 "Seek Initiation!"
+
+  # --- Restore Western Roman Empire Decision ---
+  pr_roman_restore_western_roman_empire_decision:0 "Restore the Western Roman Empire"
+  pr_roman_restore_western_roman_empire_decision_desc:0 "#F The Western Roman Empire, once the greatest power the world had ever known, fell centuries ago into ruin and division. Yet the legacy of Rome endures in the hearts of her people, and the spirit of the Eternal City lives on.#!\nBy restoring the Western Roman Empire, I shall reclaim the imperial crown of Rome and forge a new era of Roman greatness."
+  pr_roman_restore_western_roman_empire_decision_tooltip:0 "#T Restore the Western Roman Empire by uniting the Italian heartlands#!"
+  pr_roman_restore_western_roman_empire_decision_confirm:0 "Restore the Western Roman Empire!"
+  pr_roman_restore_western_roman_empire_decision_effect_tooltip:0 "#P The Western Roman Empire will be formed as a new [empire|E] title#!/n$EFFECT_LIST_BULLET$[title_k_italy.GetNameNoTier], [title_k_romagna.GetNameNoTier], [title_k_sicily.GetNameNoTier], [title_k_sardinia.GetNameNoTier], and [title_k_cisalpina.GetNameNoTier] will become [de_jure|E] part of the empire$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"
+
+  # --- Reform Galatia Decision ---
+  pr_roman_reform_galatia_decision:0 "Reform Galatia"
+  pr_roman_reform_galatia_decision_desc:0 "#F The ancient lands of Galatia, once a proud Roman province in the heart of Asia Minor, have long been divided among warring tribes and petty rulers. By reforming Galatia under Roman administration, I shall restore order to these lands and strengthen the empire's eastern frontier.#!\nThis decision requires control of the Roman or Byzantine Empire and the Galatian heartlands."
+  pr_roman_reform_galatia_decision_tooltip:0 "#T Reform the province of Galatia under Roman administration#!"
+  pr_roman_reform_galatia_decision_confirm:0 "Reform Galatia!"
+  pr_roman_reform_galatia_decision_effect_tooltip:0 "#P Galatia will be reformed as a new [kingdom|E] title#!/n$EFFECT_LIST_BULLET$Galatian counties will be organized into superior and inferior duchies$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"
+
+  # --- Invite Latin Speaker Decision ---
+  pr_roman_invite_latin_speaker_decision:0 "Invite a Latin Speaker"
+  pr_roman_invite_latin_speaker_decision_desc:0 "#F The Latin language, once the lingua franca of the civilized world, has faded from use in many corners of the former empire. By inviting a speaker of Latin to your court, you can begin the process of restoring this ancient tongue to its rightful place among your people.#!\nThis decision will initiate the adoption of Latin as your cultural language."
+  pr_roman_invite_latin_speaker_decision_tooltip:0 "#T Invite a Latin speaker to your court and begin adopting Latin as your cultural language#!"
+  pr_roman_invite_latin_speaker_decision_confirm:0 "Invite a Latin Speaker!"
+  switch_to_latin_language_tt:0 "[GetPlayer.GetCulture.GetName] will adopt the $language_latin_name$ [language|E]"
+
+  # --- Commission Sibylline Books Decision ---
+  pr_roman_commission_sibylline_books_decision:0 "Commission the Sibylline Books"
+  pr_roman_commission_sibylline_books_decision_desc:0 "#F The Sibylline Books, the ancient collection of prophecies and sacred wisdom, have guided Rome through her darkest hours. Lost to fire and neglect, their restoration would bring divine guidance back to the Roman people.#!\nBy commissioning the Sibylline Books, I shall restore the sacred prophecies and gain the favor of the gods."
+  pr_roman_commission_sibylline_books_decision_tooltip:0 "#T Commission the restoration of the Sibylline Books#!"
+  pr_roman_commission_sibylline_books_decision_confirm:0 "Commission the Sibylline Books!"
+
+  # --- Romanize the Slavs Decision ---
+  pr_roman_romanize_the_slavs_decision:0 "Romanize the Slavs"
+  pr_roman_romanize_the_slavs_decision_desc:0 "#F The Slavic tribes beyond our borders remain mired in paganism, ignorant of the light of civilization. By Romanizing the Slavs, I shall extend the reach of Roman culture and faith to the barbarian north.#!\nThis decision requires a high level of piety and an administrative government."
+  pr_roman_romanize_the_slavs_decision_tooltip:0 "#T Convert neighboring pagan tribes to Roman culture and faith#!"
+  pr_roman_romanize_the_slavs_decision_confirm:0 "Romanize the Slavs!"
+
+  # --- Build Temple of Jupiter (Constantinople) Decision ---
+  pr_roman_build_temple_jupiter_constantinople_decision:0 "Build the Temple of Jupiter in Constantinople"
+  pr_roman_build_temple_jupiter_constantinople_decision_desc:0 "#F The great city of Constantinople, once the capital of the Eastern Roman Empire, lacks a proper temple to the king of the gods. By building a grand temple to Jupiter in the heart of the city, I shall reclaim this sacred space for the old gods.#!\nThis decision will remove the Hagia Sophia and replace it with a temple to Jupiter."
+  pr_roman_build_temple_jupiter_constantinople_decision_tooltip:0 "#T Build a grand temple to Jupiter in Constantinople#!"
+  pr_roman_build_temple_jupiter_constantinople_decision_confirm:0 "Build the Temple of Jupiter!"
+
+  # --- Build Temple of Jupiter (Rome) Decision ---
+  pr_roman_build_temple_jupiter_rome_decision:0 "Restore the Temple of Jupiter in Rome"
+  pr_roman_build_temple_jupiter_rome_decision_desc:0 "#F The great Temple of Jupiter Optimus Maximus, once the crowning glory of the Capitoline Hill, has fallen into ruin. By restoring this most sacred of temples, I shall honor the king of the gods and reclaim the spiritual heart of Rome.#!\nThis decision will remove the cathedral on the Vatican and restore the ancient temple."
+  pr_roman_build_temple_jupiter_rome_decision_tooltip:0 "#T Restore the ancient Temple of Jupiter on the Capitoline Hill#!"
+  pr_roman_build_temple_jupiter_rome_decision_confirm:0 "Restore the Temple of Jupiter!"

@@ -1,0 +1,8387 @@
+﻿namespace = pr_roman
+namespace = pr_roman_cult
+namespace = pr_roman_culture
+namespace = ep3_roman_restoration
+
+##################################################
+# Polytheism Reborn - Roman Decision Events
+# Events gekoppeld aan pr_roman_decisions.txt
+##################################################
+
+# =============================================
+# Head of Faith Events (0020-0029)
+# Pontifex selection bij faith reformation
+# =============================================
+
+
+#--- Roman Pontifex Selection (0027) ---
+#Vestal Vergins
+#Saturnalia
+
+
+#choose your main deity events
+pr_roman.0001 = {
+	type = character_event
+	title = pr_roman.0001.t
+	desc = pr_roman.0001.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_generic_temple }
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	# Capitoline Triad
+	option = {
+		name = pr_roman.0001.jupiter
+		#Iupiter
+		trigger = {
+			NOT = { has_trait = pr_cdr_iupiter }
+		}
+		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_iupiter }
+	}
+	option = {
+		name = pr_roman.0001.juno
+		#Iuno
+		trigger = {
+			NOT = { has_trait = pr_cdr_iuno }
+		}
+		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_iuno }
+	}
+	option = {
+		name = pr_roman.0001.minerva
+		trigger = {
+			NOT = { has_trait = pr_cdr_minerva }
+		}
+		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_minerva }
+	}
+	option = {
+		name = pr_roman.0001.more
+		trigger_event = pr_roman.0019
+	}
+	option = {
+		name = pr_roman.0001.cancel
+		add_piety = 100
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# Other gods (Mars, Venus, Lares, Mercurius, Apollo, Ceres)
+pr_roman.0019 = {
+	type = character_event
+	title = pr_roman.0019.t
+	desc = pr_roman.0019.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_generic_temple }
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman.0019.mars
+		#Mars
+		trigger = {
+			NOT = { has_trait = pr_cdr_mars }
+		}
+		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_mars }
+	}
+	option = {
+		name = pr_roman.0019.venus
+		#Venus
+		trigger = {
+			NOT = { has_trait = pr_cdr_venus }
+		}
+		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_venus }
+	}
+	option = {
+		name = pr_roman.0019.lares
+		#House Lares
+		trigger = {
+			NOT = { has_trait = pr_cdr_lares }
+		}
+		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_lares }
+	}
+	option = {
+		name = pr_roman.0019.mercurius
+		#Mercurius
+		trigger = {
+			NOT = { has_trait = pr_cdr_mercurius }
+		}
+		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_mercurius }
+	}
+	option = {
+		name = pr_roman.0019.apollo
+		trigger = {
+			NOT = { has_trait = pr_cdr_apollo }
+		}
+		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_apollo }
+	}
+	option = {
+		name = pr_roman.0019.ceres
+		trigger = {
+			NOT = { has_trait = pr_cdr_ceres }
+		}
+		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_ceres }
+	}
+	option = {
+		name = pr_roman.0019.back
+		trigger_event = pr_roman.0001
+	}
+	option = {
+		name = pr_roman.0019.cancel
+		add_piety = 100
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+
+
+#choose main deity Mithraic Mysteries
+pr_roman_cult.0100 = {
+	type = character_event
+	title = pr_roman_cult.0100.t
+	desc = pr_roman_cult.0100.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_generic_temple }
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0100.mithras
+		#Mithras
+		trigger = {
+			NOT = { has_trait = pr_mithras_mithras }
+		}
+		pr_set_bhakti_effect = { BHAKTI  = pr_mithras_mithras }
+	}
+	option = {
+		name = pr_roman_cult.0100.arimanius
+		trigger = {
+			NOT = { has_trait = pr_mithras_arimanius }
+		}
+		pr_set_bhakti_effect = { BHAKTI  = pr_mithras_arimanius }
+	}
+	option = {
+		name = pr_roman_cult.0100.oromazes
+		trigger = {
+			NOT = { has_trait = pr_mithras_oromazes }
+		}
+		pr_set_bhakti_effect = { BHAKTI  = pr_mithras_oromazes }
+	}
+	option = {
+		name = pr_roman_cult.0100.optout
+		add_piety = 100
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#hold ritual
+pr_roman.0100 = {
+	type = character_event
+	title = pr_roman.0100.t
+	desc = pr_roman.0100.desc
+	theme = learning_theology_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman.0100.a
+		trigger_event = pr_roman.0101
+		ai_chance ={
+			base = 0
+		}
+
+	}
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_incense_offering
+		}
+		name = pr_roman.0100.incense
+		random_list = {
+			40 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0100.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_jupiter_incense
+						months = 3
+					}
+					add_piety = 25
+					stress_impact = {
+						zealous = minor_stress_loss
+						cynical = minor_stress_gain
+					}
+					remove_short_term_gold = 50
+				}
+			}
+			30 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0100.message.negative
+					add_piety = -25
+					stress_impact = {
+						zealous = minor_stress_gain
+						cynical = minor_stress_loss
+					}
+					remove_short_term_gold = 50
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_wine_offering
+		}
+		name = pr_roman.0100.wine
+		random_list = {
+			40 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0100.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_jupiter_wine
+						months = 3
+					}
+					add_piety = 50
+					stress_impact = {
+						zealous = medium_stress_loss
+						cynical = medium_stress_gain
+					}
+					remove_short_term_gold = 75
+				}
+			}
+			30 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0100.message.negative
+					add_piety = -50
+					stress_impact = {
+						zealous = medium_stress_gain
+						cynical = medium_stress_loss
+					}
+					remove_short_term_gold = 75
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_fruit_offering
+		}
+		name = pr_roman.0100.fruit
+		random_list = {
+			50 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0100.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_jupiter_fruit
+						months = 3
+					}
+					add_piety = 75
+					stress_impact = {
+						zealous = major_stress_loss
+						cynical = major_stress_gain
+					}
+					remove_short_term_gold = 100
+				}
+			}
+			20 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0100.message.negative
+					add_piety = -75
+					stress_impact = {
+						zealous = major_stress_gain
+						cynical = major_stress_loss
+					}
+					remove_short_term_gold = 100
+				}
+			}
+		}
+	}
+
+}
+
+pr_roman.0108 = {
+	type = character_event
+	title = pr_roman.0108.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual  = flag:pr_incense_offering
+				}
+				desc = pr_roman.0108.incense.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual  = flag:pr_wine_offering
+				}
+				desc = pr_roman.0108.wine.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual  = flag:pr_figs_offering
+				}
+				desc = pr_roman.0108.figs.desc
+			}
+			desc = pr_roman.0108.fallback.desc
+		}
+	}
+	theme = learning_theology_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_incense_offering
+		}
+		name = pr_roman.0108.incense
+		random_list = {
+			40 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0108.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_juno_incense
+						months = 3
+					}
+					add_piety = 25
+					stress_impact = {
+						zealous = minor_stress_loss
+						cynical = minor_stress_gain
+					}
+					remove_short_term_gold = 50
+				}
+			}
+			30 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0108.message.negative
+					add_piety = -25
+					stress_impact = {
+						zealous = minor_stress_gain
+						cynical = minor_stress_loss
+					}
+					remove_short_term_gold = 50
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_wine_offering
+		}
+		name = pr_roman.0108.wine
+		random_list = {
+			40 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0108.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_juno_wine
+						months = 3
+					}
+					add_piety = 50
+					stress_impact = {
+						zealous = medium_stress_loss
+						cynical = medium_stress_gain
+					}
+					remove_short_term_gold = 75
+				}
+			}
+			30 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0108.message.negative
+					add_piety = -50
+					stress_impact = {
+						zealous = medium_stress_gain
+						cynical = medium_stress_loss
+					}
+					remove_short_term_gold = 75
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_figs_offering
+		}
+		name = pr_roman.0108.figs
+		random_list = {
+			50 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0108.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_juno_figs
+						months = 3
+					}
+					add_piety = 75
+					stress_impact = {
+						zealous = major_stress_loss
+						cynical = major_stress_gain
+					}
+					remove_short_term_gold = 100
+				}
+			}
+			20 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0108.message.negative
+					add_piety = -75
+					stress_impact = {
+						zealous = major_stress_gain
+						cynical = major_stress_loss
+					}
+					remove_short_term_gold = 100
+				}
+			}
+		}
+	}
+
+}
+
+
+pr_roman.0109 = {
+	type = character_event
+	title = pr_roman.0109.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual  = flag:pr_incense_offering
+				}
+				desc = pr_roman.0109.incense.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual  = flag:pr_wine_offering
+				}
+				desc = pr_roman.0109.wine.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual  = flag:pr_spelt_offering
+				}
+				desc = pr_roman.0109.spelt.desc
+			}
+			desc = pr_roman.0109.fallback.desc
+		}
+	}
+	theme = learning_theology_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_incense_offering
+		}
+		name = pr_roman.0109.incense
+		random_list = {
+			40 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0109.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_mars_incense
+						months = 3
+					}
+					add_piety = 25
+					stress_impact = {
+						zealous = minor_stress_loss
+						cynical = minor_stress_gain
+					}
+					remove_short_term_gold = 50
+				}
+			}
+			30 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0109.message.negative
+					add_piety = -25
+					stress_impact = {
+						zealous = minor_stress_gain
+						cynical = minor_stress_loss
+					}
+					remove_short_term_gold = 50
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_wine_offering
+		}
+		name = pr_roman.0109.wine
+		random_list = {
+			40 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0109.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_mars_wine
+						months = 3
+					}
+					add_piety = 50
+					stress_impact = {
+						zealous = medium_stress_loss
+						cynical = medium_stress_gain
+					}
+					remove_short_term_gold = 75
+				}
+			}
+			30 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0109.message.negative
+					add_piety = -50
+					stress_impact = {
+						zealous = medium_stress_gain
+						cynical = medium_stress_loss
+					}
+					remove_short_term_gold = 75
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_spelt_offering
+		}
+		name = pr_roman.0109.spelt
+		random_list = {
+			50 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0109.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_mars_spelt
+						months = 3
+					}
+					add_piety = 75
+					stress_impact = {
+						zealous = major_stress_loss
+						cynical = major_stress_gain
+					}
+					remove_short_term_gold = 100
+				}
+			}
+			20 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0109.message.negative
+					add_piety = -75
+					stress_impact = {
+						zealous = major_stress_gain
+						cynical = major_stress_loss
+					}
+				}
+				remove_short_term_gold = 100
+			}
+		}
+	}
+
+}
+pr_roman.0110 = {
+	type = character_event
+	title = pr_roman.0110.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual  = flag:pr_incense_offering
+				}
+				desc = pr_roman.0110.incense.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual  = flag:pr_wine_offering
+				}
+				desc = pr_roman.0110.wine.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual  = flag:pr_roses_offering
+				}
+				desc = pr_roman.0110.roses.desc
+			}
+			desc = pr_roman.0110.fallback.desc
+		}
+	}
+	theme = learning_theology_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_incense_offering
+		}
+		name = pr_roman.0110.incense
+		random_list = {
+			40 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0110.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_venus_incense
+						months = 3
+					}
+					add_piety = 25
+					stress_impact = {
+						zealous = minor_stress_loss
+						cynical = minor_stress_gain
+					}
+					remove_short_term_gold = 50
+				}
+			}
+			30 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0110.message.negative
+					add_piety = -25
+					stress_impact = {
+						zealous = minor_stress_gain
+						cynical = minor_stress_loss
+					}
+					remove_short_term_gold = 50
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_wine_offering
+		}
+		name = pr_roman.0110.wine
+		random_list = {
+			40 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0110.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_venus_wine
+						months = 3
+					}
+					add_piety = 50
+					stress_impact = {
+						zealous = medium_stress_loss
+						cynical = medium_stress_gain
+					}
+					remove_short_term_gold = 75
+				}
+			}
+			30 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0110.message.negative
+					add_piety = -50
+					stress_impact = {
+						zealous = medium_stress_gain
+						cynical = medium_stress_loss
+					}
+					remove_short_term_gold = 75
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_roses_offering
+		}
+		name = pr_roman.0110.roses
+		random_list = {
+			50 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0110.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_venus_roses
+						months = 3
+					}
+					add_piety = 75
+					stress_impact = {
+						zealous = major_stress_loss
+						cynical = major_stress_gain
+					}
+					remove_short_term_gold = 100
+				}
+			}
+			20 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0110.message.negative
+					add_piety = -75
+					stress_impact = {
+						zealous = major_stress_gain
+						cynical = major_stress_loss
+					}
+					remove_short_term_gold = 100
+				}
+			}
+		}
+	}
+}
+
+pr_roman.0111 = {
+	type = character_event
+	title = pr_roman.0111.t
+	desc = pr_roman.0111.desc
+	theme = learning_theology_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman.0111.a
+		add_character_modifier = {modifier = held_ritual_for_house_lares  months = 3 }
+		add_piety = 50
+	}
+
+
+}
+pr_roman.0112 = {
+	type = character_event
+	title = pr_roman.0112.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual  = flag:pr_incense_offering
+				}
+				desc = pr_roman.0112.incense.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual  = flag:pr_milk_offering
+				}
+				desc = pr_roman.0112.milk.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual  = flag:pr_vegetables_offering
+				}
+				desc = pr_roman.0112.vegetables.desc
+			}
+			desc = pr_roman.0112.fallback.desc
+		}
+	}
+	theme = learning_theology_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_incense_offering
+		}
+		name = pr_roman.0112.incense
+		random_list = {
+			40 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0112.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_mercurius_incense
+						months = 3
+					}
+					add_piety = 25
+					stress_impact = {
+						zealous = minor_stress_loss
+						cynical = minor_stress_gain
+					}
+					remove_short_term_gold = 50
+				}
+			}
+			30 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0112.message.negative
+					add_piety = -25
+					stress_impact = {
+						zealous = minor_stress_gain
+						cynical = minor_stress_loss
+					}
+					remove_short_term_gold = 50
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_milk_offering
+		}
+		name = pr_roman.0112.milk
+		random_list = {
+			40 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0112.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_mercurius_milk
+						months = 3
+					}
+					add_piety = 50
+					stress_impact = {
+						zealous = medium_stress_loss
+						cynical = medium_stress_gain
+					}
+					remove_short_term_gold = 75
+				}
+			}
+			30 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0112.message.negative
+					add_piety = -50
+					stress_impact = {
+						zealous = medium_stress_gain
+						cynical = medium_stress_loss
+					}
+					remove_short_term_gold = 75
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_vegetables_offering
+		}
+		name = pr_roman.0112.vegetables
+		random_list = {
+			50 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0112.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_mercurius_vegetables
+						months = 3
+					}
+					add_piety = 75
+					stress_impact = {
+						zealous = major_stress_loss
+						cynical = major_stress_gain
+					}
+					remove_short_term_gold = 100
+				}
+			}
+			20 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0112.message.negative
+					add_piety = -75
+					stress_impact = {
+						zealous = major_stress_gain
+						cynical = major_stress_loss
+					}
+					remove_short_term_gold = 100
+				}
+			}
+		}
+	}
+
+}
+pr_roman.0115 = {
+	type = character_event
+	title = pr_roman.0115.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual = flag:pr_incense_offering
+				}
+				desc = pr_roman.0115.incense.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual  = flag:pr_wine_offering
+				}
+				desc = pr_roman.0115.wine.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual  = flag:pr_olives_offering
+				}
+				desc = pr_roman.0115.olives.desc
+			}
+			desc = pr_roman.0115.fallback.desc
+		}
+	}
+	theme = learning_theology_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_incense_offering
+		}
+		name = pr_roman.0115.incense
+		random_list = {
+			40 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0115.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_minerva_incense
+						months = 3
+					}
+					add_piety = 25
+					stress_impact = {
+						zealous = minor_stress_loss
+						cynical = minor_stress_gain
+					}
+					remove_short_term_gold = 50
+				}
+			}
+			30 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0115.message.negative
+					add_piety = -25
+					stress_impact = {
+						zealous = minor_stress_gain
+						cynical = minor_stress_loss
+					}
+					remove_short_term_gold = 50
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_wine_offering
+		}
+		name = pr_roman.0115.wine
+		random_list = {
+			40 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0115.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_minerva_wine
+						months = 3
+					}
+					add_piety = 50
+					stress_impact = {
+						zealous = medium_stress_loss
+						cynical = medium_stress_gain
+					}
+					remove_short_term_gold = 75
+				}
+			}
+			30 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0115.message.negative
+					add_piety = -50
+					stress_impact = {
+						zealous = medium_stress_gain
+						cynical = medium_stress_loss
+					}
+					remove_short_term_gold = 75
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_olives_offering
+		}
+		name = pr_roman.0115.olives
+		random_list = {
+			50 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0115.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_minerva_olives
+						months = 3
+					}
+					add_piety = 75
+					stress_impact = {
+						zealous = major_stress_loss
+						cynical = major_stress_gain
+					}
+					remove_short_term_gold = 100
+				}
+			}
+			20 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0115.message.negative
+					add_piety = -75
+					stress_impact = {
+						zealous = major_stress_gain
+						cynical = major_stress_loss
+					}
+					remove_short_term_gold = 100
+				}
+			}
+		}
+	}
+
+}
+
+pr_roman.0116 = {
+	type = character_event
+	title = pr_roman.0116.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual = flag:pr_incense_offering
+				}
+				desc = pr_roman.0116.incense.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual  = flag:pr_wine_offering
+				}
+				desc = pr_roman.0116.wine.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_ritual  = flag:pr_honey_offering
+				}
+				desc = pr_roman.0116.honey.desc
+			}
+			desc = pr_roman.0116.fallback.desc
+		}
+	}
+	theme = learning_theology_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_incense_offering
+		}
+		name = pr_roman.0116.incense
+		random_list = {
+			40 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0116.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_apollo_incense
+						months = 3
+					}
+					add_piety = 25
+					stress_impact = {
+						zealous = minor_stress_loss
+						cynical = minor_stress_gain
+					}
+					remove_short_term_gold = 50
+				}
+			}
+			30 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0116.message.negative
+					add_piety = -25
+					stress_impact = {
+						zealous = minor_stress_gain
+						cynical = minor_stress_loss
+					}
+					remove_short_term_gold = 50
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_wine_offering
+		}
+		name = pr_roman.0116.wine
+		random_list = {
+			40 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0116.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_apollo_wine
+						months = 3
+					}
+					add_piety = 50
+					stress_impact = {
+						zealous = medium_stress_loss
+						cynical = medium_stress_gain
+					}
+					remove_short_term_gold = 75
+				}
+			}
+			30 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0116.message.negative
+					add_piety = -50
+					stress_impact = {
+						zealous = medium_stress_gain
+						cynical = medium_stress_loss
+					}
+					remove_short_term_gold = 75
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_honey_offering
+		}
+		name = pr_roman.0116.honey
+		random_list = {
+			50 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0116.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_apollo_honey
+						months = 3
+					}
+					add_piety = 75
+					stress_impact = {
+						zealous = major_stress_loss
+						cynical = major_stress_gain
+					}
+					remove_short_term_gold = 100
+				}
+			}
+			20 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0116.message.negative
+					add_piety = -75
+					stress_impact = {
+						zealous = major_stress_gain
+						cynical = major_stress_loss
+					}
+					remove_short_term_gold = 100
+				}
+			}
+		}
+	}
+
+}
+
+pr_roman.0101 = {
+	type = character_event
+	title = pr_roman.0101.t
+	desc = pr_roman.0101.desc
+	theme = learning_theology_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman.0101.a
+		trigger_event = pr_roman.0102
+	}
+}
+
+pr_roman.0102 = {
+	type = character_event
+	title = pr_roman.0102.t
+	desc = pr_roman.0102.desc
+	theme = learning_theology_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman.0102.a
+		trigger_event = pr_roman.0103
+	}
+}
+
+pr_roman.0103 = {
+	type = character_event
+	title = pr_roman.0103.t
+	desc = pr_roman.0103.desc
+	theme = learning_theology_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman.0103.a
+		trigger_event = pr_roman.0104
+	}
+}
+
+pr_roman.0104 = {
+	type = character_event
+	title = pr_roman.0104.t
+	desc = pr_roman.0104.desc
+	theme = learning_theology_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman.0104.a
+		trigger_event = pr_roman.0105
+	}
+}
+
+pr_roman.0105 = {
+	type = character_event
+	title = pr_roman.0105.t
+	desc = pr_roman.0105.desc
+	theme = learning_theology_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman.0105.a
+		trigger_event = pr_roman.0106
+	}
+}
+
+pr_roman.0106 = {
+	type = character_event
+	title = pr_roman.0106.t
+	desc = pr_roman.0106.desc
+	theme = learning_theology_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman.0106.a
+		trigger_event = pr_roman.0107
+	}
+}
+
+pr_roman.0107 = {
+	type = character_event
+	title = pr_roman.0107.t
+	desc = pr_roman.0107.desc
+	theme = learning_theology_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_incense_offering
+		}
+		name = pr_roman.0107.incense
+		random_list = {
+			40 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0107.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_jupiter_incense
+						months = 3
+					}
+					add_piety = 25
+					stress_impact = {
+						zealous = minor_stress_loss
+						cynical = minor_stress_gain
+					}
+				}
+			}
+			30 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0107.message.negative
+					add_piety = -25
+					stress_impact = {
+						zealous = minor_stress_gain
+						cynical = minor_stress_loss
+					}
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_wine_offering
+		}
+		name = pr_roman.0107.wine
+		random_list = {
+			40 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0107.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_jupiter_wine
+						months = 3
+					}
+					add_piety = 50
+					stress_impact = {
+						zealous = medium_stress_loss
+						cynical = medium_stress_gain
+					}
+				}
+			}
+			30 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0107.message.negative
+					add_piety = -50
+					stress_impact = {
+						zealous = medium_stress_gain
+						cynical = medium_stress_loss
+					}
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			var:pr_ritual  = flag:pr_fruit_offering
+		}
+		name = pr_roman.0107.fruit
+		random_list = {
+			50 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0107.message.positive
+					add_character_modifier = {
+						modifier = held_ritual_for_jupiter_fruit
+						months = 3
+					}
+					add_piety = 75
+					stress_impact = {
+						zealous = major_stress_loss
+						cynical = major_stress_gain
+					}
+				}
+			}
+			20 = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					left_icon = ROOT
+					title = pr_roman.0107.message.negative
+					add_piety = -75
+					stress_impact = {
+						zealous = major_stress_gain
+						cynical = major_stress_loss
+					}
+				}
+			}
+		}
+	}
+}
+#Romano British return religion
+#Turned off the conversion of most of the vassals for now
+#Historacly it's a proces of years and not just of one day
+pr_roman.0113 = {
+	type = character_event
+	title = pr_roman.0113.t
+	desc = pr_roman.0113.desc
+	theme = learning
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman.0113.a
+		# trigger_event = pr_roman.0114
+		# days = 20
+		set_character_faith = faith:cdr_polytheism
+	}
+}
+
+pr_roman.0114 = {
+	type = character_event
+	title = pr_roman.0114.t
+	desc = pr_roman.0114.desc
+	theme = faith
+	right_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous
+		}
+		override_background = { reference = throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		faith = { save_scope_as = old_faith }
+	}
+
+	option = {
+		name = pr_roman.0114.a
+		#Get a nice reward for your adherence to the true faith.
+		add_piety_level = 1
+		#Sort notification copy for players.
+		save_scope_value_as = {
+			name = roman_british_return
+			value = flag:vanilla
+		}
+		pr_romano_british_sr_notify_players_effect = yes
+
+	}
+}
+
+pr_roman.0117 = {
+	type = character_event
+	title = pr_roman.0117.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { top_liege = root }
+				desc = pr_roman.0117.desc.vassals
+			}
+			desc = pr_roman.0117.desc.outsiders
+		}
+		desc = pr_roman.0117.desc.intro
+		triggered_desc = {
+			trigger = { scope:gp_return = flag:vanilla }
+			desc = pr_roman.0117.desc_vanilla
+		}
+	}
+	theme = faith
+	left_portrait = scope:scoped_ruler
+	override_background = { reference = throne_room }
+	#Celtic polyteist are happy about this unexpected turn of events!
+	option = {
+		name = pr_roman.0117.a
+		trigger = { religion = religion:roman_religion}
+		add_stress = minor_stress_loss
+	}
+	#Vassals who do not follow the faith may decide to convert after all.
+	option = {
+		name = pr_roman.0117.b
+		trigger = {
+			top_liege = root
+			NOT = { religion = religion:roman_religion}
+		}
+		set_character_faith_with_conversion = faith:cdr_polytheism
+
+	}
+	#Those who aren't polytheist are probably horrified.
+	option = {
+		name = pr_roman.0117.c
+		trigger = {
+			NOT = {
+				religion = { is_in_family = rf_cp}
+			}
+		}
+	}
+	#And, as a fallback, some people just won't care.
+	option = {
+		name = pr_roman.0117.d
+	}
+}
+
+#Embrace Cultures
+#Embrace roman culture
+pr_roman_culture.0600 = {
+	type = character_event
+	title = pr_roman_culture.0600.t
+	desc = pr_roman_culture.0600.desc
+	theme = learning
+
+	override_background = {
+		reference = virtues
+	}
+	lower_right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_culture.0600.a
+		set_culture = culture:roman
+	}
+
+}
+
+#Embrace Gallo Roman culture
+pr_roman_culture.0601= {
+	type = character_event
+	title = pr_roman_culture.0601.t
+	desc = pr_roman_culture.0601.desc
+	theme = learning
+
+	override_background = {
+		reference = virtues
+	}
+	lower_right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_culture.0601.a
+		set_culture = culture:pr_gallo_roman
+	}
+}
+#Embrace Romano British culture
+pr_roman_culture.0602= {
+	type = character_event
+	title = pr_roman_culture.0602.t
+	desc = pr_roman_culture.0602.desc
+	theme = learning
+
+	override_background = {
+		reference = virtues
+	}
+	lower_right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_culture.0602.a
+		set_culture = culture:pr_romano_british
+	}
+}
+
+#Embrace Romano Germanic culture
+pr_roman_culture.0603= {
+	type = character_event
+	title = pr_roman_culture.0603.t
+	desc = pr_roman_culture.0603.desc
+	theme = learning
+
+	override_background = {
+		reference = virtues
+	}
+	lower_right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_culture.0603.a
+		set_culture = culture:pr_romano_germanic
+	}
+}
+
+#Embrace Hispano
+
+pr_roman_culture.0604= {
+	type = character_event
+	title = pr_roman_culture.0604.t
+	desc = pr_roman_culture.0604.desc
+	theme = learning
+
+	override_background = {
+		reference = virtues
+	}
+	lower_right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_culture.0604.a
+		set_culture = culture:pr_romano_hispanic
+	}
+}
+
+#Restore Priesthood events
+pr_roman.0200 = {
+	type = character_event
+	title = pr_roman.0200.t
+	desc = pr_roman.0200.desc
+	theme = faith
+	left_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous
+	}
+	right_portrait = {
+		character = scope:new_priest
+		animation = happiness
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		if = { # Check if Temporal first.
+			limit = {
+				faith = { has_doctrine = doctrine_temporal_head }
+			}
+			save_scope_as = new_priest
+		}
+		else_if = { # Pick your chaplain first.
+			limit = {
+				exists = cp:councillor_court_chaplain
+				cp:councillor_court_chaplain = { faith = scope:scoped_ruler.faith }
+			}
+			cp:councillor_court_chaplain = { save_scope_as = new_priest }
+		}
+		else = {
+			hidden_effect = {
+				create_character = {
+					employer = root
+					template = religious_leader_character
+					random_traits = no
+					save_scope_as = new_priest
+					dynasty = generate
+				}
+			}
+			scope:new_priest = {
+				add_trait = education_learning_3
+				add_trait = zealous
+				add_trait = intellect_good_1
+				random_list = {
+					1 = { add_trait = lustful }
+					1 = { add_trait = chaste }
+					1 = { add_trait = wrathful }
+					1 = { add_trait = diligent }
+					1 = { add_trait = impatient }
+					1 = { add_trait = arrogant }
+					1 = { add_trait = humble }
+					1 = { add_trait = gregarious }
+				}
+				random_list = {
+					1 = { add_trait = honest }
+					1 = { add_trait = ambitious }
+					1 = { add_trait = just }
+					1 = { add_trait = cynical }
+					1 = { add_trait = zealous }
+					1 = { add_trait = compassionate }
+					1 = { add_trait = stubborn }
+				}
+			}
+		}
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		root.faith.religious_head_title = {
+			change_title_holder = {
+				holder = scope:new_priest
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+	}
+
+	option = {
+		name = pr_roman.0200.a
+		add_prestige = major_prestige_gain
+		add_piety = major_piety_gain
+		faith = { change_fervor = 10 }
+		if = { # Vassalize if possible/needed.
+			limit = {
+				highest_held_title_tier > scope:new_priest.highest_held_title_tier
+				NOT = { scope:new_priest = { any_liege_or_above = { this = root } } }
+			}
+			create_title_and_vassal_change = {
+				coat_of_arms = k_pontifex_polytheistic
+				type = created
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			scope:new_priest = {
+				change_liege = {
+					liege = root
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+		hidden_effect = {
+			every_player = {
+				limit = {
+					NOT = { this = root }
+					OR = {
+						faith.religion = root.faith.religion
+						AND = {
+							is_landed = yes
+							capital_province = {
+								OR = {
+									geographical_region = world_europe_south_east
+								}
+							}
+						}
+					}
+				}
+				trigger_event = pr_roman.0201
+			}
+		}
+	}
+}
+
+# Players notified.
+pr_roman.0201 = {
+	type = character_event
+	title = pr_roman.0200.t
+	desc = {
+		first_valid = {
+			# Cultus Deorum Reaction
+			triggered_desc = {
+				trigger = {
+					root.faith.religion = scope:scoped_ruler.faith.religion
+				}
+				desc = pr_roman.0200.desc
+			}
+			# Christian Reaction
+			triggered_desc = {
+				trigger = {
+					root.faith.religion = faith:orthodox.religion
+				}
+				desc = pr_roman.0201.desc.orthodox
+			}
+			# Everybody else
+			triggered_desc = {
+				trigger = {
+					NOR = {
+						root.faith.religion = scope:scoped_ruler.faith.religion
+						root.faith.religion = faith:orthodox.religion
+					}
+				}
+				desc = pr_roman.0201.desc.others
+			}
+		}
+	}
+	theme = faith
+	left_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous
+	}
+	right_portrait = {
+		character = scope:new_priest
+		animation = happiness
+	}
+
+	immediate = {
+		#Cultus Deorum characters get some chilled music.
+		if = {
+			limit = {
+				faith = { religion_tag = hellenism_religion }
+			}
+			play_music_cue = "mx_cue_faith_conversion"
+		}
+	}
+
+	option = {
+		name = pr_roman.0201.a
+		trigger = {
+			root.faith.religion = scope:scoped_ruler.faith.religion
+		}
+	}
+	option = {
+		name = pr_roman.0201.b
+		trigger = {
+			NOT = {
+				root.faith.religion = scope:scoped_ruler.faith.religion
+			}
+		}
+	}
+	option = {
+		name = pr_roman.0201.c
+		trigger = {
+			NOR = {
+				root.faith.religion = scope:scoped_ruler.faith.religion
+				root.faith.religion = faith:orthodox.religion
+			}
+		}
+	}
+}
+#Open the temple of vesta
+pr_roman.0300 = {
+	type = character_event
+	title = pr_roman.0300.t
+	desc = pr_roman.0300.desc
+	theme = faith
+	immediate = {
+		create_character = {
+			employer = root
+			age = { 35 50}
+			random_traits = no
+			save_scope_as = vestalis_maxima
+			learning = { 18 25 }
+			diplomacy  = { 8 14 }
+			gender = female
+			trait = zealous
+			dynasty = generate
+			trait = vestalis_maxima
+			trait = vestalis
+		}
+	}
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+	right_portrait = {
+		character = scope:vestalis_maxima
+		animation = personality_zealous
+	}
+	option={
+		name = pr_roman.0300.a
+		clear_global_variable_list = unavailable_unique_decisions_close_temple_of_vesta
+		hidden_effect = {
+			scope:vestalis_maxima = {
+				give_nickname = nick_vestalis_maxima
+			}
+		}
+
+	}
+}
+
+#Take Vows Rejected
+pr_roman.0400 = {
+	type = letter_event
+	opening = {
+		desc = religious_interaction.1.opening
+	}
+	desc = pr_roman.0400.desc
+	sender = {
+		character = scope:recipient
+		animation = dismissal
+	}
+
+	immediate = {
+		show_as_tooltip = {
+			scope:recipient = {
+				add_opinion = {
+					target = scope:actor
+					modifier = asked_me_to_take_vows_opinion
+					years = 5
+				}
+			}
+		}
+	}
+
+	option = {
+		name = religious_interaction.1000.strong_negative
+	}
+}
+
+pr_roman.0500={
+	type = letter_event
+	opening = {
+		desc = char_interaction.0001.opening
+	}
+	desc = pr_roman.0500.desc
+
+	sender = scope:recipient
+
+	immediate = {
+		send_child_to_clergy_effect = yes
+	}
+
+	option = { #Send them on their way
+		name = pr_roman.0500.a
+	}
+}
+
+pr_roman.0600 = {
+	type = character_event
+	title = pr_roman.0600.t
+	desc = pr_roman.0600.desc
+	theme =	feast_activity
+
+	option = {
+		name = pr_roman.0600.a
+		add_character_modifier = { modifier = saturnalia  months = 3 }
+		faith = scope:root.faith
+		faith ={
+			change_fervor = {
+				value = 5
+			}
+		}
+	}
+
+}
+
+pr_roman_cult.0001 = {
+	type = character_event
+	title = pr_roman_cult.0001.t
+	desc = pr_roman_cult.0001.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		trigger = {
+			exists = global_var:restored_mithras_cult
+			religion = religion:roman_religion
+			NOT = {
+				has_trait = mithras_cult
+				has_trait = isis_cult
+				has_trait = serapis_cult
+				has_trait = eleusinian_cult
+				has_trait = sol_invictus_cult
+				has_trait = imperial_cult
+				has_trait = bacchus_cult
+				has_trait = cybele_cult
+				is_female = no
+			}
+		}
+		name = pr_roman_cult.0001.mithras
+
+		trigger_event = pr_roman_cult.0002
+	}
+	option = {
+		trigger = {
+			exists = global_var:restored_isis_cult
+			OR = {
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+			NOT = {
+				has_trait = mithras_cult
+				has_trait = isis_cult
+				has_trait = serapis_cult
+				has_trait = eleusinian_cult
+				has_trait = sol_invictus_cult
+				has_trait = imperial_cult
+				has_trait = bacchus_cult
+				has_trait = serapis_cult
+				has_trait = cybele_cult
+				#is_male = no
+			}
+		}
+
+
+
+		name = pr_roman_cult.0001.isis
+
+		trigger_event = pr_roman_cult.0007
+	}
+	option = {
+		trigger = {
+			exists = global_var:restored_sol_invictus_cult
+			OR = {
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+			NOT = {
+				has_trait = mithras_cult
+				has_trait = isis_cult
+				has_trait = serapis_cult
+				has_trait = eleusinian_cult
+				has_trait = sol_invictus_cult
+				has_trait = imperial_cult
+				has_trait = bacchus_cult
+				has_trait = serapis_cult
+				has_trait = cybele_cult
+			}
+		}
+		name = pr_roman_cult.0001.serapis
+		trigger_event = pr_roman_cult.0011
+	}
+	option = {
+		trigger = {
+			exists = global_var:restored_eleusinian_cult
+			OR = {
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+			}
+			NOT = {
+				has_trait = mithras_cult
+				has_trait = isis_cult
+				has_trait = serapis_cult
+				has_trait = eleusinian_cult
+				has_trait = sol_invictus_cult
+				has_trait = imperial_cult
+				has_trait = bacchus_cult
+				has_trait = serapis_cult
+				has_trait = cybele_cult
+			}
+		}
+		name = pr_roman_cult.0001.eluesinian
+		trigger_event = pr_roman_cult.0015
+	}
+	option = {
+		trigger = {
+			religion = religion:roman_religion
+			exists = global_var:restored_sol_invictus_cult
+			NOT = {
+				has_trait = mithras_cult
+				has_trait = isis_cult
+				has_trait = serapis_cult
+				has_trait = eleusinian_cult
+				has_trait = sol_invictus_cult
+				has_trait = imperial_cult
+				has_trait = bacchus_cult
+				has_trait = serapis_cult
+				has_trait = cybele_cult
+			}
+		}
+		name = pr_roman_cult.0001.sol_invictus
+		trigger_event = pr_roman_cult.0019
+	}
+	option = {
+		trigger = {
+			exists = global_var:restored_imperial_cult
+			NOT = {
+				has_trait = mithras_cult
+				has_trait = isis_cult
+				has_trait = serapis_cult
+				has_trait = eleusinian_cult
+				has_trait = sol_invictus_cult
+				has_trait = imperial_cult
+				has_trait = bacchus_cult
+				has_trait = serapis_cult
+				has_trait = cybele_cult
+			}
+		}
+		name = pr_roman_cult.0001.imperial
+		trigger_event = pr_roman_cult.0023
+	}
+	# option = { #Bacchus Need to be updated
+	# 	trigger = {
+	# 		exists = global_var:restored_bacchus_cult
+	# 		NOT = {
+	# 			has_trait = mithras_cult
+	# 			has_trait = isis_cult
+	# 			has_trait = serapis_cult
+	# 			has_trait = eleusinian_cult
+	# 			has_trait = sol_invictus_cult
+	# 			has_trait = imperial_cult
+	# 			has_trait = bacchus_cult
+	# 			has_trait = serapis_cult
+	# 			has_trait = cybele_cult
+	# 		}
+	# 	}
+	# 	name = pr_roman_cult.0001.bacchus
+	# 	#trigger_event = pr_roman_cult.0023
+	# }
+	option = {
+		trigger = {
+			exists = global_var:restored_cybele_cult
+			NOT = {
+				has_trait = mithras_cult
+				has_trait = isis_cult
+				has_trait = serapis_cult
+				has_trait = eleusinian_cult
+				has_trait = sol_invictus_cult
+				has_trait = imperial_cult
+				has_trait = bacchus_cult
+				has_trait = serapis_cult
+				has_trait = cybele_cult
+			}
+		}
+		name = pr_roman_cult.0001.cybele
+
+		trigger_event = pr_roman_cult.0050
+	}
+	option ={
+		name = pr_roman_cult.0001.optout
+		clear_global_variable_list = unavailable_unique_decisions_join_cult
+	}
+}
+
+#Join Mithras Cult events
+#will be edited when the other 6 levels of initiation are added
+pr_roman_cult.0002 = {#application
+	type = character_event
+	title = pr_roman_cult.0002.t
+	desc = pr_roman_cult.0002.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0002.a
+		if ={
+			limit ={
+				martial >= 5
+			}
+			trigger_event ={
+				id = pr_roman_cult.0003
+				days = 5
+			}
+		}
+		else_if = {
+			limit = {
+				martial < 5
+			}
+			trigger_event = {
+				id = pr_roman_cult.0006
+				days = 5
+			}
+		}
+	}
+}
+pr_roman_cult.0003 = {#answer
+	type = character_event
+	title = pr_roman_cult.0003.t
+	desc = pr_roman_cult.0003.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0003.a
+
+		trigger_event = pr_roman_cult.0004
+
+
+		# hidden_effect = {
+		# 	select_or_create_cult_leader_mithras_effect = yes
+		# }
+	}
+
+}
+
+pr_roman_cult.0004 = {#meeting at secret place Mithras
+	type = character_event
+	title = pr_roman_cult.0004.t
+	desc = pr_roman_cult.0004.desc
+	theme = learning
+	immediate = {
+		select_or_create_cult_leader_mithras_effect = yes
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:cult_leader_mithras
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0004.a
+		trigger_event = pr_roman_cult.0005
+		custom_tooltip = cult_0004.a.tt
+	}
+
+
+}
+
+pr_roman_cult.0005 = {#Initiation
+	type = character_event
+	title = pr_roman_cult.0005.t
+	desc = pr_roman_cult.0005.desc
+	theme = learning
+	left_portrait = {
+		character = scope:cult_leader_mithras
+		animation = personality_content
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0005.trait
+		add_trait = mithras_cult
+		add_trait = pr_corax_mithras
+		# pr_appoint_court_position_effect = {
+		# 	EMPLOYER = root
+		# 	CANDIDATE = scope:mithras_candidate
+		# 	POSITION = pr_court_pater_mithras_court_position
+		# }
+		# 	EMPLOYER = root
+		# 	MITHRAS = scope:cult_leader_mithras
+		# }
+		scope:cult_leader_mithras = {
+			give_nickname = nick_pater_mithras
+		}
+		ai_chance = {
+			value = 0
+		}
+	}
+	option = {#Ai only
+		name = pr_roman_cult.0005.ai
+		trigger = {
+			is_ai = yes
+		}
+		add_trait = mithras_cult
+		add_trait = pr_corax_mithras
+		ai_chance = {
+			value = 20
+		}
+	}
+
+}
+
+
+pr_roman_cult.0006 = {
+	type = character_event
+	title = pr_roman_cult.0006.t
+	desc = pr_roman_cult.0006.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0006.a
+
+	}
+	immediate ={
+		add_character_flag = {
+			flag = turned_down_by_cult
+			years = 2
+		}
+		clear_global_variable_list = unavailable_unique_decisions_join_cult
+	}
+}
+#Cult of Isis
+pr_roman_cult.0007 = {#application
+	type = character_event
+	title = pr_roman_cult.0007.t
+	desc = pr_roman_cult.0007.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0007.a
+
+			trigger_event ={
+				id = pr_roman_cult.0008
+				days = 5
+			}
+
+	}
+
+
+}
+
+pr_roman_cult.0008 = {#answer
+	type = character_event
+	title = pr_roman_cult.0008.t
+	desc = pr_roman_cult.0008.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0008.a
+		trigger_event = pr_roman_cult.0009
+
+	}
+
+}
+
+pr_roman_cult.0009 = {#Meeting place Isis Cult
+	type = character_event
+	title = pr_roman_cult.0009.t
+	desc = pr_roman_cult.0009.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:cult_leader_isis
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0009.a
+		trigger_event = pr_roman_cult.0010
+		custom_tooltip = cult_0009.a.tt
+		remove_short_term_gold = medium_gold_value
+	}
+	immediate = {
+		select_or_create_cult_leader_isis_effect = yes
+	}
+	# immediate = {
+	# 	hidden_effect = {
+	# 		create_character = {
+	# 			employer = root
+	# 			template = religious_leader_character
+	# 			random_traits = no
+	# 			save_scope_as = cult_leader_isis
+	# 			learning = 25
+	# 			gender = male
+	# 			trait = isis_cult
+	# 			trait = zealous
+	# 			dynasty = generate
+	# 		}
+	# 	}
+	# }
+}
+
+pr_roman_cult.0010 = {#Initiation
+	type = character_event
+	title = pr_roman_cult.0010.t
+	desc = pr_roman_cult.0010.desc
+	theme = learning
+	left_portrait = {
+		character = scope:cult_leader_mithras
+		animation = personality_content
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0010.trait
+		add_trait = isis_cult
+	}
+}
+
+#Serapis Cult
+
+pr_roman_cult.0011 = {
+	type = character_event
+	title = pr_roman_cult.0011.t
+	desc = pr_roman_cult.0011.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0011.a
+			trigger_event ={
+				id = pr_roman_cult.0012
+				days = 5
+			}
+
+	}
+}
+
+pr_roman_cult.0012 = {#answer
+	type = character_event
+	title = pr_roman_cult.0012.t
+	desc = pr_roman_cult.0012.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0012.a
+		trigger_event = pr_roman_cult.0013
+	}
+
+}
+
+pr_roman_cult.0013 = {#Meeting place Serapis Cult
+	type = character_event
+	title = pr_roman_cult.0013.t
+	desc = pr_roman_cult.0013.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:cult_leader_serapis
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0013.a
+		trigger_event = pr_roman_cult.0014
+		custom_tooltip = pr_roman_cult.0013.a.tt
+		#add_piety = medium_piety_loss
+	}
+	# immediate = {
+	# 	hidden_effect = {
+	# 		create_character = {
+	# 			employer = root
+	# 			template = religious_leader_character
+	# 			random_traits = no
+	# 			save_scope_as = cult_leader_serapis
+	# 			learning = 25
+	# 			gender = male
+	# 			trait = serapis_cult
+	# 			trait = zealous
+	# 			dynasty = generate
+	# 		}
+	# 	}
+	# }
+}
+
+pr_roman_cult.0014 = {#Initiation
+	type = character_event
+	title = pr_roman_cult.0014.t
+	desc = pr_roman_cult.0014.desc
+	theme = learning
+	left_portrait = {
+		character = scope:cult_leader_serapis
+		animation = personality_content
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0014.trait
+		add_trait = serapis_cult
+		ai_chance = {
+			value = 20
+		}
+	}
+}
+
+# Eluesinian Cult
+
+pr_roman_cult.0015 = {
+	type = character_event
+	title = pr_roman_cult.0015.t
+	desc = pr_roman_cult.0015.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0015.a
+			trigger_event ={
+				id = pr_roman_cult.0016
+				days = 5
+			}
+		}
+}
+
+pr_roman_cult.0016 = {#answer
+	type = character_event
+	title = pr_roman_cult.0016.t
+	desc = pr_roman_cult.0016.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0016.a
+		trigger_event = pr_roman_cult.0017
+	}
+
+}
+
+pr_roman_cult.0017 = {#Meeting place Serapis Cult
+	type = character_event
+	title = pr_roman_cult.0017.t
+	desc = pr_roman_cult.0017.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:cult_leader_eleusinian
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0017.a
+		trigger_event = pr_roman_cult.0018
+		#custom_tooltip = cult_0017.a.tt
+	}
+	# immediate = {
+	# 	hidden_effect = {
+	# 		create_character = {
+	# 			employer = root
+	# 			template = religious_leader_character
+	# 			random_traits = no
+	# 			save_scope_as = cult_leader_eleusinian
+	# 			learning = 25
+	# 			gender = female
+	# 			trait = eleusinian_cult
+	# 			trait = zealous
+	# 			dynasty = generate
+	# 		}
+	# 	}
+	# }
+}
+
+pr_roman_cult.0018 = {#Initiation
+	type = character_event
+	title = pr_roman_cult.0018.t
+	desc = pr_roman_cult.0018.desc
+	theme = learning
+	left_portrait = {
+		character = scope:cult_leader_eleusinian
+		animation = personality_content
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0018.trait
+		add_trait = eleusinian_cult
+		ai_chance = {
+			value = 20
+		}
+
+	}
+}
+
+# Sol invictusCult
+
+pr_roman_cult.0019 = {
+	type = character_event
+	title = pr_roman_cult.0019.t
+	desc = pr_roman_cult.0019.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+	name = pr_roman_cult.0019.a
+		trigger_event ={
+			id = pr_roman_cult.0020
+			days = 5
+		}
+	}
+}
+
+pr_roman_cult.0020 = {#answer
+	type = character_event
+	title = pr_roman_cult.0020.t
+	desc = pr_roman_cult.0020.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0020.a
+		trigger_event = pr_roman_cult.0021
+	}
+
+}
+
+pr_roman_cult.0021 = {#Meeting place Sol invictus Cult
+	type = character_event
+	title = pr_roman_cult.0021.t
+	desc = pr_roman_cult.0021.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:cult_leader_sol_invictus
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0021.trait
+		add_trait = sol_invictus_cult
+		ai_chance = {
+			value = 20
+		}
+	}
+	option = {
+		name = pr_roman_cult.0021.religion
+		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:cdr_polytheism }
+		hidden_effect = {
+			add_character_flag = converted_pr_religion_this_lifetime
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				template = religious_leader_character
+				random_traits = no
+				save_scope_as = cult_leader_sol_invictus
+				martial = 25
+				gender = male
+				trait = sol_invictus_cult
+				trait = zealous
+				dynasty = generate
+			}
+		}
+	}
+}
+
+
+# Imperial Cult
+
+pr_roman_cult.0022 = {
+	type = character_event
+	title = pr_roman_cult.0022.t
+	desc = pr_roman_cult.0022.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0022.a
+			trigger_event ={
+				id = pr_roman_cult.0023
+				days = 5
+		}
+	}
+}
+
+pr_roman_cult.0023 = {#answer
+	type = character_event
+	title = pr_roman_cult.0023.t
+	desc = pr_roman_cult.0023.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0023.a
+		trigger_event = pr_roman_cult.0024
+	}
+
+}
+
+pr_roman_cult.0024 = {#Meeting Augustalis
+	type = character_event
+	title = pr_roman_cult.0024.t
+	desc = pr_roman_cult.0024.desc
+	theme = learning
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:cult_leader_imperial
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0024.trait
+		add_trait = imperial_cult
+		ai_chance = {
+			value = 20
+		}
+	}
+	option = {
+		name = pr_roman_cult.0024.religion
+		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:cdr_polytheism }
+		hidden_effect = {
+			add_character_flag = converted_pr_religion_this_lifetime
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				template = religious_leader_character
+				random_traits = no
+				save_scope_as = cult_leader_imperial
+				learning = 26
+				gender = male
+				trait = imperial_cult
+				trait = zealous
+				dynasty = generate
+			}
+		}
+	}
+}
+
+
+pr_roman_culture.0001 = {
+	type = character_event
+	title = pr_roman_culture.0001.t
+	desc = pr_roman_culture.0001.desc
+	theme = faith
+	override_background = { reference = pr_generic_temple }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Jupiter Parthinus
+	option = {
+		name = pr_roman_culture.0001.jupiter_parthinus
+		trigger = {
+			NOT = { has_character_modifier = roman_illyrian_jupiter_parthinus }
+		}
+		set_bhakti_effect = { BHAKTI = roman_illyrian_jupiter_parthinus }
+	}
+
+	 #Anzotica
+	 option = {
+	 	name = pr_roman_culture.0001.anzotica
+	 	trigger = {
+	 		NOT = { has_character_modifier = roman_illyrian_anzotica }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = roman_illyrian_anzotica }
+	 }
+
+	#Armatus
+	option = {
+		name = pr_roman_culture.0001.armatus
+		trigger = {
+			NOT = { has_character_modifier = roman_illyrian_armatus }
+		}
+		set_bhakti_effect = { BHAKTI = roman_illyrian_armatus }
+	}
+
+	# Bona Dea
+	option = {
+		name = pr_roman_culture.0001.bona_dea
+		trigger = {
+			NOT = { has_character_modifier = roman_illyrian_bona_dea }
+		}
+		set_bhakti_effect = { BHAKTI = roman_illyrian_bona_dea }
+	}
+
+
+	 # Latra
+	 option = {
+	 	name = pr_roman_culture.0001.latra
+	 	trigger = {
+	 		NOT = { has_character_modifier = roman_illyrian_latra }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = roman_illyrian_latra }
+	 }
+
+	# Opt-Out
+	option = {
+		name = pr_roman_culture.0001.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+pr_roman_culture.0002 = {
+	type = character_event
+	title = pr_roman_culture.0002.t
+	desc = pr_roman_culture.0002.desc
+	theme = learning
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_culture.0002.a
+		# trigger_event = pr_roman_culture.0003
+		# days = 20
+		set_character_faith = faith:cdr_polytheism
+	}
+}
+
+
+pr_roman_culture.0003 = {
+	type = character_event
+	title = pr_roman_culture.0003.t
+	desc = pr_roman_culture.0003.desc
+	theme = faith
+	right_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous
+		}
+		override_background = { reference = throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		faith = { save_scope_as = old_faith }
+	}
+
+	option = {
+		name = pr_roman_culture.0003.a
+		#Get a nice reward for your adherence to the true faith.
+		add_piety_level = 1
+		#Sort notification copy for players.
+		save_scope_value_as = {
+			name = roman_illyrian_return
+			value = flag:vanilla
+		}
+		roman_illyrian_sr_notify_players_effect = yes
+
+	}
+}
+
+pr_roman_culture.0004 = {
+	type = character_event
+	title = pr_roman_culture.0004.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { top_liege = root }
+				desc = pr_roman_culture.0004.desc.vassals
+			}
+			desc = pr_roman_culture.0004.desc.outsiders
+		}
+		desc = pr_roman_culture.0004.desc.intro
+		triggered_desc = {
+			trigger = { scope:gp_return = flag:vanilla }
+			desc = pr_roman_culture.0004.desc_vanilla
+		}
+	}
+	theme = faith
+	left_portrait = scope:scoped_ruler
+	override_background = { reference = throne_room }
+	#Celtic polyteist are happy about this unexpected turn of events!
+	option = {
+		name = pr_roman_culture.0004.a
+		trigger = { religion = religion:hellenism_religion}
+		add_stress = minor_stress_loss
+	}
+	#Vassals who do not follow the faith may decide to convert after all.
+	option = {
+		name = pr_roman_culture.0004.b
+		trigger = {
+			top_liege = root
+			NOT = { religion = religion:hellenism_religion}
+		}
+		set_character_faith_with_conversion = faith:cdr_polytheism
+
+	}
+	#Those who aren't polytheist are probably horrified.
+	option = {
+		name = pr_roman_culture.0004.c
+		trigger = {
+			NOT = {
+				religion = { is_in_family = rf_cp}
+			}
+		}
+	}
+	#And, as a fallback, some people just won't care.
+	option = {
+		name = pr_roman_culture.0004.d
+	}
+}
+
+#Cult proceding
+#lvl's of initiation mithras cult
+#Corax
+#Nymphus
+#Soldier
+#Lion
+#Perses
+#Heliodromus
+#Pater
+
+
+ pr_roman.0700={
+ 	type = character_event
+ 	title = pr_roman.0700.t
+ 	desc = pr_roman.0700.desc
+ 	theme = realm
+ 	right_portrait = {
+ 		character = root
+ 		animation = personality_content
+ 	}
+ 	immediate = {
+ 		hidden_effect = {
+ 		 create_character = {
+ 			employer = root
+ 			template = senatenator_character
+ 			random_traits = no
+ 			faith = faith:chalcedonian
+ 			gender = male
+ 			age = 30
+ 			save_scope_as = roman_senator
+ 		 		}
+ 			}
+ 		}
+		 immediate = {
+			hidden_effect = {
+			 create_character = {
+				employer = root
+				template = senatenator_character
+				random_traits = no
+				faith = faith:chalcedonian
+				gender = male
+				age = 25
+				save_scope_as = roman_senator_1
+					 }
+				}
+			}
+ 		option = {
+ 			name = pr_roman.0700.a
+ 			trigger_event = pr_roman.0701
+ 	}
+ }
+
+ pr_roman.0701 ={
+ 	type = character_event
+ 	title = pr_roman.0701.t
+ 	desc = pr_roman.0701.desc
+ 	theme = realm
+ 	right_portrait = {
+ 		character = root
+ 		animation = personality_content
+ 	}
+ 	left_portrait ={
+ 		character = scope:roman_senator
+ 		animation = anger
+ 	}
+ 	option = {
+ 		name = pr_roman.0701.a
+		 trigger_event = pr_roman.0702
+ 	}
+
+ }
+ pr_roman.0702 ={
+	type = character_event
+	title = pr_roman.0702.t
+	desc = pr_roman.0702.desc
+	theme = realm
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait ={
+		character = scope:roman_senator
+		animation = anger
+	}
+	option = {
+		name = pr_roman.0702.a
+		trigger_event = pr_roman.0703
+		imprison_character_effect = {
+			TARGET = scope:roman_senator
+			IMPRISONER = root
+		}
+	}
+
+}
+
+pr_roman.0703 ={
+	type = character_event
+	title = pr_roman.0703.t
+	desc = pr_roman.0703.desc
+	theme = realm
+	lower_right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	lower_left_portrait ={
+		character = scope:roman_senator
+		animation = anger
+	}
+	lower_center_portrait = {
+		character = scope:roman_senator_1
+		animation = fear
+	}
+	option = {
+		name = pr_roman.0703.a
+		add_character_modifier = returned_altar_of_victory
+	}
+
+}
+
+
+ pr_roman.0704={
+	type = character_event
+	title = pr_roman.0704.t
+	desc = pr_roman.0704.desc
+	theme = realm
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	immediate = {
+		hidden_effect = {
+		 create_character = {
+			employer = root
+			template = senatenator_character
+			random_traits = no
+			faith = faith:catholic
+			gender = male
+			trait = zealous
+			age = 30
+			save_scope_as = roman_senator
+				 }
+			}
+		}
+		immediate = {
+			hidden_effect = {
+			 create_character = {
+				employer = root
+				template = senatenator_character
+				random_traits = no
+				faith = faith:catholic
+				gender = male
+				age = 25
+				save_scope_as = roman_senator_1
+					 }
+				}
+			}
+		option = {
+			name = pr_roman.0704.a
+			trigger_event = pr_roman.0705
+	}
+}
+
+pr_roman.0705 ={
+	type = character_event
+	title = pr_roman.0705.t
+	desc = pr_roman.0705.desc
+	theme = realm
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait ={
+		character = scope:roman_senator
+		animation = anger
+	}
+	option = {
+		name = pr_roman.0705.a
+		trigger_event = pr_roman.0706
+	}
+}
+
+pr_roman.0706 ={
+	type = character_event
+	title = pr_roman.0706.t
+	desc = pr_roman.0706.desc
+	theme = realm
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait ={
+		character = scope:roman_senator
+		animation = anger
+	}
+	option = {
+		name = pr_roman.0706.a
+		trigger_event = pr_roman.0707
+		imprison_character_effect = {
+			TARGET = scope:roman_senator
+			IMPRISONER = root
+		}
+	}
+}
+
+pr_roman.0707 ={
+	type = character_event
+	title = pr_roman.0707.t
+	desc = pr_roman.0707.desc
+	theme = realm
+	lower_right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	lower_left_portrait ={
+		character = scope:roman_senator
+		animation = anger
+	}
+	lower_center_portrait = {
+		character = scope:roman_senator_1
+		animation = fear
+	}
+	option = {
+		name = pr_roman.0707.a
+		add_character_modifier = returned_altar_of_victory
+	}
+}
+
+#gallo roman
+#Same as for other religions turned off the vassal conversion
+pr_roman_culture.0100 = {
+	type = character_event
+	title = pr_roman_culture.0100.t
+	desc = pr_roman_culture.0100.desc
+	theme = learning
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_culture.0100.a
+		# trigger_event = pr_roman_culture.0101
+		# days = 20
+		set_character_faith = faith:cdr_polytheism
+	}
+}
+
+
+pr_roman_culture.0101 = {
+	type = character_event
+	title = pr_roman_culture.0101.t
+	desc = pr_roman_culture.0101.desc
+	theme = faith
+	right_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous
+		}
+		override_background = { reference = throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		faith = { save_scope_as = old_faith }
+	}
+
+	option = {
+		name = pr_roman_culture.0101.a
+		#Get a nice reward for your adherence to the true faith.
+		add_piety_level = 1
+		#Sort notification copy for players.
+		save_scope_value_as = {
+			name = pr_gallo_roman_return
+			value = flag:vanilla
+		}
+		pr_gallo_roman_sr_notify_players_effect = yes
+
+	}
+}
+
+pr_roman_culture.0102 = {
+	type = character_event
+	title = pr_roman_culture.0102.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { top_liege = root }
+				desc = pr_roman_culture.0102.desc.vassals
+			}
+			desc = pr_roman_culture.0102.desc.outsiders
+		}
+		desc = pr_roman_culture.0102.desc.intro
+		triggered_desc = {
+			trigger = { scope:gp_return = flag:vanilla }
+			desc = pr_roman_culture.0102.desc_vanilla
+		}
+	}
+	theme = faith
+	left_portrait = scope:scoped_ruler
+	override_background = { reference = throne_room }
+	#Celtic polyteist are happy about this unexpected turn of events!
+	option = {
+		name = pr_roman_culture.0102.a
+		trigger = { religion = religion:hellenism_religion}
+		add_stress = minor_stress_loss
+	}
+	#Vassals who do not follow the faith may decide to convert after all.
+	option = {
+		name = pr_roman_culture.0102.b
+		trigger = {
+			top_liege = root
+			NOT = { religion = religion:hellenism_religion}
+		}
+		set_character_faith_with_conversion = faith:cdr_polytheism
+
+	}
+	#Those who aren't polytheist are probably horrified.
+	option = {
+		name = pr_roman_culture.0102.c
+		trigger = {
+			NOT = {
+				religion = { is_in_family = rf_cp}
+			}
+		}
+	}
+	#And, as a fallback, some people just won't care.
+	option = {
+		name = pr_roman_culture.0102.d
+	}
+}
+
+pr_roman_culture.0103 = {
+	type = character_event
+	title = pr_roman_culture.0103.t
+	desc = pr_roman_culture.0103.desc
+	theme = faith
+	override_background = { reference = pr_generic_temple }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Jupiter Teranus
+	option = {
+		name = pr_roman_culture.0103.select_jupiter_teranus
+		trigger = {
+			NOT = { has_character_modifier = gallo_roman_jupiter_teranus }
+		}
+		set_bhakti_effect = { BHAKTI = gallo_roman_jupiter_teranus }
+	}
+
+		#Minerva Belisama
+		option = {
+			name = pr_roman_culture.0103.select_minerva_belisama
+			trigger = {
+				NOT = { has_character_modifier = gallo_roman_minerva_belisama }
+			}
+			set_bhakti_effect = { BHAKTI = gallo_roman_minerva_belisama }
+		}
+
+	#Mercury
+	option = {
+		name = pr_roman_culture.0103.select_mercurius_cissonius
+		trigger = {
+			NOT = { has_character_modifier = gallo_roman_mercurius_cissonius }
+		}
+		set_bhakti_effect = { BHAKTI = gallo_roman_mercurius_cissonius }
+	}
+
+	# Venus
+	option = {
+		name = pr_roman_culture.0103.select_venus
+		trigger = {
+			NOT = { has_character_modifier = gallo_roman_venus }
+		}
+		set_bhakti_effect = { BHAKTI = gallo_roman_venus }
+	}
+
+
+		# Mars Lenus
+		option = {
+			name = pr_roman_culture.0103.select_mars_lenus
+			trigger = {
+				NOT = { has_character_modifier = gallo_roman_mars_lenus }
+			}
+			set_bhakti_effect = { BHAKTI = gallo_roman_mars_lenus }
+		}
+
+	# Opt-Out
+	option = {
+		name = pr_roman_culture.0103.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+pr_roman_culture.0200 = {
+	type = character_event
+	title = pr_roman_culture.0200.t
+	desc = pr_roman_culture.0200.desc
+	theme = faith
+	override_background = { reference = pr_generic_temple }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Jupiter Teranus
+	option = {
+		name = pr_roman_culture.0200.select_jupiter_teran
+		trigger = {
+			NOT = { has_character_modifier = romano_british_jupiter_teran }
+		}
+		set_bhakti_effect = { BHAKTI = romano_british_jupiter_teran }
+	}
+
+		#Sulis Minerva
+		option = {
+			name = pr_roman_culture.0200.select_sulis_minerva
+			trigger = {
+				NOT = { has_character_modifier = romano_british_sulis_minerva }
+			}
+			set_bhakti_effect = { BHAKTI = romano_british_sulis_minerva }
+		}
+
+	#Mercury Lugus
+	option = {
+		name = pr_roman_culture.0200.select_mercurius_lugus
+		trigger = {
+			NOT = { has_character_modifier = romano_british_mercurius_lugus }
+		}
+		set_bhakti_effect = { BHAKTI = romano_british_mercurius_lugus }
+	}
+
+	# Venus
+	option = {
+		name = pr_roman_culture.0200.select_venus
+		trigger = {
+			NOT = { has_character_modifier = romano_british_venus }
+		}
+		set_bhakti_effect = { BHAKTI = romano_british_venus }
+	}
+
+
+		# Mars Lenus
+		option = {
+			name = pr_roman_culture.0200.select_mars_cocidius
+			trigger = {
+				NOT = { has_character_modifier = romano_british_mars_cocidius }
+			}
+			set_bhakti_effect = { BHAKTI = romano_british_mars_cocidius }
+		}
+
+	# Opt-Out
+	option = {
+		name = pr_roman_culture.0200.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+#Romano Germanic
+#Embrace Roman Germanic Culture
+#Convert to Romano Germanic
+pr_roman_culture.0300 = {
+	type = character_event
+	title = pr_roman_culture.0300.t
+	desc = pr_roman_culture.0300.desc
+	theme = learning
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_culture.0300.a
+		set_character_faith = faith:cdr_polytheism
+	}
+}
+#Choose main deity
+pr_roman_culture.0301 = {
+	type = character_event
+	title = pr_roman_culture.0301.t
+	desc = pr_roman_culture.0301.desc
+	theme = faith
+	override_background = { reference = pr_generic_temple }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Mercurius Hranno
+	option = {
+		name = pr_roman_culture.0301.select_mercurius_hranno
+		trigger = {
+			NOT = { has_character_modifier = romano_germanic_mercurius_hranno }
+		}
+		set_bhakti_effect = { BHAKTI = romano_germanic_mercurius_hranno }
+	}
+
+	#Hercules Meganusus
+	 option = {
+	 	name = pr_roman_culture.0301.select_hercules_meganusus
+	 	trigger = {
+	 		NOT = { has_character_modifier = romano_germanic_hercules_meganusus }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = romano_germanic_hercules_meganusus }
+	 }
+
+	# Isis Freia
+	option = {
+		name = pr_roman_culture.0301.select_isis_freia
+		trigger = {
+			NOT = { has_character_modifier = romano_germanic_isis_freia }
+		}
+		set_bhakti_effect = { BHAKTI = romano_germanic_isis_freia }
+	}
+
+
+	# Mars Thincsus
+	option = {
+		name = pr_roman_culture.0301.select_mars_thincsus
+		trigger = {
+			NOT = { has_character_modifier = romano_germanic_mars_thincsus }
+		}
+		set_bhakti_effect = { BHAKTI = romano_germanic_mars_thincsus }
+	}
+
+	# Opt-Out
+	option = {
+		name = pr_roman_culture.0301.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+pr_roman_culture.0500 = {
+	type = character_event
+	title = cultus_orientalis.001.t
+	desc = cultus_orientalis.001.desc
+	theme = learning
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = cultus_orientalis.001.a
+		set_character_faith = faith:cdr_polytheism
+	}
+}
+
+pr_roman_culture.0400 = {
+	type = character_event
+	title = cultus_orientalis.001.t
+	desc = cultus_orientalis.001.desc
+	theme = learning
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = cultus_orientalis.001.a
+		set_character_faith = faith:cdr_polytheism
+	}
+}
+
+#Choose main deity
+pr_roman_culture.0401 = {
+	type = character_event
+	title = pr_roman_culture.0401.t
+	desc = pr_roman_culture.0401.desc
+	theme = faith
+	override_background = { reference = pr_generic_temple }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Jupiter Solutorius
+	option = {
+		name = pr_roman_culture.0401.select_jupiter_solutorius
+		trigger = {
+			NOT = { has_character_modifier = romano_hispanic_jupiter_solutorius }
+		}
+		set_bhakti_effect = { BHAKTI = romano_hispanic_jupiter_solutorius }
+	}
+
+	#Minerva
+	 option = {
+	 	name = pr_roman_culture.0401.select_minerva
+	 	trigger = {
+	 		NOT = { has_character_modifier = romano_hispanic_minerva }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = romano_hispanic_minerva }
+	 }
+
+	#Mars Neto
+	option = {
+		name = pr_roman_culture.0401.select_mars_neto
+		trigger = {
+			NOT = { has_character_modifier = romano_hispanic_mars_neto }
+		}
+		set_bhakti_effect = { BHAKTI = romano_hispanic_mars_neto }
+	}
+
+
+	# lucubo
+	option = {
+		name = pr_roman_culture.0401.select_lucubo
+		trigger = {
+			NOT = { has_character_modifier = romano_hispanic_lucubo }
+		}
+		set_bhakti_effect = { BHAKTI = romano_hispanic_lucubo }
+	}
+	# Nabia
+	option = {
+		name = pr_roman_culture.0401.select_nabia
+		trigger = {
+			NOT = { has_character_modifier = romano_hispanic_nabia }
+		}
+		set_bhakti_effect = { BHAKTI = romano_hispanic_nabia }
+	}
+
+	# Opt-Out
+	option = {
+		name = pr_roman_culture.0501.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#Cultus Orientis
+pr_roman_culture.0501 = {
+	type = character_event
+	title = pr_roman_culture.0501.t
+	desc = pr_roman_culture.0501.desc
+	theme = faith
+	override_background = { reference = pr_generic_temple }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	#Jupiter Dolichenus
+	option = {
+		name = pr_roman_culture.0501.select_jupiter_dolichenus
+		trigger = {
+			NOT = { has_character_modifier = cultus_orientis_jupiter_dolichenus }
+		}
+		set_bhakti_effect = { BHAKTI = cultus_orientis_jupiter_dolichenus }
+	}
+
+	#Minerva
+	 option = {
+	 	name = pr_roman_culture.0501.select_minerva
+	 	trigger = {
+	 		NOT = { has_character_modifier = romano_hispanic_minerva }
+	 	}
+	 	set_bhakti_effect = { BHAKTI = romano_hispanic_minerva }
+	 }
+
+	#Juno Caelestis
+	option = {
+		name = pr_roman_culture.0501.select_juno_caelestis
+		trigger = {
+			NOT = { has_character_modifier = cultus_orientis_juno_caelestis }
+		}
+		set_bhakti_effect = { BHAKTI = cultus_orientis_juno_caelestis }
+	}
+
+
+	#Mercurius Sobrius
+	option = {
+		name = pr_roman_culture.0501.select_mercurius_sobrius
+		trigger = {
+			NOT = { has_character_modifier = cultus_orientis_mercurius_sobrius }
+		}
+		set_bhakti_effect = { BHAKTI = cultus_orientis_mercurius_sobrius }
+	}
+	#Eshmun
+	option = {
+		name = pr_roman_culture.0501.select_eshmun
+		trigger = {
+			NOT = { has_character_modifier = cultus_orientis_eshmun }
+		}
+		set_bhakti_effect = { BHAKTI = cultus_orientis_eshmun }
+	}
+
+	# Opt-Out
+	option = {
+		name = pr_roman_culture.0501.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#Roman Religion Random events
+
+#Temple sacriledge
+#ToDo cycle trough temple holders and take a random priest that complains
+#OR just take the courtchaplain as scope
+#Add random person as scope
+pr_roman.0002 = {
+	type = character_event
+	title = pr_roman.0002.t
+	desc = pr_roman.0002.desc
+	theme = learning
+	override_background = { reference = pr_generic_temple }
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				random_traits = yes
+				dynasty = generate
+				save_scope_as = random_character
+				stewardship = 26
+			}
+				cp:councillor_court_chaplain = {
+					save_scope_as = realm_priest
+				}
+		}
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:realm_priest
+	}
+	#Imprison him
+	option = {
+		name = pr_roman.0002.a
+		add_character_modifier = {
+			modifier = repaired_temple
+			years = 5
+		}
+		add_trait = zealous
+		remove_short_term_gold = 50
+		imprison_character_effect = {
+			TARGET = scope:random_character
+			IMPRISONER = root
+		}
+	}
+	#Hand him over to the Realm Priest
+	option = {
+		name = pr_roman.0002.b
+		add_county_modifier = {
+			modifier = repaired_temple
+			years = 5
+		}
+		add_trait = zealous
+		remove_short_term_gold = 50
+		imprison_character_effect = {
+			TARGET = scope:random_character
+			IMPRISONER = scope:realm_priest
+		}
+	}
+	#Do nothing
+	option = {
+		name = pr_roman.0002.c
+		add_character_modifier = {
+			modifier = angered_realmpriest
+			years = 5
+		}
+	}
+}
+#Lemuria
+pr_roman.0003 = {
+	type = character_event
+	title = pr_roman.0003.t
+	desc = pr_roman.0003.desc
+	theme = learning
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman.0003.a
+		hidden_effect = {
+			random_list = {
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_roman.0003.message.positive
+						add_character_modifier = {
+							modifier = lemuria_good
+							years = 2
+						}
+					}
+				}
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_roman.0003.message.negative
+						add_character_modifier = {
+							modifier = lemuria_bad
+							years = 2
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#Offering to dis pater
+pr_roman.0004 = {
+	type = character_event
+	title = pr_roman.0004.t
+	desc = pr_roman.0004.desc
+	theme = learning
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	#
+	option = {
+		name = pr_roman.0004.a
+		add_character_modifier = {
+			modifier = offering_to_dis_pater
+			years = 5
+		}
+	}
+}
+#Visiting Temple of Jupiter
+pr_roman.0005 = {
+	type = character_event
+	title = pr_roman.0005.t
+	desc = pr_roman.0005.desc
+	theme = learning
+	override_background = { reference = pr_temple_jupiter }
+	immediate = {
+		hidden_effect={
+			cp:councillor_court_chaplain = {
+				save_scope_as = flamen
+			}
+		}
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:flamen
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman.0005.a
+		hidden_effect = {
+			random_list = {
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_roman.0005.message.positive
+						add_character_modifier = {
+							modifier = favoured_by_jupiter
+							years = 2
+						}
+					}
+				}
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_roman.0005.message.negative
+						add_character_modifier = {
+							modifier = unfavoured_by_jupiter
+							years = 2
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#Ludi Plebii
+pr_roman.0006 = {
+	type = character_event
+	title = pr_roman.0006.t
+	desc = pr_roman.0006.desc
+	theme = learning
+	override_background = { reference = feast }
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman.0006.a
+		add_character_modifier = {
+			modifier = ludi_plebii
+			years = 2
+		}
+	}
+}
+#Offer food of your meal to the lares
+pr_roman.0007 = {
+	type = character_event
+	title = pr_roman.0007.t
+	desc = pr_roman.0007.desc
+	theme = learning
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman.0007.a
+		add_character_modifier = {
+			modifier = offering_to_lares
+			years = 1
+		}
+	}
+}
+#Offering to Ceres
+pr_roman.0008 = {
+	type = character_event
+	title = pr_roman.0008.t
+	desc = pr_roman.0008.desc
+	theme = learning
+	override_background = { reference = garden }
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman.0008.a
+		hidden_effect = {
+			random_list = {
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_roman.0008.message.positive
+						add_character_modifier = {
+							modifier = favoured_by_ceres
+							years = 2
+						}
+					}
+				}
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_roman.0008.message.negative
+						add_character_modifier = {
+							modifier = unfavoured_by_ceres
+							years = 2
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#Lupercalia
+#Join / Don't join
+pr_roman.0009 = {
+	type = character_event
+	title = pr_roman.0009.t
+	desc = pr_roman.0009.desc
+	theme = feast_activity
+	override_background = { reference = throne_room }
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	trigger = {
+		AND = {
+			can_marry_trigger = yes
+			is_betrothed = no
+			is_imprisoned = no
+			is_male = yes
+			age >= 16
+			NOT = {
+				age >= 40
+			}
+		}
+	}
+
+	option = {
+		name = pr_roman.0009.a
+		trigger_event = pr_roman.0010
+	}
+	option = {
+		name = pr_roman.0009.b
+
+	}
+}
+
+pr_roman.0010 = {
+	type = character_event
+	title = pr_roman.0010.t
+	desc = pr_roman.0010.desc
+	theme = feast_activity
+	override_background = { reference = market_west }
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				gender = male
+				faith = root.faith
+				age = {20 40}
+				dynasty = generate
+				save_scope_as = luperci
+				learning = { 15 20 }
+
+			}
+			#Lupercalia date
+			create_character = {
+				employer = root
+				gender_female_chance = root.marriage_gender_adjusted_female_chance
+				#gender = female
+				faith = root.faith
+				age = {16 26}
+				dynasty = generate
+				save_scope_as = lupercalia_date
+
+				after_creation = {
+					add_piety = {
+						value = { minor_piety_gain medium_piety_gain }
+					}
+					add_prestige = {
+						value = { minor_prestige_gain major_prestige_gain }
+					}
+					remove_trait = glutones
+				}
+			}
+			cp:councillor_court_chaplain = {
+				save_scope_as = realm_priest
+			}
+		}
+	}
+	left_portrait = {
+		character = scope:luperci
+		animation = personality_content
+	}
+	right_portrait = {
+		character = scope:realm_priest
+		animation = personality_content
+	}
+	lower_center_portrait = {
+		character = root
+		animation = personality_content
+	}
+	lower_right_portrait = {
+		character = scope:lupercalia_date
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman.0010.a
+		trigger_event = pr_roman.0011
+	}
+}
+
+#
+pr_roman.0011= {
+	type = character_event
+	title = pr_roman.0011.t
+	desc = pr_roman.0011.desc
+	theme = feast_activity
+	override_background = { reference = market_west }
+	right_portrait = {
+		character = scope:lupercalia_date
+		animation = flirtation
+	}
+	left_portrait = {
+		character = root
+		animation = flirtation
+	}
+	option = {
+		name = pr_roman.0011.a
+		set_relation_lover = { reason = lover_lupercalia_date target = scope:lupercalia_date involved_character = root }
+		# had_sex_with_effect = {
+		# 			CHARACTER = scope:lupercalia_date
+		# 			PREGNANCY_CHANCE = 50
+		# }
+	}
+	option = {
+		name = pr_roman.0011.b
+		set_relation_friend = { reason = lover_lupercalia_date target = scope:lupercalia_date involved_character = root }
+	}
+}
+
+#Buy book about Roman Mythology
+pr_roman.0012= {
+	trigger = {
+		NOT = {
+			any_character_artifact = {
+				has_artifact_modifier = pr_book_about_mythology
+			}
+		}
+	}
+	type = character_event
+	title = pr_roman.0012.t
+	desc = pr_roman.0012.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = market_west }
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman.0012.a
+		remove_short_term_gold = 15
+		save_scope_as = owner
+		set_artifact_rarity_illustrious = yes
+		create_artifact = {
+			name = roman_mythology_book
+			description = roman_mythology_book_description
+			type = miscellaneous
+			visuals = book
+			modifier = pr_book_about_mythology
+			quality = scope:quality
+		}
+
+	}
+}
+#Read about the story about Aeneas
+#More in the future ?
+pr_roman.0013 = {
+	trigger = {
+		religion = religion:roman_religion
+		any_character_artifact = {
+			has_artifact_modifier = pr_book_about_mythology
+		}
+	}
+	type = character_event
+	title = pr_roman.0013.t
+	desc = pr_roman.0013.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = council_chamber }
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman.0013.a
+		add_piety = 50
+
+	}
+}
+#Ruler picking court Augur
+pr_roman.0014 = {
+	type = character_event
+	title = pr_roman.0014.t
+	desc =  pr_roman.0014.decision.desc
+	theme = learning_scholarship_focus
+	left_portrait = scope:high_skill_option
+	lower_left_portrait = scope:mystic_option
+	right_portrait = scope:low_skill_option
+	lower_right_portrait = scope:excellent_skill_option
+
+	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a physician
+
+
+	immediate = {
+		hidden_effect = {
+			#Find some appropriate options
+
+			if = { #Performance heavy option finding is only for players
+				limit = { is_ai = no }
+
+				#EXCELLENT SKILL CHARACTER (for learned rulers)
+				if = {
+					limit = {
+						OR = {
+							has_learning_lifestyle_trait_trigger = yes
+							learning >= high_skill_rating
+						}
+					}
+					random_pool_character = {
+						province = capital_province
+						limit = {
+							pr_excellent_skill_augur_trigger = yes
+							has_trait = education_learning_3
+						}
+						alternative_limit = {
+							pr_excellent_skill_augur_trigger = yes
+						}
+						weight = {
+							base = 1
+							modifier = {
+								faith = root.faith
+								factor = 10
+							}
+						}
+
+						save_scope_as = excellent_skill_option
+						if = {
+							limit = { NOT = { has_trait = scholar } }
+							add_trait = education_learning_3
+							faith = root.faith
+						}
+
+						#Backup generation
+						if = {
+							limit = { NOT = { exists = scope:excellent_skill_option } }
+
+							create_character = {
+								location = root.capital_province
+								gender_female_chance = 50
+								template_character = root
+								random_traits = yes
+								add_trait = education_learning_3
+								age = { 18 50 }
+								faith = root.faith
+								learning = high_skill_rating
+								save_scope_as = excellent_skill_option
+							}
+							scope:excellent_skill_option = {
+								add_trait = education_learning_3
+							}
+						}
+					}
+				}
+
+				#HIGH-SKILL CHARACTER
+				random_pool_character = {
+					province = capital_province
+					limit = {
+						pr_high_skill_augur_trigger = yes
+						trigger_if = {
+							limit = {
+								exists = scope:excellent_skill_option
+							}
+							NOT = { this = scope:excellent_skill_option }
+						}
+					}
+					weight = {
+						base = 1
+						modifier = {
+							has_trait = lifestyle_mystic
+							factor = 100
+						}
+						modifier = {
+							faith = root.faith
+							factor = 10
+						}
+					}
+					save_scope_as = high_skill_option
+				}
+
+				#Backup generation
+				if = {
+					limit = { NOT = { exists = scope:high_skill_option } }
+
+					create_character = {
+						location = root.capital_province
+						gender_female_chance = 50
+						template_character = root
+						random_traits = yes
+						add_trait = education_learning_2
+						age = { 18 50 }
+						faith = root.faith
+						learning = { medium_skill_rating high_skill_rating }
+						save_scope_as = high_skill_option
+					}
+				}
+
+				#Set augur trait if skill is too low
+				if = {
+					limit = { exists = scope:high_skill_option }
+					scope:high_skill_option = {
+						set_to_lowborn = yes
+						while = {
+							limit = {
+								OR = {
+								AND = {
+										root = { highest_held_title_tier >= tier_kingdom }
+										learning < high_skill_rating
+									}
+									AND = {
+										root = { highest_held_title_tier <= tier_duchy }
+										learning < medium_skill_rating
+									}
+								}
+								NOT = { has_trait = education_learning_3 }
+							}
+							mystic_lifestyle_rank_up_effect = yes
+						}
+					}
+				}
+
+				#MYSTIC CHARACTER (optional, only if available in pool)
+				random_pool_character = {
+					province = root.capital_province
+					limit = {
+						pr_mystic_augur_trigger = yes
+						trigger_if = {
+							limit = {
+								exists = scope:excellent_skill_option
+							}
+							NOT = { this = scope:excellent_skill_option }
+						}
+						trigger_if = {
+							limit = {
+								exists = scope:high_skill_option
+							}
+							NOT = { this = scope:high_skill_option }
+						}
+					}
+					weight = {
+						base = 1
+						modifier = {
+							has_trait = lifestyle_mystic
+							factor = 100
+						}
+						modifier = {
+							faith = root.faith
+							factor = 10
+						}
+					}
+					save_scope_as = mystic_option
+				}
+
+				#Set mystic trait if skill is too low
+				if = {
+					limit = { exists = scope:mystic_option }
+					scope:mystic_option = {
+						while = {
+							limit = {
+								OR = {
+									AND = {
+										root = { highest_held_title_tier >= tier_kingdom }
+										learning < high_skill_rating
+									}
+									AND = {
+										root = { highest_held_title_tier <= tier_duchy }
+										learning < medium_skill_rating
+									}
+								}
+								NOT = { has_trait = mystic_3 }
+							}
+							ai_mystic_lifestyle_rank_up_effect = yes
+						}
+					}
+				}
+
+				#Low-medium skill character
+				random_pool_character = {
+					province = root.capital_province
+					limit = {
+						pr_low_skill_augur_trigger = yes
+						trigger_if = {
+							limit = {
+								exists = scope:excellent_skill_option
+							}
+							NOT = { this = scope:excellent_skill_option }
+						}
+						trigger_if = {
+							limit = {
+								exists = scope:high_skill_option
+							}
+							NOT = { this = scope:high_skill_option }
+						}
+						trigger_if = {
+							limit = {
+								exists = scope:mystic_option
+							}
+							NOT = { this = scope:mystic_option }
+						}
+					}
+					weight = {
+						base = 1
+						modifier = {
+							faith = root.faith
+							factor = 10
+						}
+					}
+					save_scope_as = low_skill_option
+				}
+			}
+			else = { #Ai get someone simple
+				random_pool_character = {
+					province = root.capital_province
+					limit = { pr_low_skill_augur_light_trigger = yes }
+					weight = {
+						base = 1
+						modifier = {
+							faith = root.faith
+							factor = 10
+						}
+					}
+					save_scope_as = low_skill_option
+				}
+			}
+
+			#Backup generation
+			if = {
+				limit = { NOT = { exists = scope:low_skill_option } }
+
+				create_character = {
+					location = root.capital_province
+					gender_female_chance = 50
+					template_character = root
+					random_traits = yes
+					age = { 18 50 }
+					faith = root.faith
+					learning = { medium_skill_rating decent_skill_rating }
+					save_scope_as = low_skill_option
+					add_trait = education_learning_1
+
+				}
+			}
+		}
+	}
+
+	#Amazing skill
+	option = {
+		trigger = {
+			exists = scope:excellent_skill_option
+			is_landed = yes #extra check to make sure they haven't lost their status
+		}
+		name = pr_roman.0014.e
+		trait = scholar
+		skill = learning
+
+		pay_short_term_gold = {
+			target = scope:excellent_skill_option
+			gold = high_skill_court_physician_cost
+		}
+		custom_tooltip = pr_roman.0014.a.tt
+
+		pr_appoint_court_position_effect = {
+			EMPLOYER = root
+			CANDIDATE = scope:excellent_skill_option
+			POSITION = pr_court_augur_court_position
+		}
+
+		ai_chance = {
+			factor = 500
+			modifier = {
+				short_term_gold < medium_gold_value
+				factor = 0
+			}
+		}
+	}
+
+	#High skill
+	option = {
+		trigger = {
+			is_landed = yes #extra check to make sure they haven't lost their status
+			exists = scope:high_skill_option #Doesn't exists for AI
+		}
+		name = pr_roman.0014.a
+
+		pay_short_term_gold = {
+			target = scope:high_skill_option
+			gold = high_skill_court_physician_cost
+		}
+		custom_tooltip = pr_roman.0014.a.tt
+
+		pr_appoint_court_position_effect = {
+			EMPLOYER = root
+			CANDIDATE = scope:high_skill_option
+			POSITION = pr_court_augur_court_position
+		}
+
+		ai_chance = {
+			factor = 100
+			modifier = {
+				short_term_gold < medium_gold_value
+				factor = 0
+			}
+		}
+	}
+
+	#Low
+	option = {
+		trigger = {
+			is_landed = yes #extra check to make sure they haven't lost their status
+		}
+		name = pr_roman.0014.b
+
+		if = {
+			limit = {
+				OR = {
+					is_ai = no
+					short_term_gold >= low_skill_court_physician_cost #Because AI would never have enough money and everyone would die
+				}
+			}
+			pay_short_term_gold = {
+				target = scope:low_skill_option
+				gold = low_skill_court_physician_cost
+			}
+		}
+		custom_tooltip = pr_roman.0014.a.tt
+
+		pr_appoint_court_position_effect = {
+			EMPLOYER = root
+			CANDIDATE = scope:low_skill_option
+			POSITION = pr_court_augur_court_position
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	#Mystic
+	option = {
+		trigger = {
+			exists = scope:mystic_option
+			is_landed = yes #extra check to make sure they haven't lost their status
+		}
+		name = pr_roman.0014.c
+
+		pay_short_term_gold = {
+			target = scope:mystic_option
+			gold = low_skill_court_physician_cost
+		}
+		custom_tooltip = pr_roman.0014.a.tt
+		add_piety = medium_piety_loss
+
+		pr_appoint_court_position_effect = {
+			EMPLOYER = root
+			CANDIDATE = scope:mystic_option
+			POSITION = pr_court_augur_court_position
+		}
+
+		stress_impact = {
+			zealous = minor_stress_impact_gain
+		}
+
+		hidden_effect = {
+			scope:mystic_option = {
+				if = {
+					limit = {
+						NOR = {
+							any_secret = { secret_type = secret_witch }
+							has_trait = witch
+						}
+					}
+					random = {
+						chance = 5
+						modifier = {
+							factor = 0
+							ai_zeal >= medium_positive_ai_value
+						}
+						modifier = {
+							factor = 2
+							ai_zeal <= high_negative_ai_value #high and not medium because mystic traits already remove some ai_zeal
+						}
+						give_witch_secret_or_trait_effect = yes
+					}
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 30
+			modifier = {
+				short_term_gold < minor_gold_value
+				factor = 0
+			}
+			ai_value_modifier = {
+				ai_zeal = tiny_chance_impact_negative_ai_value
+				max = 20
+			}
+		}
+	}
+
+	#None...
+	option = {
+		name = {
+			trigger = {
+				NOR = {
+					exists = scope:mystic_option
+					exists = scope:excellent_skill_option
+				}
+			}
+			text = pr_roman.0014.d.two
+		}
+		name = {
+			trigger = {
+				OR = {
+					exists = scope:mystic_option
+					exists = scope:excellent_skill_option
+				}
+			}
+			text = pr_roman.0014.d.more
+		}
+		custom_tooltip = pr_roman.0014.d.tt
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	after = {
+		hidden_effect = {
+
+		}
+
+		remove_character_flag = pr_hire_augur_decision_text
+	}
+}
+#Auspice start event
+pr_roman.0015 = {
+	type = character_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:pr_augur_auspice = flag:pr_sacred_hens
+				}
+				desc = pr_roman.0015.sacred_hens.t
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_augur_auspice = flag:pr_eagle
+				}
+				desc = pr_roman.0015.eagle.t
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_augur_auspice = flag:pr_crows
+				}
+				desc = pr_roman.0015.crows.t
+			}
+			desc = pr_roman.0015.fallback.desc
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:pr_augur_auspice = flag:pr_sacred_hens
+				}
+				desc = pr_roman.0015.sacred_hens.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_augur_auspice = flag:pr_eagle
+				}
+				desc = pr_roman.0015.eagle.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_augur_auspice = flag:pr_crows
+				}
+				desc = pr_roman.0015.crows.desc
+			}
+			desc = pr_roman.0015.fallback.desc
+		}
+	}
+	theme = learning_scholarship_focus
+	immediate = {
+		hidden_effect={
+			save_court_augur_as_effect = { SCOPE_NAME = augur}
+		}
+	}
+	override_background = { reference = market_west }
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+	right_portrait = {
+		character = scope:augur
+		animation = personality_content
+	}
+
+	option = { #Ask augur for auspice
+		name = pr_roman.0015.a
+		pr_augur_auspice_effect = yes
+		remove_short_term_gold = 50
+	}
+	option = { # Try to buy a good outcome
+		name = pr_roman.0015.b
+		trigger = {
+			intrigue >= high_skill_rating
+		}
+		pr_buy_good_auspice_effect = yes
+	}
+}
+
+#Augur auspice (no bribe) good
+pr_roman.0016 = {
+	type = character_event
+	title = pr_roman.0016.t
+	immediate = {
+		hidden_effect={
+			save_scope_as = scoped_ruler
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:pr_augur_auspice = flag:pr_sacred_hens
+				}
+				desc = pr_roman.0016.sacred_hens.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_augur_auspice = flag:pr_eagle
+				}
+				desc = pr_roman.0016.eagle.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_augur_auspice = flag:pr_crows
+				}
+				desc = pr_roman.0016.crows.desc
+			}
+			desc = pr_roman.0016.fallback.desc
+		}
+
+	}
+	override_background = { reference = market_west }
+	left_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_content
+	}
+	right_portrait = {
+		character = scope:augur
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman.0016.a
+		if = {
+			limit ={
+				var:pr_augur_auspice = flag:pr_eagle
+			}
+			add_character_modifier = {
+				modifier = pr_good_auspice_eagle
+				years = 3
+			}
+			if = {
+				limit = {
+					has_game_rule = pr_augury_on
+				}
+				remove_character_modifier = pr_augur_not_requested
+			}
+
+		}
+		else_if ={
+			limit = {
+				var:pr_augur_auspice = flag:pr_sacred_hens
+			}
+			add_character_modifier = {
+				modifier = pr_good_auspice_sacred_hens
+				years = 3
+			}
+			if = {
+				limit = {
+					has_game_rule = pr_augury_on
+				}
+				remove_character_modifier = pr_augur_not_requested
+			}
+		}
+		else_if = {
+			limit = {
+				var:pr_augur_auspice = flag:pr_crows
+			}
+			add_character_modifier = {
+				modifier = pr_good_auspice_crows
+				years = 3
+			}
+			if = {
+				limit = {
+					has_game_rule = pr_augury_on
+				}
+				remove_character_modifier = pr_augur_not_requested
+			}
+		}
+	}
+}
+
+#Augur accepts bribe
+pr_roman.0017 = {
+	type = character_event
+	title = pr_roman.0017.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:pr_augur_auspice = flag:pr_sacred_hens
+				}
+				desc = pr_roman.0017.scared_hens.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_augur_auspice = flag:pr_eagle
+				}
+				desc = pr_roman.0017.eagle.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_augur_auspice = flag:pr_crows
+				}
+				desc = pr_roman.0017.crows.desc
+			}
+			desc = pr_roman.0017.fallback.desc
+		}
+
+	}
+	override_background = { reference = market_west }
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+	right_portrait = {
+		character = scope:augur
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman.0017.a
+		trigger_event = pr_roman.0016
+		remove_short_term_gold = 200
+
+	}
+}
+
+#Augur doesn't accept the bribe
+pr_roman.0018 = {
+	type = character_event
+	title = pr_roman.0018.t
+	desc = pr_roman.0018.desc
+	immediate = {
+		hidden_effect={
+			save_court_augur_as_effect = { SCOPE_NAME = augur}
+		}
+	}
+	override_background = { reference = market_west }
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+	right_portrait = {
+		character = scope:augur
+		animation = anger
+	}
+	option = {
+		name = pr_roman.0018.a
+		add_character_modifier = {
+			modifier = pr_failed_bribing_augur
+			years = 3
+		}
+	}
+}
+
+#Special event eagle owl interference
+pr_roman.0020 = {
+	type = character_event
+	title = pr_roman.0020.t
+	desc = pr_roman.0020.desc
+	immediate = {
+		hidden_effect={
+			save_court_augur_as_effect = { SCOPE_NAME = augur}
+		}
+	}
+	override_background = { reference = market_west }
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	right_portrait = {
+		character = scope:augur
+		animation = fear
+	}
+	option = {
+		name = pr_roman.0020.a
+		if = {
+			limit = {
+				has_game_rule = pr_augury_on
+			}
+			remove_character_modifier = pr_augur_not_requested
+		}
+	}
+}
+
+#Bad auspice
+pr_roman.0021 = {
+	type = character_event
+	title = pr_roman.0021.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:pr_augur_auspice = flag:pr_sacred_hens
+				}
+				desc = pr_roman.0021.sacred_hens.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_augur_auspice = flag:pr_eagle
+				}
+				desc = pr_roman.0021.eagle.desc
+			}
+			triggered_desc = {
+				trigger = {
+					var:pr_augur_auspice = flag:pr_crows
+				}
+				desc = pr_roman.0021.crows.desc
+			}
+			desc = pr_roman.0021.fallback.desc
+		}
+
+	}
+	immediate = {
+		hidden_effect={
+			save_court_augur_as_effect = { SCOPE_NAME = augur}
+		}
+	}
+	override_background = { reference = market_west }
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	right_portrait = {
+		character = scope:augur
+		animation = personality_zealous
+	}
+	option = {
+		name = pr_roman.0021.a
+		if = {
+			limit = {
+				var:pr_augur_auspice = flag:pr_eagle
+			}
+			add_character_modifier = {
+				modifier = pr_bad_auspice_eagle
+				years = 3
+			}
+			if = {
+				limit = {
+					has_game_rule = pr_augury_on
+				}
+				remove_character_modifier = pr_augur_not_requested
+			}
+		}
+		else_if = {
+			limit = {
+				var:pr_augur_auspice = flag:pr_sacred_hens
+			}
+			add_character_modifier = {
+				modifier = pr_bad_auspice_sacred_hens
+				years = 3
+			}
+			if = {
+				limit = {
+					has_game_rule = pr_augury_on
+				}
+				remove_character_modifier = pr_augur_not_requested
+			}
+		}
+		else_if = {
+			limit = {
+				var:pr_augur_auspice = flag:pr_crows
+			}
+			add_character_modifier = {
+				modifier = pr_bad_auspice_crows
+				years = 3
+			}
+			if = {
+				limit = {
+					has_game_rule = pr_augury_on
+				}
+				remove_character_modifier = pr_augur_not_requested
+			}
+		}
+	}
+}
+#Event for if the augur decision isn't used for over 5 years
+#Option for a longer time to make it not a frustrating thing
+pr_roman.0022 = {
+	type = character_event
+	desc = pr_roman.0022.desc
+	title = pr_roman.0022.t
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	trigger = {
+		is_ai = no
+		NOT ={
+			has_character_modifier = pr_good_auspice_sacred_hens
+			has_character_modifier = pr_bad_auspice_sacred_hens
+			has_character_modifier = pr_good_auspice_crows
+			has_character_modifier = pr_bad_auspice_crows
+			has_character_modifier = pr_good_auspice_eagle
+			has_character_modifier = pr_bad_auspice_eagle
+			has_character_modifier = pr_augur_not_requested
+		}
+	}
+	option = {
+		name = pr_roman.0022.a
+		add_character_modifier = pr_augur_not_requested
+	}
+}
+#Build own Lararium
+pr_roman.0023 = {
+	desc =  pr_roman.0023.desc
+	type = character_event
+	title = pr_roman.0023.t
+	theme = learning_scholarship_focus
+	override_background = { reference = market_west }
+	left_portrait = {
+		character = root
+		animation = content
+	}
+	option = {
+		name = pr_roman.0023.jupiter
+		trigger = {
+			NOT = {
+				any_character_artifact = {
+					has_artifact_modifier = pr_statue_jupiter
+				}
+			}
+		}
+		save_scope_as = owner
+		set_artifact_rarity_illustrious  = yes
+		create_artifact = {
+			name = roman_statue_jupiter
+			description = roman_statue_jupiter_description
+			type = miscellaneous
+			visuals = pr_jupiter_statue
+			modifier = pr_statue_jupiter
+			quality = scope:quality
+		}
+		remove_short_term_gold = 50
+	}
+	option = {
+		name = pr_roman.0023.juno
+		trigger = {
+			NOT = {
+				any_character_artifact = {
+					has_artifact_modifier = pr_statue_juno
+				}
+			}
+		}
+		save_scope_as = owner
+		set_artifact_rarity_illustrious  = yes
+		create_artifact = {
+			name = roman_statue_juno
+			description = roman_statue_juno_description
+			type = miscellaneous
+			modifier = pr_statue_juno
+			visuals = pr_juno_statue
+			save_scope_as = roman_statue_juno
+			quality = scope:quality
+		}
+		remove_short_term_gold = 50
+	}
+	option = {
+		name = pr_roman.0023.mars
+		trigger = {
+			NOT = {
+				any_character_artifact = {
+					has_artifact_modifier = pr_statue_mars
+				}
+			}
+		}
+		save_scope_as = owner
+		set_artifact_rarity_illustrious  = yes
+		create_artifact = {
+			name = roman_statue_mars
+			description = roman_statue_mars_description
+			type = miscellaneous
+			visuals = pr_mars_statue
+			modifier = pr_statue_mars
+			quality = scope:quality
+		}
+		remove_short_term_gold = 50
+	}
+	option = {
+		name = pr_roman.0023.venus
+		trigger = {
+			NOT = {
+				any_character_artifact = {
+					has_artifact_modifier = pr_statue_venus
+				}
+			}
+		}
+		save_scope_as = owner
+		set_artifact_rarity_illustrious  = yes
+		create_artifact = {
+			name = roman_statue_venus
+			description = roman_statue_venus_description
+			type = miscellaneous
+			visuals = pr_venus_statue
+			modifier = pr_statue_venus
+			quality = scope:quality
+		}
+		remove_short_term_gold = 50
+	}
+	option = {
+		name = pr_roman.0023.mercurius
+		trigger = {
+			NOT = {
+				any_character_artifact = {
+					has_artifact_modifier = pr_statue_mercurius
+				}
+			}
+		}
+		save_scope_as = owner
+		set_artifact_rarity_illustrious  = yes
+		create_artifact = {
+			name = roman_statue_mercurius
+			description = roman_statue_mercurius_description
+			type = miscellaneous
+			visuals = pr_mercurius_statue
+			modifier = pr_statue_mercurius
+			quality = scope:quality
+		}
+		remove_short_term_gold = 50
+	}
+	option = {
+		name = pr_roman.0023.minerva
+		trigger = {
+			NOT = {
+				any_character_artifact = {
+					has_artifact_modifier = pr_statue_minerva
+				}
+			}
+		}
+		save_scope_as = owner
+		set_artifact_rarity_illustrious  = yes
+		create_artifact = {
+			name = roman_statue_minerva
+			description = roman_statue_minerva_description
+			type = miscellaneous
+			visuals = pr_minerva_statue
+			modifier = pr_statue_minerva
+			quality = scope:quality
+		}
+		remove_short_term_gold = 50
+	}
+	option = {
+		name = pr_roman.0023.apollo
+		trigger = {
+			NOT = {
+				any_character_artifact = {
+					has_artifact_modifier = pr_statue_apollo
+				}
+			}
+		}
+		save_scope_as = owner
+		set_artifact_rarity_illustrious  = yes
+		create_artifact = {
+			name = roman_statue_apollo
+			description = roman_statue_apollo_description
+			type = miscellaneous
+			visuals = pr_apollo_statue
+			modifier = pr_statue_apollo
+			quality = scope:quality
+		}
+		remove_short_term_gold = 50
+	}
+	option = {
+		name = pr_roman.0023.cancel
+	}
+}
+
+pr_roman.0024 = {
+	desc =  {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					AND = {
+						has_trait = pr_cdr_iupiter #Iupiter
+						any_character_artifact = {
+							has_artifact_modifier = pr_statue_jupiter
+						}
+
+					}
+					 OR = {
+					 	var:pr_ritual  = flag:pr_wine_offering
+						var:pr_ritual  = flag:pr_incense_offering
+						var:pr_ritual  = flag:pr_fruit_offering
+					}
+				}
+				desc = cdr.r.0009.desc
+			}
+			desc = pr_roman.0021.fallback.desc
+		}
+	}
+	type = character_event
+	title = pr_roman.0024.t
+	theme = learning_scholarship_focus
+	override_background = { reference = market_west }
+
+	option = {
+		name = pr_roman.0024.a
+	}
+}
+
+pr_roman_cult.0026 = {
+	type = character_event
+	desc = pr_roman_cult.0026.desc
+	title = pr_roman_cult.0026.t
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_mithraeum }
+	immediate = {
+		hidden_effect={
+			save_court_pater_mithras_as_effect = { SCOPE_NAME = pater}
+		}
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:pater
+		animation = personality_content
+	}
+	option = {
+		name = pr_roman_cult.0026.a
+		add_trait = pr_leo_mithras
+		remove_trait = pr_miles_mithras
+	}
+}
+
+pr_roman_cult.0025 = {
+	type = character_event
+	title = pr_roman_cult.0025.t # The Call to Advance
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { has_trait = pr_corax_mithras }
+				desc = pr_roman_cult.0025.corax.desc # As a Corax, I have served...
+			}
+			triggered_desc = {
+				trigger = { has_trait = pr_nymphus_mithras }
+				desc = pr_roman_cult.0025.nymphus.desc # As a Nymphus, I have tended the sacred lamps...
+			}
+			triggered_desc = {
+				trigger = { has_trait = pr_miles_mithras }
+				desc = pr_roman_cult.0025.miles.desc # As a Miles, I have proven my endurance...
+			}
+			triggered_desc = {
+				trigger = { has_trait = pr_leo_mithras }
+				desc = pr_roman_cult.0025.leo.desc # As a Leo, I have handled the sacred fire...
+			}
+			triggered_desc = {
+				trigger = { has_trait = pr_perses_mithras }
+				desc = pr_roman_cult.0025.perses.desc # As a Perses, I have guarded the sacred honey...
+			}
+			triggered_desc = {
+				trigger = { has_trait = pr_heliodromus_mithras }
+				desc = pr_roman_cult.0025.heliodromus.desc # As a Heliodromus, I have carried the light of the Sun...
+			}
+			desc = pr_roman_cult.0025.fallback.desc
+		}
+	}
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_mithraeum }
+
+	immediate = {
+		hidden_effect={
+			save_court_pater_mithras_as_effect = { SCOPE_NAME = pater}
+		}
+	}
+
+	left_portrait = {
+		character = scope:pater
+		animation = personality_content
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	# Corax to Nymphus
+	option = {
+		name = pr_roman_cult.0025.corax.a # I am ready for the trial of the Bridegroom.
+		trigger = {
+			has_trait = pr_corax_mithras
+			learning >= 8
+		}
+		add_trait = pr_nymphus_mithras
+		remove_trait = pr_corax_mithras
+		add_piety = 50
+		custom_tooltip = pr_roman_cult.0025.corax.a.tt
+	}
+
+	# Nymphus to Miles
+	option = {
+		name = pr_roman_cult.0025.nymphus.a # I am ready for the trial of the Soldier.
+		trigger = {
+			has_trait = pr_nymphus_mithras
+			martial >= 12
+		}
+		trigger_event = pr_roman_cult.0027 # New event for the Miles trial
+	}
+
+	# Miles to Leo
+	option = {
+		name = pr_roman_cult.0025.miles.a # I am ready for the trial of the Lion.
+		trigger = {
+			has_trait = pr_miles_mithras
+			prowess >= 10
+		}
+		trigger_event = pr_roman_cult.0026 # Existing event for the Leo trial
+	}
+
+	# Leo to Perses
+	option = {
+		name = pr_roman_cult.0025.leo.a # I am ready for the trial of the Persian.
+		trigger = {
+			has_trait = pr_leo_mithras
+			stewardship >= 12
+		}
+		remove_trait = pr_leo_mithras
+		add_trait = pr_perses_mithras
+		add_piety = 100
+		custom_tooltip = pr_roman_cult.0025.leo.a.tt
+	}
+
+	# Perses to Heliodromus
+	option = {
+		name = pr_roman_cult.0025.perses.a # I am ready for the trial of the Sun-Runner.
+		trigger = {
+			has_trait = pr_perses_mithras
+			diplomacy >= 15
+		}
+		remove_trait = pr_perses_mithras
+		add_trait = pr_heliodromus_mithras
+		add_piety = 150
+		custom_tooltip = pr_roman_cult.0025.perses.a.tt
+	}
+
+	# Heliodromus to Pater
+	option = {
+		name = pr_roman_cult.0025.heliodromus.a # I am ready to become a Father.
+		trigger = {
+			has_trait = pr_heliodromus_mithras
+			learning >= 20
+		}
+		remove_trait = pr_heliodromus_mithras
+		add_trait = pr_pater_mithras
+		add_piety = 250
+		custom_tooltip = pr_roman_cult.0025.heliodromus.a.tt
+	}
+
+	# Just a normal meeting
+	option = {
+		name = pr_roman_cult.0025.standard
+		add_piety = 10
+	}
+}
+
+pr_roman_cult.0027 = { # New event for the Miles (Soldier) initiation
+	type = character_event
+	title = pr_roman_cult.0027.t # The Trial of the Soldier
+	desc = pr_roman_cult.0027.desc
+	theme = martial_focus
+	override_background = { reference = pr_mithraeum }
+
+	immediate = {
+		hidden_effect={
+			save_court_pater_mithras_as_effect = { SCOPE_NAME = pater}
+		}
+	}
+
+	left_portrait = {
+		character = scope:pater
+		animation = personality_content
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0027.a # My only crown is Mithras!
+		add_trait = pr_miles_mithras
+		remove_trait = pr_nymphus_mithras
+		add_piety = 75
+		add_prestige = 50
+	}
+}
+
+
+#Invite latin speaker
+pr_roman.0026 = {
+	type = character_event
+	desc = pr_roman.0026.desc
+	title = pr_roman.0026.t
+	theme = learning_scholarship_focus
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				template = pr_court_latin_linguist_template
+				save_scope_as = pr_latin_speaker
+				dynasty = none
+			}
+			scope:pr_latin_speaker = {
+				learn_language_of_culture = culture:roman
+			}
+			random_courtier = {
+				limit = {
+					OR = {
+						culture = { has_cultural_pillar = heritage_pr_greek }
+						culture = culture:greek
+						culture = culture:pr_greek
+					}
+					NOT = { knows_language_of_culture = culture:roman }
+				}
+				save_scope_as = pr_greek_opponent
+			}
+		}
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:pr_latin_speaker
+		animation = personality_rational
+	}
+	override_background = { reference = throne_room }
+
+	option = {
+		name = pr_roman.0026.a
+		trigger = {
+			NOT = { exists = scope:pr_greek_opponent }
+		}
+		culture = {
+			set_culture_pillar = language_latin
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_character_artifact = {
+						has_artifact_modifier = pr_gallic_wars_book_modifier
+					}
+				}
+			}
+			save_scope_as = owner
+			set_artifact_rarity_illustrious = yes
+			create_artifact = {
+				name = pr_gallic_wars_book
+				description = pr_gallic_wars_book_description
+				type = miscellaneous
+				visuals = book
+				modifier = pr_gallic_wars_book_modifier
+				quality = scope:quality
+			}
+		}
+	}
+
+	option = {
+		name = pr_roman.0026.b
+		trigger = {
+			exists = scope:pr_greek_opponent
+		}
+		culture = {
+			set_culture_pillar = language_latin
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_character_artifact = {
+						has_artifact_modifier = pr_gallic_wars_book_modifier
+					}
+				}
+			}
+			save_scope_as = owner
+			set_artifact_rarity_illustrious = yes
+			create_artifact = {
+				name = pr_gallic_wars_book
+				description = pr_gallic_wars_book_description
+				type = miscellaneous
+				visuals = book
+				modifier = pr_gallic_wars_book_modifier
+				quality = scope:quality
+			}
+		}
+		trigger_event = {
+			days = 3
+			id = pr_roman.0050
+		}
+	}
+}
+
+pr_roman.0029 = {
+	type = character_event
+	title = pr_roman.0029.t
+	desc = pr_roman.0029.desc
+	theme = learning
+	immediate = {
+		if = {
+			limit = {
+				faith = { exists = religious_head }
+				any_held_title = { is_head_of_faith = no }
+			}
+			faith.religious_head = {
+				save_scope_as = religious_head
+			}
+		}
+	}
+
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+	left_portrait = {
+		character = scope:religious_head
+		animation = personality_content
+	}
+	#proceed
+	option = {
+		name = pr_roman.0029.a
+
+		trigger_event = {
+			id = pr_roman.0030
+			years = 1
+		}
+	}
+	option = {
+		name = pr_roman.0029.cancel
+	}
+}
+
+pr_roman.0030 = {
+	type = character_event
+	title = pr_roman.0030.t
+	desc = pr_roman.0030.desc
+	theme = learning
+	immediate = {
+		if = {
+			limit = {
+				faith = { exists = religious_head }
+				any_held_title = { is_head_of_faith = no }
+			}
+			faith.religious_head = {
+				save_scope_as = religious_head
+			}
+		}
+	}
+
+	left_portrait = {
+		character = scope:religious_head
+		animation = personality_content
+	}
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman.0030.jupiter
+		save_scope_as = owner
+		set_artifact_rarity_illustrious  = yes
+		create_artifact = {
+			name = pr_roman_sybelline_books
+			description = pr_roman_sybelline_books_description
+			type = pedestal
+			visuals = book
+			modifier = pr_sibylline_books
+			quality = scope:quality
+		}
+	}
+	option = {
+		name = pr_roman.0030.mars
+		add_piety = -100
+		save_scope_as = owner
+		set_artifact_rarity_illustrious  = yes
+		create_artifact = {
+			name = pr_roman_sybelline_books
+			description = pr_roman_sybelline_books_description
+			type = pedestal
+			visuals = book
+			modifier = pr_sibylline_books
+			quality = scope:quality
+		}
+	}
+	option = {
+		name = pr_roman.0030.venus
+		add_piety = -100
+		save_scope_as = owner
+		set_artifact_rarity_illustrious  = yes
+		create_artifact = {
+			name = pr_roman_sybelline_books
+			description = pr_roman_sybelline_books_description
+			type = pedestal
+			visuals = book
+			modifier = pr_sibylline_books
+			quality = scope:quality
+		}
+	}
+	option = {
+		name = pr_roman.0030.minerva
+		add_piety = -100
+		save_scope_as = owner
+		set_artifact_rarity_illustrious  = yes
+		create_artifact = {
+			name = pr_roman_sybelline_books
+			description = pr_roman_sybelline_books_description
+			type = pedestal
+			visuals = book
+			modifier = pr_sibylline_books
+			quality = scope:quality
+		}
+	}
+}
+
+#Secret faiths
+pr_roman.0028 = {
+	type = character_event
+	desc = pr_roman.0028.desc
+	title = pr_roman.0028.t
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman.0028.a
+		set_character_faith = faith:cdr_polytheism
+		if = {
+			limit = { exists = secret_faith }
+			remove_character_secret_faith = yes
+		}
+		remove_list_global_variable = {
+			name = research_roman
+			target = flag:flag_research_roman
+		}
+	}
+
+}
+
+pr_roman.0031 = {
+	type = character_event
+	desc = pr_roman.0031.desc
+	title = pr_roman.0031.t
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	immediate = {
+		remove_nickname = yes
+	}
+
+	option = {
+		name = pr_roman.0031.polytheistic_nick
+		give_nickname = nick_templorum_restaurator
+
+	}
+	option = {
+		name = pr_roman.0031.christian_nick
+		give_nickname = nick_the_apostate
+	}
+	option = {
+		name = pr_roman.0031.philosopher_nick
+		give_nickname = nick_the_philosopher
+	}
+
+	option = {
+		name = pr_roman.0031.jewish_nick
+		give_nickname = nick_the_hellen
+	}
+}
+
+#Cults
+
+pr_roman_cult.0029 = {
+	type = character_event
+	desc = pr_roman_cult.0029.desc
+	title = pr_roman_cult.0029.t
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0029.a
+		set_character_faith = faith:cdr_polytheism
+		if = {
+			limit = { exists = secret_faith }
+			remove_character_secret_faith = yes
+		}
+	}
+
+}
+
+pr_roman_cult.0030 = {
+	type = character_event
+	desc = pr_roman_cult.0030.desc
+	title = pr_roman_cult.0030.t
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0030.a
+		set_character_faith = faith:cdr_polytheism
+		if = {
+			limit = { exists = secret_faith }
+			remove_character_secret_faith = yes
+		}
+	}
+
+}
+
+pr_roman_cult.0032 = {
+	type = character_event
+	desc = pr_roman_cult.0032.desc
+	title = pr_roman_cult.0032.t
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0032.a
+		set_character_faith = faith:cdr_polytheism
+		if = {
+			limit = { exists = secret_faith }
+			remove_character_secret_faith = yes
+		}
+	}
+
+}
+
+pr_roman_cult.0035 = {
+	type = character_event
+	desc = pr_roman_cult.0035.desc
+	title = pr_roman_cult.0035.t
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0035.a
+	}
+}
+# Should I LARP or nah?
+ep3_roman_restoration.0100 = {
+	type = character_event
+	window = fullscreen_event
+	title = ep3_roman_restoration.0100.t
+	desc = ep3_roman_restoration.0100.desc
+	theme = emperor
+	override_background = { reference = ep3_fullscreen_restore_rome }
+
+	immediate = {
+		save_scope_as = scoped_emperor
+	}
+
+	option = { # LARP (Hard Mode)
+		name = ep3_roman_restoration.0100.a
+		custom_tooltip = ep3_roman_restoration.hard_mode
+		custom_tooltip = ep3_roman_restoration.end_hard_mode
+		custom_tooltip = ep3_roman_restoration.invasion_cb
+		set_character_faith = faith:hellenic_pagan
+		primary_title = { set_state_faith = faith:hellenic_pagan }
+		every_held_title = {
+			custom = custom.every_held_county
+			limit = { tier = tier_county }
+			set_county_faith = faith:hellenic_pagan
+		}
+		every_vassal = {
+			custom = custom.every_admin_vassal
+			limit = {
+				government_allows = administrative
+				faith != faith:hellenic_pagan
+			}
+			set_character_faith = faith:hellenic_pagan
+		}
+		custom_tooltip = {
+			text = ep3_roman_restoration.household_gods_tenet
+			set_global_variable = household_gods_tenet_unlocked
+		}
+		custom_tooltip = {
+			text = uses_custom_caesar_flavourization_tt
+			set_variable = uses_custom_caesar_flavourization
+		}
+	}
+	option = { # LARP (Hard Mode)
+		name = ep3_roman_restoration.0100.c
+		custom_tooltip = ep3_roman_restoration.hard_mode
+		custom_tooltip = ep3_roman_restoration.end_hard_mode
+		custom_tooltip = ep3_roman_restoration.invasion_cb
+		set_character_faith = faith:cdr_polytheism
+		primary_title = { set_state_faith = faith:cdr_polytheism }
+		every_held_title = {
+			custom = custom.every_held_county
+			limit = { tier = tier_county }
+			set_county_faith = faith:cdr_polytheism
+		}
+		every_vassal = {
+			custom = custom.every_admin_vassal
+			limit = {
+				government_allows = administrative
+				faith != faith:cdr_polytheism
+			}
+			set_character_faith = faith:cdr_polytheism
+		}
+		custom_tooltip = {
+			text = ep3_roman_restoration.household_gods_tenet
+			set_global_variable = household_gods_tenet_unlocked
+		}
+		custom_tooltip = {
+			text = uses_custom_caesar_flavourization_tt
+			set_variable = uses_custom_caesar_flavourization
+		}
+	}
+	option = { # Easy Mode
+		name = ep3_roman_restoration.0100.b
+		custom_tooltip = ep3_roman_restoration.easy_mode
+		if = {
+			limit = {
+				any_owned_story = { story_type = ep3_story_cycle_restoring_rome }
+			}
+			random_owned_story = {
+				limit = { story_type = ep3_story_cycle_restoring_rome }
+				end_story = yes
+			}
+		}
+	}
+
+	after = {
+		create_roman_empire_scripted_effect = yes
+		set_nickname_effect = { NICKNAME = nick_the_glorious }
+		# Send narrative fluff to other players (if any).
+		every_player = {
+			limit = { NOT = { this = root } }
+			trigger_event = ep3_roman_restoration.0101
+		}
+	}
+}
+
+# Some chucklefuck restored Rome
+ep3_roman_restoration.0101 = {
+	type = character_event
+	window = fullscreen_event
+	title = roman_restoration.0002.t
+	desc = {
+		desc = ep3_roman_restoration.0101.intro
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:scoped_emperor.primary_title.state_faith ?= faith:hellenic_pagan }
+				desc = ep3_roman_restoration.0101.hellenic
+			}
+			triggered_desc = {
+				trigger = { scope:scoped_emperor.primary_title.state_faith ?= faith:orthodox }
+				desc = ep3_roman_restoration.0101.orthodox
+			}
+			desc = ep3_roman_restoration.0101.fallback
+		}
+		desc = ep3_roman_restoration.0101.outro
+	}
+	theme = emperor
+	override_background = { reference = ep3_fullscreen_restore_rome }
+
+	immediate = {
+		#Same-faith non-empire tier rulers are over-awed.
+		if = {
+			limit = { faith = scope:scoped_emperor.primary_title.state_faith }
+			play_music_cue = "mx_cue_epic_sacral_moment"
+		}
+		#Otherwise, this is a tacit statement of imperial threat.
+		else = { play_music_cue = "mx_cue_combat_2" }
+	}
+
+	option = {
+		name = ep3_roman_restoration.0101.a
+	}
+}
+
+
+#Romanize the tribes based on evanglize the tribes
+pr_roman.0032 = {
+	type = character_event
+	title = pr_roman.0032.t
+	desc = pr_roman.0032.desc
+	theme = emperor
+	override_background = { reference = ep3_hagia_sophia }
+
+	left_portrait = {
+		character = root
+		animation = prayer
+	}
+	right_portrait = {
+		character = scope:evangelizer
+		animation = wedding_priest
+	}
+	lower_right_portrait = scope:pagan
+
+	immediate = {
+		if = {
+			limit = {
+				has_title = title:e_byzantium
+			}
+			random_neighboring_and_across_water_top_liege_realm_owner = {
+				limit = {
+					valid_for_pagan_conversion_trigger = yes
+				}
+				save_scope_as = pagan
+			}
+		}
+		else = {
+			random_neighboring_and_across_water_realm_same_rank_owner = {
+				limit = {
+					valid_for_pagan_conversion_trigger = yes
+				}
+				save_scope_as = pagan
+			}
+		}
+		scope:pagan.primary_title = { save_scope_as = title_to_convert }
+		random_pool_character = {
+			province = root.location
+			limit = {
+				faith = root.faith
+				learning >= 18
+			}
+			save_scope_as = evangelizer
+		}
+		if = {
+			limit = {
+				NOT = { exists = scope:evangelizer }
+			}
+			random_list = {
+				25 = {
+					trigger = { NOT = { root.faith = { has_doctrine_parameter = clergy_must_be_female } } }
+					create_character = {
+						location = root.location
+						name = "Kyrillos"
+						template = ep3_evangelizer_template
+						gender_female_chance = 0
+						save_scope_as = evangelizer
+					}
+				}
+				25 = {
+					trigger = { NOT = { root.faith = { has_doctrine_parameter = clergy_must_be_female } } }
+					create_character = {
+						location = root.location
+						name = "Methodios"
+						template = ep3_evangelizer_template
+						gender_female_chance = 0
+						save_scope_as = evangelizer
+					}
+				}
+				25 = {
+					trigger = { NOT = { root.faith = { has_doctrine_parameter = clergy_must_be_female } } }
+					create_character = {
+						location = root.location
+						name = "Konstantinos"
+						template = ep3_evangelizer_template
+						gender_female_chance = 0
+						save_scope_as = evangelizer
+					}
+				}
+				25 = {
+					trigger = { NOT = { root.faith = { has_doctrine_parameter = clergy_must_be_female } } }
+					create_character = {
+						location = root.location
+						name = "Michael"
+						template = ep3_evangelizer_template
+						gender_female_chance = 0
+						save_scope_as = evangelizer
+					}
+				}
+				25 = {
+					trigger = { NOT = { root.faith = { has_doctrine_parameter = clergy_must_be_male } } }
+					create_character = {
+						location = root.location
+						template = ep3_evangelizer_template
+						gender_female_chance = 100
+						save_scope_as = evangelizer
+					}
+				}
+			}
+		}
+		add_courtier = scope:evangelizer
+		save_scope_as = sender
+		location = { save_scope_as = starting_point }
+	}
+
+	option = {
+		name = pr_roman.0032.a
+		custom_tooltip = pr_roman.0032.a.tt
+		scope:evangelizer = {
+			start_travel_plan = {
+				destination = scope:pagan.capital_province
+				on_arrival_event = pr_roman.0033
+				on_arrival_destinations = all
+				return_trip = no # One way
+			}
+		}
+	}
+}
+
+pr_roman.0033 = {
+	hidden = yes
+
+	immediate = {
+		#scope:evangelizer = { set_location = { location = scope:pagan.capital_province stick_to_location = yes } }
+		scope:pagan = { add_visiting_courtier = scope:evangelizer }
+		if = {
+			limit = {
+				scope:pagan = {
+					OR = {
+						is_alive = no
+						is_landed = no
+					}
+				}
+			}
+			scope:title_to_convert.holder = { save_scope_as = pagan }
+		}
+		scope:pagan.faith = { save_scope_as = old_faith }
+		# Player event for scope:pagan
+		if = {
+			limit = {
+				scope:pagan = { is_ai = no }
+			}
+			scope:pagan = {
+				trigger_event = {
+					id = pr_roman.0034
+					days = 1
+				}
+			}
+		}
+		# AI event for the evangelizer
+		else = {
+			scope:evangelizer = {
+				trigger_event = {
+					id = pr_roman.0035
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+pr_roman.0034 = {
+	type = character_event
+	title = pr_roman.0032.t
+	desc = pr_roman.0034.desc
+	theme = emperor
+
+	trigger = {
+		scope:evangelizer = { is_alive = yes }
+	}
+
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:evangelizer
+		animation = wedding_priest
+	}
+	lower_right_portrait = scope:sender
+
+	#Option A: hear them out
+	option = {
+		name = pr_roman.0034.a
+		create_character_memory = {
+			type = was_evangelized_memory
+			participants = { missionary = scope:evangelizer sender = scope:sender }
+		}
+		set_character_faith_with_conversion = scope:evangelizer.faith
+		custom_tooltip = pr_roman.0034.a.tt
+		custom_tooltip = negotiated_alliance_delay_tt
+		show_as_tooltip = {
+			create_alliance = {
+				target = scope:sender
+				allied_through_owner = scope:pagan
+				allied_through_target = scope:sender
+			}
+			scope:sender = {
+				add_opinion = {
+					target = scope:pagan
+					modifier = event_negotiated_alliance_opinion
+				}
+			}
+		}
+		scope:evangelizer = {
+			add_character_flag = success_conversion
+		}
+		scope:sender = {
+			create_character_memory = {
+				type = evangelized_memory
+				participants = { missionary = scope:evangelizer pagan = scope:pagan }
+			}
+		}
+		stress_impact = {
+			zealous = major_stress_impact_gain
+			content = major_stress_impact_gain
+			craven = medium_stress_impact_gain
+			arrogant = minor_stress_impact_gain
+		}
+	}
+
+	#Option C: no thanks with stab
+	option = {
+		name = pr_roman.0034.c
+		flavor = pr_roman.0034.c.tt
+		add_piety = major_piety_gain
+		scope:evangelizer = {
+			death = {
+				death_reason = death_execution
+				killer = root
+			}
+		}
+		scope:sender = {
+			trigger_event = {
+				id = pr_roman.0038
+				days = 3
+			}
+		}
+		scope:pagan = {
+			add_character_flag = do_not_disturb_preachers
+		}
+		scope:title_to_convert = {
+			set_variable = do_not_disturb_preachers
+		}
+		stress_impact = {
+			compassionate = major_stress_impact_gain
+			calm = major_stress_impact_gain
+			gregarious = medium_stress_impact_gain
+			zealous = medium_stress_impact_gain
+		}
+	}
+
+	#Option B: no thanks
+	option = {
+		name = pr_roman.0034.b
+		add_piety = medium_piety_gain
+		scope:evangelizer = {
+			add_character_flag = failed_conversion
+		}
+	}
+
+	after = {
+		if = {
+			limit = {
+				scope:sender = { is_alive = yes }
+				scope:evangelizer = { is_alive = yes }
+			}
+			scope:evangelizer = {
+				start_travel_plan = {
+					destination = scope:sender.location
+					on_arrival_event = pr_roman.0036
+					on_arrival_destinations = all
+					return_trip = no # One way
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:evangelizer = { is_alive = yes }
+			}
+			scope:evangelizer = {
+				start_travel_plan = {
+					destination = scope:starting_point
+					on_arrival_event = pr_roman.0036
+					on_arrival_destinations = all
+					return_trip = no # One way
+				}
+			}
+		}
+	}
+}
+#Ai event
+pr_roman.0035 = {
+	type = character_event
+	title = pr_roman.0036.t
+	desc = pr_roman.0036.desc
+	theme = emperor
+
+	trigger = {
+		scope:evangelizer = { is_alive = yes }
+	}
+
+	left_portrait = {
+		character = root
+		animation = wedding_priest
+	}
+	right_portrait = {
+		character = scope:pagan
+		animation = thinking
+	}
+	lower_right_portrait = scope:sender
+
+	immediate = {
+		scope:evangelizer = {
+			duel = {
+				skill = learning
+				target = scope:pagan
+				50 = { # Convert
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 3.5
+						min = -49
+					}
+					modifier = {
+						scope:pagan = {
+							has_trait = fickle
+						}
+						add = 10
+					}
+					modifier = {
+						scope:pagan = {
+							has_trait = craven
+						}
+						add = 10
+					}
+					modifier = {
+						scope:pagan = {
+							has_trait = intellect_bad
+						}
+						add = 10
+					}
+					scope:pagan = {
+						set_character_faith_with_conversion = scope:evangelizer.faith
+						create_character_memory = {
+							type = was_evangelized_memory
+							participants = { missionary = scope:evangelizer sender = scope:sender }
+						}
+					}
+					scope:sender = {
+						create_character_memory = {
+							type = evangelized_memory
+							participants = { missionary = scope:evangelizer pagan = scope:pagan }
+						}
+					}
+					show_as_tooltip = {
+						scope:pagan = {
+							create_alliance = {
+								target = scope:sender
+								allied_through_owner = scope:pagan
+								allied_through_target = scope:sender
+							}
+						}
+						scope:sender = {
+							add_opinion = {
+								target = scope:pagan
+								modifier = event_negotiated_alliance_opinion
+							}
+						}
+					}
+					scope:evangelizer = {
+						add_character_flag = success_conversion
+					}
+				}
+				50 = { # Not convert
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -3.5
+						min = -49
+					}
+					modifier = {
+						scope:pagan = {
+							has_trait = theologian
+						}
+						add = 10
+					}
+					modifier = {
+						scope:pagan = {
+							has_trait = stubborn
+						}
+						add = 10
+					}
+					scope:pagan = { add_piety = medium_piety_gain }
+					scope:evangelizer = {
+						add_character_flag = failed_conversion
+					}
+				}
+				5 = { # They _really_ don't wanna convert
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -3.5
+						min = -49
+					}
+					modifier = {
+						scope:pagan = {
+							has_trait = sadistic
+						}
+						add = 5
+					}
+					modifier = {
+						scope:pagan = {
+							has_trait = callous
+						}
+						add = 5
+					}
+					modifier = {
+						scope:pagan = {
+							has_trait = torturer
+						}
+						add = 5
+					}
+					scope:pagan = { add_piety = major_piety_gain }
+					scope:evangelizer = {
+						death = {
+							death_reason = death_execution
+							killer = root
+						}
+					}
+					scope:sender = {
+						trigger_event = {
+							id = pr_roman.0038
+							days = 3
+						}
+					}
+					scope:pagan = {
+						add_character_flag = do_not_disturb_preachers
+					}
+					scope:title_to_convert = {
+						set_variable = do_not_disturb_preachers
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = pr_roman.0035.a
+	}
+
+	after = {
+		if = {
+			limit = {
+				scope:sender = { is_alive = yes }
+				scope:evangelizer = { is_alive = yes }
+			}
+			scope:evangelizer = {
+				start_travel_plan = {
+					destination = scope:sender.location
+					on_arrival_event = pr_roman.0036
+					on_arrival_destinations = all
+					return_trip = no # One way
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:evangelizer = { is_alive = yes }
+			}
+			scope:evangelizer = {
+				start_travel_plan = {
+					destination = scope:starting_point
+					on_arrival_event = pr_roman.0036
+					on_arrival_destinations = all
+					return_trip = no # One way
+				}
+			}
+		}
+	}
+}
+
+pr_roman.0036= {
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				scope:sender = { is_alive = yes }
+			}
+			scope:sender = {
+				save_scope_as = recipient
+				trigger_event = {
+					id = pr_roman.0037
+					days = 1
+				}
+			}
+		}
+		else = {
+			scope:starting_point.barony.holder.top_liege = {
+				save_scope_as = new_sender
+				save_scope_as = recipient
+				trigger_event = {
+					id = pr_roman.0037
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+pr_roman.0037 = {
+	type = character_event
+	title = pr_roman.0032.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:new_sender
+				}
+				desc = pr_roman.0037.desc_new
+			}
+			desc = pr_roman.0037.desc_old
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:evangelizer = {
+						has_character_flag = success_conversion
+					}
+				}
+				desc = pr_roman.0037.desc_success
+			}
+			desc = pr_roman.0037.desc_failure
+		}
+	}
+	theme = emperor
+
+	left_portrait = {
+		character = scope:recipient
+		triggered_animation = {
+			trigger = {
+				scope:evangelizer = { has_character_flag = success_conversion }
+			}
+			animation = prayer
+		}
+		triggered_animation = {
+			trigger = {
+				scope:evangelizer = { has_character_flag = failed_conversion }
+			}
+			animation = disapproval
+		}
+	}
+	right_portrait = {
+		character = scope:evangelizer
+		animation = wedding_priest
+	}
+	lower_right_portrait = scope:pagan
+
+	immediate = {
+		if = {
+			limit = {
+				scope:evangelizer = {
+					has_character_flag = success_conversion
+				}
+			}
+			show_as_tooltip = {
+				scope:pagan = {
+					set_character_faith_with_conversion = scope:evangelizer.faith
+				}
+			}
+			custom_tooltip = pr_roman.0037.a.tt
+			scope:pagan = {
+				create_alliance = {
+					target = scope:sender
+					allied_through_owner = scope:pagan
+					allied_through_target = scope:sender
+				}
+			}
+			scope:sender = {
+				add_opinion = {
+					target = scope:pagan
+					modifier = event_negotiated_alliance_opinion
+				}
+			}
+			gain_holy_legend_seed_tooltip_effect = yes
+			hidden_effect = {
+				legend_seed_great_deed_faith_effect = {
+					ANTAGONIST = scope:pagan
+					OLD_FAITH = scope:old_faith
+				}
+			}
+		}
+	}
+
+	option = {
+		name = pr_roman.0037.a
+		trigger = {
+			scope:evangelizer = {
+				has_character_flag = success_conversion
+			}
+		}
+		change_influence = major_influence_gain
+		add_prestige = major_prestige_gain
+	}
+
+	option = {
+		name = pr_roman.0037.b
+		trigger = {
+			scope:evangelizer = {
+				has_character_flag = failed_conversion
+			}
+		}
+		change_influence = medium_influence_gain
+		add_prestige = medium_prestige_gain
+	}
+}
+
+pr_roman.0038 = {
+	type = character_event
+	title = pr_roman.0032.t
+	desc = pr_roman.0038.desc
+	theme = emperor
+
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+	lower_right_portrait = scope:pagan
+	lower_left_portrait = scope:evangelizer
+
+	immediate = {
+		show_as_tooltip = {
+			scope:evangelizer = {
+				death = {
+					death_reason = death_execution
+					killer = scope:pagan
+				}
+			}
+		}
+	}
+
+	# Option A: they will pay!
+	option = {
+		name = pr_roman.0038.a
+		change_influence = medium_influence_gain
+		add_prestige = medium_prestige_gain
+		if = {
+			limit = {
+				can_set_relation_rival_trigger = { CHARACTER = scope:pagan }
+			}
+			set_relation_rival = {
+				reason = rival_killed_religious_emissary
+				target = scope:pagan
+			}
+		}
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			add_opinion = {
+				target = scope:pagan
+				modifier = hate_opinion
+				opinion = -50
+			}
+		}
+		ai_chance = {
+			ai_value_modifier = {
+				ai_vengefulness = 1
+			}
+		}
+	}
+}
+
+pr_roman.0039 = {
+	type = character_event
+	title = pr_roman.0039.t
+	desc = pr_roman.0039.desc
+	theme = emperor
+
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	option = {
+		name = pr_roman.0039.a
+		title:c_byzantion.title_province = {
+		add_special_building = temple_to_all_gods_constantinople
+		}
+
+	}
+}
+
+pr_roman.0040 = {
+	type = character_event
+	title = pr_roman.0040.t
+	desc = pr_roman.0040.desc
+	theme = emperor
+
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	option = {
+		name = pr_roman.0040.a
+		title:b_vaticano.title_province = {
+		add_special_building = temple_to_all_gods_rome
+		}
+	}
+}
+
+pr_roman.0041 = {
+	type = character_event
+	title = pr_roman.0041.t
+	desc = pr_roman.0041.desc
+	theme = emperor
+	immediate = {
+		select_valid_daughter_and_save_scope = yes
+	}
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	right_portrait = {
+		character = scope:daughter
+		animation = personality_content
+	}
+	option = {
+		trigger = {
+			exists = scope:daughter
+		}
+		name = pr_roman.0041.a
+		scope:daughter = {
+			add_trait = vestalis
+		}
+		add_prestige = 150
+		add_piety = 150
+		# create_character_memory = {
+		# 	type = pr_vestal_daughter_memory
+		# 	participants = { vestal = scope:daughter emperor = root }
+		# }
+
+
+	}
+	option = {
+		name = pr_roman.0041.cancel
+	}
+
+}
+
+
+pr_roman.0042 = {
+	type = character_event
+	title = pr_roman.0042.t
+	desc = pr_roman.0042.desc
+	theme = war
+
+	right_portrait = {
+		character = root
+		animation = personality_martial
+	}
+
+	option = {
+		name = pr_roman.0042.a
+	}
+}
+pr_roman.0043 = {
+	type = character_event
+	title = pr_roman.0043.t
+	desc = pr_roman.0043.desc
+	theme = diplomacy
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman.0043.a
+	}
+}
+#Restore cults events
+pr_roman_cult.0042 = {
+	type = character_event
+	desc = pr_roman_cult.0042.desc
+	title = pr_roman_cult.0042.t
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+
+		animation = personality_content
+	}
+	# left_portrait = {
+	# 	character = scope:cult_leader_mithras
+	# 	animation = personality_rational
+	# }
+
+	option = {
+		name = pr_roman_cult.0042.mithras #Mithras cult
+		trigger = {
+			religion = religion:roman_religion
+			NOR = {
+				exists = global_var:restored_mithras_cult
+			}
+		}
+		if = {
+			limit = {
+				martial = {8 10}
+			}
+			remove_short_term_gold = {
+				value = 100
+				multiply = 3
+				round = yes
+			}
+
+		}
+		else_if = {
+			limit = {
+				martial < 8
+			}
+			remove_short_term_gold = {
+				value = 100
+				multiply = 6
+				round = yes
+			}
+		}
+		else = {
+			remove_short_term_gold = {
+				value = 100
+				multiply = 1.5
+				round = yes
+			}
+
+		}
+		if = {
+			limit = {
+				has_trait = cynical
+			}
+			add_piety = major_piety_loss
+
+		}
+		else_if = {
+			limit = {
+				has_trait = zealous
+			}
+			add_piety = major_piety_gain
+		}
+		else = {
+			add_piety = medium_piety_gain
+		}
+
+		trigger_event = pr_roman_cult.0028
+	}
+	option = {
+		name = pr_roman_cult.0042.isis #Isis cult
+		trigger = {
+			OR = {
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+				faith = faith:kemetic_polytheism
+			}
+			NOR = {
+				exists = global_var:restored_isis_cult
+			}
+		}
+		if = {
+			limit = {
+				diplomacy < 8
+			}
+			remove_short_term_gold = {
+				value = 100
+				multiply = 6
+				round = yes
+			}
+
+		}
+		else_if = {
+			limit = {
+				diplomacy = {8 10}
+			}
+			remove_short_term_gold = {
+				value = 100
+				multiply = 3
+				round = yes
+			}
+		}
+		else = {
+			remove_short_term_gold = {
+				value = 100
+				multiply = 1.5
+				round = yes
+			}
+
+		}
+		if = {
+			limit = {
+				has_trait = cynical
+			}
+			add_piety = major_piety_loss
+
+		}
+		else_if = {
+			limit = {
+				has_trait = zealous
+			}
+			add_piety = major_piety_gain
+		}
+		else = {
+			add_piety = medium_piety_gain
+		}
+
+		trigger_event = pr_roman_cult.0043
+	}
+	option = {
+		name = pr_roman_cult.0042.sol_invictus #Sol invictus cult
+		trigger = {
+			religion = religion:roman_religion
+			NOR = {
+				exists = global_var:restored_sol_invictus_cult
+			}
+		}
+		if = {
+			limit = {
+				prestige < 1000
+			}
+			remove_short_term_gold = {
+				value = 100
+				multiply = 6
+				round = yes
+			}
+
+		}
+		else_if = {
+			limit = {
+				prestige <= 1400
+			}
+			remove_short_term_gold = {
+				value = 100
+				multiply = 3
+				round = yes
+			}
+		}
+		else = {
+			remove_short_term_gold = {
+				value = 100
+				multiply = 1.5
+				round = yes
+			}
+
+		}
+		if = {
+			limit = {
+				has_trait = cynical
+			}
+			add_piety = major_piety_loss
+
+		}
+		else_if = {
+			limit = {
+				has_trait = zealous
+			}
+			add_piety = major_piety_gain
+		}
+		else = {
+			add_piety = medium_piety_gain
+		}
+		trigger_event = pr_roman_cult.0045
+	}
+	option = {
+		name = pr_roman_cult.0042.serapis #Serapis cult
+		trigger = {
+			OR = {
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+				faith = faith:kemetic_polytheism
+			}
+			NOR = {
+				exists = global_var:restored_serapis_cult
+			}
+		}
+		if = {
+			limit = {
+				learning < 8
+			}
+			remove_short_term_gold = {
+				value = 100
+				multiply = 6
+				round = yes
+			}
+
+		}
+		else_if = {
+			limit = {
+				learning = {8 10}
+			}
+			remove_short_term_gold = {
+				value = 100
+				multiply = 3
+				round = yes
+			}
+		}
+		else = {
+			remove_short_term_gold = {
+				value = 100
+				multiply = 1.5
+				round = yes
+			}
+
+		}
+		if = {
+			limit = {
+				has_trait = cynical
+			}
+			add_piety = major_piety_loss
+
+		}
+		else_if = {
+			limit = {
+				has_trait = zealous
+			}
+			add_piety = major_piety_gain
+		}
+		else = {
+			add_piety = medium_piety_gain
+		}
+		trigger_event = pr_roman_cult.0031
+	}
+	option = {
+		name = pr_roman_cult.0042.more
+		trigger_event = pr_roman_cult.0048
+	}
+	option = {
+		name = pr_roman_cult.0042.close
+	}
+
+}
+
+# Other cults (Eleusinian, Imperial, Bacchus, Cybele)
+pr_roman_cult.0048 = {
+	type = character_event
+	desc = pr_roman_cult.0048.desc
+	title = pr_roman_cult.0048.t
+	theme = learning_scholarship_focus
+	right_portrait = {
+		character = root
+
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0048.eleusinian #Eleusinian cult
+		trigger = {
+			OR = {
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+
+			}
+			NOR = {
+				exists = global_var:restored_eleusinian_cult
+			}
+		}
+		if = {
+			limit = {
+				intrigue < 8
+
+			}
+			remove_short_term_gold = {
+				value = 100
+				multiply = 6
+				round = yes
+			}
+
+		}
+		else_if = {
+			limit = {
+				intrigue = {8 10}
+			}
+			remove_short_term_gold = {
+				value = 100
+				multiply = 3
+				round = yes
+			}
+		}
+		else = {
+			remove_short_term_gold = {
+				value = 100
+				multiply = 1.5
+				round = yes
+			}
+
+		}
+		if = {
+			limit = {
+				has_trait = cynical
+			}
+			add_piety = major_piety_loss
+
+		}
+		else_if = {
+			limit = {
+				has_trait = zealous
+			}
+			add_piety = major_piety_gain
+		}
+		else = {
+			add_piety = medium_piety_gain
+		}
+		trigger_event = pr_roman_cult.0046
+	}
+	option = {
+		name = pr_roman_cult.0048.imperial #Imperial cult
+		trigger = {
+			OR = {
+				religion = religion:roman_religion
+				religion = religion:hellenism_religion
+				faith = faith:kemetic_polytheism
+
+			}
+			NOR = {
+				exists = global_var:restored_imperial_cult
+			}
+		}
+		if = {
+			limit = {
+				influence < 1000
+			}
+			remove_short_term_gold = {
+				value = 100
+				multiply = 6
+				round = yes
+			}
+
+		}
+		else_if = {
+			limit = {
+				influence <= 1400
+			}
+			remove_short_term_gold = {
+				value = 100
+				multiply = 6
+				round = yes
+			}
+		}
+		else = {
+			remove_short_term_gold = {
+				value = 100
+				multiply = 1.5
+				round = yes
+			}
+
+		}
+		if = {
+			limit = {
+				has_trait = cynical
+			}
+			add_piety = major_piety_loss
+
+		}
+		else_if = {
+			limit = {
+				has_trait = zealous
+			}
+			add_piety = major_piety_gain
+		}
+		else = {
+			add_piety = medium_piety_gain
+		}
+		trigger_event = pr_roman_cult.0034
+	}
+	option = {
+		name = pr_roman_cult.0048.bacchus #Bacchus cult
+		trigger = {
+				religion = religion:roman_religion
+			NOR = {
+				exists = global_var:restored_bacchus_cult
+			}
+		}
+		if = {
+			limit = {
+				has_trait = lustful
+			}
+			remove_short_term_gold = {
+				value = 100
+				multiply = 1
+				round = yes
+			}
+		}
+		else = {
+			remove_short_term_gold = {
+				value = 100
+				multiply = 6
+				round = yes
+			}
+		}
+		if = {
+			limit = {
+			   OR = {
+					has_trait = cynical
+					has_trait = shy
+			   }
+
+			}
+			add_piety = major_piety_loss
+
+		}
+		else_if = {
+			limit = {
+				has_trait = zealous
+			}
+			add_piety = major_piety_gain
+		}
+		else = {
+			add_piety = medium_piety_gain
+		}
+		trigger_event = pr_roman_cult.0033
+	}
+	option = {
+		name = pr_roman_cult.0048.cybele #Cybele cult
+		trigger = {
+				religion = religion:roman_religion
+			NOR = {
+				exists = global_var:restored_cybele_cult
+			}
+		}
+		trigger_event = pr_roman_cult.0044
+	}
+	option = {
+		name = pr_roman_cult.0048.back
+		trigger_event = pr_roman_cult.0042
+	}
+	option = {
+		name = pr_roman_cult.0048.close
+	}
+
+}
+#This works, needs more events and options and maybe a storyline
+pr_roman_cult.0028 = {#Mithras Cult
+	type = character_event
+	desc = pr_roman_cult.0028.desc
+	title = pr_roman_cult.0028.t
+	theme = learning_scholarship_focus
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				template = new_commander_character
+				random_traits = no
+				save_scope_as = cult_leader_mithras
+				martial  = 20
+				learning =  8
+				gender  = male
+				trait = mithras_cult
+				trait = zealous
+				dynasty = generate
+				trait = pr_pater_mithras
+			}
+		}
+	}
+	right_portrait = {
+		character = root
+
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:cult_leader_mithras
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman_cult.0028.a
+		hidden_effect = {
+			scope:cult_leader_mithras = {
+				give_nickname = nick_pater_mithras
+			}
+		}
+		set_global_variable = {
+			name = restored_mithras_cult
+			value = yes
+		}
+		set_global_variable = {
+			name = can_join_cult
+			value = yes
+		}
+	}
+}
+pr_roman_cult.0043 = { #Isis Cult
+	type = character_event
+	desc = pr_roman_cult.0043.desc
+	title = pr_roman_cult.0043.t
+	theme = learning_scholarship_focus
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				random_traits = no
+				save_scope_as = cult_leader_isis
+				learning =  20
+				gender  = female
+				trait = isis_cult
+				trait = zealous
+				dynasty = generate
+				trait = hierophant_isis
+			}
+		}
+	}
+	right_portrait = {
+		character = root
+
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:cult_leader_isis
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman_cult.0043.a
+		hidden_effect = {
+			scope:cult_leader_isis = {
+				give_nickname = nick_hierophant_isis
+			}
+		}
+		set_global_variable = {
+			name = restored_isis_cult
+			value = yes
+		}
+		set_global_variable = {
+			name = can_join_cult
+			value = yes
+		}
+	}
+}
+
+pr_roman_cult.0045 = { #Sol Invictus Cult
+	type = character_event
+	desc = pr_roman_cult.0045.desc
+	title = pr_roman_cult.0045.t
+	theme = learning_scholarship_focus
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				template = new_commander_character
+				random_traits = no
+				save_scope_as = cult_leader_sol_invictus
+				martial =  20
+				gender  = male
+				trait = sol_invictus_cult
+				trait = zealous
+				dynasty = generate
+				trait = hierophant_sol_invictus
+			}
+		}
+	}
+	right_portrait = {
+		character = root
+
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:cult_leader_sol_invictus
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman_cult.0045.a
+		hidden_effect = {
+			scope:cult_leader_sol_invictus = {
+				give_nickname = nick_hierophant_sol_invictus
+			}
+		}
+		set_global_variable = {
+			name = restored_sol_invictus_cult
+			value = yes
+		}
+		set_global_variable = {
+			name = can_join_cult
+			value = yes
+		}
+	}
+}
+
+pr_roman_cult.0031 = { #Serapis Cult
+	type = character_event
+	desc = pr_roman_cult.0031.desc
+	title = pr_roman_cult.0031.t
+	theme = learning_scholarship_focus
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				random_traits = no
+				save_scope_as = cult_leader_serapis
+				learning =  21
+				gender  = male
+				trait = serapis_cult
+				trait = zealous
+				dynasty = generate
+				trait = hierophant_serapis
+			}
+		}
+	}
+	right_portrait = {
+		character = root
+
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:cult_leader_serapis
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman_cult.0031.a
+		hidden_effect = {
+			scope:cult_leader_serapis = {
+				give_nickname = nick_hierophant_serapis
+			}
+		}
+		set_global_variable = {
+			name = restored_serapis_cult
+			value = yes
+		}
+		set_global_variable = {
+			name = can_join_cult
+			value = yes
+		}
+	}
+}
+
+pr_roman_cult.0046 = { #Eleusinian Cult
+	type = character_event
+	desc = pr_roman_cult.0046.desc
+	title = pr_roman_cult.0046.t
+	theme = learning_scholarship_focus
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				random_traits = no
+				save_scope_as = cult_leader_eleusinian
+				learning =  21
+				trait = eleusinian_cult
+				trait = zealous
+				dynasty = generate
+				trait = hierophant_eleusinian
+			}
+		}
+	}
+	right_portrait = {
+		character = root
+
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:cult_leader_eleusinian
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman_cult.0046.a
+		hidden_effect = {
+			scope:cult_leader_eleusinian = {
+				give_nickname = nick_hierophant_eleusinian
+			}
+		}
+		set_global_variable = {
+			name = restored_eleusinian_cult
+			value = yes
+		}
+		set_global_variable = {
+			name = can_join_cult
+			value = yes
+		}
+	}
+}
+
+pr_roman_cult.0033 = { #Bacchus Cult
+	type = character_event
+	desc = pr_roman_cult.0033.desc
+	title = pr_roman_cult.0033.t
+	theme = learning_scholarship_focus
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				random_traits = no
+				save_scope_as = cult_leader_bacchus
+				learning =  21
+				gender  = male
+				trait = bacchus_cult
+				trait = zealous
+				dynasty = generate
+				trait = hierophant_bacchus
+			}
+		}
+	}
+	right_portrait = {
+		character = root
+
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:cult_leader_bacchus
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman_cult.0033.a
+		hidden_effect = {
+			scope:cult_leader_bacchus = {
+				give_nickname = nick_hierophant_bacchus
+			}
+		}
+		set_global_variable = {
+			name = restored_bacchus_cult
+			value = yes
+		}
+		set_global_variable = {
+			name = can_join_cult
+			value = yes
+		}
+	}
+}
+
+pr_roman_cult.0034 = { #Imperial Cult
+	type = character_event
+	desc = pr_roman_cult.0034.desc
+	title = pr_roman_cult.0034.t
+	theme = learning_scholarship_focus
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				random_traits = no
+				save_scope_as = cult_leader_imperial
+				diplomacy =  21
+				gender  = male
+				trait = imperial_cult
+				trait = zealous
+				dynasty = generate
+				trait = augustalis_imperial_cult
+			}
+		}
+	}
+	right_portrait = {
+		character = root
+
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:cult_leader_imperial
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman_cult.0034.a
+		hidden_effect = {
+			scope:cult_leader_imperial = {
+				give_nickname = nick_augustalis_imperial
+			}
+		}
+		set_global_variable = {
+			name = restored_imperial_cult
+			value = yes
+		}
+		set_global_variable = {
+			name = can_join_cult
+			value = yes
+		}
+	}
+}
+
+pr_roman_cult.0044 = { #Cybele Cult
+	type = character_event
+	desc = pr_roman_cult.0044.desc
+	title = pr_roman_cult.0044.t
+	theme = learning_scholarship_focus
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				age = {30 50}
+				random_traits = no
+				save_scope_as = cult_leader_cybele
+				diplomacy =  21
+				gender  = male
+				trait = cybele_cult
+				trait = zealous
+				dynasty = generate
+				trait = beardless_eunuch
+				trait = hierophant_cybele
+			}
+		}
+	}
+	right_portrait = {
+		character = root
+
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:cult_leader_cybele
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman_cult.0044.a
+		hidden_effect = {
+			scope:cult_leader_cybele = {
+				give_nickname = nick_hierophant_cybele
+			}
+		}
+		set_global_variable = {
+			name = restored_cybele_cult
+			value = yes
+		}
+		set_global_variable = {
+			name = can_join_cult
+			value = yes
+		}
+	}
+}
+pr_roman_cult.0047 = {
+  	type = character_event
+	title = pr_roman_cult.0047.t
+	desc = pr_roman_cult.0047.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_generic_temple }
+	immediate = {
+		choose_new_vestalis_maxima = yes
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:new_vestalis_maxima
+		animation = personality_rational
+	}
+	option = {
+		name = pr_roman_cult.0047.a
+		trigger = {
+			ai = no
+		}
+		scope:new_vestalis_maxima = {
+			give_nickname = nick_vestalis_maxima
+		}
+	}
+	option = {
+		trigger = {
+			root = {
+				NOT = {
+					religion = religion:roman_religion
+				}
+
+			}
+
+		}
+		name = pr_roman_cult.0047.b
+		scope:new_vestalis_maxima = {
+			give_nickname = nick_vestalis_maxima
+		}
+	}
+	option = {
+		trigger = {
+			root = {
+				religion = religion:roman_religion
+			}
+		  is_ai = yes
+		}
+		name = pr_roman_cult.0047.ai
+	}
+}
+#Cult of Cybele
+pr_roman_cult.0050 = {
+	type = character_event
+	title = pr_roman_cult.0050.t # A Primal Calling
+	desc = pr_roman_cult.0050.desc
+	theme = faith
+	override_background = { reference = wilderness_forest }
+
+	right_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman_cult.0050.a # I must find the source of this sound.
+		trigger_event = {
+			id = pr_roman_cult.0051
+			days = { 10 20 }
+		}
+		add_piety = 25
+	}
+}
+
+pr_roman_cult.0051 = {
+	type = character_event
+	title = pr_roman_cult.0051.t # The Ecstatic Procession
+	desc = pr_roman_cult.0051.desc
+	theme = feast_activity
+	override_background = { reference = wilderness_forest_pine }
+
+	immediate = {
+		scope_archigallus_cybele_cult = yes
+	}
+
+	left_portrait = {
+		character = scope:cult_leader_cybele
+		animation = personality_content
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0051.a # I wish to understand this power.
+		trigger_event = pr_roman_cult.0052
+		remove_short_term_gold = 100
+	}
+	option = {
+		name = pr_roman_cult.0051.b # This is madness. I must leave.
+		add_stress = minor_stress_impact_gain
+	}
+}
+
+pr_roman_cult.0052 = {
+	type = character_event
+	title = pr_roman_cult.0052.t # The Taurobolium
+	desc = pr_roman_cult.0052.desc
+	theme = faith
+	override_background = { reference = pr_generic_temple } # Using this as a placeholder for a cave/pit
+
+	left_portrait = {
+		character = scope:cult_leader_cybele
+		animation = personality_content
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0052.a # Bathe me in blood! I am reborn!
+		add_trait = cybele_cult
+		add_piety = 150
+		add_prestige = 100
+		stress_impact = {
+			compassionate = major_stress_impact_gain
+			sadistic = major_stress_impact_loss
+			brave = medium_stress_impact_loss
+			craven = major_stress_impact_gain
+		}
+	}
+}
+
+pr_roman_cult.0053 = {
+  	type = character_event
+	title = pr_roman_cult.0053.t
+	desc = pr_roman_cult.0053.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_generic_temple }
+	immediate = {
+		choose_new_cult_leader_isis = yes
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:new_cult_leader_isis
+		animation = personality_rational
+	}
+	option = {
+		name = pr_roman_cult.0053.a
+		trigger = {
+			ai = no
+		}
+		scope:new_cult_leader_isis = {
+			give_nickname = nick_hierophant_isis
+		}
+	}
+}
+
+pr_roman_cult.0054 = {
+  	type = character_event
+	title = pr_roman_cult.0054.t
+	desc = pr_roman_cult.0054.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_generic_temple }
+	immediate = {
+		choose_new_cult_leader_serapis = yes
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:new_cult_leader_serapis
+		animation = personality_rational
+	}
+	option = {
+		name = pr_roman_cult.0054.a
+		trigger = {
+			ai = no
+		}
+		scope:new_cult_leader_serapis = {
+			give_nickname = nick_hierophant_serapis
+		}
+	}
+}
+
+pr_roman_cult.0055 = {
+  	type = character_event
+	title = pr_roman_cult.0055.t
+	desc = pr_roman_cult.0055.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_generic_temple }
+	immediate = {
+		choose_new_cult_leader_sol_invictus = yes
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:new_cult_leader_sol_invictus
+		animation = personality_rational
+	}
+	option = {
+		name = pr_roman_cult.0055.a
+		trigger = {
+			ai = no
+		}
+		scope:new_cult_leader_sol_invictus = {
+			give_nickname = nick_hierophant_sol_invictus
+		}
+	}
+}
+
+
+
+pr_roman_cult.0056 = {
+  	type = character_event
+	title = pr_roman_cult.0056.t
+	desc = pr_roman_cult.0056.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_generic_temple }
+	immediate = {
+		choose_new_cult_leader_eleusinian = yes
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:new_cult_leader_eleusinian
+		animation = personality_rational
+	}
+	option = {
+		name = pr_roman_cult.0056.a
+		trigger = {
+			ai = no
+		}
+		scope:new_cult_leader_eleusinian = {
+			give_nickname = nick_hierophant_eleusinian
+		}
+	}
+}
+
+
+pr_roman_cult.0057 = {
+  	type = character_event
+	title = pr_roman_cult.0057.t
+	desc = pr_roman_cult.0057.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_generic_temple }
+	immediate = {
+		choose_new_cult_leader_bacchus = yes
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:new_cult_leader_bacchus
+		animation = personality_rational
+	}
+	option = {
+		name = pr_roman_cult.0057.a
+		trigger = {
+			ai = no
+		}
+		scope:new_cult_leader_bacchus = {
+			give_nickname = nick_hierophant_bacchus
+		}
+	}
+}
+
+
+pr_roman_cult.0058 = {
+  	type = character_event
+	title = pr_roman_cult.0058.t
+	desc = pr_roman_cult.0058.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_generic_temple }
+	immediate = {
+		choose_new_cult_leader_cybele = yes
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:new_cult_leader_cybele
+		animation = personality_rational
+	}
+	option = {
+		name = pr_roman_cult.0058.a
+		trigger = {
+			ai = no
+		}
+		scope:new_cult_leader_cybele = {
+			give_nickname = nick_hierophant_cybele
+		}
+	}
+}
+
+
+
+pr_roman_cult.0059 = {
+  	type = character_event
+	title = pr_roman_cult.0059.t
+	desc = pr_roman_cult.0059.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_generic_temple }
+	immediate = {
+		choose_new_cult_leader_mithras = yes
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:new_cult_leader_mithras
+		animation = personality_rational
+	}
+	option = {
+		name = pr_roman_cult.0059.a
+		trigger = {
+			ai = no
+		}
+		scope:new_cult_leader_mithras = {
+			give_nickname = nick_pater_mithras
+		}
+	}
+}
+
+
+
+pr_roman_cult.0060 = {
+  	type = character_event
+	title = pr_roman_cult.0060.t
+	desc = pr_roman_cult.0060.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_generic_temple }
+	immediate = {
+		choose_new_cult_leader_imperial = yes
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:new_cult_leader_imperial
+		animation = personality_rational
+	}
+	option = {
+		name = pr_roman_cult.0060.a
+		trigger = {
+			ai = no
+		}
+		scope:new_cult_leader_imperial = {
+			give_nickname = nick_augustalis_imperial
+		}
+	}
+}
+
+pr_roman_cult.0061 = {
+	type = character_event
+	title = pr_roman_cult.0061.t
+	desc = pr_roman_cult.0061.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_mithraeum }
+	trigger = {
+		has_trait = mithras_cult
+	}
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman_cult.0061.a
+		add_piety = medium_piety_gain
+		add_prestige = minor_prestige_gain
+		if = {
+			limit = {
+				learning >= 15
+			}
+			add_learning_lifestyle_xp = 250
+		}
+		else = {
+			add_learning_lifestyle_xp = 100
+		}
+		trigger_event = pr_roman_cult.0062
+	}
+
+	option = {
+		name = pr_roman_cult.0061.b
+		add_piety =  medium_piety_loss
+		add_stress = minor_stress_impact_gain
+	}
+}
+
+pr_roman_cult.0062 = {
+	type = character_event
+	title = pr_roman_cult.0062.t
+	desc = pr_roman_cult.0062.desc
+	theme = learning_scholarship_focus
+	override_background = { reference = pr_mithraeum }
+	trigger = {
+		has_trait = mithras_cult
+	}
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman_cult.0062.a
+		add_piety = major_piety_gain
+		add_prestige = major_prestige_gain
+		add_character_modifier = {
+			modifier = mithraic_revelation
+			years = 10
+		}
+		stress_impact = {
+			zealous = major_stress_impact_loss
+			cynical = medium_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = pr_roman_cult.0062.b
+		add_short_term_gold = {
+			value = 124
+			multiply = 3
+			round = no
+		}
+		add_piety = minor_piety_loss
+
+		stress_impact = {
+			zealous = major_stress_impact_gain
+			cynical = medium_stress_impact_loss
+		}
+		add_trait = cynical
+	}
+}
+
+pr_roman_cult.0063 = {
+	type = character_event
+	title = pr_roman_cult.0063.t
+	desc = pr_roman_cult.0063.desc
+	theme = faith
+	override_background = { reference = wilderness_forest_pine }
+
+	trigger = {
+		has_trait = cybele_cult
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman_cult.0063.a # Join them! Let the Great Mother's spirit take me!
+		add_piety = 100
+		stress_impact = {
+			brave = major_stress_impact_loss
+			gregarious = medium_stress_impact_loss
+			shy = major_stress_impact_gain
+			compassionate = minor_stress_impact_gain
+		}
+		random_list = {
+			60 = {
+				add_character_modifier = {
+					modifier = cybele_ecstatic_revelry
+					years = 5
+				}
+			}
+			20 = {
+				add_trait = brave
+			}
+			20 = {
+				add_trait = lustful
+			}
+		}
+	}
+
+	option = {
+		name = pr_roman_cult.0063.b # I will watch from a safe distance.
+		add_piety = 25
+		add_learning_lifestyle_xp = 100
+		stress_impact = {
+			curious = minor_stress_impact_loss
+		}
+	}
+
+	option = {
+		name = pr_roman_cult.0063.c # This is chaos! Disperse them immediately!
+		add_piety = -75
+		add_dread = 10
+		add_stress = minor_stress_impact_gain
+	}
+}
+
+pr_roman_cult.0064 = {
+	type = character_event
+	title = pr_roman_cult.0064.t
+	desc = pr_roman_cult.0064.desc
+	theme = faith
+	override_background = { reference = bedchamber}
+
+	trigger = {
+		has_trait = eleusinian_cult
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman_cult.0064.a # I have seen a glimpse of the afterlife.
+		add_piety = 150
+		add_learning_lifestyle_xp = 150
+		add_character_modifier = {
+			modifier = eleusinian_vision
+			years = 10
+		}
+		stress_impact = {
+			zealous = medium_stress_impact_loss
+			mystic = medium_stress_impact_loss
+			cynical = minor_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = pr_roman_cult.0064.b # It was only a dream.
+		add_piety = -50
+		stress_impact = {
+			cynical = minor_stress_impact_loss
+			zealous = minor_stress_impact_gain
+		}
+	}
+}
+
+pr_roman_cult.0065 = {
+	type = character_event
+	title = pr_roman_cult.0065.t
+	desc = pr_roman_cult.0065.desc
+	theme = feast_activity
+	override_background = { reference = feast }
+
+	trigger = {
+		has_trait = bacchus_cult
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman_cult.0065.a # Pour me a cup! Tonight, I dance!
+		add_piety = 75
+		add_prestige = 50
+		add_character_modifier = {
+			modifier = bacchus_divine_madness
+			years = 3
+		}
+		stress_impact = {
+			gregarious = major_stress_impact_loss
+			lustful = medium_stress_impact_loss
+			temperate = major_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = pr_roman_cult.0065.b # Such indulgence is for lesser men.
+		add_piety = -25
+		add_stress = minor_stress_impact_gain
+		stress_impact = {
+			temperate = minor_stress_impact_loss
+		}
+	}
+}
+
+pr_roman_cult.0066 = {
+	type = character_event
+	title = pr_roman_cult.0066.t
+	desc = pr_roman_cult.0066.desc
+	theme = faith
+
+	trigger = {
+		has_trait = serapis_cult
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman_cult.0066.a # A comforting sign from the Great God.
+		add_piety = 100
+		add_character_modifier = {
+			modifier = serapis_ferryman_token
+			years = 10
+		}
+		stress_impact = {
+			paranoid = medium_stress_impact_loss
+			zealous = minor_stress_impact_loss
+		}
+	}
+
+	option = {
+		name = pr_roman_cult.0066.b # It is just an old coin.
+		add_piety = -25
+		stress_impact = {
+			cynical = minor_stress_impact_loss
+		}
+	}
+}
+
+pr_roman_cult.0067 = {
+	type = character_event
+	title = pr_roman_cult.0067.t
+	desc = pr_roman_cult.0067.desc
+	theme = faith
+
+	trigger = {
+		has_trait = isis_cult
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = pr_roman_cult.0067.a # I am blessed by her magic.
+		add_piety = 100
+		add_learning_lifestyle_xp = 200
+		add_character_modifier = {
+			modifier = isis_whispering_reed
+			years = 5
+		}
+		stress_impact = {
+			mystic = medium_stress_impact_loss
+			zealous = minor_stress_impact_loss
+		}
+	}
+
+	option = {
+		name = pr_roman_cult.0067.b # It is just the wind in a reed.
+		add_piety = -25
+		stress_impact = {
+			cynical = minor_stress_impact_loss
+		}
+	}
+}
+
+pr_roman_cult.0068 = {
+	type = character_event
+	title = pr_roman_cult.0068.t
+	desc = pr_roman_cult.0068.desc
+	theme = feast_activity
+	override_background = { reference = feast }
+
+	trigger = {
+		has_trait = bacchus_cult
+		NOT = { has_character_modifier = bacchus_vision_cooldown }
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0068.a # Indulge further.
+		add_piety = 50
+		add_stress = minor_stress_impact_loss
+		add_character_modifier = {
+			modifier = bacchus_vision_cooldown
+			years = 5
+		}
+		trigger_event = {
+			id = pr_roman_cult.0069
+			days = { 5 15 }
+		}
+	}
+
+	option = {
+		name = pr_roman_cult.0068.b # Withdraw from the revelry.
+		add_stress = minor_stress_impact_gain
+		add_piety = -25
+	}
+}
+
+pr_roman_cult.0069 = {
+	type = character_event
+	title = pr_roman_cult.0069.t
+	desc = pr_roman_cult.0069.desc
+	theme = feast_activity
+	override_background = { reference = bedchamber }
+
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = {
+		name = pr_roman_cult.0069.a # Embrace the vision.
+		add_piety = 100
+		add_prestige = 75
+		add_character_modifier = {
+			modifier = bacchus_divine_insight
+			years = 10
+		}
+		stress_impact = {
+			mystic = medium_stress_impact_loss
+			zealous = minor_stress_impact_loss
+			cynical = major_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = pr_roman_cult.0069.b # Dismiss it as a drunken dream.
+		add_piety = -50
+		add_stress = minor_stress_impact_gain
+		stress_impact = {
+			cynical = minor_stress_impact_loss
+		}
+	}
+}
+
+# =============================================
+# Latin Revival Chain (0050-0059)
+# Follow-up events to pr_roman.0026 (Invite Latin Speaker)
+# =============================================
+
+#--- The Greek Opposition (0050) ---
+pr_roman.0050 = {
+	type = character_event
+	desc = pr_roman.0050.desc
+	title = pr_roman.0050.t
+	theme = learning_scholarship_focus
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:pr_greek_opponent
+		animation = argumentative
+	}
+	override_background = { reference = throne_room }
+
+	option = {
+		name = pr_roman.0050.a # Greek and Latin shall coexist
+
+		scope:pr_greek_opponent = {
+			add_opinion = {
+				target = root
+				modifier = grateful_opinion
+				opinion = 15
+			}
+		}
+		add_prestige = 25
+		# A small learning boost from the cultural exchange
+		add_character_modifier = {
+			modifier = pr_latin_revival_diplomatic
+			years = 5
+		}
+		# The Latin speaker appreciates the diplomatic approach
+		if = {
+			limit = { is_alive = scope:pr_latin_speaker }
+			scope:pr_latin_speaker = {
+				add_opinion = {
+					target = root
+					modifier = grateful_opinion
+					opinion = 10
+				}
+			}
+			trigger_event = {
+				days = 14
+				id = pr_roman.0051
+			}
+		}
+	}
+
+	option = {
+		name = pr_roman.0050.b # Latin is the voice of Rome
+
+		subtract_prestige = 50
+		scope:pr_greek_opponent = {
+			add_opinion = {
+				target = root
+				modifier = disrespect_opinion
+				opinion = -15
+			}
+		}
+		# The Latin speaker feels emboldened
+		if = {
+			limit = { is_alive = scope:pr_latin_speaker }
+			scope:pr_latin_speaker = {
+				add_trait_xp = {
+					trait = lifestyle_scholar
+					value = { 50 100 }
+				}
+			}
+			trigger_event = {
+				days = 14
+				id = pr_roman.0051
+			}
+		}
+	}
+
+	option = {
+		name = pr_roman.0050.c # Perhaps you should learn Latin yourself
+
+		scope:pr_greek_opponent = {
+			learn_language_of_culture = culture:roman
+			random = {
+				chance = 50
+				add_trait = stubborn
+			}
+			add_opinion = {
+				target = root
+				modifier = insult_opinion
+				opinion = -25
+			}
+		}
+		add_stress = minor_stress_impact_gain
+
+		# Schedule the scriptory event
+		if = {
+			limit = { is_alive = scope:pr_latin_speaker }
+			trigger_event = {
+				days = 14
+				id = pr_roman.0051
+			}
+		}
+	}
+}
+
+#--- The Scriptory (0051) ---
+pr_roman.0051 = {
+	type = character_event
+	desc = pr_roman.0051.desc
+	title = pr_roman.0051.t
+	theme = learning_scholarship_focus
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:pr_latin_speaker
+		animation = storyteller
+	}
+	override_background = { reference = throne_room }
+
+	option = {
+		name = pr_roman.0051.a # Establish the scriptorium
+		trigger = { gold >= 150 }
+
+		subtract_gold = 150
+		scope:pr_latin_speaker = {
+			add_trait = lifestyle_scholar
+			add_opinion = {
+				target = root
+				modifier = grateful_opinion
+				opinion = 20
+			}
+		}
+		# Courtiers gradually learn Latin
+		any_courtier = {
+			limit = {
+				NOT = { knows_language_of_culture = culture:roman }
+				NOT = { is_landed = yes }
+			}
+			learn_language_of_culture = culture:roman
+		}
+		add_character_modifier = {
+			modifier = pr_scriptorium_established
+			years = 10
+		}
+	}
+
+	option = {
+		name = pr_roman.0051.b # We cannot afford such luxury
+		fallback = yes
+
+		scope:pr_latin_speaker = {
+			add_opinion = {
+				target = root
+				modifier = disrespect_opinion
+				opinion = -10
+			}
+		}
+		add_stress = minor_stress_impact_gain
+	}
+
+	option = {
+		name = pr_roman.0051.c # Make it a grand academy!
+		trigger = { gold >= 300 }
+
+		subtract_gold = 300
+		scope:pr_latin_speaker = {
+			add_trait = lifestyle_scholar
+			add_opinion = {
+				target = root
+				modifier = grateful_opinion
+				opinion = 30
+			}
+			random = {
+				chance = 33
+				add_trait = shrewd
+			}
+		}
+		# All courtiers learn Latin
+		any_courtier = {
+			limit = {
+				NOT = { knows_language_of_culture = culture:roman }
+			}
+			learn_language_of_culture = culture:roman
+		}
+		add_character_modifier = {
+			modifier = pr_grand_academy_established
+			years = 15
+		}
+		add_prestige = 100
+	}
+}
+

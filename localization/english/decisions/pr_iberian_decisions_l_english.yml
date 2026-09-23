@@ -1,0 +1,19 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Iberian Decisions
+  # Localization for pr_iberian_decisions.txt
+  # =============================================
+
+  # --- Choose Main Deity (Iberian) Decision ---
+  pr_iberian_choose_main_deity_decision:0 "Choose Main Deity"
+  pr_iberian_choose_main_deity_decision_desc:0 "#F The gods of the Iberian pantheon call for a champion to represent their will in the mortal realm. As a ruler of the Iberian faith, I must select a patron deity who will guide my actions and bless my rule with divine favor.#!\nBy choosing a main deity, I shall establish a personal connection with the divine, gaining unique blessings and modifiers that reflect the nature of my chosen god or goddess."
+  pr_iberian_choose_main_deity_decision_tooltip:0 "#T Select a patron deity from your Iberian faith to gain divine blessings#!"
+  pr_iberian_choose_main_deity_decision_confirm:0 "Choose Main Deity!"
+  pr_iberian_choose_main_deity_decision_tt:0 "#T Available Deities for [ROOT.Char.GetFaith.GetName]#!"
+
+  # --- Main Deity Selection Descriptions: Iberian ---
+  select_main_deity_iberian_decision.select_reue:0 "#T Reue#!\n#P The supreme sky god, father of the Iberian pantheon#!"
+  select_main_deity_iberian_decision.select_cariocecus:0 "#T Cariocecus#!\n#P God of war and the sacred warrior's path#!"
+  select_main_deity_iberian_decision.select_ataegina:0 "#T Ataegina#!\n#P Goddess of fertility, rebirth, and the dawn#!"
+  select_main_deity_iberian_decision.select_lucubo:0 "#T Lucubo#!\n#P God of wealth, commerce, and prosperity#!"
+  select_main_deity_iberian_decision.select_arancio:0 "#T Arancio#!\n#P God of healing and the flowing waters#!"

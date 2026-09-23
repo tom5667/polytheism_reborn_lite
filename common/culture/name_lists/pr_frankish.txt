@@ -1,0 +1,559 @@
+﻿name_list_pr_ripuarian = {
+
+	cadet_dynasty_names = {
+		{ "dynnp_von" "dynn_Franconia" }
+		{ "dynnp_von" "dynn_ThU_ringen" }
+		{ "dynnp_von" "dynn_Glogau" }
+		{ "dynn_Weimar" }
+		{ "dynnp_von" "dynn_Weimar" }
+		{ "dynnp_von" "dynn_Kleve" }
+		{ "dynnp_von" "dynn_Wickerode" }
+		{ "dynnp_von" "dynn_Arstein" }
+		{ "dynnp_von" "dynn_Veldenz" }
+		{ "dynnp_von" "dynn_Franken" }
+		{ "dynn_Babenberg" }
+		{ "dynnp_von" "dynn_Babenberg" }
+		{ "dynnp_von" "dynn_Saarbrucken" }
+		{ "dynnp_von" "dynn_Henneberg" }
+		{ "dynnp_von" "dynn_Nassau" }
+		{ "dynnp_von" "dynn_Heimbach" }
+		{ "dynnp_von" "dynn_Vianden" }
+		{ "dynnp_von" "dynn_NO_rvenich" }
+		{ "dynnp_von" "dynn_JU_lich" }
+		{ "dynnp_von" "dynn_Eppstein" }
+		{ "dynnp_von" "dynn_Metz" }
+		{ "dynn_Roes" }
+		{ "dynnp_von" "dynn_Hornes" }
+		{ "dynn_Bluome" }
+		{ "dynnp_von" "dynn_Schweinfurt" }
+		{ "dynnp_de" "dynn_Luxembourg" }
+		{ "dynn_Hainaut" }
+		{ "dynnp_von" "dynn_Boulogne" }
+		{ "dynnp_von" "dynn_Arnstein" }
+		{ "dynnp_von" "dynn_KO_ln" }
+		{ "dynnp_von" "dynn_Wippra" }
+		{ "dynnp_von" "dynn_Isenberg" }
+		{ "dynnp_von" "dynn_der_Mark" }
+		{ "dynnp_von" "dynn_Diest" }
+		{ "dynnp_von" "dynn_Rietberg" }
+		{ "dynnp_von" "dynn_RU_ssel" }
+		{ "dynnp_von" "dynn_Waldeck" }
+		{ "dynnp_von" "dynn_Bassenheim" }
+		{ "dynnp_von" "dynn_Kerpen" }
+		{ "dynnp_von" "dynn_Tunna" }
+		{ "dynnp_von" "dynn_Salza" }
+		{ "dynnp_von" "dynn_Malberg" }
+		{ "dynnp_von" "dynn_Hohenlohe" }
+		{ "dynnp_von" "dynn_WU_llersleben" }
+		{ "dynnp_von" "dynn_Osterna" }
+		{ "dynnp_von" "dynn_Heldrungen" }
+		{ "dynnp_von" "dynn_Schwanden" }
+		{ "dynnp_von" "dynn_Feuchtwangen" }
+		{ "dynnp_von" "dynn_Trier" }
+		{ "dynnp_von" "dynn_Orseln" }
+		{ "dynnp_von" "dynn_Nauen" }
+		{ "dynn_Suerbeer" }
+		{ "dynnp_von" "dynn_Lunen" }
+		{ "dynnp_von" "dynn_Vechta" }
+		{ "dynn_Pernstein" }
+		{ "dynnp_von" "dynn_Pernstein" }
+		{ "dynnp_von" "dynn_Dorpat" }
+		{ "dynnp_von" "dynn_Vyshusen" }
+		{ "dynnp_von" "dynn_Dolen" }
+		{ "dynnp_von" "dynn_O_sel" }
+		{ "dynnp_von" "dynn_Ziegenhain" }
+		{ "dynnp_von" "dynn_Dinslaken" }
+		{ "dynnp_von" "dynn_Pluyvoise" }
+		{ "dynnp_von" "dynn_Leistenberg" }
+		{ "dynnp_von" "dynn_Schwarzburg" }
+		{ "dynnp_von" "dynn_GrU_nberg" }
+		{ "dynnp_von" "dynn_Gudensberg" }
+		{ "dynnp_von" "dynn_Saffenberg" }
+		{ "dynnp_von" "dynn_Naumburg" }
+		{ "dynnp_von" "dynn_Schrapelnau" }
+		{ "dynnp_von" "dynn_Wangen" }
+		{ "dynnp_von" "dynn_Leiningen" }
+		{ "dynnp_von" "dynn_Salm" }
+		{ "dynnp_von" "dynn_Sayn" }
+		{ "dynnp_von" "dynn_Altenburg" }
+		{ "dynnp_von" "dynn_Monheim" }
+		{ "dynnp_von" "dynn_GO_ttingen" }
+		{ "dynnp_von" "dynn_Mainz" }
+		{ "dynnp_von" "dynn_Altena" }
+		{ "dynnp_von" "dynn_Regenstein" }
+		{ "dynn_Grelle" }
+		{ "dynnp_von" "dynn_Silesia-Glogau" }
+		{ "dynnp_von" "dynn_Brabant" }
+		{ "dynnp_von" "dynn_Puteledorg" }
+		{ "dynnp_von" "dynn_Lusatia" }
+		{ "dynn_Orlamunde" }
+		{ "dynnp_von" "dynn_Egisheim" }
+		{ "dynnp_von" "dynn_Carenwall" }
+		{ "dynnp_von" "dynn_Mansfeld" }
+		{ "dynnp_von" "dynn_Magdeburg" }
+		{ "dynnp_von" "dynn_Kyrburg" }
+		{ "dynnp_von" "dynn_Stolzenberg" }
+		{ "dynnp_von" "dynn_Geroldseck" }
+		{ "dynnp_von" "dynn_Vinstingen" }
+		{ "dynnp_von" "dynn_Schoenecken" }
+		{ "dynnp_von" "dynn_Daun" }
+		{ "dynnp_von" "dynn_Limpurg" }
+		{ "dynnp_von" "dynn_Hohenfels" }
+		{ "dynnp_von" "dynn_Hunolstein" }
+		{ "dynnp_von" "dynn_Blankenheim" }
+		{ "dynnp_von" "dynn_Falkenstein" }
+		{ "dynnp_von" "dynn_Bikkenbach" }
+		{ "dynnp_von" "dynn_Heinsberg" }
+		{ "dynnp_von" "dynn_Muhlhausen" }
+		{ "dynnp_von" "dynn_LO_venstein" }
+		{ "dynnp_von" "dynn_Assel" }
+		{ "dynn_Kaunitz" }
+		{ "dynn_Bach" }
+		{ "dynnp_von" "dynn_Andernach" }
+		{ "dynnp_von" "dynn_Pfalz" }
+		{ "dynnp_von" "dynn_Lothringen" }
+		{ "dynn_Brauchitsch" }
+		{ "dynnp_von" "dynn_der_Marck" }
+		{ "dynnp_von" "dynn_Hessen" }
+		{ "dynnp_von" "dynn_Virneberg" }
+		{ "dynnp_de" "dynn_Montjoie" }
+		{ "dynn_RU_bsamen" }
+	}
+
+	dynasty_names = {
+		{ "dynnp_von" "dynn_Silesia-Glogau" }
+		{ "dynnp_von" "dynn_Glogau" }
+		{ "dynnp_von" "dynn_Heinsberg" }
+		{ "dynnp_von" "dynn_Weimar" }
+		{ "dynn_Weimar" }
+		{ "dynnp_von" "dynn_Kleve" }
+		{ "dynnp_von" "dynn_Wickerode" }
+		{ "dynnp_von" "dynn_ThU_ringen" }
+		{ "dynnp_von" "dynn_Arstein" }
+		{ "dynnp_von" "dynn_Veldenz" }
+		{ "dynnp_von" "dynn_Franken" }
+		{ "dynnp_von" "dynn_Babenberg" }
+		{ "dynn_Babenberg" }
+		{ "dynnp_von" "dynn_Saarbrucken" }
+		{ "dynnp_von" "dynn_Puteledorg" }
+		{ "dynnp_von" "dynn_Henneberg" }
+		{ "dynnp_von" "dynn_Nassau" }
+		{ "dynnp_von" "dynn_Heimbach" }
+		{ "dynnp_von" "dynn_Vianden" }
+		{ "dynnp_von" "dynn_NO_rvenich" }
+		{ "dynnp_von" "dynn_JU_lich" }
+		{ "dynnp_von" "dynn_Eppstein" }
+		{ "dynnp_von" "dynn_Metz" }
+		{ "dynn_Roes" }
+		{ "dynnp_von" "dynn_Hornes" }
+		{ "dynn_Bluome" }
+		{ "dynnp_von" "dynn_Schweinfurt" }
+		{ "dynnp_de" "dynn_Luxembourg" }
+		{ "dynn_Hainaut" }
+		{ "dynnp_von" "dynn_Boulogne" }
+		{ "dynnp_von" "dynn_Lusatia" }
+		{ "dynn_Orlamunde" }
+		{ "dynnp_von" "dynn_Egisheim" }
+		{ "dynnp_von" "dynn_Carenwall" }
+		{ "dynnp_von" "dynn_Arnstein" }
+		{ "dynnp_von" "dynn_KO_ln" }
+		{ "dynnp_von" "dynn_Wippra" }
+		{ "dynnp_von" "dynn_Isenberg" }
+		{ "dynnp_von" "dynn_der_Mark" }
+		{ "dynnp_von" "dynn_Diest" }
+		{ "dynnp_von" "dynn_Rietberg"  }
+		{ "dynnp_von" "dynn_RU_ssel" }
+		{ "dynnp_von" "dynn_Waldeck" }
+		{ "dynnp_von" "dynn_Bassenheim" }
+		{ "dynnp_von" "dynn_Kerpen" }
+		{ "dynnp_von" "dynn_Tunna" }
+		{ "dynnp_von" "dynn_Salza" }
+		{ "dynnp_von" "dynn_Malberg" }
+		{ "dynnp_von" "dynn_Hohenlohe" }
+		{ "dynnp_von" "dynn_WU_llersleben" }
+		{ "dynnp_von" "dynn_Osterna" }
+		{ "dynnp_von" "dynn_Heldrungen" }
+		{ "dynnp_von" "dynn_Schwanden" }
+		{ "dynnp_von" "dynn_Feuchtwangen" }
+		{ "dynnp_von" "dynn_Trier" }
+		{ "dynnp_von" "dynn_Orseln" }
+		{ "dynnp_von" "dynn_Nauen" }
+		{ "dynn_Suerbeer" }
+		{ "dynnp_von" "dynn_Lunen" }
+		{ "dynnp_von" "dynn_Vechta" }
+		{ "dynnp_von" "dynn_Pernstein" }
+		{ "dynn_Pernstein" }
+		{ "dynnp_von" "dynn_Dorpat" }			
+		{ "dynnp_von" "dynn_Vyshusen" }
+		{ "dynnp_von" "dynn_Dolen" }
+		{ "dynnp_von" "dynn_O_sel" }
+		{ "dynnp_von" "dynn_Ziegenhain" }
+		{ "dynnp_von" "dynn_Dinslaken" }
+		{ "dynnp_von" "dynn_Pluyvoise" }
+		{ "dynnp_von" "dynn_Leistenberg" }
+		{ "dynnp_von" "dynn_Schwarzburg" }
+		{ "dynnp_von" "dynn_GrU_nberg" }
+		{ "dynnp_von" "dynn_Gudensberg" }
+		{ "dynnp_von" "dynn_Saffenberg" }
+		{ "dynnp_von" "dynn_Naumburg" }
+		{ "dynnp_von" "dynn_Schrapelnau" }
+		{ "dynnp_von" "dynn_Mansfeld" }
+		{ "dynnp_von" "dynn_Magdeburg" }
+		{ "dynnp_von" "dynn_Kyrburg" }
+		{ "dynnp_von" "dynn_Stolzenberg" }
+		{ "dynnp_von" "dynn_Wangen" }
+		{ "dynnp_von" "dynn_Leiningen" }
+		{ "dynnp_von" "dynn_Salm" }
+		{ "dynnp_von" "dynn_Sayn" }
+		{ "dynnp_von" "dynn_Geroldseck" }			
+		{ "dynnp_von" "dynn_Vinstingen" }
+		{ "dynnp_von" "dynn_Schoenecken" }
+		{ "dynnp_von" "dynn_Daun" }
+		{ "dynnp_von" "dynn_Limpurg" }
+		{ "dynnp_von" "dynn_Hohenfels" }
+		{ "dynnp_von" "dynn_Hunolstein" }
+		{ "dynnp_von" "dynn_Blankenheim" }
+		{ "dynnp_von" "dynn_Falkenstein" }
+		{ "dynnp_von" "dynn_Bikkenbach" }
+		{ "dynnp_von" "dynn_Muhlhausen" }
+		{ "dynnp_von" "dynn_LO_venstein" }
+		{ "dynnp_von" "dynn_Assel" }
+		{ "dynn_Kaunitz" }
+		{ "dynn_Bach" }
+		{ "dynnp_von" "dynn_Andernach" }
+		{ "dynnp_von" "dynn_Pfalz" }
+		{ "dynnp_von" "dynn_Altenburg" }
+		{ "dynnp_von" "dynn_Monheim" }
+		{ "dynnp_von" "dynn_Brabant" }
+		{ "dynnp_von" "dynn_GO_ttingen" }
+		{ "dynnp_von" "dynn_Mainz" }
+		{ "dynnp_von" "dynn_Lothringen" }
+		{ "dynn_Brauchitsch" }
+		{ "dynnp_von" "dynn_der_Marck" }
+		{ "dynnp_von" "dynn_Hessen" }
+		{ "dynnp_von" "dynn_Virneberg" }
+		{ "dynnp_de" "dynn_Montjoie" }
+		{ "dynn_RU_bsamen" }
+		{ "dynnp_von" "dynn_Altena" }
+		{ "dynnp_von" "dynn_Regenstein" }
+		{ "dynn_Grelle" }
+	}
+
+	male_names = {
+		#Kölsh/Ripuarian
+		Tünnes Manes Köbes Bätes Neres Jean Schäng Pitter Jupp Fritz Mattes Manes Hannes Nüll Jirret Hein Nieres Heiner Drickes Döres
+		Dölfes Jilles Fönes Chriss Nelles Derks Schorsch Määtes Düüres Tömmes Ebbo Everad 
+
+		#Öcher platt 
+		Batiss Duures Fränz Hellmes Mattschö Nandes Nöll Wellem Tüen Paules
+
+		#Dutch Ripuarian
+		Sjef Nol Sjeng Harry Frits Zjuul Jos Piejeer Tjeu Hoebeer Funs 
+		Miel Hein Wiel Lambert Wim klaos Lei Hannes Hens Godfried Antoeën
+		Hans Koebus Johan Jan Albert Driek
+
+		Adolf Günter Karl Antoeën Sjang Giel 
+	}
+	female_names = {
+		#Kölsh/Ripuarian 
+		Nies Stina Züff Öschel Finchen Drück Maritzebill Tring Kättche Ziss Mariejelche Gretchen Ännche Annemie Stina Änn Bärbel
+		Zilla Liss Lissbätt Maliess Billa
+		#Öcher platt 
+		Fing Fingche Jitta Jretche Mari Micke Ness Marjänn Lissje
+		#Dutch Ripuarian 
+		Ann Anna Netje Corry Clair Liesel Gonnie Fien Willemien Godfrieda Frieda Sophie Nel Riek Mie Mina Trout 
+
+		Trui Sjaan 
+	}
+	dynasty_of_location_prefix = "dynnp_von"
+
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 50
+	mat_grf_name_chance = 5
+	father_name_chance = 10
+	patronym_suffix_male = "dynnpat_suf_son"
+	patronym_suffix_female = "dynnpat_suf_son"
+	
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 50
+	mother_name_chance = 5
+	
+	
+
+	mercenary_names = {
+		{ name = "mercenary_company_great_company" coat_of_arms = "mc_great_company" }
+		{ name = "mercenary_company_rhenish_band" }
+		{ name = "mercenary_company_new_franks" }
+	}
+}
+
+name_list_pr_moselle = {
+
+	cadet_dynasty_names = {
+		{ "dynnp_von" "dynn_Franconia" }
+		{ "dynnp_von" "dynn_ThU_ringen" }
+		{ "dynnp_von" "dynn_Glogau" }
+		{ "dynn_Weimar" }
+		{ "dynnp_von" "dynn_Weimar" }
+		{ "dynnp_von" "dynn_Kleve" }
+		{ "dynnp_von" "dynn_Wickerode" }
+		{ "dynnp_von" "dynn_Arstein" }
+		{ "dynnp_von" "dynn_Veldenz" }
+		{ "dynnp_von" "dynn_Franken" }
+		{ "dynn_Babenberg" }
+		{ "dynnp_von" "dynn_Babenberg" }
+		{ "dynnp_von" "dynn_Saarbrucken" }
+		{ "dynnp_von" "dynn_Henneberg" }
+		{ "dynnp_von" "dynn_Nassau" }
+		{ "dynnp_von" "dynn_Heimbach" }
+		{ "dynnp_von" "dynn_Vianden" }
+		{ "dynnp_von" "dynn_NO_rvenich" }
+		{ "dynnp_von" "dynn_JU_lich" }
+		{ "dynnp_von" "dynn_Eppstein" }
+		{ "dynnp_von" "dynn_Metz" }
+		{ "dynn_Roes" }
+		{ "dynnp_von" "dynn_Hornes" }
+		{ "dynn_Bluome" }
+		{ "dynnp_von" "dynn_Schweinfurt" }
+		{ "dynnp_de" "dynn_Luxembourg" }
+		{ "dynn_Hainaut" }
+		{ "dynnp_von" "dynn_Boulogne" }
+		{ "dynnp_von" "dynn_Arnstein" }
+		{ "dynnp_von" "dynn_KO_ln" }
+		{ "dynnp_von" "dynn_Wippra" }
+		{ "dynnp_von" "dynn_Isenberg" }
+		{ "dynnp_von" "dynn_der_Mark" }
+		{ "dynnp_von" "dynn_Diest" }
+		{ "dynnp_von" "dynn_Rietberg" }
+		{ "dynnp_von" "dynn_RU_ssel" }
+		{ "dynnp_von" "dynn_Waldeck" }
+		{ "dynnp_von" "dynn_Bassenheim" }
+		{ "dynnp_von" "dynn_Kerpen" }
+		{ "dynnp_von" "dynn_Tunna" }
+		{ "dynnp_von" "dynn_Salza" }
+		{ "dynnp_von" "dynn_Malberg" }
+		{ "dynnp_von" "dynn_Hohenlohe" }
+		{ "dynnp_von" "dynn_WU_llersleben" }
+		{ "dynnp_von" "dynn_Osterna" }
+		{ "dynnp_von" "dynn_Heldrungen" }
+		{ "dynnp_von" "dynn_Schwanden" }
+		{ "dynnp_von" "dynn_Feuchtwangen" }
+		{ "dynnp_von" "dynn_Trier" }
+		{ "dynnp_von" "dynn_Orseln" }
+		{ "dynnp_von" "dynn_Nauen" }
+		{ "dynn_Suerbeer" }
+		{ "dynnp_von" "dynn_Lunen" }
+		{ "dynnp_von" "dynn_Vechta" }
+		{ "dynn_Pernstein" }
+		{ "dynnp_von" "dynn_Pernstein" }
+		{ "dynnp_von" "dynn_Dorpat" }
+		{ "dynnp_von" "dynn_Vyshusen" }
+		{ "dynnp_von" "dynn_Dolen" }
+		{ "dynnp_von" "dynn_O_sel" }
+		{ "dynnp_von" "dynn_Ziegenhain" }
+		{ "dynnp_von" "dynn_Dinslaken" }
+		{ "dynnp_von" "dynn_Pluyvoise" }
+		{ "dynnp_von" "dynn_Leistenberg" }
+		{ "dynnp_von" "dynn_Schwarzburg" }
+		{ "dynnp_von" "dynn_GrU_nberg" }
+		{ "dynnp_von" "dynn_Gudensberg" }
+		{ "dynnp_von" "dynn_Saffenberg" }
+		{ "dynnp_von" "dynn_Naumburg" }
+		{ "dynnp_von" "dynn_Schrapelnau" }
+		{ "dynnp_von" "dynn_Wangen" }
+		{ "dynnp_von" "dynn_Leiningen" }
+		{ "dynnp_von" "dynn_Salm" }
+		{ "dynnp_von" "dynn_Sayn" }
+		{ "dynnp_von" "dynn_Altenburg" }
+		{ "dynnp_von" "dynn_Monheim" }
+		{ "dynnp_von" "dynn_GO_ttingen" }
+		{ "dynnp_von" "dynn_Mainz" }
+		{ "dynnp_von" "dynn_Altena" }
+		{ "dynnp_von" "dynn_Regenstein" }
+		{ "dynn_Grelle" }
+		{ "dynnp_von" "dynn_Silesia-Glogau" }
+		{ "dynnp_von" "dynn_Brabant" }
+		{ "dynnp_von" "dynn_Puteledorg" }
+		{ "dynnp_von" "dynn_Lusatia" }
+		{ "dynn_Orlamunde" }
+		{ "dynnp_von" "dynn_Egisheim" }
+		{ "dynnp_von" "dynn_Carenwall" }
+		{ "dynnp_von" "dynn_Mansfeld" }
+		{ "dynnp_von" "dynn_Magdeburg" }
+		{ "dynnp_von" "dynn_Kyrburg" }
+		{ "dynnp_von" "dynn_Stolzenberg" }
+		{ "dynnp_von" "dynn_Geroldseck" }
+		{ "dynnp_von" "dynn_Vinstingen" }
+		{ "dynnp_von" "dynn_Schoenecken" }
+		{ "dynnp_von" "dynn_Daun" }
+		{ "dynnp_von" "dynn_Limpurg" }
+		{ "dynnp_von" "dynn_Hohenfels" }
+		{ "dynnp_von" "dynn_Hunolstein" }
+		{ "dynnp_von" "dynn_Blankenheim" }
+		{ "dynnp_von" "dynn_Falkenstein" }
+		{ "dynnp_von" "dynn_Bikkenbach" }
+		{ "dynnp_von" "dynn_Heinsberg" }
+		{ "dynnp_von" "dynn_Muhlhausen" }
+		{ "dynnp_von" "dynn_LO_venstein" }
+		{ "dynnp_von" "dynn_Assel" }
+		{ "dynn_Kaunitz" }
+		{ "dynn_Bach" }
+		{ "dynnp_von" "dynn_Andernach" }
+		{ "dynnp_von" "dynn_Pfalz" }
+		{ "dynnp_von" "dynn_Lothringen" }
+		{ "dynn_Brauchitsch" }
+		{ "dynnp_von" "dynn_der_Marck" }
+		{ "dynnp_von" "dynn_Hessen" }
+		{ "dynnp_von" "dynn_Virneberg" }
+		{ "dynnp_de" "dynn_Montjoie" }
+		{ "dynn_RU_bsamen" }
+	}
+
+	dynasty_names = {
+		{ "dynnp_von" "dynn_Silesia-Glogau" }
+		{ "dynnp_von" "dynn_Glogau" }
+		{ "dynnp_von" "dynn_Heinsberg" }
+		{ "dynnp_von" "dynn_Weimar" }
+		{ "dynn_Weimar" }
+		{ "dynnp_von" "dynn_Kleve" }
+		{ "dynnp_von" "dynn_Wickerode" }
+		{ "dynnp_von" "dynn_ThU_ringen" }
+		{ "dynnp_von" "dynn_Arstein" }
+		{ "dynnp_von" "dynn_Veldenz" }
+		{ "dynnp_von" "dynn_Franken" }
+		{ "dynnp_von" "dynn_Babenberg" }
+		{ "dynn_Babenberg" }
+		{ "dynnp_von" "dynn_Saarbrucken" }
+		{ "dynnp_von" "dynn_Puteledorg" }
+		{ "dynnp_von" "dynn_Henneberg" }
+		{ "dynnp_von" "dynn_Nassau" }
+		{ "dynnp_von" "dynn_Heimbach" }
+		{ "dynnp_von" "dynn_Vianden" }
+		{ "dynnp_von" "dynn_NO_rvenich" }
+		{ "dynnp_von" "dynn_JU_lich" }
+		{ "dynnp_von" "dynn_Eppstein" }
+		{ "dynnp_von" "dynn_Metz" }
+		{ "dynn_Roes" }
+		{ "dynnp_von" "dynn_Hornes" }
+		{ "dynn_Bluome" }
+		{ "dynnp_von" "dynn_Schweinfurt" }
+		{ "dynnp_de" "dynn_Luxembourg" }
+		{ "dynn_Hainaut" }
+		{ "dynnp_von" "dynn_Boulogne" }
+		{ "dynnp_von" "dynn_Lusatia" }
+		{ "dynn_Orlamunde" }
+		{ "dynnp_von" "dynn_Egisheim" }
+		{ "dynnp_von" "dynn_Carenwall" }
+		{ "dynnp_von" "dynn_Arnstein" }
+		{ "dynnp_von" "dynn_KO_ln" }
+		{ "dynnp_von" "dynn_Wippra" }
+		{ "dynnp_von" "dynn_Isenberg" }
+		{ "dynnp_von" "dynn_der_Mark" }
+		{ "dynnp_von" "dynn_Diest" }
+		{ "dynnp_von" "dynn_Rietberg"  }
+		{ "dynnp_von" "dynn_RU_ssel" }
+		{ "dynnp_von" "dynn_Waldeck" }
+		{ "dynnp_von" "dynn_Bassenheim" }
+		{ "dynnp_von" "dynn_Kerpen" }
+		{ "dynnp_von" "dynn_Tunna" }
+		{ "dynnp_von" "dynn_Salza" }
+		{ "dynnp_von" "dynn_Malberg" }
+		{ "dynnp_von" "dynn_Hohenlohe" }
+		{ "dynnp_von" "dynn_WU_llersleben" }
+		{ "dynnp_von" "dynn_Osterna" }
+		{ "dynnp_von" "dynn_Heldrungen" }
+		{ "dynnp_von" "dynn_Schwanden" }
+		{ "dynnp_von" "dynn_Feuchtwangen" }
+		{ "dynnp_von" "dynn_Trier" }
+		{ "dynnp_von" "dynn_Orseln" }
+		{ "dynnp_von" "dynn_Nauen" }
+		{ "dynn_Suerbeer" }
+		{ "dynnp_von" "dynn_Lunen" }
+		{ "dynnp_von" "dynn_Vechta" }
+		{ "dynnp_von" "dynn_Pernstein" }
+		{ "dynn_Pernstein" }
+		{ "dynnp_von" "dynn_Dorpat" }			
+		{ "dynnp_von" "dynn_Vyshusen" }
+		{ "dynnp_von" "dynn_Dolen" }
+		{ "dynnp_von" "dynn_O_sel" }
+		{ "dynnp_von" "dynn_Ziegenhain" }
+		{ "dynnp_von" "dynn_Dinslaken" }
+		{ "dynnp_von" "dynn_Pluyvoise" }
+		{ "dynnp_von" "dynn_Leistenberg" }
+		{ "dynnp_von" "dynn_Schwarzburg" }
+		{ "dynnp_von" "dynn_GrU_nberg" }
+		{ "dynnp_von" "dynn_Gudensberg" }
+		{ "dynnp_von" "dynn_Saffenberg" }
+		{ "dynnp_von" "dynn_Naumburg" }
+		{ "dynnp_von" "dynn_Schrapelnau" }
+		{ "dynnp_von" "dynn_Mansfeld" }
+		{ "dynnp_von" "dynn_Magdeburg" }
+		{ "dynnp_von" "dynn_Kyrburg" }
+		{ "dynnp_von" "dynn_Stolzenberg" }
+		{ "dynnp_von" "dynn_Wangen" }
+		{ "dynnp_von" "dynn_Leiningen" }
+		{ "dynnp_von" "dynn_Salm" }
+		{ "dynnp_von" "dynn_Sayn" }
+		{ "dynnp_von" "dynn_Geroldseck" }			
+		{ "dynnp_von" "dynn_Vinstingen" }
+		{ "dynnp_von" "dynn_Schoenecken" }
+		{ "dynnp_von" "dynn_Daun" }
+		{ "dynnp_von" "dynn_Limpurg" }
+		{ "dynnp_von" "dynn_Hohenfels" }
+		{ "dynnp_von" "dynn_Hunolstein" }
+		{ "dynnp_von" "dynn_Blankenheim" }
+		{ "dynnp_von" "dynn_Falkenstein" }
+		{ "dynnp_von" "dynn_Bikkenbach" }
+		{ "dynnp_von" "dynn_Muhlhausen" }
+		{ "dynnp_von" "dynn_LO_venstein" }
+		{ "dynnp_von" "dynn_Assel" }
+		{ "dynn_Kaunitz" }
+		{ "dynn_Bach" }
+		{ "dynnp_von" "dynn_Andernach" }
+		{ "dynnp_von" "dynn_Pfalz" }
+		{ "dynnp_von" "dynn_Altenburg" }
+		{ "dynnp_von" "dynn_Monheim" }
+		{ "dynnp_von" "dynn_Brabant" }
+		{ "dynnp_von" "dynn_GO_ttingen" }
+		{ "dynnp_von" "dynn_Mainz" }
+		{ "dynnp_von" "dynn_Lothringen" }
+		{ "dynn_Brauchitsch" }
+		{ "dynnp_von" "dynn_der_Marck" }
+		{ "dynnp_von" "dynn_Hessen" }
+		{ "dynnp_von" "dynn_Virneberg" }
+		{ "dynnp_de" "dynn_Montjoie" }
+		{ "dynn_RU_bsamen" }
+		{ "dynnp_von" "dynn_Altena" }
+		{ "dynnp_von" "dynn_Regenstein" }
+		{ "dynn_Grelle" }
+	}
+
+	male_names = {
+		Jang Matz Köb Len Schang Tönn Wenz Giel Fons Sep Michel Hennes Lorenz Hobbes Fränz Lenz Rudi
+	}
+	female_names = { 
+		Trina Lies Lenchen Marje Schanett Gret Resi Anni Leni Bets Hilla Els Zenzi Rosa Kätti Sibbe Mina
+	}
+	dynasty_of_location_prefix = "dynnp_von"
+
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 50
+	mat_grf_name_chance = 5
+	father_name_chance = 10
+	patronym_suffix_male = "dynnpat_suf_son"
+	patronym_suffix_female = "dynnpat_suf_son"
+	
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 50
+	mother_name_chance = 5
+	
+	
+
+	mercenary_names = {
+		{ name = "mercenary_company_great_company" coat_of_arms = "mc_great_company" }
+		{ name = "mercenary_company_rhenish_band" }
+		{ name = "mercenary_company_new_franks" }
+	}
+}

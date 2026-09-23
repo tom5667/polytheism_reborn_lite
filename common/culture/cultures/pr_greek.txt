@@ -1,75 +1,78 @@
-﻿ pr_greek = {
-	color = greek
+﻿##################################################
+# Polytheism Reborn - Greek Cultures
+##################################################
+
+pr_greek = {
+	color = { 60 120 200 }
 	created = 100.1.1
+
 	ethos = ethos_bellicose
 	heritage = heritage_pr_greek
 	language = language_greek
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	traditions = {
 		tradition_mystical_ancestors
 		tradition_legalistic
 		tradition_formation_fighting
 		tradition_zealous_people
 	}
-	
+
 	name_list = name_list_pr_greek
-	
+
 	coa_gfx = { byzantine_group_coa_gfx western_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
-	
-	ethnicities = {
-		10 = mediterranean_byzantine
-	}
- }
 
- pr_graeco_egyptian = {
-	color = { 89 220 227}
+	ethnicities = {
+		70 = mediterranean_byzantine
+		20 = mediterranean
+		10 = caucasian_dark_hair
+	}
+}
+
+pr_graeco_egyptian = {
+	color = { 89 220 227 }
 	created = 101.1.1
 	parents = { pr_greek }
+	history_loc_override = pr_graeco_egyptian_heritage_loc
 
-	history_loc_override = graeco_egyptian_heritage_loc
-	
 	ethos = ethos_bureaucratic
 	heritage = heritage_pr_greek
-	language = language_greek
+	language = language_pr_coptic
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	traditions = {
-		#tradition_mystical_ancestors
 		tradition_legalistic
 		tradition_formation_fighting
 		tradition_maritime_mercantilism
 		tradition_city_keepers
-
-		
-		
 	}
-	# dlc_tradition = {
-	# 	trait = tradition_fp1_coastal_warriors
-	# 	requires_dlc_flag = the_northern_lords
-	# 	fallback = tradition_zealous_people
-	# }
-	
+
 	name_list = name_list_pr_graeco_egyptian
-	
+
 	coa_gfx = { byzantine_group_coa_gfx western_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
-	
+
 	ethnicities = {
-		10 = mediterranean_byzantine
+		40 = mediterranean_byzantine
+		40 = arab
+		20 = mediterranean
 	}
- }
- 
- mycenaean = {
-	color = greek
-	
+}
+
+pr_mycenaean = {
+	color = { 140 80 40 }
+	created = 100.1.1
+
 	ethos = ethos_bellicose
-	heritage = heritage_mycenaean
+	heritage = heritage_pr_mycenaean
 	language = language_greek
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	traditions = {
 		tradition_mystical_ancestors
 		tradition_martial_admiration
@@ -78,44 +81,50 @@
 	dlc_tradition = {
 		trait = tradition_fp1_coastal_warriors
 		requires_dlc_flag = the_northern_lords
-		fallback = tradition_zealous_people
+		fallback = tradition_hird
 	}
-	
-	name_list = name_list_mycenaean
-	
+
+	name_list = name_list_pr_mycenaean
+
 	coa_gfx = { byzantine_group_coa_gfx western_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
-	
-	ethnicities = {
-		10 = mediterranean_byzantine
-	}
- }
 
- 
- graeco_persian = {
-	color = {230 214 61}
+	ethnicities = {
+		70 = mediterranean_byzantine
+		20 = mediterranean
+		10 = caucasian_dark_hair
+	}
+}
+
+pr_graeco_persian = {
+	color = { 230 214 61 }
+	created = 100.1.1
 	parents = { pr_greek }
+
 	ethos = ethos_bureaucratic
 	heritage = heritage_pr_greek
-	language = language_greek
+	language = language_pr_middle_persian
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	traditions = {
 		tradition_legalistic
 		tradition_dryland_dwellers
 		tradition_mountaineers
 		tradition_philosopher_culture
 	}
-	
-	name_list = name_list_greco_persian
-	
+
+	name_list = name_list_pr_greco_persian
+
 	coa_gfx = { byzantine_group_coa_gfx western_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
-	
+
 	ethnicities = {
-		10 = mediterranean_byzantine
+		50 = mediterranean_byzantine
+		30 = arab
+		20 = mediterranean
 	}
- }
+}

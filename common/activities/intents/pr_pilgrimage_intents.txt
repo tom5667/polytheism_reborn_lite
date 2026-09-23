@@ -5,7 +5,7 @@ pr_local_pilgrimage_worship_intent = {
 	auto_complete = yes
 
 	is_shown = {
-		
+
 	}
 
 	on_invalidated = {
@@ -13,7 +13,15 @@ pr_local_pilgrimage_worship_intent = {
 	}
 
 	ai_will_do = {
-		value = 1
+		value = 50
+		modifier = {
+			factor = 2
+			has_trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = cynical
+		}
 	}
 
 	scripted_animation = {
@@ -22,12 +30,12 @@ pr_local_pilgrimage_worship_intent = {
 }
 
 pr_local_pilgrimage_curiosity_intent = {
-	icon = RICE_thinking_intent
+	icon = thinking_intent
 
 	auto_complete = yes
 
 	is_shown = {
-		
+
 	}
 
 	on_invalidated = {
@@ -35,10 +43,22 @@ pr_local_pilgrimage_curiosity_intent = {
 	}
 
 	ai_will_do = {
-		value = 1
+		value = 50
+		modifier = {
+			factor = 2
+			has_trait = cynical
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = curious
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = zealous
+		}
 	}
 
 	scripted_animation = {
 		animation = personality_rational
 	}
-}
+}

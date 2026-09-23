@@ -1,0 +1,33 @@
+l_german:
+  # =============================================
+  # Polytheism Reborn - Hethitische Entscheidungen
+  # Lokalisierung für pr_hittite_decisions.txt
+  # =============================================
+
+  # --- Hauptgottheit wählen (Hethitisch) ---
+  pr_hittite_choose_main_deity_decision:0 "Wähle Hauptgottheit"
+  pr_hittite_choose_main_deity_decision_desc:0 "#F Die Götter des hethitischen Pantheons verlangen einen Champion, der ihren Willen in der sterblichen Welt vertritt. Als Herrscher des hethitischen Glaubens muss ich eine Schutzgottheit auswählen, die meine Handlungen leitet und meine Herrschaft mit göttlichem Segen bedenkt.#!/n\nDurch die Wahl einer Hauptgottheit werde ich eine persönliche Verbindung mit dem Göttlichen herstellen und einzigartige Segnungen und Modifikatoren erhalten, die die Natur meiner gewählten Gottheit oder Göttin widerspiegeln."
+  pr_hittite_choose_main_deity_decision_tooltip:0 "#T Wähle eine Schutzgottheit aus deinem hethitischen Glauben, um göttliche Segnungen zu erhalten#!/"
+  pr_hittite_choose_main_deity_decision_confirm:0 "Wähle Hauptgottheit!"
+  pr_hittite_choose_main_deity_decision_tt:0 "#T Verfügbare Gottheiten für [ROOT.Char.GetFaith.GetName]#!/"
+
+  # --- Auswahlbeschreibungen der Hauptgottheit: Hethitisch ---
+  select_main_deity_hittite_decision.select_tarhunna:0 "#T Tarhunna#!/\n#P Der Sturmgott, König des hethitischen Pantheons#!/"
+  select_main_deity_hittite_decision.select_telipinu:0 "#T Telipinu#!/\n#P Gott der Landwirtschaft, Fruchtbarkeit und Barmherzigkeit#!/"
+  select_main_deity_hittite_decision.select_halki:0 "#T Halki#!/\n#P Gott des Getreides und der Ernte#!/"
+  select_main_deity_hittite_decision.select_a_as:0 "#T A'as#!/\n#P Gott der Weisheit und des göttlichen Rates#!/"
+  select_main_deity_hittite_decision.select_tashmishu:0 "#T Tashmishu#!/\n#P Der göttliche Diener und Wächter der Götter#!/"
+
+  # --- Königreich Hatti gründen ---
+  pr_hittite_create_kingdom_decision:0 "Gründe das Königreich Hatti"
+  pr_hittite_create_kingdom_decision_desc:0 "#F Die alten Länder Anatoliens, einst von den mächtigen Königen von Hatti regiert, warten auf einen neuen Herrscher, der ihren alten Ruhm wiederherstellt. Von den Hochländern Kappadokiens bis zu den Ebenen Galatiens sind diese Gebiete lange Zeit geteilt gewesen.#!/n\nDurch die Gründung des Königreichs Hatti werde ich das hethitische Erbe wiederherstellen und eine neue Macht im Herzen Anatoliens schaffen."
+  pr_hittite_create_kingdom_decision_tooltip:0 "#T Bilde das Königreich Hatti, indem du die hethitischen Kernlande Anatoliens vereinst#!/"
+  pr_hittite_create_kingdom_decision_confirm:0 "Gründe das Königreich Hatti!"
+  pr_hittite_create_kingdom_decision_effect_tooltip:0 "#P Das Königreich Hatti wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_charsianon.GetNameNoTier], [title_d_cappadocia.GetNameNoTier] und andere werden [de_jure|E] Teil von Hatti$EFFECT_LIST_BULLET$Erfordert erhebliche Investitionen in [gold|E] und [prestige|E]@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Hethitisches Imperium wiederherstellen ---
+  pr_hittite_restore_empire_decision:0 "Stelle das hethitische Imperium wieder her"
+  pr_hittite_restore_empire_decision_desc:0 "#F Das hethitische Imperium, einst die größte Macht des alten Nahen Ostens, erstreckte sich von der ägäischen Küste bis zu den Ufern des Euphrat. Seine Könige rivalisierten mit den Pharaonen Ägyptens und den Königen Babylons. Nun, da das Königreich wiederhergestellt ist, ist die Zeit gekommen, das volle imperiale Erbe zurückzufordern.#!/n\nDurch die Wiederherstellung des hethitischen Imperiums werde ich alle alten hethitischen Länder unter einem einzigen Banner vereinen und den Ruhm der Großen Könige von Hatti zurückerobern."
+  pr_hittite_restore_empire_decision_tooltip:0 "#T Stelle das hethitische Imperium wieder her, indem du alle alten hethitischen Gebiete vereinst#!/"
+  pr_hittite_restore_empire_decision_confirm:0 "Stelle das hethitische Imperium wieder her!"
+  pr_hittite_restore_empire_decision_effect_tooltip:0 "#P Das hethitische Imperium wird als neuer [Imperium|E]-Titel gegründet#/n$EFFECT_LIST_BULLET$[title_k_hittite.GetNameNoTier] und alle de-jure-Herzogtümer werden Teil des Imperiums$EFFECT_LIST_BULLET$Erfordert erhebliche Investitionen in [gold|E] und [prestige|E]@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"

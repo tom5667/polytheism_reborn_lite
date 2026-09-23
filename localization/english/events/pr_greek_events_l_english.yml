@@ -1,0 +1,87 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Greek Events
+  # Localization for pr_greek_decision_events.txt
+  # =============================================
+
+  # --- Choose Hellenic Personal Deity (0001) ---
+  pr_greek_decision.0001.t:0 "Deciding on a Deity"
+  pr_greek_decision.0001.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
+  pr_greek_decision.0001.zeus:0 "$hellenism_high_god_name$"
+  pr_greek_decision.0001.hera:0 "$hellenism_good_god_hera$"
+  pr_greek_decision.0001.athena:0 "$hellenism_knowledge_god_name$"
+  pr_greek_decision.0001.more:0 "See more gods"
+  pr_greek_decision.0001.optout:0 "$religious_decision.0102.flavor$"
+
+  pr_greek_decision.0019.t:0 "Deciding on a Deity"
+  pr_greek_decision.0019.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
+  pr_greek_decision.0019.ares:0 "$hellenism_war_god_name$"
+  pr_greek_decision.0019.aphrodite:0 "$hellenism_good_god_aphrodite$"
+  pr_greek_decision.0019.hermes:0 "$hellenism_wealth_god_name$"
+  pr_greek_decision.0019.demeter:0 "$hellenism_fertility_god_name$"
+  pr_greek_decision.0019.back:0 "Go back"
+  pr_greek_decision.0019.optout:0 "$religious_decision.0102.flavor$"
+
+  # --- Choose Mycenaean Personal Deity (0002) ---
+  pr_greek_decision.0002.t:0 "Deciding on a Deity"
+  pr_greek_decision.0002.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
+  pr_greek_decision.0002.poseidon:0 "Poseidon, Lord of Sea and Earthquakes!"
+  pr_greek_decision.0002.hermes:0 "Hermes, Patron of Travelers and Commerce!"
+  pr_greek_decision.0002.aphrodite:0 "Aphrodite, Goddess of Love and Desire!"
+  pr_greek_decision.0002.athena:0 "Athena, Goddess of Wisdom and Warfare!"
+  pr_greek_decision.0002.ares:0 "Ares, God of War and Courage!"
+  pr_greek_decision.0002.optout:0 "$religious_decision.0102.flavor$"
+
+  # --- Choose Graeco-Egyptian Personal Deity (0003) ---
+  pr_greek_decision.0003.t:0 "Deciding on a Deity"
+  pr_greek_decision.0003.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
+  pr_greek_decision.0003.zeus_amon:0 "Zeus-Ammon, King of Gods and Oracle!"
+  pr_greek_decision.0003.hermes_trismegistus:0 "Hermes Trismegistus, Master of Wisdom and Alchemy!"
+  pr_greek_decision.0003.isis:0 "Isis, Goddess of Magic and Motherhood!"
+  pr_greek_decision.0003.harpocrates:0 "Harpocrates, God of Silence and the Rising Sun!"
+  pr_greek_decision.0003.ares:0 "Ares, God of War and Bloodshed!"
+  pr_greek_decision.0003.optout:0 "$religious_decision.0102.flavor$"
+
+  # --- Embrace Hellen Culture (0004) ---
+  pr_greek_decision.0004.t:0 "The Hellenic Spirit Awakens"
+  pr_greek_decision.0004.desc:0 "#F The Hellenic culture, birthed in the cradle of Attica, stands as a beacon of civilization, philosophy, and art. The spirit of Hellas endures in the land itself, waiting to be rekindled.#!\n\nBy embracing the Hellenic culture, I shall revive the traditions of old and forge a realm that honors the ways of Hellas."
+  pr_greek_decision.0004.a:0 "The spirit of Hellas lives again."
+
+  # --- Convert to Graeco-Egyptian Faith (0005) ---
+  pr_greek_decision.0005.t:0 "The Syncretic Path"
+  pr_greek_decision.0005.desc:0 "#F The syncretic faith of Graeco-Egyptian polytheism blends the wisdom of the Hellenic and Egyptian pantheons, offering a path that honors both Zeus and Ammon, both Hermes and Thoth.#!\n\nBy embracing this syncretic faith, I shall unite the spiritual traditions of east and west under my rule."
+  pr_greek_decision.0005.a:0 "I embrace the syncretic path."
+  
+  #Visiting temple of Zeus
+  pr_greek.0007.t:0 "Visiting Temple of $hellenism_high_god_name$"
+  pr_greek.0007.desc:0 "To rule my realm I need some guidance from $hellenism_high_god_name$ King of the gods only he can he give the support my to rule my realm in a good way."
+  pr_greek.0007.a:0 "Sacrifice a white animal"
+  pr_greek.0007.message.positive:0 "Blessed by $hellenism_high_god_name$"
+  pr_greek.0007.message.negative:0 "Unfavoured by $hellenism_high_god_name$"
+  
+  #Buy book about greek mythology
+  pr_greek.0008.t:0 "The Bookseller"
+  pr_greek.0008.desc:0 "#F As I wandered the market today, a worn leather tome caught my eye among the merchant's wares — a collection of Greek myths and legends, its pages filled with the tales of gods and heroes.#!\n\nIt costs a few coins, but the wisdom within is worth far more. Perhaps I shall learn something of the old gods that I did not yet know."
+  pr_greek.0008.a:0 "Buy the book"
+  
+  #Offering to Demeter
+  pr_greek.0010.t:0 "Offering to Demeter"
+  pr_greek.0010.desc:0 "#F It is almost harvest time, and the grain stands tall in the fields. To ensure the favour of Demeter, goddess of the harvest, I shall make an offering and pray for a bountiful season.#!"
+  pr_greek.0010.a:0 "Make offering to Demeter"
+  pr_greek.0010.message.positive:0 "Blessed by Demeter"
+  pr_greek.0010.message.negative:0 "Bad harvest"
+  
+  pr_greek.0017.t:0 "Arival Delphi"
+  pr_greek.0017.desc:0 "The sun graces the Aegean Sea, casting a warm glow upon the bustling harbor. I stand amidst a group of fellow pilgrims, our hearts filled with anticipation as we embark on a journey to Delphi, the sacred sanctuary of ancient Greece.\n\nAs the sun begins its descent, painting the sky with hues of gold and crimson as we make our way to Delphi, the spiritual heart of ancient Greece. A sense of anticipation fills me as I step into this hallowed ground, the birthplace of countless myths and legends.\n\nWe stay in a local Tavern until the next day."
+  pr_greek.0017.a:0 "Take a good rest"
+  
+  pr_greek.0018.t:0 "Delphi"
+  pr_greek.0018.desc.zealous:0 "#F A wonderful day today in Delphi. First we visited the temple of $hellenism_health_god_name$ where the Pythia looked into the future.#!\nAfterwards I visited some small shrines to bring offerings to other gods and goddesses."
+  
+  pr_greek.0018.desc.delphi:0 "#F Today we first visit the local arena to watch some Greek wrestling, followed by a play.#!\nAs the evening falls, we visit the temple of $hellenism_health_god_name$ where the Pythia gave some small offerings to Apollo in my name."
+  pr_greek.0018.a:0 "What a day"
+  
+  pr_greek.0019.t:0 "Travel Back Home"
+  pr_greek.0019.desc:0 "After days of travel I'm finally back home. I really feel Revitalized by this pilgrimage, may the future look bright and may $hellenism_health_god_name$ protect me from illness"
+  pr_greek.0019.a:0 "Great to be home again"
+

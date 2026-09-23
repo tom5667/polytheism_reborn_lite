@@ -1,0 +1,127 @@
+﻿namespace = pr_caucasus_decision
+
+##################################################
+# Polytheism Reborn - Caucasus Decision Events
+# Events gekoppeld aan pr_caucasus_decisions.txt
+##################################################
+
+# =============================================
+# Decision Outcome Events (0001-0099)
+# =============================================
+
+
+#--- Choose Georgian Personal Deity (0001) ---
+pr_caucasus_decision.0001 = {
+	type = character_event
+	title = pr_caucasus_decision.0001.t
+	desc = pr_caucasus_decision.0001.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	# Armzi
+	option = {
+		name = pr_caucasus_decision.0001.armzi
+		trigger = {
+			NOT = { has_character_modifier = georgian_armzi }
+		}
+		set_bhakti_effect = { BHAKTI = georgian_armzi }
+	}
+
+	# Adgilis Deda
+	option = {
+		name = pr_caucasus_decision.0001.adgilis_deda
+		trigger = {
+			NOT = { has_character_modifier = georgian_adgilis_deda }
+		}
+		set_bhakti_effect = { BHAKTI = georgian_adgilis_deda }
+	}
+
+	# Kopala
+	option = {
+		name = pr_caucasus_decision.0001.kopala
+		trigger = {
+			NOT = { has_character_modifier = georgian_kopala }
+		}
+		set_bhakti_effect = { BHAKTI = georgian_kopala }
+	}
+
+	# Barbale
+	option = {
+		name = pr_caucasus_decision.0001.barbale
+		trigger = {
+			NOT = { has_character_modifier = georgian_the_barbale }
+		}
+		set_bhakti_effect = { BHAKTI = georgian_the_barbale }
+	}
+
+	# Opt-Out
+	option = {
+		name = pr_caucasus_decision.0001.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#--- Choose Armenian Personal Deity (0002) ---
+pr_caucasus_decision.0002 = {
+	type = character_event
+	title = pr_caucasus_decision.0002.t
+	desc = pr_caucasus_decision.0002.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	# Aramazd
+	option = {
+		name = pr_caucasus_decision.0002.aramazd
+		trigger = {
+			NOT = { has_character_modifier = armenian_aramazd }
+		}
+		set_bhakti_effect = { BHAKTI = armenian_aramazd }
+	}
+
+	# Astlik
+	option = {
+		name = pr_caucasus_decision.0002.astlik
+		trigger = {
+			NOT = { has_character_modifier = armenian_astlik }
+		}
+		set_bhakti_effect = { BHAKTI = armenian_astlik }
+	}
+
+	# Nane
+	option = {
+		name = pr_caucasus_decision.0002.nane
+		trigger = {
+			NOT = { has_character_modifier = armenian_nane }
+		}
+		set_bhakti_effect = { BHAKTI = armenian_nane }
+	}
+
+	# Nvard
+	option = {
+		name = pr_caucasus_decision.0002.nvard
+		trigger = {
+			NOT = { has_character_modifier = armenian_nvard }
+		}
+		set_bhakti_effect = { BHAKTI = armenian_nvard }
+	}
+
+	# Opt-Out
+	option = {
+		name = pr_caucasus_decision.0002.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}

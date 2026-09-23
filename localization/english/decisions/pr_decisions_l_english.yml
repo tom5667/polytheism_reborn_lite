@@ -1,0 +1,81 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Algemene Decisions
+  # Localization for pr_decisions.txt
+  # =============================================
+
+  # --- Decision Group Type ---
+  decision_group_type_polytheism:0 "Polytheism"
+
+  # --- Return to Polytheism Decision ---
+  pr_return_polytheism_decision:0 "Return to the Old Gods"
+  pr_return_polytheism_decision_desc:0 "#F The faith of our forebears calls to us from across the ages. Before the cross or the crescent came to our lands, our people honored the gods of sky and earth, of river and mountain. Now, as the old ways stir once more in the hearts of our kin, I feel the pull of the ancient faith.#!\nI shall renounce the foreign gods and return to the worship of my ancestors, embracing the path of polytheism as my people did in the days of old."
+  pr_return_polytheism_decision_tooltip:0 "#T Abandon your current faith and return to the ancient polytheistic traditions of your people#!"
+  pr_return_polytheism_decision_confirm:0 "Return to the Old Gods!"
+
+  # --- Return to Polytheism (Short) Decision ---
+  pr_return_polytheism_short_decision:0 "Quick Change Religion"
+  pr_return_polytheism_short_decision_desc:0 "#F The gods of old have not forgotten us, even as the centuries have worn away their temples and scattered their priests. I feel their presence in the wind and the rain, in the turning of the seasons and the calls of the wild.#!\nI shall take the first steps on the path back to the old faith, seeking the wisdom of the ancients."
+  pr_return_polytheism_short_decision_tooltip:0 "#T Quick menu to change to a polytheistic faith#!"
+  pr_return_polytheism_short_decision_confirm:0 "Quick Change Religion!"
+
+  # --- Return Culture (Short) Decision ---
+  pr_return_culture_short_decision:0 "Ancient Culture Quick Menu"
+  pr_return_culture_short_decision_desc:0 "#F The customs and traditions of my ancestors have endured, carried through the generations in songs and stories, in the way we till the soil and the way we honor our dead. Though the world has changed around us, the old culture lives on in the hearts of our people.#!\nI shall reclaim the culture of my forebears, embracing the ways that defined our people in the age of the gods."
+  pr_return_culture_short_decision_tooltip:0 "#T Begin your journey to reclaim the ancient culture of your people#!"
+  pr_return_culture_short_decision_confirm:0 "Embrace the Old Culture!"
+
+  # --- Close Temple of Vesta Decision ---
+  pr_close_temple_of_vesta_decision:0 "Close the Temple of Vesta"
+  pr_close_temple_of_vesta_decision_desc:0 "#F The eternal flame of Vesta has burned for centuries, tended by the devoted Vestal Virgins in the heart of Rome. Yet now that Rome has turned from the old gods, the temple stands as a relic of a forgotten past, its sacred fire a symbol of defiance against the new order.#!\nI shall extinguish the eternal flame and close the Temple of Vesta, ending an ancient tradition that no longer has a place in our world."
+  pr_close_temple_of_vesta_decision_tooltip:0 "#T Close the Temple of Vesta and extinguish its eternal flame#!"
+  pr_close_temple_of_vesta_decision_confirm:0 "Extinguish the Flame!"
+
+  # --- Dismantle the Patriarchate Decision ---
+  pr_dismantle_patriarchate_decision:0 "Dismantle the Patriarchate"
+  pr_dismantle_patriarchate_decision_desc:0 "#F The Orthodox Patriarchate has long claimed spiritual dominion over the eastern faithful, its influence casting a shadow over the ancient lands of Greece and Anatolia. Now that these lands have been brought under [ROOT.Char.GetFaith.GetAdjective] control, the time has come to strike at the heart of their authority.#!\nI shall dismantle the Patriarchate and break its hold over our people, ensuring that the old ways may flourish unopposed."
+  pr_dismantle_patriarchate_decision_tooltip:0 "#T Dismantle the Orthodox Patriarchate and permanently destroy its spiritual authority#!"
+  pr_dismantle_patriarchate_decision_confirm:0 "Let the Patriarchate Fall!"
+  pr_dismantle_patriarchate_decision_effect_tooltip:0 "The Patriarchate will be permanently destroyed"
+
+  # --- Create Celtica Decision ---
+  pr_create_celtica_decision:0 "Create the Kingdom of Celtica"
+  pr_create_celtica_decision_desc:0 "#F The ancient lands of Celtic Gaul once stretched from the Atlantic to the Rhine, a vast confederation of tribes bound by shared gods and shared blood. From the fertile valleys of Aquitaine to the rugged highlands of Auvergne, our people have endured the tides of Roman conquest and Germanic migration. Now, as the ruler who controls these historic lands, I shall revive the kingdom of Celtica and restore its former glory.#!\nBy creating Celtica, I shall establish a new kingdom that unites the Gaulish lands under a single banner, forging a realm that honors our shared Celtic heritage and strength."
+  pr_create_celtica_decision_tooltip:0 "#T Form the ancient kingdom of Celtica by uniting the Gaulish duchies#!"
+  pr_create_celtica_decision_confirm:0 "Create Celtica!"
+  pr_create_celtica_decision_effect_tooltip:0 "#P The kingdom of Celtica will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_valois.GetNameNoTier], [title_d_savoie.GetNameNoTier], [title_d_aquitaine.GetNameNoTier], and others will become part of Celtica $EFFECT_LIST_BULLET$ Requires significant [gold|E] and [prestige|E] investment @warning_icon! #X This action cannot be undone!#"
+
+  # --- Create Belgica Decision ---
+  pr_create_belgica_decision:0 "Create the Kingdom of Belgica"
+  pr_create_belgica_decision_desc:0 "#F The ancient land of Belgica once stood as the northern frontier of Celtic Gaul, its fierce tribes holding the line against the encroaching Germanic peoples. From the lowlands of Flanders to the fortified reaches of Brabant and Luxembourg, our people have maintained their heritage against the tides of time. Now, as the ruler who controls these historic lands, I shall revive the kingdom of Belgica and restore its former glory.#!\nBy creating Belgica, I shall establish a new kingdom that unites the northern Gaulish lands under a single banner, forging a realm that honors our shared Celtic heritage."
+  pr_create_belgica_decision_tooltip:0 "#T Form the ancient kingdom of Belgica by uniting the northern Gaulish duchies#!"
+  pr_create_belgica_decision_confirm:0 "Create Belgica!"
+  pr_create_belgica_decision_effect_tooltip:0 "#P The kingdom of Belgica will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_brabant.GetNameNoTier], [title_d_luxembourg.GetNameNoTier], [title_d_flanders.GetNameNoTier], and [title_d_julich.GetNameNoTier] will become part of Belgica $EFFECT_LIST_BULLET$ Requires significant [gold|E] and [prestige|E] investment @warning_icon! #X This action cannot be undone!#"
+
+  # --- Create Narbonensis Decision ---
+  pr_create_narbonensis_decision:0 "Create the Kingdom of Narbonensis"
+  pr_create_narbonensis_decision_desc:0 "#F The ancient province of Gallia Narbonensis, the first Roman foothold in Gaul, once stood as a beacon of civilization on the Mediterranean coast. From the sun-drenched vineyards of Provence to the bustling ports of Languedoc and Toulouse, our people have maintained their Gaulish heritage through the ages. Now, as the ruler who controls these historic lands, I shall revive the kingdom of Narbonensis and restore its former glory.#!\nBy creating Narbonensis, I shall establish a new kingdom that unites the southern Gaulish lands under a single banner, forging a realm that honors our shared Celtic heritage."
+  pr_create_narbonensis_decision_tooltip:0 "#T Form the ancient kingdom of Narbonensis by uniting the southern Gaulish duchies#!"
+  pr_create_narbonensis_decision_confirm:0 "Create Narbonensis!"
+  pr_create_narbonensis_decision_effect_tooltip:0 "#P The kingdom of Narbonensis will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_provence.GetNameNoTier], [title_d_languedoc.GetNameNoTier], [title_d_toulouse.GetNameNoTier], and [title_d_dauphine.GetNameNoTier] will become part of Narbonensis $EFFECT_LIST_BULLET$ Requires significant [gold|E] and [prestige|E] investment @warning_icon! #X This action cannot be undone!#"
+
+  # --- Create Cisalpine Gaul Decision ---
+  pr_create_cisalpine_gaul_decision:0 "Create the Kingdom of Cisalpine Gaul"
+  pr_create_cisalpine_gaul_decision_desc:0 "#F The ancient land of Cisalpine Gaul, the Gaulish heartland south of the Alps, once stood as a bridge between the Celtic world and the Mediterranean. From the wealthy trading cities of Genoa and Venice to the fertile plains of Lombardy and Emilia, our people have maintained their heritage against the tides of Roman conquest. Now, as the ruler who controls these historic lands, I shall revive the kingdom of Cisalpine Gaul and restore its former glory.#!\nBy creating Cisalpine Gaul, I shall establish a new kingdom that unites the northern Italian Gaulish lands under a single banner, forging a realm that honors our shared Celtic heritage."
+  pr_create_cisalpine_gaul_decision_tooltip:0 "#T Form the ancient kingdom of Cisalpine Gaul by uniting the northern Italian duchies#!"
+  pr_create_cisalpine_gaul_decision_confirm:0 "Create Cisalpine Gaul!"
+  pr_create_cisalpine_gaul_decision_effect_tooltip:0 "#P The kingdom of Cisalpine Gaul will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_genoa.GetNameNoTier], [title_d_lombardia.GetNameNoTier], [title_d_venice.GetNameNoTier], and [title_d_friuli.GetNameNoTier] will become part of Cisalpine Gaul $EFFECT_LIST_BULLET$ Requires significant [gold|E] and [prestige|E] investment @warning_icon! #X This action cannot be undone!#"
+
+  # --- AI Polytheism Reconstruction Decision ---
+  pr_ai_polyteism_reconstruction_decision:0 "Reconstruct the Old Faith"
+  pr_ai_polyteism_reconstruction_decision_desc:0 "#F When the fervor of the dominant faith falters and the people cry out for spiritual renewal, the ancient gods may once again find willing ears among the rulers of the world.#!"
+  pr_ai_polyteism_reconstruction_decision_tooltip:0 "#T AI-only decision to reconstruct polytheism when faith fervor is low#!"
+  pr_ai_polyteism_reconstruction_decision_confirm:0 "Reconstruct the Old Faith"
+
+  # --- AI Polytheism More Variety Religions in Realm Decision ---
+  pr_ai_polyteism_more_variety_religions_in_realm_decision:0 "Encourage Religious Variety"
+  pr_ai_polyteism_more_variety_religions_in_realm_decision_desc:0 "#F A realm thrives when many faiths coexist under a wise ruler's gaze. By encouraging religious variety within my domain, the ancient gods shall find new followers among my people.#!"
+  pr_ai_polyteism_more_variety_religions_in_realm_decision_tooltip:0 "#T AI-only decision to encourage more religious variety within the realm#!"
+  pr_ai_polyteism_more_variety_religions_in_realm_decision_confirm:0 "Encourage Religious Variety"
+
+

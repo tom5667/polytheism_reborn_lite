@@ -1,0 +1,254 @@
+﻿pr_restore_cult = {
+	scope = character
+	is_shown = {}
+	effect = {
+		if = {
+			limit = {
+				OR = {
+					religion = religion:roman_religion
+					faith = faith:kemetic_polytheism
+					religion = religion:hellenism_religion
+				}
+			}
+			trigger_event = pr_roman_cult.0042
+		}
+	}
+}
+
+pr_get_cultists_list = {
+	scope = character
+	is_shown = {}
+	effect = {
+		root = {
+			clear_variable_list = pr_cultists_list
+		}
+		root = {
+			every_living_character = {
+				limit = {
+					OR = {
+						AND = {
+							root = { has_trait = mithras_cult }
+							has_trait = mithras_cult
+							religion = religion:roman_religion
+						}
+						AND = {
+							root = { has_trait = bacchus_cult }
+							has_trait = bacchus_cult
+							religion = religion:roman_religion
+						}
+						AND = {
+							root = { has_trait = isis_cult }
+							has_trait = isis_cult
+							OR = {
+								religion = religion:roman_religion
+								religion = religion:hellenism_religion
+								faith = faith:kemetic_polytheism
+							}
+						}
+						AND = {
+							root = { has_trait = sol_invictus_cult }
+							has_trait = sol_invictus_cult
+							religion = religion:roman_religion
+						}
+						AND = {
+							root = { has_trait = serapis_cult }
+							has_trait = serapis_cult
+							OR = {
+								religion = religion:roman_religion
+								religion = religion:hellenism_religion
+								faith = faith:kemetic_polytheism
+							}
+						}
+						AND = {
+							root = { has_trait = eleusinian_cult }
+							has_trait = eleusinian_cult
+							OR = {
+								religion = religion:roman_religion
+								religion = religion:hellenism_religion
+							}
+						}
+						AND = {
+							root = { has_trait = imperial_cult }
+							has_trait = imperial_cult
+							OR = {
+								religion = religion:roman_religion
+								religion = religion:hellenism_religion
+								faith = faith:kemetic_polytheism
+							}
+						}
+						AND = {
+							root = { has_trait = cybele_cult }
+							has_trait = cybele_cult
+							OR = {
+								religion = religion:roman_religion
+								religion = religion:hellenism_religion
+							}
+						}
+					}
+				}
+				root = {
+					add_to_variable_list = {
+						name = pr_cultists_list
+						target = prev
+					}
+				}
+			}
+		}
+	}
+}
+
+pr_get_head_of_cult = {
+	scope = character
+	is_shown = {}
+	effect = {
+		root = {
+			clear_variable_list = pr_head_of_cult_list
+		}
+		root = {
+			every_living_character = {
+				limit = {
+					OR = {
+						AND = {
+							has_trait = mithras_cult
+							has_trait = pr_pater_mithras
+							religion = religion:roman_religion
+						}
+						AND = {
+							has_trait = hierophant_bacchus
+							religion = religion:roman_religion
+						}
+						AND = {
+							has_trait = hierophant_isis
+							OR = {
+								religion = religion:roman_religion
+								religion = religion:hellenism_religion
+								faith = faith:kemetic_polytheism
+							}
+						}
+						AND = {
+							has_trait = hierophant_sol_invictus
+							religion = religion:roman_religion
+						}
+						AND = {
+							has_trait = hierophant_serapis
+							OR = {
+								religion = religion:roman_religion
+								religion = religion:hellenism_religion
+								faith = faith:kemetic_polytheism
+							}
+						}
+						AND = {
+							has_trait = hierophant_eleusinian
+							OR = {
+								religion = religion:roman_religion
+								religion = religion:hellenism_religion
+							}
+						}
+						AND = {
+							has_trait = hierophant_bacchus
+							religion = religion:roman_religion
+						}
+						AND = {
+							has_trait = augustalis_imperial_cult
+							OR = {
+								religion = religion:roman_religion
+								religion = religion:hellenism_religion
+								faith = faith:kemetic_polytheism
+							}
+						}
+						AND = {
+							has_trait = hierophant_cybele
+							OR = {
+								religion = religion:roman_religion
+								religion = religion:hellenism_religion
+							}
+						}
+					}
+				}
+				root = {
+					add_to_variable_list = {
+						name = pr_head_of_cult_list
+						target = prev
+					}
+				}
+			}
+		}
+	}
+}
+
+pr_get_vesta_druid_head = {
+	scope = character
+	is_shown = {}
+	effect = {
+		root = {
+			clear_variable_list = pr_vesta_druid_head_list
+		}
+		root = {
+			every_living_character = {
+				limit = {
+					OR = {
+						AND = {
+							has_trait = vestalis_maxima
+							religion = religion:roman_religion
+						}
+						AND = {
+							has_trait = druidic_circle_leader
+							religion = religion:celtic_religion
+						}
+					}
+				}
+				root = {
+					add_to_variable_list = {
+						name = pr_vesta_druid_head_list
+						target = prev
+					}
+				}
+			}
+		}
+	}
+}
+
+pr_show_cults_to_join = {
+	scope = character
+	is_shown = {}
+	effect = {
+		if = {
+			limit = {
+				religion = religion:roman_religion
+			}
+			trigger_event = pr_roman_cult.0001
+		}
+	}
+}
+
+pr_cult_meeting = {
+	scope = character
+	is_shown = {}
+	effect = {
+		if = {
+			limit = {
+				has_trait = mithras_cult
+			}
+			trigger_event = pr_roman_cult.0025
+		}
+	}
+}
+
+pr_vesta_druidic_visit = {
+	scope = character
+	is_shown = {}
+	effect = {
+		if = {
+			limit = {
+				religion = religion:roman_religion
+			}
+			# trigger_event = pr_roman_cult.0026
+		}
+		if = {
+			limit = {
+				religion = religion:celtic_religion
+			}
+			# trigger_event = pr_roman_cult.0021
+		}
+	}
+}

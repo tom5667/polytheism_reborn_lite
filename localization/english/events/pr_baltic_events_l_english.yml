@@ -1,0 +1,35 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Baltic Events
+  # Localization for pr_baltic_decision_events.txt
+  # =============================================
+
+  # --- Choose Lithuanian Personal Deity (0001) ---
+  pr_baltic_decision.0001.t:0 "Deciding on a Deity"
+  pr_baltic_decision.0001.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
+  pr_baltic_decision.0001.dievas:0 "Dievas, Father of the Sky!"
+  pr_baltic_decision.0001.dalia:0 "Dalia, Goddess of Fate and Destiny!"
+  pr_baltic_decision.0001.perkunas:0 "Perkunas, Thunderer of the Heavens!"
+  pr_baltic_decision.0001.zemyna:0 "Zemyna, Mother of the Earth!"
+  pr_baltic_decision.0001.saule:0 "Saule, Goddess of the Sun!"
+  pr_baltic_decision.0001.optout:0 "$religious_decision.0102.flavor$"
+
+  # --- Choose Latvian Personal Deity (0002) ---
+  pr_baltic_decision.0002.t:0 "Deciding on a Deity"
+  pr_baltic_decision.0002.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
+  pr_baltic_decision.0002.dievs:0 "Dievs, Lord of the Sky!"
+  pr_baltic_decision.0002.jumis:0 "Jumis, God of Fertility and Harvest!"
+  pr_baltic_decision.0002.perkons:0 "Perkons, Thunderer of the Heavens!"
+  pr_baltic_decision.0002.ceroklis:0 "Ceroklis, God of Farming and Flocks!"
+  pr_baltic_decision.0002.saule:0 "Saule, Goddess of the Sun!"
+  pr_baltic_decision.0002.optout:0 "$religious_decision.0102.flavor$"
+
+  # --- Choose Prussian Personal Deity (0003) ---
+  pr_baltic_decision.0003.t:0 "Deciding on a Deity"
+  pr_baltic_decision.0003.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
+  pr_baltic_decision.0003.deiws:0 "Deiws, Father of the Sky!"
+  pr_baltic_decision.0003.pilwits:0 "Pilwits, God of the Sacred Fire!"
+  pr_baltic_decision.0003.perkuns:0 "Perkuns, Thunderer of the Heavens!"
+  pr_baltic_decision.0003.patrimps:0 "Patrimps, God of Waters and Harvest!"
+  pr_baltic_decision.0003.ausauts:0 "Ausauts, God of the Dead and the Underworld!"
+  pr_baltic_decision.0003.optout:0 "$religious_decision.0102.flavor$"

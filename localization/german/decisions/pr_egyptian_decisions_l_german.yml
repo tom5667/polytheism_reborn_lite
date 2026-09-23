@@ -1,0 +1,40 @@
+l_german:
+  # =============================================
+  # Polytheism Reborn - Ägyptische Entscheidungen
+  # Lokalisierung für pr_egyptian_decisions.txt
+  # =============================================
+
+  # --- Königreich Unterägypten gründen ---
+  pr_egyptian_kingdom_of_lower_egypt_decision:0 "Gründe das Königreich Unterägypten"
+  pr_egyptian_kingdom_of_lower_egypt_decision_desc:0 "#F Die fruchtbaren Lande des Nildeltas, einst das Herzland Unterägyptens, haben lange auf einen Herrscher gewartet, der ihres alten Erbes würdig ist. Von der großen Stadt Alexandria bis zu den belebten Märkten Kairos sind diese Länder zu lange geteilt gewesen.#!/n\nDurch die Gründung des Königreichs Unterägypten werde ich das alte Erbe der Pharaonen wiederherstellen und das Delta unter meiner Herrschaft vereinen."
+  pr_egyptian_kingdom_of_lower_egypt_decision_tooltip:0 "#T Bilde das Königreich Unterägypten, indem du das Nildelta vereinst#!/"
+  pr_egyptian_kingdom_of_lower_egypt_decision_confirm:0 "Gründe das Königreich Unterägypten!"
+  pr_egyptian_kingdom_of_lower_egypt_decision_effect_tooltip:0 "#P Das Königreich Unterägypten wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_cairo.GetNameNoTier], [title_d_sinai.GetNameNoTier], [title_d_delta.GetNameNoTier] und [title_d_alexandria.GetNameNoTier] werden [de_jure|E] Teil von Unterägypten$EFFECT_LIST_BULLET$Erfordert erhebliche Investitionen in [gold|E] und [prestige|E]@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Königreich Oberägypten gründen ---
+  pr_egyptian_kingdom_of_upper_egypt_decision:0 "Gründe das Königreich Oberägypten"
+  pr_egyptian_kingdom_of_upper_egypt_decision_desc:0 "#F Die alten Lande Oberägyptens, einst die Wiege der pharaonischen Zivilisation, erstrecken sich entlang des Nils von den Katarakten bis zu den Grenzen des Deltas. Diese Länder mit ihren heiligen Tempeln und alten Monumenten sind zu lange geteilt gewesen.#!/n\nDurch die Gründung des Königreichs Oberägypten werde ich das südliche Erbe der Pharaonen wiederherstellen und den Oberen Nil unter meiner Herrschaft vereinen."
+  pr_egyptian_kingdom_of_upper_egypt_decision_tooltip:0 "#T Bilde das Königreich Oberägypten, indem du die Lande des Oberen Nils vereinst#!/"
+  pr_egyptian_kingdom_of_upper_egypt_decision_confirm:0 "Gründe das Königreich Oberägypten!"
+  pr_egyptian_kingdom_of_upper_egypt_decision_effect_tooltip:0 "#P Das Königreich Oberägypten wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_al-said.GetNameNoTier], [title_d_eastern_desert.GetNameNoTier] und [title_d_al-wahat.GetNameNoTier] werden [de_jure|E] Teil von Oberägypten$EFFECT_LIST_BULLET$Erfordert erhebliche Investitionen in [gold|E] und [prestige|E]@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Imperium Ägypten wiederherstellen ---
+  pr_egyptian_restore_egyptus_decision:0 "Stelle das Imperium Ägypten wieder her"
+  pr_egyptian_restore_egyptus_decision_desc:0 "#F Die beiden Königreiche Ober- und Unterägypten, einst unter der Krone der Pharaonen vereint, bildeten das größte Imperium, das die antike Welt je kannte. Von den Katarakten Nubiens bis zu den Ufern des Mittelmeers stand das Imperium Ägypten als Leuchtfeuer der Zivilisation und göttlichen Königtums.#!/n\nDurch die Wiederherstellung des Imperiums Ägypten werde ich beide Königreiche unter einem einzigen Banner vereinen und den vollen Ruhm der Pharaonen zurückfordern."
+  pr_egyptian_restore_egyptus_decision_tooltip:0 "#T Stelle das Imperium Ägypten wieder her, indem du Ober- und Unterägypten vereinst#!/"
+  pr_egyptian_restore_egyptus_decision_confirm:0 "Stelle das Imperium Ägypten wieder her!"
+  pr_egyptian_restore_egyptus_decision_effect_tooltip:0 "#P Das Imperium Ägypten wird als neuer [Imperium|E]-Titel gegründet#/n$EFFECT_LIST_BULLET$[title_k_upper_egypt.GetNameNoTier] und [title_k_lower_egypt.GetNameNoTier] werden [de_jure|E] Teil des Imperiums$EFFECT_LIST_BULLET$Erfordert erhebliche Investitionen in [gold|E] und [prestige|E]@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Hauptgottheit wählen (Kemetisch) ---
+  pr_egyptian_choose_main_deity_decision:0 "Wähle Hauptgottheit"
+  pr_egyptian_choose_main_deity_decision_desc:0 "#F Die Götter des kemetischen Pantheons verlangen einen Champion, der ihren Willen in der sterblichen Welt vertritt. Als Herrscher des kemetischen Glaubens muss ich eine Schutzgottheit auswählen, die meine Handlungen leitet und meine Herrschaft mit göttlichem Segen bedenkt.#!/n\nDurch die Wahl einer Hauptgottheit werde ich eine persönliche Verbindung mit dem Göttlichen herstellen und einzigartige Segnungen und Modifikatoren erhalten, die die Natur meiner gewählten Gottheit oder Göttin widerspiegeln."
+  pr_egyptian_choose_main_deity_decision_tooltip:0 "#T Wähle eine Schutzgottheit aus deinem kemetischen Glauben, um göttliche Segnungen zu erhalten#!/"
+  pr_egyptian_choose_main_deity_decision_confirm:0 "Wähle Hauptgottheit!"
+  pr_egyptian_choose_main_deity_decision_tt:0 "#T Verfügbare Gottheiten für [ROOT.Char.GetFaith.GetName]#!/"
+
+  # --- Auswahlbeschreibungen der Hauptgottheit: Kemetisch ---
+  select_main_deity_kemetic_decision.select_amun_ra:0 "#T Amun-Ra#!/\n#P Der König der Götter, Herr der Schöpfung und des verborgenen Windes#!/"
+  select_main_deity_kemetic_decision.select_ra:0 "#T Ra#!/\n#P Der Sonnengott, Herr der Mittagssonne und göttlichen Königtums#!/"
+  select_main_deity_kemetic_decision.select_isis:0 "#T Isis#!/\n#P Göttin der Magie, Mutterschaft und Fruchtbarkeit#!/"
+  select_main_deity_kemetic_decision.select_montu:0 "#T Montu#!/\n#P Gott des Krieges, der Tapferkeit und der Macht des Falken#!/"
+  select_main_deity_kemetic_decision.select_hathor:0 "#T Hathor#!/\n#P Göttin der Liebe, Musik, Schönheit und Freude#!/"

@@ -1,5 +1,23 @@
 ﻿l_english:
 
+    norse_pagan_desc:0 "Norse paganism calls upon the Æsir and Vanir, gods of war, wisdom and fertility who dwell in Asgard, reached by the world-tree Yggdrasil. Warriors who die in glory are promised a place at Odin's table."
+
+    # Note: the germanic_* base custom-localization keys below (used by norse_pagan) have no
+    # defined text anywhere in the mod (pre-existing gap, out of scope for this fix). Tier-2/3
+    # self-references are added regardless, per the mod's own convention for these fields.
+    germanic_high_god_name_2:0 "$germanic_high_god_name$"
+    germanic_religious_symbol_2:0 "$germanic_religious_symbol$"
+    germanic_religious_symbol_3:0 "$germanic_religious_symbol$"
+    germanic_religious_text_2:0 "$germanic_religious_text$"
+    germanic_religious_text_3:0 "$germanic_religious_text$"
+    germanic_divine_realm_2:0 "$germanic_divine_realm$"
+    germanic_divine_realm_3:0 "$germanic_divine_realm$"
+    germanic_positive_afterlife_2:0 "$germanic_positive_afterlife$"
+    germanic_positive_afterlife_3:0 "$germanic_positive_afterlife$"
+    germanic_death_deity_name_2:0 "$germanic_death_deity_name$"
+    germanic_death_deity_name_3:0 "$germanic_death_deity_name$"
+    germanic_good_god_freyja_possessive:0 "Freyja's"
+
     # anglo_saxon_religion:0 "Anglo Saxon Polytheism"
     # anglo_saxon_religion_adj:0 "Anglo Saxon Polytheism"
     # anglo_saxon_religion_desc:0 "There are hundrets of spirits and none human entities next to that they honor major deities all worshiped in their own way"
@@ -22,12 +40,17 @@
     anglo_saxon_religious_head_title_name:0 "High Priesthood"
     anglo_saxon_polytheism_divine_realm:0 "Ælfred (elf Council)"
     anglo_saxon_polytheism_religious_symbol:0 "Irminsul"
+    anglo_saxon_polytheism_religious_symbol_2:0 "$anglo_saxon_polytheism_religious_symbol$"
+    anglo_saxon_polytheism_religious_symbol_3:0 "$anglo_saxon_polytheism_religious_symbol$"
     anglo_saxon_religious_text:0 "Epics and Rites"
+    anglo_saxon_religious_text_2:0 "$anglo_saxon_religious_text$"
+    anglo_saxon_religious_text_3:0 "$anglo_saxon_religious_text$"
 
         #anglo saxon gods/goddesses Localization
 
     #high god Localization
     anglo_saxon_high_god_name:0 "Wōden"
+    anglo_saxon_high_god_name_2:0 "$anglo_saxon_high_god_name$"
     anglo_saxon_high_god_name_possessive:0 "Wōdens"
     anglo_saxon_high_god_name_alternate:0 "All father Wōden"
     anglo_saxon_high_god_name_alternate_possessive:0 "All father Wōden"
@@ -80,8 +103,9 @@
     anglo_saxon_water_god_name_possessive:0 "Njord's"
 
     #evil gods names 
-    anglo_saxon_evil_god_surtr:0 "Surtr" 
-    anglo_saxon_evil_god_jormungandr:0 "Jörmungandr"  
+    anglo_saxon_evil_god_surtr:0 "Surtr"
+    anglo_saxon_evil_god_surtr_possessive:0 "$anglo_saxon_evil_god_surtr$'s"
+    anglo_saxon_evil_god_jormungandr:0 "Jörmungandr"
     
     anglo_saxon_witch_god_surtr:0 "Surtr" 
 
@@ -91,6 +115,8 @@
 
     #Death god 
     anglo_saxon_death_deity_name:0 "Hellja"
+    anglo_saxon_death_deity_name_2:0 "$anglo_saxon_death_deity_name$"
+    anglo_saxon_death_deity_name_3:0 "$anglo_saxon_death_deity_name$"
     anglo_saxon_death_deity_name_possessive:0 "Hellja's"
 
     #Good gods names 
@@ -109,15 +135,22 @@
     anglo_saxon_priest_male:0 "Priest"
     anglo_saxon_priest_male_plural:0 "Priests"
     anglo_saxon_priest_neuter:0 "Priest"
+    anglo_saxon_priest_neuter_plural:0 "Priests"
 
     #anglo saxon  
     anglo_saxon_priest_female:0 "Priestess" 
     anglo_saxon_priest_female_plural:0 "Priestesses" 
 
-    #anglo saxon   
-    anglo_saxon_bishop_male:0 "Priest" 
-    anglo_saxon_bishop_male_plural:0 "Head priests" 
+    #anglo saxon
+    anglo_saxon_bishop_male:0 "Priest"
+    anglo_saxon_bishop_male_plural:0 "Head priests"
+    anglo_saxon_bishop_female:0 "Priestess"
+    anglo_saxon_bishop_female_plural:0 "Head priestesses"
+    anglo_saxon_bishop_neuter:0 "Priest"
     anglo_saxon_bishop_neuter_plural:0 "Head priests"
+    anglo_saxon_divine_realm:0 "Anglo-Saxon pantheon"
+    anglo_saxon_divine_realm_2:0 "$anglo_saxon_divine_realm$"
+    anglo_saxon_divine_realm_3:0 "$anglo_saxon_divine_realm$"
     #roman names
     #males
     reserved_male_names:0 "Anglo Saxon male names"
@@ -136,7 +169,7 @@
     german_polytheism_adj:0 "German" 
     german_polytheism_adherent:0 "German polytheist"
     german_polytheism_adherent_plural:0 "German Polytheism polytheists"
-    german_polytheism_desc:0 "German polytheism has many deities, next to that each tribe has it's own additions to the pantheon." 
+    german_polytheism_desc:0 "German polytheism honors a wide pantheon of deities, with each tribe adding its own local gods and customs to the shared tradition." 
 
     german_polytheism_old:0 "German Old"
     german_polytheism_old_adj:0 "German Old" 
@@ -148,10 +181,15 @@
     german_religious_head_title_name:0 "High Priesthood"
     german_polytheism_divine_realm:0 "Asgard"
     german_polytheism_religious_symbol:0 "Runes "
+    german_polytheism_religious_symbol_2:0 "$german_polytheism_religious_symbol$"
+    german_polytheism_religious_symbol_3:0 "$german_polytheism_religious_symbol$"
     german_religious_text:0 "Epics and Rites"
+    german_religious_text_2:0 "$german_religious_text$"
+    german_religious_text_3:0 "$german_religious_text$"
     
     #high god Localization
     german_high_god_name:0 "Wotan"
+    german_high_god_name_2:0 "$german_high_god_name$"
     german_high_god_name_possessive:0 "Wotans"
     german_high_god_alternate:0 "All father Wotan"
     german_high_god_alternate_possessive:0 "All father Wotan"
@@ -208,6 +246,7 @@
     german_evil_god_nidhogg:0 "Nidhogg"  
 
     german_witch_god_surtr:0 "Surtr"
+    german_witch_god_surtr_possessive:0 "$german_witch_god_surtr$'s"
 
 
     #Devil god   
@@ -216,6 +255,8 @@
 
     #Death god 
     german_death_deity_name:0 "Hellja"
+    german_death_deity_name_2:0 "$german_death_deity_name$"
+    german_death_deity_name_3:0 "$german_death_deity_name$"
     german_death_deity_name_possessive:0 "Hellja's"
 
     #Good gods names 
@@ -240,10 +281,16 @@
     german_priest_female:0 "Priestess" 
     german_priest_female_plural:0 "Priestess" 
 
-    #Germanic   
-    german_bishop_male:0 "Head priest" 
-    german_bishop_male_plural:0 "Head priest" 
+    #Germanic
+    german_bishop_male:0 "Head priest"
+    german_bishop_male_plural:0 "Head priest"
+    german_bishop_female:0 "Head priestess"
+    german_bishop_female_plural:0 "Head priestesses"
+    german_bishop_neuter:0 "Head priest"
     german_bishop_neuter_plural:0 "Head priests"
+    german_divine_realm:0 "Germanic pantheon"
+    german_divine_realm_2:0 "$german_divine_realm$"
+    german_divine_realm_3:0 "$german_divine_realm$"
     #roman names
     #males
     reserved_male_names:0 "Germanic male names"

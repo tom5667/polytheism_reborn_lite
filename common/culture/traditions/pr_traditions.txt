@@ -8,10 +8,10 @@
 	}
 	
 	can_pick = {
-		has_cultural_pillar = heritage_celtic_iberian
+		has_cultural_pillar = heritage_pr_celtic_iberian
 	}
 	is_shown = {
-		has_cultural_pillar = heritage_celtic_iberian
+		has_cultural_pillar = heritage_pr_celtic_iberian
 	}
 	parameters = {
 		culture_can_raid_over_land_even_if_feudal = yes 
@@ -65,7 +65,7 @@
 		value = 50
 		if = {
 			limit = {
-				has_cultural_pillar = heritage_celtic_iberian
+				has_cultural_pillar = heritage_pr_celtic_iberian
 			}
 			multiply = 5
 		}
@@ -82,10 +82,10 @@ tradition_celtiberian_tactics = {
 	}
 	
 	is_shown = {
-		has_cultural_pillar = heritage_celtic_iberian
+		has_cultural_pillar = heritage_pr_celtic_iberian
 	}
 	can_pick = {
-		has_cultural_pillar = heritage_celtic_iberian
+		has_cultural_pillar = heritage_pr_celtic_iberian
 	}
 
 	# Iberian: Concurso Tactics
@@ -158,4 +158,4 @@ tradition_celtiberian_tactics = {
 			multiply = 0.25
 		}
 	}
-}
+}

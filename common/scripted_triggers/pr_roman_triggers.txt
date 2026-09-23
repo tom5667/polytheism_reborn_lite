@@ -1,0 +1,101 @@
+﻿# Roman Triggers
+pr_augur_basic_requirements_trigger = {
+	is_adult = yes
+	is_imprisoned = no
+	is_alive = yes # Because apparently there can be dead characters in the pool (remove when fixed)
+	is_claimant = no # We don't want recruiting physicians to be a cheap way of getting claimants
+	faith = root.faith
+	has_trait = education_learning_1
+	learning >= 13
+}
+pr_excellent_skill_augur_trigger = {
+	pr_augur_basic_requirements_trigger = yes
+	learning >= high_skill_rating
+}
+pr_high_skill_augur_trigger = {
+	pr_augur_basic_requirements_trigger = yes
+	OR = {
+		#Empire/kingdom
+		AND = {
+			root = { highest_held_title_tier >= tier_kingdom }
+			learning >= decent_skill_rating #Will be pushed up to high by adding physician traits
+			NAND = {
+				has_trait = lifestyle_mystic
+				NOT = { has_trait = lifestyle_physician }
+			}
+		}
+		#Duchy/county
+		AND = {
+			root = { highest_held_title_tier <= tier_duchy }
+			NOR = {
+				learning > high_skill_rating
+				has_trait =  education_learning_3
+				has_trait = lifestyle_mystic
+			}
+			learning >= mediocre_skill_rating #Will be pushed up to medium by adding physician traits
+		}
+	}
+}
+pr_low_skill_augur_trigger = {
+	pr_augur_basic_requirements_trigger = yes
+	NOR = {
+		has_trait = lifestyle_mystic
+		has_trait = education_learning_2
+	}
+	OR = {
+		#Empire/kingdom
+		AND = {
+			root = { highest_held_title_tier >= tier_kingdom }
+			learning < decent_skill_rating
+			learning >= mediocre_skill_rating
+		}
+		#Duchy/county
+		AND = {
+			root = { highest_held_title_tier <= tier_duchy }
+			learning < decent_skill_rating
+			learning >= mediocre_skill_rating
+		}
+	}
+}
+pr_low_skill_augur_light_trigger = {
+	pr_augur_basic_requirements_trigger = yes
+	learning > mediocre_skill_rating
+}
+pr_mystic_augur_trigger = {
+	pr_augur_basic_requirements_trigger = yes
+
+	#For this one, we add mystic trait if they don't have it if their learning isn't awesome
+	#Must be suitable mystic
+	has_trait = lifestyle_mystic
+	OR = {
+		#Empire/kingdom
+		AND = {
+			root = { highest_held_title_tier >= tier_kingdom }
+			learning >= decent_skill_rating #Will be pushed up to high by adding mystic traits
+			NAND = {
+				has_trait = education_learning_2
+				NOT = { has_trait = lifestyle_mystic }
+			}
+		}
+		#Duchy/county
+		AND = {
+			root = { highest_held_title_tier <= tier_duchy }
+			NOR = {
+				learning > high_skill_rating
+				has_trait = mystic_3
+				has_trait = education_learning_3
+			}
+			learning >= mediocre_skill_rating #Will be pushed up to medium by adding mystic traits
+		}
+	}
+}
+
+# Is courtier suited to prowess/martial positions (Pater Mithras)
+# Moved from pr_decision_scripted_effect.txt
+court_position_garuda_trigger = {
+	OR = {
+		has_education_martial_trigger = yes
+		has_trait = lifestyle_blademaster
+		prowess >= 11
+	}
+}

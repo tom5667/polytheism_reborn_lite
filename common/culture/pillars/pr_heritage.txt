@@ -1,31 +1,119 @@
-﻿heritage_daco_thracian = {
+﻿heritage_pr_daco_thracian = {
 	type = heritage
-}
-heritage_gaulish = {
-	type = heritage
-}
-heritage_mycenaean ={
-	type = heritage
-}
-heritage_etruscan = {
-	type = heritage
-}
-heritage_mesopotamian = {
-	type = heritage
-}
-heritage_hittite = {
-	type = heritage
-}
-heritage_phoenician = {
-	type = heritage
+
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_pr_daco_thracian
+		}
+	}
+
+	audio_parameter = european
 }
 
-heritage_illyrian = {
+heritage_pr_gaulish = {
 	type = heritage
+
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_pr_gaulish
+		}
+	}
+
+	audio_parameter = european
 }
+
+heritage_pr_mycenaean = {
+	type = heritage
+
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_pr_mycenaean
+		}
+	}
+
+	audio_parameter = european
+}
+
+heritage_pr_etruscan = {
+	type = heritage
+
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_pr_etruscan
+		}
+	}
+
+	audio_parameter = european
+}
+
+heritage_pr_mesopotamian = {
+	type = heritage
+
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_pr_mesopotamian
+		}
+	}
+
+	audio_parameter = mena
+}
+
+heritage_pr_hittite = {
+	type = heritage
+
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_pr_hittite
+		}
+	}
+
+	audio_parameter = mena
+}
+
+heritage_pr_phoenician = {
+	type = heritage
+
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_pr_phoenician
+		}
+	}
+
+	audio_parameter = byzantine
+}
+
+heritage_pr_illyrian = {
+	type = heritage
+
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_pr_illyrian
+		}
+	}
+
+	audio_parameter = european
+}
+
 heritage_pr_greek = {
 	type = heritage
+
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_pr_greek
+		}
+	}
+
+	audio_parameter = byzantine
 }
-heritage_celtic_iberian = {
+
+heritage_pr_celtic_iberian = {
 	type = heritage
+
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_pr_celtic_iberian
+		}
+	}
+
+	audio_parameter = european
 }

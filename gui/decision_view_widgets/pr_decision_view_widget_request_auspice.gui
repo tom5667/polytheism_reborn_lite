@@ -1,5 +1,4 @@
 ﻿# Required controller: decision_option_list_controller
-
 vbox = {
 	name = "pr_decision_view_widget_request_auspice"
 	layoutpolicy_horizontal = expanding
@@ -15,7 +14,7 @@ vbox = {
 
 	hbox = {
 		layoutpolicy_horizontal = expanding
-		layoutpolicy_vertical = expanding		
+		layoutpolicy_vertical = expanding
 
 		scrollbox = {
 			layoutpolicy_horizontal = expanding
@@ -42,11 +41,11 @@ types RequestAuspice
 	type request_auspices = button_standard {
 		size = { 500 90 }
 		margin = { 30 30 }
-		tintcolor = {0.5 0.65 0.2 1}
+		tintcolor = { 0.5 0.65 0.2 1 }
 		onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
 		enabled = "[Entry.IsEnabled]"
 		tooltip = "[Entry.GetTooltip]"
-		down = "[Entry.IsSelected]"		
+		down = "[Entry.IsSelected]"
 
 		hbox = {
 			layoutpolicy_horizontal = expanding
@@ -64,7 +63,6 @@ types RequestAuspice
 
 			vbox = {
 				name = "auspice_info"
-
 				layoutpolicy_vertical = expanding
 
 				text_single = {
@@ -75,7 +73,7 @@ types RequestAuspice
 				}
 			}
 
-			expand = {}	
+			expand = {}
 		}
 	}
 }

@@ -1,0 +1,15 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Iberian Events
+  # Localization for pr_iberian_decision_events.txt
+  # =============================================
+
+  # --- Choose Main Deity: Lusitanian (0100) ---
+  pr_iberian.0100.t:0 "Choose Main Deity"
+  pr_iberian.0100.desc:0 "#F The gods of the Iberian hills and forests are ancient, and their favour is won through devotion and sacrifice. To guide my people through the trials ahead, I would do well to devote myself to one of the great deities of the Lusitanian pantheon.#!\n\nReue, supreme god of the mountains and the sky, watches over all who dwell beneath him. Arencio, god of courage and the warrior's path, grants strength to the brave. Ataegina, goddess of fertility and rebirth, blesses the land and its people. Lucubo, god of war and the hunt, guides the spear of the faithful. Cariocecus, god of war and the furies, drives the enemy before him in terror.\n\nWhich path shall I walk?"
+  pr_iberian.0100.reue:0 "Reue, Lord of the Mountains and Sky"
+  pr_iberian.0100.arancio:0 "Arencio, God of Courage"
+  pr_iberian.0100.ataegina:0 "Ataegina, Lady of Fertility and Rebirth"
+  pr_iberian.0100.lucubo:0 "Lucubo, Lord of War and the Hunt"
+  pr_iberian.0100.cariocecus:0 "Cariocecus, God of War and the Furies"
+  pr_iberian.0100.optout:0 "Maybe now isn't the right time"

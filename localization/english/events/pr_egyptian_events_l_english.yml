@@ -1,0 +1,50 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Egyptian Events
+  # Localization for pr_egyptian_decision_events.txt
+  # =============================================
+
+  # --- Choose Kemetic Personal Deity (0001) ---
+  pr_egyptian_decision.0001.t:0 "Deciding on a Deity"
+  pr_egyptian_decision.0001.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
+  pr_egyptian_decision.0001.amun_ra:0 "Amun-Ra, King of the Gods!"
+  pr_egyptian_decision.0001.ra:0 "Ra, Lord of the Sun!"
+  pr_egyptian_decision.0001.isis:0 "Isis, Goddess of Magic and Motherhood!"
+  pr_egyptian_decision.0001.montu:0 "Montu, God of War and Valor!"
+  pr_egyptian_decision.0001.hathor:0 "Hathor, Goddess of Love and Joy!"
+  pr_egyptian_decision.0001.optout:0 "$religious_decision.0102.flavor$"
+
+  # --- Create Kingdom of Upper Egypt (0006) ---
+  pr_egyptian_decision.0006.t:0 "Upper Egypt Restored"
+  pr_egyptian_decision.0006.desc:0 "#F The ancient lands of Upper Egypt bow once more to the old gods, their temples and monuments reclaimed for the true faith.#!\n\nFrom the cataracts to the borders of the Delta, the banners of the pharaohs fly again. The gods watch with favor as the southern kingdom is restored."
+  pr_egyptian_decision.0006.a:0 "The gods favor our cause."
+
+  # --- Create Kingdom of Lower Egypt (0007) ---
+  pr_egyptian_decision.0007.t:0 "Lower Egypt Restored"
+  pr_egyptian_decision.0007.desc:0 "#F The fertile lands of the Nile Delta are united once more under a single ruler, their ancient legacy reclaimed from the sands of time.#!\n\nFrom Alexandria to Cairo, the banners of the pharaohs fly again. The gods watch with favor as the northern kingdom is restored."
+  pr_egyptian_decision.0007.a:0 "The first step is taken."
+
+  # --- Restore Empire of Egyptus (0100) ---
+  pr_egyptian_decision.0100.t:0 "The Empire of Egyptus Restored"
+  pr_egyptian_decision.0100.desc:0 "#F The dual crowns of Upper and Lower Egypt are united at last, and the Empire of Egyptus rises again as the greatest civilization the world has ever known.#!\n\nFrom the cataracts of Nubia to the shores of the Mediterranean, the empire of the pharaohs stands restored. The gods look down with favor upon the ruler who has fulfilled this sacred duty. Songs will be sung of this restoration for generations to come."
+  pr_egyptian_decision.0100.a:0 "The gods are well pleased."
+  
+  pr_egyptian.0008.t:0 "The Wrath of Ra"
+  pr_egyptian.0008.desc:0 "A solar eclipse occurs, and the priest of Ra declared it to be a sign of the god's displeasure. You can choose to appease Ra by offering him a sacrifice, or ignore the priest and risk angering the god."
+  pr_egyptian.0008.a:0 "Offer a sacrifice to Ra"
+  pr_egyptian.0008.b:0 "Ignore the priest of Ra"
+  
+  pr_egyptian.0009.t:0 "A Visit from Anubis"
+  pr_egyptian.0009.desc:0 "#F I find myself in a dark and gloomy hall, surrounded by statues of animal-headed gods. At the end of the hall, I see a large scale, with a feather on one side and a heart on the other.#!\n\nStanding next to the scale is a hooded figure, holding a staff and a knife. He reveals his face and I gasp â it is Anubis, the god of mummification and the afterlife. He has come to weigh my soul and decide my fate in the underworld. I can choose to submit to his judgment, or offer him gifts in hopes of his favour."
+  pr_egyptian.0009.a:0 "Submit to Anubis' judgment"
+  pr_egyptian.0009.b:0 "Offer gifts to Anubis"
+  
+  pr_egyptian.0010.t:0 "The Priestess of Isis"
+  pr_egyptian.0010.desc:0 "#F I am visited by a priestess of Isis, the goddess of magic and healing. She claims that she has received a vision from the goddess, and that she can reveal my future to me.#!\n\nI am curious and intrigued by her offer. I can choose to consult the priestess of Isis, or dismiss her as a fraud."
+  pr_egyptian.0010.a:0 "Consult the priestess of Isis"
+  pr_egyptian.0010.b:0 "Dismiss the priestess as a fraud"
+  
+  pr_egyptian.0011.t:0 "The Blessing of Ma’at"
+  pr_egyptian.0011.desc:0 "You are walking in your garden, enjoying the fresh air and the flowers. You come across a small shrine dedicated to Ma’at, the goddess of truth and justice. You have always admired her for her role in maintaining the order of the cosmos and the harmony of society.\n\nYou decide to pay your respects to her and ask for her blessing. You can choose to offer her a gift of flowers, or recite a hymn in her honor."
+  pr_egyptian.0011.a:0 "Offer Ma’at a gift of flowers"
+  pr_egyptian.0011.b:0 "Recite a hymn in Ma’at’s honor"

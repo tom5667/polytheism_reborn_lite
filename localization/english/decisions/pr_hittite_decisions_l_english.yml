@@ -1,0 +1,33 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Hittite Decisions
+  # Localization for pr_hittite_decisions.txt
+  # =============================================
+
+  # --- Choose Main Deity (Hittite) Decision ---
+  pr_hittite_choose_main_deity_decision:0 "Choose Main Deity"
+  pr_hittite_choose_main_deity_decision_desc:0 "#F The gods of the Hittite pantheon call for a champion to represent their will in the mortal realm. As a ruler of the Hittite faith, I must select a patron deity who will guide my actions and bless my rule with divine favor.#!\nBy choosing a main deity, I shall establish a personal connection with the divine, gaining unique blessings and modifiers that reflect the nature of my chosen god or goddess."
+  pr_hittite_choose_main_deity_decision_tooltip:0 "#T Select a patron deity from your Hittite faith to gain divine blessings#!"
+  pr_hittite_choose_main_deity_decision_confirm:0 "Choose Main Deity!"
+  pr_hittite_choose_main_deity_decision_tt:0 "#T Available Deities for [ROOT.Char.GetFaith.GetName]#!"
+
+  # --- Main Deity Selection Descriptions: Hittite ---
+  select_main_deity_hittite_decision.select_tarhunna:0 "#T Tarhunna#!\n#P The storm god, king of the Hittite pantheon#!"
+  select_main_deity_hittite_decision.select_telipinu:0 "#T Telipinu#!\n#P God of agriculture, fertility, and mercy#!"
+  select_main_deity_hittite_decision.select_halki:0 "#T Halki#!\n#P God of grain and the harvest#!"
+  select_main_deity_hittite_decision.select_a_as:0 "#T A'as#!\n#P God of wisdom and the divine counsel#!"
+  select_main_deity_hittite_decision.select_tashmishu:0 "#T Tashmishu#!\n#P The divine attendant and guardian of the gods#!"
+
+  # --- Create Hittite Kingdom Decision ---
+  pr_hittite_create_kingdom_decision:0 "Create the Kingdom of Hatti"
+  pr_hittite_create_kingdom_decision_desc:0 "#F The ancient lands of Anatolia, once ruled by the mighty kings of Hatti, await a new ruler to restore their former glory. From the highlands of Cappadocia to the plains of Galatia, these territories have long been divided.#!\nBy creating the Kingdom of Hatti, I shall restore the Hittite legacy and forge a new power in the heart of Anatolia."
+  pr_hittite_create_kingdom_decision_tooltip:0 "#T Form the Kingdom of Hatti by uniting the Hittite heartlands of Anatolia#!"
+  pr_hittite_create_kingdom_decision_confirm:0 "Create the Kingdom of Hatti!"
+  pr_hittite_create_kingdom_decision_effect_tooltip:0 "#P The Kingdom of Hatti will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_charsianon.GetNameNoTier], [title_d_cappadocia.GetNameNoTier], and others will become [de_jure|E] part of Hatti$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"
+
+  # --- Restore Hittite Empire Decision ---
+  pr_hittite_restore_empire_decision:0 "Restore the Hittite Empire"
+  pr_hittite_restore_empire_decision_desc:0 "#F The Hittite Empire, once the greatest power of the ancient Near East, stretched from the Aegean coast to the banks of the Euphrates. Its kings rivaled the pharaohs of Egypt and the kings of Babylon. Now, with the kingdom restored, the time has come to reclaim the full imperial legacy.#!\nBy restoring the Hittite Empire, I shall unite all the ancient Hittite lands under a single banner and reclaim the glory of the Great Kings of Hatti."
+  pr_hittite_restore_empire_decision_tooltip:0 "#T Restore the Hittite Empire by uniting all ancient Hittite territories#!"
+  pr_hittite_restore_empire_decision_confirm:0 "Restore the Hittite Empire!"
+  pr_hittite_restore_empire_decision_effect_tooltip:0 "#P The Hittite Empire will be formed as a new [empire|E] title#!/n$EFFECT_LIST_BULLET$[title_k_hittite.GetNameNoTier] and all de jure duchies will become part of the empire$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"

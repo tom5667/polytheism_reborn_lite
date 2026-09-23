@@ -1,0 +1,34 @@
+﻿# =============================================
+# Polytheism Reborn - Character Memory Types
+# Religious memories (non-pilgrimage)
+# =============================================
+
+pr_vestal_daughter_memory = {
+	categories = { positive minor religious }
+
+	icon = "religious.dds"
+
+	description = {
+		first_valid = {
+			desc = pr_vestal_daughter_memory_desc
+		}
+	}
+
+	second_perspective_description = {
+		first_valid = {
+			desc = pr_vestal_daughter_memory_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		first_valid = {
+			desc = pr_vestal_daughter_memory_desc_third_perspective
+		}
+	}
+
+	participants = { host }
+
+	duration = {
+		years = memory_default_duration
+	}
+}

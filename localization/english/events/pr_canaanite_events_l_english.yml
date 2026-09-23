@@ -1,0 +1,43 @@
+﻿l_english:
+
+  # --- Build Temple to Tanit (0001) ---
+  pr_canaanite.0001.t:0 "The Temple of Tanit"
+  pr_canaanite.0001.desc:0 "#F The finest architects and artisans of the realm have been called upon to raise a new temple in Tunis, dedicated to Tanit, goddess of the moon and protector of Carthage.#!\n\nThe foundations are laid, the stones are cut, and the sacred fire is ready to be kindled. When the temple is complete, the goddess will have a dwelling place among her people once more."
+  pr_canaanite.0001.a:0 "Build the temple"
+
+  # --- Choose Punic Main Deity (0100) ---
+  pr_canaanite.0100.t:0 "Choose Main Deity"
+  pr_canaanite.0100.desc:0 "#F To help me in the struggle to rule my realm, I could devote myself to one of the gods or goddesses.#!"
+  pr_canaanite.0100.baal:0 "Baal Hammon"
+  pr_canaanite.0100.tanit:0 "Tanit"
+  pr_canaanite.0100.astarte:0 "Astarte"
+  pr_canaanite.0100.melqart:0 "Melqart"
+  pr_canaanite.0100.kusor:0 "Kusor"
+  pr_canaanite.0100.optout:0 "Maybe now isn't the right time"
+
+  # --- Choose Semitic Main Deity (0200) ---
+  pr_canaanite.0200.t:0 "Choose Main Deity"
+  pr_canaanite.0200.desc:0 "#F To help me in the struggle to rule my realm, I could devote myself to one of the gods or goddesses.#!"
+  pr_canaanite.0200.ba_al_hadad:0 "Ba'al-Hadad"
+  pr_canaanite.0200.ashera:0 "Ashera"
+  pr_canaanite.0200.dagan:0 "Dagan"
+  pr_canaanite.0200.el_elyon:0 "El Elyon"
+  pr_canaanite.0200.ashtart:0 "Ashtart"
+  pr_canaanite.0200.optout:0 "Maybe now isn't the right time"
+
+  # --- Opening Temple (0002) ---
+  pr_canaanite.0002.t:0 "Opening the Temple"
+  pr_canaanite.0002.desc:0 "#F The finest architects and artisans of the realm were called upon to build the new temple, and today it stands complete. Crowds gathered to witness this sacred day.#!\n\nThe high priest opened the temple with a ritual to invite Tanit to dwell within, that she may guide the people to glory."
+  pr_canaanite.0002.a:0 "Praise Tanit!"
+
+  # --- Offering to Baal Hammon (0003) ---
+  pr_canaanite.0003.t:0 "Offering to Baal Hammon"
+  pr_canaanite.0003.desc:0 "#F The priests of Baal Hammon have called for a great offering to be made to the god, that he may bless us with his favour and protection.#!\n\nThe fires are ready, the incense is lit, and the people await. I shall offer a sacrifice worthy of the lord of the heavens."
+  pr_canaanite.0003.a:0 "Offer a great sacrifice to Baal Hammon"
+
+  # --- Visiting Temple of Tanit (0005) ---
+  pr_canaanite.0005.t:0 "Visiting the Temple of Tanit"
+  pr_canaanite.0005.desc:0 "#F Today is a day of celebration, as the temple of Tanit is open to the public. The priests have prepared a grand feast and invited all the citizens to come and pay their respects.#!\n\nI will attend the festivities and ask the priests to make offerings to Tanit on my behalf."
+  pr_canaanite.0005.a:0 "Ask the priests to make an offering"
+  pr_canaanite.0005.message.positive:0 "Favoured by Tanit"
+  pr_canaanite.0005.message.negative:0 "Unfavoured by Tanit"

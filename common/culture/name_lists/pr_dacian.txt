@@ -1,4 +1,4 @@
-﻿name_list_dacian = {
+﻿name_list_pr_dacian = {
 
 	cadet_dynasty_names = {
 		"dynn_Basarab"
@@ -113,7 +113,7 @@
 	female_names = {
 		#historical correct
 		Rescuturme Zia 
-		#Custom made from male dacian names
+		#Custom made from male pr_dacian names
 		Bikilia Blaesusa Charnabona Comosicusa Cothelasa Zina 
 		
 	}
@@ -138,7 +138,7 @@
 	}
 }
 
-name_list_thracian = {
+name_list_pr_thracian = {
 
 	cadet_dynasty_names = {
 		"dynn_Basarab"
@@ -275,4 +275,4 @@ name_list_thracian = {
 	mercenary_names = {
 		{ name = "mercenary_company_sheperds_of_the_romans" }
 	}
-}
+}

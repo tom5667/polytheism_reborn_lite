@@ -1,0 +1,266 @@
+﻿##################################################
+# Polytheism Reborn - Celtic Cultures
+# Brythonic, Gaulish, Goidelic, Celtic Iberian
+##################################################
+
+# --- Brythonic ---
+
+pr_brythonic = {
+	color = { 10 80 184 }
+	created = 100.1.1
+
+	ethos = ethos_communal
+	heritage = heritage_brythonic
+	language = language_brythonic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_storytellers
+		tradition_ancient_miners
+		tradition_hit_and_run
+		tradition_tribe_unity
+	}
+
+	name_list = name_list_pr_brythonic
+
+	coa_gfx = { welsh_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		5 = caucasian_blond
+		30 = caucasian_ginger
+		35 = caucasian_brown_hair
+		30 = caucasian_dark_hair
+	}
+}
+
+# --- Gaulish ---
+
+pr_gaulish = {
+	color = { 39 219 44 }
+	created = 100.1.1
+
+	ethos = ethos_bellicose
+	heritage = heritage_pr_gaulish
+	language = language_pr_gaulish
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_forest_fighters
+		tradition_hereditary_hierarchy
+		tradition_hit_and_run
+		tradition_metal_craftsmanship
+	}
+
+	name_list = name_list_pr_gaulish
+
+	coa_gfx = { frankish_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		10 = caucasian_blond
+		5 = caucasian_ginger
+		45 = caucasian_brown_hair
+		35 = caucasian_dark_hair
+	}
+}
+
+pr_eburones = {
+	color = { 99 199 38 }
+	created = 101.1.1
+	parents = { pr_gaulish }
+
+	ethos = ethos_bellicose
+	heritage = heritage_pr_gaulish
+	language = language_pr_gaulish
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_forest_fighters
+		tradition_hereditary_hierarchy
+		tradition_hit_and_run
+		tradition_martial_admiration
+	}
+
+	name_list = name_list_pr_gaulish
+
+	coa_gfx = { frankish_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		10 = caucasian_blond
+		5 = caucasian_ginger
+		45 = caucasian_brown_hair
+		35 = caucasian_dark_hair
+	}
+}
+
+pr_aquitani = {
+	color = { 38 199 97 }
+	created = 101.1.1
+	parents = { pr_gaulish }
+
+	ethos = ethos_bellicose
+	heritage = heritage_pr_gaulish
+	language = language_pr_gaulish
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_forest_fighters
+		tradition_hereditary_hierarchy
+		tradition_zealous_people
+		tradition_sacred_groves
+	}
+
+	name_list = name_list_pr_gaulish
+
+	coa_gfx = { frankish_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		10 = caucasian_blond
+		5 = caucasian_ginger
+		45 = caucasian_brown_hair
+		35 = caucasian_dark_hair
+	}
+}
+
+pr_belgae = {
+	color = { 39 200 44 }
+	created = 101.1.1
+	parents = { pr_gaulish }
+
+	ethos = ethos_bellicose
+	heritage = heritage_pr_gaulish
+	language = language_pr_gaulish
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_forest_fighters
+		tradition_hereditary_hierarchy
+		tradition_stand_and_fight
+		tradition_martial_admiration
+	}
+
+	name_list = name_list_pr_gaulish
+
+	coa_gfx = { frankish_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		10 = caucasian_blond
+		5 = caucasian_ginger
+		45 = caucasian_brown_hair
+		35 = caucasian_dark_hair
+	}
+}
+
+# --- Celtic Iberian ---
+
+pr_celtic_iberian = {
+	color = { 220 200 120 }
+	created = 100.1.1
+
+	ethos = ethos_stoic
+	heritage = heritage_pr_celtic_iberian
+	language = language_pr_celtic_iberian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_forest_fighters
+		tradition_celtiberian_tactics
+		tradition_castle_keepers
+		tradition_celtiberian_legacy
+	}
+
+	name_list = name_list_pr_celtic_iberian
+
+	coa_gfx = { frankish_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		10 = caucasian_blond
+		5 = caucasian_ginger
+		45 = caucasian_brown_hair
+		35 = caucasian_dark_hair
+	}
+}
+
+# --- Goidelic ---
+
+pr_old_irish = {
+	color = { 120 200 80 }
+	created = 100.1.1
+
+	ethos = ethos_spiritual
+	heritage = heritage_goidelic
+	language = language_goidelic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_pastoralists
+		tradition_poetry
+		tradition_adaptive_skirmishing
+		tradition_maritime_mercantilism
+		tradition_storytellers
+	}
+
+	name_list = name_list_pr_old_irish
+
+	coa_gfx = { irish_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		5 = caucasian_blond
+		30 = caucasian_ginger
+		35 = caucasian_brown_hair
+		30 = caucasian_dark_hair
+	}
+}
+
+pr_manx = {
+	color = { 60 180 120 }
+	created = 800.1.1
+	parents = { irish }
+
+	ethos = ethos_bellicose
+	heritage = heritage_goidelic
+	language = language_goidelic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_fishermen
+		tradition_hill_dwellers
+		tradition_highland_warriors
+		tradition_strong_kinship
+		tradition_concubines
+	}
+
+	name_list = name_list_gaelic
+
+	coa_gfx = { scottish_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		5 = caucasian_blond
+		30 = caucasian_ginger
+		35 = caucasian_brown_hair
+		30 = caucasian_dark_hair
+	}
+}

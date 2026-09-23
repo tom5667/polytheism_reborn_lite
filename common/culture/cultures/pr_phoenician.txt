@@ -1,26 +1,33 @@
-﻿punic = {
-	color = persian
-	
+﻿##################################################
+# Polytheism Reborn - Phoenician Culture
+##################################################
+
+pr_punic = {
+	color = { 130 70 30 }
+	created = 100.1.1
+
 	ethos = ethos_communal
-	heritage = heritage_phoenician
-	language = language_phoenician
+	heritage = heritage_pr_phoenician
+	language = language_pr_phoenician
 	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
 	traditions = {
 		tradition_swords_for_hire
 		tradition_seafaring
 		tradition_legalistic
 		tradition_eye_for_an_eye
 	}
-	
-	name_list = name_list_punic
-	
+
+	name_list = name_list_pr_punic
+
 	coa_gfx = { byzantine_group_coa_gfx western_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
 	clothing_gfx = { byzantine_clothing_gfx }
 	unit_gfx = { eastern_unit_gfx }
-	
+
 	ethnicities = {
-		8 = arab
-		5 = mediterranean
+		60 = arab
+		30 = mediterranean
+		10 = mediterranean_byzantine
 	}
 }

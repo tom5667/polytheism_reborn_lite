@@ -19,4 +19,4 @@ heritage_kemetic = {
 		heritage_group_levantine = yes
 		heritage_family_middle_eastern = yes 
 	}
-}
+}

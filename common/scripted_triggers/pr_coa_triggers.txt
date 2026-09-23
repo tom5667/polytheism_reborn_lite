@@ -19,4 +19,4 @@ coa_switch_to_visigothic_trigger = {
 	holder = {
 		has_culture  = culture:visigothic
 	}
-}
+}

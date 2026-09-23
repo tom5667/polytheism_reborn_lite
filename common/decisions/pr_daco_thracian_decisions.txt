@@ -1,0 +1,459 @@
+﻿##################################################
+# Polytheism Reborn - Daco-Thracian Decisions
+# Specifieke besluiten voor de Daco-Thracian geloofsgroep
+# made by tom5667
+##################################################
+
+# =============================================
+# Choose Main Deity Decision (Dacian Polytheism)
+# =============================================
+
+pr_daco_thracian_choose_main_deity_decision = {
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
+    }
+    desc = pr_daco_thracian_choose_main_deity_decision_desc
+    decision_tooltip = pr_daco_thracian_choose_main_deity_decision_tooltip
+    decision_group_type = polytheism
+
+    is_shown = {
+        # DLC check.
+        has_fp1_dlc_trigger = yes
+        # Following a valid religion & faith.
+        OR = {
+            faith = faith:dacian_polytheism
+            faith = { has_doctrine_parameter = special_doctrine_dacian_patron_god_active }
+        }
+    }
+
+    is_valid = {
+    }
+
+    is_valid_showing_failures_only = {
+        # Have to at _least_ not be in piety debt.
+        piety >= 0
+    }
+
+    cooldown = { years = 2 }
+
+    effect = {
+        # Show the possible options.
+        show_as_tooltip = {
+            random_list = {
+                desc = pr_daco_thracian_choose_main_deity_decision_tt
+                100 = {
+                    show_chance = no
+                    desc = select_main_deity_dacian_decision.select_gebeleizis
+                    add_character_modifier = dacian_gebeleizis
+                }
+                100 = {
+                    show_chance = no
+                    desc = select_main_deity_dacian_decision.select_zalmoxis
+                    add_character_modifier = dacian_zalmoxis
+                }
+                100 = {
+                    show_chance = no
+                    desc = select_main_deity_dacian_decision.select_dionysus
+                    add_character_modifier = dacian_dionysus
+                }
+                100 = {
+                    show_chance = no
+                    desc = select_main_deity_dacian_decision.select_pleistoros
+                    add_character_modifier = dacian_pleistoros
+                }
+                100 = {
+                    show_chance = no
+                    desc = select_main_deity_dacian_decision.select_derzelas
+                    add_character_modifier = dacian_derzelas
+                }
+            }
+        }
+        trigger_event = pr_daco_thracian_decision.0001
+    }
+
+    ai_check_interval = 96
+
+    ai_potential = {
+        piety >= minor_piety_value
+        NOR = {
+            has_character_modifier = dacian_gebeleizis
+            has_character_modifier = dacian_zalmoxis
+            has_character_modifier = dacian_dionysus
+            has_character_modifier = dacian_pleistoros
+            has_character_modifier = dacian_derzelas
+        }
+    }
+
+    ai_will_do = {
+        base = 100
+    }
+}
+
+# --- Embrace Dacian Culture Decision ---
+pr_daco_thracian_embrace_dacian_culture_decision = {
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/pr_dacian.dds"
+    }
+    decision_group_type = polytheism
+    desc = pr_daco_thracian_embrace_dacian_culture_decision_desc
+    decision_tooltip = pr_daco_thracian_embrace_dacian_culture_decision_tooltip
+
+    is_shown = {
+        is_ai = no
+        is_landed = yes
+        is_adult = yes
+        religion = religion:daco_thracian_religion
+        NOT = {
+            is_target_in_global_variable_list = {
+                name = unavailable_unique_decisions
+                target = flag:pr_daco_thracian_embrace_dacian_culture_decision
+            }
+        }
+    }
+
+    is_valid = {
+        completely_controls = title:c_hunyad
+    }
+
+    is_valid_showing_failures_only = {
+        is_capable_adult = yes
+        is_imprisoned = no
+        is_at_war = no
+        is_independent_ruler = yes
+    }
+
+    cost = {
+        # Kosten via scripted values (pr_decision_values.txt)
+        prestige = pr_culture_embrace_prestige_cost
+    }
+
+    effect = {
+        add_to_global_variable_list = {
+            name = unavailable_unique_decisions
+            target = flag:pr_daco_thracian_embrace_dacian_culture_decision
+        }
+        trigger_event = pr_daco_thracian_decision.0002
+        save_scope_as = actor
+    }
+
+    ai_check_interval = 90
+
+    ai_potential = {
+        always = yes
+    }
+
+    ai_will_do = {
+        base = 100
+    }
+}
+
+# --- Create Kingdom of Dacia Decision ---
+pr_daco_thracian_create_dacia_decision = {
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/pr_dacian.dds"
+    }
+    decision_group_type = major
+    desc = pr_daco_thracian_create_dacia_decision_desc
+    decision_tooltip = pr_daco_thracian_create_dacia_decision_tooltip
+
+    ai_check_interval = 4
+
+    is_shown = {
+        is_ruler = yes
+        is_landed = yes
+        OR = {
+            has_game_rule = pr_ancient_kingdoms_decisions_on
+            AND = {
+                has_game_rule = pr_ancient_kingdoms_decisions_player
+                is_ai = no
+            }
+        }
+        OR = {
+            religion = religion:daco_thracian_religion
+            culture = culture:pr_dacian
+        }
+        NOT = {
+            is_target_in_global_variable_list = {
+                name = unavailable_unique_decisions
+                target = flag:pr_daco_thracian_create_dacia_decision
+            }
+        }
+    }
+
+    is_valid = {
+        completely_controls = title:d_temes
+        completely_controls = title:d_transylvania
+        completely_controls = title:d_transylvanian_alps
+        completely_controls = title:d_transcarpathia
+        completely_controls = title:d_bihar
+
+        OR = {
+            culture = culture:pr_dacian
+            religion = religion:daco_thracian_religion
+        }
+
+        is_imprisoned = no
+        is_at_war = no
+    }
+
+    cost = {
+        gold = pr_kingdom_restore_gold_cost
+        prestige = pr_kingdom_restore_prestige_cost
+    }
+
+    effect = {
+        add_to_global_variable_list = {
+            name = unavailable_unique_decisions
+            target = flag:pr_daco_thracian_create_dacia_decision
+        }
+        custom_tooltip = pr_daco_thracian_create_dacia_decision_effect_tooltip
+        title:d_temes = { save_scope_as = temes }
+        title:d_transylvania = { save_scope_as = transylvania }
+        title:d_transylvanian_alps = { save_scope_as = transylvania_alps }
+        title:d_transcarpathia = { save_scope_as = transcarpathia }
+        title:d_bihar = { save_scope_as = bihar }
+
+        create_title_and_vassal_change = {
+            type = created
+            save_scope_as = title_change
+            add_claim_on_loss = yes
+        }
+        title:k_pr_dacia = {
+            change_title_holder = {
+                holder = root
+                change = scope:title_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:title_change
+        title:d_temes = { set_de_jure_liege_title = title:k_pr_dacia }
+        title:d_transylvania = { set_de_jure_liege_title = title:k_pr_dacia }
+        title:d_transylvanian_alps = { set_de_jure_liege_title = title:k_pr_dacia }
+        title:d_transcarpathia = { set_de_jure_liege_title = title:k_pr_dacia }
+        title:d_bihar = { set_de_jure_liege_title = title:k_pr_dacia }
+    }
+
+    ai_potential = {
+        is_ruler = yes
+        completely_controls = title:d_temes
+        completely_controls = title:d_transylvania
+        completely_controls = title:d_transylvanian_alps
+        completely_controls = title:d_transcarpathia
+        completely_controls = title:d_bihar
+    }
+
+    ai_will_do = {
+        base = 100
+        modifier = { add = 20 gold >= pr_kingdom_restore_gold_cost }
+        modifier = { add = 20 prestige >= pr_kingdom_restore_prestige_cost }
+    }
+}
+
+# --- Create Kingdom of Odrysia Decision ---
+pr_daco_thracian_create_odrysia_decision = {
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/pr_dacian.dds"
+    }
+    decision_group_type = major
+    desc = pr_daco_thracian_create_odrysia_decision_desc
+    decision_tooltip = pr_daco_thracian_create_odrysia_decision_tooltip
+
+    ai_check_interval = 4
+
+    is_shown = {
+        is_ruler = yes
+        is_landed = yes
+        OR = {
+            has_game_rule = pr_ancient_kingdoms_decisions_on
+            AND = {
+                has_game_rule = pr_ancient_kingdoms_decisions_player
+                is_ai = no
+            }
+        }
+        OR = {
+            religion = religion:daco_thracian_religion
+            culture = culture:pr_dacian
+            culture = culture:pr_thracian
+        }
+        NOT = {
+            is_target_in_global_variable_list = {
+                name = unavailable_unique_decisions
+                target = flag:pr_daco_thracian_create_odrysia_decision
+            }
+        }
+    }
+
+    is_valid = {
+        completely_controls = title:c_brysis
+        completely_controls = title:d_philippopolis
+        completely_controls = title:d_dobrudja
+        completely_controls = title:c_sredets
+        completely_controls = title:c_nikopolis
+        completely_controls = title:c_turnovo
+        completely_controls = title:c_dorostorum
+        completely_controls = title:c_aytos
+
+        OR = {
+            culture = culture:pr_dacian
+            culture = culture:pr_thracian
+        }
+        religion = religion:daco_thracian_religion
+
+        is_imprisoned = no
+        is_at_war = no
+    }
+
+    cost = {
+        gold = pr_kingdom_restore_gold_cost
+        prestige = pr_kingdom_restore_prestige_cost
+    }
+
+    effect = {
+        add_to_global_variable_list = {
+            name = unavailable_unique_decisions
+            target = flag:pr_daco_thracian_create_odrysia_decision
+        }
+        custom_tooltip = pr_daco_thracian_create_odrysia_decision_effect_tooltip
+
+        #title:c_brysis = { save_scope_as = brysis }
+        title:d_thrace = { save_scope_as = thrace }
+        title:d_philippopolis = { save_scope_as = philippopolis }
+        title:d_dobrudja = { save_scope_as = dobrudja }
+        # title:c_sredets = { save_scope_as = sredets }
+        # title:c_nikopolis = { save_scope_as = nikopolis }
+        # title:c_turnovo = { save_scope_as = turnovo }
+        # title:c_dorostorum = { save_scope_as = dorostorum }
+        # title:c_aytos = { save_scope_as = aytos }
+        title:d_turnovo = { save_scope_as = turnovo }
+
+        create_title_and_vassal_change = {
+            type = created
+            save_scope_as = title_change
+            add_claim_on_loss = yes
+        }
+        title:k_odrysian = {
+            change_title_holder = {
+                holder = root
+                change = scope:title_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:title_change
+        #title:c_brysis = { set_de_jure_liege_title = title:k_odrysian }
+        title:d_thrace = { set_de_jure_liege_title = title:k_odrysian }
+        title:d_philippopolis = { set_de_jure_liege_title = title:k_odrysian }
+        title:d_dobrudja = { set_de_jure_liege_title = title:k_odrysian }
+        #title:c_sredets = { set_de_jure_liege_title = title:k_odrysian }
+        title:d_turnovo = { set_de_jure_liege_title = title:k_odrysian }
+        # title:c_nikopolis = { set_de_jure_liege_title = title:k_odrysian }
+        # title:c_turnovo = { set_de_jure_liege_title = title:k_odrysian }
+        # title:c_dorostorum = { set_de_jure_liege_title = title:k_odrysian }
+        # title:c_aytos = { set_de_jure_liege_title = title:k_odrysian }
+    }
+
+    ai_potential = {
+        is_ruler = yes
+        completely_controls = title:c_brysis
+        completely_controls = title:d_philippopolis
+        completely_controls = title:d_dobrudja
+        completely_controls = title:c_sredets
+        completely_controls = title:c_nikopolis
+        completely_controls = title:c_turnovo
+        completely_controls = title:c_dorostorum
+        completely_controls = title:c_aytos
+    }
+
+    ai_will_do = {
+        base = 100
+        modifier = { add = 20 gold >= pr_kingdom_restore_gold_cost }
+        modifier = { add = 20 prestige >= pr_kingdom_restore_prestige_cost }
+    }
+}
+
+# --- Zalmoxis Human Sacrifice Decision ---
+pr_daco_thracian_zalmoxis_sacrifice_decision = {
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/pr_dacian.dds"
+    }
+    decision_group_type = polytheism
+    desc = pr_daco_thracian_zalmoxis_sacrifice_decision_desc
+    decision_tooltip = pr_daco_thracian_zalmoxis_sacrifice_decision_tooltip
+
+    is_shown = {
+        religion = religion:daco_thracian_religion
+    }
+
+    is_valid = {
+        is_at_war = yes
+        piety >= pr_zalmoxis_sacrifice_piety_cost
+        religion = religion:daco_thracian_religion
+    }
+
+    cost = {
+        # Kosten via scripted values (pr_decision_values.txt)
+        piety = pr_zalmoxis_sacrifice_piety_cost
+    }
+
+    effect = {
+        trigger_event = {
+            id = pr_daco_thracian_decision.0010
+        }
+    }
+
+    ai_check_interval = 24
+
+    ai_potential = {
+        is_at_war = yes
+        piety >= pr_zalmoxis_sacrifice_piety_cost
+    }
+
+    ai_will_do = {
+        base = 50
+    }
+}
+
+# --- Place Altar in Kogaionon Decision ---
+pr_daco_thracian_place_kogaionon_altar_decision = {
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+    }
+    decision_group_type = polytheism
+    desc = pr_daco_thracian_place_kogaionon_altar_decision_desc
+    decision_tooltip = pr_daco_thracian_place_kogaionon_altar_decision_tooltip
+
+    is_shown = {
+        religion = religion:daco_thracian_religion
+        NOT = {
+            is_target_in_global_variable_list = {
+                name = unavailable_unique_decisions
+                target = flag:pr_daco_thracian_place_kogaionon_altar_decision
+            }
+        }
+    }
+
+    is_valid = {
+        completely_controls = title:d_transylvania
+    }
+
+    cost = {
+        # Kosten via scripted values (pr_decision_values.txt)
+        gold = pr_temple_build_gold_cost
+    }
+
+    effect = {
+        add_to_global_variable_list = {
+            name = unavailable_unique_decisions
+            target = flag:pr_daco_thracian_place_kogaionon_altar_decision
+        }
+        trigger_event = pr_daco_thracian_decision.0012
+    }
+
+    ai_check_interval = 90
+
+    ai_potential = {
+        completely_controls = title:d_transylvania
+    }
+
+    ai_will_do = {
+        base = 100
+        modifier = { add = 20 gold >= pr_temple_build_gold_cost }
+    }
+}

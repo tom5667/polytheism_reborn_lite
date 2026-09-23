@@ -1,0 +1,59 @@
+﻿# =============================================
+# Polytheism Reborn - Activity Pilgrimage Effects
+# Shared lifecycle hooks for all PR pilgrimage activities
+# =============================================
+
+pr_pilgrimage_on_invalidated_effect = {
+		# Host becomes unlanded
+		if = {
+			limit = {
+				scope:host = { is_landed = no }
+			}
+			scope:activity = {
+				activity_type = { save_scope_as = activity_type }
+			}
+			every_attending_character = {
+				trigger_event = activity_system.0320
+			}
+		}
+		if = {
+			limit = {
+				scope:host = { is_incapable = yes }
+			}
+			scope:activity = {
+				activity_type = { save_scope_as = activity_type }
+			}
+			scope:host = {
+				trigger_event = activity_system.0330
+			}
+			every_attending_character = {
+				limit = { NOT = { this = scope:host } }
+				trigger_event = activity_system.0331
+			}
+		}
+		if = {
+			limit = {
+				NOT = { scope:host.faith = var:starting_faith }
+			}
+			scope:activity = {
+				activity_type = { save_scope_as = activity_type }
+				activity_location = { save_scope_as = location }
+			}
+			every_attending_character = {
+				trigger_event = RICEmisc.0010
+			}
+		}
+}
+
+pr_pilgrimage_on_host_death_effect = {
+		scope:activity = {
+			set_variable = {
+				name = activity_invalidated
+			}
+		}
+}
+
+pr_pilgrimage_on_enter_passive_state_effect = {
+		
+}
+

@@ -3,81 +3,80 @@ held_ritual_for_jupiter:0 "Honored Jupiter"
 held_ritual_for_jupiter_desc:0 "Recently held a ritual in honor of Jupiter"
 
 held_ritual_for_jupiter_incense:0 "Offered Frankincense To Jupiter"
-held_ritual_for_jupiter_incense_desc:0 "This character succesfully offered frankincense to Jupiter"
+held_ritual_for_jupiter_incense_desc:0 "This character successfully offered frankincense to Jupiter"
 
 held_ritual_for_jupiter_wine:0 "Offered Wine To Jupiter"
-held_ritual_for_jupiter_wine_desc:0 "This character succesfully offered wine to Jupiter"
+held_ritual_for_jupiter_wine_desc:0 "This character successfully offered wine to Jupiter"
 
 held_ritual_for_jupiter_fruit:0 "Offered Fruit To Jupiter"
-held_ritual_for_jupiter_fruit_desc:0 "This character succesfully offered fruit to Jupiter"
+held_ritual_for_jupiter_fruit_desc:0 "This character successfully offered fruit to Jupiter"
 
-#To Do 
 held_ritual_for_juno_incense:0 "Offered Incense To Juno"
-held_ritual_for_juno_incense_desc:0 "This character succesfully offered frankincense to Juno"
+held_ritual_for_juno_incense_desc:0 "This character successfully offered frankincense to Juno"
 
 held_ritual_for_juno_wine:0 "Offered Wine To Juno"
-held_ritual_for_juno_wine_desc:0 "This character succesfully offered wine to Juno"
+held_ritual_for_juno_wine_desc:0 "This character successfully offered wine to Juno"
 
 held_ritual_for_juno_figs:0 "Offered Figs To Juno"
-held_ritual_for_juno_figs_desc:0 "This character succesfully offered figs to Juno"
+held_ritual_for_juno_figs_desc:0 "This character successfully offered figs to Juno"
 
 
 held_ritual_for_mars_incense:0 "Offered Incense To Mars"
-held_ritual_for_mars_incense_desc:0 "This character succesfully offered frankincense to Mars"
+held_ritual_for_mars_incense_desc:0 "This character successfully offered frankincense to Mars"
 
 
 held_ritual_for_mars_spelt:0 "Offered Spelt Flour To Mars"
-held_ritual_for_mars_spelt_desc:0 "This character succesfully offered spelt flour to Mars"
+held_ritual_for_mars_spelt_desc:0 "This character successfully offered spelt flour to Mars"
 
 held_ritual_for_mars_wine:0 "Offered Wine To Mars"
-held_ritual_for_mars_wine_desc:0 "This character succesfully offered wine to Mars"
+held_ritual_for_mars_wine_desc:0 "This character successfully offered wine to Mars"
 
 
 
 
 held_ritual_for_venus_incense:0 "Offered Incense To Venus"
-held_ritual_for_venus_incense_desc:0 "This character succesfully offered frankincense to Venus"
+held_ritual_for_venus_incense_desc:0 "This character successfully offered frankincense to Venus"
 
 held_ritual_for_venus_wine:0 "Offered Wine To Venus"
-held_ritual_for_venus_wine_desc:0 "This character succesfully offered wine to Venus"
+held_ritual_for_venus_wine_desc:0 "This character successfully offered wine to Venus"
 
 held_ritual_for_venus_roses:0 "Offered Roses To Venus"
-held_ritual_for_venus_roses_desc:0 "This character succesfully offered roses to Venus"
+held_ritual_for_venus_roses_desc:0 "This character successfully offered roses to Venus"
 
 
-held_ritual_for_house_lares:0 "Honored Hous Lares"
-held_ritual_for_house_lares_desc:0 "Recently held a ritual in honor of the Hous Lares"
+held_ritual_for_house_lares:0 "Honored House Lares"
+held_ritual_for_house_lares_desc:0 "Recently held a ritual in honor of the House Lares"
 
 
 held_ritual_for_mercurius_incense:0 "Offered Incense To Mercurius"
-held_ritual_for_mercurius_incense_desc:0 ""
+held_ritual_for_mercurius_incense_desc:0 "This character successfully offered frankincense to Mercurius"
 
 held_ritual_for_mercurius_milk:0 "Offered Milk to Mercurius"
-held_ritual_for_mercurius_milk_desc:0 "This character succesfully offered milk to Mercurius"
+held_ritual_for_mercurius_milk_desc:0 "This character successfully offered milk to Mercurius"
 
 held_ritual_for_mercurius_vegetables:0 "Offered Vegetables To Mercurius"
-held_ritual_for_mercurius_vegetables:0 "This character succesfully offered vegetables to Mercurius"
+held_ritual_for_mercurius_vegetables_desc:0 "This character successfully offered vegetables to Mercurius"
 
 held_ritual_for_minerva_incense:0 "Offered Incense To Minerva"
-held_ritual_for_minerva_incense_desc:0 "This character succesfully offered frankincense to Minerva"
+held_ritual_for_minerva_incense_desc:0 "This character successfully offered frankincense to Minerva"
 
 held_ritual_for_minerva_wine:0 "Offered Wine To Minerva"
-held_ritual_for_minerva_wine_desc:0 "This character succesfully offered wine to Minerva"
+held_ritual_for_minerva_wine_desc:0 "This character successfully offered wine to Minerva"
 
 held_ritual_for_minerva_olives:0 "Offered Olives To Minerva"
-held_ritual_for_minerva_olives_desc:0 "This character succesfully offered olives to Minerva"
+held_ritual_for_minerva_olives_desc:0 "This character successfully offered olives to Minerva"
 
 held_ritual_for_apollo_incense:0 "Offered Incense To Apollo"
-held_ritual_for_apollo_incense_desc:0 "This character succesfully offered frankincense to Apollo"
+held_ritual_for_apollo_incense_desc:0 "This character successfully offered frankincense to Apollo"
 
 held_ritual_for_apollo_wine:0 "Offered Wine To Apollo"
-held_ritual_for_apollo_wine_desc:0 "This character succesfully offered wine to Apollo"
+held_ritual_for_apollo_wine_desc:0 "This character successfully offered wine to Apollo"
 
 held_ritual_for_apollo_honey:0 "Offered Honey To Apollo"
-held_ritual_for_apollo_honey_desc:0 "This character succesfully offered honey to Apollo"
+held_ritual_for_apollo_honey_desc:0 "This character successfully offered honey to Apollo"
 
 burning_flame_of_vesta:0 "Burning Flame Of Vesta"
-burning_flame_of_vesta_desc:0 "With the flame of Mother Vesta burning again Rome can be brought back to greatness ones more"
+burning_flame_of_vesta_desc:0 "With the flame of Mother Vesta burning again Rome can be brought back to greatness once more"
 
 #Celtic choose main deity 
 #Gaelic
@@ -97,8 +96,8 @@ gaelic_ecna:0 "Devotee Of Ecna"
 gaelic_ecna_desc:0 "Devotee of Ecna goddess of wisdom"
 
 #Celtic pilgrimage 
-celtic_cnoc_uisnigh_godly_presence :0 "Felt The Presence Of The Gods"
-celtic_cnoc_uisnigh_godly_presence _desc:0 "This character has felt the presence of An Dagda and Brigid on the holy hill of Uisneach"
+celtic_cnoc_uisnigh_godly_presence:0 "Felt The Presence Of The Gods"
+celtic_cnoc_uisnigh_godly_presence_desc:0 "This character has felt the presence of An Dagda and Brigid on the holy hill of Uisneach"
 celtic_cnoc_uisnigh_hill:0 "Visited The hill of Uisneach"
 celtic_cnoc_uisnigh_hill_desc:0 "This character visited the holy hill of Uisneach"
 
@@ -180,10 +179,10 @@ anglo_saxon_fri:0 "Devotee Of Frī"
 anglo_saxon_fri_desc:0 "Devotee of Frī goddess of fertility"
 
 anglo_saxon_tiwaz:0 "Devotee Of Tīwaz"
-anglo_saxon_tiwaz:0 "Devotee of Tīwaz god of war"
+anglo_saxon_tiwaz_desc:0 "Devotee of Tīwaz god of war"
 
 anglo_saxon_seaxneat:0 "Devotee Of Seaxnēat"
-anglo_saxon_seaxneat:0 "Devotee of Seaxnēat protector of the Saxons"
+anglo_saxon_seaxneat_desc:0 "Devotee of Seaxnēat protector of the Saxons"
 
 #german
 german_wotan:0 "Devotee Of Wotan"
@@ -209,7 +208,7 @@ punic_astarte:0 "Devotee Of Astarte"
 punic_astarte_desc:0 "Devotee of Astarte goddess of fertility"
 
 punic_tanit:0 "Devotee Of Tanit"
-punic_tanit_desc:0 "Devotee of Tanit Goddess of war and invassions"
+punic_tanit_desc:0 "Devotee of Tanit Goddess of war and invasions"
 
 punic_kusor:0 "Devotee Of Kusor"
 punic_kusor_desc:0 "Devotee of Kusor god of wisdom"
@@ -248,7 +247,7 @@ dacian_pleistoros:0 "Devotee Of Pleistoros"
 dacian_pleistoros_desc:0 "Devotee of Pleistoros god of war"
 
 dacian_derzelas:0 "Devotee Of Derzelas"
-dacian_derzelas_desc:0 "Devotee of Deezelas god of health"
+dacian_derzelas_desc:0 "Devotee of Derzelas god of health"
 
 #Random events
 offering_to_ursitoare_good:0 "Favoured by Ursitoare"
@@ -303,7 +302,7 @@ sumerian_inanna:0 "Devotee Of Inanna"
 sumerian_inanna_desc:0 "Devotee of Inanna goddess of fertility"
 
 sumerian_nisaba:0 "Devotee Of Nisaba"
-sumerian_nisaba_desc:0 "Devotee of Nisaba godess of knowledge"
+sumerian_nisaba_desc:0 "Devotee of Nisaba goddess of knowledge"
 
 sumerian_ninurta:0 "Devotee Of Ninurta"
 sumerian_ninurta_desc:0 "Devotee of Ninurta god of war, agriculture and hunting"
@@ -347,7 +346,7 @@ georgian_armzi:0 "Devotee Of Armzi"
 georgian_armzi_desc:0 "Devotee of Armzi high god of the Georgians"
 
 georgian_adgilis_deda:0 "Devotee Of Adgilis Deda"
-georgian_adgilis_deda_desc:0 "Devotee of Adgilis Deda goddess of love and firtility"
+georgian_adgilis_deda_desc:0 "Devotee of Adgilis Deda goddess of love and fertility"
 
 georgian_kopala:0 "Devotee Of Kopala"
 georgian_kopala_desc:0 "Devotee of Kopala god of war"
@@ -379,10 +378,10 @@ roman_illyrian_armatus:0 "Devotee Of Armatus"
 roman_illyrian_armatus_desc:0 "Devotee of Armatus god of war"
 
 roman_illyrian_bona_dea:0 "Devotee Of Bona Dea"
-roman_illyrian_bona_dea_desc:0 "Devotee of Bona Dead goddess of healing"
+roman_illyrian_bona_dea_desc:0 "Devotee of Bona Dea goddess of healing"
 
 roman_illyrian_latra:0 "Devotee Of Latra"
-roman_illyrian_latra_desc:0 "Devotee of Latra god of weatlth"
+roman_illyrian_latra_desc:0 "Devotee of Latra god of wealth"
 
 #Gallo Roman 
 gallo_roman_jupiter_teranus:0 "Devotee Of Jupiter Teranus"
@@ -394,8 +393,8 @@ gallo_roman_minerva_belisama_desc:0 "Devotee of Minerva Belisama goddess of wisd
 gallo_roman_mars_lenus:0 "Devotee Of Mars Lenus"
 gallo_roman_mars_lenus_desc:0 "Devotee of Mars Lenus god of war"
 
-gallo_roman_mercurius_cissonius:0"Devotee Of Mercurius Cissonius"
-gallo_roman_mercurius_cissonius_desc:0"Devotee of Mercurius Cissonius god of wealth"
+gallo_roman_mercurius_cissonius:0 "Devotee Of Mercurius Cissonius"
+gallo_roman_mercurius_cissonius_desc:0 "Devotee of Mercurius Cissonius god of wealth"
 
 gallo_roman_venus:0 "Devotee Of Venus"
 gallo_roman_venus_desc:0 "Devotee of Venus goddess of fertility"
@@ -584,8 +583,8 @@ idol_of_freyja_desc:0 "This character has carved a small woden idol of Freyja"
 blessed_army:0 "Blessed Army"
 blessed_army_desc:0 "This characters army is blessed by the gods!"
 
-germanic_opfermoor_vogtei_godly_presence :0 "Felt The Presence Of The Gods"
-germanic_opfermoor_vogtei_godly_presence _desc:0 "This character has felt the presence gods in the holy moor of Vogtei"
+germanic_opfermoor_vogtei_godly_presence:0 "Felt The Presence Of The Gods"
+germanic_opfermoor_vogtei_godly_presence_desc:0 "This character has felt the presence of the gods in the holy moor of Vogtei"
 germanic_opfermoor_vogtei:0 "Visited opfermoor Vogtei"
 germanic_opfermoor_vogtei_desc:0 "This character visited the holy moor of Vogtei"
 
@@ -691,7 +690,7 @@ graeco_egyptian_alexander_megalos:0 "Devotee of Alexandros Megalos"
 graeco_egyptian_alexander_megalos_desc:0 "Devotee of Alexandros Megalos, who was deified by the people"
 
 druidic_knowledge:0 "Druidic Knowledge"
-druidic_knowledge_desc:0 "Thist character is guided by the ancient wisdom of the druids"
+druidic_knowledge_desc:0 "This character is guided by the ancient wisdom of the druids"
 
 #Random event modifiers Canaanite 
 offering_to_baal_hamon:0 "Favoured by Baal Hammon"
@@ -700,7 +699,7 @@ offering_to_baal_hamon_desc:0 "This character made an offering to Baal Hammon"
 favoured_by_tanit:0 "Favoured by Tanit"
 favoured_by_tanit_desc:0 "This character is favoured by Tanit"
 
-unfavoured_by_tanit :0 "Unfavoured by Tanit"
+unfavoured_by_tanit:0 "Unfavoured by Tanit"
 unfavoured_by_tanit_desc:0 "This character is not favoured by Tanit"
 
 mithraic_revelation:0 "Mithraic Revelation"
@@ -709,27 +708,23 @@ mithraic_revelation_desc:0 "This character had a revelation from Mithras"
 cybele_ecstatic_revelry:0 "Cybele Ecstatic Revelry"
 cybele_ecstatic_revelry_desc:0 "This character has recently participated in a wild, ecstatic ritual in honor of the Great Mother, feeling the primal energy of nature flow through them."
 
-eleusinian_vision:0"Eleusinian Vision"
+eleusinian_vision:0 "Eleusinian Vision"
 eleusinian_vision_desc:0 "This character has had a profound vision related to the Eleusinian Mysteries, granting them a sense of peace about the afterlife."
 
-bacchus_divine_madness:0"Bacchus Divine Madness"
+bacchus_divine_madness:0 "Bacchus Divine Madness"
 bacchus_divine_madness_desc:0 "This character has recently indulged in a divinely inspired revelry, feeling the liberating joy of Bacchus."
 
-serapis_ferryman_token:0"Serapis Ferryman Token"
+serapis_ferryman_token:0 "Serapis Ferryman Token"
 serapis_ferryman_token_desc:0 "This character possesses what they believe to be a token from Serapis, easing their fears of the afterlife."
 
-isis_whispering_reed:0"Isis Whispering Reed"
+isis_whispering_reed:0 "Isis Whispering Reed"
 isis_whispering_reed_desc:0 "This character has been gifted a sacred reed from a priestess of Isis, which seems to whisper ancient secrets, sharpening their mind."
-
-#Opinion modifiers
-trusted_druidic_judgment_opinion:0 "Trusted druidic judgment"
-rejected_druidic_judgment_opinion:0 "Rejected druidic judgment"
-impressed_by_fair_judgment_opinion:0 "Impressed by fair judgment"
-generic_opinion_negative:0 "Hmm maybe not that good"
-supported_druidic_school_opinion:0 "Supported druidic school"
 
 wars_threshold_modifier:0 "War's Threshold"
 wars_threshold_modifier_desc:0 "This character has opened the Gates of Janus, signaling a time of war and earning the favor of the gods of battle."
 
 bringer_of_peace_modifier:0 "Bringer of Peace"
 bringer_of_peace_modifier_desc:0 "This character has closed the Gates of Janus, ushering in an era of peace and prosperity for the entire realm."
+
+gates_of_janus_closed:0 "Gates of Janus Closed"
+gates_of_janus_closed_desc:0 "The Gates of Janus were only recently closed. Such a sacred and momentous declaration of peace cannot be repeated so soon without cheapening its meaning."

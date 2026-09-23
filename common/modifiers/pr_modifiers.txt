@@ -1,4 +1,4 @@
-#Cultus Deorum 
+﻿#Cultus Deorum 
 held_ritual_for_jupiter_incense = {
 	icon = jupiter_positive
 	monthly_piety = 0.05
@@ -1916,17 +1916,12 @@ pr_augur_not_requested = {
 	levy_size = -0.10
 }
 
-# pr_statue = {
-# 	monthly_piety = 0.10
-# 	clergy_opinion = 5
-# 	same_faith_opinion = 5
-# }
-pr_statue_jupiter  = {
+pr_statue_jupiter = {
 	monthly_piety = 0.10
 	clergy_opinion = 5
 	same_faith_opinion = 5
 }
-pr_statue_juno  = {
+pr_statue_juno = {
 	monthly_piety = 0.10
 	clergy_opinion = 5
 	same_faith_opinion = 5
@@ -1943,23 +1938,22 @@ bringer_of_peace_modifier = {
 	monthly_piety = 1
 	general_opinion = 20
 }
+gates_of_janus_closed = {
+	icon = piety_positive
+	monthly_piety = 0.2
+}
 
-# pr_statue_lares  = {
-# 	monthly_piety = 0.10
-# 	clergy_opinion = 5
-# 	same_faith_opinion = 5
-# }
-pr_statue_mars  = {
+pr_statue_mars = {
 	monthly_piety = 0.10
 	clergy_opinion = 5
 	same_faith_opinion = 5
 }
-pr_statue_mercurius  = {
+pr_statue_mercurius = {
 	monthly_piety = 0.10
 	clergy_opinion = 5
 	same_faith_opinion = 5
 }
-pr_statue_venus  = {
+pr_statue_venus = {
 	monthly_piety = 0.10
 	clergy_opinion = 5
 	same_faith_opinion = 5
@@ -2094,4 +2088,26 @@ isis_whispering_reed = {
 	learning = 2
 	intrigue = 1
 	monthly_learning_lifestyle_xp_gain_add = 0.2
+}
+
+pr_scriptorium_established = {
+	icon = learning_positive
+	learning = 2
+	monthly_learning_lifestyle_xp_gain_add = 0.1
+	diplomacy = 1
+}
+
+pr_grand_academy_established = {
+	icon = learning_positive
+	learning = 3
+	monthly_learning_lifestyle_xp_gain_add = 0.2
+	diplomacy = 2
+	stewardship = 1
+	monthly_prestige = 0.1
+}
+
+pr_latin_revival_diplomatic = {
+	icon = diplomacy_positive
+	diplomacy = 1
+	learning = 1
 }

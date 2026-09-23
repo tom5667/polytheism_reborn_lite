@@ -1,0 +1,26 @@
+﻿l_english:
+  # =============================================
+  # Polytheism Reborn - Etruscan Decisions
+  # Localization for pr_etruscan_decisions.txt
+  # =============================================
+
+  # --- Choose Main Deity (Etruscan) Decision ---
+  pr_etruscan_choose_main_deity_decision:0 "Choose Main Deity"
+  pr_etruscan_choose_main_deity_decision_desc:0 "#F The gods of the Etruscan pantheon call for a champion to represent their will in the mortal realm. As a ruler of the Etruscan faith, I must select a patron deity who will guide my actions and bless my rule with divine favor.#!\nBy choosing a main deity, I shall establish a personal connection with the divine, gaining unique blessings and modifiers that reflect the nature of my chosen god or goddess."
+  pr_etruscan_choose_main_deity_decision_tooltip:0 "#T Select a patron deity from your Etruscan faith to gain divine blessings#!"
+  pr_etruscan_choose_main_deity_decision_confirm:0 "Choose Main Deity!"
+  pr_etruscan_choose_main_deity_decision_tt:0 "#T Available Deities for [ROOT.Char.GetFaith.GetName]#!"
+
+  # --- Main Deity Selection Descriptions: Etruscan ---
+  select_main_deity_etruscan_decision.select_tinia:0 "#T Tinia#!\n#P The supreme sky god, lord of thunder and storms#!"
+  select_main_deity_etruscan_decision.select_nortia:0 "#T Nortia#!\n#P Goddess of fertility, fortune, and fate#!"
+  select_main_deity_etruscan_decision.select_turms:0 "#T Turms#!\n#P Messenger of the gods, patron of trade and wealth#!"
+  select_main_deity_etruscan_decision.select_menrva:0 "#T Menrva#!\n#P Goddess of wisdom, war, and the crafts#!"
+  select_main_deity_etruscan_decision.select_maris:0 "#T Maris#!\n#P God of war, agriculture, and fertility#!"
+
+  # --- Create Etruria Decision ---
+  pr_etruscan_create_etruria_decision:0 "Create the Kingdom of Etruria"
+  pr_etruscan_create_etruria_decision_desc:0 "#F The ancient land of Etruria, heartland of the Etruscan civilization, once stretched from the shores of the Tyrrhenian Sea to the fertile hills of Tuscany. Its city-states, bound by shared faith and tradition, stood as a mighty confederation before the rise of Rome.#!\nAs the ruler who controls these historic lands, I shall revive the kingdom of Etruria and restore its former glory, uniting the Etruscan people under a single banner."
+  pr_etruscan_create_etruria_decision_tooltip:0 "#T Form the ancient kingdom of Etruria by uniting the Etruscan heartland#!"
+  pr_etruscan_create_etruria_decision_confirm:0 "Create Etruria!"
+  pr_etruscan_create_etruria_decision_effect_tooltip:0 "#P The kingdom of Etruria will be formed as a new title#!/n$EFFECT_LIST_BULLET$[title_d_pisa.GetNameNoTier] and [title_d_toscana.GetNameNoTier] will become [de_jure|E] part of Etruria$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"

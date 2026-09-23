@@ -1,270 +1,377 @@
-﻿language_dacian = {
+﻿language_pr_dacian = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_dacian
+			LANGUAGE = language_pr_dacian
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_dacian }
+			limit = { has_cultural_pillar = language_pr_dacian }
 			multiply = 10
 		}
 	}
-	
+
 	color = { 187 142 65 }
 }
 
-
-
-language_thracian = {
+language_pr_thracian = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_thracian
+			LANGUAGE = language_pr_thracian
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_thracian }
+			limit = { has_cultural_pillar = language_pr_thracian }
 			multiply = 10
 		}
 	}
-	
+
 	color = { 187 142 60 }
 }
 
-language_illyrian = {
+language_pr_illyrian = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_illyrian
+			LANGUAGE = language_pr_illyrian
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_illyrian }
+			limit = { has_cultural_pillar = language_pr_illyrian }
 			multiply = 10
 		}
 	}
-	
+
 	color = { 51 177 245 }
 }
 
-language_gaulish = {
+language_pr_gaulish = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_gaulish
+			LANGUAGE = language_pr_gaulish
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_gaulish }
+			limit = { has_cultural_pillar = language_pr_gaulish }
 			multiply = 10
 		}
 	}
-	
+
 	color = { 39 219 44 }
 }
 
-language_etruscan = {
+language_pr_etruscan = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_etruscan
+			LANGUAGE = language_pr_etruscan
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_etruscan }
+			limit = { has_cultural_pillar = language_pr_etruscan }
 			multiply = 10
 		}
 	}
-	
+
 	color = { 39 250 44 }
 }
 
-language_akkadian = {
+language_pr_akkadian = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_iranian
+			LANGUAGE = language_pr_akkadian
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_akkadian }
+			limit = { has_cultural_pillar = language_pr_akkadian }
 			multiply = 10
 		}
 	}
-	
-	color = assyrian
+
+	color = { 180 140 40 }
 }
 
-
-language_sumerian = {
+language_pr_sumerian = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_iranian
+			LANGUAGE = language_pr_sumerian
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_akkadian }
+			limit = { has_cultural_pillar = language_pr_sumerian }
 			multiply = 10
 		}
 	}
-	
-	color = assyrian
+
+	color = { 200 160 30 }
 }
 
-language_parthian = {
+language_pr_parthian = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_iranian
+			LANGUAGE = language_pr_parthian
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_iranian }
+			limit = { has_cultural_pillar = language_pr_parthian }
 			multiply = 10
 		}
 	}
-	
-	color = persian
+
+	color = { 162 32 112 }
 }
 
-language_avestan = {
+language_pr_avestan = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_iranian
+			LANGUAGE = language_pr_avestan
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_iranian }
+			limit = { has_cultural_pillar = language_pr_avestan }
 			multiply = 10
 		}
 	}
-	
-	color = persian
+
+	color = { 42 191 48 }
 }
 
-language_hittite = {
+language_pr_hittite = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_hittite
+			LANGUAGE = language_pr_hittite
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_hittite }
+			limit = { has_cultural_pillar = language_pr_hittite }
 			multiply = 10
 		}
 	}
-	
-	color = greek
+
+	color = { 180 130 60 }
 }
 
-language_phoenician = {
+language_pr_phoenician = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_phoenician
+			LANGUAGE = language_pr_phoenician
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_phoenician }
+			limit = { has_cultural_pillar = language_pr_phoenician }
 			multiply = 10
 		}
 	}
-	
-	color = greek
+
+	color = { 200 50 50 }
 }
 
-language_celtic_iberian = {
+language_pr_celtic_iberian = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_celtic_iberian
+			LANGUAGE = language_pr_celtic_iberian
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_celtic_iberian }
+			limit = { has_cultural_pillar = language_pr_celtic_iberian }
 			multiply = 10
 		}
 	}
-	
+
 	color = { 245 242 220 }
 }
 
-language_middle_persian = {
+language_pr_middle_persian = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_middle_persian
+			LANGUAGE = language_pr_middle_persian
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_middle_persian }
+			limit = { has_cultural_pillar = language_pr_middle_persian }
 			multiply = 10
 		}
 	}
-	
+
 	color = { 142 76 245 }
 }
 
-language_ripuarian = {
+language_pr_ripuarian = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_ripuarian
+			LANGUAGE = language_pr_ripuarian
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_ripuarian }
+			limit = { has_cultural_pillar = language_pr_ripuarian }
 			multiply = 10
 		}
 	}
-	color = { 238 245 246  }
+
+	color = { 238 245 246 }
 }
 
-language_moselle = {
+language_pr_moselle = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {
-			LANGUAGE = language_moselle
+			LANGUAGE = language_pr_moselle
 		}
 	}
 	ai_will_do = {
 		value = 10
 		if = {
-			limit = { has_cultural_pillar = language_moselle }
+			limit = { has_cultural_pillar = language_pr_moselle }
 			multiply = 10
 		}
 	}
+
 	color = { 245 245 255 }
+}
+
+language_pr_coptic = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_pr_coptic
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_pr_coptic }
+			multiply = 10
+		}
+	}
+
+	color = { 210 180 60 }
+}
+
+language_pr_gallo_romance = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_pr_gallo_romance
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_pr_gallo_romance }
+			multiply = 10
+		}
+	}
+
+	color = { 100 180 100 }
+}
+
+language_pr_british_latin = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_pr_british_latin
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_pr_british_latin }
+			multiply = 10
+		}
+	}
+
+	color = { 90 160 90 }
+}
+
+language_pr_hispano_romance = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_pr_hispano_romance
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_pr_hispano_romance }
+			multiply = 10
+		}
+	}
+
+	color = { 220 150 60 }
+}
+
+language_pr_african_romance = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_pr_african_romance
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_pr_african_romance }
+			multiply = 10
+		}
+	}
+
+	color = { 180 120 60 }
+}
+
+language_pr_moselle_romance = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_pr_moselle_romance
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_pr_moselle_romance }
+			multiply = 10
+		}
+	}
+
+	color = { 120 190 130 }
 }

@@ -1,0 +1,26 @@
+l_german:
+  # =============================================
+  # Polytheism Reborn - Etruskische Entscheidungen
+  # Lokalisierung für pr_etruscan_decisions.txt
+  # =============================================
+
+  # --- Hauptgottheit wählen (Etruskisch) ---
+  pr_etruscan_choose_main_deity_decision:0 "Wähle Hauptgottheit"
+  pr_etruscan_choose_main_deity_decision_desc:0 "#F Die Götter des etruskischen Pantheons verlangen einen Champion, der ihren Willen in der sterblichen Welt vertritt. Als Herrscher des etruskischen Glaubens muss ich eine Schutzgottheit auswählen, die meine Handlungen leitet und meine Herrschaft mit göttlichem Segen bedenkt.#!/n\nDurch die Wahl einer Hauptgottheit werde ich eine persönliche Verbindung mit dem Göttlichen herstellen und einzigartige Segnungen und Modifikatoren erhalten, die die Natur meiner gewählten Gottheit oder Göttin widerspiegeln."
+  pr_etruscan_choose_main_deity_decision_tooltip:0 "#T Wähle eine Schutzgottheit aus deinem etruskischen Glauben, um göttliche Segnungen zu erhalten#!/"
+  pr_etruscan_choose_main_deity_decision_confirm:0 "Wähle Hauptgottheit!"
+  pr_etruscan_choose_main_deity_decision_tt:0 "#T Verfügbare Gottheiten für [ROOT.Char.GetFaith.GetName]#!/"
+
+  # --- Auswahlbeschreibungen der Hauptgottheit: Etruskisch ---
+  select_main_deity_etruscan_decision.select_tinia:0 "#T Tinia#!/\n#P Der höchste Himmelsgott, Herr des Donners und der Stürme#!/"
+  select_main_deity_etruscan_decision.select_nortia:0 "#T Nortia#!/\n#P Göttin der Fruchtbarkeit, des Schicksals und der Fortuna#!/"
+  select_main_deity_etruscan_decision.select_turms:0 "#T Turms#!/\n#P Bote der Götter, Schutzpatron von Handel und Reichtum#!/"
+  select_main_deity_etruscan_decision.select_menrva:0 "#T Menrva#!/\n#P Göttin der Weisheit, des Krieges und des Handwerks#!/"
+  select_main_deity_etruscan_decision.select_maris:0 "#T Maris#!/\n#P Gott des Krieges, der Landwirtschaft und der Fruchtbarkeit#!/"
+
+  # --- Etrurien gründen ---
+  pr_etruscan_create_etruria_decision:0 "Gründe das Königreich Etrurien"
+  pr_etruscan_create_etruria_decision_desc:0 "#F Das alte Land Etrurien, das Herzland der etruskischen Zivilisation, erstreckte sich einst von den Ufern des Tyrrhenischen Meeres bis zu den fruchtbaren Hügeln der Toskana. Seine Stadtstaaten, verbunden durch gemeinsamen Glauben und Tradition, standen als mächtige Konföderation vor dem Aufstieg Roms.#!/n\nAls Herrscher, der diese historischen Länder kontrolliert, werde ich das Königreich Etrurien wiederbeleben und zu alter Größe zurückführen und das etruskische Volk unter einem einzigen Banner vereinen."
+  pr_etruscan_create_etruria_decision_tooltip:0 "#T Bilde das alte Königreich Etrurien, indem du das etruskische Kernland vereinst#!/"
+  pr_etruscan_create_etruria_decision_confirm:0 "Gründe Etrurien!"
+  pr_etruscan_create_etruria_decision_effect_tooltip:0 "#P Das Königreich Etrurien wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_pisa.GetNameNoTier] und [title_d_toscana.GetNameNoTier] werden [de_jure|E] Teil von Etrurien$EFFECT_LIST_BULLET$Erfordert erhebliche Investitionen in [gold|E] und [prestige|E]@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"

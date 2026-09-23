@@ -1,0 +1,24 @@
+l_german:
+  # =============================================
+  # Polytheism Reborn - Kaukasische Entscheidungen
+  # Lokalisierung für pr_caucasus_decisions.txt
+  # =============================================
+
+  # --- Hauptgottheit wählen ---
+  pr_caucasus_choose_main_deity_decision:0 "Wähle Hauptgottheit"
+  pr_caucasus_choose_main_deity_decision_desc:0 "#F Die Götter des kaukasischen Pantheons wachen über mich, jeder bietet seinen einzigartigen Segen.#!/n\nIch muss entscheiden, welche Gottheit ich als meinen primären Schutzpatron ehren werde, der meine Herrschaft leitet und meine Hingabe empfängt."
+  pr_caucasus_choose_main_deity_decision_tooltip:0 "Wähle eine Hauptgottheit aus dem kaukasischen Pantheon, um göttlichen Segen zu erhalten"
+  pr_caucasus_choose_main_deity_decision_confirm:0 "Wähle Hauptgottheit!"
+  pr_caucasus_choose_main_deity_decision_tt:0 "Wähle eine Hauptgottheit, um göttlichen Segen zu erhalten"
+
+  # Georgische Polytheismus-Gottheiten
+  pr_caucasus_choose_main_deity_decision.select_armzi:0 "Armzi, Gott des Mondes"
+  pr_caucasus_choose_main_deity_decision.select_adgilis_deda:0 "Adgilis Deda, Muttergöttin"
+  pr_caucasus_choose_main_deity_decision.select_kopala:0 "Kopala, Gott der Jagd"
+  pr_caucasus_choose_main_deity_decision.select_barbale:0 "Barbale, Göttin der Fruchtbarkeit"
+
+  # Armenische Polytheismus-Gottheiten
+  pr_caucasus_choose_main_deity_decision.select_aramazd:0 "Aramazd, Himmelsgott"
+  pr_caucasus_choose_main_deity_decision.select_astlik:0 "Astlik, Göttin der Liebe"
+  pr_caucasus_choose_main_deity_decision.select_nane:0 "Nane, Göttin der Weisheit"
+  pr_caucasus_choose_main_deity_decision.select_nvard:0 "Nvard, Göttin des Krieges"

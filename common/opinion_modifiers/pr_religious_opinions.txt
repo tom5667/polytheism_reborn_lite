@@ -1,25 +1,58 @@
-﻿destroyed_patriarch_opinion = {
+﻿# PR Opinion Modifiers
+
+# --- Religious Opinions ---
+
+destroyed_patriarch_opinion = {
 	opinion = -40
 	years = 40
 }
+
+# --- Druidic Judgment Opinions ---
+
 trusted_druidic_judgment_opinion = {
-	monthly_change = 0.1 
-	decaying = yes 
-	stacking = yes 
-}
-rejected_druidic_judgment_opinion = {
-	monthly_change = -0.1 
-	decaying = yes 
-	stacking = yes 
-}
-impressed_by_fair_judgment_opinion = {
-	monthly_change = 0.1 
-	decaying = yes 
-	stacking = yes 
+	monthly_change = 0.1
+	decaying = yes
+	stacking = yes
 }
 
+rejected_druidic_judgment_opinion = {
+	monthly_change = -0.1
+	decaying = yes
+	stacking = yes
+}
+
+impressed_by_fair_judgment_opinion = {
+	monthly_change = 0.1
+	decaying = yes
+	stacking = yes
+}
+
+supported_druidic_school_opinion = {
+	opinion = 10
+	years = 10
+}
+
+# --- Local Shrine Funding Opinions ---
+
+funded_local_shrine_opinion = {
+	opinion = 20
+	years = 5
+}
+
+helped_fund_local_shrine_opinion = {
+	opinion = 10
+	years = 5
+}
+
+refused_to_fund_local_shrine_opinion = {
+	opinion = -10
+	years = 5
+}
+
+# --- Generic Opinions ---
+
 generic_opinion_negative = {
-	monthly_change = -0.1 
-	decaying = yes 
-	stacking = yes 
+	monthly_change = -0.1
+	decaying = yes
+	stacking = yes
 }

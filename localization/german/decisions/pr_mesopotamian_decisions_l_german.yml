@@ -1,0 +1,57 @@
+l_german:
+  # =============================================
+  # Polytheism Reborn - Mesopotamische Entscheidungen
+  # Lokalisierung für pr_mesopotamian_decisions.txt
+  # =============================================
+
+  # --- Babylonische Kultur annehmen ---
+  pr_mesopotamian_embrace_babylonian_culture_decision:0 "Nimm die babylonische Kultur an"
+  pr_mesopotamian_embrace_babylonian_culture_decision_desc:0 "#F Die babylonische Kultur, Erbin des Ruhms des alten Mesopotamien, steht als Leuchtfeuer des Lernens, des Gesetzes und der Zivilisation. Durch die Annahme dieses alten Erbes werde ich mein Volk in ein goldenes Zeitalter der Weisheit und kulturellen Verfeinerung führen.#!/n\nDurch diese Entscheidung werde ich die Traditionen Babylons fördern und die Bindungen zwischen meinem Reich und den alten Göttern stärken."
+  pr_mesopotamian_embrace_babylonian_culture_decision_tooltip:0 "#T Nimm die babylonischen kulturellen Traditionen an und stärke das Erbe deines Reiches#!/"
+  pr_mesopotamian_embrace_babylonian_culture_decision_confirm:0 "Nimm die babylonische Kultur an!"
+
+  # --- Assyrische Kultur annehmen ---
+  pr_mesopotamian_embrace_assyrian_culture_decision:0 "Nimm die assyrische Kultur an"
+  pr_mesopotamian_embrace_assyrian_culture_decision_desc:0 "#F Die assyrische Kultur mit ihren stolzen militärischen Traditionen und dem Erbe des Imperiums steht als Zeugnis der Macht und Disziplin der antiken Welt. Durch die Annahme dieses Erbes werde ich mein Volk in ein Zeitalter der Stärke und Eroberung führen.#!/n\nDurch diese Entscheidung werde ich die Traditionen Assyriens fördern und die Bindungen zwischen meinem Reich und den alten Göttern stärken."
+  pr_mesopotamian_embrace_assyrian_culture_decision_tooltip:0 "#T Nimm die assyrischen kulturellen Traditionen an und stärke das Erbe deines Reiches#!/"
+  pr_mesopotamian_embrace_assyrian_culture_decision_confirm:0 "Nimm die assyrische Kultur an!"
+
+  # --- Sumerische Kultur annehmen ---
+  pr_mesopotamian_embrace_sumerian_culture_decision:0 "Nimm die sumerische Kultur an"
+  pr_mesopotamian_embrace_sumerian_culture_decision_desc:0 "#F Die sumerische Kultur, Wiege der Zivilisation und Mutter der Schrift, steht als Grundlage, auf der aller mesopotamischer Großartigkeit aufgebaut wurde. Durch die Annahme dieses ältesten Erbes werde ich mein Volk in ein goldenes Zeitalter des Wissens und spiritueller Erneuerung führen.#!/n\nDurch diese Entscheidung werde ich die Traditionen Sumers fördern und die Bindungen zwischen meinem Reich und den alten Göttern stärken."
+  pr_mesopotamian_embrace_sumerian_culture_decision_tooltip:0 "#T Nimm die sumerischen kulturellen Traditionen an und stärke das Erbe deines Reiches#!/"
+  pr_mesopotamian_embrace_sumerian_culture_decision_confirm:0 "Nimm die sumerische Kultur an!"
+
+  # --- Königreich Babylon gründen ---
+  pr_mesopotamian_kingdom_of_babylon_decision:0 "Gründe das Königreich Babylon"
+  pr_mesopotamian_kingdom_of_babylon_decision_desc:0 "#F Die alten Lande Mesopotamiens, einst von den mächtigen Königen Babylons regiert, warten auf einen neuen Herrscher, der ihren alten Ruhm wiederherstellt. Von den Ufern des Tigris bis zu den Gestaden des Euphrat sind diese Gebiete lange Zeit geteilt gewesen.#!/n\nDurch die Gründung des Königreichs Babylon werde ich das babylonische Erbe wiederherstellen und eine neue Macht im Herzen Mesopotamiens schaffen."
+  pr_mesopotamian_kingdom_of_babylon_decision_tooltip:0 "#T Bilde das Königreich Babylon, indem du die mesopotamischen Kernlande vereinst#!/"
+  pr_mesopotamian_kingdom_of_babylon_decision_confirm:0 "Gründe das Königreich Babylon!"
+  pr_mesopotamian_kingdom_of_babylon_decision_effect_tooltip:0 "#P Das Königreich Babylon wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_kufa.GetNameNoTier], [title_d_basra.GetNameNoTier], [title_d_samarra.GetNameNoTier], [title_d_wasit.GetNameNoTier] und [title_d_baghdad.GetNameNoTier] werden [de_jure|E] Teil von Babylon$EFFECT_LIST_BULLET$Erfordert erhebliche Investitionen in [gold|E] und [prestige|E]@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Königreich Sumer gründen ---
+  pr_mesopotamian_kingdom_of_sumer_decision:0 "Gründe das Königreich Sumer"
+  pr_mesopotamian_kingdom_of_sumer_decision_desc:0 "#F Die alten Lande Sumers, Wiege der Zivilisation und Mutter der Städte, warten auf einen neuen Herrscher, der ihren alten Ruhm wiederherstellt. Von den Sümpfen des Südens bis zu den großen Zikkurats der Vorzeit sind diese Länder lange Zeit geteilt gewesen.#!/n\nDurch die Gründung des Königreichs Sumer werde ich das sumerische Erbe wiederherstellen und das Geburtsrecht der ersten Zivilisation zurückfordern."
+  pr_mesopotamian_kingdom_of_sumer_decision_tooltip:0 "#T Bilde das Königreich Sumer, indem du die südlichen mesopotamischen Länder vereinst#!/"
+  pr_mesopotamian_kingdom_of_sumer_decision_confirm:0 "Gründe das Königreich Sumer!"
+  pr_mesopotamian_kingdom_of_sumer_decision_effect_tooltip:0 "#P Das Königreich Sumer wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_kufa.GetNameNoTier] und [title_d_basra.GetNameNoTier] werden [de_jure|E] Teil von Sumer$EFFECT_LIST_BULLET$Erfordert erhebliche Investitionen in [gold|E] und [prestige|E]@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Königreich Assyrien gründen ---
+  pr_mesopotamian_kingdom_of_assyria_decision:0 "Gründe das Königreich Assyrien"
+  pr_mesopotamian_kingdom_of_assyria_decision_desc:0 "#F Die alten Lande Assyriens, einst Heimat der größten Militärmacht, die die Welt je kannte, warten auf einen neuen Herrscher, der ihren kriegerischen Ruhm wiederherstellt. Von den Hochländern Kurdistans bis zu den Ebenen des Tigris sind diese Gebiete lange Zeit geteilt gewesen.#!/n\nDurch die Gründung des Königreichs Assyrien werde ich das assyrische Erbe wiederherstellen und eine neue Macht im Norden Mesopotamiens schaffen."
+  pr_mesopotamian_kingdom_of_assyria_decision_tooltip:0 "#T Bilde das Königreich Assyrien, indem du die nördlichen mesopotamischen Länder vereinst#!/"
+  pr_mesopotamian_kingdom_of_assyria_decision_confirm:0 "Gründe das Königreich Assyrien!"
+  pr_mesopotamian_kingdom_of_assyria_decision_effect_tooltip:0 "#P Das Königreich Assyrien wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_diyarrabia.GetNameNoTier], [title_d_kurdistan.GetNameNoTier], [title_d_samarra.GetNameNoTier] und [title_d_euphrates.GetNameNoTier] werden [de_jure|E] Teil von Assyrien$EFFECT_LIST_BULLET$Erfordert erhebliche Investitionen in [gold|E] und [prestige|E]@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Mesopotamisches Imperium wiederherstellen ---
+  pr_mesopotamian_restore_empire_decision:0 "Stelle das mesopotamische Imperium wieder her"
+  pr_mesopotamian_restore_empire_decision_desc:0 "#F Die drei Königreiche Babylon, Sumer und Assyrien, einst unter der Krone der großen Imperien der Vorzeit vereint, bildeten die mächtigste Zivilisation, die die antike Welt je kannte. Vom Mittelmeer bis zum Persischen Golf stand das mesopotamische Imperium als Leuchtfeuer des Gesetzes, des Lernens und göttlichen Königtums.#!/n\nDurch die Wiederherstellung des mesopotamischen Imperiums werde ich alle drei Königreiche unter einem einzigen Banner vereinen und den vollen Ruhm der antiken Könige zurückfordern."
+  pr_mesopotamian_restore_empire_decision_tooltip:0 "#T Stelle das mesopotamische Imperium wieder her, indem du Babylon, Sumer und Assyrien vereinst#!/"
+  pr_mesopotamian_restore_empire_decision_confirm:0 "Stelle das mesopotamische Imperium wieder her!"
+  pr_mesopotamian_restore_empire_decision_effect_tooltip:0 "#P Das mesopotamische Imperium wird als neuer [Imperium|E]-Titel gegründet#/n$EFFECT_LIST_BULLET$[title_k_babylon.GetNameNoTier], [title_k_sumer.GetNameNoTier] und [title_k_assyria.GetNameNoTier] werden [de_jure|E] Teil des Imperiums$EFFECT_LIST_BULLET$Erfordert erhebliche Investitionen in [gold|E] und [prestige|E]@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Erste Brauerei eröffnen ---
+  pr_mesopotamian_open_first_brewery_decision:0 "Eröffne die erste Brauerei"
+  pr_mesopotamian_open_first_brewery_decision_desc:0 "#F Die alten Sumerer waren die Ersten, die Bier brauten, ein Geschenk der Götter, das die Zivilisation seit Jahrtausenden erhalten hat. Durch die Eröffnung der ersten Brauerei des neuen Zeitalters werde ich diese alte Tradition ehren und meinem Volk Freude bringen.#!/n\nDiese Entscheidung wird eine Brauerei errichten und den Segen der Götter durch die heilige Kunst des Brauens gewinnen."
+  pr_mesopotamian_open_first_brewery_decision_tooltip:0 "#T Eröffne die erste Brauerei und ehre die alte sumerische Tradition des Bierbrauens#!/"
+  pr_mesopotamian_open_first_brewery_decision_confirm:0 "Eröffne die erste Brauerei!"

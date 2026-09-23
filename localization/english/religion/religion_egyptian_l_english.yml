@@ -6,7 +6,7 @@
     egyptian_religion_adj:0 "Egyptian"
     egyptian_religion_adherent:0 "Egyptian"
     egyptian_religion_adherent_plural:0 "Egyptians"
-    egyptian_religion_desc:0 "The Egyptian pantheon was one of the oldest  practiced religions, dating back to somewhere in prehistory, but concretely coming into archeological record as early as the foundation of the first dynasty of Egypt. The Egyptians believed in a very complex cosmology and afterlife, with the Pharaohs acting as the gods' representative on earth."
+    egyptian_religion_desc:0 "The Egyptian pantheon was one of the oldest practiced religions, dating back to somewhere in prehistory, but concretely coming into archeological record as early as the foundation of the first dynasty of Egypt. The Egyptians believed in a very complex cosmology and afterlife, with the Pharaohs acting as the gods' representative on earth."
     #pantheon_the_gods:0 "egyptian Pantheon of gods"
     holy_order_sons_of_Montu:0 "Sons of Montu"
     holy_order_sons_of_aten:0 "Sons of Aten"
@@ -15,24 +15,31 @@
     kemetic_polytheism_adj:0 "Kemetic"
     kemetic_polytheism_adherent:0 "Kemetic polytheist"
     kemetic_polytheism_adherent_plural:0 "Kemetic polytheist"
-    kemetic_polytheism_desc:0 "The Egyptian pantheon was one of the oldest  practiced religions, dating back to somewhere in prehistory, but concretely coming into archeological record as early as the foundation of the first dynasty of Egypt. The Egyptians believed in a very complex cosmology and afterlife, with the Pharaohs acting as the gods' representative on earth." 
+    kemetic_polytheism_desc:0 "The Egyptian pantheon was one of the oldest practiced religions, dating back to somewhere in prehistory, but concretely coming into archeological record as early as the foundation of the first dynasty of Egypt. The Egyptians believed in a very complex cosmology and afterlife, with the Pharaohs acting as the gods' representative on earth." 
 
     kemetic_polytheism_old:0 "Kemetic Old"
     kemetic_polytheism_old_adj:0 "Kemetic Old"
     kemetic_polytheism_adherent_old:0 "Old Kemetic polytheist"
     kemetic_polytheism_old_adherent_plural:0 "Old Kemetic polytheist"
-    kemetic_polytheism_old_desc:0 "The Egyptian pantheon was one of the oldest  practiced religions, dating back to somewhere in prehistory, but concretely coming into archeological record as early as the foundation of the first dynasty of Egypt. The Egyptians believed in a very complex cosmology and afterlife, with the Pharaohs acting as the gods' representative on earth." 
+    kemetic_polytheism_old_desc:0 "The Egyptian pantheon was one of the oldest practiced religions, dating back to somewhere in prehistory, but concretely coming into archeological record as early as the foundation of the first dynasty of Egypt. The Egyptians believed in a very complex cosmology and afterlife, with the Pharaohs acting as the gods' representative on earth." 
 
     kemetic_polytheism_religious_head_title:0 "High Priest"
     kemetic_polytheism_divine_realm:0 "Divine Realm"
+    kemetic_polytheism_divine_realm_2:0 "$kemetic_polytheism_divine_realm$"
+    kemetic_polytheism_divine_realm_3:0 "$kemetic_polytheism_divine_realm$"
     kemetic_polytheism_religious_symbol:0 "Eye of Amun"
+    kemetic_polytheism_religious_symbol_2:0 "$kemetic_polytheism_religious_symbol$"
+    kemetic_polytheism_religious_symbol_3:0 "$kemetic_polytheism_religious_symbol$"
     kemetic_polytheism_religious_text:0 "rituals"
+    kemetic_polytheism_religious_text_2:0 "$kemetic_polytheism_religious_text$"
+    kemetic_polytheism_religious_text_3:0 "$kemetic_polytheism_religious_text$"
     
 
     #kemetic gods/goddesses Localization
 
     #An Dagda Localization
     kemetic_polytheism_high_god_name:0 "Amun Ra"
+    kemetic_polytheism_high_god_name_2:0 "$kemetic_polytheism_high_god_name$"
     kemetic_polytheism_high_god_name_possessive:0 "Amun Ra's"
     kemetic_polytheism_high_god_name_alternate:0 "The hidden one"
     kemetic_polytheism_high_god_name_alternate_possessive:0 "The hidden one's"
@@ -87,7 +94,8 @@
     kemetic_polytheism_evil_god_apophis:0 "Apophis" 
     kemetic_polytheism_evil_god_apep:0 "Apep"
 
-    kemetic_polytheism_witchgodname_apophis:0 "Apophis" 
+    kemetic_polytheism_witchgodname_apophis:0 "Apophis"
+    kemetic_polytheism_witchgodname_apophis_possessive:0 "$kemetic_polytheism_witchgodname_apophis$'"
 
     #Devil god   
     kemetic_polytheism_devil_name:0 "Seth" 
@@ -95,6 +103,8 @@
 
     #Death god Aed
     kemetic_polytheism_death_deity_name:0 "Osiris"
+    kemetic_polytheism_death_deity_name_2:0 "$kemetic_polytheism_death_deity_name$"
+    kemetic_polytheism_death_deity_name_3:0 "$kemetic_polytheism_death_deity_name$"
     kemetic_polytheism_death_deity_name_possessive:0 "Osiris's"
 
     #Good gods names 
@@ -126,24 +136,31 @@
     atenism_adj:0 "Atenism"
     atenism_adherent:0 "Atenism follower"
     atenism_adherent_plural:0 "Atenism followers"
-    atenism_desc:0 "Atenism, sometimes known as the Amarna heresy, was a short-lived monotheistic or henotheistic worship of the personification of the Sun, Aten. It was established by Akhenaten, also known as Amenhotep IV, of the eighteenth dynasty. After Akhenaten's tumultuous reign towards the Egyptian religion, his cult quickly collapsed as Tutankhamun quickly abolished it." 
+    atenism_desc:0 "Atenism, sometimes known as the Amarna heresy, was a short-lived monotheistic or henotheistic worship of the personification of the Sun, Aten. It was established by Akhenaten, also known as Amenhotep IV, of the eighteenth dynasty. After Akhenaten's tumultuous religious reforms, his cult quickly collapsed as Tutankhamun swiftly restored the old faith." 
 
     atenism_old:0 "Atenism Old"
     atenism_old_adj:0 "Atenism Old"
     atenism_adherent_old:0 "Old Atenism follower"
     atenism_old_adherent_plural:0 "Old Atenism followers"
-    atenism_old_desc:0 "Atenism, sometimes known as the Amarna heresy, was a short-lived monotheistic or henotheistic worship of the personification of the Sun, Aten. It was established by Akhenaten, also known as Amenhotep IV, of the eighteenth dynasty. After Akhenaten's tumultuous reign towards the Egyptian religion, his cult quickly collapsed as Tutankhamun quickly abolished it." 
+    atenism_old_desc:0 "Atenism, sometimes known as the Amarna heresy, was a short-lived monotheistic or henotheistic worship of the personification of the Sun, Aten. It was established by Akhenaten, also known as Amenhotep IV, of the eighteenth dynasty. After Akhenaten's tumultuous religious reforms, his cult quickly collapsed as Tutankhamun swiftly restored the old faith." 
 
     atenism_religious_head_title:0 "High Priest"
     atenism_divine_realm:0 "Divine Realm"
+    atenism_divine_realm_2:0 "$atenism_divine_realm$"
+    atenism_divine_realm_3:0 "$atenism_divine_realm$"
     atenism_religious_symbol:0 "Sun disk"
+    atenism_religious_symbol_2:0 "$atenism_religious_symbol$"
+    atenism_religious_symbol_3:0 "$atenism_religious_symbol$"
     atenism_religious_text:0 "rituals"
+    atenism_religious_text_2:0 "$atenism_religious_text$"
+    atenism_religious_text_3:0 "$atenism_religious_text$"
     
 
     #kemetic gods/goddesses Localization
 
     #An Dagda Localization
     atenism_high_god_name:0 "Aten"
+    atenism_high_god_name_2:0 "$atenism_high_god_name$"
     atenism_high_god_name_possessive:0 "Aten's"
     atenism_high_god_name_alternate:0 "The Rahorus who rejoices in the horizon"
     atenism_high_god_name_alternate_possessive:0 "The Rahorus who rejoices in the horizon"
@@ -199,6 +216,7 @@
     atenism_evil_god_apep:0 "Apep"
 
     atenism_witchgodname_apophis:0 "Apophis"
+    atenism_witchgodname_apophis_possessive:0 "$atenism_witchgodname_apophis$'"
 
     #Devil god   
     atenism_devil_name:0 "Seth" 
@@ -206,6 +224,8 @@
 
     #Death god Aed
     atenism_death_deity_name:0 "Osiris"
+    atenism_death_deity_name_2:0 "$atenism_death_deity_name$"
+    atenism_death_deity_name_3:0 "$atenism_death_deity_name$"
     atenism_death_deity_name_possessive:0 "Osiris's"
 
     #Good gods names 

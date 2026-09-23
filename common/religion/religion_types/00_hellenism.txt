@@ -13,7 +13,7 @@
 	}
 
 	custom_faith_icons = {
-		custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 custom_faith_6 custom_faith_7 custom_faith_8 custom_faith_9 custom_faith_10 dualism_custom_1 zoroastrian_custom_1 zoroastrian_custom_2 buddhism_custom_1 buddhism_custom_2 buddhism_custom_3 buddhism_custom_4 taoism_custom_1 yazidi_custom_1 sunni_custom_2 sunni_custom_3 sunni_custom_4 muhakkima_1 muhakkima_2 muhakkima_4 muhakkima_5 muhakkima_6 judaism_custom_1 custom_faith_fp1_fenrir custom_faith_fp1_irminsul custom_faith_fp1_jormungandr custom_faith_fp1_odins_ravens custom_faith_fp1_runestone_moon custom_faith_fp1_thors_hammer custom_faith_fp1_valknut custom_faith_fp1_yggdrasil custom_faith_boromian_circles custom_faith_lotus custom_faith_aum_tibetan custom_faith_pentagram custom_faith_pentagram_inverted custom_faith_burning_bush custom_faith_allah custom_faith_gankyil custom_faith_eye_of_providence custom_faith_dove custom_faith_ichthys custom_faith_lamb custom_faith_black_sheep custom_faith_ankh custom_faith_chi_rho custom_faith_hamsa custom_faith_cool_s armenian_custom assyrian_custom atenism_custom babylonian_custom brytonic_polytheism_custom celtiberian_polytheism_custom cult_of_serapis_custom cultus_deorum_romanorum_custom dacian_custom eluesinian_mysteries_custom Etruscan_custom gaelic_polytheism_custom gallo_roman_custom gaulish_polytheism_custom georgian_custom german_polytheism_custom hellinismos_custom hittite_custom imperial_cult_custom irminsul_new_custom kemetic_polytheism_custom lusitanian_custom mithraic_mysteries_custom mycenaean_custom mysteries_of_isis_custom punic_custom roman_graeco_egyptian_custom romano_british_custom romano_germanic_custom semitic_custom sol_invictus_custom sumerian_custom zalmoxism_custom 
+		custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 custom_faith_6 custom_faith_7 custom_faith_8 custom_faith_9 custom_faith_10 dualism_custom_1 zoroastrian_custom_1 zoroastrian_custom_2 buddhism_custom_1 buddhism_custom_2 buddhism_custom_3 buddhism_custom_4 taoism_custom_1 yazidi_custom_1 sunni_custom_2 sunni_custom_3 sunni_custom_4 muhakkima_1 muhakkima_2 muhakkima_4 muhakkima_5 muhakkima_6 judaism_custom_1 custom_faith_fp1_fenrir custom_faith_fp1_irminsul custom_faith_fp1_jormungandr custom_faith_fp1_odins_ravens custom_faith_fp1_runestone_moon custom_faith_fp1_thors_hammer custom_faith_fp1_valknut custom_faith_fp1_yggdrasil custom_faith_boromian_circles custom_faith_lotus custom_faith_aum_tibetan custom_faith_pentagram custom_faith_pentagram_inverted custom_faith_burning_bush custom_faith_allah custom_faith_gankyil custom_faith_eye_of_providence custom_faith_dove custom_faith_ichthys custom_faith_lamb custom_faith_black_sheep custom_faith_ankh custom_faith_chi_rho custom_faith_hamsa custom_faith_cool_s armenian_custom assyrian_custom atenism_custom babylonian_custom brytonic_polytheism_custom celtiberian_polytheism_custom cult_of_serapis_custom cultus_deorum_romanorum_custom dacian_custom eluesinian_mysteries_custom Etruscan_custom gaelic_polytheism_custom gallo_roman_custom gaulish_polytheism_custom georgian_custom german_polytheism_custom hellinismos_custom hittite_custom imperial_cult_custom irminsul_new_custom kemetic_polytheism_custom lusitanian_custom mithraic_mysteries_custom mycenaean_custom mysteries_of_isis_custom punic_custom roman_illyrian_custom romano_british_custom romano_germanic_custom semitic_custom sol_invictus_custom sumerian_custom zalmoxism_custom 
 		custom_pr custom_pr1 custom_pr2 custom_pr3 custom_pr4 custom_pr5 custom_pr6 custom_pr7 custom_pr8 custom_pr9 custom_pr10 custom_pr11 custom_pr12 custom_pr13 custom_pr14 custom_pr15 custom_pr16 custom_pr17 custom_pr18 custom_pr19 custom_pr20 custom_pr21 custom_pr22 custom_pr24 custom_pr25 custom_pr26 custom_pr27 custom_pr28 custom_pr29 custom_pr30 custom_pr31 custom_pr32 custom_pr33 custom_pr34 custom_pr35 custom_pr36 custom_pr37 custom_pr38
 		custom_pr39 custom_pr40 custom_pr41
 		latvian_aka latvian_auseklis latvian_austraskoks latvian_jumis latvian_metenis latvian_saule latvian_zalktis_01 latvian_zalktis_02 
@@ -48,7 +48,7 @@
 			
 			reserved_male_names = {
 				Alexander Antiochus Sebastianos Lysander Dorian Adonis Orpheus Hector Jason Leonidas Leander Achilles Zenon Aeneas Demetrios Archimedes Homer Odysseus Aristotle Nestor Pericles 
-				Agememnon Plato Archimedes Socrates
+				Agememnon Plato Socrates
 			}
 			reserved_female_names = {
 				Chloe Alexandra Zoe Helena Irene Isidore Melissa Apollonia Helenè Zenobia Artemisia Berenice Eirene Charis Demetria Xanthippe
@@ -226,8 +226,14 @@
 				BishopNeuter = hellenism_priest_male
 				BishopNeuterPlural = hellenism_priest_male_plural
 				DivineRealm = hellenism_divine_realm
+				DivineRealm2 = hellenism_divine_realm_2
+				DivineRealm3 = hellenism_divine_realm_3
                 PositiveAfterLife = greco_roman_religion_positive_afterlife
+				PositiveAfterLife2 = greco_roman_religion_positive_afterlife_2
+				PositiveAfterLife3 = greco_roman_religion_positive_afterlife_3
                 NegativeAfterLife = greek_religion_negative_afterlife
+				NegativeAfterLife2 = greek_religion_negative_afterlife_2
+				NegativeAfterLife3 = greek_religion_negative_afterlife_3
 				DeathDeityName = hellenism_death_deity_name
 				DeathDeityNamePossessive = hellenism_death_deity_name_possessive
 				DeathDeitySheHe = CHARACTER_SHEHE_HE
@@ -236,7 +242,7 @@
 				WitchGodName = hellenism_witchgodname_hekate
 				WitchGodNamePossessive = hellenism_witchgodname_hekate_possessive
 				WitchGodHerHis = CHARACTER_HERHIS_HER
-				WitchGodSheHe = CHARACTER_SHEHE_HE
+				WitchGodSheHe = CHARACTER_SHEHE_SHE
 				WitchGodHerHim = CHARACTER_HERHIM_HER
 				WitchGodMistressMaster = mistress
 				WitchGodMotherFather = mother
@@ -268,7 +274,7 @@
                 Alexandra Eritha Karpathia Korinsia Poulxeria
             }
             doctrine = unreformed_faith_doctrine
-            doctrine = special_doctrine_mycenaean_patron_gods
+            doctrine = special_doctrine_mycenaean_patron_god
 			doctrine = doctrine_funeral_cremation
 
             #Main Group
@@ -297,8 +303,6 @@
             doctrine = doctrine_clerical_gender_either
             doctrine = doctrine_clerical_marriage_allowed
             doctrine = doctrine_clerical_succession_temporal_fixed_appointment
-            doctrine = doctrine_curtailed 
-            doctrine = doctrine_monk_not_clergy_enforced
 			doctrine = doctrine_anointment_permitted
 
             #doctrine = unreformed_faith_doctrine
@@ -321,6 +325,7 @@
             localization = {
                 #High God Name
                 HighGodName = mycenaean_polytheism_high_god_name
+                HighGodName2 = mycenaean_polytheism_high_god_name_2
                 HighGodNamePossessive = mycenaean_polytheism_high_god_name_possessive
                 HighGodNameSheHe = CHARACTER_SHEHE_HE
                 HighGodHerselfHimself = CHARACTER_HIMSELF
@@ -406,6 +411,8 @@
                 WaterGodHerHim = CHARACTER_HERHIM_HIM
 
                 PantheonTerm = religion_the_gods
+                PantheonTerm2 = religion_the_gods_2
+                PantheonTerm3 = religion_the_gods_3
                 PantheonTermHasHave = pantheon_term_have
                 GoodGodNames = {mycenaean_polytheism_good_god_zeus mycenaean_polytheism_good_god_artemis mycenaean_polytheism_good_god_posidaeia mycenaean_polytheism_good_god_hermes mycenaean_polytheism_good_god_potnia mycenaean_polytheism_good_god_hera mycenaean_polytheism_good_god_diwia mycenaean_polytheism_good_god_hephaestus}
                 DevilName = mycenaean_polytheism_devil_name
@@ -415,9 +422,15 @@
                 DevilHerselfHimself = CHARACTER_HIMSELF
                 EvilGodNames = { mycenaean_polytheism_witchgodname_hekate mycenaean_polytheism_evil_god_the_erinyes }
                 HouseOfWorship = paganism_house_of_worship
+                HouseOfWorship2 = paganism_house_of_worship_2
+                HouseOfWorship3 = paganism_house_of_worship_3
                 HouseOfWorshipPlural = paganism_house_of_worship_plural
                 ReligiousSymbol = mycenaean_polytheism_religious_symbol
+                ReligiousSymbol2 = mycenaean_polytheism_religious_symbol_2
+                ReligiousSymbol3 = mycenaean_polytheism_religious_symbol_3
                 ReligiousText = mycenaean_polytheism_religious_text
+                ReligiousText2 = mycenaean_polytheism_religious_text_2
+                ReligiousText3 = mycenaean_polytheism_religious_text_3
                 ReligiousHeadName = mycenaean_polytheism_religious_head_title
                 ReligiousHeadTitleName = dualism_religious_head_title_name
                 DevoteeMale = paganism_devotee
@@ -432,23 +445,31 @@
                 PriestFemalePlural = mycenaean_polytheism_priest_female_plural
                 PriestNeuter = mycenaean_polytheism_priest_male
                 PriestNeuterPlural = mycenaean_polytheism_priest_male_plural
-                AltPriestTermPlural = mycenaean_polytheism_priest_alternate_plural
+                AltPriestTermPlural = christianity_priest_alternate_plural
                 BishopMale = mycenaean_polytheism_bishop_male
                 BishopMalePlural = mycenaean_polytheism_bishop_male_plural
                 BishopFemale = mycenaean_polytheism_priest_female
                 BishopFemalePlural = mycenaean_polytheism_priest_female_plural
                 BishopNeuter = mycenaean_polytheism_priest_male
                 BishopNeuterPlural = mycenaean_polytheism_priest_male_plural
-                DivineRealm = divine_realm
+                DivineRealm = mycenaean_polytheism_divine_realm
+                DivineRealm2 = mycenaean_polytheism_divine_realm_2
+                DivineRealm3 = mycenaean_polytheism_divine_realm_3
                 PositiveAfterLife = greco_roman_religion_positive_afterlife
+                PositiveAfterLife2 = greco_roman_religion_positive_afterlife_2
+                PositiveAfterLife3 = greco_roman_religion_positive_afterlife_3
                 NegativeAfterLife = greek_religion_negative_afterlife
+                NegativeAfterLife2 = greek_religion_negative_afterlife_2
+                NegativeAfterLife3 = greek_religion_negative_afterlife_3
                 DeathDeityName = mycenaean_polytheism_death_deity_name
                 DeathDeityNamePossessive = mycenaean_polytheism_death_deity_name_possessive
                 DeathDeitySheHe = CHARACTER_SHEHE_HE
                 DeathDeityHerHis = CHARACTER_HERHIS_HIS
+                DeathDeityHerHim = CHARACTER_HERHIM_HIM
                 WitchGodName = mycenaean_polytheism_witchgodname_hekate
+                WitchGodNamePossessive = mycenaean_polytheism_witchgodname_hekate_possessive
                 WitchGodHerHis = CHARACTER_HERHIS_HER
-                WitchGodSheHe = CHARACTER_SHEHE_HE
+                WitchGodSheHe = CHARACTER_SHEHE_SHE
                 WitchGodHerHim = CHARACTER_HERHIM_HER
                 WitchGodMistressMaster = mistress
                 WitchGodMotherFather = mother
@@ -514,6 +535,7 @@
 			localization = {
 				#High God Name
 				HighGodName = graeco_egyptian_polytheism_high_god_name
+				HighGodName2 = graeco_egyptian_polytheism_high_god_name_2
 				HighGodNamePossessive = graeco_egyptian_polytheism_high_god_name_possessive
 				HighGodNameSheHe = CHARACTER_SHEHE_HE
 				HighGodHerselfHimself = CHARACTER_HIMSELF
@@ -601,8 +623,10 @@
 		
 		
 				PantheonTerm = religion_the_gods
+				PantheonTerm2 = religion_the_gods_2
+				PantheonTerm3 = religion_the_gods_3
 				PantheonTermHasHave = pantheon_term_have
-				GoodGodNames = {graeco_egyptian_polytheism_health_god_name graeco_egyptian_polytheism_fertility_god_name graeco_egyptian_polytheism_fertility_god_name graeco_egyptian_polytheism_wealth_god_name graeco_egyptian_polytheism_household_god_name graeco_egyptian_polytheism_fate_god_name graeco_egyptian_polytheism_night_god_name graeco_egyptian_polytheism_trickster_god_name  }
+				GoodGodNames = {graeco_egyptian_polytheism_health_god_name graeco_egyptian_polytheism_fertility_god_name graeco_egyptian_polytheism_water_god_name graeco_egyptian_polytheism_wealth_god_name graeco_egyptian_polytheism_household_god_name graeco_egyptian_polytheism_fate_god_name graeco_egyptian_polytheism_night_god_name graeco_egyptian_polytheism_trickster_god_name  }
 				DevilName = graeco_egyptian_polytheism_devil_name
 				DevilNamePossessive = graeco_egyptian_polytheism_devil_name_possessive
 				DevilSheHe = CHARACTER_SHEHE_HE
@@ -610,9 +634,15 @@
 				DevilHerselfHimself = CHARACTER_HIMSELF
 				EvilGodNames = {graeco_egyptian_polytheism_evil_god_antaios}
 				HouseOfWorship = paganism_house_of_worship
+				HouseOfWorship2 = paganism_house_of_worship_2
+				HouseOfWorship3 = paganism_house_of_worship_3
 				HouseOfWorshipPlural = paganism_house_of_worship_plural
 				ReligiousSymbol = graeco_egyptian_polytheism_religious_symbol
+				ReligiousSymbol2 = graeco_egyptian_polytheism_religious_symbol_2
+				ReligiousSymbol3 = graeco_egyptian_polytheism_religious_symbol_3
 				ReligiousText = graeco_egyptian_polytheism_religious_text
+				ReligiousText2 = graeco_egyptian_polytheism_religious_text_2
+				ReligiousText3 = graeco_egyptian_polytheism_religious_text_3
 				ReligiousHeadName = graeco_egyptian_polytheism_religious_head_title
 				ReligiousHeadTitleName = dualism_religious_head_title_name
 				DevoteeMale = paganism_devotee
@@ -635,14 +665,22 @@
 				BishopNeuter = graeco_egyptian_polytheism_priest_male
 				BishopNeuterPlural = graeco_egyptian_polytheism_priest_male_plural
 				DivineRealm = graeco_egyptian_polytheism_divine_realm
+				DivineRealm2 = graeco_egyptian_polytheism_divine_realm_2
+				DivineRealm3 = graeco_egyptian_polytheism_divine_realm_3
 				PositiveAfterLife = graeco_egyptian_polytheism_death_deity_name
+				PositiveAfterLife2 = graeco_egyptian_polytheism_death_deity_name_2
+				PositiveAfterLife3 = graeco_egyptian_polytheism_death_deity_name_3
 				NegativeAfterLife = graeco_egyptian_polytheism_death_deity_name
+				NegativeAfterLife2 = graeco_egyptian_polytheism_death_deity_name_2
+				NegativeAfterLife3 = graeco_egyptian_polytheism_death_deity_name_3
 				DeathDeityName = graeco_egyptian_polytheism_death_deity_name
 				DeathDeityNamePossessive = graeco_egyptian_polytheism_death_deity_name_possessive
 				DeathDeitySheHe = CHARACTER_SHEHE_HE
 				DeathDeityHerHis = CHARACTER_HERHIS_HIS
+				DeathDeityHerHim = CHARACTER_HERHIM_HIM
 				WitchGodName = graeco_egyptian_polytheism_witchgodname_hermes
-				WitchGodHerHis = CHARACTER_HERHIS_HE
+				WitchGodNamePossessive = graeco_egyptian_polytheism_witchgodname_hermes_possessive
+				WitchGodHerHis = CHARACTER_HERHIS_HIS
 				WitchGodSheHe = CHARACTER_SHEHE_HE
 				WitchGodHerHim = CHARACTER_HERHIM_HIM
 				WitchGodMistressMaster = master
@@ -707,6 +745,7 @@
 			localization = {
 				#High God Name
 				HighGodName = alexandrian_cult_high_god_name
+				HighGodName2 = alexandrian_cult_high_god_name_2
 				HighGodNamePossessive = alexandrian_cult_high_god_name_possessive
 				HighGodNameSheHe = CHARACTER_SHEHE_HE
 				HighGodHerselfHimself = CHARACTER_HIMSELF
@@ -794,8 +833,10 @@
 		
 		
 				PantheonTerm = religion_the_gods
+				PantheonTerm2 = religion_the_gods_2
+				PantheonTerm3 = religion_the_gods_3
 				PantheonTermHasHave = pantheon_term_have
-				GoodGodNames = {alexandrian_cult_health_god_name alexandrian_cult_fertility_god_name alexandrian_cult_fertility_god_name alexandrian_cult_wealth_god_name alexandrian_cult_household_god_name alexandrian_cult_fate_god_name alexandrian_cult_night_god_name alexandrian_cult_trickster_god_name  }
+				GoodGodNames = {alexandrian_cult_health_god_name alexandrian_cult_fertility_god_name alexandrian_cult_water_god_name alexandrian_cult_wealth_god_name alexandrian_cult_household_god_name alexandrian_cult_fate_god_name alexandrian_cult_night_god_name alexandrian_cult_trickster_god_name  }
 				DevilName = alexandrian_cult_devil_name
 				DevilNamePossessive = alexandrian_cult_devil_name_possessive
 				DevilSheHe = CHARACTER_SHEHE_HE
@@ -803,9 +844,15 @@
 				DevilHerselfHimself = CHARACTER_HIMSELF
 				EvilGodNames = {alexandrian_cult_evil_god_antaios}
 				HouseOfWorship = paganism_house_of_worship
+				HouseOfWorship2 = paganism_house_of_worship_2
+				HouseOfWorship3 = paganism_house_of_worship_3
 				HouseOfWorshipPlural = paganism_house_of_worship_plural
 				ReligiousSymbol = alexandrian_cult_religious_symbol
+				ReligiousSymbol2 = alexandrian_cult_religious_symbol_2
+				ReligiousSymbol3 = alexandrian_cult_religious_symbol_3
 				ReligiousText = alexandrian_cult_religious_text
+				ReligiousText2 = alexandrian_cult_religious_text_2
+				ReligiousText3 = alexandrian_cult_religious_text_3
 				ReligiousHeadName = alexandrian_cult_religious_head_title
 				ReligiousHeadTitleName = dualism_religious_head_title_name
 				DevoteeMale = paganism_devotee
@@ -828,13 +875,21 @@
 				BishopNeuter = alexandrian_cult_priest_male
 				BishopNeuterPlural = alexandrian_cult_priest_male_plural
 				DivineRealm = alexandrian_cult_divine_realm
+				DivineRealm2 = alexandrian_cult_divine_realm_2
+				DivineRealm3 = alexandrian_cult_divine_realm_3
 				PositiveAfterLife = alexandrian_cult_death_deity_name
+				PositiveAfterLife2 = alexandrian_cult_death_deity_name_2
+				PositiveAfterLife3 = alexandrian_cult_death_deity_name_3
 				NegativeAfterLife = alexandrian_cult_death_deity_name
+				NegativeAfterLife2 = alexandrian_cult_death_deity_name_2
+				NegativeAfterLife3 = alexandrian_cult_death_deity_name_3
 				DeathDeityName = alexandrian_cult_death_deity_name
 				DeathDeityNamePossessive = alexandrian_cult_death_deity_name_possessive
 				DeathDeitySheHe = CHARACTER_SHEHE_HE
 				DeathDeityHerHis = CHARACTER_HERHIS_HIS
+				DeathDeityHerHim = CHARACTER_HERHIM_HIM
 				WitchGodName = alexandrian_cult_witchgodname_hermes
+				WitchGodNamePossessive = alexandrian_cult_witchgodname_hermes_possessive
 				WitchGodHerHis = CHARACTER_HERHIS_HIS
 				WitchGodSheHe = CHARACTER_SHEHE_HE
 				WitchGodHerHim = CHARACTER_HERHIM_HIM	

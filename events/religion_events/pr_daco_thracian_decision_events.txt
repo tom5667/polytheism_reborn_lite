@@ -1,0 +1,418 @@
+﻿namespace = pr_daco_thracian_decision
+namespace = pr_daco_thracian
+
+##################################################
+# Polytheism Reborn - Daco-Thracian Decision Events
+# Events gekoppeld aan pr_daco_thracian_decisions.txt
+##################################################
+
+# =============================================
+# Decision Outcome Events (0001-0099)
+# =============================================
+
+
+#--- Choose Dacian Personal Deity (0001) ---
+pr_daco_thracian_decision.0001 = {
+	type = character_event
+	title = pr_daco_thracian_decision.0001.t
+	desc = pr_daco_thracian_decision.0001.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	# Gebeleizis
+	option = {
+		name = pr_daco_thracian_decision.0001.gebeleizis
+		trigger = {
+			NOT = { has_character_modifier = dacian_gebeleizis }
+		}
+		set_bhakti_effect = { BHAKTI = dacian_gebeleizis }
+	}
+
+	# Zalmoxis
+	option = {
+		name = pr_daco_thracian_decision.0001.zalmoxis
+		trigger = {
+			NOT = { has_character_modifier = dacian_zalmoxis }
+		}
+		set_bhakti_effect = { BHAKTI = dacian_zalmoxis }
+	}
+
+	# Dionysus
+	option = {
+		name = pr_daco_thracian_decision.0001.dionysus
+		trigger = {
+			NOT = { has_character_modifier = dacian_dionysus }
+		}
+		set_bhakti_effect = { BHAKTI = dacian_dionysus }
+	}
+
+	# Pleistoros
+	option = {
+		name = pr_daco_thracian_decision.0001.pleistoros
+		trigger = {
+			NOT = { has_character_modifier = dacian_pleistoros }
+		}
+		set_bhakti_effect = { BHAKTI = dacian_pleistoros }
+	}
+
+	# Derzelas
+	option = {
+		name = pr_daco_thracian_decision.0001.derzelas
+		trigger = {
+			NOT = { has_character_modifier = dacian_derzelas }
+		}
+		set_bhakti_effect = { BHAKTI = dacian_derzelas }
+	}
+
+	# Opt-Out
+	option = {
+		name = pr_daco_thracian_decision.0001.optout
+		flavor = religious_decision.0102.flavor
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#--- Embrace Dacian Culture (0002) ---
+pr_daco_thracian_decision.0002 = {
+	type = character_event
+	title = pr_daco_thracian_decision.0002.t
+	desc = pr_daco_thracian_decision.0002.desc
+	theme = realm
+
+	left_portrait = {
+		character = root
+		animation = storyteller
+	}
+
+	option = {
+		name = pr_daco_thracian_decision.0002.a
+		set_culture = culture:pr_dacian
+		add_prestige = 100
+	}
+
+	option = {
+		name = pr_daco_thracian_decision.0002.b
+		set_culture = culture:pr_thracian
+		add_prestige = 100
+	}
+}
+
+#Offering to Ursitoare
+pr_daco_thracian.0007 = {
+	trigger = {
+		NOT = {
+			faith = faith:zalmoxism
+		}
+	}
+	type = character_event
+	title = pr_daco_thracian.0007
+	desc = pr_daco_thracian.0007.desc
+	theme = learning
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	#
+	option = {
+		name = pr_daco_thracian.0007.a
+		hidden_effect = {
+			random_list = {
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_daco_thracian.0007.message.positive
+						add_character_modifier = {
+							modifier = offering_to_ursitoare_good
+							years = 2
+						}
+					}
+				}
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_daco_thracian.0007.message.negative
+						add_character_modifier = {
+							modifier = offering_to_ursitoare_bad
+							years = 2
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#Visit shrine to Gebeleizis
+pr_daco_thracian.0008 = {
+	trigger = {
+		NOT = {
+			faith = faith:zalmoxism
+		}
+	}
+	type = character_event
+	title = pr_daco_thracian.0008.t
+	desc = pr_daco_thracian.0008.desc
+	theme = learning
+	override_background = { reference = wilderness_forest_pine }
+	immediate = {
+		hidden_effect={
+			cp:councillor_court_chaplain = {
+				save_scope_as = pr_dacian_priest
+			}
+		}
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:pr_dacian_priest
+		animation = personality_content
+	}
+	option = {
+		name = pr_daco_thracian.0008.a
+		hidden_effect = {
+			random_list = {
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_daco_thracian.0008.message.positive
+						add_character_modifier = {
+							modifier = favoured_by_gebeleizis
+							years = 2
+						}
+					}
+				}
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = ROOT
+						title = pr_daco_thracian.0008.message.negative
+						add_character_modifier = {
+							modifier = unfavoured_by_gebeleizis
+							years = 2
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#Spend money to build a small local shrine
+pr_daco_thracian.0009 = {
+	type = character_event
+	title = pr_daco_thracian.0009.t
+	desc = pr_daco_thracian.0009.desc
+	theme = learning
+	override_background = { reference= pr_generic_temple }
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				employer = root
+				random_traits = yes
+				dynasty = generate
+				save_scope_as = random_character
+				stewardship = 26
+			}
+			cp:councillor_court_chaplain = {
+				save_scope_as = realm_priest
+			}
+		}
+	}
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:realm_priest
+	}
+	#pay for everything
+	option = {
+		name = pr_daco_thracian.0009.a
+		add_character_modifier = {
+			modifier = built_local_shrine
+			years = 5
+		}
+		add_trait = zealous
+		remove_short_term_gold = 200
+		scope:realm_priest = {
+			add_opinion = {
+				modifier = funded_local_shrine_opinion
+				target = root
+			}
+		}
+	}
+	#Pay only for the materials
+	option = {
+		name = pr_daco_thracian.0009.b
+		remove_short_term_gold = 50
+		scope:realm_priest = {
+			add_opinion = {
+				modifier = helped_fund_local_shrine_opinion
+				target = root
+			}
+		}
+	}
+	#Don't help them and wish them well
+	option = {
+		name = pr_daco_thracian.0009.c
+		scope:realm_priest = {
+			add_opinion = {
+				modifier = refused_to_fund_local_shrine_opinion
+				target = root
+			}
+		}
+	}
+}
+
+
+# --- Zalmoxis Human Sacrifice (0010) ---
+pr_daco_thracian_decision.0010 = {
+	type = character_event
+	title = pr_daco_thracian_decision.0010.t
+	desc = pr_daco_thracian_decision.0010.desc
+	theme = realm
+	override_background = { reference = wilderness_mountains }
+
+	immediate = {
+		random_dummy_gender_soldier_effect = { SCOPE_NAME = sacrifice }
+		hidden_effect = {
+			create_character = {
+				age = { 25 40 }
+				random_traits = yes
+				prowess = { 1 10 }
+				martial = { 9 15 }
+				dynasty = none
+				gender = male
+				faith = root.faith
+				culture = root.culture
+				location = root.title_province
+				save_scope_as = sacrifice
+			}
+			# Save them in the designated county.
+			root.title_province = {
+				set_variable = {
+					name = fearless_warrior
+					value = scope:sacrifice
+					years = fp1_stele_duration_value
+				}
+			}
+			cp:councillor_court_chaplain = {
+				save_scope_as = realm_priest
+			}
+		}
+	}
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:sacrifice
+		animation = celebrate_sword
+	}
+
+	# Choose the soldier
+	option = {
+		name = pr_daco_thracian_decision.0010.a
+		trigger_event = {
+			days = 5
+			id = pr_daco_thracian_decision.0011
+		}
+	}
+
+	# Stop the sacrifice
+	option = {
+		name = pr_daco_thracian_decision.0010.b
+		add_character_modifier = {
+			modifier = sacrifice_refused
+			years = 1
+		}
+	}
+}
+
+# --- Zalmoxis Sacrifice Result (0011) ---
+pr_daco_thracian_decision.0011 = {
+	type = character_event
+	title = pr_daco_thracian_decision.0011.t
+	desc = pr_daco_thracian_decision.0011.desc
+	theme = realm
+	override_background = { reference = wilderness_mountains }
+
+	right_portrait = {
+		character = root
+		animation = personality_content
+	}
+	left_portrait = {
+		character = scope:sacrifice
+		animation = personality_content
+	}
+
+	# Sacrifice the soldier to Zalmoxis
+	option = {
+		name = pr_daco_thracian_decision.0011.a
+		# Kill them off.
+		scope:sacrifice = {
+			killer = scope:blotter
+			death = { death_reason = death_sacrificed_to_gods }
+		}
+		hidden_effect = {
+			random_list = {
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = root
+						title = pr_daco_thracian_decision.0011.message.positive
+						add_character_modifier = {
+							modifier = offering_to_zalmoxis_good
+							years = 2
+						}
+					}
+				}
+				30 = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						left_icon = root
+						title = pr_daco_thracian_decision.0011.message.negative
+						add_character_modifier = {
+							modifier = offering_to_zalmoxis_bad
+							years = 2
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# --- Place Altar in Kogaionon (0012) ---
+pr_daco_thracian_decision.0012 = {
+	type = character_event
+	title = pr_daco_thracian_decision.0012.t
+	desc = pr_daco_thracian_decision.0012.desc
+	theme = temple
+
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+
+	option = {
+		name = pr_daco_thracian_decision.0012.a
+		add_prestige = 200
+		add_piety = 100
+		title:c_hunyad.title_province = {
+			add_special_building = kogaionon_altar
+		}
+	}
+}

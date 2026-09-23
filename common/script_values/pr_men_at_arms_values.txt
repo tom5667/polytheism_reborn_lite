@@ -36,17 +36,14 @@
 @gunpowder_low_maint_cost = 0.35
 @gunpowder_high_maint_cost = @[gunpowder_low_maint_cost * high_maint_mult]
 
-
-
-#Roman troops
+# Roman troops
 legionary_recruitment_cost = @[heavy_infantry_recruitment_cost * 1.7]
 legionary_low_maint_cost = @[heavy_infantry_low_maint_cost * 1.7]
 legionary_high_maint_cost = @[heavy_infantry_high_maint_cost * 1.7]
 
-
 equites_recruitment_cost = @[heavy_cavalry_recruitment_cost * 1.2]
 equites_low_maint_cost = @[heavy_cavalry_low_maint_cost * 1.2]
-equites_high_maint_cost = @[heavy_cavalry_high_maint_cost  * 1.2]
+equites_high_maint_cost = @[heavy_cavalry_high_maint_cost * 1.2]
 
 sagatarii_recruitment_cost = @[archers_recruitment_cost * 1.5]
 sagatarii_low_maint_cost = @[archers_low_maint_cost * 1.5]

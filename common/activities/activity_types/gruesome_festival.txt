@@ -192,7 +192,7 @@ activity_gruesome_festival = {
 		prestige = {
 			add = {
 				value = gruesome_festival_prestige_cost_value
-				desc = hunt_base_cost
+				desc = pr_gruesome_festival_cost_desc
 			}
 		}
 	}
@@ -554,7 +554,7 @@ activity_gruesome_festival = {
 			gruesome_festival_sacrifice_humans_genuine = {
 				is_shown = {
 					faith = { has_doctrine_parameter = gruesome_festivals_active }
-					Not = {
+					NOT = {
 						faith = { has_doctrine = tenet_animal_sacrifice }
 					}
 				}
@@ -621,7 +621,7 @@ activity_gruesome_festival = {
 						short_term_gold >= gruesome_festival_option_medium
 					}
 					faith = { has_doctrine_parameter = gruesome_festivals_active }
-					Not = {
+					NOT = {
 						faith = { has_doctrine = tenet_animal_sacrifice }
 					}
 				}
@@ -766,14 +766,11 @@ activity_gruesome_festival = {
 				}
 		
 				cost = { gold = gruesome_festival_option_medium }
-				is_valid = {
-					gold > gruesome_festival_option_medium
-				}
 
 				on_start = {
 					change_variable = {
 						name = gf_refund_pot
-						add = scope:host.major_gold_value
+						add = gruesome_festival_option_medium
 					}
 					scope:host = {
 						set_variable = {
@@ -894,9 +891,6 @@ activity_gruesome_festival = {
 				}
 		
 				cost = { gold = gruesome_festival_option_medium }
-				is_valid = {
-					gold > gruesome_festival_option_medium
-				}
 
 				on_start = {
 					change_variable = {
@@ -1023,7 +1017,7 @@ activity_gruesome_festival = {
 	
 	pulse_actions = {
 		entries = {
-			sacrifed_small_animal mournful_music spouse_gives_hook hook_trusting_guest guest_brawl host_gains_diplo_xp host_gains_steward_xp host_gains_intrigue_xp good_kitty good_puppy antiquarian_admires_artifact apa_executioner
+			sacrificed_small_animal mournful_music spouse_gives_hook hook_trusting_guest guest_brawl host_gains_diplo_xp host_gains_steward_xp host_gains_intrigue_xp good_kitty good_puppy antiquarian_admires_artifact apa_executioner
 		}
 		chance_of_no_event = 5
 	}

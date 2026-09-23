@@ -1,0 +1,227 @@
+﻿# =============================================
+# Polytheism Reborn - Character Interaction Effects
+# File: pr_interaction_scripted_effects.txt
+# Extracted from pr_interactions.txt to reduce
+# duplication across 46 conversion interactions
+# =============================================
+
+# =============================================
+# Demand Conversion (Vassal Ruler) Effects
+# =============================================
+
+# Shared on_accept for all demand_conversion_*_vassal_ruler interactions
+# Parameter: $CONVERSION_EFFECT$ = the faith-specific interaction effect to call
+# Example:
+#   pr_demand_conversion_accept_effect = {
+#       CONVERSION_EFFECT = demand_conversion_gaelic_vassal_ruler_interaction_effect
+#   }
+pr_demand_conversion_accept_effect = {
+	scope:actor = {
+		trigger_event = religious_interaction.2002
+	}
+	$CONVERSION_EFFECT$ = yes
+}
+
+# Shared on_decline for all demand_conversion_*_vassal_ruler interactions
+# Parameter: $CONVERSION_EFFECT$ = the faith-specific interaction effect to call
+# In the 80% "conditional acceptance" path, the recipient accepts but asks
+# for gold or a favor. Instead of firing vanilla events (religious_interaction.2011/2012)
+# that convert to scope:actor.faith (wrong), we call $CONVERSION_EFFECT$ directly
+# and handle the gold/favor payment inline.
+# The 20% "full refuse" path fires religious_interaction.2003 (notification only).
+pr_demand_conversion_decline_effect = {
+	scope:recipient = {
+		hidden_effect = {
+			random_list = {
+				80 = { # Conditional acceptance
+					modifier = {
+						factor = 0 # Heresiarchs never agree to convert
+						scope:recipient = {
+							has_trait = heresiarch
+						}
+					}
+					ai_value_modifier = {
+						ai_greed = 0.5
+					}
+					random_list = {
+						50 = { # They ask for gold — pay and convert
+							modifier = {
+								add = 50 # More likely to ask for gold if they're poor
+								scope:recipient.short_term_gold < medium_gold_value
+							}
+							modifier = {
+								add = { # Much more likely to ask for gold involved in one of their own wars (they want to win).
+									value = 50
+									if = {
+										# Especially true if they're in debt!
+										limit = { gold < 0 }
+										add = 150
+									}
+								}
+								is_at_war = yes
+								any_character_war = {
+									is_war_leader = scope:recipient
+								}
+							}
+							# Pay gold from actor to recipient
+							scope:actor = {
+								pay_treasury_or_gold = {
+									target = scope:recipient
+									value = demand_conversion_bribe_size
+								}
+								# Notify the actor that the recipient accepted
+								trigger_event = religious_interaction.2002
+							}
+							# Convert to the correct faith
+							$CONVERSION_EFFECT$ = yes
+						}
+						500 = { # They ask for a favor — grant and convert
+							trigger = {
+								exists = scope:recipient.capital_county
+								NOT = { has_hook = scope:actor }
+							}
+							# Direct feudal vassals appreciate favors more (they can improve their contract).
+							modifier = {
+								add = {
+									value = 50
+									# This goes double for your Powerful Vassals. A better contract is likely to be much more important than a short-term payout.
+									if = {
+										limit = { is_powerful_vassal_of = scope:actor }
+										add = 100
+									}
+								}
+								this.liege = scope:actor
+								has_government = feudal_government
+							}
+							# Grant favor hook from recipient to actor
+							scope:recipient = {
+								if = {
+									limit = {
+										NOT = {
+											has_hook_of_type = {
+												target = scope:actor
+												type = favor_hook
+											}
+										}
+									}
+									add_hook = {
+										target = scope:actor
+										type = favor_hook
+									}
+								}
+							}
+							# Notify the actor that the recipient accepted
+							scope:actor = {
+								trigger_event = religious_interaction.2002
+							}
+							# Convert to the correct faith
+							$CONVERSION_EFFECT$ = yes
+						}
+					}
+
+				}
+				20 = { # Full refuse
+					modifier = {
+						add = 20
+						scope:recipient.demand_conversion_likelihood_calculation < 40
+					}
+					modifier = {
+						add = 20
+						scope:recipient.demand_conversion_likelihood_calculation < 20
+					}
+					modifier = {
+						add = 50
+						scope:recipient.demand_conversion_likelihood_calculation < 0
+					}
+					scope:actor = {
+						trigger_event = {
+							id = religious_interaction.2003
+						}
+					}
+				}
+			}
+		}
+		custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
+		show_as_tooltip = {
+			#Negative opinions
+			add_opinion = {
+				modifier = demanded_my_conversion_opinion
+				target = scope:actor
+				opinion = -10
+			}
+			scope:actor = {
+				if = {
+					limit = {
+						refusing_conversion_is_crime_trigger = {
+							CHARACTER = scope:recipient
+						}
+					}
+					custom_tooltip = action_can_lawfully_imprison_label
+				}
+			}
+		}
+	}
+}
+
+# =============================================
+# Ask for Conversion (Courtier) Effects
+# =============================================
+
+# Shared on_accept for all ask_for_conversion_*_courtier interactions
+# Parameter: $CONVERSION_EFFECT$ = the faith-specific conversion effect to call
+# Example:
+#   pr_ask_conversion_accept_effect = {
+#       CONVERSION_EFFECT = demand_gaelic_conversion_interaction_effect
+#   }
+pr_ask_conversion_accept_effect = {
+	$CONVERSION_EFFECT$ = yes
+	hidden_effect = {
+		scope:actor = {
+			send_interface_message = {
+				title = ask_for_conversion_courtier_interaction.tt
+				left_icon = scope:recipient
+				scope:recipient = {
+					show_as_tooltip = { $CONVERSION_EFFECT$ = yes }
+				}
+			}
+		}
+	}
+	if = {
+		limit = { scope:hook = yes }
+		scope:actor = {
+			if = {
+				limit = {
+					has_usable_hook = scope:recipient
+				}
+				use_hook = scope:recipient
+			}
+		}
+		scope:recipient = {
+			trigger_event = false_conversion.0900
+			save_scope_value_as = {
+				name = forcibly_converted
+				value = yes
+			}
+		}
+	}
+	if = {
+		limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
+		scope:recipient = { release_from_prison = yes }
+		scope:recipient = {
+			trigger_event = false_conversion.0900
+			save_scope_value_as = {
+				name = forcibly_converted
+				value = yes
+			}
+		}
+	}
+}
+
+# Shared on_decline for all ask_for_conversion_*_courtier interactions
+# No parameters — identical across all faiths
+pr_ask_conversion_decline_effect = {
+	send_interface_toast = {
+		title = ask_for_conversion_decline_notification
+		left_icon = scope:recipient
+	}
+}

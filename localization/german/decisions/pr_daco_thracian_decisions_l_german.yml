@@ -1,0 +1,51 @@
+﻿l_german:
+  # =============================================
+  # Polytheism Reborn - Dako-Thrakische Entscheidungen
+  # Lokalisierung für pr_daco_thracian_decisions.txt
+  # =============================================
+
+  # --- Hauptgottheit wählen ---
+  pr_daco_thracian_choose_main_deity_decision:0 "Wähle Hauptgottheit"
+  pr_daco_thracian_choose_main_deity_decision_desc:0 "#F Die Götter des dakischen Volkes verlangen einen Champion, der ihren Willen in der sterblichen Welt vertritt. Als Anhänger des dakischen Glaubens muss ich eine Schutzgottheit auswählen, die meine Handlungen leitet und meine Herrschaft mit göttlichem Segen bedenkt.#!/n\nDurch die Wahl einer Hauptgottheit werde ich eine persönliche Verbindung mit dem Göttlichen herstellen und einzigartige Segnungen und Modifikatoren erhalten, die die Natur meiner gewählten Gottheit oder Göttin widerspiegeln."
+  pr_daco_thracian_choose_main_deity_decision_tooltip:0 "#T Wähle eine Schutzgottheit aus deinem dakischen Glauben, um göttliche Segnungen zu erhalten#!/"
+  pr_daco_thracian_choose_main_deity_decision_confirm:0 "Wähle Hauptgottheit!"
+  pr_daco_thracian_choose_main_deity_decision_tt:0 "#T Verfügbare Gottheiten für [ROOT.Char.GetFaith.GetName]#!/"
+
+  # --- Auswahlbeschreibungen der Hauptgottheit: Dakisch ---
+  select_main_deity_dacian_decision.select_gebeleizis:0 "#T Gebeleizis#!/\n#P Der Donnerer, Herr des Sturms und Regens#!/"
+  select_main_deity_dacian_decision.select_zalmoxis:0 "#T Zalmoxis#!/\n#P Gott des Jenseits und der Unsterblichkeit#!/"
+  select_main_deity_dacian_decision.select_dionysus:0 "#T Dionysus#!/\n#P Gott des Weines, der Ekstase und der Wildnis#!/"
+  select_main_deity_dacian_decision.select_pleistoros:0 "#T Pleistoros#!/\n#P Gott des Krieges und der Schlacht#!/"
+  select_main_deity_dacian_decision.select_derzelas:0 "#T Derzelas#!/\n#P Gott der Unterwelt und des Überflusses#!/"
+
+  # --- Dakische Kultur annehmen ---
+  pr_daco_thracian_embrace_dacian_culture_decision:0 "Nimm die dakische Kultur an"
+  pr_daco_thracian_embrace_dacian_culture_decision_desc:0 "#F Das alte dakische Volk herrschte einst über die Karpatenländer, seine Kultur ein aus der Weisheit Zalmoxis' und der Stärke seiner Krieger gewobenes Kunstwerk. Obwohl die Jahrhunderte diese Traditionen verdunkelt haben, lebt der Geist Dakien im Land selbst weiter.#!/n\nIndem ich die alte dakische Kultur annehme, werde ich die Bräuche meiner Vorfahren wiederbeleben und die Flamme unseres Erbes neu entfachen und ein Reich schmieden, das die alten Wege des dakischen Volkes ehrt."
+  pr_daco_thracian_embrace_dacian_culture_decision_tooltip:0 "Belebe die alte dakische Kultur wieder und entfache ihre Traditionen neu"
+  pr_daco_thracian_embrace_dacian_culture_decision_confirm:0 "Nimm die dakische Kultur an!"
+
+  # --- Königreich Dakia gründen ---
+  pr_daco_thracian_create_dacia_decision:0 "Gründe das Königreich Dakia"
+  pr_daco_thracian_create_dacia_decision_desc:0 "#F Das alte Königreich Dakia stand einst als stolzes Reich im Herzen der Karpaten, seine Krieger gefürchtet und seine Weisen verehrt. Von den Bergfestungen Siebenbürgens bis zu den fruchtbaren Tälern des Temes hat unser Volk die Jahrhunderte überdauert. Nun, als Herrscher, der diese historischen Länder kontrolliert, werde ich das Königreich Dakia wiederbeleben und zu alter Größe zurückführen.#!/n\nDurch die Gründung Dakias werde ich ein neues Königreich schaffen, das die karpatischen Herzogtümer unter einem einzigen Banner vereint und ein Reich schmiedet, das unser gemeinsames dakisches Erbe und unsere Stärke ehrt."
+  pr_daco_thracian_create_dacia_decision_tooltip:0 "#T Bilde das alte Königreich Dakia, indem du die karpatischen Herzogtümer vereinst#!/"
+  pr_daco_thracian_create_dacia_decision_confirm:0 "Gründe das Königreich Dakia!"
+  pr_daco_thracian_create_dacia_decision_effect_tooltip:0 "#P Das Königreich Dakia wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_temes.GetNameNoTier], [title_d_transylvania.GetNameNoTier], [title_d_transylvanian_alps.GetNameNoTier], [title_d_transcarpathia.GetNameNoTier] und [title_d_bihar.GetNameNoTier] werden Teil von Dakia $EFFECT_LIST_BULLET$ Erfordert erhebliche Investitionen in [gold|E] und [prestige|E]@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Königreich Odrysien gründen ---
+  pr_daco_thracian_create_odrysia_decision:0 "Gründe das Königreich Odrysien"
+  pr_daco_thracian_create_odrysia_decision_desc:0 "#F Das alte Königreich Odrysien stand einst als dominierende thrakische Macht und vereinte die Stämme des Hebrus-Tals und der Schwarzmeerküste unter einer einzigen weisen und kriegerischen Herrschaft. Von den Ebenen von Philippopel bis zu den Ufern Dobrudschas hat unser Volk die Fluten der Eroberung und der Zeit überstanden. Nun, als Herrscher, der diese historischen Länder kontrolliert, werde ich das Königreich Odrysien wiederbeleben und zu alter Größe zurückführen.#!/n\nDurch die Gründung Odrysiens werde ich ein neues Königreich schaffen, das die thrakischen Länder unter einem einzigen Banner vereint und ein Reich schmiedet, das unser gemeinsames dako-thrakisches Erbe und unsere Stärke ehrt."
+  pr_daco_thracian_create_odrysia_decision_tooltip:0 "#T Bilde das alte Königreich Odrysien, indem du die thrakischen Länder vereinst#!/"
+  pr_daco_thracian_create_odrysia_decision_confirm:0 "Gründe das Königreich Odrysien!"
+  pr_daco_thracian_create_odrysia_decision_effect_tooltip:0 "#P Das Königreich Odrysien wird als neuer Titel gegründet#/n$EFFECT_LIST_BULLET$[title_d_thrace.GetNameNoTier], [title_d_philippopolis.GetNameNoTier], [title_d_dobrudja.GetNameNoTier] und [title_d_turnovo.GetNameNoTier] werden Teil von Odrysien $EFFECT_LIST_BULLET$ Erfordert erhebliche Investitionen in [gold|E] und [prestige|E]@warning_icon! #X Diese Aktion kann nicht rückgängig gemacht werden!#"
+
+  # --- Zalmoxis-Menschenopfer ---
+  pr_daco_thracian_zalmoxis_sacrifice_decision:0 "Führe das Zalmoxis-Opfer durch"
+  pr_daco_thracian_zalmoxis_sacrifice_decision_desc:0 "#F Die Lehren Zalmoxis' versprechen, dass diejenigen, die dem Gott eine würdige Seele opfern, den Durchgang durch den Schleier gewährt bekommen, befreit vom Kreislauf des sterblichen Leidens. In Kriegszeiten, wenn das Blut unserer Feinde frei fließt, steht der Pfad zum Göttlichen offen.#!/n\nDurch die Durchführung des heiligen Opfers werde ich einen auserwählten Gefangenen zu Zalmoxis als Boten schicken und seinen Segen und das Versprechen der Unsterblichkeit für unser Volk suchen."
+  pr_daco_thracian_zalmoxis_sacrifice_decision_tooltip:0 "#T Opfere einen Menschen Zalmoxis während des Krieges für göttlichen Segen#!/"
+  pr_daco_thracian_zalmoxis_sacrifice_decision_confirm:0 "Führe das Opfer durch!"
+
+  # --- Altar im Kogaionon platzieren ---
+  pr_daco_thracian_place_kogaionon_altar_decision:0 "Platziere den Altar im Kogaionon"
+  pr_daco_thracian_place_kogaionon_altar_decision_desc:0 "#F Der heilige Berg Kogaionon, der Wohnort Zalmoxis', war lange Zeit das spirituelle Herz des dakischen Volkes. Hier, zwischen den Höhlen und Gipfeln Siebenbürgens, kommunizierten die alten Priester einst mit dem Göttlichen. Nun, als Herrscher, der diese heiligen Länder hält, werde ich den Altar Zalmoxis' wiederherstellen und den alten Bund erneuern.#!/n\nDurch das Platzieren des Altars im Kogaionon werde ich eine heilige Stätte großer Macht errichten und den alten Pakt zwischen dem dakischen Volk und seinem Gott ehren."
+  pr_daco_thracian_place_kogaionon_altar_decision_tooltip:0 "#T Stelle den heiligen Altar Zalmoxis' im Kogaionon wieder her#!/"
+  pr_daco_thracian_place_kogaionon_altar_decision_confirm:0 "Stelle den Altar wieder her!"
