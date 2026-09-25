@@ -110,10 +110,17 @@ jobs:
           import os
           import re
 
+          # NEW_VERSION (e.g. "V3.0.1") keeps its "V" everywhere else (git
+          # tag, commit message, release title) -- that's a normal, harmless
+          # GitHub convention. descriptor.mod is the one place that must NOT
+          # have it: the Paradox Launcher already prefixes its own "v." label
+          # in front of this field, so a "V" here renders as "v. V3.0.1".
           new_version = os.environ["NEW_VERSION"]
+          descriptor_version = new_version.lstrip("Vv")
+
           path = "descriptor.mod"
           text = open(path, encoding="utf-8").read()
-          updated = re.sub(r'^version="[^"]*"', f'version="{new_version}"', text, flags=re.M)
+          updated = re.sub(r'^version="[^"]*"', f'version="{descriptor_version}"', text, flags=re.M)
           open(path, "w", encoding="utf-8", newline="").write(updated)
           PYEOF
 
