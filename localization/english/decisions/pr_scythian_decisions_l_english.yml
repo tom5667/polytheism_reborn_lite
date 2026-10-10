@@ -12,11 +12,11 @@
   pr_scythian_choose_main_deity_decision_tt:0 "#T Available Deities for [ROOT.Char.GetFaith.GetName]#!"
 
   # --- Main Deity Selection Descriptions: Scythian ---
-  select_main_deity_scythia_decision.select_papaios:0 "#T Papaios#!\n#P The sky father, supreme god of the Scythian pantheon#!"
-  select_main_deity_scythia_decision.select_artimpasa:0 "#T Artimpasa#!\n#P Goddess of fertility, love, and sovereignty#!"
-  select_main_deity_scythia_decision.select_gaitasura:0 "#T Goitosyros / Gaitasura#!\n#P God of wealth, cattle, and the sun#!"
-  select_main_deity_scythia_decision.select_api:0 "#T Api#!\n#P Earth goddess, mother of all that lives#!"
-  select_main_deity_scythia_decision.select_pitara_za:0 "#T Targitaus / Pitara Za#!\n#P Ancestor god of war and the divine lineage of the Scythians#!"
+  select_main_deity_scythia_decision.select_papaios:0 "#T Tabiti#!\n#P Goddess of the hearth, by whom kings swore#!"
+  select_main_deity_scythia_decision.select_artimpasa:0 "#T Artimpasa#!\n#P The heavenly Aphrodite#!"
+  select_main_deity_scythia_decision.select_gaitasura:0 "#T Goitosyros#!\n#P The god the Greeks called Apollo#!"
+  select_main_deity_scythia_decision.select_api:0 "#T Api#!\n#P Goddess of the earth and the waters#!"
+  select_main_deity_scythia_decision.select_pitara_za:0 "#T The Sword#!\n#P The iron sword, honoured as Ares#!"
 
   # --- Create Kingdom of Scythia Decision ---
   pr_scythian_create_scythia_decision:0 "Create the Kingdom of Scythia"

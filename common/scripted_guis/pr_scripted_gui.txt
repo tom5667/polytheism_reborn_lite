@@ -5,7 +5,7 @@
 		if = {
 			limit = {
 				OR = {
-					religion = religion:roman_religion
+					pr_is_cultus_deorum_trigger = yes
 					faith = faith:kemetic_polytheism
 					religion = religion:hellenism_religion
 				}
@@ -29,18 +29,18 @@ pr_get_cultists_list = {
 						AND = {
 							root = { has_trait = mithras_cult }
 							has_trait = mithras_cult
-							religion = religion:roman_religion
+							pr_is_cultus_deorum_trigger = yes
 						}
 						AND = {
 							root = { has_trait = bacchus_cult }
 							has_trait = bacchus_cult
-							religion = religion:roman_religion
+							pr_is_cultus_deorum_trigger = yes
 						}
 						AND = {
 							root = { has_trait = isis_cult }
 							has_trait = isis_cult
 							OR = {
-								religion = religion:roman_religion
+								pr_is_cultus_deorum_trigger = yes
 								religion = religion:hellenism_religion
 								faith = faith:kemetic_polytheism
 							}
@@ -48,13 +48,13 @@ pr_get_cultists_list = {
 						AND = {
 							root = { has_trait = sol_invictus_cult }
 							has_trait = sol_invictus_cult
-							religion = religion:roman_religion
+							pr_is_cultus_deorum_trigger = yes
 						}
 						AND = {
 							root = { has_trait = serapis_cult }
 							has_trait = serapis_cult
 							OR = {
-								religion = religion:roman_religion
+								pr_is_cultus_deorum_trigger = yes
 								religion = religion:hellenism_religion
 								faith = faith:kemetic_polytheism
 							}
@@ -63,7 +63,7 @@ pr_get_cultists_list = {
 							root = { has_trait = eleusinian_cult }
 							has_trait = eleusinian_cult
 							OR = {
-								religion = religion:roman_religion
+								pr_is_cultus_deorum_trigger = yes
 								religion = religion:hellenism_religion
 							}
 						}
@@ -71,7 +71,7 @@ pr_get_cultists_list = {
 							root = { has_trait = imperial_cult }
 							has_trait = imperial_cult
 							OR = {
-								religion = religion:roman_religion
+								pr_is_cultus_deorum_trigger = yes
 								religion = religion:hellenism_religion
 								faith = faith:kemetic_polytheism
 							}
@@ -80,7 +80,7 @@ pr_get_cultists_list = {
 							root = { has_trait = cybele_cult }
 							has_trait = cybele_cult
 							OR = {
-								religion = religion:roman_religion
+								pr_is_cultus_deorum_trigger = yes
 								religion = religion:hellenism_religion
 							}
 						}
@@ -111,28 +111,28 @@ pr_get_head_of_cult = {
 						AND = {
 							has_trait = mithras_cult
 							has_trait = pr_pater_mithras
-							religion = religion:roman_religion
+							pr_is_cultus_deorum_trigger = yes
 						}
 						AND = {
 							has_trait = hierophant_bacchus
-							religion = religion:roman_religion
+							pr_is_cultus_deorum_trigger = yes
 						}
 						AND = {
 							has_trait = hierophant_isis
 							OR = {
-								religion = religion:roman_religion
+								pr_is_cultus_deorum_trigger = yes
 								religion = religion:hellenism_religion
 								faith = faith:kemetic_polytheism
 							}
 						}
 						AND = {
 							has_trait = hierophant_sol_invictus
-							religion = religion:roman_religion
+							pr_is_cultus_deorum_trigger = yes
 						}
 						AND = {
 							has_trait = hierophant_serapis
 							OR = {
-								religion = religion:roman_religion
+								pr_is_cultus_deorum_trigger = yes
 								religion = religion:hellenism_religion
 								faith = faith:kemetic_polytheism
 							}
@@ -140,18 +140,18 @@ pr_get_head_of_cult = {
 						AND = {
 							has_trait = hierophant_eleusinian
 							OR = {
-								religion = religion:roman_religion
+								pr_is_cultus_deorum_trigger = yes
 								religion = religion:hellenism_religion
 							}
 						}
 						AND = {
 							has_trait = hierophant_bacchus
-							religion = religion:roman_religion
+							pr_is_cultus_deorum_trigger = yes
 						}
 						AND = {
 							has_trait = augustalis_imperial_cult
 							OR = {
-								religion = religion:roman_religion
+								pr_is_cultus_deorum_trigger = yes
 								religion = religion:hellenism_religion
 								faith = faith:kemetic_polytheism
 							}
@@ -159,7 +159,7 @@ pr_get_head_of_cult = {
 						AND = {
 							has_trait = hierophant_cybele
 							OR = {
-								religion = religion:roman_religion
+								pr_is_cultus_deorum_trigger = yes
 								religion = religion:hellenism_religion
 							}
 						}
@@ -189,7 +189,7 @@ pr_get_vesta_druid_head = {
 					OR = {
 						AND = {
 							has_trait = vestalis_maxima
-							religion = religion:roman_religion
+							pr_is_cultus_deorum_trigger = yes
 						}
 						AND = {
 							has_trait = druidic_circle_leader
@@ -214,7 +214,7 @@ pr_show_cults_to_join = {
 	effect = {
 		if = {
 			limit = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 			}
 			trigger_event = pr_roman_cult.0001
 		}
@@ -240,7 +240,7 @@ pr_vesta_druidic_visit = {
 	effect = {
 		if = {
 			limit = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 			}
 			# trigger_event = pr_roman_cult.0026
 		}

@@ -1,0 +1,196 @@
+﻿#####################
+#Made by tom5667
+#####################
+dacian_rites= {
+    faith = daco_thracian_polytheism
+    icon = dacian
+    color = { 150 75 0  }
+
+    tenets = {
+        tenet_communal_identity
+        tenet_warmonger
+        tenet_unrelenting_faith
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+    }
+    cultures = {pr_dacian pr_thracian}
+
+}
+
+zalmoxism_rites = {
+    faith = daco_thracian_polytheism
+    icon = zalmoxism
+    color = { 173 112 9 }
+
+    tenets = {
+        tenet_communal_identity
+        tenet_warmonger
+        tenet_unrelenting_faith
+    }
+    doctrines = {
+        special_doctrine_no_patron_god
+        unreformed_faith_doctrine
+    }
+    cultures = {pr_dacian pr_thracian}
+    localization = {
+        #High God Name
+        HighGodName = zalmoxism_high_god_name
+        HighGodName2 = zalmoxism_high_god_name_2
+        HighGodNamePossessive = zalmoxism_high_god_name_possessive
+        HighGodNameSheHe = CHARACTER_SHEHE_HE
+        HighGodHerselfHimself = CHARACTER_HIMSELF
+        HighGodHerHis = CHARACTER_HERHIS_HIS
+        HighGodNameAlternate = zalmoxism_high_god_name_alternate
+        HighGodNameAlternatePossessive = zalmoxism_high_god_name_alternate_possessive
+
+        #Creator
+        CreatorName = zalmoxism_creator_god_name
+        CreatorNamePossessive = zalmoxism_creator_god_name_possessive
+        CreatorSheHe = CHARACTER_SHEHE_HE
+        CreatorHerHis = CHARACTER_HERHIS_HIS
+        CreatorHerHim = CHARACTER_HERHIM_HIM
+
+        #HealthGod
+        HealthGodName = zalmoxism_health_god_name
+        HealthGodNamePossessive = zalmoxism_health_god_name_possessive
+        HealthGodSheHe = CHARACTER_SHEHE_HE
+        HealthGodHerHis = CHARACTER_HERHIS_HIS
+        HealthGodHerHim = CHARACTER_HERHIM_HIM
+
+        #FertilityGod
+        FertilityGodName = zalmoxism_fertility_god_name
+        FertilityGodNamePossessive = zalmoxism_fertility_god_name_possessive
+        FertilityGodSheHe = CHARACTER_SHEHE_HE
+        FertilityGodHerHis = CHARACTER_HERHIS_HIS
+        FertilityGodHerHim = CHARACTER_HERHIM_HIM
+
+        #WealthGod
+        WealthGodName = zalmoxism_wealth_god_name
+        WealthGodNamePossessive = zalmoxism_wealth_god_name_possessive
+        WealthGodSheHe = CHARACTER_SHEHE_HE
+        WealthGodHerHis = CHARACTER_HERHIS_HIS
+        WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+        #HouseholdGod
+        HouseholdGodName = zalmoxism_household_god_name
+        HouseholdGodNamePossessive = zalmoxism_household_god_name_possessive
+        HouseholdGodSheHe = CHARACTER_SHEHE_HE
+        HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+        HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+        #FateGod
+        FateGodName = zalmoxism_fate_god_name
+        FateGodNamePossessive = zalmoxism_fate_god_name_possessive
+        FateGodSheHe = CHARACTER_SHEHE_HE
+        FateGodHerHis = CHARACTER_HERHIS_HIS
+        FateGodHerHim = CHARACTER_HERHIM_HIM
+
+        #KnowledgeGod
+        KnowledgeGodName = zalmoxism_knowledge_god_name
+        KnowledgeGodNamePossessive = zalmoxism_knowledge_god_name_possessive
+        KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+        KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+        KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+        #WarGod
+        WarGodName = zalmoxism_war_god_name
+        WarGodNamePossessive = zalmoxism_war_god_name_possessive
+        WarGodSheHe = CHARACTER_SHEHE_HE
+        WarGodHerHis = CHARACTER_HERHIS_HIS
+        WarGodHerHim = CHARACTER_HERHIM_HIM
+
+        #TricksterGod
+        TricksterGodName = zalmoxism_trickster_god_name
+        TricksterGodNamePossessive = zalmoxism_trickster_god_name_possessive
+        TricksterGodSheHe = CHARACTER_SHEHE_HE
+        TricksterGodHerHis = CHARACTER_HERHIS_HIS
+        TricksterGodHerHim = CHARACTER_HERHIM_HIM
+
+        #NightGod
+        NightGodName = zalmoxism_night_god_name
+        NightGodNamePossessive = zalmoxism_night_god_name_possessive
+        NightGodSheHe = CHARACTER_SHEHE_HE
+        NightGodHerHis = CHARACTER_HERHIS_HIS
+        NightGodHerHim = CHARACTER_HERHIM_HIM
+
+        #WaterGod
+        WaterGodName = zalmoxism_water_god_name
+        WaterGodNamePossessive = zalmoxism_water_god_name_possessive
+        WaterGodSheHe = CHARACTER_SHEHE_HE
+        WaterGodHerHis = CHARACTER_HERHIS_HIS
+        WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+
+
+        PantheonTerm = religion_the_gods
+        PantheonTerm2 = religion_the_gods_2
+        PantheonTerm3 = religion_the_gods_3
+        PantheonTermHasHave = pantheon_term_have
+        GoodGodNames = { zalmoxism_good_god_sabazios zalmoxism_good_god_bendis zalmoxism_good_god_derzelas zalmoxism_good_god_dionysus zalmoxism_good_god_pleistoros zalmoxism_good_god_ursitoare zalmoxism_good_god_gebeleizis zalmoxism_good_god_zalmoxis }
+        DevilName = zalmoxism_devil_name
+        DevilNamePossessive = zalmoxism_devil_name_possessive
+        DevilSheHe = CHARACTER_SHEHE_HE
+        DevilHerHis = CHARACTER_HERHIS_HIS
+        DevilHerselfHimself = CHARACTER_HIMSELF
+        EvilGodNames = { zalmoxism_evil_god_spirits zalmoxism_evil_god_spirits}
+        HouseOfWorship = paganism_house_of_worship
+        HouseOfWorship2 = paganism_house_of_worship_2
+        HouseOfWorship3 = paganism_house_of_worship_3
+        HouseOfWorshipPlural = paganism_house_of_worship_plural
+        ReligiousSymbol = zalmoxism_religious_symbol
+        ReligiousSymbol2 = zalmoxism_religious_symbol_2
+        ReligiousSymbol3 = zalmoxism_religious_symbol_3
+        ReligiousText = zalmoxism_religious_text
+        ReligiousText2 = zalmoxism_religious_text_2
+        ReligiousText3 = zalmoxism_religious_text_3
+        ReligiousHeadName = zalmoxism_religious_head_title
+        ReligiousHeadNameFemale = zalmoxism_religious_head_title
+        ReligiousHeadTitleName = dualism_religious_head_title_name
+        DevoteeMale = paganism_devotee
+        DevoteeMalePlural = paganism_devoteeplural
+        DevoteeFemale = paganism_devotee
+        DevoteeFemalePlural = paganism_devoteeplural
+        DevoteeNeuter = paganism_devotee
+        DevoteeNeuterPlural = paganism_devoteeplural
+        PriestMale = zalmoxism_priest_male
+        PriestMalePlural = zalmoxism_priest_male_plural
+        PriestFemale = zalmoxism_priest_female
+        PriestFemalePlural = zalmoxism_priest_female_plural
+        PriestNeuter = zalmoxism_priest_male
+        PriestNeuterPlural = zalmoxism_priest_male_plural
+        AltPriestTermPlural = christianity_priest_alternate_plural
+        BishopMale = zalmoxism_bishop_male
+        BishopMalePlural = zalmoxism_bishop_male_plural
+        BishopFemale = zalmoxism_priest_female
+        BishopFemalePlural = zalmoxism_priest_female_plural
+        BishopNeuter = zalmoxism_priest_male
+        BishopNeuterPlural = zalmoxism_priest_male_plural
+        DivineRealm = zalmoxism_divine_realm
+        DivineRealm2 = zalmoxism_divine_realm_2
+        DivineRealm3 = zalmoxism_divine_realm_3
+        PositiveAfterLife = zalmoxism_death_deity_name
+        PositiveAfterLife2 = zalmoxism_death_deity_name_2
+        PositiveAfterLife3 = zalmoxism_death_deity_name_3
+        NegativeAfterLife = zalmoxism_death_deity_name
+        NegativeAfterLife2 = zalmoxism_death_deity_name_2
+        NegativeAfterLife3 = zalmoxism_death_deity_name_3
+        DeathDeityName = zalmoxism_death_deity_name
+        DeathDeityNamePossessive = zalmoxism_death_deity_name_possessive
+        DeathDeitySheHe = CHARACTER_SHEHE_HE
+        DeathDeityHerHis = CHARACTER_HERHIS_HIS
+        DeathDeityHerHim = CHARACTER_HERHIM_HIM
+        WitchGodName = zalmoxism_witchgodname_zalmoxis
+        WitchGodNamePossessive = zalmoxism_witchgodname_zalmoxis_possessive
+        WitchGodHerHis = CHARACTER_HERHIS_HER
+        WitchGodSheHe = CHARACTER_SHEHE_HE
+        WitchGodHerHim = CHARACTER_HERHIM_HIM
+        WitchGodMistressMaster = master
+        WitchGodMotherFather = father
+
+
+        GHWName = ghw_great_holy_war
+        GHWNamePlural = ghw_great_holy_wars
+    }
+}

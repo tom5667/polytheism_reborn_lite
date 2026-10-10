@@ -17,30 +17,30 @@
 
     d_pontifex_polytheistic:0 "Pontifex Maximus"
     #cdr
-    cdr_polytheism:0 "Roman"
-    cdr_polytheism_adj:0 "Roman"
-    cdr_polytheism_adherent:0 "Roman Polytheist"
-    cdr_polytheism_adherent_plural:0 "Roman Polytheists"
+    roman_polytheism:0 "Roman"
+    roman_polytheism_adj:0 "Roman"
+    roman_polytheism_adherent:0 "Roman Polytheist"
+    roman_polytheism_adherent_plural:0 "Roman Polytheists"
 
-    cdr_polytheism_old:0 "Roman Old"
-    cdr_polytheism_old_adj:0 "Roman Old"
-    cdr_polytheism_adherent_old:0 "Old Roman Polytheist"
-    cdr_polytheism_old_adherent_plural:0 "Old Roman Polytheists"
-    cdr_polytheism_old_desc:0 "The Roman faith, also known as Cultus Deorum or Cult of the Gods, was the most common form of pre-Christian Rome taking influence from both of its neighbors, Greek Polytheism and the Etruscan faith. Despite having many similarities with the Greeks, the Roman faith was primarily based on ancestral worship and justice." 
+    roman_polytheism_old:0 "Roman Old"
+    roman_polytheism_old_adj:0 "Roman Old"
+    roman_polytheism_old_adherent:0 "Old Roman Polytheist"
+    roman_polytheism_old_adherent_plural:0 "Old Roman Polytheists"
+    roman_polytheism_old_desc:0 "The Roman faith, also known as Cultus Deorum or Cult of the Gods, was the most common form of pre-Christian Rome taking influence from both of its neighbors, Greek Polytheism and the Etruscan faith. Despite having many similarities with the Greeks, the Roman faith was primarily based on ancestral worship and justice."
 
-    cdr_polytheism_desc:0 "The Roman faith, also known as Cultus Deorum or Cult of the Gods, was the most common form of pre-Christian Rome taking influence from both of its neighbors, Greek Polytheism and the Etruscan faith. Despite having many similarities with the Greeks, the Roman faith was primarily based on ancestral worship and justice." 
+    roman_polytheism_desc:0 "The Roman faith, also known as Cultus Deorum or Cult of the Gods, was the most common form of pre-Christian Rome taking influence from both of its neighbors, Greek Polytheism and the Etruscan faith. Despite having many similarities with the Greeks, the Roman faith was primarily based on ancestral worship and justice."
 
-    cdr_polytheism_religious_head_title:0 "Pontifex Maximus"
-    cdr_polytheism_religious_head_title_name:0 "Collegium Pontificum"
-    cdr_polytheism_divine_realm:0 "Deii Consentes"
-    cdr_polytheism_divine_realm_2:0 "$cdr_polytheism_divine_realm$"
-    cdr_polytheism_divine_realm_3:0 "$cdr_polytheism_divine_realm$"
-    cdr_polytheism_religious_symbol:0 "Offer altar"
-    cdr_polytheism_religious_symbol_2:0 "$cdr_polytheism_religious_symbol$"
-    cdr_polytheism_religious_symbol_3:0 "$cdr_polytheism_religious_symbol$"
-    cdr_polytheism_religious_text:0 "Ritus and Caerimoniae"
-    cdr_polytheism_religious_text_2:0 "$cdr_polytheism_religious_text$"
-    cdr_polytheism_religious_text_3:0 "$cdr_polytheism_religious_text$"
+    roman_polytheism_religious_head_title:0 "Pontifex Maximus"
+    roman_polytheism_religious_head_title_name:0 "Collegium Pontificum"
+    roman_polytheism_divine_realm:0 "Deii Consentes"
+    roman_polytheism_divine_realm_2:0 "$roman_polytheism_divine_realm$"
+    roman_polytheism_divine_realm_3:0 "$roman_polytheism_divine_realm$"
+    roman_polytheism_religious_symbol:0 "Offer altar"
+    roman_polytheism_religious_symbol_2:0 "$roman_polytheism_religious_symbol$"
+    roman_polytheism_religious_symbol_3:0 "$roman_polytheism_religious_symbol$"
+    roman_polytheism_religious_text:0 "Ritus and Caerimoniae"
+    roman_polytheism_religious_text_2:0 "$roman_polytheism_religious_text$"
+    roman_polytheism_religious_text_3:0 "$roman_polytheism_religious_text$"
   
 
     #Cdr gods/goddesses Localization
@@ -52,6 +52,7 @@
     jupiter_celtic_iberian_name:0 "Jupiter Solutorius"
     jupiter_iberian_name:0 "Jupiter Solutorius"
     jupiter_phoenician_name:0 "Jupiter Dolichenus"
+    jupiter_heliopolitanus_syrian_name:0 "Jupiter Heliopolitanus"
     jupiter_kemetic_name:0 "Jupiter Ammon"
     fallback_jupiter_name:0 "Jupiter"
     jupiter_roman_name:0 "Iupiter"
@@ -95,110 +96,114 @@
 
     fallback_juno_name:0 "Juno"
     juno_phoenician_name:0 "Juno Caelestis"
+    saturnus_african_name:0 "Saturnus"
+    aesculapius_african_name:0 "Aesculapius"
+    hercules_african_name:0 "Hercules"
+    liber_african_name:0 "Liber Pater"
 
-    #cdr_polytheism_high_god_name:0 "Jupiter"
-    cdr_polytheism_high_god_name:0 "[GetPlayer.Custom('pr_jupiter_name') |U]"
-    cdr_polytheism_high_god_name_2:0 "$cdr_polytheism_high_god_name$"
-    cdr_polytheism_high_god_name_possessive:0 "$cdr_polytheism_high_god_name$'s"
-    cdr_polytheism_high_god_name_alternate:0 "$cdr_polytheism_high_god_name$"
-    cdr_polytheism_high_god_name_alternate_possessive:0 "$cdr_polytheism_high_god_name$'s"
-    cdr_polytheism_high_god_shehe:0 "He"
-    cdr_polytheism_high_god_herselfhimself:0 "Himself"
-    cdr_polytheism_high_god_herhis:0 "His"
+    #roman_polytheism_high_god_name:0 "Jupiter"
+    roman_polytheism_high_god_name:0 "$fallback_jupiter_name$"
+    roman_polytheism_high_god_name_2:0 "$roman_polytheism_high_god_name$"
+    roman_polytheism_high_god_name_possessive:0 "$roman_polytheism_high_god_name$'s"
+    roman_polytheism_high_god_name_alternate:0 "$roman_polytheism_high_god_name$"
+    roman_polytheism_high_god_name_alternate_possessive:0 "$roman_polytheism_high_god_name$'s"
+    roman_polytheism_high_god_shehe:0 "He"
+    roman_polytheism_high_god_herselfhimself:0 "Himself"
+    roman_polytheism_high_god_herhis:0 "His"
 
     #Creater god Localization
-    cdr_polytheism_creator_god_name:0 "Chaos"
-    cdr_polytheism_creator_god_name_possessive:0 "Chaos"
+    roman_polytheism_creator_god_name:0 "Chaos"
+    roman_polytheism_creator_god_name_possessive:0 "Chaos"
 
     #Health Goddess Bona Dea
-    cdr_polytheism_health_god_name:0 "[GetPlayer.Custom('pr_apollo_name') |U]"
-    cdr_polytheism_health_god_name_possessive:0 "$cdr_polytheism_health_god_name$'s"
+    roman_polytheism_health_god_name:0 "$fallback_apollo_name$"
+    roman_polytheism_health_god_name_possessive:0 "$roman_polytheism_health_god_name$'s"
 
     #Fertility Goddess Ceres Localization
-    cdr_polytheism_fertility_god_name:0 "[GetPlayer.Custom('pr_venus_name') |U]"
-    cdr_polytheism_fertility_god_name_possessive:0 "$cdr_polytheism_fertility_god_name$'s"
+    roman_polytheism_fertility_god_name:0 "$fallback_venus_name$"
+    roman_polytheism_fertility_god_name_possessive:0 "$roman_polytheism_fertility_god_name$'s"
 
     #Wealth god Mercurius Localization
-    cdr_polytheism_wealth_god_name:0 "[GetPlayer.Custom('pr_mercurius_name') |U]"
-    cdr_polytheism_wealth_god_name_possessive:0 "$cdr_polytheism_wealth_god_name$'s"
+    roman_polytheism_wealth_god_name:0 "$fallback_mercurius_name$"
+    roman_polytheism_wealth_god_name_possessive:0 "$roman_polytheism_wealth_god_name$'s"
  
     #Household god Lares 
-    cdr_polytheism_household_god_name:0 "Lares"
-    cdr_polytheism_household_god_name_possessive:0 "Lares"
+    roman_polytheism_household_god_name:0 "Lares"
+    roman_polytheism_household_god_name_possessive:0 "Lares"
 
     #Fate god Janus Localization
-    cdr_polytheism_fate_god_name:0 "Janus"
-    cdr_polytheism_fate_god_name_possessive:0 "Janus"
+    roman_polytheism_fate_god_name:0 "Janus"
+    roman_polytheism_fate_god_name_possessive:0 "Janus"
 
     #knowledge god Minerva Localization
-    cdr_polytheism_knowledge_god_name:0 "[GetPlayer.Custom('pr_minerva_name') |U]"
-    cdr_polytheism_knowledge_god_name_possessive:0 "$cdr_polytheism_knowledge_god_name$'s"
+    roman_polytheism_knowledge_god_name:0 "$fallback_minerva_name$"
+    roman_polytheism_knowledge_god_name_possessive:0 "$roman_polytheism_knowledge_god_name$'s"
 
     #War god Mars Localization
-    cdr_polytheism_war_god_name:0 "[GetPlayer.Custom('pr_mars_name') |U]"
-    cdr_polytheism_war_god_name_possessive:0 "$cdr_polytheism_war_god_name$'s"
+    roman_polytheism_war_god_name:0 "$fallback_mars_name$"
+    roman_polytheism_war_god_name_possessive:0 "$roman_polytheism_war_god_name$'s"
 
     #Trickster god Mendacius Localization
-    cdr_polytheism_trickster_god_name:0 "[GetPlayer.Custom('pr_mendacius_name') |U]"
-    cdr_polytheism_trickster_god_name_possessive:0 "$cdr_polytheism_trickster_god_name$'s"
+    roman_polytheism_trickster_god_name:0 "$fallback_mendacius_name$"
+    roman_polytheism_trickster_god_name_possessive:0 "$roman_polytheism_trickster_god_name$'s"
 
     #Night goddess Nox Localization
-    cdr_polytheism_night_god_name:0 "Nox"
-    cdr_polytheism_night_god_name_possessive:0 "Nox's"
+    roman_polytheism_night_god_name:0 "Nox"
+    roman_polytheism_night_god_name_possessive:0 "Nox's"
 
     #Water god Neptunus Localization
-    cdr_polytheism_water_god_name:0 "[GetPlayer.Custom('pr_neptune_name') |U]"
-    cdr_polytheism_water_god_name_possessive:0 "$cdr_polytheism_water_god_name$'s"
+    roman_polytheism_water_god_name:0 "$fallback_neptune_name$"
+    roman_polytheism_water_god_name_possessive:0 "$roman_polytheism_water_god_name$'s"
 
     #evil gods names 
-    cdr_polytheism_evil_god_trivia:0 "Diana Trivia" 
-    cdr_polytheism_evil_god_discordia:0 "Discordia"
+    roman_polytheism_evil_god_trivia:0 "Diana Trivia"
+    roman_polytheism_evil_god_discordia:0 "Discordia"
 
     #witch goddess
-    cdr_polytheism_witchgodname_trivia:0 "$cdr_polytheism_evil_god_trivia$"
-    cdr_polytheism_witchgodname_trivia_possessive:0 "$cdr_polytheism_witchgodname_trivia$'s"
-    cdr_polytheism_witchgodname_trivia_possesive:0 "$cdr_polytheism_evil_god_trivia$'s"
+    roman_polytheism_witchgodname_trivia:0 "$roman_polytheism_evil_god_trivia$"
+    roman_polytheism_witchgodname_trivia_possessive:0 "$roman_polytheism_witchgodname_trivia$'s"
+    roman_polytheism_witchgodname_trivia_possesive:0 "$roman_polytheism_evil_god_trivia$'s"
 
     #Devil god   
-    cdr_polytheism_devil_name:0 "Orcus" 
-    cdr_polytheism_devil_name_possessive:0 "$cdr_polytheism_devil_name$'s"
+    roman_polytheism_devil_name:0 "Orcus"
+    roman_polytheism_devil_name_possessive:0 "$roman_polytheism_devil_name$'s"
 
     #Death god Dīs Pater 
-    cdr_polytheism_death_deity_name:0 "Dīs Pater"
-    cdr_polytheism_death_deity_name_2:0 "$cdr_polytheism_death_deity_name$"
-    cdr_polytheism_death_deity_name_3:0 "$cdr_polytheism_death_deity_name$"
-    cdr_polytheism_death_deity_name_possessive:0 "Dīs Pater's"
+    roman_polytheism_death_deity_name:0 "Dīs Pater"
+    roman_polytheism_death_deity_name_2:0 "$roman_polytheism_death_deity_name$"
+    roman_polytheism_death_deity_name_3:0 "$roman_polytheism_death_deity_name$"
+    roman_polytheism_death_deity_name_possessive:0 "Dīs Pater's"
 
     #Good gods names 
-    cdr_polytheism_good_god_juno:0 "[GetPlayer.Custom('pr_juno_name') |U]"
-    cdr_polytheism_good_god_bona_dea:0 "Bona Dea" 
-    cdr_polytheism_good_god_minerva:0 "Minerva" 
-    cdr_polytheism_good_god_mercury:0 "Mercurius" 
-    cdr_polytheism_good_god_neptune:0 "Neptunus" 
-    cdr_polytheism_good_god_mars:0 "Mars" 
-    cdr_polytheism_good_god_apollo:0 "Apollo" 
-    cdr_polytheism_good_god_Venus:0 "Venus"
+    roman_polytheism_good_god_juno:0 "$fallback_juno_name$"
+    roman_polytheism_good_god_bona_dea:0 "Bona Dea"
+    roman_polytheism_good_god_minerva:0 "Minerva"
+    roman_polytheism_good_god_mercury:0 "Mercurius"
+    roman_polytheism_good_god_neptune:0 "Neptunus"
+    roman_polytheism_good_god_mars:0 "Mars"
+    roman_polytheism_good_god_apollo:0 "Apollo"
+    roman_polytheism_good_god_Venus:0 "Venus"
 
     #Cdr priest flamen vestals
 
     #Cdr priest 
-    cdr_polytheism_priest_male:0 "Priest"
-    cdr_polytheism_priest_male_plural:0 "Priests"
-    cdr_polytheism_priest_alternate_plural:0 "Priest"
+    roman_polytheism_priest_male:0 "Priest"
+    roman_polytheism_priest_male_plural:0 "Priests"
+    roman_polytheism_priest_alternate_plural:0 "Priest"
 
     #Cdr vestals 
-    cdr_polytheism_priest_female:0 "Vestal" 
-    cdr_polytheism_priest_female_plural:0 "Vestals" 
+    roman_polytheism_priest_female:0 "Vestal"
+    roman_polytheism_priest_female_plural:0 "Vestals"
 
     #Cdr flamen  
-    cdr_polytheism_bishop_male:0 "flamen" 
-    cdr_polytheism_bishop_male_plural:0 "flamens" 
+    roman_polytheism_bishop_male:0 "flamen"
+    roman_polytheism_bishop_male_plural:0 "flamens"
 
     #roman names
     #males
-    cdr_polytheism_reserved_male_names:0 "Cultus Deorum male names"
+    roman_polytheism_reserved_male_names:0 "Cultus Deorum male names"
     #Female 
-    cdr_polytheism_reserved_female_names:0 "Cultus Deorum female names"
+    roman_polytheism_reserved_female_names:0 "Cultus Deorum female names"
 
     #holy orders: 
     holy_order_sons_of_mars:0 "Sons of Mars"
@@ -207,17 +212,7 @@
     holy_order_herculiani:0 "Herculians"
 
   #mycenaean
-    mycenaean_polytheism:0 "Mycenaean"
-    mycenaean_polytheism_adj:0 "Mycenaean"
-    mycenaean_polytheism_adherent:0 "Mycenaean Polytheism follower"
-    mycenaean_polytheism_adherent_plural:0 "Mycenaean Polytheism followers"
-    mycenaean_polytheism_desc:0 "The original faith of the Greeks before the Bronze Age Collapse. Similarly to other early Indo-European religions, once the Greeks settled down, they had adopted or at the very least were influenced by the neighboring trade power of the Minoans on Crete." 
 
-    mycenaean_polytheism_old:0 "Mycenaean Old"
-    mycenaean_polytheism_old_adj:0 "Mycenaean Old"
-    mycenaean_polytheism_adherent_old:0 "Old Mycenaean Polytheism follower"
-    mycenaean_polytheism_old_adherent_plural:0 "Old Mycenaean Polytheism followers"
-    mycenaean_polytheism_old_desc:0 "The original faith of the Greeks before the Bronze Age Collapse. Similarly to other early Indo-European religions, once the Greeks settled down, they had adopted or at the very least were influenced by the neighboring trade power of the Minoans on Crete." 
 
     mycenaean_polytheism_religious_head_title:0 "High Priest"
     mycenaean_polytheism_divine_realm:0 "$hellenism_divine_realm$"
@@ -226,7 +221,7 @@
     mycenaean_polytheism_religious_symbol:0 "Bull"
     mycenaean_polytheism_religious_symbol_2:0 "$mycenaean_polytheism_religious_symbol$"
     mycenaean_polytheism_religious_symbol_3:0 "$mycenaean_polytheism_religious_symbol$"
-    mycenaean_polytheism_religious_text:0 "$hellenism_religious_text$"
+    mycenaean_polytheism_religious_text:0 "the Sacred Rites"
     mycenaean_polytheism_religious_text_2:0 "$mycenaean_polytheism_religious_text$"
     mycenaean_polytheism_religious_text_3:0 "$mycenaean_polytheism_religious_text$"
     
@@ -234,99 +229,98 @@
     #mycenaean gods/goddesses Localization
 
     #Poseidon Localization
-    mycenaean_polytheism_high_god_name:0 "Poseidon"
+    mycenaean_polytheism_high_god_name:0 "Poseidaon"
     mycenaean_polytheism_high_god_name_2:0 "$mycenaean_polytheism_high_god_name$"
-    mycenaean_polytheism_high_god_name_possessive:0 "Poseidon's"
-    mycenaean_polytheism_high_god_name_alternate:0 "Poseidon"
-    mycenaean_polytheism_high_god_name_alternate_possessive:0 "Poseidon's"
+    mycenaean_polytheism_high_god_name_possessive:0 "Poseidaon's"
+    mycenaean_polytheism_high_god_name_alternate:0 "Enesidaon"
+    mycenaean_polytheism_high_god_name_alternate_possessive:0 "Enesidaon's"
     mycenaean_polytheism_high_god_shehe:0 "He"
     mycenaean_polytheism_high_god_herselfhimself:0 "Himself"
     mycenaean_polytheism_high_god_herhis:0 "His"
 
-    #Creater god Localization
-    mycenaean_polytheism_creator_god_name:0 "Gaia"
-    mycenaean_polytheism_creator_god_name_possessive:0 "Gaia's"
+    #Creator: no Mycenaean creator attested, generic term
+    mycenaean_polytheism_creator_god_name:0 "the Creator"
+    mycenaean_polytheism_creator_god_name_possessive:0 "the Creator's"
 
     #Health Goddess Paean
-    mycenaean_polytheism_health_god_name:0 "Paean"
-    mycenaean_polytheism_health_god_name_possessive:0 "Paean's"
+    mycenaean_polytheism_health_god_name:0 "Paiawon"
+    mycenaean_polytheism_health_god_name_possessive:0 "Paiawon's"
 
-    #Fertility Goddess Ceres Localization
-    mycenaean_polytheism_fertility_god_name:0 "Aphrodite"
-    mycenaean_polytheism_fertility_god_name_possessive:0 "Aphrodite's"
+    #Fertility: Eleuthia (e-re-u-ti-ja, KN Gg 705)
+    mycenaean_polytheism_fertility_god_name:0 "Eleuthia"
+    mycenaean_polytheism_fertility_god_name_possessive:0 "Eleuthia's"
 
     #Wealth god Hermes Localization
-    mycenaean_polytheism_wealth_god_name:0 "Hermes"
-    mycenaean_polytheism_wealth_god_name_possessive:0 "Hermes"
+    mycenaean_polytheism_wealth_god_name:0 "Hermaas"
+    mycenaean_polytheism_wealth_god_name_possessive:0 "Hermaas'"
 
     #Household god Despotas 
     mycenaean_polytheism_household_god_name:0 "Despotas"
-    mycenaean_polytheism_household_god_name_possessive:0 "Despotas"
+    mycenaean_polytheism_household_god_name_possessive:0 "Despotas'"
 
     #Fate god the Moirai Localization
-    mycenaean_polytheism_fate_god_name:0 "the Moirai"
-    mycenaean_polytheism_fate_god_name_possessive:0 "the Moirai's"
+    mycenaean_polytheism_fate_god_name:0 "Fate"
+    mycenaean_polytheism_fate_god_name_possessive:0 "Fate's"
 
     #knowledge god Athena Localization
-    mycenaean_polytheism_knowledge_god_name:0 "Athena"
-    mycenaean_polytheism_knowledge_god_name_possessive:0 "Athena's"
+    mycenaean_polytheism_knowledge_god_name:0 "Athana Potnia"
+    mycenaean_polytheism_knowledge_god_name_possessive:0 "Athana Potnia's"
 
     #War god Ares Localization
-    mycenaean_polytheism_war_god_name:0 "Ares"
-    mycenaean_polytheism_war_god_name_possessive:0 "Ares"
+    mycenaean_polytheism_war_god_name:0 "Enuwalios"
+    mycenaean_polytheism_war_god_name_possessive:0 "Enuwalios'"
 
-    #Trickster god Mendacius Localization
-    mycenaean_polytheism_trickster_god_name:0 "Mendacius"
-    mycenaean_polytheism_trickster_god_name_possessive:0 "Mendacius"
+    #Trickster: none attested, Hermaas reused
+    mycenaean_polytheism_trickster_god_name:0 "$mycenaean_polytheism_wealth_god_name$"
+    mycenaean_polytheism_trickster_god_name_possessive:0 "$mycenaean_polytheism_wealth_god_name_possessive$"
 
     #Night goddess Nyx Localization
-    mycenaean_polytheism_night_god_name:0 "Nyx"
-    mycenaean_polytheism_night_god_name_possessive:0 "$mycenaean_polytheism_night_god_name$'s"
+    mycenaean_polytheism_night_god_name:0 "the Night"
+    mycenaean_polytheism_night_god_name_possessive:0 "the Night's"
 
     #Water god Poseidon Localization
-    mycenaean_polytheism_water_god_name:0 "Poseidon"
-    mycenaean_polytheism_water_god_name_possessive:0 "Poseidon's"
+    mycenaean_polytheism_water_god_name:0 "$mycenaean_polytheism_high_god_name$"
+    mycenaean_polytheism_water_god_name_possessive:0 "$mycenaean_polytheism_high_god_name_possessive$"
 
     #evil gods names 
-    mycenaean_polytheism_evil_god_menoetius:0 "Menoetius" 
-    mycenaean_polytheism_evil_god_the_erinyes:0 "The Erinyes"
+    mycenaean_polytheism_evil_god_the_erinyes:0 "the Erinuwes"
 
     #witch goddess
-    mycenaean_polytheism_witchgodname_hekate:0 "Hekate"
-    mycenaean_polytheism_witchgodname_hekate_possesive:0 "Hekate's"
-    mycenaean_polytheism_witchgodname_hekate_possessive:0 "Hekate's"
+    mycenaean_polytheism_witchgodname_hekate:0 "Dapurinthoio Potnia"
+    mycenaean_polytheism_witchgodname_hekate_possesive:0 "Dapurinthoio Potnia's"
+    mycenaean_polytheism_witchgodname_hekate_possessive:0 "Dapurinthoio Potnia's"
 
     #Devil god   
-    mycenaean_polytheism_devil_name:0 "Orcus" 
-    mycenaean_polytheism_devil_name_possessive:0 "Orcus"
+    mycenaean_polytheism_devil_name:0 "Erinus"
+    mycenaean_polytheism_devil_name_possessive:0 "Erinus'"
 
-    #Death god Dīs Pater 
-    mycenaean_polytheism_death_deity_name:0 "Hades"
-    mycenaean_polytheism_death_deity_name_possessive:0 "Hades"
+    #Death: no Mycenaean death god attested, generic term
+    mycenaean_polytheism_death_deity_name:0 "the Dead"
+    mycenaean_polytheism_death_deity_name_possessive:0 "the Dead's"
 
     #Good gods names 
     mycenaean_polytheism_good_god_zeus:0 "Zeus" 
     mycenaean_polytheism_good_god_artemis:0 "Artemis" 
     mycenaean_polytheism_good_god_posidaeia:0 "Posidaeia" 
-    mycenaean_polytheism_good_god_hermes:0 "Hermes" 
+    mycenaean_polytheism_good_god_hermes:0 "Hermaas"
     mycenaean_polytheism_good_god_potnia:0 "Potnia" 
     mycenaean_polytheism_good_god_hera:0 "Hera" 
     mycenaean_polytheism_good_god_diwia:0 "Diwia" 
-    mycenaean_polytheism_good_god_hephaestus:0 "Hephaestus"
+    mycenaean_polytheism_good_god_dionysus:0 "Diwonusos"
 
-    #mycenaean priest flamen vestals
+    #Mycenaean titles: i-je-re-u, i-je-re-ja, ka-ra-wi-po-ro (PY Ep 704)
 
     #mycenaean priest 
-    mycenaean_polytheism_priest_male:0 "Priest"
-    mycenaean_polytheism_priest_male_plural:0 "Priest"
+    mycenaean_polytheism_priest_male:0 "Hiereus"
+    mycenaean_polytheism_priest_male_plural:0 "Hiereis"
 
     #mycenaean vestals 
-    mycenaean_polytheism_priest_female:0 "Priestess" 
-    mycenaean_polytheism_priest_female_plural:0 "Priestesses" 
+    mycenaean_polytheism_priest_female:0 "Hiereia"
+    mycenaean_polytheism_priest_female_plural:0 "Hiereiai"
 
     #mycenaean  
-    mycenaean_polytheism_bishop_male:0 "Fetial" 
-    mycenaean_polytheism_bishop_male_plural:0 "Fetials" 
+    mycenaean_polytheism_bishop_male:0 "Klawiphoros"
+    mycenaean_polytheism_bishop_male_plural:0 "Klawiphoroi"
 
     #roman names
     #males
@@ -341,25 +335,15 @@
 
 
     #Graeco Egyptian
-    graeco_egyptian_polytheism:0 "Graeco Egyptian"
-    graeco_egyptian_polytheism_adj:0 "Graeco Egyptian"
-    graeco_egyptian_polytheism_adherent:0 "Graeco Egyptian polytheist"
-    graeco_egyptian_polytheism_adherent_plural:0 "Graeco Egyptian polytheists"
-    graeco_egyptian_polytheism_desc:0 "In the melting-pot of Ptolemaic Egypt, Greek settlers wove their own gods together with the ancient Egyptian pantheon, giving rise to syncretic cults like Serapis. This shared faith bridges two peoples, letting Greek and Egyptian traditions coexist within a single religious life."
 
-    graeco_egyptian_polytheism_old:0 "Old Graeco Egyptian"
-    graeco_egyptian_polytheism_old_adj:0 "Old Graeco Egyptian"
-    graeco_egyptian_polytheism_adherent_old:0 "Old Graeco Egyptian polytheist"
-    graeco_egyptian_polytheism_old_adherent_plural:0 "Old  Graeco Egyptian polytheists"
-    graeco_egyptian_polytheism_old_desc:0 "The Graeco Egyptian faith is a powerful force in North Egyptian society, and it plays an important role in the lives of the greek people in North Egypt. The Graeco Egyptian faith helps to unite the Greek and Egyptian people, and it provides them with a sense of identity and purpose. The Graeco Egyptians have maintained their own unique religious traditions for centuries." 
 
-    graeco_egyptian_polytheism_divine_realm:0 "Vdekje"
+    graeco_egyptian_polytheism_divine_realm:0 "Amenti"
     graeco_egyptian_polytheism_divine_realm_2:0 "$graeco_egyptian_polytheism_divine_realm$"
     graeco_egyptian_polytheism_divine_realm_3:0 "$graeco_egyptian_polytheism_divine_realm$"
     graeco_egyptian_polytheism_religious_symbol:0 "Sun"
     graeco_egyptian_polytheism_religious_symbol_2:0 "$graeco_egyptian_polytheism_religious_symbol$"
     graeco_egyptian_polytheism_religious_symbol_3:0 "$graeco_egyptian_polytheism_religious_symbol$"
-    graeco_egyptian_polytheism_religious_text:0 "Mythology"
+    graeco_egyptian_polytheism_religious_text:0 "the Hermetica"
     graeco_egyptian_polytheism_religious_text_2:0 "$graeco_egyptian_polytheism_religious_text$"
     graeco_egyptian_polytheism_religious_text_3:0 "$graeco_egyptian_polytheism_religious_text$"
     #roman_pantheon_the_gods:0 "Roman pantheon of gods"
@@ -367,11 +351,11 @@
     #dacian gods/goddesses Localization
 
     #Zeus Amon Localization
-    graeco_egyptian_polytheism_high_god_name:0 "$hellenism_high_god_name$"
+    graeco_egyptian_polytheism_high_god_name:0 "Zeus Amon"
     graeco_egyptian_polytheism_high_god_name_2:0 "$graeco_egyptian_polytheism_high_god_name$"
-    graeco_egyptian_polytheism_high_god_name_possessive:0 "$graeco_egyptian_polytheism_high_god_name$'s"
-    graeco_egyptian_polytheism_high_god_name_alternate:0 "$graeco_egyptian_polytheism_high_god_name$"
-    graeco_egyptian_polytheism_high_god_name_alternate_possessive:0 "$graeco_egyptian_polytheism_high_god_name$'s"
+    graeco_egyptian_polytheism_high_god_name_possessive:0 "Zeus Amon's"
+    graeco_egyptian_polytheism_high_god_name_alternate:0 "Sarapis"
+    graeco_egyptian_polytheism_high_god_name_alternate_possessive:0 "Sarapis'"
     graeco_egyptian_polytheism_high_god_shehe:0 "He"
     graeco_egyptian_polytheism_high_god_herselfhimself:0 "Himself"
     graeco_egyptian_polytheism_high_god_herhis:0 "His"
@@ -381,28 +365,28 @@
     graeco_egyptian_polytheism_creator_god_name_possessive:0 "$graeco_egyptian_polytheism_high_god_name$'s"
 
     #Health Goddess
-    graeco_egyptian_polytheism_health_god_name:0 "$hellenism_health_god_name$"
-    graeco_egyptian_polytheism_health_god_name_possessive:0 "$graeco_egyptian_polytheism_health_god_name$'s"
+    graeco_egyptian_polytheism_health_god_name:0 "Imhotep"
+    graeco_egyptian_polytheism_health_god_name_possessive:0 "Imhotep's"
 
     #Fertility God Isis Localization
-    graeco_egyptian_polytheism_fertility_god_name:0 "$hellenism_fertility_god_name$"
-    graeco_egyptian_polytheism_fertility_god_name_possessive:0 "$graeco_egyptian_polytheism_fertility_god_name$'s"
+    graeco_egyptian_polytheism_fertility_god_name:0 "Isis"
+    graeco_egyptian_polytheism_fertility_god_name_possessive:0 "Isis'"
 
     #Wealth god En Localization
-    graeco_egyptian_polytheism_wealth_god_name:0 "$hellenism_wealth_god_name$"
-    graeco_egyptian_polytheism_wealth_god_name_possessive:0 "$graeco_egyptian_polytheism_wealth_god_name$'s"
+    graeco_egyptian_polytheism_wealth_god_name:0 "Hermes"
+    graeco_egyptian_polytheism_wealth_god_name_possessive:0 "Hermes'"
 
     #Household god Kotys
-    graeco_egyptian_polytheism_household_god_name:0 "$hellenism_household_god_name$"
-    graeco_egyptian_polytheism_household_god_name_possessive:0 "$graeco_egyptian_polytheism_household_god_name$'s"
+    graeco_egyptian_polytheism_household_god_name:0 "Agathos Daimon"
+    graeco_egyptian_polytheism_household_god_name_possessive:0 "Agathos Daimon's"
 
     #Fate god En Localization
-    graeco_egyptian_polytheism_fate_god_name:0 "$hellenism_fate_god_name$"
-    graeco_egyptian_polytheism_fate_god_name_possessive:0 "$graeco_egyptian_polytheism_fate_god_name$'s"
+    graeco_egyptian_polytheism_fate_god_name:0 "Hermes Trismegistos"
+    graeco_egyptian_polytheism_fate_god_name_possessive:0 "Hermes Trismegistos'"
 
     #knowledge god En Localization
-    graeco_egyptian_polytheism_knowledge_god_name:0 "$hellenism_knowledge_god_name$"
-    graeco_egyptian_polytheism_knowledge_god_name_possessive:0 "$graeco_egyptian_polytheism_knowledge_god_name$'s"
+    graeco_egyptian_polytheism_knowledge_god_name:0 "Hermes Trismegistos"
+    graeco_egyptian_polytheism_knowledge_god_name_possessive:0 "Hermes Trismegistos'"
 
     #War god Ares Localization
     graeco_egyptian_polytheism_war_god_name:0 "Ares"
@@ -410,28 +394,33 @@
 
     #Trickster god Daedalus Localization
     graeco_egyptian_polytheism_trickster_god_name:0 "Hermes"
-    graeco_egyptian_polytheism_trickster_god_name_possessive:0 "$graeco_egyptian_polytheism_trickster_god_name$'s"
+    graeco_egyptian_polytheism_trickster_god_name_possessive:0 "Hermes'"
 
     #Night goddess Nyx Localization
     graeco_egyptian_polytheism_night_god_name:0 "Nyx"
     graeco_egyptian_polytheism_night_god_name_possessive:0 "$graeco_egyptian_polytheism_night_god_name$'s"
 
     #Water god Gebeleizis Localization
-    graeco_egyptian_polytheism_water_god_name:0 "$hellenism_water_god_name$"
-    graeco_egyptian_polytheism_water_god_name_possessive:0 "$graeco_egyptian_polytheism_water_god_name$'s"
+    graeco_egyptian_polytheism_water_god_name:0 "Isis Pelagia"
+    graeco_egyptian_polytheism_water_god_name_possessive:0 "Isis Pelagia's"
 
     #evil gods names
+    #Good gods: the cult group Sarapis, Isis, Anubis, Harpocrates
+    graeco_egyptian_polytheism_good_god_sarapis:0 "Sarapis"
+    graeco_egyptian_polytheism_good_god_isis:0 "Isis"
+    graeco_egyptian_polytheism_good_god_anubis:0 "Anubis"
+    graeco_egyptian_polytheism_good_god_harpocrates:0 "Harpocrates"
     graeco_egyptian_polytheism_evil_god_antaios:0 "Antaios" 
     
 
     #witch goddess
     graeco_egyptian_polytheism_witchgodname_hermes:0 "Hermes Trismegistos"
-    graeco_egyptian_polytheism_witchgodname_hermes_possessive:0 "$graeco_egyptian_polytheism_witchgodname_hermes$'"
+    graeco_egyptian_polytheism_witchgodname_hermes_possessive:0 "Hermes Trismegistos'"
     graeco_egyptian_polytheism_witchgodname_hermes_possesive:0 "$graeco_egyptian_polytheism_witchgodname_hermes$'s"
 
     #Devil god
-    graeco_egyptian_polytheism_devil_name:0 "$hellenism_devil_name$"
-    graeco_egyptian_polytheism_devil_name_possessive:0 "$graeco_egyptian_polytheism_devil_name$'s"
+    graeco_egyptian_polytheism_devil_name:0 "Typhon"
+    graeco_egyptian_polytheism_devil_name_possessive:0 "Typhon's"
 
     #Death god Zalmoxis
     graeco_egyptian_polytheism_death_deity_name:0 "Hermanubis"

@@ -13,7 +13,7 @@ pr_daco_thracian_choose_main_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
     }
     desc = pr_daco_thracian_choose_main_deity_decision_desc
-    decision_tooltip = pr_daco_thracian_choose_main_deity_decision_tooltip
+    selection_tooltip = pr_daco_thracian_choose_main_deity_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
@@ -21,8 +21,8 @@ pr_daco_thracian_choose_main_deity_decision = {
         has_fp1_dlc_trigger = yes
         # Following a valid religion & faith.
         OR = {
-            faith = faith:dacian_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_dacian_patron_god_active }
+            faith = faith:daco_thracian_polytheism
+            rite = { rite_has_parameter = special_doctrine_dacian_patron_god_active }
         }
     }
 
@@ -96,7 +96,7 @@ pr_daco_thracian_embrace_dacian_culture_decision = {
     }
     decision_group_type = polytheism
     desc = pr_daco_thracian_embrace_dacian_culture_decision_desc
-    decision_tooltip = pr_daco_thracian_embrace_dacian_culture_decision_tooltip
+    selection_tooltip = pr_daco_thracian_embrace_dacian_culture_decision_tooltip
 
     is_shown = {
         is_ai = no
@@ -154,7 +154,7 @@ pr_daco_thracian_create_dacia_decision = {
     }
     decision_group_type = major
     desc = pr_daco_thracian_create_dacia_decision_desc
-    decision_tooltip = pr_daco_thracian_create_dacia_decision_tooltip
+    selection_tooltip = pr_daco_thracian_create_dacia_decision_tooltip
 
     ai_check_interval = 4
 
@@ -255,7 +255,7 @@ pr_daco_thracian_create_odrysia_decision = {
     }
     decision_group_type = major
     desc = pr_daco_thracian_create_odrysia_decision_desc
-    decision_tooltip = pr_daco_thracian_create_odrysia_decision_tooltip
+    selection_tooltip = pr_daco_thracian_create_odrysia_decision_tooltip
 
     ai_check_interval = 4
 
@@ -375,7 +375,7 @@ pr_daco_thracian_zalmoxis_sacrifice_decision = {
     }
     decision_group_type = polytheism
     desc = pr_daco_thracian_zalmoxis_sacrifice_decision_desc
-    decision_tooltip = pr_daco_thracian_zalmoxis_sacrifice_decision_tooltip
+    selection_tooltip = pr_daco_thracian_zalmoxis_sacrifice_decision_tooltip
 
     is_shown = {
         religion = religion:daco_thracian_religion
@@ -417,7 +417,7 @@ pr_daco_thracian_place_kogaionon_altar_decision = {
     }
     decision_group_type = polytheism
     desc = pr_daco_thracian_place_kogaionon_altar_decision_desc
-    decision_tooltip = pr_daco_thracian_place_kogaionon_altar_decision_tooltip
+    selection_tooltip = pr_daco_thracian_place_kogaionon_altar_decision_tooltip
 
     is_shown = {
         religion = religion:daco_thracian_religion

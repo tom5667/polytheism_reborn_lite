@@ -18,17 +18,14 @@
   # --- Choose Semitic Main Deity (0200) ---
   pr_canaanite.0200.t:0 "Choose Main Deity"
   pr_canaanite.0200.desc:0 "#F To help me in the struggle to rule my realm, I could devote myself to one of the gods or goddesses.#!"
-  pr_canaanite.0200.ba_al_hadad:0 "Ba'al-Hadad"
-  pr_canaanite.0200.ashera:0 "Ashera"
-  pr_canaanite.0200.dagan:0 "Dagan"
-  pr_canaanite.0200.el_elyon:0 "El Elyon"
-  pr_canaanite.0200.ashtart:0 "Ashtart"
+  pr_canaanite.0200.ba_al_hadad:0 "Baal"
+  pr_canaanite.0200.ashera:0 "Astarte"
+  pr_canaanite.0200.dagan:0 "Dagon"
+  pr_canaanite.0200.el_elyon:0 "Taautos"
+  pr_canaanite.0200.ashtart:0 "Reshef"
   pr_canaanite.0200.optout:0 "Maybe now isn't the right time"
 
   # --- Opening Temple (0002) ---
-  pr_canaanite.0002.t:0 "Opening the Temple"
-  pr_canaanite.0002.desc:0 "#F The finest architects and artisans of the realm were called upon to build the new temple, and today it stands complete. Crowds gathered to witness this sacred day.#!\n\nThe high priest opened the temple with a ritual to invite Tanit to dwell within, that she may guide the people to glory."
-  pr_canaanite.0002.a:0 "Praise Tanit!"
 
   # --- Offering to Baal Hammon (0003) ---
   pr_canaanite.0003.t:0 "Offering to Baal Hammon"

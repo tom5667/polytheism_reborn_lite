@@ -4,79 +4,83 @@
 # made by tom5667
 ##################################################
 restore_carthage_decision = {
-    picture = {
-        reference = "gfx/interface/illustrations/decisions/carthago.dds"
-    }
-    decision_group_type = major
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/carthago.dds" # PR
+	}
+	decision_group_type = major
 
-    ai_check_interval_by_tier = {
-        barony = 0
-        county = 0
-        duchy = 0
-        kingdom = 120
-        empire = 0
-        hegemony = 0
-    }
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 120
+		empire = 0
+		hegemony = 0
+	}
 
-    desc = restore_carthage_decision_desc
-    selection_tooltip = restore_carthage_decision_tooltip
+	desc = restore_carthage_decision_desc
+	selection_tooltip = restore_carthage_decision_tooltip
 
-    is_shown = {
-        is_ruler = yes
-        is_playable_character = yes
+	is_shown = {
+		culture ?= {
+			OR = {
+				this = culture:levantine
+				has_cultural_pillar = heritage_syriac
+				has_cultural_pillar = heritage_phoenician
+				has_cultural_pillar = heritage_pr_phoenician # PR: pr_punic and the other PR Phoenician cultures
+			}
+		}
+		is_playable_character = yes
 
-        OR = {
-            culture = { has_cultural_pillar = heritage_syriac }
-            culture = culture:levantine
-            culture = culture:pr_punic
-        }
+		# Not repeatable.
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_restored_carthage
+			}
+		}
 
-        # Not repeatable.
-        NOT = {
-            is_target_in_global_variable_list = {
-                name = unavailable_unique_decisions
-                target = flag:flag_restored_carthage
-            }
-        }
-    }
+		is_ruler = yes
+	}
 
-    is_valid = {
-        is_independent_ruler = yes
-        highest_held_title_tier < tier_empire
+	is_valid = {
+		is_independent_ruler = yes
+		highest_held_title_tier < tier_empire
 
-        prestige_level >= 4
+		prestige_level >= 4
 
-        completely_controls_region = custom_carthage
-        completely_controls_region = custom_tripolitania
-        completely_controls_region = custom_mauretania
-        completely_controls_region = custom_carthago_nova
+		completely_controls_region = custom_carthage
+		completely_controls_region = custom_tripolitania
+		completely_controls_region = custom_mauretania
+		completely_controls_region = custom_carthago_nova
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
 
-    }
+	}
 
-    is_valid_showing_failures_only = {
-        top_liege = this
-        is_available_adult = yes
-    }
+	is_valid_showing_failures_only = {
+		top_liege = this
+		is_available_adult = yes
+	}
 
-    cost = {
-        gold = {
-            value = 1200
-        }
-    }
+	cost = {
+		gold = {
+			value = 1200
+		}
+	}
 
-    effect = {
-        save_scope_as = founder
-        show_as_tooltip = { restore_carthage_scripted_effect = yes }
+	effect = {
+		save_scope_as = founder 
+		show_as_tooltip = { restore_carthage_scripted_effect = yes }
 
-        hidden_effect = {
-            add_to_global_variable_list = {
-                name = unavailable_unique_decisions
-                target = flag:flag_restored_carthage
-            }
-        }
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_restored_carthage
+			}
+		}
 
-        trigger_event = major_decisions.3300
-    }
+		trigger_event = major_decisions.3300
+	}
 }
 pr_canaanite_choose_main_deity_decision = {
     picture = {
@@ -84,21 +88,17 @@ pr_canaanite_choose_main_deity_decision = {
     }
     decision_group_type = polytheism
     desc = pr_canaanite_choose_main_deity_decision_desc
-    decision_tooltip = pr_canaanite_choose_main_deity_decision_tooltip
+    selection_tooltip = pr_canaanite_choose_main_deity_decision_tooltip
 
     is_shown = {
         # DLC check.
         has_fp1_dlc_trigger = yes
-        # Following a valid religion & faith.
+        # Following a valid religion & faith. Both rites (#153): Punic -> pr_canaanite.0100,
+        # Semitic -> pr_canaanite.0200.
         OR = {
-            faith = faith:semitic_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_semitic_patron_god_active }
-        }
-        NOT = {
-            is_target_in_global_variable_list = {
-                name = unavailable_unique_decisions
-                target = flag:pr_canaanite_choose_main_deity_decision
-            }
+            faith = faith:canaanite_polytheism
+            rite = { rite_has_parameter = special_doctrine_punic_patron_god_active }
+            rite = { rite_has_parameter = special_doctrine_semitic_patron_god_active }
         }
     }
 
@@ -108,48 +108,56 @@ pr_canaanite_choose_main_deity_decision = {
 
     cost = {
         # Kosten via scripted values (pr_decision_values.txt)
-        piety = @pr_choose_deity_piety_cost
+        piety = pr_choose_deity_piety_cost
     }
 
     cooldown = { years = 2 }
 
     effect = {
-        add_to_global_variable_list = {
-            name = unavailable_unique_decisions
-            target = flag:pr_canaanite_choose_main_deity_decision
-        }
-        # Show the possible options.
-        show_as_tooltip = {
-            random_list = {
-                desc = pr_canaanite_choose_main_deity_decision_tt
-                100 = {
-                    show_chance = no
-                    desc = pr_canaanite_choose_main_deity_decision.select_ba_al_hadad
-                    add_character_modifier = semitic_ba_al_hadad
-                }
-                100 = {
-                    show_chance = no
-                    desc = pr_canaanite_choose_main_deity_decision.select_ashera
-                    add_character_modifier = semitic_ashera
-                }
-                100 = {
-                    show_chance = no
-                    desc = pr_canaanite_choose_main_deity_decision.select_dagan
-                    add_character_modifier = semitic_dagan
-                }
-                100 = {
-                    show_chance = no
-                    desc = pr_canaanite_choose_main_deity_decision.select_el_elyon
-                    add_character_modifier = semitic_el_elyon
-                }
-                100 = {
-                    show_chance = no
-                    desc = pr_canaanite_choose_main_deity_decision.select_ashtart
-                    add_character_modifier = semitic_ashtart
+        if = {
+            limit = {
+                OR = {
+                    rite = rite:semitic_rites
+                    rite = { rite_has_parameter = special_doctrine_semitic_patron_god_active }
                 }
             }
+            # Show the possible options.
+            show_as_tooltip = {
+                random_list = {
+                    desc = pr_canaanite_choose_main_deity_decision_tt
+                    100 = {
+                        show_chance = no
+                        desc = pr_canaanite_choose_main_deity_decision.select_ba_al_hadad
+                        add_character_modifier = semitic_ba_al_hadad
+                    }
+                    100 = {
+                        show_chance = no
+                        desc = pr_canaanite_choose_main_deity_decision.select_ashera
+                        add_character_modifier = semitic_ashera
+                    }
+                    100 = {
+                        show_chance = no
+                        desc = pr_canaanite_choose_main_deity_decision.select_dagan
+                        add_character_modifier = semitic_dagan
+                    }
+                    100 = {
+                        show_chance = no
+                        desc = pr_canaanite_choose_main_deity_decision.select_el_elyon
+                        add_character_modifier = semitic_el_elyon
+                    }
+                    100 = {
+                        show_chance = no
+                        desc = pr_canaanite_choose_main_deity_decision.select_ashtart
+                        add_character_modifier = semitic_ashtart
+                    }
+                }
+            }
+            trigger_event = pr_canaanite.0200
         }
-        trigger_event = pr_canaanite.0100
+        else = {
+            custom_tooltip = pr_canaanite_choose_main_deity_decision_tt
+            trigger_event = pr_canaanite.0100
+        }
     }
     ai_check_interval = 96
 
@@ -161,6 +169,11 @@ pr_canaanite_choose_main_deity_decision = {
             has_character_modifier = semitic_dagan
             has_character_modifier = semitic_el_elyon
             has_character_modifier = semitic_ashtart
+            has_character_modifier = punic_baal
+            has_character_modifier = punic_kusor
+            has_character_modifier = punic_astarte
+            has_character_modifier = punic_tanit
+            has_character_modifier = punic_melqart
         }
     }
 
@@ -175,7 +188,7 @@ pr_canaanite_embrace_punic_culture_decision = {
     }
     decision_group_type = polytheism
     desc = pr_canaanite_embrace_punic_culture_decision_desc
-    decision_tooltip = pr_canaanite_embrace_punic_culture_decision_tooltip
+    selection_tooltip = pr_canaanite_embrace_punic_culture_decision_tooltip
 
     is_shown = {
         is_ai = no
@@ -231,7 +244,7 @@ pr_canaanite_build_temple_of_tanit_decision = {
         reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
     }
     desc = pr_canaanite_build_temple_of_tanit_decision_desc
-    decision_tooltip = pr_canaanite_build_temple_of_tanit_decision_tooltip
+    selection_tooltip = pr_canaanite_build_temple_of_tanit_decision_tooltip
 
     is_shown = {
         religion = religion:canaanite_religion

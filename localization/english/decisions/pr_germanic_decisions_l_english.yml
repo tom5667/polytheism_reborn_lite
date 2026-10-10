@@ -16,20 +16,20 @@
   select_personal_deity_germanic_decision.select_ullr:0 "#T Ullr#!\n#P God of the hunt, archery, and the wild#!"
   select_personal_deity_germanic_decision.select_tyr:0 "#T Tyr#!\n#P God of law, justice, and sacrifice#!"
   select_personal_deity_germanic_decision.select_thor:0 "#T Thor#!\n#P Thunderer, protector of mankind#!"
-  select_personal_deity_germanic_decision.select_freyr:0 "#T Freyr#!\n#P God of fertility, prosperity, and peace#!"
+  select_personal_deity_germanic_decision.select_freyr:0 "#T Nerthus#!\n#P Mother Earth, honoured in her island grove#!"
 
   # --- Main Deity Selection Descriptions: Anglo-Saxon ---
-  select_personal_deity_germanic_decision.select_woden:0 "#T Woden#!\n#P The All-Father, god of wisdom and the wild hunt#!"
-  select_personal_deity_germanic_decision.select_fri:0 "#T Fri#!\n#P Goddess of love, fertility, and the hearth#!"
-  select_personal_deity_germanic_decision.select_njord:0 "#T Njord#!\n#P God of the sea, wind, and wealth#!"
-  select_personal_deity_germanic_decision.select_tiwaz:0 "#T Tiwaz#!\n#P God of law, honor, and single combat#!"
-  select_personal_deity_germanic_decision.select_seaxneat:0 "#T Seaxneat#!\n#P God of the Saxons, patron of the knife and the harvest#!"
+  select_personal_deity_germanic_decision.select_woden:0 "#T Wōden#!\n#P Highest of the gods of the English#!"
+  select_personal_deity_germanic_decision.select_fri:0 "#T Erce#!\n#P Mother of the earth, called upon to bless the fields#!"
+  select_personal_deity_germanic_decision.select_njord:0 "#T Ing#!\n#P Ing, first seen among the East-Danes#!"
+  select_personal_deity_germanic_decision.select_tiwaz:0 "#T Tīw#!\n#P The god the English named with Mars#!"
+  select_personal_deity_germanic_decision.select_seaxneat:0 "#T Seaxnēat#!\n#P Patron and forefather of the Saxons#!"
 
   # --- Main Deity Selection Descriptions: German ---
-  select_personal_deity_germanic_decision.select_wotan:0 "#T Wotan#!\n#P The All-Father, god of wisdom, magic, and war#!"
-  select_personal_deity_germanic_decision.select_njordr:0 "#T Njordr#!\n#P God of seafaring, wind, and abundance#!"
-  select_personal_deity_germanic_decision.select_nornir:0 "#T Nornir#!\n#P The Norns, weavers of fate and destiny#!"
-  select_personal_deity_germanic_decision.select_mimir:0 "#T Mimir#!\n#P The wise one, keeper of the well of knowledge#!"
+  select_personal_deity_germanic_decision.select_wotan:0 "#T Wotan#!\n#P Master of the healing charms#!"
+  select_personal_deity_germanic_decision.select_njordr:0 "#T Volla#!\n#P Sister of Frija in the old charms#!"
+  select_personal_deity_germanic_decision.select_nornir:0 "#T Saxnōt#!\n#P God of the Saxons#!"
+  select_personal_deity_germanic_decision.select_mimir:0 "#T Fosite#!\n#P Worshipped on the holy island of Fositesland#!"
 
   # --- Place New Irminsul at Paderborn Decision ---
   pr_germanic_place_new_irminsul_paderborn_decision:0 "Place a New Irminsul at Paderborn"

@@ -1,0 +1,384 @@
+﻿#####################
+#Made by tom5667
+#####################
+# Rites of the Mesopotamian faith (babylonian_polytheism). Tenets, patron-god doctrines and god names from
+# the old faiths; rite doctrines override the religion's doctrines of the same group.
+# God names checked twice against ORACC (AMGG), ETCSL and Black & Green (2026-10-06, step 2).
+
+# Babylonian rite (main): Marduk of Babylon. God names: religion-level block.
+babylonian_rites = {
+    faith = babylonian_polytheism
+
+    color = { 219  183 50  }
+
+    tenets = {
+        tenet_astrology
+        tenet_legalism
+        tenet_religious_legal_pronouncements
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+        special_doctrine_babylonian_patron_god
+    }
+}
+
+# Assyrian rite (old faith assyrian_polytheism): Aššur as head god.
+assyrian_rites = {
+    faith = babylonian_polytheism
+
+    color = hsv{ 0.22 0.35 0.5 }
+    icon = assyrian
+
+    tenets = {
+        tenet_warmonger
+        tenet_legalism
+        tenet_communal_identity
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+        special_doctrine_assyrian_patron_god
+        doctrine_concubines
+        doctrine_consanguinity_cousins
+        doctrine_adultery_men_accepted
+        doctrine_adultery_women_crime
+        doctrine_clerical_marriage_disallowed
+    }
+
+    localization = {
+        HighGodName = assyrian_polytheism_high_god_name
+        HighGodName2 = assyrian_polytheism_high_god_name_2
+        HighGodNamePossessive = assyrian_polytheism_high_god_name_possessive
+        HighGodNameSheHe = CHARACTER_SHEHE_HE
+        HighGodHerselfHimself = CHARACTER_HIMSELF
+        HighGodHerHis = CHARACTER_HERHIS_HIS
+        HighGodNameAlternate = assyrian_polytheism_high_god_name_alternate
+        HighGodNameAlternatePossessive = assyrian_polytheism_high_god_name_alternate_possessive
+
+        #Creator
+        CreatorName = assyrian_polytheism_creator_god_name
+        CreatorNamePossessive = assyrian_polytheism_creator_god_name_possessive
+        CreatorSheHe = CHARACTER_SHEHE_SHE
+        CreatorHerHis = CHARACTER_HERHIS_HER
+        CreatorHerHim = CHARACTER_HERHIM_HER
+
+        #HealthGod
+        HealthGodName = assyrian_polytheism_health_god_name
+        HealthGodNamePossessive = assyrian_polytheism_health_god_name_possessive
+        HealthGodSheHe = CHARACTER_SHEHE_SHE
+        HealthGodHerHis = CHARACTER_HERHIS_HER
+        HealthGodHerHim = CHARACTER_HERHIM_HER
+
+        #FertilityGod
+        FertilityGodName = assyrian_polytheism_fertility_god_name
+        FertilityGodNamePossessive = assyrian_polytheism_fertility_god_name_possessive
+        FertilityGodSheHe = CHARACTER_SHEHE_SHE
+        FertilityGodHerHis = CHARACTER_HERHIS_HER
+        FertilityGodHerHim = CHARACTER_HERHIM_HER
+
+        #WealthGod
+        WealthGodName = assyrian_polytheism_wealth_god_name
+        WealthGodNamePossessive = assyrian_polytheism_wealth_god_name_possessive
+        WealthGodSheHe = CHARACTER_SHEHE_HE
+        WealthGodHerHis = CHARACTER_HERHIS_HIS
+        WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+        #HouseholdGod
+        HouseholdGodName = assyrian_polytheism_household_god_name
+        HouseholdGodNamePossessive = assyrian_polytheism_household_god_name_possessive
+        HouseholdGodSheHe = CHARACTER_SHEHE_SHE
+        HouseholdGodHerHis = CHARACTER_HERHIS_HER
+        HouseholdGodHerHim = CHARACTER_HERHIM_HER
+
+        #FateGod
+        FateGodName = assyrian_polytheism_fate_god_name
+        FateGodNamePossessive = assyrian_polytheism_fate_name_possessive
+        FateGodSheHe = CHARACTER_SHEHE_THEY
+        FateGodHerHis = CHARACTER_HERHIS_THEIR
+        FateGodHerHim = CHARACTER_HERHIM_THEM
+
+        #KnowledgeGod
+        KnowledgeGodName = assyrian_polytheism_knowledge_god_name
+        KnowledgeGodNamePossessive = assyrian_polytheism_knowledge_god_name_possessive
+        KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+        KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+        KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+        #WarGod
+        WarGodName = assyrian_polytheism_war_god_name
+        WarGodNamePossessive = assyrian_polytheism_war_god_name_possessive
+        WarGodSheHe = CHARACTER_SHEHE_HE
+        WarGodHerHis = CHARACTER_HERHIS_HIS
+        WarGodHerHim = CHARACTER_HERHIM_HIM
+
+        #TricksterGod
+        TricksterGodName = assyrian_polytheism_trickster_god_name
+        TricksterGodNamePossessive = assyrian_polytheism_trickster_god_name_possessive
+        TricksterGodSheHe = CHARACTER_SHEHE_HE
+        TricksterGodHerHis = CHARACTER_HERHIS_HIS
+        TricksterGodHerHim = CHARACTER_HERHIM_HIM
+
+        #NightGod
+        NightGodName = assyrian_polytheism_night_god_name
+        NightGodNamePossessive = assyrian_polytheism_night_god_name_possessive
+        NightGodSheHe = CHARACTER_SHEHE_HE
+        NightGodHerHis = CHARACTER_HERHIS_HIS
+        NightGodHerHim = CHARACTER_HERHIM_HIM
+
+        #WaterGod
+        WaterGodName = assyrian_polytheism_water_god_name
+        WaterGodNamePossessive = assyrian_polytheism_water_god_name_possessive
+        WaterGodSheHe = CHARACTER_SHEHE_HE
+        WaterGodHerHis = CHARACTER_HERHIS_HIS
+        WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+        PantheonTerm = babylonian_polytheism_pantheon
+        PantheonTerm2 = babylonian_polytheism_pantheon_2
+        PantheonTerm3 = babylonian_polytheism_pantheon_3
+        PantheonTermHasHave = pantheon_term_have
+        GoodGodNames = { assyrian_polytheism_good_god_ashur assyrian_polytheism_good_god_mullissu assyrian_polytheism_good_god_ishtar assyrian_polytheism_good_god_ninurta babylonian_polytheism_good_god_nabu babylonian_polytheism_good_god_sin babylonian_polytheism_good_god_shamash babylonian_polytheism_good_god_adad }
+        DevilName = assyrian_polytheism_devil_name
+        DevilNamePossessive = assyrian_polytheism_devil_name_possessive
+        DevilSheHe = CHARACTER_SHEHE_SHE
+        DevilHerHis = CHARACTER_HERHIS_HER
+        DevilHerselfHimself = CHARACTER_HERSELF
+        EvilGodNames = { babylonian_polytheism_evil_god_kingu babylonian_polytheism_evil_god_lamashtu babylonian_polytheism_evil_god_asakku }
+        HouseOfWorship = paganism_house_of_worship
+        HouseOfWorship2 = paganism_house_of_worship_2
+        HouseOfWorship3 = paganism_house_of_worship_3
+        HouseOfWorshipPlural = paganism_house_of_worship_plural
+        ReligiousSymbol = assyrian_polytheism_religious_symbol
+        ReligiousSymbol2 = assyrian_polytheism_religious_symbol_2
+        ReligiousSymbol3 = assyrian_polytheism_religious_symbol_3
+        ReligiousText = assyrian_polytheism_religious_text
+        ReligiousText2 = assyrian_polytheism_religious_text_2
+        ReligiousText3 = assyrian_polytheism_religious_text_3
+        ReligiousHeadName = assyrian_polytheism_religious_head
+        ReligiousHeadNameFemale = assyrian_polytheism_religious_head
+        ReligiousHeadTitleName = paganism_religious_head_title_name
+        DevoteeMale = paganism_devotee
+        DevoteeMalePlural = paganism_devoteeplural
+        DevoteeFemale = paganism_devotee
+        DevoteeFemalePlural = paganism_devoteeplural
+        DevoteeNeuter = paganism_devotee
+        DevoteeNeuterPlural = paganism_devoteeplural
+        PriestMale = babylonian_polytheism_priest_male
+        PriestMalePlural = babylonian_polytheism_priest_male_plural
+        PriestFemale = babylonian_polytheism_priest_female
+        PriestFemalePlural = babylonian_polytheism_priest_female_plural
+        PriestNeuter = babylonian_polytheism_priest_male
+        PriestNeuterPlural = babylonian_polytheism_priest_male_plural
+        AltPriestTermPlural = babylonian_polytheism_priest_male_plural
+        BishopMale = ba_generic_high_priest_name
+        BishopMalePlural = ba_generic_high_priest_name_plural
+        BishopFemale = ba_generic_high_priestess_name
+        BishopFemalePlural = ba_generic_high_priestess_name_plural
+        BishopNeuter = ba_generic_high_priest_name
+        BishopNeuterPlural = ba_generic_high_priest_name_plural
+        DivineRealm = assyrian_polytheism_divine_realm
+        DivineRealm2 = assyrian_polytheism_divine_realm_2
+        DivineRealm3 = assyrian_polytheism_divine_realm_3
+        PositiveAfterLife = assyrian_polytheism_afterlife
+        PositiveAfterLife2 = assyrian_polytheism_afterlife_2
+        PositiveAfterLife3 = assyrian_polytheism_afterlife_3
+        NegativeAfterLife = assyrian_polytheism_afterlife
+        NegativeAfterLife2 = assyrian_polytheism_afterlife_2
+        NegativeAfterLife3 = assyrian_polytheism_afterlife_3
+        DeathDeityName = assyrian_polytheism_death_deity_name
+        DeathDeityNamePossessive = assyrian_polytheism_death_deity_name_possessive
+        DeathDeitySheHe = CHARACTER_SHEHE_HE
+        DeathDeityHerHis = CHARACTER_HERHIS_HIS
+        DeathDeityHerHim = CHARACTER_HERHIM_HIM
+        WitchGodName = assyrian_polytheism_witch_god_name
+        WitchGodNamePossessive = assyrian_polytheism_witch_god_name_possessive
+        WitchGodHerHis = CHARACTER_HERHIS_HIS
+        WitchGodSheHe = CHARACTER_SHEHE_HE
+        WitchGodHerHim = CHARACTER_HERHIM_HIM
+        WitchGodMistressMaster = master
+        WitchGodMotherFather = father
+
+        GHWName = ghw_great_holy_war
+        GHWNamePlural = ghw_great_holy_wars
+    }
+}
+
+# Sumerian rite (old faith sumerian_polytheism): the old Sumerian gods, kept as a deliberate antiquarian rite.
+sumerian_rites = {
+    faith = babylonian_polytheism
+
+    color = hsv{ 0.33 0.35 0.5 }
+    icon = sumerian
+
+    tenets = {
+        tenet_astrology
+        tenet_legalism
+        tenet_religious_legal_pronouncements
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+        special_doctrine_sumerian_patron_god
+        doctrine_concubines
+        doctrine_consanguinity_cousins
+        doctrine_adultery_men_accepted
+        doctrine_adultery_women_crime
+        doctrine_clerical_marriage_disallowed
+    }
+
+    localization = {
+        HighGodName = sumerian_polytheism_high_god_name
+        HighGodName2 = sumerian_polytheism_high_god_name_2
+        HighGodNamePossessive = sumerian_polytheism_high_god_name_possessive
+        HighGodNameSheHe = CHARACTER_SHEHE_HE
+        HighGodHerselfHimself = CHARACTER_HIMSELF
+        HighGodHerHis = CHARACTER_HERHIS_HIS
+        HighGodNameAlternate = sumerian_polytheism_high_god_name_alternate
+        HighGodNameAlternatePossessive = sumerian_polytheism_high_god_name_alternate_possessive
+
+        #Creator
+        CreatorName = sumerian_polytheism_creator_god_name
+        CreatorNamePossessive = sumerian_polytheism_creator_god_name_possessive
+        CreatorSheHe = CHARACTER_SHEHE_SHE
+        CreatorHerHis = CHARACTER_HERHIS_HER
+        CreatorHerHim = CHARACTER_HERHIM_HER
+
+        #HealthGod
+        HealthGodName = sumerian_polytheism_health_god_name
+        HealthGodNamePossessive = sumerian_polytheism_health_god_name_possessive
+        HealthGodSheHe = CHARACTER_SHEHE_SHE
+        HealthGodHerHis = CHARACTER_HERHIS_HER
+        HealthGodHerHim = CHARACTER_HERHIM_HER
+
+        #FertilityGod
+        FertilityGodName = sumerian_polytheism_fertility_god_name
+        FertilityGodNamePossessive = sumerian_polytheism_fertility_god_name_possessive
+        FertilityGodSheHe = CHARACTER_SHEHE_SHE
+        FertilityGodHerHis = CHARACTER_HERHIS_HER
+        FertilityGodHerHim = CHARACTER_HERHIM_HER
+
+        #WealthGod
+        WealthGodName = sumerian_polytheism_wealth_god_name
+        WealthGodNamePossessive = sumerian_polytheism_wealth_god_name_possessive
+        WealthGodSheHe = CHARACTER_SHEHE_SHE
+        WealthGodHerHis = CHARACTER_HERHIS_HER
+        WealthGodHerHim = CHARACTER_HERHIM_HER
+
+        #HouseholdGod
+        HouseholdGodName = sumerian_polytheism_household_god_name
+        HouseholdGodNamePossessive = sumerian_polytheism_household_god_name_possessive
+        HouseholdGodSheHe = CHARACTER_SHEHE_SHE
+        HouseholdGodHerHis = CHARACTER_HERHIS_HER
+        HouseholdGodHerHim = CHARACTER_HERHIM_HER
+
+        #FateGod
+        FateGodName = sumerian_polytheism_fate_god_name
+        FateGodNamePossessive = sumerian_polytheism_fate_name_possessive
+        FateGodSheHe = CHARACTER_SHEHE_THEY
+        FateGodHerHis = CHARACTER_HERHIS_THEIR
+        FateGodHerHim = CHARACTER_HERHIM_THEM
+
+        #KnowledgeGod
+        KnowledgeGodName = sumerian_polytheism_knowledge_god_name
+        KnowledgeGodNamePossessive = sumerian_polytheism_knowledge_god_name_possessive
+        KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
+        KnowledgeGodHerHis = CHARACTER_HERHIS_HER
+        KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+
+        #WarGod
+        WarGodName = sumerian_polytheism_war_god_name
+        WarGodNamePossessive = sumerian_polytheism_war_god_name_possessive
+        WarGodSheHe = CHARACTER_SHEHE_HE
+        WarGodHerHis = CHARACTER_HERHIS_HIS
+        WarGodHerHim = CHARACTER_HERHIM_HIM
+
+        #TricksterGod
+        TricksterGodName = sumerian_polytheism_trickster_god_name
+        TricksterGodNamePossessive = sumerian_polytheism_trickster_god_name_possessive
+        TricksterGodSheHe = CHARACTER_SHEHE_HE
+        TricksterGodHerHis = CHARACTER_HERHIS_HIS
+        TricksterGodHerHim = CHARACTER_HERHIM_HIM
+
+        #NightGod
+        NightGodName = sumerian_polytheism_night_god_name
+        NightGodNamePossessive = sumerian_polytheism_night_god_name_possessive
+        NightGodSheHe = CHARACTER_SHEHE_HE
+        NightGodHerHis = CHARACTER_HERHIS_HIS
+        NightGodHerHim = CHARACTER_HERHIM_HIM
+
+        #WaterGod
+        WaterGodName = sumerian_polytheism_water_god_name
+        WaterGodNamePossessive = sumerian_polytheism_water_god_name_possessive
+        WaterGodSheHe = CHARACTER_SHEHE_SHE
+        WaterGodHerHis = CHARACTER_HERHIS_HER
+        WaterGodHerHim = CHARACTER_HERHIM_HER
+
+        PantheonTerm = sumerian_polytheism_pantheon
+        PantheonTerm2 = sumerian_polytheism_pantheon_2
+        PantheonTerm3 = sumerian_polytheism_pantheon_3
+        PantheonTermHasHave = pantheon_term_have
+        GoodGodNames = { sumerian_polytheism_good_god_an sumerian_polytheism_good_god_enlil sumerian_polytheism_good_god_enki sumerian_polytheism_good_god_inana sumerian_polytheism_good_god_utu sumerian_polytheism_good_god_nanna sumerian_polytheism_good_god_ninhursag sumerian_polytheism_good_god_nisaba }
+        DevilName = sumerian_polytheism_devil_name
+        DevilNamePossessive = sumerian_polytheism_devil_name_possessive
+        DevilSheHe = CHARACTER_SHEHE_IT
+        DevilHerHis = CHARACTER_HERHIS_ITS
+        DevilHerselfHimself = CHARACTER_ITSELF
+        EvilGodNames = { sumerian_polytheism_evil_god_kingaludda sumerian_polytheism_evil_god_galla sumerian_polytheism_evil_god_udug_hul }
+        HouseOfWorship = paganism_house_of_worship
+        HouseOfWorship2 = paganism_house_of_worship_2
+        HouseOfWorship3 = paganism_house_of_worship_3
+        HouseOfWorshipPlural = paganism_house_of_worship_plural
+        ReligiousSymbol = sumerian_polytheism_religious_symbol
+        ReligiousSymbol2 = sumerian_polytheism_religious_symbol_2
+        ReligiousSymbol3 = sumerian_polytheism_religious_symbol_3
+        ReligiousText = sumerian_polytheism_religious_text
+        ReligiousText2 = sumerian_polytheism_religious_text_2
+        ReligiousText3 = sumerian_polytheism_religious_text_3
+        ReligiousHeadName = sumerian_polytheism_religious_head
+        ReligiousHeadNameFemale = sumerian_polytheism_religious_head
+        ReligiousHeadTitleName = paganism_religious_head_title_name
+        DevoteeMale = paganism_devotee
+        DevoteeMalePlural = paganism_devoteeplural
+        DevoteeFemale = paganism_devotee
+        DevoteeFemalePlural = paganism_devoteeplural
+        DevoteeNeuter = paganism_devotee
+        DevoteeNeuterPlural = paganism_devoteeplural
+        PriestMale = sumerian_polytheism_priest_male
+        PriestMalePlural = sumerian_polytheism_priest_male_plural
+        PriestFemale = sumerian_polytheism_priest_female
+        PriestFemalePlural = sumerian_polytheism_priest_female_plural
+        PriestNeuter = sumerian_polytheism_priest_male
+        PriestNeuterPlural = sumerian_polytheism_priest_male_plural
+        AltPriestTermPlural = sumerian_polytheism_priest_male_plural
+        BishopMale = sumerian_polytheism_bishop
+        BishopMalePlural = sumerian_polytheism_bishop_plural
+        BishopFemale = sumerian_polytheism_bishop
+        BishopFemalePlural = sumerian_polytheism_priest_female_plural
+        BishopNeuter = sumerian_polytheism_bishop
+        BishopNeuterPlural = sumerian_polytheism_bishop_plural
+        DivineRealm = sumerian_polytheism_divine_realm
+        DivineRealm2 = sumerian_polytheism_divine_realm_2
+        DivineRealm3 = sumerian_polytheism_divine_realm_3
+        PositiveAfterLife = sumerian_polytheism_afterlife
+        PositiveAfterLife2 = sumerian_polytheism_afterlife_2
+        PositiveAfterLife3 = sumerian_polytheism_afterlife_3
+        NegativeAfterLife = sumerian_polytheism_afterlife
+        NegativeAfterLife2 = sumerian_polytheism_afterlife_2
+        NegativeAfterLife3 = sumerian_polytheism_afterlife_3
+        DeathDeityName = sumerian_polytheism_death_deity_name
+        DeathDeityNamePossessive = sumerian_polytheism_death_deity_name_possessive
+        DeathDeitySheHe = CHARACTER_SHEHE_SHE
+        DeathDeityHerHis = CHARACTER_HERHIS_HER
+        DeathDeityHerHim = CHARACTER_HERHIM_HER
+        WitchGodName = sumerian_polytheism_witch_god_name
+        WitchGodNamePossessive = sumerian_polytheism_witch_god_name_possessive
+        WitchGodHerHis = CHARACTER_HERHIS_HIS
+        WitchGodSheHe = CHARACTER_SHEHE_HE
+        WitchGodHerHim = CHARACTER_HERHIM_HIM
+        WitchGodMistressMaster = master
+        WitchGodMotherFather = father
+
+        GHWName = ghw_great_holy_war
+        GHWNamePlural = ghw_great_holy_wars
+    }
+}

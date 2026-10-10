@@ -27,10 +27,10 @@
     punic_polytheism_divine_realm:0 "Phoenician pantheon"
     punic_polytheism_divine_realm_2:0 "$punic_polytheism_divine_realm$"
     punic_polytheism_divine_realm_3:0 "$punic_polytheism_divine_realm$"
-    punic_polytheism_religious_symbol:0 "Tanit"
+    punic_polytheism_religious_symbol:0 "Sign of Tanit"
     punic_polytheism_religious_symbol_2:0 "$punic_polytheism_religious_symbol$"
     punic_polytheism_religious_symbol_3:0 "$punic_polytheism_religious_symbol$"
-    punic_polytheism_religious_text:0 "rituals"
+    punic_polytheism_religious_text:0 "Sacrificial Tariffs"
     punic_polytheism_religious_text_2:0 "$punic_polytheism_religious_text$"
     punic_polytheism_religious_text_3:0 "$punic_polytheism_religious_text$"
     
@@ -56,8 +56,8 @@
     punic_polytheism_health_god_name_possessive:0 "Eshmun's"
 
     #Fertility Goddess Tanit Localization
-    punic_polytheism_fertility_god_name:0 "Astarte"
-    punic_polytheism_fertility_god_name_possessive:0 "Astarte's"
+    punic_polytheism_fertility_god_name:0 "Tanit"
+    punic_polytheism_fertility_god_name_possessive:0 "Tanit's"
 
     #Wealth god Lugh Localization
     punic_polytheism_wealth_god_name:0 "Melqart"
@@ -76,41 +76,40 @@
     punic_polytheism_knowledge_god_name_possessive:0 "Kusor's"
 
     #War god Tanit Localization
-    punic_polytheism_war_god_name:0 "Tanit"
+    punic_polytheism_war_god_name:0 "Tanit" # Vergil Aen. 1.16, Juno Caelestis = Tanit; Reshef not attested in Punic cities, Muennich 2013
     punic_polytheism_war_god_name_possessive:0 "Tanit's"
 
     #Trickster god Localization
-    punic_polytheism_trickster_god_name:0 "a god"
-    punic_polytheism_trickster_god_name_possessive:0 "a god's"
+    punic_polytheism_trickster_god_name:0 "the Deceiver"
+    punic_polytheism_trickster_god_name_possessive:0 "the Deceiver's"
 
     #Night goddess 
-    punic_polytheism_night_god_name:0 "Hudis"
-    punic_polytheism_night_god_name_possessive:0 "Hudis's"
+    punic_polytheism_night_god_name:0 "the Moon"
+    punic_polytheism_night_god_name_possessive:0 "the Moon's"
 
 
     punic_polytheism_water_god_name:0 "Yam"
     punic_polytheism_water_god_name_possessive:0 "Yam's"
 
     #evil gods names  #Check needed 
-    punic_polytheism_evil_god_resjef:0 "Reshef" 
-    punic_polytheism_evil_god_resjef:0 "Reshef"
 
     punic_polytheism_witchgodname_resjef:0 "Reshef"
     punic_polytheism_witchgodname_resjef_possessive:0 "$punic_polytheism_witchgodname_resjef$'s"
+    punic_polytheism_evil_god_mot:0 "Mot"
 
     #Devil god   
     punic_polytheism_devil_name:0 "Dark Spirit" 
     punic_polytheism_devil_name_possessive:0 "$punic_polytheism_devil_name$'s"
 
     #Death god 
-    punic_polytheism_death_deity_name:0 "Hawot"
+    punic_polytheism_death_deity_name:0 "Hawwat"
     punic_polytheism_death_deity_name_2:0 "$punic_polytheism_death_deity_name$"
     punic_polytheism_death_deity_name_3:0 "$punic_polytheism_death_deity_name$"
     punic_polytheism_death_deity_name_possessive:0 "$punic_polytheism_death_deity_name$'s"
 
     #Good gods names 
     punic_polytheism_good_god_baal:0 "Baal Hammon" 
-    punic_polytheism_good_god_reshef:0 "Reshef" 
+    punic_polytheism_good_god_astarte:0 "Astarte" # worshipped in Carthage alongside Tanit
     punic_polytheism_good_god_kusor:0 "Kusor" 
     punic_polytheism_good_god_melqart:0 "Melqart" 
     punic_polytheism_good_god_eshum:0 "Eshmun" 
@@ -151,10 +150,10 @@
     semitic_polytheism_divine_realm:0 "Canaanite pantheon"
     semitic_polytheism_divine_realm_2:0 "$semitic_polytheism_divine_realm$"
     semitic_polytheism_divine_realm_3:0 "$semitic_polytheism_divine_realm$"
-    semitic_polytheism_religious_symbol:0 "to be done"
+    semitic_polytheism_religious_symbol:0 "Sacred Betyl"
     semitic_polytheism_religious_symbol_2:0 "$semitic_polytheism_religious_symbol$"
     semitic_polytheism_religious_symbol_3:0 "$semitic_polytheism_religious_symbol$"
-    semitic_polytheism_religious_text:0 "Katubei Ha-Qdusha"
+    semitic_polytheism_religious_text:0 "Phoenician History of Sanchuniathon"
     semitic_polytheism_religious_text_2:0 "$semitic_polytheism_religious_text$"
     semitic_polytheism_religious_text_3:0 "$semitic_polytheism_religious_text$"
     
@@ -180,32 +179,32 @@
     semitic_polytheism_fertility_god_name_possessive:0 "$semitic_polytheism_fertility_god_name$'s"
 
     #Wealth god  Localization
-    semitic_polytheism_wealth_god_name:0 "Hammon"
-    semitic_polytheism_wealth_god_name_possessive:0 "$emitic_polytheism_wealth_god_name$'s"
+    semitic_polytheism_wealth_god_name:0 "Melqart"
+    semitic_polytheism_wealth_god_name_possessive:0 "$semitic_polytheism_wealth_god_name$'s"
 
     #Household god 
-    semitic_polytheism_household_god_name:0 "Kotharat"
-    semitic_polytheism_household_god_name_possessive:0 "Kotharat's"
+    semitic_polytheism_household_god_name:0 "Bes"
+    semitic_polytheism_household_god_name_possessive:0 "Bes's"
 
     #Fate god Localization
-    semitic_polytheism_fate_god_name:0 "Ashima"
-    semitic_polytheism_fate_god_name_possessive:0 "Ashima's"
+    semitic_polytheism_fate_god_name:0 "Gad"
+    semitic_polytheism_fate_god_name_possessive:0 "Gad's"
 
     #knowledge god 
-    semitic_polytheism_knowledge_god_name:0 "El Elyon"
-    semitic_polytheism_knowledge_god_name_possessive:0 "El Elyon's"
+    semitic_polytheism_knowledge_god_name:0 "Taautos"
+    semitic_polytheism_knowledge_god_name_possessive:0 "Taautos's"
 
     #War god Astarte Localization
     semitic_polytheism_war_god_name:0 "Astarte"
     semitic_polytheism_war_god_name_possessive:0 "$semitic_polytheism_war_god_name$'s"
 
     #Trickster god Localization
-    semitic_polytheism_trickster_god_name:0 "Ia"
-    semitic_polytheism_trickster_god_name_possessive:0 "Ia's"
+    semitic_polytheism_trickster_god_name:0 "the Deceiver"
+    semitic_polytheism_trickster_god_name_possessive:0 "the Deceiver's"
 
     #Night goddess 
-    semitic_polytheism_night_god_name:0 "Shalim"
-    semitic_polytheism_night_god_name_possessive:0 "Shalim's"
+    semitic_polytheism_night_god_name:0 "the Moon"
+    semitic_polytheism_night_god_name_possessive:0 "the Moon's"
 
 
     semitic_polytheism_water_god_name:0 "Yam"
@@ -214,9 +213,8 @@
     #evil gods names 
     semitic_polytheism_evil_god_yam:0 "Yamm" 
     semitic_polytheism_evil_god_mot:0 "Mot"
-
-    semitic_polytheism_witchgodname_moloch:0 "Moloch"
-    semitic_polytheism_witchgodname_moloch_possessive:0 "$semitic_polytheism_witchgodname_moloch$'s"
+    semitic_polytheism_witchgodname_horon:0 "Horon"
+    semitic_polytheism_witchgodname_horon_possessive:0 "$semitic_polytheism_witchgodname_horon$'s"
 
     #Devil god   
     semitic_polytheism_devil_name:0 "Dark Spirit" 
@@ -229,14 +227,15 @@
     semitic_polytheism_death_deity_name_possessive:0 "$semitic_polytheism_death_deity_name$'s"
 
     #Good gods names 
-    semitic_polytheism_good_god_baal:0 "Baal Hammon" 
     semitic_polytheism_good_god_reshef:0 "Reshef" 
-    semitic_polytheism_good_god_kusor:0 "Kusor" 
+    semitic_polytheism_good_god_dagon:0 "Dagon" # grain god, Philo of Byblos and the Eshmunazar inscription
     semitic_polytheism_good_god_melqart:0 "Melqart" 
     semitic_polytheism_good_god_eshum:0 "Eshmun" 
-    semitic_polytheism_good_god_yam:0 "Yam" 
     semitic_polytheism_good_god_tanit:0 "Tanit" 
-    semitic_polytheism_good_god_semes:0 "Semes"
+    semitic_polytheism_good_god_baal_shamem:0 "Baal Shamem"
+    semitic_polytheism_good_god_baalat_gebal:0 "Baalat Gebal"
+    semitic_polytheism_good_god_astarte:0 "Astarte"
+    semitic_polytheism_good_god_baal_saphon:0 "Baal Saphon"
 
     
 

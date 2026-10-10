@@ -17,7 +17,8 @@ demand_gaelic_conversion_interaction_effect = {
 					is_vassal_of = scope:recipient
 				}
 			}
-			set_character_faith = faith:gaelic_polytheism
+			set_character_faith = faith:eriu_polytheism
+			set_character_rite = rite:gaelic_rites
 			hidden_effect = {
 				add_character_flag = {
 					flag = converted_by_forced_conversion_interaction
@@ -50,7 +51,8 @@ demand_gaelic_conversion_interaction_effect = {
 					NOT = { faith = scope:actor.faith }
 					is_ai = yes
 				}
-				set_character_faith = faith:gaelic_polytheism
+				set_character_faith = faith:eriu_polytheism
+				set_character_rite = rite:gaelic_rites
 				hidden_effect = {
 					add_character_flag = {
 						flag = converted_by_forced_conversion_interaction
@@ -62,7 +64,8 @@ demand_gaelic_conversion_interaction_effect = {
 	}
 	scope:recipient = {
 		bastard_to_wild_oat_conversion_interaction_effect = yes
-		set_character_faith = faith:gaelic_polytheism
+		set_character_faith = faith:eriu_polytheism
+		set_character_rite = rite:gaelic_rites
 		hidden_effect = {
 			add_character_flag = {
 				flag = converted_by_forced_conversion_interaction
@@ -114,7 +117,8 @@ demand_brythonic_conversion_interaction_effect = {
 					is_vassal_of = scope:recipient
 				}
 			}
-			set_character_faith = faith:brythonic_polytheism
+			set_character_faith = faith:pritani_polytheism
+			set_character_rite = rite:brythonic_rites
 			hidden_effect = {
 				add_character_flag = {
 					flag = converted_by_forced_conversion_interaction
@@ -147,7 +151,8 @@ demand_brythonic_conversion_interaction_effect = {
 					NOT = { faith = scope:actor.faith }
 					is_ai = yes
 				}
-				set_character_faith = faith:brythonic_polytheism
+				set_character_faith = faith:pritani_polytheism
+				set_character_rite = rite:brythonic_rites
 				hidden_effect = {
 					add_character_flag = {
 						flag = converted_by_forced_conversion_interaction
@@ -159,7 +164,8 @@ demand_brythonic_conversion_interaction_effect = {
 	}
 	scope:recipient = {
 		bastard_to_wild_oat_conversion_interaction_effect = yes
-		set_character_faith = faith:brythonic_polytheism
+		set_character_faith = faith:pritani_polytheism
+		set_character_rite = rite:brythonic_rites
 		hidden_effect = {
 			add_character_flag = {
 				flag = converted_by_forced_conversion_interaction
@@ -211,7 +217,8 @@ demand_gaulish_conversion_interaction_effect = {
 					is_vassal_of = scope:recipient
 				}
 			}
-			set_character_faith = faith:gaulish_polytheism
+			set_character_faith = faith:continental_polytheism
+			set_character_rite = rite:gaulish_rites
 			hidden_effect = {
 				add_character_flag = {
 					flag = converted_by_forced_conversion_interaction
@@ -244,7 +251,8 @@ demand_gaulish_conversion_interaction_effect = {
 					NOT = { faith = scope:actor.faith }
 					is_ai = yes
 				}
-				set_character_faith = faith:gaulish_polytheism
+				set_character_faith = faith:continental_polytheism
+				set_character_rite = rite:gaulish_rites
 				hidden_effect = {
 					add_character_flag = {
 						flag = converted_by_forced_conversion_interaction
@@ -256,7 +264,8 @@ demand_gaulish_conversion_interaction_effect = {
 	}
 	scope:recipient = {
 		bastard_to_wild_oat_conversion_interaction_effect = yes
-		set_character_faith = faith:gaulish_polytheism
+		set_character_faith = faith:continental_polytheism
+		set_character_rite = rite:gaulish_rites
 		hidden_effect = {
 			add_character_flag = {
 				flag = converted_by_forced_conversion_interaction
@@ -309,7 +318,7 @@ demand_cultus_deorum_conversion_interaction_effect = {
 					is_vassal_of = scope:recipient
 				}
 			}
-			set_character_faith = faith:cdr_polytheism
+			set_character_faith = faith:roman_polytheism
 			hidden_effect = {
 				add_character_flag = {
 					flag = converted_by_forced_conversion_interaction
@@ -342,7 +351,7 @@ demand_cultus_deorum_conversion_interaction_effect = {
 					NOT = { faith = scope:actor.faith }
 					is_ai = yes
 				}
-				set_character_faith = faith:cdr_polytheism
+				set_character_faith = faith:roman_polytheism
 				hidden_effect = {
 					add_character_flag = {
 						flag = converted_by_forced_conversion_interaction
@@ -354,7 +363,7 @@ demand_cultus_deorum_conversion_interaction_effect = {
 	}
 	scope:recipient = {
 		bastard_to_wild_oat_conversion_interaction_effect = yes
-		set_character_faith = faith:cdr_polytheism
+		set_character_faith = faith:roman_polytheism
 		hidden_effect = {
 			add_character_flag = {
 				flag = converted_by_forced_conversion_interaction
@@ -701,7 +710,8 @@ demand_dacian_conversion_interaction_effect = {
 					is_vassal_of = scope:recipient
 				}
 			}
-			set_character_faith = faith:dacian_polytheism
+			set_character_faith = faith:daco_thracian_polytheism
+			set_character_rite = rite:dacian_rites
 			hidden_effect = {
 				add_character_flag = {
 					flag = converted_by_forced_conversion_interaction
@@ -734,7 +744,8 @@ demand_dacian_conversion_interaction_effect = {
 					NOT = { faith = scope:actor.faith }
 					is_ai = yes
 				}
-				set_character_faith = faith:dacian_polytheism
+				set_character_faith = faith:daco_thracian_polytheism
+				set_character_rite = rite:dacian_rites
 				hidden_effect = {
 					add_character_flag = {
 						flag = converted_by_forced_conversion_interaction
@@ -746,7 +757,8 @@ demand_dacian_conversion_interaction_effect = {
 	}
 	scope:recipient = {
 		bastard_to_wild_oat_conversion_interaction_effect = yes
-		set_character_faith = faith:dacian_polytheism
+		set_character_faith = faith:daco_thracian_polytheism
+		set_character_rite = rite:dacian_rites
 		hidden_effect = {
 			add_character_flag = {
 				flag = converted_by_forced_conversion_interaction
@@ -799,7 +811,8 @@ demand_zalmoxism_conversion_interaction_effect = {
 					is_vassal_of = scope:recipient
 				}
 			}
-			set_character_faith = faith:zalmoxism
+			set_character_faith = faith:daco_thracian_polytheism
+			set_character_rite = rite:zalmoxism_rites
 			hidden_effect = {
 				add_character_flag = {
 					flag = converted_by_forced_conversion_interaction
@@ -832,7 +845,8 @@ demand_zalmoxism_conversion_interaction_effect = {
 					NOT = { faith = scope:actor.faith }
 					is_ai = yes
 				}
-				set_character_faith = faith:zalmoxism
+				set_character_faith = faith:daco_thracian_polytheism
+				set_character_rite = rite:zalmoxism_rites
 				hidden_effect = {
 					add_character_flag = {
 						flag = converted_by_forced_conversion_interaction
@@ -844,7 +858,8 @@ demand_zalmoxism_conversion_interaction_effect = {
 	}
 	scope:recipient = {
 		bastard_to_wild_oat_conversion_interaction_effect = yes
-		set_character_faith = faith:zalmoxism
+		set_character_faith = faith:daco_thracian_polytheism
+		set_character_rite = rite:zalmoxism_rites
 		hidden_effect = {
 			add_character_flag = {
 				flag = converted_by_forced_conversion_interaction
@@ -899,6 +914,7 @@ demand_babylonian_conversion_interaction_effect = {
 				}
 			}
 			set_character_faith = faith:babylonian_polytheism
+			set_character_rite = rite:babylonian_rites
 			hidden_effect = {
 				add_character_flag = {
 					flag = converted_by_forced_conversion_interaction
@@ -932,6 +948,7 @@ demand_babylonian_conversion_interaction_effect = {
 					is_ai = yes
 				}
 				set_character_faith = faith:babylonian_polytheism
+				set_character_rite = rite:babylonian_rites
 				hidden_effect = {
 					add_character_flag = {
 						flag = converted_by_forced_conversion_interaction
@@ -944,6 +961,7 @@ demand_babylonian_conversion_interaction_effect = {
 	scope:recipient = {
 		bastard_to_wild_oat_conversion_interaction_effect = yes
 		set_character_faith = faith:babylonian_polytheism
+		set_character_rite = rite:babylonian_rites
 		hidden_effect = {
 			add_character_flag = {
 				flag = converted_by_forced_conversion_interaction
@@ -996,7 +1014,8 @@ demand_assyrian_conversion_interaction_effect = {
 					is_vassal_of = scope:recipient
 				}
 			}
-			set_character_faith = faith:assyrian_polytheism
+			set_character_faith = faith:babylonian_polytheism
+			set_character_rite = rite:assyrian_rites
 			hidden_effect = {
 				add_character_flag = {
 					flag = converted_by_forced_conversion_interaction
@@ -1029,7 +1048,8 @@ demand_assyrian_conversion_interaction_effect = {
 					NOT = { faith = scope:actor.faith }
 					is_ai = yes
 				}
-				set_character_faith = faith:assyrian_polytheism
+				set_character_faith = faith:babylonian_polytheism
+				set_character_rite = rite:assyrian_rites
 				hidden_effect = {
 					add_character_flag = {
 						flag = converted_by_forced_conversion_interaction
@@ -1041,7 +1061,8 @@ demand_assyrian_conversion_interaction_effect = {
 	}
 	scope:recipient = {
 		bastard_to_wild_oat_conversion_interaction_effect = yes
-		set_character_faith = faith:assyrian_polytheism
+		set_character_faith = faith:babylonian_polytheism
+		set_character_rite = rite:assyrian_rites
 		hidden_effect = {
 			add_character_flag = {
 				flag = converted_by_forced_conversion_interaction
@@ -1093,7 +1114,8 @@ demand_sumerian_conversion_interaction_effect = {
 					is_vassal_of = scope:recipient
 				}
 			}
-			set_character_faith = faith:sumerian_polytheism
+			set_character_faith = faith:babylonian_polytheism
+			set_character_rite = rite:sumerian_rites
 			hidden_effect = {
 				add_character_flag = {
 					flag = converted_by_forced_conversion_interaction
@@ -1126,7 +1148,8 @@ demand_sumerian_conversion_interaction_effect = {
 					NOT = { faith = scope:actor.faith }
 					is_ai = yes
 				}
-				set_character_faith = faith:sumerian_polytheism
+				set_character_faith = faith:babylonian_polytheism
+				set_character_rite = rite:sumerian_rites
 				hidden_effect = {
 					add_character_flag = {
 						flag = converted_by_forced_conversion_interaction
@@ -1138,7 +1161,8 @@ demand_sumerian_conversion_interaction_effect = {
 	}
 	scope:recipient = {
 		bastard_to_wild_oat_conversion_interaction_effect = yes
-		set_character_faith = faith:sumerian_polytheism
+		set_character_faith = faith:babylonian_polytheism
+		set_character_rite = rite:sumerian_rites
 		hidden_effect = {
 			add_character_flag = {
 				flag = converted_by_forced_conversion_interaction
@@ -1191,7 +1215,8 @@ demand_punic_conversion_interaction_effect = {
 					is_vassal_of = scope:recipient
 				}
 			}
-			set_character_faith = faith:punic_polytheism
+			set_character_faith = faith:canaanite_polytheism
+			set_character_rite = rite:punic_rites
 			hidden_effect = {
 				add_character_flag = {
 					flag = converted_by_forced_conversion_interaction
@@ -1224,7 +1249,8 @@ demand_punic_conversion_interaction_effect = {
 					NOT = { faith = scope:actor.faith }
 					is_ai = yes
 				}
-				set_character_faith = faith:punic_polytheism
+				set_character_faith = faith:canaanite_polytheism
+				set_character_rite = rite:punic_rites
 				hidden_effect = {
 					add_character_flag = {
 						flag = converted_by_forced_conversion_interaction
@@ -1236,7 +1262,8 @@ demand_punic_conversion_interaction_effect = {
 	}
 	scope:recipient = {
 		bastard_to_wild_oat_conversion_interaction_effect = yes
-		set_character_faith = faith:punic_polytheism
+		set_character_faith = faith:canaanite_polytheism
+		set_character_rite = rite:punic_rites
 		hidden_effect = {
 			add_character_flag = {
 				flag = converted_by_forced_conversion_interaction
@@ -1288,7 +1315,8 @@ demand_semitic_conversion_interaction_effect = {
 					is_vassal_of = scope:recipient
 				}
 			}
-			set_character_faith = faith:semitic_polytheism
+			set_character_faith = faith:canaanite_polytheism
+			set_character_rite = rite:semitic_rites
 			hidden_effect = {
 				add_character_flag = {
 					flag = converted_by_forced_conversion_interaction
@@ -1321,7 +1349,8 @@ demand_semitic_conversion_interaction_effect = {
 					NOT = { faith = scope:actor.faith }
 					is_ai = yes
 				}
-				set_character_faith = faith:semitic_polytheism
+				set_character_faith = faith:canaanite_polytheism
+				set_character_rite = rite:semitic_rites
 				hidden_effect = {
 					add_character_flag = {
 						flag = converted_by_forced_conversion_interaction
@@ -1333,7 +1362,8 @@ demand_semitic_conversion_interaction_effect = {
 	}
 	scope:recipient = {
 		bastard_to_wild_oat_conversion_interaction_effect = yes
-		set_character_faith = faith:semitic_polytheism
+		set_character_faith = faith:canaanite_polytheism
+		set_character_rite = rite:semitic_rites
 		hidden_effect = {
 			add_character_flag = {
 				flag = converted_by_forced_conversion_interaction
@@ -1482,7 +1512,8 @@ demand_georgian_conversion_interaction_effect = {
 					is_vassal_of = scope:recipient
 				}
 			}
-			set_character_faith = faith:georgian_polytheism
+			set_character_faith = faith:armenian_polytheism
+			set_character_rite = rite:georgian_rites
 			hidden_effect = {
 				add_character_flag = {
 					flag = converted_by_forced_conversion_interaction
@@ -1515,7 +1546,8 @@ demand_georgian_conversion_interaction_effect = {
 					NOT = { faith = scope:actor.faith }
 					is_ai = yes
 				}
-				set_character_faith = faith:georgian_polytheism
+				set_character_faith = faith:armenian_polytheism
+				set_character_rite = rite:georgian_rites
 				hidden_effect = {
 					add_character_flag = {
 						flag = converted_by_forced_conversion_interaction
@@ -1527,7 +1559,8 @@ demand_georgian_conversion_interaction_effect = {
 	}
 	scope:recipient = {
 		bastard_to_wild_oat_conversion_interaction_effect = yes
-		set_character_faith = faith:georgian_polytheism
+		set_character_faith = faith:armenian_polytheism
+		set_character_rite = rite:georgian_rites
 		hidden_effect = {
 			add_character_flag = {
 				flag = converted_by_forced_conversion_interaction
@@ -1581,6 +1614,7 @@ demand_armenian_conversion_interaction_effect = {
 				}
 			}
 			set_character_faith = faith:armenian_polytheism
+			set_character_rite = rite:armenian_rites
 			hidden_effect = {
 				add_character_flag = {
 					flag = converted_by_forced_conversion_interaction
@@ -1614,6 +1648,7 @@ demand_armenian_conversion_interaction_effect = {
 					is_ai = yes
 				}
 				set_character_faith = faith:armenian_polytheism
+				set_character_rite = rite:armenian_rites
 				hidden_effect = {
 					add_character_flag = {
 						flag = converted_by_forced_conversion_interaction
@@ -1626,6 +1661,7 @@ demand_armenian_conversion_interaction_effect = {
 	scope:recipient = {
 		bastard_to_wild_oat_conversion_interaction_effect = yes
 		set_character_faith = faith:armenian_polytheism
+		set_character_rite = rite:armenian_rites
 		hidden_effect = {
 			add_character_flag = {
 				flag = converted_by_forced_conversion_interaction
@@ -1678,7 +1714,7 @@ demand_armenian_conversion_interaction_effect = {
  					is_vassal_of = scope:recipient
  				}
  			}
- 			set_character_faith = faith:etc_polytheism
+ 			set_character_faith = faith:etruscan_polytheism
  			hidden_effect = {
  				add_character_flag = {
  					flag = converted_by_forced_conversion_interaction
@@ -1711,7 +1747,7 @@ demand_armenian_conversion_interaction_effect = {
  					NOT = { faith = scope:actor.faith }
  					is_ai = yes
  				}
- 				set_character_faith = faith:etc_polytheism
+ 				set_character_faith = faith:etruscan_polytheism
  				hidden_effect = {
  					add_character_flag = {
  						flag = converted_by_forced_conversion_interaction
@@ -1723,7 +1759,7 @@ demand_armenian_conversion_interaction_effect = {
  	}
  	scope:recipient = {
  		bastard_to_wild_oat_conversion_interaction_effect = yes
- 		set_character_faith = faith:etc_polytheism
+ 		set_character_faith = faith:etruscan_polytheism
  		hidden_effect = {
  			add_character_flag = {
  				flag = converted_by_forced_conversion_interaction

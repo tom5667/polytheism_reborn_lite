@@ -1,0 +1,32 @@
+﻿#####################
+#Made by tom5667
+#####################
+# One Baltic faith with three rites (Lithuanian, Latvian, Prussian). Around 867 the Baltic
+# peoples shared one religious world; the differences were local and tribal (research 2026-10-05).
+baltic_pagan = {
+    main_rite = baltic_pagan # Lithuanian rite; keeps the vanilla key (vanilla history uses rite = baltic_pagan)
+    historical = yes
+
+    faith_details = {
+        religion = baltic_religion
+        color = { 96 96 72 }
+        icon = baltic
+        reformed_icon = baltic_reformed
+    }
+
+    # Holy sites (research 2026-10-05, double-checked): no Baltic sanctuary is attested before c. 1075.
+    eminent_holy_sites = {
+        romowe      # Romow in Nadruvia, seat of the Criwe (Dusburg 1326)
+        kukaveitis  # sacred grove where Algirdas was cremated, 1377 (Długosz)
+    }
+
+    holy_sites = {
+        rambynas          # sacred forest from 1394, sacred stone 1559
+        elkukalni         # Palanga hill, 14th-c. sanctuary
+        pr_sambian_groves # Adam of Bremen c. 1075
+        pr_heiligenbeil   # Curche cult (1249)
+        pr_tervete        # Semigallian centre (1219)
+    }
+
+    cultures = { lithuanian latgalian prussian }
+}

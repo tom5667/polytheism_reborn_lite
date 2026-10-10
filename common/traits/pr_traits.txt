@@ -17,7 +17,7 @@
 
 druidic_circle_leader = {
 	index = 97544
-	fame = yes 
+	category = fame
 	monthly_prestige = 0.3 
 	same_faith_opinion = 5
 	learning =  4
@@ -35,7 +35,7 @@ druidic_circle_leader = {
 
 druid = {
 	index = 97545
-	fame = yes 
+	category = fame
 	monthly_prestige = 0.3 
 	same_faith_opinion = 5
 	learning =  2

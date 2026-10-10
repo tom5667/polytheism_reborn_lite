@@ -1,6 +1,5 @@
 ﻿bookmark_pr_867_epimakhos ={
 	type=male
-	id= pr_epimakhos
 	age=0.250000
 	genes={ 		hair_color={ 117 247 19 233 }
 			skin_color={ 179 115 183 116 }

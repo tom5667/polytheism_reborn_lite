@@ -1,0 +1,21 @@
+﻿#####################
+#Made by tom5667
+#####################
+# The rite of the Hittite faith. God names: religion-level block.
+hittite_rites = {
+    faith = hittite_polytheism
+
+    color = { 112 92 22 }
+    icon = hittite
+
+    tenets = {
+        tenet_astrology
+        tenet_communal_identity
+        tenet_unrelenting_faith
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+        special_doctrine_hittite_patron_god
+    }
+}

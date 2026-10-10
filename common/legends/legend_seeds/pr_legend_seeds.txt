@@ -43,7 +43,7 @@ ambiorix = {
 		custom_tooltip = {
 			text = must_own_belgae_tt
 			has_title = title:k_belgica
-			religion = faith:gaulish_polytheism
+			rite = rite:gaulish_rites
 		}
 		prestige_level >= high_prestige_level
 	}
@@ -106,18 +106,18 @@ venus  = {
 				has_title = title:e_byzantium
 			}
 			culture = culture:roman
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 		}
 		is_landed = yes
 		has_title = title:e_byzantium
 		culture = culture:roman
-		religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		prestige_level >= high_prestige_level
 	}
 
 	chronicle = pr_godly_descent
 	chronicle_properties = {
-		god = flag:cdr_polytheism_fertility_god_name
+		god = flag:roman_polytheism_fertility_god_name
 		title = title:h_roman_empire
 	}
 }
@@ -137,12 +137,12 @@ slaine_mac_dela = {
 			text = must_own_irish_high_kingdom_tt
 			culture = { has_cultural_pillar = heritage_goidelic }
 			has_title = title:k_high_kingdom_of_ireland
-			faith = faith:gaelic_polytheism
+			faith = faith:eriu_polytheism
 		}
 		is_landed = yes
 		has_title = title:k_high_kingdom_of_ireland
 		prestige_level >= high_prestige_level
-		faith = faith:gaelic_polytheism
+		faith = faith:eriu_polytheism
 	}
 
 	chronicle = pr_ancestral_glory_not_in_history
@@ -198,7 +198,7 @@ hannibal = {
 	is_valid = {
 		is_landed = yes
 		has_title = title:k_carthago
-		faith = faith:punic_polytheism
+		rite = rite:punic_rites
 		prestige_level >= high_prestige_level
 
 	}

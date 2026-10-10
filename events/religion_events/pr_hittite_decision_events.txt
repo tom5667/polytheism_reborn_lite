@@ -16,7 +16,7 @@ pr_hittite.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = hittite_tarhunna }
 		}
-		set_bhakti_effect = { BHAKTI = hittite_tarhunna  }
+		pr_set_patron_god_effect = { BHAKTI = hittite_tarhunna  }
 	}
 
 	 #Telipinu
@@ -25,7 +25,7 @@ pr_hittite.0001 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = hittite_telipinu }
 	 	}
-	 	set_bhakti_effect = { BHAKTI = hittite_telipinu }
+	 	pr_set_patron_god_effect = { BHAKTI = hittite_telipinu }
 	 }
 
 	#Halki
@@ -34,7 +34,7 @@ pr_hittite.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = hittite_halki }
 		}
-		set_bhakti_effect = { BHAKTI = hittite_halki }
+		pr_set_patron_god_effect = { BHAKTI = hittite_halki }
 	}
 
 	# A'as
@@ -43,17 +43,17 @@ pr_hittite.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = hittite_a_as}
 		}
-		set_bhakti_effect = { BHAKTI = hittite_a_as}
+		pr_set_patron_god_effect = { BHAKTI = hittite_a_as}
 	}
 
 
-	 # Tashmishu
+	 # Wurunkatte (key hittite_tashmishu kept, #153)
 	 option = {
 	 	name = pr_hittite.0001.tashmishu
 	 	trigger = {
 	 		NOT = { has_character_modifier = hittite_tashmishu }
 	 	}
-	 	set_bhakti_effect = { BHAKTI = hittite_tashmishu }
+	 	pr_set_patron_god_effect = { BHAKTI = hittite_tashmishu }
 	 }
 
 	# Opt-Out

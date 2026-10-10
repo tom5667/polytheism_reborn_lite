@@ -536,159 +536,159 @@ name_list_trojan = { # Also shamelessly stolen from Imperator
 name_list_carthaginian = {
 
 	dynasty_names = {
-		"dynn_Azart_ša_Ābar"
-		"dynn_Bīt_ša_Ābar"
-		"dynn_Azart_ša_Adonibal"
-		"dynn_Bīt_ša_Adonibal"
-		"dynn_Azart_ša_Ahhiramm"
-		"dynn_Bīt_ša_Ahhiramm"
-		"dynn_Azart_ša_Balhhanan"
-		"dynn_Bīt_ša_Balhhanan"
-		"dynn_Azart_ša_Bal"
-		"dynn_Bīt_ša_Bal"
-		"dynn_Azart_ša_Bod"
-		"dynn_Bīt_ša_Bod"
-		"dynn_Azart_ša_Bodaštart"
-		"dynn_Bīt_ša_Bodaštart"
-		"dynn_Azart_ša_Kalb"
-		"dynn_Bīt_ša_Kalb"
-		"dynn_Azart_ša_Ešbal"
-		"dynn_Bīt_ša_Ešbal"
-		"dynn_Azart_ša_Hhannō"
-		"dynn_Bīt_ša_Hhannō"
-		"dynn_Azart_ša_Hhirōm"
-		"dynn_Bīt_ša_Hhirōm"
-		"dynn_Azart_ša_Māgōn"
-		"dynn_Bīt_ša_Māgōn"
-		"dynn_Azart_ša_Mattan"
-		"dynn_Bīt_ša_Mattan"
-		"dynn_Azart_ša_Melkhherem"
-		"dynn_Bīt_ša_Melkhherem"
-		"dynn_Azart_ša_Gersakkun"
-		"dynn_Bīt_ša_Gersakkun"
-		"dynn_Azart_ša_Gerbal"
-		"dynn_Bīt_ša_Gerbal"
-		"dynn_Azart_ša_Hhamelqart"
-		"dynn_Bīt_ša_Hhamelqart"
-		"dynn_Azart_ša_Mašah"
-		"dynn_Bīt_ša_Mašah"
-		"dynn_Azart_ša_Amīaštārt"
-		"dynn_Bīt_ša_Amīaštārt"
-		"dynn_Azart_ša_Abdmelqart"
-		"dynn_Bīt_ša_Abdmelqart"
-		"dynn_Azart_ša_Zimrī-Hhadd"
-		"dynn_Bīt_ša_Zimrī-Hhadd"
-		"dynn_Azart_ša_Yuba"
-		"dynn_Bīt_ša_Yuba"
-		"dynn_Azart_ša_Yutpan"
-		"dynn_Bīt_ša_Yutpan"
-		"dynn_Azart_ša_Tabnît"
-		"dynn_Bīt_ša_Tabnît"
-		"dynn_Azart_ša_Khileztbal"
-		"dynn_Bīt_ša_Khileztbal"
-		"dynn_Azart_ša_Germelqart"
-		"dynn_Bīt_ša_Germelqart"
-		"dynn_Azart_ša_Barekbal"
-		"dynn_Bīt_ša_Barekbal"
-		"dynn_Azart_ša_Balyaton"
-		"dynn_Bīt_ša_Balyaton"
-		"dynn_Azart_ša_Melqartšamēm"
-		"dynn_Bīt_ša_Melqartšamēm"
-		"dynn_Azart_ša_Ittōbal"
-		"dynn_Bīt_ša_Ittōbal"
-		"dynn_Azart_ša_Ešmūnyaton"
-		"dynn_Bīt_ša_Ešmūnyaton"
-		"dynn_Azart_ša_Abdhhamon"
-		"dynn_Bīt_ša_Abdhhamon"
-		"dynn_Azart_ša_Azrōbal"
-		"dynn_Bīt_ša_Azrōbal"
-		"dynn_Azart_ša_Qarthhalos"
-		"dynn_Bīt_ša_Qarthhalos"
-		"dynn_Azart_ša_Ešmūnāzar"
-		"dynn_Bīt_ša_Ešmūnāzar"
-		"dynn_Azart_ša_Sakkūnyatān"
-		"dynn_Bīt_ša_Sakkūnyatān"
+		"dynn_Azart_sa_Abar"
+		"dynn_Bit_sa_Abar"
+		"dynn_Azart_sa_Adonibal"
+		"dynn_Bit_sa_Adonibal"
+		"dynn_Azart_sa_Ahhiramm"
+		"dynn_Bit_sa_Ahhiramm"
+		"dynn_Azart_sa_Balhhanan"
+		"dynn_Bit_sa_Balhhanan"
+		"dynn_Azart_sa_Bal"
+		"dynn_Bit_sa_Bal"
+		"dynn_Azart_sa_Bod"
+		"dynn_Bit_sa_Bod"
+		"dynn_Azart_sa_Bodastart"
+		"dynn_Bit_sa_Bodastart"
+		"dynn_Azart_sa_Kalb"
+		"dynn_Bit_sa_Kalb"
+		"dynn_Azart_sa_Esbal"
+		"dynn_Bit_sa_Esbal"
+		"dynn_Azart_sa_Hhanno"
+		"dynn_Bit_sa_Hhanno"
+		"dynn_Azart_sa_Hhirom"
+		"dynn_Bit_sa_Hhirom"
+		"dynn_Azart_sa_Magon"
+		"dynn_Bit_sa_Magon"
+		"dynn_Azart_sa_Mattan"
+		"dynn_Bit_sa_Mattan"
+		"dynn_Azart_sa_Melkhherem"
+		"dynn_Bit_sa_Melkhherem"
+		"dynn_Azart_sa_Gersakkun"
+		"dynn_Bit_sa_Gersakkun"
+		"dynn_Azart_sa_Gerbal"
+		"dynn_Bit_sa_Gerbal"
+		"dynn_Azart_sa_Hhamelqart"
+		"dynn_Bit_sa_Hhamelqart"
+		"dynn_Azart_sa_Masah"
+		"dynn_Bit_sa_Masah"
+		"dynn_Azart_sa_Amiastart"
+		"dynn_Bit_sa_Amiastart"
+		"dynn_Azart_sa_Abdmelqart"
+		"dynn_Bit_sa_Abdmelqart"
+		"dynn_Azart_sa_Zimri-Hhadd"
+		"dynn_Bit_sa_Zimri-Hhadd"
+		"dynn_Azart_sa_Yuba"
+		"dynn_Bit_sa_Yuba"
+		"dynn_Azart_sa_Yutpan"
+		"dynn_Bit_sa_Yutpan"
+		"dynn_Azart_sa_Tabnit"
+		"dynn_Bit_sa_Tabnit"
+		"dynn_Azart_sa_Khileztbal"
+		"dynn_Bit_sa_Khileztbal"
+		"dynn_Azart_sa_Germelqart"
+		"dynn_Bit_sa_Germelqart"
+		"dynn_Azart_sa_Barekbal"
+		"dynn_Bit_sa_Barekbal"
+		"dynn_Azart_sa_Balyaton"
+		"dynn_Bit_sa_Balyaton"
+		"dynn_Azart_sa_Melqartsamem"
+		"dynn_Bit_sa_Melqartsamem"
+		"dynn_Azart_sa_Ittobal"
+		"dynn_Bit_sa_Ittobal"
+		"dynn_Azart_sa_Esmunyaton"
+		"dynn_Bit_sa_Esmunyaton"
+		"dynn_Azart_sa_Abdhhamon"
+		"dynn_Bit_sa_Abdhhamon"
+		"dynn_Azart_sa_Azrobal"
+		"dynn_Bit_sa_Azrobal"
+		"dynn_Azart_sa_Qarthhalos"
+		"dynn_Bit_sa_Qarthhalos"
+		"dynn_Azart_sa_Esmunazar"
+		"dynn_Bit_sa_Esmunazar"
+		"dynn_Azart_sa_Sakkunyatan"
+		"dynn_Bit_sa_Sakkunyatan"
 	}
 
 	male_names = {
-		Ābar
-		Aštartyaton
-		Azrōbal
+		Abar
+		Astartyaton
+		Azrobal
 		Ozmelk
 		Abdosir
 		Abdhhamon
 		Abdmelk
 		Abdmelqart
-		Abībal
+		Abibal
 		Abiramm
 		Adirbal
 		Adonibal
 		Agbal
 		Ahhiyam
 		Ahhiramm
-		Amīaštārt
+		Amiastart
 		Bal
 		Balhhanan
 		Balyaton
 		Barekbal
 		Bod
-		Bodaštart
+		Bodastart
 		Bodmelqart
-		Chimilkât
-		Ešbal
-		Ešmūnāzar
-		Ešmūnhhalōs
-		Ešmūnyaton
+		Chimilkat
+		Esbal
+		Esmunazar
+		Esmunhhalos
+		Esmunyaton
 		Gerbal
 		Germelk
 		Germelqart
 		Gersakkun
 		Hhamelqart
-		Hhannībal
-		Hhannō
-		Hhirōm
+		Hhannibal
+		Hhanno
+		Hhirom
 		Hiempsal
-		Ittōbal
+		Ittobal
 		Kalb
 		Kanmy
 		Khileztbal
-		Māgōn
+		Magon
 		Mahhrubal
 		Masnsen
 		Mattan
 		Melkhherem
-		Melkpellēs
+		Melkpelles
 		Melkyaton
-		Melqartpellēs
-		Melqartšamēm
-		Ōrmelk
-		Paltībal
-		Qarthhalōs
-		Sakkūnyatān
-		Tabnît
+		Melqartpelles
+		Melqartsamem
+		Ormelk
+		Paltibal
+		Qarthhalos
+		Sakkunyatan
+		Tabnit_pr
 		Yadamelk
 		Yehomelk
 		Yuba
 		Yutpan
-		Zimrī-hhadd
+		Zimri-hhadd
 	}
 	female_names = {
-		Arišat
-		Aštart
+		Arisat
+		Astart
 		Adiya
-		Ašerat
+		Aserat
 		Bal_izbul
 		Batnoam
-		Eliša
-		Elišat
+		Elisa_pr
+		Elisat
 		Gamila
-		Hhūldū
-		Mašah
+		Hhuldu
+		Masah
 		Mattanbal
 		Sapanbal
 		Tabua
 		Tamar
 		Yapa
-		Yātab
+		Yatab
 	}
 }

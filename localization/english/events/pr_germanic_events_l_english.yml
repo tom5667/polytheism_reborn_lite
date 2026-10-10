@@ -7,21 +7,21 @@
   # --- Choose Anglo-Saxon Personal Deity (0001) ---
   pr_germanic_decision.0001.t:0 "Deciding on a Deity"
   pr_germanic_decision.0001.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
-  pr_germanic_decision.0001.woden:0 "Wōden, Lord of the Wild Hunt!"
-  pr_germanic_decision.0001.njord:0 "Njǫrd, Lord of Sea and Wind!"
-  pr_germanic_decision.0001.fri:0 "Frī, Lady of Love and Fertility!"
-  pr_germanic_decision.0001.tiwaz:0 "Tīwaz, God of Law and Honor!"
+  pr_germanic_decision.0001.woden:0 "Wōden, High God of the English!"
+  pr_germanic_decision.0001.njord:0 "Ing, First Seen Among the East-Danes!"
+  pr_germanic_decision.0001.fri:0 "Erce, Mother of Earth!"
+  pr_germanic_decision.0001.tiwaz:0 "Tīw, God of War!"
   pr_germanic_decision.0001.seaxneat:0 "Seaxnēat, Patron of the Saxons!"
   pr_germanic_decision.0001.optout:0 "$religious_decision.0102.flavor$"
 
   # --- Choose German Personal Deity (0002) ---
   pr_germanic_decision.0002.t:0 "Deciding on a Deity"
   pr_germanic_decision.0002.desc:0 "[ROOT.Char.GetFaith.PantheonTerm|U] are many and inscrutable, yet I cannot say that there are not some who hold a level of special appeal for me. Were I to dedicate myself openly to the express worship of primarily one such deity, I would doubtless draw like-minded souls to my side.\n\nWhatever the blessings my patron provides, being with similar [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] can only bring me health, wealth, and glory."
-  pr_germanic_decision.0002.wotan:0 "Wotan, All-Father of Wisdom and War!"
-  pr_germanic_decision.0002.njordr:0 "Njordr, Lord of Seafaring and Abundance!"
-  pr_germanic_decision.0002.freyr:0 "Freyr, Lord of Prosperity and Peace!"
-  pr_germanic_decision.0002.nornir:0 "Nornir, Weavers of Fate and Destiny!"
-  pr_germanic_decision.0002.mimir:0 "Mímir, Keeper of the Well of Knowledge!"
+  pr_germanic_decision.0002.wotan:0 "Wotan, Master of Charms!"
+  pr_germanic_decision.0002.njordr:0 "Volla, Sister of Frija!"
+  pr_germanic_decision.0002.freyr:0 "Nerthus, Mother Earth!"
+  pr_germanic_decision.0002.nornir:0 "Saxnōt, God of the Saxons!"
+  pr_germanic_decision.0002.mimir:0 "Fosite, Lord of Fositesland!"
   pr_germanic_decision.0002.optout:0 "$religious_decision.0102.flavor$"
 
   # --- Place New Irminsul at Paderborn (0012) ---
@@ -69,6 +69,8 @@
   pr_germanic.0002.t:0 "Offering to [ROOT.Char.GetFaith.HighGodName]"
   pr_germanic.0002.desc:0 "#F Ruling my realm demands wisdom, strength, and the favour of the gods.#!\n\nToday I bring an offering to [ROOT.Char.GetFaith.HighGodName], that the All-Father may guide my hand and grant me the fortitude to lead my people through the trials ahead."
   pr_germanic.0002.a:0 "Make the offering"
+  pr_germanic.0002.positive:0 "Blessed by [ROOT.Char.GetFaith.HighGodName]"
+  pr_germanic.0002.negative:0 "Unfavoured by [ROOT.Char.GetFaith.HighGodName]"
   #Converted a part of Cybrkxhan event of Celts and Romans
   pr_germanic.0003.t:0 "Romans and Germans"
   pr_germanic.0003.desc:0 "#F I am reading ancient historical accounts of the peoples of Germania, who fought off the Roman invaders — sometimes successfully, many times not.#!\n\nAs I worship the same gods those ancient peoples did, I am their spiritual descendant. It is sad to think they were conquered in such a way. But was it all bad? Some of our practices were influenced by the Romans too, which helped enrich our spiritual worldview and connections to the gods."

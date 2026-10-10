@@ -13,24 +13,24 @@
     #kemetic
     kemetic_polytheism:0 "Kemetic"
     kemetic_polytheism_adj:0 "Kemetic"
-    kemetic_polytheism_adherent:0 "Kemetic polytheist"
-    kemetic_polytheism_adherent_plural:0 "Kemetic polytheist"
+    kemetic_polytheism_adherent:0 "Kemetic Polytheist"
+    kemetic_polytheism_adherent_plural:0 "Kemetic Polytheists"
     kemetic_polytheism_desc:0 "The Egyptian pantheon was one of the oldest practiced religions, dating back to somewhere in prehistory, but concretely coming into archeological record as early as the foundation of the first dynasty of Egypt. The Egyptians believed in a very complex cosmology and afterlife, with the Pharaohs acting as the gods' representative on earth." 
 
-    kemetic_polytheism_old:0 "Kemetic Old"
-    kemetic_polytheism_old_adj:0 "Kemetic Old"
-    kemetic_polytheism_adherent_old:0 "Old Kemetic polytheist"
-    kemetic_polytheism_old_adherent_plural:0 "Old Kemetic polytheist"
+    kemetic_polytheism_old:0 "Old Kemetic"
+    kemetic_polytheism_old_adj:0 "Old Kemetic"
+    kemetic_polytheism_old_adherent:0 "Old Kemetic Polytheist"
+    kemetic_polytheism_old_adherent_plural:0 "Old Kemetic Polytheists"
     kemetic_polytheism_old_desc:0 "The Egyptian pantheon was one of the oldest practiced religions, dating back to somewhere in prehistory, but concretely coming into archeological record as early as the foundation of the first dynasty of Egypt. The Egyptians believed in a very complex cosmology and afterlife, with the Pharaohs acting as the gods' representative on earth." 
 
     kemetic_polytheism_religious_head_title:0 "High Priest"
-    kemetic_polytheism_divine_realm:0 "Divine Realm"
+    kemetic_polytheism_divine_realm:0 "the Sky"
     kemetic_polytheism_divine_realm_2:0 "$kemetic_polytheism_divine_realm$"
     kemetic_polytheism_divine_realm_3:0 "$kemetic_polytheism_divine_realm$"
-    kemetic_polytheism_religious_symbol:0 "Eye of Amun"
+    kemetic_polytheism_religious_symbol:0 "the Ankh"
     kemetic_polytheism_religious_symbol_2:0 "$kemetic_polytheism_religious_symbol$"
     kemetic_polytheism_religious_symbol_3:0 "$kemetic_polytheism_religious_symbol$"
-    kemetic_polytheism_religious_text:0 "rituals"
+    kemetic_polytheism_religious_text:0 "the Book of the Dead"
     kemetic_polytheism_religious_text_2:0 "$kemetic_polytheism_religious_text$"
     kemetic_polytheism_religious_text_3:0 "$kemetic_polytheism_religious_text$"
     
@@ -38,11 +38,11 @@
     #kemetic gods/goddesses Localization
 
     #An Dagda Localization
-    kemetic_polytheism_high_god_name:0 "Amun Ra"
+    kemetic_polytheism_high_god_name:0 "Amun-Ra"
     kemetic_polytheism_high_god_name_2:0 "$kemetic_polytheism_high_god_name$"
-    kemetic_polytheism_high_god_name_possessive:0 "Amun Ra's"
-    kemetic_polytheism_high_god_name_alternate:0 "The hidden one"
-    kemetic_polytheism_high_god_name_alternate_possessive:0 "The hidden one's"
+    kemetic_polytheism_high_god_name_possessive:0 "Amun-Ra's"
+    kemetic_polytheism_high_god_name_alternate:0 "the Hidden One"
+    kemetic_polytheism_high_god_name_alternate_possessive:0 "the Hidden One's"
     kemetic_polytheism_high_god_shehe:0 "He"
     kemetic_polytheism_high_god_herselfhimself:0 "Himself"
     kemetic_polytheism_high_god_herhis:0 "His"
@@ -56,12 +56,12 @@
     kemetic_polytheism_health_god_name_possessive:0 "Sekhmet's"
 
     #Fertility Goddess Beira Localization
-    kemetic_polytheism_fertility_god_name:0 "Hathor"
-    kemetic_polytheism_fertility_god_name_possessive:0 "hathor's"
+    kemetic_polytheism_fertility_god_name:0 "Min"
+    kemetic_polytheism_fertility_god_name_possessive:0 "Min's"
 
     #Wealth god Lugh Localization
-    kemetic_polytheism_wealth_god_name:0 "Horus"
-    kemetic_polytheism_wealth_god_name_possessive:0 "horus's"
+    kemetic_polytheism_wealth_god_name:0 "Renenutet"
+    kemetic_polytheism_wealth_god_name_possessive:0 "Renenutet's"
 
     #Household god Brigid 
     kemetic_polytheism_household_god_name:0 "Bes"
@@ -84,22 +84,24 @@
     kemetic_polytheism_trickster_god_name_possessive:0 "Seth's"
 
     #Night goddess Latona Localization
-    kemetic_polytheism_night_god_name:0 "Nephthys"
-    kemetic_polytheism_night_god_name_possessive:0 "Nephthys's"
+    kemetic_polytheism_night_god_name:0 "Nut"
+    kemetic_polytheism_night_god_name_possessive:0 "Nut's"
 
     kemetic_polytheism_water_god_name:0 "Anuket"
     kemetic_polytheism_water_god_name_possessive:0 "Anuket's"
 
     #evil gods names 
-    kemetic_polytheism_evil_god_apophis:0 "Apophis" 
     kemetic_polytheism_evil_god_apep:0 "Apep"
+    kemetic_polytheism_evil_god_enemies_of_ra:0 "the Enemies of Ra"
 
-    kemetic_polytheism_witchgodname_apophis:0 "Apophis"
-    kemetic_polytheism_witchgodname_apophis_possessive:0 "$kemetic_polytheism_witchgodname_apophis$'"
+    #Witch god Heka (deification of magic and medicine)
+    kemetic_polytheism_witchgod_name:0 "Heka"
+    kemetic_polytheism_witchgod_name_possessive:0 "Heka's"
+
 
     #Devil god   
-    kemetic_polytheism_devil_name:0 "Seth" 
-    kemetic_polytheism_devil_name_possessive:0 "Seth's"
+    kemetic_polytheism_devil_name:0 "Apep"
+    kemetic_polytheism_devil_name_possessive:0 "Apep's"
 
     #Death god Aed
     kemetic_polytheism_death_deity_name:0 "Osiris"
@@ -107,53 +109,82 @@
     kemetic_polytheism_death_deity_name_3:0 "$kemetic_polytheism_death_deity_name$"
     kemetic_polytheism_death_deity_name_possessive:0 "Osiris's"
 
+    #Afterlife (was: pointed at the death deity himself)
+    kemetic_polytheism_positive_afterlife:0 "the Field of Reeds"
+    kemetic_polytheism_positive_afterlife_2:0 "$kemetic_polytheism_positive_afterlife$"
+    kemetic_polytheism_positive_afterlife_3:0 "$kemetic_polytheism_positive_afterlife$"
+    kemetic_polytheism_negative_afterlife:0 "the Second Death"
+    kemetic_polytheism_negative_afterlife_2:0 "$kemetic_polytheism_negative_afterlife$"
+    kemetic_polytheism_negative_afterlife_3:0 "$kemetic_polytheism_negative_afterlife$"
+
     #Good gods names 
     kemetic_polytheism_good_god_isis:0 "Isis" 
     kemetic_polytheism_good_god_horus:0 "Horus" 
     kemetic_polytheism_good_god_mut:0 "Mut" 
-    kemetic_polytheism_good_god_sekhmet:0 "Sekhmet" 
+    kemetic_polytheism_good_god_hathor:0 "Hathor"
     kemetic_polytheism_good_god_geb:0 "Geb" 
     kemetic_polytheism_good_god_ptah:0 "Ptah" 
-    kemetic_polytheism_good_god_re:0 "Re" 
     kemetic_polytheism_good_god_anubis:0 "Anubis"
+    kemetic_polytheism_good_god_khonsu:0 "Khonsu"
 
     
 
     #kemetic male priests  
-    kemetic_polytheism_priest_male:0 "Priest"
-    kemetic_polytheism_priest_male_plural:0 "Priests"
+    kemetic_polytheism_priest_male:0 "Wab-Priest"
+    kemetic_polytheism_priest_male_plural:0 "Wab-Priests"
 
     #kemetic female priests 
     kemetic_polytheism_priest_female:0 "Chantress" 
     kemetic_polytheism_priest_female_plural:0 "Chantresses" 
 
     #Kemetic High Priest 
-    kemetic_polytheism_bishop_male:0 "Priest" 
-    kemetic_polytheism_bishop_male_plural:0 "Priests" 
+    kemetic_polytheism_bishop_male:0 "First Servant of the God"
+    kemetic_polytheism_bishop_male_plural:0 "First Servants of the God"
+    kemetic_polytheism_bishop_female:0 "God's Wife of Amun"
+    kemetic_polytheism_bishop_female_plural:0 "God's Wives of Amun"
 
     #Atenism
     atenism:0 "Atenism"
-    atenism_adj:0 "Atenism"
-    atenism_adherent:0 "Atenism follower"
-    atenism_adherent_plural:0 "Atenism followers"
+    atenism_adj:0 "Atenist"
+    atenism_adherent:0 "Atenist"
+    atenism_adherent_plural:0 "Atenists"
     atenism_desc:0 "Atenism, sometimes known as the Amarna heresy, was a short-lived monotheistic or henotheistic worship of the personification of the Sun, Aten. It was established by Akhenaten, also known as Amenhotep IV, of the eighteenth dynasty. After Akhenaten's tumultuous religious reforms, his cult quickly collapsed as Tutankhamun swiftly restored the old faith." 
 
-    atenism_old:0 "Atenism Old"
-    atenism_old_adj:0 "Atenism Old"
-    atenism_adherent_old:0 "Old Atenism follower"
-    atenism_old_adherent_plural:0 "Old Atenism followers"
+    atenism_old:0 "Old Atenism"
+    atenism_old_adj:0 "Old Atenist"
+    atenism_old_adherent:0 "Old Atenist"
+    atenism_old_adherent_plural:0 "Old Atenists"
     atenism_old_desc:0 "Atenism, sometimes known as the Amarna heresy, was a short-lived monotheistic or henotheistic worship of the personification of the Sun, Aten. It was established by Akhenaten, also known as Amenhotep IV, of the eighteenth dynasty. After Akhenaten's tumultuous religious reforms, his cult quickly collapsed as Tutankhamun swiftly restored the old faith." 
 
-    atenism_religious_head_title:0 "High Priest"
-    atenism_divine_realm:0 "Divine Realm"
+    atenism_religious_head_title:0 "Great Seer"
+    atenism_divine_realm:0 "the Horizon"
     atenism_divine_realm_2:0 "$atenism_divine_realm$"
     atenism_divine_realm_3:0 "$atenism_divine_realm$"
     atenism_religious_symbol:0 "Sun disk"
     atenism_religious_symbol_2:0 "$atenism_religious_symbol$"
     atenism_religious_symbol_3:0 "$atenism_religious_symbol$"
-    atenism_religious_text:0 "rituals"
+    atenism_religious_text:0 "the Great Hymn to the Aten"
     atenism_religious_text_2:0 "$atenism_religious_text$"
     atenism_religious_text_3:0 "$atenism_religious_text$"
+
+    atenism_house_of_worship:0 "House of the Aten"
+    atenism_house_of_worship_2:0 "$atenism_house_of_worship$"
+    atenism_house_of_worship_3:0 "$atenism_house_of_worship$"
+    atenism_house_of_worship_plural:0 "Houses of the Aten"
+
+    atenism_positive_afterlife:0 "the Hereafter"
+    atenism_positive_afterlife_2:0 "$atenism_positive_afterlife$"
+    atenism_positive_afterlife_3:0 "$atenism_positive_afterlife$"
+    atenism_negative_afterlife:0 "the Darkness of the Dead"
+    atenism_negative_afterlife_2:0 "$atenism_negative_afterlife$"
+    atenism_negative_afterlife_3:0 "$atenism_negative_afterlife$"
+
+    #The suppressed gods of the Amarna persecution
+    atenism_evil_god_amun:0 "Amun"
+    atenism_evil_god_mut:0 "Mut"
+    atenism_witchgodname_amun:0 "Amun"
+    atenism_witchgodname_amun_possessive:0 "$atenism_witchgodname_amun$'s"
+    atenism_good_god_aten:0 "Aten"
     
 
     #kemetic gods/goddesses Localization
@@ -162,15 +193,15 @@
     atenism_high_god_name:0 "Aten"
     atenism_high_god_name_2:0 "$atenism_high_god_name$"
     atenism_high_god_name_possessive:0 "Aten's"
-    atenism_high_god_name_alternate:0 "The Rahorus who rejoices in the horizon"
-    atenism_high_god_name_alternate_possessive:0 "The Rahorus who rejoices in the horizon"
+    atenism_high_god_name_alternate:0 "Re-Harakhty"
+    atenism_high_god_name_alternate_possessive:0 "Re-Harakhty's"
     atenism_high_god_shehe:0 "He"
     atenism_high_god_herselfhimself:0 "Himself"
     atenism_high_god_herhis:0 "His"
 
     #Creater god Localization
-    atenism_creator_god_name:0 "Atum"
-    atenism_creator_god_name_possessive:0 "Atum's"
+    atenism_creator_god_name:0 "Aten"
+    atenism_creator_god_name_possessive:0 "Aten's"
 
     #Health Goddess Dianus
     atenism_health_god_name:0 "$atenism_creator_god_name$"
@@ -205,38 +236,26 @@
     atenism_trickster_god_name_possessive:0 "$atenism_creator_god_name$'s"
 
     #Night goddess Latona Localization
-    atenism_night_god_name:0 "$atenism_creator_god_name$s"
-    atenism_night_god_name_possessive:0 "$atenism_creator_god_name$'s"
+    atenism_night_god_name:0 "the Darkness"
+    atenism_night_god_name_possessive:0 "the Darkness's"
 
     atenism_water_god_name:0 "$atenism_creator_god_name$"
     atenism_water_god_name_possessive:0 "$atenism_creator_god_name$'s"
 
     #evil gods names 
-    atenism_evil_god_apophis:0 "Apophis" 
-    atenism_evil_god_apep:0 "Apep"
 
-    atenism_witchgodname_apophis:0 "Apophis"
-    atenism_witchgodname_apophis_possessive:0 "$atenism_witchgodname_apophis$'"
 
     #Devil god   
-    atenism_devil_name:0 "Seth" 
-    atenism_devil_name_possessive:0 "Seth's"
+    atenism_devil_name:0 "Amun"
+    atenism_devil_name_possessive:0 "Amun's"
 
     #Death god Aed
-    atenism_death_deity_name:0 "Osiris"
+    atenism_death_deity_name:0 "Aten"
     atenism_death_deity_name_2:0 "$atenism_death_deity_name$"
     atenism_death_deity_name_3:0 "$atenism_death_deity_name$"
-    atenism_death_deity_name_possessive:0 "Osiris's"
+    atenism_death_deity_name_possessive:0 "Aten's"
 
     #Good gods names 
-    atenism_good_god_isis:0 "Isis" 
-    atenism_good_god_horus:0 "Horus" 
-    atenism_good_god_mut:0 "Mut" 
-    atenism_good_god_sekhmet:0 "Sekhmet" 
-    atenism_good_god_geb:0 "Geb" 
-    atenism_good_god_ptah:0 "Ptah" 
-    atenism_good_god_re:0 "Re" 
-    atenism_good_god_anubis:0 "Anubis"
 
     #kemetic male priests  
     atenism_priest_male:0 "Priest"
@@ -248,5 +267,187 @@
 
     #Kemetic High Priest 
     atenism_bishop_male:0 "Priest" 
-    atenism_bishop_male_plural:0 "Priests" 
-    
+    atenism_bishop_male_plural:0 "Priests"
+
+    #Heliopolitan rite (Old Kingdom): Ra, Atum and the Ennead; Anubis lord of the dead, Seth not yet demonized
+    heliopolitan_rites_high_god_name:0 "Ra"
+    heliopolitan_rites_high_god_name_2:0 "$heliopolitan_rites_high_god_name$"
+    heliopolitan_rites_high_god_name_possessive:0 "Ra's"
+    heliopolitan_rites_high_god_name_alternate:0 "Re"
+    heliopolitan_rites_high_god_name_alternate_possessive:0 "Re's"
+
+    heliopolitan_rites_creator_god_name:0 "Atum"
+    heliopolitan_rites_creator_god_name_possessive:0 "Atum's"
+
+    heliopolitan_rites_health_god_name:0 "the Healer"
+    heliopolitan_rites_health_god_name_possessive:0 "the Healer's"
+
+    heliopolitan_rites_fertility_god_name:0 "Hathor"
+    heliopolitan_rites_fertility_god_name_possessive:0 "Hathor's"
+
+    heliopolitan_rites_wealth_god_name:0 "Renenutet"
+    heliopolitan_rites_wealth_god_name_possessive:0 "Renenutet's"
+
+    heliopolitan_rites_household_god_name:0 "the House-Spirits"
+    heliopolitan_rites_household_god_name_possessive:0 "the House-Spirits'"
+
+    heliopolitan_rites_fate_god_name:0 "Fate"
+    heliopolitan_rites_fate_god_name_possessive:0 "Fate's"
+
+    heliopolitan_rites_knowledge_god_name:0 "Thoth"
+    heliopolitan_rites_knowledge_god_name_possessive:0 "Thoth's"
+
+    heliopolitan_rites_war_god_name:0 "Neith"
+    heliopolitan_rites_war_god_name_possessive:0 "Neith's"
+
+    heliopolitan_rites_trickster_god_name:0 "Seth"
+    heliopolitan_rites_trickster_god_name_possessive:0 "Seth's"
+
+    heliopolitan_rites_night_god_name:0 "Nut"
+    heliopolitan_rites_night_god_name_possessive:0 "Nut's"
+
+    heliopolitan_rites_water_god_name:0 "Nun"
+    heliopolitan_rites_water_god_name_possessive:0 "Nun's"
+
+    heliopolitan_rites_pantheon_term:0 "the Ennead"
+    heliopolitan_rites_pantheon_term_2:0 "$heliopolitan_rites_pantheon_term$"
+    heliopolitan_rites_pantheon_term_3:0 "$heliopolitan_rites_pantheon_term$"
+    heliopolitan_rites_pantheon_term_has:0 "has"
+
+    heliopolitan_rites_good_god_shu:0 "Shu"
+    heliopolitan_rites_good_god_tefnut:0 "Tefnut"
+    heliopolitan_rites_good_god_geb:0 "Geb"
+    heliopolitan_rites_good_god_osiris:0 "Osiris"
+    heliopolitan_rites_good_god_isis:0 "Isis"
+    heliopolitan_rites_good_god_nephthys:0 "Nephthys"
+    heliopolitan_rites_good_god_horus:0 "Horus"
+
+    heliopolitan_rites_devil_name:0 "Apep"
+    heliopolitan_rites_devil_name_possessive:0 "Apep's"
+    heliopolitan_rites_evil_god_apep:0 "Apep"
+    heliopolitan_rites_evil_god_serpents:0 "the Serpents"
+
+    heliopolitan_rites_witchgod_name:0 "Heka"
+    heliopolitan_rites_witchgod_name_possessive:0 "Heka's"
+
+    heliopolitan_rites_death_deity_name:0 "Anubis"
+    heliopolitan_rites_death_deity_name_2:0 "$heliopolitan_rites_death_deity_name$"
+    heliopolitan_rites_death_deity_name_3:0 "$heliopolitan_rites_death_deity_name$"
+    heliopolitan_rites_death_deity_name_possessive:0 "Anubis's"
+
+    heliopolitan_rites_divine_realm:0 "the Sky"
+    heliopolitan_rites_divine_realm_2:0 "$heliopolitan_rites_divine_realm$"
+    heliopolitan_rites_divine_realm_3:0 "$heliopolitan_rites_divine_realm$"
+
+    heliopolitan_rites_positive_afterlife:0 "the Field of Reeds"
+    heliopolitan_rites_positive_afterlife_2:0 "$heliopolitan_rites_positive_afterlife$"
+    heliopolitan_rites_positive_afterlife_3:0 "$heliopolitan_rites_positive_afterlife$"
+    heliopolitan_rites_negative_afterlife:0 "the Second Death"
+    heliopolitan_rites_negative_afterlife_2:0 "$heliopolitan_rites_negative_afterlife$"
+    heliopolitan_rites_negative_afterlife_3:0 "$heliopolitan_rites_negative_afterlife$"
+
+    heliopolitan_rites_religious_symbol:0 "the Benben"
+    heliopolitan_rites_religious_symbol_2:0 "$heliopolitan_rites_religious_symbol$"
+    heliopolitan_rites_religious_symbol_3:0 "$heliopolitan_rites_religious_symbol$"
+
+    heliopolitan_rites_religious_text:0 "the Pyramid Texts"
+    heliopolitan_rites_religious_text_2:0 "$heliopolitan_rites_religious_text$"
+    heliopolitan_rites_religious_text_3:0 "$heliopolitan_rites_religious_text$"
+
+    heliopolitan_rites_priest_male:0 "Wab-Priest"
+    heliopolitan_rites_priest_male_plural:0 "Wab-Priests"
+    heliopolitan_rites_priest_female:0 "Priestess"
+    heliopolitan_rites_priest_female_plural:0 "Priestesses"
+    heliopolitan_rites_bishop_male:0 "Greatest of Seers"
+    heliopolitan_rites_bishop_male_plural:0 "Greatest of Seers"
+
+    #Saite rite (Late Period, 664-332 BC): Neith of Sais, the animal cults, Isis and Osiris, Seth demonized
+    late_period_rites_high_god_name:0 "Amun-Ra"
+    late_period_rites_high_god_name_2:0 "$late_period_rites_high_god_name$"
+    late_period_rites_high_god_name_possessive:0 "Amun-Ra's"
+    late_period_rites_high_god_name_alternate:0 "the Hidden One"
+    late_period_rites_high_god_name_alternate_possessive:0 "the Hidden One's"
+
+    late_period_rites_creator_god_name:0 "Ptah"
+    late_period_rites_creator_god_name_possessive:0 "Ptah's"
+
+    late_period_rites_health_god_name:0 "Imhotep"
+    late_period_rites_health_god_name_possessive:0 "Imhotep's"
+
+    late_period_rites_fertility_god_name:0 "Isis"
+    late_period_rites_fertility_god_name_possessive:0 "Isis's"
+
+    late_period_rites_wealth_god_name:0 "Renenutet"
+    late_period_rites_wealth_god_name_possessive:0 "Renenutet's"
+
+    late_period_rites_household_god_name:0 "Bes"
+    late_period_rites_household_god_name_possessive:0 "Bes's"
+
+    late_period_rites_fate_god_name:0 "Shai"
+    late_period_rites_fate_god_name_possessive:0 "Shai's"
+
+    late_period_rites_knowledge_god_name:0 "Thoth"
+    late_period_rites_knowledge_god_name_possessive:0 "Thoth's"
+
+    late_period_rites_war_god_name:0 "Neith"
+    late_period_rites_war_god_name_possessive:0 "Neith's"
+
+    #Seth deliberately both devil and trickster here: the demonized Seth-Typhon of the Late Period
+    late_period_rites_trickster_god_name:0 "the Trickster"
+    late_period_rites_trickster_god_name_possessive:0 "the Trickster's"
+
+    late_period_rites_night_god_name:0 "Nut"
+    late_period_rites_night_god_name_possessive:0 "Nut's"
+
+    late_period_rites_water_god_name:0 "Nun"
+    late_period_rites_water_god_name_possessive:0 "Nun's"
+
+    late_period_rites_good_god_isis:0 "Isis"
+    late_period_rites_good_god_osiris:0 "Osiris"
+    late_period_rites_good_god_horus:0 "Horus"
+    late_period_rites_good_god_ptah:0 "Ptah"
+    late_period_rites_good_god_neith:0 "Neith"
+    late_period_rites_good_god_bastet:0 "Bastet"
+    late_period_rites_good_god_apis:0 "Apis"
+    late_period_rites_good_god_imhotep:0 "Imhotep"
+
+    late_period_rites_devil_name:0 "Seth"
+    late_period_rites_devil_name_possessive:0 "Seth's"
+    late_period_rites_evil_god_apep:0 "Apep"
+    late_period_rites_evil_god_enemies_of_ra:0 "the Enemies of Ra"
+
+    late_period_rites_witchgod_name:0 "Heka"
+    late_period_rites_witchgod_name_possessive:0 "Heka's"
+
+    late_period_rites_death_deity_name:0 "Osiris"
+    late_period_rites_death_deity_name_2:0 "$late_period_rites_death_deity_name$"
+    late_period_rites_death_deity_name_3:0 "$late_period_rites_death_deity_name$"
+    late_period_rites_death_deity_name_possessive:0 "Osiris's"
+
+    late_period_rites_divine_realm:0 "the Sky"
+    late_period_rites_divine_realm_2:0 "$late_period_rites_divine_realm$"
+    late_period_rites_divine_realm_3:0 "$late_period_rites_divine_realm$"
+
+    late_period_rites_positive_afterlife:0 "the Field of Reeds"
+    late_period_rites_positive_afterlife_2:0 "$late_period_rites_positive_afterlife$"
+    late_period_rites_positive_afterlife_3:0 "$late_period_rites_positive_afterlife$"
+    late_period_rites_negative_afterlife:0 "the Second Death"
+    late_period_rites_negative_afterlife_2:0 "$late_period_rites_negative_afterlife$"
+    late_period_rites_negative_afterlife_3:0 "$late_period_rites_negative_afterlife$"
+
+    late_period_rites_religious_symbol:0 "the Ankh"
+    late_period_rites_religious_symbol_2:0 "$late_period_rites_religious_symbol$"
+    late_period_rites_religious_symbol_3:0 "$late_period_rites_religious_symbol$"
+
+    late_period_rites_religious_text:0 "the Book of the Dead"
+    late_period_rites_religious_text_2:0 "$late_period_rites_religious_text$"
+    late_period_rites_religious_text_3:0 "$late_period_rites_religious_text$"
+
+    late_period_rites_priest_male:0 "Prophet"
+    late_period_rites_priest_male_plural:0 "Prophets"
+    late_period_rites_priest_female:0 "Chantress"
+    late_period_rites_priest_female_plural:0 "Chantresses"
+    late_period_rites_bishop_male:0 "First Servant of the God"
+    late_period_rites_bishop_male_plural:0 "First Servants of the God"
+    late_period_rites_bishop_female:0 "God's Wife of Amun"
+    late_period_rites_bishop_female_plural:0 "God's Wives of Amun"

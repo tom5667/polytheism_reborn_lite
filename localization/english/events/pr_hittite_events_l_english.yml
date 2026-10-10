@@ -7,11 +7,11 @@
   # --- Choose Main Deity (0001) ---
   pr_hittite.0001.t:0 "Choose Main Deity"
   pr_hittite.0001.desc:0 "#F To help me in the struggle to rule my realm, I could devote myself to one of the gods or goddesses.#!"
-  pr_hittite.0001.tarhunna:0 "$pr_hittite_polytheism_high_god_name$"
+  pr_hittite.0001.tarhunna:0 "$hittite_polytheism_high_god_name$"
   pr_hittite.0001.telipinu:0 "Telipinu"
   pr_hittite.0001.halki:0 "Halki"
-  pr_hittite.0001.a_as:0 "A'as"
-  pr_hittite.0001.tashmishu:0 "Tashmishu"
+  pr_hittite.0001.a_as:0 "Ea"
+  pr_hittite.0001.tashmishu:0 "Wurunkatte"
   pr_hittite.0001.optout:0 "Maybe now isn't the right time"
 
   # --- Treaty of Kadesh (0002) ---

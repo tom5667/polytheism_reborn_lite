@@ -1,0 +1,74 @@
+﻿#####################
+#Made by tom5667
+#####################
+# Egyptian faiths (1.20). Kemetic has three rites by period (issue #84, decided 2026-10-06): Old Kingdom
+# (heliopolitan_rites), New Kingdom / Theban (kemetic_rites, main rite) and Late Period (late_period_rites). The
+# temple theologies of Thebes, Memphis and Heliopolis were explanations within one religion, not separate
+# communities, so they are not rites. Atenism = Akhenaten's reform (c. 1350-1320 BC), a separate monotheist faith.
+# Nobody holds either faith at 700/867 (the last temple, Philae, closed c. 535-537): revival faiths.
+kemetic_polytheism = {
+    main_rite = kemetic_rites
+    historical = yes
+
+    faith_details = {
+        religion = egyptian_religion
+        color = { 252 230 0 }
+        icon = kemetic_polytheism
+        reformed_icon = kemetic_polytheism_reformed
+    }
+
+    # Step 2 (resource/egyptian_religion_research.md): all three Kemetic rites share this list.
+    # Eminent: Thebes (Amun-Ra, Karnak), Memphis (Ptah), Heliopolis (Ra/Atum).
+    # Regular: Abydos (Osiris, c_qus/b_huw), Philae (Isis - vanilla 'aswan' site), Sais (Neith, Late Period anchor).
+    eminent_holy_sites = {
+        thebes
+        pr_memphis
+        heliopolis
+    }
+    holy_sites = {
+        abydos
+        aswan
+        sais
+    }
+
+    reserved_male_names = { Asim Ghisisi Gyasi Khons Omari Sadiki Ur Aahotepre Ahmes Akhenaten Alexander }
+    reserved_female_names = { Akili Bahiti Dalila Ife Khepri Masika Naunet Cleopatra Isis Aat Ahmose Alexandra }
+
+    holy_order_names = {
+        { name = "holy_order_sons_of_Montu" }
+    }
+}
+
+atenism = {
+    main_rite = atenism_rites
+    historical = yes
+
+    faith_details = {
+        religion = egyptian_religion
+        color = { 252 240 0 }
+        icon = atenism
+        reformed_icon = atenism_reformed
+    }
+
+    # Step 2: Amarna/Akhetaten (eminent), Thebes (Gempaaten at Karnak), Heliopolis (Aten as aspect
+    # of Ra), Sesebi (Akhenaten's temple town - real site is across
+    # from Delgo, hence c_sai/b_delgo), Memphis (temple of the Aten, steward Meryneith; decided 2026-10-08)
+    # and Pnubs/Doukki Gel near Kerma (Akhenaten's temple, year 5-9, excavated; decided 2026-10-08).
+    eminent_holy_sites = {
+        amarna
+    }
+    holy_sites = {
+        thebes
+        heliopolis
+        sesebi
+        pr_memphis
+        pr_pnubs
+    }
+
+    reserved_male_names = { Asim Ghisisi Gyasi Khons Omari Sadiki Ur Aahotepre Ahmes Akhenaten Alexander }
+    reserved_female_names = { Akili Bahiti Dalila Ife Khepri Masika Naunet Cleopatra Isis Aat Ahmose Alexandra }
+
+    holy_order_names = {
+        { name = "holy_order_sons_of_aten" }
+    }
+}

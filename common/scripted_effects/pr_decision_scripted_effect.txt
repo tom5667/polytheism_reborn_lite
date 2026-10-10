@@ -458,28 +458,17 @@ imperial_cult_leader_maintenance_effect = {
 # =============================================
 
 decide_fate_off_envoy = {
+	# One outcome by the envoy's learning (the old ranges overlapped at 10 and 15 and skipped > 20;
+	# the old IDs zoroastrianism.005-007 never existed, #146)
 	if = {
-		limit = {
-			scope:envoy = {
-				learning = {15 20}
-			}
-		}
-		trigger_event = zoroastrianism.005
+		limit = { scope:envoy = { learning >= 15 } }
+		trigger_event = pr_zoroastrian.0005
 	}
-	if = {
-		limit = {
-			scope:envoy = {
-				learning = {10 15}
-			}
-		}
-		trigger_event = zoroastrianism.006
+	else_if = {
+		limit = { scope:envoy = { learning >= 10 } }
+		trigger_event = pr_zoroastrian.0006
 	}
-	if = {
-		limit = {
-			scope:envoy = {
-				learning = {0 10}
-			}
-		}
-		trigger_event = zoroastrianism.007
+	else = {
+		trigger_event = pr_zoroastrian.0007
 	}
 }

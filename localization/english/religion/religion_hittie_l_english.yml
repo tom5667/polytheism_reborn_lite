@@ -16,130 +16,91 @@
     hittite_polytheism_adherent_plural:0 "Hittite Polytheists"
     hittite_polytheism_desc:0 "The Hittite pantheon was a core component of the society of the Hittites, a branch of the Indo-European tribes that migrated south from the Steppes and established an empire in Anatolia. Not much is known about this faith, but it is known to have been influenced by both the Mesopotamian pantheon and the original Indo-European mythology." 
 
-    hittite_polytheism_old:0 "Hittite Old"
-    hittite_polytheism_old_adj:0 "Hittite Old"
-    hittite_polytheism_adherent_old:0 "Old Hittite Polytheist"
+    hittite_polytheism_old:0 "Old Hittite"
+    hittite_polytheism_old_adj:0 "Old Hittite"
+    hittite_polytheism_old_adherent:0 "Old Hittite Polytheist"
     hittite_polytheism_old_adherent_plural:0 "Old Hittite Polytheists"
     hittite_polytheism_old_desc:0 "The Hittite pantheon was a core component of the society of the Hittites, a branch of the Indo-European tribes that migrated south from the Steppes and established an empire in Anatolia. Not much is known about this faith, but it is known to have been influenced by both the Mesopotamian pantheon and the original Indo-European mythology." 
 
-    hittite_polytheism_religious_head_title:0 "High Priest"
-    hittite_polytheism_divine_realm:0 "Realm of the gods"
-    hittite_polytheism_divine_realm_2:0 "$hittite_polytheism_divine_realm$"
-    hittite_polytheism_divine_realm_3:0 "$hittite_polytheism_divine_realm$"
-    hittite_polytheism_religious_symbol:0 "Hittite Sun Disk"
-    hittite_polytheism_religious_symbol_2:0 "$hittite_polytheism_religious_symbol$"
-    hittite_polytheism_religious_symbol_3:0 "$hittite_polytheism_religious_symbol$"
-    hittite_polytheism_religious_text:0 "Hittite Oral Tradition"
-    hittite_polytheism_religious_text_2:0 "$hittite_polytheism_religious_text$"
-    hittite_polytheism_religious_text_3:0 "$hittite_polytheism_religious_text$"
-  
-
-    #Cdr gods/goddesses Localization
-
-    #Tarhunna Localization
-    hittite_polytheism_high_god_name:0 "Tarhunna"
+    #################################################################
+    # Hittite state cult. Checked twice (2026-10-06) against Singer "Hittite Prayers" (2002), Hoffner
+    # "Hittite Myths", Goetze in Pritchard ANET (1950), Steitler and Warbinek in "Theonyms, Panthea and
+    # Syncretisms" (2023), "Sacred Landscapes of Hittites and Luwians" (2016). Spelling with š (user choice);
+    # ḫ written as h. Names only on Wikipedia (Arma, Aruna, Hahhima, A'as) replaced by neutral terms.
+    #################################################################
+    hittite_polytheism_high_god_name:0 "Tarhunna" # Storm-god of Hatti (logogram dU)
     hittite_polytheism_high_god_name_2:0 "$hittite_polytheism_high_god_name$"
     hittite_polytheism_high_god_name_possessive:0 "Tarhunna's"
-    hittite_polytheism_high_god_name_alternate:0 "Tarhunna"
-    hittite_polytheism_high_god_name_alternate_possessive:0 "Tarhunna's"
-    hittite_polytheism_high_god_shehe:0 "He"
-    hittite_polytheism_high_god_herselfhimself:0 "Himself"
-    hittite_polytheism_high_god_herhis:0 "His"
-
-    #Creater god Localization
-    hittite_polytheism_creator_god_name:0 "Elkunirsa"
-    hittite_polytheism_creator_god_name_possessive:0 "Elkunirsa's"
-
-    #Health Goddess Kamrushepa
-    hittite_polytheism_health_god_name:0 "Kamrushepa"
-    hittite_polytheism_health_god_name_possessive:0 "Kamrushepa's"
-
-    #Fertility Goddess Ceres Localization
-    hittite_polytheism_fertility_god_name:0 "Telipinu"
+    hittite_polytheism_high_god_name_alternate:0 "Teššub" # Hurrian name, used at Yazılıkaya
+    hittite_polytheism_high_god_name_alternate_possessive:0 "Teššub's"
+    hittite_polytheism_creator_god_name:0 "the Sun-goddess of Arinna" # 'queen of heaven and earth ... the land which you made' (Puduhepa)
+    hittite_polytheism_creator_god_name_possessive:0 "the Sun-goddess of Arinna's"
+    hittite_polytheism_health_god_name:0 "Kamrušepa" # 'the goddess of magic and healing' (Telipinu myth)
+    hittite_polytheism_health_god_name_possessive:0 "Kamrušepa's"
+    hittite_polytheism_fertility_god_name:0 "Telipinu" # the vanishing god of the grain
     hittite_polytheism_fertility_god_name_possessive:0 "Telipinu's"
-
-    #Wealth god Halki Localization
-    hittite_polytheism_wealth_god_name:0 "Halki"
+    hittite_polytheism_wealth_god_name:0 "Halki" # the grain goddess (NISABA)
     hittite_polytheism_wealth_god_name_possessive:0 "Halki's"
-
-    #Household god Hannahanna 
-    hittite_polytheism_household_god_name:0 "Hannahanna"
+    hittite_polytheism_household_god_name:0 "Hannahanna" # 'grandmother', the mother goddess
     hittite_polytheism_household_god_name_possessive:0 "Hannahanna's"
-
-    #Fate god Janus Localization
-    hittite_polytheism_fate_god_name:0 "Ishtushtaya and Papaya"
-    hittite_polytheism_fate_god_name_possessive:0 "Ishtushtaya's and Papaya's"
-
-    #knowledge god A'as Localization
-    hittite_polytheism_knowledge_god_name:0 "A'as"
-    hittite_polytheism_knowledge_god_name_possessive:0 "A'as's"
-
-    #War god Tashmishu Localization
-    hittite_polytheism_war_god_name:0 "Tashmishu"
-    hittite_polytheism_war_god_name_possessive:0 "Tashmishu's"
-
-    #Trickster god A'as Localization
-    hittite_polytheism_trickster_god_name:0 "A'as"
-    hittite_polytheism_trickster_god_name_possessive:0 "A'as's"
-
-    #Night goddess Ispanza Localization
-    hittite_polytheism_night_god_name:0 "Ispanza"
-    hittite_polytheism_night_god_name_possessive:0 "Ispanza's"
-
-    #Water god Aruna Localization
-    hittite_polytheism_water_god_name:0 "Aruna"
-    hittite_polytheism_water_god_name_possessive:0 "Aruna's"
-
-    #evil gods names 
-    hittite_polytheism_evil_god_jarri:0 "Jarri" 
-    hittite_polytheism_evil_god_tashmishu:0 "Tashmishu"
-
-    #witch goddess
-    hittite_polytheism_witchgodname_kamrushepa:0 "Kamrushepa"
-    hittite_polytheism_witchgodname_kamrushepa_possessive:0 "$hittite_polytheism_witchgodname_kamrushepa$'s"
-    hittite_polytheism_witchgodname_kamrushepa_possesive:0 "Kamrushepa's"
-
-    #Devil god   
-    hittite_polytheism_devil_name:0 "Hahhima" 
-    hittite_polytheism_devil_name_possessive:0 "Hahhima's"
-
-    #Death god Lelwani 
-    hittite_polytheism_death_deity_name:0 "Lelwani"
+    hittite_polytheism_fate_god_name:0 "the Gulšeš" # the fate goddesses
+    hittite_polytheism_fate_god_name_possessive:0 "the Gulšeš'"
+    hittite_polytheism_knowledge_god_name:0 "Ea" # in the treaty god lists and at Yazılıkaya
+    hittite_polytheism_knowledge_god_name_possessive:0 "Ea's"
+    hittite_polytheism_war_god_name:0 "Wurunkatte" # the war god (ZABABA)
+    hittite_polytheism_war_god_name_possessive:0 "Wurunkatte's"
+    hittite_polytheism_trickster_god_name:0 "Inara" # lures the serpent Illuyanka into a trap
+    hittite_polytheism_trickster_god_name_possessive:0 "Inara's"
+    hittite_polytheism_night_god_name:0 "the Moon-god" # 'lord of the oath'
+    hittite_polytheism_night_god_name_possessive:0 "the Moon-god's"
+    hittite_polytheism_water_god_name:0 "the Sea"
+    hittite_polytheism_water_god_name_possessive:0 "the Sea's"
+    hittite_polytheism_death_deity_name:0 "Lelwani" # goddess of the Netherworld (Puduhepa)
     hittite_polytheism_death_deity_name_2:0 "$hittite_polytheism_death_deity_name$"
     hittite_polytheism_death_deity_name_3:0 "$hittite_polytheism_death_deity_name$"
     hittite_polytheism_death_deity_name_possessive:0 "Lelwani's"
+    hittite_polytheism_witch_god_name:0 "Katahzipuri" # Hattic/Palaic counterpart of Kamrušepa, a goddess of ritual
+    hittite_polytheism_witch_god_name_possessive:0 "Katahzipuri's"
+    hittite_polytheism_devil_name:0 "Illuyanka" # the serpent slain by the Storm-god (purulli festival)
+    hittite_polytheism_devil_name_possessive:0 "Illuyanka's"
+    hittite_polytheism_good_god_ishtanu:0 "Ištanu" # Sun-god of Heaven, the supreme judge
+    hittite_polytheism_good_god_mezzulla:0 "Mezzulla" # daughter of the Sun-goddess of Arinna
+    hittite_polytheism_good_god_shaushka:0 "Šauška" # Ištar of Samuha
+    hittite_polytheism_good_god_sharruma:0 "Šarruma" # 'the calf of Teššub'
+    hittite_polytheism_good_god_ishhara:0 "Išhara" # 'queen of the oath'
+    hittite_polytheism_good_god_hapantali:0 "Hapantali" # shepherds the Sun-god's sheep
+    hittite_polytheism_good_god_zintuhi:0 "Zintuhi"
+    hittite_polytheism_good_god_hebat:0 "Hebat" # 'queen of heaven'; the Sun-goddess of Arinna in the land of the cedar
+    hittite_polytheism_evil_god_ullikummi:0 "Ullikummi" # the diorite giant of the Kumarbi cycle
+    hittite_polytheism_evil_god_hedammu:0 "Hedammu" # the sea serpent of the Kumarbi cycle
+    hittite_polytheism_pantheon:0 "the Thousand Gods of Hatti" # treaty formula
+    hittite_polytheism_pantheon_2:0 "$hittite_polytheism_pantheon$"
+    hittite_polytheism_pantheon_3:0 "$hittite_polytheism_pantheon$"
+    hittite_polytheism_divine_realm:0 "Heaven"
+    hittite_polytheism_divine_realm_2:0 "$hittite_polytheism_divine_realm$"
+    hittite_polytheism_divine_realm_3:0 "$hittite_polytheism_divine_realm$"
+    hittite_polytheism_afterlife:0 "the Dark Earth" # the netherworld (Telipinu myth; prayers)
+    hittite_polytheism_afterlife_2:0 "$hittite_polytheism_afterlife$"
+    hittite_polytheism_afterlife_3:0 "$hittite_polytheism_afterlife$"
+    hittite_polytheism_religious_symbol:0 "Sun Disk of Arinna" # 'a golden sun disk which represents the Sun Goddess'
+    hittite_polytheism_religious_symbol_2:0 "$hittite_polytheism_religious_symbol$"
+    hittite_polytheism_religious_symbol_3:0 "$hittite_polytheism_religious_symbol$"
+    hittite_polytheism_religious_text:0 "the Festival Tablets" # AN.TAH.ŠUM, purulli; some 30,000 tablets at Hattusa
+    hittite_polytheism_religious_text_2:0 "$hittite_polytheism_religious_text$"
+    hittite_polytheism_religious_text_3:0 "$hittite_polytheism_religious_text$"
+    hittite_polytheism_religious_head_title:0 "Priest of the Sun-goddess" # the king's own title
+    hittite_polytheism_priest_male:0 "SANGA" # priest (logogram)
+    hittite_polytheism_priest_male_plural:0 "SANGA priests"
+    hittite_polytheism_priest_alternate_plural:0 "SANGA priests"
+    hittite_polytheism_priest_female:0 "Mother of the God" # AMA.DINGIR-LIM (Instructions for Temple Officials)
+    hittite_polytheism_priest_female_plural:0 "Mothers of the God"
+    hittite_polytheism_bishop_male:0 "Priest of the Sun-goddess"
+    hittite_polytheism_bishop_male_plural:0 "Priests of the Sun-goddess"
 
-    #Good gods names 
-    hittite_polytheism_good_god_a_as:0 "A'as" 
-    hittite_polytheism_good_god_bona_aruna:0 "Aruna" 
-    hittite_polytheism_good_god_ispanza:0 "Ispanza" 
-    hittite_polytheism_good_god_tashmishu:0 "Tashmishu" 
-    hittite_polytheism_good_god_hannahanna:0 "Hannahanna" 
-    hittite_polytheism_good_god_tarhunna:0 "Tarhunna" 
-    hittite_polytheism_good_god_kamrushepa:0 "Kamrushepa" 
-    hittite_polytheism_good_god_halki:0 "Halki"
-
-    #Cdr priest flamen vestals
-
-    #Cdr priest 
-    hittite_polytheism_priest_male:0 "Priest"
-    hittite_polytheism_priest_male_plural:0 "Priests"
-    hittite_polytheism_priest_alternate_plural:0 "Priests"
-
-    #Cdr vestals 
-    hittite_polytheism_priest_female:0 "Priestess" 
-    hittite_polytheism_priest_female_plural:0 "Priestesses" 
-
-    #Cdr flamen  
-    hittite_polytheism_bishop_male:0 "Priest" 
-    hittite_polytheism_bishop_male_plural:0 "Priests" 
-
-    #roman names
-    #males
+    #names
     reserved_male_names:0 "Hittite male names"
-    #Female 
     reserved_female_names:0 "Hittite female names"
 
-    #holy orders: 
-    holy_order_sons_of_tashmishu:0 "Sons of Tashmishu"
+    #holy orders
+    holy_order_sons_of_tashmishu:0 "Sons of Tašmišu"
     holy_order_protectors_of_tarhunna:0 "Protectors of Tarhunna"

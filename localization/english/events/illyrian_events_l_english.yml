@@ -1,18 +1,18 @@
 ﻿l_english:
 
-  # --- A Priest of Tadenus (0001) ---
-  pr_illyrian.0001.t:0 "A Priest of Tadenus"
-  pr_illyrian.0001.desc:0 "#F I sit in my chambers, nursing my wounds from a recent battle. The pain is great, and I know that I will not heal on my own.#!\n\nSuddenly, a knock comes at the door. I open it to find a priest of Tadenus, the Illyrian god of healing. "Greetings," the priest says. "I have heard of your wounds, and I have come to offer my help."\n\nI am hesitant at first, but I agree to let the priest heal me. He places his hands on my wounds and chants a prayer to Tadenus. He then sacrifices a small animal and offers its flesh to the flames.\n\nAs the priest prays, I feel a warm tingling sensation in my wounds. The pain begins to subside. After a few minutes, the priest finishes his prayer. He smiles and says, "Tadenus has heard our prayers."\n\nI am grateful to the priest, and I know that Tadenus has watched over me. However, I know that not all wounds heal, and that even the gods cannot always save us. I will have to wait and see if Tadenus's blessing is enough to heal me."
+  # --- A Priest of Bindus (0001) ---
+  pr_illyrian.0001.t:0 "A Priest of Bindus"
+  pr_illyrian.0001.desc:0 "#F I sit in my chambers, nursing my wounds from a recent battle. The pain is great, and I know that I will not heal on my own.#!\n\nSuddenly, a knock comes at the door. I open it to find a priest of Bindus, guardian of the healing springs. "Greetings," the priest says. "I have heard of your wounds, and I have come to offer my help."\n\nI am hesitant at first, but I agree to let the priest heal me. He places his hands on my wounds and chants a prayer to Bindus. He then sacrifices a small animal and offers its flesh to the flames.\n\nAs the priest prays, I feel a warm tingling sensation in my wounds. The pain begins to subside. After a few minutes, the priest finishes his prayer. He smiles and says, "Bindus has heard our prayers."\n\nI am grateful to the priest, and I know that Bindus has watched over me. However, I know that not all wounds heal, and that even the gods cannot always save us. I will have to wait and see if Bindus's blessing is enough to heal me."
   pr_illyrian.0001.a:0 "Now we wait"
 
   # --- Choose Main Deity (0002) ---
   pr_illyrian.0002.t:0 "Choose Main Deity"
   pr_illyrian.0002.desc:0 "#F To help me in the struggle to rule my realm, I could devote myself to one of the gods or goddesses.#!"
-  pr_illyrian.0002.en:0 "En"
+  pr_illyrian.0002.en:0 "Deipaturos"
   pr_illyrian.0002.medaurus:0 "Medaurus"
   pr_illyrian.0002.anzotica:0 "Anzotica"
   pr_illyrian.0002.bindus:0 "Bindus"
-  pr_illyrian.0002.tadenus:0 "Tadenus"
+  pr_illyrian.0002.redon:0 "Redon"
   pr_illyrian.0002.optout:0 "Maybe now isn't the right time"
 
   # --- A Dream of Medaurus (0003) ---

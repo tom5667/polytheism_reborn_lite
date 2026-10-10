@@ -1,0 +1,409 @@
+﻿#####################
+#Made by tom5667
+#####################
+
+roman_polytheism = {
+    main_rite = cultus_deorum_rites
+    historical = yes
+
+    faith_details = {
+        religion = roman_religion
+        color = { 208 0 0 }
+        icon = cultus_deorum_romanorum
+        reformed_icon = cultus_deorum_romanorum_reformed
+        religious_head = d_pontifex_polytheistic
+    }
+    #color
+
+    eminent_holy_sites = {
+        rome # true
+        cumae #Cumaean Sibyl oracle of apollo
+    }
+
+    holy_sites = {
+        paestum #Greek temples but after the conquest by the romans they mostly took over the tempels
+        agrigento #Orginaly greek temples but in roman hands for a long time
+        delphi #Important for both greeks and romans
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+    }
+    cultures = { roman greek pr_romano_british pr_romano_germanic pr_romano_hispanic pr_afro_roman pr_romano_egyptian }
+
+    # Faith-level loc (#142): vanilla texts read GetFaith.*, so the god names must live
+    # on the faith. The main rite (cultus_deorum_rites) inherits this block; other rites keep their own.
+    localization = {
+        #High God Name
+        HighGodName = roman_polytheism_high_god_name
+        HighGodName2 = roman_polytheism_high_god_name_2
+        HighGodNamePossessive = roman_polytheism_high_god_name_possessive
+        HighGodNameSheHe = CHARACTER_SHEHE_HE
+        HighGodHerselfHimself = CHARACTER_HIMSELF
+        HighGodHerHis = CHARACTER_HERHIS_HIS
+        HighGodNameAlternate = roman_polytheism_high_god_name_alternate
+        HighGodNameAlternatePossessive = roman_polytheism_high_god_name_alternate_possessive
+
+        #Creator
+        CreatorName = roman_polytheism_creator_god_name
+        CreatorNamePossessive = roman_polytheism_creator_god_name_possessive
+        CreatorSheHe = CHARACTER_SHEHE_HE
+        CreatorHerHis = CHARACTER_HERHIS_HIS
+        CreatorHerHim = CHARACTER_HERHIM_HIM
+
+        #HealthGod
+        HealthGodName = roman_polytheism_health_god_name
+        HealthGodNamePossessive = roman_polytheism_health_god_name_possessive
+        HealthGodSheHe = CHARACTER_SHEHE_SHE
+        HealthGodHerHis = CHARACTER_HERHIS_HER
+        HealthGodHerHim = CHARACTER_HERHIM_HER
+
+        #FertilityGod
+        FertilityGodName = roman_polytheism_fertility_god_name
+        FertilityGodNamePossessive = roman_polytheism_fertility_god_name_possessive
+        FertilityGodSheHe = CHARACTER_SHEHE_SHE
+        FertilityGodHerHis = CHARACTER_HERHIS_HER
+        FertilityGodHerHim = CHARACTER_HERHIM_HER
+
+        #WealthGod
+        WealthGodName = roman_polytheism_wealth_god_name
+        WealthGodNamePossessive = roman_polytheism_wealth_god_name_possessive
+        WealthGodSheHe = CHARACTER_SHEHE_HE
+        WealthGodHerHis = CHARACTER_HERHIS_HIS
+        WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+        #HouseholdGod
+        HouseholdGodName = roman_polytheism_household_god_name
+        HouseholdGodNamePossessive = roman_polytheism_household_god_name_possessive
+        HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+        HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+        HouseholdGodHerHim = CHARACTER_HERHIM_THEM
+
+        #FateGod
+        FateGodName = roman_polytheism_fate_god_name
+        FateGodNamePossessive = roman_polytheism_fate_god_name_possessive
+        FateGodSheHe = CHARACTER_SHEHE_HE
+        FateGodHerHis = CHARACTER_HERHIS_HIS
+        FateGodHerHim = CHARACTER_HERHIM_HIM
+
+        #KnowledgeGod
+        KnowledgeGodName = roman_polytheism_knowledge_god_name
+        KnowledgeGodNamePossessive = roman_polytheism_knowledge_god_name_possessive
+        KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
+        KnowledgeGodHerHis = CHARACTER_HERHIS_HER
+        KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+
+        #WarGod
+        WarGodName = roman_polytheism_war_god_name
+        WarGodNamePossessive = roman_polytheism_war_god_name_possessive
+        WarGodSheHe = CHARACTER_SHEHE_HE
+        WarGodHerHis = CHARACTER_HERHIS_HIS
+        WarGodHerHim = CHARACTER_HERHIM_HIM
+
+        #TricksterGod
+        TricksterGodName = roman_polytheism_trickster_god_name
+        TricksterGodNamePossessive = roman_polytheism_trickster_god_name_possessive
+        TricksterGodSheHe = CHARACTER_SHEHE_HE
+        TricksterGodHerHis = CHARACTER_HERHIS_HIS
+        TricksterGodHerHim = CHARACTER_HERHIM_HIM
+
+        #NightGod
+        NightGodName = roman_polytheism_night_god_name
+        NightGodNamePossessive = roman_polytheism_night_god_name_possessive
+        NightGodSheHe = CHARACTER_SHEHE_SHE
+        NightGodHerHis = CHARACTER_HERHIS_HER
+        NightGodHerHim = CHARACTER_HERHIM_HER
+
+        #WaterGod
+        WaterGodName = roman_polytheism_water_god_name
+        WaterGodNamePossessive = roman_polytheism_water_god_name_possessive
+        WaterGodSheHe = CHARACTER_SHEHE_HE
+        WaterGodHerHis = CHARACTER_HERHIS_HIS
+        WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+        PantheonTerm = religion_the_gods
+        PantheonTerm2 = religion_the_gods_2
+        PantheonTerm3 = religion_the_gods_3
+        PantheonTermHasHave = pantheon_term_have
+        GoodGodNames = {roman_polytheism_good_god_juno roman_polytheism_good_god_Venus roman_polytheism_good_god_minerva roman_polytheism_good_god_mercury roman_polytheism_good_god_neptune roman_polytheism_good_god_bona_dea roman_polytheism_good_god_mars  roman_polytheism_good_god_apollo}
+        DevilName = roman_polytheism_devil_name
+        DevilNamePossessive = roman_polytheism_devil_name_possessive
+        DevilSheHe = CHARACTER_SHEHE_HE
+        DevilHerHis = CHARACTER_HERHIS_HIS
+        DevilHerselfHimself = CHARACTER_HIMSELF
+        EvilGodNames = { roman_polytheism_evil_god_trivia roman_polytheism_evil_god_discordia }
+        HouseOfWorship = paganism_house_of_worship
+        HouseOfWorship2 = paganism_house_of_worship_2
+        HouseOfWorship3 = paganism_house_of_worship_3
+        HouseOfWorshipPlural = paganism_house_of_worship_plural
+        ReligiousSymbol = roman_polytheism_religious_symbol
+        ReligiousSymbol2 = roman_polytheism_religious_symbol_2
+        ReligiousSymbol3 = roman_polytheism_religious_symbol_3
+        ReligiousText = roman_polytheism_religious_text
+        ReligiousText2 = roman_polytheism_religious_text_2
+        ReligiousText3 = roman_polytheism_religious_text_3
+        ReligiousHeadName = roman_polytheism_religious_head_title
+        ReligiousHeadNameFemale = roman_polytheism_religious_head_title
+        ReligiousHeadTitleName = dualism_religious_head_title_name
+        DevoteeMale = paganism_devotee
+        DevoteeMalePlural = paganism_devoteeplural
+        DevoteeFemale = paganism_devotee
+        DevoteeFemalePlural = paganism_devoteeplural
+        DevoteeNeuter = paganism_devotee
+        DevoteeNeuterPlural = paganism_devoteeplural
+        PriestMale = roman_polytheism_priest_male
+        PriestMalePlural = roman_polytheism_priest_male_plural
+        PriestFemale = roman_polytheism_priest_female
+        PriestFemalePlural = roman_polytheism_priest_female_plural
+        PriestNeuter = roman_polytheism_priest_male
+        PriestNeuterPlural = roman_polytheism_priest_male_plural
+        AltPriestTermPlural = roman_polytheism_priest_alternate_plural
+        BishopMale = roman_polytheism_bishop_male
+        BishopMalePlural = roman_polytheism_bishop_male_plural
+        BishopFemale = roman_polytheism_priest_female
+        BishopFemalePlural = roman_polytheism_priest_female_plural
+        BishopNeuter = roman_polytheism_priest_male
+        BishopNeuterPlural = roman_polytheism_priest_male_plural
+        DivineRealm = roman_polytheism_divine_realm
+        DivineRealm2 = roman_polytheism_divine_realm_2
+        DivineRealm3 = roman_polytheism_divine_realm_3
+        PositiveAfterLife = greco_roman_religion_positive_afterlife
+        PositiveAfterLife2 = greco_roman_religion_positive_afterlife_2
+        PositiveAfterLife3 = greco_roman_religion_positive_afterlife_3
+        NegativeAfterLife = roman_religion_negative_afterlife
+        NegativeAfterLife2 = roman_religion_negative_afterlife_2
+        NegativeAfterLife3 = roman_religion_negative_afterlife_3
+        DeathDeityName = roman_polytheism_death_deity_name
+        DeathDeityNamePossessive = roman_polytheism_death_deity_name_possessive
+        DeathDeitySheHe = CHARACTER_SHEHE_HE
+        DeathDeityHerHis = CHARACTER_HERHIS_HIS
+        DeathDeityHerHim = CHARACTER_HERHIM_HIM
+        WitchGodName = roman_polytheism_witchgodname_trivia
+        WitchGodNamePossessive = roman_polytheism_witchgodname_trivia_possessive
+        WitchGodHerHis = CHARACTER_HERHIS_HER
+        WitchGodSheHe = CHARACTER_SHEHE_SHE
+        WitchGodHerHim = CHARACTER_HERHIM_HER
+        WitchGodMistressMaster = mistress
+        WitchGodMotherFather = mother
+
+        GHWName = ghw_great_holy_war
+        GHWNamePlural = ghw_great_holy_wars
+    }
+}
+
+# Etruscan faith under the Roman religion (issue #86, step 1). Was the separate religion
+# etruscan_religion with the faith etc_polytheism (BREAKING CHANGE). Faiths of one religion
+# see each other as astray. Virtues and sins come from roman_religion (decided 2026-10-07).
+# Roman (Cultus Deorum) content is gated with pr_is_cultus_deorum_trigger, which excludes
+# this faith. God names and holy sites: step 2, decided 2026-10-08 (resource/etruscan_research.md).
+etruscan_polytheism = {
+    main_rite = etruscan_rites
+    historical = yes
+
+    faith_details = {
+        religion = roman_religion
+        color = { 215 20 70 }
+        icon = Etruscan
+        reformed_icon = Etruscan_reformed
+        graphical_faith = hellenism_gfx
+    }
+
+    # Step 2 (decided 2026-10-08): Fanum Voltumnae (federal sanctuary of the twelve peoples), Tarquinii (Tages,
+    # Ara della Regina) and Pyrgi (Uni/Astarte tablets) eminent; Arezzo (Chimaera dedicated to Tinia) and
+    # Clusium/Chiusi (sarcophagus of Hasti Afunei, cult of Culsu in the epitaph of Laris Pulenas).
+    # Rome, Ravenna and Fufluna dropped: no Etruscan cult evidence (resource/etruscan_research.md).
+    eminent_holy_sites = {
+        pr_fanum_voltumnae
+        pr_tarquinii
+        pr_pyrgi
+    }
+    holy_sites = {
+        arezzo
+        pr_clusium
+    }
+
+    # Where the Etruscan faith differed from the Roman religion's defaults (kept from etc_polytheism).
+    doctrines = {
+        doctrine_no_head
+        doctrine_no_anointment # anointment needs a theocratic head (no_head here)
+        doctrine_pilgrimage_forbidden
+        doctrine_funeral_stoic
+        doctrine_adultery_men_crime
+        doctrine_adultery_women_crime
+        special_doctrine_etruscan_patron_god
+    }
+
+    reserved_male_names = {
+        Arnth Arnza Cae Cneve Cuinte Lars Uchtave
+    }
+    reserved_female_names = {
+        Arnthi Fasti Hasti Larthi Lethi Sertha Thania
+    }
+
+    holy_order_names = {
+        { name = "holy_order_sons_of_laran" }
+        { name = "holy_order_Protectors_of_menrva" }
+    }
+
+    cultures = { pr_etruscan }
+
+    # Faith-level loc (#142): vanilla texts read GetFaith.*, so the god names must live
+    # on the faith. The main rite (etruscan_rites) inherits this block; other rites keep their own.
+    localization = {
+        #High God Name
+        HighGodName = etc_polytheism_high_god_name
+        HighGodName2 = etc_polytheism_high_god_name_2
+        HighGodNamePossessive = etc_polytheism_high_god_name_possessive
+        HighGodNameSheHe = CHARACTER_SHEHE_HE
+        HighGodHerselfHimself = CHARACTER_HIMSELF
+        HighGodHerHis = CHARACTER_HERHIS_HIS
+        HighGodNameAlternate = etc_polytheism_high_god_name_alternate
+        HighGodNameAlternatePossessive = etc_polytheism_high_god_name_alternate_possessive
+
+        #Creator
+        CreatorName = etc_polytheism_creator_god_name
+        CreatorNamePossessive = etc_polytheism_creator_god_name_possessive
+        CreatorSheHe = CHARACTER_SHEHE_THEY
+        CreatorHerHis = CHARACTER_HERHIS_THEIR
+        CreatorHerHim = CHARACTER_HERHIM_THEM
+
+        #HealthGod
+        HealthGodName = etc_polytheism_health_god_name
+        HealthGodNamePossessive = etc_polytheism_health_god_name_possessive
+        HealthGodSheHe = CHARACTER_SHEHE_THEY
+        HealthGodHerHis = CHARACTER_HERHIS_THEIR
+        HealthGodHerHim = CHARACTER_HERHIM_THEM
+
+        #FertilityGod
+        FertilityGodName = etc_polytheism_fertility_god_name
+        FertilityGodNamePossessive = etc_polytheism_fertility_god_name_possessive
+        FertilityGodSheHe = CHARACTER_SHEHE_SHE
+        FertilityGodHerHis = CHARACTER_HERHIS_HER
+        FertilityGodHerHim = CHARACTER_HERHIM_HER
+
+        #WealthGod
+        WealthGodName = etc_polytheism_wealth_god_name
+        WealthGodNamePossessive = etc_polytheism_wealth_god_name_possessive
+        WealthGodSheHe = CHARACTER_SHEHE_HE
+        WealthGodHerHis = CHARACTER_HERHIS_HIS
+        WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+        #HouseholdGod
+        HouseholdGodName = etc_polytheism_household_god_name
+        HouseholdGodNamePossessive = etc_polytheism_household_god_name_possessive
+        HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+        HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+        HouseholdGodHerHim = CHARACTER_HERHIM_THEM
+
+        #FateGod
+        FateGodName = etc_polytheism_fate_god_name
+        FateGodNamePossessive = etc_polytheism_fate_god_name_possessive
+        FateGodSheHe = CHARACTER_SHEHE_SHE
+        FateGodHerHis = CHARACTER_HERHIS_HER
+        FateGodHerHim = CHARACTER_HERHIM_HER
+
+        #KnowledgeGod
+        KnowledgeGodName = etc_polytheism_knowledge_god_name
+        KnowledgeGodNamePossessive = etc_polytheism_knowledge_god_name_possessive
+        KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
+        KnowledgeGodHerHis = CHARACTER_HERHIS_HER
+        KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+
+        #WarGod
+        WarGodName = etc_polytheism_war_god_name
+        WarGodNamePossessive = etc_polytheism_war_god_name_possessive
+        WarGodSheHe = CHARACTER_SHEHE_HE
+        WarGodHerHis = CHARACTER_HERHIS_HIS
+        WarGodHerHim = CHARACTER_HERHIM_HIM
+
+        #TricksterGod
+        TricksterGodName = etc_polytheism_trickster_god_name
+        TricksterGodNamePossessive = etc_polytheism_trickster_god_name_possessive
+        TricksterGodSheHe = CHARACTER_SHEHE_THEY
+        TricksterGodHerHis = CHARACTER_HERHIS_THEIR
+        TricksterGodHerHim = CHARACTER_HERHIM_THEM
+
+        #NightGod
+        NightGodName = etc_polytheism_night_god_name
+        NightGodNamePossessive = etc_polytheism_night_god_name_possessive
+        NightGodSheHe = CHARACTER_SHEHE_IT
+        NightGodHerHis = CHARACTER_HERHIS_ITS
+        NightGodHerHim = CHARACTER_HERHIM_IT
+
+        #WaterGod
+        WaterGodName = etc_polytheism_water_god_name
+        WaterGodNamePossessive = etc_polytheism_water_god_name_possessive
+        WaterGodSheHe = CHARACTER_SHEHE_HE
+        WaterGodHerHis = CHARACTER_HERHIS_HIS
+        WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+
+        PantheonTerm = etc_polytheism_pantheon_term
+        PantheonTerm2 = etc_polytheism_pantheon_term_2
+        PantheonTerm3 = etc_polytheism_pantheon_term_3
+        PantheonTermHasHave = etc_polytheism_pantheon_term_has
+        GoodGodNames = { etc_polytheism_good_god_uni etc_polytheism_good_god_turan etc_polytheism_good_god_fufluns etc_polytheism_good_god_selvans etc_polytheism_good_god_usil etc_polytheism_good_god_thesan etc_polytheism_good_god_aplu etc_polytheism_good_god_hercle }
+        DevilName = etc_polytheism_devil_name
+        DevilNamePossessive = etc_polytheism_devil_name_possessive
+        DevilSheHe = CHARACTER_SHEHE_HE
+        DevilHerHis = CHARACTER_HERHIS_HIS
+        DevilHerselfHimself = CHARACTER_HIMSELF
+        EvilGodNames = { etc_polytheism_evil_god_charu etc_polytheism_evil_god_underworld_demons }
+        HouseOfWorship = paganism_house_of_worship
+        HouseOfWorship2 = paganism_house_of_worship_2
+        HouseOfWorship3 = paganism_house_of_worship_3
+        HouseOfWorshipPlural = paganism_house_of_worship_plural
+        ReligiousSymbol = etc_polytheism_religious_symbol
+        ReligiousSymbol2 = etc_polytheism_religious_symbol_2
+        ReligiousSymbol3 = etc_polytheism_religious_symbol_3
+        ReligiousText = etc_polytheism_religious_text
+        ReligiousText2 = etc_polytheism_religious_text_2
+        ReligiousText3 = etc_polytheism_religious_text_3
+        ReligiousHeadName = etc_polytheism_religious_head_title
+        ReligiousHeadNameFemale = etc_polytheism_religious_head_title
+        ReligiousHeadTitleName = dualism_religious_head_title_name
+        DevoteeMale = paganism_devotee
+        DevoteeMalePlural = paganism_devoteeplural
+        DevoteeFemale = paganism_devotee
+        DevoteeFemalePlural = paganism_devoteeplural
+        DevoteeNeuter = paganism_devotee
+        DevoteeNeuterPlural = paganism_devoteeplural
+        PriestMale = etc_polytheism_priest_male
+        PriestMalePlural = etc_polytheism_priest_male_plural
+        PriestFemale = etc_polytheism_priest_female
+        PriestFemalePlural = etc_polytheism_priest_female_plural
+        PriestNeuter = etc_polytheism_priest_male
+        PriestNeuterPlural = etc_polytheism_priest_male_plural
+        AltPriestTermPlural = christianity_priest_alternate_plural
+        BishopMale = etc_polytheism_bishop_male
+        BishopMalePlural = etc_polytheism_bishop_male_plural
+        BishopFemale = etc_polytheism_priest_female
+        BishopFemalePlural = etc_polytheism_priest_female_plural
+        BishopNeuter = etc_polytheism_priest_male
+        BishopNeuterPlural = etc_polytheism_priest_male_plural
+        DivineRealm = etc_polytheism_divine_realm
+        DivineRealm2 = etc_polytheism_divine_realm_2
+        DivineRealm3 = etc_polytheism_divine_realm_3
+        PositiveAfterLife = etc_polytheism_positive_afterlife
+        PositiveAfterLife2 = etc_polytheism_positive_afterlife_2
+        PositiveAfterLife3 = etc_polytheism_positive_afterlife_3
+        NegativeAfterLife = etc_polytheism_negative_afterlife
+        NegativeAfterLife2 = etc_polytheism_negative_afterlife_2
+        NegativeAfterLife3 = etc_polytheism_negative_afterlife_3
+        DeathDeityName = etc_polytheism_death_deity_name
+        DeathDeityNamePossessive = etc_polytheism_death_deity_name_possessive
+        DeathDeitySheHe = CHARACTER_SHEHE_HE
+        DeathDeityHerHis = CHARACTER_HERHIS_HIS
+        DeathDeityHerHim = CHARACTER_HERHIM_HIM
+        WitchGodName = witchgodname_paganism
+        WitchGodNamePossessive = witchgodname_paganism_possessive
+        WitchGodHerHis = CHARACTER_HERHIS_ITS
+        WitchGodSheHe = CHARACTER_SHEHE_IT
+        WitchGodHerHim = CHARACTER_HERHIM_IT
+        WitchGodMistressMaster = witch_spirit
+        WitchGodMotherFather = witch_source
+
+        GHWName = ghw_great_holy_war
+        GHWNamePlural = ghw_great_holy_wars
+    }
+}

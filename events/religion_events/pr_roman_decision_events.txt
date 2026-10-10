@@ -36,7 +36,7 @@ pr_roman.0001 = {
 		name = pr_roman.0001.jupiter
 		#Iupiter
 		trigger = {
-			NOT = { has_trait = pr_cdr_iupiter }
+			NOT = { has_character_modifier = pr_cdr_iupiter }
 		}
 		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_iupiter }
 	}
@@ -44,14 +44,14 @@ pr_roman.0001 = {
 		name = pr_roman.0001.juno
 		#Iuno
 		trigger = {
-			NOT = { has_trait = pr_cdr_iuno }
+			NOT = { has_character_modifier = pr_cdr_iuno }
 		}
 		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_iuno }
 	}
 	option = {
 		name = pr_roman.0001.minerva
 		trigger = {
-			NOT = { has_trait = pr_cdr_minerva }
+			NOT = { has_character_modifier = pr_cdr_minerva }
 		}
 		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_minerva }
 	}
@@ -85,7 +85,7 @@ pr_roman.0019 = {
 		name = pr_roman.0019.mars
 		#Mars
 		trigger = {
-			NOT = { has_trait = pr_cdr_mars }
+			NOT = { has_character_modifier = pr_cdr_mars }
 		}
 		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_mars }
 	}
@@ -93,7 +93,7 @@ pr_roman.0019 = {
 		name = pr_roman.0019.venus
 		#Venus
 		trigger = {
-			NOT = { has_trait = pr_cdr_venus }
+			NOT = { has_character_modifier = pr_cdr_venus }
 		}
 		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_venus }
 	}
@@ -101,7 +101,7 @@ pr_roman.0019 = {
 		name = pr_roman.0019.lares
 		#House Lares
 		trigger = {
-			NOT = { has_trait = pr_cdr_lares }
+			NOT = { has_character_modifier = pr_cdr_lares }
 		}
 		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_lares }
 	}
@@ -109,21 +109,21 @@ pr_roman.0019 = {
 		name = pr_roman.0019.mercurius
 		#Mercurius
 		trigger = {
-			NOT = { has_trait = pr_cdr_mercurius }
+			NOT = { has_character_modifier = pr_cdr_mercurius }
 		}
 		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_mercurius }
 	}
 	option = {
 		name = pr_roman.0019.apollo
 		trigger = {
-			NOT = { has_trait = pr_cdr_apollo }
+			NOT = { has_character_modifier = pr_cdr_apollo }
 		}
 		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_apollo }
 	}
 	option = {
 		name = pr_roman.0019.ceres
 		trigger = {
-			NOT = { has_trait = pr_cdr_ceres }
+			NOT = { has_character_modifier = pr_cdr_ceres }
 		}
 		pr_set_bhakti_effect = { BHAKTI =  pr_cdr_ceres }
 	}
@@ -159,21 +159,21 @@ pr_roman_cult.0100 = {
 		name = pr_roman_cult.0100.mithras
 		#Mithras
 		trigger = {
-			NOT = { has_trait = pr_mithras_mithras }
+			NOT = { has_character_modifier = pr_mithras_mithras }
 		}
 		pr_set_bhakti_effect = { BHAKTI  = pr_mithras_mithras }
 	}
 	option = {
 		name = pr_roman_cult.0100.arimanius
 		trigger = {
-			NOT = { has_trait = pr_mithras_arimanius }
+			NOT = { has_character_modifier = pr_mithras_arimanius }
 		}
 		pr_set_bhakti_effect = { BHAKTI  = pr_mithras_arimanius }
 	}
 	option = {
 		name = pr_roman_cult.0100.oromazes
 		trigger = {
-			NOT = { has_trait = pr_mithras_oromazes }
+			NOT = { has_character_modifier = pr_mithras_oromazes }
 		}
 		pr_set_bhakti_effect = { BHAKTI  = pr_mithras_oromazes }
 	}
@@ -773,7 +773,7 @@ pr_roman.0110 = {
 pr_roman.0111 = {
 	type = character_event
 	title = pr_roman.0111.t
-	desc = pr_roman.0111.desc
+	desc = pr_roman.0111.fallback.desc
 	theme = learning_theology_focus
 	right_portrait = {
 		character = root
@@ -1449,108 +1449,6 @@ pr_roman.0107 = {
 		}
 	}
 }
-#Romano British return religion
-#Turned off the conversion of most of the vassals for now
-#Historacly it's a proces of years and not just of one day
-pr_roman.0113 = {
-	type = character_event
-	title = pr_roman.0113.t
-	desc = pr_roman.0113.desc
-	theme = learning
-	right_portrait = {
-		character = root
-		animation = personality_content
-	}
-	option = {
-		name = pr_roman.0113.a
-		# trigger_event = pr_roman.0114
-		# days = 20
-		set_character_faith = faith:cdr_polytheism
-	}
-}
-
-pr_roman.0114 = {
-	type = character_event
-	title = pr_roman.0114.t
-	desc = pr_roman.0114.desc
-	theme = faith
-	right_portrait = {
-		character = scope:scoped_ruler
-		animation = personality_zealous
-		}
-		override_background = { reference = throne_room }
-
-	immediate = {
-		play_music_cue = "mx_cue_faith_conversion"
-		save_scope_as = scoped_ruler
-		faith = { save_scope_as = old_faith }
-	}
-
-	option = {
-		name = pr_roman.0114.a
-		#Get a nice reward for your adherence to the true faith.
-		add_piety_level = 1
-		#Sort notification copy for players.
-		save_scope_value_as = {
-			name = roman_british_return
-			value = flag:vanilla
-		}
-		pr_romano_british_sr_notify_players_effect = yes
-
-	}
-}
-
-pr_roman.0117 = {
-	type = character_event
-	title = pr_roman.0117.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { top_liege = root }
-				desc = pr_roman.0117.desc.vassals
-			}
-			desc = pr_roman.0117.desc.outsiders
-		}
-		desc = pr_roman.0117.desc.intro
-		triggered_desc = {
-			trigger = { scope:gp_return = flag:vanilla }
-			desc = pr_roman.0117.desc_vanilla
-		}
-	}
-	theme = faith
-	left_portrait = scope:scoped_ruler
-	override_background = { reference = throne_room }
-	#Celtic polyteist are happy about this unexpected turn of events!
-	option = {
-		name = pr_roman.0117.a
-		trigger = { religion = religion:roman_religion}
-		add_stress = minor_stress_loss
-	}
-	#Vassals who do not follow the faith may decide to convert after all.
-	option = {
-		name = pr_roman.0117.b
-		trigger = {
-			top_liege = root
-			NOT = { religion = religion:roman_religion}
-		}
-		set_character_faith_with_conversion = faith:cdr_polytheism
-
-	}
-	#Those who aren't polytheist are probably horrified.
-	option = {
-		name = pr_roman.0117.c
-		trigger = {
-			NOT = {
-				religion = { is_in_family = rf_cp}
-			}
-		}
-	}
-	#And, as a fallback, some people just won't care.
-	option = {
-		name = pr_roman.0117.d
-	}
-}
-
 #Embrace Cultures
 #Embrace roman culture
 pr_roman_culture.0600 = {
@@ -1952,7 +1850,6 @@ pr_roman.0600 = {
 	option = {
 		name = pr_roman.0600.a
 		add_character_modifier = { modifier = saturnalia  months = 3 }
-		faith = scope:root.faith
 		faith ={
 			change_fervor = {
 				value = 5
@@ -1975,7 +1872,7 @@ pr_roman_cult.0001 = {
 	option = {
 		trigger = {
 			exists = global_var:restored_mithras_cult
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			NOT = {
 				has_trait = mithras_cult
 				has_trait = isis_cult
@@ -1996,7 +1893,7 @@ pr_roman_cult.0001 = {
 		trigger = {
 			exists = global_var:restored_isis_cult
 			OR = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 				religion = religion:hellenism_religion
 			}
 			NOT = {
@@ -2023,7 +1920,7 @@ pr_roman_cult.0001 = {
 		trigger = {
 			exists = global_var:restored_sol_invictus_cult
 			OR = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 				religion = religion:hellenism_religion
 			}
 			NOT = {
@@ -2045,7 +1942,7 @@ pr_roman_cult.0001 = {
 		trigger = {
 			exists = global_var:restored_eleusinian_cult
 			OR = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 				religion = religion:hellenism_religion
 			}
 			NOT = {
@@ -2065,7 +1962,7 @@ pr_roman_cult.0001 = {
 	}
 	option = {
 		trigger = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			exists = global_var:restored_sol_invictus_cult
 			NOT = {
 				has_trait = mithras_cult
@@ -2256,7 +2153,7 @@ pr_roman_cult.0005 = {#Initiation
 			give_nickname = nick_pater_mithras
 		}
 		ai_chance = {
-			value = 0
+			base = 0
 		}
 	}
 	option = {#Ai only
@@ -2267,7 +2164,7 @@ pr_roman_cult.0005 = {#Initiation
 		add_trait = mithras_cult
 		add_trait = pr_corax_mithras
 		ai_chance = {
-			value = 20
+			base = 20
 		}
 	}
 
@@ -2492,7 +2389,7 @@ pr_roman_cult.0014 = {#Initiation
 		name = pr_roman_cult.0014.trait
 		add_trait = serapis_cult
 		ai_chance = {
-			value = 20
+			base = 20
 		}
 	}
 }
@@ -2589,7 +2486,7 @@ pr_roman_cult.0018 = {#Initiation
 		name = pr_roman_cult.0018.trait
 		add_trait = eleusinian_cult
 		ai_chance = {
-			value = 20
+			base = 20
 		}
 
 	}
@@ -2651,12 +2548,12 @@ pr_roman_cult.0021 = {#Meeting place Sol invictus Cult
 		name = pr_roman_cult.0021.trait
 		add_trait = sol_invictus_cult
 		ai_chance = {
-			value = 20
+			base = 20
 		}
 	}
 	option = {
 		name = pr_roman_cult.0021.religion
-		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:cdr_polytheism }
+		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:roman_polytheism }
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
@@ -2739,12 +2636,12 @@ pr_roman_cult.0024 = {#Meeting Augustalis
 		name = pr_roman_cult.0024.trait
 		add_trait = imperial_cult
 		ai_chance = {
-			value = 20
+			base = 20
 		}
 	}
 	option = {
 		name = pr_roman_cult.0024.religion
-		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:cdr_polytheism }
+		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:roman_polytheism }
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
@@ -2787,7 +2684,7 @@ pr_roman_culture.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = roman_illyrian_jupiter_parthinus }
 		}
-		set_bhakti_effect = { BHAKTI = roman_illyrian_jupiter_parthinus }
+		pr_set_patron_god_effect = { BHAKTI = roman_illyrian_jupiter_parthinus }
 	}
 
 	 #Anzotica
@@ -2796,7 +2693,7 @@ pr_roman_culture.0001 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = roman_illyrian_anzotica }
 	 	}
-	 	set_bhakti_effect = { BHAKTI = roman_illyrian_anzotica }
+	 	pr_set_patron_god_effect = { BHAKTI = roman_illyrian_anzotica }
 	 }
 
 	#Armatus
@@ -2805,7 +2702,7 @@ pr_roman_culture.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = roman_illyrian_armatus }
 		}
-		set_bhakti_effect = { BHAKTI = roman_illyrian_armatus }
+		pr_set_patron_god_effect = { BHAKTI = roman_illyrian_armatus }
 	}
 
 	# Bona Dea
@@ -2814,7 +2711,7 @@ pr_roman_culture.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = roman_illyrian_bona_dea }
 		}
-		set_bhakti_effect = { BHAKTI = roman_illyrian_bona_dea }
+		pr_set_patron_god_effect = { BHAKTI = roman_illyrian_bona_dea }
 	}
 
 
@@ -2824,7 +2721,7 @@ pr_roman_culture.0001 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = roman_illyrian_latra }
 	 	}
-	 	set_bhakti_effect = { BHAKTI = roman_illyrian_latra }
+	 	pr_set_patron_god_effect = { BHAKTI = roman_illyrian_latra }
 	 }
 
 	# Opt-Out
@@ -2835,55 +2732,6 @@ pr_roman_culture.0001 = {
 		ai_chance = {
 			base = 0
 		}
-	}
-}
-
-pr_roman_culture.0002 = {
-	type = character_event
-	title = pr_roman_culture.0002.t
-	desc = pr_roman_culture.0002.desc
-	theme = learning
-	right_portrait = {
-		character = root
-		animation = personality_content
-	}
-	option = {
-		name = pr_roman_culture.0002.a
-		# trigger_event = pr_roman_culture.0003
-		# days = 20
-		set_character_faith = faith:cdr_polytheism
-	}
-}
-
-
-pr_roman_culture.0003 = {
-	type = character_event
-	title = pr_roman_culture.0003.t
-	desc = pr_roman_culture.0003.desc
-	theme = faith
-	right_portrait = {
-		character = scope:scoped_ruler
-		animation = personality_zealous
-		}
-		override_background = { reference = throne_room }
-
-	immediate = {
-		play_music_cue = "mx_cue_faith_conversion"
-		save_scope_as = scoped_ruler
-		faith = { save_scope_as = old_faith }
-	}
-
-	option = {
-		name = pr_roman_culture.0003.a
-		#Get a nice reward for your adherence to the true faith.
-		add_piety_level = 1
-		#Sort notification copy for players.
-		save_scope_value_as = {
-			name = roman_illyrian_return
-			value = flag:vanilla
-		}
-		roman_illyrian_sr_notify_players_effect = yes
-
 	}
 }
 
@@ -2920,7 +2768,7 @@ pr_roman_culture.0004 = {
 			top_liege = root
 			NOT = { religion = religion:hellenism_religion}
 		}
-		set_character_faith_with_conversion = faith:cdr_polytheism
+		set_character_faith_with_conversion = faith:roman_polytheism
 
 	}
 	#Those who aren't polytheist are probably horrified.
@@ -2970,8 +2818,6 @@ pr_roman_culture.0004 = {
  			save_scope_as = roman_senator
  		 		}
  			}
- 		}
-		 immediate = {
 			hidden_effect = {
 			 create_character = {
 				employer = root
@@ -3080,8 +2926,6 @@ pr_roman.0703 ={
 			save_scope_as = roman_senator
 				 }
 			}
-		}
-		immediate = {
 			hidden_effect = {
 			 create_character = {
 				employer = root
@@ -3165,57 +3009,6 @@ pr_roman.0707 ={
 	}
 }
 
-#gallo roman
-#Same as for other religions turned off the vassal conversion
-pr_roman_culture.0100 = {
-	type = character_event
-	title = pr_roman_culture.0100.t
-	desc = pr_roman_culture.0100.desc
-	theme = learning
-	right_portrait = {
-		character = root
-		animation = personality_content
-	}
-	option = {
-		name = pr_roman_culture.0100.a
-		# trigger_event = pr_roman_culture.0101
-		# days = 20
-		set_character_faith = faith:cdr_polytheism
-	}
-}
-
-
-pr_roman_culture.0101 = {
-	type = character_event
-	title = pr_roman_culture.0101.t
-	desc = pr_roman_culture.0101.desc
-	theme = faith
-	right_portrait = {
-		character = scope:scoped_ruler
-		animation = personality_zealous
-		}
-		override_background = { reference = throne_room }
-
-	immediate = {
-		play_music_cue = "mx_cue_faith_conversion"
-		save_scope_as = scoped_ruler
-		faith = { save_scope_as = old_faith }
-	}
-
-	option = {
-		name = pr_roman_culture.0101.a
-		#Get a nice reward for your adherence to the true faith.
-		add_piety_level = 1
-		#Sort notification copy for players.
-		save_scope_value_as = {
-			name = pr_gallo_roman_return
-			value = flag:vanilla
-		}
-		pr_gallo_roman_sr_notify_players_effect = yes
-
-	}
-}
-
 pr_roman_culture.0102 = {
 	type = character_event
 	title = pr_roman_culture.0102.t
@@ -3249,7 +3042,7 @@ pr_roman_culture.0102 = {
 			top_liege = root
 			NOT = { religion = religion:hellenism_religion}
 		}
-		set_character_faith_with_conversion = faith:cdr_polytheism
+		set_character_faith_with_conversion = faith:roman_polytheism
 
 	}
 	#Those who aren't polytheist are probably horrified.
@@ -3284,7 +3077,7 @@ pr_roman_culture.0103 = {
 		trigger = {
 			NOT = { has_character_modifier = gallo_roman_jupiter_teranus }
 		}
-		set_bhakti_effect = { BHAKTI = gallo_roman_jupiter_teranus }
+		pr_set_patron_god_effect = { BHAKTI = gallo_roman_jupiter_teranus }
 	}
 
 		#Minerva Belisama
@@ -3293,7 +3086,7 @@ pr_roman_culture.0103 = {
 			trigger = {
 				NOT = { has_character_modifier = gallo_roman_minerva_belisama }
 			}
-			set_bhakti_effect = { BHAKTI = gallo_roman_minerva_belisama }
+			pr_set_patron_god_effect = { BHAKTI = gallo_roman_minerva_belisama }
 		}
 
 	#Mercury
@@ -3302,7 +3095,7 @@ pr_roman_culture.0103 = {
 		trigger = {
 			NOT = { has_character_modifier = gallo_roman_mercurius_cissonius }
 		}
-		set_bhakti_effect = { BHAKTI = gallo_roman_mercurius_cissonius }
+		pr_set_patron_god_effect = { BHAKTI = gallo_roman_mercurius_cissonius }
 	}
 
 	# Venus
@@ -3311,7 +3104,7 @@ pr_roman_culture.0103 = {
 		trigger = {
 			NOT = { has_character_modifier = gallo_roman_venus }
 		}
-		set_bhakti_effect = { BHAKTI = gallo_roman_venus }
+		pr_set_patron_god_effect = { BHAKTI = gallo_roman_venus }
 	}
 
 
@@ -3321,7 +3114,7 @@ pr_roman_culture.0103 = {
 			trigger = {
 				NOT = { has_character_modifier = gallo_roman_mars_lenus }
 			}
-			set_bhakti_effect = { BHAKTI = gallo_roman_mars_lenus }
+			pr_set_patron_god_effect = { BHAKTI = gallo_roman_mars_lenus }
 		}
 
 	# Opt-Out
@@ -3352,7 +3145,7 @@ pr_roman_culture.0200 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_british_jupiter_teran }
 		}
-		set_bhakti_effect = { BHAKTI = romano_british_jupiter_teran }
+		pr_set_patron_god_effect = { BHAKTI = romano_british_jupiter_teran }
 	}
 
 		#Sulis Minerva
@@ -3361,7 +3154,7 @@ pr_roman_culture.0200 = {
 			trigger = {
 				NOT = { has_character_modifier = romano_british_sulis_minerva }
 			}
-			set_bhakti_effect = { BHAKTI = romano_british_sulis_minerva }
+			pr_set_patron_god_effect = { BHAKTI = romano_british_sulis_minerva }
 		}
 
 	#Mercury Lugus
@@ -3370,7 +3163,7 @@ pr_roman_culture.0200 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_british_mercurius_lugus }
 		}
-		set_bhakti_effect = { BHAKTI = romano_british_mercurius_lugus }
+		pr_set_patron_god_effect = { BHAKTI = romano_british_mercurius_lugus }
 	}
 
 	# Venus
@@ -3379,7 +3172,7 @@ pr_roman_culture.0200 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_british_venus }
 		}
-		set_bhakti_effect = { BHAKTI = romano_british_venus }
+		pr_set_patron_god_effect = { BHAKTI = romano_british_venus }
 	}
 
 
@@ -3389,7 +3182,7 @@ pr_roman_culture.0200 = {
 			trigger = {
 				NOT = { has_character_modifier = romano_british_mars_cocidius }
 			}
-			set_bhakti_effect = { BHAKTI = romano_british_mars_cocidius }
+			pr_set_patron_god_effect = { BHAKTI = romano_british_mars_cocidius }
 		}
 
 	# Opt-Out
@@ -3400,23 +3193,6 @@ pr_roman_culture.0200 = {
 		ai_chance = {
 			base = 0
 		}
-	}
-}
-#Romano Germanic
-#Embrace Roman Germanic Culture
-#Convert to Romano Germanic
-pr_roman_culture.0300 = {
-	type = character_event
-	title = pr_roman_culture.0300.t
-	desc = pr_roman_culture.0300.desc
-	theme = learning
-	right_portrait = {
-		character = root
-		animation = personality_content
-	}
-	option = {
-		name = pr_roman_culture.0300.a
-		set_character_faith = faith:cdr_polytheism
 	}
 }
 #Choose main deity
@@ -3437,7 +3213,7 @@ pr_roman_culture.0301 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_germanic_mercurius_hranno }
 		}
-		set_bhakti_effect = { BHAKTI = romano_germanic_mercurius_hranno }
+		pr_set_patron_god_effect = { BHAKTI = romano_germanic_mercurius_hranno }
 	}
 
 	#Hercules Meganusus
@@ -3446,7 +3222,7 @@ pr_roman_culture.0301 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = romano_germanic_hercules_meganusus }
 	 	}
-	 	set_bhakti_effect = { BHAKTI = romano_germanic_hercules_meganusus }
+	 	pr_set_patron_god_effect = { BHAKTI = romano_germanic_hercules_meganusus }
 	 }
 
 	# Isis Freia
@@ -3455,7 +3231,7 @@ pr_roman_culture.0301 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_germanic_isis_freia }
 		}
-		set_bhakti_effect = { BHAKTI = romano_germanic_isis_freia }
+		pr_set_patron_god_effect = { BHAKTI = romano_germanic_isis_freia }
 	}
 
 
@@ -3465,7 +3241,7 @@ pr_roman_culture.0301 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_germanic_mars_thincsus }
 		}
-		set_bhakti_effect = { BHAKTI = romano_germanic_mars_thincsus }
+		pr_set_patron_god_effect = { BHAKTI = romano_germanic_mars_thincsus }
 	}
 
 	# Opt-Out
@@ -3476,36 +3252,6 @@ pr_roman_culture.0301 = {
 		ai_chance = {
 			base = 0
 		}
-	}
-}
-
-pr_roman_culture.0500 = {
-	type = character_event
-	title = cultus_orientalis.001.t
-	desc = cultus_orientalis.001.desc
-	theme = learning
-	right_portrait = {
-		character = root
-		animation = personality_content
-	}
-	option = {
-		name = cultus_orientalis.001.a
-		set_character_faith = faith:cdr_polytheism
-	}
-}
-
-pr_roman_culture.0400 = {
-	type = character_event
-	title = cultus_orientalis.001.t
-	desc = cultus_orientalis.001.desc
-	theme = learning
-	right_portrait = {
-		character = root
-		animation = personality_content
-	}
-	option = {
-		name = cultus_orientalis.001.a
-		set_character_faith = faith:cdr_polytheism
 	}
 }
 
@@ -3527,7 +3273,7 @@ pr_roman_culture.0401 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_hispanic_jupiter_solutorius }
 		}
-		set_bhakti_effect = { BHAKTI = romano_hispanic_jupiter_solutorius }
+		pr_set_patron_god_effect = { BHAKTI = romano_hispanic_jupiter_solutorius }
 	}
 
 	#Minerva
@@ -3536,7 +3282,7 @@ pr_roman_culture.0401 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = romano_hispanic_minerva }
 	 	}
-	 	set_bhakti_effect = { BHAKTI = romano_hispanic_minerva }
+	 	pr_set_patron_god_effect = { BHAKTI = romano_hispanic_minerva }
 	 }
 
 	#Mars Neto
@@ -3545,7 +3291,7 @@ pr_roman_culture.0401 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_hispanic_mars_neto }
 		}
-		set_bhakti_effect = { BHAKTI = romano_hispanic_mars_neto }
+		pr_set_patron_god_effect = { BHAKTI = romano_hispanic_mars_neto }
 	}
 
 
@@ -3555,7 +3301,7 @@ pr_roman_culture.0401 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_hispanic_lucubo }
 		}
-		set_bhakti_effect = { BHAKTI = romano_hispanic_lucubo }
+		pr_set_patron_god_effect = { BHAKTI = romano_hispanic_lucubo }
 	}
 	# Nabia
 	option = {
@@ -3563,12 +3309,12 @@ pr_roman_culture.0401 = {
 		trigger = {
 			NOT = { has_character_modifier = romano_hispanic_nabia }
 		}
-		set_bhakti_effect = { BHAKTI = romano_hispanic_nabia }
+		pr_set_patron_god_effect = { BHAKTI = romano_hispanic_nabia }
 	}
 
 	# Opt-Out
 	option = {
-		name = pr_roman_culture.0501.optout
+		name = pr_roman_culture.0401.optout
 		flavor = religious_decision.0102.flavor
 
 		ai_chance = {
@@ -3595,7 +3341,7 @@ pr_roman_culture.0501 = {
 		trigger = {
 			NOT = { has_character_modifier = cultus_orientis_jupiter_dolichenus }
 		}
-		set_bhakti_effect = { BHAKTI = cultus_orientis_jupiter_dolichenus }
+		pr_set_patron_god_effect = { BHAKTI = cultus_orientis_jupiter_dolichenus }
 	}
 
 	#Minerva
@@ -3604,7 +3350,7 @@ pr_roman_culture.0501 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = romano_hispanic_minerva }
 	 	}
-	 	set_bhakti_effect = { BHAKTI = romano_hispanic_minerva }
+	 	pr_set_patron_god_effect = { BHAKTI = romano_hispanic_minerva }
 	 }
 
 	#Juno Caelestis
@@ -3613,7 +3359,7 @@ pr_roman_culture.0501 = {
 		trigger = {
 			NOT = { has_character_modifier = cultus_orientis_juno_caelestis }
 		}
-		set_bhakti_effect = { BHAKTI = cultus_orientis_juno_caelestis }
+		pr_set_patron_god_effect = { BHAKTI = cultus_orientis_juno_caelestis }
 	}
 
 
@@ -3623,7 +3369,7 @@ pr_roman_culture.0501 = {
 		trigger = {
 			NOT = { has_character_modifier = cultus_orientis_mercurius_sobrius }
 		}
-		set_bhakti_effect = { BHAKTI = cultus_orientis_mercurius_sobrius }
+		pr_set_patron_god_effect = { BHAKTI = cultus_orientis_mercurius_sobrius }
 	}
 	#Eshmun
 	option = {
@@ -3631,7 +3377,7 @@ pr_roman_culture.0501 = {
 		trigger = {
 			NOT = { has_character_modifier = cultus_orientis_eshmun }
 		}
-		set_bhakti_effect = { BHAKTI = cultus_orientis_eshmun }
+		pr_set_patron_god_effect = { BHAKTI = cultus_orientis_eshmun }
 	}
 
 	# Opt-Out
@@ -4072,7 +3818,7 @@ pr_roman.0012= {
 #More in the future ?
 pr_roman.0013 = {
 	trigger = {
-		religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		any_character_artifact = {
 			has_artifact_modifier = pr_book_about_mythology
 		}
@@ -4140,9 +3886,9 @@ pr_roman.0014 = {
 
 						save_scope_as = excellent_skill_option
 						if = {
-							limit = { NOT = { has_trait = scholar } }
+							limit = { NOT = { has_trait = erudite } }
 							add_trait = education_learning_3
-							faith = root.faith
+							set_character_faith = root.faith
 						}
 
 						#Backup generation
@@ -4154,7 +3900,7 @@ pr_roman.0014 = {
 								gender_female_chance = 50
 								template_character = root
 								random_traits = yes
-								add_trait = education_learning_3
+								trait = education_learning_3
 								age = { 18 50 }
 								faith = root.faith
 								learning = high_skill_rating
@@ -4202,7 +3948,7 @@ pr_roman.0014 = {
 						gender_female_chance = 50
 						template_character = root
 						random_traits = yes
-						add_trait = education_learning_2
+						trait = education_learning_2
 						age = { 18 50 }
 						faith = root.faith
 						learning = { medium_skill_rating high_skill_rating }
@@ -4282,7 +4028,7 @@ pr_roman.0014 = {
 										learning < medium_skill_rating
 									}
 								}
-								NOT = { has_trait = mystic_3 }
+								NOT = { has_trait_xp = { trait = lifestyle_mystic value >= 100 } }
 							}
 							ai_mystic_lifestyle_rank_up_effect = yes
 						}
@@ -4351,7 +4097,7 @@ pr_roman.0014 = {
 					faith = root.faith
 					learning = { medium_skill_rating decent_skill_rating }
 					save_scope_as = low_skill_option
-					add_trait = education_learning_1
+					trait = education_learning_1
 
 				}
 			}
@@ -4365,7 +4111,7 @@ pr_roman.0014 = {
 			is_landed = yes #extra check to make sure they haven't lost their status
 		}
 		name = pr_roman.0014.e
-		trait = scholar
+		trait = erudite
 		skill = learning
 
 		pay_short_term_gold = {
@@ -5105,39 +4851,6 @@ pr_roman.0023 = {
 	}
 }
 
-pr_roman.0024 = {
-	desc =  {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					AND = {
-						has_trait = pr_cdr_iupiter #Iupiter
-						any_character_artifact = {
-							has_artifact_modifier = pr_statue_jupiter
-						}
-
-					}
-					 OR = {
-					 	var:pr_ritual  = flag:pr_wine_offering
-						var:pr_ritual  = flag:pr_incense_offering
-						var:pr_ritual  = flag:pr_fruit_offering
-					}
-				}
-				desc = cdr.r.0009.desc
-			}
-			desc = pr_roman.0021.fallback.desc
-		}
-	}
-	type = character_event
-	title = pr_roman.0024.t
-	theme = learning_scholarship_focus
-	override_background = { reference = market_west }
-
-	option = {
-		name = pr_roman.0024.a
-	}
-}
-
 pr_roman_cult.0026 = {
 	type = character_event
 	desc = pr_roman_cult.0026.desc
@@ -5551,32 +5264,6 @@ pr_roman.0030 = {
 	}
 }
 
-#Secret faiths
-pr_roman.0028 = {
-	type = character_event
-	desc = pr_roman.0028.desc
-	title = pr_roman.0028.t
-	theme = learning_scholarship_focus
-	right_portrait = {
-		character = root
-		animation = personality_content
-	}
-
-	option = {
-		name = pr_roman.0028.a
-		set_character_faith = faith:cdr_polytheism
-		if = {
-			limit = { exists = secret_faith }
-			remove_character_secret_faith = yes
-		}
-		remove_list_global_variable = {
-			name = research_roman
-			target = flag:flag_research_roman
-		}
-	}
-
-}
-
 pr_roman.0031 = {
 	type = character_event
 	desc = pr_roman.0031.desc
@@ -5624,7 +5311,7 @@ pr_roman_cult.0029 = {
 
 	option = {
 		name = pr_roman_cult.0029.a
-		set_character_faith = faith:cdr_polytheism
+		set_character_faith = faith:roman_polytheism
 		if = {
 			limit = { exists = secret_faith }
 			remove_character_secret_faith = yes
@@ -5645,7 +5332,7 @@ pr_roman_cult.0030 = {
 
 	option = {
 		name = pr_roman_cult.0030.a
-		set_character_faith = faith:cdr_polytheism
+		set_character_faith = faith:roman_polytheism
 		if = {
 			limit = { exists = secret_faith }
 			remove_character_secret_faith = yes
@@ -5666,7 +5353,7 @@ pr_roman_cult.0032 = {
 
 	option = {
 		name = pr_roman_cult.0032.a
-		set_character_faith = faith:cdr_polytheism
+		set_character_faith = faith:roman_polytheism
 		if = {
 			limit = { exists = secret_faith }
 			remove_character_secret_faith = yes
@@ -5708,7 +5395,7 @@ ep3_roman_restoration.0100 = {
 		custom_tooltip = ep3_roman_restoration.end_hard_mode
 		custom_tooltip = ep3_roman_restoration.invasion_cb
 		set_character_faith = faith:hellenic_pagan
-		primary_title = { set_state_faith = faith:hellenic_pagan }
+		primary_title = { set_state_rite = faith:hellenic_pagan.main_rite }
 		every_held_title = {
 			custom = custom.every_held_county
 			limit = { tier = tier_county }
@@ -5736,20 +5423,20 @@ ep3_roman_restoration.0100 = {
 		custom_tooltip = ep3_roman_restoration.hard_mode
 		custom_tooltip = ep3_roman_restoration.end_hard_mode
 		custom_tooltip = ep3_roman_restoration.invasion_cb
-		set_character_faith = faith:cdr_polytheism
-		primary_title = { set_state_faith = faith:cdr_polytheism }
+		set_character_faith = faith:roman_polytheism
+		primary_title = { set_state_rite = faith:roman_polytheism.main_rite }
 		every_held_title = {
 			custom = custom.every_held_county
 			limit = { tier = tier_county }
-			set_county_faith = faith:cdr_polytheism
+			set_county_faith = faith:roman_polytheism
 		}
 		every_vassal = {
 			custom = custom.every_admin_vassal
 			limit = {
 				government_allows = administrative
-				faith != faith:cdr_polytheism
+				faith != faith:roman_polytheism
 			}
-			set_character_faith = faith:cdr_polytheism
+			set_character_faith = faith:roman_polytheism
 		}
 		custom_tooltip = {
 			text = ep3_roman_restoration.household_gods_tenet
@@ -6121,8 +5808,8 @@ pr_roman.0034 = {
 #Ai event
 pr_roman.0035 = {
 	type = character_event
-	title = pr_roman.0036.t
-	desc = pr_roman.0036.desc
+	title = pr_roman.0035.t
+	desc = pr_roman.0035.desc
 	theme = emperor
 
 	trigger = {
@@ -6624,7 +6311,7 @@ pr_roman_cult.0042 = {
 	option = {
 		name = pr_roman_cult.0042.mithras #Mithras cult
 		trigger = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			NOR = {
 				exists = global_var:restored_mithras_cult
 			}
@@ -6681,7 +6368,7 @@ pr_roman_cult.0042 = {
 		name = pr_roman_cult.0042.isis #Isis cult
 		trigger = {
 			OR = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 				religion = religion:hellenism_religion
 				faith = faith:kemetic_polytheism
 			}
@@ -6740,7 +6427,7 @@ pr_roman_cult.0042 = {
 	option = {
 		name = pr_roman_cult.0042.sol_invictus #Sol invictus cult
 		trigger = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			NOR = {
 				exists = global_var:restored_sol_invictus_cult
 			}
@@ -6796,7 +6483,7 @@ pr_roman_cult.0042 = {
 		name = pr_roman_cult.0042.serapis #Serapis cult
 		trigger = {
 			OR = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 				religion = religion:hellenism_religion
 				faith = faith:kemetic_polytheism
 			}
@@ -6877,7 +6564,7 @@ pr_roman_cult.0048 = {
 		name = pr_roman_cult.0048.eleusinian #Eleusinian cult
 		trigger = {
 			OR = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 				religion = religion:hellenism_religion
 
 			}
@@ -6937,7 +6624,7 @@ pr_roman_cult.0048 = {
 		name = pr_roman_cult.0048.imperial #Imperial cult
 		trigger = {
 			OR = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 				religion = religion:hellenism_religion
 				faith = faith:kemetic_polytheism
 
@@ -6996,7 +6683,7 @@ pr_roman_cult.0048 = {
 	option = {
 		name = pr_roman_cult.0048.bacchus #Bacchus cult
 		trigger = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 			NOR = {
 				exists = global_var:restored_bacchus_cult
 			}
@@ -7043,7 +6730,7 @@ pr_roman_cult.0048 = {
 	option = {
 		name = pr_roman_cult.0048.cybele #Cybele cult
 		trigger = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 			NOR = {
 				exists = global_var:restored_cybele_cult
 			}
@@ -7466,7 +7153,7 @@ pr_roman_cult.0047 = {
 	option = {
 		name = pr_roman_cult.0047.a
 		trigger = {
-			ai = no
+			is_ai = no
 		}
 		scope:new_vestalis_maxima = {
 			give_nickname = nick_vestalis_maxima
@@ -7476,7 +7163,7 @@ pr_roman_cult.0047 = {
 		trigger = {
 			root = {
 				NOT = {
-					religion = religion:roman_religion
+					pr_is_cultus_deorum_trigger = yes
 				}
 
 			}
@@ -7490,7 +7177,7 @@ pr_roman_cult.0047 = {
 	option = {
 		trigger = {
 			root = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 			}
 		  is_ai = yes
 		}
@@ -7601,7 +7288,7 @@ pr_roman_cult.0053 = {
 	option = {
 		name = pr_roman_cult.0053.a
 		trigger = {
-			ai = no
+			is_ai = no
 		}
 		scope:new_cult_leader_isis = {
 			give_nickname = nick_hierophant_isis
@@ -7629,7 +7316,7 @@ pr_roman_cult.0054 = {
 	option = {
 		name = pr_roman_cult.0054.a
 		trigger = {
-			ai = no
+			is_ai = no
 		}
 		scope:new_cult_leader_serapis = {
 			give_nickname = nick_hierophant_serapis
@@ -7657,7 +7344,7 @@ pr_roman_cult.0055 = {
 	option = {
 		name = pr_roman_cult.0055.a
 		trigger = {
-			ai = no
+			is_ai = no
 		}
 		scope:new_cult_leader_sol_invictus = {
 			give_nickname = nick_hierophant_sol_invictus
@@ -7687,7 +7374,7 @@ pr_roman_cult.0056 = {
 	option = {
 		name = pr_roman_cult.0056.a
 		trigger = {
-			ai = no
+			is_ai = no
 		}
 		scope:new_cult_leader_eleusinian = {
 			give_nickname = nick_hierophant_eleusinian
@@ -7716,7 +7403,7 @@ pr_roman_cult.0057 = {
 	option = {
 		name = pr_roman_cult.0057.a
 		trigger = {
-			ai = no
+			is_ai = no
 		}
 		scope:new_cult_leader_bacchus = {
 			give_nickname = nick_hierophant_bacchus
@@ -7745,7 +7432,7 @@ pr_roman_cult.0058 = {
 	option = {
 		name = pr_roman_cult.0058.a
 		trigger = {
-			ai = no
+			is_ai = no
 		}
 		scope:new_cult_leader_cybele = {
 			give_nickname = nick_hierophant_cybele
@@ -7775,7 +7462,7 @@ pr_roman_cult.0059 = {
 	option = {
 		name = pr_roman_cult.0059.a
 		trigger = {
-			ai = no
+			is_ai = no
 		}
 		scope:new_cult_leader_mithras = {
 			give_nickname = nick_pater_mithras
@@ -7805,7 +7492,7 @@ pr_roman_cult.0060 = {
 	option = {
 		name = pr_roman_cult.0060.a
 		trigger = {
-			ai = no
+			is_ai = no
 		}
 		scope:new_cult_leader_imperial = {
 			give_nickname = nick_augustalis_imperial
@@ -8243,7 +7930,7 @@ pr_roman.0050 = {
 	option = {
 		name = pr_roman.0050.b # Latin is the voice of Rome
 
-		subtract_prestige = 50
+		add_prestige = -50
 		scope:pr_greek_opponent = {
 			add_opinion = {
 				target = root
@@ -8316,7 +8003,7 @@ pr_roman.0051 = {
 		name = pr_roman.0051.a # Establish the scriptorium
 		trigger = { gold >= 150 }
 
-		subtract_gold = 150
+		remove_short_term_gold = 150
 		scope:pr_latin_speaker = {
 			add_trait = lifestyle_scholar
 			add_opinion = {
@@ -8326,7 +8013,7 @@ pr_roman.0051 = {
 			}
 		}
 		# Courtiers gradually learn Latin
-		any_courtier = {
+		every_courtier = {
 			limit = {
 				NOT = { knows_language_of_culture = culture:roman }
 				NOT = { is_landed = yes }
@@ -8357,7 +8044,7 @@ pr_roman.0051 = {
 		name = pr_roman.0051.c # Make it a grand academy!
 		trigger = { gold >= 300 }
 
-		subtract_gold = 300
+		remove_short_term_gold = 300
 		scope:pr_latin_speaker = {
 			add_trait = lifestyle_scholar
 			add_opinion = {
@@ -8371,7 +8058,7 @@ pr_roman.0051 = {
 			}
 		}
 		# All courtiers learn Latin
-		any_courtier = {
+		every_courtier = {
 			limit = {
 				NOT = { knows_language_of_culture = culture:roman }
 			}

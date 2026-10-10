@@ -11,7 +11,7 @@ pr_return_polytheism_decision = {
 	}
 	decision_group_type = polytheism
 	desc = pr_return_polytheism_decision_desc
-	decision_tooltip = pr_return_polytheism_decision_tooltip
+	selection_tooltip = pr_return_polytheism_decision_tooltip
 
 	is_shown = {
 		AND = {
@@ -70,6 +70,7 @@ pr_return_polytheism_decision = {
 			}
 		}
 	}
+	ai_check_interval = 0 # player-only until an AI weight is designed (#147)
 }
 
 # --- Return to Polytheism (Short) Decision ---
@@ -79,7 +80,7 @@ pr_return_polytheism_short_decision = {
     }
     decision_group_type = polytheism
     desc = pr_return_polytheism_short_decision_desc
-    decision_tooltip = pr_return_polytheism_short_decision_tooltip
+    selection_tooltip = pr_return_polytheism_short_decision_tooltip
 
     is_shown = {
         is_adult = yes
@@ -114,7 +115,7 @@ pr_return_culture_short_decision = {
     }
     decision_group_type = polytheism
     desc = pr_return_culture_short_decision_desc
-    decision_tooltip = pr_return_culture_short_decision_tooltip
+    selection_tooltip = pr_return_culture_short_decision_tooltip
 
     is_shown = {
         is_adult = yes
@@ -149,7 +150,7 @@ pr_close_temple_of_vesta_decision = {
     }
     decision_group_type = major
     desc = pr_close_temple_of_vesta_decision_desc
-    decision_tooltip = pr_close_temple_of_vesta_decision_tooltip
+    selection_tooltip = pr_close_temple_of_vesta_decision_tooltip
 
     is_shown = {
         is_ruler = yes
@@ -202,103 +203,84 @@ pr_close_temple_of_vesta_decision = {
     }
 }
 
-dismantle_papacy_decision = { #For Muslims and Pagans. Vanilla override.
-    picture = {
-        reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
-    }
-    decision_group_type = polytheism
-    desc = dismantle_papacy_decision_desc
-    selection_tooltip = dismantle_papacy_decision_tooltip
+dismantle_papacy_decision = { #For Muslims and Pagans. Override of vanilla 1.20 (PR changes marked "PR", #167).
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+	desc = dismantle_papacy_decision_desc
+	selection_tooltip = dismantle_papacy_decision_tooltip
+	decision_group_type = polytheism # PR
 
-    ai_check_interval = 60
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 60
+		empire = 60
+		hegemony = 60
+	}
 
-    is_shown = {
-        is_ruler = yes
-        is_landed = yes
-        is_playable_character = yes
-        faith:catholic = {
-            has_doctrine = doctrine_spiritual_head
-        }
-        OR = { #Must have historical grudge with Christianity
-            faith.religion = faith:hellenic_pagan.religion
-            faith.religion = faith:ashari.religion
-            faith.religion = faith:norse_pagan.religion
-            faith.religion = faith:slavic_pagan.religion
-            faith.religion = faith:baltic_pagan.religion
-            faith.religion = faith:cdr_polytheism.religion
-            faith.religion = faith:gaelic_polytheism.religion
-            faith.religion = faith:brythonic_polytheism.religion
-            faith.religion = faith:gaulish_polytheism.religion
-            faith.religion = faith:celtic_iberian_polytheism.religion
-            faith.religion = faith:punic_polytheism.religion
-            faith.religion = faith:etc_polytheism.religion
-            faith.religion = faith:anglo_saxon_polytheism.religion
-            faith.religion = faith:german_polytheism.religion
-            faith.religion = faith:kemetic_polytheism.religion
-            faith.religion = faith:atenism.religion
-            faith.religion = faith:armenian_polytheism.religion
-            faith.religion = faith:georgian_polytheism.religion
-            faith.religion = faith:babylonian_polytheism.religion
-            faith.religion = faith:assyrian_polytheism.religion
-            faith.religion = faith:sumerian_polytheism.religion
-            faith.religion = faith:hittite_polytheism.religion
-            faith.religion = faith:semitic_polytheism.religion
-        }
-        highest_held_title_tier > 3 #Only Kings and Emperors
-        capital_province = { #Indians could not possibly care...
-            OR = {
-                geographical_region = world_europe
-                geographical_region = world_middle_east
-                geographical_region = world_africa_north
-            }
-        }
-        NOT = {
-            current_date < 600.1.1
-        }
-    }
+	is_shown = {
+		highest_held_title_tier > 3 #Only Kings and Emperors
+		capital_province ?= { #Indians could not possibly care...
+			OR = {
+				geographical_region = world_europe
+				geographical_region = world_middle_east
+				geographical_region = world_africa_north
+			}
+		}
+		pr_historical_grudge_with_christianity_trigger = yes # PR: instead of any faith hostile to Catholics
+		NOT = { current_date < 600.1.1 } # PR: mods with earlier start dates (e.g. The Fallen Eagle, 385-495)
+		is_playable_character = yes
+		title:k_papal_state.holder.faith ?= faith:catholic # To avoid it showing for Chalcedonianism
+		faith:catholic = {
+			has_doctrine = doctrine_spiritual_head
+		}
+		is_ruler = yes
+	}
 
-    is_valid = {
-        trigger_if = {
-            limit = {
-                exists = title:k_papal_state.holder
-            }
-            title:k_papal_state.holder = { is_landed = no } #If he fled elsewhere, it cannot be done, the Pope must be landless.
-            title:k_papal_state.holder = { is_at_war = no } #Shouldn't be possible during a Crusade
-        }
-        completely_controls_region = world_europe_south_italy
-    }
+	is_valid = {
+		trigger_if = {
+			limit = {
+				exists = title:k_papal_state.holder
+			}
+			title:k_papal_state.holder = { is_landed = no } #If he fled elsewhere, it cannot be done, the Pope must be landless.
+			title:k_papal_state.holder = { is_at_war = no } #Shouldn't be possible during a Crusade
+		}
+		completely_controls_region = world_europe_south_italy
+	}
 
-    is_valid_showing_failures_only = {
-        is_landed = yes
-        is_capable_adult = yes
-        is_imprisoned = no
-        is_independent_ruler = yes
-    }
+	is_valid_showing_failures_only = {
+		is_landed = yes
+		is_capable_adult = yes
+		is_imprisoned = no
+		top_liege = this
+	}
 
-    effect = {
-        custom_tooltip = dismantle_papacy_decision_effect_tooltip
-        gain_holy_legend_seed_tooltip_effect = yes
-        hidden_effect = {
-            legend_seed_great_deed_faith_effect = {
-                ANTAGONIST = title:k_papal_state.holder
-                OLD_FAITH = title:k_papal_state.holder.faith
-            }
-        }
-        show_as_tooltip = {
-            destroy_papacy_scripted_effect = yes
-        }
-        trigger_event = {
-            id = roman_restoration.0130
-        }
-    }
+	effect = {
+		custom_tooltip = dismantle_papacy_decision_effect_tooltip
+		gain_holy_legend_seed_tooltip_effect = yes
+		hidden_effect = {
+			legend_seed_great_deed_faith_effect = {
+				ANTAGONIST = title:k_papal_state.holder
+				OLD_FAITH = title:k_papal_state.holder.faith
+			}
+		}
+		show_as_tooltip = {
+			destroy_papacy_scripted_effect = yes
+		}
+		trigger_event = {
+			id = roman_restoration.0130
+		}
+	}
 
-    ai_potential = {
-        always = yes
-    }
+	ai_potential = {
+		always = yes
+	}
 
-    ai_will_do = { #Do it always.
-        base = 100
-    }
+	ai_will_do = { #Do it always.
+		base = 100
+	}
 }
 # --- Dismantle the Patriarchate Decision ---
 pr_dismantle_patriarchate_decision = { #For Muslims and Pagans. Based on dismantle_papacy_decision.
@@ -307,7 +289,7 @@ pr_dismantle_patriarchate_decision = { #For Muslims and Pagans. Based on dismant
     }
     decision_group_type = polytheism
     desc = pr_dismantle_patriarchate_decision_desc
-    decision_tooltip = pr_dismantle_patriarchate_decision_tooltip
+    selection_tooltip = pr_dismantle_patriarchate_decision_tooltip
 
     ai_check_interval = 60
 
@@ -318,33 +300,7 @@ pr_dismantle_patriarchate_decision = { #For Muslims and Pagans. Based on dismant
         faith:orthodox = {
             has_doctrine = doctrine_spiritual_head
         }
-        OR = { #Must have historical grudge with Christianity
-            faith.religion = faith:hellenic_pagan.religion
-            faith.religion = faith:ashari.religion
-            faith.religion = faith:norse_pagan.religion
-            faith.religion = faith:slavic_pagan.religion
-            faith.religion = faith:baltic_pagan.religion
-            faith.religion = faith:cdr_polytheism.religion
-            faith.religion = faith:gaelic_polytheism.religion
-            faith.religion = faith:brythonic_polytheism.religion
-            faith.religion = faith:gaulish_polytheism.religion
-            faith.religion = faith:celtic_iberian_polytheism.religion
-            faith.religion = faith:punic_polytheism.religion
-            faith.religion = faith:etc_polytheism.religion
-            faith.religion = faith:anglo_saxon_polytheism.religion
-            faith.religion = faith:german_polytheism.religion
-            faith.religion = faith:kemetic_polytheism.religion
-            faith.religion = faith:atenism.religion
-            faith.religion = faith:armenian_polytheism.religion
-            faith.religion = faith:georgian_polytheism.religion
-            faith.religion = faith:babylonian_polytheism.religion
-            faith.religion = faith:assyrian_polytheism.religion
-            faith.religion = faith:sumerian_polytheism.religion
-            faith.religion = faith:hittite_polytheism.religion
-            faith.religion = faith:semitic_polytheism.religion
-            faith.religion = faith:illyrian_polytheism.religion
-            faith.religion = faith:scythian_polytheism.religion
-        }
+        pr_historical_grudge_with_christianity_trigger = yes
         highest_held_title_tier > 3 #Only Kings and Emperors
         capital_province = { #Indians could not possibly care...
             OR = {
@@ -414,7 +370,7 @@ pr_create_celtica_decision = {
     }
     decision_group_type = major
     desc = pr_create_celtica_decision_desc
-    decision_tooltip = pr_create_celtica_decision_tooltip
+    selection_tooltip = pr_create_celtica_decision_tooltip
 
     ai_check_interval = 4
 
@@ -429,9 +385,9 @@ pr_create_celtica_decision = {
             }
         }
         OR = {
-            faith = faith:gaulish_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
-            religion = religion:roman_religion
+            rite = rite:gaulish_rites
+            rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
+            pr_is_cultus_deorum_trigger = yes
             culture = culture:roman
             culture = { has_cultural_pillar = heritage_pr_gaulish }
         }
@@ -463,9 +419,9 @@ pr_create_celtica_decision = {
         completely_controls = title:d_auvergne
         completely_controls = title:d_bourbon
         OR = {
-            faith = faith:gaulish_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
-            religion = religion:roman_religion
+            rite = rite:gaulish_rites
+            rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
+            pr_is_cultus_deorum_trigger = yes
             culture = culture:roman
             culture = { has_cultural_pillar = heritage_pr_gaulish }
         }
@@ -558,7 +514,7 @@ pr_create_belgica_decision = {
     }
     decision_group_type = major
     desc = pr_create_belgica_decision_desc
-    decision_tooltip = pr_create_belgica_decision_tooltip
+    selection_tooltip = pr_create_belgica_decision_tooltip
 
     ai_check_interval = 4
 
@@ -573,9 +529,9 @@ pr_create_belgica_decision = {
             }
         }
         OR = {
-            faith = faith:gaulish_polytheism
-            religion = religion:roman_religion
-            faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
+            rite = rite:gaulish_rites
+            pr_is_cultus_deorum_trigger = yes
+            rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
             culture = culture:roman
             culture = { has_cultural_pillar = heritage_pr_gaulish }
         }
@@ -595,9 +551,9 @@ pr_create_belgica_decision = {
         completely_controls = title:c_zeeland
         completely_controls = title:d_flanders
         OR = {
-            faith = faith:gaulish_polytheism
-            religion = religion:roman_religion
-            faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
+            rite = rite:gaulish_rites
+            pr_is_cultus_deorum_trigger = yes
+            rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
             culture = culture:roman
             culture = { has_cultural_pillar = heritage_pr_gaulish }
         }
@@ -661,7 +617,7 @@ pr_create_narbonensis_decision = {
     }
     decision_group_type = major
     desc = pr_create_narbonensis_decision_desc
-    decision_tooltip = pr_create_narbonensis_decision_tooltip
+    selection_tooltip = pr_create_narbonensis_decision_tooltip
 
     ai_check_interval = 4
 
@@ -676,9 +632,9 @@ pr_create_narbonensis_decision = {
             }
         }
         OR = {
-            faith = faith:gaulish_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
-            religion = religion:roman_religion
+            rite = rite:gaulish_rites
+            rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
+            pr_is_cultus_deorum_trigger = yes
             culture = culture:roman
             culture = { has_cultural_pillar = heritage_pr_gaulish }
         }
@@ -696,9 +652,9 @@ pr_create_narbonensis_decision = {
         completely_controls = title:d_toulouse
         completely_controls = title:d_dauphine
         OR = {
-            faith = faith:gaulish_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
-            religion = religion:roman_religion
+            rite = rite:gaulish_rites
+            rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
+            pr_is_cultus_deorum_trigger = yes
             culture = culture:roman
             culture = { has_cultural_pillar = heritage_pr_gaulish }
         }
@@ -762,7 +718,7 @@ pr_create_cisalpine_gaul_decision = {
     }
     decision_group_type = major
     desc = pr_create_cisalpine_gaul_decision_desc
-    decision_tooltip = pr_create_cisalpine_gaul_decision_tooltip
+    selection_tooltip = pr_create_cisalpine_gaul_decision_tooltip
 
     ai_check_interval = 4
 
@@ -777,9 +733,9 @@ pr_create_cisalpine_gaul_decision = {
             }
         }
         OR = {
-            faith = faith:gaulish_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
-            religion = religion:roman_religion
+            rite = rite:gaulish_rites
+            rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
+            pr_is_cultus_deorum_trigger = yes
             culture = culture:roman
             culture = { has_cultural_pillar = heritage_pr_gaulish }
         }
@@ -800,9 +756,9 @@ pr_create_cisalpine_gaul_decision = {
         completely_controls = title:d_venice
         completely_controls = title:d_friuli
         OR = {
-            faith = faith:gaulish_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
-            religion = religion:roman_religion
+            rite = rite:gaulish_rites
+            rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
+            pr_is_cultus_deorum_trigger = yes
             culture = culture:roman
             culture = { has_cultural_pillar = heritage_pr_gaulish }
         }
@@ -874,7 +830,7 @@ pr_ai_polyteism_reconstruction_decision = {
     }
     decision_group_type = major
     desc = pr_ai_polyteism_reconstruction_decision_desc
-    decision_tooltip = pr_ai_polyteism_reconstruction_decision_tooltip
+    selection_tooltip = pr_ai_polyteism_reconstruction_decision_tooltip
 
     is_shown = {
         is_ruler = yes
@@ -930,7 +886,7 @@ pr_ai_polyteism_more_variety_religions_in_realm_decision = {
     }
     decision_group_type = major
     desc = pr_ai_polyteism_more_variety_religions_in_realm_decision_desc
-    decision_tooltip = pr_ai_polyteism_more_variety_religions_in_realm_decision_tooltip
+    selection_tooltip = pr_ai_polyteism_more_variety_religions_in_realm_decision_tooltip
 
     is_shown = {
         is_ai = yes

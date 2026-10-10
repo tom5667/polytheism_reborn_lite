@@ -6,7 +6,6 @@
 # Cultus deorum duchy title
 d_pontifex_polytheistic = {
 	color = { 255 249 198 }
-	color2 = { 220 220 0 }
 	definite_form = yes
 	ruler_uses_title_name = no
 	landless = yes
@@ -22,14 +21,11 @@ d_pontifex_polytheistic = {
 	always_follows_primary_heir = yes
 	de_jure_drift_disabled = yes
 
-	male_names = { Hadrianus Quintus Maxentius Scipio Gaius Trajanus Marcus Brutus Octavianus Julius }
-	female_names = { Hadriana Trajana Sabine Octavia Agrippina Domitia Hortensia Antonia Augusta Camilla Aurellia Sabina Junia }
 }
 
 # Celtic duchy title
 d_druidic = {
 	color = { 255 249 198 }
-	color2 = { 220 220 0 }
 	definite_form = yes
 	ruler_uses_title_name = no
 	landless = yes
@@ -45,8 +41,27 @@ d_druidic = {
 	always_follows_primary_heir = yes
 	de_jure_drift_disabled = yes
 
-	male_names = { Áedacán Áileachán Boidmal Brangen Caochlaoch Díomasach Dochartach Filtiarn Colla Irial }
-	female_names = { Essa Gelgéis Gráinde Gránne Mealla Lasairfhíona Laisrén Cobhfhlaith Báine }
+}
+
+# Daco-Thracian head of faith: the high priest of Zalmoxis. Kogaionon was the holy mountain of
+# the Geto-Dacians (Strabo 7.3.5); the high priest Decaeneus was second only to King Burebista.
+d_kogaionon = {
+	color = { 150 75 0 }
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+
+	capital = c_hunyad
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	destroy_if_invalid_heir = yes
+	no_automatic_claims = yes
+	always_follows_primary_heir = yes
+	de_jure_drift_disabled = yes
+
 }
 
 # Celtic empire
@@ -59,7 +74,6 @@ e_celtic_empire = {
 	# Ireland
 	k_high_kingdom_of_ireland = {
 		color = { 22 92 29 }
-		color2 = { 255 255 255 }
 		definite_form = yes
 		ruler_uses_title_name = yes
 		landless = no
@@ -77,8 +91,8 @@ e_celtic_empire = {
 					AND = {
 						culture = culture:irish
 						OR = {
-							faith = { has_doctrine_parameter = special_doctrine_gaelic_patron_god_active }
-							faith = faith:gaelic_polytheism
+							rite = { rite_has_parameter = special_doctrine_gaelic_patron_god_active }
+							faith = faith:eriu_polytheism
 						}
 					}
 				}
@@ -91,7 +105,6 @@ e_celtic_empire = {
 # Carthago
 k_carthago = {
 	color = white
-	color2 = yellow
 	definite_form = yes
 	ruler_uses_title_name = yes
 	landless = no
@@ -100,16 +113,16 @@ k_carthago = {
 
 	can_create = {
 		OR = {
-			faith = { has_doctrine_parameter = special_doctrine_punic_patron_god_active }
-			faith = faith:punic_polytheism
+			rite = { rite_has_parameter = special_doctrine_punic_patron_god_active }
+			rite = rite:punic_rites
 		}
 	}
 	ai_primary_priority = {
 		if = {
 			limit = {
 				OR = {
-					faith = { has_doctrine_parameter = special_doctrine_punic_patron_god_active }
-					faith = faith:punic_polytheism
+					rite = { rite_has_parameter = special_doctrine_punic_patron_god_active }
+					rite = rite:punic_rites
 				}
 			}
 			add = @correct_culture_primary_score
@@ -120,7 +133,6 @@ k_carthago = {
 # Kemet
 e_egyptus = {
 	color = blue
-	color2 = yellow
 	definite_form = yes
 	ruler_uses_title_name = yes
 	landless = no
@@ -145,7 +157,6 @@ e_egyptus = {
 
 	k_upper_egypt = {
 		color = blue
-		color2 = yellow
 		ruler_uses_title_name = yes
 		landless = no
 		capital = c_qus
@@ -158,7 +169,6 @@ e_egyptus = {
 
 	k_lower_egypt = {
 		color = blue
-		color2 = yellow
 		ruler_uses_title_name = yes
 		landless = no
 		capital = c_cairo
@@ -173,7 +183,6 @@ e_egyptus = {
 # Belgica
 k_belgica = {
 	color = { 46 255 0 }
-	color2 = yellow
 	definite_form = yes
 	ruler_uses_title_name = yes
 	landless = no
@@ -192,8 +201,8 @@ k_belgica = {
 		if = {
 			limit = {
 				OR = {
-					faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
-					faith = faith:gaulish_polytheism
+					rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
+					rite = rite:gaulish_rites
 				}
 			}
 			add = @correct_culture_primary_score
@@ -203,7 +212,6 @@ k_belgica = {
 
 k_narbonensis = {
 	color = green_light
-	color2 = yellow
 	definite_form = yes
 	ruler_uses_title_name = yes
 	landless = no
@@ -223,8 +231,8 @@ k_narbonensis = {
 		if = {
 			limit = {
 				OR = {
-					faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
-					faith = faith:gaulish_polytheism
+					rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
+					rite = rite:gaulish_rites
 				}
 			}
 			add = @correct_culture_primary_score
@@ -235,7 +243,6 @@ k_narbonensis = {
 # Galia Cisalpina
 k_cisalpina = {
 	color = green_light
-	color2 = yellow
 	definite_form = yes
 	ruler_uses_title_name = yes
 	landless = no
@@ -251,8 +258,8 @@ k_cisalpina = {
 		if = {
 			limit = {
 				OR = {
-					faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
-					faith = faith:gaulish_polytheism
+					rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
+					rite = rite:gaulish_rites
 				}
 			}
 			add = @correct_culture_primary_score
@@ -262,7 +269,6 @@ k_cisalpina = {
 
 k_etruria = {
 	color = { 250 244 207 }
-	color2 = yellow
 	definite_form = yes
 	ruler_uses_title_name = yes
 	landless = no
@@ -272,7 +278,7 @@ k_etruria = {
 	ai_primary_priority = {
 		if = {
 			limit = {
-				religion = religion:etruscan_religion
+				faith = faith:etruscan_polytheism
 			}
 			add = @correct_culture_primary_score
 		}
@@ -282,7 +288,6 @@ k_etruria = {
 # Scythia
 e_scythia = {
 	color = yellow
-	color2 = red
 	definite_form = yes
 	ruler_uses_title_name = yes
 	landless = no
@@ -303,7 +308,6 @@ e_scythia = {
 
 	k_scythia = {
 		color = yellow
-		color2 = red
 		definite_form = yes
 		ruler_uses_title_name = yes
 		landless = no
@@ -325,7 +329,6 @@ e_scythia = {
 
 	k_indo_scythia = {
 		color = yellow_light
-		color2 = red
 		definite_form = yes
 		ruler_uses_title_name = yes
 		landless = no
@@ -348,7 +351,6 @@ e_scythia = {
 
 k_pr_dacia = {
 	color = { 162 192 192 }
-	color2 = brown
 	definite_form = yes
 	ruler_uses_title_name = yes
 	landless = no
@@ -368,7 +370,6 @@ k_pr_dacia = {
 # Mesopotamia
 e_mesopotamia = {
 	color = yellow
-	color2 = red
 	definite_form = yes
 	ruler_uses_title_name = yes
 	landless = no
@@ -395,7 +396,6 @@ e_mesopotamia = {
 
 	k_babylon = {
 		color = yellow
-		color2 = red
 		definite_form = yes
 		ruler_uses_title_name = yes
 		landless = no
@@ -417,7 +417,6 @@ e_mesopotamia = {
 
 	k_sumer = {
 		color = yellow_light
-		color2 = red
 		definite_form = yes
 		ruler_uses_title_name = yes
 		landless = no
@@ -439,7 +438,6 @@ e_mesopotamia = {
 
 	k_assyria = {
 		color = yellow_light
-		color2 = red
 		definite_form = yes
 		ruler_uses_title_name = yes
 		landless = no
@@ -463,7 +461,6 @@ e_mesopotamia = {
 # Hittite
 e_hittite = {
 	color = yellow
-	color2 = red
 	definite_form = yes
 	ruler_uses_title_name = yes
 	landless = no
@@ -484,7 +481,6 @@ e_hittite = {
 
 	k_hittite = {
 		color = yellow_light
-		color2 = red
 		definite_form = yes
 		ruler_uses_title_name = yes
 		landless = no
@@ -508,7 +504,6 @@ e_hittite = {
 # Khwarezm
 k_khwarezmia = {
 	color = { 55 160 85 }
-	color2 = yellow
 	definite_form = yes
 	ruler_uses_title_name = yes
 	landless = no
@@ -610,7 +605,7 @@ k_pergamon = {
 
 	can_create = {
 		OR = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			religion = religion:hellenism_religion
 		}
 	}
@@ -618,7 +613,7 @@ k_pergamon = {
 		if = {
 			limit = {
 				OR = {
-					religion = religion:roman_religion
+					pr_is_cultus_deorum_trigger = yes
 					religion = religion:hellenism_religion
 				}
 			}
@@ -662,7 +657,7 @@ e_spain = {
 
 		can_create = {
 			OR = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 				religion = religion:hellenism_religion
 				religion = religion:celtic_religion
 			}
@@ -671,7 +666,7 @@ e_spain = {
 			if = {
 				limit = {
 					OR = {
-						religion = religion:roman_religion
+						pr_is_cultus_deorum_trigger = yes
 						religion = religion:hellenism_religion
 						religion = religion:celtic_religion
 					}
@@ -696,7 +691,7 @@ e_spain = {
 
 		can_create = {
 			OR = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 				religion = religion:hellenism_religion
 				religion = religion:celtic_religion
 			}
@@ -705,7 +700,7 @@ e_spain = {
 			if = {
 				limit = {
 					OR = {
-						religion = religion:roman_religion
+						pr_is_cultus_deorum_trigger = yes
 						religion = religion:hellenism_religion
 						religion = religion:celtic_religion
 					}
@@ -730,7 +725,7 @@ e_spain = {
 
 		can_create = {
 			OR = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 				religion = religion:hellenism_religion
 				religion = religion:celtic_religion
 			}
@@ -739,7 +734,7 @@ e_spain = {
 			if = {
 				limit = {
 					OR = {
-						religion = religion:roman_religion
+						pr_is_cultus_deorum_trigger = yes
 						religion = religion:hellenism_religion
 						religion = religion:celtic_religion
 					}
@@ -764,7 +759,7 @@ e_spain = {
 
 		can_create = {
 			OR = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 				religion = religion:hellenism_religion
 				religion = religion:celtic_religion
 			}
@@ -773,7 +768,7 @@ e_spain = {
 			if = {
 				limit = {
 					OR = {
-						religion = religion:roman_religion
+						pr_is_cultus_deorum_trigger = yes
 						religion = religion:hellenism_religion
 						religion = religion:celtic_religion
 					}
@@ -798,7 +793,7 @@ e_spain = {
 
 		can_create = {
 			OR = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 				religion = religion:hellenism_religion
 				religion = religion:celtic_religion
 			}
@@ -807,7 +802,7 @@ e_spain = {
 			if = {
 				limit = {
 					OR = {
-						religion = religion:roman_religion
+						pr_is_cultus_deorum_trigger = yes
 						religion = religion:hellenism_religion
 						religion = religion:celtic_religion
 					}
@@ -832,7 +827,7 @@ e_spain = {
 
 		can_create = {
 			OR = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 				religion = religion:hellenism_religion
 				religion = religion:celtic_religion
 			}
@@ -841,7 +836,7 @@ e_spain = {
 			if = {
 				limit = {
 					OR = {
-						religion = religion:roman_religion
+						pr_is_cultus_deorum_trigger = yes
 						religion = religion:hellenism_religion
 						religion = religion:celtic_religion
 					}
@@ -863,7 +858,7 @@ k_pr_galatia = {
 	can_create = {
 		OR = {
 			religion = religion:celtic_religion
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			religion = religion:hellenism_religion
 		}
 	}
@@ -878,7 +873,7 @@ k_pr_galatia = {
 		can_create = {
 			OR = {
 				religion = religion:celtic_religion
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 				religion = religion:hellenism_religion
 			}
 		}
@@ -894,7 +889,7 @@ k_pr_galatia = {
 		can_create = {
 			OR = {
 				religion = religion:celtic_religion
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 				religion = religion:hellenism_religion
 			}
 		}
@@ -905,7 +900,7 @@ k_pr_galatia = {
 			limit = {
 				OR = {
 					religion = religion:celtic_religion
-					religion = religion:roman_religion
+					pr_is_cultus_deorum_trigger = yes
 					religion = religion:hellenism_religion
 				}
 			}
@@ -917,7 +912,6 @@ k_pr_galatia = {
 # Celtica — created via pr_create_celtica_decision
 k_celtica = {
 	color = green
-	color2 = yellow
 	definite_form = yes
 	ruler_uses_title_name = yes
 	landless = no
@@ -934,16 +928,16 @@ k_celtica = {
 
 	can_create = {
 		OR = {
-			faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
-			faith = faith:gaulish_polytheism
+			rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
+			rite = rite:gaulish_rites
 		}
 	}
 	ai_primary_priority = {
 		if = {
 			limit = {
 				OR = {
-					faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
-					faith = faith:gaulish_polytheism
+					rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
+					rite = rite:gaulish_rites
 				}
 			}
 			add = @correct_culture_primary_score
@@ -1031,7 +1025,7 @@ k_tarraconensis = {
 
 	can_create = {
 		OR = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			religion = religion:hellenism_religion
 			culture = culture:visigothic
 		}
@@ -1041,7 +1035,7 @@ k_tarraconensis = {
 		if = {
 			limit = {
 				OR = {
-					religion = religion:roman_religion
+					pr_is_cultus_deorum_trigger = yes
 					religion = religion:hellenism_religion
 					culture = culture:visigothic
 				}
@@ -1061,7 +1055,7 @@ k_carthaginensis = {
 
 	can_create = {
 		OR = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			religion = religion:hellenism_religion
 			culture = culture:visigothic
 		}
@@ -1071,7 +1065,7 @@ k_carthaginensis = {
 		if = {
 			limit = {
 				OR = {
-					religion = religion:roman_religion
+					pr_is_cultus_deorum_trigger = yes
 					religion = religion:hellenism_religion
 					culture = culture:visigothic
 				}
@@ -1118,7 +1112,7 @@ k_noricum = {
 
 	can_create = {
 		OR = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			religion = religion:celtic_religion
 		}
 	}
@@ -1126,7 +1120,7 @@ k_noricum = {
 		if = {
 			limit = {
 				OR = {
-					religion = religion:roman_religion
+					pr_is_cultus_deorum_trigger = yes
 					religion = religion:celtic_religion
 				}
 			}

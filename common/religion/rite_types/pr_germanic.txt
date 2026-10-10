@@ -1,0 +1,73 @@
+﻿#####################
+#Made by tom5667
+#####################
+# Rites of the Germanic faiths. Old tenets kept; Gruesome Festivals needs Northern Lords, the
+# fallback is vanilla's (Human Sacrifice).
+
+# Norse rite. Keeps the vanilla key so it overrides vanilla's rite.
+norse_pagan = {
+    faith = norse_pagan
+
+    color = { 0.4 0.4 0.4 }
+
+    tenets = {
+        tenet_warmonger
+        tenet_unrelenting_faith
+    }
+    tenet_selection_pair = {
+        requires_dlc_flag = the_northern_lords
+        tenet = tenet_gruesome_festivals
+        fallback_tenet = tenet_human_sacrifice
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+        special_doctrine_norse_patron_god
+    }
+}
+
+# Anglo-Saxon rite (faith anglo_saxon_polytheism).
+anglo_saxon_rites = {
+    faith = anglo_saxon_polytheism
+
+    color = { 214 214 214 }
+    icon = irminsul_new
+
+    tenets = {
+        tenet_warmonger
+        tenet_unrelenting_faith
+    }
+    tenet_selection_pair = {
+        requires_dlc_flag = the_northern_lords
+        tenet = tenet_gruesome_festivals
+        fallback_tenet = tenet_human_sacrifice
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+        special_doctrine_anglo_saxon_patron_god
+    }
+}
+
+# Continental German rite (faith german_polytheism).
+german_rites = {
+    faith = german_polytheism
+
+    color = { 87 87 87 }
+    icon = german_polytheism
+
+    tenets = {
+        tenet_warmonger
+        tenet_unrelenting_faith
+    }
+    tenet_selection_pair = {
+        requires_dlc_flag = the_northern_lords
+        tenet = tenet_gruesome_festivals
+        fallback_tenet = tenet_human_sacrifice
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+        special_doctrine_german_patron_god
+    }
+}

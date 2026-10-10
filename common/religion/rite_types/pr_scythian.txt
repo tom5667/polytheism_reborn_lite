@@ -1,0 +1,21 @@
+﻿scythian_rites = {
+    faith = scythian_polytheism
+    color = { 148 119 74 }
+    icon = scythian_polytheism
+
+    tenets = {
+        tenet_ancestor_worship
+        tenet_esotericism
+    }
+    # Sacrificial Appeasement is shown only with Northern Lords (pr_tenets.txt: has_fp1_dlc_trigger);
+    # without it the rite falls back to Animal Sacrifice (Herodotus 4.60-62: horses, cattle).
+    tenet_selection_pair = {
+        requires_dlc_flag = the_northern_lords
+        tenet = tenet_sacrificial_appeasement
+        fallback_tenet = tenet_animal_sacrifice
+    }
+    doctrines = {
+        unreformed_faith_doctrine
+    }
+    cultures = { pr_scythian }
+}

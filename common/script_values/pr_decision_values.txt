@@ -113,7 +113,7 @@ pr_empire_restore_prestige_cost = {
 # =============================================
 
 # Choose Main Deity - Statische kosten
-@pr_choose_deity_piety_cost = 250
+pr_choose_deity_piety_cost = 250 # script value (was a file-local @constant, #147)
 
 # Restore High Priesthood - Statische kosten
 @pr_high_priesthood_piety_cost = 500

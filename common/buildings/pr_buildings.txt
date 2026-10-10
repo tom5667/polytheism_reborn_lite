@@ -7,13 +7,13 @@
 	}
 	can_construct = {
 		scope:holder = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 		}
 	}
 	is_enabled = {
 		OR = {
 			scope:holder = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 			}
 			scope:holder = {
 				religion = religion:hellenism_religion
@@ -27,10 +27,7 @@
 		negate_health_penalty_add = 0.1
 		clergy_opinion = 15
 		same_faith_opinion = 10
-	}
-	county_modifier = {
 		stress_gain_mult = 0.2
-		clergy_opinion = 15
 		legitimacy_gain_mult = 0.2
 	}
 	ai_value = {
@@ -48,13 +45,13 @@ temple_jupiter_capitoline = {
 	}
 	can_construct = {
 		scope:holder = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 		}
 	}
 	is_enabled = {
 		OR = {
 			scope:holder = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 			}
 			scope:holder = {
 				religion = religion:hellenism_religion
@@ -88,7 +85,7 @@ temple_to_all_gods_rome = {
 	can_construct = {
 		OR = {
 			scope:holder = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 			}
 			scope:holder = {
 				religion = religion:hellenism_religion
@@ -98,7 +95,7 @@ temple_to_all_gods_rome = {
 	is_enabled = {
 		OR = {
 			scope:holder = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 			}
 			scope:holder = {
 				religion = religion:hellenism_religion
@@ -137,7 +134,7 @@ temple_to_all_gods_constantinople = {
 	can_construct = {
 		OR = {
 			scope:holder = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 			}
 			scope:holder = {
 				religion = religion:hellenism_religion
@@ -147,7 +144,7 @@ temple_to_all_gods_constantinople = {
 	is_enabled = {
 		OR = {
 			scope:holder = {
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 			}
 			scope:holder = {
 				religion = religion:hellenism_religion
@@ -203,7 +200,7 @@ sacred_grove = {
 	cost_gold = 1400
 	county_holder_character_modifier = {
 		monthly_piety = 0.4
-		monthly_county_control = 0.3
+		monthly_county_control_growth_add = 0.3
 
 	}
 	county_modifier = {

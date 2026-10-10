@@ -3,7 +3,7 @@
 #Amun Ra
 pr_kemetic_amun_ra = {
 	index = 67422
-	fame = yes 
+	category = fame
 	same_faith_opinion = 10
 	monthly_prestige = 0.2
 	monthly_piety = 0.3
@@ -25,7 +25,7 @@ pr_kemetic_amun_ra = {
 #Ra 
 pr_kemetic_ra = {
 	index = 67423
-	fame = yes 
+	category = fame
 	same_faith_opinion = 10
 	monthly_prestige = 0.2
 	monthly_piety = 0.3
@@ -48,7 +48,7 @@ pr_kemetic_ra = {
 #Isis
 pr_kemetic_isis = {
 	index = 67424
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.3
 	monthly_piety = 0.5
@@ -73,7 +73,7 @@ pr_kemetic_isis = {
 #Montu
 pr_kemetic_montu = {
 	index = 67425
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.3
 	monthly_piety = 0.2
@@ -96,7 +96,7 @@ pr_kemetic_montu = {
 #Hathor
 pr_kemetic_hathor = {
 	index = 67426
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.3
 	monthly_piety = 0.5

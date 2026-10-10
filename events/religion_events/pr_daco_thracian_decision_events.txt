@@ -28,7 +28,7 @@ pr_daco_thracian_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = dacian_gebeleizis }
 		}
-		set_bhakti_effect = { BHAKTI = dacian_gebeleizis }
+		pr_set_patron_god_effect = { BHAKTI = dacian_gebeleizis }
 	}
 
 	# Zalmoxis
@@ -37,7 +37,7 @@ pr_daco_thracian_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = dacian_zalmoxis }
 		}
-		set_bhakti_effect = { BHAKTI = dacian_zalmoxis }
+		pr_set_patron_god_effect = { BHAKTI = dacian_zalmoxis }
 	}
 
 	# Dionysus
@@ -46,7 +46,7 @@ pr_daco_thracian_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = dacian_dionysus }
 		}
-		set_bhakti_effect = { BHAKTI = dacian_dionysus }
+		pr_set_patron_god_effect = { BHAKTI = dacian_dionysus }
 	}
 
 	# Pleistoros
@@ -55,7 +55,7 @@ pr_daco_thracian_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = dacian_pleistoros }
 		}
-		set_bhakti_effect = { BHAKTI = dacian_pleistoros }
+		pr_set_patron_god_effect = { BHAKTI = dacian_pleistoros }
 	}
 
 	# Derzelas
@@ -64,7 +64,7 @@ pr_daco_thracian_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = dacian_derzelas }
 		}
-		set_bhakti_effect = { BHAKTI = dacian_derzelas }
+		pr_set_patron_god_effect = { BHAKTI = dacian_derzelas }
 	}
 
 	# Opt-Out
@@ -107,11 +107,11 @@ pr_daco_thracian_decision.0002 = {
 pr_daco_thracian.0007 = {
 	trigger = {
 		NOT = {
-			faith = faith:zalmoxism
+			rite = rite:zalmoxism_rites
 		}
 	}
 	type = character_event
-	title = pr_daco_thracian.0007
+	title = pr_daco_thracian.0007.t
 	desc = pr_daco_thracian.0007.desc
 	theme = learning
 	right_portrait = {
@@ -154,7 +154,7 @@ pr_daco_thracian.0007 = {
 pr_daco_thracian.0008 = {
 	trigger = {
 		NOT = {
-			faith = faith:zalmoxism
+			rite = rite:zalmoxism_rites
 		}
 	}
 	type = character_event
@@ -363,8 +363,7 @@ pr_daco_thracian_decision.0011 = {
 		name = pr_daco_thracian_decision.0011.a
 		# Kill them off.
 		scope:sacrifice = {
-			killer = scope:blotter
-			death = { death_reason = death_sacrificed_to_gods }
+			death = { death_reason = death_sacrificed_to_gods killer = scope:blotter }
 		}
 		hidden_effect = {
 			random_list = {

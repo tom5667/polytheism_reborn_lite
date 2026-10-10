@@ -3,7 +3,7 @@
 #Iupiter
 pr_cdr_iupiter = {
 	index = 57422
-	fame = yes 
+	category = fame
 	same_faith_opinion = 10
 	diplomacy = 2
 	monthly_prestige = 0.2
@@ -23,7 +23,7 @@ pr_cdr_iupiter = {
 #Iuno
 pr_cdr_iuno = {
 	index = 57423
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.25
 	spouse_opinion = 20
@@ -43,7 +43,7 @@ pr_cdr_iuno = {
 #Mars
 pr_cdr_mars = {
 	index = 57424
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.3
 	prowess = 1
@@ -64,7 +64,7 @@ pr_cdr_mars = {
 #Venus
 pr_cdr_venus = {
 	index = 57425
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_piety = 0.5
 	attraction_opinion = 20
@@ -84,7 +84,7 @@ pr_cdr_venus = {
 #House Lares
 pr_cdr_lares = {
 	index = 57426
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.3
 	monthly_piety = 0.5
@@ -107,7 +107,7 @@ pr_cdr_lares = {
 # Mercurius
 pr_cdr_mercurius = {
 	index = 57427
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_income = 0.1
 	monthly_piety = 0.5
@@ -128,7 +128,7 @@ pr_cdr_mercurius = {
 #Minerva 
 pr_cdr_minerva = {
 	index = 57428
-	fame = yes 
+	category = fame
 	learning = 2
 	same_faith_opinion = 5
 	monthly_piety = 0.5
@@ -148,7 +148,7 @@ pr_cdr_minerva = {
 #Apollo 
 pr_cdr_apollo = {
 	index = 57429
-	fame = yes 
+	category = fame
 	negate_health_penalty_add = 0.6
 	same_faith_opinion = 5
 	monthly_piety = 0.5
@@ -169,7 +169,7 @@ pr_cdr_apollo = {
 #Ceres
 pr_cdr_ceres = {
 	index = 57430
-	fame = yes
+	category = fame
 	same_faith_opinion = 5
 	monthly_piety = 0.5
 	stewardship = 2
@@ -191,7 +191,7 @@ pr_cdr_ceres = {
 #Zeus
 pr_hellenic_zeus = {
 	index = 77422
-	fame = yes 
+	category = fame
 	same_faith_opinion = 10
 	monthly_prestige = 0.2
 	monthly_piety = 0.3
@@ -212,7 +212,7 @@ pr_hellenic_zeus = {
 #Hera
 pr_hellenic_hera = {
 	index = 77423
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.3
 	monthly_piety = 0.5
@@ -233,7 +233,7 @@ pr_hellenic_hera = {
 #Ares
 pr_hellenic_ares = {
 	index = 77424
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.3
 	prowess = 1
@@ -254,7 +254,7 @@ pr_hellenic_ares = {
 #Aphrodite
 pr_hellenic_aphrodite = {
 	index = 77425
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.3
 	monthly_piety = 0.5
@@ -279,7 +279,7 @@ pr_hellenic_aphrodite = {
 # Hermes
 pr_hellenic_hermes = {
 	index = 77426
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.3
 	monthly_piety = 0.5
@@ -299,7 +299,7 @@ pr_hellenic_hermes = {
 #Athena
 pr_hellenic_athena  = {
 	index = 77427
-	fame = yes
+	category = fame
 	learning = 2
 	same_faith_opinion = 5
 	monthly_piety = 0.5
@@ -319,7 +319,7 @@ pr_hellenic_athena  = {
 #Demeter
 pr_hellenic_demeter = {
 	index = 77428
-	fame = yes
+	category = fame
 	same_faith_opinion = 5
 	monthly_piety = 0.5
 	stewardship = 2
@@ -339,7 +339,7 @@ pr_hellenic_demeter = {
 #Mithras
 pr_mithras_mithras = {
 	index = 58422
-	fame = yes 
+	category = fame
 	same_faith_opinion = 10
 	monthly_prestige = 0.2
 	monthly_piety = 0.3
@@ -360,7 +360,7 @@ pr_mithras_mithras = {
 }
 pr_mithras_arimanius = {
 	index = 58423
-	fame = yes 
+	category = fame
 	same_faith_opinion = 10
 	monthly_prestige = 0.2
 	monthly_piety = 0.3
@@ -382,7 +382,7 @@ pr_mithras_arimanius = {
 
 pr_mithras_oromazes = {
 	index = 58424
-	fame = yes 
+	category = fame
 	same_faith_opinion = 10
 	monthly_prestige = 0.2
 	monthly_piety = 0.3
@@ -408,7 +408,7 @@ pr_mithras_oromazes = {
 #ToDo like in ck2 we need some decisions to get further in the cult 
 pr_corax_mithras ={
 	index = 61000
-	fame = yes 
+	category = fame
 	monthly_prestige = 0.1
 	same_faith_opinion = 5
 	martial = 1
@@ -426,7 +426,7 @@ pr_corax_mithras ={
 }
 pr_nymphus_mithras = {
 	index = 61001
-	fame = yes 
+	category = fame
 	monthly_prestige = 0.1
 	same_faith_opinion = 5
 	martial = 2
@@ -444,7 +444,7 @@ pr_nymphus_mithras = {
 }
 pr_miles_mithras = {
 	index = 61002
-	fame = yes 
+	category = fame
 	monthly_prestige = 0.2
 	same_faith_opinion = 5
 	martial = 2
@@ -462,7 +462,7 @@ pr_miles_mithras = {
 }
 pr_leo_mithras = {
 	index = 61003
-	fame = yes 
+	category = fame
 	monthly_prestige = 0.2
 	same_faith_opinion = 5
 	martial = 2
@@ -481,7 +481,7 @@ pr_leo_mithras = {
 }
 pr_perses_mithras = {
 	index = 61004
-	fame = yes 
+	category = fame
 	monthly_prestige = 0.2
 	same_faith_opinion = 5
 	martial = 3
@@ -500,7 +500,7 @@ pr_perses_mithras = {
 }
 pr_heliodromus_mithras = {
 	index = 61005
-	fame = yes 
+	category = fame
 	monthly_prestige = 0.3 
 	same_faith_opinion = 5
 	martial = 3
@@ -519,7 +519,7 @@ pr_heliodromus_mithras = {
 }
 vestalis_maxima = {
 	index = 60009
-	fame = yes 
+	category = fame
 	monthly_prestige = 0.3 
 	same_faith_opinion = 5
 	fertility = -1
@@ -539,7 +539,7 @@ vestalis_maxima = {
 }
 vestalis = {
 	index = 60012
-	fame = yes 
+	category = fame
 	monthly_prestige = 0.1 
 	same_faith_opinion = 5
 	fertility = -1
@@ -559,7 +559,7 @@ vestalis = {
 }
 pr_pater_mithras = {
 	index = 61006
-	fame = yes 
+	category = fame
 	monthly_prestige = 0.3 
 	same_faith_opinion = 5
 	martial = 4
@@ -579,7 +579,7 @@ pr_pater_mithras = {
 
 mithras_cult = {
 	index = 60000
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.1
 	monthly_piety = 0.1
@@ -602,7 +602,7 @@ mithras_cult = {
 
 hierophant_bacchus = {
 	index = 60011
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = -0.2
 	monthly_piety = -0.2
@@ -630,7 +630,7 @@ hierophant_bacchus = {
 
 bacchus_cult = {
 	index = 60010
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = -0.1
 	monthly_piety = -0.1
@@ -657,7 +657,7 @@ bacchus_cult = {
 
 isis_cult = { 
 	index = 60001
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.2
 	monthly_piety = 0.2
@@ -682,7 +682,7 @@ isis_cult = {
 }
 hierophant_isis = {
 	index = 60013
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.2
 	monthly_piety = 0.2
@@ -707,7 +707,7 @@ hierophant_isis = {
 }
 serapis_cult = {
 	index = 60002
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.2
 	monthly_piety = 0.2
@@ -731,7 +731,7 @@ serapis_cult = {
 }
 hierophant_serapis = {
 	index = 60014
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.2
 	monthly_piety = 0.2
@@ -756,7 +756,7 @@ hierophant_serapis = {
 
  eleusinian_cult = {
 	index = 60003
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.2
 	monthly_piety = 0.2
@@ -781,7 +781,7 @@ hierophant_serapis = {
 
 hierophant_eleusinian= {
 	index = 60015
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.2
 	monthly_piety = 0.2
@@ -806,7 +806,7 @@ hierophant_eleusinian= {
 
 sol_invictus_cult = {
 	index = 60004
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.2
 	monthly_piety = 0.2
@@ -830,7 +830,7 @@ sol_invictus_cult = {
 
 hierophant_sol_invictus = {
 	index = 60016
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.2
 	monthly_piety = 0.2
@@ -855,7 +855,7 @@ hierophant_sol_invictus = {
 
 imperial_cult = {
 	index = 60005
-	fame = yes 
+	category = fame
 	inherit_chance = 0
 	same_faith_opinion = 5
 	monthly_prestige = 0.2
@@ -879,7 +879,7 @@ imperial_cult = {
 
 augustalis_imperial_cult = {
 	index = 60019
-	fame = yes 
+	category = fame
 	inherit_chance = 0
 	same_faith_opinion = 5
 	monthly_prestige = 0.2
@@ -903,7 +903,7 @@ augustalis_imperial_cult = {
 
 cybele_cult = {
 	index = 60017
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.2
 	monthly_piety = 0.2
@@ -927,7 +927,7 @@ cybele_cult = {
 
 hierophant_cybele = {
 	index = 60018
-	fame = yes 
+	category = fame
 	same_faith_opinion = 5
 	monthly_prestige = 0.2
 	monthly_piety = 0.2
@@ -951,7 +951,7 @@ hierophant_cybele = {
 
 crowned_by_religious_head = {
 	index = 60008
-	fame = yes 
+	category = fame
 	inherit_chance = 0
 	same_faith_opinion = 5
 	monthly_prestige = 0.2
@@ -976,11 +976,11 @@ crowned_by_religious_head = {
 #Aoa traits 
 kingdom_in_turmoil = {
 	index = 60006
-	fame = yes 
+	category = fame
 	monthly_prestige = -0.2
 	inherit_chance = 0
 	inherit_from_real_father = no 
-	legitimacy = -1
+	monthly_legitimacy_add = -1
 	short_reign_duration_mult = 0.5
 	legitimacy_loss_mult = 0.25
 	ruler_designer_cost = 40
@@ -1002,11 +1002,11 @@ kingdom_in_turmoil = {
 
 roman_pretender = {
 	index = 60007
-	fame = yes 
+	category = fame
 	monthly_prestige = 0.4
 	inherit_chance = 0
 	inherit_from_real_father = no 
-	legitimacy = 1
+	monthly_legitimacy_add = 1
 	short_reign_duration_mult = -0.5
 	legitimacy_gain_mult = 0.25
 	ruler_designer_cost = 40

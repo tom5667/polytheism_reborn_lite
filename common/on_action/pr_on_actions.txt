@@ -134,6 +134,7 @@ three_year_playable_pulse = {
 # Root = playable character (count+)
 yearly_playable_pulse = {
 	on_actions = {
+		PR_convert_patron_traits_yearly_pulse
 		PR_roman_events_yearly_pulse
 		PR_check_temple_of_vesta_owner_roma_yearly_pulse
 		PR_check_death_or_lost_roma_temple_of_vesta_yearly_pulse
@@ -142,6 +143,7 @@ yearly_playable_pulse = {
 		PR_check_if_celtic_empire_exists_yearly_pulse
 		PR_check_vestalis_maxima_yearly_pulse
 		PR_check_druidic_circle_leader_yearly_pulse
+		PR_celtic_druid_random_events_yearly_pulse
 		PR_check_isis_cult_leader_yearly_pulse
 		PR_check_serapis_cult_leader_yearly_pulse
 		PR_check_sol_invictus_cult_leader_yearly_pulse
@@ -186,7 +188,7 @@ PR_check_death_or_lost_roma_temple_of_vesta_yearly_pulse = {
 			AND = {
 				has_character_modifier = burning_flame_of_vesta
 				NOT = {
-					religion = religion:roman_religion
+					pr_is_cultus_deorum_trigger = yes
 				}
 			}
 		}
@@ -214,7 +216,7 @@ PR_check_death_or_lost_anglesey_druid_island_yearly_pulse = {
 PR_check_vestalis_maxima_yearly_pulse = {
 	trigger = {
 		title:c_roma = { has_county_modifier = open_vestalis_maxima }
-		religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 	}
 	effect = {
 		vestal_vergins_maintenance_effect = yes
@@ -232,6 +234,22 @@ PR_check_druidic_circle_leader_yearly_pulse = {
 	}
 }
 
+# Root = Celtic-religion player with vassals while a Chief Druid lives (#146).
+# Players only: the leader check scans every living character.
+PR_celtic_druid_random_events_yearly_pulse = {
+	trigger = {
+		is_ai = no
+		religion = religion:celtic_religion
+		any_vassal = { count >= 2 }
+		any_living_character = { has_trait = druidic_circle_leader }
+	}
+	random_events = {
+		chance_to_happen = 10
+		100 = pr_celtic.0421 # the druid judges a dispute between two vassals
+		100 = pr_celtic.0423 # the druid as teacher: the fading verse
+	}
+}
+
 # --- Hittite / Damascus ---
 
 # Root = player character of Hittite religion holding Damascus
@@ -241,7 +259,7 @@ PR_check_owner_damascus_yearly_pulse = {
 			has_game_rule = pr_semi_historical_events_on
 			religion = religion:hittite_religion
 			has_title = title:c_damascus
-			ai = no
+			is_ai = no
 		}
 		NOT = {
 			any_character_artifact = {
@@ -262,7 +280,7 @@ PR_check_isis_cult_leader_yearly_pulse = {
 	trigger = {
 		exists = global_var:restored_isis_cult
 		OR = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			religion = religion:hellenism_religion
 			faith = faith:kemetic_polytheism
 		}
@@ -276,7 +294,7 @@ PR_check_serapis_cult_leader_yearly_pulse = {
 	trigger = {
 		exists = global_var:restored_serapis_cult
 		OR = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			religion = religion:hellenism_religion
 			faith = faith:kemetic_polytheism
 		}
@@ -289,7 +307,7 @@ PR_check_serapis_cult_leader_yearly_pulse = {
 PR_check_sol_invictus_cult_leader_yearly_pulse = {
 	trigger = {
 		exists = global_var:restored_sol_invictus
-		religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 	}
 	effect = {
 		sol_invictus_cult_leader_maintenance_effect = yes
@@ -299,7 +317,7 @@ PR_check_sol_invictus_cult_leader_yearly_pulse = {
 PR_check_bacchus_cult_leader_yearly_pulse = {
 	trigger = {
 		exists = global_var:restored_bacchus_cult
-		religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 	}
 	effect = {
 		bacchus_cult_leader_maintenance_effect = yes
@@ -310,7 +328,7 @@ PR_check_cybele_cult_leader_yearly_pulse = {
 	trigger = {
 		exists = global_var:restored_cybele_cult
 		OR = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			religion = religion:hellenism_religion
 		}
 	}
@@ -322,7 +340,7 @@ PR_check_cybele_cult_leader_yearly_pulse = {
 PR_check_eleusinian_cult_leader_yearly_pulse = {
 	trigger = {
 		exists = global_var:restored_eleusinian_cult
-		religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 	}
 	effect = {
 		eleusinian_cult_leader_maintenance_effect = yes
@@ -333,7 +351,7 @@ PR_check_mithras_cult_leader_yearly_pulse = {
 	trigger = {
 		exists = global_var:restored_mithras_cult
 		OR = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			religion = religion:hellenism_religion
 		}
 	}
@@ -346,7 +364,7 @@ PR_check_imperial_cult_leader_yearly_pulse = {
 	trigger = {
 		exists = global_var:restored_imperial_cult
 		OR = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			religion = religion:hellenism_religion
 			faith = faith:kemetic_polytheism
 		}
@@ -365,7 +383,7 @@ PR_check_imperial_cult_leader_yearly_pulse = {
 PR_roman_events_tri_yearly_pulse = {
 	trigger = {
 		basic_is_valid_for_yearly_events_trigger = yes
-		religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 	}
 	random_events = {
 		chance_of_no_event = {
@@ -440,6 +458,7 @@ PR_hellenic_events_tri_yearly_pulse = {
 		70 = 0
 		10 = pr_greek.0007   # Offer to Zeus
 		10 = pr_greek.0008   # Buy book about Greek mythology
+		10 = pr_greek.0013   # Offering to Demeter (#146)
 	}
 }
 
@@ -468,7 +487,7 @@ PR_cult_events_tri_yearly_pulse = {
 	trigger = {
 		basic_is_valid_for_yearly_events_trigger = yes
 		OR = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			religion = religion:hellenism_religion
 			faith = faith:kemetic_polytheism
 		}
@@ -585,7 +604,7 @@ VIET_celtic_events_tri_yearly_pulse = {
 PR_roman_events_yearly_pulse = {
 	trigger = {
 		basic_is_valid_for_yearly_events_trigger = yes
-		religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 	}
 	random_events = {
 		10 = pr_roman.0009   # Lupercalia
@@ -612,7 +631,7 @@ PR_check_if_celtic_empire_exists_yearly_pulse = {
 PR_augur_not_requested_tri_yearly_pulse = {
 	trigger = {
 		basic_is_valid_for_yearly_events_trigger = yes
-		religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		has_game_rule = pr_augury_on
 		NOR = {
 			has_character_modifier = pr_good_auspice_sacred_hens
@@ -683,5 +702,160 @@ pr_bought_book_event = {
 	random_events = {
 		7 = pr.0040
 		3 = pr.0041
+	}
+}
+
+# --- Patron-god traits -> modifiers (2026-10-10) ---
+# Old saves: a patron trait still held becomes the modifier with the same key.
+PR_convert_patron_traits_yearly_pulse = {
+	trigger = {
+		OR = {
+			has_trait = pr_cdr_iupiter
+			has_trait = pr_cdr_iuno
+			has_trait = pr_cdr_mars
+			has_trait = pr_cdr_venus
+			has_trait = pr_cdr_lares
+			has_trait = pr_cdr_mercurius
+			has_trait = pr_cdr_minerva
+			has_trait = pr_cdr_apollo
+			has_trait = pr_cdr_ceres
+			has_trait = pr_mithras_mithras
+			has_trait = pr_mithras_arimanius
+			has_trait = pr_mithras_oromazes
+			has_trait = pr_hellenic_zeus
+			has_trait = pr_hellenic_hera
+			has_trait = pr_hellenic_ares
+			has_trait = pr_hellenic_aphrodite
+			has_trait = pr_hellenic_hermes
+			has_trait = pr_hellenic_athena
+			has_trait = pr_hellenic_demeter
+			has_trait = pr_kemetic_amun_ra
+			has_trait = pr_kemetic_ra
+			has_trait = pr_kemetic_isis
+			has_trait = pr_kemetic_montu
+			has_trait = pr_kemetic_hathor
+		}
+	}
+	effect = {
+		if = {
+			limit = { has_trait = pr_cdr_iupiter }
+			remove_trait = pr_cdr_iupiter
+			add_character_modifier = pr_cdr_iupiter
+		}
+		if = {
+			limit = { has_trait = pr_cdr_iuno }
+			remove_trait = pr_cdr_iuno
+			add_character_modifier = pr_cdr_iuno
+		}
+		if = {
+			limit = { has_trait = pr_cdr_mars }
+			remove_trait = pr_cdr_mars
+			add_character_modifier = pr_cdr_mars
+		}
+		if = {
+			limit = { has_trait = pr_cdr_venus }
+			remove_trait = pr_cdr_venus
+			add_character_modifier = pr_cdr_venus
+		}
+		if = {
+			limit = { has_trait = pr_cdr_lares }
+			remove_trait = pr_cdr_lares
+			add_character_modifier = pr_cdr_lares
+		}
+		if = {
+			limit = { has_trait = pr_cdr_mercurius }
+			remove_trait = pr_cdr_mercurius
+			add_character_modifier = pr_cdr_mercurius
+		}
+		if = {
+			limit = { has_trait = pr_cdr_minerva }
+			remove_trait = pr_cdr_minerva
+			add_character_modifier = pr_cdr_minerva
+		}
+		if = {
+			limit = { has_trait = pr_cdr_apollo }
+			remove_trait = pr_cdr_apollo
+			add_character_modifier = pr_cdr_apollo
+		}
+		if = {
+			limit = { has_trait = pr_cdr_ceres }
+			remove_trait = pr_cdr_ceres
+			add_character_modifier = pr_cdr_ceres
+		}
+		if = {
+			limit = { has_trait = pr_mithras_mithras }
+			remove_trait = pr_mithras_mithras
+			add_character_modifier = pr_mithras_mithras
+		}
+		if = {
+			limit = { has_trait = pr_mithras_arimanius }
+			remove_trait = pr_mithras_arimanius
+			add_character_modifier = pr_mithras_arimanius
+		}
+		if = {
+			limit = { has_trait = pr_mithras_oromazes }
+			remove_trait = pr_mithras_oromazes
+			add_character_modifier = pr_mithras_oromazes
+		}
+		if = {
+			limit = { has_trait = pr_hellenic_zeus }
+			remove_trait = pr_hellenic_zeus
+			add_character_modifier = pr_hellenic_zeus
+		}
+		if = {
+			limit = { has_trait = pr_hellenic_hera }
+			remove_trait = pr_hellenic_hera
+			add_character_modifier = pr_hellenic_hera
+		}
+		if = {
+			limit = { has_trait = pr_hellenic_ares }
+			remove_trait = pr_hellenic_ares
+			add_character_modifier = pr_hellenic_ares
+		}
+		if = {
+			limit = { has_trait = pr_hellenic_aphrodite }
+			remove_trait = pr_hellenic_aphrodite
+			add_character_modifier = pr_hellenic_aphrodite
+		}
+		if = {
+			limit = { has_trait = pr_hellenic_hermes }
+			remove_trait = pr_hellenic_hermes
+			add_character_modifier = pr_hellenic_hermes
+		}
+		if = {
+			limit = { has_trait = pr_hellenic_athena }
+			remove_trait = pr_hellenic_athena
+			add_character_modifier = pr_hellenic_athena
+		}
+		if = {
+			limit = { has_trait = pr_hellenic_demeter }
+			remove_trait = pr_hellenic_demeter
+			add_character_modifier = pr_hellenic_demeter
+		}
+		if = {
+			limit = { has_trait = pr_kemetic_amun_ra }
+			remove_trait = pr_kemetic_amun_ra
+			add_character_modifier = pr_kemetic_amun_ra
+		}
+		if = {
+			limit = { has_trait = pr_kemetic_ra }
+			remove_trait = pr_kemetic_ra
+			add_character_modifier = pr_kemetic_ra
+		}
+		if = {
+			limit = { has_trait = pr_kemetic_isis }
+			remove_trait = pr_kemetic_isis
+			add_character_modifier = pr_kemetic_isis
+		}
+		if = {
+			limit = { has_trait = pr_kemetic_montu }
+			remove_trait = pr_kemetic_montu
+			add_character_modifier = pr_kemetic_montu
+		}
+		if = {
+			limit = { has_trait = pr_kemetic_hathor }
+			remove_trait = pr_kemetic_hathor
+			add_character_modifier = pr_kemetic_hathor
+		}
 	}
 }

@@ -81,7 +81,7 @@ pr_godly_descent = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					scope:god = flag:cdr_polytheism_fertility_god_name
+					scope:god = flag:roman_polytheism_fertility_god_name
 					scope:title = title:h_roman_empire
 				}
 				desc = legend_venus
@@ -99,7 +99,7 @@ pr_godly_descent = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					scope:god = flag:cdr_polytheism_fertility_god_name
+					scope:god = flag:roman_polytheism_fertility_god_name
 					scope:title = title:h_roman_empire
 				}
 				desc = legend_venus_desc

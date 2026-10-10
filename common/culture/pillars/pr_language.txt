@@ -375,3 +375,21 @@ language_pr_moselle_romance = {
 
 	color = { 120 190 130 }
 }
+
+language_pr_dalmatian = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_pr_dalmatian
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_pr_dalmatian }
+			multiply = 10
+		}
+	}
+
+	color = { 90 140 190 }
+}

@@ -45,7 +45,7 @@ pr_canaanite.0100 = {
 		trigger = {
 			NOT = { has_character_modifier = punic_baal}
 		}
-		set_bhakti_effect = { BHAKTI = punic_baal }
+		pr_set_patron_god_effect = { BHAKTI = punic_baal }
 	}
 
 	 #Kusor
@@ -54,7 +54,7 @@ pr_canaanite.0100 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = punic_kusor }
 	 	}
-	 	set_bhakti_effect = { BHAKTI = punic_kusor}
+	 	pr_set_patron_god_effect = { BHAKTI = punic_kusor}
 	 }
 
 	#Astarte
@@ -63,7 +63,7 @@ pr_canaanite.0100 = {
 		trigger = {
 			NOT = { has_character_modifier = punic_astarte }
 		}
-		set_bhakti_effect = { BHAKTI = punic_astarte }
+		pr_set_patron_god_effect = { BHAKTI = punic_astarte }
 	}
 
 	# Tanit
@@ -72,7 +72,7 @@ pr_canaanite.0100 = {
 		trigger = {
 			NOT = { has_character_modifier = punic_tanit }
 		}
-		set_bhakti_effect = { BHAKTI = punic_tanit }
+		pr_set_patron_god_effect = { BHAKTI = punic_tanit }
 	}
 
 
@@ -82,7 +82,7 @@ pr_canaanite.0100 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = punic_melqart }
 	 	}
-	 	set_bhakti_effect = { BHAKTI = punic_melqart }
+	 	pr_set_patron_god_effect = { BHAKTI = punic_melqart }
 	 }
 
 	# Opt-Out
@@ -112,7 +112,7 @@ pr_canaanite.0200 = {
 		trigger = {
 			NOT = { has_character_modifier = semitic_ba_al_hadad }
 		}
-		set_bhakti_effect = { BHAKTI = semitic_ba_al_hadad  }
+		pr_set_patron_god_effect = { BHAKTI = semitic_ba_al_hadad  }
 	}
 
 	 #Ashera
@@ -121,7 +121,7 @@ pr_canaanite.0200 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = semitic_ashera }
 	 	}
-	 	set_bhakti_effect = { BHAKTI = semitic_ashera}
+	 	pr_set_patron_god_effect = { BHAKTI = semitic_ashera}
 	 }
 
 	#Dagan
@@ -130,7 +130,7 @@ pr_canaanite.0200 = {
 		trigger = {
 			NOT = { has_character_modifier = semitic_dagan }
 		}
-		set_bhakti_effect = { BHAKTI = semitic_dagan }
+		pr_set_patron_god_effect = { BHAKTI = semitic_dagan }
 	}
 
 	# Tanit
@@ -139,7 +139,7 @@ pr_canaanite.0200 = {
 		trigger = {
 			NOT = { has_character_modifier = semitic_el_elyon }
 		}
-		set_bhakti_effect = { BHAKTI = semitic_el_elyon }
+		pr_set_patron_god_effect = { BHAKTI = semitic_el_elyon }
 	}
 
 
@@ -149,7 +149,7 @@ pr_canaanite.0200 = {
 	 	trigger = {
 	 		NOT = { has_character_modifier = semitic_ashtart }
 	 	}
-	 	set_bhakti_effect = { BHAKTI = semitic_ashtart }
+	 	pr_set_patron_god_effect = { BHAKTI = semitic_ashtart }
 	 }
 
 	# Opt-Out
@@ -160,25 +160,6 @@ pr_canaanite.0200 = {
 		ai_chance = {
 			base = 0
 		}		
-	}
-}
-
-pr_canaanite.0002 = {
-	type = character_event
-	title = pr_canaanite.0002.t
-	desc = pr_canaanite.0002.desc
-	theme = learning 
-
-	right_portrait = {
-		character = root
-		animation = personality_content
-	}
-	option = {
-		name = pr_canaanite.0002.a
-		title:c_tunis.title_province = {
-			add_special_building = temple_to_tanit 
-		}
-
 	}
 }
 

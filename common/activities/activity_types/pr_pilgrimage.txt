@@ -141,12 +141,7 @@ pr_activity_kogaionon_pilgrimage = {
 			is_predefined = yes
 			
 			on_phase_active = {
-				if = {
-					limit = {
-						this = scope:host
-					}
-					scope:host = { trigger_event = dacian.004 }
-				}		
+				# no arrival event yet (dacian.004 never existed; #146)
 			}
 			on_end = {
 			}
@@ -179,9 +174,24 @@ pr_activity_kogaionon_pilgrimage = {
 		}
 	}
 	
-	cost = pr_pilgrimage_cost_value
+	cost = {  # 1.20: must be a block (was the pseudo script value pr_pilgrimage_cost_value)
+		gold = {
+			add = {
+				value = PR_activity_cost
+				desc = hunt_base_cost
+			}
+		}
+	}
 
-	ui_predicted_cost = pr_pilgrimage_ui_predicted_cost_value
+	ui_predicted_cost = {
+		gold = {
+			value = PR_activity_cost
+			# Make it a multiple of 5 (rounded up)
+			divide = 5
+			ceiling = yes
+			multiply = 5
+		}
+	}
 	cooldown = { days = 3650 }
 	
 	###################
@@ -598,7 +608,8 @@ pr_activity_cnoc_uisnigh_pilgrimage = {
 					limit = {
 						this = scope:host
 					}
-					scope:host = { trigger_event = celtic.009 }
+					# arrival at Uisneach (#146)
+					scope:host = { trigger_event = pr_celtic.0408 }
 				}		
 			}
 			on_end = {
@@ -632,9 +643,24 @@ pr_activity_cnoc_uisnigh_pilgrimage = {
 		}
 	}
 	
-	cost = pr_pilgrimage_cost_value
+	cost = {  # 1.20: must be a block (was the pseudo script value pr_pilgrimage_cost_value)
+		gold = {
+			add = {
+				value = PR_activity_cost
+				desc = hunt_base_cost
+			}
+		}
+	}
 
-	ui_predicted_cost = pr_pilgrimage_ui_predicted_cost_value
+	ui_predicted_cost = {
+		gold = {
+			value = PR_activity_cost
+			# Make it a multiple of 5 (rounded up)
+			divide = 5
+			ceiling = yes
+			multiply = 5
+		}
+	}
 	cooldown = { days = 3650 }
 	
 	###################
@@ -1057,12 +1083,7 @@ pr_activity_delphi_pilgrimage = {
 			is_predefined = yes
 			
 			on_phase_active = {
-				if = {
-					limit = {
-						this = scope:host
-					}
-					scope:host = { trigger_event = hellenismos.017 }
-				}		
+				# no arrival event yet (hellenismos.017 never existed; #146)
 			}
 			on_end = {
 			}
@@ -1095,9 +1116,24 @@ pr_activity_delphi_pilgrimage = {
 		}
 	}
 	
-	cost = pr_pilgrimage_cost_value
+	cost = {  # 1.20: must be a block (was the pseudo script value pr_pilgrimage_cost_value)
+		gold = {
+			add = {
+				value = PR_activity_cost
+				desc = hunt_base_cost
+			}
+		}
+	}
 
-	ui_predicted_cost = pr_pilgrimage_ui_predicted_cost_value
+	ui_predicted_cost = {
+		gold = {
+			value = PR_activity_cost
+			# Make it a multiple of 5 (rounded up)
+			divide = 5
+			ceiling = yes
+			multiply = 5
+		}
+	}
 	cooldown = { days = 3650 }
 	
 	###################
@@ -1511,12 +1547,7 @@ pr_activity_vogtei_pilgrimage = {
 			is_predefined = yes
 			
 			on_phase_active = {
-				if = {
-					limit = {
-						this = scope:host
-					}
-					scope:host = { trigger_event = pr_germanic.019 }
-				}		
+				# no arrival event yet (pr_germanic.019 never existed; #146)
 			}
 			on_end = {
 			}
@@ -1549,9 +1580,24 @@ pr_activity_vogtei_pilgrimage = {
 		}
 	}
 	
-	cost = pr_pilgrimage_cost_value
+	cost = {  # 1.20: must be a block (was the pseudo script value pr_pilgrimage_cost_value)
+		gold = {
+			add = {
+				value = PR_activity_cost
+				desc = hunt_base_cost
+			}
+		}
+	}
 
-	ui_predicted_cost = pr_pilgrimage_ui_predicted_cost_value
+	ui_predicted_cost = {
+		gold = {
+			value = PR_activity_cost
+			# Make it a multiple of 5 (rounded up)
+			divide = 5
+			ceiling = yes
+			multiply = 5
+		}
+	}
 	cooldown = { days = 3650 }
 	
 	###################

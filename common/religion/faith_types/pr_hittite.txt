@@ -1,0 +1,34 @@
+﻿#####################
+#Made by tom5667
+#####################
+# One Hittite faith with one rite: the imperial state cult of Hatti, which merged its Hattian, Hittite,
+# Hurrian and Luwian layers into one religion (decided 2026-10-06, issue #87). Nobody holds this faith at
+# 700/867: it is a revival faith, reached through events and decisions.
+hittite_polytheism = {
+    main_rite = hittite_rites
+    historical = yes
+
+    faith_details = {
+        religion = hittite_religion
+        color = { 112 92 22 }
+        icon = hittite
+        reformed_icon = hittite_reformed
+    }
+
+    # Holy sites (research 2026-10-06, double-checked). Troy, Baghdad, Damascus and Cilicia dropped.
+    eminent_holy_sites = {
+        hattusha      # the capital
+        pr_arinna     # the Sun-goddess of Arinna
+        pr_nerik      # the Storm-god of Nerik, purulli festival
+    }
+
+    holy_sites = {
+        pr_zippalanda # the Storm-god of Zippalanda
+        pr_samuha     # Šauška of Samuha
+        pr_karkemish  # Kubaba and the Storm-god
+    }
+
+    reserved_male_names = {
+        Labarna Ammuna
+    }
+}

@@ -197,3 +197,67 @@ pr_romano_egyptian = {
 		20 = mediterranean_byzantine
 	}
 }
+
+pr_romano_syrian = {
+	parents = { roman }
+	history_loc_override = pr_romano_syrian_heritage_loc
+
+	color = { 120 70 150 }
+	created = 1.1.1
+	ethos = ethos_stoic
+	heritage = heritage_latin
+	language = language_aramaic
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_formation_fighting
+		tradition_legalistic
+		tradition_dryland_dwellers
+		tradition_zealous_people
+	}
+
+	name_list = name_list_pr_romano_syrian
+
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx western_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+
+	ethnicities = {
+		50 = mediterranean
+		40 = arab
+		10 = caucasian_dark_hair
+	}
+}
+
+pr_romano_illyrian = {
+	parents = { roman }
+	history_loc_override = pr_romano_illyrian_heritage_loc
+
+	color = { 70 120 170 }
+	created = 1.1.1
+	ethos = ethos_stoic
+	heritage = heritage_latin
+	language = language_pr_dalmatian
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_formation_fighting
+		tradition_legalistic
+		tradition_maritime_mercantilism
+		tradition_hill_dwellers
+	}
+
+	name_list = name_list_pr_romano_illyrian
+
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx western_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+
+	ethnicities = {
+		50 = mediterranean
+		35 = caucasian_dark_hair
+		15 = caucasian_brown_hair
+	}
+}

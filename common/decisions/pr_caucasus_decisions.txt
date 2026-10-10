@@ -10,19 +10,13 @@ pr_caucasus_choose_main_deity_decision = {
     }
     decision_group_type = polytheism
     desc = pr_caucasus_choose_main_deity_decision_desc
-    decision_tooltip = pr_caucasus_choose_main_deity_decision_tooltip
+    selection_tooltip = pr_caucasus_choose_main_deity_decision_tooltip
 
     is_shown = {
         # DLC check.
         has_fp1_dlc_trigger = yes
         # Following a valid religion & faith.
         religion = religion:caucasus_religion
-        NOT = {
-            is_target_in_global_variable_list = {
-                name = unavailable_unique_decisions
-                target = flag:pr_caucasus_choose_main_deity_decision
-            }
-        }
     }
 
     is_valid = {
@@ -31,20 +25,16 @@ pr_caucasus_choose_main_deity_decision = {
 
     cost = {
         # Kosten via scripted values (pr_decision_values.txt)
-        piety = @pr_choose_deity_piety_cost
+        piety = pr_choose_deity_piety_cost
     }
 
     cooldown = { years = 2 }
 
     effect = {
-        add_to_global_variable_list = {
-            name = unavailable_unique_decisions
-            target = flag:pr_caucasus_choose_main_deity_decision
-        }
         # Show the possible options for Georgian Polytheism
         if = {
             limit = {
-                faith = faith:georgian_polytheism
+                rite = rite:georgian_rites
             }
             show_as_tooltip = {
                 random_list = {
@@ -76,7 +66,7 @@ pr_caucasus_choose_main_deity_decision = {
         # Show the possible options for Armenian Polytheism
         else_if = {
             limit = {
-                faith = faith:armenian_polytheism
+                rite = rite:armenian_rites
             }
             show_as_tooltip = {
                 random_list = {

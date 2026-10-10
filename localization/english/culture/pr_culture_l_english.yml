@@ -144,6 +144,16 @@
   pr_afro_roman_prefix:0 "Afro Roman"
   pr_afro_roman_collective_noun:0 "Afro Romans"
 
+  #Romano Syrian
+  pr_romano_syrian:0 "Romano Syrian"
+  pr_romano_syrian_prefix:0 "Romano Syrian"
+  pr_romano_syrian_collective_noun:0 "Romano Syrians"
+
+  #Romano Illyrian
+  pr_romano_illyrian:0 "Romano Illyrian"
+  pr_romano_illyrian_prefix:0 "Romano Illyrian"
+  pr_romano_illyrian_collective_noun:0 "Romano Illyrians"
+
   #Romano Egyptian
   pr_romano_egyptian:0 "Romano Egyptian"
   pr_romano_egyptian_prefix:0 "Romano Egyptian"
@@ -165,6 +175,8 @@
   pr_old_irish_collective_noun:0 "Old Irish"
 
   #Culture history
+  pr_romano_illyrian_heritage_loc:0 "Formed from [CULTURE.GetName] and Illyrian Delmatian around the year [DATE.GetYear]"
+  pr_romano_syrian_heritage_loc:0 "Formed from [CULTURE.GetName] and Aramaic Syrian around the year [DATE.GetYear]"
   pr_graeco_egyptian_heritage_loc:0 "Formed from [CULTURE.GetName] and Kemetic around the year [DATE.GetYear]"
   pr_romano_british_heritage_loc:0 "Formed from [CULTURE.GetName] and Celtic British around the year [DATE.GetYear]"
   pr_romano_germanic_heritage_loc:0 "Formed from [CULTURE.GetName] and Germanic around the year [DATE.GetYear]"

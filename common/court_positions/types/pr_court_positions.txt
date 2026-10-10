@@ -13,7 +13,7 @@
 # =============================================
 # All Flamen positions use the same aptitude calculation:
 #   - Learning skill (x1.75, max 50)
-#   - Mystic traits (mystic_1/2/3)
+#   - Mystic traits (lifestyle_mystic)
 #   - Theologian trait
 #   - Education learning traits
 #   - Family business + low penalty
@@ -26,7 +26,6 @@ pr_court_augur_court_position = {
 	sort_order = 250
 	max_available_positions = 1
 	skill = learning
-	category = court_position_category_flamen
 
 	opinion = {
 		value = regular_court_position_opinion
@@ -43,16 +42,15 @@ pr_court_augur_court_position = {
 			desc = court_position_skill_learning
 		}
 		if = {
-			limit = { has_trait = mystic_3 }
-			add = { value = 20 desc = court_position_mystic_3_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_2 }
-			add = { value = 10 desc = court_position_mystic_2_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_1 }
-			add = { value = 10 desc = court_position_mystic_1_trait }
+			limit = { has_trait = lifestyle_mystic }
+			add = {
+				value = 10
+				if = {
+					limit = { has_trait_xp = { trait = lifestyle_mystic value >= 100 } }
+					add = 10
+				}
+				desc = court_position_mystic_1_trait
+			}
 		}
 		else_if = {
 			limit = { has_trait = theologian }
@@ -86,7 +84,7 @@ pr_court_augur_court_position = {
 	}
 
 	is_shown = {
-		has_religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		NOT = {
 			OR = {
 				government_has_flag = government_is_landless_adventurer
@@ -103,16 +101,14 @@ pr_court_augur_court_position = {
 
 	valid_character = {
 		scope:employee = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			OR = {
 				has_trait = education_learning_1
 				has_trait = education_learning_2
 				has_trait = education_learning_3
 				has_trait = education_learning_4
 				has_trait = education_learning_5
-				has_trait = mystic_1
-				has_trait = mystic_2
-				has_trait = mystic_3
+				has_trait = lifestyle_mystic
 				has_trait = theologian
 				learning >= 11
 			}
@@ -219,7 +215,6 @@ pr_court_flamen_mars_court_position = {
 	sort_order = 240
 	max_available_positions = 1
 	skill = learning
-	category = court_position_category_flamen
 
 	opinion = {
 		value = regular_court_position_opinion
@@ -236,16 +231,15 @@ pr_court_flamen_mars_court_position = {
 			desc = court_position_skill_learning
 		}
 		if = {
-			limit = { has_trait = mystic_3 }
-			add = { value = 20 desc = court_position_mystic_3_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_2 }
-			add = { value = 10 desc = court_position_mystic_2_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_1 }
-			add = { value = 10 desc = court_position_mystic_1_trait }
+			limit = { has_trait = lifestyle_mystic }
+			add = {
+				value = 10
+				if = {
+					limit = { has_trait_xp = { trait = lifestyle_mystic value >= 100 } }
+					add = 10
+				}
+				desc = court_position_mystic_1_trait
+			}
 		}
 		else_if = {
 			limit = { has_trait = theologian }
@@ -279,7 +273,7 @@ pr_court_flamen_mars_court_position = {
 	}
 
 	is_shown = {
-		has_religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		NOT = {
 			OR = {
 				government_has_flag = government_is_landless_adventurer
@@ -296,17 +290,15 @@ pr_court_flamen_mars_court_position = {
 
 	valid_character = {
 		scope:employee = {
-			religion = religion:roman_religion
-			has_trait = pr_cdr_mars
+			pr_is_cultus_deorum_trigger = yes
+			has_character_modifier = pr_cdr_mars
 			OR = {
 				has_trait = education_learning_1
 				has_trait = education_learning_2
 				has_trait = education_learning_3
 				has_trait = education_learning_4
 				has_trait = education_learning_5
-				has_trait = mystic_1
-				has_trait = mystic_2
-				has_trait = mystic_3
+				has_trait = lifestyle_mystic
 				has_trait = theologian
 				learning >= 11
 			}
@@ -355,20 +347,20 @@ pr_court_flamen_mars_court_position = {
 	# Mars: war and military prowess
 	scaling_employer_modifiers = {
 		terrible = {
-			maa_maintenance_mult = -0.01
+			men_at_arms_maintenance = -0.01
 		}
 		poor = {
-			maa_maintenance_mult = -0.02
+			men_at_arms_maintenance = -0.02
 		}
 		average = {
-			maa_maintenance_mult = -0.04
+			men_at_arms_maintenance = -0.04
 		}
 		good = {
-			maa_maintenance_mult = -0.06
+			men_at_arms_maintenance = -0.06
 			maa_damage_mult = 0.05
 		}
 		excellent = {
-			maa_maintenance_mult = -0.10
+			men_at_arms_maintenance = -0.10
 			maa_damage_mult = 0.10
 		}
 	}
@@ -414,7 +406,6 @@ pr_court_flamen_augustus_court_position = {
 	sort_order = 239
 	max_available_positions = 1
 	skill = learning
-	category = court_position_category_flamen
 
 	opinion = {
 		value = regular_court_position_opinion
@@ -431,16 +422,15 @@ pr_court_flamen_augustus_court_position = {
 			desc = court_position_skill_learning
 		}
 		if = {
-			limit = { has_trait = mystic_3 }
-			add = { value = 20 desc = court_position_mystic_3_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_2 }
-			add = { value = 10 desc = court_position_mystic_2_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_1 }
-			add = { value = 10 desc = court_position_mystic_1_trait }
+			limit = { has_trait = lifestyle_mystic }
+			add = {
+				value = 10
+				if = {
+					limit = { has_trait_xp = { trait = lifestyle_mystic value >= 100 } }
+					add = 10
+				}
+				desc = court_position_mystic_1_trait
+			}
 		}
 		else_if = {
 			limit = { has_trait = theologian }
@@ -474,7 +464,7 @@ pr_court_flamen_augustus_court_position = {
 	}
 
 	is_shown = {
-		has_religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		NOT = {
 			OR = {
 				government_has_flag = government_is_landless_adventurer
@@ -491,7 +481,7 @@ pr_court_flamen_augustus_court_position = {
 
 	valid_character = {
 		scope:employee = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			has_trait = imperial_cult
 			OR = {
 				has_trait = education_learning_1
@@ -499,9 +489,7 @@ pr_court_flamen_augustus_court_position = {
 				has_trait = education_learning_3
 				has_trait = education_learning_4
 				has_trait = education_learning_5
-				has_trait = mystic_1
-				has_trait = mystic_2
-				has_trait = mystic_3
+				has_trait = lifestyle_mystic
 				has_trait = theologian
 				learning >= 11
 			}
@@ -609,7 +597,6 @@ pr_court_flamen_carmentis_court_position = {
 	sort_order = 238
 	max_available_positions = 1
 	skill = learning
-	category = court_position_category_flamen
 
 	opinion = {
 		value = regular_court_position_opinion
@@ -626,16 +613,15 @@ pr_court_flamen_carmentis_court_position = {
 			desc = court_position_skill_learning
 		}
 		if = {
-			limit = { has_trait = mystic_3 }
-			add = { value = 20 desc = court_position_mystic_3_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_2 }
-			add = { value = 10 desc = court_position_mystic_2_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_1 }
-			add = { value = 10 desc = court_position_mystic_1_trait }
+			limit = { has_trait = lifestyle_mystic }
+			add = {
+				value = 10
+				if = {
+					limit = { has_trait_xp = { trait = lifestyle_mystic value >= 100 } }
+					add = 10
+				}
+				desc = court_position_mystic_1_trait
+			}
 		}
 		else_if = {
 			limit = { has_trait = theologian }
@@ -669,7 +655,7 @@ pr_court_flamen_carmentis_court_position = {
 	}
 
 	is_shown = {
-		has_religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		NOT = {
 			OR = {
 				government_has_flag = government_is_landless_adventurer
@@ -686,16 +672,14 @@ pr_court_flamen_carmentis_court_position = {
 
 	valid_character = {
 		scope:employee = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			OR = {
 				has_trait = education_learning_1
 				has_trait = education_learning_2
 				has_trait = education_learning_3
 				has_trait = education_learning_4
 				has_trait = education_learning_5
-				has_trait = mystic_1
-				has_trait = mystic_2
-				has_trait = mystic_3
+				has_trait = lifestyle_mystic
 				has_trait = theologian
 				learning >= 11
 			}
@@ -803,7 +787,6 @@ pr_court_flamen_ceres_court_position = {
 	sort_order = 237
 	max_available_positions = 1
 	skill = learning
-	category = court_position_category_flamen
 
 	opinion = {
 		value = regular_court_position_opinion
@@ -820,16 +803,15 @@ pr_court_flamen_ceres_court_position = {
 			desc = court_position_skill_learning
 		}
 		if = {
-			limit = { has_trait = mystic_3 }
-			add = { value = 20 desc = court_position_mystic_3_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_2 }
-			add = { value = 10 desc = court_position_mystic_2_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_1 }
-			add = { value = 10 desc = court_position_mystic_1_trait }
+			limit = { has_trait = lifestyle_mystic }
+			add = {
+				value = 10
+				if = {
+					limit = { has_trait_xp = { trait = lifestyle_mystic value >= 100 } }
+					add = 10
+				}
+				desc = court_position_mystic_1_trait
+			}
 		}
 		else_if = {
 			limit = { has_trait = theologian }
@@ -863,7 +845,7 @@ pr_court_flamen_ceres_court_position = {
 	}
 
 	is_shown = {
-		has_religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		NOT = {
 			OR = {
 				government_has_flag = government_is_landless_adventurer
@@ -880,17 +862,15 @@ pr_court_flamen_ceres_court_position = {
 
 	valid_character = {
 		scope:employee = {
-			religion = religion:roman_religion
-			has_trait = pr_cdr_ceres
+			pr_is_cultus_deorum_trigger = yes
+			has_character_modifier = pr_cdr_ceres
 			OR = {
 				has_trait = education_learning_1
 				has_trait = education_learning_2
 				has_trait = education_learning_3
 				has_trait = education_learning_4
 				has_trait = education_learning_5
-				has_trait = mystic_1
-				has_trait = mystic_2
-				has_trait = mystic_3
+				has_trait = lifestyle_mystic
 				has_trait = theologian
 				learning >= 11
 			}
@@ -998,7 +978,6 @@ pr_court_flamen_flora_court_position = {
 	sort_order = 236
 	max_available_positions = 1
 	skill = learning
-	category = court_position_category_flamen
 
 	opinion = {
 		value = regular_court_position_opinion
@@ -1015,16 +994,15 @@ pr_court_flamen_flora_court_position = {
 			desc = court_position_skill_learning
 		}
 		if = {
-			limit = { has_trait = mystic_3 }
-			add = { value = 20 desc = court_position_mystic_3_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_2 }
-			add = { value = 10 desc = court_position_mystic_2_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_1 }
-			add = { value = 10 desc = court_position_mystic_1_trait }
+			limit = { has_trait = lifestyle_mystic }
+			add = {
+				value = 10
+				if = {
+					limit = { has_trait_xp = { trait = lifestyle_mystic value >= 100 } }
+					add = 10
+				}
+				desc = court_position_mystic_1_trait
+			}
 		}
 		else_if = {
 			limit = { has_trait = theologian }
@@ -1058,7 +1036,7 @@ pr_court_flamen_flora_court_position = {
 	}
 
 	is_shown = {
-		has_religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		NOT = {
 			OR = {
 				government_has_flag = government_is_landless_adventurer
@@ -1075,16 +1053,14 @@ pr_court_flamen_flora_court_position = {
 
 	valid_character = {
 		scope:employee = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			OR = {
 				has_trait = education_learning_1
 				has_trait = education_learning_2
 				has_trait = education_learning_3
 				has_trait = education_learning_4
 				has_trait = education_learning_5
-				has_trait = mystic_1
-				has_trait = mystic_2
-				has_trait = mystic_3
+				has_trait = lifestyle_mystic
 				has_trait = theologian
 				learning >= 11
 			}
@@ -1194,7 +1170,6 @@ pr_court_flamen_furrina_court_position = {
 	sort_order = 235
 	max_available_positions = 1
 	skill = learning
-	category = court_position_category_flamen
 
 	opinion = {
 		value = regular_court_position_opinion
@@ -1211,16 +1186,15 @@ pr_court_flamen_furrina_court_position = {
 			desc = court_position_skill_learning
 		}
 		if = {
-			limit = { has_trait = mystic_3 }
-			add = { value = 20 desc = court_position_mystic_3_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_2 }
-			add = { value = 10 desc = court_position_mystic_2_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_1 }
-			add = { value = 10 desc = court_position_mystic_1_trait }
+			limit = { has_trait = lifestyle_mystic }
+			add = {
+				value = 10
+				if = {
+					limit = { has_trait_xp = { trait = lifestyle_mystic value >= 100 } }
+					add = 10
+				}
+				desc = court_position_mystic_1_trait
+			}
 		}
 		else_if = {
 			limit = { has_trait = theologian }
@@ -1254,7 +1228,7 @@ pr_court_flamen_furrina_court_position = {
 	}
 
 	is_shown = {
-		has_religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		NOT = {
 			OR = {
 				government_has_flag = government_is_landless_adventurer
@@ -1271,16 +1245,14 @@ pr_court_flamen_furrina_court_position = {
 
 	valid_character = {
 		scope:employee = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			OR = {
 				has_trait = education_learning_1
 				has_trait = education_learning_2
 				has_trait = education_learning_3
 				has_trait = education_learning_4
 				has_trait = education_learning_5
-				has_trait = mystic_1
-				has_trait = mystic_2
-				has_trait = mystic_3
+				has_trait = lifestyle_mystic
 				has_trait = theologian
 				learning >= 11
 			}
@@ -1387,7 +1359,6 @@ pr_court_flamen_pomona_court_position = {
 	sort_order = 234
 	max_available_positions = 1
 	skill = learning
-	category = court_position_category_flamen
 
 	opinion = {
 		value = regular_court_position_opinion
@@ -1404,16 +1375,15 @@ pr_court_flamen_pomona_court_position = {
 			desc = court_position_skill_learning
 		}
 		if = {
-			limit = { has_trait = mystic_3 }
-			add = { value = 20 desc = court_position_mystic_3_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_2 }
-			add = { value = 10 desc = court_position_mystic_2_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_1 }
-			add = { value = 10 desc = court_position_mystic_1_trait }
+			limit = { has_trait = lifestyle_mystic }
+			add = {
+				value = 10
+				if = {
+					limit = { has_trait_xp = { trait = lifestyle_mystic value >= 100 } }
+					add = 10
+				}
+				desc = court_position_mystic_1_trait
+			}
 		}
 		else_if = {
 			limit = { has_trait = theologian }
@@ -1447,7 +1417,7 @@ pr_court_flamen_pomona_court_position = {
 	}
 
 	is_shown = {
-		has_religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		NOT = {
 			OR = {
 				government_has_flag = government_is_landless_adventurer
@@ -1464,16 +1434,14 @@ pr_court_flamen_pomona_court_position = {
 
 	valid_character = {
 		scope:employee = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			OR = {
 				has_trait = education_learning_1
 				has_trait = education_learning_2
 				has_trait = education_learning_3
 				has_trait = education_learning_4
 				has_trait = education_learning_5
-				has_trait = mystic_1
-				has_trait = mystic_2
-				has_trait = mystic_3
+				has_trait = lifestyle_mystic
 				has_trait = theologian
 				learning >= 11
 			}
@@ -1522,21 +1490,21 @@ pr_court_flamen_pomona_court_position = {
 	# Pomona: orchards, prosperity, and stewardship
 	scaling_employer_modifiers = {
 		terrible = {
-			monthly_gold = 0.1
+			monthly_income = 0.1
 		}
 		poor = {
-			monthly_gold = 0.2
+			monthly_income = 0.2
 		}
 		average = {
-			monthly_gold = 0.4
+			monthly_income = 0.4
 			development_growth = 0.02
 		}
 		good = {
-			monthly_gold = 0.6
+			monthly_income = 0.6
 			development_growth = 0.04
 		}
 		excellent = {
-			monthly_gold = 1.0
+			monthly_income = 1.0
 			development_growth = 0.06
 		}
 	}
@@ -1582,7 +1550,6 @@ pr_court_flamen_portunus_court_position = {
 	sort_order = 233
 	max_available_positions = 1
 	skill = learning
-	category = court_position_category_flamen
 
 	opinion = {
 		value = regular_court_position_opinion
@@ -1599,16 +1566,15 @@ pr_court_flamen_portunus_court_position = {
 			desc = court_position_skill_learning
 		}
 		if = {
-			limit = { has_trait = mystic_3 }
-			add = { value = 20 desc = court_position_mystic_3_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_2 }
-			add = { value = 10 desc = court_position_mystic_2_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_1 }
-			add = { value = 10 desc = court_position_mystic_1_trait }
+			limit = { has_trait = lifestyle_mystic }
+			add = {
+				value = 10
+				if = {
+					limit = { has_trait_xp = { trait = lifestyle_mystic value >= 100 } }
+					add = 10
+				}
+				desc = court_position_mystic_1_trait
+			}
 		}
 		else_if = {
 			limit = { has_trait = theologian }
@@ -1642,7 +1608,7 @@ pr_court_flamen_portunus_court_position = {
 	}
 
 	is_shown = {
-		has_religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		NOT = {
 			OR = {
 				government_has_flag = government_is_landless_adventurer
@@ -1659,16 +1625,14 @@ pr_court_flamen_portunus_court_position = {
 
 	valid_character = {
 		scope:employee = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			OR = {
 				has_trait = education_learning_1
 				has_trait = education_learning_2
 				has_trait = education_learning_3
 				has_trait = education_learning_4
 				has_trait = education_learning_5
-				has_trait = mystic_1
-				has_trait = mystic_2
-				has_trait = mystic_3
+				has_trait = lifestyle_mystic
 				has_trait = theologian
 				learning >= 11
 			}
@@ -1717,22 +1681,22 @@ pr_court_flamen_portunus_court_position = {
 	# Portunus: trade, commerce, and domain limit
 	scaling_employer_modifiers = {
 		terrible = {
-			monthly_gold = 0.1
+			monthly_income = 0.1
 		}
 		poor = {
-			monthly_gold = 0.2
+			monthly_income = 0.2
 			domain_limit = 1
 		}
 		average = {
-			monthly_gold = 0.3
+			monthly_income = 0.3
 			domain_limit = 1
 		}
 		good = {
-			monthly_gold = 0.5
+			monthly_income = 0.5
 			domain_limit = 2
 		}
 		excellent = {
-			monthly_gold = 1.0
+			monthly_income = 1.0
 			domain_limit = 2
 			build_gold_cost = -0.05
 		}
@@ -1779,7 +1743,6 @@ pr_court_flamen_vulcan_court_position = {
 	sort_order = 232
 	max_available_positions = 1
 	skill = learning
-	category = court_position_category_flamen
 
 	opinion = {
 		value = regular_court_position_opinion
@@ -1796,16 +1759,15 @@ pr_court_flamen_vulcan_court_position = {
 			desc = court_position_skill_learning
 		}
 		if = {
-			limit = { has_trait = mystic_3 }
-			add = { value = 20 desc = court_position_mystic_3_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_2 }
-			add = { value = 10 desc = court_position_mystic_2_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_1 }
-			add = { value = 10 desc = court_position_mystic_1_trait }
+			limit = { has_trait = lifestyle_mystic }
+			add = {
+				value = 10
+				if = {
+					limit = { has_trait_xp = { trait = lifestyle_mystic value >= 100 } }
+					add = 10
+				}
+				desc = court_position_mystic_1_trait
+			}
 		}
 		else_if = {
 			limit = { has_trait = theologian }
@@ -1839,7 +1801,7 @@ pr_court_flamen_vulcan_court_position = {
 	}
 
 	is_shown = {
-		has_religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		NOT = {
 			OR = {
 				government_has_flag = government_is_landless_adventurer
@@ -1856,16 +1818,14 @@ pr_court_flamen_vulcan_court_position = {
 
 	valid_character = {
 		scope:employee = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			OR = {
 				has_trait = education_learning_1
 				has_trait = education_learning_2
 				has_trait = education_learning_3
 				has_trait = education_learning_4
 				has_trait = education_learning_5
-				has_trait = mystic_1
-				has_trait = mystic_2
-				has_trait = mystic_3
+				has_trait = lifestyle_mystic
 				has_trait = theologian
 				learning >= 11
 			}
@@ -1977,7 +1937,6 @@ pr_court_flamen_volturnus_court_position = {
 	sort_order = 231
 	max_available_positions = 1
 	skill = learning
-	category = court_position_category_flamen
 
 	opinion = {
 		value = regular_court_position_opinion
@@ -1994,16 +1953,15 @@ pr_court_flamen_volturnus_court_position = {
 			desc = court_position_skill_learning
 		}
 		if = {
-			limit = { has_trait = mystic_3 }
-			add = { value = 20 desc = court_position_mystic_3_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_2 }
-			add = { value = 10 desc = court_position_mystic_2_trait }
-		}
-		else_if = {
-			limit = { has_trait = mystic_1 }
-			add = { value = 10 desc = court_position_mystic_1_trait }
+			limit = { has_trait = lifestyle_mystic }
+			add = {
+				value = 10
+				if = {
+					limit = { has_trait_xp = { trait = lifestyle_mystic value >= 100 } }
+					add = 10
+				}
+				desc = court_position_mystic_1_trait
+			}
 		}
 		else_if = {
 			limit = { has_trait = theologian }
@@ -2037,7 +1995,7 @@ pr_court_flamen_volturnus_court_position = {
 	}
 
 	is_shown = {
-		has_religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		NOT = {
 			OR = {
 				government_has_flag = government_is_landless_adventurer
@@ -2054,16 +2012,14 @@ pr_court_flamen_volturnus_court_position = {
 
 	valid_character = {
 		scope:employee = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			OR = {
 				has_trait = education_learning_1
 				has_trait = education_learning_2
 				has_trait = education_learning_3
 				has_trait = education_learning_4
 				has_trait = education_learning_5
-				has_trait = mystic_1
-				has_trait = mystic_2
-				has_trait = mystic_3
+				has_trait = lifestyle_mystic
 				has_trait = theologian
 				learning >= 11
 			}
@@ -2112,20 +2068,20 @@ pr_court_flamen_volturnus_court_position = {
 	# Volturnus: travel, movement speed, and supply
 	scaling_employer_modifiers = {
 		terrible = {
-			army_supply_limit_mult = 0.01
+			supply_limit_mult = 0.01
 		}
 		poor = {
-			army_supply_limit_mult = 0.02
+			supply_limit_mult = 0.02
 		}
 		average = {
-			army_supply_limit_mult = 0.04
+			supply_limit_mult = 0.04
 		}
 		good = {
-			army_supply_limit_mult = 0.06
+			supply_limit_mult = 0.06
 			monthly_martial_lifestyle_xp_gain_mult = 0.05
 		}
 		excellent = {
-			army_supply_limit_mult = 0.10
+			supply_limit_mult = 0.10
 			monthly_martial_lifestyle_xp_gain_mult = 0.10
 		}
 	}
@@ -2172,7 +2128,6 @@ pr_court_pater_mithras_court_position = {
 	sort_order = 220
 	max_available_positions = 1
 	skill = prowess
-	category = court_position_category_flamen
 
 	opinion = {
 		value = regular_court_position_opinion
@@ -2224,7 +2179,7 @@ pr_court_pater_mithras_court_position = {
 	}
 
 	is_shown = {
-		has_religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		NOT = {
 			OR = {
 				government_has_flag = government_is_landless_adventurer
@@ -2241,7 +2196,7 @@ pr_court_pater_mithras_court_position = {
 
 	valid_character = {
 		scope:employee = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			has_trait = pr_pater_mithras
 			OR = {
 				has_trait = education_martial_1

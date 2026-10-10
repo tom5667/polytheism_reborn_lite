@@ -9,12 +9,12 @@ pr_etruscan_choose_main_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
     }
     desc = pr_etruscan_choose_main_deity_decision_desc
-    decision_tooltip = pr_etruscan_choose_main_deity_decision_tooltip
+    selection_tooltip = pr_etruscan_choose_main_deity_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         has_fp1_dlc_trigger = yes
-        religion = religion:etruscan_religion
+        faith = faith:etruscan_polytheism
     }
 
     is_valid = {
@@ -52,8 +52,8 @@ pr_etruscan_choose_main_deity_decision = {
                 }
                 100 = {
                     show_chance = no
-                    desc = select_main_deity_etruscan_decision.select_maris
-                    add_character_modifier = etruscan_maris
+                    desc = select_main_deity_etruscan_decision.select_laran
+                    add_character_modifier = etruscan_laran
                 }
             }
         }
@@ -69,7 +69,7 @@ pr_etruscan_choose_main_deity_decision = {
             has_character_modifier = etruscan_nortia
             has_character_modifier = etruscan_turms
             has_character_modifier = etruscan_menrva
-            has_character_modifier = etruscan_maris
+            has_character_modifier = etruscan_laran
         }
     }
 
@@ -84,7 +84,7 @@ pr_etruscan_create_etruria_decision = {
         reference = "gfx/interface/illustrations/decisions/pr_etruscan.dds"
     }
     desc = pr_etruscan_create_etruria_decision_desc
-    decision_tooltip = pr_etruscan_create_etruria_decision_tooltip
+    selection_tooltip = pr_etruscan_create_etruria_decision_tooltip
     decision_group_type = major
 
     ai_check_interval = 4
@@ -100,7 +100,7 @@ pr_etruscan_create_etruria_decision = {
             }
         }
         OR = {
-            religion = religion:etruscan_religion
+            faith = faith:etruscan_polytheism
             culture = culture:pr_etruscan
         }
         NOT = {
@@ -115,7 +115,7 @@ pr_etruscan_create_etruria_decision = {
         has_title = title:d_pisa
         has_title = title:d_toscana
         OR = {
-            religion = religion:etruscan_religion
+            faith = faith:etruscan_polytheism
             culture = culture:pr_etruscan
         }
         is_imprisoned = no

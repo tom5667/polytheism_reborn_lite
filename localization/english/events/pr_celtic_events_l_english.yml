@@ -5,10 +5,6 @@
   # =============================================
 
   # --- Celtic Druid Selection (0005) ---
-  pr_celtic_decision.0005.t:0 "Choosing a Druid"
-  pr_celtic_decision.0005.desc:0 "#F The old faith has been reformed, and a new spiritual leader must be chosen to guide the faithful. As the reformer, it falls to me to decide whether to follow the existing druid or to assert our independence.#!\n\nThe gods watch as I make this sacred decision."
-  pr_celtic_decision.0005.a:0 "We shall guide our own path."
-  pr_celtic_decision.0005.d:0 "We shall follow the old druid."
 
   # =============================================
   # Celtic Polytheism Event Loc
@@ -28,9 +24,6 @@
   pr_celtic.0002.c:0 "... Celtic gods worshiping?"
 
 
-  pr_celtic.0100.t:0 "Creating kingdom"
-  pr_celtic.0100.desc:0 "After years of fighting between all the Irish tribes and keeping out invaders, It's finally time to Restore Ardrí na hÉireann also known as The Irish high kingdom."
-  pr_celtic.0100.a:0 "Ardrí na hÉireann is once more"
   pr_celtic.0200.t:0 "Choose main deity"
   pr_celtic.0200.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or goddesses."
   pr_celtic.0200.an_dagda:0 "An Dagda"
@@ -60,11 +53,11 @@
 
   pr_celtic.0203.t:0 "Choose main deity"
   pr_celtic.0203.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or goddesses."
-  pr_celtic.0203.reue:0 "$pr_celtic_iberian_polytheism_high_god_name$"
-  pr_celtic.0203.arancia:0 "$pr_celtic_iberian_polytheism_health_god_name$"
-  pr_celtic.0203.nabia:0 "$pr_celtic_iberian_polytheism_fertility_god_name$"
-  pr_celtic.0203.lugus:0 "$pr_celtic_iberian_polytheism_wealth_god_name$"
-  pr_celtic.0203.bandua:0 "$pr_celtic_iberian_polytheism_war_god_name$"
+  pr_celtic.0203.reue:0 "$celtic_iberian_polytheism_high_god_name$"
+  pr_celtic.0203.arancia:0 "$celtic_iberian_polytheism_health_god_name$"
+  pr_celtic.0203.nabia:0 "$celtic_iberian_polytheism_fertility_god_name$"
+  pr_celtic.0203.lugus:0 "$celtic_iberian_polytheism_wealth_god_name$"
+  pr_celtic.0203.bandua:0 "$celtic_iberian_polytheism_war_god_name$"
   pr_celtic.0203.optout:0 "Maybe now isn't the right time"
 
   pr_celtic.0300.t:0 "Tairisem"
@@ -142,6 +135,7 @@
   pr_celtic.0413.t:0 "Push Out The Sassenach"
   pr_celtic.0413.desc:0 "Our celtic lands are invaded over and over again by those Germanic people, they raid our lands come and go whenever they want over and over again.\n\nWe need to act now and push them out bit by bit!"
   pr_celtic.0413.a:0 "For [ROOT.Char.GetFaith.HighGodName]!"
+  pr_celtic.0413.b:0 "For [ROOT.Char.GetFaith.HighGodName]! Drive them from our borders!"
 
   pr_celtic.0414.t:0 "The Reconquest Saga"
   pr_celtic.0414.desc.eire:0 "Years of fighting vikings and other Irish tribes our reconquest is off to a good start, now our island is safe we can look at invading our next target.\n\nBut first it's time enjoy the moment that Ardrí na hÉireann also known as The Irish high kingdom is back in Celtic hands."
@@ -177,6 +171,9 @@
   pr_celtic.0417.t:0 "Druidic circle"
   pr_celtic.0417.desc:0 "The echoes of a long-forgotten age resonate once again. Anglesey, a land long abandoned, is now back in the hands of the Celtic peoples. With the island reclaimed, ancient rituals are being restored and the druidic circle is being reborn. The first new druids have broken the silence and begun their studies, so that one day they might once again explain the gods' sacred words to the people. Their task is to restore Celtic polytheism, the faith in [ROOT.Char.GetFaith.HighGodName] and the others, and to lead the people back to the old ways."
   pr_celtic.0417.a:0 "May [ROOT.Char.GetFaith.HighGodName] be praised!"
+  pr_celtic.0418.t:0 "The Kingdom of Noricum"
+  pr_celtic.0418.desc:0 "Before the legions came, the Celtic tribes of the eastern Alps were joined in the Kingdom of Noricum, whose iron was prized as far away as Rome. With Carinthia and Styria in my hands, the old kingdom can rise again."
+  pr_celtic.0418.a:0 "Noricum lives again!"
 
   pr_celtic.0419.t:0 "A sacred Duty"
   pr_celtic.0419.desc:0 "Today is a special day, I can send one of my children to the druidic circle to become a druid, this is a sacred duty and honor for the whole family.\n\nThe druids are the spiritual leaders of our people, they interpret the will of the gods, lead rituals and ceremonies, and provide guidance to the community.\n\nBy sending one of my children to become a druid, I am ensuring that our family has a direct connection to the divine and that we will always have someone who can help us navigate the challenges of life."
@@ -211,3 +208,5 @@
   pr_celtic.0425.desc:0 "[new_high_king.GetTitledFirstName] has been proclaimed the new Ardrí, the High King of all Ireland. From the peak of the Hill of Tara, [new_high_king.GetSheHe] now demands that all other rulers of the isle acknowledge [new_high_king.GetHerHis] authority.\n\nA messenger bearing the High King's standard has arrived in my court. The message is simple: I am to become a tributary, contributing to the High King's wealth and power, or I will be made an example of. My warriors look to me, their hands resting on the hilts of their swords, awaiting my command."
   pr_celtic.0425.a:0 "I will bend the knee. It is wiser to pay tribute than to spill blood."
   pr_celtic.0425.b:0 "I answer to no king but myself! To war!"
+  pr_celtic.0425.c:0 "$pr_celtic.0425.a$"
+  pr_celtic.0425.d:0 "$pr_celtic.0425.b$"

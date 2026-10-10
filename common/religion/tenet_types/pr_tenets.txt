@@ -13,26 +13,26 @@ tenet_sacrificial_appeasement = {
 	# }
 	desc = tenet_sacrificial_appeasement_desc
 
-	icon = core_tenet_gruesome_festivals
+	icon = tenet_gruesome_festivals
 
 	piety_cost = {
 		# If you've already got human sacrifice, this is a nice and easy jump.
 		if = {
 			limit = {
-				has_doctrine = tenet_human_sacrifice
+				rite_has_tenet = tenet_human_sacrifice
 			}
 			value = faith_tenet_cost_low
 		}
 		# Otherwise, follow the same pricing tiers as tenet_human_sacrifice.
 		else_if = {
 			limit = {
-				has_doctrine = pagan_hostility_doctrine
+				rite_has_doctrine = pagan_hostility_doctrine
 			}
 			value = faith_tenet_cost_mid
 		}
 		else_if = {
 			limit = {
-				religion_tag = hinduism_religion
+				rite_religion_tag = hinduism_religion
 			}
 			value = faith_tenet_cost_high
 		}
@@ -42,74 +42,84 @@ tenet_sacrificial_appeasement = {
 
 		# Multiplier for keeping same tenet
 		if = {
-			limit = { has_doctrine = tenet_gruesome_festivals }
+			limit = { rite_has_tenet = tenet_gruesome_festivals }
 			multiply = faith_unchanged_doctrine_cost_mult
 		}
 	}
 
 	is_shown = {
-		# No HumSac for Abrahamics: 'tis literally the religion-namer.
-		NOR = {
-			religion_tag = christianity_religion
-			religion_tag = judaism_religion
-			religion_tag = islam_religion
-		}
-		# And DLC required.
 		has_fp1_dlc_trigger = yes
 	}
 
 	can_pick = {
+		# No HumSac for Abrahamics: 'tis literally the religion-namer.
+		NOR = {
+			religion = religion:christianity_religion
+			religion = religion:judaism_religion
+			religion = religion:islam_religion
+		}
 		custom_description = {
 			text = incompatible_tenet_pacifism_trigger
 			NOT = {
-				doctrine:tenet_pacifism = { is_in_list = selected_doctrines }
+				tenet:tenet_pacifism = { is_in_list = selected_doctrines }
 			}
 		}
 		custom_description = {
 			text = incompatible_tenet_dharmic_pacifism_trigger
 			NOT = {
-				doctrine:tenet_dharmic_pacifism = { is_in_list = selected_doctrines }
+				tenet:tenet_dharmic_pacifism = { is_in_list = selected_doctrines }
 			}
 		}
 		custom_description = {
 			text = incompatible_tenet_human_sacrifice_trigger
 			NOT = {
-				doctrine:tenet_human_sacrifice = { is_in_list = selected_doctrines }
+				tenet:tenet_human_sacrifice = { is_in_list = selected_doctrines }
 			}
 		}
 		custom_description = {
 			text = incompatible_tenet_sacrificial_ceremonies_trigger
 			NOT = {
-				doctrine:tenet_sacrificial_ceremonies = { is_in_list = selected_doctrines }
+				tenet:tenet_sacrificial_ceremonies = { is_in_list = selected_doctrines }
 			}
 		}
 	}
 
 	parameters = {
 		#human_sacrifice_active = yes
-		gruesome_festivals_active = yes
+		gruesome_festivals_active
 	}
 
+	# 1.20 tenet virtues/sins. Like vanilla Gruesome Festivals (gregarious), plus the duty to appease the
+	# gods: a willing victim as in the Roman devotio (Livy 8.9, Decius Mus).
+	traits = {
+		virtues = {
+			gregarious = { weight = 15 scale = 1 }
+			zealous = { weight = 10 scale = 1 }
+		}
+		sins = {
+			cynical = { weight = 15 scale = 1 }
+		}
+	}
 }
 
 tenet_animal_sacrifice = {
 
 	desc = tenet_animal_sacrifice_desc
 
-	icon = core_tenet_gruesome_festivals
+	icon = tenet_gruesome_festivals
 
 	piety_cost = {
 		# If you've already got human sacrifice, this is a nice and easy jump.
 		if = {
 			limit = {
-				has_doctrine = tenet_human_sacrifice
+				rite_has_tenet = tenet_human_sacrifice
 			}
 			value = faith_tenet_cost_low
 		}
 		# Otherwise, follow the same pricing tiers as tenet_human_sacrifice.
 		else_if = {
 			limit = {
-				has_doctrine = pagan_hostility_doctrine
+				rite_has_doctrine = pagan_hostility_doctrine
 			}
 			value = faith_tenet_cost_mid
 		}
@@ -119,45 +129,56 @@ tenet_animal_sacrifice = {
 
 		# Multiplier for keeping same tenet
 		if = {
-			limit = { has_doctrine = tenet_gruesome_festivals }
+			limit = { rite_has_tenet = tenet_gruesome_festivals }
 			multiply = faith_unchanged_doctrine_cost_mult
 		}
 	}
 
 	is_shown = {
-		# No HumSac for Abrahamics: 'tis literally the religion-namer.
-		NOR = {
-			religion_tag = christianity_religion
-			religion_tag = judaism_religion
-			religion_tag = islam_religion
-		}
-		# And DLC required.
 		has_fp1_dlc_trigger = yes
 	}
 
 	can_pick = {
+		# No HumSac for Abrahamics: 'tis literally the religion-namer.
+		NOR = {
+			religion = religion:christianity_religion
+			religion = religion:judaism_religion
+			religion = religion:islam_religion
+		}
 		custom_description = {
 			text = incompatible_tenet_pacifism_trigger
 			NOT = {
-				doctrine:tenet_pacifism = { is_in_list = selected_doctrines }
+				tenet:tenet_pacifism = { is_in_list = selected_doctrines }
 			}
 		}
 		custom_description = {
 			text = incompatible_tenet_dharmic_pacifism_trigger
 			NOT = {
-				doctrine:tenet_dharmic_pacifism = { is_in_list = selected_doctrines }
+				tenet:tenet_dharmic_pacifism = { is_in_list = selected_doctrines }
 			}
 		}
 		custom_description = {
 			text = incompatible_tenet_human_sacrifice_trigger
 			NOT = {
-				doctrine:tenet_human_sacrifice = { is_in_list = selected_doctrines }
+				tenet:tenet_human_sacrifice = { is_in_list = selected_doctrines }
 			}
 		}
 	}
 
 	parameters = {
-		gruesome_festivals_active = yes
+		gruesome_festivals_active
+	}
+
+	# 1.20 tenet virtues/sins. Animal sacrifice ended in a shared (hierarchical) meal of the meat
+	# (Burkert: koinonia; Scheid on Roman sacrifice): giving the victim is generosity, withholding it greed.
+	traits = {
+		virtues = {
+			generous = { weight = 15 scale = 1 }
+			gregarious = { weight = 10 scale = 1 }
+		}
+		sins = {
+			greedy = { weight = 15 scale = 1 }
+		}
 	}
 }
 

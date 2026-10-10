@@ -2,14 +2,14 @@
 	icon = outdoors_positive
 	county_opinion_add = 5
 	tax_mult = 0.1
-	monthly_county_control_change_add = 0.1
+	monthly_county_control_growth_add = 0.1
 	christianity_religion_opinion = -10 
 }
 
 open_1st_beer_brewery = {
 	icon = drink_positive
 	tax_mult = 0.1
-	monthly_county_control_change_add = 0.1
+	monthly_county_control_growth_add = 0.1
 	islam_religion_opinion = -10
 	
 }
@@ -17,8 +17,8 @@ open_1st_beer_brewery = {
 open_druidic_place = {
 	icon = outdoors_positive
 	county_opinion_add = 5
-	monthly_county_control_change_add = 0.2
-	pagan_religion_opinion = -10 
+	monthly_county_control_growth_add = 0.2
+	rf_pagan_opinion = -10 
 }
 
 pax_romana_modifier = {

@@ -10,7 +10,7 @@
 ####################################################################################################################################
 invite_sassanid_relatives_decision ={
     desc = invite_sassanid_relatives_decision_desc
-    decision_tooltip = invite_sassanid_relatives_decision_tooltip
+    selection_tooltip = invite_sassanid_relatives_decision_tooltip
     picture = {
         reference = "gfx/interface/illustrations/decisions/Sassanid.dds"
     }
@@ -64,6 +64,7 @@ invite_sassanid_relatives_decision ={
             }
         }
     }
+    ai_check_interval = 0 # player-only until an AI weight is designed (#147)
 }
 
 #Decisions to make the reconquest of the sassanid empire more fun, Keeping in mind the age of the last recorded Sassanids
@@ -72,7 +73,7 @@ invite_sassanid_relatives_decision ={
 #Start the reconquest in Zuranje
 sassanid_reconquest={
     desc = sassanid_reconquest_desc
-    decision_tooltip = sassanid_reconquest_tooltip
+    selection_tooltip = sassanid_reconquest_tooltip
     picture = {
         reference = "gfx/interface/illustrations/decisions/Sassanid.dds"
     }
@@ -113,12 +114,13 @@ sassanid_reconquest={
         }
     }
 
+    ai_check_interval = 0 # player-only until an AI weight is designed (#147)
 }
 
 #Send envoys to afrighids and dabuyids if available
 send_envoy_to_afrighids_decision={
     desc = send_envoy_to_afrighids_decision_desc
-    decision_tooltip = send_envoy_to_afrighids_decision_tooltip
+    selection_tooltip = send_envoy_to_afrighids_decision_tooltip
     picture = {
         reference = "gfx/interface/illustrations/decisions/Sassanid_envoys.dds"
     }
@@ -153,11 +155,12 @@ send_envoy_to_afrighids_decision={
             }
         }
     }
+    ai_check_interval = 0 # player-only until an AI weight is designed (#147)
 }
 
 send_envoy_to_dabuyids_decision={
     desc = send_envoy_to_dabuyids_decision_desc
-    decision_tooltip = send_envoy_to_dabuyids_decision_tooltip
+    selection_tooltip = send_envoy_to_dabuyids_decision_tooltip
     picture = {
         reference = "gfx/interface/illustrations/decisions/Sassanid_envoys.dds"
     }
@@ -165,7 +168,7 @@ send_envoy_to_dabuyids_decision={
     is_shown={
         title:d_tabaristan.holder = {
             religion = religion:zoroastrianism_religion
-            dynasty_house = house_dabuyid
+            dynasty_house = house:house_dabuyid
         }
         is_target_in_global_variable_list = {
             name = unavailable_unique_decisions_reconquest
@@ -195,6 +198,7 @@ send_envoy_to_dabuyids_decision={
         }
     }
 
+    ai_check_interval = 0 # player-only until an AI weight is designed (#147)
 }
 
 
@@ -254,6 +258,7 @@ pr_commission_te_avesta_decision = {
             }
         }
     }
+    ai_check_interval = 0 # player-only until an AI weight is designed (#147)
 }
 pr_reintroduce_old_persian_names = {
     picture = {
@@ -287,7 +292,7 @@ pr_reintroduce_old_persian_names = {
             #has_title = title:e_persia
             piety_level >= high_piety_level
             completely_controls = title:c_baghdad
-            has_trait = scholar
+            has_trait = erudite
         }
 
     }

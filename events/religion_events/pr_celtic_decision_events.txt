@@ -215,19 +215,6 @@ pr_celtic.0002 = {
 	}
 }
 
-pr_celtic.0100 = {
-	type = character_event
-	title = pr_celtic.0100.t
-	desc = pr_celtic.0100.desc
-	theme = claim_throne_scheme
-	right_portrait = {
-			character = root
-			animation = personality_content
-	}
-	option = {
-		name = pr_celtic.0100.a
-	}
-}
 #celtic choose main deity
 
 #Choose gaelic main deity 
@@ -247,7 +234,7 @@ pr_celtic.0200 = {
 		trigger = {
 			NOT = { has_character_modifier = gaelic_an_dagda }
 		}
-		set_bhakti_effect = { BHAKTI = gaelic_an_dagda }
+		pr_set_patron_god_effect = { BHAKTI = gaelic_an_dagda }
 	}
 
 	# Lugh
@@ -256,7 +243,7 @@ pr_celtic.0200 = {
 		trigger = {
 			NOT = { has_character_modifier = gaelic_lugh }
 		}
-		set_bhakti_effect = { BHAKTI = gaelic_lugh}
+		pr_set_patron_god_effect = { BHAKTI = gaelic_lugh}
 	}
 
 	#Brigid
@@ -265,7 +252,7 @@ pr_celtic.0200 = {
 		trigger = {
 			NOT = { has_character_modifier = gaelic_brigid }
 		}
-		set_bhakti_effect = { BHAKTI = gaelic_brigid }
+		pr_set_patron_god_effect = { BHAKTI = gaelic_brigid }
 	}
 
 	# The Nemain
@@ -274,7 +261,7 @@ pr_celtic.0200 = {
 		trigger = {
 			NOT = { has_character_modifier = gaelic_nemain }
 		}
-		set_bhakti_effect = { BHAKTI = gaelic_nemain }
+		pr_set_patron_god_effect = { BHAKTI = gaelic_nemain }
 	}
 
 
@@ -284,7 +271,7 @@ pr_celtic.0200 = {
 		trigger = {
 			NOT = { has_character_modifier = gaelic_ecna }
 		}
-		set_bhakti_effect = { BHAKTI = gaelic_ecna }
+		pr_set_patron_god_effect = { BHAKTI = gaelic_ecna }
 	}
 
 	# Opt-Out
@@ -314,7 +301,7 @@ pr_celtic.0201 = {
 		trigger = {
 			NOT = { has_character_modifier = brythonic_taranis }
 		}
-		set_bhakti_effect = { BHAKTI = brythonic_taranis }
+		pr_set_patron_god_effect = { BHAKTI = brythonic_taranis }
 	}
 
 	# Lugus
@@ -323,7 +310,7 @@ pr_celtic.0201 = {
 		trigger = {
 			NOT = { has_character_modifier = brythonic_lugus }
 		}
-		set_bhakti_effect = { BHAKTI = brythonic_lugus }
+		pr_set_patron_god_effect = { BHAKTI = brythonic_lugus }
 	}
 
 	#Arianrhod
@@ -332,7 +319,7 @@ pr_celtic.0201 = {
 		trigger = {
 			NOT = { has_character_modifier = brythonic_arianrhod  }
 		}
-		set_bhakti_effect = { BHAKTI = brythonic_arianrhod  }
+		pr_set_patron_god_effect = { BHAKTI = brythonic_arianrhod  }
 	}
 
 	#Andraste
@@ -341,7 +328,7 @@ pr_celtic.0201 = {
 		trigger = {
 			NOT = { has_character_modifier =  brythonic_andraste }
 		}
-		set_bhakti_effect = { BHAKTI = brythonic_andraste }
+		pr_set_patron_god_effect = { BHAKTI = brythonic_andraste }
 	}
 
 
@@ -351,7 +338,7 @@ pr_celtic.0201 = {
 		trigger = {
 			NOT = { has_character_modifier = brythonic_brigantia }
 		}
-		set_bhakti_effect = { BHAKTI = brythonic_brigantia }
+		pr_set_patron_god_effect = { BHAKTI = brythonic_brigantia }
 	}
 
 	# Opt-Out
@@ -381,7 +368,7 @@ pr_celtic.0202 = {
 		trigger = {
 			NOT = { has_character_modifier = gaulish_toutatis }
 		}
-		set_bhakti_effect = { BHAKTI = gaulish_toutatis }
+		pr_set_patron_god_effect = { BHAKTI = gaulish_toutatis }
 	}
 
 	# Lughus
@@ -390,7 +377,7 @@ pr_celtic.0202 = {
 		trigger = {
 			NOT = { has_character_modifier = gaulish_lughus }
 		}
-		set_bhakti_effect = { BHAKTI = gaulish_lughus }
+		pr_set_patron_god_effect = { BHAKTI = gaulish_lughus }
 	}
 
 	#Rosmerta
@@ -399,7 +386,7 @@ pr_celtic.0202 = {
 		trigger = {
 			NOT = { has_character_modifier = gaulish_rosmerta }
 		}
-		set_bhakti_effect = { BHAKTI = gaulish_rosmerta }
+		pr_set_patron_god_effect = { BHAKTI = gaulish_rosmerta }
 	}
 
 	#Cicolluis
@@ -408,7 +395,7 @@ pr_celtic.0202 = {
 		trigger = {
 			NOT = { has_character_modifier =  gaulish_cicolluis }
 		}
-		set_bhakti_effect = { BHAKTI = gaulish_cicolluis }
+		pr_set_patron_god_effect = { BHAKTI = gaulish_cicolluis }
 	}
 
 
@@ -418,7 +405,7 @@ pr_celtic.0202 = {
 		trigger = {
 			NOT = { has_character_modifier = gaulish_belisama }
 		}
-		set_bhakti_effect = { BHAKTI = gaulish_belisama }
+		pr_set_patron_god_effect = { BHAKTI = gaulish_belisama }
 	}
 
 	# Opt-Out
@@ -449,7 +436,7 @@ pr_celtic.0203 = {
 		trigger = {
 			NOT = { has_character_modifier = celtic_iberian_reue }
 		}
-		set_bhakti_effect = { BHAKTI = celtic_iberian_reue }
+		pr_set_patron_god_effect = { BHAKTI = celtic_iberian_reue }
 	}
 
 	# Arentius
@@ -458,7 +445,7 @@ pr_celtic.0203 = {
 		trigger = {
 			NOT = { has_character_modifier = celtic_iberian_arancia }
 		}
-		set_bhakti_effect = { BHAKTI = celtic_iberian_arancia }
+		pr_set_patron_god_effect = { BHAKTI = celtic_iberian_arancia }
 	}
 
 	#Nabia
@@ -467,7 +454,7 @@ pr_celtic.0203 = {
 		trigger = {
 			NOT = { has_character_modifier = celtic_iberian_nabia }
 		}
-		set_bhakti_effect = { BHAKTI = celtic_iberian_nabia }
+		pr_set_patron_god_effect = { BHAKTI = celtic_iberian_nabia }
 	}
 
 	#Lugus
@@ -476,7 +463,7 @@ pr_celtic.0203 = {
 		trigger = {
 			NOT = { has_character_modifier =  celtic_iberian_lugus }
 		}
-		set_bhakti_effect = { BHAKTI = celtic_iberian_lugus }
+		pr_set_patron_god_effect = { BHAKTI = celtic_iberian_lugus }
 	}
 
 
@@ -486,7 +473,7 @@ pr_celtic.0203 = {
 		trigger = {
 			NOT = { has_character_modifier = celtic_iberian_bandua }
 		}
-		set_bhakti_effect = { BHAKTI = celtic_iberian_bandua }
+		pr_set_patron_god_effect = { BHAKTI = celtic_iberian_bandua }
 	}
 
 	# Opt-Out
@@ -511,7 +498,6 @@ pr_celtic.0300 = {
 	option = {
 		name = pr_celtic.0300.a
 		add_character_modifier = {  modifier = winter_solstice  months = 3 }
-		faith = scope:root.faith
 		faith ={ 
 			change_fervor = {
 				value = 5
@@ -529,7 +515,6 @@ pr_celtic.0301 = {
 	option = {
 		name = pr_celtic.0301.a
 		add_character_modifier = {  modifier = winter_solstice  months = 3 }
-		faith = scope:root.faith
 		faith ={ 
 			change_fervor = {
 				value = 5
@@ -547,7 +532,6 @@ pr_celtic.0302 = {
 	option = {
 		name = pr_celtic.0302.a
 		add_character_modifier = {  modifier = winter_solstice  months = 3 }
-		faith = scope:root.faith
 		faith ={ 
 			change_fervor = {
 				value = 5
@@ -565,7 +549,6 @@ pr_celtic.0303 ={
 	option = {
 		name = pr_celtic.0303.a
 		add_character_modifier = { modifier = summer_solstice_celtic months = 3 }
-		faith = scope:root.faith
 		faith ={ 
 			change_fervor = {
 				value = 5
@@ -585,7 +568,6 @@ pr_celtic.0304 ={
 	option = {
 		name = pr_celtic.0304.a
 		add_character_modifier = { modifier = summer_solstice_celtic months = 3 }
-		faith = scope:root.faith
 		faith ={ 
 			change_fervor = {
 				value = 5
@@ -605,7 +587,6 @@ pr_celtic.0305 ={
 	option = {
 		name = pr_celtic.0305.a
 		add_character_modifier = { modifier = summer_solstice_celtic months = 3 }
-		faith = scope:root.faith
 		faith ={ 
 			change_fervor = {
 				value = 5
@@ -1754,6 +1735,7 @@ pr_celtic.0421 = {
 			save_scope_as = vassal_1
 		}
 		random_vassal = {
+			limit = { NOT = { this = scope:vassal_1 } }
 			save_scope_as = vassal_2
 		}
 		every_living_character = {

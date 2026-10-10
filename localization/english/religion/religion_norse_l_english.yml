@@ -1,0 +1,27 @@
+﻿l_english:
+#####################
+# Norse god names that differ from vanilla (germanic_* keys stay vanilla)
+#####################
+
+ # Added 2026-10-05 (Germanic god names, step 2)
+ norse_creator_god_name:0 "the Sons of Burr"
+ norse_creator_god_name_possessive:0 "the Sons of Burr's"
+ norse_fertility_god_name:0 "Freyr"
+ norse_fertility_god_name_possessive:0 "Freyr's"
+ norse_knowledge_god_name:0 "Mímir"
+ norse_knowledge_god_name_possessive:0 "Mímir's"
+ norse_devil_name:0 "Fenrir"
+ norse_devil_name_possessive:0 "Fenrir's"
+ norse_good_god_freyr:0 "Freyr"
+ norse_good_god_ullr:0 "Ullr"
+ norse_evil_god_jormungandr:0 "Jörmungandr"
+ norse_religious_symbol:0 "Thor's hammer"
+ norse_religious_symbol_2:0 "$norse_religious_symbol$"
+ norse_religious_symbol_3:0 "$norse_religious_symbol$"
+ norse_religious_text:0 "the god-sprung runes"
+ norse_religious_text_2:0 "$norse_religious_text$"
+ norse_religious_text_3:0 "$norse_religious_text$"
+ norse_priest_female:0 "gyðja"
+ norse_priest_female_plural:0 "gyðjur"
+ norse_bishop_female:0 "hofgyðja"
+ norse_bishop_female_plural:0 "hofgyðjur"

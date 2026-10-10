@@ -27,7 +27,7 @@ pr_baltic_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = lithuanian_dievas }
 		}
-		set_bhakti_effect = { BHAKTI = lithuanian_dievas }
+		pr_set_patron_god_effect = { BHAKTI = lithuanian_dievas }
 	}
 
 	# Dalia
@@ -36,7 +36,7 @@ pr_baltic_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = lithuanian_dalia }
 		}
-		set_bhakti_effect = { BHAKTI = lithuanian_dalia }
+		pr_set_patron_god_effect = { BHAKTI = lithuanian_dalia }
 	}
 
 	# Perkunas
@@ -45,7 +45,7 @@ pr_baltic_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = lithuanian_perkunas }
 		}
-		set_bhakti_effect = { BHAKTI = lithuanian_perkunas }
+		pr_set_patron_god_effect = { BHAKTI = lithuanian_perkunas }
 	}
 
 	# Zemyna
@@ -54,7 +54,7 @@ pr_baltic_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = lithuanian_zemyna }
 		}
-		set_bhakti_effect = { BHAKTI = lithuanian_zemyna }
+		pr_set_patron_god_effect = { BHAKTI = lithuanian_zemyna }
 	}
 
 	# Saule
@@ -63,7 +63,7 @@ pr_baltic_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = baltic_saule }
 		}
-		set_bhakti_effect = { BHAKTI = baltic_saule }
+		pr_set_patron_god_effect = { BHAKTI = baltic_saule }
 	}
 
 	# Opt-Out
@@ -94,7 +94,7 @@ pr_baltic_decision.0002 = {
 		trigger = {
 			NOT = { has_character_modifier = latvian_dievs }
 		}
-		set_bhakti_effect = { BHAKTI = latvian_dievs }
+		pr_set_patron_god_effect = { BHAKTI = latvian_dievs }
 	}
 
 	# Jumis
@@ -103,7 +103,7 @@ pr_baltic_decision.0002 = {
 		trigger = {
 			NOT = { has_character_modifier = latvian_jumis }
 		}
-		set_bhakti_effect = { BHAKTI = latvian_jumis }
+		pr_set_patron_god_effect = { BHAKTI = latvian_jumis }
 	}
 
 	# Perkons
@@ -112,7 +112,7 @@ pr_baltic_decision.0002 = {
 		trigger = {
 			NOT = { has_character_modifier = latvian_perkons }
 		}
-		set_bhakti_effect = { BHAKTI = latvian_perkons }
+		pr_set_patron_god_effect = { BHAKTI = latvian_perkons }
 	}
 
 	# Ceroklis
@@ -121,16 +121,16 @@ pr_baltic_decision.0002 = {
 		trigger = {
 			NOT = { has_character_modifier = latvian_ceroklis }
 		}
-		set_bhakti_effect = { BHAKTI = latvian_ceroklis }
+		pr_set_patron_god_effect = { BHAKTI = latvian_ceroklis }
 	}
 
 	# Saule
 	option = {
 		name = pr_baltic_decision.0002.saule
 		trigger = {
-			NOT = { has_character_modifier = baltic_saule }
+			NOT = { has_character_modifier = latvian_saule }
 		}
-		set_bhakti_effect = { BHAKTI = baltic_saule }
+		pr_set_patron_god_effect = { BHAKTI = latvian_saule }
 	}
 
 	# Opt-Out
@@ -161,7 +161,7 @@ pr_baltic_decision.0003 = {
 		trigger = {
 			NOT = { has_character_modifier = prussian_deiws }
 		}
-		set_bhakti_effect = { BHAKTI = prussian_deiws }
+		pr_set_patron_god_effect = { BHAKTI = prussian_deiws }
 	}
 
 	# Pilwits
@@ -170,7 +170,7 @@ pr_baltic_decision.0003 = {
 		trigger = {
 			NOT = { has_character_modifier = prussian_pilwits }
 		}
-		set_bhakti_effect = { BHAKTI = prussian_pilwits }
+		pr_set_patron_god_effect = { BHAKTI = prussian_pilwits }
 	}
 
 	# Perkuns
@@ -179,7 +179,7 @@ pr_baltic_decision.0003 = {
 		trigger = {
 			NOT = { has_character_modifier = prussian_perkuns }
 		}
-		set_bhakti_effect = { BHAKTI = prussian_perkuns }
+		pr_set_patron_god_effect = { BHAKTI = prussian_perkuns }
 	}
 
 	# Patrimps
@@ -188,7 +188,7 @@ pr_baltic_decision.0003 = {
 		trigger = {
 			NOT = { has_character_modifier = prussian_patrimps }
 		}
-		set_bhakti_effect = { BHAKTI = prussian_patrimps }
+		pr_set_patron_god_effect = { BHAKTI = prussian_patrimps }
 	}
 
 	# Ausauts
@@ -197,7 +197,7 @@ pr_baltic_decision.0003 = {
 		trigger = {
 			NOT = { has_character_modifier = prussian_ausauts }
 		}
-		set_bhakti_effect = { BHAKTI = prussian_ausauts }
+		pr_set_patron_god_effect = { BHAKTI = prussian_ausauts }
 	}
 
 	# Opt-Out
