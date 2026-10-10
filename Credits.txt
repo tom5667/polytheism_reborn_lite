@@ -1,27 +1,56 @@
-Team:
-Dev:
-Tom5667
+﻿##################################################
+# Polytheism Reborn - Credits
+##################################################
 
-Adviser: 
-Algaureth
+## Team
 
-Researcher:
-TimeCrash29
-Fangwolf4
-Algaureth
+### Lead Developer
+- Tom5667
 
-Credits
-cybrxkhan: Kemetic culture(Namelist excluded as this that is built by Polytheism Reborn), celtic flavour events and Aachen Pilgrimage(+ memory)
-Bronze age team: 
-Religions Sumerian 
-The creator of the Baltic - Finnic mod  joedeneen,  for the baltic religions and religious icons
-Scarēlios for the permission to add More doctrines to this mod, later on continued by myself
-Karax the original creator and Lucky Leny (Holger) for making the More tenets/ethics mod and making it free to continue
-Whiztale For new insides about the Canaanite religions so various gods are changed to more correct ones 
-romanrepublic.org for the collective knowledge but also the lessons in the ancient roman religion
+### Advisors
+- Algaureth
 
-Contributer(s): 
-Acidwitch -> kingdom epirus coa
-Tendy Duda and Ella for making the new religious Icons for V2.5.5 
-Thanks to Algeurath for helping with the new namelists and dynsaty names for Gaulish, Brythonic, Celtic Iberian and Iberian
-Fangwolf4 for converting the iberian and Celtiberian firstnames to Hispano Roman names 
+### Researchers
+- Algaureth
+
+#### Former Researchers
+- TimeCrash29
+- Fangwolf4
+
+---
+
+## Special Thanks & Credits
+
+### Content Contributions
+- cybrxkhan: Kemetic culture (namelist excluded as this is built by Polytheism Reborn), Celtic flavour events, and Aachen Pilgrimage (+ memory)
+
+### Religion Contributions
+- Bronze Age Team: Sumerian religion
+- joedeneen: Creator of the Baltic-Finnic mod, for the Baltic religions and religious icons
+- Scarlios: For permission to add more doctrines to this mod (later continued by Tom5667)
+- Karax & Lucky Leny (Holger): Original creators of the More Tenets/Ethics mod and making it free to continue
+- Whiztale: For new insights about the Canaanite religions, so various gods are changed to more correct ones
+- romanrepublic.org: For the collective knowledge and lessons in the ancient Roman religion
+
+### Art & Assets
+- Tendy Duda and Ella: For making the new religious icons for V2.5.5
+
+### Localization & Naming
+- Algaureth: Helping with the new namelists and dynasty names for Gaulish, Brythonic, Celtic Iberian, and Iberian
+- Fangwolf4: For converting the Iberian and Celtiberian firstnames to Hispano-Roman names
+
+### Other Contributions
+- Acidwitch: Kingdom of Epirus Coat of Arms
+
+---
+
+## Version History
+
+This file documents all contributors to the Polytheism Reborn mod.
+
+---
+
+## Notes
+
+- All contributions are greatly appreciated.
+- If you have contributed and are not listed, please contact Tom5667.

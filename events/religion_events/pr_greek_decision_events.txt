@@ -26,7 +26,7 @@ pr_greek_decision.0001 = {
 	option = {
 		name = pr_greek_decision.0001.zeus
 		trigger = {
-			NOT = { has_trait = pr_hellenic_zeus }
+			NOT = { has_character_modifier = pr_hellenic_zeus }
 		}
 		pr_set_bhakti_effect = { BHAKTI = pr_hellenic_zeus }
 	}
@@ -35,7 +35,7 @@ pr_greek_decision.0001 = {
 	option = {
 		name = pr_greek_decision.0001.hera
 		trigger = {
-			NOT = { has_trait = pr_hellenic_hera }
+			NOT = { has_character_modifier = pr_hellenic_hera }
 		}
 		pr_set_bhakti_effect = { BHAKTI = pr_hellenic_hera }
 	}
@@ -44,7 +44,7 @@ pr_greek_decision.0001 = {
 	option = {
 		name = pr_greek_decision.0001.athena
 		trigger = {
-			NOT = { has_trait = pr_hellenic_athena }
+			NOT = { has_character_modifier = pr_hellenic_athena }
 		}
 		pr_set_bhakti_effect = { BHAKTI = pr_hellenic_athena }
 	}
@@ -80,7 +80,7 @@ pr_greek_decision.0019 = {
 	option = {
 		name = pr_greek_decision.0019.ares
 		trigger = {
-			NOT = { has_trait = pr_hellenic_ares }
+			NOT = { has_character_modifier = pr_hellenic_ares }
 		}
 		pr_set_bhakti_effect = { BHAKTI = pr_hellenic_ares }
 	}
@@ -89,7 +89,7 @@ pr_greek_decision.0019 = {
 	option = {
 		name = pr_greek_decision.0019.aphrodite
 		trigger = {
-			NOT = { has_trait = pr_hellenic_aphrodite }
+			NOT = { has_character_modifier = pr_hellenic_aphrodite }
 		}
 		pr_set_bhakti_effect = { BHAKTI = pr_hellenic_aphrodite }
 	}
@@ -98,7 +98,7 @@ pr_greek_decision.0019 = {
 	option = {
 		name = pr_greek_decision.0019.hermes
 		trigger = {
-			NOT = { has_trait = pr_hellenic_hermes }
+			NOT = { has_character_modifier = pr_hellenic_hermes }
 		}
 		pr_set_bhakti_effect = { BHAKTI = pr_hellenic_hermes }
 	}
@@ -107,7 +107,7 @@ pr_greek_decision.0019 = {
 	option = {
 		name = pr_greek_decision.0019.demeter
 		trigger = {
-			NOT = { has_trait = pr_hellenic_demeter }
+			NOT = { has_character_modifier = pr_hellenic_demeter }
 		}
 		pr_set_bhakti_effect = { BHAKTI = pr_hellenic_demeter }
 	}
@@ -145,7 +145,7 @@ pr_greek_decision.0002 = {
 		trigger = {
 			NOT = { has_character_modifier = mycenaean_poseidon }
 		}
-		set_bhakti_effect = { BHAKTI = mycenaean_poseidon }
+		pr_set_patron_god_effect = { BHAKTI = mycenaean_poseidon }
 	}
 
 	# Hermes
@@ -154,7 +154,7 @@ pr_greek_decision.0002 = {
 		trigger = {
 			NOT = { has_character_modifier = mycenaean_hermes }
 		}
-		set_bhakti_effect = { BHAKTI = mycenaean_hermes }
+		pr_set_patron_god_effect = { BHAKTI = mycenaean_hermes }
 	}
 
 	# Aphrodite
@@ -163,7 +163,7 @@ pr_greek_decision.0002 = {
 		trigger = {
 			NOT = { has_character_modifier = mycenaean_aphrodite }
 		}
-		set_bhakti_effect = { BHAKTI = mycenaean_aphrodite }
+		pr_set_patron_god_effect = { BHAKTI = mycenaean_aphrodite }
 	}
 
 	# Athena
@@ -172,7 +172,7 @@ pr_greek_decision.0002 = {
 		trigger = {
 			NOT = { has_character_modifier = mycenaean_athena }
 		}
-		set_bhakti_effect = { BHAKTI = mycenaean_athena }
+		pr_set_patron_god_effect = { BHAKTI = mycenaean_athena }
 	}
 
 	# Ares
@@ -181,7 +181,7 @@ pr_greek_decision.0002 = {
 		trigger = {
 			NOT = { has_character_modifier = mycenaean_ares }
 		}
-		set_bhakti_effect = { BHAKTI = mycenaean_ares }
+		pr_set_patron_god_effect = { BHAKTI = mycenaean_ares }
 	}
 
 	# Opt-Out
@@ -212,7 +212,7 @@ pr_greek_decision.0003 = {
 		trigger = {
 			NOT = { has_character_modifier = graeco_egyptian_zeus_amon }
 		}
-		set_bhakti_effect = { BHAKTI = graeco_egyptian_zeus_amon }
+		pr_set_patron_god_effect = { BHAKTI = graeco_egyptian_zeus_amon }
 	}
 
 	# Hermes Trismegistus
@@ -221,7 +221,7 @@ pr_greek_decision.0003 = {
 		trigger = {
 			NOT = { has_character_modifier = graeco_egyptian_hermes_trismegistus }
 		}
-		set_bhakti_effect = { BHAKTI = graeco_egyptian_hermes_trismegistus }
+		pr_set_patron_god_effect = { BHAKTI = graeco_egyptian_hermes_trismegistus }
 	}
 
 	# Isis
@@ -230,7 +230,7 @@ pr_greek_decision.0003 = {
 		trigger = {
 			NOT = { has_character_modifier = graeco_egyptian_isis }
 		}
-		set_bhakti_effect = { BHAKTI = graeco_egyptian_isis }
+		pr_set_patron_god_effect = { BHAKTI = graeco_egyptian_isis }
 	}
 
 	# Harpocrates
@@ -239,16 +239,16 @@ pr_greek_decision.0003 = {
 		trigger = {
 			NOT = { has_character_modifier = graeco_egyptian_harpocrates }
 		}
-		set_bhakti_effect = { BHAKTI = graeco_egyptian_harpocrates }
+		pr_set_patron_god_effect = { BHAKTI = graeco_egyptian_harpocrates }
 	}
 
 	# Ares
 	option = {
 		name = pr_greek_decision.0003.ares
 		trigger = {
-			NOT = { has_character_modifier = mycenaean_ares }
+			NOT = { has_character_modifier = graeco_egyptian_ares }
 		}
-		set_bhakti_effect = { BHAKTI = mycenaean_ares }
+		pr_set_patron_god_effect = { BHAKTI = graeco_egyptian_ares }
 	}
 
 	# Opt-Out
@@ -295,7 +295,8 @@ pr_greek_decision.0005 = {
 
 	option = {
 		name = pr_greek_decision.0005.a
-		faith = faith:graeco_egyptian_polytheism
+		set_character_faith = faith:hellenic_pagan
+		set_character_rite = rite:graeco_egyptian_rites
 		add_piety = 100
 	}
 }

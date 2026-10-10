@@ -1,0 +1,201 @@
+﻿#####################
+#Made by tom5667
+#####################
+# Rites of the Caucasian faith (armenian_polytheism). Tenets and patron-god doctrines from the old faiths;
+# rite doctrines override the religion's doctrines of the same group.
+# Rite keys use the plural "_rites": vanilla already has the Christian armenian_rite and georgian_rite.
+
+# Armenian rite (main). God names: religion-level block.
+armenian_rites = {
+    faith = armenian_polytheism
+
+    color = { 191 110 46 }
+    icon = pr_armenian
+
+    tenets = {
+        tenet_communal_identity
+        tenet_ritual_celebrations
+        tenet_esotericism
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+        special_doctrine_armenian_patron_god
+        doctrine_funeral_cremation
+    }
+}
+
+# Georgian rite (old faith georgian_polytheism).
+georgian_rites = {
+    faith = armenian_polytheism
+
+    color = { 219 183 50 }
+    icon = georgian
+
+    tenets = {
+        tenet_communal_identity
+        tenet_ritual_celebrations
+        tenet_esotericism
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+        special_doctrine_georgian_patron_god
+    }
+
+    localization = {
+        HighGodName = georgian_polytheism_high_god_name
+        HighGodName2 = georgian_polytheism_high_god_name_2
+        HighGodNamePossessive = georgian_polytheism_high_god_name_possessive
+        HighGodNameSheHe = CHARACTER_SHEHE_HE
+        HighGodHerselfHimself = CHARACTER_HIMSELF
+        HighGodHerHis = CHARACTER_HERHIS_HIS
+        HighGodNameAlternate = georgian_polytheism_high_god_name_alternate
+        HighGodNameAlternatePossessive = georgian_polytheism_high_god_name_alternate_possessive
+
+        #Creator
+        CreatorName = georgian_polytheism_creator_god_name
+        CreatorNamePossessive = georgian_polytheism_creator_god_name_possessive
+        CreatorSheHe = CHARACTER_SHEHE_THEY
+        CreatorHerHis = CHARACTER_HERHIS_THEIR
+        CreatorHerHim = CHARACTER_HERHIM_THEM
+
+        #HealthGod
+        HealthGodName = georgian_polytheism_health_god_name
+        HealthGodNamePossessive = georgian_polytheism_health_god_name_possessive
+        HealthGodSheHe = CHARACTER_SHEHE_THEY
+        HealthGodHerHis = CHARACTER_HERHIS_THEIR
+        HealthGodHerHim = CHARACTER_HERHIM_THEM
+
+        #FertilityGod
+        FertilityGodName = georgian_polytheism_fertility_god_name
+        FertilityGodNamePossessive = georgian_polytheism_fertility_god_name_possessive
+        FertilityGodSheHe = CHARACTER_SHEHE_HE
+        FertilityGodHerHis = CHARACTER_HERHIS_HIS
+        FertilityGodHerHim = CHARACTER_HERHIM_HIM
+
+        #WealthGod
+        WealthGodName = georgian_polytheism_wealth_god_name
+        WealthGodNamePossessive = georgian_polytheism_wealth_god_name_possessive
+        WealthGodSheHe = CHARACTER_SHEHE_THEY
+        WealthGodHerHis = CHARACTER_HERHIS_THEIR
+        WealthGodHerHim = CHARACTER_HERHIM_THEM
+
+        #HouseholdGod
+        HouseholdGodName = georgian_polytheism_household_god_name
+        HouseholdGodNamePossessive = georgian_polytheism_household_god_name_possessive
+        HouseholdGodSheHe = CHARACTER_SHEHE_IT
+        HouseholdGodHerHis = CHARACTER_HERHIS_ITS
+        HouseholdGodHerHim = CHARACTER_HERHIM_IT
+
+        #FateGod
+        FateGodName = georgian_polytheism_fate_god_name
+        FateGodNamePossessive = georgian_polytheism_fate_god_name_possessive
+        FateGodSheHe = CHARACTER_SHEHE_IT
+        FateGodHerHis = CHARACTER_HERHIS_ITS
+        FateGodHerHim = CHARACTER_HERHIM_IT
+
+        #KnowledgeGod
+        KnowledgeGodName = georgian_polytheism_knowledge_god_name
+        KnowledgeGodNamePossessive = georgian_polytheism_knowledge_god_name_possessive
+        KnowledgeGodSheHe = CHARACTER_SHEHE_THEY
+        KnowledgeGodHerHis = CHARACTER_HERHIS_THEIR
+        KnowledgeGodHerHim = CHARACTER_HERHIM_THEM
+
+        #WarGod
+        WarGodName = georgian_polytheism_war_god_name
+        WarGodNamePossessive = georgian_polytheism_war_god_name_possessive
+        WarGodSheHe = CHARACTER_SHEHE_HE
+        WarGodHerHis = CHARACTER_HERHIS_HIS
+        WarGodHerHim = CHARACTER_HERHIM_HIM
+
+        #TricksterGod
+        TricksterGodName = georgian_polytheism_trickster_god_name
+        TricksterGodNamePossessive = georgian_polytheism_trickster_god_name_possessive
+        TricksterGodSheHe = CHARACTER_SHEHE_IT
+        TricksterGodHerHis = CHARACTER_HERHIS_ITS
+        TricksterGodHerHim = CHARACTER_HERHIM_IT
+
+        #NightGod
+        NightGodName = georgian_polytheism_night_god_name
+        NightGodNamePossessive = georgian_polytheism_night_god_name_possessive
+        NightGodSheHe = CHARACTER_SHEHE_IT
+        NightGodHerHis = CHARACTER_HERHIS_ITS
+        NightGodHerHim = CHARACTER_HERHIM_IT
+
+        #WaterGod
+        WaterGodName = georgian_polytheism_water_god_name
+        WaterGodNamePossessive = georgian_polytheism_water_god_name_possessive
+        WaterGodSheHe = CHARACTER_SHEHE_THEY
+        WaterGodHerHis = CHARACTER_HERHIS_THEIR
+        WaterGodHerHim = CHARACTER_HERHIM_THEM
+
+        PantheonTerm = religion_the_gods
+        PantheonTerm2 = religion_the_gods_2
+        PantheonTerm3 = religion_the_gods_3
+        PantheonTermHasHave = pantheon_term_have
+        GoodGodNames = { georgian_polytheism_good_god_armazi georgian_polytheism_good_god_zaden georgian_polytheism_good_god_gatsi georgian_polytheism_good_god_gaim georgian_polytheism_good_god_ainina_danina }
+        DevilName = georgian_polytheism_devil_name
+        DevilNamePossessive = georgian_polytheism_devil_name_possessive
+        DevilSheHe = CHARACTER_SHEHE_IT
+        DevilHerHis = CHARACTER_HERHIS_ITS
+        DevilHerselfHimself = CHARACTER_ITSELF
+        EvilGodNames = { georgian_polytheism_evil_god_spirits georgian_polytheism_evil_god_demons }
+        HouseOfWorship = paganism_house_of_worship
+        HouseOfWorship2 = paganism_house_of_worship_2
+        HouseOfWorship3 = paganism_house_of_worship_3
+        HouseOfWorshipPlural = paganism_house_of_worship_plural
+        ReligiousSymbol = georgian_polytheism_religious_symbol
+        ReligiousSymbol2 = georgian_polytheism_religious_symbol_2
+        ReligiousSymbol3 = georgian_polytheism_religious_symbol_3
+        ReligiousText = georgian_polytheism_religious_text
+        ReligiousText2 = georgian_polytheism_religious_text_2
+        ReligiousText3 = georgian_polytheism_religious_text_3
+        ReligiousHeadName = georgian_polytheism_religious_head_title
+        ReligiousHeadNameFemale = georgian_polytheism_religious_head_title
+        ReligiousHeadTitleName = paganism_religious_head_title_name
+        DevoteeMale = paganism_devotee
+        DevoteeMalePlural = paganism_devoteeplural
+        DevoteeFemale = paganism_devotee
+        DevoteeFemalePlural = paganism_devoteeplural
+        DevoteeNeuter = paganism_devotee
+        DevoteeNeuterPlural = paganism_devoteeplural
+        PriestMale = georgian_polytheism_priest_male
+        PriestMalePlural = georgian_polytheism_priest_male_plural
+        PriestFemale = georgian_polytheism_priest_female
+        PriestFemalePlural = georgian_polytheism_priest_female_plural
+        PriestNeuter = georgian_polytheism_priest_male
+        PriestNeuterPlural = georgian_polytheism_priest_male_plural
+        AltPriestTermPlural = georgian_polytheism_priest_male_plural
+        BishopMale = georgian_polytheism_bishop_male
+        BishopMalePlural = georgian_polytheism_bishop_male_plural
+        BishopFemale = georgian_polytheism_bishop_male
+        BishopFemalePlural = georgian_polytheism_bishop_male_plural
+        BishopNeuter = georgian_polytheism_bishop_male
+        BishopNeuterPlural = georgian_polytheism_bishop_male_plural
+        DivineRealm = georgian_polytheism_divine_realm
+        DivineRealm2 = georgian_polytheism_divine_realm_2
+        DivineRealm3 = georgian_polytheism_divine_realm_3
+        PositiveAfterLife = georgian_polytheism_divine_realm
+        PositiveAfterLife2 = georgian_polytheism_divine_realm_2
+        PositiveAfterLife3 = georgian_polytheism_divine_realm_3
+        NegativeAfterLife = georgian_polytheism_afterlife
+        NegativeAfterLife2 = georgian_polytheism_afterlife_2
+        NegativeAfterLife3 = georgian_polytheism_afterlife_3
+        DeathDeityName = georgian_polytheism_death_deity_name
+        DeathDeityNamePossessive = georgian_polytheism_death_deity_name_possessive
+        DeathDeitySheHe = CHARACTER_SHEHE_HE
+        DeathDeityHerHis = CHARACTER_HERHIS_HIS
+        DeathDeityHerHim = CHARACTER_HERHIM_HIM
+        WitchGodName = georgian_polytheism_witch_god_name
+        WitchGodNamePossessive = georgian_polytheism_witch_god_name_possessive
+        WitchGodHerHis = CHARACTER_HERHIS_THEIR
+        WitchGodSheHe = CHARACTER_SHEHE_THEY
+        WitchGodHerHim = CHARACTER_HERHIM_THEM
+        WitchGodMistressMaster = mistress
+        WitchGodMotherFather = mother
+
+        GHWName = ghw_great_holy_war
+        GHWNamePlural = ghw_great_holy_wars
+    }
+}

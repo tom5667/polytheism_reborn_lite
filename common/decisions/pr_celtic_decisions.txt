@@ -9,7 +9,7 @@ pr_celtic_restore_high_priesthood_decision = {
         reference = "gfx/interface/illustrations/decisions/celtic_druid.dds"
     }
     desc = pr_celtic_restore_high_priesthood_decision_desc
-    decision_tooltip = pr_celtic_restore_high_priesthood_decision_tooltip
+    selection_tooltip = pr_celtic_restore_high_priesthood_decision_tooltip
     decision_group_type = polytheism
 
     ai_check_interval = 120
@@ -22,10 +22,9 @@ pr_celtic_restore_high_priesthood_decision = {
             faith = { has_doctrine = doctrine_no_head } #Only if Faith is meant to have one.
         }
         OR = {
-            faith = faith:gaelic_polytheism
-            faith = faith:brythonic_polytheism
-            faith = faith:celtic_iberian_polytheism
-            faith = faith:gaulish_polytheism
+            faith = faith:eriu_polytheism
+            faith = faith:pritani_polytheism
+            faith = faith:continental_polytheism
         }
     }
 
@@ -80,7 +79,7 @@ pr_celtic_create_empire_decision = {
         reference = "gfx/interface/illustrations/decisions/celtic_fort.dds"
     }
     desc = pr_celtic_create_empire_decision_desc
-    decision_tooltip = pr_celtic_create_empire_decision_tooltip
+    selection_tooltip = pr_celtic_create_empire_decision_tooltip
     decision_group_type = polytheism
 
     ai_check_interval = 4
@@ -180,7 +179,7 @@ pr_celtic_create_lusitania_decision = {
     }
     decision_group_type = major
     desc = pr_celtic_create_lusitania_decision_desc
-    decision_tooltip = pr_celtic_create_lusitania_decision_tooltip
+    selection_tooltip = pr_celtic_create_lusitania_decision_tooltip
     ai_check_interval = 4
     is_shown = {
         OR = {
@@ -202,7 +201,7 @@ pr_celtic_create_lusitania_decision = {
             OR = {
                 religion = religion:celtic_religion
                 religion = religion:iberian_religion
-                religion = religion:roman_religion
+                pr_is_cultus_deorum_trigger = yes
                 religion = religion:hellenism_religion
             }
             OR = {
@@ -231,7 +230,7 @@ pr_celtic_create_lusitania_decision = {
             OR = {
                 religion = religion:celtic_religion
                 religion = religion:iberian_religion
-                religion = religion:roman_religion
+                pr_is_cultus_deorum_trigger = yes
                 religion = religion:hellenism_religion
             }
         }
@@ -302,7 +301,7 @@ pr_celtic_create_galicia_decision = {
     }
     decision_group_type = major
     desc = pr_celtic_create_galicia_decision_desc
-    decision_tooltip = pr_celtic_create_galicia_decision_tooltip
+    selection_tooltip = pr_celtic_create_galicia_decision_tooltip
     ai_check_interval = 4
     is_shown = {
         OR = {
@@ -324,7 +323,7 @@ pr_celtic_create_galicia_decision = {
             OR = {
                 religion = religion:celtic_religion
                 religion = religion:iberian_religion
-                religion = religion:roman_religion
+                pr_is_cultus_deorum_trigger = yes
                 religion = religion:hellenism_religion
             }
             OR = {
@@ -354,7 +353,7 @@ pr_celtic_create_galicia_decision = {
             OR = {
                 religion = religion:celtic_religion
                 religion = religion:iberian_religion
-                religion = religion:roman_religion
+                pr_is_cultus_deorum_trigger = yes
                 religion = religion:hellenism_religion
             }
         }
@@ -422,7 +421,7 @@ pr_celtic_create_vasconia_decision = {
     }
     decision_group_type = major
     desc = pr_celtic_create_vasconia_decision_desc
-    decision_tooltip = pr_celtic_create_vasconia_decision_tooltip
+    selection_tooltip = pr_celtic_create_vasconia_decision_tooltip
     ai_check_interval = 4
     is_shown = {
         OR = {
@@ -438,7 +437,7 @@ pr_celtic_create_vasconia_decision = {
             OR = {
                 religion = religion:celtic_religion
                 religion = religion:iberian_religion
-                religion = religion:roman_religion
+                pr_is_cultus_deorum_trigger = yes
                 religion = religion:hellenism_religion
             }
             OR = {
@@ -470,7 +469,7 @@ pr_celtic_create_vasconia_decision = {
             OR = {
                 religion = religion:celtic_religion
                 religion = religion:iberian_religion
-                religion = religion:roman_religion
+                pr_is_cultus_deorum_trigger = yes
                 religion = religion:hellenism_religion
             }
         }
@@ -536,7 +535,7 @@ pr_celtic_create_tartessia_decision = {
     }
     decision_group_type = major
     desc = pr_celtic_create_tartessia_decision_desc
-    decision_tooltip = pr_celtic_create_tartessia_decision_tooltip
+    selection_tooltip = pr_celtic_create_tartessia_decision_tooltip
     ai_check_interval = 4
     is_shown = {
         OR = {
@@ -552,7 +551,7 @@ pr_celtic_create_tartessia_decision = {
             OR = {
                 religion = religion:celtic_religion
                 religion = religion:iberian_religion
-                religion = religion:roman_religion
+                pr_is_cultus_deorum_trigger = yes
                 religion = religion:hellenism_religion
             }
             OR = {
@@ -583,7 +582,7 @@ pr_celtic_create_tartessia_decision = {
             OR = {
                 religion = religion:celtic_religion
                 religion = religion:iberian_religion
-                religion = religion:roman_religion
+                pr_is_cultus_deorum_trigger = yes
                 religion = religion:hellenism_religion
             }
         }
@@ -650,7 +649,7 @@ pr_celtic_create_celtiberia_decision = {
     }
     decision_group_type = major
     desc = pr_celtic_create_celtiberia_decision_desc
-    decision_tooltip = pr_celtic_create_celtiberia_decision_tooltip
+    selection_tooltip = pr_celtic_create_celtiberia_decision_tooltip
     ai_check_interval = 4
     is_shown = {
         OR = {
@@ -666,7 +665,7 @@ pr_celtic_create_celtiberia_decision = {
             OR = {
                 religion = religion:celtic_religion
                 religion = religion:iberian_religion
-                religion = religion:roman_religion
+                pr_is_cultus_deorum_trigger = yes
                 religion = religion:hellenism_religion
             }
             OR = {
@@ -698,7 +697,7 @@ pr_celtic_create_celtiberia_decision = {
             OR = {
                 religion = religion:celtic_religion
                 religion = religion:iberian_religion
-                religion = religion:roman_religion
+                pr_is_cultus_deorum_trigger = yes
                 religion = religion:hellenism_religion
             }
         }
@@ -763,7 +762,7 @@ pr_celtic_create_iberia_decision = {
     }
     decision_group_type = major
     desc = pr_celtic_create_iberia_decision_desc
-    decision_tooltip = pr_celtic_create_iberia_decision_tooltip
+    selection_tooltip = pr_celtic_create_iberia_decision_tooltip
     ai_check_interval = 4
     is_shown = {
         OR = {
@@ -779,7 +778,7 @@ pr_celtic_create_iberia_decision = {
             OR = {
                 religion = religion:celtic_religion
                 religion = religion:iberian_religion
-                religion = religion:roman_religion
+                pr_is_cultus_deorum_trigger = yes
             }
             OR = {
                 culture = culture:pr_iberian
@@ -810,7 +809,7 @@ pr_celtic_create_iberia_decision = {
             OR = {
                 religion = religion:celtic_religion
                 religion = religion:iberian_religion
-                religion = religion:roman_religion
+                pr_is_cultus_deorum_trigger = yes
             }
         }
         AND = {
@@ -877,7 +876,7 @@ pr_celtic_choose_main_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
     }
     desc = pr_celtic_choose_main_deity_decision_desc
-    decision_tooltip = pr_celtic_choose_main_deity_decision_tooltip
+    selection_tooltip = pr_celtic_choose_main_deity_decision_tooltip
     decision_group_type = polytheism
     is_shown = {
         has_fp1_dlc_trigger = yes
@@ -897,8 +896,8 @@ pr_celtic_choose_main_deity_decision = {
         if = {
             limit = {
                 OR = {
-                    faith = faith:gaelic_polytheism
-                    faith = { has_doctrine_parameter = special_doctrine_gaelic_patron_god_active }
+                    rite = rite:gaelic_rites
+                    rite = { rite_has_parameter = special_doctrine_gaelic_patron_god_active }
                 }
             }
             show_as_tooltip = {
@@ -936,8 +935,8 @@ pr_celtic_choose_main_deity_decision = {
         else_if = {
             limit = {
                 OR = {
-                    faith = faith:brythonic_polytheism
-                    faith = { has_doctrine_parameter = special_doctrine_brythonic_patron_god_active }
+                    rite = rite:brythonic_rites
+                    rite = { rite_has_parameter = special_doctrine_brythonic_patron_god_active }
                 }
             }
             show_as_tooltip = {
@@ -975,8 +974,8 @@ pr_celtic_choose_main_deity_decision = {
         else_if = {
             limit = {
                 OR = {
-                    faith = faith:gaulish_polytheism
-                    faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
+                    rite = rite:gaulish_rites
+                    rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
                 }
             }
             show_as_tooltip = {
@@ -1014,8 +1013,8 @@ pr_celtic_choose_main_deity_decision = {
         else_if = {
             limit = {
                 OR = {
-                    faith = faith:celtic_iberian_polytheism
-                    faith = { has_doctrine_parameter = special_doctrine_celtic_iberian_patron_god_active }
+                    rite = rite:celtic_iberian_polytheism_rites
+                    rite = { rite_has_parameter = special_doctrine_celtic_iberian_patron_god_active }
                 }
             }
             show_as_tooltip = {
@@ -1091,15 +1090,15 @@ pr_celtic_old_irish_culture_decision = {
     }
     decision_group_type = polytheism
     desc = pr_celtic_old_irish_culture_decision_desc
-    decision_tooltip = pr_celtic_old_irish_culture_decision_tooltip
+    selection_tooltip = pr_celtic_old_irish_culture_decision_tooltip
     is_shown = {
         is_ai = no
         is_adult = yes
         is_imprisoned = no
         AND = {
             OR = {
-                faith = faith:gaelic_polytheism
-                faith = { has_doctrine_parameter = special_doctrine_gaelic_patron_god_active }
+                faith = faith:eriu_polytheism
+                rite = { rite_has_parameter = special_doctrine_gaelic_patron_god_active }
             }
             culture = culture:irish
         }
@@ -1140,15 +1139,15 @@ pr_celtic_gaulish_culture_decision = {
     }
     decision_group_type = polytheism
     desc = pr_celtic_gaulish_culture_decision_desc
-    decision_tooltip = pr_celtic_gaulish_culture_decision_tooltip
+    selection_tooltip = pr_celtic_gaulish_culture_decision_tooltip
     is_shown = {
         is_ai = no
         is_landed = yes
         is_adult = yes
         is_imprisoned = no
         OR = {
-            faith = faith:gaulish_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
+            rite = rite:gaulish_rites
+            rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
         }
         NOR = {
             culture = culture:pr_gaulish
@@ -1188,15 +1187,15 @@ pr_celtic_brythonic_culture_decision = {
     }
     decision_group_type = polytheism
     desc = pr_celtic_brythonic_culture_decision_desc
-    decision_tooltip = pr_celtic_brythonic_culture_decision_tooltip
+    selection_tooltip = pr_celtic_brythonic_culture_decision_tooltip
     is_shown = {
         is_ai = no
         is_landed = yes
         is_adult = yes
         is_imprisoned = no
         OR = {
-            faith = faith:brythonic_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_brythonic_patron_god_active }
+            faith = faith:pritani_polytheism
+            rite = { rite_has_parameter = special_doctrine_brythonic_patron_god_active }
         }
         NOR = {
             culture = culture:pr_brythonic
@@ -1235,15 +1234,15 @@ pr_celtic_eburones_culture_decision = {
     }
     decision_group_type = polytheism
     desc = pr_celtic_eburones_culture_decision_desc
-    decision_tooltip = pr_celtic_eburones_culture_decision_tooltip
+    selection_tooltip = pr_celtic_eburones_culture_decision_tooltip
     is_shown = {
         is_ai = no
         is_landed = yes
         is_adult = yes
         is_imprisoned = no
         OR = {
-            faith = faith:gaulish_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
+            rite = rite:gaulish_rites
+            rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
         }
 
         NOR = {
@@ -1283,15 +1282,15 @@ pr_celtic_manx_culture_decision = {
     }
     decision_group_type = polytheism
     desc = pr_celtic_manx_culture_decision_desc
-    decision_tooltip = pr_celtic_manx_culture_decision_tooltip
+    selection_tooltip = pr_celtic_manx_culture_decision_tooltip
     is_shown = {
         is_ai = no
         is_landed = yes
         is_adult = yes
         is_imprisoned = no
         OR = {
-            faith = faith:gaelic_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_gaelic_patron_god_active }
+            faith = faith:eriu_polytheism
+            rite = { rite_has_parameter = special_doctrine_gaelic_patron_god_active }
         }
         NOR = {
             culture = culture:pr_manx
@@ -1330,7 +1329,7 @@ pr_celtic_push_out_the_sassenach_saga_decision = {
     }
     decision_group_type = polytheism
     desc = pr_celtic_push_out_the_sassenach_saga_decision_desc
-    decision_tooltip = pr_celtic_push_out_the_sassenach_saga_decision_tooltip
+    selection_tooltip = pr_celtic_push_out_the_sassenach_saga_decision_tooltip
     is_shown = {
         AND = {
             NOT = {
@@ -1378,7 +1377,7 @@ pr_celtic_reconquest_ireland_decision = {
     }
     decision_group_type = polytheism
     desc = pr_celtic_reconquest_ireland_decision_desc
-    decision_tooltip = pr_celtic_reconquest_ireland_decision_tooltip
+    selection_tooltip = pr_celtic_reconquest_ireland_decision_tooltip
     is_shown = {
         AND = {
             religion = religion:celtic_religion
@@ -1427,7 +1426,7 @@ pr_celtic_reconquest_alba_decision = {
     }
     decision_group_type = polytheism
     desc = pr_celtic_reconquest_alba_decision_desc
-    decision_tooltip = pr_celtic_reconquest_alba_decision_tooltip
+    selection_tooltip = pr_celtic_reconquest_alba_decision_tooltip
     is_shown = {
         AND = {
             religion = religion:celtic_religion
@@ -1476,7 +1475,7 @@ pr_celtic_reconquest_wales_decision = {
     }
     decision_group_type = polytheism
     desc = pr_celtic_reconquest_wales_decision_desc
-    decision_tooltip = pr_celtic_reconquest_wales_decision_tooltip
+    selection_tooltip = pr_celtic_reconquest_wales_decision_tooltip
     is_shown = {
         AND = {
             religion = religion:celtic_religion
@@ -1524,7 +1523,7 @@ pr_celtic_reconquest_albion_decision = {
     }
     decision_group_type = polytheism
     desc = pr_celtic_reconquest_albion_decision_desc
-    decision_tooltip = pr_celtic_reconquest_albion_decision_tooltip
+    selection_tooltip = pr_celtic_reconquest_albion_decision_tooltip
     is_shown = {
         AND = {
             religion = religion:celtic_religion
@@ -1583,7 +1582,7 @@ pr_celtic_conquest_brittany_decision = {
     }
     decision_group_type = polytheism
     desc = pr_celtic_conquest_brittany_decision_desc
-    decision_tooltip = pr_celtic_conquest_brittany_decision_tooltip
+    selection_tooltip = pr_celtic_conquest_brittany_decision_tooltip
     is_shown = {
         AND = {
             religion = religion:celtic_religion
@@ -1629,7 +1628,7 @@ pr_celtic_conquest_galicia_decision = {
     }
     decision_group_type = polytheism
     desc = pr_celtic_conquest_galicia_decision_desc
-    decision_tooltip = pr_celtic_conquest_galicia_decision_tooltip
+    selection_tooltip = pr_celtic_conquest_galicia_decision_tooltip
     is_shown = {
         AND = {
             religion = religion:celtic_religion
@@ -1675,7 +1674,7 @@ pr_celtic_conquest_of_belgae_decision = {
     }
     decision_group_type = polytheism
     desc = pr_celtic_conquest_of_belgae_decision_desc
-    decision_tooltip = pr_celtic_conquest_of_belgae_decision_tooltip
+    selection_tooltip = pr_celtic_conquest_of_belgae_decision_tooltip
     is_shown = {
         AND = {
             religion = religion:celtic_religion
@@ -1726,7 +1725,7 @@ pr_celtic_conquest_of_gaul_decision = {
     }
     decision_group_type = polytheism
     desc = pr_celtic_conquest_of_gaul_decision_desc
-    decision_tooltip = pr_celtic_conquest_of_gaul_decision_tooltip
+    selection_tooltip = pr_celtic_conquest_of_gaul_decision_tooltip
     is_shown = {
         AND = {
             religion = religion:celtic_religion
@@ -1787,7 +1786,7 @@ pr_celtic_conquest_of_gaul_decision = {
 
 pr_celtic_create_gathering_place_for_druids_decision = {
     desc = pr_celtic_create_gathering_place_for_druids_decision_desc
-    decision_tooltip = pr_celtic_create_gathering_place_for_druids_decision_tooltip
+    selection_tooltip = pr_celtic_create_gathering_place_for_druids_decision_tooltip
     decision_group_type = polytheism
     picture = {
         reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
@@ -1823,11 +1822,12 @@ pr_celtic_create_gathering_place_for_druids_decision = {
     ai_will_do = {
         base = 100
     }
+    ai_check_interval = 0 # player-only until an AI weight is designed (#147)
 }
 
 pr_celtic_create_noricum_kingdom_decision = {
     desc = pr_celtic_create_noricum_kingdom_decision_desc
-    decision_tooltip = pr_celtic_create_noricum_kingdom_decision_tooltip
+    selection_tooltip = pr_celtic_create_noricum_kingdom_decision_tooltip
     decision_group_type = polytheism
     picture = {
         reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
@@ -1854,6 +1854,7 @@ pr_celtic_create_noricum_kingdom_decision = {
     ai_will_do = {
         base = 100
     }
+    ai_check_interval = 0 # player-only until an AI weight is designed (#147)
 }
 
 pr_celtic_send_son_to_druids_decision = {
@@ -1862,7 +1863,7 @@ pr_celtic_send_son_to_druids_decision = {
     }
     decision_group_type = polytheism
     desc = pr_celtic_send_son_to_druids_decision_desc
-    decision_tooltip = pr_celtic_send_son_to_druids_decision_tooltip
+    selection_tooltip = pr_celtic_send_son_to_druids_decision_tooltip
 
     is_shown = {
         religion = religion:celtic_religion
@@ -1894,7 +1895,7 @@ pr_celtic_send_son_to_druids_decision = {
 
 pr_celtic_claim_irish_high_kingdom_decision = {
     desc = pr_celtic_claim_irish_high_kingdom_decision_desc
-    decision_tooltip = pr_celtic_claim_irish_high_kingdom_decision_tooltip
+    selection_tooltip = pr_celtic_claim_irish_high_kingdom_decision_tooltip
     decision_group_type = polytheism
     picture = {
         reference = "gfx/interface/illustrations/decisions/pr_elect_high_king_decision.dds"
@@ -1964,4 +1965,5 @@ pr_celtic_claim_irish_high_kingdom_decision = {
     ai_will_do = {
         base = 0
     }
+    ai_check_interval = 0 # player-only until an AI weight is designed (#147)
 }

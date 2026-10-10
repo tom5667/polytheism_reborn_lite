@@ -1,0 +1,26 @@
+﻿#####################
+#Made by tom5667
+#####################
+
+illyrian_polytheism = {
+    main_rite = illyrian_rites
+    historical = yes
+
+    faith_details = {
+        religion = illyrian_religion
+        color = { 84 235 112 }
+        icon = illyrian
+        reformed_icon = illyrian_reformed
+    }
+
+    # Attested cult places (issue #93): Armatus (Delminium), Redon (Dyrrachion),
+    # Medaurus (Risinium), Thana and Vidasus (Topusko), Anzotica (Aenona), Bindus (Privilica spring)
+    holy_sites = {
+        delminium
+        dyrrachion
+        risinium
+        topusko
+        aenona
+        privilica
+    }
+}

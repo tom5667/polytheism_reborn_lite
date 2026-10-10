@@ -1,0 +1,32 @@
+﻿#####################
+#Made by tom5667
+#####################
+# One Caucasian faith with two rites (Armenian, Georgian). Both pre-Christian religions shared an Iranian
+# layer (Aramazd / Armazi, Anahit); Armenian is far better attested (research 2026-10-06). Nobody holds
+# this faith at 700/867: it is a revival faith, reached through events and decisions.
+armenian_polytheism = {
+    main_rite = armenian_rites # Armenian rite; the faith keeps the old Armenian key (scripts use it)
+    historical = yes
+
+    faith_details = {
+        religion = caucasus_religion
+        color = { 191 110 46 }
+        icon = pr_armenian
+        reformed_icon = pr_armenian_reformed
+    }
+
+    # Holy sites (research 2026-10-06, double-checked). Kutaisi, Tortomi and Hereti dropped (no
+    # pre-Christian cult evidence; Hereti stays a Scythian site).
+    eminent_holy_sites = {
+        mtskheta      # Armazi (Georgian)
+        pr_ani_kamakh # Aramazd (Armenian)
+        pr_erez       # Anahit (Armenian)
+    }
+
+    holy_sites = {
+        pr_ashtishat  # Vahagn, Anahit, Astghik
+        pr_bagaran    # the ancestral idols
+        pr_dvin       # Artashat: Anahit and Tir
+        pr_phasis     # goddess of Phasis (Georgian west)
+    }
+}

@@ -19,21 +19,22 @@
   pr_baltic_choose_main_deity_decision_tt:0 "#F Select a deity to receive their blessing#"
 
   # Lithuanian Deities
-  pr_baltic_choose_main_deity_decision.select_dievas:0 "Dievas"
-  pr_baltic_choose_main_deity_decision.select_dalia:0 "Dalia"
-  pr_baltic_choose_main_deity_decision.select_perkunas:0 "Perkunas"
-  pr_baltic_choose_main_deity_decision.select_zemyna:0 "Zemyna"
-  pr_baltic_choose_main_deity_decision.select_saule:0 "Saule"
+  pr_baltic_choose_main_deity_decision.select_dievas:0 "Andajus"
+  pr_baltic_choose_main_deity_decision.select_dalia:0 "The Giver of Plenty"
+  pr_baltic_choose_main_deity_decision.select_perkunas:0 "Perkūnas"
+  pr_baltic_choose_main_deity_decision.select_zemyna:0 "Žemyna"
+  pr_baltic_choose_main_deity_decision.select_saule:0 "Saulė"
+  pr_baltic_choose_main_deity_decision.select_saule_latvian:0 "Saule"
 
   # Latvian Deities
   pr_baltic_choose_main_deity_decision.select_dievs:0 "Dievs"
-  pr_baltic_choose_main_deity_decision.select_jumis:0 "Jumis"
-  pr_baltic_choose_main_deity_decision.select_perkons:0 "Perkons"
+  pr_baltic_choose_main_deity_decision.select_jumis:0 "Lopu māte"
+  pr_baltic_choose_main_deity_decision.select_perkons:0 "Pērkons"
   pr_baltic_choose_main_deity_decision.select_ceroklis:0 "Ceroklis"
 
   # Prussian Deities
-  pr_baltic_choose_main_deity_decision.select_deiws:0 "Deiws"
-  pr_baltic_choose_main_deity_decision.select_pilwits:0 "Pilwits"
-  pr_baltic_choose_main_deity_decision.select_perkuns:0 "Perkuns"
-  pr_baltic_choose_main_deity_decision.select_patrimps:0 "Patrimps"
-  pr_baltic_choose_main_deity_decision.select_ausauts:0 "Ausauts"
+  pr_baltic_choose_main_deity_decision.select_deiws:0 "Occopirmus"
+  pr_baltic_choose_main_deity_decision.select_pilwits:0 "Pilwytus"
+  pr_baltic_choose_main_deity_decision.select_perkuns:0 "Parcuns"
+  pr_baltic_choose_main_deity_decision.select_patrimps:0 "Curche"
+  pr_baltic_choose_main_deity_decision.select_ausauts:0 "Ausschauts"

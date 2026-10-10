@@ -11,7 +11,7 @@ pr_scythian_create_scythia_decision = {
     }
     decision_group_type = polytheism
     desc = pr_scythian_create_scythia_decision_desc
-    decision_tooltip = pr_scythian_create_scythia_decision_tooltip
+    selection_tooltip = pr_scythian_create_scythia_decision_tooltip
 
     ai_check_interval = 4
 
@@ -134,7 +134,7 @@ pr_scythian_create_indo_scythia_decision = {
     }
     decision_group_type = polytheism
     desc = pr_scythian_create_indo_scythia_decision_desc
-    decision_tooltip = pr_scythian_create_indo_scythia_decision_tooltip
+    selection_tooltip = pr_scythian_create_indo_scythia_decision_tooltip
 
     ai_check_interval = 4
 
@@ -248,7 +248,7 @@ pr_scythian_restore_scythia_empire_decision = {
     }
     decision_group_type = polytheism
     desc = pr_scythian_restore_scythia_empire_decision_desc
-    decision_tooltip = pr_scythian_restore_scythia_empire_decision_tooltip
+    selection_tooltip = pr_scythian_restore_scythia_empire_decision_tooltip
 
     ai_check_interval = 4
 
@@ -392,7 +392,7 @@ pr_scythian_choose_main_deity_decision = {
     }
     decision_group_type = polytheism
     desc = pr_scythian_choose_main_deity_decision_desc
-    decision_tooltip = pr_scythian_choose_main_deity_decision_tooltip
+    selection_tooltip = pr_scythian_choose_main_deity_decision_tooltip
 
     is_shown = {
         # DLC check.

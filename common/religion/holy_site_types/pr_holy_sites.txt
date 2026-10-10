@@ -2,20 +2,10 @@
 #############
 # cdr
 #############
-ravenna = {
-	county = c_ravenna
-	
-	character_modifier = {
-		monthly_piety_gain_mult = 0.2
-	}
-	parameters = {
-		ravenna_conversion_bonus # +20% County Conversion
-	}
-}
 giza = {
 	county = c_giza
 	
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.1
 	}
 	parameters = {
@@ -26,7 +16,7 @@ giza = {
 cumae = {
 	county = c_napoli
 	
-	character_modifier = {
+	county_holder_character_modifier = {
 		learning = 1
 		religious_vassal_opinion = 5
 	}
@@ -38,7 +28,7 @@ cumae = {
 paestum= {
 	county = c_salerno
 	barony = b_policastro
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_paestum_effect_name
 		cultural_head_fascination_mult = 0.05
 		monthly_county_control_growth_factor = 0.05
@@ -48,7 +38,7 @@ paestum= {
 delphi = {
 	county = c_boeotia
     barony = b_amfissa
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.2
 	}
 	parameters = {
@@ -59,7 +49,7 @@ delphi = {
 agrigento = {
 	county = c_agrigento
 	barony = b_agricento
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_agrigento_effect_name
 		prowess_per_piety_level = 1
 		max_combat_roll = 4
@@ -73,7 +63,7 @@ agrigento = {
 syracusai = {
 	county = c_siracusa
 	
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_syracusai_effect_name
 		prowess_per_piety_level = 1
 		max_combat_roll = 4
@@ -92,7 +82,7 @@ syracusai = {
 palmyra = {
 	county = c_palmyra
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_palmyra_effect_name
 		diplomacy = 1
 		martial = 1
@@ -103,7 +93,7 @@ palmyra = {
 emesa = {
 	county = c_homs
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_emesa_effect_name
 		religious_vassal_opinion = 5
 		owned_personal_scheme_success_chance_add = 10
@@ -113,7 +103,7 @@ emesa = {
 heliopolis = {
 	county = c_cairo
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_heliopolis_effect_name
 		church_holding_build_gold_cost = -0.1
 	}
@@ -128,7 +118,7 @@ heliopolis = {
 sofia = {
 	county = c_sredets
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_sofia_effect_name
 		clergy_opinion = 5
 	}
@@ -137,7 +127,7 @@ sofia = {
 shiraz = {
 	county = c_shiraz
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.1
 	}
 	parameters = {
@@ -152,7 +142,7 @@ shiraz = {
 dublin = {
 	county = c_dublin
 	barony = b_trim
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_dublin_effect_name
 		cultural_head_fascination_mult = 0.05
 		monthly_county_control_growth_factor = 0.05
@@ -161,7 +151,7 @@ dublin = {
 lough_gur = {
 	county = c_thomond
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_lough_gur_effect_name
 		development_growth_factor = 0.1
 		stewardship = 1
@@ -171,7 +161,7 @@ lough_gur = {
 ailech = {
 	county = c_ailech
 	
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.1
 	}
 	parameters = {
@@ -181,7 +171,7 @@ ailech = {
 isle_of_man = { 
 	county = c_isle_of_man
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_isle_of_man_effect_name
 		clergy_opinion = 5
 	}
@@ -189,7 +179,7 @@ isle_of_man = {
 gowrie = {
 	county = c_gowrie
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_gowrie_effect_name
 		diplomacy = 1
 		martial = 1
@@ -204,7 +194,7 @@ gowrie = {
 anglesey = {
 	county = c_anglesey
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_anglesey_effect_name
 		martial = 2
 		clergy_opinion = 5
@@ -222,7 +212,7 @@ caernarfonshire ={
 wiltshire = {
 	county = c_wiltshire
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_wiltshire_effect_name
 		clergy_opinion = 5
 	}
@@ -231,7 +221,7 @@ wiltshire = {
 cornwall = {
 	county = c_cornwall
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.2
 	}
 	
@@ -240,7 +230,7 @@ cornwall = {
 bath = {
 	county = c_somerset
 	
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_bath_effect_name
 		cultural_head_fascination_mult = 0.05
 		monthly_county_control_growth_factor = 0.05
@@ -250,7 +240,7 @@ bath = {
 vannes = {
 	county = c_vannes
 	
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_vannes_effect_name
 		diplomacy = 1
 		stewardship = 1
@@ -263,7 +253,7 @@ vannes = {
 
 aachen = {
 	county = c_aachen
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_aachen_effect_name
 		intrigue_per_prestige_level = 1
 		knight_effectiveness_mult = 0.2
@@ -273,7 +263,7 @@ aachen = {
 ile_de_france = {
 	county = c_ile_de_france
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.2
 	}
 	parameters = {
@@ -283,7 +273,7 @@ ile_de_france = {
 puy_de_dome = {
 	county = c_thiers
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_puy_de_dome_effect_name
 		hills_advantage = 5
 		#stewardship = 1
@@ -293,7 +283,7 @@ puy_de_dome = {
 
 carnutes = {
 	county = c_chartres
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_carnutes_effect_name
 		clergy_opinion = 5
 	}
@@ -302,7 +292,7 @@ carnutes = {
 montpellier = {
 	county = c_montpellier 
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_montpellier_effect_name
 		martial = 2
 	}
@@ -315,7 +305,7 @@ montpellier = {
 zaragoza = {
 	county = c_zaragoza 
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_zaragoza_effect_name
 		clergy_opinion = 5
 	}
@@ -324,7 +314,7 @@ zaragoza = {
 astorga = {
 	county = c_astorga 
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.2
 	}
 	parameters = {
@@ -340,7 +330,7 @@ astorga = {
 pr_cartagena = {
 	county = c_murcia
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_pr_cartagena_effect_name
 		development_growth_factor = 0.1
 		stewardship = 1
@@ -350,7 +340,7 @@ pr_cartagena = {
 sidon = {
  	county = c_beirut
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.2
 	}
 	parameters = {
@@ -360,7 +350,7 @@ sidon = {
 
 tyre = {
  	county = c_acre
- 	character_modifier = {
+ 	county_holder_character_modifier = {
 		name = holy_site_tyre_effect_name
 		clergy_opinion = 5
 	}
@@ -370,7 +360,7 @@ tyre = {
 #############
 palermo = {
 	county = c_palermo
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_palermo_effect_name
 		diplomacy = 1
 		martial = 1
@@ -378,7 +368,7 @@ palermo = {
 }
 nicosia = {
 	county = c_nicosia
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_nicosia_effect_name
 		development_growth_factor = 0.1
 		stewardship = 1
@@ -388,20 +378,11 @@ nicosia = {
 # etruscan polytheism
 #############
 
-fufluna = {
-	county = c_pisa
-	barony = b_piombino
-
- 	character_modifier = {
- 		name = holy_site_fufluna_effect_name
- 		clergy_opinion = 5
- 	}
- }
-
 arezzo = {
  	county = c_arezzo
+	barony = b_arezzo # Chimaera of Arezzo, votive to Tinia
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.2
 	}
 	parameters = {
@@ -409,14 +390,81 @@ arezzo = {
 	}
  }
 
+# step 2 sites (#86, decided 2026-10-08)
+pr_fanum_voltumnae = {
+	county = c_orvieto
+	barony = b_orvieto # Campo della Fiera below Orvieto (Etruscan Velzna, Roman Volsinii)
+
+	county_holder_character_modifier = {
+		monthly_piety_gain_mult = 0.2
+	}
+
+	faith_character_modifier = {
+		monthly_piety_gain_mult = 0.05
+	}
+
+	parameters = {
+		pr_fanum_voltumnae_conversion_bonus # +20% County Conversion
+	}
+}
+
+pr_tarquinii = {
+	county = c_viterbo
+	barony = b_civitavecchia # Tarquinia and its harbour Gravisca fall in this barony (control 8)
+
+	county_holder_character_modifier = {
+		monthly_piety_gain_mult = 0.2
+	}
+
+	faith_character_modifier = {
+		monthly_piety_gain_mult = 0.05
+	}
+
+	parameters = {
+		pr_tarquinii_conversion_bonus # +20% County Conversion
+	}
+}
+
+pr_pyrgi = {
+	county = c_roma
+	barony = b_palo # border case with b_sutri along the coast (control 8); vanilla rome shares the county
+
+	county_holder_character_modifier = {
+		monthly_piety_gain_mult = 0.2
+	}
+
+	faith_character_modifier = {
+		monthly_piety_gain_mult = 0.05
+	}
+
+	parameters = {
+		pr_pyrgi_conversion_bonus # +20% County Conversion
+	}
+}
+
+pr_clusium = {
+	county = c_siena
+	barony = b_chiusi # Etruscan Clusium
+
+	county_holder_character_modifier = {
+		monthly_piety_gain_mult = 0.2
+	}
+
+	parameters = {
+		pr_clusium_conversion_bonus # +20% County Conversion
+	}
+}
+
+
+
  #############
 # germanic polytheism
 #############
 
 hofgeismar ={
 	county = c_kassel
-    barony = b_hofgeismar
- 	character_modifier = {
+    barony = b_kassel # Geismar near Fritzlar (Donar's Oak); no Fritzlar barony on the map
+ 	county_holder_character_modifier = {
  		name = holy_site_hofgeismar_effect_name
  		clergy_opinion = 5
  	}
@@ -424,7 +472,7 @@ hofgeismar ={
 augsburg ={
 	county = c_augsburg
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.2
 	}
 	parameters = {
@@ -432,24 +480,40 @@ augsburg ={
 	}
 }
 #############
-#Mesopotamian 
+#Mesopotamian
 #############
+# Babylon itself is the vanilla holy site `babylon` (c_kufa / b_al-hila). Sites checked twice against ORACC,
+# Black & Green and the vanilla map (provinces.png), 2026-10-06.
 
-ur = {
-	county = c_akhadid
+pr_assur = { # the city of Aššur (Qal'at Sherqat), Ešarra temple of Aššur; nearest barony is Qayyara
+	county = c_mosul
+	barony = b_ain_al-qayyara
 
-	character_modifier = {
-		monthly_piety_gain_mult = 0.2
+	county_holder_character_modifier = {
+		name = holy_site_pr_assur_effect_name
+		martial = 1
+		monthly_prestige_gain_mult = 0.1
 	}
-	parameters = {
-		ur_conversion_bonus # +20% County Conversion
+	faith_character_modifier = {
+		monthly_prestige_gain_mult = 0.05
 	}
 }
 
-ninive = { 
-	county = c_ninive
+harran = { # Eḫulḫul temple of Sîn; the last Mesopotamian cult, alive into the 11th century AD
+	county = c_harran
+	barony = b_harran
 
-	character_modifier = {
+	county_holder_character_modifier = {
+		name = holy_site_harran_effect_name
+		learning = 2
+	}
+}
+
+ninive = { # Nineveh, temple of Ištar of Nineveh
+	county = c_ninive
+	barony = b_ninawa
+
+	county_holder_character_modifier = {
 		name = holy_site_ninive_effect_name
 		diplomacy = 1
 		martial = 1
@@ -460,7 +524,7 @@ wassukanni = {
 	county = c_upper_khabur
 	barony = b_mardin
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_wassukanni_effect_name
 		clergy_opinion = 5
 	}
@@ -470,7 +534,7 @@ susa = {
 	county = c_tustar
 	barony = b_as-sus
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.1
 	}
 	parameters = {
@@ -478,48 +542,30 @@ susa = {
 	}
 }
 
-ebla = { 
-	county = c_aleppo
-
-	character_modifier = {
-		name = holy_site_ebla_effect_name
-		stewardship = 2
-	}
-}
 #############
 #Sumerian
 #############
-nippur = { 
+nippur = { # Ekur temple of Enlil
 	county = c_batiha
-	character_modifier = {
+	barony = b_niffar
+	county_holder_character_modifier = {
 		name = holy_site_nippur_effect_name
 		diplomacy = 1
 		martial = 1
 	}
+	faith_character_modifier = {
+		monthly_piety_gain_mult = 0.05
+	}
 }
-uruk = {
-	county = c_qadisiya
+uruk = { # Eanna temple of Inana; c_qadisiya (west of the Euphrates) was the wrong county
+	county = c_akhadid
+	barony = b_as-salman
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.1
 	}
 	parameters = {
 		uruk_conversion_bonus # +5% County Conversion
-	}
-}
-kish = {
-	county = c_kufa
-
-	character_modifier = {
-		name = holy_site_kish_effect_name
-		clergy_opinion = 5
-	}
-}
-lagash = {
-	county = c_rusafa
-	character_modifier = {
-		name = holy_site_lagash_effect_name
-		stewardship = 2
 	}
 }
 
@@ -531,7 +577,7 @@ lagash = {
 sarmizegetusa = {
 	county = c_hunyad
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_sarmizegetusa_effect_name
 		martial = 2
 	}
@@ -541,7 +587,7 @@ aidava = {
 	county = c_naissus
 	barony = b_pirot
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.1
 	}
 	parameters = {
@@ -552,7 +598,7 @@ aidava = {
 capidava = {
 	county = c_constanta
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_capidava_effect_name
 		cultural_head_fascination_mult = 0.05
 		monthly_county_control_growth_factor = 0.05
@@ -563,7 +609,7 @@ zargidava = {
 	county = c_stoenesti
 	barony = b_bacau
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_zargidava_effect_name
 		direct_vassal_opinion = 5
 	}
@@ -572,28 +618,84 @@ zargidava = {
 philippopolis = { 
 	county = c_philippopolis
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_philippopolis_effect_name
 		clergy_opinion = 5
 	}
 }
 
 #############
-#Georgian
+#Caucasian (Armenian and Georgian rites). Sites checked twice (2026-10-06): Agathangelos, Movses
+#Khorenatsi, Strabo XI.14.16, Arrian, Kartlis Tskhovreba, vanilla map. Kutaisi and Tortomi removed
+#(no pre-Christian cult evidence). Vanilla `ani` (Shirak) is not Ani-Kamakh, Aramazd's temple.
 #############
-mtskheta = {
-	county = c_tbilisi
+mtskheta = { # idol of Armazi on the mountain at Mtskheta (Life of Nino); was wrongly on c_tbilisi
+	county = c_kakheti
+	barony = b_mtskheta
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_mtskheta_effect_name
 		direct_vassal_opinion = 5
 	}
+	faith_character_modifier = {
+		monthly_piety_gain_mult = 0.05
+	}
 }
 
-pr_dvin = {
+pr_ani_kamakh = { # Ani-Kamakh (Daranaghi): main temple of Aramazd and the royal tombs
+	county = c_mesopotamia
+	barony = b_camacha
+
+	county_holder_character_modifier = {
+		name = holy_site_pr_ani_kamakh_effect_name
+		monthly_prestige_gain_mult = 0.1
+		dynasty_opinion = 5
+	}
+	faith_character_modifier = {
+		monthly_prestige_gain_mult = 0.05
+	}
+}
+
+pr_erez = { # Erez in Acilisene: Anahit's temple, "the wealthiest and most venerable in Armenia"
+	county = c_trebizond
+	barony = b_keltzine
+
+	county_holder_character_modifier = {
+		name = holy_site_pr_erez_effect_name
+		fertility = 0.1
+		monthly_income_mult = 0.05
+	}
+	faith_character_modifier = {
+		fertility = 0.05
+	}
+}
+
+pr_ashtishat = { # Ashtishat in Taron: temples of Vahagn, Anahit and Astghik (Agathangelos)
+	county = c_apahunik
+	barony = b_musch
+
+	county_holder_character_modifier = {
+		name = holy_site_pr_ashtishat_effect_name
+		martial = 1
+		prowess = 2
+	}
+}
+
+pr_bagaran = { # Bagaran, "place of the gods": the ancestral idols before Artashat (Khorenatsi II.49)
+	county = c_hayk
+	barony = b_bagaran
+
+	county_holder_character_modifier = {
+		name = holy_site_pr_bagaran_effect_name
+		clergy_opinion = 5
+		learning = 1
+	}
+}
+
+pr_dvin = { # Artashat (shown under this key): temples of Anahit and Tir in the royal capital
 	county = c_dvin
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.1
 		learning = 1
 	}
@@ -602,30 +704,21 @@ pr_dvin = {
 	}
 }
 
-kutaisi = {
-	county = c_odishi
+pr_phasis = { # Phasis (Poti): statue of the goddess Phasiana at the river mouth (Arrian, Periplus 9)
+	county = c_guria
+	barony = b_poti
 
-	character_modifier = {
-		name = holy_site_kutaisi_effect_name
-		cultural_head_fascination_mult = 0.05
-		monthly_county_control_growth_factor = 0.05
-	}
-}
-
-tortomi = {
-	county = c_tao
-
-	character_modifier = {
-		name = holy_site_tortomi_effect_name
+	county_holder_character_modifier = {
+		name = holy_site_pr_phasis_effect_name
 		diplomacy = 1
-		martial = 1
+		monthly_income_mult = 0.05
 	}
 }
 
-hereti = {
+hereti = { # used by the Scythian faith
  	county = c_hereti
 
- 	character_modifier = {
+ 	county_holder_character_modifier = {
  		name = holy_site_hereti_effect_name
  		clergy_opinion = 5
  	}
@@ -636,7 +729,7 @@ hereti = {
 dyrrachion = {
 	county = c_dyrrachion
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_dyrrachion_effect_name
 		cultural_head_fascination_mult = 0.05
 		monthly_county_control_growth_factor = 0.05
@@ -646,7 +739,7 @@ dyrrachion = {
 venice = {
 	county = c_venezia
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_venice_effect_name
 		clergy_opinion = 5
 	}
@@ -656,7 +749,7 @@ split = {
 	county = c_cetina
 	barony = b_split
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_split_effect_name
 		diplomacy = 1
 		martial = 1
@@ -669,7 +762,7 @@ split = {
 london = {
 	county = c_middlesex
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_london_effect_name
 		cultural_head_fascination_mult = 0.05
 		monthly_county_control_growth_factor = 0.05
@@ -680,7 +773,7 @@ london = {
 suffolk = {
 	county = c_suffolk
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_suffolk_effect_name
 		clergy_opinion = 5
 	}
@@ -690,7 +783,7 @@ york = {
 	county = c_north_riding
 	barony = b_york
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_york_effect_name
 		diplomacy = 1
 		martial = 1
@@ -700,7 +793,7 @@ york = {
 slesvig = {
 	county = c_slesvig
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_slesvig_effect_name
 		diplomacy = 1
 		martial = 1
@@ -710,7 +803,7 @@ slesvig = {
 devon = {
 	county = c_devon
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_devon_effect_name
 		development_growth_factor = 0.1
 		stewardship = 1
@@ -720,7 +813,7 @@ devon = {
 oxford = {
 	county = c_oxfordshire
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.2
 	}
 	parameters = {
@@ -734,52 +827,92 @@ oxford = {
 chandax = {
 	county = c_chandax
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_chandax_effect_name
 		cultural_head_fascination_mult = 0.05
 		monthly_county_control_growth_factor = 0.05
 	}
  }
 
-troy= {
-	county = c_abydos
-
-	character_modifier = {
-		name = holy_site_troy_effect_name
-		development_growth_factor = 0.1
-		stewardship = 1
-	}
- }
-
 corinth = {
 	county = c_korinthos
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.2
 	}
 	parameters = {
 		corinth_conversion_bonus # +20% County Conversion
 	}
 }
-#Hittite 
-hattusha = {
+#Hittite. Sites checked twice (2026-10-06): Singer, Hoffner, ANET, excavation reports; placed on the
+#vanilla map with building locators. Troy (gods of Wilusa, not the state cult), Cilicia/Tarsus (no cult
+#attested), Baghdad and Damascus dropped; Kizzuwatna left out (user choice).
+hattusha = { # the capital: great temple of the Storm-god and the Sun-goddess, Yazılıkaya
 	county = c_galatia
-	#barony = b_pteria
-	character_modifier = {
+	barony = b_tabia # Boğazkale lies in Tabia (b_pteria belongs to c_euchaita)
+	county_holder_character_modifier = {
 		name = holy_site_hattusha_effect_name
 		cultural_head_fascination_mult = 0.05
 		monthly_county_control_growth_factor = 0.05
 	}
+	faith_character_modifier = {
+		monthly_prestige_gain_mult = 0.05
+	}
 }
 
-cilicia = {
-		county = c_cilicia
-		#barony = b_pteria
+pr_arinna = { # city of the Sun-goddess of Arinna, near Hattusa (location uncertain; Alaca Höyük proposed)
+	county = c_euchaita
+	barony = b_pteria
+	county_holder_character_modifier = {
+		name = holy_site_pr_arinna_effect_name
+		monthly_piety_gain_mult = 0.1
+		learning = 1
+	}
+	faith_character_modifier = {
+		monthly_piety_gain_mult = 0.05
+	}
+}
 
-	character_modifier = {
-		name = holy_site_cilicia_effect_name
-		diplomacy = 1
+pr_nerik = { # Storm-god of Nerik and the purulli festival (Oymaağaç Höyük)
+	county = c_helenopontus
+	barony = b_magnopolis
+	county_holder_character_modifier = {
+		name = holy_site_pr_nerik_effect_name
 		martial = 1
+		prowess = 2
+	}
+	faith_character_modifier = {
+		fertility = 0.05
+	}
+}
+
+pr_zippalanda = { # Storm-god of Zippalanda (Uşaklı Höyük), below Mount Daha
+	county = c_charsianon
+	barony = b_therma
+	county_holder_character_modifier = {
+		name = holy_site_pr_zippalanda_effect_name
+		diplomacy = 1
+		clergy_opinion = 5
+	}
+}
+
+pr_samuha = { # Šauška (Ištar) of Samuha (Kayalıpınar)
+	county = c_sebasteia
+	barony = b_malandra
+	county_holder_character_modifier = {
+		name = holy_site_pr_samuha_effect_name
+		intrigue = 1
+		monthly_prestige_gain_mult = 0.1
+	}
+}
+
+pr_karkemish = { # Karkemiš: Kubaba and the Storm-god, the Neo-Hittite capital
+	county = c_aintab
+	barony = b_jarabulus
+	county_holder_character_modifier = {
+		name = holy_site_pr_karkemish_effect_name
+		stewardship = 1
+		monthly_income_mult = 0.05
 	}
 }
 
@@ -788,7 +921,7 @@ cilicia = {
 tyras = {
 	county = c_cetatea_alba
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_tyras_effect_name
 		diplomacy = 1
 		martial = 1
@@ -798,7 +931,7 @@ tyras = {
 kalos_limen = {
 	county = c_kalos_limen
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_kalos_limen_effect_name
 		development_growth_factor = 0.1
 		stewardship = 1
@@ -808,7 +941,7 @@ dionysopolis = {
 	county = c_mesembria
 	barony = b_karvuna
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_dionysopolis_effect_name
 		cultural_head_fascination_mult = 0.05
 		monthly_county_control_growth_factor = 0.05
@@ -818,7 +951,7 @@ kremnoi = {
 	county = c_tana
 	barony = b_taganrog
 	
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.2
 	}
 	parameters = {
@@ -835,7 +968,7 @@ arduba = {
 	county = c_rama
 	barony = b_travnik 
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_arduba_effect_name
 		clergy_opinion = 5
 	}
@@ -844,7 +977,7 @@ arduba = {
 delminium = {
 	county = c_zavrsje
 	barony = b_duvno 
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_delminium_effect_name
 		diplomacy = 1
 		martial = 1
@@ -854,7 +987,7 @@ delminium = {
 segestica = {
 	county = c_zagreb
 	barony = b_sisak
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_segestica_effect_name
 		religious_vassal_opinion = 5
 		owned_personal_scheme_success_chance_add = 10
@@ -868,18 +1001,11 @@ segestica = {
 ########################################
 elkukalni = {
 	county = c_palanga
-	character_modifier = {
+	barony = b_palanga # Palanga hill: 14th-c. sanctuary (Žulkus excavations)
+	county_holder_character_modifier = {
 		name = holy_site_elkukalni_effect_name
 		hills_advantage = 5
 		monthly_county_control_growth_factor = 0.1
-	}
-}
-pr_pokaini = {
-	county = c_zemigalians
-	character_modifier = {
-		name = holy_site_pr_pokaini_effect_name
-		forest_advantage = 5
-		retreat_losses = -0.1
 	}
 }
 ########################################
@@ -888,18 +1014,10 @@ pr_pokaini = {
 kukaveitis = {
 	county = c_kernave
 	barony = b_kernave
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_kukaveitis_effect_name
 		monthly_piety_gain_mult = 0.1
 		short_reign_duration_mult = -0.25
-	}
-}
-stelmuze = {
-	county = c_selpils
-	character_modifier = {
-		name = holy_site_stelmuze_effect_name
-		intrigue_per_prestige_level = 1
-		knight_effectiveness_mult = 0.2
 	}
 }
 ########################################
@@ -908,16 +1026,16 @@ stelmuze = {
 rambynas = {
 	county = c_memel
 	barony = b_taurage
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_rambynas_effect_name
 		hard_casualty_modifier = -0.1
 		prowess_per_prestige_level = 1
 	}
 }
 romowe = {
-	county = c_konigsberg
-	barony = b_konigsberg
-	character_modifier = {
+	county = c_bartenstein # Nadruvia (Dusburg 1326: "in Nadrowia")
+	barony = b_insterburg
+	county_holder_character_modifier = {
 		name = holy_site_romowe_effect_name
 		controlled_province_advantage = 5
 		same_faith_opinion = 5
@@ -926,19 +1044,30 @@ romowe = {
 ########################################
 #### Baltic: Sudovian
 ########################################
-naura = {
-	county = c_volkovysk
-	character_modifier = {
-		name = holy_site_naura_effect_name
+
+pr_sambian_groves = { # Adam of Bremen c. 1075: Sambian groves and springs closed to Christians
+	county = c_konigsberg
+	barony = b_konigsberg
+	county_holder_character_modifier = {
+		name = holy_site_pr_sambian_groves_effect_name
+		forest_advantage = 5
+		retreat_losses = -0.1
+	}
+}
+pr_heiligenbeil = { # Curche cult (Treaty of Christburg 1249); 'Heylgenstat'; Heiligenbeil tradition 17th c.
+	county = c_wormditt
+	barony = b_braunsberg
+	county_holder_character_modifier = {
+		name = holy_site_pr_heiligenbeil_effect_name
 		monthly_prestige_gain_mult = 0.2
 		prowess = 2
 	}
 }
-sventakupselai = {
-	county = c_yatvyagi
-	barony = b_suvalkai
-	character_modifier = {
-		name = holy_site_sventakupselai_effect_name
+pr_tervete = { # Semigallian centre Tērvete (Henry of Livonia 1219); 'Svētkalns' by tradition only
+	county = c_zemigalians
+	barony = b_dobele
+	county_holder_character_modifier = {
+		name = holy_site_pr_tervete_effect_name
 		martial_per_piety_level = 1
 		owned_personal_scheme_success_chance_add = 10
 	}
@@ -950,7 +1079,7 @@ sventakupselai = {
 ebora = {
 	county = c_beja
 	barony = b_evora
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_ebora_effect_name
 		clergy_opinion = 5
 	}
@@ -958,7 +1087,7 @@ ebora = {
 
 caesarobriga = {
 	county = c_toledo
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_caesarobriga_effect_name
 		controlled_province_advantage = 5
 		same_faith_opinion = 5
@@ -967,7 +1096,7 @@ caesarobriga = {
 
 emerita = {
 	county = c_merida
-	character_modifier = {
+	county_holder_character_modifier = {
 		name = holy_site_emerita_effect_name
 		forest_advantage = 5
 		retreat_losses = -0.1
@@ -977,10 +1106,177 @@ emerita = {
 olisipo = {
 	county = c_lisboa
 
-	character_modifier = {
+	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.2
 	}
 	parameters = {
 		olisipo_conversion_bonus # +20% County Conversion
+	}
+}
+
+# Lusitanian (issue #90). Bonuses taken over from the sites they replace in the
+# Lusitanian list (caesarobriga -> egitania, olisipo -> bracara).
+egitania = { # Idanha-a-Velha: altars to Trebaruna and Arentius
+	county = c_castelo_branco
+	barony = b_idanha
+	county_holder_character_modifier = {
+		name = holy_site_egitania_effect_name
+		controlled_province_advantage = 5
+		same_faith_opinion = 5
+	}
+}
+bracara = { # Braga, Fonte do Idolo: Nabia and Tongoenabiagus
+	county = c_porto
+	barony = b_braga
+	county_holder_character_modifier = {
+		name = holy_site_bracara_effect_name
+		monthly_piety_gain_mult = 0.2
+	}
+}
+
+# Illyrian (issue #93). Risinium/Topusko take over the bonuses of arduba/segestica,
+# which had no attested cult and left the Illyrian list.
+risinium = { # Risan: Medaurus, guardian of Risinium
+	county = c_travunia
+	barony = b_risan
+	county_holder_character_modifier = {
+		name = holy_site_risinium_effect_name
+		clergy_opinion = 5
+	}
+}
+topusko = { # Topusko: altars "Vidaso et Thanae"
+	county = c_modrus
+	barony = b_topusko
+	county_holder_character_modifier = {
+		name = holy_site_topusko_effect_name
+		religious_vassal_opinion = 5
+		owned_personal_scheme_success_chance_add = 10
+	}
+}
+aenona = { # Nin: Anzotica (Venus Anzotica)
+	county = c_zadar
+	barony = b_nin
+	county_holder_character_modifier = {
+		name = holy_site_aenona_effect_name
+		fertility = 0.1
+	}
+}
+privilica = { # Privilica spring near Bihac: altars to Bindus by Iapodian leaders
+	county = c_pset
+	barony = b_bihac
+	county_holder_character_modifier = {
+		name = holy_site_privilica_effect_name
+		health = 0.1
+	}
+}
+
+#################
+# Egyptian religion, step 2 (resource/egyptian_religion_research.md)
+# Map placements verified with the province check (map_point_check.py): Thebes -> b_qus (not
+# b_armant), Abydos -> b_ibshaya (c_asyut; grensgeval vs b_ikhmin/b_huw), Memphis -> west bank
+# b_busir (grensgeval), Sais -> b_damanhur (grensgeval vs b_ramsis), Amarna -> b_ansina, Sesebi ->
+# c_sai/b_delgo ('across from Delgo'). pr_memphis avoids the vanilla key, which sits on Helwan.
+#################
+thebes = {
+	county = c_qus
+	barony = b_qus
+
+	county_holder_character_modifier = {
+		monthly_piety_gain_mult = 0.2
+	}
+
+	faith_character_modifier = {
+		monthly_piety_gain_mult = 0.05
+	}
+
+	parameters = {
+		thebes_conversion_bonus # +20% County Conversion
+	}
+}
+
+pr_memphis = {
+	county = c_giza
+	barony = b_busir
+
+	county_holder_character_modifier = {
+		stewardship = 1
+	}
+
+	faith_character_modifier = {
+		monthly_piety_gain_mult = 0.05
+	}
+
+	parameters = {
+		memphis_conversion_bonus # +20% County Conversion
+	}
+}
+
+abydos = {
+	county = c_qus
+	barony = b_huw # Hu, nearest to Abydos: point-in-province check (research rule control 8), decided 2026-10-08
+
+	county_holder_character_modifier = {
+		monthly_piety_gain_mult = 0.2
+	}
+
+	parameters = {
+		abydos_conversion_bonus # +20% County Conversion
+	}
+}
+
+sais = {
+	county = c_al-buhaira
+	barony = b_damanhur
+
+	county_holder_character_modifier = {
+		learning = 1
+	}
+
+	parameters = {
+		sais_conversion_bonus # +10% County Conversion
+	}
+}
+
+amarna = {
+	county = c_ushmun
+	barony = b_ansina
+
+	county_holder_character_modifier = {
+		monthly_piety_gain_mult = 0.2
+	}
+
+	faith_character_modifier = {
+		monthly_piety_gain_mult = 0.05
+	}
+
+	parameters = {
+		amarna_conversion_bonus # +20% County Conversion
+	}
+}
+
+pr_pnubs = {
+	county = c_dongola
+	barony = b_dongola # Doukki Gel (ancient Pnubs) near Kerma: Akhenaten's Aten temple (control 8, no border case)
+
+	county_holder_character_modifier = {
+		monthly_piety_gain_mult = 0.2
+	}
+
+	parameters = {
+		pr_pnubs_conversion_bonus # +20% County Conversion
+	}
+}
+
+
+sesebi = {
+	county = c_sai
+	barony = b_delgo
+
+	county_holder_character_modifier = {
+		stewardship = 1
+	}
+
+	parameters = {
+		sesebi_conversion_bonus # +10% County Conversion
 	}
 }

@@ -12,8 +12,8 @@
   pr_iberian_choose_main_deity_decision_tt:0 "#T Available Deities for [ROOT.Char.GetFaith.GetName]#!"
 
   # --- Main Deity Selection Descriptions: Iberian ---
-  select_main_deity_iberian_decision.select_reue:0 "#T Reue#!\n#P The supreme sky god, father of the Iberian pantheon#!"
-  select_main_deity_iberian_decision.select_cariocecus:0 "#T Cariocecus#!\n#P God of war and the sacred warrior's path#!"
-  select_main_deity_iberian_decision.select_ataegina:0 "#T Ataegina#!\n#P Goddess of fertility, rebirth, and the dawn#!"
-  select_main_deity_iberian_decision.select_lucubo:0 "#T Lucubo#!\n#P God of wealth, commerce, and prosperity#!"
-  select_main_deity_iberian_decision.select_arancio:0 "#T Arancio#!\n#P God of healing and the flowing waters#!"
+  select_main_deity_iberian_decision.select_reue:0 "#T Reue#!\n#P Lord of the high places#!"
+  select_main_deity_iberian_decision.select_cariocecus:0 "#T Bandua#!\n#P Protector of the community, linked to Mars#!"
+  select_main_deity_iberian_decision.select_ataegina:0 "#T Ataecina#!\n#P Goddess of Turobriga#!"
+  select_main_deity_iberian_decision.select_lucubo:0 "#T Nabia#!\n#P Goddess of springs and rivers#!"
+  select_main_deity_iberian_decision.select_arancio:0 "#T Endovelicus#!\n#P God of healing, honoured for the health of his worshippers#!"

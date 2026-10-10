@@ -86,7 +86,7 @@ pr_mesopotamian.0100 = {
 		trigger = {
 			NOT = { has_character_modifier = babylonian_marduk }
 		}
-		set_bhakti_effect = { BHAKTI = babylonian_marduk }
+		pr_set_patron_god_effect = { BHAKTI = babylonian_marduk }
 	}
 
 	#Ishtar
@@ -95,7 +95,7 @@ pr_mesopotamian.0100 = {
 		trigger = {
 			NOT = { has_character_modifier = mesopotamian_ishtar }
 		}
-		set_bhakti_effect = { BHAKTI = mesopotamian_ishtar }
+		pr_set_patron_god_effect = { BHAKTI = mesopotamian_ishtar }
 	}
 
 	#Ninhegal
@@ -104,7 +104,7 @@ pr_mesopotamian.0100 = {
 		trigger = {
 			NOT = { has_character_modifier = mesopotamian_ninhegal }
 		}
-		set_bhakti_effect = { BHAKTI = mesopotamian_ninhegal }
+		pr_set_patron_god_effect = { BHAKTI = mesopotamian_ninhegal }
 	}
 
 	#Nabu
@@ -113,7 +113,7 @@ pr_mesopotamian.0100 = {
 		trigger = {
 			NOT = { has_character_modifier = mesopotamian_nabu }
 		}
-		set_bhakti_effect = { BHAKTI = mesopotamian_nabu }
+		pr_set_patron_god_effect = { BHAKTI = mesopotamian_nabu }
 	}
 
 	#Nergal
@@ -122,7 +122,7 @@ pr_mesopotamian.0100 = {
 		trigger = {
 			NOT = { has_character_modifier = babylonian_nergal }
 		}
-		set_bhakti_effect = { BHAKTI = babylonian_nergal }
+		pr_set_patron_god_effect = { BHAKTI = babylonian_nergal }
 	}
 
 	#Opt-Out
@@ -153,16 +153,16 @@ pr_mesopotamian.0101 = {
 		trigger = {
 			NOT = { has_character_modifier = assyrian_ashur }
 		}
-		set_bhakti_effect = { BHAKTI = assyrian_ashur }
+		pr_set_patron_god_effect = { BHAKTI = assyrian_ashur }
 	}
 
 	#Ishtar
 	option = {
 		name = pr_mesopotamian.0101.ishtar
 		trigger = {
-			NOT = { has_character_modifier = mesopotamian_ishtar }
+			NOT = { has_character_modifier = assyrian_mullissu }
 		}
-		set_bhakti_effect = { BHAKTI = mesopotamian_ishtar }
+		pr_set_patron_god_effect = { BHAKTI = assyrian_mullissu }
 	}
 
 	#Ninhegal
@@ -171,7 +171,7 @@ pr_mesopotamian.0101 = {
 		trigger = {
 			NOT = { has_character_modifier = mesopotamian_ninhegal }
 		}
-		set_bhakti_effect = { BHAKTI = mesopotamian_ninhegal }
+		pr_set_patron_god_effect = { BHAKTI = mesopotamian_ninhegal }
 	}
 
 	#Nabu
@@ -180,7 +180,7 @@ pr_mesopotamian.0101 = {
 		trigger = {
 			NOT = { has_character_modifier = mesopotamian_nabu }
 		}
-		set_bhakti_effect = { BHAKTI = mesopotamian_nabu }
+		pr_set_patron_god_effect = { BHAKTI = mesopotamian_nabu }
 	}
 
 	#Ninkarrak
@@ -189,7 +189,7 @@ pr_mesopotamian.0101 = {
 		trigger = {
 			NOT = { has_character_modifier = assyrian_ninkarrak }
 		}
-		set_bhakti_effect = { BHAKTI = assyrian_ninkarrak }
+		pr_set_patron_god_effect = { BHAKTI = assyrian_ninkarrak }
 	}
 
 	#Opt-Out
@@ -220,7 +220,7 @@ pr_mesopotamian.0102 = {
 		trigger = {
 			NOT = { has_character_modifier = sumerian_enlil }
 		}
-		set_bhakti_effect = { BHAKTI = sumerian_enlil }
+		pr_set_patron_god_effect = { BHAKTI = sumerian_enlil }
 	}
 
 	#Inanna
@@ -229,16 +229,16 @@ pr_mesopotamian.0102 = {
 		trigger = {
 			NOT = { has_character_modifier = sumerian_inanna }
 		}
-		set_bhakti_effect = { BHAKTI = sumerian_inanna }
+		pr_set_patron_god_effect = { BHAKTI = sumerian_inanna }
 	}
 
 	#Ninhegal
 	option = {
 		name = pr_mesopotamian.0102.ninhegal
 		trigger = {
-			NOT = { has_character_modifier = mesopotamian_ninhegal }
+			NOT = { has_character_modifier = sumerian_ezina }
 		}
-		set_bhakti_effect = { BHAKTI = mesopotamian_ninhegal }
+		pr_set_patron_god_effect = { BHAKTI = sumerian_ezina }
 	}
 
 	#Nisaba
@@ -247,7 +247,7 @@ pr_mesopotamian.0102 = {
 		trigger = {
 			NOT = { has_character_modifier = sumerian_nisaba }
 		}
-		set_bhakti_effect = { BHAKTI = sumerian_nisaba }
+		pr_set_patron_god_effect = { BHAKTI = sumerian_nisaba }
 	}
 
 	#Ninurta
@@ -256,7 +256,7 @@ pr_mesopotamian.0102 = {
 		trigger = {
 			NOT = { has_character_modifier = sumerian_ninurta }
 		}
-		set_bhakti_effect = { BHAKTI = sumerian_ninurta }
+		pr_set_patron_god_effect = { BHAKTI = sumerian_ninurta }
 	}
 
 	#Opt-Out

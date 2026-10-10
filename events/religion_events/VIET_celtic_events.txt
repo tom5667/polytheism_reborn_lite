@@ -135,9 +135,9 @@ VIETceltic.0003 = {
 	
 	trigger = {
 		OR = {
-			has_faith = faith:brythonic_polytheism
-			faith = { has_doctrine_parameter = special_doctrine_brythonic_patron_god_active }
-			faith = { has_doctrine_parameter = special_doctrine_romano_british_patron_god_active }
+			has_faith = faith:pritani_polytheism
+			rite = { rite_has_parameter = special_doctrine_brythonic_patron_god_active }
+			rite = { rite_has_parameter = special_doctrine_romano_british_patron_god_active }
 		}
 	}
 	
@@ -206,9 +206,9 @@ VIETceltic.0004 = {
 	
 	trigger = {
 		OR = {
-			has_faith = faith:gaulish_polytheism
-			faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
-			faith = { has_doctrine_parameter = special_doctrine_gallo_roman_patron_god_active }
+			rite = rite:gaulish_rites
+			rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
+			rite = { rite_has_parameter = special_doctrine_gallo_roman_patron_god_active }
 		}
 	}
 	
@@ -265,9 +265,9 @@ VIETceltic.0005 = {
 	
 	trigger = {
 		OR = {
-			has_faith = faith:brythonic_polytheism
-			faith = { has_doctrine_parameter = special_doctrine_brythonic_patron_god_active }
-			faith = { has_doctrine_parameter = special_doctrine_romano_british_patron_god_active }
+			has_faith = faith:pritani_polytheism
+			rite = { rite_has_parameter = special_doctrine_brythonic_patron_god_active }
+			rite = { rite_has_parameter = special_doctrine_romano_british_patron_god_active }
 		}
 	}
 	
@@ -530,9 +530,9 @@ VIETceltic.0007 = {
 	
 	trigger = {
 		OR = {
-			has_faith = faith:brythonic_polytheism
-			faith = { has_doctrine_parameter = special_doctrine_brythonic_patron_god_active }
-			faith = { has_doctrine_parameter = special_doctrine_romano_british_patron_god_active }
+			has_faith = faith:pritani_polytheism
+			rite = { rite_has_parameter = special_doctrine_brythonic_patron_god_active }
+			rite = { rite_has_parameter = special_doctrine_romano_british_patron_god_active }
 		}
 	}
 	
@@ -847,8 +847,8 @@ VIETceltic.0012 = {
 	}
 	
 	trigger = {
-		has_faith = faith:gaelic_polytheism
-		faith = { has_doctrine_parameter = special_doctrine_gaelic_patron_god_active }
+		has_faith = faith:eriu_polytheism
+		rite = { rite_has_parameter = special_doctrine_gaelic_patron_god_active }
 	}
 	
 	weight_multiplier = {
@@ -907,8 +907,8 @@ VIETceltic.0013 = {
 	}
 	
 	trigger = {
-		has_faith = faith:gaelic_polytheism
-		faith = { has_doctrine_parameter = special_doctrine_gaelic_patron_god_active }
+		has_faith = faith:eriu_polytheism
+		rite = { rite_has_parameter = special_doctrine_gaelic_patron_god_active }
 	}
 	
 	weight_multiplier = {
@@ -969,9 +969,9 @@ VIETceltic.0014 = {
 	
 	trigger = {
 		OR = {
-			has_faith = faith:gaulish_polytheism
-			faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
-			faith = { has_doctrine_parameter = special_doctrine_gallo_roman_patron_god_active }
+			rite = rite:gaulish_rites
+			rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
+			rite = { rite_has_parameter = special_doctrine_gallo_roman_patron_god_active }
 		}
 	}
 	
@@ -1029,12 +1029,12 @@ VIETceltic.0015 = {
 	
 	trigger = {
 		OR = {
-			has_faith = faith:gaulish_polytheism
-			faith = { has_doctrine_parameter = special_doctrine_gaulish_patron_god_active }
-			has_faith = faith:brythonic_polytheism
-			faith = { has_doctrine_parameter =  special_doctrine_brythonic_patron_god_active }
-			faith = { has_doctrine_parameter = special_doctrine_romano_british_patron_god_active }
-			faith = { has_doctrine_parameter = special_doctrine_gallo_roman_patron_god_active }
+			rite = rite:gaulish_rites
+			rite = { rite_has_parameter = special_doctrine_gaulish_patron_god_active }
+			has_faith = faith:pritani_polytheism
+			rite = { rite_has_parameter = special_doctrine_brythonic_patron_god_active }
+			rite = { rite_has_parameter = special_doctrine_romano_british_patron_god_active }
+			rite = { rite_has_parameter = special_doctrine_gallo_roman_patron_god_active }
 		}
 	}
 	

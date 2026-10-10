@@ -27,7 +27,7 @@ pr_etruscan_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = etruscan_tinia }
 		}
-		set_bhakti_effect = { BHAKTI = etruscan_tinia }
+		pr_set_patron_god_effect = { BHAKTI = etruscan_tinia }
 	}
 
 	# Nortia
@@ -36,7 +36,7 @@ pr_etruscan_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = etruscan_nortia }
 		}
-		set_bhakti_effect = { BHAKTI = etruscan_nortia }
+		pr_set_patron_god_effect = { BHAKTI = etruscan_nortia }
 	}
 
 	# Turms
@@ -45,7 +45,7 @@ pr_etruscan_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = etruscan_turms }
 		}
-		set_bhakti_effect = { BHAKTI = etruscan_turms }
+		pr_set_patron_god_effect = { BHAKTI = etruscan_turms }
 	}
 
 	# Menrva
@@ -54,16 +54,16 @@ pr_etruscan_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = etruscan_menrva }
 		}
-		set_bhakti_effect = { BHAKTI = etruscan_menrva }
+		pr_set_patron_god_effect = { BHAKTI = etruscan_menrva }
 	}
 
-	# Maris
+	# Laran (the Etruscan war god)
 	option = {
-		name = pr_etruscan_decision.0001.maris
+		name = pr_etruscan_decision.0001.laran
 		trigger = {
-			NOT = { has_character_modifier = etruscan_maris }
+			NOT = { has_character_modifier = etruscan_laran }
 		}
-		set_bhakti_effect = { BHAKTI = etruscan_maris }
+		pr_set_patron_god_effect = { BHAKTI = etruscan_laran }
 	}
 
 	# Opt-Out

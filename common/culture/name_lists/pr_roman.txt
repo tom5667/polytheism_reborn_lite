@@ -125,71 +125,71 @@ name_list_pr_gallo_roman = {
 	dynasty_names = {
 		#template
 		#"dynn_"
-		"dynn_Abbiī"
+		"dynn_Abbii"
 		"dynn_Accoruges"
-		"dynn_Aegiī"
-		"dynn_Aeliī"
-		"dynn_Antōnīnī"
-		"dynn_Areleniī"
-		"dynn_Aurēliī"
-		"dynn_Carantiī"
-		"dynn_Carmaniī"
-		"dynn_Carmiī"
-		"dynn_Casivellauniī"
-		"dynn_Cassiī"
-		"dynn_Cassianiī"
-		"dynn_Casticiī"
-		"dynn_Caturīgis"
-		"dynn_Catuvolciī"
-		"dynn_Cingetorīgis"
-		"dynn_Cintugeniī"
-		"dynn_Claudiī"
-		"dynn_Conteddiī"
-		"dynn_Coriī"
-		"dynn_Cornēliī"
-		"dynn_Critasiriī"
-		"dynn_Cudiī"
-		"dynn_Danotaliī"
-		"dynn_Dioclētiānī"
-		"dynn_Diviaciī"
-		"dynn_Domitiī"
-		"dynn_Dossiī"
-		"dynn_Drutaliī"
-		"dynn_Dubnorīgis"
-		"dynn_Dumnorīgis"
-		"dynn_Dunniī"
-		"dynn_Fabiī"
-		"dynn_Flāviī"
-		"dynn_Gariī"
-		"dynn_Garomariī"
-		"dynn_Iestiniī"
-		"dynn_Iūliī"
-		"dynn_Iūniī"
-		"dynn_Lasciī"
-		"dynn_Leniī"
-		"dynn_Leuciī"
-		"dynn_Licinī"
-		"dynn_Litavicciī"
-		"dynn_Lucteriī"
-		"dynn_Lutomarīgis"
-		"dynn_Maguniī"
-		"dynn_Magurīgis"
-		"dynn_Orgetorīgis"
-		"dynn_Pompeiī"
-		"dynn_Roscilliī"
-		"dynn_Samorīgis"
-		"dynn_Segomarīgis"
+		"dynn_Aegii"
+		"dynn_Aelii_pr"
+		"dynn_Antonini"
+		"dynn_Arelenii"
+		"dynn_Aurelii_pr"
+		"dynn_Carantii"
+		"dynn_Carmanii"
+		"dynn_Carmii"
+		"dynn_Casivellaunii"
+		"dynn_Cassii_pr"
+		"dynn_Cassianii"
+		"dynn_Casticii"
+		"dynn_Caturigis"
+		"dynn_Catuvolcii"
+		"dynn_Cingetorigis"
+		"dynn_Cintugenii"
+		"dynn_Claudii_pr"
+		"dynn_Conteddii"
+		"dynn_Corii"
+		"dynn_Cornelii_pr"
+		"dynn_Critasirii"
+		"dynn_Cudii"
+		"dynn_Danotalii"
+		"dynn_Diocletiani"
+		"dynn_Diviacii"
+		"dynn_Domitii"
+		"dynn_Dossii"
+		"dynn_Drutalii"
+		"dynn_Dubnorigis"
+		"dynn_Dumnorigis"
+		"dynn_Dunnii"
+		"dynn_Fabii_pr"
+		"dynn_Flavii_pr"
+		"dynn_Garii"
+		"dynn_Garomarii"
+		"dynn_Iestinii"
+		"dynn_Iulii"
+		"dynn_Iunii"
+		"dynn_Lascii"
+		"dynn_Lenii"
+		"dynn_Leucii"
+		"dynn_Licini"
+		"dynn_Litaviccii"
+		"dynn_Lucterii"
+		"dynn_Lutomarigis"
+		"dynn_Magunii"
+		"dynn_Magurigis"
+		"dynn_Orgetorigis"
+		"dynn_Pompeii"
+		"dynn_Roscillii"
+		"dynn_Samorigis"
+		"dynn_Segomarigis"
 		"dynn_Sennius"
-		"dynn_Suadurīgis"
-		"dynn_Taliī"
-		"dynn_Tasciī"
-		"dynn_Tasgetiī"
-		"dynn_Teutovaliī"
-		"dynn_Tulliī"
-		"dynn_Ulpiī"
-		"dynn_Valeriī"
-		"dynn_Vercassivellauniī"
-		"dynn_Viridomariī"
+		"dynn_Suadurigis"
+		"dynn_Talii"
+		"dynn_Tascii"
+		"dynn_Tasgetii"
+		"dynn_Teutovalii"
+		"dynn_Tullii_pr"
+		"dynn_Ulpii_pr"
+		"dynn_Valerii_pr"
+		"dynn_Vercassivellaunii"
+		"dynn_Viridomarii"
 
 	}
 	male_names = {
@@ -198,16 +198,16 @@ name_list_pr_gallo_roman = {
 		#Converted pr_gaulish to gallo roman names 
 		Tincomarus Suadurex Axrotalius Catuvolcius Abbius Accorux Arlenius Virogalus Acco Adietumarus Argiotalus Areleno Arelenus Ateboduus Attallus Axtrotalus Bilius Brennus
 		Brogimarus Camulus Carantus Carmanus Carmus Caturex Celunnus Cerdus Cerdo Cilurnus Contessilus Corius Cudius Dagodubnus Dagomarus Damus Dosso Dossus
-		Drutalus Dubnorex Dumnorīx Dunnius Garomarus Garus Lantumarus Catumaros Cintugenus Cintugnatus Lascius Leno Lenus Leucus Luctorex Lutomarus Maguno Magunus Magurex Oclinus
+		Drutalus Dubnorex Dumnorix Dunnius Garomarus Garus Lantumarus Catumaros Cintugenus Cintugnatus Lascius Leno Lenus Leucus Luctorex Lutomarus Maguno Magunus Magurex Oclinus
 		Samo Samus Samorex Segomarus Talos Tanisius Tasco Tascus Tinus Toccus Scottus Vercassivellaunus Urus Virogalus Tanisius
-		Aelius Antōnīnus Ariogaesus Aurēlius Camalus Camulaeus Casivellaunus Cassius Cingetorix Claudius Conteddius Cornēlius Dioclētiānus Domitius	Fabius Flāvius
-		Iestinus Iūlius Iūnius Orgetorix Pompeius Teutovalus Tullius Ulpius Valerius
+		Aelius Antoninus_pr Ariogaesus Aurelius_pr Camalus Camulaeus Casivellaunus Cassius Cingetorix Claudius Conteddius Cornelius_pr Diocletianus_pr Domitius	Fabius Flavius_pr
+		Iestinus Iulius_pr Iunius Orgetorix Pompeius Teutovalus Tullius Ulpius Valerius
 	}
 	female_names = {
 		#No real gallo roman names available so we converted them from the pr_gaulish names 
 		Caturecselva Luguselva Abrexta Acaunissa Acaunissa Aculia Adbugissa Banna Baulia Blanda Boudia Boudicca Abbula Cantismerta boudilatis Carata Cauaria Cloustria Continuda Coria
 		Elantia Litogena Lubitiata Scotta Sucaria Uesuca Vinda Vindilla Viscareva
-		Aelia Antōnīna Aurēlia Betua Cassia Catta Claudia Cornēlia Dioclētia Domitia Dousonna Dewognata Dumnonia Fabia Flāvia Iūlia Iūnia
+		Aelia Antonina_pr Aurelia_pr Betua Cassia Catta Claudia Cornelia_pr Diocletia Domitia Dousonna Dewognata Dumnonia Fabia Flavia_pr Iulia_pr Iunia
 		Leucia Luguselva Pompeia Tullia Ulpia Valeria
 	}
 	dynasty_of_location_prefix = "dynnp_of"
@@ -556,6 +556,72 @@ name_list_pr_romano_hispanic = {
 	mat_grf_name_chance = 0
 	father_name_chance = 50
 	
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 50
+	mat_grm_name_chance = 50
+	mother_name_chance = 0
+}
+
+name_list_pr_romano_syrian = {
+	dynasty_names = {
+		# Roman gentilicia taken by Syrian dynasts: Gaius Julius (Emesa), Septimius (Palmyra), Aurelius
+		"dynn_Julii" "dynn_Septimii" "dynn_Aurelii"
+	}
+
+	male_names = {
+		# Emesene dynasty, Palmyrene rulers/generals, kings of Osroene (Edessa), Palmyrene funerary inscriptions
+		Sampsiceramus Iamblichus Azizus Sohaemus Alexion Bassianus Alexianus Avitus Marcianus Odaenathus Vaballathus Hairan Antiochus Maeonius Zabdas Zabbai Haddudan Apsaios Sandarion Abgar Manu Paqor Wael Bakru Abdu Yalud Sahru Hagagu Zebida Maan
+	}
+	female_names = {
+		# Julia Domna/Maesa/Soaemias Bassiana/Avita Mamaea (Emesa), Zenobia (Palmyra), Palmyrene funerary inscriptions
+		Zenobia Domna Maesa Soaemias Mamaea Avita Bassiana Aqmat Shalmat Hagge
+	}
+	dynasty_of_location_prefix = "dynnp_of"
+	patronym_prefix_male = "dynnpat_pre_filius"
+
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 50
+	mat_grf_name_chance = 0
+	father_name_chance = 50
+
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 50
+	mat_grm_name_chance = 50
+	mother_name_chance = 0
+}
+
+name_list_pr_romano_illyrian = {
+	dynasty_names = {
+		# Gentilicia of enfranchised Delmatae (citizenship mostly under Hadrian): Aelius, Aurelius, Iulius
+		"dynn_Aelii" "dynn_Aurelii" "dynn_Julii"
+		# Native family names of the Delmatae (Carvius, Platius, Tizius; Gotovac 1989/90), Latin plural as for the gentilicia
+		"dynn_Carvii" "dynn_Platii" "dynn_Tizii"
+	}
+
+	male_names = {
+		# Native names from Latin inscriptions of the Delmatae (Gotovac 1989/90, CIL III / GZM)
+		Bato Dasas Dassto Dasius Plator Surus Surio Titus Varro Varanus Varronianus Beusas Cato Iatus Litus Loiscus Panes Pinnes Piramus Scurmianus Sinnus Tata Temus Tritus Vepus Zunus Sura Karus
+		# Middle Dalmatian name area (Katicic 1963)
+		Andes Aplis Baezus Ditus Iettus Lavius Pinsus Pladomenus Planus Scenobarbus Seius Tritanus Vendes Turus Samuntius Sceno Laedio Liceo Verzo
+		# Latin names borne by Delmatae, often beside a native patronym (Gotovac 1989/90)
+		Maximus Firmus Primus Victor Celsus Proculinus
+		# Diocletian: born Diocles, named after Doclea, town of the Illyrian Docleatae (Epitome de Caesaribus 39.1)
+		Diocles Diocletianus
+	}
+	female_names = {
+		# Delmatian female names end in -o without exception (Gotovac 1989/90)
+		Buo Dasto Epatino Iato Lavo Masso Paio Panio Platino Prevo Seio
+		# Middle Dalmatian name area (Katicic 1963); all but Sutta use the feminine motion in -on-
+		Baezo Dito Ieto Tritano Vendo Turo Samuntio Stennato Avio Bizo Buvo Citto Selio Zaio Sutta
+	}
+	dynasty_of_location_prefix = "dynnp_of"
+	patronym_prefix_male = "dynnpat_pre_filius"
+
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 50
+	mat_grf_name_chance = 0
+	father_name_chance = 50
+
 	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
 	pat_grm_name_chance = 50
 	mat_grm_name_chance = 50

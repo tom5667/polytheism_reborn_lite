@@ -52,4 +52,24 @@ pr_local_pilgrimage_generic_host_effect = {
 			diligent = miniscule_stress_impact_loss
 		}
 	}
-}
+}
+
+# --- Cnoc Uisnigh Pilgrimage Completion Log (called by pr_celtic.0410) ---
+pr_activity_cnoc_uisnigh_pilgrimage_completed_log_entry_effect = {
+	scope:activity = {
+		add_activity_log_entry = {
+			key = Pr_cnoc_uisnigh_pilgrimage_completed_log
+			tags = { completed }
+			show_in_conclusion = yes
+			character = root
+			scope:host = {
+				pr_local_pilgrimage_generic_host_effect = yes
+			}
+			every_attending_character = {
+				limit = { NOT = { this = scope:host } }
+				custom = EVERY_ACTIVITY_PARTICIPANT_EFFECT
+				pr_local_pilgrimage_generic_guest_effect = yes
+			}
+		}
+	}
+}

@@ -150,88 +150,88 @@ celtic_iberian_bandua:0 "Devotee Of Teleno"
 celtic_iberian_bandua_desc:0 "Devotee of Teleno god of war"
 
 #Lusitanian
-lusitanian_reue:0 "Devotee Of Reue"
-lusitanian_reue_desc:0 "Devotee of Reue high god and god of thunder"
+lusitanian_reue:0 "Devotee of Reue"
+lusitanian_reue_desc:0 "Devotee of Reue, high god of the Lusitanians"
 
-lusitanian_arancio:0 "Devotee Of Arancio"
-lusitanian_arancio_desc:0 "Devotee of Arancio god of health"
+lusitanian_arancio:0 "Devotee of Endovelicus"
+lusitanian_arancio_desc:0 "Devotee of Endovelicus, god of health"
 
-lusitanian_ataegina:0 "Devotee Of Ataegina"
-lusitanian_ataegina_desc:0 "Devotee of Ataegina goddess of fertility"
+lusitanian_ataegina:0 "Devotee of Ataecina"
+lusitanian_ataegina_desc:0 "Devotee of Ataecina, goddess of Turobriga"
 
-lusitanian_lucubo:0 "Devotee Of Lucubo"
-lusitanian_lucubo_desc:0 "Devotee of Lucubo god of trade and wealth"
+lusitanian_lucubo:0 "Devotee of Nabia"
+lusitanian_lucubo_desc:0 "Devotee of Nabia, goddess of springs"
 
-lusitanian_cariocecus:0 "Devotee Of Cariocecus"
-lusitanian_cariocecus_desc:0 "Devotee of Cariocecus god of war"
+lusitanian_cariocecus:0 "Devotee of Bandua"
+lusitanian_cariocecus_desc:0 "Devotee of Bandua, god of war"
 
 #Germanic
 
 
 #Anglo Saxon
-anglo_saxon_woden:0 "Devotee Of Wōden"
-anglo_saxon_woden_desc:0 "Devotee of Wōden allfather and god of wisdom"
+anglo_saxon_woden:0 "Devotee of Wōden"
+anglo_saxon_woden_desc:0 "Devotee of Wōden, high god of the English"
 
-anglo_saxon_njord:0 "Devotee Of Njord"
-anglo_saxon_njord_desc:0 "Devotee of Njord god of wealth and trade"
+anglo_saxon_njord:0 "Devotee of Ing"
+anglo_saxon_njord_desc:0 "Devotee of Ing, god of the Ingwine"
 
-anglo_saxon_fri:0 "Devotee Of Frī"
-anglo_saxon_fri_desc:0 "Devotee of Frī goddess of fertility"
+anglo_saxon_fri:0 "Devotee of Erce"
+anglo_saxon_fri_desc:0 "Devotee of Erce, goddess of the earth and its crops"
 
-anglo_saxon_tiwaz:0 "Devotee Of Tīwaz"
-anglo_saxon_tiwaz_desc:0 "Devotee of Tīwaz god of war"
+anglo_saxon_tiwaz:0 "Devotee of Tīw"
+anglo_saxon_tiwaz_desc:0 "Devotee of Tīw, god of war"
 
-anglo_saxon_seaxneat:0 "Devotee Of Seaxnēat"
-anglo_saxon_seaxneat_desc:0 "Devotee of Seaxnēat protector of the Saxons"
+anglo_saxon_seaxneat:0 "Devotee of Seaxnēat"
+anglo_saxon_seaxneat_desc:0 "Devotee of Seaxnēat, patron of the Saxons"
 
 #german
-german_wotan:0 "Devotee Of Wotan"
-german_wotan_desc:0 "Devotee of Wotan allfather and god of wisdom and fate"
+german_wotan:0 "Devotee of Wotan"
+german_wotan_desc:0 "Devotee of Wotan, high god of the Germans"
 
-german_njordr:0 "Devotee Of Nerthus"
-german_njordr_desc:0 "Devotee of Nerthus god of wealth and trade"
+german_njordr:0 "Devotee of Volla"
+german_njordr_desc:0 "Devotee of Volla, goddess of plenty"
 
-german_freyr:0  "Devotee Of Frauwaz"
-german_freyr_desc:0 "Devotee of Frauwaz goddess of fertility"
+german_freyr:0 "Devotee of Nerthus"
+german_freyr_desc:0 "Devotee of Nerthus, goddess of the earth"
 
-german_nornir:0 "Devotee Of Nornir"
-german_nornir_desc:0 "Devotee of Nornir god of war"
+german_nornir:0 "Devotee of Saxnōt"
+german_nornir_desc:0 "Devotee of Saxnōt, god of war"
 
-german_mimir:0 "Devotee Of Mímir"
-german_mimir_desc:0 "Devotee of Mímir known for his wisdom"
+german_mimir:0 "Devotee of Fosite"
+german_mimir_desc:0 "Devotee of Fosite, god of wisdom"
 
 #Punic
-punic_baal:0 "Devotee Of Baal"
-punic_baal_desc:0 "Devotee of Baal Hammon high god of the carthagenian, god of fertility"
+punic_baal:0 "Devotee of Baal Hammon"
+punic_baal_desc:0 "Devotee of Baal Hammon, great god of Carthage"
 
-punic_astarte:0 "Devotee Of Astarte"
-punic_astarte_desc:0 "Devotee of Astarte goddess of fertility"
+punic_astarte:0 "Devotee of Astarte"
+punic_astarte_desc:0 "Devotee of Astarte, goddess of love and fertility"
 
-punic_tanit:0 "Devotee Of Tanit"
-punic_tanit_desc:0 "Devotee of Tanit Goddess of war and invasions"
+punic_tanit:0 "Devotee of Tanit"
+punic_tanit_desc:0 "Devotee of Tanit, goddess of war and protector of Carthage"
 
-punic_kusor:0 "Devotee Of Kusor"
-punic_kusor_desc:0 "Devotee of Kusor god of wisdom"
+punic_kusor:0 "Devotee of Kusor"
+punic_kusor_desc:0 "Devotee of Kusor, god of eloquence and divination"
 
-punic_melqart:0 "Devotee Of Melqart"
-punic_melqart_desc:0 "Devotee of Melqart god of trade and military"
+punic_melqart:0 "Devotee of Melqart"
+punic_melqart_desc:0 "Devotee of Melqart, god of trade"
 
 
 #Semitic
-semitic_ba_al_hadad:0 "Devotee Of Ba'al-Hadad"
-semitic_ba_al_hadad_desc:0 "Devotee of Ba'al-Hadad high god of the Semitics"
+semitic_ba_al_hadad:0 "Devotee of Baal"
+semitic_ba_al_hadad_desc:0 "Devotee of Baal, high god of the Canaanites"
 
-semitic_ashera:0 "Devotee Of Ashera"
-semitic_ashera_desc:0 "Devotee of Ashera goddess of fertility"
+semitic_ashera:0 "Devotee of Astarte"
+semitic_ashera_desc:0 "Devotee of Astarte, goddess of love and fertility"
 
-semitic_dagan:0 "Devotee Of Dagan"
-semitic_dagan_desc:0 "Devotee of Tanit God of wealth"
+semitic_dagan:0 "Devotee of Dagon"
+semitic_dagan_desc:0 "Devotee of Dagon, god of grain and plenty"
 
-semitic_el_elyon:0 "Devotee Of El Elyon"
-semitic_el_elyon_desc:0 "Devotee of El Elyon god of wisdom"
+semitic_el_elyon:0 "Devotee of Taautos"
+semitic_el_elyon_desc:0 "Devotee of Taautos, god of knowledge"
 
-semitic_ashtart:0 "Devotee Of Ashtart"
-semitic_ashtart_desc:0 "Devotee of Ashtart god of war"
+semitic_ashtart:0 "Devotee of Reshef"
+semitic_ashtart_desc:0 "Devotee of Reshef, god of war"
 
 #Dacian
 dacian_gebeleizis:0 "Devotee Of Gebeleizis"
@@ -282,30 +282,34 @@ dacian_kaiogon_zalmoxis_cave_desc:0 "This character visited the Cave of Zalmoxis
 
 #Mesopotamian
 #Babylonian
-babylonian_marduk:0 "Devotee Of Marduk" 
-babylonian_marduk_desc:0 "Devotee of Marduk god of the sky and king of the gods"
+babylonian_marduk:0 "Devotee of Marduk"
+babylonian_marduk_desc:0 "Devotee of Marduk, king of the gods"
 
-babylonian_nergal:0 "Devotee Of Nergal"
-babylonian_nergal_desc:0 "Devotee of Nergal god of war"
+babylonian_nergal:0 "Devotee of Zababa"
+babylonian_nergal_desc:0 "Devotee of Zababa, god of war"
 #Assyrian
-assyrian_ashur:0 "Devotee Of Ashur" 
-assyrian_ashur_desc:0 "Devotee of Ashur father of all gods"
+assyrian_ashur:0 "Devotee of Aššur"
+assyrian_ashur_desc:0 "Devotee of Aššur, king of the gods"
 
-assyrian_ninkarrak:0 "Devotee Of Ninkarrak"
-assyrian_ninkarrak_desc:0 "Devotee of Ninkarrak goddess of health"
+assyrian_ninkarrak:0 "Devotee of Gula"
+assyrian_ninkarrak_desc:0 "Devotee of Gula, goddess of healing"
+assyrian_mullissu:0 "Devotee of Mullissu"
+assyrian_mullissu_desc:0 "Devotee of Mullissu, goddess of abundance"
 
 #Sumerian
-sumerian_enlil:0 "Devotee Of Enlil" 
-sumerian_enlil_desc:0 "Devotee of Enlil god of the air and protector of Nippur"
+sumerian_enlil:0 "Devotee of Enlil"
+sumerian_enlil_desc:0 "Devotee of Enlil, king of the gods and protector of Nippur"
 
-sumerian_inanna:0 "Devotee Of Inanna"
-sumerian_inanna_desc:0 "Devotee of Inanna goddess of fertility"
+sumerian_inanna:0 "Devotee of Inana"
+sumerian_inanna_desc:0 "Devotee of Inana, goddess of love and war"
 
-sumerian_nisaba:0 "Devotee Of Nisaba"
-sumerian_nisaba_desc:0 "Devotee of Nisaba goddess of knowledge"
+sumerian_nisaba:0 "Devotee of Nisaba"
+sumerian_nisaba_desc:0 "Devotee of Nisaba, goddess of writing"
+sumerian_ezina:0 "Devotee of Ezina"
+sumerian_ezina_desc:0 "Devotee of Ezina, goddess of grain"
 
-sumerian_ninurta:0 "Devotee Of Ninurta"
-sumerian_ninurta_desc:0 "Devotee of Ninurta god of war, agriculture and hunting"
+sumerian_ninurta:0 "Devotee of Ninurta"
+sumerian_ninurta_desc:0 "Devotee of Ninurta, god of war"
 
 mesopotamian_ninisina:0 "Devotee Of Ninisina"
 mesopotamian_ninisina_desc:0 "Devotee of Ninisina goddess of health"
@@ -316,56 +320,56 @@ mesopotamian_bogu_desc:0 "Devotee of Bogu god of wealth"
 mesopotamian_nergal:0 "Devotee Of Nergal"
 mesopotamian_nergal_desc:0 "Devotee of Nergal god of war"
 
-mesopotamian_ishtar:0 "Devotee Of Ishtar"
-mesopotamian_ishtar_desc:0 "Devotee of Ishtar goddess of fertility and queen of heaven"
+mesopotamian_ishtar:0 "Devotee of Ištar"
+mesopotamian_ishtar_desc:0 "Devotee of Ištar, goddess of love and war"
 
-mesopotamian_ninhegal:0 "Devotee of Ninhegal"
-mesopotamian_ninhegal_desc:0 "Devotee of Ninhegal queen of the gods and goddess of wealth."
+mesopotamian_ninhegal:0 "Devotee of Adad"
+mesopotamian_ninhegal_desc:0 "Devotee of Adad, god of rain and plenty"
 
-mesopotamian_nabu:0 "Devotee of Nabu"
-mesopotamian_nabu_desc:0 "Devotee of Nabu god of wisdom"
+mesopotamian_nabu:0 "Devotee of Nabû"
+mesopotamian_nabu_desc:0 "Devotee of Nabû, god of writing and wisdom"
 
 #Hittite
-hittite_tarhunna:0 "Devotee Of Tarhunna"
-hittite_tarhunna_desc:0 "Devotee of Tarhunna god of weather and heaven Lord of Hatussa"
+hittite_tarhunna:0 "Devotee of Tarhunna"
+hittite_tarhunna_desc:0 "Devotee of Tarhunna, storm god and king of the gods"
 
-hittite_telipinu:0 "Devotee Of Telipinu"
-hittite_telipinu_desc:0 "Devotee of Telipinu goddess of fertility"
+hittite_telipinu:0 "Devotee of Telipinu"
+hittite_telipinu_desc:0 "Devotee of Telipinu, god of fertility"
 
-hittite_halki:0 "Devotee Of Halki"
-hittite_halki_desc:0 "Devotee of Halki god of grain"
+hittite_halki:0 "Devotee of Halki"
+hittite_halki_desc:0 "Devotee of Halki, goddess of grain"
 
-hittite_a_as:0 "Devotee Of A'as"
-hittite_a_as_desc:0 "Devotee of A'as god of wisdom"
+hittite_a_as:0 "Devotee of Ea"
+hittite_a_as_desc:0 "Devotee of Ea, god of wisdom"
 
-hittite_tashmishu:0 "Devotee Of Tashmishu"
-hittite_tashmishu_desc:0 "Devotee of Tashmishu god of war"
+hittite_tashmishu:0 "Devotee of Wurunkatte"
+hittite_tashmishu_desc:0 "Devotee of Wurunkatte, god of war"
 
 #Georgian
-georgian_armzi:0 "Devotee Of Armzi"
-georgian_armzi_desc:0 "Devotee of Armzi high god of the Georgians"
+georgian_armzi:0 "Devotee of Armazi"
+georgian_armzi_desc:0 "Devotee of Armazi, high god of the Georgians"
 
-georgian_adgilis_deda:0 "Devotee Of Adgilis Deda"
-georgian_adgilis_deda_desc:0 "Devotee of Adgilis Deda goddess of love and fertility"
+georgian_adgilis_deda:0 "Devotee of Zaden"
+georgian_adgilis_deda_desc:0 "Devotee of Zaden, god of fertility"
 
-georgian_kopala:0 "Devotee Of Kopala"
-georgian_kopala_desc:0 "Devotee of Kopala god of war"
+georgian_kopala:0 "Devotee of the Lord of Battle"
+georgian_kopala_desc:0 "Devotee of the Lord of Battle, god of war"
 
-georgian_the_barbale:0 "Devotee Of Barbale"
-georgian_the_barbale_desc:0 "Devotee of Barbale goddess"
+georgian_the_barbale:0 "Devotee of the Healer"
+georgian_the_barbale_desc:0 "Devotee of the Healer, god of health"
 
 #Armenian
-armenian_aramazd:0 "Devotee Of Aramazd"
-armenian_aramazd_desc:0 "Devotee of Aramazd high god of the armenians"
+armenian_aramazd:0 "Devotee of Aramazd"
+armenian_aramazd_desc:0 "Devotee of Aramazd, high god of the Armenians"
 
-armenian_astlik:0 "Devotee Of Astlik"
-armenian_astlik_desc:0 "Devotee of Astlik goddes of love and fertility"
+armenian_astlik:0 "Devotee of Astghik"
+armenian_astlik_desc:0 "Devotee of Astghik, goddess of love and fertility"
 
-armenian_nane:0 "Devotee Of Nane"
-armenian_nane_desc:0 "Devotee of Nane God of war"
+armenian_nane:0 "Devotee of Vahagn"
+armenian_nane_desc:0 "Devotee of Vahagn, god of war"
 
-armenian_nvard:0 "Devotee Of Nvard"
-armenian_nvard_desc:0 "Devotee of Nvard goddess of health"
+armenian_nvard:0 "Devotee of Anahit"
+armenian_nvard_desc:0 "Devotee of Anahit, goddess of health"
 
 #Roman Illyrian
 roman_illyrian_jupiter_parthinus:0 "Devotee Of Jupiter Parthinus"
@@ -456,68 +460,70 @@ cultus_orientis_eshmun:0 "Devotee of Eshmun"
 cultus_orientis_eshmun_desc:0 "Devotee of Eshmun god of health"
 
 #Etruscan
-etruscan_tinia:0 "Devotee Of Tinia"
-etruscan_tinia_desc:0 "Devotee of Tinia High god of the Etruscans"
+etruscan_tinia:0 "Devotee of Tinia"
+etruscan_tinia_desc:0 "Devotee of Tinia, high god of the Etruscans"
 
-etruscan_nortia:0 "Devotee Of Nortia"
-etruscan_nortia_desc:0 "Devotee of Nortia goddess of fertility"
+etruscan_nortia:0 "Devotee of Turan"
+etruscan_nortia_desc:0 "Devotee of Turan, goddess of love"
 
-etruscan_turms:0 "Devotee Of Turms"
-etruscan_turms_desc:0 "Devotee of Turms god of Wealth"
+etruscan_turms:0 "Devotee of Turms"
+etruscan_turms_desc:0 "Devotee of Turms, messenger of the gods"
 
-etruscan_menrva:0 "Devotee Of Menrva"
-etruscan_menrva_desc:0 "Devotee of Menrva goddess of wisdom"
+etruscan_menrva:0 "Devotee of Menrva"
+etruscan_menrva_desc:0 "Devotee of Menrva, goddess of prophecy"
 
-etruscan_maris:0 "Devotee Of Maris"
-etruscan_maris_desc:0 "Devotee of Maris god of war"
+etruscan_laran:0 "Devotee of Laran"
+etruscan_laran_desc:0 "Devotee of Laran, the Etruscan god of war"
 
 #Mycenaean
-mycenaean_poseidon:0 "Devotee Of Poseidon"
-mycenaean_poseidon_desc:0 "Devotee of Poseidon, high god of the sea"
+mycenaean_poseidon:0 "Devotee of Poseidaon"
+mycenaean_poseidon_desc:0 "Devotee of Poseidaon, high god of the Mycenaeans"
 
-mycenaean_hermes:0 "Devotee Of Hermes"
-mycenaean_hermes_desc:0 "Devotee of Hermes, god of trade and messenger of the gods"
+mycenaean_hermes:0 "Devotee of Hermaas"
+mycenaean_hermes_desc:0 "Devotee of Hermaas, god of trade"
 
-mycenaean_aphrodite:0 "Devotee of Aphrodite"
-mycenaean_aphrodite_desc:0 "Devotee of Aphrodite, goddess of love and beauty"
+mycenaean_aphrodite:0 "Devotee of Eleuthia"
+mycenaean_aphrodite_desc:0 "Devotee of Eleuthia, goddess of childbirth"
 
-mycenaean_athena:0 "Devotee Of Athena"
-mycenaean_athena_desc:0 "Devotee of Athena, goddess of wisdom"
+mycenaean_athena:0 "Devotee of Athana Potnia"
+mycenaean_athena_desc:0 "Devotee of Athana Potnia, goddess of the palace"
 
-mycenaean_ares:0 "Devotee Of Ares"
-mycenaean_ares_desc:0 "Devotee of Ares, god of war"
+mycenaean_ares:0 "Devotee of Enuwalios"
+mycenaean_ares_desc:0 "Devotee of Enuwalios, god of war"
 
 #Scythian
-scythia_papaios:0 "Devotee Of Papaios"
-scythia_papaios_desc:0 "Devotee of Papaios, high god of the Scythians"
+scythia_papaios:0 "Devotee of Tabiti"
+scythia_papaios_desc:0 "Devotee of Tabiti, highest goddess of the Scythians"
 
-scythia_artimpasa:0 "Devotee Of Artimpasa"
-scythia_artimpasa_desc:0 "Devotee of Artimpasa, goddess of fertillity"
+scythia_artimpasa:0 "Devotee of Artimpasa"
+scythia_artimpasa_desc:0 "Devotee of Artimpasa, goddess of love"
 
-scythia_gaitasura:0 "Devotee Of Gaiϑāsūra"
-scythia_gaitasura_desc:0 "Devotee of Gaiϑāsūra, god of wealth"
+scythia_gaitasura:0 "Devotee of Goitosyros"
+scythia_gaitasura_desc:0 "Devotee of Goitosyros, god of wealth"
 
-scythia_api:0 "Devotee Of Api"
-scythia_api_desc:0 "Devotee of Api, Goddess of health"
+scythia_api:0 "Devotee of Api"
+scythia_api_desc:0 "Devotee of Api, goddess of the earth"
 
-scythia_pitari_za:0 "Devotee Of Pitari Za"
-scythia_pitari_za_desc:0 "Devotee of Pitari Za, God of war"
+scythia_pitari_za:0 "Devotee of the Sword"
+scythia_pitari_za_desc:0 "Devotee of the Sword, god of war"
 
 #Illyrian
-illyrian_en:0 "Devotee of En"
-illyrian_en_desc:0 "Devotee of En, high god of the Illyrians"
+illyrian_en:0 "Devotee of Deipaturos"
+illyrian_en_desc:0 "Devotee of Deipaturos, high god of the Illyrians"
 
 illyrian_medaurus:0 "Devotee of Medaurus"
-illyrian_medaurus_desc:0 "Devotee of Medaurus, god of war"
+illyrian_medaurus_desc:0 "Devotee of Medaurus, guardian god and god of war"
 
 illyrian_anzotica:0 "Devotee of Anzotica"
-illyrian_anzotica_desc:0 "Devotee of Anzotica, goddess of fertility"
+illyrian_anzotica_desc:0 "Devotee of Anzotica, goddess of love"
 
 illyrian_bindus:0 "Devotee of Bindus"
-illyrian_bindus_desc:0 "Devotee of Bindus, god of water"
+illyrian_bindus_desc:0 "Devotee of Bindus, god of springs and their healing waters"
 
 illyrian_tadenus:0 "Devotee of Tadenus"
 illyrian_tadenus_desc:0 "Devotee of Tadenus, god of health"
+illyrian_redon:0 "Devotee of Redon"
+illyrian_redon_desc:0 "Devotee of Redon, god of the sea and its wealth"
 
 champion_of_medaurus:0 "Champion of Medaurus"
 champion_of_medaurus_desc:0 "Medaurus has choosen this character to lead the Illyrian faith to greatness"
@@ -632,59 +638,63 @@ hellenic_delphi:0 "Visited Delphi"
 hellenic_delphi_desc:0 "This character visited the holy city of Delphi"
 
 #Baltic choose main deity
-lithuanian_dievas:0 "Devotee of Dievas"
-lithuanian_dievas_desc:0 "Devotee of Dievas, high god of the Lithuanians"
+lithuanian_dievas:0 "Devotee of Andajus"
+lithuanian_dievas_desc:0 "Devotee of Andajus, high god of the Lithuanians"
 
-lithuanian_dalia:0 "Devotee of Dalia"
-lithuanian_dalia_desc:0 "Devotee of Dalia, goddess of fate and wealth"
+lithuanian_dalia:0 "Devotee of the Giver of Plenty"
+lithuanian_dalia_desc:0 "Devotee of the Giver of Plenty, giver of plenty"
 
 lithuanian_perkunas:0 "Devotee of Perkūnas"
-lithuanian_perkunas_desc:0 "Devotee of Perkūnas, god of war"
+lithuanian_perkunas_desc:0 "Devotee of Perkūnas, god of thunder"
 
 lithuanian_zemyna:0 "Devotee of Žemyna"
-lithuanian_zemyna_desc:0 "Devotee of Žemyna, goddess of fertility"
+lithuanian_zemyna_desc:0 "Devotee of Žemyna, goddess of the fertile earth"
 
-baltic_saule:0 "Devotee of Saule"
-baltic_saule_desc:0 "Devotee of Saule, god of health"
+baltic_saule:0 "Devotee of Saulė"
+baltic_saule_desc:0 "Devotee of Saulė, goddess of the sun"
 
 latvian_dievs:0 "Devotee of Dievs"
 latvian_dievs_desc:0 "Devotee of Dievs, high god of the Latvians"
 
-latvian_jumis:0 "Devotee of Jumis"
-latvian_jumis_desc:0 "Devotee of Jumis, god of wealth"
+latvian_jumis:0 "Devotee of Lopu māte"
+latvian_jumis_desc:0 "Devotee of Lopu māte, goddess of the herds and their wealth"
 
-latvian_perkons:0 "Devotee of Perkons"
-latvian_perkons_desc:0 "Devotee of Pērkons, god of war"
+latvian_perkons:0 "Devotee of Pērkons"
+latvian_perkons_desc:0 "Devotee of Pērkons, god of thunder"
 
 latvian_ceroklis:0 "Devotee of Ceroklis"
-latvian_ceroklis_desc:0 "Devotee of Ceroklis, god of fertility"
+latvian_ceroklis_desc:0 "Devotee of Ceroklis, god of fields and grain"
+latvian_saule:0 "Devotee of Saule"
+latvian_saule_desc:0 "Devotee of Saule, goddess of the sun"
 
-prussian_deiws:0 "Devotee of Dēiws"
-prussian_deiws_desc:0 "Devotee of Dēiws, high god of the prussians"
+prussian_deiws:0 "Devotee of Occopirmus"
+prussian_deiws_desc:0 "Devotee of Occopirmus, high god of the Prussians"
 
-prussian_pilwits:0 "Devotee of Pilwīts"
-prussian_pilwits_desc:0 "Devotee of Pilwīts, god of wealth"
+prussian_pilwits:0 "Devotee of Pilwytus"
+prussian_pilwits_desc:0 "Devotee of Pilwytus, god of wealth"
 
-prussian_perkuns:0 "Devotee of Perkūns"
-prussian_perkuns_desc:0 "Devotee of Perkūns, god of war"
+prussian_perkuns:0 "Devotee of Parcuns"
+prussian_perkuns_desc:0 "Devotee of Parcuns, god of thunder"
 
-prussian_patrimps:0 "Devotee of Patrīmps"
-prussian_patrimps_desc:0 "Devotee of Patrīmps, god of fertility"
+prussian_patrimps:0 "Devotee of Curche"
+prussian_patrimps_desc:0 "Devotee of Curche, honoured at the harvest feast"
 
-prussian_ausauts:0 "Devotee of Āušauts"
-prussian_ausauts_desc:0 "Devotee of Āušauts, god of health"
+prussian_ausauts:0 "Devotee of Ausschauts"
+prussian_ausauts_desc:0 "Devotee of Ausschauts, god of the sick and the infirm"
 
 graeco_egyptian_zeus_amon:0 "Devotee of Zeus Amon"
-graeco_egyptian_zeus_amon_desc:0 "Devotee of Zeus Amon, high god of the Graeco Egyptians"
+graeco_egyptian_zeus_amon_desc:0 "Devotee of Zeus Amon, high god of the Graeco-Egyptians"
 
 graeco_egyptian_isis:0 "Devotee of Isis"
 graeco_egyptian_isis_desc:0 "Devotee of Isis, goddess of fertility and motherhood"
 
 graeco_egyptian_hermes_trismegistus:0 "Devotee of Hermes Trismegistos"
-graeco_egyptian_hermes_trismegistus_desc:0 "Devotee of Hermes Trismegistos, all knowing and god of fate"
+graeco_egyptian_hermes_trismegistus_desc:0 "Devotee of Hermes Trismegistos, god of wisdom"
 
 graeco_egyptian_harpocrates:0 "Devotee of Harpocrates"
 graeco_egyptian_harpocrates_desc:0 "Devotee of Harpocrates, god of silence and secrets"
+graeco_egyptian_ares:0 "Devotee of Ares"
+graeco_egyptian_ares_desc:0 "Devotee of Ares, god of war"
 
 graeco_egyptian_alexander_megalos:0 "Devotee of Alexandros Megalos"
 graeco_egyptian_alexander_megalos_desc:0 "Devotee of Alexandros Megalos, who was deified by the people"
@@ -728,3 +738,53 @@ bringer_of_peace_modifier_desc:0 "This character has closed the Gates of Janus, 
 
 gates_of_janus_closed:0 "Gates of Janus Closed"
 gates_of_janus_closed_desc:0 "The Gates of Janus were only recently closed. Such a sacred and momentous declaration of peace cannot be repeated so soon without cheapening its meaning."
+
+# Patron gods converted from traits (2026-10-10)
+pr_cdr_iupiter:0 "Devotee of Jupiter"
+pr_cdr_iupiter_desc:0 "Devotee of Jupiter, god of thunder and Husband of Juno"
+pr_cdr_iuno:0 "Devotee of Juno"
+pr_cdr_iuno_desc:0 "Devotee of Juno, protector of the women of Rome and wife of Jupiter"
+pr_cdr_mars:0 "Devotee of Mars"
+pr_cdr_mars_desc:0 "Devotee of Mars, god of war"
+pr_cdr_venus:0 "Devotee of Venus"
+pr_cdr_venus_desc:0 "Devotee of Venus, goddess of love and fertility"
+pr_cdr_lares:0 "Devotee of the Lares"
+pr_cdr_lares_desc:0 "Devotee of the Lares, protector of the household"
+pr_cdr_mercurius:0 "Devotee of Mercurius"
+pr_cdr_mercurius_desc:0 "Devotee of Mercurius, god of trade"
+pr_cdr_minerva:0 "Devotee of Minerva"
+pr_cdr_minerva_desc:0 "Devotee of Minerva, goddess of wisdom"
+pr_cdr_apollo:0 "Devotee of Apollo"
+pr_cdr_apollo_desc:0 "Devotee of Apollo, god of healing"
+pr_cdr_ceres:0 "Devotee of Ceres"
+pr_cdr_ceres_desc:0 "Devotee of Ceres, goddess of agriculture and grain"
+pr_mithras_mithras:0 "Devotee of Mithras"
+pr_mithras_mithras_desc:0 "Devotee of Mithras, god of war"
+pr_mithras_arimanius:0 "Devotee of Arimanius"
+pr_mithras_arimanius_desc:0 "Devotee of Arimanius, the purported lion headed god, is the Helleno-Romanized form of the Zoroastrian spirit Angra Mainyu. Despite originally being a representation of evil as attested by Plutarch, the Mithraic Arimanius' divine properties are highly disputed and still in question."
+pr_mithras_oromazes:0 "Devotee of Oromazes"
+pr_mithras_oromazes_desc:0 "Devotee of Oromazes, originally the Zoroastrian god Ahura Mazda, isn't that attested to in Mithraic documentation, but it's safe to assume he did have some representation within the Mithraic cult."
+pr_hellenic_zeus:0 "Devotee of Zeus"
+pr_hellenic_zeus_desc:0 "Devotee of Zeus, god of thunder and highest God. Husband of Hera"
+pr_hellenic_hera:0 "Devotee of Hera"
+pr_hellenic_hera_desc:0 "Devotee of Hera, Wife of Zeus and protector of Woman"
+pr_hellenic_ares:0 "Devotee of Ares"
+pr_hellenic_ares_desc:0 "Devotee of Ares, god of war"
+pr_hellenic_aphrodite:0 "Devotee of Aphrodite"
+pr_hellenic_aphrodite_desc:0 "Devotee of Aphrodite, Goddess of love and fertility"
+pr_hellenic_hermes:0 "Devotee of Hermes"
+pr_hellenic_hermes_desc:0 "Devotee of Hermes, God of trade"
+pr_hellenic_athena:0 "Devotee of Athena"
+pr_hellenic_athena_desc:0 "Devotee of Athena, deity of wisdom"
+pr_hellenic_demeter:0 "Devotee of Demeter"
+pr_hellenic_demeter_desc:0 "Devotee of Demeter, goddess of agriculture and grain"
+pr_kemetic_amun_ra:0 "Devotee of Amun-Ra"
+pr_kemetic_amun_ra_desc:0 "Devotee of Amun-Ra, highest of the gods"
+pr_kemetic_ra:0 "Devotee of Ra"
+pr_kemetic_ra_desc:0 "Devotee of sun god Ra"
+pr_kemetic_isis:0 "Devotee of Isis"
+pr_kemetic_isis_desc:0 "Devotee of Isis, protector of kingdoms and goddess of wisdom "
+pr_kemetic_montu:0 "Devotee of Montu"
+pr_kemetic_montu_desc:0 "Devotee of war god Montu"
+pr_kemetic_hathor:0 "Devotee of Hathor"
+pr_kemetic_hathor_desc:0 "Devotee of the goddess of motherhood, love and fertility Hathor"

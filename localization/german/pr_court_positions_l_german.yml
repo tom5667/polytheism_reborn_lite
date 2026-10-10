@@ -1,11 +1,10 @@
-l_german:
+﻿l_german:
   # =============================================
   # Polytheism Reborn - Hofamt-Lokalisierung
   # Datei: pr_court_positions_l_german.yml
   # =============================================
 
   # --- Hofamt-Kategorie ---
-  COURT_POSITION_CATEGORY_FLAMEN_NAME:0 "Flamen"
 
   # --- Hof-Augur ---
   pr_court_augur_court_position:0 "Hofaugur"

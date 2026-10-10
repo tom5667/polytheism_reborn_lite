@@ -5,7 +5,6 @@
   # =============================================
 
   # --- Court Position Category ---
-  COURT_POSITION_CATEGORY_FLAMEN_NAME:0 "Flamen"
 
   # --- Court Augur ---
   pr_court_augur_court_position:0 "Court Augur"

@@ -5,10 +5,6 @@
   # =============================================
 
   # --- Roman Pontifex Selection (0027) ---
-  pr_roman.0800.t:0 "Choosing a Pontifex"
-  pr_roman.0800.desc:0 "#F The old faith has been reformed, and a new spiritual leader must be chosen to guide the faithful. As the reformer, it falls to me to decide whether to follow the existing pontifex or to assert our independence.#!\n\nThe gods watch as I make this sacred decision."
-  pr_roman.0800.a:0 "We shall guide our own path."
-  pr_roman.0800.d:0 "We shall follow the old pontifex."
 
   # =============================================
   # Polytheism Reborn - Cultus Deorum Event Loc
@@ -19,20 +15,20 @@
   #choose your main deity event localization 
   pr_roman.0001.t:0 "Choose main deity"
   pr_roman.0001.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or goddesses."
-  pr_roman.0001.jupiter:0 "$cdr_polytheism_high_god_name$"
-  pr_roman.0001.juno:0 "$cdr_polytheism_good_god_juno$"
-  pr_roman.0001.minerva:0 "$cdr_polytheism_knowledge_god_name$"
+  pr_roman.0001.jupiter:0 "$roman_polytheism_high_god_name$"
+  pr_roman.0001.juno:0 "$roman_polytheism_good_god_juno$"
+  pr_roman.0001.minerva:0 "$roman_polytheism_knowledge_god_name$"
   pr_roman.0001.more:0 "See more gods"
   pr_roman.0001.cancel:0 "Maybe now isn't the right time"
 
   # Other gods page
   pr_roman.0019.t:0 "Choose main deity"
   pr_roman.0019.desc:0 "To help me in the struggle to rule my realm I could devote to one of the gods or goddesses."
-  pr_roman.0019.mars:0 "$cdr_polytheism_war_god_name$"
-  pr_roman.0019.venus:0 "$cdr_polytheism_fertility_god_name$"
-  pr_roman.0019.lares:0 "$cdr_polytheism_household_god_name$"
-  pr_roman.0019.mercurius:0 "$cdr_polytheism_wealth_god_name$"
-  pr_roman.0019.apollo:0 "$cdr_polytheism_health_god_name$"
+  pr_roman.0019.mars:0 "$roman_polytheism_war_god_name$"
+  pr_roman.0019.venus:0 "$roman_polytheism_fertility_god_name$"
+  pr_roman.0019.lares:0 "$roman_polytheism_household_god_name$"
+  pr_roman.0019.mercurius:0 "$roman_polytheism_wealth_god_name$"
+  pr_roman.0019.apollo:0 "$roman_polytheism_health_god_name$"
   pr_roman.0019.ceres:0 "Ceres"
   pr_roman.0019.back:0 "Go back"
   pr_roman.0019.cancel:0 "Maybe now isn't the right time"
@@ -138,11 +134,11 @@
   #Iuno 
   pr_roman.0108.t:0 "The Offering"
 
-  pr_roman.0108.incense.desc:0 "Today I'm going to honor $cdr_polytheism_good_god_juno$ goddess of marriage, protector of woman and wife of Iupiter.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $cdr_polytheism_good_god_juno$ , I state clearly what I offer and to which god(dess) and after that I put the figs on the plate and sprinkle it with some water.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $cdr_polytheism_good_god_juno$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $cdr_polytheism_good_god_juno$  did hear my prayer and accepts my offer, afterwards I stop the incense from burning."
+  pr_roman.0108.incense.desc:0 "Today I'm going to honor $roman_polytheism_good_god_juno$ goddess of marriage, protector of woman and wife of Iupiter.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $roman_polytheism_good_god_juno$ , I state clearly what I offer and to which god(dess) and after that I put the figs on the plate and sprinkle it with some water.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $roman_polytheism_good_god_juno$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $roman_polytheism_good_god_juno$  did hear my prayer and accepts my offer, afterwards I stop the incense from burning."
 
-  pr_roman.0108.wine.desc:0 "Today I'm going to honor $cdr_polytheism_good_god_juno$ goddess of marriage, protector of woman and wife of Iupiter.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $cdr_polytheism_good_god_juno$ , I state clearly what I offer and to which god(dess) and after that I offer the libation of wine in a glass.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $cdr_polytheism_good_god_juno$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $cdr_polytheism_good_god_juno$  did hear my prayer and accepts my offer, Afterwards I drink the wine."
+  pr_roman.0108.wine.desc:0 "Today I'm going to honor $roman_polytheism_good_god_juno$ goddess of marriage, protector of woman and wife of Iupiter.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $roman_polytheism_good_god_juno$ , I state clearly what I offer and to which god(dess) and after that I offer the libation of wine in a glass.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $roman_polytheism_good_god_juno$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $roman_polytheism_good_god_juno$  did hear my prayer and accepts my offer, Afterwards I drink the wine."
 
-  pr_roman.0108.figs.desc:0 "Today I'm going to honor $cdr_polytheism_good_god_juno$ goddess of marriage, protector of woman and wife of Iupiter.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $cdr_polytheism_good_god_juno$ , I state clearly what I offer and to which god(dess) and after that I put the figs on the plate and sprinkle it with some water.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $cdr_polytheism_good_god_juno$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $cdr_polytheism_good_god_juno$  did hear my prayer and accepts my offer, afterwards I eat the figs or give them back to nature."
+  pr_roman.0108.figs.desc:0 "Today I'm going to honor $roman_polytheism_good_god_juno$ goddess of marriage, protector of woman and wife of Iupiter.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $roman_polytheism_good_god_juno$ , I state clearly what I offer and to which god(dess) and after that I put the figs on the plate and sprinkle it with some water.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $roman_polytheism_good_god_juno$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $roman_polytheism_good_god_juno$  did hear my prayer and accepts my offer, afterwards I eat the figs or give them back to nature."
 
   pr_roman.0108.fallback.desc:0 "This is a bug, please send a message on discord or leave a bug report on steam."
 
@@ -217,11 +213,11 @@
 
   pr_roman.0115.t:0 "The Offering"
 
-  pr_roman.0115.incense.desc:0 "Today I'm going to honor $cdr_polytheism_knowledge_god_name$ goddess of wisdom.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $cdr_polytheism_knowledge_god_name$ , I state clearly what I offer and to which god(dess) and after that I put the figs on the plate and sprinkle it with some water.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $cdr_polytheism_knowledge_god_name$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $cdr_polytheism_knowledge_god_name$  did hear my prayer and accepts my offer, afterwards I stop the incense from burning."
+  pr_roman.0115.incense.desc:0 "Today I'm going to honor $roman_polytheism_knowledge_god_name$ goddess of wisdom.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $roman_polytheism_knowledge_god_name$ , I state clearly what I offer and to which god(dess) and after that I put the figs on the plate and sprinkle it with some water.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $roman_polytheism_knowledge_god_name$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $roman_polytheism_knowledge_god_name$  did hear my prayer and accepts my offer, afterwards I stop the incense from burning."
 
-  pr_roman.0115.wine.desc:0 "Today I'm going to honor $cdr_polytheism_knowledge_god_name$ goddess of wisdom.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $cdr_polytheism_knowledge_god_name$ , I state clearly what I offer and to which god(dess) and after that I offer the libation of wine in a glass.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $cdr_polytheism_knowledge_god_name$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $cdr_polytheism_knowledge_god_name$  did hear my prayer and accepts my offer, Afterwards I drink the wine."
+  pr_roman.0115.wine.desc:0 "Today I'm going to honor $roman_polytheism_knowledge_god_name$ goddess of wisdom.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $roman_polytheism_knowledge_god_name$ , I state clearly what I offer and to which god(dess) and after that I offer the libation of wine in a glass.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $roman_polytheism_knowledge_god_name$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $roman_polytheism_knowledge_god_name$  did hear my prayer and accepts my offer, Afterwards I drink the wine."
 
-  pr_roman.0115.olives.desc:0 "Today I'm going to honor $cdr_polytheism_knowledge_god_name$ goddess of wisdom.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $cdr_polytheism_knowledge_god_name$ , I state clearly what I offer and to which god(dess) and after that I put the olives on the plate and sprinkle it with some water.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $cdr_polytheism_knowledge_god_name$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $cdr_polytheism_knowledge_god_name$  did hear my prayer and accepts my offer, afterwards I eat the olives or give them back to nature."
+  pr_roman.0115.olives.desc:0 "Today I'm going to honor $roman_polytheism_knowledge_god_name$ goddess of wisdom.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $roman_polytheism_knowledge_god_name$ , I state clearly what I offer and to which god(dess) and after that I put the olives on the plate and sprinkle it with some water.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $roman_polytheism_knowledge_god_name$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $roman_polytheism_knowledge_god_name$  did hear my prayer and accepts my offer, afterwards I eat the olives or give them back to nature."
 
   pr_roman.0115.fallback.desc:0 "This is a bug, please send a message on discord or leave a bug report on steam."
 
@@ -234,11 +230,11 @@
 
   pr_roman.0116.t:0 "The Offering"
 
-  pr_roman.0116.incense.desc:0 "Today I'm going to honor $cdr_polytheism_good_god_apollo$ god of healing.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $cdr_polytheism_good_god_apollo$ , I state clearly what I offer and to which god(dess) and after that I put the figs on the plate and sprinkle it with some water.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $cdr_polytheism_good_god_apollo$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $cdr_polytheism_good_god_apollo$  did hear my prayer and accepts my offer, afterwards I stop the incense from burning."
+  pr_roman.0116.incense.desc:0 "Today I'm going to honor $roman_polytheism_good_god_apollo$ god of healing.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $roman_polytheism_good_god_apollo$ , I state clearly what I offer and to which god(dess) and after that I put the figs on the plate and sprinkle it with some water.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $roman_polytheism_good_god_apollo$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $roman_polytheism_good_god_apollo$  did hear my prayer and accepts my offer, afterwards I stop the incense from burning."
 
-  pr_roman.0116.wine.desc:0 "Today I'm going to honor $cdr_polytheism_good_god_apollo$ god of healing.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $cdr_polytheism_good_god_apollo$ , I state clearly what I offer and to which god(dess) and after that I offer the libation of wine in a glass.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $cdr_polytheism_good_god_apollo$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $cdr_polytheism_good_god_apollo$ did hear my prayer and accepts my offer, Afterwards I drink the wine."
+  pr_roman.0116.wine.desc:0 "Today I'm going to honor $roman_polytheism_good_god_apollo$ god of healing.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $roman_polytheism_good_god_apollo$ , I state clearly what I offer and to which god(dess) and after that I offer the libation of wine in a glass.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $roman_polytheism_good_god_apollo$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $roman_polytheism_good_god_apollo$ did hear my prayer and accepts my offer, Afterwards I drink the wine."
 
-  pr_roman.0116.honey.desc:0 "Today I'm going to honor $cdr_polytheism_good_god_apollo$ god of healing.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $cdr_polytheism_good_god_apollo$ , I state clearly what I offer and to which god(dess) and after that I put the honey on the plate and sprinkle it with some water.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $cdr_polytheism_good_god_apollo$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $cdr_polytheism_good_god_apollo$  did hear my prayer and accepts my offer, afterwards I add this honey to my meal or give it back to nature."
+  pr_roman.0116.honey.desc:0 "Today I'm going to honor $roman_polytheism_good_god_apollo$ god of healing.\nAfter the preparations are done I'm ready to start the ritual.\nAs the ritual progresses it's time to offer to $roman_polytheism_good_god_apollo$ , I state clearly what I offer and to which god(dess) and after that I put the honey on the plate and sprinkle it with some water.\n\nAs last part I observe the room for any signs and offer to Vesta and Janus and as safety offer one last time to $roman_polytheism_good_god_apollo$ to apologize for any inconvenience during the ritual.\nNow the ritual is done I hope $roman_polytheism_good_god_apollo$  did hear my prayer and accepts my offer, afterwards I add this honey to my meal or give it back to nature."
 
   pr_roman.0116.fallback.desc:0 "This is a bug, please send a message on discord or leave a bug report on steam."
 
@@ -260,15 +256,15 @@
   pr_roman.0102.a:0 "Proceed"
 
   pr_roman.0103.t:0 "Salutatio (Greeting and asking the gods to attend in the ritual)"
-  pr_roman.0103.desc:0 "$cdr_polytheism_high_god_name_alternate$ god of the sky and protector of the people of Rome or whatever name you prefer, may you attend to this ritual. And may you accept this offer of fruit (after speaking the words put it on the bowl. and sprinkel some water on it."
+  pr_roman.0103.desc:0 "$roman_polytheism_high_god_name_alternate$ god of the sky and protector of the people of Rome or whatever name you prefer, may you attend to this ritual. And may you accept this offer of fruit (after speaking the words put it on the bowl. and sprinkel some water on it."
   pr_roman.0103.a:0 "Proceed"
 
   pr_roman.0104.t:0 "Precatio (Prayer)"
-  pr_roman.0104.desc:0 "For the Precatio I will offer my main offer to $cdr_polytheism_high_god_name$ (but first the main reason formally stated). $cdr_polytheism_high_god_name$ Optimus Maximus may you favour my family and the people of my realm. Now pour a libation of wine in the cup and i say the words $cdr_polytheism_high_god_name$ May you  favour my family and people of my realm with power and victory to overcome our enemies."
+  pr_roman.0104.desc:0 "For the Precatio I will offer my main offer to $roman_polytheism_high_god_name$ (but first the main reason formally stated). $roman_polytheism_high_god_name$ Optimus Maximus may you favour my family and the people of my realm. Now pour a libation of wine in the cup and i say the words $roman_polytheism_high_god_name$ May you  favour my family and people of my realm with power and victory to overcome our enemies."
   pr_roman.0104.a:0 "Proceed"
 
   pr_roman.0105.t:0 "Immolatio (Sacrifice)"
-  pr_roman.0105.desc:0 "$cdr_polytheism_high_god_name_alternate$ god of thunder and protector of the people of Rome, accept this libation of wine and may you favour my family and the people of my realm. Now pour a libation of wine in the cup and i say the words "$cdr_polytheism_high_god_name$ May you  favour my family and people of my realm with power and victory to overcome our enemies.""
+  pr_roman.0105.desc:0 "$roman_polytheism_high_god_name_alternate$ god of thunder and protector of the people of Rome, accept this libation of wine and may you favour my family and the people of my realm. Now pour a libation of wine in the cup and i say the words "$roman_polytheism_high_god_name$ May you  favour my family and people of my realm with power and victory to overcome our enemies.""
   pr_roman.0105.a:0 "Proceed"
 
   pr_roman.0106.t:0 "Litatio (Observance)"
@@ -386,7 +382,7 @@
   pr_roman_cult.0009.a:0 "start the initiation"
 
   pr_roman_cult.0010.t:0 "The Initiation"
-  pr_roman_cult.0010.desc:0 "Let's start the initiation, First we start with ritual purifications, in the meantime the priest asks for forgiveness for my sins and sprinkles water on me./nAfter that I had to wait 10 days and abstaining from meat and wine, in the evening of the tenth day I got unspecified gifts from fellow devotees of Isis before donning a clean linen robe and entering the deepest part of the temple. After some rituals and swearing the following words\nI swear I will always follow the ways of Isis and will never betray my brothers and sisters.\nThe next day I left the temple and traveled back home."
+  pr_roman_cult.0010.desc:0 "Let's start the initiation, First we start with ritual purifications, in the meantime the priest asks for forgiveness for my sins and sprinkles water on me.\nAfter that I had to wait 10 days and abstaining from meat and wine, in the evening of the tenth day I got unspecified gifts from fellow devotees of Isis before donning a clean linen robe and entering the deepest part of the temple. After some rituals and swearing the following words\nI swear I will always follow the ways of Isis and will never betray my brothers and sisters.\nThe next day I left the temple and traveled back home."
   pr_roman_cult.0010.trait:0 "Finally I'm part of the Isis cult"
   pr_roman_cult.0010.religion:0 "Finally I'm part of the Isis cult"
 
@@ -502,46 +498,19 @@
   pr_roman.0706.a:0 "Guards!"
 
   pr_roman.0707.t:0 "The Attack"
-  pr_roman.0707.desc:0 "#F By $cdr_polytheism_high_god_name$, can we all calm down!#!\n\nNow that the guards have secured the Senate and the Christians have been subdued, let us return to the matter at hand. The vote has spoken — the Altar of Victory will be returned to the Senate house, effective immediately."
+  pr_roman.0707.desc:0 "#F By $roman_polytheism_high_god_name$, can we all calm down!#!\n\nNow that the guards have secured the Senate and the Christians have been subdued, let us return to the matter at hand. The vote has spoken — the Altar of Victory will be returned to the Senate house, effective immediately."
   pr_roman.0707.a:0 "Bring back the altar"
 
-  pr_roman_culture.0002.t:0 "Adopting the Illyrian Gods"
-  pr_roman_culture.0002.desc:0 "#F The gods of Illyrium have slumbered too long in their forgotten groves and hilltop shrines.#!\n\nAfter months of research, my scholars have mapped the sacred springs where Armatus was once invoked and the peaks where Jupiter Parthinus was worshipped. The omens are favourable — it is time to rebuild the shrines and write new rituals."
-  pr_roman_culture.0002.a:0 "Let's begin"
 
 
-  pr_roman_culture.0003.t:0 "Illyrian Gods Adopted"
-  pr_roman_culture.0003.desc:0 "#F Shrines rise once more upon the ancient hills, and the people gather to learn the rites their ancestors knew.#!\n\nThe rituals are written, the priests are trained, and the word is spreading. The old gods of Illyrium walk among us again."
-  pr_roman_culture.0003.a:0 "Spread the word"
-
-  pr_roman_culture.0100.t:0 "Adopting the Gaulish Gods"
-  pr_roman_culture.0100.desc:0 "#F The spirits of the Gaulish forests and the gods of the old Belgae have not been heard in generations.#!\n\nMy advisors have spent months searching for the sacred groves where Mars Lenus and Minerva Belisama were once honoured. The signs are good — let us rebuild what time has worn away."
-  pr_roman_culture.0100.a:0 "Let's begin"
 
 
-  pr_roman_culture.0101.t:0 "Gaulish Gods Adopted"
-  pr_roman_culture.0101.desc:0 "#F The old Gaulish gods walk the forests and hills once more.#!\n\nNew shrines have been raised where the ancient ones once stood, and the people are learning the rituals anew. The bonds between gods and people are restored."
-  pr_roman_culture.0101.a:0 "Spread the word"
 
-  pr_roman.0113.t:0 "Adopting the British Gods"
-  pr_roman.0113.desc:0 "#F In Britannia, the Romans and the Britons worshipped side by side — Sulis Minerva at her sacred spring, Mars Cocidius in the dark hills.#!\n\nThose traditions have faded, but the sacred places remain. After months of research, my scholars have found the old sites. It is time to restore them and write new rituals for our people."
-  pr_roman.0113.a:0 "Let's begin"
 
-  pr_roman.0114.t:0 "British Gods Adopted"
-  pr_roman.0114.desc:0 "#F The gods of Britannia have returned to their ancient shrines.#!\n\nThe springs flow clear again, the hilltop altars are rebuilt, and the people gather to honour the old names. The rituals are written — now the word must spread."
-  pr_roman.0114.a:0 "Spread the word"
 
-  pr_roman_culture.0300.t:0 "Adopting the Germanic Gods"
-  pr_roman_culture.0300.desc:0 "#F On the frontier of the old empire, Roman and Germanic peoples blended their gods — Mars Thincsus and Hercules Magusanus walked side by side.#!\n\nMy scholars have searched the old frontier forts and temples, and the omens are clear. Let us rebuild the shrines and restore the rituals of our Romano-Germanic ancestors."
-  pr_roman_culture.0300.a:0 "Let's begin"
 
-  pr_roman_culture.0500.t:0 "Adopting the West Semitic Gods"
-  pr_roman_culture.0500.desc:0 "#F The gods of the Orient — Jupiter Dolichenus, Juno Caelestis, Eshmun — once drew worshippers from across the empire to their temples.#!\n\nMy scholars have traced the old trade routes and the forgotten sanctuaries. The omens are favourable — it is time to rebuild the shrines and write new rituals honouring these ancient powers."
-  pr_roman_culture.0500.a:0 "Let's begin"
 
-  pr_roman_culture.0400.t:0 "Adopting the Iberian Gods"
-  pr_roman_culture.0400.desc:0 "#F Hispania's old gods — Mars Neto, Lucubo, Nabia — were worshipped in caves and on hilltops long before the Romans came, and long after they left.#!\n\nAfter months of searching, my scholars have found the ancient sites and recorded the old invocations. It is time to rebuild the shrines and restore the rituals our Hispano-Roman ancestors knew."
-  pr_roman_culture.0400.a:0 "Let's begin"
+
 
   #Event text  random event Temple Sacrilege
   pr_roman.0002.t:0 "Temple Sacrilege"
@@ -591,7 +560,7 @@
   #even though this was historically true 
   #\n\nThe festival has changed over the centuries for the better, in the early republic it was a custom for the luperci to dance naked. But with the first Roman Emperor Augustus it got reformed to luperci running around in goatskin.
   pr_roman.0009.t:0 "Lupercalia"
-  pr_roman.0009.desc:0 "Today I can visit the center of the city where the yearly Lupercalia (between 13 and 15th of February) is being held. The festival in honor of $cdr_polytheism_good_god_juno$ Februata and is meant to Purify the city and promoting health and fertility.\n\nIt was also the festival where the famous Julius Ceasar refused the golden crown offered by Marcus Antonius."
+  pr_roman.0009.desc:0 "Today I can visit the center of the city where the yearly Lupercalia (between 13 and 15th of February) is being held. The festival in honor of $roman_polytheism_good_god_juno$ Februata and is meant to Purify the city and promoting health and fertility.\n\nIt was also the festival where the famous Julius Ceasar refused the golden crown offered by Marcus Antonius."
   pr_roman.0009.a:0 "Go to the Center of the city"
   pr_roman.0009.b:0 "Maybe next year"
 
@@ -612,7 +581,7 @@
 
   #Read book about Roman mythology 
   pr_roman.0013.t:0 "Story of Aenaes"
-  pr_roman.0013.desc:0 "You would say the Roman and Greek mythology is same but yet it isn't. I read About Aneas the son of $cdr_polytheism_fertility_god_name$ and how he fled to Rome as commanded by the gods with a group known as the Aenaeds, Carried with them the statues of the Lares and Penates the household gods of troy, As the group spread arrived in Italy they started to spread the statues.\n\nNext to that Aenaes was supposed to be married with Queen Dido of Carthago but after intervention of $cdr_polytheism_wealth_god_name$ on behalve of $cdr_polytheism_high_god_name$ that didn't happen. Queen Dido Cursed Rome to be always a enemy of Carthage what would end up in the first, second and third pr_punic war and even elephants in the alps."
+  pr_roman.0013.desc:0 "You would say the Roman and Greek mythology is same but yet it isn't. I read About Aneas the son of $roman_polytheism_fertility_god_name$ and how he fled to Rome as commanded by the gods with a group known as the Aenaeds, Carried with them the statues of the Lares and Penates the household gods of troy, As the group spread arrived in Italy they started to spread the statues.\n\nNext to that Aenaes was supposed to be married with Queen Dido of Carthago but after intervention of $roman_polytheism_wealth_god_name$ on behalve of $roman_polytheism_high_god_name$ that didn't happen. Queen Dido Cursed Rome to be always a enemy of Carthage what would end up in the first, second and third pr_punic war and even elephants in the alps."
   pr_roman.0013.a:0 "Funny to think that there once where elephants in the Alps"
 
   # Recruit augur event
@@ -643,8 +612,8 @@
 
   pr_roman.0016.t:0 "Good Auspice"
   pr_roman.0016.sacred_hens.desc:0 "The cage opened, what will the hens do will they stay in the cage or come out and eat?\nNot long after did a small prayer to [ROOT.Char.GetFaith.HighGodName] The hens came out of the cage and started eating. The augur watched and after a few minutes he said. "The gods have spoken they approve this war to be fought [ROOT.Char.GetFaith.WarGodName] Invicta!"\n\nNow we can go to battle the enemy in knowledge that the gods approve our actions."
-  pr_roman.0016.eagle.desc:0 "The [GetCourtPositionType('pr_court_augur_court_position').GetName()] opened the cage of the eagle and he immediately took of to the sky en circled high above us all. The augur waited a few minutes and said "As the eagle flies high above us, $cdr_polytheism_high_god_name$ Optimus Maximus certainly approves the actions of [scoped_ruler.GetTitledFirstName]."\n\nNow the gods have approved the stability in my realm is once more assured!"
-  pr_roman.0016.crows.desc:0 "The [GetCourtPositionType('pr_court_augur_court_position').GetName()] Stands next to the cage of the crows, he let's them out they immediatly fly to a tree nearby. A few minutes later the crows start to make sound, the augur listened and not much later hey said "Their sound is like a song played by $cdr_polytheism_good_god_apollo$ the gods approve the the financial state of the realm"\n\nNow the gods have approved the trade in my realm is once more assured!
+  pr_roman.0016.eagle.desc:0 "The [GetCourtPositionType('pr_court_augur_court_position').GetName()] opened the cage of the eagle and he immediately took of to the sky en circled high above us all. The augur waited a few minutes and said "As the eagle flies high above us, $roman_polytheism_high_god_name$ Optimus Maximus certainly approves the actions of [scoped_ruler.GetTitledFirstName]."\n\nNow the gods have approved the stability in my realm is once more assured!"
+  pr_roman.0016.crows.desc:0 "The [GetCourtPositionType('pr_court_augur_court_position').GetName()] Stands next to the cage of the crows, he let's them out they immediatly fly to a tree nearby. A few minutes later the crows start to make sound, the augur listened and not much later hey said "Their sound is like a song played by $roman_polytheism_good_god_apollo$ the gods approve the the financial state of the realm"\n\nNow the gods have approved the trade in my realm is once more assured!"
   pr_roman.0016.a:0 "The gods approve!"
 
   pr_roman.0017.t:0 "Augur Accepts Bribe"
@@ -678,14 +647,14 @@
 
   pr_roman.0023.t:0 "The Lararium Shop"
   pr_roman.0023.desc:0 "Today I going to a local lararium shop they sell lots of statues of the gods but also things like incense, should I buy a new statue ?"
-  pr_roman.0023.jupiter:0 "$cdr_polytheism_high_god_name$"
-  pr_roman.0023.juno:0 "$cdr_polytheism_good_god_juno$"
-  pr_roman.0023.mars:0 "$cdr_polytheism_war_god_name$"
-  pr_roman.0023.lares:0 "$cdr_polytheism_wealth_god_name$"
-  pr_roman.0023.venus:0 "$cdr_polytheism_good_god_Venus$"
-  pr_roman.0023.mercurius:0 "$cdr_polytheism_wealth_god_name$"
-  pr_roman.0023.minerva:0 "$cdr_polytheism_knowledge_god_name$"
-  pr_roman.0023.apollo:0 "$cdr_polytheism_good_god_apollo$"
+  pr_roman.0023.jupiter:0 "$roman_polytheism_high_god_name$"
+  pr_roman.0023.juno:0 "$roman_polytheism_good_god_juno$"
+  pr_roman.0023.mars:0 "$roman_polytheism_war_god_name$"
+  pr_roman.0023.lares:0 "$roman_polytheism_wealth_god_name$"
+  pr_roman.0023.venus:0 "$roman_polytheism_good_god_Venus$"
+  pr_roman.0023.mercurius:0 "$roman_polytheism_wealth_god_name$"
+  pr_roman.0023.minerva:0 "$roman_polytheism_knowledge_god_name$"
+  pr_roman.0023.apollo:0 "$roman_polytheism_good_god_apollo$"
   pr_roman.0023.cancel:0 "Maybe not now"
 
   pr_roman_cult.0025.t:0 "The Call to Advance"
@@ -739,10 +708,10 @@
 
   pr_roman.0030.t:0 "The new Sybelline Books"
   pr_roman.0030.desc:0 "While sitting on your throne, your [ROOT.Char.GetFaith.ReligiousHeadName] suddenly rushes into the hall shouting "Good news, everyone! The Oracle in Graecia had deemed the new Sibylline Books finished!"\n\n"Where would we store it?" You ask after the celebratory clutter ends. "I thought you might have had an idea about that, my liege...""
-  pr_roman.0030.jupiter:0 "The Temple of $cdr_polytheism_high_god_name$!"
-  pr_roman.0030.mars:0 "The Temple of $cdr_polytheism_war_god_name$!"
-  pr_roman.0030.venus:0 "The Temple of $cdr_polytheism_fertility_god_name$!"
-  pr_roman.0030.minerva:0 "The Temple of $cdr_polytheism_knowledge_god_name$!"
+  pr_roman.0030.jupiter:0 "The Temple of $roman_polytheism_high_god_name$!"
+  pr_roman.0030.mars:0 "The Temple of $roman_polytheism_war_god_name$!"
+  pr_roman.0030.venus:0 "The Temple of $roman_polytheism_fertility_god_name$!"
+  pr_roman.0030.minerva:0 "The Temple of $roman_polytheism_knowledge_god_name$!"
 
   pr_roman.0031.t:0 ""
   pr_roman.0031.desc:0 "Even though Emperor Julians Rule was short, he still left a big mark on the fourth century. He got a few nicknames in the time he ruled now it's time to choose what name you to give him."
@@ -786,7 +755,7 @@
   pr_roman.0039.a: "Open the Pantheon"
 
   pr_roman.0040.t: "Reopening of Pantheon"
-  pr_roman.0040.desc: "Centuries have gone by, with ulitmatly giving away the pantheon by Emperor  to the Pope. All christian signs and statues are removed and replaced by marble statues of the gods./n/nFrom now on the proper gods will be worshiped here again !"
+  pr_roman.0040.desc: "Centuries have gone by, with ulitmatly giving away the pantheon by Emperor  to the Pope. All christian signs and statues are removed and replaced by marble statues of the gods.\n\nFrom now on the proper gods will be worshiped here again !"
   pr_roman.0040.a: "Open the Pantheon"
 
   pr_roman.0041.t:0 "A Sacred Duty"

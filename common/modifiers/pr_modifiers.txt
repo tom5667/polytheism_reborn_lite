@@ -2,7 +2,7 @@
 held_ritual_for_jupiter_incense = {
 	icon = jupiter_positive
 	monthly_piety = 0.05
-	prestige = 0.15
+	monthly_prestige = 0.15
 	religious_head_opinion = 4
 	same_faith_opinion = 1
 }
@@ -10,7 +10,7 @@ held_ritual_for_jupiter_wine = {
 	icon = jupiter_positive
 	monthly_piety = 0.1
 	diplomacy = 1
-	prestige = 0.18
+	monthly_prestige = 0.18
 	religious_head_opinion = 8
 	same_faith_opinion = 2
 }
@@ -18,7 +18,7 @@ held_ritual_for_jupiter_fruit = {
 	icon = jupiter_positive
 	monthly_piety = 0.2
 	diplomacy = 1
-	prestige = 0.25
+	monthly_prestige = 0.25
 	religious_head_opinion = 10
 	same_faith_opinion = 3
 }
@@ -88,7 +88,7 @@ held_ritual_for_venus_roses = {
 
 held_ritual_for_house_lares = {
 	icon = magic_positive
-	family_opinion = 20
+	close_relative_opinion = 20
 	diplomacy = 1
 }
 
@@ -148,8 +148,8 @@ held_ritual_for_apollo_honey = {
 
 burning_flame_of_vesta ={
 	icon = outdoors_positive
-	prestige = 0.1
-	piety = 0.1
+	monthly_prestige = 0.1
+	monthly_piety = 0.1
 	religious_head_opinion = 5
 	same_faith_opinion = 5
 	christianity_religion_opinion = -5
@@ -163,7 +163,7 @@ bacchus_vision_cooldown = {
 bacchus_divine_insight = {
 	icon = magic_positive
 	fertility = 0.5
-	piety = 0.2
+	monthly_piety = 0.2
 }
 
 #Hellenismos
@@ -173,8 +173,8 @@ gaelic_an_dagda = {
 	icon = an_dagda_positive
 	prowess = 1
 	fertility = 0.1
-	prestige = 0.3
-	piety = 0.3
+	monthly_prestige = 0.3
+	monthly_piety = 0.3
 	same_faith_opinion = 5
 	christianity_religion_opinion = -5
 	islam_religion_opinion = -5
@@ -195,7 +195,7 @@ gaelic_brigid = {
 	same_faith_opinion = 5
 	monthly_piety = 0.5
 	fertility = 0.2
-	opinion_of_spouse = 5
+	spouse_opinion = 5
 	christianity_religion_opinion = -10
 	islam_religion_opinion  = -10
 }
@@ -431,9 +431,9 @@ lusitanian_arancio = {
 }
 
 #Anglo Saxon Polytheism
-anglo_saxon_woden ={ 
-	icon = learning_positive
-	learning = 2
+anglo_saxon_woden ={ # high god of the menu: diplomacy (#153)
+	icon = magic_positive
+	diplomacy = 2
 	same_faith_opinion = 5
 	monthly_prestige = 0.3
 	monthly_piety = 0.5
@@ -477,9 +477,9 @@ anglo_saxon_seaxneat = {
 	islam_religion_opinion  = -5
 }
 #german
-german_wotan = {
-	icon = learning_positive
-	learning = 2
+german_wotan = { # high god of the menu: diplomacy (#153)
+	icon = magic_positive
+	diplomacy = 2
 	same_faith_opinion = 5
 	monthly_prestige = 0.3
 	monthly_piety = 0.5
@@ -658,23 +658,23 @@ dacian_derzelas = {
 #Dacian random event modifiers 
 offering_to_ursitoare_good = {
 	icon = social_positive
-	monthly_county_control_change_factor = 0.1
+	monthly_county_control_growth_factor = 0.1
 	development_growth_factor = 0.1
 }
 
 offering_to_ursitoare_bad = {
 	icon = social_negative
-	monthly_county_control_change_factor = -0.1
+	monthly_county_control_growth_factor = -0.1
 	development_growth_factor = -0.1
 }
 favoured_by_gebeleizis = {
 	icon = jupiter_positive
-	monthly_county_control_change_add = 0.2
+	monthly_county_control_growth_add = 0.2
 	direct_vassal_opinion = 15
 }
 unfavoured_by_gebeleizis = {
 	icon = jupiter_negative
-	monthly_county_control_change_add = -0.2
+	monthly_county_control_growth_add = -0.2
 	direct_vassal_opinion = -15
 }
 
@@ -688,7 +688,7 @@ offering_to_zalmoxis_good = {
 	icon = martial_positive
 	levy_reinforcement_rate = 0.1
 	siege_morale_loss = 0.1
-	monthly_county_control_change_add = 0.2
+	monthly_county_control_growth_add = 0.2
 	army_damage_mult = 0.05
 	army_toughness_mult = 0.05
 	monthly_prestige = 0.05
@@ -699,7 +699,7 @@ offering_to_zalmoxis_bad = {
 	icon = martial_negative
 	levy_reinforcement_rate = -0.1
 	siege_morale_loss = -0.1
-	monthly_county_control_change_add = -0.2
+	monthly_county_control_growth_add = -0.2
 	army_damage_mult = -0.05
 	army_toughness_mult = -0.05
 	monthly_prestige = -0.05
@@ -1288,7 +1288,7 @@ cultus_orientis_juno_caelestis = {
 	icon = martial_positive
 	same_faith_opinion = 5
 	monthly_piety = 0.5
-	amartial = 1
+	martial = 1
 	fertility = 0.2
 	christianity_religion_opinion = -10
 	islam_religion_opinion  = -10
@@ -1350,7 +1350,7 @@ etruscan_menrva = {
 	islam_religion_opinion  = -5
 }
 
-etruscan_maris = {
+etruscan_laran = { # Laran, the Etruscan war god (was etruscan_maris; Maris was not the war god)
 	icon = martial_positive
 	same_faith_opinion = 5
 	monthly_prestige = 0.3
@@ -1361,11 +1361,11 @@ etruscan_maris = {
 }
 
 #Mycenaean 
-mycenaean_poseidon = {
+mycenaean_poseidon = { # high god of the menu: diplomacy, keeps the sea bonus (#153)
 	icon = magic_positive
 	embarkation_cost_mult = -0.5
 	naval_movement_speed_mult = 0.25
-	stewardship = 1
+	diplomacy = 2
 	
 	same_faith_opinion = 5
 	monthly_prestige = 0.3
@@ -1490,14 +1490,13 @@ illyrian_anzotica = {
 
 illyrian_bindus = {
 	icon = magic_positive
-	embarkation_cost_mult = -0.5
-	naval_movement_speed_mult = 0.25
-	stewardship = 1
+	monthly_piety = 0.5
 	same_faith_opinion = 5
-	monthly_prestige = 0.3
+	health = 0.5
+	negate_health_penalty_add = 0.25
 	christianity_religion_opinion = -5
 	islam_religion_opinion  = -5
-}
+} # health: Bindus, guardian of springs (#153)
 
 illyrian_tadenus = {
 	icon = magic_positive
@@ -1521,8 +1520,8 @@ champion_of_medaurus ={
 #Returned altar of victory
 returned_altar_of_victory = {
 	icon = outdoors_positive
-	prestige = 0.1
-	piety = 0.1
+	monthly_prestige = 0.1
+	monthly_piety = 0.1
 	religious_head_opinion = 5
 	same_faith_opinion = 5
 	direct_vassal_opinion = 10
@@ -1693,7 +1692,7 @@ graeco_egyptian_hermes_trismegistus ={
 graeco_egyptian_harpocrates = {
 	icon = intrigue_positive
 	intrigue = 2
-	hostile_scheme_resistance_add = 5
+	enemy_hostile_scheme_phase_duration_add = miniscule_scheme_phase_duration_malus_value # was hostile_scheme_resistance_add = 5
 	scheme_success_chance = 5
 	christianity_religion_opinion = -5
 	islam_religion_opinion = -5
@@ -1713,7 +1712,7 @@ graeco_egyptian_alexander_megalos = {
 
 #research ancient religion modifiers
 knowledge_of_ancient_religion = {
-	prestige = 0.2
+	monthly_prestige = 0.2
 	learning = 3
 }
 
@@ -1754,12 +1753,12 @@ lemuria_bad = {
 }
 favoured_by_ceres ={
 	icon = outdoors_positive
-	monthly_county_control_change_factor = 0.1
+	monthly_county_control_growth_factor = 0.1
 	development_growth_factor = 0.1
 }
 unfavoured_by_ceres = {
 	icon = outdoors_negative
-	monthly_county_control_change_factor = -0.1
+	monthly_county_control_growth_factor = -0.1
 	development_growth_factor = -0.1
 }
 ludi_plebii = {
@@ -1777,12 +1776,12 @@ repaired_temple = {
 
 favoured_by_jupiter = {
 	icon = jupiter_positive
-	monthly_county_control_change_add = 0.2
+	monthly_county_control_growth_add = 0.2
 	direct_vassal_opinion = 15
 }
 unfavoured_by_jupiter = {
 	icon = jupiter_negative
-	monthly_county_control_change_add = -0.2
+	monthly_county_control_growth_add = -0.2
 	direct_vassal_opinion = -15
 }
 
@@ -1850,22 +1849,22 @@ germanic_vogtei_godly_presence = {
 #Hellenic random event modifiers 
 favoured_by_zeus = {
 	icon = jupiter_positive
-	monthly_county_control_change_add = 0.2
+	monthly_county_control_growth_add = 0.2
 	direct_vassal_opinion = 15
 }
 unfavoured_by_zeus = {
 	icon = jupiter_negative
-	monthly_county_control_change_add = -0.2
+	monthly_county_control_growth_add = -0.2
 	direct_vassal_opinion = -15
 }
 favoured_by_demeter ={
 	icon = outdoors_positive
-	monthly_county_control_change_factor = 0.1
+	monthly_county_control_growth_factor = 0.1
 	development_growth_factor = 0.1
 }
 unfavoured_by_demeter = {
 	icon = outdoors_negative
-	monthly_county_control_change_factor = -0.1
+	monthly_county_control_growth_factor = -0.1
 	development_growth_factor = -0.1
 }
 
@@ -2029,19 +2028,19 @@ druidic_knowledge = {
 offering_to_baal_hammon = {
 	icon = magic_positive
 	monthly_piety = 0.05
-	prestige = 0.15
+	monthly_prestige = 0.15
 	religious_head_opinion = 4
 	same_faith_opinion = 1
 }
 
 favoured_by_tanit = {
 	icon = magic_positive
-	monthly_county_control_change_add = 0.2
+	monthly_county_control_growth_add = 0.2
 	direct_vassal_opinion = 15
 }
 unfavoured_by_tanit = {
 	icon = magic_negative
-	monthly_county_control_change_add = -0.2
+	monthly_county_control_growth_add = -0.2
 	direct_vassal_opinion = -15
 }
 
@@ -2064,8 +2063,8 @@ cybele_ecstatic_revelry = {
 eleusinian_vision = {
 	icon = learning_positive
 	learning = 2
-	piety_gain_factor = 0.1
-	stress_loss = 10
+	monthly_piety_gain_mult = 0.1
+	stress_loss_mult = 0.1
 
 }
 
@@ -2074,13 +2073,13 @@ bacchus_divine_madness = {
 	diplomacy = 2
 	intrigue = 1
 	stewardship = -2
-	stress_loss = 15
+	stress_loss_mult = 0.15
 }
 
 serapis_ferryman_token = {
 	icon = magic_positive
-	piety_gain_factor = 0.05
-	stress_loss = 10
+	monthly_piety_gain_mult = 0.05
+	stress_loss_mult = 0.1
 	learning = 1
 }
 
@@ -2110,4 +2109,272 @@ pr_latin_revival_diplomatic = {
 	icon = diplomacy_positive
 	diplomacy = 1
 	learning = 1
+}
+
+# New patron modifiers (#153, 2026-10-10): split from shared modifiers so each menu shows its own god.
+latvian_saule = {
+	icon = magic_positive
+	monthly_piety = 0.5
+	same_faith_opinion = 5
+	health = 0.5
+	negate_health_penalty_add = 0.25
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+}
+graeco_egyptian_ares = {
+	icon = martial_positive
+	same_faith_opinion = 5
+	monthly_prestige = 0.3
+	prowess = 1
+	martial = 1
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+}
+assyrian_mullissu = {
+	icon = fertility_positive
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	attraction_opinion = 20
+	fertility = 0.2
+	christianity_religion_opinion = -10
+	islam_religion_opinion  = -10
+}
+sumerian_ezina = {
+	icon = magic_positive
+	same_faith_opinion = 5 
+	monthly_piety = 0.5
+	stewardship = 1
+	monthly_income_mult = 0.2
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+}
+illyrian_redon = {
+	icon = magic_positive
+	embarkation_cost_mult = -0.5
+	naval_movement_speed_mult = 0.25
+	stewardship = 1
+	same_faith_opinion = 5
+	monthly_prestige = 0.3
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+}
+
+# =============================================
+# Patron gods converted from traits (2026-10-10). Same keys and stats as the old traits in
+# common/traits/cdr_traits.txt and egyptian_traits.txt, which stay defined for old saves;
+# PR_convert_patron_traits_yearly_pulse turns a held trait into this modifier.
+# =============================================
+pr_cdr_iupiter = {
+	icon = pr_patron_iupiter
+	same_faith_opinion = 10
+	diplomacy = 2
+	monthly_prestige = 0.2
+	monthly_piety = 0.3
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_cdr_iuno = {
+	icon = pr_patron_iuno
+	same_faith_opinion = 5
+	monthly_prestige = 0.25
+	spouse_opinion = 20
+	monthly_piety = 0.5
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_cdr_mars = {
+	icon = pr_patron_mars
+	same_faith_opinion = 5
+	monthly_prestige = 0.3
+	prowess = 1
+	martial = 1
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_cdr_venus = {
+	icon = pr_patron_venus
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	attraction_opinion = 20
+	fertility = 0.2
+	christianity_religion_opinion = -10
+	islam_religion_opinion = -10
+}
+pr_cdr_lares = {
+	icon = pr_patron_lares
+	same_faith_opinion = 5
+	monthly_prestige = 0.3
+	monthly_piety = 0.5
+	close_relative_opinion = 10
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_cdr_mercurius = {
+	icon = pr_patron_mercurius
+	same_faith_opinion = 5
+	monthly_income = 0.1
+	monthly_piety = 0.5
+	stewardship = 2
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_cdr_minerva = {
+	icon = pr_patron_minerva
+	learning = 2
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_cdr_apollo = {
+	icon = pr_patron_apollo
+	negate_health_penalty_add = 0.6
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_cdr_ceres = {
+	icon = pr_patron_ceres
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	stewardship = 2
+	fertility = 0.1
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_mithras_mithras = {
+	icon = pr_patron_mithras_mithras
+	same_faith_opinion = 10
+	monthly_prestige = 0.2
+	monthly_piety = 0.3
+	martial = 2
+	prowess = 2
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_mithras_arimanius = {
+	icon = pr_patron_mithras_arimanius
+	same_faith_opinion = 10
+	monthly_prestige = 0.2
+	monthly_piety = 0.3
+	martial = 2
+	dread_baseline_add = 20
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_mithras_oromazes = {
+	icon = pr_patron_mithras_oromazes
+	same_faith_opinion = 10
+	monthly_prestige = 0.2
+	monthly_piety = 0.3
+	learning = 2
+	stewardship = 2
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_hellenic_zeus = {
+	icon = pr_patron_iupiter
+	same_faith_opinion = 10
+	monthly_prestige = 0.2
+	monthly_piety = 0.3
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_hellenic_hera = {
+	icon = pr_patron_iuno
+	same_faith_opinion = 5
+	monthly_prestige = 0.3
+	monthly_piety = 0.5
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_hellenic_ares = {
+	icon = pr_patron_mars
+	same_faith_opinion = 5
+	monthly_prestige = 0.3
+	prowess = 1
+	martial = 1
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_hellenic_aphrodite = {
+	icon = pr_patron_venus
+	same_faith_opinion = 5
+	monthly_prestige = 0.3
+	monthly_piety = 0.5
+	fertility = 0.2
+	christianity_religion_opinion = -10
+	islam_religion_opinion = -10
+}
+pr_hellenic_hermes = {
+	icon = pr_patron_mercurius
+	same_faith_opinion = 5
+	monthly_prestige = 0.3
+	monthly_piety = 0.5
+	stewardship = 1
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_hellenic_athena = {
+	icon = pr_patron_minerva
+	learning = 2
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_hellenic_demeter = {
+	icon = pr_patron_ceres
+	same_faith_opinion = 5
+	monthly_piety = 0.5
+	stewardship = 2
+	fertility = 0.1
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_kemetic_amun_ra = {
+	icon = pr_patron_kemetic_amun_ra
+	same_faith_opinion = 10
+	monthly_prestige = 0.2
+	monthly_piety = 0.3
+	diplomacy = 2
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_kemetic_ra = {
+	icon = pr_patron_kemetic_ra
+	same_faith_opinion = 10
+	monthly_prestige = 0.2
+	monthly_piety = 0.3
+	martial = 1
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_kemetic_isis = {
+	icon = pr_patron_kemetic_isis
+	same_faith_opinion = 5
+	monthly_prestige = 0.3
+	monthly_piety = 0.5
+	learning = 1
+	health = 0.5
+	negate_health_penalty_add = 0.25
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_kemetic_montu = {
+	icon = pr_patron_kemetic_montu
+	same_faith_opinion = 5
+	monthly_prestige = 0.3
+	monthly_piety = 0.2
+	martial = 2
+	christianity_religion_opinion = -5
+	islam_religion_opinion = -5
+}
+pr_kemetic_hathor = {
+	icon = pr_patron_kemetic_hathor
+	same_faith_opinion = 5
+	monthly_prestige = 0.3
+	monthly_piety = 0.5
+	fertility = 0.2
 }

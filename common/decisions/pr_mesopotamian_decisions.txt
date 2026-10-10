@@ -10,15 +10,15 @@ pr_mesopotamian_embrace_babylonian_culture_decision = {
         reference = "gfx/interface/illustrations/decisions/pr_mesopotamian.dds"
     }
     desc = pr_mesopotamian_embrace_babylonian_culture_decision_desc
-    decision_tooltip = pr_mesopotamian_embrace_babylonian_culture_decision_tooltip
+    selection_tooltip = pr_mesopotamian_embrace_babylonian_culture_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         is_ai = no
         is_landed = yes
         OR = {
-            faith = faith:babylonian_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_babylonian_patron_god_active }
+            rite = rite:babylonian_rites
+            rite = { rite_has_parameter = special_doctrine_babylonian_patron_god_active }
         }
         culture = { has_cultural_pillar = heritage_pr_mesopotamian }
         NOT = {
@@ -74,15 +74,15 @@ pr_mesopotamian_embrace_assyrian_culture_decision = {
         reference = "gfx/interface/illustrations/decisions/pr_mesopotamian.dds"
     }
     desc = pr_mesopotamian_embrace_assyrian_culture_decision_desc
-    decision_tooltip = pr_mesopotamian_embrace_assyrian_culture_decision_tooltip
+    selection_tooltip = pr_mesopotamian_embrace_assyrian_culture_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         is_ai = no
         is_landed = yes
         OR = {
-            faith = faith:assyrian_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_assyrian_patron_god_active }
+            rite = rite:assyrian_rites
+            rite = { rite_has_parameter = special_doctrine_assyrian_patron_god_active }
         }
         culture = { has_cultural_pillar = heritage_pr_mesopotamian }
         NOT = {
@@ -138,15 +138,15 @@ pr_mesopotamian_embrace_sumerian_culture_decision = {
         reference = "gfx/interface/illustrations/decisions/pr_mesopotamian.dds"
     }
     desc = pr_mesopotamian_embrace_sumerian_culture_decision_desc
-    decision_tooltip = pr_mesopotamian_embrace_sumerian_culture_decision_tooltip
+    selection_tooltip = pr_mesopotamian_embrace_sumerian_culture_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         is_ai = no
         is_landed = yes
         OR = {
-            faith = faith:sumerian_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_sumerian_patron_god_active }
+            rite = rite:sumerian_rites
+            rite = { rite_has_parameter = special_doctrine_sumerian_patron_god_active }
         }
         culture = { has_cultural_pillar = heritage_pr_mesopotamian }
         NOT = {
@@ -202,7 +202,7 @@ pr_mesopotamian_kingdom_of_babylon_decision = {
         reference = "gfx/interface/illustrations/decisions/pr_mesopotamian.dds"
     }
     desc = pr_mesopotamian_kingdom_of_babylon_decision_desc
-    decision_tooltip = pr_mesopotamian_kingdom_of_babylon_decision_tooltip
+    selection_tooltip = pr_mesopotamian_kingdom_of_babylon_decision_tooltip
     decision_group_type = major
 
     ai_check_interval = 4
@@ -300,7 +300,7 @@ pr_mesopotamian_kingdom_of_sumer_decision = {
         reference = "gfx/interface/illustrations/decisions/pr_mesopotamian.dds"
     }
     desc = pr_mesopotamian_kingdom_of_sumer_decision_desc
-    decision_tooltip = pr_mesopotamian_kingdom_of_sumer_decision_tooltip
+    selection_tooltip = pr_mesopotamian_kingdom_of_sumer_decision_tooltip
     decision_group_type = major
 
     ai_check_interval = 4
@@ -391,7 +391,7 @@ pr_mesopotamian_kingdom_of_assyria_decision = {
         reference = "gfx/interface/illustrations/decisions/pr_mesopotamian.dds"
     }
     desc = pr_mesopotamian_kingdom_of_assyria_decision_desc
-    decision_tooltip = pr_mesopotamian_kingdom_of_assyria_decision_tooltip
+    selection_tooltip = pr_mesopotamian_kingdom_of_assyria_decision_tooltip
     decision_group_type = major
 
     ai_check_interval = 4
@@ -488,7 +488,7 @@ pr_mesopotamian_restore_empire_decision = {
         reference = "gfx/interface/illustrations/decisions/pr_mesopotamian.dds"
     }
     desc = pr_mesopotamian_restore_empire_decision_desc
-    decision_tooltip = pr_mesopotamian_restore_empire_decision_tooltip
+    selection_tooltip = pr_mesopotamian_restore_empire_decision_tooltip
     decision_group_type = major
 
     ai_check_interval = 4
@@ -583,7 +583,7 @@ pr_mesopotamian_open_first_brewery_decision = {
         reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
     }
     desc = pr_mesopotamian_open_first_brewery_decision_desc
-    decision_tooltip = pr_mesopotamian_open_first_brewery_decision_tooltip
+    selection_tooltip = pr_mesopotamian_open_first_brewery_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
@@ -626,3 +626,67 @@ pr_mesopotamian_open_first_brewery_decision = {
     }
 }
 
+# --- Choose Main Deity (Mesopotamian) Decision (#153) ---
+# The three menus existed without a decision. Babylonian -> .0100, Assyrian -> .0101, Sumerian -> .0102.
+pr_mesopotamian_choose_main_deity_decision = {
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
+    }
+    desc = pr_mesopotamian_choose_main_deity_decision_desc
+    selection_tooltip = pr_mesopotamian_choose_main_deity_decision_tooltip
+    decision_group_type = polytheism
+
+    is_shown = {
+        has_fp1_dlc_trigger = yes
+        religion = religion:mesopotamian_religion
+    }
+
+    is_valid = {
+    }
+
+    is_valid_showing_failures_only = {
+        piety >= 0
+    }
+
+    cooldown = { years = 2 }
+
+    effect = {
+        custom_tooltip = pr_mesopotamian_choose_main_deity_decision_tt
+        if = {
+            limit = { rite = rite:assyrian_rites }
+            trigger_event = pr_mesopotamian.0101
+        }
+        else_if = {
+            limit = { rite = rite:sumerian_rites }
+            trigger_event = pr_mesopotamian.0102
+        }
+        else = {
+            trigger_event = pr_mesopotamian.0100
+        }
+    }
+
+    ai_check_interval = 96
+
+    ai_potential = {
+        piety >= minor_piety_value
+        NOR = {
+            has_character_modifier = babylonian_marduk
+            has_character_modifier = babylonian_nergal
+            has_character_modifier = mesopotamian_ishtar
+            has_character_modifier = assyrian_mullissu
+            has_character_modifier = mesopotamian_nabu
+            has_character_modifier = mesopotamian_ninhegal
+            has_character_modifier = sumerian_ezina
+            has_character_modifier = assyrian_ashur
+            has_character_modifier = assyrian_ninkarrak
+            has_character_modifier = sumerian_enlil
+            has_character_modifier = sumerian_inanna
+            has_character_modifier = sumerian_nisaba
+            has_character_modifier = sumerian_ninurta
+        }
+    }
+
+    ai_will_do = {
+        base = 100
+    }
+}

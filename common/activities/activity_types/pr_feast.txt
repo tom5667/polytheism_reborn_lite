@@ -11,7 +11,7 @@ pr_activity_saturnalia = {
 			min = 12.1
 			max = 12.23
 		}
-		religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		is_landed = yes
 		trigger_if = {
 			limit = {
@@ -42,7 +42,6 @@ pr_activity_saturnalia = {
 	# PARAMETERS
 	###################
 
-	is_grand_activity = no
 	is_single_location = yes
 
 	province_filter = domain
@@ -2701,7 +2700,7 @@ pr_activity_saturnalia = {
 						limit = {
 							any_scheme = {
 								scheme_type = befriend
-								scheme_target = {
+								scheme_target_character = {
 									exists = involved_activity
 									involved_activity = scope:activity
 								}
@@ -2710,12 +2709,12 @@ pr_activity_saturnalia = {
 						random_scheme = {
 							limit = {
 								scheme_type = befriend
-								scheme_target = {
+								scheme_target_character = {
 									exists = involved_activity
 									involved_activity = scope:activity
 								}
 							}
-							scheme_target = {
+							scheme_target_character = {
 								save_scope_as = potential_friend
 								scope:activity = {
 									set_variable = {
@@ -2998,7 +2997,6 @@ pr_activity_winter_solstice = {
 	# PARAMETERS
 	###################
 
-	is_grand_activity = no
 	is_single_location = yes
 
 	province_filter = domain
@@ -5656,7 +5654,7 @@ pr_activity_winter_solstice = {
 						limit = {
 							any_scheme = {
 								scheme_type = befriend
-								scheme_target = {
+								scheme_target_character = {
 									exists = involved_activity
 									involved_activity = scope:activity
 								}
@@ -5665,12 +5663,12 @@ pr_activity_winter_solstice = {
 						random_scheme = {
 							limit = {
 								scheme_type = befriend
-								scheme_target = {
+								scheme_target_character = {
 									exists = involved_activity
 									involved_activity = scope:activity
 								}
 							}
-							scheme_target = {
+							scheme_target_character = {
 								save_scope_as = potential_friend
 								scope:activity = {
 									set_variable = {
@@ -5946,7 +5944,6 @@ pr_activity_summer_solstice = {
 	# PARAMETERS
 	###################
 
-	is_grand_activity = no
 	is_single_location = yes
 
 	province_filter = domain
@@ -8604,7 +8601,7 @@ pr_activity_summer_solstice = {
 						limit = {
 							any_scheme = {
 								scheme_type = befriend
-								scheme_target = {
+								scheme_target_character = {
 									exists = involved_activity
 									involved_activity = scope:activity
 								}
@@ -8613,12 +8610,12 @@ pr_activity_summer_solstice = {
 						random_scheme = {
 							limit = {
 								scheme_type = befriend
-								scheme_target = {
+								scheme_target_character = {
 									exists = involved_activity
 									involved_activity = scope:activity
 								}
 							}
-							scheme_target = {
+							scheme_target_character = {
 								save_scope_as = potential_friend
 								scope:activity = {
 									set_variable = {
@@ -8898,7 +8895,6 @@ pr_activity_winter_solstice_germanic = {
 	# PARAMETERS
 	###################
 
-	is_grand_activity = no
 	is_single_location = yes
 
 	province_filter = domain
@@ -11556,7 +11552,7 @@ pr_activity_winter_solstice_germanic = {
 						limit = {
 							any_scheme = {
 								scheme_type = befriend
-								scheme_target = {
+								scheme_target_character = {
 									exists = involved_activity
 									involved_activity = scope:activity
 								}
@@ -11565,12 +11561,12 @@ pr_activity_winter_solstice_germanic = {
 						random_scheme = {
 							limit = {
 								scheme_type = befriend
-								scheme_target = {
+								scheme_target_character = {
 									exists = involved_activity
 									involved_activity = scope:activity
 								}
 							}
-							scheme_target = {
+							scheme_target_character = {
 								save_scope_as = potential_friend
 								scope:activity = {
 									set_variable = {
@@ -11846,7 +11842,6 @@ pr_activity_summer_solstice_germanic = {
 	# PARAMETERS
 	###################
 
-	is_grand_activity = no
 	is_single_location = yes
 
 	province_filter = domain
@@ -14504,7 +14499,7 @@ pr_activity_summer_solstice_germanic = {
 						limit = {
 							any_scheme = {
 								scheme_type = befriend
-								scheme_target = {
+								scheme_target_character = {
 									exists = involved_activity
 									involved_activity = scope:activity
 								}
@@ -14513,12 +14508,12 @@ pr_activity_summer_solstice_germanic = {
 						random_scheme = {
 							limit = {
 								scheme_type = befriend
-								scheme_target = {
+								scheme_target_character = {
 									exists = involved_activity
 									involved_activity = scope:activity
 								}
 							}
-							scheme_target = {
+							scheme_target_character = {
 								save_scope_as = potential_friend
 								scope:activity = {
 									set_variable = {

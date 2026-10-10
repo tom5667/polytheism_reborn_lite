@@ -6,7 +6,7 @@ l_german:
 
   # --- Hauptgottheit wählen ---
   pr_caucasus_choose_main_deity_decision:0 "Wähle Hauptgottheit"
-  pr_caucasus_choose_main_deity_decision_desc:0 "#F Die Götter des kaukasischen Pantheons wachen über mich, jeder bietet seinen einzigartigen Segen.#!/n\nIch muss entscheiden, welche Gottheit ich als meinen primären Schutzpatron ehren werde, der meine Herrschaft leitet und meine Hingabe empfängt."
+  pr_caucasus_choose_main_deity_decision_desc:0 "#F Die Götter des kaukasischen Pantheons wachen über mich, jeder bietet seinen einzigartigen Segen.#!\n\nIch muss entscheiden, welche Gottheit ich als meinen primären Schutzpatron ehren werde, der meine Herrschaft leitet und meine Hingabe empfängt."
   pr_caucasus_choose_main_deity_decision_tooltip:0 "Wähle eine Hauptgottheit aus dem kaukasischen Pantheon, um göttlichen Segen zu erhalten"
   pr_caucasus_choose_main_deity_decision_confirm:0 "Wähle Hauptgottheit!"
   pr_caucasus_choose_main_deity_decision_tt:0 "Wähle eine Hauptgottheit, um göttlichen Segen zu erhalten"

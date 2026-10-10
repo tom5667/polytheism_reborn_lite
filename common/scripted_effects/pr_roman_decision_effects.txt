@@ -1,15 +1,4 @@
 ﻿# Roman Decision Scripted Effects
-pr_romano_british_sr_notify_players_effect = {
-	every_player = {
-		limit = {
-			Not = {this = root}
-			capital_province = {
-			geographical_region = world_europe_south_east
-			}
-		}
-		trigger_event = pr_roman.0117
-	}
-}
  select_or_create_cult_leader_mithras_effect = {
 	root = {
 		every_vassal_or_below = {
@@ -17,7 +6,7 @@ pr_romano_british_sr_notify_players_effect = {
 				AND = {
 					has_trait = mithras_cult
 					has_trait = pr_pater_mithras
-					religion = religion:roman_religion
+					pr_is_cultus_deorum_trigger = yes
 				}
 			}
 		}
@@ -29,7 +18,7 @@ pr_romano_british_sr_notify_players_effect = {
 				AND = {
 					has_trait = mithras_cult
 					has_trait = pr_pater_mithras
-					religion = religion:roman_religion
+					pr_is_cultus_deorum_trigger = yes
 				}
 			}
 			save_scope_as = cult_leader_mithras
@@ -41,7 +30,7 @@ pr_romano_british_sr_notify_players_effect = {
 				AND = {
 					has_trait = mithras_cult
 					has_trait = pr_pater_mithras
-					religion = religion:roman_religion
+					pr_is_cultus_deorum_trigger = yes
 				}
 			}
 			save_scope_as = cult_leader_mithras
@@ -53,7 +42,7 @@ pr_romano_british_sr_notify_players_effect = {
 				AND = {
 					has_trait = mithras_cult
 					has_trait = pr_pater_mithras
-					religion = religion:roman_religion
+					pr_is_cultus_deorum_trigger = yes
 				}
 			}
 			save_scope_as = cult_leader_mithras
@@ -68,7 +57,7 @@ pr_romano_british_sr_notify_players_effect = {
 					has_trait = isis_cult
 					has_trait = hierophant_isis
 					OR = {
-						religion = religion:roman_religion
+						pr_is_cultus_deorum_trigger = yes
 						religion = religion:hellenism_religion
 						faith = faith:kemetic_polytheism
 					}
@@ -84,7 +73,7 @@ pr_romano_british_sr_notify_players_effect = {
 					has_trait = isis_cult
 					has_trait = hierophant_isis
 					OR = {
-						religion = religion:roman_religion
+						pr_is_cultus_deorum_trigger = yes
 						religion = religion:hellenism_religion
 						faith = faith:kemetic_polytheism
 					}
@@ -100,7 +89,7 @@ pr_romano_british_sr_notify_players_effect = {
 					has_trait = isis_cult
 					has_trait = hierophant_isis
 					OR = {
-						religion = religion:roman_religion
+						pr_is_cultus_deorum_trigger = yes
 						religion = religion:hellenism_religion
 						faith = faith:kemetic_polytheism
 					}
@@ -116,7 +105,7 @@ pr_romano_british_sr_notify_players_effect = {
 					has_trait = isis_cult
 					has_trait = hierophant_isis
 					OR = {
-						religion = religion:roman_religion
+						pr_is_cultus_deorum_trigger = yes
 						religion = religion:hellenism_religion
 						faith = faith:kemetic_polytheism
 					}
@@ -157,7 +146,7 @@ select_valid_daughter_and_save_scope = {
 				any_parent = { this = root }
 				#count > 0
 				is_female = yes
-				religion = religion:roman_religion
+				pr_is_cultus_deorum_trigger = yes
 				age < 10
 				NOT= { has_trait = vestalis }
 			}

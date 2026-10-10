@@ -1,0 +1,44 @@
+﻿#####################
+#Made by tom5667
+#####################
+# One Mesopotamian faith with three rites (Babylonian, Assyrian, Sumerian). Babylonian and Assyrian were one
+# religion with a different head god; Sumerian lived on as the liturgical layer of the same cult
+# (research 2026-10-05). A Harranian (Sabian) tradition may follow later.
+babylonian_polytheism = {
+    main_rite = babylonian_rites
+    historical = yes
+
+    faith_details = {
+        religion = mesopotamian_religion
+        color = { 219  183 50  }
+        icon = babylonian
+        reformed_icon = babylonian_reformed
+    }
+
+    # Holy sites (research 2026-10-06, double-checked; ORACC, Black & Green, vanilla map).
+    # Dropped: Baghdad (founded 762 AD), Ebla (Syrian, West Semitic cult), Kish (same county as Babylon),
+    # Lagash and Ur (minor / same county as Uruk).
+    eminent_holy_sites = {
+        babylon  # vanilla site: Esagila of Marduk (c_kufa / b_al-hila)
+        nippur   # Ekur of Enlil
+        pr_assur # Ešarra of Aššur
+    }
+
+    holy_sites = {
+        harran # Eḫulḫul of Sîn, the cult that outlived the others
+        ninive # Ištar of Nineveh
+        uruk   # Eanna of Inana
+    }
+
+    reserved_male_names = {
+        Gilgamesh Naram-sin Manishtushu Sharrukin Ibarum Shu-Enlil Rimush Abaish-Takal La'ibum Shar-kali-sharri Igigi Ishtumegu
+        Belsharraussur Epirmupi Lli-ishmani Nergal-ushezib Shuzub Bel-ibni Marduk-apla-iddina Marduk-zakir-shumi EBilgamesh Pabilga-mes Enmebaragesi Meskalamdug
+        Lugalushumgal Puzer-mama Eannatum Akurgal Ur-Nanshe Lugalshaengur Mesilim Enkidu Atra-hasis Ziusudra Apkallu Aga
+        Utnapishtim Ashurnasirpal Ashurbanipal Sinacherib Bel-bani Adasi Ashurdugul Shu-Ninua Erishum Shamshi-Adad Ishme-Dagan Ashur-narari
+        Ashur-uballit Sinsharishkun Ashur-etil-ilani Ninurta-sharru-usur Asshur-aha-iddina Ashur-nadin-shumi Salmanu-ashared Ashur-dain-aplu Sin-ahu-usur
+    }
+    reserved_female_names = {
+        Tashultum Enheduanna Tutar-napshum Lippush-ja'um Tuta-shar-ibbish Tutasharlibish Banitu Siduri Shammat Nanna Ana-Tashmetum-taklak Libbali-sharrat
+        Esharra-hammat Iaba Atalia Ra'ima Shammuramat
+    }
+}

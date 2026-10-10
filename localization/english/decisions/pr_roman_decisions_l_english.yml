@@ -146,7 +146,7 @@
   pr_wine_offering:0 "#T Offer Wine#!\n$pr_wine_offering_desc$"
   pr_wine_offering_desc:0 "Offer wine to the gods"
   pr_fig_offering:0 "#T Offer Figs#!\n$pr_fig_offering_desc$"
-  pr_fig_offering_desc:0 "Offer figs to $cdr_polytheism_good_god_juno$"
+  pr_fig_offering_desc:0 "Offer figs to $roman_polytheism_good_god_juno$"
   pr_incense_offering:0 "#T Offer Frankincense#!\n$pr_incense_offering_desc$"
   pr_incense_offering_desc:0 "Offer frankincense to the gods"
   pr_roses_offering:0 "#T Offer Roses#!\n$pr_roses_offering_desc$"
@@ -173,14 +173,14 @@
   pr_roman_restore_western_roman_empire_decision_desc:0 "#F The Western Roman Empire, once the greatest power the world had ever known, fell centuries ago into ruin and division. Yet the legacy of Rome endures in the hearts of her people, and the spirit of the Eternal City lives on.#!\nBy restoring the Western Roman Empire, I shall reclaim the imperial crown of Rome and forge a new era of Roman greatness."
   pr_roman_restore_western_roman_empire_decision_tooltip:0 "#T Restore the Western Roman Empire by uniting the Italian heartlands#!"
   pr_roman_restore_western_roman_empire_decision_confirm:0 "Restore the Western Roman Empire!"
-  pr_roman_restore_western_roman_empire_decision_effect_tooltip:0 "#P The Western Roman Empire will be formed as a new [empire|E] title#!/n$EFFECT_LIST_BULLET$[title_k_italy.GetNameNoTier], [title_k_romagna.GetNameNoTier], [title_k_sicily.GetNameNoTier], [title_k_sardinia.GetNameNoTier], and [title_k_cisalpina.GetNameNoTier] will become [de_jure|E] part of the empire$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"
+  pr_roman_restore_western_roman_empire_decision_effect_tooltip:0 "#P The Western Roman Empire will be formed as a new [empire|E] title#!\n$EFFECT_LIST_BULLET$[title_k_italy.GetNameNoTier], [title_k_romagna.GetNameNoTier], [title_k_sicily.GetNameNoTier], [title_k_sardinia.GetNameNoTier], and [title_k_cisalpina.GetNameNoTier] will become [de_jure|E] part of the empire$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"
 
   # --- Reform Galatia Decision ---
   pr_roman_reform_galatia_decision:0 "Reform Galatia"
   pr_roman_reform_galatia_decision_desc:0 "#F The ancient lands of Galatia, once a proud Roman province in the heart of Asia Minor, have long been divided among warring tribes and petty rulers. By reforming Galatia under Roman administration, I shall restore order to these lands and strengthen the empire's eastern frontier.#!\nThis decision requires control of the Roman or Byzantine Empire and the Galatian heartlands."
   pr_roman_reform_galatia_decision_tooltip:0 "#T Reform the province of Galatia under Roman administration#!"
   pr_roman_reform_galatia_decision_confirm:0 "Reform Galatia!"
-  pr_roman_reform_galatia_decision_effect_tooltip:0 "#P Galatia will be reformed as a new [kingdom|E] title#!/n$EFFECT_LIST_BULLET$Galatian counties will be organized into superior and inferior duchies$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"
+  pr_roman_reform_galatia_decision_effect_tooltip:0 "#P Galatia will be reformed as a new [kingdom|E] title#!\n$EFFECT_LIST_BULLET$Galatian counties will be organized into superior and inferior duchies$EFFECT_LIST_BULLET$Requires significant [gold|E] and [prestige|E] investment@warning_icon! #X This action cannot be undone!#"
 
   # --- Invite Latin Speaker Decision ---
   pr_roman_invite_latin_speaker_decision:0 "Invite a Latin Speaker"

@@ -1,0 +1,31 @@
+﻿#####################
+#Made by tom5667
+#####################
+# Faith key restored to scythian_polytheism: scripts and saves use faith:scythian_polytheism.
+scythian_polytheism = {
+    main_rite = scythian_rites
+    historical = yes
+
+    faith_details = {
+        religion = scythian_religion
+        color = {148 119 74 }
+        icon = scythian_polytheism
+        reformed_icon = scythian_polytheism_reformed
+    }
+    eminent_holy_sites = {
+        kerch
+        dionysopolis
+        kalos_limen
+    }
+    holy_sites = {
+        kremnoi
+        hereti
+        tyras
+        olvia
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+    }
+    cultures = { pr_scythian }
+}

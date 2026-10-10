@@ -10,13 +10,13 @@ pr_roman_choose_main_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/roman_temple.dds"
     }
     desc = pr_roman_choose_main_deity_decision_desc
-    decision_tooltip = pr_roman_choose_main_deity_decision_tooltip
+    selection_tooltip = pr_roman_choose_main_deity_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         OR = {
-            faith = faith:cdr_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_roman_patron_god_active }
+            faith = faith:roman_polytheism
+            rite = { rite_has_parameter = special_doctrine_roman_patron_god_active }
         }
         is_adult = yes
     }
@@ -41,47 +41,47 @@ pr_roman_choose_main_deity_decision = {
                 100 = {
                     show_chance = no
                     desc = select_main_deity_cdr_decision.select_iupiter
-                    add_trait = pr_cdr_iupiter
+                    add_character_modifier = pr_cdr_iupiter
                 }
                 100 = {
                     show_chance = no
                     desc = select_main_deity_cdr_decision.select_iuno
-                    add_trait = pr_cdr_iuno
+                    add_character_modifier = pr_cdr_iuno
                 }
                 100 = {
                     show_chance = no
                     desc = select_main_deity_cdr_decision.select_mars
-                    add_trait = pr_cdr_mars
+                    add_character_modifier = pr_cdr_mars
                 }
                 100 = {
                     show_chance = no
                     desc = select_main_deity_cdr_decision.select_venus
-                    add_trait = pr_cdr_venus
+                    add_character_modifier = pr_cdr_venus
                 }
                 100 = {
                     show_chance = no
                     desc = select_main_deity_cdr_decision.select_house_lares
-                    add_trait = pr_cdr_lares
+                    add_character_modifier = pr_cdr_lares
                 }
                 100 = {
                     show_chance = no
                     desc = select_main_deity_cdr_decision.select_mercurius
-                    add_trait = pr_cdr_mercurius
+                    add_character_modifier = pr_cdr_mercurius
                 }
                 100 = {
                     show_chance = no
                     desc = select_main_deity_cdr_decision.select_minerva
-                    add_trait = pr_cdr_minerva
+                    add_character_modifier = pr_cdr_minerva
                 }
                 100 = {
                     show_chance = no
                     desc = select_main_deity_cdr_decision.select_apollo
-                    add_trait = pr_cdr_apollo
+                    add_character_modifier = pr_cdr_apollo
                 }
                 100 = {
                     show_chance = no
                     desc = select_main_deity_cdr_decision.select_ceres
-                    add_trait = pr_cdr_ceres
+                    add_character_modifier = pr_cdr_ceres
                 }
             }
         }
@@ -93,15 +93,15 @@ pr_roman_choose_main_deity_decision = {
     ai_potential = {
         piety >= minor_piety_value
         NOR = {
-            has_trait = pr_cdr_iupiter
-            has_trait = pr_cdr_iuno
-            has_trait = pr_cdr_mars
-            has_trait = pr_cdr_venus
-            has_trait = pr_cdr_lares
-            has_trait = pr_cdr_mercurius
-            has_trait = pr_cdr_minerva
-            has_trait = pr_cdr_apollo
-            has_trait = pr_cdr_ceres
+            has_character_modifier = pr_cdr_iupiter
+            has_character_modifier = pr_cdr_iuno
+            has_character_modifier = pr_cdr_mars
+            has_character_modifier = pr_cdr_venus
+            has_character_modifier = pr_cdr_lares
+            has_character_modifier = pr_cdr_mercurius
+            has_character_modifier = pr_cdr_minerva
+            has_character_modifier = pr_cdr_apollo
+            has_character_modifier = pr_cdr_ceres
         }
     }
 
@@ -116,13 +116,13 @@ pr_roman_embrace_roman_culture_decision = {
         reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
     }
     desc = pr_roman_embrace_roman_culture_decision_desc
-    decision_tooltip = pr_roman_embrace_roman_culture_decision_tooltip
+    selection_tooltip = pr_roman_embrace_roman_culture_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         is_ai = no
         is_landed = yes
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
         OR = {
             culture = culture:greek
             culture = { has_cultural_pillar = heritage_byzantine }
@@ -181,13 +181,13 @@ pr_roman_embrace_gallo_roman_culture_decision = {
         reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
     }
     desc = pr_roman_embrace_gallo_roman_culture_decision_desc
-    decision_tooltip = pr_roman_embrace_gallo_roman_culture_decision_tooltip
+    selection_tooltip = pr_roman_embrace_gallo_roman_culture_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         is_ai = no
         is_landed = yes
-        faith = { has_doctrine_parameter = special_doctrine_gallo_roman_patron_god_active }
+        rite = { rite_has_parameter = special_doctrine_gallo_roman_patron_god_active }
         culture = { has_cultural_pillar = heritage_frankish }
         NOT = {
             is_target_in_global_variable_list = {
@@ -201,7 +201,7 @@ pr_roman_embrace_gallo_roman_culture_decision = {
         is_adult = yes
         is_imprisoned = no
         completely_controls = title:c_ile_de_france
-        faith = faith:cdr_polytheism
+        faith = faith:roman_polytheism
     }
 
     is_valid_showing_failures_only = {
@@ -241,13 +241,13 @@ pr_roman_embrace_romano_british_culture_decision = {
         reference = "gfx/interface/illustrations/decisions/londinium.dds"
     }
     desc = pr_roman_embrace_romano_british_culture_decision_desc
-    decision_tooltip = pr_roman_embrace_romano_british_culture_decision_tooltip
+    selection_tooltip = pr_roman_embrace_romano_british_culture_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         is_ai = no
         is_landed = yes
-        faith = { has_doctrine_parameter = special_doctrine_romano_british_patron_god_active }
+        rite = { rite_has_parameter = special_doctrine_romano_british_patron_god_active }
         culture = { has_cultural_pillar = heritage_brythonic }
         NOT = {
             is_target_in_global_variable_list = {
@@ -300,7 +300,7 @@ pr_roman_restore_high_priesthood_decision = {
         reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
     }
     desc = pr_roman_restore_high_priesthood_decision_desc
-    decision_tooltip = pr_roman_restore_high_priesthood_decision_tooltip
+    selection_tooltip = pr_roman_restore_high_priesthood_decision_tooltip
     decision_group_type = polytheism
 
     ai_check_interval = 120
@@ -312,7 +312,7 @@ pr_roman_restore_high_priesthood_decision = {
             exists = faith.religious_head
             faith = { has_doctrine = doctrine_no_head }
         }
-        faith = faith:cdr_polytheism
+        faith = faith:roman_polytheism
     }
 
     is_valid = {
@@ -361,11 +361,11 @@ pr_roman_open_temple_of_vesta_decision = {
         reference = "gfx/interface/illustrations/decisions/temple_of_vesta.dds"
     }
     desc = pr_roman_open_temple_of_vesta_decision_desc
-    decision_tooltip = pr_roman_open_temple_of_vesta_decision_tooltip
+    selection_tooltip = pr_roman_open_temple_of_vesta_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
         NOR = {
             religion = religion:hellenism_religion
             is_target_in_global_variable_list = {
@@ -400,7 +400,7 @@ pr_roman_open_temple_of_vesta_decision = {
     ai_check_interval = 90
 
     ai_potential = {
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
         has_title = title:c_roma
     }
 
@@ -415,11 +415,11 @@ pr_roman_send_daughter_to_temple_of_vesta_decision = {
         reference = "gfx/interface/illustrations/decisions/temple_of_vesta.dds"
     }
     desc = pr_roman_send_daughter_to_temple_of_vesta_decision_desc
-    decision_tooltip = pr_roman_send_daughter_to_temple_of_vesta_decision_tooltip
+    selection_tooltip = pr_roman_send_daughter_to_temple_of_vesta_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
         is_target_in_global_variable_list = {
             name = unavailable_unique_decisions_open_temple_of_vesta
             target = flag:pr_roman_open_temple_of_vesta_decision
@@ -460,12 +460,12 @@ pr_roman_join_cult_decision = {
         reference = "gfx/interface/illustrations/decisions/roman_cults.dds"
     }
     desc = pr_roman_join_cult_decision_desc
-    decision_tooltip = pr_roman_join_cult_decision_tooltip
+    selection_tooltip = pr_roman_join_cult_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         OR = {
-            religion = religion:roman_religion
+            pr_is_cultus_deorum_trigger = yes
             faith = faith:hellenic_pagan
         }
         is_adult = yes
@@ -544,13 +544,13 @@ pr_roman_restore_altar_of_victoria_decision = {
         reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
     }
     desc = pr_roman_restore_altar_of_victoria_decision_desc
-    decision_tooltip = pr_roman_restore_altar_of_victoria_decision_tooltip
+    selection_tooltip = pr_roman_restore_altar_of_victoria_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         is_ai = no
         is_landed = yes
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
         culture = culture:roman
         NOT = {
             is_target_in_global_variable_list = {
@@ -562,7 +562,7 @@ pr_roman_restore_altar_of_victoria_decision = {
 
     is_valid = {
         completely_controls = title:c_roma
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
     }
 
     is_valid_showing_failures_only = {
@@ -606,7 +606,7 @@ pr_roman_restore_altar_of_victoria_decision = {
     ai_potential = {
         is_ruler = yes
         completely_controls = title:c_roma
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
     }
 
     ai_will_do = {
@@ -620,13 +620,13 @@ pr_roman_embrace_romano_germanic_culture_decision = {
         reference = "gfx/interface/illustrations/decisions/londinium.dds"
     }
     desc = pr_roman_embrace_romano_germanic_culture_decision_desc
-    decision_tooltip = pr_roman_embrace_romano_germanic_culture_decision_tooltip
+    selection_tooltip = pr_roman_embrace_romano_germanic_culture_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         is_ai = no
         is_landed = yes
-        faith = { has_doctrine_parameter = special_doctrine_romano_germanic_patron_god_active }
+        rite = { rite_has_parameter = special_doctrine_romano_germanic_patron_god_active }
         culture = { has_cultural_pillar = heritage_central_germanic }
         NOT = {
             is_target_in_global_variable_list = {
@@ -679,13 +679,13 @@ pr_roman_embrace_hispano_roman_culture_decision = {
         reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
     }
     desc = pr_roman_embrace_hispano_roman_culture_decision_desc
-    decision_tooltip = pr_roman_embrace_hispano_roman_culture_decision_tooltip
+    selection_tooltip = pr_roman_embrace_hispano_roman_culture_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         is_ai = no
         is_landed = yes
-        faith = { has_doctrine_parameter = special_doctrine_romano_hispanic_patron_god_active }
+        rite = { rite_has_parameter = special_doctrine_romano_hispanic_patron_god_active }
         NOT = {
             is_target_in_global_variable_list = {
                 name = unavailable_unique_decisions
@@ -737,18 +737,18 @@ pr_roman_open_gates_of_janus_decision = {
         reference = "gfx/interface/illustrations/decisions/temple_janus_open.dds"
     }
     desc = pr_roman_open_gates_of_janus_decision_desc
-    decision_tooltip = pr_roman_open_gates_of_janus_decision_tooltip
+    selection_tooltip = pr_roman_open_gates_of_janus_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         is_ruler = yes
         is_landed = yes
         OR = {
-            faith = faith:cdr_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_roman_patron_god_active }
+            faith = faith:roman_polytheism
+            rite = { rite_has_parameter = special_doctrine_roman_patron_god_active }
         }
         completely_controls = title:c_roma
-        is_at_peace = yes
+        is_at_war = no
         NOT = { has_character_modifier = gates_of_janus_closed }
         NOT = { has_character_flag = gates_of_janus_open }
     }
@@ -783,6 +783,7 @@ pr_roman_open_gates_of_janus_decision = {
     ai_will_do = {
         base = 0
     }
+    ai_check_interval = 0 # player-only until an AI weight is designed (#147)
 }
 # --- Close Gates of Janus Decision ---
 # Requires Rome. Closes the Gates of Janus in times of peace.
@@ -791,15 +792,15 @@ pr_roman_close_gates_of_janus_decision = {
         reference = "gfx/interface/illustrations/decisions/temple_janus_closed.dds"
     }
     desc = pr_roman_close_gates_of_janus_decision_desc
-    decision_tooltip = pr_roman_close_gates_of_janus_decision_tooltip
+    selection_tooltip = pr_roman_close_gates_of_janus_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         is_ruler = yes
         is_landed = yes
         OR = {
-            faith = faith:cdr_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_roman_patron_god_active }
+            faith = faith:roman_polytheism
+            rite = { rite_has_parameter = special_doctrine_roman_patron_god_active }
         }
         completely_controls = title:c_roma
         has_character_flag = gates_of_janus_open
@@ -850,6 +851,7 @@ pr_roman_close_gates_of_janus_decision = {
     ai_will_do = {
         base = 0
     }
+    ai_check_interval = 0 # player-only until an AI weight is designed (#147)
 }
 
 #omen based on natural phenomenon (Request Auspice)
@@ -860,18 +862,18 @@ pr_roman_request_auspice_decision = {
         reference = "gfx/interface/illustrations/decisions/request_auspice.dds"
     }
     desc = pr_roman_request_auspice_decision_desc
-    decision_tooltip = pr_roman_request_auspice_decision_tooltip
+    selection_tooltip = pr_roman_request_auspice_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
         is_landed = yes
     }
 
     cooldown = { years = 3 }
 
     is_valid = {
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
         employs_court_position = pr_court_augur_court_position
     }
 
@@ -879,8 +881,6 @@ pr_roman_request_auspice_decision = {
         gui = "pr_decision_view_widget_request_auspice"
         controller = decision_option_list_controller
 
-        decision_has_second_step = yes
-        decision_custom_widget_container = "custom_widgets_container_step_two"
         decision_to_second_step_button = "auspice_type"
         item = {
             value = auspice_eating_patterns
@@ -893,10 +893,6 @@ pr_roman_request_auspice_decision = {
             }
             localization = {
                 desc = eating_patterns
-            }
-            custom_tooltip = {
-                text = auspice_eating_patterns_not_at_war
-                is_at_war = no
             }
             icon = "gfx/interface/icons/artifact/artifact_chicken.dds"
             ai_chance = {
@@ -977,14 +973,14 @@ pr_roman_hire_augur_decision = {
         reference = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
     }
     desc = pr_roman_hire_augur_decision_desc
-    decision_tooltip = pr_roman_hire_augur_decision_tooltip
+    selection_tooltip = pr_roman_hire_augur_decision_tooltip
     decision_group_type = polytheism
 
     ai_check_interval = 60
 
     is_shown = {
         is_ruler = yes
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
         NOT = {
             employs_court_position = pr_court_augur_court_position
         }
@@ -1031,13 +1027,13 @@ pr_roman_build_lararium_decision = {
         reference = "gfx/interface/illustrations/decisions/Ritual.dds"
     }
     desc = pr_roman_build_lararium_decision_desc
-    decision_tooltip = pr_roman_build_lararium_decision_tooltip
+    selection_tooltip = pr_roman_build_lararium_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         OR = {
-            faith = faith:cdr_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_roman_patron_god_active }
+            faith = faith:roman_polytheism
+            rite = { rite_has_parameter = special_doctrine_roman_patron_god_active }
         }
         NOT = {
             AND = {
@@ -1083,13 +1079,13 @@ pr_roman_offer_to_a_god_decision = {
         reference = "gfx/interface/illustrations/decisions/Ritual.dds"
     }
     desc = pr_roman_offer_to_a_god_decision_desc
-    decision_tooltip = pr_roman_offer_to_a_god_decision_tooltip
+    selection_tooltip = pr_roman_offer_to_a_god_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         OR = {
-            faith = faith:cdr_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_roman_patron_god_active }
+            faith = faith:roman_polytheism
+            rite = { rite_has_parameter = special_doctrine_roman_patron_god_active }
         }
     }
 
@@ -1098,47 +1094,48 @@ pr_roman_offer_to_a_god_decision = {
     is_valid = {
         OR = {
             AND = {
-                has_trait = pr_cdr_iupiter
+                has_character_modifier = pr_cdr_iupiter
                 any_character_artifact = {
                     has_artifact_modifier = pr_statue_jupiter
                 }
             }
             AND = {
-                has_trait = pr_cdr_iuno
+                has_character_modifier = pr_cdr_iuno
                 any_character_artifact = {
                     has_artifact_modifier = pr_statue_juno
                 }
             }
             AND = {
-                has_trait = pr_cdr_mars
+                has_character_modifier = pr_cdr_mars
                 any_character_artifact = {
                     has_artifact_modifier = pr_statue_mars
                 }
             }
             AND = {
-                has_trait = pr_cdr_venus
+                has_character_modifier = pr_cdr_venus
                 any_character_artifact = {
                     has_artifact_modifier = pr_statue_venus
                 }
             }
             AND = {
-                has_trait = pr_cdr_mercurius
+                has_character_modifier = pr_cdr_mercurius
                 any_character_artifact = {
                     has_artifact_modifier = pr_statue_mercurius
                 }
             }
             AND = {
-                has_trait = pr_cdr_minerva
+                has_character_modifier = pr_cdr_minerva
                 any_character_artifact = {
                     has_artifact_modifier = pr_statue_minerva
                 }
             }
             AND = {
-                has_trait = pr_cdr_apollo
+                has_character_modifier = pr_cdr_apollo
                 any_character_artifact = {
                     has_artifact_modifier = pr_statue_apollo
                 }
             }
+            has_character_modifier = pr_cdr_lares # the Lares are honoured at the household shrine, no statue needed (#146)
             has_character_modifier = pr_augur_not_requested
         }
     }
@@ -1147,8 +1144,6 @@ pr_roman_offer_to_a_god_decision = {
         gui = "pr_decision_view_widget"
         controller = decision_option_list_controller
 
-        decision_has_second_step = yes
-        decision_custom_widget_container = "custom_widgets_container_step_two"
         decision_to_second_step_button = "prdecision_type"
         #Incense
         item = {
@@ -1163,14 +1158,13 @@ pr_roman_offer_to_a_god_decision = {
             ai_chance = {
                 value = 30
             }
-            save_scope_as = prdecision_incense_offering
         }
         #Wine
         item = {
             is_shown = {
                 NOT = {
                     AND = {
-                        has_trait = pr_cdr_mercurius
+                        has_character_modifier = pr_cdr_mercurius
                         any_character_artifact = {
                             has_artifact_modifier = pr_statue_mercurius
                         }
@@ -1193,7 +1187,7 @@ pr_roman_offer_to_a_god_decision = {
         item = {
             is_shown = {
                 AND = {
-                    has_trait = pr_cdr_mercurius
+                    has_character_modifier = pr_cdr_mercurius
                     any_character_artifact = {
                         has_artifact_modifier = pr_statue_mercurius
                     }
@@ -1215,7 +1209,7 @@ pr_roman_offer_to_a_god_decision = {
         item = {
             is_shown = {
                 AND = {
-                    has_trait = pr_cdr_iuno
+                    has_character_modifier = pr_cdr_iuno
                     any_character_artifact = {
                         has_artifact_modifier = pr_statue_juno
                     }
@@ -1236,11 +1230,14 @@ pr_roman_offer_to_a_god_decision = {
         #Roses
         item = {
             is_shown = {
-                AND = {
-                    has_trait = pr_cdr_venus
-                    any_character_artifact = {
-                        has_artifact_modifier = pr_statue_venus
+                OR = {
+                    AND = {
+                        has_character_modifier = pr_cdr_venus
+                        any_character_artifact = {
+                            has_artifact_modifier = pr_statue_venus
+                        }
                     }
+                    has_character_modifier = pr_cdr_lares # garlands for the Lar (#146)
                 }
             }
             value = pr_roses_offering
@@ -1259,7 +1256,7 @@ pr_roman_offer_to_a_god_decision = {
         item = {
             is_shown = {
                 AND = {
-                    has_trait = pr_cdr_mars
+                    has_character_modifier = pr_cdr_mars
                     any_character_artifact = {
                         has_artifact_modifier = pr_statue_mars
                     }
@@ -1281,7 +1278,7 @@ pr_roman_offer_to_a_god_decision = {
         item = {
             is_shown = {
                 AND = {
-                    has_trait = pr_cdr_iupiter
+                    has_character_modifier = pr_cdr_iupiter
                     any_character_artifact = {
                         has_artifact_modifier = pr_statue_jupiter
                     }
@@ -1303,7 +1300,7 @@ pr_roman_offer_to_a_god_decision = {
         item = {
             is_shown = {
                 AND = {
-                    has_trait = pr_cdr_mercurius
+                    has_character_modifier = pr_cdr_mercurius
                     any_character_artifact = {
                         has_artifact_modifier = pr_statue_mercurius
                     }
@@ -1325,7 +1322,7 @@ pr_roman_offer_to_a_god_decision = {
         item = {
             is_shown = {
                 AND = {
-                    has_trait = pr_cdr_minerva
+                    has_character_modifier = pr_cdr_minerva
                     any_character_artifact = {
                         has_artifact_modifier = pr_statue_minerva
                     }
@@ -1347,7 +1344,7 @@ pr_roman_offer_to_a_god_decision = {
         item = {
             is_shown = {
                 AND = {
-                    has_trait = pr_cdr_apollo
+                    has_character_modifier = pr_cdr_apollo
                     any_character_artifact = {
                         has_artifact_modifier = pr_statue_apollo
                     }
@@ -1464,7 +1461,7 @@ pr_roman_offer_to_a_god_decision = {
         if = {
             limit = {
                 AND = {
-                    has_trait = pr_cdr_iupiter
+                    has_character_modifier = pr_cdr_iupiter
                     any_character_artifact = {
                         has_artifact_modifier = pr_statue_jupiter
                     }
@@ -1483,7 +1480,7 @@ pr_roman_offer_to_a_god_decision = {
         if = {
             limit = {
                 AND = {
-                    has_trait = pr_cdr_iuno
+                    has_character_modifier = pr_cdr_iuno
                     any_character_artifact = {
                         has_artifact_modifier = pr_statue_juno
                     }
@@ -1502,7 +1499,7 @@ pr_roman_offer_to_a_god_decision = {
         if = {
             limit = {
                 AND = {
-                    has_trait = pr_cdr_mars
+                    has_character_modifier = pr_cdr_mars
                     any_character_artifact = {
                         has_artifact_modifier = pr_statue_mars
                     }
@@ -1518,10 +1515,24 @@ pr_roman_offer_to_a_god_decision = {
                 id = pr_roman.0109
             }
         }
+        # Lares: incense, wine and garlands (Plautus, Aulularia prologue; Cato, De Agricultura 143) (#146)
+        if = {
+            limit = {
+                has_character_modifier = pr_cdr_lares
+                OR = {
+                    var:pr_ritual = flag:pr_wine_offering
+                    var:pr_ritual = flag:pr_incense_offering
+                    var:pr_ritual = flag:pr_roses_offering
+                }
+            }
+            trigger_event = {
+                id = pr_roman.0111
+            }
+        }
         if = {
             limit = {
                 AND = {
-                    has_trait = pr_cdr_venus
+                    has_character_modifier = pr_cdr_venus
                     any_character_artifact = {
                         has_artifact_modifier = pr_statue_venus
                     }
@@ -1540,7 +1551,7 @@ pr_roman_offer_to_a_god_decision = {
         if = {
             limit = {
                 AND = {
-                    has_trait = pr_cdr_mercurius
+                    has_character_modifier = pr_cdr_mercurius
                     any_character_artifact = {
                         has_artifact_modifier = pr_statue_mercurius
                     }
@@ -1559,7 +1570,7 @@ pr_roman_offer_to_a_god_decision = {
         if = {
             limit = {
                 AND = {
-                    has_trait = pr_cdr_minerva
+                    has_character_modifier = pr_cdr_minerva
                     any_character_artifact = {
                         has_artifact_modifier = pr_statue_minerva
                     }
@@ -1578,7 +1589,7 @@ pr_roman_offer_to_a_god_decision = {
         if = {
             limit = {
                 AND = {
-                    has_trait = pr_cdr_apollo
+                    has_character_modifier = pr_cdr_apollo
                     any_character_artifact = {
                         has_artifact_modifier = pr_statue_apollo
                     }
@@ -1605,7 +1616,7 @@ pr_roman_offer_to_a_god_decision = {
     minimum_cost = {
         gold = 50
     }
-    ai_chance = 0
+    ai_check_interval = 0 # player only
 }
 
 
@@ -1615,12 +1626,12 @@ pr_roman_initiation_mithras_cult_decision = {
         reference = "gfx/interface/illustrations/decisions/mithraeum.dds"
     }
     desc = pr_roman_initiation_mithras_cult_decision_desc
-    decision_tooltip = pr_roman_initiation_mithras_cult_decision_tooltip
+    selection_tooltip = pr_roman_initiation_mithras_cult_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         OR = {
-            religion = religion:roman_religion
+            pr_is_cultus_deorum_trigger = yes
             faith = faith:hellenic_pagan
         }
         employs_court_position = pr_court_pater_mithras_court_position
@@ -1681,6 +1692,7 @@ pr_roman_initiation_mithras_cult_decision = {
     ai_will_do = {
         base = 100
     }
+    ai_check_interval = 0 # player-only until an AI weight is designed (#147)
 }
 
 
@@ -1690,7 +1702,7 @@ pr_roman_restore_western_roman_empire_decision = {
         reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
     }
     desc = pr_roman_restore_western_roman_empire_decision_desc
-    decision_tooltip = pr_roman_restore_western_roman_empire_decision_tooltip
+    selection_tooltip = pr_roman_restore_western_roman_empire_decision_tooltip
     decision_group_type = roman
 
     ai_check_interval = 4
@@ -1708,7 +1720,7 @@ pr_roman_restore_western_roman_empire_decision = {
         OR = {
             religion = religion:christianity_religion
             religion = religion:hellenism_religion
-            religion = religion:roman_religion
+            pr_is_cultus_deorum_trigger = yes
             culture = culture:roman
         }
         NOT = {
@@ -1723,7 +1735,7 @@ pr_roman_restore_western_roman_empire_decision = {
         OR = {
             religion = religion:christianity_religion
             religion = religion:hellenism_religion
-            religion = religion:roman_religion
+            pr_is_cultus_deorum_trigger = yes
             culture = culture:roman
         }
         completely_controls = title:d_latium
@@ -1802,7 +1814,7 @@ pr_roman_reform_galatia_decision = {
         reference = "gfx/interface/illustrations/decisions/capotiline_hill_roma.dds"
     }
     desc = pr_roman_reform_galatia_decision_desc
-    decision_tooltip = pr_roman_reform_galatia_decision_tooltip
+    selection_tooltip = pr_roman_reform_galatia_decision_tooltip
     decision_group_type = major
 
     ai_check_interval = 4
@@ -1832,7 +1844,7 @@ pr_roman_reform_galatia_decision = {
     is_valid = {
         OR = {
             religion = religion:hellenism_religion
-            religion = religion:roman_religion
+            pr_is_cultus_deorum_trigger = yes
         }
         OR = {
             has_title = title:e_byzantium
@@ -1996,7 +2008,7 @@ pr_roman_invite_latin_speaker_decision = {
 
 	is_shown = {
 		OR = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			has_title = title:h_roman_empire
 			has_title = title:e_byzantium
 			has_title = title:e_pr_western_roman_empire
@@ -2009,7 +2021,7 @@ pr_roman_invite_latin_speaker_decision = {
 	is_valid = {
 		culture.culture_head = root
 		NOT = { culture = { has_cultural_pillar = language_latin } }
-		religion = religion:roman_religion
+		pr_is_cultus_deorum_trigger = yes
 		OR = {
 			has_title = title:h_roman_empire
 			has_title = title:e_byzantium
@@ -2034,120 +2046,23 @@ pr_roman_invite_latin_speaker_decision = {
 			}
 		}
 	}
+	ai_check_interval = 0 # player-only until an AI weight is designed (#147)
 }
 
 # --- Restore Roman Empire Decision ---
 # Vanilla override: restores the Roman Empire as Byzantium.
 # Mod extension: allows polytheistic religions to restore the empire.
-restore_roman_empire_decision = {
-    picture = {
-        reference = "gfx/interface/illustrations/decisions/ep3_decision_roman_restoration.dds"
-    }
-    desc = restore_roman_empire_decision_desc
-    selection_tooltip = restore_roman_empire_decision_tooltip
-    decision_group_type = roman
-
-    ai_check_interval = 120
-
-    is_shown = {
-        is_ruler = yes
-        is_playable_character = yes
-        has_title = title:e_byzantium
-        NOT = { primary_title = title:e_hre }
-        NOT = { primary_title = title:e_italy }
-        NOT = {
-            is_target_in_global_variable_list = {
-                name = unavailable_unique_decisions
-                target = flag:flag_restored_roman_empire
-            }
-        }
-        OR = {
-            government_has_flag = government_is_feudal
-            government_has_flag = government_is_republic
-            government_has_flag = government_is_clan
-            government_allows = administrative
-        }
-    }
-
-    is_valid = {
-        prestige_level >= max_prestige_level
-        completely_controls = title:d_latium
-        completely_controls = title:d_venice
-        completely_controls = title:d_romagna
-        completely_controls = title:d_sicily
-        completely_controls = title:d_genoa
-        completely_controls = title:d_capua
-        completely_controls = title:d_apulia
-        completely_controls = title:d_thrace
-        completely_controls = title:d_antioch
-        completely_controls = title:d_palestine
-        completely_controls = title:d_alexandria
-        completely_controls = title:d_athens
-        completely_controls = title:d_tunis
-        completely_controls = title:d_croatia
-        completely_controls = title:d_thessalonika
-    }
-
-    is_valid_showing_failures_only = {
-        is_landed = yes
-        is_capable_adult = yes
-        is_imprisoned = no
-        is_independent_ruler = yes
-        OR = {
-            religion = { is_in_family = rf_abrahamic }
-            religion = religion:hellenism_religion
-            religion = religion:roman_religion
-            culture = { has_cultural_pillar = heritage_latin }
-            culture = { has_cultural_pillar = heritage_byzantine }
-        }
-    }
-
-    effect = {
-        custom_tooltip = restore_roman_empire_decision_effect_tooltip
-        show_as_tooltip = {
-            create_roman_empire_scripted_effect = yes
-        }
-        if = {
-            limit = {
-                has_ep3_dlc_trigger = yes
-            }
-            trigger_event = ep3_roman_restoration.0100
-        }
-        else = {
-            trigger_event = roman_restoration.0001
-        }
-        hidden_effect = {
-            add_to_global_variable_list = {
-                name = unavailable_unique_decisions
-                target = flag:flag_restored_roman_empire
-            }
-            set_global_variable = {
-                name = flag_restored_roman_empire
-                value = root
-            }
-        }
-    }
-
-    ai_potential = {
-        always = yes
-    }
-
-    ai_will_do = {
-        base = 100
-    }
-}
-
 # --- Commission Sibylline Books Decision ---
 pr_roman_commission_sibylline_books_decision = {
     picture = {
         reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
     }
     desc = pr_roman_commission_sibylline_books_decision_desc
-    decision_tooltip = pr_roman_commission_sibylline_books_decision_tooltip
+    selection_tooltip = pr_roman_commission_sibylline_books_decision_tooltip
     decision_group_type = major
 
     is_shown = {
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
         is_landed = yes
         exists = faith.religious_head
         current_date >= 450.1.1
@@ -2161,7 +2076,7 @@ pr_roman_commission_sibylline_books_decision = {
     }
 
     is_valid = {
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
         piety_level >= high_piety_level
         OR = {
             has_title = title:h_roman_empire
@@ -2199,7 +2114,7 @@ pr_roman_commission_sibylline_books_decision = {
 
     ai_potential = {
         is_ruler = yes
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
         piety_level >= high_piety_level
     }
 
@@ -2315,7 +2230,7 @@ pr_roman_romanize_the_slavs_decision = {
     sort_order = 120
 
     desc = pr_roman_romanize_the_slavs_decision_desc
-    decision_tooltip = pr_roman_romanize_the_slavs_decision_tooltip
+    selection_tooltip = pr_roman_romanize_the_slavs_decision_tooltip
     decision_group_type = roman
 
     cooldown = { years = 10 }
@@ -2328,10 +2243,10 @@ pr_roman_romanize_the_slavs_decision = {
             liege = { has_title = title:e_byzantium }
         }
         OR = {
-            faith.religion = religion:roman_religion
+            faith = { pr_is_cultus_deorum_faith_trigger = yes }
             faith.religion = religion:hellenism_religion
         }
-        if = {
+        trigger_if = {
             limit = {
                 has_title = title:e_byzantium
             }
@@ -2339,7 +2254,7 @@ pr_roman_romanize_the_slavs_decision = {
                 valid_for_pagan_conversion_trigger = yes
             }
         }
-        else = {
+        trigger_else = {
             any_neighboring_and_across_water_realm_same_rank_owner = {
                 valid_for_pagan_conversion_trigger = yes
             }
@@ -2348,7 +2263,7 @@ pr_roman_romanize_the_slavs_decision = {
 
     is_valid = {
         government_has_flag = government_is_administrative
-        if = {
+        trigger_if = {
             limit = {
                 has_title = title:e_byzantium
             }
@@ -2359,7 +2274,7 @@ pr_roman_romanize_the_slavs_decision = {
                 text = valid_neighboring_and_across_water_top_liege
             }
         }
-        else = {
+        trigger_else = {
             custom_tooltip = {
                 any_neighboring_and_across_water_realm_same_rank_owner = {
                     valid_for_pagan_conversion_trigger = yes
@@ -2415,11 +2330,11 @@ pr_roman_build_temple_jupiter_constantinople_decision = {
         reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
     }
     desc = pr_roman_build_temple_jupiter_constantinople_decision_desc
-    decision_tooltip = pr_roman_build_temple_jupiter_constantinople_decision_tooltip
+    selection_tooltip = pr_roman_build_temple_jupiter_constantinople_decision_tooltip
     decision_group_type = roman
 
     is_shown = {
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
         NOT = {
             is_target_in_global_variable_list = {
                 name = unavailable_unique_decisions
@@ -2463,7 +2378,7 @@ pr_roman_build_temple_jupiter_constantinople_decision = {
 
     ai_potential = {
         is_ruler = yes
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
         completely_controls = title:d_thrace
     }
 
@@ -2478,11 +2393,11 @@ pr_roman_build_temple_jupiter_rome_decision = {
         reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
     }
     desc = pr_roman_build_temple_jupiter_rome_decision_desc
-    decision_tooltip = pr_roman_build_temple_jupiter_rome_decision_tooltip
+    selection_tooltip = pr_roman_build_temple_jupiter_rome_decision_tooltip
     decision_group_type = roman
 
     is_shown = {
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
         NOT = {
             is_target_in_global_variable_list = {
                 name = unavailable_unique_decisions
@@ -2527,7 +2442,7 @@ pr_roman_build_temple_jupiter_rome_decision = {
 
     ai_potential = {
         is_ruler = yes
-        religion = religion:roman_religion
+        pr_is_cultus_deorum_trigger = yes
         completely_controls = title:d_latium
     }
 
@@ -2684,7 +2599,7 @@ change_state_faith = {
             }
         }
 
-        primary_title = { set_state_faith = root.faith }
+        primary_title = { set_state_rite = root.rite }
         capital_county = { set_county_faith = root.faith }
 
         every_vassal = {

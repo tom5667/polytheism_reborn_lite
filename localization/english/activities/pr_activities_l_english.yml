@@ -157,3 +157,13 @@
   pr_vestal_daughter_memory_desc:0 "was inducted as a Vestal daughter, sworn to the service of Vesta"
   pr_vestal_daughter_memory_desc_second_perspective:0 "you were inducted as a Vestal daughter, sworn to the service of Vesta"
   pr_vestal_daughter_memory_desc_third_perspective:0 "[owner.GetName] was inducted as a Vestal daughter, sworn to the service of Vesta"
+
+  # =============================================
+  # PR Pilgrimage activity log entries
+  # =============================================
+  Pr_kogaionon_pilgrimage_completed_log_title:0 "Pilgrimage Completed"
+  Pr_kogaionon_pilgrimage_completed_log:0 "[CHARACTER.GetShortUIName|U] completed the pilgrimage to the holy mountain of Kogaionon"
+  Pr_cnoc_uisnigh_pilgrimage_completed_log_title:0 "Pilgrimage Completed"
+  Pr_cnoc_uisnigh_pilgrimage_completed_log:0 "[CHARACTER.GetShortUIName|U] completed the pilgrimage to the Hill of Uisneach"
+  Pr_cnoc_uisnigh_pilgrimage_inspired_log_title:0 "Inspired at Uisneach"
+  Pr_cnoc_uisnigh_pilgrimage_inspired_log:0 "[CHARACTER.GetShortUIName|U] felt the presence of the gods on the Hill of Uisneach"

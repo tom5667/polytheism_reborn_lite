@@ -1,0 +1,527 @@
+﻿#####################
+#Made by tom5667
+#####################
+# Rites of the Egyptian faiths. Rite doctrines override the religion's doctrines of the same group.
+
+# Kemetic rite. God names: religion-level block.
+kemetic_rites = {
+    faith = kemetic_polytheism
+
+    color = { 252 230 0 }
+    icon = kemetic_polytheism
+
+    tenets = {
+        tenet_animal_sacrifice
+        tenet_ancestor_worship
+        tenet_esotericism
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+        doctrine_polytheist
+        special_doctrine_kemetic_patron_god
+        special_doctrine_ecumenical_graeco_egyptian
+    }
+}
+
+# Old Kingdom / Heliopolitan rite: Ra, Atum and the Ennead of Heliopolis; Anubis still lord of the
+# dead, Seth not yet demonized (issue #84). God names per resource/egyptian_religion_research.md.
+heliopolitan_rites = {
+    faith = kemetic_polytheism
+
+    color = { 230 180 40 }
+    icon = kemetic_polytheism_custom # golden Eye: Eye of Ra, Heliopolitan sun cult
+
+    tenets = {
+        tenet_animal_sacrifice
+        tenet_ancestor_worship
+        tenet_esotericism
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+        doctrine_polytheist
+        special_doctrine_kemetic_patron_god
+        special_doctrine_ecumenical_graeco_egyptian
+    }
+
+    localization = {
+        #High God Name
+        HighGodName = heliopolitan_rites_high_god_name
+        HighGodName2 = heliopolitan_rites_high_god_name_2
+        HighGodNamePossessive = heliopolitan_rites_high_god_name_possessive
+        HighGodNameSheHe = CHARACTER_SHEHE_HE
+        HighGodHerselfHimself = CHARACTER_HIMSELF
+        HighGodHerHis = CHARACTER_HERHIS_HIS
+        HighGodNameAlternate = heliopolitan_rites_high_god_name_alternate
+        HighGodNameAlternatePossessive = heliopolitan_rites_high_god_name_alternate_possessive
+
+        #Creator
+        CreatorName = heliopolitan_rites_creator_god_name
+        CreatorNamePossessive = heliopolitan_rites_creator_god_name_possessive
+        CreatorSheHe = CHARACTER_SHEHE_HE
+        CreatorHerHis = CHARACTER_HERHIS_HIS
+        CreatorHerHim = CHARACTER_HERHIM_HIM
+
+        #HealthGod
+        HealthGodName = heliopolitan_rites_health_god_name
+        HealthGodNamePossessive = heliopolitan_rites_health_god_name_possessive
+        HealthGodSheHe = CHARACTER_SHEHE_THEY
+        HealthGodHerHis = CHARACTER_HERHIS_THEIR
+        HealthGodHerHim = CHARACTER_HERHIM_THEM
+
+        #FertilityGod
+        FertilityGodName = heliopolitan_rites_fertility_god_name
+        FertilityGodNamePossessive = heliopolitan_rites_fertility_god_name_possessive
+        FertilityGodSheHe = CHARACTER_SHEHE_SHE
+        FertilityGodHerHis = CHARACTER_HERHIS_HER
+        FertilityGodHerHim = CHARACTER_HERHIM_HER
+
+        #WealthGod
+        WealthGodName = heliopolitan_rites_wealth_god_name
+        WealthGodNamePossessive = heliopolitan_rites_wealth_god_name_possessive
+        WealthGodSheHe = CHARACTER_SHEHE_SHE
+        WealthGodHerHis = CHARACTER_HERHIS_HER
+        WealthGodHerHim = CHARACTER_HERHIM_HER
+
+        #HouseholdGod
+        HouseholdGodName = heliopolitan_rites_household_god_name
+        HouseholdGodNamePossessive = heliopolitan_rites_household_god_name_possessive
+        HouseholdGodSheHe = CHARACTER_SHEHE_THEY
+        HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
+        HouseholdGodHerHim = CHARACTER_HERHIM_THEM
+
+        #FateGod
+        FateGodName = heliopolitan_rites_fate_god_name
+        FateGodNamePossessive = heliopolitan_rites_fate_god_name_possessive
+        FateGodSheHe = CHARACTER_SHEHE_IT
+        FateGodHerHis = CHARACTER_HERHIS_ITS
+        FateGodHerHim = CHARACTER_HERHIM_IT
+
+        #KnowledgeGod
+        KnowledgeGodName = heliopolitan_rites_knowledge_god_name
+        KnowledgeGodNamePossessive = heliopolitan_rites_knowledge_god_name_possessive
+        KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+        KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+        KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+        #WarGod
+        WarGodName = heliopolitan_rites_war_god_name
+        WarGodNamePossessive = heliopolitan_rites_war_god_name_possessive
+        WarGodSheHe = CHARACTER_SHEHE_SHE
+        WarGodHerHis = CHARACTER_HERHIS_HER
+        WarGodHerHim = CHARACTER_HERHIM_HER
+
+        #TricksterGod
+        TricksterGodName = heliopolitan_rites_trickster_god_name
+        TricksterGodNamePossessive = heliopolitan_rites_trickster_god_name_possessive
+        TricksterGodSheHe = CHARACTER_SHEHE_HE
+        TricksterGodHerHis = CHARACTER_HERHIS_HIS
+        TricksterGodHerHim = CHARACTER_HERHIM_HIM
+
+        #NightGod
+        NightGodName = heliopolitan_rites_night_god_name
+        NightGodNamePossessive = heliopolitan_rites_night_god_name_possessive
+        NightGodSheHe = CHARACTER_SHEHE_SHE
+        NightGodHerHis = CHARACTER_HERHIS_HER
+        NightGodHerHim = CHARACTER_HERHIM_HER
+
+        #WaterGod
+        WaterGodName = heliopolitan_rites_water_god_name
+        WaterGodNamePossessive = heliopolitan_rites_water_god_name_possessive
+        WaterGodSheHe = CHARACTER_SHEHE_HE
+        WaterGodHerHis = CHARACTER_HERHIS_HIS
+        WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+        PantheonTerm = heliopolitan_rites_pantheon_term
+        PantheonTerm2 = heliopolitan_rites_pantheon_term_2
+        PantheonTerm3 = heliopolitan_rites_pantheon_term_3
+        PantheonTermHasHave = heliopolitan_rites_pantheon_term_has
+        GoodGodNames = {heliopolitan_rites_good_god_shu heliopolitan_rites_good_god_tefnut heliopolitan_rites_good_god_geb heliopolitan_rites_good_god_osiris heliopolitan_rites_good_god_isis heliopolitan_rites_good_god_nephthys heliopolitan_rites_good_god_horus}
+        DevilName = heliopolitan_rites_devil_name
+        DevilNamePossessive = heliopolitan_rites_devil_name_possessive
+        DevilSheHe = CHARACTER_SHEHE_HE
+        DevilHerHis = CHARACTER_HERHIS_HIS
+        DevilHerselfHimself = CHARACTER_HIMSELF
+        EvilGodNames = {heliopolitan_rites_evil_god_apep heliopolitan_rites_evil_god_serpents}
+        ReligiousSymbol = heliopolitan_rites_religious_symbol
+        ReligiousSymbol2 = heliopolitan_rites_religious_symbol_2
+        ReligiousSymbol3 = heliopolitan_rites_religious_symbol_3
+        ReligiousText = heliopolitan_rites_religious_text
+        ReligiousText2 = heliopolitan_rites_religious_text_2
+        ReligiousText3 = heliopolitan_rites_religious_text_3
+        PriestMale = heliopolitan_rites_priest_male
+        PriestMalePlural = heliopolitan_rites_priest_male_plural
+        PriestFemale = heliopolitan_rites_priest_female
+        PriestFemalePlural = heliopolitan_rites_priest_female_plural
+        PriestNeuter = heliopolitan_rites_priest_male
+        PriestNeuterPlural = heliopolitan_rites_priest_male_plural
+        BishopMale = heliopolitan_rites_bishop_male
+        BishopMalePlural = heliopolitan_rites_bishop_male_plural
+        BishopFemale = heliopolitan_rites_priest_female
+        BishopFemalePlural = heliopolitan_rites_priest_female_plural
+        BishopNeuter = heliopolitan_rites_priest_male
+        BishopNeuterPlural = heliopolitan_rites_priest_male_plural
+        DivineRealm = heliopolitan_rites_divine_realm
+        DivineRealm2 = heliopolitan_rites_divine_realm_2
+        DivineRealm3 = heliopolitan_rites_divine_realm_3
+        PositiveAfterLife = heliopolitan_rites_positive_afterlife
+        PositiveAfterLife2 = heliopolitan_rites_positive_afterlife_2
+        PositiveAfterLife3 = heliopolitan_rites_positive_afterlife_3
+        NegativeAfterLife = heliopolitan_rites_negative_afterlife
+        NegativeAfterLife2 = heliopolitan_rites_negative_afterlife_2
+        NegativeAfterLife3 = heliopolitan_rites_negative_afterlife_3
+        DeathDeityName = heliopolitan_rites_death_deity_name
+        DeathDeityNamePossessive = heliopolitan_rites_death_deity_name_possessive
+        DeathDeitySheHe = CHARACTER_SHEHE_HE
+        DeathDeityHerHis = CHARACTER_HERHIS_HIS
+        DeathDeityHerHim = CHARACTER_HERHIM_HIM
+        WitchGodName = heliopolitan_rites_witchgod_name
+        WitchGodNamePossessive = heliopolitan_rites_witchgod_name_possessive
+        WitchGodHerHis = CHARACTER_HERHIS_HIS
+        WitchGodSheHe = CHARACTER_SHEHE_HE
+        WitchGodHerHim = CHARACTER_HERHIM_HIM
+        WitchGodMistressMaster = master
+        WitchGodMotherFather = father
+    }
+}
+
+# Late Period rite (664-332 BC, decided 2026-10-08): Neith of Sais, the animal cults (Apis, Bastet), Isis and
+# Osiris, Seth demonized (issue #84). God names per resource/egyptian_religion_research.md.
+late_period_rites = {
+    faith = kemetic_polytheism
+
+    color = { 130 70 170 }
+    icon = custom_faith_ankh # vanilla ankh; ReligiousSymbol of this rite
+
+    tenets = {
+        tenet_animal_sacrifice
+        tenet_ancestor_worship
+        tenet_esotericism
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+        doctrine_polytheist
+        special_doctrine_kemetic_patron_god
+        special_doctrine_ecumenical_graeco_egyptian
+    }
+
+    localization = {
+        #High God Name
+        HighGodName = late_period_rites_high_god_name
+        HighGodName2 = late_period_rites_high_god_name_2
+        HighGodNamePossessive = late_period_rites_high_god_name_possessive
+        HighGodNameSheHe = CHARACTER_SHEHE_HE
+        HighGodHerselfHimself = CHARACTER_HIMSELF
+        HighGodHerHis = CHARACTER_HERHIS_HIS
+        HighGodNameAlternate = late_period_rites_high_god_name_alternate
+        HighGodNameAlternatePossessive = late_period_rites_high_god_name_alternate_possessive
+
+        #Creator
+        CreatorName = late_period_rites_creator_god_name
+        CreatorNamePossessive = late_period_rites_creator_god_name_possessive
+        CreatorSheHe = CHARACTER_SHEHE_HE
+        CreatorHerHis = CHARACTER_HERHIS_HIS
+        CreatorHerHim = CHARACTER_HERHIM_HIM
+
+        #HealthGod
+        HealthGodName = late_period_rites_health_god_name
+        HealthGodNamePossessive = late_period_rites_health_god_name_possessive
+        HealthGodSheHe = CHARACTER_SHEHE_HE
+        HealthGodHerHis = CHARACTER_HERHIS_HIS
+        HealthGodHerHim = CHARACTER_HERHIM_HIM
+
+        #FertilityGod
+        FertilityGodName = late_period_rites_fertility_god_name
+        FertilityGodNamePossessive = late_period_rites_fertility_god_name_possessive
+        FertilityGodSheHe = CHARACTER_SHEHE_SHE
+        FertilityGodHerHis = CHARACTER_HERHIS_HER
+        FertilityGodHerHim = CHARACTER_HERHIM_HER
+
+        #WealthGod
+        WealthGodName = late_period_rites_wealth_god_name
+        WealthGodNamePossessive = late_period_rites_wealth_god_name_possessive
+        WealthGodSheHe = CHARACTER_SHEHE_SHE
+        WealthGodHerHis = CHARACTER_HERHIS_HER
+        WealthGodHerHim = CHARACTER_HERHIM_HER
+
+        #HouseholdGod
+        HouseholdGodName = late_period_rites_household_god_name
+        HouseholdGodNamePossessive = late_period_rites_household_god_name_possessive
+        HouseholdGodSheHe = CHARACTER_SHEHE_HE
+        HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+        HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+        #FateGod
+        FateGodName = late_period_rites_fate_god_name
+        FateGodNamePossessive = late_period_rites_fate_god_name_possessive
+        FateGodSheHe = CHARACTER_SHEHE_HE
+        FateGodHerHis = CHARACTER_HERHIS_HIS
+        FateGodHerHim = CHARACTER_HERHIM_HIM
+
+        #KnowledgeGod
+        KnowledgeGodName = late_period_rites_knowledge_god_name
+        KnowledgeGodNamePossessive = late_period_rites_knowledge_god_name_possessive
+        KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+        KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+        KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+        #WarGod
+        WarGodName = late_period_rites_war_god_name
+        WarGodNamePossessive = late_period_rites_war_god_name_possessive
+        WarGodSheHe = CHARACTER_SHEHE_SHE
+        WarGodHerHis = CHARACTER_HERHIS_HER
+        WarGodHerHim = CHARACTER_HERHIM_HER
+
+        #TricksterGod (Seth bewust dubbel: duivel én trickster in de gedemoniseerde late gedaante)
+        TricksterGodName = late_period_rites_trickster_god_name
+        TricksterGodNamePossessive = late_period_rites_trickster_god_name_possessive
+        TricksterGodSheHe = CHARACTER_SHEHE_THEY
+        TricksterGodHerHis = CHARACTER_HERHIS_THEIR
+        TricksterGodHerHim = CHARACTER_HERHIM_THEM
+
+        #NightGod
+        NightGodName = late_period_rites_night_god_name
+        NightGodNamePossessive = late_period_rites_night_god_name_possessive
+        NightGodSheHe = CHARACTER_SHEHE_SHE
+        NightGodHerHis = CHARACTER_HERHIS_HER
+        NightGodHerHim = CHARACTER_HERHIM_HER
+
+        #WaterGod
+        WaterGodName = late_period_rites_water_god_name
+        WaterGodNamePossessive = late_period_rites_water_god_name_possessive
+        WaterGodSheHe = CHARACTER_SHEHE_HE
+        WaterGodHerHis = CHARACTER_HERHIS_HIS
+        WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+        PantheonTerm = religion_the_gods
+        PantheonTerm2 = religion_the_gods_2
+        PantheonTerm3 = religion_the_gods_3
+        PantheonTermHasHave = pantheon_term_have
+        GoodGodNames = {late_period_rites_good_god_isis late_period_rites_good_god_osiris late_period_rites_good_god_horus late_period_rites_good_god_ptah late_period_rites_good_god_neith late_period_rites_good_god_bastet late_period_rites_good_god_apis late_period_rites_good_god_imhotep}
+        DevilName = late_period_rites_devil_name
+        DevilNamePossessive = late_period_rites_devil_name_possessive
+        DevilSheHe = CHARACTER_SHEHE_HE
+        DevilHerHis = CHARACTER_HERHIS_HIS
+        DevilHerselfHimself = CHARACTER_HIMSELF
+        EvilGodNames = {late_period_rites_evil_god_apep late_period_rites_evil_god_enemies_of_ra}
+        ReligiousSymbol = late_period_rites_religious_symbol
+        ReligiousSymbol2 = late_period_rites_religious_symbol_2
+        ReligiousSymbol3 = late_period_rites_religious_symbol_3
+        ReligiousText = late_period_rites_religious_text
+        ReligiousText2 = late_period_rites_religious_text_2
+        ReligiousText3 = late_period_rites_religious_text_3
+        PriestMale = late_period_rites_priest_male
+        PriestMalePlural = late_period_rites_priest_male_plural
+        PriestFemale = late_period_rites_priest_female
+        PriestFemalePlural = late_period_rites_priest_female_plural
+        PriestNeuter = late_period_rites_priest_male
+        PriestNeuterPlural = late_period_rites_priest_male_plural
+        BishopMale = late_period_rites_bishop_male
+        BishopMalePlural = late_period_rites_bishop_male_plural
+        BishopFemale = late_period_rites_bishop_female
+        BishopFemalePlural = late_period_rites_bishop_female_plural
+        BishopNeuter = late_period_rites_priest_male
+        BishopNeuterPlural = late_period_rites_priest_male_plural
+        DivineRealm = late_period_rites_divine_realm
+        DivineRealm2 = late_period_rites_divine_realm_2
+        DivineRealm3 = late_period_rites_divine_realm_3
+        PositiveAfterLife = late_period_rites_positive_afterlife
+        PositiveAfterLife2 = late_period_rites_positive_afterlife_2
+        PositiveAfterLife3 = late_period_rites_positive_afterlife_3
+        NegativeAfterLife = late_period_rites_negative_afterlife
+        NegativeAfterLife2 = late_period_rites_negative_afterlife_2
+        NegativeAfterLife3 = late_period_rites_negative_afterlife_3
+        DeathDeityName = late_period_rites_death_deity_name
+        DeathDeityNamePossessive = late_period_rites_death_deity_name_possessive
+        DeathDeitySheHe = CHARACTER_SHEHE_HE
+        DeathDeityHerHis = CHARACTER_HERHIS_HIS
+        DeathDeityHerHim = CHARACTER_HERHIM_HIM
+        WitchGodName = late_period_rites_witchgod_name
+        WitchGodNamePossessive = late_period_rites_witchgod_name_possessive
+        WitchGodHerHis = CHARACTER_HERHIS_HIS
+        WitchGodSheHe = CHARACTER_SHEHE_HE
+        WitchGodHerHim = CHARACTER_HERHIM_HIM
+        WitchGodMistressMaster = master
+        WitchGodMotherFather = father
+    }
+}
+
+# Atenism rite: the Aten alone, no patron gods.
+atenism_rites = {
+    faith = atenism
+
+    color = { 252 240 0 }
+    icon = atenism
+
+    tenets = {
+        tenet_unrelenting_faith
+        tenet_sun_worship
+        tenet_esotericism
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+        doctrine_monotheist
+        special_doctrine_no_patron_god
+    }
+
+    localization = {
+        #High God Name
+        HighGodName = atenism_high_god_name
+        HighGodName2 = atenism_high_god_name_2
+        HighGodNamePossessive = atenism_high_god_name_possessive
+        HighGodNameSheHe = CHARACTER_SHEHE_HE
+        HighGodHerselfHimself = CHARACTER_HIMSELF
+        HighGodHerHis = CHARACTER_HERHIS_HIS
+        HighGodNameAlternate = atenism_high_god_name_alternate
+        HighGodNameAlternatePossessive = atenism_high_god_name_alternate_possessive
+
+        #Creator
+        CreatorName = atenism_creator_god_name
+        CreatorNamePossessive = atenism_creator_god_name_possessive
+        CreatorSheHe = CHARACTER_SHEHE_HE
+        CreatorHerHis = CHARACTER_HERHIS_HIS
+        CreatorHerHim = CHARACTER_HERHIM_HIM
+
+        #HealthGod
+        HealthGodName = atenism_health_god_name
+        HealthGodNamePossessive = atenism_health_god_name_possessive
+        HealthGodSheHe = CHARACTER_SHEHE_HE
+        HealthGodHerHis = CHARACTER_HERHIS_HIS
+        HealthGodHerHim = CHARACTER_HERHIM_HIM
+
+        #FertilityGod
+        FertilityGodName = atenism_fertility_god_name
+        FertilityGodNamePossessive = atenism_fertility_god_name_possessive
+        FertilityGodSheHe = CHARACTER_SHEHE_HE
+        FertilityGodHerHis = CHARACTER_HERHIS_HIS
+        FertilityGodHerHim = CHARACTER_HERHIM_HIM
+
+        #WealthGod
+        WealthGodName = atenism_wealth_god_name
+        WealthGodNamePossessive = atenism_wealth_god_name_possessive
+        WealthGodSheHe = CHARACTER_SHEHE_HE
+        WealthGodHerHis = CHARACTER_HERHIS_HIS
+        WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+        #HouseholdGod
+        HouseholdGodName = atenism_household_god_name
+        HouseholdGodNamePossessive = atenism_household_god_name_possessive
+        HouseholdGodSheHe = CHARACTER_SHEHE_HE
+        HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+        HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+        #FateGod
+        FateGodName = atenism_fate_god_name
+        FateGodNamePossessive = atenism_fate_god_name_possessive
+        FateGodSheHe = CHARACTER_SHEHE_HE
+        FateGodHerHis = CHARACTER_HERHIS_HIS
+        FateGodHerHim = CHARACTER_HERHIM_HIM
+
+        #KnowledgeGod
+        KnowledgeGodName = atenism_knowledge_god_name
+        KnowledgeGodNamePossessive = atenism_knowledge_god_name_possessive
+        KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+        KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+        KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+        #WarGod
+        WarGodName = atenism_war_god_name
+        WarGodNamePossessive = atenism_war_god_name_possessive
+        WarGodSheHe = CHARACTER_SHEHE_HE
+        WarGodHerHis = CHARACTER_HERHIS_HIS
+        WarGodHerHim = CHARACTER_HERHIM_HIM
+
+        #TricksterGod
+        TricksterGodName = atenism_trickster_god_name
+        TricksterGodNamePossessive = atenism_trickster_god_name_possessive
+        TricksterGodSheHe = CHARACTER_SHEHE_HE
+        TricksterGodHerHis = CHARACTER_HERHIS_HIS
+        TricksterGodHerHim = CHARACTER_HERHIM_HIM
+
+        #NightGod
+        NightGodName = atenism_night_god_name
+        NightGodNamePossessive = atenism_night_god_name_possessive
+        NightGodSheHe = CHARACTER_SHEHE_IT
+        NightGodHerHis = CHARACTER_HERHIS_ITS
+        NightGodHerHim = CHARACTER_HERHIM_IT
+
+        #WaterGod
+        WaterGodName = atenism_water_god_name
+        WaterGodNamePossessive = atenism_water_god_name_possessive
+        WaterGodSheHe = CHARACTER_SHEHE_HE
+        WaterGodHerHis = CHARACTER_HERHIS_HIS
+        WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+        PantheonTerm = religion_the_gods
+        PantheonTerm2 = religion_the_gods_2
+        PantheonTerm3 = religion_the_gods_3
+        PantheonTermHasHave = pantheon_term_have
+        GoodGodNames = {atenism_good_god_aten}
+        DevilName = atenism_devil_name
+        DevilNamePossessive = atenism_devil_name_possessive
+        DevilSheHe = CHARACTER_SHEHE_HE
+        DevilHerHis = CHARACTER_HERHIS_HIS
+        DevilHerselfHimself = CHARACTER_HIMSELF
+        EvilGodNames = {atenism_evil_god_amun atenism_evil_god_mut}
+        HouseOfWorship = atenism_house_of_worship
+        HouseOfWorship2 = atenism_house_of_worship_2
+        HouseOfWorship3 = atenism_house_of_worship_3
+        HouseOfWorshipPlural = atenism_house_of_worship_plural
+        ReligiousSymbol = atenism_religious_symbol
+        ReligiousSymbol2 = atenism_religious_symbol_2
+        ReligiousSymbol3 = atenism_religious_symbol_3
+        ReligiousText = atenism_religious_text
+        ReligiousText2 = atenism_religious_text_2
+        ReligiousText3 = atenism_religious_text_3
+        ReligiousHeadName = atenism_religious_head_title
+        ReligiousHeadNameFemale = atenism_religious_head_title
+        ReligiousHeadTitleName = dualism_religious_head_title_name
+        DevoteeMale = paganism_devotee
+        DevoteeMalePlural = paganism_devoteeplural
+        DevoteeFemale = paganism_devotee
+        DevoteeFemalePlural = paganism_devoteeplural
+        DevoteeNeuter = paganism_devotee
+        DevoteeNeuterPlural = paganism_devoteeplural
+        PriestMale = atenism_priest_male
+        PriestMalePlural = atenism_priest_male_plural
+        PriestFemale = atenism_priest_female
+        PriestFemalePlural = atenism_priest_female_plural
+        PriestNeuter = atenism_priest_male
+        PriestNeuterPlural = atenism_priest_male_plural
+        AltPriestTermPlural = christianity_priest_alternate_plural
+        BishopMale = atenism_bishop_male
+        BishopMalePlural = atenism_bishop_male_plural
+        BishopFemale = atenism_priest_female
+        BishopFemalePlural = atenism_priest_female_plural
+        BishopNeuter = atenism_priest_male
+        BishopNeuterPlural = atenism_priest_male_plural
+        DivineRealm = atenism_divine_realm
+        DivineRealm2 = atenism_divine_realm_2
+        DivineRealm3 = atenism_divine_realm_3
+        PositiveAfterLife = atenism_positive_afterlife
+        PositiveAfterLife2 = atenism_positive_afterlife_2
+        PositiveAfterLife3 = atenism_positive_afterlife_3
+        NegativeAfterLife = atenism_negative_afterlife
+        NegativeAfterLife2 = atenism_negative_afterlife_2
+        NegativeAfterLife3 = atenism_negative_afterlife_3
+        DeathDeityName = atenism_death_deity_name
+        DeathDeityNamePossessive = atenism_death_deity_name_possessive
+        DeathDeitySheHe = CHARACTER_SHEHE_HE
+        DeathDeityHerHis = CHARACTER_HERHIS_HIS
+        DeathDeityHerHim = CHARACTER_HERHIM_HIM
+        WitchGodName = atenism_witchgodname_amun
+        WitchGodNamePossessive = atenism_witchgodname_amun_possessive
+        WitchGodHerHis = CHARACTER_HERHIS_HIS
+        WitchGodSheHe = CHARACTER_SHEHE_HE
+        WitchGodHerHim = CHARACTER_HERHIM_HIM
+        WitchGodMistressMaster = master
+        WitchGodMotherFather = father
+
+        GHWName = ghw_great_holy_war
+        GHWNamePlural = ghw_great_holy_wars
+
+    }
+}

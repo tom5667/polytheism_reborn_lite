@@ -1333,7 +1333,6 @@ k_carthaginensis = {
 	}
 }
 k_german_confederation ={
-	custom=yes
 	pattern="pattern_horizontal_split_02.dds"
 	color1=rgb { 209 151 14 }
 	color2=black
@@ -1430,3 +1429,13 @@ k_german_confederation ={
 # 	}
 
 # }
+
+d_kogaionon = {
+	pattern = "pattern_solid.dds"
+	color1 = "brown"
+	colored_emblem = {
+		texture = "ce_dacian.dds"
+		color1 = "yellow"
+		instance = { position = { 0.50 0.50 } scale = { 0.8 0.8 } }
+	}
+}

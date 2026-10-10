@@ -10,7 +10,7 @@ pr_greek_choose_main_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/greek_temple.dds"
     }
     desc = pr_greek_choose_main_deity_decision_desc
-    decision_tooltip = pr_greek_choose_main_deity_decision_tooltip
+    selection_tooltip = pr_greek_choose_main_deity_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
@@ -32,8 +32,8 @@ pr_greek_choose_main_deity_decision = {
         if = {
             limit = {
                 OR = {
-                    faith = faith:hellenic_pagan
-                    faith = { has_doctrine_parameter = special_doctrine_hellenic_patron_god_active }
+                    rite = rite:hellenic_pagan
+                    rite = { rite_has_parameter = special_doctrine_hellenic_patron_god_active }
                 }
             }
             trigger_event = pr_greek_decision.0001
@@ -41,8 +41,8 @@ pr_greek_choose_main_deity_decision = {
         else_if = {
             limit = {
                 OR = {
-                    faith = faith:mycenaean_polytheism
-                    faith = { has_doctrine_parameter = special_doctrine_mycenaean_patron_god_active }
+                    rite = rite:mycenaean_rites
+                    rite = { rite_has_parameter = special_doctrine_mycenaean_patron_god_active }
                 }
             }
             show_as_tooltip = {
@@ -80,8 +80,8 @@ pr_greek_choose_main_deity_decision = {
         else_if = {
             limit = {
                 OR = {
-                    faith = faith:graeco_egyptian_polytheism
-                    faith = { has_doctrine_parameter = special_doctrine_graeco_egyptian_patron_god_active }
+                    rite = rite:graeco_egyptian_rites
+                    rite = { rite_has_parameter = special_doctrine_graeco_egyptian_patron_god_active }
                 }
             }
             show_as_tooltip = {
@@ -119,8 +119,8 @@ pr_greek_choose_main_deity_decision = {
         else_if = {
             limit = {
                 OR = {
-                    faith = faith:alexandrian_cult
-                    faith = { has_doctrine_parameter = special_doctrine_alexandrian_cult_patron_god_active }
+                    # The Alexandrian Cult is no longer a faith; it becomes a Cults-tab cult (issue #100).
+                    rite = { rite_has_parameter = special_doctrine_alexandrian_cult_patron_god_active }
                 }
             }
             show_as_tooltip = {
@@ -149,7 +149,7 @@ pr_greek_choose_main_deity_decision = {
                     100 = {
                         show_chance = no
                         desc = select_main_deity_graeco_egyptian_decision.select_ares
-                        add_character_modifier = mycenaean_ares
+                        add_character_modifier = graeco_egyptian_ares
                     }
                 }
             }
@@ -167,18 +167,18 @@ pr_greek_choose_main_deity_decision = {
             has_character_modifier = mycenaean_aphrodite
             has_character_modifier = mycenaean_athena
             has_character_modifier = mycenaean_ares
-            has_trait = pr_hellenic_zeus
-            has_trait = pr_hellenic_hera
-            has_trait = pr_hellenic_ares
-            has_trait = pr_hellenic_aphrodite
-            has_trait = pr_hellenic_hermes
-            has_trait = pr_hellenic_athena
-            has_trait = pr_hellenic_demeter
+            has_character_modifier = pr_hellenic_zeus
+            has_character_modifier = pr_hellenic_hera
+            has_character_modifier = pr_hellenic_ares
+            has_character_modifier = pr_hellenic_aphrodite
+            has_character_modifier = pr_hellenic_hermes
+            has_character_modifier = pr_hellenic_athena
+            has_character_modifier = pr_hellenic_demeter
             has_character_modifier = graeco_egyptian_zeus_amon
             has_character_modifier = graeco_egyptian_isis
             has_character_modifier = graeco_egyptian_hermes_trismegistus
             has_character_modifier = graeco_egyptian_harpocrates
-            has_character_modifier = mycenaean_ares
+            has_character_modifier = graeco_egyptian_ares
             has_character_modifier = graeco_egyptian_alexander_megalos
         }
     }
@@ -194,7 +194,7 @@ pr_greek_hellen_culture_decision = {
         reference = "gfx/interface/illustrations/decisions/greek_temple.dds"
     }
     desc = pr_greek_hellen_culture_decision_desc
-    decision_tooltip = pr_greek_hellen_culture_decision_tooltip
+    selection_tooltip = pr_greek_hellen_culture_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
@@ -254,7 +254,7 @@ pr_greek_pergamon_kingdom_decision = {
         reference = "gfx/interface/illustrations/decisions/greek_temple.dds"
     }
     desc = pr_greek_pergamon_kingdom_decision_desc
-    decision_tooltip = pr_greek_pergamon_kingdom_decision_tooltip
+    selection_tooltip = pr_greek_pergamon_kingdom_decision_tooltip
     decision_group_type = major
 
     ai_check_interval = 4
@@ -270,7 +270,7 @@ pr_greek_pergamon_kingdom_decision = {
             }
         }
         OR = {
-            religion = religion:roman_religion
+            pr_is_cultus_deorum_trigger = yes
             religion = religion:hellenism_religion
             culture = culture:greek
             culture = culture:pr_greek
@@ -298,7 +298,7 @@ pr_greek_pergamon_kingdom_decision = {
             culture = culture:roman
         }
         OR = {
-            religion = religion:roman_religion
+            pr_is_cultus_deorum_trigger = yes
             religion = religion:hellenism_religion
         }
     }
@@ -359,7 +359,7 @@ pr_greek_set_capital_pergamon_decision = {
         reference = "gfx/interface/illustrations/decisions/greek_temple.dds"
     }
     desc = pr_greek_set_capital_pergamon_decision_desc
-    decision_tooltip = pr_greek_set_capital_pergamon_decision_tooltip
+    selection_tooltip = pr_greek_set_capital_pergamon_decision_tooltip
     decision_group_type = major
 
     ai_check_interval = 12
@@ -422,7 +422,7 @@ pr_greek_convert_to_graeco_egyptian_decision = {
         reference = "gfx/interface/illustrations/decisions/greek_temple.dds"
     }
     desc = pr_greek_convert_to_graeco_egyptian_decision_desc
-    decision_tooltip = pr_greek_convert_to_graeco_egyptian_decision_tooltip
+    selection_tooltip = pr_greek_convert_to_graeco_egyptian_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
@@ -433,7 +433,7 @@ pr_greek_convert_to_graeco_egyptian_decision = {
             culture = culture:pr_greek
             culture = culture:pr_graeco_egyptian
         }
-        NOT = { faith = faith:graeco_egyptian_polytheism }
+        NOT = { rite = rite:graeco_egyptian_rites }
     }
 
     is_valid = {

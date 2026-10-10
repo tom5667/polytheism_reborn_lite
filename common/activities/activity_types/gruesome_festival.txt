@@ -1,71 +1,81 @@
-﻿##################################
-## Gruesome Festivals 							##
-## by Ewan Cowhig Croft							##
-## modified by Chad Uhl							##
-## Modified by tom5667 for Polytheism Reborn    ##
+﻿# Polytheism Reborn: copy of vanilla 1.20 gruesome_festival.txt (same file name, so it replaces vanilla).
+# PR changes (search "PR"): cost desc, and no human sacrifice for faiths with tenet_animal_sacrifice.
+# Re-copy from vanilla on game updates.
+##################################
+## Gruesome Festivals 			##
+## by Ewan Cowhig Croft			##
+## modified by Chad Uhl			##
 ##################################
 
 activity_gruesome_festival = {
 	is_shown = {
-		highest_held_title_tier > tier_barony
-		is_landed = yes
 		trigger_if = {
-			limit = {
-				is_ai = yes
-			}
-			is_at_war = no
+			limit = { has_character_flag = blotsven }
+			always = yes
 		}
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Following a valid faith, or simply has an appropriate county.
-		OR = {
-			faith = { has_doctrine_parameter = gruesome_festivals_active }
-			# Early-out for people who couldn't take the decision anyway.
-			AND = {
-				highest_held_title_tier >= tier_duchy
-				any_sub_realm_county = {
-					count >= 1
-					faith = { has_doctrine_parameter = gruesome_festivals_active }
+		trigger_else = {
+			highest_held_title_tier > tier_barony
+			is_landed_or_landless_administrative_or_theocratic = yes
+			# DLC check.
+			has_fp1_dlc_trigger = yes
+			# Following a valid faith, or simply has an appropriate county.
+			OR = {
+				faith = { has_doctrine_parameter = gruesome_festivals_active }
+				# Early-out for people who couldn't take the decision anyway.
+				AND = {
+					highest_held_title_tier >= tier_duchy
+					any_sub_realm_county = {
+						count >= 1
+						faith = { has_doctrine_parameter = gruesome_festivals_active }
+					}
 				}
 			}
+			ai_activity_war_check = yes
+			ai_activity_coronation_check = yes
 		}
 	}
 
 	can_start_showing_failures_only = {
-		is_available_adult = yes
-		# Must have at least some peasants who are into the idea.
-		custom_tooltip = {
-			text = gf_valid_county_faith
-			any_sub_realm_county = {
-				faith = { has_doctrine_parameter = gruesome_festivals_active }
-			}
-		}
-		# Suitable rank required.
 		trigger_if = {
-			limit = {
-				faith = { has_doctrine_parameter = gruesome_festivals_active }
-			}
-			custom_tooltip = {
-				text = gf_suitable_rank_valid
-				OR = {
-					is_independent_ruler = yes
-					highest_held_title_tier >= tier_kingdom
-				}
-			}
+			limit = { has_character_flag = blotsven }
+			always = yes
 		}
 		trigger_else = {
-			highest_held_title_tier >= tier_duchy
-			# Technically, we could make this just mega-stressful, but since you'd have no easy way out, that feels like a newb trap.
-			NOT = { has_trait = zealous }
+			NOT = { is_activity_type_on_cooldown = activity_gruesome_festival }
+			is_available_adult = yes
+			# Must have at least some peasants who are into the idea.
+			custom_tooltip = {
+				text = gf_valid_county_faith
+				any_sub_realm_county = {
+					faith = { has_doctrine_parameter = gruesome_festivals_active }
+				}
+			}
+			# Suitable rank required.
+			trigger_if = {
+				limit = {
+					faith = { has_doctrine_parameter = gruesome_festivals_active }
+				}
+				custom_tooltip = {
+					text = gf_suitable_rank_valid
+					OR = {
+						top_liege = this
+						highest_held_title_tier >= tier_kingdom
+					}
+				}
+			}
+			trigger_else = {
+				highest_held_title_tier >= tier_duchy
+				# Technically, we could make this just mega-stressful, but since you'd have no easy way out, that feels like a newb trap.
+				NOT = { has_trait = zealous }
+			}
 		}
 	}
 
 	is_valid = {
 		# Generic can-continue check.
 		scope:host = {
-			is_imprisoned = no
-			is_landed = yes
-			NOT = { is_incapable = yes }
+			is_physically_able = yes
+			is_landed_or_landless_administrative_or_theocratic = yes
 		}
 		# If no one shows up
 		trigger_if = {
@@ -74,9 +84,16 @@ activity_gruesome_festival = {
 			}
 			has_attending_activity_guests = yes
 		}
+		# If you convert
+		trigger_if = {
+			limit = { is_current_phase_active = yes }
+			NOT = { scope:host = { has_character_flag = changed_religion_blot_flag } }
+		}
 	}
 
 	on_invalidated = {
+		save_scope_as = activity_type
+		activity_location = { save_scope_as = location }
 		set_variable = {
 			name = gf_gold_recoup_value
 			value = {
@@ -87,73 +104,28 @@ activity_gruesome_festival = {
 				multiply = 0.75
 			}
 		}
-		if = {
-			limit = {
-				scope:host = { is_incapable = yes  }
-			}
-			scope:activity = {
-				activity_type = { save_scope_as = activity_type }
-			}
-			scope:host = {
-				trigger_event = activity_system.0330
-			}
-			every_attending_character = {
-				limit = { NOT = { this = scope:host } }
-				trigger_event = activity_system.0331
-			}
-		}
 
 		if = {
 			limit = {
-				scope:host = { is_imprisoned = yes }
-			}
-			#Host has been imprisoned
-			every_attending_character = {
-				limit = {
-					NOT = { this  = scope:host }
-				}
-				trigger_event = feast.5005
+				scope:host = { has_character_flag = changed_religion_blot_flag }
 			}
 			scope:host = {
-				# Send refund
-				send_interface_toast = {
-					title = fp1_other_decisions.0002.blot_invalidation.tt
-					left_icon = scope:host
-					custom_tooltip = fp1_other_decisions.0002.blot_invalidation.costs_recouped.tt
-					hidden_effect = {
-						# Regain *most* of any gold spent.
-						add_gold = scope:activity.var:gf_gold_recoup_value
-						# Regain all prestige.
-						add_prestige_no_experience = gruesome_festival_prestige_cost_value
-					}
-				}
-				trigger_event = feast.5004
-			}
-		}
-		# Host becomes unlanded
-		else_if = {
-			limit = {
-				scope:host = { is_landed = no }
-			}
-			scope:activity = {
-				activity_type = { save_scope_as = activity_type }
+				trigger_event = blotsven.0004
 			}
 			every_attending_character = {
-				trigger_event = activity_system.0320
+				limit = {
+					this != scope:host
+				}
+				trigger_event = activity_system.0100
 			}
 		}
 		else = {
-			every_attending_character = {
-				limit = {
-					NOT = { this  = scope:host }
-				}
-				add_to_list = attendees_not_coming #Saved for tooltip in feast.2002
-			}
-			activity_host = {
+			scope:host = {
 				# For loc.
 				save_scope_as = blotter
 				# Send refund
 				send_interface_toast = {
+					type = event_toast_effect_neutral
 					title = fp1_other_decisions.0002.blot_invalidation.tt
 					left_icon = scope:host
 					custom_tooltip = fp1_other_decisions.0002.blot_invalidation.costs_recouped.tt
@@ -164,7 +136,27 @@ activity_gruesome_festival = {
 						add_prestige_no_experience = gruesome_festival_prestige_cost_value
 					}
 				}
-				trigger_event = activity_system.0100 
+			}
+			if = {
+				limit = {
+					scope:host = { is_imprisoned = yes }
+				}
+				#Host has been imprisoned
+				every_attending_character = {
+					limit = {
+						this != scope:host
+					}
+					trigger_event = feast.5005
+				}
+				scope:host = {
+					trigger_event = feast.5004
+				}
+			}
+			else = {
+				invalidation_incapable_effect = yes
+				invalidation_unlanded_non_nf_effect = yes
+				invalidation_nobody_present_effect = yes
+				invalidation_host_isolated_effect = yes
 			}
 		}
 	}
@@ -179,8 +171,15 @@ activity_gruesome_festival = {
 		}
 	}
 
-	province_filter = domain
-	ai_province_filter = domain
+	on_complete = {
+		if = {
+			limit = { this = scope:host }
+			pam_vows_of_poverty_host_completion_piety_effect = yes
+		}
+	}
+
+	province_filter = domicile_domain
+	ai_province_filter = domicile_domain
 
 	max_province_icons = 5
 
@@ -192,7 +191,7 @@ activity_gruesome_festival = {
 		prestige = {
 			add = {
 				value = gruesome_festival_prestige_cost_value
-				desc = pr_gruesome_festival_cost_desc
+				desc = pr_gruesome_festival_cost_desc # PR
 			}
 		}
 	}
@@ -203,13 +202,13 @@ activity_gruesome_festival = {
 			value = gruesome_festival_prestige_cost_value
 
 			# Make it a multiple of 5 (rounded up)
-			divide = 5 
-			ceiling = yes 
+			divide = 5
+			ceiling = yes
 			multiply = 5
 		}
 		gold = {
 			# Blot only has a base prestige cost
-			value = 0 
+			value = 0
 			add = { # Blot Size
 				value = 0
 				add = gruesome_festival_option_small # Small Blot
@@ -219,7 +218,7 @@ activity_gruesome_festival = {
 				divide = 3
 			}
 			add = { # Sacrifices Option
-				value = 0 
+				value = 0
 				add = gruesome_festival_option_medium # Magnificent Animal Sacrifices
 				add = gruesome_festival_option_medium # Magnificent Human Sacrifices
 				# Divide by 4 to get the average option cost (2 levels of the option, the non magnificent ones, do not have a cost)
@@ -227,24 +226,22 @@ activity_gruesome_festival = {
 			}
 
 			# Make it a multiple of 5 (rounded up)
-			divide = 5 
-			ceiling = yes 
+			divide = 5
+			ceiling = yes
 			multiply = 5
 		}
 	}
 
 	cooldown = { years = hold_gruesome_festival_decision_value }
 
-	is_grand_activity = no
-
 	is_single_location = yes
 
 	###################
-	# AI VALUES 
+	# AI VALUES
 	###################
 	ai_will_do = {
 		value = 100
-		
+
 		# Different Faith Block
 		## If not of the faith, you don't want to do it at all outside of extenuating circumstances.
 		if = {
@@ -309,9 +306,17 @@ activity_gruesome_festival = {
 			}
 			add = 50
 		}
+		add = activity_general_ai_will_do_value
 	}
 
-	ai_check_interval = 60
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 60
+		duchy = 60
+		kingdom = 60
+		empire = 60
+		hegemony = 60
+	}
 
 	ai_will_select_province = {
 		value = 10
@@ -340,6 +345,15 @@ activity_gruesome_festival = {
 							value = gruesome_festival_option_small
 							desc = gruesome_festival_size_small
 						}
+						if = {
+							limit = {
+								has_perk = journey_planner_perk
+							}
+							multiply = {
+								value = voyager_journey_planner_value
+								desc = journey_planner_perk_name
+							}
+						}
 					}
 				}
 
@@ -360,12 +374,16 @@ activity_gruesome_festival = {
 			}
 			gruesome_festival_size_medium = {
 				is_valid = {
-					custom_tooltip = {
-						text = gf_medium_option_valid
-						any_held_title = {
-							count >= 2
-							tier = tier_county
-							#faith = scope:gf_faith
+					pam_vows_of_poverty_premium_activity_option_valid_trigger = yes
+					trigger_if = {
+						limit = { highest_held_title_tier < tier_duchy }
+						custom_tooltip = {
+							text = gf_medium_option_valid
+							any_held_title = {
+								count >= 2
+								tier = tier_county
+								#faith = scope:gf_faith
+							}
 						}
 					}
 				}
@@ -374,6 +392,15 @@ activity_gruesome_festival = {
 						add = {
 							value = gruesome_festival_option_medium
 							desc = gruesome_festival_size_medium
+						}
+						if = {
+							limit = {
+								has_perk = journey_planner_perk
+							}
+							multiply = {
+								value = voyager_journey_planner_value
+								desc = journey_planner_perk_name
+							}
 						}
 					}
 				}
@@ -398,6 +425,7 @@ activity_gruesome_festival = {
 			}
 			gruesome_festival_size_large = {
 				is_valid = {
+					pam_vows_of_poverty_premium_activity_option_valid_trigger = yes
 					highest_held_title_tier >= tier_duchy
 				}
 				cost = {
@@ -405,6 +433,15 @@ activity_gruesome_festival = {
 						add = {
 							value = gruesome_festival_option_large
 							desc = gruesome_festival_size_large
+						}
+						if = {
+							limit = {
+								has_perk = journey_planner_perk
+							}
+							multiply = {
+								value = voyager_journey_planner_value
+								desc = journey_planner_perk_name
+							}
 						}
 					}
 				}
@@ -443,10 +480,10 @@ activity_gruesome_festival = {
 							value = minor_piety_gain
 							# If not of the faith, invert this & reduce it a little.
 						}
-						
+
 						if = {
 							limit = {
-								NOT = { faith = involved_activity.activity_location.faith }
+								faith != involved_activity.activity_location.faith
 							}
 							# HumSac faiths still aren't happy.
 							if = {
@@ -486,7 +523,7 @@ activity_gruesome_festival = {
 			gruesome_festival_sacrifice_animals_magnificent_genuine = {
 				is_shown = {
 					OR = {
-						is_ai = no 
+						is_ai = no
 						short_term_gold >= gruesome_festival_option_medium
 					}
 					faith = { has_doctrine_parameter = gruesome_festivals_active }
@@ -496,6 +533,15 @@ activity_gruesome_festival = {
 						add = {
 							value = gruesome_festival_option_medium
 							desc = gruesome_festival_sacrifice_animals_magnificent_genuine
+						}
+						if = {
+							limit = {
+								has_perk = journey_planner_perk
+							}
+							multiply = {
+								value = voyager_journey_planner_value
+								desc = journey_planner_perk_name
+							}
 						}
 					}
 				}
@@ -514,7 +560,7 @@ activity_gruesome_festival = {
 						# If not of the faith, invert this & reduce it a little.
 						if = {
 							limit = {
-								NOT = { faith = involved_activity.activity_location.faith }
+								faith != involved_activity.activity_location.faith
 							}
 							# HumSac faiths still aren't happy.
 							if = {
@@ -535,7 +581,7 @@ activity_gruesome_festival = {
 							# Non-HumSac faiths are horrified.
 							else = {
 								change_variable = {
-									name = gf_piety_value 
+									name = gf_piety_value
 									multiply = -0.75
 								}
 							}
@@ -554,15 +600,15 @@ activity_gruesome_festival = {
 			gruesome_festival_sacrifice_humans_genuine = {
 				is_shown = {
 					faith = { has_doctrine_parameter = gruesome_festivals_active }
-					NOT = {
-						faith = { has_doctrine = tenet_animal_sacrifice }
+					NOT = { # PR: a faith with Animal Sacrifice does not offer human sacrifice
+						rite = { rite_has_tenet = tenet_animal_sacrifice }
 					}
 				}
 
 				on_start = {
 					scope:host = {
 						set_variable = {
-							name = gf_piety_value 
+							name = gf_piety_value
 							value = medium_piety_gain
 						}
 						add_character_flag = gruesome_festivals_can_pick_human_sacrifice
@@ -570,7 +616,7 @@ activity_gruesome_festival = {
 						# If not of the faith, invert this & reduce it a little.
 						if = {
 							limit = {
-								NOT = { faith = involved_activity.activity_location.faith }
+								faith != involved_activity.activity_location.faith
 							}
 							# HumSac faiths still aren't happy.
 							if = {
@@ -591,7 +637,7 @@ activity_gruesome_festival = {
 							# Non-HumSac faiths are horrified.
 							else = {
 								change_variable = {
-									name = gf_piety_value 
+									name = gf_piety_value
 									multiply = -0.75
 								}
 							}
@@ -608,7 +654,7 @@ activity_gruesome_festival = {
 					if = {
 						limit = { has_trait = cannibal }
 						add = {
-							value = 50 
+							value = 50
 							desc = "Cannibal"
 						}
 					}
@@ -617,12 +663,12 @@ activity_gruesome_festival = {
 			gruesome_festival_sacrifice_humans_magnificent_genuine = {
 				is_shown = {
 					OR = {
-						is_ai = no 
+						is_ai = no
 						short_term_gold >= gruesome_festival_option_medium
 					}
 					faith = { has_doctrine_parameter = gruesome_festivals_active }
-					NOT = {
-						faith = { has_doctrine = tenet_animal_sacrifice }
+					NOT = { # PR: a faith with Animal Sacrifice does not offer human sacrifice
+						rite = { rite_has_tenet = tenet_animal_sacrifice }
 					}
 				}
 				cost = {
@@ -630,6 +676,15 @@ activity_gruesome_festival = {
 						add = {
 							value = gruesome_festival_option_medium
 							desc = gruesome_festival_sacrifice_humans_magnificent_genuine
+						}
+						if = {
+							limit = {
+								has_perk = journey_planner_perk
+							}
+							multiply = {
+								value = voyager_journey_planner_value
+								desc = journey_planner_perk_name
+							}
 						}
 					}
 				}
@@ -649,7 +704,7 @@ activity_gruesome_festival = {
 						# If not of the faith, invert this & reduce it a little.
 						if = {
 							limit = {
-								NOT = { faith = involved_activity.activity_location.faith }
+								faith != involved_activity.activity_location.faith
 							}
 							# HumSac faiths still aren't happy.
 							if = {
@@ -687,7 +742,7 @@ activity_gruesome_festival = {
 					if = {
 						limit = { has_trait = cannibal }
 						add = {
-							value = 50 
+							value = 50
 							desc = "Cannibal"
 						}
 					}
@@ -696,14 +751,14 @@ activity_gruesome_festival = {
 
 			gruesome_festival_sacrifice_animals_poser = {
 				is_shown = {
-					faith = { 
-						NOT = { 
+					faith = {
+						NOT = {
 							has_doctrine_parameter = gruesome_festivals_active
 						}
 					}
 				}
 				default = yes
-		
+
 
 				on_start = {
 					scope:host = {
@@ -712,10 +767,10 @@ activity_gruesome_festival = {
 							value = minor_piety_gain
 							# If not of the faith, invert this & reduce it a little.
 						}
-						
+
 						if = {
 							limit = {
-								NOT = { faith = involved_activity.activity_location.faith }
+								faith != involved_activity.activity_location.faith
 							}
 							# HumSac faiths still aren't happy.
 							if = {
@@ -756,7 +811,7 @@ activity_gruesome_festival = {
 				is_shown = {
 					OR = {
 						is_ai = no 
-						short_term_gold >= major_gold_value
+						short_term_gold >= gruesome_festival_option_medium
 					}
 					faith = { 
 						NOT = { 
@@ -765,12 +820,28 @@ activity_gruesome_festival = {
 					}
 				}
 		
-				cost = { gold = gruesome_festival_option_medium }
+				cost = { 
+					gold = {
+						add = gruesome_festival_option_medium 
+						if = {
+							limit = {
+								has_perk = journey_planner_perk
+							}
+							multiply = {
+								value = voyager_journey_planner_value
+								desc = journey_planner_perk_name
+							}
+						}
+					}
+				}
+				is_valid = {
+					gold > gruesome_festival_option_medium
+				}
 
 				on_start = {
 					change_variable = {
 						name = gf_refund_pot
-						add = gruesome_festival_option_medium
+						add = scope:host.gruesome_festival_option_medium
 					}
 					scope:host = {
 						set_variable = {
@@ -781,7 +852,7 @@ activity_gruesome_festival = {
 						# If not of the faith, invert this & reduce it a little.
 						if = {
 							limit = {
-								NOT = { faith = involved_activity.activity_location.faith }
+								faith != involved_activity.activity_location.faith
 							}
 							# HumSac faiths still aren't happy.
 							if = {
@@ -802,7 +873,7 @@ activity_gruesome_festival = {
 							# Non-HumSac faiths are horrified.
 							else = {
 								change_variable = {
-									name = gf_piety_value 
+									name = gf_piety_value
 									multiply = -0.75
 								}
 							}
@@ -827,12 +898,12 @@ activity_gruesome_festival = {
 						}
 					}
 				}
-		
+
 
 				on_start = {
 					scope:host = {
 						set_variable = {
-							name = gf_piety_value 
+							name = gf_piety_value
 							value = medium_piety_gain
 						}
 						add_character_flag = gruesome_festivals_can_pick_human_sacrifice
@@ -840,7 +911,7 @@ activity_gruesome_festival = {
 						# If not of the faith, invert this & reduce it a little.
 						if = {
 							limit = {
-								NOT = { faith = involved_activity.activity_location.faith }
+								faith != involved_activity.activity_location.faith
 							}
 							# HumSac faiths still aren't happy.
 							if = {
@@ -861,7 +932,7 @@ activity_gruesome_festival = {
 							# Non-HumSac faiths are horrified.
 							else = {
 								change_variable = {
-									name = gf_piety_value 
+									name = gf_piety_value
 									multiply = -0.75
 								}
 							}
@@ -880,17 +951,33 @@ activity_gruesome_festival = {
 			gruesome_festival_sacrifice_humans_magnificent_poser = {
 				is_shown = {
 					OR = {
-						is_ai = no 
+						is_ai = no
 						short_term_gold >= gruesome_festival_option_medium
 					}
-					faith = { 
-						NOT = { 
+					faith = {
+						NOT = {
 							has_doctrine_parameter = gruesome_festivals_active
 						}
 					}
 				}
-		
-				cost = { gold = gruesome_festival_option_medium }
+
+				cost = {
+					gold = {
+						add = gruesome_festival_option_medium
+						if = {
+							limit = {
+								has_perk = journey_planner_perk
+							}
+							multiply = {
+								value = voyager_journey_planner_value
+								desc = journey_planner_perk_name
+							}
+						}
+					}
+				}
+				is_valid = {
+					gold > gruesome_festival_option_medium
+				}
 
 				on_start = {
 					change_variable = {
@@ -907,7 +994,7 @@ activity_gruesome_festival = {
 						# If not of the faith, invert this & reduce it a little.
 						if = {
 							limit = {
-								NOT = { faith = involved_activity.activity_location.faith }
+								faith != involved_activity.activity_location.faith
 							}
 							# HumSac faiths still aren't happy.
 							if = {
@@ -958,17 +1045,22 @@ activity_gruesome_festival = {
 
 			on_phase_active = {
 				if = {
+					limit = { has_character_flag = blotsven }
+					scope:activity = { progress_activity_phase_after = { weeks = 1 } }
+					trigger_event = blotsven.0002
+				}
+				else_if = {
 					limit = { this = scope:host }
 					scope:activity = { progress_activity_phase_after = { weeks = 1 } }
 					save_scope_as = blotter
 					scope:activity.var:gf_faith = { save_scope_as = gf_faith }
-					trigger_event = fp1_other_decisions.0003 
+					trigger_event = fp1_other_decisions.0003
 				}
 			}
 		}
 	}
 
-	max_guest_arrival_delay_time = { months = 8 }
+	max_guest_arrival_delay_time = { months = 5 }
 
 	###################
 	# GUEST HANDLING
@@ -983,7 +1075,7 @@ activity_gruesome_festival = {
 			2 = activity_invite_rule_guests
 		}
 		rules = {
-			# MP 
+			# MP
 			6 = activity_invite_mp
 		}
 	}
@@ -1008,23 +1100,23 @@ activity_gruesome_festival = {
 		base_activity_modifier = yes
 
 		# Scripted Modifiers
-		activity_guest_shared_ai_accept_modifier = yes 
+		activity_guest_shared_ai_accept_modifier = yes
 	}
 
 	###################
 	# ACTIVITY-SPECIFIC PULSES
 	###################
-	
+
 	pulse_actions = {
 		entries = {
-			sacrificed_small_animal mournful_music spouse_gives_hook hook_trusting_guest guest_brawl host_gains_diplo_xp host_gains_steward_xp host_gains_intrigue_xp good_kitty good_puppy antiquarian_admires_artifact apa_executioner
+			sacrifed_small_animal mournful_music spouse_gives_hook hook_trusting_guest guest_brawl host_gains_diplo_xp host_gains_steward_xp host_gains_intrigue_xp good_kitty good_puppy antiquarian_admires_artifact apa_executioner
 		}
 		chance_of_no_event = 5
 	}
 
 	on_start = {
 		set_variable = {
-			name = gf_faith 
+			name = gf_faith
 			value = activity_location.faith
 		}
 		set_variable = {
@@ -1042,7 +1134,7 @@ activity_gruesome_festival = {
 				}
 			}
 			set_variable = {
-				name = blot_scale 
+				name = blot_scale
 				value = flag:small
 			}
 		}
@@ -1054,19 +1146,19 @@ activity_gruesome_festival = {
 				}
 			}
 			set_variable = {
-				name = blot_scale 
+				name = blot_scale
 				value = flag:medium
 			}
 		}
 		else_if = {
-			limit = { 
+			limit = {
 				has_activity_option = {
 					category = gruesome_festival_option_size
 					option = gruesome_festival_size_large
-				} 
+				}
 			}
 			set_variable = {
-				name = blot_scale 
+				name = blot_scale
 				value = flag:large
 			}
 		}
@@ -1086,12 +1178,12 @@ activity_gruesome_festival = {
 				}
 			}
 			set_variable = {
-				name = blot_sacrifice 
+				name = blot_sacrifice
 				value = flag:animals_regular
 			}
 		}
 		else_if = {
-			limit = { 
+			limit = {
 				OR = {
 					has_activity_option = {
 						category = gruesome_festival_option_sacrifice
@@ -1104,12 +1196,12 @@ activity_gruesome_festival = {
 				}
 			}
 			set_variable = {
-				name = blot_sacrifice 
+				name = blot_sacrifice
 				value = flag:animals_magnificent
 			}
 		}
 		else_if = {
-			limit = { 
+			limit = {
 				OR = {
 					has_activity_option = {
 						category = gruesome_festival_option_sacrifice
@@ -1122,12 +1214,12 @@ activity_gruesome_festival = {
 				}
 			}
 			set_variable = {
-				name = blot_sacrifice 
+				name = blot_sacrifice
 				value = flag:humans_regular
 			}
 		}
 		else_if = {
-			limit = { 
+			limit = {
 				OR = {
 					has_activity_option = {
 						category = gruesome_festival_option_sacrifice
@@ -1140,18 +1232,22 @@ activity_gruesome_festival = {
 				}
 			}
 			set_variable = {
-				name = blot_sacrifice 
+				name = blot_sacrifice
 				value = flag:humans_magnificent
 			}
 		}
 	}
 
+	on_enter_active_state = {
+		surveyor_no_stone_unturned_perk_effect = yes
+	}
+
 	on_enter_travel_state = {
 		if = {
 			limit = {
-				NOT = { this = scope:host }
+				this != scope:host
 				current_travel_plan.travel_plan_owner = this
-			}	
+			}
 			# saving the scope again so that it gets passed onto the following event
 			scope:activity.var:gf_faith = {
 				save_scope_as = gf_faith
@@ -1159,7 +1255,7 @@ activity_gruesome_festival = {
 			scope:host = { save_scope_as = blotter }
 			trigger_event = fp1_other_decisions.0011
 		}
-		
+
 	}
 
 	# Entourage Selection
@@ -1183,6 +1279,7 @@ activity_gruesome_festival = {
 		trigger = {
 			activity_location.culture = {
 				OR = {
+					has_graphical_iranian_culture_group_trigger = yes
 					has_graphical_mena_culture_group_trigger = yes
 					has_graphical_steppe_culture_group_trigger = yes
 					has_graphical_african_culture_group_trigger = yes
@@ -1200,13 +1297,19 @@ activity_gruesome_festival = {
 		}
 		reference = "building_indian_feast_01_entity"
 	}
-	
+
 	map_entity = "building_western_feast_01_entity"
+
+	###################
+	# GRAPHICS
+	###################
+
+	header_background = "gfx/interface/illustrations/activity_header_backgrounds/activity_gruesome_festival.dds"
 
 	# Travel
 	background = { # Bridge
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				is_riverside_province = yes
 				geographical_region = world_europe
@@ -1222,10 +1325,40 @@ activity_gruesome_festival = {
 		environment = "environment_travel_bridge"
 		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
 	}
-	
+
+	background = { #Rice Fields - If we have Paddy fields AND/or terraced hills
+	#This goes before other terrain since it can override in many different terrains if built
+		trigger = {
+			scope:host.location != scope:activity.activity_location
+			scope:host.location = {
+				terrain = farmlands
+				OR = {
+					terrain = terraced_hills
+					has_building_or_higher = paddy_fields_01
+				}
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/tgp_rice_fields.dds"
+		environment = "environment_tgp_rice_fields"
+		ambience = "event:/DLC/EP4/SFX/Events/Event_Backgrounds/tgp_rice_fields"
+	}
+
+	background = { #Farmlands - East Asia
+		trigger = {
+			scope:host.location != scope:activity.activity_location
+			scope:host.location = {
+				terrain = farmlands
+				culture = { has_graphical_east_asia_culture_group_trigger = yes }
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/tgp_farm_asia.dds"
+		environment = "environment_tgp_farm_asia"
+		ambience = "event:/DLC/EP4/SFX/Events/Event_Backgrounds/tgp_farm_asia"
+	}
+
 	background = { # Farmland, settled
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				terrain = farmlands
 				exists = province_owner
@@ -1237,7 +1370,7 @@ activity_gruesome_festival = {
 	}
 	background = { # Farmland, unsettled
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				terrain = farmlands
 				NOT = { exists = province_owner }
@@ -1250,7 +1383,7 @@ activity_gruesome_festival = {
 
 	background = { #Desert, settled
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				graphical_wilderness_desert_trigger = yes
 				exists = province_owner
@@ -1262,7 +1395,7 @@ activity_gruesome_festival = {
 	}
 	background = { #Desert, unsettled
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				graphical_wilderness_desert_trigger = yes
 				NOT = { exists = province_owner }
@@ -1275,7 +1408,7 @@ activity_gruesome_festival = {
 
 	background = { #forest snowy
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location ?= { hunt_snowy_forest_trigger = yes }
 		}
 		texture = "gfx/interface/illustrations/event_scenes/ep2_hunt_snowy_forest.dds"
@@ -1285,7 +1418,7 @@ activity_gruesome_festival = {
 
 	background = { #forest_pine
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				graphical_wilderness_forest_pine_trigger = yes
 			}
@@ -1297,7 +1430,7 @@ activity_gruesome_festival = {
 
 	background = { #forest
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				graphical_wilderness_forest_trigger = yes
 			}
@@ -1309,7 +1442,7 @@ activity_gruesome_festival = {
 
 	background = { #mountains, settled
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				graphical_wilderness_mountains_trigger = yes
 				exists = province_owner
@@ -1321,7 +1454,7 @@ activity_gruesome_festival = {
 	}
 	background = { #mountains, unsettled
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				graphical_wilderness_mountains_trigger = yes
 				NOT = { exists = province_owner }
@@ -1334,7 +1467,7 @@ activity_gruesome_festival = {
 
 	background = { #steppe, settled
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				graphical_wilderness_steppe_trigger = yes
 				exists = province_owner
@@ -1346,7 +1479,7 @@ activity_gruesome_festival = {
 	}
 	background = { #steppe, unsettled
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				graphical_wilderness_steppe_trigger = yes
 				NOT = { exists = province_owner }
@@ -1359,7 +1492,7 @@ activity_gruesome_festival = {
 
 	background = { #drylands (formerly desert)
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				graphical_drylands_trigger = yes
 			}
@@ -1371,19 +1504,19 @@ activity_gruesome_festival = {
 
 	background = { #wetlands
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				graphical_wilderness_wetlands_trigger = yes
 			}
 		}
 		texture = "gfx/interface/illustrations/event_scenes/bp1_wetlands.dds"
-		environment = "environment_event_bp1_wetlands" 
+		environment = "environment_event_bp1_wetlands"
 		ambience = "event:/SFX/Events/Backgrounds/deciduous_forest_day"
 	}
 
 	background = { #jungle
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				graphical_wilderness_jungle_trigger = yes
 			}
@@ -1395,7 +1528,7 @@ activity_gruesome_festival = {
 
 	background = { #plains, settled
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				graphical_plains_trigger = yes
 				exists = province_owner
@@ -1407,7 +1540,7 @@ activity_gruesome_festival = {
 	}
 	background = { #plains, unsettled
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				graphical_plains_trigger = yes
 				NOT = { exists = province_owner }
@@ -1420,7 +1553,7 @@ activity_gruesome_festival = {
 
 	background = { #hills, settled
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				graphical_hills_trigger = yes
 				exists = province_owner
@@ -1432,7 +1565,7 @@ activity_gruesome_festival = {
 	}
 	background = { #hills, unsettled
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				graphical_hills_trigger = yes
 				NOT = { exists = province_owner }
@@ -1445,7 +1578,7 @@ activity_gruesome_festival = {
 
 	background = { #sea
 		trigger = {
-			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location != scope:activity.activity_location
 			scope:host.location = {
 				is_sea_province = yes
 			}
@@ -1457,15 +1590,15 @@ activity_gruesome_festival = {
 	# End Travel
 	background = {
 		texture = "gfx/interface/illustrations/activity_backgrounds/activity_gruesome_festival.dds"
-		environment = "environment_event_bp1_bonfire" 
+		environment = "environment_event_bp1_bonfire"
 		ambience = "event:/SFX/Events/Backgrounds/burning_building"
 	}
 
 	window_characters = {
 
 		guest = {
-			camera = camera_body
-			
+			camera = camera_event_center
+
 			effect = {
 				every_attending_character = {
 					limit = {
@@ -1494,8 +1627,8 @@ activity_gruesome_festival = {
 		}
 
 		guest = {
-			camera = camera_body
-			
+			camera = camera_event_center
+
 			effect = {
 				every_attending_character = {
 					limit = {
@@ -1522,33 +1655,14 @@ activity_gruesome_festival = {
 				animation = personality_compassionate
 			}
 		}
-		
+
 		host = {
-			camera = camera_body
-			
+			camera = camera_event_center
+
 			effect = {
 				if = {
 					limit = {
 						scope:host.location = scope:activity.activity_location
-					}
-					scope:host = {
-						add_to_list = characters
-					}
-				}
-			}
-
-			scripted_animation = idle
-		}
-		
-		travel_host = {
-			camera = camera_body
-			
-			effect = {
-				if = {
-					limit = {
-						NOT = {
-							scope:host.location = scope:activity.activity_location
-						}
 					}
 					scope:host = {
 						add_to_list = characters
@@ -1561,8 +1675,30 @@ activity_gruesome_festival = {
 					trigger = {
 						scope:character.location = { is_sea_province = yes }
 					}
-					animation = { idle }
+					animation = { survey }
 				}
+				animation = idle
+			}
+		}
+
+		travel_host = {
+			camera = camera_event_horse_left
+
+			effect = {
+				if = {
+					limit = {
+						NOR = {
+							scope:host.location = scope:activity.activity_location
+							scope:host.location = { is_sea_province = yes }
+						}
+					}
+					scope:host = {
+						add_to_list = characters
+					}
+				}
+			}
+
+			scripted_animation = {
 				triggered_animation = {
 					trigger = { scope:character = { has_trait = impatient } }
 					animation = { jockey_gallop }
@@ -1572,8 +1708,8 @@ activity_gruesome_festival = {
 		}
 
 		guest = {
-			camera = camera_body
-			
+			camera = camera_event_center
+
 			effect = {
 				every_attending_character = {
 					limit = {
@@ -1602,8 +1738,8 @@ activity_gruesome_festival = {
 		}
 
 		guest = {
-			camera = camera_body
-			
+			camera = camera_event_center
+
 			effect = {
 				every_attending_character = {
 					limit = {

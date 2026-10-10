@@ -10,7 +10,7 @@ pr_illyrian_choose_main_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
     }
     desc = pr_illyrian_choose_main_deity_decision_desc
-    decision_tooltip = pr_illyrian_choose_main_deity_decision_tooltip
+    selection_tooltip = pr_illyrian_choose_main_deity_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
@@ -53,8 +53,8 @@ pr_illyrian_choose_main_deity_decision = {
                 }
                 100 = {
                     show_chance = no
-                    desc = select_main_deity_illyrian_decision.select_tadenus
-                    add_character_modifier = illyrian_tadenus
+                    desc = select_main_deity_illyrian_decision.select_redon
+                    add_character_modifier = illyrian_redon
                 }
             }
         }
@@ -71,6 +71,7 @@ pr_illyrian_choose_main_deity_decision = {
             has_character_modifier = illyrian_anzotica
             has_character_modifier = illyrian_bindus
             has_character_modifier = illyrian_tadenus
+            has_character_modifier = illyrian_redon
         }
     }
 
@@ -85,7 +86,7 @@ pr_illyrian_kingdom_of_illyria_decision = {
         reference = "gfx/interface/illustrations/decisions/pr_dacian.dds"
     }
     desc = pr_illyrian_kingdom_of_illyria_decision_desc
-    decision_tooltip = pr_illyrian_kingdom_of_illyria_decision_tooltip
+    selection_tooltip = pr_illyrian_kingdom_of_illyria_decision_tooltip
     decision_group_type = major
 
     ai_check_interval = 4
@@ -172,7 +173,7 @@ pr_illyrian_culture_decision = {
         reference = "gfx/interface/illustrations/decisions/pr_dacian.dds"
     }
     desc = pr_illyrian_culture_decision_desc
-    decision_tooltip = pr_illyrian_culture_decision_tooltip
+    selection_tooltip = pr_illyrian_culture_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {

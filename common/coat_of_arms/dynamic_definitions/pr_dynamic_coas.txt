@@ -275,7 +275,7 @@ k_antioch = {
 			OR ={ 
 				holder.faith.religion = religion:celtic_religion
 				holder.faith.religion = religion:hellenism_religion
-				holder.faith.religion = religion:roman_religion
+				holder.faith = { pr_is_cultus_deorum_faith_trigger = yes }
 			}
 		}
 		coat_of_arms = k_antioch_polytheistic

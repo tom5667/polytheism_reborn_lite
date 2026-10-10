@@ -130,14 +130,17 @@ pr.0116 = {
 	option={
 		name = pr.0116.lithuanian
 		set_character_faith = faith:baltic_pagan
+		set_character_rite = rite:baltic_pagan
 	}
 	option={
 		name = pr.0116.latvian
-		set_character_faith = faith:latvian_pagan
+		set_character_faith = faith:baltic_pagan
+		set_character_rite = rite:latvian_rites
 	}
 	option={
 		name = pr.0116.prussian
-		set_character_faith = faith:prussian_pagan
+		set_character_faith = faith:baltic_pagan
+		set_character_rite = rite:prussian_rites
 	}
 	option={
 		name = pr.0116.back
@@ -168,15 +171,17 @@ pr.0101={
 	theme = learning_scholarship_focus
 	option={
 		name = pr.0101.roman
-		set_character_faith = faith:cdr_polytheism
+		set_character_faith = faith:roman_polytheism
 	}
 	option={
 		name = pr.0101.greek
 		set_character_faith = faith:hellenic_pagan
+		set_character_rite = rite:hellenic_pagan
 	}
 	option={
 		name = pr.0101.pr_mycenaean
-		set_character_faith = faith:mycenaean_polytheism
+		set_character_faith = faith:hellenic_pagan
+		set_character_rite = rite:mycenaean_rites
 	}
 	option={
 		name = pr.0101.next
@@ -194,11 +199,8 @@ pr.0111 = {
 	theme = learning_scholarship_focus
 	option={
 		name = pr.0111.pr_graeco_egyptian_polytheism
-		set_character_faith = faith:graeco_egyptian_polytheism
-	}
-	option={
-		name = pr.0111.alexandrian_cult
-		set_character_faith = faith:alexandrian_cult
+		set_character_faith = faith:hellenic_pagan
+		set_character_rite = rite:graeco_egyptian_rites
 	}
 	option={
 		name = pr.0111.back
@@ -217,7 +219,7 @@ pr.0102={
 	theme = learning_scholarship_focus
 	option={
 		name = pr.0102.pr_etruscan
-		set_character_faith = faith:etc_polytheism
+		set_character_faith = faith:etruscan_polytheism
 	}
 	option={
 		name = pr.0102.back
@@ -251,19 +253,19 @@ pr.0104={
 	theme = learning_scholarship_focus
 	option={
 		name = pr.0104.gaelic 
-		set_character_faith = faith:gaelic_polytheism
+		set_character_rite = rite:gaelic_polytheism_rites
 	}
 	option={
 		name = pr.0104.brythonic 
-		set_character_faith = faith:brythonic_polytheism
+		set_character_rite = rite:brythonic_polytheism_rites
 	}
 	option={
 		name = pr.0104.pr_gaulish 
-		set_character_faith = faith:gaulish_polytheism
+		set_character_rite = rite:gaulish_polytheism_rites
 	}
 	option={
 		name = pr.0104.pr_celtic_iberian 
-		set_character_faith = faith:celtic_iberian_polytheism
+		set_character_rite = rite:celtic_iberian_polytheism_rites
 	}
 	option={
 		name = pr.0104.back
@@ -297,11 +299,13 @@ pr.0106={
 	theme = learning_scholarship_focus
 	option={
 		name = pr.0106.pr_punic
-		set_character_faith = faith:punic_polytheism
+		set_character_faith = faith:canaanite_polytheism
+		set_character_rite = rite:punic_rites
 	}
 	option = {
 		name = pr.0106.semitic
-		set_character_faith = faith:semitic_polytheism
+		set_character_faith = faith:canaanite_polytheism
+		set_character_rite = rite:semitic_rites
 	}
 	option={
 		name = pr.0106.back
@@ -317,14 +321,17 @@ pr.0107={
 	option={
 		name = pr.0107.pr_babylonian
 		set_character_faith = faith:babylonian_polytheism
+		set_character_rite = rite:babylonian_rites
 	}
 	option={
 		name = pr.0107.pr_sumerian
-		set_character_faith = faith:sumerian_polytheism
+		set_character_faith = faith:babylonian_polytheism
+		set_character_rite = rite:sumerian_rites
 	}
 	option = {
 		name = pr.0107.assyrian
-		set_character_faith = faith:assyrian_polytheism
+		set_character_faith = faith:babylonian_polytheism
+		set_character_rite = rite:assyrian_rites
 	}
 	option={
 		name = pr.0107.back
@@ -340,11 +347,13 @@ pr.0108={
 	theme = learning_scholarship_focus
 	option={
 		name = pr.0108.pr_dacian
-		set_character_faith = faith:dacian_polytheism
+		set_character_faith = faith:daco_thracian_polytheism
+		set_character_rite = rite:dacian_rites
 	}
 	option={
 		name = pr.0108.zalmoxism
-		set_character_faith = faith:zalmoxism
+		set_character_faith = faith:daco_thracian_polytheism
+		set_character_rite = rite:zalmoxism_rites
 	}
 	option={
 		name = pr.0108.back
@@ -360,11 +369,13 @@ pr.0109={
 	theme = learning_scholarship_focus
 	option={
 		name = pr.0109.georgian
-		set_character_faith = faith:georgian_polytheism
+		set_character_faith = faith:armenian_polytheism
+		set_character_rite = rite:georgian_rites
 	}
 	option = {
 		name = pr.0109.armenian
 		set_character_faith = faith:armenian_polytheism
+		set_character_rite = rite:armenian_rites
 	}
 	option={
 		name = pr.0109.back
@@ -542,6 +553,14 @@ pr.0213 = {
 	option = {
 		name = pr.0213.romano_germanic
 		set_culture = culture:pr_romano_germanic
+	}
+	option = {
+		name = pr.0213.romano_syrian
+		set_culture = culture:pr_romano_syrian
+	}
+	option = {
+		name = pr.0213.romano_illyrian
+		set_culture = culture:pr_romano_illyrian
 	}
 	option = {
 		name = pr.0213.back
@@ -1027,7 +1046,6 @@ pr.0001 = {
 	immediate = {
 		play_music_cue = "mx_cue_faith_conversion"
 		save_scope_as = scoped_ruler
-		promote_gaelic_settlement_decision_scripted_effect = yes
 	}
 	
 	option = {
@@ -1170,7 +1188,7 @@ pr.0020={
 	theme = learning_scholarship_focus
 	option={
 		name = pr.0020.roman
-		#set_character_faith = faith:cdr_polytheism
+		#set_character_faith = faith:roman_polytheism
 		trigger_event = pr.0030
 	
 		add_to_global_variable_list ={
@@ -1217,7 +1235,7 @@ pr.0021={
 	theme = learning_scholarship_focus
 	option={
 		name = pr.0021.pr_etruscan
-		#set_character_faith = faith:etc_polytheism
+		#set_character_faith = faith:etruscan_polytheism
 		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_etruscan
@@ -1402,7 +1420,7 @@ pr.0026={
 	}
 	option={
 		name = pr.0026.pr_sumerian
-		#set_character_faith = faith:sumerian_polytheism
+		#set_character_faith = faith:babylonian_polytheism
 		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_sumerian
@@ -1411,7 +1429,7 @@ pr.0026={
 	}
 	option={
 		name = pr.0026.assyrian
-		#set_character_faith = faith:sumerian_polytheism
+		#set_character_faith = faith:babylonian_polytheism
 		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_assyrian
@@ -1462,7 +1480,7 @@ pr.0028={
 	theme = learning_scholarship_focus
 	option={
 		name = pr.0028.georgian
-		#set_character_faith = faith:georgian_polytheism
+		#set_character_faith = faith:armenian_polytheism
 		trigger_event = pr.0030
 		add_to_global_variable_list ={
 			name = research_georgian
@@ -1783,9 +1801,9 @@ pr.0036 = {#Outcome debate good
 					target = flag:flag_research_roman
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:cdr_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:roman_polytheism }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:cdr_polytheism }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:roman_polytheism }
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -1824,9 +1842,9 @@ pr.0036 = {#Outcome debate good
 					target = flag:flag_research_mycenaean
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:mycenaean_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:hellenic_pagan }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:mycenaean_polytheism }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:hellenic_pagan }
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -1844,9 +1862,9 @@ pr.0036 = {#Outcome debate good
 					target = flag:flag_research_graeco_egyptian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:graeco_egyptian_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:hellenic_pagan }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:graeco_egyptian_polytheism }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:hellenic_pagan }
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -1864,9 +1882,9 @@ pr.0036 = {#Outcome debate good
 					target = flag:flag_research_gaelic
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:gaelic_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:eriu_polytheism }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:gaelic_polytheism }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:eriu_polytheism }
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -1884,9 +1902,9 @@ pr.0036 = {#Outcome debate good
 					target = flag:flag_research_brythonic
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:brythonic_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:pritani_polytheism }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:brythonic_polytheism }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:pritani_polytheism }
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -1905,9 +1923,9 @@ pr.0036 = {#Outcome debate good
 					target = flag:flag_research_gaulish
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:gaulish_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:continental_polytheism }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:gaulish_polytheism }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:continental_polytheism }
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -1926,9 +1944,9 @@ pr.0036 = {#Outcome debate good
 					target = flag:flag_research_celtic_iberian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:celtic_iberian_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:continental_polytheism }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:celtic_iberian_polytheism }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:continental_polytheism }
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -2010,9 +2028,9 @@ pr.0036 = {#Outcome debate good
 						target = flag:flag_research_etruscan
 					}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:etc_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:etruscan_polytheism }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:etc_polytheism }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:etruscan_polytheism }
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -2073,9 +2091,9 @@ pr.0036 = {#Outcome debate good
 					target = flag:flag_research_punic
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:punic_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:canaanite_polytheism }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:punic_polytheism }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:canaanite_polytheism }
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -2094,9 +2112,9 @@ pr.0036 = {#Outcome debate good
 					target = flag:flag_research_semitic
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:semitic_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:canaanite_polytheism }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:semitic_polytheism }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:canaanite_polytheism }
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -2136,9 +2154,9 @@ pr.0036 = {#Outcome debate good
 					target = flag:flag_research_sumerian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:sumerian_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:babylonian_polytheism }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:sumerian_polytheism }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:babylonian_polytheism }
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -2157,9 +2175,9 @@ pr.0036 = {#Outcome debate good
 					target = flag:flag_research_assyrian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:assyrian_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:babylonian_polytheism }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:assyrian_polytheism }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:babylonian_polytheism }
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -2178,9 +2196,9 @@ pr.0036 = {#Outcome debate good
 					target = flag:flag_research_dacian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:dacian_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:daco_thracian_polytheism }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:dacian_polytheism }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:daco_thracian_polytheism }
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -2199,9 +2217,9 @@ pr.0036 = {#Outcome debate good
 					target = flag:flag_research_zalmoxism
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:zalmoxism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:daco_thracian_polytheism }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:zalmoxism }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:daco_thracian_polytheism }
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -2220,9 +2238,9 @@ pr.0036 = {#Outcome debate good
 					target = flag:flag_research_georgian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:georgian_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:armenian_polytheism }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:georgian_polytheism }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:armenian_polytheism }
 			
 			}
 			hidden_effect = {
@@ -2348,9 +2366,9 @@ pr.0036 = {#Outcome debate good
 					target = flag:flag_research_latvian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:latvian_pagan }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:baltic_pagan }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:latvian_pagan }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:baltic_pagan }
 			}
 			# trigger_event = pr.0039
 			hidden_effect = {
@@ -2369,9 +2387,9 @@ pr.0036 = {#Outcome debate good
 					target = flag:flag_research_prussian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:prussian_pagan }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:baltic_pagan }
 			scope:realm_priest = {
-				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:prussian_pagan }
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:baltic_pagan }
 			}
 			# trigger_event = pr.0039
 			hidden_effect = {
@@ -2408,7 +2426,7 @@ pr.0037 = {#Outcome debate medium
 					target = flag:flag_research_roman
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:cdr_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:roman_polytheism }
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
 				IMPRISONER = root
@@ -2453,8 +2471,8 @@ pr.0037 = {#Outcome debate medium
 					target = flag:flag_research_mycenaean
 				}
 			}
-			#set_character_faith = faith:mycenaean_polytheism
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:mycenaean_polytheism }
+			#set_character_faith = faith:hellenic_pagan
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:hellenic_pagan }
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
 				IMPRISONER = root
@@ -2476,8 +2494,8 @@ pr.0037 = {#Outcome debate medium
 					target = flag:flag_research_graeco_egyptian
 				}
 			}
-			#set_character_faith = faith:mycenaean_polytheism
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:graeco_egyptian_polytheism }
+			#set_character_faith = faith:hellenic_pagan
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:hellenic_pagan }
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
 				IMPRISONER = root
@@ -2499,7 +2517,7 @@ pr.0037 = {#Outcome debate medium
 					target = flag:flag_research_gaelic
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:gaelic_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:eriu_polytheism }
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
 				IMPRISONER = root
@@ -2521,7 +2539,7 @@ pr.0037 = {#Outcome debate medium
 					target = flag:flag_research_gaulish
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:gaulish_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:continental_polytheism }
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
 				IMPRISONER = root
@@ -2543,7 +2561,7 @@ pr.0037 = {#Outcome debate medium
 					target = flag:flag_research_brythonic
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:brythonic_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:pritani_polytheism }
 			
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
@@ -2566,7 +2584,7 @@ pr.0037 = {#Outcome debate medium
 					target = flag:flag_research_celtic_iberian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:celtic_iberian_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:continental_polytheism }
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
 				IMPRISONER = root
@@ -2654,8 +2672,8 @@ pr.0037 = {#Outcome debate medium
 					target = flag:flag_research_etruscan
 				}
 			}
-			#set_character_faith = faith:etc_polytheism
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:etc_polytheism }
+			#set_character_faith = faith:etruscan_polytheism
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:etruscan_polytheism }
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
 				IMPRISONER = root
@@ -2724,7 +2742,7 @@ pr.0037 = {#Outcome debate medium
 				}
 			}
 			#set_character_faith = faith:punic_polytheism
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:punic_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:canaanite_polytheism }
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
 				IMPRISONER = root
@@ -2747,7 +2765,7 @@ pr.0037 = {#Outcome debate medium
 				}
 			}
 			#set_character_faith = faith:semitic_polytheism
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:semitic_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:canaanite_polytheism }
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
 				IMPRISONER = root
@@ -2792,8 +2810,8 @@ pr.0037 = {#Outcome debate medium
 					target = flag:flag_research_sumerian
 				}
 			}
-			#set_character_faith = faith:sumerian_polytheism
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:sumerian_polytheism }
+			#set_character_faith = faith:babylonian_polytheism
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:babylonian_polytheism }
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
 				IMPRISONER = root
@@ -2816,7 +2834,7 @@ pr.0037 = {#Outcome debate medium
 				}
 			}
 			#set_character_faith = faith:asresearch_assyrian_polytheism
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:assyrian_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:babylonian_polytheism }
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
 				IMPRISONER = root
@@ -2838,7 +2856,7 @@ pr.0037 = {#Outcome debate medium
 					target = flag:flag_research_dacian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:dacian_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:daco_thracian_polytheism }
 			
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
@@ -2861,7 +2879,7 @@ pr.0037 = {#Outcome debate medium
 					target = flag:flag_research_zalmoxism
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:zalmoxism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:daco_thracian_polytheism }
 			
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
@@ -2884,7 +2902,7 @@ pr.0037 = {#Outcome debate medium
 					target = flag:flag_research_georgian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:georgian_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:armenian_polytheism }
 			
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
@@ -3018,7 +3036,7 @@ pr.0037 = {#Outcome debate medium
 					target = flag:flag_research_latvian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:latvian_pagan }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:baltic_pagan }
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
 				IMPRISONER = root
@@ -3039,7 +3057,7 @@ pr.0037 = {#Outcome debate medium
 					target = flag:flag_research_prussian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:prussian_pagan }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:baltic_pagan }
 			imprison_character_effect = {
 				TARGET = scope:realm_priest
 				IMPRISONER = root
@@ -3435,7 +3453,7 @@ pr.0042 = {#
 					target = flag:flag_research_roman
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:cdr_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:roman_polytheism }
 			
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -3470,7 +3488,7 @@ pr.0042 = {#
 					target = flag:flag_research_mycenaean
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:mycenaean_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:hellenic_pagan }
 			
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -3488,7 +3506,7 @@ pr.0042 = {#
 					target = flag:flag_research_graeco_egyptian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:graeco_egyptian_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:hellenic_pagan }
 			
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -3506,7 +3524,7 @@ pr.0042 = {#
 					target = flag:flag_research_gaelic
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:gaelic_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:eriu_polytheism }
 			
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -3523,7 +3541,7 @@ pr.0042 = {#
 					target = flag:flag_research_brythonic
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:brythonic_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:pritani_polytheism }
 			
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -3541,7 +3559,7 @@ pr.0042 = {#
 					target = flag:flag_research_celtic_iberian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:celtic_iberian_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:continental_polytheism }
 			
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -3609,7 +3627,7 @@ pr.0042 = {#
 						target = flag:flag_research_etruscan
 					}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:etc_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:etruscan_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
 				remove_list_global_variable = {
@@ -3660,7 +3678,7 @@ pr.0042 = {#
 					target = flag:flag_research_punic
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:punic_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:canaanite_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
 				remove_list_global_variable = {
@@ -3677,7 +3695,7 @@ pr.0042 = {#
 					target = flag:flag_research_semitic
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:semitic_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:canaanite_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
 				remove_list_global_variable = {
@@ -3711,7 +3729,7 @@ pr.0042 = {#
 					target = flag:flag_research_sumerian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:sumerian_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:babylonian_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
 				remove_list_global_variable = {
@@ -3728,7 +3746,7 @@ pr.0042 = {#
 					target = flag:flag_research_assyrian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:assyrian_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:babylonian_polytheism }
 			
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
@@ -3746,7 +3764,7 @@ pr.0042 = {#
 					target = flag:flag_research_dacian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:dacian_polytheism }			
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:daco_thracian_polytheism }			
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
 				remove_list_global_variable = {
@@ -3763,7 +3781,7 @@ pr.0042 = {#
 					target = flag:flag_research_zalmoxism
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:zalmoxism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:daco_thracian_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
 				remove_list_global_variable = {
@@ -3780,7 +3798,7 @@ pr.0042 = {#
 					target = flag:flag_research_georgian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:georgian_polytheism }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:armenian_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
 				remove_list_global_variable = {
@@ -3881,7 +3899,7 @@ pr.0042 = {#
 					target = flag:flag_research_latvian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:latvian_pagan }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:baltic_pagan }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
 				remove_list_global_variable = {
@@ -3898,7 +3916,7 @@ pr.0042 = {#
 					target = flag:flag_research_prussian
 				}
 			}
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:prussian_pagan }
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:baltic_pagan }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
 				remove_list_global_variable = {
@@ -3950,7 +3968,7 @@ pr.0044 = {
 				trigger = {
 					OR = {
 						root.faith.religion = faith:hellenic_pagan.religion
-						root.religion = religion:roman_religion
+						root = { pr_is_cultus_deorum_trigger = yes }
 					}
 				}
 				desc = pr.0044.desc.hellenic
@@ -3961,7 +3979,7 @@ pr.0044 = {
 					NOR = {
 						root.faith.religion = faith:ashari.religion
 						root.faith.religion = faith:hellenic_pagan.religion
-						root.religion = religion:roman_religion
+						root = { pr_is_cultus_deorum_trigger = yes }
 					}
 				}
 				desc = pr.0044.desc.fallback
@@ -3982,7 +4000,7 @@ pr.0044 = {
 				trigger = {
 					OR = {
 						root.faith.religion = faith:hellenic_pagan.religion
-						root.religion = religion:roman_religion
+						root = { pr_is_cultus_deorum_trigger = yes }
 					}
 				}
 				desc = pr.0044.desc.patriarch.crucifixion
@@ -4043,7 +4061,7 @@ pr.0044 = {
 			trigger = {
 				OR = {
 					faith.religion = faith:hellenic_pagan.religion
-					religion = religion:roman_religion
+					pr_is_cultus_deorum_trigger = yes
 				}
 			}
 			text = pr.0044.a.b
@@ -4053,7 +4071,7 @@ pr.0044 = {
 				NOR = {
 					faith.religion = faith:ashari.religion
 					faith.religion = faith:hellenic_pagan.religion
-					religion = religion:roman_religion
+					pr_is_cultus_deorum_trigger = yes
 				}
 			}
 			text = pr.0044.a.c
@@ -4109,7 +4127,7 @@ pr.0045 = {
 			scope:scoped_destroyer.faith = {
 				OR = {
 					religion = faith:hellenic_pagan.religion
-					religion = religion:roman_religion
+					pr_is_cultus_deorum_faith_trigger = yes
 					has_doctrine_parameter = human_sacrifice_active
 				}
 			}
@@ -4166,23 +4184,6 @@ pr.0045 = {
 	}
 }
 
-pr.0046 = {
-	type = character_event
-	desc = pr.0046.desc
-	title = pr.0046.t 
-	theme = learning_scholarship_focus
-	right_portrait = {
-		character = root
-		animation = personality_content
-	}
-
-	option = {
-		name = pr.0046.a
-		set_character_faith = faith:cdr_polytheism
-	}
-
-}
-
 #Credits cybrxkhan needed for the pilgrimages
 RICEmisc.0010 = {
 	type = character_event
@@ -4214,9 +4215,7 @@ RICEmisc.0010 = {
 	option = {
 		name = RICEmisc.0010.a
 		show_as_tooltip = {
-			current_travel_plan = {
-				reroute_to_home = yes
-			}
+			return_home = yes # 1.20 (reroute_to_home no longer exists)
 		}
 	}
 }
@@ -4276,7 +4275,7 @@ pr.0050 = { #For Ai reconstruct polytheism
 			
 				culture = { has_cultural_pillar = heritage_latin }
 		}
-		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:cdr_polytheism}
+		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:roman_polytheism}
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
@@ -4300,7 +4299,7 @@ pr.0050 = { #For Ai reconstruct polytheism
 			
 				culture = { has_cultural_pillar = heritage_goidelic }
 		}
-		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:gaelic_polytheism}
+		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:eriu_polytheism}
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
@@ -4310,7 +4309,7 @@ pr.0050 = { #For Ai reconstruct polytheism
 		trigger = {
 			culture = { has_cultural_pillar = heritage_brythonic}
 		}
-		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:brythonic_polytheism}
+		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:pritani_polytheism}
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
@@ -4323,7 +4322,7 @@ pr.0050 = { #For Ai reconstruct polytheism
 				#culture = { has_cultural_pillar = heritage_celtic}
 			#}
 		}
-		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:gaulish_polytheism}
+		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:continental_polytheism}
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
@@ -4333,13 +4332,13 @@ pr.0050 = { #For Ai reconstruct polytheism
 		trigger = {
 			culture = {  has_name_list = name_list_latgalian } 
 		}
-		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:latvian_pagan}
+		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:baltic_pagan }
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
 	}
 	option = {
-		name = pr.0050.latvian
+		name = pr.0050.lithuanian
 		trigger = {
 			culture = {  has_name_list = name_list_lithuanian } 
 		}
@@ -4353,7 +4352,7 @@ pr.0050 = { #For Ai reconstruct polytheism
 		trigger = {
 			culture = {  has_name_list = name_list_prussian } 
 		}
-		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:prussian_pagan}
+		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:baltic_pagan }
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
@@ -4371,8 +4370,8 @@ pr.0050 = { #For Ai reconstruct polytheism
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
 	}
-	option = { #debuging option only
-		name = pr.0050.debug
+	option = { # players only: keep the current faith
+		name = pr.0050.stay
 		trigger = {
 			is_ai = no
 		}
@@ -4449,7 +4448,7 @@ pr.0051 = { #For Ai to get more variety in polytheistic religions within realm
 				culture = { has_cultural_pillar = heritage_latin }
 			}
 		}
-		set_character_faith_with_conversion = faith:cdr_polytheism
+		set_character_faith_with_conversion = faith:roman_polytheism
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
@@ -4481,7 +4480,7 @@ pr.0051 = { #For Ai to get more variety in polytheistic religions within realm
 	# 				culture = { has_cultural_pillar = language_greek }
 	# 			}
 	# 	}
-	# 	set_character_faith_with_conversion = faith:cdr_polytheism
+	# 	set_character_faith_with_conversion = faith:roman_polytheism
 	# 	hidden_effect = {
 	# 		add_character_flag = converted_pr_religion_this_lifetime
 	# 	}
@@ -4495,7 +4494,8 @@ pr.0051 = { #For Ai to get more variety in polytheistic religions within realm
 			
 			culture = { has_cultural_pillar = heritage_goidelic }
 		}
-		set_character_faith_with_conversion = faith:gaelic_polytheism
+		set_character_faith_with_conversion = faith:eriu_polytheism
+		set_character_rite = rite:gaelic_rites
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
@@ -4508,7 +4508,8 @@ pr.0051 = { #For Ai to get more variety in polytheistic religions within realm
 		trigger = {
 			culture = { has_cultural_pillar = heritage_brythonic}
 		}
-		set_character_faith_with_conversion = faith:brythonic_polytheism
+		set_character_faith_with_conversion = faith:pritani_polytheism
+		set_character_rite = rite:brythonic_rites
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
@@ -4524,7 +4525,8 @@ pr.0051 = { #For Ai to get more variety in polytheistic religions within realm
 				#culture = { has_cultural_pillar = heritage_celtic}
 			#}
 		}
-		set_character_faith_with_conversion = faith:gaulish_polytheism
+		set_character_faith_with_conversion = faith:continental_polytheism
+		set_character_rite = rite:gaulish_rites
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
@@ -4537,7 +4539,8 @@ pr.0051 = { #For Ai to get more variety in polytheistic religions within realm
 		trigger = {
 			culture = {  has_name_list = name_list_latgalian } 
 		}
-		set_character_faith_with_conversion = faith:latvian_pagan
+		set_character_faith_with_conversion = faith:baltic_pagan
+		set_character_rite = rite:latvian_rites
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
@@ -4546,11 +4549,12 @@ pr.0051 = { #For Ai to get more variety in polytheistic religions within realm
 		}
 	}
 	option = {
-		name = pr.0051.latvian
+		name = pr.0051.lithuanian
 		trigger = {
 			culture = {  has_name_list = name_list_lithuanian } 
 		}
 		set_character_faith_with_conversion = faith:baltic_pagan
+		set_character_rite = rite:baltic_pagan
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
@@ -4563,7 +4567,8 @@ pr.0051 = { #For Ai to get more variety in polytheistic religions within realm
 		trigger = {
 			culture = {  has_name_list = name_list_prussian } 
 		}
-		set_character_faith_with_conversion = faith:prussian_pagan
+		set_character_faith_with_conversion = faith:baltic_pagan
+		set_character_rite = rite:prussian_rites
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
@@ -4580,6 +4585,7 @@ pr.0051 = { #For Ai to get more variety in polytheistic religions within realm
 				}
 		}
 		set_character_faith_with_conversion = faith:armenian_polytheism
+		set_character_rite = rite:armenian_rites
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
@@ -4595,7 +4601,8 @@ pr.0051 = { #For Ai to get more variety in polytheistic religions within realm
 					culture = { has_cultural_pillar = language_georgian }
 				}
 		}
-		set_character_faith_with_conversion = faith:georgian_polytheism
+		set_character_faith_with_conversion = faith:armenian_polytheism
+		set_character_rite = rite:georgian_rites
 		hidden_effect = {
 			add_character_flag = converted_pr_religion_this_lifetime
 		}
@@ -4619,9 +4626,9 @@ pr.0051 = { #For Ai to get more variety in polytheistic religions within realm
 			base = 30
 		}
 	}
-	option = { #Most chance of not doing as we otherwise get to much people that change religion
+	option = { # keep the current faith; most likely, otherwise too many people change religion
 			   #Needs play testing
-		name = pr.0051.debug
+		name = pr.0051.stay
 		ai_chance = {
 			base = 70
 		}

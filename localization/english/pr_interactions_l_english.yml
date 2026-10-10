@@ -16,8 +16,6 @@
   ask_for_conversion_gaulish_courtier_interaction:0 "Demand to convert to Gaulish"
   demand_conversion_cultus_deorum_vassal_ruler_interaction:0 "Demand to convert to Cultus Deorum"
   ask_for_conversion_cultus_deorum_courtier_interaction:0 "Demand to convert to Cultus Deorum"
-  demand_conversion_greco_roman_vassal_ruler_interaction:0 "Demand to convert to Greco-Roman"
-  ask_for_conversion_greco_roman_courtier_interaction:0 "Demand to convert to Greco-Roman"
   demand_conversion_hellenism_vassal_ruler_interaction:0 "Demand to convert to Hellenism"
   ask_for_conversion_hellenism_courtier_interaction:0 "Demand to convert to Hellenism"
   demand_conversion_kemetic_vassal_ruler_interaction:0 "Demand to convert to Kemetic"

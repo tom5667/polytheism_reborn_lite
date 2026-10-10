@@ -23,6 +23,8 @@
   pr_daco_thracian.0007.t:0 "Offering To Ursitoare"
   pr_daco_thracian.0007.desc:0 "#F Nothing is more important than the future of my dynasty and my realm. Therefore today, I bring an offering to $pr_dacian_polytheism_fate_god_name$, god of fate, and pray that he will bend fate to my wishes.#!"
   pr_daco_thracian.0007.a:0 "Make an offering to $pr_dacian_polytheism_fate_god_name$"
+  pr_daco_thracian.0007.message.positive:0 "Blessed by the Ursitoare"
+  pr_daco_thracian.0007.message.negative:0 "Unfavoured by the Ursitoare"
   
   
   pr_daco_thracian.0008.t:0 "Visit Shrine To Gebeleizis"

@@ -14,13 +14,13 @@ pr_local_pilgrimage_worship_intent = {
 
 	ai_will_do = {
 		value = 50
-		modifier = {
-			factor = 2
-			has_trait = zealous
+		if = {
+			limit = { has_trait = zealous }
+			multiply = 2
 		}
-		modifier = {
-			factor = 0.5
-			has_trait = cynical
+		if = {
+			limit = { has_trait = cynical }
+			multiply = 0.5
 		}
 	}
 
@@ -44,17 +44,17 @@ pr_local_pilgrimage_curiosity_intent = {
 
 	ai_will_do = {
 		value = 50
-		modifier = {
-			factor = 2
-			has_trait = cynical
+		if = {
+			limit = { has_trait = cynical }
+			multiply = 2
 		}
-		modifier = {
-			factor = 1.5
-			has_trait = curious
+		if = {
+			limit = { has_trait = curious }
+			multiply = 1.5
 		}
-		modifier = {
-			factor = 0.5
-			has_trait = zealous
+		if = {
+			limit = { has_trait = zealous }
+			multiply = 0.5
 		}
 	}
 

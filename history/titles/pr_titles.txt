@@ -1,0 +1,15 @@
+﻿# Polytheism Reborn: title history for mod titles.
+# Pergamon and Galatia are titular Anatolian kingdoms; like vanilla's k_rum, k_trebizond and k_karaman they belong
+# de jure to the Byzantine empire (their capitals c_aeolis and c_galatia are in e_byzantium). Dated 1.1.1 so it
+# applies to every bookmark, including mods with early start dates (#66).
+k_pergamon = {
+	1.1.1 = {
+		de_jure_liege = e_byzantium
+	}
+}
+
+k_pr_galatia = {
+	1.1.1 = {
+		de_jure_liege = e_byzantium
+	}
+}

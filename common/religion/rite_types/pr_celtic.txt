@@ -1,0 +1,249 @@
+﻿#####################
+#Made by tom5667
+#####################
+gaelic_rites = {
+    faith = eriu_polytheism
+    icon = gaelic_polytheism
+    color = {41 125 0}
+
+    tenets = {
+        tenet_ancestor_worship
+        tenet_sanctity_of_nature
+    }
+    # Sacrificial Appeasement needs Northern Lords; without it Animal Sacrifice.
+    tenet_selection_pair = {
+        requires_dlc_flag = the_northern_lords
+        tenet = tenet_sacrificial_appeasement
+        fallback_tenet = tenet_animal_sacrifice
+    }
+    doctrines = {
+        special_doctrine_gaelic_patron_god
+        unreformed_faith_doctrine
+    }
+    cultures = {irish pr_old_irish pr_manx }
+}
+
+brythonic_rites = {
+    faith = pritani_polytheism
+    color = {56 255 184}
+    icon = brythonic_polytheism
+
+    tenets = {
+        tenet_ancestor_worship
+        tenet_sanctity_of_nature
+    }
+    # Sacrificial Appeasement needs Northern Lords; without it Animal Sacrifice.
+    tenet_selection_pair = {
+        requires_dlc_flag = the_northern_lords
+        tenet = tenet_sacrificial_appeasement
+        fallback_tenet = tenet_animal_sacrifice
+    }
+    doctrines = {
+        special_doctrine_brythonic_patron_god
+        unreformed_faith_doctrine
+    }
+    cultures = {pr_brythonic}
+}
+
+gaulish_rites = {
+    faith = continental_polytheism
+    icon = gaulish_polytheism
+    color = {56 255 0}
+
+    tenets = {
+        tenet_ancestor_worship
+        tenet_sanctity_of_nature
+    }
+    # Sacrificial Appeasement needs Northern Lords; without it Animal Sacrifice.
+    tenet_selection_pair = {
+        requires_dlc_flag = the_northern_lords
+        tenet = tenet_sacrificial_appeasement
+        fallback_tenet = tenet_animal_sacrifice
+    }
+    doctrines = {
+        special_doctrine_gaulish_patron_god
+        unreformed_faith_doctrine
+    }
+    cultures = {pr_gaulish pr_eburones pr_aquitani pr_belgae}
+}
+
+celtic_iberian_polytheism_rites = {
+    faith = continental_polytheism
+
+    color = {247 207 107}
+    icon = celtiberian_polytheism
+
+
+
+    tenets = {
+        tenet_ancestor_worship
+        tenet_sanctity_of_nature
+    }
+    # Sacrificial Appeasement needs Northern Lords; without it Animal Sacrifice.
+    tenet_selection_pair = {
+        requires_dlc_flag = the_northern_lords
+        tenet = tenet_sacrificial_appeasement
+        fallback_tenet = tenet_animal_sacrifice
+    }
+    doctrines = {
+        special_doctrine_celtic_iberian_patron_god
+        unreformed_faith_doctrine
+    }
+    cultures = {pr_celtic_iberian}
+    localization = {
+        #High God Name
+        HighGodName = celtic_iberian_polytheism_high_god_name
+        HighGodName2 = celtic_iberian_polytheism_high_god_name_2
+        HighGodNamePossessive = celtic_iberian_polytheism_high_god_name_possessive
+        HighGodNameSheHe = CHARACTER_SHEHE_HE
+        HighGodHerselfHimself = CHARACTER_HIMSELF
+        HighGodHerHis = CHARACTER_HERHIS_HIS
+        HighGodNameAlternate = celtic_iberian_polytheism_high_god_name_alternate
+        HighGodNameAlternatePossessive = celtic_iberian_polytheism_high_god_name_alternate_possessive
+
+        #Creator
+        CreatorName = celtic_iberian_polytheism_creator_god_name
+        CreatorNamePossessive = celtic_iberian_polytheism_creator_god_name_possessive
+        CreatorSheHe = CHARACTER_SHEHE_HE
+        CreatorHerHis = CHARACTER_HERHIS_HIS
+        CreatorHerHim = CHARACTER_HERHIM_HIM
+
+        #HealthGod
+        HealthGodName = celtic_iberian_polytheism_health_god_name
+        HealthGodNamePossessive = celtic_iberian_polytheism_health_god_name_possessive
+        HealthGodSheHe = CHARACTER_SHEHE_HE
+        HealthGodHerHis = CHARACTER_HERHIS_HIS
+        HealthGodHerHim = CHARACTER_HERHIM_HIM
+
+        #FertilityGod
+        FertilityGodName = celtic_iberian_polytheism_fertility_god_name
+        FertilityGodNamePossessive = celtic_iberian_polytheism_fertility_god_name_possessive
+        FertilityGodSheHe = CHARACTER_SHEHE_SHE
+        FertilityGodHerHis = CHARACTER_HERHIS_HER
+        FertilityGodHerHim = CHARACTER_HERHIM_HER
+
+        #WealthGod
+        WealthGodName = celtic_iberian_polytheism_wealth_god_name
+        WealthGodNamePossessive = celtic_iberian_polytheism_wealth_god_name_possessive
+        WealthGodSheHe = CHARACTER_SHEHE_HE
+        WealthGodHerHis = CHARACTER_HERHIS_HIS
+        WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+        #HouseholdGod
+        HouseholdGodName = celtic_iberian_polytheism_household_god_name
+        HouseholdGodNamePossessive = celtic_iberian_polytheism_household_god_name_possessive
+        HouseholdGodSheHe = CHARACTER_SHEHE_HE
+        HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+        HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+        #FateGod
+        FateGodName = celtic_iberian_polytheism_fate_god_name
+        FateGodNamePossessive = celtic_iberian_polytheism_fate_god_name_possessive
+        FateGodSheHe = CHARACTER_SHEHE_HE
+        FateGodHerHis = CHARACTER_HERHIS_HIS
+        FateGodHerHim = CHARACTER_HERHIM_HIM
+
+        #KnowledgeGod
+        KnowledgeGodName = celtic_iberian_polytheism_knowledge_god_name
+        KnowledgeGodNamePossessive = celtic_iberian_polytheism_knowledge_god_name_possessive
+        KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
+        KnowledgeGodHerHis = CHARACTER_HERHIS_HER
+        KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+
+        #WarGod
+        WarGodName = celtic_iberian_polytheism_war_god_name
+        WarGodNamePossessive = celtic_iberian_polytheism_war_god_name_possessive
+        WarGodSheHe = CHARACTER_SHEHE_HE
+        WarGodHerHis = CHARACTER_HERHIS_HIS
+        WarGodHerHim = CHARACTER_HERHIM_HIM
+
+        #TricksterGod
+        TricksterGodName = celtic_iberian_polytheism_trickster_god_name
+        TricksterGodNamePossessive = celtic_iberian_polytheism_trickster_god_name_possessive
+        TricksterGodSheHe = CHARACTER_SHEHE_HE
+        TricksterGodHerHis = CHARACTER_HERHIS_HIS
+        TricksterGodHerHim = CHARACTER_HERHIM_HIM
+
+        #NightGod
+        NightGodName = celtic_iberian_polytheism_night_god_name
+        NightGodNamePossessive = celtic_iberian_polytheism_night_god_name_possessive
+        NightGodSheHe = CHARACTER_SHEHE_SHE
+        NightGodHerHis = CHARACTER_HERHIS_HER
+        NightGodHerHim = CHARACTER_HERHIM_HER
+
+        #WaterGod
+        WaterGodName = celtic_iberian_polytheism_water_god_name
+        WaterGodNamePossessive = celtic_iberian_polytheism_water_god_name_possessive
+        WaterGodSheHe = CHARACTER_SHEHE_HE
+        WaterGodHerHis = CHARACTER_HERHIS_HIS
+        WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+        PantheonTerm = religion_the_gods
+        PantheonTerm2 = religion_the_gods_2
+        PantheonTerm3 = religion_the_gods_3
+        PantheonTermHasHave = pantheon_term_have
+        GoodGodNames = {celtic_iberian_polytheism_good_god_dea_brigo celtic_iberian_polytheism_good_god_durius celtic_iberian_polytheism_good_god_alaunus celtic_iberian_polytheism_good_god_lugus celtic_iberian_polytheism_good_god_endovelicus celtic_iberian_polytheism_good_god_Besencla celtic_iberian_polytheism_good_god_visucius celtic_iberian_polytheism_good_god_ares_lusitani }
+        DevilName = celtic_iberian_polytheism_devil_name
+        DevilNamePossessive = celtic_iberian_polytheism_devil_name_possessive
+        DevilSheHe = CHARACTER_SHEHE_HE
+        DevilHerHis = CHARACTER_HERHIS_HIS
+        DevilHerselfHimself = CHARACTER_HIMSELF
+        EvilGodNames = { celtic_iberian_polytheism_evil_god_ataecina }
+        HouseOfWorship = paganism_house_of_worship
+        HouseOfWorship2 = paganism_house_of_worship_2
+        HouseOfWorship3 = paganism_house_of_worship_3
+        HouseOfWorshipPlural = paganism_house_of_worship_plural
+        ReligiousSymbol = celtic_iberian_polytheism_religious_symbol
+        ReligiousSymbol2 = celtic_iberian_polytheism_religious_symbol_2
+        ReligiousSymbol3 = celtic_iberian_polytheism_religious_symbol_3
+        ReligiousText = celtic_iberian_polytheism_religious_text
+        ReligiousText2 = celtic_iberian_polytheism_religious_text_2
+        ReligiousText3 = celtic_iberian_polytheism_religious_text_3
+        ReligiousHeadName = celtic_iberian_polytheism_religious_head_title
+        ReligiousHeadNameFemale = celtic_iberian_polytheism_religious_head_title
+        ReligiousHeadTitleName = dualism_religious_head_title_name
+        DevoteeMale = paganism_devotee
+        DevoteeMalePlural = paganism_devoteeplural
+        DevoteeFemale = paganism_devotee
+        DevoteeFemalePlural = paganism_devoteeplural
+        DevoteeNeuter = paganism_devotee
+        DevoteeNeuterPlural = paganism_devoteeplural
+        PriestMale = celtic_iberian_polytheism_priest_male
+        PriestMalePlural = celtic_iberian_polytheism_priest_male_plural
+        PriestFemale = celtic_iberian_polytheism_priest_female
+        PriestFemalePlural = celtic_iberian_polytheism_priest_female_plural
+        PriestNeuter = celtic_iberian_polytheism_priest_male
+        PriestNeuterPlural = celtic_iberian_polytheism_priest_male_plural
+        AltPriestTermPlural = christianity_priest_alternate_plural
+        BishopMale = celtic_iberian_polytheism_bishop_male
+        BishopMalePlural = celtic_iberian_polytheism_bishop_male_plural
+        BishopFemale = celtic_iberian_polytheism_priest_female
+        BishopFemalePlural = celtic_iberian_polytheism_priest_female_plural
+        BishopNeuter = celtic_iberian_polytheism_priest_male
+        BishopNeuterPlural = celtic_iberian_polytheism_priest_male_plural
+        DivineRealm = celtic_iberian_polytheism_divine_realm
+        DivineRealm2 = celtic_iberian_polytheism_divine_realm_2
+        DivineRealm3 = celtic_iberian_polytheism_divine_realm_3
+        PositiveAfterLife = celtic_afterlife
+        PositiveAfterLife2 = celtic_afterlife_2
+        PositiveAfterLife3 = celtic_afterlife_3
+        NegativeAfterLife = celtic_afterlife
+        NegativeAfterLife2 = celtic_afterlife_2
+        NegativeAfterLife3 = celtic_afterlife_3
+        DeathDeityName = celtic_iberian_polytheism_death_deity_name
+        DeathDeityNamePossessive = celtic_iberian_polytheism_death_deity_name_possessive
+        DeathDeitySheHe = CHARACTER_SHEHE_HE
+        DeathDeityHerHis = CHARACTER_HERHIS_HIS
+        DeathDeityHerHim = CHARACTER_HERHIM_HIM
+        WitchGodName = celtic_iberian_witchgodname_ataecina
+        WitchGodNamePossessive = celtic_iberian_witchgodname_ataecina_possessive
+        WitchGodHerHis = CHARACTER_HERHIS_HER
+        WitchGodSheHe = CHARACTER_SHEHE_SHE
+        WitchGodHerHim = CHARACTER_HERHIM_HER
+        WitchGodMistressMaster = mistress
+        WitchGodMotherFather = mother
+
+        GHWName = ghw_great_holy_war
+        GHWNamePlural = ghw_great_holy_wars
+    }
+}

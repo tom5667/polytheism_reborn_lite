@@ -10,7 +10,7 @@ pr_germanic_select_personal_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/fp1_decisons_hold_bolt.dds"
     }
     desc = pr_germanic_select_personal_deity_decision_desc
-    decision_tooltip = pr_germanic_select_personal_deity_decision_tooltip
+    selection_tooltip = pr_germanic_select_personal_deity_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
@@ -32,7 +32,7 @@ pr_germanic_select_personal_deity_decision = {
             limit = {
                 OR = {
                     faith = faith:norse_pagan
-                    faith = { has_doctrine_parameter = special_doctrine_norse_patron_god_active }
+                    rite = { rite_has_parameter = special_doctrine_norse_patron_god_active }
                 }
             }
             show_as_tooltip = {
@@ -73,7 +73,7 @@ pr_germanic_select_personal_deity_decision = {
             limit = {
                 OR = {
                     faith = faith:anglo_saxon_polytheism
-                    faith = { has_doctrine_parameter = special_doctrine_anglo_saxon_patron_god_active }
+                    rite = { rite_has_parameter = special_doctrine_anglo_saxon_patron_god_active }
                 }
             }
             show_as_tooltip = {
@@ -112,7 +112,7 @@ pr_germanic_select_personal_deity_decision = {
             limit = {
                 OR = {
                     faith = faith:german_polytheism
-                    faith = { has_doctrine_parameter = special_doctrine_german_patron_god_active }
+                    rite = { rite_has_parameter = special_doctrine_german_patron_god_active }
                 }
             }
             show_as_tooltip = {
@@ -164,6 +164,7 @@ pr_germanic_select_personal_deity_decision = {
             has_character_modifier = anglo_saxon_njord
             has_character_modifier = anglo_saxon_tiwaz
             has_character_modifier = anglo_saxon_seaxneat
+            has_character_modifier = german_wotan
             has_character_modifier = german_freyr
             has_character_modifier = german_njordr
             has_character_modifier = german_nornir
@@ -183,7 +184,7 @@ pr_germanic_place_new_irminsul_paderborn_decision = {
     }
     decision_group_type = polytheism
     desc = pr_germanic_place_new_irminsul_paderborn_decision_desc
-    decision_tooltip = pr_germanic_place_new_irminsul_paderborn_decision_tooltip
+    selection_tooltip = pr_germanic_place_new_irminsul_paderborn_decision_tooltip
 
     is_shown = {
         faith = faith:anglo_saxon_polytheism
@@ -223,14 +224,14 @@ pr_germanic_holy_reconquest_decision = {
     }
     decision_group_type = polytheism
     desc = pr_germanic_holy_reconquest_decision_desc
-    decision_tooltip = pr_germanic_holy_reconquest_decision_tooltip
+    selection_tooltip = pr_germanic_holy_reconquest_decision_tooltip
 
     is_shown = {
         OR = {
             faith = faith:anglo_saxon_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_anglo_saxon_patron_god_active }
+            rite = { rite_has_parameter = special_doctrine_anglo_saxon_patron_god_active }
             faith = faith:german_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_german_patron_god_active }
+            rite = { rite_has_parameter = special_doctrine_german_patron_god_active }
         }
         NOR = {
             is_target_in_global_variable_list = {
@@ -276,14 +277,14 @@ pr_germanic_holy_reconquest_westfalen_decision = {
     }
     decision_group_type = polytheism
     desc = pr_germanic_holy_reconquest_westfalen_decision_desc
-    decision_tooltip = pr_germanic_holy_reconquest_westfalen_decision_tooltip
+    selection_tooltip = pr_germanic_holy_reconquest_westfalen_decision_tooltip
 
     is_shown = {
         OR = {
             faith = faith:anglo_saxon_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_anglo_saxon_patron_god_active }
+            rite = { rite_has_parameter = special_doctrine_anglo_saxon_patron_god_active }
             faith = faith:german_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_german_patron_god_active }
+            rite = { rite_has_parameter = special_doctrine_german_patron_god_active }
         }
         is_target_in_global_variable_list = {
             name = unavailable_unique_decisions_holy_reconquest
@@ -334,14 +335,14 @@ pr_germanic_holy_reconquest_angria_decision = {
     }
     decision_group_type = polytheism
     desc = pr_germanic_holy_reconquest_angria_decision_desc
-    decision_tooltip = pr_germanic_holy_reconquest_angria_decision_tooltip
+    selection_tooltip = pr_germanic_holy_reconquest_angria_decision_tooltip
 
     is_shown = {
         OR = {
             faith = faith:anglo_saxon_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_anglo_saxon_patron_god_active }
+            rite = { rite_has_parameter = special_doctrine_anglo_saxon_patron_god_active }
             faith = faith:german_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_german_patron_god_active }
+            rite = { rite_has_parameter = special_doctrine_german_patron_god_active }
         }
         is_target_in_global_variable_list = {
             name = unavailable_unique_decisions_holy_reconquest_westfalen
@@ -391,14 +392,14 @@ pr_germanic_holy_reconquest_holstein_decision = {
     }
     decision_group_type = polytheism
     desc = pr_germanic_holy_reconquest_holstein_decision_desc
-    decision_tooltip = pr_germanic_holy_reconquest_holstein_decision_tooltip
+    selection_tooltip = pr_germanic_holy_reconquest_holstein_decision_tooltip
 
     is_shown = {
         OR = {
             faith = faith:anglo_saxon_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_anglo_saxon_patron_god_active }
+            rite = { rite_has_parameter = special_doctrine_anglo_saxon_patron_god_active }
             faith = faith:german_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_german_patron_god_active }
+            rite = { rite_has_parameter = special_doctrine_german_patron_god_active }
         }
         is_target_in_global_variable_list = {
             name = unavailable_unique_decisions_holy_reconquest_angria
@@ -448,14 +449,14 @@ pr_germanic_holy_reconquest_ostfalen_decision = {
     }
     decision_group_type = polytheism
     desc = pr_germanic_holy_reconquest_ostfalen_decision_desc
-    decision_tooltip = pr_germanic_holy_reconquest_ostfalen_decision_tooltip
+    selection_tooltip = pr_germanic_holy_reconquest_ostfalen_decision_tooltip
 
     is_shown = {
         OR = {
             faith = faith:anglo_saxon_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_anglo_saxon_patron_god_active }
+            rite = { rite_has_parameter = special_doctrine_anglo_saxon_patron_god_active }
             faith = faith:german_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_german_patron_god_active }
+            rite = { rite_has_parameter = special_doctrine_german_patron_god_active }
         }
         is_target_in_global_variable_list = {
             name = unavailable_unique_decisions_holy_reconquest_holstein
@@ -505,14 +506,14 @@ pr_germanic_holy_reconquest_anhalt_decision = {
     }
     decision_group_type = polytheism
     desc = pr_germanic_holy_reconquest_anhalt_decision_desc
-    decision_tooltip = pr_germanic_holy_reconquest_anhalt_decision_tooltip
+    selection_tooltip = pr_germanic_holy_reconquest_anhalt_decision_tooltip
 
     is_shown = {
         OR = {
             faith = faith:anglo_saxon_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_anglo_saxon_patron_god_active }
+            rite = { rite_has_parameter = special_doctrine_anglo_saxon_patron_god_active }
             faith = faith:german_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_german_patron_god_active }
+            rite = { rite_has_parameter = special_doctrine_german_patron_god_active }
         }
         is_target_in_global_variable_list = {
             name = unavailable_unique_decisions_holy_reconquest_ostfalen
@@ -528,7 +529,7 @@ pr_germanic_holy_reconquest_anhalt_decision = {
 
     is_valid = {
         completely_controls = title:d_anhalt
-        if = {
+        trigger_if = {
             limit = {
                 exists = faith.religious_head
                 NOT = { root = root.faith.religious_head }

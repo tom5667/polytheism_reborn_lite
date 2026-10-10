@@ -75,14 +75,13 @@ legionaries = {
 				has_innovation = innovation_quilted_armor
 			}
 			culture ?= { has_cultural_pillar = heritage_latin }
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			NOT = { is_landless_adventurer = yes }
 		}
 	}
 
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
-	icon = spear
 }
 
 equites = {
@@ -112,7 +111,7 @@ equites = {
 				has_innovation = innovation_quilted_armor
 			}
 			culture ?= { has_cultural_pillar = heritage_latin }
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			NOT = { is_landless_adventurer = yes }
 		}
 	}
@@ -128,7 +127,6 @@ equites = {
 
 	stack = 100
 	ai_quality = { value = @[cultural_maa_extra_ai_score + 10] }
-	icon = heavy_cavalry
 }
 
 sagatarii = {
@@ -166,14 +164,13 @@ sagatarii = {
 				has_innovation = innovation_quilted_armor
 			}
 			culture ?= { has_cultural_pillar = heritage_latin }
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 			NOT = { is_landless_adventurer = yes }
 		}
 	}
 
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
-	icon = bowmen
 }
 
 # Celtic

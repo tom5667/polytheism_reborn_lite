@@ -10,7 +10,7 @@ pr_egyptian_kingdom_of_lower_egypt_decision = {
         reference = "gfx/interface/illustrations/decisions/Memphis.dds"
     }
     desc = pr_egyptian_kingdom_of_lower_egypt_decision_desc
-    decision_tooltip = pr_egyptian_kingdom_of_lower_egypt_decision_tooltip
+    selection_tooltip = pr_egyptian_kingdom_of_lower_egypt_decision_tooltip
     decision_group_type = major
 
     ai_check_interval = 4
@@ -27,8 +27,7 @@ pr_egyptian_kingdom_of_lower_egypt_decision = {
         }
         OR = {
             religion = religion:egyptian_religion
-            faith = faith:alexandrian_cult
-            faith = faith:graeco_egyptian_polytheism
+            rite = rite:graeco_egyptian_rites
             culture = culture:kemetic
         }
         is_imprisoned = no
@@ -49,8 +48,7 @@ pr_egyptian_kingdom_of_lower_egypt_decision = {
         OR = {
             religion = religion:egyptian_religion
             culture = culture:kemetic
-            faith = faith:alexandrian_cult
-            faith = faith:graeco_egyptian_polytheism
+            rite = rite:graeco_egyptian_rites
         }
         is_imprisoned = no
         is_at_war = no
@@ -111,7 +109,7 @@ pr_egyptian_kingdom_of_upper_egypt_decision = {
         reference = "gfx/interface/illustrations/decisions/Memphis.dds"
     }
     desc = pr_egyptian_kingdom_of_upper_egypt_decision_desc
-    decision_tooltip = pr_egyptian_kingdom_of_upper_egypt_decision_tooltip
+    selection_tooltip = pr_egyptian_kingdom_of_upper_egypt_decision_tooltip
     decision_group_type = major
 
     ai_check_interval = 4
@@ -129,8 +127,7 @@ pr_egyptian_kingdom_of_upper_egypt_decision = {
         OR = {
             religion = religion:egyptian_religion
             culture = culture:kemetic
-            faith = faith:alexandrian_cult
-            faith = faith:graeco_egyptian_polytheism
+            rite = rite:graeco_egyptian_rites
         }
         is_imprisoned = no
         is_at_war = no
@@ -149,8 +146,7 @@ pr_egyptian_kingdom_of_upper_egypt_decision = {
         OR = {
             religion = religion:egyptian_religion
             culture = culture:kemetic
-            faith = faith:alexandrian_cult
-            faith = faith:graeco_egyptian_polytheism
+            rite = rite:graeco_egyptian_rites
         }
         is_imprisoned = no
         is_at_war = no
@@ -210,7 +206,7 @@ pr_egyptian_restore_egyptus_decision = {
         reference = "gfx/interface/illustrations/decisions/Memphis.dds"
     }
     desc = pr_egyptian_restore_egyptus_decision_desc
-    decision_tooltip = pr_egyptian_restore_egyptus_decision_tooltip
+    selection_tooltip = pr_egyptian_restore_egyptus_decision_tooltip
     decision_group_type = major
 
     ai_check_interval = 4
@@ -301,13 +297,13 @@ pr_egyptian_choose_main_deity_decision = {
         reference = "gfx/interface/illustrations/decisions/egyptian_temple.dds"
     }
     desc = pr_egyptian_choose_main_deity_decision_desc
-    decision_tooltip = pr_egyptian_choose_main_deity_decision_tooltip
+    selection_tooltip = pr_egyptian_choose_main_deity_decision_tooltip
     decision_group_type = polytheism
 
     is_shown = {
         OR = {
             faith = faith:kemetic_polytheism
-            faith = { has_doctrine_parameter = special_doctrine_kemetic_patron_god_active }
+            rite = { rite_has_parameter = special_doctrine_kemetic_patron_god_active }
         }
         is_adult = yes
     }
@@ -332,27 +328,27 @@ pr_egyptian_choose_main_deity_decision = {
                 100 = {
                     show_chance = no
                     desc = select_main_deity_kemetic_decision.select_amun_ra
-                    add_trait = pr_kemetic_amun_ra
+                    add_character_modifier = pr_kemetic_amun_ra
                 }
                 100 = {
                     show_chance = no
                     desc = select_main_deity_kemetic_decision.select_ra
-                    add_trait = pr_kemetic_ra
+                    add_character_modifier = pr_kemetic_ra
                 }
                 100 = {
                     show_chance = no
                     desc = select_main_deity_kemetic_decision.select_isis
-                    add_trait = pr_kemetic_isis
+                    add_character_modifier = pr_kemetic_isis
                 }
                 100 = {
                     show_chance = no
                     desc = select_main_deity_kemetic_decision.select_montu
-                    add_trait = pr_kemetic_montu
+                    add_character_modifier = pr_kemetic_montu
                 }
                 100 = {
                     show_chance = no
                     desc = select_main_deity_kemetic_decision.select_hathor
-                    add_trait = pr_kemetic_hathor
+                    add_character_modifier = pr_kemetic_hathor
                 }
             }
         }
@@ -364,11 +360,11 @@ pr_egyptian_choose_main_deity_decision = {
     ai_potential = {
         piety >= minor_piety_value
         NOR = {
-            has_trait = pr_kemetic_amun_ra
-            has_trait = pr_kemetic_ra
-            has_trait = pr_kemetic_isis
-            has_trait = pr_kemetic_montu
-            has_trait = pr_kemetic_hathor
+            has_character_modifier = pr_kemetic_amun_ra
+            has_character_modifier = pr_kemetic_ra
+            has_character_modifier = pr_kemetic_isis
+            has_character_modifier = pr_kemetic_montu
+            has_character_modifier = pr_kemetic_hathor
         }
     }
 

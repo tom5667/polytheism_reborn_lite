@@ -1,0 +1,21 @@
+﻿#####################
+#Made by tom5667
+#####################
+# Illyrian rite (main rite). Localization comes from the religion-level block in
+# religion_types/pr_illyrian.txt.
+illyrian_rites = {
+    faith = illyrian_polytheism
+    color = { 84 235 112 }
+    icon = illyrian
+
+    tenets = {
+        tenet_sun_worship
+        tenet_animal_sacrifice
+        tenet_ancestor_worship
+    }
+    doctrines = {
+        unreformed_faith_doctrine
+        special_doctrine_illyrian_patron_god # old format, see issue #83
+    }
+    cultures = { pr_illyrian }
+}

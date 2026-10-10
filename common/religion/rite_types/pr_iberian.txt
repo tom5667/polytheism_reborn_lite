@@ -1,0 +1,27 @@
+﻿#####################
+#Made by tom5667
+#####################
+# Lusitanian rite (main rite). Localization comes from the religion-level block in
+# religion_types/pr_iberian.txt.
+lusitanian_rites = {
+    faith = lusitanian_polytheism
+    color = { 84 235 112 }
+    icon = lusitanian
+
+    tenets = {
+        tenet_sanctity_of_nature
+        tenet_unrelenting_faith
+    }
+    # Sacrificial Appeasement is shown only with Northern Lords (pr_tenets.txt: has_fp1_dlc_trigger);
+    # without it the rite falls back to Animal Sacrifice (Cabeço das Fráguas: sheep, pig, bull).
+    tenet_selection_pair = {
+        requires_dlc_flag = the_northern_lords
+        tenet = tenet_sacrificial_appeasement
+        fallback_tenet = tenet_animal_sacrifice
+    }
+    doctrines = {
+        unreformed_faith_doctrine
+        special_doctrine_lusitanian_patron_god # old format, see issue #83
+    }
+    cultures = { pr_iberian }
+}

@@ -2,37 +2,26 @@
 #####################
 #Made by tom5667 
 ######################
-    etruscan_religion:0 "Etruscan"
-    etruscan_religion_adj:0 "Etruscan"
-    etruscan_religion_adherent:0 "Etruscan"
-    etruscan_religion_adherent_plural:0 "Etruscans"
-    etruscan_religion_desc:0 "The Etruscan pantheon stood apart from its Indo-European neighbors, drawing on both a distinct native tradition and heavy borrowing from Greek gods and heroes — a uniqueness that did not save the Etruscans from being absorbed into the rising Roman state."
 
     #etc
-    etc_polytheism:0 "Etruscan"
-    etc_polytheism_adj:0 "Etruscan"
-    etc_polytheism_adherent:0 "Etruscan Polytheist follower"
-    etc_polytheism_adherent_plural:0 "Etruscan Polytheism followers"
-    etc_polytheism_desc:0 "The Etruscan pantheon stood apart from its Indo-European neighbors, drawing on both a distinct native tradition and heavy borrowing from Greek gods and heroes — a uniqueness that did not save the Etruscans from being absorbed into the rising Roman state." 
 
-    etc_polytheism_old:0 "Etruscan Old"
-    etc_polytheism_old_adj:0 "Etruscan Old"
-    etc_polytheism_adherent_old:0 "Old Etruscan Polytheist follower"
-    etc_polytheism_old_adherent_plural:0 "Old Etruscan Polytheism followers"
-    etc_polytheism_old_desc:0 "In the earlier centuries of Etruscan civilization, before Rome's rise, the twelve cities of Etruria each kept their own priesthoods and rites, bound together by a shared reverence for the same gods and the sacred art of divination."
 
     #etc_polytheism_religious_head_title:0 "Pontifex Maximus"
-    etc_polytheism_divine_realm:0 "Realm of the Etruscan gods"
+    etc_polytheism_divine_realm:0 "the Sixteen Regions of Heaven"
     etc_polytheism_divine_realm_2:0 "$etc_polytheism_divine_realm$"
     etc_polytheism_divine_realm_3:0 "$etc_polytheism_divine_realm$"
-    etc_polytheism_religious_symbol:0 "Etruscan Lion"
+    etc_polytheism_religious_symbol:0 "the lituus"
     etc_polytheism_religious_symbol_2:0 "$etc_polytheism_religious_symbol$"
     etc_polytheism_religious_symbol_3:0 "$etc_polytheism_religious_symbol$"
-    etc_polytheism_religious_text:0 "Ritus and Caerimoniae"
+    etc_polytheism_religious_text:0 "the Libri Tagetici"
     etc_polytheism_religious_text_2:0 "$etc_polytheism_religious_text$"
     etc_polytheism_religious_text_3:0 "$etc_polytheism_religious_text$"
+    etc_polytheism_pantheon_term:0 "the Council of Tinia"
+    etc_polytheism_pantheon_term_2:0 "$etc_polytheism_pantheon_term$"
+    etc_polytheism_pantheon_term_3:0 "$etc_polytheism_pantheon_term$"
+    etc_polytheism_pantheon_term_has:0 "has"
 
-    etc_polytheism_religious_head_title:0 "High Priest"
+    etc_polytheism_religious_head_title:0 "Sacerdos of the Twelve Peoples"
     etc_polytheism_religious_head_title_name:0 "High Priesthood"
 
     #etc gods/goddesses Localization
@@ -41,96 +30,99 @@
     etc_polytheism_high_god_name:0 "Tinia"
     etc_polytheism_high_god_name_2:0 "$etc_polytheism_high_god_name$"
     etc_polytheism_high_god_name_possessive:0 "Tinia's"
-    etc_polytheism_high_god_name_alternate:0 "Tinia"
-    etc_polytheism_high_god_name_alternate_possessive:0 "Tinia's"
+    etc_polytheism_high_god_name_alternate:0 "Tin"
+    etc_polytheism_high_god_name_alternate_possessive:0 "Tin's"
     etc_polytheism_high_god_shehe:0 "He"
     etc_polytheism_high_god_herselfhimself:0 "Himself"
     etc_polytheism_high_god_herhis:0 "His"
 
     #Creater god Localization
-    etc_polytheism_creator_god_name:0 "kháos"
-    etc_polytheism_creator_god_name_possessive:0 "kháos's"
+    etc_polytheism_creator_god_name:0 "the Creator"
+    etc_polytheism_creator_god_name_possessive:0 "the Creator's"
 
     #Health Goddess Munthukh
-    etc_polytheism_health_god_name:0 "Munthukh"
-    etc_polytheism_health_god_name_possessive:0 "Munthukh's"
+    etc_polytheism_health_god_name:0 "the Healer"
+    etc_polytheism_health_god_name_possessive:0 "the Healer's"
 
     #Fertility Goddess Nurtia Localization
-    etc_polytheism_fertility_god_name:0 "Nurtia"
-    etc_polytheism_fertility_god_name_possessive:0 "$etc_polytheism_fertility_god_name$'s"
+    etc_polytheism_fertility_god_name:0 "Cel"
+    etc_polytheism_fertility_god_name_possessive:0 "Cel's"
 
     #Wealth god Turms Localization
     etc_polytheism_wealth_god_name:0 "Turms"
     etc_polytheism_wealth_god_name_possessive:0 "Turms's"
 
     #Household god Lares 
-    etc_polytheism_household_god_name:0 "Lares"
-    etc_polytheism_household_god_name_possessive:0 "Lares's"
+    etc_polytheism_household_god_name:0 "the household gods"
+    etc_polytheism_household_god_name_possessive:0 "the household gods'"
 
     #Fate god Athrpa Localization
-    etc_polytheism_fate_god_name:0 "Athrpa"
-    etc_polytheism_fate_god_name_possessive:0 "Athrpa's"
+    etc_polytheism_fate_god_name:0 "Nortia"
+    etc_polytheism_fate_god_name_possessive:0 "Nortia's"
 
     #knowledge god Menrva Localization
     etc_polytheism_knowledge_god_name:0 "Menrva"
     etc_polytheism_knowledge_god_name_possessive:0 "Menrva's"
 
     #War god Mars Localization
-    etc_polytheism_war_god_name:0 "Mariś"
-    etc_polytheism_war_god_name_possessive:0 "Mariś's"
+    etc_polytheism_war_god_name:0 "Laran"
+    etc_polytheism_war_god_name_possessive:0 "Laran's"
 
     #Trickster god Mendacius Localization
-    etc_polytheism_trickster_god_name:0 "Mendacius"
-    etc_polytheism_trickster_god_name_possessive:0 "Mendacius's"
+    etc_polytheism_trickster_god_name:0 "the Trickster"
+    etc_polytheism_trickster_god_name_possessive:0 "the Trickster's"
 
     #Night goddess Thesan Localization
-    etc_polytheism_night_god_name:0 "Thesan"
-    etc_polytheism_night_god_name_possessive:0 "Thesan's"
+    etc_polytheism_night_god_name:0 "Tivr"
+    etc_polytheism_night_god_name_possessive:0 "Tivr's"
 
     #Water god Nethuns Localization
     etc_polytheism_water_god_name:0 "Nethuns"
-    etc_polytheism_water_god_name_possessive:0 "Nethuns"
+    etc_polytheism_water_god_name_possessive:0 "Nethuns's"
 
     #evil gods names 
-    etc_polytheism_evil_god_trivia:0 "Culsu" 
-    etc_polytheism_evil_god_discordia:0 "Charu"
-
-    etc_polytheism_witchgodname_trivia:0 "Diana Trivia"
-    etc_polytheism_witchgodname_trivia_possessive:0 "$etc_polytheism_witchgodname_trivia$'s"
+    etc_polytheism_evil_god_charu:0 "Charu"
+    etc_polytheism_evil_god_underworld_demons:0 "the Demons of the Underworld"
 
     #Devil god   
-    etc_polytheism_devil_name:0 "Calu" 
-    etc_polytheism_devil_name_possessive:0 "Calu's"
+    etc_polytheism_devil_name:0 "Tuchulcha" 
+    etc_polytheism_devil_name_possessive:0 "Tuchulcha's"
 
     #Death god Aita
     etc_polytheism_death_deity_name:0 "Aita"
     etc_polytheism_death_deity_name_2:0 "$etc_polytheism_death_deity_name$"
     etc_polytheism_death_deity_name_3:0 "$etc_polytheism_death_deity_name$"
     etc_polytheism_death_deity_name_possessive:0 "Aita's"
+    etc_polytheism_positive_afterlife:0 "the Banquet of the Dead"
+    etc_polytheism_positive_afterlife_2:0 "$etc_polytheism_positive_afterlife$"
+    etc_polytheism_positive_afterlife_3:0 "$etc_polytheism_positive_afterlife$"
+    etc_polytheism_negative_afterlife:0 "the Underworld"
+    etc_polytheism_negative_afterlife_2:0 "$etc_polytheism_negative_afterlife$"
+    etc_polytheism_negative_afterlife_3:0 "$etc_polytheism_negative_afterlife$"
 
     #Good gods names 
     etc_polytheism_good_god_usil:0 "Usil" 
     etc_polytheism_good_god_aplu:0 "Aplu" 
-    etc_polytheism_good_god_alpan:0 "Alpan" 
-    etc_polytheism_good_god_aritimi:0 "Aritimi" 
     etc_polytheism_good_god_uni:0 "Uni" 
     etc_polytheism_good_god_turan:0 "Turan" 
-    etc_polytheism_good_god_tahnr:0 "Tahnr" 
-    etc_polytheism_good_god_tages:0 "Tages"
+    etc_polytheism_good_god_fufluns:0 "Fufluns"
+    etc_polytheism_good_god_selvans:0 "Selvans"
+    etc_polytheism_good_god_thesan:0 "Thesan"
+    etc_polytheism_good_god_hercle:0 "Hercle"
 
     #etc priest 
 
     #etc priest 
-    etc_polytheism_priest_male:0 "Priest"
-    etc_polytheism_priest_male_plural:0 "Priests"
+    etc_polytheism_priest_male:0 "Cepen"
+    etc_polytheism_priest_male_plural:0 "Cepen"
 
     #etc  
     etc_polytheism_priest_female:0 "Priestess" 
     etc_polytheism_priest_female_plural:0 "Priestesses" 
 
     #etc flamen  
-    etc_polytheism_bishop_male:0 "Priest" 
-    etc_polytheism_bishop_male_plural:0 "Priests" 
+    etc_polytheism_bishop_male:0 "Netsvis" 
+    etc_polytheism_bishop_male_plural:0 "Netsvis" 
 
     #roman names
     #males
@@ -139,7 +131,8 @@
     reserved_female_names:0 "Etruscan female names"
 
     #holy orders: 
-    holy_order_sons_of_maris:0 "Sons of Mariś"
+    holy_order_sons_of_laran:0 "Sons of Laran"
+    holy_order_sons_of_maris:0 "Sons of Laran" # old key, kept so existing holy orders in saves keep a name
     holy_order_Protectors_of_menrva:0 "Protectors of Menrva"
 
 

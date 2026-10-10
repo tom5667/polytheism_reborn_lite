@@ -94,7 +94,7 @@ destroy_patriarchate_scripted_effect = {
 			limit = {
 				OR = {
 					faith.religion = faith:hellenic_pagan.religion
-					religion = religion:roman_religion
+					pr_is_cultus_deorum_trigger = yes
 				}
 			}
 			scope:scoped_pope = {
@@ -138,78 +138,77 @@ destroy_patriarchate_scripted_effect = {
 # SECTION 3: PRAISE GOD (BHAKTI) — TRAIT-BASED
 # =============================================
 
-# Sets a patron god trait for the Roman, Egyptian and Hellenic religions
-# (trait-based). Traits are evaluated per character, so their name can show
-# the culture-dependent god name; a character_modifier name cannot (it renders
-# via the scope-free StaticModifier.GetName). Mithras sub-deities share the
-# Roman branch.
+# Sets a patron god modifier for the Roman, Egyptian and Hellenic religions.
+# Was trait-based while the Roman names followed the viewer's culture; since the
+# sub-religions are rites with their own names, these are modifiers (2026-10-10).
+# Mithras sub-deities share the Roman branch.
 # Called from: pr_roman_decision_events.txt, pr_egyptian_decision_events.txt,
 #              pr_greek_decision_events.txt
-# Parameters: $BHAKTI$ — the trait to add
+# Parameters: $BHAKTI$ — the modifier to add
 # Scope: character (root)
 pr_set_bhakti_effect = {
 	if = {
 		limit = {
-			religion = religion:roman_religion
+			pr_is_cultus_deorum_trigger = yes
 		}
 		if = {
-			limit = { has_trait = pr_cdr_iupiter }
-			remove_trait = pr_cdr_iupiter
+			limit = { has_character_modifier = pr_cdr_iupiter }
+			remove_character_modifier = pr_cdr_iupiter
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_cdr_iuno }
-			remove_trait = pr_cdr_iuno
+			limit = { has_character_modifier = pr_cdr_iuno }
+			remove_character_modifier = pr_cdr_iuno
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_cdr_mars }
-			remove_trait = pr_cdr_mars
+			limit = { has_character_modifier = pr_cdr_mars }
+			remove_character_modifier = pr_cdr_mars
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_cdr_venus }
-			remove_trait = pr_cdr_venus
+			limit = { has_character_modifier = pr_cdr_venus }
+			remove_character_modifier = pr_cdr_venus
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_cdr_lares }
-			remove_trait = pr_cdr_lares
+			limit = { has_character_modifier = pr_cdr_lares }
+			remove_character_modifier = pr_cdr_lares
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_cdr_mercurius }
-			remove_trait = pr_cdr_mercurius
+			limit = { has_character_modifier = pr_cdr_mercurius }
+			remove_character_modifier = pr_cdr_mercurius
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_cdr_minerva }
-			remove_trait = pr_cdr_minerva
+			limit = { has_character_modifier = pr_cdr_minerva }
+			remove_character_modifier = pr_cdr_minerva
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_cdr_apollo }
-			remove_trait = pr_cdr_apollo
+			limit = { has_character_modifier = pr_cdr_apollo }
+			remove_character_modifier = pr_cdr_apollo
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_cdr_ceres }
-			remove_trait = pr_cdr_ceres
+			limit = { has_character_modifier = pr_cdr_ceres }
+			remove_character_modifier = pr_cdr_ceres
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_mithras_mithras }
-			remove_trait = pr_mithras_mithras
+			limit = { has_character_modifier = pr_mithras_mithras }
+			remove_character_modifier = pr_mithras_mithras
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_mithras_arimanius }
-			remove_trait = pr_mithras_arimanius
+			limit = { has_character_modifier = pr_mithras_arimanius }
+			remove_character_modifier = pr_mithras_arimanius
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_mithras_oromazes }
-			remove_trait = pr_mithras_oromazes
+			limit = { has_character_modifier = pr_mithras_oromazes }
+			remove_character_modifier = pr_mithras_oromazes
 			add_piety = massive_piety_loss
 		}
 	}
@@ -218,28 +217,28 @@ pr_set_bhakti_effect = {
 			religion = religion:egyptian_religion
 		}
 		if = {
-			limit = { has_trait = pr_kemetic_amun_ra }
-			remove_trait = pr_kemetic_amun_ra
+			limit = { has_character_modifier = pr_kemetic_amun_ra }
+			remove_character_modifier = pr_kemetic_amun_ra
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_kemetic_ra }
-			remove_trait = pr_kemetic_ra
+			limit = { has_character_modifier = pr_kemetic_ra }
+			remove_character_modifier = pr_kemetic_ra
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_kemetic_isis }
-			remove_trait = pr_kemetic_isis
+			limit = { has_character_modifier = pr_kemetic_isis }
+			remove_character_modifier = pr_kemetic_isis
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_kemetic_montu }
-			remove_trait = pr_kemetic_montu
+			limit = { has_character_modifier = pr_kemetic_montu }
+			remove_character_modifier = pr_kemetic_montu
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_kemetic_hathor }
-			remove_trait = pr_kemetic_hathor
+			limit = { has_character_modifier = pr_kemetic_hathor }
+			remove_character_modifier = pr_kemetic_hathor
 			add_piety = massive_piety_loss
 		}
 	}
@@ -247,42 +246,45 @@ pr_set_bhakti_effect = {
 		limit = {
 			AND = {
 				religion = religion:hellenism_religion
-				faith = { has_doctrine_parameter = special_doctrine_hellenic_patron_god_active }
+				OR = {
+					rite = rite:hellenic_pagan
+					rite = { rite_has_parameter = special_doctrine_hellenic_patron_god_active }
+				}
 			}
 		}
 		if = {
-			limit = { has_trait = pr_hellenic_zeus }
-			remove_trait = pr_hellenic_zeus
+			limit = { has_character_modifier = pr_hellenic_zeus }
+			remove_character_modifier = pr_hellenic_zeus
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_hellenic_hera }
-			remove_trait = pr_hellenic_hera
+			limit = { has_character_modifier = pr_hellenic_hera }
+			remove_character_modifier = pr_hellenic_hera
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_hellenic_ares }
-			remove_trait = pr_hellenic_ares
+			limit = { has_character_modifier = pr_hellenic_ares }
+			remove_character_modifier = pr_hellenic_ares
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_hellenic_aphrodite }
-			remove_trait = pr_hellenic_aphrodite
+			limit = { has_character_modifier = pr_hellenic_aphrodite }
+			remove_character_modifier = pr_hellenic_aphrodite
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_hellenic_hermes }
-			remove_trait = pr_hellenic_hermes
+			limit = { has_character_modifier = pr_hellenic_hermes }
+			remove_character_modifier = pr_hellenic_hermes
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_hellenic_athena }
-			remove_trait = pr_hellenic_athena
+			limit = { has_character_modifier = pr_hellenic_athena }
+			remove_character_modifier = pr_hellenic_athena
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_trait = pr_hellenic_demeter }
-			remove_trait = pr_hellenic_demeter
+			limit = { has_character_modifier = pr_hellenic_demeter }
+			remove_character_modifier = pr_hellenic_demeter
 			add_piety = massive_piety_loss
 		}
 	}
@@ -291,7 +293,7 @@ pr_set_bhakti_effect = {
 		add_piety = medium_piety_loss
 	}
 
-	add_trait = $BHAKTI$
+	add_character_modifier = $BHAKTI$
 }
 
 # =============================================
@@ -302,7 +304,8 @@ pr_set_bhakti_effect = {
 # Called from: pr_baltic_decision_events.txt, pr_canaanite_decision_events.txt, etc.
 # Parameters: $BHAKTI$ — the character modifier to add
 # Scope: character (root)
-set_bhakti_effect = {
+# PR patron gods (modifier based). Was an override of vanilla set_bhakti_effect, which lost the 1.20 changes (#167).
+pr_set_patron_god_effect = {
 	# --- Hinduism (vanilla) ---
 	if = {
 		limit = { religion = religion:hinduism_religion }
@@ -664,7 +667,7 @@ set_bhakti_effect = {
 	}
 	# --- Etruscan ---
 	else_if = {
-		limit = { religion = religion:etruscan_religion }
+		limit = { faith = faith:etruscan_polytheism }
 		if = {
 			limit = { has_character_modifier = etruscan_tinia }
 			remove_character_modifier = etruscan_tinia
@@ -686,8 +689,8 @@ set_bhakti_effect = {
 			add_piety = massive_piety_loss
 		}
 		else_if = {
-			limit = { has_character_modifier = etruscan_maris }
-			remove_character_modifier = etruscan_maris
+			limit = { has_character_modifier = etruscan_laran }
+			remove_character_modifier = etruscan_laran
 			add_piety = massive_piety_loss
 		}
 	}
@@ -734,6 +737,11 @@ set_bhakti_effect = {
 			add_piety = massive_piety_loss
 		}
 		else_if = {
+			limit = { has_character_modifier = assyrian_mullissu }
+			remove_character_modifier = assyrian_mullissu
+			add_piety = massive_piety_loss
+		}
+		else_if = {
 			limit = { has_character_modifier = mesopotamian_nabu }
 			remove_character_modifier = mesopotamian_nabu
 			add_piety = massive_piety_loss
@@ -754,6 +762,11 @@ set_bhakti_effect = {
 			add_piety = massive_piety_loss
 		}
 		else_if = {
+			limit = { has_character_modifier = sumerian_ezina }
+			remove_character_modifier = sumerian_ezina
+			add_piety = massive_piety_loss
+		}
+		else_if = {
 			limit = { has_character_modifier = assyrian_ninkarrak }
 			remove_character_modifier = assyrian_ninkarrak
 			add_piety = massive_piety_loss
@@ -766,6 +779,16 @@ set_bhakti_effect = {
 		else_if = {
 			limit = { has_character_modifier = sumerian_ninurta }
 			remove_character_modifier = sumerian_ninurta
+			add_piety = massive_piety_loss
+		}
+		else_if = {
+			limit = { has_character_modifier = sumerian_enlil }
+			remove_character_modifier = sumerian_enlil
+			add_piety = massive_piety_loss
+		}
+		else_if = {
+			limit = { has_character_modifier = sumerian_nisaba }
+			remove_character_modifier = sumerian_nisaba
 			add_piety = massive_piety_loss
 		}
 	}
@@ -880,6 +903,11 @@ set_bhakti_effect = {
 			remove_character_modifier = illyrian_tadenus
 			add_piety = massive_piety_loss
 		}
+		else_if = {
+			limit = { has_character_modifier = illyrian_redon }
+			remove_character_modifier = illyrian_redon
+			add_piety = massive_piety_loss
+		}
 	}
 	# --- Baltic ---
 	else_if = {
@@ -907,6 +935,11 @@ set_bhakti_effect = {
 		else_if = {
 			limit = { has_character_modifier = baltic_saule }
 			remove_character_modifier = baltic_saule
+			add_piety = massive_piety_loss
+		}
+		else_if = {
+			limit = { has_character_modifier = latvian_saule }
+			remove_character_modifier = latvian_saule
 			add_piety = massive_piety_loss
 		}
 		else_if = {
@@ -989,6 +1022,11 @@ set_bhakti_effect = {
 			add_piety = massive_piety_loss
 		}
 		else_if = {
+			limit = { has_character_modifier = graeco_egyptian_ares }
+			remove_character_modifier = graeco_egyptian_ares
+			add_piety = massive_piety_loss
+		}
+		else_if = {
 			limit = { has_character_modifier = mycenaean_poseidon }
 			remove_character_modifier = mycenaean_poseidon
 			add_piety = massive_piety_loss
@@ -1037,15 +1075,15 @@ remove_pr_traits = {
 				has_trait = imperial_cult
 				has_trait = cybele_cult
 				has_trait = bacchus_cult
-				has_trait = pr_cdr_iupiter
-				has_trait = pr_cdr_iuno
-				has_trait = pr_cdr_mars
-				has_trait = pr_cdr_venus
-				has_trait = pr_cdr_lares
-				has_trait = pr_cdr_mercurius
-				has_trait = pr_cdr_minerva
-				has_trait = pr_cdr_apollo
-				has_trait = pr_cdr_ceres
+				has_character_modifier = pr_cdr_iupiter
+				has_character_modifier = pr_cdr_iuno
+				has_character_modifier = pr_cdr_mars
+				has_character_modifier = pr_cdr_venus
+				has_character_modifier = pr_cdr_lares
+				has_character_modifier = pr_cdr_mercurius
+				has_character_modifier = pr_cdr_minerva
+				has_character_modifier = pr_cdr_apollo
+				has_character_modifier = pr_cdr_ceres
 				has_character_modifier = roman_illyrian_jupiter_parthinus
 				has_character_modifier = roman_illyrian_anzotica
 				has_character_modifier = roman_illyrian_armatus
@@ -1075,6 +1113,7 @@ remove_pr_traits = {
 				has_character_modifier = lithuanian_perkunas
 				has_character_modifier = lithuanian_zemyna
 				has_character_modifier = baltic_saule
+				has_character_modifier = latvian_saule
 				has_character_modifier = latvian_dievs
 				has_character_modifier = latvian_jumis
 				has_character_modifier = latvian_perkons
@@ -1111,7 +1150,7 @@ remove_pr_traits = {
 				has_character_modifier = etruscan_nortia
 				has_character_modifier = etruscan_turms
 				has_character_modifier = etruscan_menrva
-				has_character_modifier = etruscan_maris
+				has_character_modifier = etruscan_laran
 				has_character_modifier = bhakti_germanic_generic_odin
 				has_character_modifier = bhakti_germanic_not_danish_ullr
 				has_character_modifier = bhakti_germanic_danish_tyr
@@ -1131,13 +1170,14 @@ remove_pr_traits = {
 				has_character_modifier = mycenaean_aphrodite
 				has_character_modifier = mycenaean_athena
 				has_character_modifier = mycenaean_ares
-				has_trait = pr_hellenic_zeus
-				has_trait = pr_hellenic_hera
-				has_trait = pr_hellenic_ares
-				has_trait = pr_hellenic_aphrodite
-				has_trait = pr_hellenic_hermes
-				has_trait = pr_hellenic_athena
-				has_trait = pr_hellenic_demeter
+				has_character_modifier = graeco_egyptian_ares
+				has_character_modifier = pr_hellenic_zeus
+				has_character_modifier = pr_hellenic_hera
+				has_character_modifier = pr_hellenic_ares
+				has_character_modifier = pr_hellenic_aphrodite
+				has_character_modifier = pr_hellenic_hermes
+				has_character_modifier = pr_hellenic_athena
+				has_character_modifier = pr_hellenic_demeter
 				has_character_modifier = graeco_egyptian_zeus_amon
 				has_character_modifier = graeco_egyptian_isis
 				has_character_modifier = graeco_egyptian_hermes_trismegistus
@@ -1158,11 +1198,12 @@ remove_pr_traits = {
 				has_character_modifier = illyrian_anzotica
 				has_character_modifier = illyrian_bindus
 				has_character_modifier = illyrian_tadenus
-				has_trait = pr_kemetic_amun_ra
-				has_trait = pr_kemetic_ra
-				has_trait = pr_kemetic_isis
-				has_trait = pr_kemetic_montu
-				has_trait = pr_kemetic_hathor
+				has_character_modifier = illyrian_redon
+				has_character_modifier = pr_kemetic_amun_ra
+				has_character_modifier = pr_kemetic_ra
+				has_character_modifier = pr_kemetic_isis
+				has_character_modifier = pr_kemetic_montu
+				has_character_modifier = pr_kemetic_hathor
 				has_character_modifier = scythia_papaios
 				has_character_modifier = scythia_artimpasa
 				has_character_modifier = scythia_gaitasura
@@ -1188,15 +1229,15 @@ pr_remove_traits_effect = {
 	remove_trait = imperial_cult
 	remove_trait = cybele_cult
 	remove_trait = bacchus_cult
-	remove_trait = pr_cdr_iupiter
-	remove_trait = pr_cdr_iuno
-	remove_trait = pr_cdr_mars
-	remove_trait = pr_cdr_venus
-	remove_trait = pr_cdr_lares
-	remove_trait = pr_cdr_mercurius
-	remove_trait = pr_cdr_minerva
-	remove_trait = pr_cdr_apollo
-	remove_trait = pr_cdr_ceres
+	remove_character_modifier = pr_cdr_iupiter
+	remove_character_modifier = pr_cdr_iuno
+	remove_character_modifier = pr_cdr_mars
+	remove_character_modifier = pr_cdr_venus
+	remove_character_modifier = pr_cdr_lares
+	remove_character_modifier = pr_cdr_mercurius
+	remove_character_modifier = pr_cdr_minerva
+	remove_character_modifier = pr_cdr_apollo
+	remove_character_modifier = pr_cdr_ceres
 	remove_character_modifier = roman_illyrian_jupiter_parthinus
 	remove_character_modifier = roman_illyrian_anzotica
 	remove_character_modifier = roman_illyrian_armatus
@@ -1226,6 +1267,7 @@ pr_remove_traits_effect = {
 	remove_character_modifier = lithuanian_perkunas
 	remove_character_modifier = lithuanian_zemyna
 	remove_character_modifier = baltic_saule
+	remove_character_modifier = latvian_saule
 	remove_character_modifier = latvian_dievs
 	remove_character_modifier = latvian_jumis
 	remove_character_modifier = latvian_perkons
@@ -1262,7 +1304,7 @@ pr_remove_traits_effect = {
 	remove_character_modifier = etruscan_nortia
 	remove_character_modifier = etruscan_turms
 	remove_character_modifier = etruscan_menrva
-	remove_character_modifier = etruscan_maris
+	remove_character_modifier = etruscan_laran
 	remove_character_modifier = bhakti_germanic_generic_odin
 	remove_character_modifier = bhakti_germanic_not_danish_ullr
 	remove_character_modifier = bhakti_germanic_danish_tyr
@@ -1282,13 +1324,14 @@ pr_remove_traits_effect = {
 	remove_character_modifier = mycenaean_aphrodite
 	remove_character_modifier = mycenaean_athena
 	remove_character_modifier = mycenaean_ares
-	remove_trait = pr_hellenic_zeus
-	remove_trait = pr_hellenic_hera
-	remove_trait = pr_hellenic_ares
-	remove_trait = pr_hellenic_aphrodite
-	remove_trait = pr_hellenic_hermes
-	remove_trait = pr_hellenic_athena
-	remove_trait = pr_hellenic_demeter
+	remove_character_modifier = graeco_egyptian_ares
+	remove_character_modifier = pr_hellenic_zeus
+	remove_character_modifier = pr_hellenic_hera
+	remove_character_modifier = pr_hellenic_ares
+	remove_character_modifier = pr_hellenic_aphrodite
+	remove_character_modifier = pr_hellenic_hermes
+	remove_character_modifier = pr_hellenic_athena
+	remove_character_modifier = pr_hellenic_demeter
 	remove_character_modifier = graeco_egyptian_zeus_amon
 	remove_character_modifier = graeco_egyptian_isis
 	remove_character_modifier = graeco_egyptian_hermes_trismegistus
@@ -1309,11 +1352,12 @@ pr_remove_traits_effect = {
 	remove_character_modifier = illyrian_anzotica
 	remove_character_modifier = illyrian_bindus
 	remove_character_modifier = illyrian_tadenus
-	remove_trait = pr_kemetic_amun_ra
-	remove_trait = pr_kemetic_ra
-	remove_trait = pr_kemetic_isis
-	remove_trait = pr_kemetic_montu
-	remove_trait = pr_kemetic_hathor
+	remove_character_modifier = illyrian_redon
+	remove_character_modifier = pr_kemetic_amun_ra
+	remove_character_modifier = pr_kemetic_ra
+	remove_character_modifier = pr_kemetic_isis
+	remove_character_modifier = pr_kemetic_montu
+	remove_character_modifier = pr_kemetic_hathor
 	remove_character_modifier = scythia_papaios
 	remove_character_modifier = scythia_artimpasa
 	remove_character_modifier = scythia_gaitasura

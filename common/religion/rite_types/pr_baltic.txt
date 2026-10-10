@@ -1,0 +1,364 @@
+﻿#####################
+#Made by tom5667
+#####################
+# Rites of the Baltic faith (baltic_pagan). Tenets and patron-god doctrines from the old faiths.
+
+# Lithuanian rite (main). Vanilla key kept; 'name' gives it its own display name. God names: religion-level block.
+baltic_pagan = {
+    name = lithuanian_rites
+    desc = lithuanian_rites_desc
+    faith = baltic_pagan
+
+    color = { 96 96 72 }
+
+    tenets = {
+        tenet_ancestor_worship
+        tenet_sacred_childbirth
+        tenet_sanctity_of_nature
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+        special_doctrine_lithuanian_patron_god
+    }
+
+    cultures = { lithuanian }
+}
+
+# Latvian rite (old faith latvian_pagan): Curonians, Semigallians, Selonians, Latgalians.
+latvian_rites = {
+    faith = baltic_pagan
+
+    color = { 88 77 74 }
+    icon = latvian_krupitis
+
+    tenets = {
+        tenet_adaptive
+        tenet_communal_identity
+        tenet_sanctity_of_nature
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+        special_doctrine_latvian_patron_god
+        doctrine_pluralism_pluralistic
+    }
+
+    cultures = { latgalian }
+
+    localization = {
+        HighGodName = latvian_high_god_name
+        HighGodName2 = latvian_high_god_name_2
+        HighGodNamePossessive = latvian_high_god_name_possessive
+        HighGodNameSheHe = CHARACTER_SHEHE_HE
+        HighGodHerselfHimself = CHARACTER_HIMSELF
+        HighGodHerHis = CHARACTER_HERHIS_HIS
+        HighGodNameAlternate = latvian_high_god_name_alternate
+        HighGodNameAlternatePossessive = latvian_high_god_name_alternate_possessive
+
+        #Creator
+        CreatorName = latvian_creator_god_name
+        CreatorNamePossessive = latvian_creator_god_name_possessive
+        CreatorSheHe = CHARACTER_SHEHE_HE
+        CreatorHerHis = CHARACTER_HERHIS_HIS
+        CreatorHerHim = CHARACTER_HERHIM_HIM
+
+        #HealthGod
+        HealthGodName = latvian_health_god_name
+        HealthGodNamePossessive = latvian_health_god_name_possessive
+        HealthGodSheHe = CHARACTER_SHEHE_SHE
+        HealthGodHerHis = CHARACTER_HERHIS_HER
+        HealthGodHerHim = CHARACTER_HERHIM_HER
+
+        #FertilityGod
+        FertilityGodName = latvian_fertility_god_name
+        FertilityGodNamePossessive = latvian_fertility_god_name_possessive
+        FertilityGodSheHe = CHARACTER_SHEHE_HE
+        FertilityGodHerHis = CHARACTER_HERHIS_HIS
+        FertilityGodHerHim = CHARACTER_HERHIM_HIM
+
+        #WealthGod
+        WealthGodName = latvian_wealth_god_name
+        WealthGodNamePossessive = latvian_wealth_god_name_possessive
+        WealthGodSheHe = CHARACTER_SHEHE_SHE
+        WealthGodHerHis = CHARACTER_HERHIS_HER
+        WealthGodHerHim = CHARACTER_HERHIM_HER
+
+        #HouseholdGod
+        HouseholdGodName = latvian_household_god_name
+        HouseholdGodNamePossessive = latvian_household_god_name_possessive
+        HouseholdGodSheHe = CHARACTER_SHEHE_HE
+        HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+        HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+        #FateGod
+        FateGodName = latvian_fate_god_name
+        FateGodNamePossessive = latvian_fate_god_name_possessive
+        FateGodSheHe = CHARACTER_SHEHE_SHE
+        FateGodHerHis = CHARACTER_HERHIS_HER
+        FateGodHerHim = CHARACTER_HERHIM_HER
+
+        #KnowledgeGod
+        KnowledgeGodName = latvian_knowledge_god_name
+        KnowledgeGodNamePossessive = latvian_knowledge_god_name_possessive
+        KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+        KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+        KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+        #WarGod
+        WarGodName = latvian_war_god_name
+        WarGodNamePossessive = latvian_war_god_name_possessive
+        WarGodSheHe = CHARACTER_SHEHE_HE
+        WarGodHerHis = CHARACTER_HERHIS_HIS
+        WarGodHerHim = CHARACTER_HERHIM_HIM
+
+        #TricksterGod
+        TricksterGodName = latvian_trickster_god_name
+        TricksterGodNamePossessive = latvian_trickster_god_name_possessive
+        TricksterGodSheHe = CHARACTER_SHEHE_THEY
+        TricksterGodHerHis = CHARACTER_HERHIS_THEIR
+        TricksterGodHerHim = CHARACTER_HERHIM_THEM
+
+        #NightGod
+        NightGodName = latvian_night_god_name
+        NightGodNamePossessive = latvian_night_god_name_possessive
+        NightGodSheHe = CHARACTER_SHEHE_HE
+        NightGodHerHis = CHARACTER_HERHIS_HIS
+        NightGodHerHim = CHARACTER_HERHIM_HIM
+
+        #WaterGod
+        WaterGodName = latvian_water_god_name
+        WaterGodNamePossessive = latvian_water_god_name_possessive
+        WaterGodSheHe = CHARACTER_SHEHE_SHE
+        WaterGodHerHis = CHARACTER_HERHIS_HER
+        WaterGodHerHim = CHARACTER_HERHIM_HER
+
+        GoodGodNames = { latvian_good_god_Auseklis latvian_good_god_Ceroklis latvian_good_god_Dekla latvian_good_god_Jumis latvian_good_god_Laima latvian_good_god_Mara latvian_good_god_Lopu_mate latvian_good_god_Meza_mate latvian_good_god_Meness latvian_good_god_Perkons latvian_good_god_Saule latvian_good_god_Usins latvian_good_god_Zalktis }
+        DevilName = latvian_devil_name
+        DevilNamePossessive = latvian_devil_name_possessive
+        DevilSheHe = CHARACTER_SHEHE_HE
+        DevilHerHis = CHARACTER_HERHIS_HIS
+        DevilHerselfHimself = CHARACTER_HIMSELF
+        EvilGodNames = { latvian_evil_god_Lauma latvian_evil_god_Lietuvens latvian_evil_god_Ragana latvian_evil_god_Vadatajs latvian_evil_god_Velns latvian_evil_god_Pukis }
+        HouseOfWorship = latvian_house_of_worship
+        HouseOfWorship2 = latvian_house_of_worship_2
+        HouseOfWorship3 = latvian_house_of_worship_3
+        HouseOfWorshipPlural = latvian_house_of_worship_plural
+        ReligiousSymbol = latvian_religious_symbol
+        ReligiousSymbol2 = latvian_religious_symbol_2
+        ReligiousSymbol3 = latvian_religious_symbol_3
+        ReligiousText = latvian_religious_text
+        ReligiousText2 = latvian_religious_text_2
+        ReligiousText3 = latvian_religious_text_3
+        DevoteeMale = latvian_devotee_male
+        DevoteeMalePlural = latvian_devotee_male_plural
+        DevoteeFemale = latvian_devotee_female
+        DevoteeFemalePlural = latvian_devotee_female_plural
+        DevoteeNeuter = latvian_devotee_neuter
+        DevoteeNeuterPlural = latvian_devotee_neuter_plural
+        PriestMale = latvian_priest_male
+        PriestMalePlural = latvian_priest_male_plural
+        PriestFemale = latvian_priest_female
+        PriestFemalePlural = latvian_priest_female_plural
+        PriestNeuter = latvian_priest_neuter
+        PriestNeuterPlural = latvian_priest_neuter_plural
+        AltPriestTermPlural = latvian_priest_alternate_plural
+        BishopMale = latvian_priest_male
+        BishopMalePlural = latvian_priest_male_plural
+        BishopFemale = latvian_priest_female
+        BishopFemalePlural = latvian_priest_female_plural
+        BishopNeuter = latvian_priest_neuter
+        BishopNeuterPlural = latvian_priest_neuter_plural
+        DivineRealm = latvian_divine_realm
+        DivineRealm2 = latvian_divine_realm_2
+        DivineRealm3 = latvian_divine_realm_3
+        PositiveAfterLife = latvian_positive_afterlife
+        PositiveAfterLife2 = latvian_positive_afterlife_2
+        PositiveAfterLife3 = latvian_positive_afterlife_3
+        NegativeAfterLife = latvian_negative_afterlife
+        NegativeAfterLife2 = latvian_negative_afterlife_2
+        NegativeAfterLife3 = latvian_negative_afterlife_3
+        DeathDeityName = latvian_death_deity_name
+        DeathDeityNamePossessive = latvian_death_deity_name_possessive
+        DeathDeitySheHe = CHARACTER_SHEHE_SHE
+        DeathDeityHerHis = CHARACTER_HERHIS_HER
+        DeathDeityHerHim = CHARACTER_HERHIM_HER
+        WitchGodName = latvian_witch_god_name
+        WitchGodNamePossessive = latvian_witch_god_name_possessive
+        WitchGodSheHe = CHARACTER_SHEHE_SHE
+        WitchGodHerHim = CHARACTER_HERHIM_HER
+        WitchGodMistressMaster = mistress
+        WitchGodMotherFather = mother
+        WitchGodHerHis = CHARACTER_HERHIS_HER
+    }
+}
+
+# Prussian rite (old faith prussian_pagan), incl. Sudovians/Yotvingians.
+prussian_rites = {
+    faith = baltic_pagan
+
+    color = { 140 8 0 }
+    icon = prussian_01
+
+    tenets = {
+        tenet_ancestor_worship
+        tenet_ritual_hospitality
+        tenet_sanctity_of_nature
+    }
+
+    doctrines = {
+        unreformed_faith_doctrine
+        special_doctrine_prussian_patron_god
+    }
+
+    cultures = { prussian }
+
+    localization = {
+        HighGodName = prussian_high_god_name
+        HighGodName2 = prussian_high_god_name_2
+        HighGodNamePossessive = prussian_high_god_name_possessive
+        HighGodNameSheHe = CHARACTER_SHEHE_HE
+        HighGodHerselfHimself = CHARACTER_HIMSELF
+        HighGodHerHis = CHARACTER_HERHIS_HIS
+        HighGodNameAlternate = prussian_high_god_name_alternate
+        HighGodNameAlternatePossessive = prussian_high_god_name_alternate_possessive
+
+        #Creator
+        CreatorName = prussian_creator_god_name
+        CreatorNamePossessive = prussian_creator_god_name_possessive
+        CreatorSheHe = CHARACTER_SHEHE_HE
+        CreatorHerHis = CHARACTER_HERHIS_HIS
+        CreatorHerHim = CHARACTER_HERHIM_HIM
+
+        #HealthGod
+        HealthGodName = prussian_health_god_name
+        HealthGodNamePossessive = prussian_health_god_name_possessive
+        HealthGodSheHe = CHARACTER_SHEHE_HE
+        HealthGodHerHis = CHARACTER_HERHIS_HIS
+        HealthGodHerHim = CHARACTER_HERHIM_HIM
+
+        #FertilityGod
+        FertilityGodName = prussian_fertility_god_name
+        FertilityGodNamePossessive = prussian_fertility_god_name_possessive
+        FertilityGodSheHe = CHARACTER_SHEHE_HE
+        FertilityGodHerHis = CHARACTER_HERHIS_HIS
+        FertilityGodHerHim = CHARACTER_HERHIM_HIM
+
+        #WealthGod
+        WealthGodName = prussian_wealth_god_name
+        WealthGodNamePossessive = prussian_wealth_god_name_possessive
+        WealthGodSheHe = CHARACTER_SHEHE_HE
+        WealthGodHerHis = CHARACTER_HERHIS_HIS
+        WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+        #HouseholdGod
+        HouseholdGodName = prussian_household_god_name
+        HouseholdGodNamePossessive = prussian_household_god_name_possessive
+        HouseholdGodSheHe = CHARACTER_SHEHE_HE
+        HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+        HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+        #FateGod
+        FateGodName = prussian_fate_god_name
+        FateGodNamePossessive = prussian_fate_god_name_possessive
+        FateGodSheHe = CHARACTER_SHEHE_THEY
+        FateGodHerHis = CHARACTER_HERHIS_THEIR
+        FateGodHerHim = CHARACTER_HERHIM_THEM
+
+        #KnowledgeGod
+        KnowledgeGodName = prussian_knowledge_god_name
+        KnowledgeGodNamePossessive = prussian_knowledge_god_name_possessive
+        KnowledgeGodSheHe = CHARACTER_SHEHE_THEY
+        KnowledgeGodHerHis = CHARACTER_HERHIS_THEIR
+        KnowledgeGodHerHim = CHARACTER_HERHIM_THEM
+
+        #WarGod
+        WarGodName = prussian_war_god_name
+        WarGodNamePossessive = prussian_war_god_name_possessive
+        WarGodSheHe = CHARACTER_SHEHE_HE
+        WarGodHerHis = CHARACTER_HERHIS_HIS
+        WarGodHerHim = CHARACTER_HERHIM_HIM
+
+        #TricksterGod
+        TricksterGodName = prussian_trickster_god_name
+        TricksterGodNamePossessive = prussian_trickster_god_name_possessive
+        TricksterGodSheHe = CHARACTER_SHEHE_HE
+        TricksterGodHerHis = CHARACTER_HERHIS_HIS
+        TricksterGodHerHim = CHARACTER_HERHIM_HIM
+
+        #NightGod
+        NightGodName = prussian_night_god_name
+        NightGodNamePossessive = prussian_night_god_name_possessive
+        NightGodSheHe = CHARACTER_SHEHE_HE
+        NightGodHerHis = CHARACTER_HERHIS_HIS
+        NightGodHerHim = CHARACTER_HERHIM_HIM
+
+        #WaterGod
+        WaterGodName = prussian_water_god_name
+        WaterGodNamePossessive = prussian_water_god_name_possessive
+        WaterGodSheHe = CHARACTER_SHEHE_HE
+        WaterGodHerHis = CHARACTER_HERHIS_HIS
+        WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+        GoodGodNames = { prussian_good_god_Swaikstiks prussian_good_god_Ausauts prussian_good_god_Autrimps prussian_good_god_Patrimps prussian_good_god_Bardaits prussian_good_god_Kurka prussian_good_god_Pergrubris prussian_good_god_Perkuns prussian_good_god_Pilwits prussian_good_god_Paskaits prussian_good_god_Sauli prussian_good_god_Meniks }
+        DevilName = prussian_devil_name
+        DevilNamePossessive = prussian_devil_name_possessive
+        DevilSheHe = CHARACTER_SHEHE_HE
+        DevilHerHis = CHARACTER_HERHIS_HIS
+        DevilHerselfHimself = CHARACTER_HIMSELF
+        EvilGodNames = { prussian_evil_god_Patals prussian_evil_god_Pocols }
+        HouseOfWorship = prussian_house_of_worship
+        HouseOfWorship2 = prussian_house_of_worship_2
+        HouseOfWorship3 = prussian_house_of_worship_3
+        HouseOfWorshipPlural = prussian_house_of_worship_plural
+        ReligiousSymbol = prussian_religious_symbol
+        ReligiousSymbol2 = prussian_religious_symbol_2
+        ReligiousSymbol3 = prussian_religious_symbol_3
+        ReligiousText = prussian_religious_text
+        ReligiousText2 = prussian_religious_text_2
+        ReligiousText3 = prussian_religious_text_3
+        ReligiousHeadName = prussian_religious_head_title
+        ReligiousHeadNameFemale = prussian_religious_head_title
+        ReligiousHeadTitleName = prussian_religious_head_title_name
+        DevoteeMale = prussian_devotee_male
+        DevoteeMalePlural = prussian_devotee_male_plural
+        DevoteeFemale = prussian_devotee_female
+        DevoteeFemalePlural = prussian_devotee_female_plural
+        DevoteeNeuter = prussian_devotee_neuter
+        DevoteeNeuterPlural = prussian_devotee_neuter_plural
+        PriestMale = prussian_priest_male
+        PriestMalePlural = prussian_priest_male_plural
+        PriestFemale = prussian_priest_female
+        PriestFemalePlural = prussian_priest_female_plural
+        PriestNeuter = prussian_priest_neuter
+        PriestNeuterPlural = prussian_priest_neuter_plural
+        AltPriestTermPlural = prussian_priest_alternate_plural
+        BishopMale = prussian_priest_male
+        BishopMalePlural = prussian_priest_male_plural
+        BishopFemale = prussian_priest_female
+        BishopFemalePlural = prussian_priest_female_plural
+        BishopNeuter = prussian_priest_neuter
+        BishopNeuterPlural = prussian_priest_neuter_plural
+        DivineRealm = prussian_divine_realm
+        DivineRealm2 = prussian_divine_realm_2
+        DivineRealm3 = prussian_divine_realm_3
+        PositiveAfterLife = prussian_positive_afterlife
+        PositiveAfterLife2 = prussian_positive_afterlife_2
+        PositiveAfterLife3 = prussian_positive_afterlife_3
+        NegativeAfterLife = prussian_negative_afterlife
+        NegativeAfterLife2 = prussian_negative_afterlife_2
+        NegativeAfterLife3 = prussian_negative_afterlife_3
+        DeathDeityName = prussian_death_deity_name
+        DeathDeityNamePossessive = prussian_death_deity_name_possessive
+        DeathDeitySheHe = CHARACTER_SHEHE_HE
+        DeathDeityHerHis = CHARACTER_HERHIS_HIS
+        DeathDeityHerHim = CHARACTER_HERHIM_HIM
+        WitchGodName = prussian_witch_god_pocols
+        WitchGodNamePossessive = prussian_witch_god_pocols_possessive
+        WitchGodSheHe = CHARACTER_SHEHE_HE
+        WitchGodHerHim = CHARACTER_HERHIM_HIM
+        WitchGodMistressMaster = master
+        WitchGodMotherFather = father
+        WitchGodHerHis = CHARACTER_HERHIS_HIS
+    }
+}

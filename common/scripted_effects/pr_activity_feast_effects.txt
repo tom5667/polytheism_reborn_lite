@@ -265,6 +265,41 @@ pr_feast_on_complete_effect = {
 					disburse_feast_activity_rewards = yes
 				}
 			}
+			# PR: festival event for the host after the feast (#146)
+			scope:host = {
+				if = {
+					limit = { scope:activity = { has_activity_type = pr_activity_saturnalia } }
+					trigger_event = { id = pr_roman.0600 days = 1 }
+				}
+				else_if = {
+					limit = { scope:activity = { has_activity_type = pr_activity_winter_solstice } }
+					if = {
+						limit = { rite = rite:gaelic_rites }
+						trigger_event = { id = pr_celtic.0300 days = 1 }
+					}
+					else_if = {
+						limit = { rite = rite:brythonic_rites }
+						trigger_event = { id = pr_celtic.0301 days = 1 }
+					}
+					else = { # Gaulish, Celtiberian and other Celtic rites
+						trigger_event = { id = pr_celtic.0302 days = 1 }
+					}
+				}
+				else_if = {
+					limit = { scope:activity = { has_activity_type = pr_activity_summer_solstice } }
+					if = {
+						limit = { rite = rite:gaelic_rites }
+						trigger_event = { id = pr_celtic.0303 days = 1 }
+					}
+					else_if = {
+						limit = { rite = rite:brythonic_rites }
+						trigger_event = { id = pr_celtic.0304 days = 1 }
+					}
+					else = { # Gaulish, Celtiberian and other Celtic rites
+						trigger_event = { id = pr_celtic.0305 days = 1 }
+					}
+				}
+			}
 			# Various post-feast effects.
 			if = {
 				limit = {

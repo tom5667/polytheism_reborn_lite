@@ -9,29 +9,29 @@
 ######################
   
   #choose main deity traits localization
-  trait_pr_cdr_iupiter:0 "Devotee of $cdr_polytheism_high_god_name$"
-  trait_pr_cdr_iupiter_desc:0 "Devotee of $cdr_polytheism_high_god_name$, god of thunder and Husband of $cdr_polytheism_good_god_juno$"
+  trait_pr_cdr_iupiter:0 "Devotee of $roman_polytheism_high_god_name$"
+  trait_pr_cdr_iupiter_desc:0 "Devotee of $roman_polytheism_high_god_name$, god of thunder and Husband of $roman_polytheism_good_god_juno$"
 
-  trait_pr_cdr_iuno:0 "Devotee of $cdr_polytheism_good_god_juno$"
-  trait_pr_cdr_iuno_desc:0 "Devotee of $cdr_polytheism_good_god_juno$, protector of the woman of Rome and wife of $cdr_polytheism_high_god_name$"
+  trait_pr_cdr_iuno:0 "Devotee of $roman_polytheism_good_god_juno$"
+  trait_pr_cdr_iuno_desc:0 "Devotee of $roman_polytheism_good_god_juno$, protector of the woman of Rome and wife of $roman_polytheism_high_god_name$"
 
-  trait_pr_cdr_mars:0 "Devotee of $cdr_polytheism_war_god_name$"
-  trait_pr_cdr_mars_desc:0 "Devotee of $cdr_polytheism_war_god_name$, god of war"
+  trait_pr_cdr_mars:0 "Devotee of $roman_polytheism_war_god_name$"
+  trait_pr_cdr_mars_desc:0 "Devotee of $roman_polytheism_war_god_name$, god of war"
 
-  trait_pr_cdr_venus:0 "Devotee of $cdr_polytheism_fertility_god_name$"
-  trait_pr_cdr_venus_desc:0 "Devotee of $cdr_polytheism_fertility_god_name$, goddess of love and fertility"
+  trait_pr_cdr_venus:0 "Devotee of $roman_polytheism_fertility_god_name$"
+  trait_pr_cdr_venus_desc:0 "Devotee of $roman_polytheism_fertility_god_name$, goddess of love and fertility"
 
-  trait_pr_cdr_lares:0 "Devotee of $cdr_polytheism_household_god_name$"
-  trait_pr_cdr_lares_desc:0 "Devotee of the $cdr_polytheism_household_god_name$, protector of the household"
+  trait_pr_cdr_lares:0 "Devotee of $roman_polytheism_household_god_name$"
+  trait_pr_cdr_lares_desc:0 "Devotee of the $roman_polytheism_household_god_name$, protector of the household"
 
-  trait_pr_cdr_mercurius:0 "Devotee of $cdr_polytheism_wealth_god_name$"
-  trait_pr_cdr_mercurius_desc:0 "Devotee of $cdr_polytheism_wealth_god_name$, god of trade"
+  trait_pr_cdr_mercurius:0 "Devotee of $roman_polytheism_wealth_god_name$"
+  trait_pr_cdr_mercurius_desc:0 "Devotee of $roman_polytheism_wealth_god_name$, god of trade"
 
-  trait_pr_cdr_minerva:0 "Devotee of $cdr_polytheism_knowledge_god_name$"
-  trait_pr_cdr_minerva_desc:0 "Devotee of $cdr_polytheism_knowledge_god_name$, goddess of wisdom"
+  trait_pr_cdr_minerva:0 "Devotee of $roman_polytheism_knowledge_god_name$"
+  trait_pr_cdr_minerva_desc:0 "Devotee of $roman_polytheism_knowledge_god_name$, goddess of wisdom"
 
-  trait_pr_cdr_apollo:0 "Devotee of $cdr_polytheism_health_god_name$"
-  trait_pr_cdr_apollo_desc:0 "Devotee of $cdr_polytheism_health_god_name$, god of healing"
+  trait_pr_cdr_apollo:0 "Devotee of $roman_polytheism_health_god_name$"
+  trait_pr_cdr_apollo_desc:0 "Devotee of $roman_polytheism_health_god_name$, god of healing"
 
   trait_pr_cdr_ceres:0 "Devotee of Ceres"
   trait_pr_cdr_ceres_desc:0 "Devotee of Ceres, goddess of agriculture and grain"
@@ -49,8 +49,8 @@
   trait_pr_hellenic_aphrodite:0 "Devotee of $hellenism_good_god_aphrodite$"
   trait_pr_hellenic_aphrodite_desc:0 "Devotee of $hellenism_good_god_aphrodite$, Goddess of love and fertility"
 
-  trait_pr_hellenic_hermes:0 "Devotee of $hellenism_wealth_god_name$"
-  trait_pr_hellenic_hermes_desc:0 "Devotee of $hellenism_wealth_god_name$, God of trade"
+  trait_pr_hellenic_hermes:0 "Devotee of $hellenism_good_god_hermes$"
+  trait_pr_hellenic_hermes_desc:0 "Devotee of $hellenism_good_god_hermes$, God of trade"
 
   trait_pr_hellenic_athena:0 "Devotee of $hellenism_knowledge_god_name$"
   trait_pr_hellenic_athena_desc:0 "Devotee of $hellenism_knowledge_god_name$, deity of wisdom"
@@ -58,8 +58,8 @@
   trait_pr_hellenic_demeter_desc:0 "Devotee of $hellenism_fertility_god_name$, goddess of agriculture and grain"
 
   #choose main deity Kemetic traits localization
-  trait_pr_kemetic_amun_ra:0 "Devotee of Amun Ra"
-  trait_pr_kemetic_amun_ra_desc:0 "Devotee of the Highest god Amun Ra"
+  trait_pr_kemetic_amun_ra:0 "Devotee of Amun-Ra"
+  trait_pr_kemetic_amun_ra_desc:0 "Devotee of Amun-Ra, highest of the gods"
 
   trait_pr_kemetic_ra:0 "Devotee of Ra"
   trait_pr_kemetic_ra_desc:0 "Devotee of sun god Ra"

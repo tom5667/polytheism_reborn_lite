@@ -29,7 +29,7 @@ pr_germanic_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = anglo_saxon_woden }
 		}
-		set_bhakti_effect = { BHAKTI = anglo_saxon_woden }
+		pr_set_patron_god_effect = { BHAKTI = anglo_saxon_woden }
 	}
 
 	# Njǫrd
@@ -38,7 +38,7 @@ pr_germanic_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = anglo_saxon_njord }
 		}
-		set_bhakti_effect = { BHAKTI = anglo_saxon_njord}
+		pr_set_patron_god_effect = { BHAKTI = anglo_saxon_njord}
 	}
 
 	#Frī
@@ -47,7 +47,7 @@ pr_germanic_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = anglo_saxon_fri }
 		}
-		set_bhakti_effect = { BHAKTI = anglo_saxon_fri }
+		pr_set_patron_god_effect = { BHAKTI = anglo_saxon_fri }
 	}
 
 	# Tīwaz
@@ -56,7 +56,7 @@ pr_germanic_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = anglo_saxon_tiwaz }
 		}
-		set_bhakti_effect = { BHAKTI = anglo_saxon_tiwaz }
+		pr_set_patron_god_effect = { BHAKTI = anglo_saxon_tiwaz }
 	}
 
 
@@ -66,7 +66,7 @@ pr_germanic_decision.0001 = {
 		trigger = {
 			NOT = { has_character_modifier = anglo_saxon_seaxneat }
 		}
-		set_bhakti_effect = { BHAKTI = anglo_saxon_seaxneat }
+		pr_set_patron_god_effect = { BHAKTI = anglo_saxon_seaxneat }
 	}
 
 	# Opt-Out
@@ -97,7 +97,7 @@ pr_germanic_decision.0002 = {
 		trigger = {
 			NOT = { has_character_modifier = german_wotan }
 		}
-		set_bhakti_effect = { BHAKTI = german_wotan }
+		pr_set_patron_god_effect = { BHAKTI = german_wotan }
 	}
 
 	# Njordr
@@ -106,7 +106,7 @@ pr_germanic_decision.0002 = {
 		trigger = {
 			NOT = { has_character_modifier = german_njordr }
 		}
-		set_bhakti_effect = { BHAKTI = german_njordr }
+		pr_set_patron_god_effect = { BHAKTI = german_njordr }
 	}
 
 	#Freyr
@@ -115,7 +115,7 @@ pr_germanic_decision.0002 = {
 		trigger = {
 			NOT = { has_character_modifier = german_freyr }
 		}
-		set_bhakti_effect = { BHAKTI = german_freyr }
+		pr_set_patron_god_effect = { BHAKTI = german_freyr }
 	}
 
 	# Nornir
@@ -124,7 +124,7 @@ pr_germanic_decision.0002 = {
 		trigger = {
 			NOT = { has_character_modifier = german_nornir }
 		}
-		set_bhakti_effect = { BHAKTI = german_nornir }
+		pr_set_patron_god_effect = { BHAKTI = german_nornir }
 	}
 
 
@@ -134,7 +134,7 @@ pr_germanic_decision.0002 = {
 		trigger = {
 			NOT = { has_character_modifier = german_mimir }
 		}
-		set_bhakti_effect = { BHAKTI = german_mimir }
+		pr_set_patron_god_effect = { BHAKTI = german_mimir }
 	}
 
 	# Opt-Out
@@ -523,7 +523,7 @@ pr_germanic.0004 = {
 
 	option = { # Carve Idol
 		name = pr_germanic.0004.a
-		piety = 30
+		add_piety = 30
 		add_character_modifier = {
 			modifier = idol_of_freyja
 			years = 2

@@ -11,267 +11,174 @@
 
     caucasus_religion_desc:0 "The old religions of the Caucasus, once shared by the ancient Georgians and Armenians before Christianity took root, honor a broad pantheon of mountain and sky gods."
 
-    #Georgian
-    georgian_polytheism:0 "Georgian"
-    georgian_polytheism_adj:0 "Georgian"
-    georgian_polytheism_adherent:0 "Georgian polytheist"
-    georgian_polytheism_adherent_plural:0 "Georgian polytheists"
-    georgian_polytheism_desc:0 "Amid the peaks of the Caucasus, the Georgian gods are honored through fire, feast and sacrifice, their favor sought for bountiful harvests and victory over rival mountain clans." 
+    #Caucasian faith (armenian_polytheism)
+    armenian_polytheism:0 "Caucasian"
+    armenian_polytheism_adj:0 "Caucasian"
+    armenian_polytheism_adherent:0 "Caucasian Polytheist"
+    armenian_polytheism_adherent_plural:0 "Caucasian Polytheists"
+    armenian_polytheism_desc:0 "Before Christianity reached the Caucasus in the fourth century, Armenians and Georgians honoured gods shaped by their Iranian neighbours: Aramazd and Armazi, the great goddess Anahit, and Vahagn the dragon-slayer, beside older spirits of mountain, hearth and spring. Traces lived on long after the conversion, among the Armenian 'Children of the Sun' and in the shrines of the Georgian high valleys."
 
-    georgian_polytheism_old:0 "Georgian Old"
-    georgian_polytheism_old_adj:0 "Georgian Old"
-    georgian_polytheism_adherent_old:0 "Old Georgian polytheist"
-    georgian_polytheism_old_adherent_plural:0 "Old Georgian polytheists"
-    georgian_polytheism_old_desc:0 "In earlier times, before the shadow of the great empires reached the Caucasus, the Georgian tribes honored their mountain gods through fire and blood alone, untouched by the creeds spreading from Rome and Persia."
+    armenian_polytheism_old:0 "Old Caucasian"
+    armenian_polytheism_old_adj:0 "Old Caucasian"
+    armenian_polytheism_old_adherent:0 "Old Caucasian Polytheist"
+    armenian_polytheism_old_adherent_plural:0 "Old Caucasian Polytheists"
+    armenian_polytheism_old_desc:0 "$armenian_polytheism_desc$"
 
-    georgian_polytheism_religious_head_title:0 "High priest"
-    georgian_polytheism_divine_realm:0 "Devine realm"
-    georgian_polytheism_divine_realm_2:0 "$georgian_polytheism_divine_realm$"
-    georgian_polytheism_divine_realm_3:0 "$georgian_polytheism_divine_realm$"
-    georgian_polytheism_religious_symbol:0 "Offer altar"
-    georgian_polytheism_religious_symbol_2:0 "$georgian_polytheism_religious_symbol$"
-    georgian_polytheism_religious_symbol_3:0 "$georgian_polytheism_religious_symbol$"
-    georgian_polytheism_religious_text:0 "Rituals and ceremonies"
-    georgian_polytheism_religious_text_2:0 "$georgian_polytheism_religious_text$"
-    georgian_polytheism_religious_text_3:0 "$georgian_polytheism_religious_text$"
-    #roman_pantheon_the_gods:0 "Roman pantheon of gods"
-
-    #Georgian gods/goddesses Localization
-
-    #Anu Localization
-    georgian_polytheism_high_god_name:0 "Armazi"
-    georgian_polytheism_high_god_name_2:0 "$georgian_polytheism_high_god_name$"
-    georgian_polytheism_high_god_name_possessive:0 "Armazi's"
-    georgian_polytheism_high_god_name_alternate:0 "Armazi"
-    georgian_polytheism_high_god_name_alternate_possessive:0 "Armazi's"
-    georgian_polytheism_high_god_shehe:0 "He"
-    georgian_polytheism_high_god_herselfhimself:0 "Himself"
-    georgian_polytheism_high_god_herhis:0 "His"
-
-    #Creater god Localization
-    georgian_polytheism_creator_god_name:0 "Ghmerti"
-    georgian_polytheism_creator_god_name_possessive:0 "Ghmerti's"
-
-    #Health Goddess Barbale
-    georgian_polytheism_health_god_name:0 "Barbale"
-    georgian_polytheism_health_god_name_possessive:0 "Barbale's"
-
-    #Fertility Goddess Adgilis Deda Localization
-    georgian_polytheism_fertility_god_name:0 "Adgilis Deda"
-    georgian_polytheism_fertility_god_name_possessive:0 "Adgilis Deda's"
-
-    #Wealth god Mindort-batoni  Localization
-    georgian_polytheism_wealth_god_name:0 "Mindort-batoni"
-    georgian_polytheism_wealth_god_name_possessive:0 "Mindort-batoni's"
-
-    #Household god Lamaria 
-    georgian_polytheism_household_god_name:0 "Lamaria"
-    georgian_polytheism_household_god_name_possessive:0 "Lamaria's"
-
-    #Fate god Bedis Mtserlebi Localization
-    georgian_polytheism_fate_god_name:0 "Bedis Mtserlebi"
-    georgian_polytheism_fate_god_name_possessive:0 "$georgian_polytheism_fate_god_name$'s"
-
-    #knowledge god Ghmerti Localization
-    georgian_polytheism_knowledge_god_name:0 "Ghmerti"
-    georgian_polytheism_knowledge_god_name_possessive:0 "Ghmerti's"
-
-    #War god Kopala Localization
-    georgian_polytheism_war_god_name:0 "Kopala"
-    georgian_polytheism_war_god_name_possessive:0 "Kopala's"
-
-    #Trickster god Enki Localization
-    georgian_polytheism_trickster_god_name:0 "Enki"
-    georgian_polytheism_trickster_god_name_possessive:0 "Enki's"
-
-    #Night goddess Armazi Localization
-    georgian_polytheism_night_god_name:0 "Armazi"
-    georgian_polytheism_night_god_name_possessive:0 "$georgian_polytheism_night_god_name$'s"
-
-    #Water god Tskarishdida Localization
-    georgian_polytheism_water_god_name:0 "Tskarishdida"
-    georgian_polytheism_water_god_name_possessive:0 "Tskarishdida's"
-
-    #evil gods names 
-    georgian_polytheism_evil_god_gveleshapi:0 "Gveleshapi" 
-    georgian_polytheism_evil_god_dobilni:0 "Dobilni"
-
-    #witch goddess
-    georgian_polytheism_witchgodname_kudiani:0 "Kudiani"
-    georgian_polytheism_witchgodname_kudiani_possessive:0 "$georgian_polytheism_witchgodname_kudiani$'s"
-    georgian_polytheism_witchgodname_kudiani_possesive:0 "Kudiani's"
-
-    #Devil god   
-    georgian_polytheism_devil_name:0 "Devi" 
-    georgian_polytheism_devil_name_possessive:0 "$georgian_polytheism_devil_name$'s"
-
-    #Death god gardatsvaleba 
-    georgian_polytheism_death_deity_name:0 "Gardatsvaleba"
-    georgian_polytheism_death_deity_name_2:0 "$georgian_polytheism_death_deity_name$"
-    georgian_polytheism_death_deity_name_3:0 "$georgian_polytheism_death_deity_name$"
-    georgian_polytheism_death_deity_name_possessive:0 "Gardatsvaleba's"
-
-    #Good gods names 
-    georgian_polytheism_good_god_ghmerti:0 "Ghmerti" 
-    georgian_polytheism_good_god_ainina_and_danina:0 "Ainina and Danina" 
-    georgian_polytheism_good_god_dali:0 "Dali" 
-    georgian_polytheism_good_god_kamar:0 "Kamar" 
-    georgian_polytheism_good_god_samdzimari:0 "Samdzimari" 
-    georgian_polytheism_good_god_adgilis_deda:0 "Adgilis Deda" 
-    georgian_polytheism_good_god_armazi:0 "Armazi" 
-    georgian_polytheism_good_god_zaden:0 "Zaden"
-
-    #Georgian priest 
-    georgian_polytheism_priest_male:0 "Priest"
-    georgian_polytheism_priest_male_plural:0 "Priests"
-
-    #Georgian priestess 
-    georgian_polytheism_priest_female:0 "Priestess" 
-    georgian_polytheism_priest_female_plural:0 "Priestess" 
-
-    #Georgian high priest
-    georgian_polytheism_bishop_male:0 "Priest" 
-    georgian_polytheism_bishop_male_plural:0 "Priests" 
-
-    #roman names
-    #males
-    reserved_male_names:0 "Georgian male names"
-    #Female 
-    reserved_female_names:0 "Georgian female names"
-
-    #holy orders: 
-    holy_order_sons_of_armazi:0 "Sons of Armazi"
-    holy_order_kopalas_finest:0 "Kopala's finest"
-
-
-    #Armenian
-    armenian_polytheism:0 "Armenian"
-    armenian_polytheism_adj:0 "Armenian"
-    armenian_polytheism_adherent:0 "Armenian polytheist"
-    armenian_polytheism_adherent_plural:0 "Armenian polytheists"
-    armenian_polytheism_desc:0 "Armenian polytheism holds a unique position due to Armenia's nature as a crossroad of cultures and religions. Ever since the Indo-Europeans that would come to be known as the Armenians migrated southwards through the Caucasus, they saw continued syncretism of their religion with Urartian, Mesopotamian, Mazdayasna and Hellenistic pantheons. This allowed the emerging Christian faith to influence the Armenian kingdom deeply, until it gained its status as the state religion." 
-
-    armenian_polytheism_old:0 "Armenian Old"
-    armenian_polytheism_old_adj:0 "Armenian Old"
-    armenian_polytheism_adherent_old:0 "Old Armenian polytheist"
-    armenian_polytheism_old_adherent_plural:0 "Old Armenian polytheists"
-    armenian_polytheism_old_desc:0 "Armenian polytheism holds a unique position due to Armenia's nature as a crossroad of cultures and religions. Ever since the Indo-Europeans that would come to be known as the Armenians migrated southwards through the Caucasus, they saw continued syncretism of their religion with Urartian, Mesopotamian, Mazdayasna and Hellenistic pantheons. This allowed the emerging Christian faith to influence the Armenian kingdom deeply, until it gained its status as the state religion." 
-
-    armenian_polytheism_religious_head_title:0 "High Priest"
-    armenian_polytheism_divine_realm:0 "Devine realm"
-    armenian_polytheism_divine_realm_2:0 "$armenian_polytheism_divine_realm$"
-    armenian_polytheism_divine_realm_3:0 "$armenian_polytheism_divine_realm$"
-    armenian_polytheism_religious_symbol:0 "Offer altar"
-    armenian_polytheism_religious_symbol_2:0 "$armenian_polytheism_religious_symbol$"
-    armenian_polytheism_religious_symbol_3:0 "$armenian_polytheism_religious_symbol$"
-    armenian_polytheism_religious_text:0 "Rituals and ceremonies"
-    armenian_polytheism_religious_text_2:0 "$armenian_polytheism_religious_text$"
-    armenian_polytheism_religious_text_3:0 "$armenian_polytheism_religious_text$"
-    #roman_pantheon_the_gods:0 "Roman pantheon of gods"
-
-    #Armenian gods/goddesses Localization
-
-    #Anu Localization
+    #################################################################
+    # Armenian rite (religion-level block). Checked twice (2026-10-06) against Agathangelos and
+    # Movses Khorenatsi (historians.armeniancathedral.org), Strabo XI.14.16, Encyclopaedia Iranica
+    # "Armenia and Iran" iii (Russell) and iv (Schmitt), Ananikian "Armenian Mythology" (1925),
+    # Kurkjian ch. 34. Urartian gods (Haldi, Arubani, Selardi) and modern folklore (Tsovinar) removed.
+    # Readable spelling (user choice): Astghik, Bakht, Drakht, Dzhokh.
+    #################################################################
     armenian_polytheism_high_god_name:0 "Aramazd"
     armenian_polytheism_high_god_name_2:0 "$armenian_polytheism_high_god_name$"
     armenian_polytheism_high_god_name_possessive:0 "Aramazd's"
-    armenian_polytheism_high_god_name_alternate:0 "Aramazd"
-    armenian_polytheism_high_god_name_alternate_possessive:0 "Aramazd's"
-    armenian_polytheism_high_god_shehe:0 "He"
-    armenian_polytheism_high_god_herselfhimself:0 "Himself"
-    armenian_polytheism_high_god_herhis:0 "His"
-
-    #Creater god Localization
-    armenian_polytheism_creator_god_name:0 "Arev"
-    armenian_polytheism_creator_god_name_possessive:0 "Arev's"
-
-    #Health Goddess Nvard
-    armenian_polytheism_health_god_name:0 "Nvard"
-    armenian_polytheism_health_god_name_possessive:0 "Nvard's"
-
-    #Fertility Goddess Astlik Localization
-    armenian_polytheism_fertility_god_name:0 "Astlik"
-    armenian_polytheism_fertility_god_name_possessive:0 "Astlik's"
-
-    #Wealth god Aramazd Localization
-    armenian_polytheism_wealth_god_name:0 "Aramazd"
-    armenian_polytheism_wealth_god_name_possessive:0 "Aramazd's"
-
-    #Household god The Shahapet 
-    armenian_polytheism_household_god_name:0 "The Shahapet"
-    armenian_polytheism_household_god_name_possessive:0 "The Shahapet's"
-
-    #Fate god Ghmerti Localization
-    armenian_polytheism_fate_god_name:0 "$armenian_polytheism_high_god_name_possessive$"    
-    armenian_polytheism_fate_god_name_possessive:0 "$armenian_polytheism_high_god_name_possessive$"
-
-    #knowledge god Tir Localization
+    armenian_polytheism_high_god_name_alternate:0 "Ormizd" # later learned form (Agathangelos, Eznik)
+    armenian_polytheism_high_god_name_alternate_possessive:0 "Ormizd's"
+    armenian_polytheism_creator_god_name:0 "$armenian_polytheism_high_god_name$" # 'the creator of heaven and earth' (Agathangelos)
+    armenian_polytheism_creator_god_name_possessive:0 "$armenian_polytheism_high_god_name_possessive$"
+    armenian_polytheism_health_god_name:0 "the Aralez"
+    armenian_polytheism_health_god_name_possessive:0 "the Aralez's"
+    # spirits who lick the wounds of the fallen and revive them (Khorenatsi on Ara; Eznik)
+    armenian_polytheism_fertility_god_name:0 "Anahit"
+    armenian_polytheism_fertility_god_name_possessive:0 "Anahit's"
+    # "gives life and fertility to our land", the Golden Mother (Agathangelos); Anaitis (Strabo)
+    armenian_polytheism_wealth_god_name:0 "Amanor"
+    armenian_polytheism_wealth_god_name_possessive:0 "Amanor's"
+    # "bringer of the new fruits": a New Year title of Aramazd (Agathangelos; Ananikian)
+    armenian_polytheism_household_god_name:0 "Vanatur"
+    armenian_polytheism_household_god_name_possessive:0 "Vanatur's"
+    # "the hospitable", the god of the New Year feast; translates Zeus Xenios (Ananikian)
+    armenian_polytheism_fate_god_name:0 "Bakht" # fortune, Iranian loanword (Iranica iv; Ananikian)
+    armenian_polytheism_fate_god_name_possessive:0 "Bakht's"
     armenian_polytheism_knowledge_god_name:0 "Tir"
     armenian_polytheism_knowledge_god_name_possessive:0 "Tir's"
-
-    #War god Nane Localization
-    armenian_polytheism_war_god_name:0 "Nane"
-    armenian_polytheism_war_god_name_possessive:0 "Nane's"
-
-    #Trickster god Vahagn Localization
-    armenian_polytheism_trickster_god_name:0 "Vahagn"
-    armenian_polytheism_trickster_god_name_possessive:0 "Vahagn's"
-
-    #Night goddess Selardi Localization
-    armenian_polytheism_night_god_name:0 "Selardi"
-    armenian_polytheism_night_god_name_possessive:0 "Selardi's"
-
-    #Water god Tsovinar Localization
-    armenian_polytheism_water_god_name:0 "Tsovinar"
-    armenian_polytheism_water_god_name_possessive:0 "Tsovinar's"
-
-    #evil gods names 
-    armenian_polytheism_evil_god_alk:0 "Santarametakans" 
-    armenian_polytheism_evil_god_nhang:0 "Nhang"
-
-    #witch goddess
-    armenian_polytheism_witchgodname_aralez:0 "Aralez"
-    armenian_polytheism_witchgodname_aralez_possessive:0 "$armenian_polytheism_witchgodname_aralez$'s"
-    armenian_polytheism_witchgodname_aralez_possesive:0 "$armenian_polytheism_witchgodname_aralez$'s"
-
-    #Devil god   
-    armenian_polytheism_devil_name:0 "Santarametakans" 
-    armenian_polytheism_devil_name_possessive:0 "$armenian_polytheism_devil_name$'s"
-
-    #Death god Angel 
-    armenian_polytheism_death_deity_name:0 "Angel"
+    # scribe of Aramazd, interpreter of dreams (Agathangelos; Iranica iii)
+    armenian_polytheism_war_god_name:0 "Vahagn"
+    armenian_polytheism_war_god_name_possessive:0 "Vahagn's"
+    # the Dragon-Reaper (Agathangelos; song in Khorenatsi I.31)
+    armenian_polytheism_trickster_god_name:0 "the Kajk"
+    armenian_polytheism_trickster_god_name_possessive:0 "the Kajk's"
+    # spirits who seize men and carry them to Masis (Khorenatsi II.61; Iranica iii)
+    armenian_polytheism_night_god_name:0 "the Night"
+    armenian_polytheism_night_god_name_possessive:0 "the Night's"
+    armenian_polytheism_water_god_name:0 "the Waters"
+    armenian_polytheism_water_god_name_possessive:0 "the Waters'"
+    armenian_polytheism_death_deity_name:0 "Spandaramet" # ruler of the underworld (Iranica iii, iv; Ananikian)
     armenian_polytheism_death_deity_name_2:0 "$armenian_polytheism_death_deity_name$"
     armenian_polytheism_death_deity_name_3:0 "$armenian_polytheism_death_deity_name$"
-    armenian_polytheism_death_deity_name_possessive:0 "Angel's"
+    armenian_polytheism_death_deity_name_possessive:0 "Spandaramet's"
+    armenian_polytheism_witch_god_name:0 "Nhang" # shape-shifting water spirit (Eznik via Ananikian; Iranica iv)
+    armenian_polytheism_witch_god_name_possessive:0 "Nhang's"
+    armenian_polytheism_devil_name:0 "Arhmn" # Ahriman (Iranica iii, iv; Eznik)
+    armenian_polytheism_devil_name_possessive:0 "Arhmn's"
+    armenian_polytheism_good_god_aramazd:0 "Aramazd"
+    armenian_polytheism_good_god_anahit:0 "Anahit"
+    armenian_polytheism_good_god_vahagn:0 "Vahagn"
+    armenian_polytheism_good_god_mihr:0 "Mihr" # son of Aramazd, Bagayarich (Agathangelos)
+    armenian_polytheism_good_god_nane:0 "Nane" # daughter of Aramazd, Til (Agathangelos)
+    armenian_polytheism_good_god_tir:0 "Tir"
+    armenian_polytheism_good_god_astghik:0 "Astghik" # 'little star', the Armenian Aphrodite (Agathangelos)
+    armenian_polytheism_good_god_barshamin:0 "Barshamin" # 'of dazzling whiteness', Tordan (Agathangelos)
+    armenian_polytheism_evil_god_devs:0 "the Devs"
+    armenian_polytheism_evil_god_vishaps:0 "the Vishaps"
+    armenian_polytheism_evil_god_azhdahak:0 "Azhdahak"
+    armenian_polytheism_pantheon:0 "the Dik" # native word for 'gods' (Agathangelos: Bagavan = Ditsavan)
+    armenian_polytheism_pantheon_2:0 "$armenian_polytheism_pantheon$"
+    armenian_polytheism_pantheon_3:0 "$armenian_polytheism_pantheon$"
+    armenian_polytheism_divine_realm:0 "Drakht" # paradise (Iranica iii; Ananikian)
+    armenian_polytheism_divine_realm_2:0 "$armenian_polytheism_divine_realm$"
+    armenian_polytheism_divine_realm_3:0 "$armenian_polytheism_divine_realm$"
+    armenian_polytheism_negative_afterlife:0 "Dzhokh" # hell (Iranica iii; Ananikian)
+    armenian_polytheism_negative_afterlife_2:0 "$armenian_polytheism_negative_afterlife$"
+    armenian_polytheism_negative_afterlife_3:0 "$armenian_polytheism_negative_afterlife$"
+    armenian_polytheism_religious_symbol:0 "Sacred Fire" # the Ormizd fire (Iranica iii; Kurkjian)
+    armenian_polytheism_religious_symbol_2:0 "$armenian_polytheism_religious_symbol$"
+    armenian_polytheism_religious_symbol_3:0 "$armenian_polytheism_religious_symbol$"
+    armenian_polytheism_religious_text:0 "the Ancestral Songs" # no pagan scripture; songs of Vahagn in Khorenatsi I.31
+    armenian_polytheism_religious_text_2:0 "$armenian_polytheism_religious_text$"
+    armenian_polytheism_religious_text_3:0 "$armenian_polytheism_religious_text$"
+    armenian_polytheism_religious_head_title:0 "High Priest"
+    armenian_polytheism_priest_male:0 "kurm" # pagan priest (Agathangelos)
+    armenian_polytheism_priest_male_plural:0 "kurm priests"
+    armenian_polytheism_priest_female:0 "Priestess"
+    armenian_polytheism_priest_female_plural:0 "Priestesses"
+    armenian_polytheism_bishop_male:0 "krmapet" # high priest (Khorenatsi II.53)
+    armenian_polytheism_bishop_male_plural:0 "krmapet priests"
 
-    #Good gods names 
-    armenian_polytheism_good_god_aramazd:0 "Aramazd" 
-    armenian_polytheism_good_god_nane:0 "Nane" 
-    armenian_polytheism_good_god_tir:0 "Tir" 
-    armenian_polytheism_good_god_astlik:0 "Astłik" 
-    armenian_polytheism_good_god_tsovinar:0 "Tsovinar" 
-    armenian_polytheism_good_god_adgilis_vanatur:0 "Vanatur" 
-    armenian_polytheism_good_god_arubani:0 "Arubani" 
-    armenian_polytheism_good_god_haldi:0 "Haldi"
+    #################################################################
+    # Georgian rite (own block in rite_types). Small and historical (user choice): only the gods of the
+    # pre-Christian Kartli cult named in the Life of Nino and Kartlis Tskhovreba; generic terms
+    # elsewhere. No 19th/20th-century mountain-cult names.
+    #################################################################
+    georgian_polytheism_high_god_name:0 "Armazi"
+    georgian_polytheism_high_god_name_2:0 "$georgian_polytheism_high_god_name$"
+    georgian_polytheism_high_god_name_possessive:0 "Armazi's"
+    georgian_polytheism_high_god_name_alternate:0 "Armaz" # Life of Nino spelling
+    georgian_polytheism_high_god_name_alternate_possessive:0 "Armaz's"
+    georgian_polytheism_creator_god_name:0 "the Creator"
+    georgian_polytheism_creator_god_name_possessive:0 "the Creator's"
+    georgian_polytheism_health_god_name:0 "the Healer"
+    georgian_polytheism_health_god_name_possessive:0 "the Healer's"
+    georgian_polytheism_fertility_god_name:0 "Zaden" # god of crops (Kartlis Tskhovreba; Goderdzishvili)
+    georgian_polytheism_fertility_god_name_possessive:0 "Zaden's"
+    georgian_polytheism_wealth_god_name:0 "the Giver of Plenty"
+    georgian_polytheism_wealth_god_name_possessive:0 "the Giver of Plenty's"
+    georgian_polytheism_household_god_name:0 "the Hearth"
+    georgian_polytheism_household_god_name_possessive:0 "the Hearth's"
+    georgian_polytheism_fate_god_name:0 "Fate"
+    georgian_polytheism_fate_god_name_possessive:0 "Fate's"
+    georgian_polytheism_knowledge_god_name:0 "the Wise Ones"
+    georgian_polytheism_knowledge_god_name_possessive:0 "the Wise Ones'"
+    georgian_polytheism_war_god_name:0 "the Lord of Battle"
+    georgian_polytheism_war_god_name_possessive:0 "the Lord of Battle's"
+    georgian_polytheism_trickster_god_name:0 "the Deceiver"
+    georgian_polytheism_trickster_god_name_possessive:0 "the Deceiver's"
+    georgian_polytheism_night_god_name:0 "the Moon"
+    georgian_polytheism_night_god_name_possessive:0 "the Moon's"
+    georgian_polytheism_water_god_name:0 "the Waters"
+    georgian_polytheism_water_god_name_possessive:0 "the Waters'"
+    georgian_polytheism_death_deity_name:0 "the Lord of the Dead"
+    georgian_polytheism_death_deity_name_2:0 "$georgian_polytheism_death_deity_name$"
+    georgian_polytheism_death_deity_name_3:0 "$georgian_polytheism_death_deity_name$"
+    georgian_polytheism_death_deity_name_possessive:0 "the Lord of the Dead's"
+    georgian_polytheism_witch_god_name:0 "the Witches"
+    georgian_polytheism_witch_god_name_possessive:0 "the Witches'"
+    georgian_polytheism_devil_name:0 "the Adversary"
+    georgian_polytheism_devil_name_possessive:0 "the Adversary's"
+    georgian_polytheism_good_god_armazi:0 "Armazi"
+    georgian_polytheism_good_god_zaden:0 "Zaden"
+    georgian_polytheism_good_god_gatsi:0 "Gatsi" # golden idol at Armazi's right (Kartlis Tskhovreba)
+    georgian_polytheism_good_god_gaim:0 "Gaim" # silver idol at Armazi's left
+    georgian_polytheism_good_god_ainina_danina:0 "Ainina-Danina" # probably one goddess (Nana); idol on the Mtskheta road
+    georgian_polytheism_evil_god_spirits:0 "the Evil Spirits"
+    georgian_polytheism_evil_god_demons:0 "the Demons"
+    georgian_polytheism_divine_realm:0 "the Heavens"
+    georgian_polytheism_divine_realm_2:0 "$georgian_polytheism_divine_realm$"
+    georgian_polytheism_divine_realm_3:0 "$georgian_polytheism_divine_realm$"
+    georgian_polytheism_afterlife:0 "the Underworld"
+    georgian_polytheism_afterlife_2:0 "$georgian_polytheism_afterlife$"
+    georgian_polytheism_afterlife_3:0 "$georgian_polytheism_afterlife$"
+    georgian_polytheism_religious_symbol:0 "Idol of Armazi" # bronze idol on the mountain at Mtskheta (Life of Nino)
+    georgian_polytheism_religious_symbol_2:0 "$georgian_polytheism_religious_symbol$"
+    georgian_polytheism_religious_symbol_3:0 "$georgian_polytheism_religious_symbol$"
+    georgian_polytheism_religious_text:0 "Rituals and Ceremonies"
+    georgian_polytheism_religious_text_2:0 "$georgian_polytheism_religious_text$"
+    georgian_polytheism_religious_text_3:0 "$georgian_polytheism_religious_text$"
+    georgian_polytheism_religious_head_title:0 "High Priest"
+    georgian_polytheism_priest_male:0 "Priest"
+    georgian_polytheism_priest_male_plural:0 "Priests"
+    georgian_polytheism_priest_female:0 "Priestess"
+    georgian_polytheism_priest_female_plural:0 "Priestesses"
+    georgian_polytheism_bishop_male:0 "High Priest"
+    georgian_polytheism_bishop_male_plural:0 "High Priests"
 
-    #Armenian priest 
-    armenian_polytheism_priest_male:0 "Priest"
-    armenian_polytheism_priest_male_plural:0 "Priests"
-
-    #Armenian priestess 
-    armenian_polytheism_priest_female:0 "Priestess" 
-    armenian_polytheism_priest_female_plural:0 "Priestesses" 
-
-    #Armenian high priest
-    armenian_polytheism_bishop_male:0 "Priest" 
-    armenian_polytheism_bishop_male_plural:0 "Priests" 
-
-    #roman names
-    #males
-    reserved_male_names:0 "Armenian male names"
-    #Female 
-    reserved_female_names:0 "Armenian female names"
-
-    #holy orders: 
+    #holy orders
     holy_order_sons_of_aramazd:0 "Sons of Aramazd"
     holy_order_warriors_of_nane:0 "Warriors of Nane"
+    holy_order_sons_of_armazi:0 "Sons of Armazi"
+
+    #names
+    reserved_male_names:0 "Caucasian male names"
+    reserved_female_names:0 "Caucasian female names"

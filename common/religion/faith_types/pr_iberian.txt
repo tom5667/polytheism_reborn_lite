@@ -1,0 +1,24 @@
+﻿#####################
+#Made by tom5667
+#####################
+
+lusitanian_polytheism = {
+    main_rite = lusitanian_rites
+    historical = yes
+
+    faith_details = {
+        religion = iberian_religion
+        color = { 84 235 112 }
+        icon = lusitanian
+        reformed_icon = lusitanian_reformed
+    }
+
+    # Native cult centres (issue #90): Endovelicus (Ebora), Ataecina (Emerita),
+    # Trebaruna/Arentius (Egitania), Nabia (Bracara)
+    holy_sites = {
+        ebora
+        emerita
+        egitania
+        bracara
+    }
+}

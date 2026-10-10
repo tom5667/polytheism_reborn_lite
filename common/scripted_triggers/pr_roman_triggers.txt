@@ -82,7 +82,7 @@ pr_mystic_augur_trigger = {
 			root = { highest_held_title_tier <= tier_duchy }
 			NOR = {
 				learning > high_skill_rating
-				has_trait = mystic_3
+				has_trait_xp = { trait = lifestyle_mystic value >= 100 }
 				has_trait = education_learning_3
 			}
 			learning >= mediocre_skill_rating #Will be pushed up to medium by adding mystic traits
@@ -97,5 +97,66 @@ court_position_garuda_trigger = {
 		has_education_martial_trigger = yes
 		has_trait = lifestyle_blademaster
 		prowess >= 11
+	}
+}
+
+# Cultus Deorum: the Roman religion without the Etruscan faith (issue #86, decided 2026-10-07).
+# Use these instead of religion = religion:roman_religion for Roman (Cultus Deorum) content, so that
+# reformed Roman faiths keep the content and the Etruscan faith (same religion) does not get it.
+# A later Italic faith is excluded here too.
+# Character scope.
+pr_is_cultus_deorum_trigger = {
+	religion = religion:roman_religion
+	NOT = { faith = faith:etruscan_polytheism }
+}
+# Faith scope.
+pr_is_cultus_deorum_faith_trigger = {
+	religion = religion:roman_religion
+	NOT = { this = faith:etruscan_polytheism }
+}
+
+# Override of the vanilla 1.20 trigger (common/scripted_triggers/00_major_decision_triggers.txt) with one PR line,
+# so restore_roman_empire_decision itself stays vanilla. Re-copy on game updates (#167).
+restore_roman_empire_decision_religion_culture_trigger = {
+	custom_tooltip = {
+		text = restore_roman_empire_decision_religion_culture_tt
+		OR = {
+			religion = {
+				OR = {
+					is_in_family = rf_abrahamic
+					this = religion:hellenism_religion
+				}
+			}
+			pr_is_cultus_deorum_trigger = yes # PR: Roman polytheists may restore Rome (#167)
+			culture = {
+				OR = {
+					has_cultural_pillar = heritage_latin
+					has_cultural_pillar = heritage_byzantine
+				}
+			}
+		}
+	}
+}
+
+# Religions with a historical grudge against Christianity (Muslims and the old polytheisms). Used by
+# dismantle_papacy_decision and pr_dismantle_patriarchate_decision; was a faith list in both (#167).
+pr_historical_grudge_with_christianity_trigger = {
+	OR = {
+		religion = religion:islam_religion
+		religion = religion:hellenism_religion
+		religion = religion:roman_religion
+		religion = religion:germanic_religion
+		religion = religion:slavic_religion
+		religion = religion:baltic_religion
+		religion = religion:celtic_religion
+		religion = religion:canaanite_religion
+		religion = religion:egyptian_religion
+		religion = religion:caucasus_religion
+		religion = religion:mesopotamian_religion
+		religion = religion:hittite_religion
+		religion = religion:daco_thracian_religion
+		religion = religion:iberian_religion
+		religion = religion:illyrian_religion
+		religion = religion:scythian_religion
 	}
 }
