@@ -137,9 +137,7 @@
 
     #roman names
     #males
-    reserved_male_names:0 "Illyrian male names"
     #Female 
-    reserved_female_names:0 "Illyrian female names"
 
     #holy orders: 
     holy_order_sons_of_medaurus:0 "Sons of Medaurus"

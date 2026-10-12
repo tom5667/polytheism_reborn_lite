@@ -137,9 +137,7 @@
 
     #roman names
     #males
-    reserved_male_names:0 "Lusitanian male names"
     #Female 
-    reserved_female_names:0 "Lusitanian female names"
 
     #holy orders: 
 

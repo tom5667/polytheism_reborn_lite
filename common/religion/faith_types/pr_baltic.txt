@@ -14,6 +14,11 @@ baltic_pagan = {
         reformed_icon = baltic_reformed
     }
 
+    reserved_male_names = {
+        Diwanus Glappe Auttume Skomantas Daujotas Vilikaila Kintibutas Vembutas Butautas Vismantas Gedvilas Sprudeikis
+        Juodikis Ligeikis
+    }
+
     # Holy sites (research 2026-10-05, double-checked): no Baltic sanctuary is attested before c. 1075.
     eminent_holy_sites = {
         romowe      # Romow in Nadruvia, seat of the Criwe (Dusburg 1326)

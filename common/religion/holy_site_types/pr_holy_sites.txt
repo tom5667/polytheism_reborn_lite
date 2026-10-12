@@ -271,7 +271,7 @@ ile_de_france = {
 	}
 }
 puy_de_dome = {
-	county = c_thiers
+	county = c_clermont_sur_allier	# the mountain lies in Clermont-sur-Allier, not Thiers (map check #175)
 
 	county_holder_character_modifier = {
 		name = holy_site_puy_de_dome_effect_name

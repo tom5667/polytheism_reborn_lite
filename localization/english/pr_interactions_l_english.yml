@@ -53,6 +53,3 @@
   demand_conversion_scythian_vassal_ruler_interaction:0 "Demand to convert to Scythian"
   ask_for_conversion_scythian_courtier_interaction:0 "Demand to convert to Scythian"
   # Override vanilla keys
-  ask_for_conversion_interaction_desc:0 "Demand that [recipient.GetShortUINameNoTooltip] converts to [sender.GetFaith.GetName]"
-  religious_interaction.2002.desc:0 "I have decided to follow you into the light and convert to [sender.GetFaith.GetName]!"
-  religious_interaction.2002.a:0 "Blessed be [sender.GetFaith.HighGodName]!"

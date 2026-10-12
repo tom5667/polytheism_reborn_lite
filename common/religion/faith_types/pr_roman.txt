@@ -234,10 +234,10 @@ etruscan_polytheism = {
     }
 
     reserved_male_names = {
-        Arnth Arnza Cae Cneve Cuinte Lars Uchtave
+        Thefarie Larth Arnth Laris Velthur Vel Aule
     }
     reserved_female_names = {
-        Arnthi Fasti Hasti Larthi Lethi Sertha Thania
+        Thanchvil Ramtha Larthi Ravnthu Velia
     }
 
     holy_order_names = {

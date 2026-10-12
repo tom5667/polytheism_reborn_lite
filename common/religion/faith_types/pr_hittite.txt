@@ -29,6 +29,9 @@ hittite_polytheism = {
     }
 
     reserved_male_names = {
-        Labarna Ammuna
+        Labarna Ammuna Hattusili Murshilli Suppiluliuma Tudhaliya Telipinu Hantilli Arunwanda Muwatalli Kurunta
+    }
+    reserved_female_names = {
+        Puduhepa Ashmu-nikal Gassulawiya Kharapshili
     }
 }

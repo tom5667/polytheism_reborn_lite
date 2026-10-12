@@ -15,6 +15,13 @@ armenian_polytheism = {
         reformed_icon = pr_armenian_reformed
     }
 
+    reserved_male_names = {
+        Tigranes Artaxias Artavasdes Tiridates Zariadres Yervand Hayk Aramaneak Parnavaz Saurmag Parsman Kartlos
+    }
+    reserved_female_names = {
+        Erato Nvard
+    }
+
     # Holy sites (research 2026-10-06, double-checked). Kutaisi, Tortomi and Hereti dropped (no
     # pre-Christian cult evidence; Hereti stays a Scythian site).
     eminent_holy_sites = {

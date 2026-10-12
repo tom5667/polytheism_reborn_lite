@@ -8,7 +8,7 @@ pr_iberian = {
 
 	ethos = ethos_communal
 	heritage = heritage_iberian
-	language = language_iberian
+	language = language_pr_iberian
 	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
 	traditions = {

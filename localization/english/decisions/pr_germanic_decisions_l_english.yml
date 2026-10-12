@@ -12,11 +12,6 @@
   pr_germanic_select_personal_deity_decision_tt:0 "#T Available Deities for [ROOT.Char.GetFaith.GetName]#!"
 
   # --- Main Deity Selection Descriptions: Norse ---
-  select_personal_deity_germanic_decision.select_odin:0 "#T Odin#!\n#P The All-Father, god of wisdom, war, and death#!"
-  select_personal_deity_germanic_decision.select_ullr:0 "#T Ullr#!\n#P God of the hunt, archery, and the wild#!"
-  select_personal_deity_germanic_decision.select_tyr:0 "#T Tyr#!\n#P God of law, justice, and sacrifice#!"
-  select_personal_deity_germanic_decision.select_thor:0 "#T Thor#!\n#P Thunderer, protector of mankind#!"
-  select_personal_deity_germanic_decision.select_freyr:0 "#T Nerthus#!\n#P Mother Earth, honoured in her island grove#!"
 
   # --- Main Deity Selection Descriptions: Anglo-Saxon ---
   select_personal_deity_germanic_decision.select_woden:0 "#T Wōden#!\n#P Highest of the gods of the English#!"
@@ -26,6 +21,7 @@
   select_personal_deity_germanic_decision.select_seaxneat:0 "#T Seaxnēat#!\n#P Patron and forefather of the Saxons#!"
 
   # --- Main Deity Selection Descriptions: German ---
+  pr_select_personal_deity_german_decision.select_nerthus:0 "#T Nerthus#!\n#P Mother Earth, honoured in her island grove#!"
   select_personal_deity_germanic_decision.select_wotan:0 "#T Wotan#!\n#P Master of the healing charms#!"
   select_personal_deity_germanic_decision.select_njordr:0 "#T Volla#!\n#P Sister of Frija in the old charms#!"
   select_personal_deity_germanic_decision.select_nornir:0 "#T Saxnōt#!\n#P God of the Saxons#!"

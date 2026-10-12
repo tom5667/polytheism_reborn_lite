@@ -126,9 +126,7 @@
 
     #roman names
     #males
-    reserved_male_names:0 "Etruscan male names"
     #Female 
-    reserved_female_names:0 "Etruscan female names"
 
     #holy orders: 
     holy_order_sons_of_laran:0 "Sons of Laran"

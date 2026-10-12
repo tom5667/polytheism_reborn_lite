@@ -45,7 +45,6 @@ special_doctrine_ecumenical_celtic_roman_desc:0 "When the Romans had met and con
 special_doctrine_ecumenical_hispano_roman_name:0 "Interpretatio Hispania"
 special_doctrine_ecumenical_hispano_roman_desc:0 "Once worshipped as unseen spirits, Iberian deities gained form through Roman contact. Statues and tales sparked comparisons. Eacus, the storm god, mirrored Jupiter's might, while Diana and Nabia are protectors of the forest and hills. This wasn't a mere replacement, but a blending. Roman rituals interlaced with local practices, creating a shared faith on the Iberian peninsula"
 
-special_doctrine_ecumenical_hispano_roman_name:0 "Interpretatio Hispania"
 doctrine_parameter_is_hispano_roman_faith_bilateral_loc_override:2 "Other Iberian and Roman [faiths|E], that have the Interpretatio Hispania doctrine are considered to be [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of $hostility_evil_tooltippable$"
 doctrine_parameter_hostility_override_special_doctrine_ecumenical_hispano_roman:1 "" 
 

@@ -134,9 +134,7 @@
 
     #roman names
     #males
-    reserved_male_names:0 "Scythian male names"
     #Female 
-    reserved_female_names:0 "Scythian female names"
 
     #holy orders: 
     holy_order_sons_of_papaios:0 "Sons of Papaios"

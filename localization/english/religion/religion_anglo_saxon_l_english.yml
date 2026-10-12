@@ -5,18 +5,6 @@
     # Note: the germanic_* base custom-localization keys below (used by norse_pagan) have no
     # defined text anywhere in the mod (pre-existing gap, out of scope for this fix). Tier-2/3
     # self-references are added regardless, per the mod's own convention for these fields.
-    germanic_high_god_name_2:0 "$germanic_high_god_name$"
-    germanic_religious_symbol_2:0 "$germanic_religious_symbol$"
-    germanic_religious_symbol_3:0 "$germanic_religious_symbol$"
-    germanic_religious_text_2:0 "$germanic_religious_text$"
-    germanic_religious_text_3:0 "$germanic_religious_text$"
-    germanic_divine_realm_2:0 "$germanic_divine_realm$"
-    germanic_divine_realm_3:0 "$germanic_divine_realm$"
-    germanic_positive_afterlife_2:0 "$germanic_positive_afterlife$"
-    germanic_positive_afterlife_3:0 "$germanic_positive_afterlife$"
-    germanic_death_deity_name_2:0 "$germanic_death_deity_name$"
-    germanic_death_deity_name_3:0 "$germanic_death_deity_name$"
-    germanic_good_god_freyja_possessive:0 "Freyja's"
 
     # anglo_saxon_religion:0 "Anglo Saxon Polytheism"
     # anglo_saxon_religion_adj:0 "Anglo Saxon Polytheism"
@@ -143,9 +131,7 @@
     anglo_saxon_divine_realm_3:0 "$anglo_saxon_divine_realm$"
     #roman names
     #males
-    reserved_male_names:0 "Anglo Saxon male names"
     #Female 
-    reserved_female_names:0 "Anglo Saxon female names"
 
     #holy orders: 
     holy_order_wodan_valkyrie:0 "Wodan Valkyrie"

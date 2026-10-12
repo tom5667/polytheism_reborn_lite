@@ -13,6 +13,13 @@ illyrian_polytheism = {
         reformed_icon = illyrian_reformed
     }
 
+    reserved_male_names = {
+        Agron Pleuratus Gentius Bardylis Cleitus Scerdilaidas Glaukias Monunius Caravantius
+    }
+    reserved_female_names = {
+        Teuta Etuta Bircenna Audata
+    }
+
     # Attested cult places (issue #93): Armatus (Delminium), Redon (Dyrrachion),
     # Medaurus (Risinium), Thana and Vidasus (Topusko), Anzotica (Aenona), Bindus (Privilica spring)
     holy_sites = {

@@ -27,11 +27,11 @@ hellenic_pagan = {
     # Tenets live on the rites (the main rite's tenets are this faith's core tenets).
 
     reserved_male_names = {
-        Alexander Antiochus Sebastianos Lysander Dorian Adonis Orpheus Hector Jason Leonidas Leander Achilles Zenon Aeneas Demetrios Archimedes Homer Odysseus Aristotle Nestor Pericles
-        Agememnon Plato Socrates
+        Akhilleus Agamemnon Odysseus Menelaos Nestor Aias Kalkhas Herakles Leonidas Lykurgos Alexandros_pr Ptolemaios
+        Proklos Apollonios_pr Artemidoros Poseidonios Athenodoros Hermogenes_pr
     }
     reserved_female_names = {
-        Chloe Alexandra Zoe Helena Irene Isidore Melissa Apollonia Helenè Zenobia Artemisia Berenice Eirene Charis Demetria Xanthippe
+        Theano Lysimache Kassandra_pr Eritha Karpathia Korinsia Olympias Berenike_pr Artemisia Demetria_pr Aphrodisia Isidora_pr
     }
 
     cultures = { greek macedonian trojan pr_greek pr_graeco_egyptian pr_graeco_persian pr_mycenaean }

@@ -272,7 +272,7 @@ name_list_pr_old_irish = {
 	}
 
 	male_names = {
-		Áed Áedgen Áeducán Áedán OíngusÁilchú Áildobur Áilgel Áilgenán Áilgus Ailill Ailpin Ainbchellach Áindle Ainftech Airechtach Airfhindán Airleid Airmedach Amalgaid Anfudan Anlón Anmchaid Ánrothán 
+		Áed Áedgen Áeducán Áedán Oíngus Áilchú Áildobur Áilgel Áilgenán Áilgus Ailill Ailpin Ainbchellach Áindle Ainftech Airechtach Airfhindán Airleid Airmedach Amalgaid Anfudan Anlón Anmchaid Ánrothán 
 		Ardgal Ardgar Art Artbran Artgal Artgus Artucán Artúr Assiucc Augaire Aurthuile Báethgalach Báethine Baetán Béoáed Barrfhind Beccán Berrach Báthair Bláthmacc Bran Brandub Brangen Bressal Brian Briccéne
 		Briccine Broccán Bruatur Bruide Brénaind Brénainn Bróen Búaidbéo Caicher Caileach Cailte Cairbre Caisséne Caissin Caissine Canann Canannán Cathal Cathalán Cathassach Cathbad Cathmál Cathnio
 		Cathub Cailte Cainchomrac Caindelbán Ceothernach Cellach Cellachán Cenn-Fáelad Cennlachán Cerball Cernach Cernachán Cían Ciarán Cináed Cobthach Coripre Colcu Conall Conallán Conamail Conán Conchenn Conchobar
@@ -282,14 +282,14 @@ name_list_pr_old_irish = {
 		Fedelmid Feirgil Fer-Fugaill Feradach Fergal Fionngall Fiachna Fionnchú Findbárr Findlaich Fingen Finnguine Fionn Fionnacán Fionnbárr Fionnchú Fionnlagh Finnachta Fionnteine Flaithbertach Flaithem Flaithemán Flaithgus Flaithrí 
 		Flann Flannacán Flannchad Flannán Forgatach Folachtach Forannán Forbassach Fothad Fothud Fubthad Fuirechtach Fáelcar Fáelchad Fáelchú Fáeldobur Fáelgus Fáelán Fáelbe Fíadchú Finsnechta Fócarta Gabrán Garbith Glaschú Glún-Íairn
 		Gormacán Gormgus Gormán Guaire Gáethán Gaethine Íarlaithe Imchad Indrechtach Labraithir Lachtna Lachtnán Lachtnéne Laidcenn Laidgenn Laidine Laisrén Lennán Lethdobur Lochlann Loingsech Lonán Lorcán Lugh Lugaid Lugáed Lochéne Lochine
-		Lóeguire Mac-Lasair Maine Mathgamain Matudán Minchán Mo-Lua Móenach Morand Mugrón Muirchertach Muirecán Muiredach Mirgius Murchú Máthair Múadán Nádárchú Natfráech Nattfráich NechtánNiall Niallgus Niallán NúaduOdrán Óengus Óenucán Olcán Ólchobar
+		Lóeguire Mac-Lasair Maine Mathgamain Matudán Minchán Mo-Lua Móenach Morand Mugrón Muirchertach Muirecán Muiredach Mirgius Murchú Máthair Múadán Nádárchú Natfráech Nattfráich Nechtán Niall Niallgus Niallán Núadu Odrán Óengus Óenucán Olcán Ólchobar
 		Onchú Orthanach Oscar Rechtabra Ríacán Riaguil Rogallach Rogellach Ruah Ruaidrí Rigán Ríán Ródán Rónchú Rónán Rúadacán Ségdae Séafra Sechnassach Selbach Senchán Seoán Slébine Snedgus Suibne Sóerbrethach Séigine Sétna Tadg Taithlech Talorc
 		Talorcán Tigernach Tigernán Tirpraiti Tomaltach Torccán Trenchad Trengus Tressach Tuathalán Tuireann Talán Túathal Ualgarg Ualán Úannachán Uargal Uargalach Uargus Ultán 	
 	}
 	female_names = {
 		Ablach Áedammair Áine Anflaith Aróc Barrdub Ben-Laigin Ben-Mide Ben-Mumán Ben-Ulad Brigit Bé-Fáil Bébinn Cacht Cadhla Cailech-Fhinnéin Cainnech Caisséne Caintigern Cairech Cathán Cellach Ciar Cnes Coblaith Cobflaith
-		Conchenn Condál Crinóch Commann Derdriu Der-bForgaill Derbáil Derborgaill Der-Ilei Der-LugdachDianaim Dub-Dil Dub-Essa Dub-Lemna Dubgilla Dúinsech Dúnlaith Echrad Éibhleann Eithne Ellbrig Emer Étaín Failenn Fedelm Feidelm ionneacht 
-		Fionnguala Flann Forbflaith Fine Garbh Gelgéis Gerróc Gnáthnád Gormflaith Gormlaith Gráinne Imag íte Lann Lasairfionna Lathir Leathan Ligach Muadhnait Muirenn Muirgel Muirn Mór Mór-Mumán Nárbflaith Nuala Órflaith Órlaith Fionnghuala 
+		Conchenn Condál Crinóch Commann Derdriu Der-bForgaill Derbáil Derborgaill Der-Ilei Der-Lugdach Dianaim Dub-Dil Dub-Essa Dub-Lemna Dubgilla Dúinsech Dúnlaith Echrad Éibhleann Eithne Ellbrig Emer Étaín Failenn Fedelm Feidelm Fionneacht 
+		Fionnguala Flann Forbflaith Fine Garbh Gelgéis Gerróc Gnáthnád Gormflaith Gormlaith Gráinne Imag Íte Lann Lasairfionna Lathir Leathan Ligach Muadhnait Muirenn Muirgel Muirn Mór Mór-Mumán Nárbflaith Nuala Órflaith Órlaith Fionnghuala 
 		Órnat Sadb Samthann Scáthach Sébdann Selblaith Seonaid Sineach Sisuile Sláine Sorcha Suaibsech Sáerlaith Sétach Sithamaith Tailltiu Temair Tuathflaith Tómnat Uallach Uasal Úna	
 	}
 	

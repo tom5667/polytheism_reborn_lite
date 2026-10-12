@@ -125,7 +125,7 @@ pr_germanic_select_personal_deity_decision = {
                     }
                     100 = {
                         show_chance = no
-                        desc = select_personal_deity_germanic_decision.select_freyr
+                        desc = pr_select_personal_deity_german_decision.select_nerthus
                         add_character_modifier = german_freyr
                     }
                     100 = {

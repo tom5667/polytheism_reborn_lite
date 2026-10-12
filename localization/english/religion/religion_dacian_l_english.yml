@@ -93,7 +93,6 @@
 
     #evil gods names 
     dacian_polytheism_evil_god_spirits:0 "Spirits" 
-    dacian_polytheism_evil_god_spirits:0 "Spirits"
 
     #witch goddess
     dacian_polytheism_witchgodname_zalmoxis:0 "Zalmoxis"
@@ -136,9 +135,7 @@
 
     #roman names
     #males
-    reserved_male_names:0 "Dacian male names"
     #Female 
-    reserved_female_names:0 "Dacian female names"
 
     #holy orders: 
     holy_order_sons_of_Pleistoros:0 "Sons of Pleistoros"
@@ -228,7 +225,6 @@
 
     #evil gods names 
     zalmoxism_evil_god_spirits:0 "Spirits" 
-    zalmoxism_evil_god_spirits:0 "Spirits"
 
     #witch goddess
     zalmoxism_witchgodname_zalmoxis:0 "$zalmoxism_high_god_name$"
