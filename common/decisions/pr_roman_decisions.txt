@@ -2237,6 +2237,7 @@ pr_roman_romanize_the_slavs_decision = {
 
     is_shown = {
         has_ep3_dlc_trigger = yes
+        top_liege = { government_allows = state_faith } # counties have no state faith (error spam otherwise)
         faith ?= top_liege.primary_title.state_faith
         OR = {
             has_title = title:e_byzantium

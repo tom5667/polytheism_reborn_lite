@@ -38,9 +38,9 @@
   #Greek-Roman
   pr.0101.t:0 ""
   pr.0101.desc:0 " "
-  pr.0101.roman:0 "Roman Polytheism"
-  pr.0101.greek:0 "Greek Polytheism"
-  pr.0101.pr_mycenaean:0 "Mycenaean Polytheism"
+  pr.0101.roman:0 "Roman (Cultus Deorum)"
+  pr.0101.greek:0 "Hellenism"
+  pr.0101.pr_mycenaean:0 "Mycenaean"
   pr.0101.mithras:0 "Mithraic mysteries"
   pr.0101.eluesinian:0 "Eleusinian mysteries"
   pr.0101.serapis:0 "Cult of Serapis"
@@ -50,85 +50,93 @@
   #Greek-Roman2
   pr.0111.t:0 ""
   pr.0111.desc:0 " "
-  pr.0111.isis:0 "Mysteries of Isis"
-  pr.0111.imperial:0 "Imperial Cult"
-  pr.0111.roman_illyrian:0 "Roman Illyrian Polytheism"
-  pr.0111.pr_romano_british:0 "Roman British Polytheism"
-  pr.0111.pr_gallo_roman:0 "Gallo Roman Polytheism"
-  pr.0111.pr_romano_germanic:0 "Roman Germanic Polytheism"
-  pr.0111.pr_graeco_egyptian_polytheism:0 "Graeco Egyptian Polytheism"
+  pr.0111.pr_graeco_egyptian_polytheism:0 "Graeco-Egyptian"
   pr.0111.main:0 "Main menu"
   pr.0111.back:0 "Back"
+  pr.0111.roman_rites:0 "Roman regional rites..."
+  pr.0118.t:0 "Roman Regional Rites"
+  pr.0118.desc:0 "Choose one of the regional rites of the Roman faith."
+  pr.0118.gallo_roman:0 "Gallo-Roman"
+  pr.0118.romano_british:0 "Romano-British"
+  pr.0118.romano_germanic:0 "Romano-Germanic"
+  pr.0118.romano_hispanic:0 "Romano-Hispanic"
+  pr.0118.afro_roman:0 "Afro-Roman"
+  pr.0118.romano_syrian:0 "Romano-Syrian"
+  pr.0118.romano_illyrian:0 "Romano-Illyrian"
+  pr.0118.back:0 "Back"
 
   #Etruscan
   pr.0102.t:0 ""
   pr.0102.desc:0 " "
-  pr.0102.pr_etruscan:0 "Etruscan Polytheism"
+  pr.0102.pr_etruscan:0 "Etruscan"
   pr.0102.back:0 "Back"
 
   #Egyptian
   pr.0103.t:0 ""
   pr.0103.desc:0 " "
-  pr.0103.kemetic:0 "Kemetic Polytheism"
+  pr.0103.kemetic:0 "Kemetic"
+  pr.0103.old_kingdom:0 "Old Kingdom"
+  pr.0103.late_period:0 "Late Period"
   pr.0103.atenism:0 "Atenism"
   pr.0103.back:0 "Back"
 
   #Celtic
   pr.0104.t:0 ""
   pr.0104.desc:0 " "
-  pr.0104.gaelic:0 "Gaelic Polytheism"
-  pr.0104.brythonic:0 "Brythonic Polytheism"
-  pr.0104.pr_gaulish:0 "Gaulish Polytheism"
-  pr.0104.pr_celtic_iberian:0 "Celtic Iberian Polytheism"
+  pr.0104.gaelic:0 "Gaelic (Ériu)"
+  pr.0104.brythonic:0 "Brythonic (Pritani)"
+  pr.0104.pr_gaulish:0 "Gaulish (Continental)"
+  pr.0104.pr_celtic_iberian:0 "Celtiberian (Continental)"
   pr.0104.back:0 "Back"
 
   #Germanic
   pr.0105.t:0 ""
   pr.0105.desc:0 " "
-  pr.0105.anglo_saxon:0 "Anglo Saxon Polytheism"
-  pr.0105.german:0 "German Polytheism"
+  pr.0105.norse:0 "Norse"
+  pr.0105.anglo_saxon:0 "Anglo-Saxon"
+  pr.0105.german:0 "Continental Germanic"
   pr.0105.back:0 "Back"
 
   #Punic
   pr.0106.t:0 ""
   pr.0106.desc:0 " "
-  pr.0106.pr_punic:0 "Punic Polytheism"
-  pr.0106.semitic:0 "Semitic Polytheism"
+  pr.0106.pr_punic:0 "Punic"
+  pr.0106.semitic:0 "Canaanite"
   pr.0106.back:0 "Back"
 
   #Mesopotamian
   pr.0107.t:0 ""
   pr.0107.desc:0 " "
-  pr.0107.pr_babylonian:0 "Babylonian Polytheism"
-  pr.0107.pr_sumerian:0 "Sumerian Polytheism"
-  pr.0107.assyrian:0 "Assyrian Polytheism"
+  pr.0107.pr_babylonian:0 "Babylonian"
+  pr.0107.pr_sumerian:0 "Sumerian"
+  pr.0107.assyrian:0 "Assyrian"
   pr.0107.back:0 "Back"
 
   #Dacian
   pr.0108.t:0 ""
   pr.0108.desc:0 " "
-  pr.0108.pr_dacian:0 "Dacian Polytheism"
-  pr.0108.zalmoxism:0 "Zalmoxism"
+  pr.0108.pr_dacian:0 "Dacian"
+  pr.0108.zalmoxism:0 "Zalmoxian"
   pr.0108.back:0 "Back"
 
   #Caucasus
   pr.0109.t:0 ""
   pr.0109.desc:0 " "
-  pr.0109.georgian:0 "Georgian Polytheism"
-  pr.0109.armenian:0 "Armenian Polytheism"
+  pr.0109.georgian:0 "Georgian"
+  pr.0109.armenian:0 "Armenian"
   pr.0109.back:0 "Back"
 
   #Hittite
   pr.0113.t:0 ""
   pr.0113.desc:0 " "
-  pr.0113.pr_hittite:0 "Hittite Polytheism"
+  pr.0113.pr_hittite:0 "Hittite"
   pr.0113.back:0 "Back"
 
 
   #Scythian
   pr.0112.t:0 ""
   pr.0112.desc:0 " "
-  pr.0112.pr_scythian:0 "Scythian Polytheism"
+  pr.0112.pr_scythian:0 "Scythian"
   pr.0112.back:0 "Back"
 
 
@@ -136,19 +144,19 @@
   #Illyrian
   pr.0115.t:0 ""
   pr.0115.desc:0 " "
-  pr.0115.pr_illyrian:0 "Illyrian Polytheism"
+  pr.0115.pr_illyrian:0 "Illyrian"
   pr.0115.back:0 "Back"
 
   pr.0116.t:0 ""
   pr.0116.desc:0 " "
-  pr.0116.lithuanian:0 "Lithuanian Polytheism"
-  pr.0116.latvian:0 "Latvian Polytheism"
-  pr.0116.prussian:0 "Prussian Polytheism"
+  pr.0116.lithuanian:0 "Lithuanian"
+  pr.0116.latvian:0 "Latvian"
+  pr.0116.prussian:0 "Prussian"
   pr.0116.back:0 "Back"
 
   pr.0117.t:0 ""
   pr.0117.desc:0 " "
-  pr.0117.lusitanian:0 "Lusitanian Polytheism"
+  pr.0117.lusitanian:0 "Lusitanian"
   pr.0117.back:0 "Back"
 
 

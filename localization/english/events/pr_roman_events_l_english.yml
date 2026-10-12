@@ -720,7 +720,6 @@
   pr_roman.0031.philosopher_nick:0 "The Philosopher"
   pr_roman.0031.jewish_nick:0 "The Hellen"
 
-  ep3_roman_restoration.0100.c:0 "The way of the great Emperor Augustus"
 
   pr_roman.0032.t:0 "Romanize the [pagan.GetCulture.GetCollectiveNounNoTooltip]"
   pr_roman.0032.desc:0 "Romanization brings prosperity and protection to people, but our neighbor, [pagan.GetTitledFirstName], is blissfully unaware of it, and persists in believing in only their gods who can't protect them forever from the christians.\n\nSaving [pagan.GetHerHis] soul and those of [pagan.GetHerHis] people is a noble endeavor in itself, but there also #EMP earthly#! advantages to their conversion — for starters, reducing their hostility towards us and bringing them into our own sphere of influence.\n\nMy chosen missionary, [evangelizer.GetFirstName], is ready to go."
@@ -875,20 +874,10 @@
   pr_roman_cult.0063.b:0 "I will watch from a safe distance."
   pr_roman_cult.0063.c:0 "This is chaos! Disperse them immediately!"
 
-  cybele_ecstatic_revelry:0 "Ecstatic Revelry"
-  cybele_ecstatic_revelry_desc:0 "This character has recently participated in a wild, ecstatic ritual in honor of the Great Mother, feeling the primal energy of nature flow through them."
 
-  eleusinian_vision:0 "Eleusinian Vision"
-  eleusinian_vision_desc:0 "This character has had a profound vision related to the Eleusinian Mysteries, granting them a sense of peace about the afterlife."
 
-  bacchus_divine_madness:0 "Divine Madness"
-  bacchus_divine_madness_desc:0 "This character has recently indulged in a divinely inspired revelry, feeling the liberating joy of Bacchus."
 
-  serapis_ferryman_token:0 "Ferryman's Token"
-  serapis_ferryman_token_desc:0 "This character possesses what they believe to be a token from Serapis, easing their fears of the afterlife."
 
-  isis_whispering_reed:0 "Whispering Reed"
-  isis_whispering_reed_desc:0 "This character has been gifted a sacred reed from a priestess of Isis, which seems to whisper ancient secrets, sharpening their mind."
 
   pr_roman_cult.0064.t:0 "The Eleusinian Dream"
   pr_roman_cult.0064.desc:0 "I dreamt last night of a field of asphodel under a sky with two suns. A veiled woman, who I knew to be Persephone, offered me a single pomegranate seed. 'Eat, and know what is to come,' she whispered. The dream was so vivid, so real, that I awoke with the taste of the seed still on my tongue.\n\nI feel as though I have glimpsed a truth that lies beyond the veil of this world. The Mysteries are not just rituals; they are a doorway."
@@ -957,3 +946,8 @@
   pr_grand_academy_established_desc:0 "A grand academy has been established at this court, a center of Latin learning worthy of the Caesars, drawing scholars and scribes from across the realm."
   pr_latin_revival_diplomatic:0 "Cultural Exchange"
   pr_latin_revival_diplomatic_desc:0 "This ruler has fostered a spirit of cultural coexistence between the Greek and Latin traditions at their court."
+
+ # ep3_roman_restoration.0100 (vanilla event + PR Roman option)
+ pr_ep3_roman_restoration.0100.roman:0 "The way of the great Emperor Augustus"
+ pr_ep3_roman_restoration.0100.roman_easy:0 "We honour the old gods, but walk our own road."
+ pr_may_choose_to_convert_roman_desc:0 "May choose to convert to [GetFaithByKey( 'roman_polytheism' ).GetName]"

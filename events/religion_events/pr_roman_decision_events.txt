@@ -5376,10 +5376,12 @@ pr_roman_cult.0035 = {
 		name = pr_roman_cult.0035.a
 	}
 }
-# Should I LARP or nah?
+# Vanilla 1.20 ep3_roman_restoration.0100 (events/dlc/ep3/ep3_roman_restoration_events.txt) plus two PR options:
+# restore Rome with the Roman faith, with and without Hard Mode. Re-copy from vanilla when the vanilla event changes.
 ep3_roman_restoration.0100 = {
 	type = character_event
 	window = fullscreen_event
+	queue_icon = "gfx/interface/icons/splash_icons/splash_byzantine.dds"
 	title = ep3_roman_restoration.0100.t
 	desc = ep3_roman_restoration.0100.desc
 	theme = emperor
@@ -5394,71 +5396,242 @@ ep3_roman_restoration.0100 = {
 		custom_tooltip = ep3_roman_restoration.hard_mode
 		custom_tooltip = ep3_roman_restoration.end_hard_mode
 		custom_tooltip = ep3_roman_restoration.invasion_cb
+		every_held_title = {
+			limit = {
+				is_head_of_faith = yes
+			}
+			root = {
+				destroy_title = prev
+			}
+		}
 		set_character_faith = faith:hellenic_pagan
-		primary_title = { set_state_rite = faith:hellenic_pagan.main_rite }
+		if = {
+			limit = { 
+				faith:hellenic_pagan = { has_doctrine = doctrine_monotheist }
+			}
+			custom_description_no_bullet = { text = mandala_monotheist_warning_tt }
+		}
+		primary_title = {
+			set_state_rite = faith:hellenic_pagan.main_rite
+			pam_tenet_popularity_boost_rite_effect = { RITE = state_rite }
+		}
 		every_held_title = {
 			custom = custom.every_held_county
-			limit = { tier = tier_county }
+			title_tier = county
 			set_county_faith = faith:hellenic_pagan
 		}
 		every_vassal = {
-			custom = custom.every_admin_vassal
+			custom = custom.every_vassal
 			limit = {
-				government_allows = administrative
-				faith != faith:hellenic_pagan
+				NOT = {
+					any_held_title = {
+						is_head_of_faith = yes # you cannot convert the Ecumenical Patriarch, sorry
+					}
+				}
 			}
-			set_character_faith = faith:hellenic_pagan
+			custom_tooltip = {
+				text = may_choose_to_convert_hellenic_desc
+				run_interaction = { # We use the same interaction as when creating a new faith to keep a consistent behaviour, since that is essentially what you're doing here
+					interaction = ask_for_conversion_interaction
+					actor = root
+					recipient = this
+					execute_threshold = accept
+				}
+			}
 		}
 		custom_tooltip = {
 			text = ep3_roman_restoration.household_gods_tenet
 			set_global_variable = household_gods_tenet_unlocked
+			faith:hellenic_pagan = {
+				set_tenet_status = {
+					tenet = tenet:tenet_household_gods
+					status = permitted
+				}
+			}
 		}
 		custom_tooltip = {
 			text = uses_custom_caesar_flavourization_tt
 			set_variable = uses_custom_caesar_flavourization
 		}
+		if = {
+			limit = {
+				any_owned_story = { type = ep3_story_cycle_restoring_rome }
+			}
+			random_owned_story = {
+				type = ep3_story_cycle_restoring_rome
+				set_variable = roman_empire_hard_mode
+			}
+		}
 	}
-	option = { # LARP (Hard Mode)
-		name = ep3_roman_restoration.0100.c
+
+	option = { # PR: restore Rome with the Roman faith (Hard Mode)
+		name = pr_ep3_roman_restoration.0100.roman
 		custom_tooltip = ep3_roman_restoration.hard_mode
 		custom_tooltip = ep3_roman_restoration.end_hard_mode
 		custom_tooltip = ep3_roman_restoration.invasion_cb
+		every_held_title = {
+			limit = {
+				is_head_of_faith = yes
+			}
+			root = {
+				destroy_title = prev
+			}
+		}
 		set_character_faith = faith:roman_polytheism
-		primary_title = { set_state_rite = faith:roman_polytheism.main_rite }
+		primary_title = {
+			set_state_rite = faith:roman_polytheism.main_rite
+			pam_tenet_popularity_boost_rite_effect = { RITE = state_rite }
+		}
 		every_held_title = {
 			custom = custom.every_held_county
-			limit = { tier = tier_county }
+			title_tier = county
 			set_county_faith = faith:roman_polytheism
 		}
 		every_vassal = {
-			custom = custom.every_admin_vassal
+			custom = custom.every_vassal
 			limit = {
-				government_allows = administrative
-				faith != faith:roman_polytheism
+				NOT = {
+					any_held_title = {
+						is_head_of_faith = yes
+					}
+				}
 			}
-			set_character_faith = faith:roman_polytheism
+			custom_tooltip = {
+				text = pr_may_choose_to_convert_roman_desc
+				run_interaction = {
+					interaction = ask_for_conversion_interaction
+					actor = root
+					recipient = this
+					execute_threshold = accept
+				}
+			}
 		}
 		custom_tooltip = {
-			text = ep3_roman_restoration.household_gods_tenet
-			set_global_variable = household_gods_tenet_unlocked
+			text = uses_custom_caesar_flavourization_tt
+			set_variable = uses_custom_caesar_flavourization
+		}
+		if = {
+			limit = {
+				any_owned_story = { type = ep3_story_cycle_restoring_rome }
+			}
+			random_owned_story = {
+				type = ep3_story_cycle_restoring_rome
+				set_variable = roman_empire_hard_mode
+			}
+		}
+	}
+
+	option = { # PR: Roman faith without Hard Mode (counterpart of vanilla option c)
+		name = pr_ep3_roman_restoration.0100.roman_easy
+		custom_tooltip = ep3_roman_restoration.easy_mode
+		every_held_title = {
+			limit = {
+				is_head_of_faith = yes
+			}
+			root = {
+				destroy_title = prev
+			}
+		}
+		set_character_faith = faith:roman_polytheism
+		primary_title = {
+			set_state_rite = faith:roman_polytheism.main_rite
+			pam_tenet_popularity_boost_rite_effect = { RITE = state_rite }
+		}
+		every_held_title = {
+			custom = custom.every_held_county
+			title_tier = county
+			set_county_faith = faith:roman_polytheism
+		}
+		every_vassal = {
+			custom = custom.every_vassal
+			limit = {
+				NOT = {
+					any_held_title = {
+						is_head_of_faith = yes
+					}
+				}
+			}
+			custom_tooltip = {
+				text = pr_may_choose_to_convert_roman_desc
+				run_interaction = {
+					interaction = ask_for_conversion_interaction
+					actor = root
+					recipient = this
+					execute_threshold = accept
+				}
+			}
 		}
 		custom_tooltip = {
 			text = uses_custom_caesar_flavourization_tt
 			set_variable = uses_custom_caesar_flavourization
 		}
 	}
+
+	option = { # Roleplay option (become Hellenic without Hard Mode)
+		name = ep3_roman_restoration.0100.c
+		custom_tooltip = ep3_roman_restoration.easy_mode
+		every_held_title = {
+			limit = {
+				is_head_of_faith = yes
+			}
+			root = {
+				destroy_title = prev
+			}
+		}
+		set_character_faith = faith:hellenic_pagan
+		if = {
+			limit = { 
+				faith:hellenic_pagan = { has_doctrine = doctrine_monotheist }
+			}
+			custom_description_no_bullet = { text = mandala_monotheist_warning_tt }
+		}
+		primary_title = {
+			set_state_rite = faith:hellenic_pagan.main_rite
+			pam_tenet_popularity_boost_rite_effect = { RITE = state_rite }
+		}
+		every_held_title = {
+			custom = custom.every_held_county
+			title_tier = county
+			set_county_faith = faith:hellenic_pagan
+		}
+		every_vassal = {
+			custom = custom.every_vassal
+			limit = {
+				NOT = {
+					any_held_title = {
+						is_head_of_faith = yes # you cannot convert the Ecumenical Patriarch, sorry
+					}
+				}
+			}
+			custom_tooltip = {
+				text = may_choose_to_convert_hellenic_desc
+				run_interaction = { # We use the same interaction as when creating a new faith to keep a consistent behaviour, since that is essentially what you're doing here
+					interaction = ask_for_conversion_interaction
+					actor = root
+					recipient = this
+					execute_threshold = accept
+				}
+			}
+		}
+		custom_tooltip = {
+			text = ep3_roman_restoration.household_gods_tenet
+			set_global_variable = household_gods_tenet_unlocked
+			faith:hellenic_pagan = {
+				set_tenet_status = {
+					tenet = tenet:tenet_household_gods
+					status = permitted
+				}
+			}
+		}
+		custom_tooltip = {
+			text = uses_custom_caesar_flavourization_tt
+			set_variable = uses_custom_caesar_flavourization
+		}
+	}
+
 	option = { # Easy Mode
 		name = ep3_roman_restoration.0100.b
 		custom_tooltip = ep3_roman_restoration.easy_mode
-		if = {
-			limit = {
-				any_owned_story = { story_type = ep3_story_cycle_restoring_rome }
-			}
-			random_owned_story = {
-				limit = { story_type = ep3_story_cycle_restoring_rome }
-				end_story = yes
-			}
-		}
 	}
 
 	after = {
@@ -5466,51 +5639,13 @@ ep3_roman_restoration.0100 = {
 		set_nickname_effect = { NICKNAME = nick_the_glorious }
 		# Send narrative fluff to other players (if any).
 		every_player = {
-			limit = { NOT = { this = root } }
+			limit = { this != root }
 			trigger_event = ep3_roman_restoration.0101
 		}
 	}
 }
 
 # Some chucklefuck restored Rome
-ep3_roman_restoration.0101 = {
-	type = character_event
-	window = fullscreen_event
-	title = roman_restoration.0002.t
-	desc = {
-		desc = ep3_roman_restoration.0101.intro
-		first_valid = {
-			triggered_desc = {
-				trigger = { scope:scoped_emperor.primary_title.state_faith ?= faith:hellenic_pagan }
-				desc = ep3_roman_restoration.0101.hellenic
-			}
-			triggered_desc = {
-				trigger = { scope:scoped_emperor.primary_title.state_faith ?= faith:orthodox }
-				desc = ep3_roman_restoration.0101.orthodox
-			}
-			desc = ep3_roman_restoration.0101.fallback
-		}
-		desc = ep3_roman_restoration.0101.outro
-	}
-	theme = emperor
-	override_background = { reference = ep3_fullscreen_restore_rome }
-
-	immediate = {
-		#Same-faith non-empire tier rulers are over-awed.
-		if = {
-			limit = { faith = scope:scoped_emperor.primary_title.state_faith }
-			play_music_cue = "mx_cue_epic_sacral_moment"
-		}
-		#Otherwise, this is a tacit statement of imperial threat.
-		else = { play_music_cue = "mx_cue_combat_2" }
-	}
-
-	option = {
-		name = ep3_roman_restoration.0101.a
-	}
-}
-
-
 #Romanize the tribes based on evanglize the tribes
 pr_roman.0032 = {
 	type = character_event

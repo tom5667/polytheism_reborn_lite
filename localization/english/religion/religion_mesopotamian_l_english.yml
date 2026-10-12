@@ -136,9 +136,7 @@
 
     #roman names
     #males
-    reserved_male_names:0 "Babylonian male names"
     #Female
-    reserved_female_names:0 "Babylonian female names"
 
     #holy orders:
     holy_order_sons_of_nergal:0 "Sons of Nergal"
@@ -218,6 +216,4 @@
 
     #roman names
     #males
-    reserved_male_names:0 "Assyrian male names"
     #Female
-    reserved_female_names:0 "Assyrian female names"

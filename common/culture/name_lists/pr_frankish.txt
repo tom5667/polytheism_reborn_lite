@@ -256,7 +256,7 @@
 	}
 	female_names = {
 		#Kölsh/Ripuarian 
-		Nies Stina Züff Öschel Finchen Drück Maritzebill Tring Kättche Ziss Mariejelche Gretchen Ännche Annemie Stina Änn Bärbel
+		Nies Stina_pr Züff Öschel Finchen Drück Maritzebill Tring Kättche Ziss Mariejelche Gretchen Ännche Annemie Stina_pr Änn Bärbel
 		Zilla Liss Lissbätt Maliess Billa
 		#Öcher platt 
 		Fing Fingche Jitta Jretche Mari Micke Ness Marjänn Lissje

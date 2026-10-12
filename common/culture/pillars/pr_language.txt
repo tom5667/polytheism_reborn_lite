@@ -214,6 +214,26 @@ language_pr_celtic_iberian = {
 	color = { 245 242 220 }
 }
 
+# Pre-Roman Iberian (non-Indo-European, Paleohispanic). Not vanilla language_iberian, which is the
+# Romance "Iberian Vulgar" of the early medieval Hispanic cultures.
+language_pr_iberian = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_pr_iberian
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_pr_iberian }
+			multiply = 10
+		}
+	}
+
+	color = { 214 168 82 }
+}
+
 language_pr_middle_persian = {
 	type = language
 	is_shown = {

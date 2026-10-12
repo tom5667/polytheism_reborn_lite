@@ -115,6 +115,7 @@ pr.0115={
 	option={
 		name = pr.0115.pr_illyrian
 		set_character_faith = faith:illyrian_polytheism
+		set_character_rite = rite:illyrian_rites
 	}
 	option={
 		name = pr.0115.back
@@ -156,6 +157,7 @@ pr.0117 = {
 	option={
 		name = pr.0117.lusitanian
 		set_character_faith = faith:lusitanian_polytheism
+		set_character_rite = rite:lusitanian_rites
 	}
 	option={
 		name = pr.0117.back
@@ -172,6 +174,7 @@ pr.0101={
 	option={
 		name = pr.0101.roman
 		set_character_faith = faith:roman_polytheism
+		set_character_rite = rite:cultus_deorum_rites
 	}
 	option={
 		name = pr.0101.greek
@@ -203,12 +206,62 @@ pr.0111 = {
 		set_character_rite = rite:graeco_egyptian_rites
 	}
 	option={
+		name = pr.0111.roman_rites
+		trigger_event = pr.0118
+	}
+	option={
 		name = pr.0111.back
 		trigger_event = pr.0101
 	}
 	option={
 		name = pr.0111.main
 		trigger_event = pr.0100
+	}
+}
+#Roman regional rites
+pr.0118 = {
+	type = character_event
+	title = pr.0118.t
+	desc = pr.0118.desc
+	theme = learning_scholarship_focus
+	option={
+		name = pr.0118.gallo_roman
+		set_character_faith = faith:roman_polytheism
+		set_character_rite = rite:gallo_roman_rites
+	}
+	option={
+		name = pr.0118.romano_british
+		set_character_faith = faith:roman_polytheism
+		set_character_rite = rite:romano_british_rites
+	}
+	option={
+		name = pr.0118.romano_germanic
+		set_character_faith = faith:roman_polytheism
+		set_character_rite = rite:romano_germanic_rites
+	}
+	option={
+		name = pr.0118.romano_hispanic
+		set_character_faith = faith:roman_polytheism
+		set_character_rite = rite:romano_hispanic_rites
+	}
+	option={
+		name = pr.0118.afro_roman
+		set_character_faith = faith:roman_polytheism
+		set_character_rite = rite:afro_roman_rites
+	}
+	option={
+		name = pr.0118.romano_syrian
+		set_character_faith = faith:roman_polytheism
+		set_character_rite = rite:romano_syrian_rites
+	}
+	option={
+		name = pr.0118.romano_illyrian
+		set_character_faith = faith:roman_polytheism
+		set_character_rite = rite:romano_illyrian_rites
+	}
+	option={
+		name = pr.0118.back
+		trigger_event = pr.0111
 	}
 }
 #Etruscan
@@ -220,6 +273,7 @@ pr.0102={
 	option={
 		name = pr.0102.pr_etruscan
 		set_character_faith = faith:etruscan_polytheism
+		set_character_rite = rite:etruscan_rites
 	}
 	option={
 		name = pr.0102.back
@@ -235,10 +289,22 @@ pr.0103={
 	option={
 		name = pr.0103.kemetic
 		set_character_faith = faith:kemetic_polytheism
+		set_character_rite = rite:kemetic_rites
+	}
+	option={
+		name = pr.0103.old_kingdom
+		set_character_faith = faith:kemetic_polytheism
+		set_character_rite = rite:heliopolitan_rites
+	}
+	option={
+		name = pr.0103.late_period
+		set_character_faith = faith:kemetic_polytheism
+		set_character_rite = rite:late_period_rites
 	}
 	option={
 		name = pr.0103.atenism
 		set_character_faith = faith:atenism
+		set_character_rite = rite:atenism_rites
 	}
 	option={
 		name = pr.0103.back
@@ -252,19 +318,23 @@ pr.0104={
 	desc = pr.0104.desc
 	theme = learning_scholarship_focus
 	option={
-		name = pr.0104.gaelic 
-		set_character_rite = rite:gaelic_polytheism_rites
+		name = pr.0104.gaelic
+		set_character_faith = faith:eriu_polytheism
+		set_character_rite = rite:gaelic_rites
 	}
 	option={
-		name = pr.0104.brythonic 
-		set_character_rite = rite:brythonic_polytheism_rites
+		name = pr.0104.brythonic
+		set_character_faith = faith:pritani_polytheism
+		set_character_rite = rite:brythonic_rites
 	}
 	option={
-		name = pr.0104.pr_gaulish 
-		set_character_rite = rite:gaulish_polytheism_rites
+		name = pr.0104.pr_gaulish
+		set_character_faith = faith:continental_polytheism
+		set_character_rite = rite:gaulish_rites
 	}
 	option={
-		name = pr.0104.pr_celtic_iberian 
+		name = pr.0104.pr_celtic_iberian
+		set_character_faith = faith:continental_polytheism
 		set_character_rite = rite:celtic_iberian_polytheism_rites
 	}
 	option={
@@ -279,12 +349,19 @@ pr.0105={
 	desc = pr.0105.desc
 	theme = learning_scholarship_focus
 	option={
+		name = pr.0105.norse
+		set_character_faith = faith:norse_pagan
+		set_character_rite = rite:norse_pagan
+	}
+	option={
 		name = pr.0105.anglo_saxon
 		set_character_faith = faith:anglo_saxon_polytheism
+		set_character_rite = rite:anglo_saxon_rites
 	}
 	option={
 		name = pr.0105.german
 		set_character_faith = faith:german_polytheism
+		set_character_rite = rite:german_rites
 	}
 	option={
 		name = pr.0105.back
@@ -302,7 +379,7 @@ pr.0106={
 		set_character_faith = faith:canaanite_polytheism
 		set_character_rite = rite:punic_rites
 	}
-	option = {
+	option={
 		name = pr.0106.semitic
 		set_character_faith = faith:canaanite_polytheism
 		set_character_rite = rite:semitic_rites
@@ -324,14 +401,14 @@ pr.0107={
 		set_character_rite = rite:babylonian_rites
 	}
 	option={
-		name = pr.0107.pr_sumerian
-		set_character_faith = faith:babylonian_polytheism
-		set_character_rite = rite:sumerian_rites
-	}
-	option = {
 		name = pr.0107.assyrian
 		set_character_faith = faith:babylonian_polytheism
 		set_character_rite = rite:assyrian_rites
+	}
+	option={
+		name = pr.0107.pr_sumerian
+		set_character_faith = faith:babylonian_polytheism
+		set_character_rite = rite:sumerian_rites
 	}
 	option={
 		name = pr.0107.back
@@ -368,14 +445,14 @@ pr.0109={
 	desc = pr.0109.desc
 	theme = learning_scholarship_focus
 	option={
-		name = pr.0109.georgian
-		set_character_faith = faith:armenian_polytheism
-		set_character_rite = rite:georgian_rites
-	}
-	option = {
 		name = pr.0109.armenian
 		set_character_faith = faith:armenian_polytheism
 		set_character_rite = rite:armenian_rites
+	}
+	option={
+		name = pr.0109.georgian
+		set_character_faith = faith:armenian_polytheism
+		set_character_rite = rite:georgian_rites
 	}
 	option={
 		name = pr.0109.back
@@ -392,6 +469,7 @@ pr.0113={
 	option={
 		name = pr.0113.pr_hittite
 		set_character_faith = faith:hittite_polytheism
+		set_character_rite = rite:hittite_rites
 	}
 	option={
 		name = pr.0113.back
@@ -407,6 +485,7 @@ pr.0112={
 	option={
 		name = pr.0112.pr_scythian
 		set_character_faith = faith:scythian_polytheism
+		set_character_rite = rite:scythian_rites
 	}
 	option={
 		name = pr.0112.back

@@ -25,10 +25,10 @@ eriu_polytheism = {
         { name = "holy_order_protectors_of_the_other_world"}
     }
     reserved_male_names = {
-        Áedacán Áileachán Boidmal Brangen Caochlaoch Díomasach Dochartach Filtiarn Colla Irial
+        Sétanta Láeg Fráech Mog_Ruith Irial Colla Tuathal Loeguire Conaire
     }
     reserved_female_names = {
-        Essa Gelgéis Gráinde Gránne Mealla Lasairfhíona Laisrén Cobhfhlaith Báine
+        Medb Feidelm Scathach Úathach Aífe Nessa Macha
     }
 
     # Faith-level loc (#142): vanilla texts read GetFaith.*, so the god names must live
@@ -217,10 +217,10 @@ pritani_polytheism = {
         { name = "holy_order_protectors_of_ynys_mon"}
     }
     reserved_male_names = {
-        Edern Cadwobri Catuvellaunus Conmarch Dumnagual Artognou
+        Cassivellaunus Lugotorix Caratacus Togodumnus Cunobelinos Prasutagus Venutius Calgacus
     }
     reserved_female_names = {
-        Aanor Abertha Aelwen Ragnell Modron Gwyar Delwen Eiriana
+        Boudika Cartimandua
     }
 
     # Faith-level loc (#142): vanilla texts read GetFaith.*, so the god names must live
@@ -419,10 +419,10 @@ continental_polytheism = {
         { name = "holy_order_sons_of_reue" }
     }
     reserved_male_names = {
-        Abbo Adietumarus Ariogaisos Lukotorix Lugotorix Iestinus Garos Magurix Manus Olíndico Pirreso Bodo Indikortes Botilkos Caciro Letondon Lesson
+        Diviciacus Vercingetorix Celtillus Ambiorix Catuolcos Ambigatus Olyndicus Retugenos Caro Sinatus
     }
     reserved_female_names = {
-        Abrexta Aculia Blanda Luguselwa Sucaria Uesuca Scotta Acaunissa Ana Aunia Stena Ama
+        Camma Chiomara
     }
 
     # Faith-level loc (#142): vanilla texts read GetFaith.*, so the god names must live

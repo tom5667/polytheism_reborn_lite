@@ -113,10 +113,8 @@ daco_thracian_religion = {
 
 
 	reserved_male_names = {
-		Bastiza Bikili Avizina Blaesus Charnabon Comosicus Cothelas Cotiso Dadas Dadazi Danillo Oroles Pieporus Rhemaxos Zyraxes
-	}
-	reserved_female_names = {
-		Zia
+	    Burebista Decaeneus Comosicus Scorylo Decebalus Diegis Vezina Dromichaetes Rholes Dapyx Zyraxes Cotiso
+	    Cothelas
 	}
 
 	doctrine = doctrine_pilgrimage_encouraged

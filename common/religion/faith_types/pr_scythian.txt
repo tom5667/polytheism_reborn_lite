@@ -12,6 +12,14 @@ scythian_polytheism = {
         icon = scythian_polytheism
         reformed_icon = scythian_polytheism_reformed
     }
+
+    reserved_male_names = {
+        Targitai Kolaxais Lipoxais Arpoxais Bartatua Madyes Spargapeithes Ariapeithes Idanthyrsus Saulius Taxakis Ateas
+        Oktomasad Skilur Palak
+    }
+    reserved_female_names = {
+        Opiya
+    }
     eminent_holy_sites = {
         kerch
         dionysopolis

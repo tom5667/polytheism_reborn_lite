@@ -25,8 +25,13 @@ canaanite_polytheism = {
         nicosia
     }
 
-    reserved_male_names = { Hanibal Adherbal Bodo Carthalo Hasdrubal Hamilcar Gisgo Hanno Himilco Mago }
-    reserved_female_names = { Arishat Elissa Muttunbaal }
+    reserved_male_names = {
+        Hanibal Hamilcar Hasdrubal Hanno Himilco Carthalo Gisgo Mago Hhirom Ittobal Abibal Esmunazar
+        Bodastart Tabnit_pr
+    }
+    reserved_female_names = {
+        Elissa Sophonisba
+    }
 
     holy_order_names = {
         { name = "holy_order_sons_of_baal" }

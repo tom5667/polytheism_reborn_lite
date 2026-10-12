@@ -27,12 +27,14 @@ norse_pagan = {
     }
 
     reserved_male_names = {
-        Anund Asbjörn Aslak Audun Bagge Balder Brage Egil Emund Frej Gnupa Gorm Gudmund Gudröd Hardeknud Helge Odd Orm
-        Orvar Ottar Rikulfr Rurik Sigbjörn Styrbjörn Starkad Styrkar Sämund Sölve Sörkver Thorolf Tjudmund Toke Tolir
-        Torbjörn Torbrand Torfinn Torgeir Toste Tyke
+        Anund AsbjO_rn Aslak Audun Bagge Balder Brage Egil Emund Frej Gnupa Gorm
+        Gudmund GudrO_d Hardeknud Helge Odd Orm Orvar Ottar Rikulfr Rurik SigbjO_rn StyrbjO_rn
+        Starkad Styrkar SA_mund SO_lve SO_rkver Thorolf Tjudmund Toke Tolir TorbjO_rn Torbrand Torfinn
+        Torgeir Toste Tyke
     }
     reserved_female_names = {
-        Aslaug Bothild Björg Freja Grima Gytha Kráka Malmfrid Thora Thordis Thyra Ragnfrid Ragnhild Svanhild Ulvhilde
+        Aslaug Bothild BjO_rg Freja Grima Gytha KrA_ka Malmfrid Thora Thordis Thyra Ragnfrid
+        Ragnhild Svanhild Ulvhilde
     }
 
     holy_order_names = {
@@ -222,10 +224,10 @@ anglo_saxon_polytheism = {
     }
 
     reserved_male_names = {
-        Hama Beowulf Eadwald Leofsige
+        Coifi Horsa Cynric Ceawlin Icel
     }
     reserved_female_names = {
-        Frige Puck Leofflæd
+        Bebba Cynewise
     }
 
     holy_order_names = {
@@ -413,10 +415,10 @@ german_polytheism = {
     }
 
     reserved_male_names = {
-        Hama Beowulf Eadwald Leofsige
+        Bisinus
     }
     reserved_female_names = {
-        Frige Puck Leofflæd
+        Veleda Ganna Basina
     }
 
     holy_order_names = {

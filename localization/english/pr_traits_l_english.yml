@@ -101,7 +101,7 @@
   trait_sol_invictus_cult_desc:0 "Sol Invictus (Unconquerable Sun) is a continuation of the old sol cult, established in 274 CE by Emperor Aurelian he made it one of the most important cults, the cult was mostly gone by 387 CE"
 
   trait_imperial_cult:0 "Emperor cultist"
-  trait_imperial_cult_desc:0 "The cult of Serapis was pushed forward during the third century BC on the orders of Greek Pharaoh Ptolemy I Soter of the Ptolemaic Kingdom and made him patron of the ptolomic dynasty and Alexandria. In roman times Serapis continued to increase in popularity"
+  trait_imperial_cult_desc:0 "The imperial cult honoured the deified emperors, the divi, together with the goddess Roma and the genius of the living emperor. It began when the Senate deified Julius Caesar in 42 BC, and under Augustus temples to Roma and Augustus rose in the provinces. Across the empire it bound cities and provincial elites to Rome; its priests included the flamines and the Augustales, who were mostly freedmen."
 
   #Cult proceding 
   #lvl's of initiation mithras cult from top to bottom lvl 1 to 7 

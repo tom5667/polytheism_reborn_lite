@@ -31,8 +31,12 @@ kemetic_polytheism = {
         sais
     }
 
-    reserved_male_names = { Asim Ghisisi Gyasi Khons Omari Sadiki Ur Aahotepre Ahmes Akhenaten Alexander }
-    reserved_female_names = { Akili Bahiti Dalila Ife Khepri Masika Naunet Cleopatra Isis Aat Ahmose Alexandra }
+    reserved_male_names = {
+        Ramessu Thutmose Amenhotep Senwosret Mentuhotep Seti Psamtik Taharqa Imhotep Khaemwaset Herihor Ahmose
+    }
+    reserved_female_names = {
+        Hatshepsut Ahhotep Ahmose Meritamen Neferure Henuttawy Iset Isetnofret Tiye Nefertari Amenirdis Shepenupet
+    }
 
     holy_order_names = {
         { name = "holy_order_sons_of_Montu" }
@@ -65,8 +69,12 @@ atenism = {
         pr_pnubs
     }
 
-    reserved_male_names = { Asim Ghisisi Gyasi Khons Omari Sadiki Ur Aahotepre Ahmes Akhenaten Alexander }
-    reserved_female_names = { Akili Bahiti Dalila Ife Khepri Masika Naunet Cleopatra Isis Aat Ahmose Alexandra }
+    reserved_male_names = {
+        Akhenaten Tutankhaten Smenkhkare
+    }
+    reserved_female_names = {
+        Meritaten Meketaten Ankhesenpaaten Neferneferuaten
+    }
 
     holy_order_names = {
         { name = "holy_order_sons_of_aten" }

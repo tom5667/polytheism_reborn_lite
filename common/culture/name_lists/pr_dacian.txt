@@ -106,13 +106,13 @@
 	male_names = {
 		Avizina Bastiza Bikili Bikili Blegissa Blaesus Blaikisa Brasus Burebista Charnabon  Comosicus Cothelas Gudila Cotiso Dablosa Dadas Dadazi Daizus Damanais 
 		Dapyx Danillo Dardanos Dardiolai Decaeneus Decibalus Decebalus Denzibalos Denzibalus Dekinais Dicomes Dida Diegis Diengis Dieri Diernais Diourdanos Diurpaneus
-		Dourpokis Dotos Dotouzi Drilgisa Dromichaetes Dromichaeta Duccidava Duras Kaigiza Komakiza Komozoi Moskon Mucapor Mucatra Natoporus Oroles Orola Petoporus
+		Dourpokis Dotos Dotouzi Drilgisa Dromichaetes Dromichaeta Duras Kaigiza Komakiza Komozoi Moskon Mucapor Mucatra Natoporus Oroles Orola Petoporus
 		Petipor Pieporus Pouridour Rhemaxos Rholes Roles Rigozus Rolouzis  Rubobostes Scorylo Tarbus Thiadicem Thiamarkos Thiaper Tiati Tiatitis Tsinna 
 		Zinnas Sinna Tsiru Vezina Zoutula Zyraxes
 	}
 	female_names = {
 		#historical correct
-		Rescuturme Zia 
+		Rescuturme Zia Duccidava 
 		#Custom made from male pr_dacian names
 		Bikilia Blaesusa Charnabona Comosicusa Cothelasa Zina 
 		

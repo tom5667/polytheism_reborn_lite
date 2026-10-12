@@ -13,6 +13,10 @@ lusitanian_polytheism = {
         reformed_icon = lusitanian_reformed
     }
 
+    reserved_male_names = {
+        Caucenus Tautalus
+    }
+
     # Native cult centres (issue #90): Endovelicus (Ebora), Ataecina (Emerita),
     # Trebaruna/Arentius (Egitania), Nabia (Bracara)
     holy_sites = {
