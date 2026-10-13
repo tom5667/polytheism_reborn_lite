@@ -1280,3 +1280,23 @@ sesebi = {
 		sesebi_conversion_bonus # +10% County Conversion
 	}
 }
+
+# Lejre and Zeeland were retired as holy sites in vanilla 1.20.1 ("## Lejre (Retired)", 00_holy_site_types.txt:2912);
+# kept for the Norse and German faiths as pr_ sites with the old vanilla location and bonuses.
+pr_lejre = { # Hrólfr Kraki's hall, legendary royal seat of the Danes
+	county = c_sjaelland
+
+	county_holder_character_modifier = {
+		knight_effectiveness_mult = 0.2
+		prowess_per_piety_level = 1
+	}
+}
+
+pr_zeeland = { # focal point of an old Germanic cult (Nehalennia, Walcheren)
+	county = c_zeeland
+
+	county_holder_character_modifier = {
+		prowess_per_piety_level = 1
+		supply_duration = 0.2
+	}
+}

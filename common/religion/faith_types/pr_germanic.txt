@@ -22,7 +22,7 @@ norse_pagan = {
 
     holy_sites = {
         jorvik
-        lejre
+        pr_lejre
         konugardr
     }
 
@@ -409,7 +409,7 @@ german_polytheism = {
 
     holy_sites = {
         paderborn
-        zeeland
+        pr_zeeland
         hofgeismar
         augsburg
     }
