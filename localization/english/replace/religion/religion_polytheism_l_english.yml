@@ -109,9 +109,7 @@
     norse_pagan_old_adherent:0 "Old Norse Polytheist"
     norse_pagan_old_adherent_plural:0 "Old Norse Polytheists"
 
-    rf_abrahamic:0 "Abrahamic"
     rf_pagan:0 "Polytheistic"
-    rf_eastern:0 "Eastern"
     pagan_hostility_doctrine_name:0 "Polytheistic"
     pagan_hostility_doctrine_desc:0 "The following religions are Polytheistic:\n[GetReligionFamily('rf_pagan').GetReligions]"
 
