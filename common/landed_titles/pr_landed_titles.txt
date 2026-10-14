@@ -972,7 +972,7 @@ e_byzantium = {
 	}
 }
 
-# Vanilla override: Empire of France
+# Vanilla override: Empire of France (with its kingdoms France and Aquitaine)
 e_france = {
 	color = { 11 22 170 }
 	capital = c_ile_de_france
@@ -984,34 +984,36 @@ e_france = {
 		name_list_pr_romano_germanic = pr_roman_gaul
 		name_list_pr_romano_hispanic = pr_roman_gaul
 	}
-}
 
-# Vanilla override: Kingdom of France
-k_france = {
-	color = { 15 27 187 }
-	capital = c_ile_de_france
+	# k_france and k_aquitaine stay nested here: an override at top level makes the kingdom lose
+	# its de jure empire (it was shown outside the Empire of France on the map).
+	# Vanilla override: Kingdom of France
+	k_france = {
+		color = { 15 27 187 }
+		capital = c_ile_de_france
 
-	cultural_names = {
-		name_list_pr_gaulish = pr_gaulish_celtica
-		name_list_roman = pr_roman_celtica
-		name_list_pr_romano_british = pr_roman_celtica
-		name_list_pr_romano_germanic = pr_roman_celtica
-		name_list_pr_romano_hispanic = pr_roman_celtica
+		cultural_names = {
+			name_list_pr_gaulish = pr_gaulish_celtica
+			name_list_roman = pr_roman_celtica
+			name_list_pr_romano_british = pr_roman_celtica
+			name_list_pr_romano_germanic = pr_roman_celtica
+			name_list_pr_romano_hispanic = pr_roman_celtica
+		}
 	}
-}
 
-# Vanilla override: Kingdom of Aquitaine
-k_aquitaine = {
-	color = { 101 50 253 }
-	capital = c_bordeaux
+	# Vanilla override: Kingdom of Aquitaine
+	k_aquitaine = {
+		color = { 101 50 253 }
+		capital = c_bordeaux
 
-	cultural_names = {
-		name_list_pr_gaulish = pr_gaulish_aquitania
-		name_list_roman = pr_roman_aquitania
-		name_list_pr_gallo_roman = pr_roman_aquitania
-		name_list_pr_romano_british = pr_roman_aquitania
-		name_list_pr_romano_germanic = pr_roman_aquitania
-		name_list_pr_romano_hispanic = pr_roman_aquitania
+		cultural_names = {
+			name_list_pr_gaulish = pr_gaulish_aquitania
+			name_list_roman = pr_roman_aquitania
+			name_list_pr_gallo_roman = pr_roman_aquitania
+			name_list_pr_romano_british = pr_roman_aquitania
+			name_list_pr_romano_germanic = pr_roman_aquitania
+			name_list_pr_romano_hispanic = pr_roman_aquitania
+		}
 	}
 }
 
