@@ -1,0 +1,5 @@
+﻿l_english:
+  # Fervor change descriptions (change_fervor desc = ...), shown in the faith's fervor breakdown
+  fervor_gain_patriarchate_destroyed:0 "Patriarchate destroyed"
+  fervor_loss_patriarchate_destroyed:0 "$fervor_gain_patriarchate_destroyed$"
+  fervor_gain_pr_religious_festival:0 "Religious festival celebrated"

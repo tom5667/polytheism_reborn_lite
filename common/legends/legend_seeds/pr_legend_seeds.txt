@@ -14,7 +14,7 @@
 	is_valid = {
 		custom_tooltip = {
 			text = must_own_persia_tt
-			has_title = e_persia
+			has_title = title:e_persia
 			religion = religion:zoroastrianism_religion
 		}
 		prestige_level >= high_prestige_level
@@ -83,7 +83,6 @@ achilles  = {
 	chronicle = pr_mythical_descent
 	chronicle_properties = {
 		beast = flag:demigod_achilles
-		title = title:e_byzantium
 	}
 }
 

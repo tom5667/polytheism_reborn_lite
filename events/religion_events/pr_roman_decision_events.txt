@@ -1635,14 +1635,13 @@ pr_roman.0200 = {
 		name = pr_roman.0200.a
 		add_prestige = major_prestige_gain
 		add_piety = major_piety_gain
-		faith = { change_fervor = 10 }
+		faith = { change_fervor = { value = 10 desc = fervor_gain_priesthood_recreated } }
 		if = { # Vassalize if possible/needed.
 			limit = {
 				highest_held_title_tier > scope:new_priest.highest_held_title_tier
 				NOT = { scope:new_priest = { any_liege_or_above = { this = root } } }
 			}
 			create_title_and_vassal_change = {
-				coat_of_arms = k_pontifex_polytheistic
 				type = created
 				save_scope_as = change
 				add_claim_on_loss = no
@@ -1853,6 +1852,7 @@ pr_roman.0600 = {
 		faith ={
 			change_fervor = {
 				value = 5
+				desc = fervor_gain_pr_religious_festival
 			}
 		}
 	}
@@ -2117,7 +2117,7 @@ pr_roman_cult.0004 = {#meeting at secret place Mithras
 	option = {
 		name = pr_roman_cult.0004.a
 		trigger_event = pr_roman_cult.0005
-		custom_tooltip = cult_0004.a.tt
+		custom_tooltip = pr_roman_cult.0004.a.tt
 	}
 
 
@@ -2253,7 +2253,7 @@ pr_roman_cult.0009 = {#Meeting place Isis Cult
 	option = {
 		name = pr_roman_cult.0009.a
 		trigger_event = pr_roman_cult.0010
-		custom_tooltip = cult_0009.a.tt
+		custom_tooltip = pr_roman_cult.0009.a.tt
 		remove_short_term_gold = medium_gold_value
 	}
 	immediate = {
@@ -2735,56 +2735,6 @@ pr_roman_culture.0001 = {
 	}
 }
 
-pr_roman_culture.0004 = {
-	type = character_event
-	title = pr_roman_culture.0004.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { top_liege = root }
-				desc = pr_roman_culture.0004.desc.vassals
-			}
-			desc = pr_roman_culture.0004.desc.outsiders
-		}
-		desc = pr_roman_culture.0004.desc.intro
-		triggered_desc = {
-			trigger = { scope:gp_return = flag:vanilla }
-			desc = pr_roman_culture.0004.desc_vanilla
-		}
-	}
-	theme = faith
-	left_portrait = scope:scoped_ruler
-	override_background = { reference = throne_room }
-	#Celtic polyteist are happy about this unexpected turn of events!
-	option = {
-		name = pr_roman_culture.0004.a
-		trigger = { religion = religion:hellenism_religion}
-		add_stress = minor_stress_loss
-	}
-	#Vassals who do not follow the faith may decide to convert after all.
-	option = {
-		name = pr_roman_culture.0004.b
-		trigger = {
-			top_liege = root
-			NOT = { religion = religion:hellenism_religion}
-		}
-		set_character_faith_with_conversion = faith:roman_polytheism
-
-	}
-	#Those who aren't polytheist are probably horrified.
-	option = {
-		name = pr_roman_culture.0004.c
-		trigger = {
-			NOT = {
-				religion = { is_in_family = rf_cp}
-			}
-		}
-	}
-	#And, as a fallback, some people just won't care.
-	option = {
-		name = pr_roman_culture.0004.d
-	}
-}
 
 #Cult proceding
 #lvl's of initiation mithras cult
@@ -2810,9 +2760,9 @@ pr_roman_culture.0004 = {
  		hidden_effect = {
  		 create_character = {
  			employer = root
- 			template = senatenator_character
+ 			culture = root.culture
  			random_traits = no
- 			faith = faith:chalcedonian
+ 			faith = faith:catholic
  			gender = male
  			age = 30
  			save_scope_as = roman_senator
@@ -2821,9 +2771,9 @@ pr_roman_culture.0004 = {
 			hidden_effect = {
 			 create_character = {
 				employer = root
-				template = senatenator_character
+				culture = root.culture
 				random_traits = no
-				faith = faith:chalcedonian
+				faith = faith:catholic
 				gender = male
 				age = 25
 				save_scope_as = roman_senator_1
@@ -2917,7 +2867,7 @@ pr_roman.0703 ={
 		hidden_effect = {
 		 create_character = {
 			employer = root
-			template = senatenator_character
+			culture = root.culture
 			random_traits = no
 			faith = faith:catholic
 			gender = male
@@ -2929,7 +2879,7 @@ pr_roman.0703 ={
 			hidden_effect = {
 			 create_character = {
 				employer = root
-				template = senatenator_character
+				culture = root.culture
 				random_traits = no
 				faith = faith:catholic
 				gender = male
@@ -3009,56 +2959,6 @@ pr_roman.0707 ={
 	}
 }
 
-pr_roman_culture.0102 = {
-	type = character_event
-	title = pr_roman_culture.0102.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { top_liege = root }
-				desc = pr_roman_culture.0102.desc.vassals
-			}
-			desc = pr_roman_culture.0102.desc.outsiders
-		}
-		desc = pr_roman_culture.0102.desc.intro
-		triggered_desc = {
-			trigger = { scope:gp_return = flag:vanilla }
-			desc = pr_roman_culture.0102.desc_vanilla
-		}
-	}
-	theme = faith
-	left_portrait = scope:scoped_ruler
-	override_background = { reference = throne_room }
-	#Celtic polyteist are happy about this unexpected turn of events!
-	option = {
-		name = pr_roman_culture.0102.a
-		trigger = { religion = religion:hellenism_religion}
-		add_stress = minor_stress_loss
-	}
-	#Vassals who do not follow the faith may decide to convert after all.
-	option = {
-		name = pr_roman_culture.0102.b
-		trigger = {
-			top_liege = root
-			NOT = { religion = religion:hellenism_religion}
-		}
-		set_character_faith_with_conversion = faith:roman_polytheism
-
-	}
-	#Those who aren't polytheist are probably horrified.
-	option = {
-		name = pr_roman_culture.0102.c
-		trigger = {
-			NOT = {
-				religion = { is_in_family = rf_cp}
-			}
-		}
-	}
-	#And, as a fallback, some people just won't care.
-	option = {
-		name = pr_roman_culture.0102.d
-	}
-}
 
 pr_roman_culture.0103 = {
 	type = character_event
@@ -3406,6 +3306,7 @@ pr_roman.0002 = {
 	immediate = {
 		hidden_effect = {
 			create_character = {
+				gender_female_chance = root_faith_dominant_gender_adjusted_female_chance
 				employer = root
 				random_traits = yes
 				dynasty = generate
@@ -3441,7 +3342,7 @@ pr_roman.0002 = {
 	#Hand him over to the Realm Priest
 	option = {
 		name = pr_roman.0002.b
-		add_county_modifier = {
+		add_character_modifier = {
 			modifier = repaired_temple
 			years = 5
 		}
@@ -3720,7 +3621,7 @@ pr_roman.0010 = {
 					add_prestige = {
 						value = { minor_prestige_gain major_prestige_gain }
 					}
-					remove_trait = glutones
+					remove_trait = gluttonous
 				}
 			}
 			cp:councillor_court_chaplain = {
@@ -4476,7 +4377,7 @@ pr_roman.0017 = {
 				trigger = {
 					var:pr_augur_auspice = flag:pr_sacred_hens
 				}
-				desc = pr_roman.0017.scared_hens.desc
+				desc = pr_roman.0017.sacred_hens.desc
 			}
 			triggered_desc = {
 				trigger = {
@@ -5379,6 +5280,7 @@ pr_roman_cult.0035 = {
 # Vanilla 1.20 ep3_roman_restoration.0100 (events/dlc/ep3/ep3_roman_restoration_events.txt) plus two PR options:
 # restore Rome with the Roman faith, with and without Hard Mode. Re-copy from vanilla when the vanilla event changes.
 ep3_roman_restoration.0100 = {
+	id_override_priority = 1 # overrides vanilla ep3_roman_restoration_events.txt (adds the Roman options)
 	type = character_event
 	window = fullscreen_event
 	queue_icon = "gfx/interface/icons/splash_icons/splash_byzantine.dds"
@@ -7087,6 +6989,7 @@ pr_roman_cult.0046 = { #Eleusinian Cult
 				employer = root
 				random_traits = no
 				save_scope_as = cult_leader_eleusinian
+				gender = male
 				learning =  21
 				trait = eleusinian_cult
 				trait = zealous
@@ -7801,7 +7704,7 @@ pr_roman_cult.0064 = {
 		}
 		stress_impact = {
 			zealous = medium_stress_impact_loss
-			mystic = medium_stress_impact_loss
+			lifestyle_mystic = medium_stress_impact_loss
 			cynical = minor_stress_impact_gain
 		}
 	}
@@ -7918,7 +7821,7 @@ pr_roman_cult.0067 = {
 			years = 5
 		}
 		stress_impact = {
-			mystic = medium_stress_impact_loss
+			lifestyle_mystic = medium_stress_impact_loss
 			zealous = minor_stress_impact_loss
 		}
 	}
@@ -7991,7 +7894,7 @@ pr_roman_cult.0069 = {
 			years = 10
 		}
 		stress_impact = {
-			mystic = medium_stress_impact_loss
+			lifestyle_mystic = medium_stress_impact_loss
 			zealous = minor_stress_impact_loss
 			cynical = major_stress_impact_gain
 		}

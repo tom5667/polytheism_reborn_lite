@@ -3,11 +3,6 @@
 #Made by tom5667 
 ######################
 
-invite_sassanid_relatives_decision_before_last_date:0 "Desicion is aviable until January 1st 790 AD"
-invite_sassanid_relatives_decision:0 "Invite Sassanid relative"
-invite_sassanid_relatives_decision_desc:0 "We have located two of the last Sassanid relatives, they fought in Tokharistan against the Arabs and now there is a chance we can get them over here and help them reclaim the Persian crown."
-invite_sassanid_relatives_decision_tooltip:0 "Help the Sassanids back on their throne."
-invite_sassanid_relatives_decision_confirm:0 "Send invites"
 
 sassanid_reconquest:0 "Sassanid reconquest"
 sassanid_reconquest_desc:0 "As a proud member of the Sassanid dynasty, it is time to reclaim our rightful place on the Persian throne. Begin the Sassanid reconquest and restore the glory of our empire."

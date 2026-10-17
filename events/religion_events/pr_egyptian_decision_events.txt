@@ -152,6 +152,7 @@ pr_egyptian.0008 = {
 		create_character = {
 			faith = faith:kemetic_polytheism
 			employer = root
+			gender = male
 			age = {30 50}
 			trait = zealous
 			save_scope_as = priest_of_ra

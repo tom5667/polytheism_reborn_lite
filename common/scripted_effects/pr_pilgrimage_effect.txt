@@ -43,7 +43,7 @@ pr_local_pilgrimage_generic_host_effect = {
 	}
 	else_if = {
 		limit = {
-			has_activity_intent = pr_local_pilgrimage_model_intent
+			has_activity_intent = pr_local_pilgrimage_curiosity_intent
 		}
 		add_piety = 75
 		add_prestige = 75

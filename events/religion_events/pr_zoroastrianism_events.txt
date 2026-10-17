@@ -73,6 +73,7 @@ pr_zoroastrian.0004 = {
 			save_scope_as = receiver
 		}
 		create_character = {
+			gender_female_chance = root_faith_dominant_gender_adjusted_female_chance
 			employer = root
 			dynasty = generate
 			faith = faith:mazdayasna
@@ -122,6 +123,7 @@ pr_zoroastrian.0008 = {
 			save_scope_as = receiver
 		}
 		create_character = {
+			gender_female_chance = root_faith_dominant_gender_adjusted_female_chance
 			employer = root
 			dynasty = generate
 			faith = faith:mazdayasna

@@ -160,7 +160,7 @@ pr_feast_ai_will_do_value = {
 		}
 		if = {
 			limit = {
-				faith = { has_doctrine = tenet_ritual_celebrations }
+				rite = { rite_has_tenet = tenet_ritual_celebrations }
 			}
 			add = {
 				value = 35
@@ -169,7 +169,7 @@ pr_feast_ai_will_do_value = {
 		}
 		if = {
 			limit = {
-				faith = { has_doctrine = tenet_hedonistic }
+				rite = { rite_has_tenet = tenet_hedonistic }
 			}
 			add = {
 				value = 35
@@ -178,8 +178,8 @@ pr_feast_ai_will_do_value = {
 		}
 		if = {
 			limit = {
-				host.faith = {
-					has_doctrine = tenet_asceticism
+				host.rite = {
+					rite_has_tenet = tenet_asceticism
 				}
 			}
 			add = {

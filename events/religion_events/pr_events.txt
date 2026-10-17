@@ -843,230 +843,6 @@ pr.0212 = {
 	}
 }
 
-#Polytheism reborn sassanid relative
-pr.0400 ={
-	type = character_event
-	title = pr.0400.t
-	desc = pr.0400.desc
-	theme = learning_scholarship_focus
-	immediate = {
-		hidden_effect = {
-			add_courtier = character:180643
-			add_courtier = character:1059969
-		}
-	}
-	lower_center_portrait = {
-		character = root
-		animation = idle
-	}
-	lower_left_portrait = {
-		character = character:180643
-		animation = idle
-	}
-	lower_right_portrait = {
-		character = character:1059969
-		animation = idle
-	}
-	option={
-		name = pr.0400.stay
-		add_prestige = 300
-	}
-	option = {
-		name = pr.0400.abdicate_samani
-		trigger = {
-			completely_controls = title:c_balkh
-		}
-		create_title_and_vassal_change = {
-			type = conquest
-			save_scope_as = title_change
-			add_claim_on_loss = yes
-		}
-		title:d_balkh= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-		title:c_balkh= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-		title:c_guzgan= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-
-				
-			}
-		}
-		title:c_marvarrud= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-		title:c_rivsharan= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-		title:c_west-tokharestan= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-		title:c_east-tokharestan= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-		title:c_wakhsh= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-		title:c_rasht= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-		title:c_wakhsh= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-		title:c_khuttal= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-		resolve_title_and_vassal_change = scope:title_change
-		
-		set_player_character = character:180643
-		ai_chance = {
-			base = 50 
-		}
-
-	}
-	option = {
-		name = pr.0400.abdicate_afrighid
-		trigger = {
-			completely_controls = title:c_gurganj
-		}
-		create_title_and_vassal_change = {
-			type = conquest
-			save_scope_as = title_change
-			add_claim_on_loss = yes
-		}
-		title:k_khwarezmia= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-		title:c_gurganj= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-
-				
-			}
-		}
-		title:c_kurdar= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-		title:c_sarykamysh= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-		title:c_uzboy= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-		title:c_kath= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-		title:c_khiva= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-		title:c_darghan= {
-			change_title_holder ={
-				holder = character:180643
-				change = scope:title_change
-				#liege = root
-				
-			}
-		}
-
-		resolve_title_and_vassal_change = scope:title_change
-		set_player_character = character:180643
-		ai_chance = {
-			base = 50 
-		}
-	}
-	option={
-		name = pr.0400.send_away
-		remove_courtier_or_guest = character:180643
-		remove_courtier_or_guest = character:180642
-		ai_chance={
-			base=50
-		}
-	}
-}
 
 pr.0500={
 	type = character_event
@@ -1691,6 +1467,7 @@ pr.0030 = {#Choose library
 	immediate = { 
 		hidden_effect = {
 			create_character = {
+				gender_female_chance = root_faith_dominant_gender_adjusted_female_chance
 				employer = root
 				random_traits = no
 				dynasty = generate
@@ -1700,6 +1477,7 @@ pr.0030 = {#Choose library
 				trait = education_learning_4
 				}
 			create_character = {
+				gender_female_chance = root_faith_dominant_gender_adjusted_female_chance
 				employer = root
 				random_traits = no
 				dynasty = generate
@@ -4038,7 +3816,7 @@ pr.0044 = {
 			# Muslim Reaction
 			triggered_desc = {
 				trigger = {
-					root.faith.religion = faith:ashari.religion
+					root.faith.religion = religion:islam_religion
 				}
 				desc = pr.0044.desc.muslim
 			}
@@ -4056,7 +3834,7 @@ pr.0044 = {
 			triggered_desc = {
 				trigger = {
 					NOR = {
-						root.faith.religion = faith:ashari.religion
+						root.faith.religion = religion:islam_religion
 						root.faith.religion = faith:hellenic_pagan.religion
 						root = { pr_is_cultus_deorum_trigger = yes }
 					}
@@ -4132,7 +3910,7 @@ pr.0044 = {
 	option = {
 		name = {
 			trigger = {
-				faith.religion = faith:ashari.religion
+				faith.religion = religion:islam_religion
 			}
 			text = pr.0044.a.a
 		}
@@ -4148,7 +3926,7 @@ pr.0044 = {
 		name = {
 			trigger = {
 				NOR = {
-					faith.religion = faith:ashari.religion
+					faith.religion = religion:islam_religion
 					faith.religion = faith:hellenic_pagan.religion
 					pr_is_cultus_deorum_trigger = yes
 				}

@@ -148,12 +148,13 @@
   pr_celtic.0414.desc.celtica:0 "Celtica, Vercingetorix once ruled these lands as leader of the combined pr_gaulish tribes ready to fight of the the Romans. He ended up in Rome in a prison\nNow with the most of the old Celtic lands under control it's up to us to decide what happens next"
 
 
+  pr_celtic.0414.desc.fallback:0 "Step by step, the lands of our Celtic ancestors return to our hands. The reconquest goes on."
   pr_celtic.0414.a:0 "Onwards!"
   pr_celtic.0414.b:0 "Onwards!"
   pr_celtic.0414.c:0 "Onwards!"
   pr_celtic.0414.d:0 "May [ROOT.Char.GetFaith.WarGodName] guide us forward !"
   pr_celtic.0414.e:0 "Onwards!"
-  pr_celtic.0414.f:0 "Our pr_iberian foothold is back"
+  pr_celtic.0414.f:0 "Our Iberian foothold is back"
   pr_celtic.0414.g:0 "May the mighty Belgae return"
   pr_celtic.0414.h:0 "[ROOT.Char.GetFaith.HighGodName] be Praised!"
 
@@ -196,7 +197,7 @@
   pr_celtic.0422.a:0 "A wise and fair judgment."
 
   pr_celtic.0423.t:0 "The Fading Verse"
-  pr_celtic.0423.desc:0 "My court druid, [court_druid.GetFirstName], has requested an audience, a look of deep concern on [court_druid.GetHerHis] face. 'My lord,' [court_druid.GetSheHe] begins, 'our knowledge is a library carried in memory. The genealogies of kings, the laws of the land, the cycles of the stars, and the stories of the gods... all are held in verse, passed from teacher to student. But we are few, and memories can fail.'\n\n'I fear that if we do not act, this great ocean of knowledge will evaporate. I ask for your patronage to establish a school, a place where I can dedicate myself to training a new generation. It is a process that takes twenty years for a single student, but it is the only way to ensure our past is not forgotten.'"
+  pr_celtic.0423.desc:0 "My court druid, [druidic_leader.GetFirstName], has requested an audience, a look of deep concern on [druidic_leader.GetHerHis] face. 'My lord,' [druidic_leader.GetSheHe] begins, 'our knowledge is a library carried in memory. The genealogies of kings, the laws of the land, the cycles of the stars, and the stories of the gods... all are held in verse, passed from teacher to student. But we are few, and memories can fail.'\n\n'I fear that if we do not act, this great ocean of knowledge will evaporate. I ask for your patronage to establish a school, a place where I can dedicate myself to training a new generation. It is a process that takes twenty years for a single student, but it is the only way to ensure our past is not forgotten.'"
   pr_celtic.0423.a:0 "An excellent idea. You have my support."
   pr_celtic.0423.b:0 "We have more pressing concerns."
 

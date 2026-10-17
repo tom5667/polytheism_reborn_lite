@@ -1,22 +1,15 @@
-##################
+﻿##################
 #Credits cybrxkhan
 ##################
 
 heritage_kemetic = {
 	type = heritage
-	
-	can_pick_for_hybridization = {
-		trigger_if = {
-			limit = { has_cultural_parameter = hybridize_keep_heritage }
-			custom_description = {
-				text = hybridize_keep_heritage_must_keep_same_heritage
-				has_cultural_pillar = heritage_kemetic
-			}
+
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_kemetic
 		}
 	}
 
-	parameters = {
-		heritage_group_levantine = yes
-		heritage_family_middle_eastern = yes 
-	}
+	audio_parameter = mena # as vanilla heritage_egyptian (1.20 dropped the hybridization check and heritage group parameters)
 }

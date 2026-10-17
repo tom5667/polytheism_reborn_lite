@@ -6,4 +6,6 @@ open_1st_beer_brewery_desc:0 "As was done centuries ago, so it's done again the 
 open_druidic_place:0 "Open Druidic Gathering Place"
 open_druidic_place_desc:0 "The druids sacred place for their gatherings and rituals"
 pax_romana_modifier:0 "The Pax Romana"
+druidic_school_modifier:0 "Druidic School"
+druidic_school_modifier_desc:0 "A druid teaches a new generation here, passing on the laws, genealogies and lore of the land in verse."
 pax_romana_modifier_desc:0 "The closing of the Gates of Janus has ushered in an era of unprecedented peace and prosperity."
