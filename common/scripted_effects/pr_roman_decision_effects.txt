@@ -115,28 +115,6 @@
 		}
 	}
 }
-roman_illyrian_sr_notify_players_effect = {
-	every_player = {
-		limit = {
-			Not = {this = root}
-			capital_province = {
-			geographical_region = world_europe_south_east
-			}
-		}
-		trigger_event = pr_roman_culture.0004
-	}
-}
-pr_gallo_roman_sr_notify_players_effect = {
-	every_player = {
-		limit = {
-			Not = {this = root}
-			capital_province = {
-			geographical_region = world_europe_south_east
-			}
-		}
-		trigger_event = pr_roman_culture.0102
-	}
-}
 select_valid_daughter_and_save_scope = {
 
 	# Loop through children and save up to 4 valid daughters
@@ -235,6 +213,7 @@ choose_new_cult_leader_serapis= {
 		}
 		create_character = {
 			random_traits = no
+			employer = root
 			save_scope_as = new_cult_leader_serapis
 			learning =  21
 			gender  = male
@@ -288,7 +267,9 @@ choose_new_cult_leader_eleusinian= {
 		}
 		create_character = {
 			random_traits = no
+			employer = root
 			save_scope_as = new_cult_leader_eleusinian
+			gender = male
 			learning =  21
 			trait = eleusinian_cult
 			trait = zealous
@@ -314,6 +295,7 @@ choose_new_cult_leader_bacchus= {
 		}
 		create_character = {
 				random_traits = no
+				employer = root
 				save_scope_as = new_cult_leader_bacchus
 				learning =  21
 				gender  = male
@@ -342,6 +324,7 @@ choose_new_cult_leader_cybele= {
 		create_character = {
 			age = {30 50}
 			random_traits = no
+			employer = root
 			save_scope_as = new_cult_leader_cybele
 			diplomacy =  21
 			gender  = male
@@ -371,6 +354,7 @@ choose_new_cult_leader_mithras= {
 		create_character = {
 			template = new_commander_character
 			random_traits = no
+			employer = root
 			save_scope_as = new_cult_leader_mithras
 			martial  = 20
 			learning =  8
@@ -399,6 +383,7 @@ choose_new_cult_leader_imperial= {
 		}
 		create_character = {
 			random_traits = no
+			employer = root
 			save_scope_as = new_cult_leader_imperial
 			diplomacy =  21
 			gender  = male

@@ -675,7 +675,7 @@ pr_germanic.0009 = {
 		animation = personality_rational
 	}
 	right_portrait = {
-		character = german_volva
+		character = scope:german_volva
 		animation = personality_rational
 	}
 	option = { #

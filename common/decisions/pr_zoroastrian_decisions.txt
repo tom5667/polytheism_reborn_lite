@@ -3,71 +3,7 @@
 # Specifieke besluiten voor de Zoroastrian geloofsgroep
 # made by tom5667
 ##################################################
-####################################################################################################################################
-#Update decision from infromation from link below -> engough information to make a decision for the earliest bookmark of bookmarks+
-#https://forum.paradoxplaza.com/forum/threads/the-sassanids-in-charlemagne-one-final-love-letter.1429937/
-#dynasty id of the sassanids 1029100
-####################################################################################################################################
-invite_sassanid_relatives_decision ={
-    desc = invite_sassanid_relatives_decision_desc
-    selection_tooltip = invite_sassanid_relatives_decision_tooltip
-    picture = {
-        reference = "gfx/interface/illustrations/decisions/Sassanid.dds"
-    }
-    decision_group_type = major
-    is_shown ={
-        is_adult = yes
-        is_landed = yes
-        is_imprisoned = no
-        is_at_war = no
-
-        culture = { has_cultural_pillar = heritage_iranian }
-        current_date <= 790.1.1
-        NOR={
-            is_target_in_global_variable_list = {
-                name = unavailable_unique_decisions_invite_relative
-                target = flag:flag_restored_pr_invite_relative
-            }
-            has_dlc_feature = roads_to_power #As adventurer you can conquer the realm yourself so that would make more sense
-        }
-    }
-    is_valid ={
-        custom_description = {
-            text = invite_sassanid_relatives_decision_before_last_date
-            current_date <= 790.1.1
-        }
-        #exists = character:180643
-        # AND={
-        # 	scope:mahrzad={
-        # 		character = character:180643
-        # 	}
-        # 	is_alive = yes
-        # }
-        has_religion = religion:zoroastrianism_religion
-        OR={
-            dynasty = dynasty:1042112
-            dynasty = dynasty:7331
-            dynasty = dynasty:100685
-        }
-    }
-    cost={#The remaining sassanids are already above 50 so no to high costs
-        piety = 100
-        gold = 25
-    }
-    effect={
-        trigger_event = pr.0400
-
-        hidden_effect = {
-            add_to_global_variable_list = {
-                name = unavailable_unique_decisions_invite_relative
-                target = flag:flag_restored_pr_invite_relative
-            }
-        }
-    }
-    ai_check_interval = 0 # player-only until an AI weight is designed (#147)
-}
-
-#Decisions to make the reconquest of the sassanid empire more fun, Keeping in mind the age of the last recorded Sassanids
+#################################Decisions to make the reconquest of the sassanid empire more fun, Keeping in mind the age of the last recorded Sassanids
 #If Mehrzad get's children who can continue the reconquest will be fine.
 
 #Start the reconquest in Zuranje
@@ -168,7 +104,7 @@ send_envoy_to_dabuyids_decision={
     is_shown={
         title:d_tabaristan.holder = {
             religion = religion:zoroastrianism_religion
-            dynasty_house = house:house_dabuyid
+            house = house:house_dabuyid
         }
         is_target_in_global_variable_list = {
             name = unavailable_unique_decisions_reconquest
@@ -315,4 +251,6 @@ pr_reintroduce_old_persian_names = {
             }
         }
     }
+
+    ai_check_interval = 0 # player-only until an AI weight is designed (#147)
 }

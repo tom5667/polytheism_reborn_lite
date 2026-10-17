@@ -95,7 +95,7 @@ pr_celtic.0001 = {
 		name = pr_celtic.0001.a
 		add_prestige = major_prestige_gain
 		add_piety = major_piety_gain
-		faith = { change_fervor = 10 }
+		faith = { change_fervor = { value = 10 desc = fervor_gain_priesthood_recreated } }
 		if = { # Vassalize if possible/needed.
 			limit = {
 				highest_held_title_tier > scope:new_priest.highest_held_title_tier
@@ -501,6 +501,7 @@ pr_celtic.0300 = {
 		faith ={ 
 			change_fervor = {
 				value = 5
+				desc = fervor_gain_pr_religious_festival
 			}
 		}
 	}
@@ -518,6 +519,7 @@ pr_celtic.0301 = {
 		faith ={ 
 			change_fervor = {
 				value = 5
+				desc = fervor_gain_pr_religious_festival
 			}
 		}
 	}
@@ -535,6 +537,7 @@ pr_celtic.0302 = {
 		faith ={ 
 			change_fervor = {
 				value = 5
+				desc = fervor_gain_pr_religious_festival
 			}
 		}
 	}
@@ -552,7 +555,7 @@ pr_celtic.0303 ={
 		faith ={ 
 			change_fervor = {
 				value = 5
-				
+				desc = fervor_gain_pr_religious_festival
 			}
 		}
 	}
@@ -571,7 +574,7 @@ pr_celtic.0304 ={
 		faith ={ 
 			change_fervor = {
 				value = 5
-				
+				desc = fervor_gain_pr_religious_festival
 			}
 		}
 	}
@@ -590,7 +593,7 @@ pr_celtic.0305 ={
 		faith ={ 
 			change_fervor = {
 				value = 5
-				
+				desc = fervor_gain_pr_religious_festival
 			}
 		}
 	}
@@ -832,7 +835,7 @@ pr_celtic.0413 = {
 					location = { geographical_region = world_europe_west_britannia }
 					is_landed = yes
 					is_independent_ruler = yes
-					is_neighbor_to_realm = root
+					primary_title = { is_neighbor_to_realm = root } # landed_title trigger
 				}					
 			}
 			save_scope_as = germanic_invader
@@ -1845,7 +1848,7 @@ pr_celtic.0423 = {
 		name = pr_celtic.0423.a # An excellent idea. You have my support.
 		remove_short_term_gold = 150
 		add_piety = medium_piety_gain
-		capital_province = {
+		capital_county = {
 			add_county_modifier = {
 				modifier = druidic_school_modifier
 				years = 25

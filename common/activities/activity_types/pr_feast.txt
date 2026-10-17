@@ -2723,7 +2723,7 @@ pr_activity_saturnalia = {
 									}
 								}
 							}
-							scheme_freeze = { days = 10 }
+							scheme_freeze = { reason = "BEFRIENDING_AT_FEAST" days = 10 }
 						}
 					}
 					# And now, the main event!
@@ -2759,7 +2759,6 @@ pr_activity_saturnalia = {
 										is_diff_faith_or_culture_trigger = {
 											CHAR = scope:host
 											STATUS = involved
-											STRUGGLE_TYPE = iberian_struggle
 										}
 									}
 								}
@@ -5677,7 +5676,7 @@ pr_activity_winter_solstice = {
 									}
 								}
 							}
-							scheme_freeze = { days = 10 }
+							scheme_freeze = { reason = "BEFRIENDING_AT_FEAST" days = 10 }
 						}
 					}
 					# And now, the main event!
@@ -5713,7 +5712,6 @@ pr_activity_winter_solstice = {
 										is_diff_faith_or_culture_trigger = {
 											CHAR = scope:host
 											STATUS = involved
-											STRUGGLE_TYPE = iberian_struggle
 										}
 									}
 								}
@@ -8624,7 +8622,7 @@ pr_activity_summer_solstice = {
 									}
 								}
 							}
-							scheme_freeze = { days = 10 }
+							scheme_freeze = { reason = "BEFRIENDING_AT_FEAST" days = 10 }
 						}
 					}
 					# And now, the main event!
@@ -8660,7 +8658,6 @@ pr_activity_summer_solstice = {
 										is_diff_faith_or_culture_trigger = {
 											CHAR = scope:host
 											STATUS = involved
-											STRUGGLE_TYPE = iberian_struggle
 										}
 									}
 								}
@@ -11575,7 +11572,7 @@ pr_activity_winter_solstice_germanic = {
 									}
 								}
 							}
-							scheme_freeze = { days = 10 }
+							scheme_freeze = { reason = "BEFRIENDING_AT_FEAST" days = 10 }
 						}
 					}
 					# And now, the main event!
@@ -11611,7 +11608,6 @@ pr_activity_winter_solstice_germanic = {
 										is_diff_faith_or_culture_trigger = {
 											CHAR = scope:host
 											STATUS = involved
-											STRUGGLE_TYPE = iberian_struggle
 										}
 									}
 								}
@@ -14522,7 +14518,7 @@ pr_activity_summer_solstice_germanic = {
 									}
 								}
 							}
-							scheme_freeze = { days = 10 }
+							scheme_freeze = { reason = "BEFRIENDING_AT_FEAST" days = 10 }
 						}
 					}
 					# And now, the main event!
@@ -14558,7 +14554,6 @@ pr_activity_summer_solstice_germanic = {
 										is_diff_faith_or_culture_trigger = {
 											CHAR = scope:host
 											STATUS = involved
-											STRUGGLE_TYPE = iberian_struggle
 										}
 									}
 								}

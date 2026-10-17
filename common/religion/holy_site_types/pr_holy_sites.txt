@@ -15,6 +15,7 @@ giza = {
 
 cumae = {
 	county = c_napoli
+	barony = b_aversa # not b_napoli: vanilla puts the Naples university special building slot there
 	
 	county_holder_character_modifier = {
 		learning = 1

@@ -354,13 +354,14 @@
 
   pr_roman_cult.0004.t:0 "The Hidden Location"
   pr_roman_cult.0004.desc:0 "#F 'Welcome, welcome. So you are the one who sent the application,' the voice echoes in the dim chamber.#!\n\n'Mithras, god of war, is beloved by soldiers, and many of them count themselves among our brothers. You too have made a name for yourself, so we are pleased to say — we may begin the initiation.'"
-  pr_roman_cult.0004.a.tt:0 "Historical context: the real initiation has not been preserved, so this is partly conjecture and fiction. What is known is that it was an initiation processs of seven grades, whose names have survived. The events build upon that framework."
+  pr_roman_cult.0004.a.tt:0 "Historical context: the real initiation has not been preserved, so this is partly conjecture and fiction. What is known is that it was an initiation process of seven grades, whose names have survived. The events build upon that framework."
   pr_roman_cult.0004.a:0 "Start the initiation"
 
   pr_roman_cult.0005.t:0 "The Initiation"
   pr_roman_cult.0005.desc:0 "#F We stand before the statue of Mithras. After the first degree of initiation, I am handed a knife.#!\n\n'Now, make a cut in your hand,' the Pater instructs. 'Let a few drops of blood fall upon the plate, and speak these words: I swear I will always follow the ways of Mithras, and will never betray my brothers and sisters.'\n\nA few moments later, it is done. I am now part of the cult, beginning my journey as a Corax."
   pr_roman_cult.0005.trait:0 "Finally I'm part of the Mithras cult"
   pr_roman_cult.0005.religion:0 "Finally I'm part of the Mithras cult"
+  pr_roman_cult.0005.ai:0 "$pr_roman_cult.0005.trait$"
 
   #Standard decline answer 
   pr_roman_cult.0006.t:0 "The Answer"
@@ -378,7 +379,7 @@
 
   pr_roman_cult.0009.t:0 "Temple Of Isis"
   pr_roman_cult.0009.desc:0 "Inside, the air is thick with incense and the murmur of unseen worshippers. A priestess, her eyes deep and knowing, greets me. She seems to have been expecting me. 'The Mother has called you,' she says, her voice a silken whisper. 'Are you ready to embrace her mysteries?' A shiver runs down my spine. This is far beyond a simple pilgrimage; this is a true test."
-  cult_009.a.tt:0 "Historical context, the real initiation has not been preserved, there are sources that say a initiation wasn't necessary.So it's a bit guessing and pure fiction."
+  pr_roman_cult.0009.a.tt:0 "Historical context: the real initiation has not been preserved, and some sources say an initiation was not necessary. So this is partly conjecture and fiction."
   pr_roman_cult.0009.a:0 "start the initiation"
 
   pr_roman_cult.0010.t:0 "The Initiation"
@@ -437,6 +438,7 @@
   pr_roman_cult.0021.desc:0 "The Hierophant is a man forged from steel and sunlight, his eyes burning with an intense fire. 'You seek order in chaos, strength in division,' he states, not as a question, but as a fact. 'Sol Invictus is not a god of petty favors. He is the divine principle of order, the eternal victor, the soul of the Empire. To follow him is to embody his radiance, to become an unconquerable pillar for your people. The initiation is simple, yet profound... you must swear an oath, not just of loyalty, but of purpose. To uphold order, to be a light against the darkness, and to recognize the divine fire within yourself as a reflection of the Sun.' He extends a hand, upon which rests a simple bronze medallion depicting a radiant sun."
   cult_021.a.tt:0 "Historical context, Couldn't find any info about an initiation so this event is fictional, if someone has some more info let me know on steam or discord."
   pr_roman_cult.0021.trait:0 "I swear the oath. I will be Unconquered!"
+  pr_roman_cult.0021.religion:0 "I swear the oath, and will secretly honour the gods of Rome."
 
 
   #Imperial cult 
@@ -614,12 +616,14 @@
   pr_roman.0016.sacred_hens.desc:0 "The cage opened, what will the hens do will they stay in the cage or come out and eat?\nNot long after did a small prayer to [ROOT.Char.GetFaith.HighGodName] The hens came out of the cage and started eating. The augur watched and after a few minutes he said. "The gods have spoken they approve this war to be fought [ROOT.Char.GetFaith.WarGodName] Invicta!"\n\nNow we can go to battle the enemy in knowledge that the gods approve our actions."
   pr_roman.0016.eagle.desc:0 "The [GetCourtPositionType('pr_court_augur_court_position').GetName()] opened the cage of the eagle and he immediately took of to the sky en circled high above us all. The augur waited a few minutes and said "As the eagle flies high above us, $roman_polytheism_high_god_name$ Optimus Maximus certainly approves the actions of [scoped_ruler.GetTitledFirstName]."\n\nNow the gods have approved the stability in my realm is once more assured!"
   pr_roman.0016.crows.desc:0 "The [GetCourtPositionType('pr_court_augur_court_position').GetName()] Stands next to the cage of the crows, he let's them out they immediatly fly to a tree nearby. A few minutes later the crows start to make sound, the augur listened and not much later hey said "Their sound is like a song played by $roman_polytheism_good_god_apollo$ the gods approve the the financial state of the realm"\n\nNow the gods have approved the trade in my realm is once more assured!"
+  pr_roman.0016.fallback.desc:0 "$pr_roman.0015.fallback.desc$"
   pr_roman.0016.a:0 "The gods approve!"
 
   pr_roman.0017.t:0 "Augur Accepts Bribe"
   pr_roman.0017.sacred_hens.desc:0 "The augur told me that he will use hens that haven't eaten in a while so a good outcome is assured."
   pr_roman.0017.eagle.desc:0 "The augur told me that he has a eagle that flies high on order so that a good outcome is assured."
   pr_roman.0017.crows.desc:0 "The augur told me that he that crows will make song like sounds so that a good outcome is assured."
+  pr_roman.0017.fallback.desc:0 "$pr_roman.0015.fallback.desc$"
   pr_roman.0017.a:0 "Great!"
 
   pr_roman.0018.t:0 "Augur Didn't Accept"

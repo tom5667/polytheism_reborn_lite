@@ -1053,7 +1053,7 @@ k_carthaginensis = {
 	definite_form = yes
 	ruler_uses_title_name = no
 	landless = no
-	capital = c_cartagena
+	capital = c_murcia # Cartagena is a barony of Murcia
 
 	can_create = {
 		OR = {

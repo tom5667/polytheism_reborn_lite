@@ -1,9 +1,7 @@
 ﻿coa_switch_to_polytheism_trigger = {
+	# polytheist holders only (all PR religions and vanilla pagan religions are rf_pagan); decided 2026-10-17 (#187)
 	holder = {
-		NOT = {
-			faith.religion = religion:christianity_religion
-			faith.religion = religion:islam_religion
-		}
+		religion = { is_in_family = rf_pagan }
 	}
 }
 

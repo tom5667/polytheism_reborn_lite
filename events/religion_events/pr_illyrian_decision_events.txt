@@ -20,6 +20,7 @@ pr_illyrian.0001 = {
 				culture = root.culture
 				faith = root.faith
 				learning = {15 20}
+				location = root.capital_province
 				dynasty = none
 				save_scope_as = medaurus_priest
 			}

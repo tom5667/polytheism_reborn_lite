@@ -462,12 +462,6 @@
   pr.0043.a:0 "Glory to God!"
 
   #Invite relatives
-  pr.0400.t:0 "The Sassanid Relatives"
-  pr.0400.desc:0 "#F They are finally here. First we gave them food and drinks to help them recover from their long journey.#!\n\nAfter some time we came to business: can we help them back on the throne? Yes, our families share the same bloodline, but we still need soldiers to fight with us and remove those Abbasids from Persia, as the Chinese troops don't want to help. We are on our own. It's up to us — do we help them, or do we send them back?"
-  pr.0400.stay:0 "Invite them to stay"
-  pr.0400.abdicate_samani:0 "Give them your titles"
-  pr.0400.abdicate_afrighid:0 "Give them your titles"
-  pr.0400.send_away:0 "Send them back"
 
   #Sassanid Reconquest
   pr.0500.t:0 "Start of the reconquest"

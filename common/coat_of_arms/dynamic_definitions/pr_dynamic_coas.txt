@@ -64,14 +64,6 @@ b_kos = {
 		coat_of_arms = b_kos_polytheitic
 	}
 }
-c_hereford = {
-	item = {
-		trigger = {
-			coa_switch_to_polytheism_trigger = yes
-		}
-		coat_of_arms = c_rhodos_polytheistic
-	}
-}
 c_rhodos= {
 	item = {
 		trigger = {
@@ -184,12 +176,25 @@ k_wales = {
 		coat_of_arms = k_wales_polytheistic
 	}
 }
-k_england = {
+k_england = { # replaces vanilla 00_dynamic_coas.txt k_england; vanilla items kept below
 	item = {
 		trigger = {
 			coa_switch_to_polytheism_trigger = yes
 		}
 		coat_of_arms = k_england_polytheistic
+	}
+	item = {
+		trigger = {
+			coa_switch_to_norman_trigger = yes
+			coa_england_switches_to_france_coa_trigger = yes
+		}
+		coat_of_arms = k_england_france
+	}
+	item = {
+		trigger = {
+			coa_switch_to_norman_trigger = yes
+		}
+		coat_of_arms = k_england_norman
 	}
 }
 d_ephese = {
@@ -311,15 +316,27 @@ k_africa = {
 }
 #d_druidic
 
-e_spain =  {
+e_spain = { # replaces vanilla 00_dynamic_coas.txt e_spain; vanilla item kept
 	item = {
 		trigger = {
 			coa_switch_to_polytheism_trigger = yes
 		}
 		coat_of_arms = e_spain_polytheistic
 	}
-}
-e_spain = {
+	item = {
+		trigger = {
+			OR = {
+				holder.faith.religion = religion:islam_religion
+				holder.culture = {
+					OR = {
+						has_coa_gfx = arabic_group_coa_gfx
+						has_coa_gfx = berber_group_coa_gfx
+					}
+				}
+			}
+		}
+		coat_of_arms = e_spain_islamic
+	}
 	item = {
 		trigger = {
 			coa_switch_to_visigothic_trigger = yes

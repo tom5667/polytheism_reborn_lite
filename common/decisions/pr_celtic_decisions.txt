@@ -33,7 +33,7 @@ pr_celtic_restore_high_priesthood_decision = {
         custom_description = {
             text = restore_high_priesthood_holy_sites
             faith = {
-                any_holy_site = {
+                any_holy_site_barony = {
                     OR = {
                         county.holder = root
                         county.holder.top_liege = { this = root }
@@ -1333,7 +1333,7 @@ pr_celtic_push_out_the_sassenach_saga_decision = {
     is_shown = {
         AND = {
             NOT = {
-                has_character_flag = triggered_push_out_sassenach_this_lifetime
+                has_character_flag = triggered_push_out_sassanach_this_lifetime
             }
             OR = {
                 culture = { has_cultural_pillar = heritage_goidelic }

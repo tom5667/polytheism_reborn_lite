@@ -218,6 +218,7 @@ pr_daco_thracian.0009 = {
 	immediate = {
 		hidden_effect = {
 			create_character = {
+				gender_female_chance = root_faith_dominant_gender_adjusted_female_chance
 				employer = root
 				random_traits = yes
 				dynasty = generate

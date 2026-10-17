@@ -11,6 +11,7 @@
   pr_activity_saturnalia_phase_toast:0 "Toasts to Saturn"
   pr_activity_saturnalia_province_desc:0 "A province worthy of hosting a Saturnalia celebration."
   pr_activity_saturnalia_host_desc:0 "You will host a Saturnalia feast in honor of Saturn."
+  pr_activity_saturnalia_guest_desc:0 "$activity_feast_guest_desc$"
   pr_activity_saturnalia_conclusion_desc:0 "The Saturnalia has concluded. May Saturn bless your reign."
 
   # --- Winter Solstice (Celtic) ---
@@ -20,6 +21,7 @@
   pr_activity_winter_solstice_phase_toast:0 "Solstice Toasts"
   pr_activity_winter_solstice_province_desc:0 "A province worthy of hosting a winter solstice celebration."
   pr_activity_winter_solstice_host_desc:0 "You will host a winter solstice feast."
+  pr_activity_winter_solstice_guest_desc:0 "$activity_feast_guest_desc$"
   pr_activity_winter_solstice_conclusion_desc:0 "The winter solstice feast has concluded. The light returns."
 
   # --- Summer Solstice (Celtic) ---
@@ -29,6 +31,7 @@
   pr_activity_summer_solstice_phase_toast:0 "Midsummer Toasts"
   pr_activity_summer_solstice_province_desc:0 "A province worthy of hosting a summer solstice celebration."
   pr_activity_summer_solstice_host_desc:0 "You will host a summer solstice feast."
+  pr_activity_summer_solstice_guest_desc:0 "$activity_feast_guest_desc$"
   pr_activity_summer_solstice_conclusion_desc:0 "The summer solstice feast has concluded. The sun shines upon your realm."
 
   # --- Winter Solstice (Germanic) ---
@@ -38,6 +41,7 @@
   pr_activity_winter_solstice_germanic_phase_toast:0 "Yule Oaths"
   pr_activity_winter_solstice_germanic_province_desc:0 "A province worthy of hosting a Yule celebration."
   pr_activity_winter_solstice_germanic_host_desc:0 "You will host a Yule feast."
+  pr_activity_winter_solstice_germanic_guest_desc:0 "$activity_feast_guest_desc$"
   pr_activity_winter_solstice_germanic_conclusion_desc:0 "The Yule feast has concluded. The gods have heard your oaths."
 
   # --- Summer Solstice (Germanic) ---
@@ -47,6 +51,7 @@
   pr_activity_summer_solstice_germanic_phase_toast:0 "Toasts to the Gods"
   pr_activity_summer_solstice_germanic_province_desc:0 "A province worthy of hosting a summer blot."
   pr_activity_summer_solstice_germanic_host_desc:0 "You will host a summer blot feast."
+  pr_activity_summer_solstice_germanic_guest_desc:0 "$activity_feast_guest_desc$"
   pr_activity_summer_solstice_germanic_conclusion_desc:0 "The summer blot has concluded. The gods are pleased."
 
   # =============================================
@@ -59,6 +64,7 @@
   pr_local_kogaionon_pilgrimage_phase:0 "The Sacred Journey"
   pr_activity_kogaionon_pilgrimage_province_desc:0 "A destination worthy of a pilgrimage to Kogaionon."
   pr_activity_kogaionon_pilgrimage_host_desc:0 "You will lead a pilgrimage to Kogaionon."
+  pr_activity_kogaionon_pilgrimage_guest_desc:0 "$activity_pilgrimage_guest_desc$"
   pr_activity_kogaionon_pilgrimage_conclusion_desc:0 "Your pilgrimage to Kogaionon is complete. Zalmoxis watches over you."
 
   # --- Cnoc Uisnigh Pilgrimage (Celtic) ---
@@ -67,6 +73,7 @@
   pr_local_cnoc_uisnigh_pilgrimage_phase:0 "The Sacred Journey"
   pr_activity_cnoc_uisnigh_pilgrimage_province_desc:0 "A destination worthy of a pilgrimage to Uisneach."
   pr_activity_cnoc_uisnigh_pilgrimage_host_desc:0 "You will lead a pilgrimage to Uisneach."
+  pr_activity_cnoc_uisnigh_pilgrimage_guest_desc:0 "$activity_pilgrimage_guest_desc$"
   pr_activity_cnoc_uisnigh_pilgrimage_conclusion_desc:0 "Your pilgrimage to Uisneach is complete. The old gods walk with you."
 
   # --- Delphi Pilgrimage (Hellenic) ---
@@ -75,6 +82,7 @@
   pr_local_delphi_pilgrimage_phase:0 "The Sacred Journey"
   pr_activity_delphi_pilgrimage_province_desc:0 "A destination worthy of a pilgrimage to Delphi."
   pr_activity_delphi_pilgrimage_host_desc:0 "You will lead a pilgrimage to Delphi."
+  pr_activity_delphi_pilgrimage_guest_desc:0 "$activity_pilgrimage_guest_desc$"
   pr_activity_delphi_pilgrimage_conclusion_desc:0 "Your pilgrimage to Delphi is complete. The oracle has spoken."
 
   # --- Vogtei Pilgrimage (Germanic) ---
@@ -83,6 +91,7 @@
   pr_local_vogtei_pilgrimage_phase:0 "The Sacred Journey"
   pr_activity_vogtei_pilgrimage_province_desc:0 "A destination worthy of a pilgrimage to the Irminsul."
   pr_activity_vogtei_pilgrimage_host_desc:0 "You will lead a pilgrimage to the Irminsul."
+  pr_activity_vogtei_pilgrimage_guest_desc:0 "$activity_pilgrimage_guest_desc$"
   pr_activity_vogtei_pilgrimage_conclusion_desc:0 "Your pilgrimage to the Irminsul is complete. The gods have received your devotion."
 
   # =============================================

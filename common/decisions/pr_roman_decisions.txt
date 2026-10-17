@@ -320,7 +320,7 @@ pr_roman_restore_high_priesthood_decision = {
         custom_description = {
             text = "restore_high_priesthood_holy_sites"
             faith = {
-                any_holy_site = {
+                any_holy_site_barony = {
                     OR = {
                         county.holder = root
                         county.holder.top_liege = { this = root }

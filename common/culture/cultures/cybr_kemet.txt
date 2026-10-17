@@ -7,6 +7,7 @@ kemetic = {
 	ethos = ethos_spiritual
 	heritage = heritage_kemetic
 	language = language_kemetic
+	head_determination = head_determination_domain
 	martial_custom = martial_custom_male_only
 	traditions = {
 		tradition_agrarian # Cybr: One word: Nile
