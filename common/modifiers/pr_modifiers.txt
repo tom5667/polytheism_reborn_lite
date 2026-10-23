@@ -606,18 +606,17 @@ punic_melqart = {
 }
 
 #Dacian 
-dacian_gebeleizis = {
+dacian_gebeleizis = { # Zbelsurdos (#201); key kept for saves
 	icon = jupiter_positive
 	same_faith_opinion = 10
 	monthly_piety = 0.5
 	diplomacy = 2
 	monthly_prestige = 0.2
-	monthly_piety = 0.3
 	christianity_religion_opinion = -5
 	islam_religion_opinion = -5
 }
 
-dacian_zalmoxis = {
+dacian_zalmoxis = { # no longer offered (Zalmoxian rite has no patron gods); kept for saves
 	icon = learning_positive
 	learning = 2
 	same_faith_opinion = 5
@@ -626,7 +625,7 @@ dacian_zalmoxis = {
 	islam_religion_opinion  = -5
 }
 
-dacian_dionysus = {
+dacian_dionysus = { # Sabazios (#201); key kept for saves
 	icon = magic_positive
 	monthly_piety = 0.5
 	fertility = 0.1
@@ -645,12 +644,21 @@ dacian_pleistoros = {
 	islam_religion_opinion  = -5
 }
 
-dacian_derzelas = {
+dacian_derzelas = { # Darzalas (#201); key kept for saves
 	icon = magic_positive
 	monthly_piety = 0.5
 	same_faith_opinion = 5
 	health = 0.5
 	negate_health_penalty_add = 0.25
+	christianity_religion_opinion = -5
+	islam_religion_opinion  = -5
+}
+
+dacian_bendis = { # Bendis, Thracian goddess of the hunt and the moon (#201)
+	icon = magic_positive
+	prowess = 2
+	monthly_piety = 0.5
+	same_faith_opinion = 5
 	christianity_religion_opinion = -5
 	islam_religion_opinion  = -5
 }

@@ -577,6 +577,9 @@ pr_activity_saturnalia = {
 	
 	map_entity = "building_western_feast_01_entity"
 
+	# vanilla sets this explicitly for every activity; without it: "missing Header Background texture" (#187)
+	header_background = "gfx/interface/illustrations/activity_header_backgrounds/pr_activity_saturnalia.dds"
+
 	# Travel
 	background = { # Bridge
 		trigger = {
@@ -3530,6 +3533,9 @@ pr_activity_winter_solstice = {
 	
 	map_entity = "building_western_feast_01_entity"
 
+	# vanilla sets this explicitly for every activity; without it: "missing Header Background texture" (#187)
+	header_background = "gfx/interface/illustrations/activity_header_backgrounds/pr_activity_winter_solstice.dds"
+
 	# Travel
 	background = { # Bridge
 		trigger = {
@@ -6475,6 +6481,9 @@ pr_activity_summer_solstice = {
 	}
 	
 	map_entity = "building_western_feast_01_entity"
+
+	# vanilla sets this explicitly for every activity; without it: "missing Header Background texture" (#187)
+	header_background = "gfx/interface/illustrations/activity_header_backgrounds/pr_activity_summer_solstice.dds"
 
 	# Travel
 	background = { # Bridge
@@ -9426,6 +9435,9 @@ pr_activity_winter_solstice_germanic = {
 	
 	map_entity = "building_western_feast_01_entity"
 
+	# vanilla sets this explicitly for every activity; without it: "missing Header Background texture" (#187)
+	header_background = "gfx/interface/illustrations/activity_header_backgrounds/pr_activity_winter_solstice_germanic.dds"
+
 	# Travel
 	background = { # Bridge
 		trigger = {
@@ -12371,6 +12383,9 @@ pr_activity_summer_solstice_germanic = {
 	}
 	
 	map_entity = "building_western_feast_01_entity"
+
+	# vanilla sets this explicitly for every activity; without it: "missing Header Background texture" (#187)
+	header_background = "gfx/interface/illustrations/activity_header_backgrounds/pr_activity_summer_solstice_germanic.dds"
 
 	# Travel
 	background = { # Bridge

@@ -13,34 +13,23 @@ pr_return_polytheism_decision = {
 	desc = pr_return_polytheism_decision_desc
 	selection_tooltip = pr_return_polytheism_decision_tooltip
 
+	# Per character, not once per world: every player (multiplayer) can take it. Retries are limited by the
+	# cooldown and by converted_pr_religion_this_lifetime; the research chain keeps its state in character
+	# variables (pr_events.txt pr.0018-pr.0049), reset by pr_research_ancient_religion_reset_effect.
 	is_shown = {
-		AND = {
-			OR = {
-				learning >= 1
-				has_trait = cynical
-			}
-			NAND = {
-				is_ai = no
-				is_ai = no
-				OR = {
-					has_character_flag = converted_pr_religion_this_lifetime
-				}
-			}
-			NOT = {
-				any_secret = {
-					type = secret_crypto_religionist
-				}
-			}
-			NOT = {
-				is_target_in_global_variable_list = {
-					name = unavailable_unique_decisions
-					target = flag:pr_return_polytheism_decision
-				}
+		OR = {
+			learning >= 1
+			has_trait = cynical
+		}
+		NOT = { has_character_flag = converted_pr_religion_this_lifetime }
+		NOT = {
+			any_secret = {
+				type = secret_crypto_religionist
 			}
 		}
 	}
 
-	cooldown = { years = 2 }
+	cooldown = { years = 10 }
 
 	is_valid = {
 		always = yes
@@ -61,14 +50,11 @@ pr_return_polytheism_decision = {
 	}
 
 	effect = {
+		hidden_effect = {
+			pr_research_ancient_religion_reset_effect = yes # clear a previous attempt of this character
+		}
 		trigger_event = pr.0018
 		save_scope_as = actor
-		hidden_effect = {
-			add_to_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:pr_return_polytheism_decision
-			}
-		}
 	}
 	ai_check_interval = 0 # player-only until an AI weight is designed (#147)
 }

@@ -1046,7 +1046,7 @@ pr.0020={
 		#set_character_faith = faith:roman_polytheism
 		trigger_event = pr.0030
 	
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_roman
 			target = flag:flag_research_roman
 		}
@@ -1056,7 +1056,7 @@ pr.0020={
 		#set_character_faith = faith:hellenic_pagan
 		trigger_event = pr.0030
 
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_greek
 			target = flag:flag_research_greek
 		}
@@ -1064,7 +1064,7 @@ pr.0020={
 	option={
 		name = pr.0020.pr_mycenaean
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_mycenaean
 			target = flag:flag_research_mycenaean
 		}
@@ -1072,7 +1072,7 @@ pr.0020={
 	option={
 		name = pr.0020.pr_graeco_egyptian
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_graeco_egyptian
 			target = flag:flag_research_graeco_egyptian
 		}
@@ -1092,7 +1092,7 @@ pr.0021={
 		name = pr.0021.pr_etruscan
 		#set_character_faith = faith:etruscan_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_etruscan
 			target = flag:flag_research_etruscan
 		}
@@ -1113,7 +1113,7 @@ pr.0022={
 		name = pr.0022.kemetic
 		#set_character_faith = faith:kemetic_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_kemetic
 			target = flag:flag_research_kemetic
 		}
@@ -1122,7 +1122,7 @@ pr.0022={
 		name = pr.0022.atenism
 		#set_character_faith = faith:atenism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_atenism
 			target = flag:flag_research_atenism
 		}
@@ -1142,7 +1142,7 @@ pr.0023={
 		name = pr.0023.gaelic
 		#set_character_faith = faith:gaelic_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_gaelic
 			target = flag:flag_research_gaelic
 		}
@@ -1152,7 +1152,7 @@ pr.0023={
 		name = pr.0023.brythonic
 		#set_character_faith = faith:brythonic_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_brythonic
 			target = flag:flag_research_brythonic
 		}
@@ -1161,7 +1161,7 @@ pr.0023={
 		name = pr.0023.pr_gaulish
 		#set_character_faith = faith:gaulish_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_gaulish
 			target = flag:flag_research_gaulish
 		}
@@ -1170,7 +1170,7 @@ pr.0023={
 		name = pr.0023.pr_celtic_iberian
 		#set_character_faith = faith:celtic_iberian_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_celtic_iberian
 			target = flag:flag_research_celtic_iberian
 		}
@@ -1190,7 +1190,7 @@ pr.0024={
 		name = pr.0024.anglo_saxon
 		#set_character_faith = faith:anglo_saxon_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_anglo_saxon
 			target = flag:flag_research_anglo_saxon
 		}
@@ -1199,7 +1199,7 @@ pr.0024={
 		name = pr.0024.german
 		#set_character_faith = faith:german_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_german
 			target = flag:flag_research_german
 		}
@@ -1220,7 +1220,7 @@ pr.0052={
 		name = pr.0052.lusitanian
 		#set_character_faith = faith:anglo_saxon_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_lusitanian
 			target = flag:flag_research_lusitanian
 		}
@@ -1240,7 +1240,7 @@ pr.0025={
 		name = pr.0025.pr_punic
 		#set_character_faith = faith:punic_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_punic
 			target = flag:flag_research_punic
 		}
@@ -1248,7 +1248,7 @@ pr.0025={
 	option = {
 		name = pr.0025.semitic
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_semitic
 			target = flag:flag_research_semitic
 		}
@@ -1268,7 +1268,7 @@ pr.0026={
 		name = pr.0026.pr_babylonian
 		#set_character_faith = faith:babylonian_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_babylonian
 			target = flag:flag_research_babylonian
 		}
@@ -1277,7 +1277,7 @@ pr.0026={
 		name = pr.0026.pr_sumerian
 		#set_character_faith = faith:babylonian_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_sumerian
 			target = flag:flag_research_sumerian
 		}
@@ -1286,7 +1286,7 @@ pr.0026={
 		name = pr.0026.assyrian
 		#set_character_faith = faith:babylonian_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_assyrian
 			target = flag:flag_research_assyrian
 		}
@@ -1307,7 +1307,7 @@ pr.0027={
 		name = pr.0027.pr_dacian
 		#set_character_faith = faith:dacian_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_dacian
 			target = flag:flag_research_dacian
 		}
@@ -1316,7 +1316,7 @@ pr.0027={
 		name = pr.0027.zalmoxism
 		#set_character_faith = faith:zalmoxism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_zalmoxism
 			target = flag:flag_research_zalmoxism
 		}
@@ -1337,7 +1337,7 @@ pr.0028={
 		name = pr.0028.georgian
 		#set_character_faith = faith:armenian_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_georgian
 			target = flag:flag_research_georgian
 		}
@@ -1346,7 +1346,7 @@ pr.0028={
 		name = pr.0028.armenian
 		#set_character_faith = faith:armenian_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_armenian
 			target = flag:flag_research_armenian
 		}
@@ -1366,7 +1366,7 @@ pr.0029 = {
 		name = pr.0029.pr_hittite
 		#set_character_faith = faith:hittite_polytheism
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_hittite
 			target = flag:flag_research_hittite
 		}
@@ -1385,7 +1385,7 @@ pr.0047={
 	option={
 		name = pr.0047.pr_scythian
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_scythian
 			target = flag:flag_research_scythian
 		}
@@ -1405,7 +1405,7 @@ pr.0048={
 	option={
 		name = pr.0048.pr_illyrian
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_illyrian
 			target = flag:flag_research_illyrian
 		}
@@ -1425,7 +1425,7 @@ pr.0049={
 	option={
 		name = pr.0049.lithuanian
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_lithuanian
 			target = flag:flag_research_lithuanian
 		}
@@ -1433,7 +1433,7 @@ pr.0049={
 	option = {
 		name = pr.0049.latvian
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_latvian
 			target = flag:flag_research_latvian
 		}
@@ -1441,7 +1441,7 @@ pr.0049={
 	option = {
 		name = pr.0049.prussian
 		trigger_event = pr.0030
-		add_to_global_variable_list ={
+		add_to_variable_list ={
 			name = research_prussian
 			target = flag:flag_research_prussian
 		}
@@ -1493,7 +1493,7 @@ pr.0030 = {#Choose library
 	option = {
 		name = pr.0030.alexandria
 		remove_short_term_gold = 250
-		set_global_variable = {
+		set_variable = {
 			name = research_great_library
 			value = yes
 		}
@@ -1502,7 +1502,7 @@ pr.0030 = {#Choose library
 	option = {
 		name = pr.0030.athens
 		remove_short_term_gold = 250
-		set_global_variable = {
+		set_variable = {
 			name = research_great_library
 			value = yes
 		}
@@ -1511,7 +1511,7 @@ pr.0030 = {#Choose library
 	option = {
 		name = pr.0030.vatican
 		remove_short_term_gold = 250
-		set_global_variable = {
+		set_variable = {
 			name = research_great_library
 			value = yes
 		}
@@ -1520,7 +1520,7 @@ pr.0030 = {#Choose library
 	option = {
 		name = pr.0030.minor_library
 		remove_short_term_gold = 100
-		set_global_variable = {
+		set_variable = {
 			name = research_small_library
 			value = yes
 		}
@@ -1615,7 +1615,7 @@ pr.0035 = {#Court chaplain finds out
 				limit = {
 					learning >= 18 
 				}
-				set_global_variable = {
+				set_variable = {
 					name = learning_good
 					value = yes
 				}
@@ -1653,7 +1653,7 @@ pr.0036 = {#Outcome debate good
 		name = pr.0036.a #Won the debate
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_roman
 					target = flag:flag_research_roman
 				}
@@ -1664,7 +1664,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_roman
 					target = flag:flag_research_roman
 				}
@@ -1673,7 +1673,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit ={
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_greek
 					target = flag:flag_research_greek
 				}
@@ -1684,7 +1684,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_greek
 					target = flag:flag_research_greek
 				}
@@ -1694,7 +1694,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit ={
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_mycenaean
 					target = flag:flag_research_mycenaean
 				}
@@ -1705,7 +1705,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_mycenaean
 					target = flag:flag_research_mycenaean
 				}
@@ -1714,7 +1714,7 @@ pr.0036 = {#Outcome debate good
 		}
 				if = {
 			limit ={
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_graeco_egyptian
 					target = flag:flag_research_graeco_egyptian
 				}
@@ -1725,7 +1725,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_graeco_egyptian
 					target = flag:flag_research_graeco_egyptian
 				}
@@ -1734,7 +1734,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_gaelic
 					target = flag:flag_research_gaelic
 				}
@@ -1745,7 +1745,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_gaelic
 					target = flag:flag_research_gaelic
 				}
@@ -1754,7 +1754,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_brythonic
 					target = flag:flag_research_brythonic
 				}
@@ -1765,7 +1765,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_brythonic
 					target = flag:flag_research_brythonic
 				}
@@ -1775,7 +1775,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_gaulish
 					target = flag:flag_research_gaulish
 				}
@@ -1786,7 +1786,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_gaulish
 					target = flag:flag_research_gaulish
 				}
@@ -1796,7 +1796,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_celtic_iberian
 					target = flag:flag_research_celtic_iberian
 				}
@@ -1807,7 +1807,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_celtic_iberian
 					target = flag:flag_research_celtic_iberian
 				}
@@ -1817,7 +1817,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-					is_target_in_global_variable_list = {
+					is_target_in_variable_list = {
 						name = research_anglo_saxon
 						target = flag:flag_research_anglo_saxon
 					}
@@ -1828,7 +1828,7 @@ pr.0036 = {#Outcome debate good
 				}
 				hidden_effect = {
 					add_character_flag = converted_pr_religion_this_lifetime
-					remove_list_global_variable = {
+					remove_list_variable = {
 						name = research_anglo_saxon
 						target = flag:flag_research_anglo_saxon
 					}
@@ -1838,7 +1838,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-					is_target_in_global_variable_list = {
+					is_target_in_variable_list = {
 						name = research_german
 						target = flag:flag_research_german
 					}
@@ -1849,7 +1849,7 @@ pr.0036 = {#Outcome debate good
 				}
 				hidden_effect = {
 					add_character_flag = converted_pr_religion_this_lifetime
-					remove_list_global_variable = {
+					remove_list_variable = {
 						name = research_german
 						target = flag:flag_research_german
 					}
@@ -1859,7 +1859,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-					is_target_in_global_variable_list = {
+					is_target_in_variable_list = {
 						name = research_lusitanian
 						target = flag:flag_research_lusitanian
 					}
@@ -1870,7 +1870,7 @@ pr.0036 = {#Outcome debate good
 				}
 				hidden_effect = {
 					add_character_flag = converted_pr_religion_this_lifetime
-					remove_list_global_variable = {
+					remove_list_variable = {
 						name = research_lusitanian
 						target = flag:flag_research_lusitanian
 					}
@@ -1880,7 +1880,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-					is_target_in_global_variable_list = {
+					is_target_in_variable_list = {
 						name = research_etruscan
 						target = flag:flag_research_etruscan
 					}
@@ -1891,7 +1891,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_etruscan
 					target = flag:flag_research_etruscan
 				}
@@ -1901,7 +1901,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_kemetic
 					target = flag:flag_research_kemetic
 				}
@@ -1912,7 +1912,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_kemetic
 					target = flag:flag_research_kemetic
 				}
@@ -1922,7 +1922,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_atenism
 					target = flag:flag_research_atenism
 				}
@@ -1933,7 +1933,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_atenism
 					target = flag:flag_research_atenism
 				}
@@ -1943,7 +1943,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_punic
 					target = flag:flag_research_punic
 				}
@@ -1954,7 +1954,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_punic
 					target = flag:flag_research_punic
 				}
@@ -1964,7 +1964,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_semitic
 					target = flag:flag_research_semitic
 				}
@@ -1975,7 +1975,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_semitic
 					target = flag:flag_research_semitic
 				}
@@ -1985,7 +1985,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_babylonian
 					target = flag:flag_research_babylonian
 				}
@@ -1996,7 +1996,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_babylonian
 					target = flag:flag_research_babylonian
 				}
@@ -2006,7 +2006,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_sumerian
 					target = flag:flag_research_sumerian
 				}
@@ -2017,7 +2017,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_sumerian
 					target = flag:flag_research_sumerian
 				}
@@ -2027,7 +2027,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_assyrian
 					target = flag:flag_research_assyrian
 				}
@@ -2038,7 +2038,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_assyrian
 					target = flag:flag_research_assyrian
 				}
@@ -2048,7 +2048,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_dacian
 					target = flag:flag_research_dacian
 				}
@@ -2059,7 +2059,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_dacian
 					target = flag:flag_research_dacian
 				}
@@ -2069,7 +2069,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_zalmoxism
 					target = flag:flag_research_zalmoxism
 				}
@@ -2080,7 +2080,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_zalmoxism
 					target = flag:flag_research_zalmoxism
 				}
@@ -2090,7 +2090,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_georgian
 					target = flag:flag_research_georgian
 				}
@@ -2102,7 +2102,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_georgian
 					target = flag:flag_research_georgian
 				}
@@ -2112,7 +2112,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_armenian
 					target = flag:flag_research_armenian
 				}
@@ -2123,7 +2123,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_armenian
 					target = flag:flag_research_armenian
 				}
@@ -2133,7 +2133,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_hittite
 					target = flag:flag_research_hittite
 				}
@@ -2145,7 +2145,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_hittite
 					target = flag:flag_research_hittite
 				}
@@ -2155,7 +2155,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_scythian
 					target = flag:flag_research_scythian
 				}
@@ -2166,7 +2166,7 @@ pr.0036 = {#Outcome debate good
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_scythian
 					target = flag:flag_research_scythian
 				}
@@ -2176,7 +2176,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_illyrian
 					target = flag:flag_research_illyrian
 				}
@@ -2188,7 +2188,7 @@ pr.0036 = {#Outcome debate good
 			# trigger_event = pr.0039
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_illyrian
 					target = flag:flag_research_illyrian
 				}
@@ -2197,7 +2197,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_lithuanian
 					target = flag:flag_research_lithuanian
 				}
@@ -2209,7 +2209,7 @@ pr.0036 = {#Outcome debate good
 			# trigger_event = pr.0039
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_lithuanian
 					target = flag:flag_research_lithuanian
 				}
@@ -2218,7 +2218,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_latvian
 					target = flag:flag_research_latvian
 				}
@@ -2230,7 +2230,7 @@ pr.0036 = {#Outcome debate good
 			# trigger_event = pr.0039
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_latvian
 					target = flag:flag_research_latvian
 				}
@@ -2239,7 +2239,7 @@ pr.0036 = {#Outcome debate good
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_prussian
 					target = flag:flag_research_prussian
 				}
@@ -2251,7 +2251,7 @@ pr.0036 = {#Outcome debate good
 			# trigger_event = pr.0039
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_prussian
 					target = flag:flag_research_prussian
 				}
@@ -2278,7 +2278,7 @@ pr.0037 = {#Outcome debate medium
 		name = pr.0037.a #A small win
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_roman
 					target = flag:flag_research_roman
 				}
@@ -2290,7 +2290,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_roman
 					target = flag:flag_research_roman
 				}
@@ -2300,7 +2300,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit ={
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_greek
 					target = flag:flag_research_greek
 				}
@@ -2313,7 +2313,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_greek
 					target = flag:flag_research_greek
 				}
@@ -2323,7 +2323,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit ={
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_mycenaean
 					target = flag:flag_research_mycenaean
 				}
@@ -2336,7 +2336,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_mycenaean
 					target = flag:flag_research_mycenaean
 				}
@@ -2346,7 +2346,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit ={
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_graeco_egyptian
 					target = flag:flag_research_graeco_egyptian
 				}
@@ -2359,7 +2359,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_graeco_egyptian
 					target = flag:flag_research_graeco_egyptian
 				}
@@ -2369,7 +2369,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_gaelic
 					target = flag:flag_research_gaelic
 				}
@@ -2381,7 +2381,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_gaelic
 					target = flag:flag_research_gaelic
 				}
@@ -2391,7 +2391,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_gaulish
 					target = flag:flag_research_gaulish
 				}
@@ -2403,7 +2403,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_gaulish
 					target = flag:flag_research_gaulish
 				}
@@ -2413,7 +2413,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_brythonic
 					target = flag:flag_research_brythonic
 				}
@@ -2426,7 +2426,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_brythonic
 					target = flag:flag_research_brythonic
 				}
@@ -2436,7 +2436,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_celtic_iberian
 					target = flag:flag_research_celtic_iberian
 				}
@@ -2448,7 +2448,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_celtic_iberian
 					target = flag:flag_research_celtic_iberian
 				}
@@ -2458,7 +2458,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-					is_target_in_global_variable_list = {
+					is_target_in_variable_list = {
 						name = research_anglo_saxon
 						target = flag:flag_research_anglo_saxon
 					}
@@ -2470,7 +2470,7 @@ pr.0037 = {#Outcome debate medium
 				}
 				hidden_effect = {
 					add_character_flag = converted_pr_religion_this_lifetime
-					remove_list_global_variable = {
+					remove_list_variable = {
 						name = research_anglo_saxon
 						target = flag:flag_research_anglo_saxon
 					}
@@ -2480,7 +2480,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-					is_target_in_global_variable_list = {
+					is_target_in_variable_list = {
 						name = research_german
 						target = flag:flag_research_german
 					}
@@ -2492,7 +2492,7 @@ pr.0037 = {#Outcome debate medium
 				}
 				hidden_effect = {
 					add_character_flag = converted_pr_religion_this_lifetime
-					remove_list_global_variable = {
+					remove_list_variable = {
 						name = research_german
 						target = flag:flag_research_german
 					}
@@ -2502,7 +2502,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-					is_target_in_global_variable_list = {
+					is_target_in_variable_list = {
 						name = research_lusitanian
 						target = flag:flag_research_lusitanian
 					}
@@ -2514,7 +2514,7 @@ pr.0037 = {#Outcome debate medium
 				}
 				hidden_effect = {
 					add_character_flag = converted_pr_religion_this_lifetime
-					remove_list_global_variable = {
+					remove_list_variable = {
 						name = research_lusitanian
 						target = flag:flag_research_lusitanian
 					}
@@ -2524,7 +2524,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_etruscan
 					target = flag:flag_research_etruscan
 				}
@@ -2537,7 +2537,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_etruscan
 					target = flag:flag_research_etruscan
 				}
@@ -2547,7 +2547,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_kemetic
 					target = flag:flag_research_kemetic
 				}
@@ -2560,7 +2560,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_kemetic
 					target = flag:flag_research_kemetic
 				}
@@ -2570,7 +2570,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_atenism
 					target = flag:flag_research_atenism
 				}
@@ -2583,7 +2583,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_atenism
 					target = flag:flag_research_atenism
 				}
@@ -2593,7 +2593,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_punic
 					target = flag:flag_research_punic
 				}
@@ -2606,7 +2606,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_punic
 					target = flag:flag_research_punic
 				}
@@ -2616,7 +2616,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_semitic
 					target = flag:flag_research_semitic
 				}
@@ -2629,7 +2629,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_semitic
 					target = flag:flag_research_semitic
 				}
@@ -2639,7 +2639,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_babylonian
 					target = flag:flag_research_babylonian
 				}
@@ -2652,7 +2652,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_babylonian
 					target = flag:flag_research_babylonian
 				}
@@ -2662,7 +2662,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_sumerian
 					target = flag:flag_research_sumerian
 				}
@@ -2675,7 +2675,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_sumerian
 					target = flag:flag_research_sumerian
 				}
@@ -2685,7 +2685,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_assyrian
 					target = flag:flag_research_assyrian
 				}
@@ -2698,7 +2698,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_assyrian
 					target = flag:flag_research_assyrian
 				}
@@ -2708,7 +2708,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_dacian
 					target = flag:flag_research_dacian
 				}
@@ -2721,7 +2721,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_dacian
 					target = flag:flag_research_dacian
 				}
@@ -2731,7 +2731,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_zalmoxism
 					target = flag:flag_research_zalmoxism
 				}
@@ -2744,7 +2744,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_zalmoxism
 					target = flag:flag_research_zalmoxism
 				}
@@ -2754,7 +2754,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_georgian
 					target = flag:flag_research_georgian
 				}
@@ -2767,7 +2767,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_georgian
 					target = flag:flag_research_georgian
 				}
@@ -2777,7 +2777,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_armenian
 					target = flag:flag_research_armenian
 				}
@@ -2789,7 +2789,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_armenian
 					target = flag:flag_research_armenian
 				}
@@ -2799,7 +2799,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_hittite
 					target = flag:flag_research_hittite
 				}
@@ -2812,7 +2812,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_hittite
 					target = flag:flag_research_hittite
 				}
@@ -2822,7 +2822,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_scythian
 					target = flag:flag_research_scythian
 				}
@@ -2835,7 +2835,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_scythian
 					target = flag:flag_research_scythian
 				}
@@ -2845,7 +2845,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_illyrian
 					target = flag:flag_research_illyrian
 				}
@@ -2857,7 +2857,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_illyrian
 					target = flag:flag_research_illyrian
 				}
@@ -2867,7 +2867,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_lithuanian
 					target = flag:flag_research_lithuanian
 				}
@@ -2879,7 +2879,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_lithuanian
 					target = flag:flag_research_lithuanian
 				}
@@ -2888,7 +2888,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_latvian
 					target = flag:flag_research_latvian
 				}
@@ -2900,7 +2900,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_latvian
 					target = flag:flag_research_latvian
 				}
@@ -2909,7 +2909,7 @@ pr.0037 = {#Outcome debate medium
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_prussian
 					target = flag:flag_research_prussian
 				}
@@ -2921,7 +2921,7 @@ pr.0037 = {#Outcome debate medium
 			}
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_prussian
 					target = flag:flag_research_prussian
 				}
@@ -2933,115 +2933,115 @@ pr.0037 = {#Outcome debate medium
 	option={
 		name = pr.0037.b #Repent 
 		trigger_event = pr.0043
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_lithuanian
 			target = flag:flag_research_lithuanian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_latvian
 			target = flag:flag_research_latvian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_prussian
 			target = flag:flag_research_prussian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_illyrian
 			target = flag:flag_research_illyrian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_scythian
 			target = flag:flag_research_scythian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_hittite
 			target = flag:flag_research_hittite
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_armenian
 			target = flag:flag_research_armenian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_georgian
 			target = flag:flag_research_georgian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_zalmoxism
 			target = flag:flag_research_zalmoxism
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_dacian
 			target = flag:flag_research_dacian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_assyrian
 			target = flag:flag_research_assyrian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_sumerian
 			target = flag:flag_research_sumerian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 				name = research_babylonian
 				target = flag:flag_research_babylonian
 			}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_punic
 			target = flag:flag_research_punic
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_atenism
 			target = flag:flag_research_atenism
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_kemetic
 			target = flag:flag_research_kemetic
 		}
-					remove_list_global_variable = {
+					remove_list_variable = {
 			name = research_etruscan
 			target = flag:flag_research_etruscan
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_german
 			target = flag:flag_research_german
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_lusitanian
 			target = flag:flag_research_lusitanian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_anglo_saxon
 			target = flag:flag_research_anglo_saxon
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_celtic_iberian
 			target = flag:flag_research_celtic_iberian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_brythonic
 			target = flag:flag_research_brythonic
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_gaulish
 			target = flag:flag_research_gaulish
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_gaelic
 			target = flag:flag_research_gaelic
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_graeco_egyptian
 			target = flag:flag_research_graeco_egyptian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_mycenaean
 			target = flag:flag_research_mycenaean
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_greek
 			target = flag:flag_research_greek
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_roman
 			target = flag:flag_research_roman
 		}
@@ -3103,7 +3103,7 @@ pr.0034 = {#Book merchant
 	option={
 		name = pr.0034.a #Buy the book from the merchant 
 		remove_short_term_gold = 70
-		set_global_variable = {
+		set_variable = {
 			name = bought_book
 			value = yes
 		} 
@@ -3111,10 +3111,6 @@ pr.0034 = {#Book merchant
 	}
 	option={
 		name = pr.0034.b #Don't buy the book
-		remove_list_global_variable = {
-			name = unavailable_unique_decisions
-			target = flag:pr_return_polytheism_decision
-		}
 	}
 }
 
@@ -3144,10 +3140,6 @@ pr.0040 = {#Bought book good
 	}
 	option={
 		name = pr.0040.b #this is all I want to know
-		remove_list_global_variable = {
-			name = unavailable_unique_decisions
-			target = flag:pr_return_polytheism_decision
-		}
 	}
 }
 
@@ -3172,119 +3164,115 @@ pr.0041 = {#Bought book bad
 	}
 	option={
 		name = pr.0041.a #Better luck next time I hope
-		remove_list_global_variable = {
-			name = unavailable_unique_decisions
-			target = flag:pr_return_polytheism_decision
-		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_lithuanian
 			target = flag:flag_research_lithuanian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_latvian
 			target = flag:flag_research_latvian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_prussian
 			target = flag:flag_research_prussian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_illyrian
 			target = flag:flag_research_illyrian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_scythian
 			target = flag:flag_research_scythian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_hittite
 			target = flag:flag_research_hittite
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_armenian
 			target = flag:flag_research_armenian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_georgian
 			target = flag:flag_research_georgian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_zalmoxism
 			target = flag:flag_research_zalmoxism
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_dacian
 			target = flag:flag_research_dacian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_assyrian
 			target = flag:flag_research_assyrian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_sumerian
 			target = flag:flag_research_sumerian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 				name = research_babylonian
 				target = flag:flag_research_babylonian
 			}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_punic
 			target = flag:flag_research_punic
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_atenism
 			target = flag:flag_research_atenism
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_kemetic
 			target = flag:flag_research_kemetic
 		}
-					remove_list_global_variable = {
+					remove_list_variable = {
 			name = research_etruscan
 			target = flag:flag_research_etruscan
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_german
 			target = flag:flag_research_german
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_lusitanian
 			target = flag:flag_research_lusitanian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_anglo_saxon
 			target = flag:flag_research_anglo_saxon
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_celtic_iberian
 			target = flag:flag_research_celtic_iberian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_brythonic
 			target = flag:flag_research_brythonic
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_gaulish
 			target = flag:flag_research_gaulish
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_gaelic
 			target = flag:flag_research_gaelic
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_graeco_egyptian
 			target = flag:flag_research_graeco_egyptian
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_mycenaean
 			target = flag:flag_research_mycenaean
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_greek
 			target = flag:flag_research_greek
 		}
-		remove_list_global_variable = {
+		remove_list_variable = {
 			name = research_roman
 			target = flag:flag_research_roman
 		}
@@ -3305,7 +3293,7 @@ pr.0042 = {#
 		name = pr.0042.a #It's time to convert to the true faith
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_roman
 					target = flag:flag_research_roman
 				}
@@ -3314,7 +3302,7 @@ pr.0042 = {#
 			
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_roman
 					target = flag:flag_research_roman
 				}
@@ -3323,7 +3311,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit ={
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_greek
 					target = flag:flag_research_greek
 				}
@@ -3331,7 +3319,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:hellenic_pagan }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_greek
 					target = flag:flag_research_greek
 				}
@@ -3340,7 +3328,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit ={
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_mycenaean
 					target = flag:flag_research_mycenaean
 				}
@@ -3349,7 +3337,7 @@ pr.0042 = {#
 			
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_mycenaean
 					target = flag:flag_research_mycenaean
 				}
@@ -3358,7 +3346,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit ={
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_graeco_egyptian
 					target = flag:flag_research_graeco_egyptian
 				}
@@ -3367,7 +3355,7 @@ pr.0042 = {#
 			
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_graeco_egyptian
 					target = flag:flag_research_graeco_egyptian
 				}
@@ -3376,7 +3364,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_gaelic
 					target = flag:flag_research_gaelic
 				}
@@ -3385,7 +3373,7 @@ pr.0042 = {#
 			
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_gaelic
 					target = flag:flag_research_gaelic
 				}
@@ -3393,7 +3381,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_brythonic
 					target = flag:flag_research_brythonic
 				}
@@ -3402,7 +3390,7 @@ pr.0042 = {#
 			
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_brythonic
 					target = flag:flag_research_brythonic
 				}
@@ -3411,7 +3399,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_celtic_iberian
 					target = flag:flag_research_celtic_iberian
 				}
@@ -3420,7 +3408,7 @@ pr.0042 = {#
 			
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_celtic_iberian
 					target = flag:flag_research_celtic_iberian
 				}
@@ -3429,7 +3417,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-					is_target_in_global_variable_list = {
+					is_target_in_variable_list = {
 						name = research_anglo_saxon
 						target = flag:flag_research_anglo_saxon
 					}
@@ -3437,7 +3425,7 @@ pr.0042 = {#
 				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:anglo_saxon_polytheism }
 				hidden_effect = {
 					add_character_flag = converted_pr_religion_this_lifetime
-					remove_list_global_variable = {
+					remove_list_variable = {
 						name = research_anglo_saxon
 						target = flag:flag_research_anglo_saxon
 					}
@@ -3445,7 +3433,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-					is_target_in_global_variable_list = {
+					is_target_in_variable_list = {
 						name = research_german
 						target = flag:flag_research_german
 					}
@@ -3453,7 +3441,7 @@ pr.0042 = {#
 				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:german_polytheism }
 				hidden_effect = {
 					add_character_flag = converted_pr_religion_this_lifetime
-					remove_list_global_variable = {
+					remove_list_variable = {
 						name = research_german
 						target = flag:flag_research_german
 					}
@@ -3462,7 +3450,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-					is_target_in_global_variable_list = {
+					is_target_in_variable_list = {
 						name = research_lusitanian
 						target = flag:flag_research_lusitanian
 					}
@@ -3470,7 +3458,7 @@ pr.0042 = {#
 				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:lusitanian_polytheism }
 				hidden_effect = {
 					add_character_flag = converted_pr_religion_this_lifetime
-					remove_list_global_variable = {
+					remove_list_variable = {
 						name = research_lusitanian
 						target = flag:flag_research_lusitanian
 					}
@@ -3479,7 +3467,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-					is_target_in_global_variable_list = {
+					is_target_in_variable_list = {
 						name = research_etruscan
 						target = flag:flag_research_etruscan
 					}
@@ -3487,7 +3475,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:etruscan_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_etruscan
 					target = flag:flag_research_etruscan
 				}
@@ -3496,7 +3484,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_kemetic
 					target = flag:flag_research_kemetic
 				}
@@ -3504,7 +3492,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:kemetic_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_kemetic
 					target = flag:flag_research_kemetic
 				}
@@ -3513,7 +3501,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_atenism
 					target = flag:flag_research_atenism
 				}
@@ -3521,7 +3509,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:atenism }		
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_atenism
 					target = flag:flag_research_atenism
 				}
@@ -3530,7 +3518,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_punic
 					target = flag:flag_research_punic
 				}
@@ -3538,7 +3526,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:canaanite_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_punic
 					target = flag:flag_research_punic
 				}
@@ -3547,7 +3535,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_semitic
 					target = flag:flag_research_semitic
 				}
@@ -3555,7 +3543,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:canaanite_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_semitic
 					target = flag:flag_research_semitic
 				}
@@ -3564,7 +3552,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_babylonian
 					target = flag:flag_research_babylonian
 				}
@@ -3572,7 +3560,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:babylonian_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_babylonian
 					target = flag:flag_research_babylonian
 				}
@@ -3581,7 +3569,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_sumerian
 					target = flag:flag_research_sumerian
 				}
@@ -3589,7 +3577,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:babylonian_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_sumerian
 					target = flag:flag_research_sumerian
 				}
@@ -3598,7 +3586,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_assyrian
 					target = flag:flag_research_assyrian
 				}
@@ -3607,7 +3595,7 @@ pr.0042 = {#
 			
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_assyrian
 					target = flag:flag_research_assyrian
 				}
@@ -3616,7 +3604,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_dacian
 					target = flag:flag_research_dacian
 				}
@@ -3624,7 +3612,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:daco_thracian_polytheism }			
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_dacian
 					target = flag:flag_research_dacian
 				}
@@ -3633,7 +3621,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_zalmoxism
 					target = flag:flag_research_zalmoxism
 				}
@@ -3641,7 +3629,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:daco_thracian_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_zalmoxism
 					target = flag:flag_research_zalmoxism
 				}
@@ -3650,7 +3638,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_georgian
 					target = flag:flag_research_georgian
 				}
@@ -3658,7 +3646,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:armenian_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_georgian
 					target = flag:flag_research_georgian
 				}
@@ -3666,7 +3654,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_armenian
 					target = flag:flag_research_armenian
 				}
@@ -3674,7 +3662,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:armenian_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_armenian
 					target = flag:flag_research_armenian
 				}
@@ -3683,7 +3671,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_hittite
 					target = flag:flag_research_hittite
 				}
@@ -3691,7 +3679,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:hittite_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_hittite
 					target = flag:flag_research_hittite
 				}
@@ -3700,7 +3688,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_scythian
 					target = flag:flag_research_scythian
 				}
@@ -3708,7 +3696,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:scythian_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_scythian
 					target = flag:flag_research_scythian
 				}
@@ -3717,7 +3705,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_illyrian
 					target = flag:flag_research_illyrian
 				}
@@ -3725,7 +3713,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:illyrian_polytheism }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_illyrian
 					target = flag:flag_research_illyrian
 				}
@@ -3734,7 +3722,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_lithuanian
 					target = flag:flag_research_lithuanian
 				}
@@ -3742,7 +3730,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:baltic_pagan }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_lithuanian
 					target = flag:flag_research_lithuanian
 				}
@@ -3751,7 +3739,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_latvian
 					target = flag:flag_research_latvian
 				}
@@ -3759,7 +3747,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:baltic_pagan }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_latvian
 					target = flag:flag_research_latvian
 				}
@@ -3768,7 +3756,7 @@ pr.0042 = {#
 		}
 		if = {
 			limit = {
-				is_target_in_global_variable_list = {
+				is_target_in_variable_list = {
 					name = research_prussian
 					target = flag:flag_research_prussian
 				}
@@ -3776,7 +3764,7 @@ pr.0042 = {#
 			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:baltic_pagan }
 			hidden_effect = {
 				add_character_flag = converted_pr_religion_this_lifetime
-				remove_list_global_variable = {
+				remove_list_variable = {
 					name = research_prussian
 					target = flag:flag_research_prussian
 				}

@@ -1035,12 +1035,15 @@ pr_roman_build_lararium_decision = {
             faith = faith:roman_polytheism
             rite = { rite_has_parameter = special_doctrine_roman_patron_god_active }
         }
-        NOT = {
+        NOT = { # all seven statues of pr_roman.0023 owned (#187; the old variables were never set)
             AND = {
-                var:pr_bought_statue_mercurius = flag:pr_mercurius
-                var:pr_bought_statue_venus = flag:pr_venus
-                var:pr_bought_statue_mars = flag:pr_mars
-                var:pr_bought_statue_juno = flag:pr_juno
+                any_character_artifact = { has_artifact_modifier = pr_statue_jupiter }
+                any_character_artifact = { has_artifact_modifier = pr_statue_juno }
+                any_character_artifact = { has_artifact_modifier = pr_statue_mars }
+                any_character_artifact = { has_artifact_modifier = pr_statue_venus }
+                any_character_artifact = { has_artifact_modifier = pr_statue_mercurius }
+                any_character_artifact = { has_artifact_modifier = pr_statue_minerva }
+                any_character_artifact = { has_artifact_modifier = pr_statue_apollo }
             }
         }
     }
@@ -1397,7 +1400,7 @@ pr_roman_offer_to_a_god_decision = {
         }
         else_if = {
             limit = {
-                scope:pr_figs_offering = yes
+                scope:pr_fig_offering = yes
             }
             set_variable = {
                 name = pr_ritual
@@ -1788,10 +1791,6 @@ pr_roman_restore_western_roman_empire_decision = {
             add_to_global_variable_list = {
                 name = unavailable_unique_decisions
                 target = flag:pr_roman_restore_western_roman_empire_decision
-            }
-            set_global_variable = {
-                name = flag_restored_western_roman_empire
-                value = root
             }
         }
     }

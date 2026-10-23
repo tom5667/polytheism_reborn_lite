@@ -1783,7 +1783,6 @@ pr_roman.0300 = {
 	}
 	option={
 		name = pr_roman.0300.a
-		clear_global_variable_list = unavailable_unique_decisions_close_temple_of_vesta
 		hidden_effect = {
 			scope:vestalis_maxima = {
 				give_nickname = nick_vestalis_maxima
@@ -2036,7 +2035,6 @@ pr_roman_cult.0001 = {
 	}
 	option ={
 		name = pr_roman_cult.0001.optout
-		clear_global_variable_list = unavailable_unique_decisions_join_cult
 	}
 }
 
@@ -2190,7 +2188,6 @@ pr_roman_cult.0006 = {
 			flag = turned_down_by_cult
 			years = 2
 		}
-		clear_global_variable_list = unavailable_unique_decisions_join_cult
 	}
 }
 #Cult of Isis

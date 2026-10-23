@@ -29,7 +29,7 @@ roman_polytheism = {
     doctrines = {
         unreformed_faith_doctrine
     }
-    cultures = { roman greek pr_romano_british pr_romano_germanic pr_romano_hispanic pr_afro_roman pr_romano_egyptian }
+    cultures = { roman greek pr_romano_british pr_romano_germanic pr_romano_hispanic pr_afro_roman pr_romano_egyptian pr_gallo_roman pr_romano_syrian pr_romano_illyrian } # every culture of a Roman rite (#65)
 
     # Faith-level loc (#142): vanilla texts read GetFaith.*, so the god names must live
     # on the faith. The main rite (cultus_deorum_rites) inherits this block; other rites keep their own.

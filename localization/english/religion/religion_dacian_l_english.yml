@@ -1,265 +1,134 @@
 ﻿l_english:
 
-# #####################
-# #Made by tom5667
-# ###################### 
+    # Daco-Thracian religion (#85, 2026-10-17). Sources: resource/daco_thracian_research.md
+    # Faith-level names = Zalmoxian (main rite, zalmoxism_*); the Thracian rite (dacian_rites) uses dacian_polytheism_*.
 
     daco_thracian_religion:0 "Daco-Thracian"
     daco_thracian_religion_adj:2 "Daco-Thracian"
     daco_thracian_religion_adherent:2 "Daco-Thracian"
     daco_thracian_religion_adherent_plural:2 "Daco-Thracians"
-    daco_thracian_religion_desc:0 "The old religions of the mighty Daco-Thracian tribes, split between the polytheistic Dacians and the more monotheistic Thracian followers of Zalmoxis."
+    daco_thracian_religion_desc:0 "The old faith of the Getae, the Dacians and the Thracians of the lower Danube and the Balkan mountains. Greek writers already saw two ways in it: the Getae and Dacians, who believed they went to Zalmoxis when they died, and the Thracians of the south, who honoured many gods."
 
-    #dacian
-    dacian_polytheism:0 "Dacian"
-    dacian_polytheism_adj:0 "Dacian"
-    dacian_polytheism_adherent:0 "Dacian polytheist"
-    dacian_polytheism_adherent_plural:0 "Dacian polytheists"
-    dacian_polytheism_desc:0 "The Dacian gods are honored through fire and sacrifice on mountain sanctuaries, their favor sought by a people who see themselves as chosen for greatness among the tribes of the lower Danube." 
-
-    dacian_polytheism_old:0 "Dacian Old"
-    dacian_polytheism_old_adj:0 "Dacian Old"
-    dacian_polytheism_adherent_old:0 "Old Dacian polytheist"
-    dacian_polytheism_old_adherent_plural:0 "Old Dacian polytheists"
-    dacian_polytheism_old_desc:0 "In the days before Rome's legions crossed the Danube, the Dacian tribes worshipped their gods freely on high mountain sanctuaries, their priest-kings serving as the living bridge between mortals and the divine."
-
-    dacian_polytheism_religious_head_title:0 "High Priest"
-    dacian_polytheism_divine_realm:0 "Zalmoxis Realm"
-    dacian_polytheism_divine_realm_2:0 "$dacian_polytheism_divine_realm$"
-    dacian_polytheism_divine_realm_3:0 "$dacian_polytheism_divine_realm$"
-    dacian_polytheism_religious_symbol:0 "Dacian draco"
-    dacian_polytheism_religious_symbol_2:0 "$dacian_polytheism_religious_symbol$"
-    dacian_polytheism_religious_symbol_3:0 "$dacian_polytheism_religious_symbol$"
-    dacian_polytheism_religious_text:0 "Rituals and ceremonies"
-    dacian_polytheism_religious_text_2:0 "$dacian_polytheism_religious_text$"
-    dacian_polytheism_religious_text_3:0 "$dacian_polytheism_religious_text$"
-    #roman_pantheon_the_gods:0 "Roman pantheon of gods"
-
-    #dacian gods/goddesses Localization
-
-    #Gebeleizis Localization
-    dacian_polytheism_high_god_name:0 "Gebeleizis"
-    dacian_polytheism_high_god_name_2:0 "$dacian_polytheism_high_god_name$"
-    dacian_polytheism_high_god_name_possessive:0 "Gebeleizis's"
-    dacian_polytheism_high_god_name_alternate:0 "Gebeleizis"
-    dacian_polytheism_high_god_name_alternate_possessive:0 "Gebeleizis's"
-    dacian_polytheism_high_god_shehe:0 "He"
-    dacian_polytheism_high_god_herselfhimself:0 "Himself"
-    dacian_polytheism_high_god_herhis:0 "His"
-
-    #Creater god Localization
-    dacian_polytheism_creator_god_name:0 "Zalmoxis"
-    dacian_polytheism_creator_god_name_possessive:0 "Zalmoxis's"
-
-    #Health Goddess Derzelas
-    dacian_polytheism_health_god_name:0 "Derzelas"
-    dacian_polytheism_health_god_name_possessive:0 "Derzelas's"
-
-    #Fertility God Dionysus Localization
-    dacian_polytheism_fertility_god_name:0 "Dionysus"
-    dacian_polytheism_fertility_god_name_possessive:0 "Dionysus's"
-
-    #Wealth god Dionysus Localization
-    dacian_polytheism_wealth_god_name:0 "Dionysus"
-    dacian_polytheism_wealth_god_name_possessive:0 "Dionysus's"
-
-    #Household god Kotys
-    dacian_polytheism_household_god_name:0 "Kotys"
-    dacian_polytheism_household_god_name_possessive:0 "Kotys's"
-
-    #Fate god Ursitoare Localization
-    dacian_polytheism_fate_god_name:0 "Ursitoare"
-    dacian_polytheism_fate_god_name_possessive:0 "Ursitoare's"
-
-    #knowledge god Zalmoxis Localization
-    dacian_polytheism_knowledge_god_name:0 "Zalmoxis"
-    dacian_polytheism_knowledge_god_name_possessive:0 "Zalmoxis's"
-
-    #War god Pleistoros Localization
-    dacian_polytheism_war_god_name:0 "Pleistoros"
-    dacian_polytheism_war_god_name_possessive:0 "Pleistoros's"
-
-    #Trickster god Pleistoros Localization
-    dacian_polytheism_trickster_god_name:0 "Pleistoros"
-    dacian_polytheism_trickster_god_name_possessive:0 "Pleistoros's"
-
-    #Night goddess Bendis Localization
-    dacian_polytheism_night_god_name:0 "Bendis"
-    dacian_polytheism_night_god_name_possessive:0 "Bendis's"
-
-    #Water god Gebeleizis Localization
-    dacian_polytheism_water_god_name:0 "Gebeleizis"
-    dacian_polytheism_water_god_name_possessive:0 "Gebeleizis's"
-
-    #evil gods names 
-    dacian_polytheism_evil_god_spirits:0 "Spirits" 
-
-    #witch goddess
-    dacian_polytheism_witchgodname_zalmoxis:0 "Zalmoxis"
-    dacian_polytheism_witchgodname_zalmoxis_possessive:0 "$dacian_polytheism_witchgodname_zalmoxis$'"
-    dacian_polytheism_witchgodname_zalmoxis_possesive:0 "Zalmoxis's"
-
-    #Devil god   #For now there is just no thing like a devil god in the dacian religion
-    dacian_polytheism_devil_name:0 "Zalmoxis" 
-    dacian_polytheism_devil_name_possessive:0 "Zalmoxis's"
-
-    #Death god Zalmoxis 
-    dacian_polytheism_death_deity_name:0 "Zalmoxis"
-    dacian_polytheism_death_deity_name_2:0 "$dacian_polytheism_death_deity_name$"
-    dacian_polytheism_death_deity_name_3:0 "$dacian_polytheism_death_deity_name$"
-    dacian_polytheism_death_deity_name_possessive:0 "Zalmoxis's"
-
-    #Good gods names 
-    dacian_polytheism_good_god_zalmoxis:0 "Zalmoxis" 
-    dacian_polytheism_good_god_gebeleizis:0 "Gebeleizis" 
-    dacian_polytheism_good_god_ursitoare:0 "Uristoare" 
-    dacian_polytheism_good_god_pleistoros:0 "Pleistoros" 
-    dacian_polytheism_good_god_dionysus:0 "Dionysus" 
-    dacian_polytheism_good_god_derzelas:0 "Derzelas" 
-    dacian_polytheism_good_god_bendis:0 "Bendis" 
-    dacian_polytheism_good_god_sabazios:0 "Sabazios"
-
-    #dacian priest flamen vestals
-
-    #dacian priest 
-    dacian_polytheism_priest_male:0 "Priest"
-    dacian_polytheism_priest_male_plural:0 "Priests"
-
-    #dacian priestess 
-    dacian_polytheism_priest_female:0 "Priestess" 
-    dacian_polytheism_priest_female_plural:0 "Priestesses" 
-
-    #dacian high priest
-    dacian_polytheism_bishop_male:0 "Priest" 
-    dacian_polytheism_bishop_male_plural:0 "Priests" 
-
-    #roman names
-    #males
-    #Female 
-
-    #holy orders: 
-    holy_order_sons_of_Pleistoros:0 "Sons of Pleistoros"
-    holy_order_Protectors_of_zalmoxis:0 "Protectors of Zalmoxis"
-
-    
-    #Zalmoxism
-    zalmoxism:0 "Zalmoxism"
-    zalmoxism_adj:0 "Zalmoxism"
-    zalmoxism_adherent:0 "Zalmoxism follower"
-    zalmoxism_adherent_plural:0 "Zalmoxism followers"
-    zalmoxism_desc:0 "The Thracians were largely monotheistic, holding Zalmoxis as their supreme and only god, a divine figure said to promise his followers immortality among the stars." 
-
-    zalmoxism_old:0 "Zalmoxism Old"
-    zalmoxism_old_adj:0 "Zalmoxism Old"
-    zalmoxism_adherent_old:0 "Old Zalmoxism follower"
-    zalmoxism_old_adherent_plural:0 "Old Zalmoxism followers"
-    zalmoxism_old_desc:0 "In the years before Rome's power reached the lower Danube, the Thracians already held Zalmoxis as their supreme and only god, a divine figure said to promise his followers immortality among the stars."
-
-    zalmoxism_religious_head_title:0 "High Priest"
-    zalmoxism_divine_realm:0 "Zalmoxis Realm"
-    zalmoxism_divine_realm_2:0 "$zalmoxism_divine_realm$"
-    zalmoxism_divine_realm_3:0 "$zalmoxism_divine_realm$"
-    zalmoxism_religious_symbol:0 "Dacian draco"
-    zalmoxism_religious_symbol_2:0 "$zalmoxism_religious_symbol$"
-    zalmoxism_religious_symbol_3:0 "$zalmoxism_religious_symbol$"
-    zalmoxism_religious_text:0 "Rituals and ceremonies"
-    zalmoxism_religious_text_2:0 "$zalmoxism_religious_text$"
-    zalmoxism_religious_text_3:0 "$zalmoxism_religious_text$"
-    #roman_pantheon_the_gods:0 "Roman pantheon of gods"
-
-    #dacian gods/goddesses Localization
-
-    #Gebeleizis Localization
+    # Zalmoxian (main rite, Getae and Dacians): Zalmoxis only as high god, divine realm and afterlife; generic elsewhere
     zalmoxism_high_god_name:0 "Zalmoxis"
     zalmoxism_high_god_name_2:0 "$zalmoxism_high_god_name$"
     zalmoxism_high_god_name_possessive:0 "Zalmoxis's"
-    zalmoxism_high_god_name_alternate:0 "Zalmoxis"
-    zalmoxism_high_god_name_alternate_possessive:0 "Zalmoxis's"
-    zalmoxism_high_god_shehe:0 "He"
-    zalmoxism_high_god_herselfhimself:0 "Himself"
-    zalmoxism_high_god_herhis:0 "His"
-    
-    #Creater god Localization
-    zalmoxism_creator_god_name:0 "$zalmoxism_high_god_name$"
-    zalmoxism_creator_god_name_possessive:0 "$zalmoxism_high_god_name_possessive$"
-
-    #Health Goddess Derzelas
-    zalmoxism_health_god_name:0 "$zalmoxism_high_god_name$"
-    zalmoxism_health_god_name_possessive:0 "$zalmoxism_high_god_name_possessive$"
-
-    #Fertility God Dionysus Localization
-    zalmoxism_fertility_god_name:0 "$zalmoxism_high_god_name$"
-    zalmoxism_fertility_god_name_possessive:0 "$zalmoxism_high_god_name_possessive$"
-
-    #Wealth god Dionysus Localization
-    zalmoxism_wealth_god_name:0 "$zalmoxism_high_god_name$"
-    zalmoxism_wealth_god_name_possessive:0 "$zalmoxism_high_god_name_possessive$"
-
-    #Household god Kotys
-    zalmoxism_household_god_name:0 "$zalmoxism_high_god_name$"
-    zalmoxism_household_god_name_possessive:0 "$zalmoxism_high_god_name_possessive$"
-
-    #Fate god Ursitoare Localization
-    zalmoxism_fate_god_name:0 "$zalmoxism_high_god_name$"
-    zalmoxism_fate_god_name_possessive:0 "$zalmoxism_high_god_name_possessive$"
-
-    #knowledge god Zalmoxis Localization
-    zalmoxism_knowledge_god_name:0 "$zalmoxism_high_god_name$"
-    zalmoxism_knowledge_god_name_possessive:0 "$zalmoxism_high_god_name_possessive$"
-
-    #War god Nergal Localization
-    zalmoxism_war_god_name:0 "$zalmoxism_high_god_name$"
-    zalmoxism_war_god_name_possessive:0 "$zalmoxism_high_god_name_possessive$"
-
-    #Trickster god Pleistoros Localization
-    zalmoxism_trickster_god_name:0 "Trickster"
-    zalmoxism_trickster_god_name_possessive:0 "Trickster"
-
-    #Night goddess Bendis Localization
-    zalmoxism_night_god_name:0 "$zalmoxism_high_god_name$"
-    zalmoxism_night_god_name_possessive:0 "$zalmoxism_high_god_name_possessive$"
-
-    #Water god Gebeleizis Localization
-    zalmoxism_water_god_name:0 "$zalmoxism_high_god_name$"
-    zalmoxism_water_god_name_possessive:0 "$zalmoxism_high_god_name_possessive$"
-
-    #evil gods names 
-    zalmoxism_evil_god_spirits:0 "Spirits" 
-
-    #witch goddess
-    zalmoxism_witchgodname_zalmoxis:0 "$zalmoxism_high_god_name$"
-    zalmoxism_witchgodname_zalmoxis_possessive:0 "$zalmoxism_witchgodname_zalmoxis$'"
-
-    #Devil god   #For now there is just no thing like a devil god in the dacian religion
-    zalmoxism_devil_name:0 "$zalmoxism_high_god_name$" 
-    zalmoxism_devil_name_possessive:0 "$zalmoxism_high_god_name_possessive$"
-
-    #Death god Zalmoxis 
-    zalmoxism_death_deity_name:0 "$zalmoxism_high_god_name$"
-    zalmoxism_death_deity_name_2:0 "$zalmoxism_death_deity_name$"
-    zalmoxism_death_deity_name_3:0 "$zalmoxism_death_deity_name$"
-    zalmoxism_death_deity_name_possessive:0 "$zalmoxism_high_god_name_possessive$"
-
-    #Good gods names 
-    zalmoxism_good_god_zalmoxis:0 "Zalmoxis" 
-    zalmoxism_good_god_gebeleizis:0 "Zalmoxis" 
-    zalmoxism_good_god_ursitoare:0 "Zalmoxis" 
-    zalmoxism_good_god_pleistoros:0 "Zalmoxis" 
-    zalmoxism_good_god_dionysus:0 "Zalmoxis" 
-    zalmoxism_good_god_derzelas:0 "Zalmoxis" 
-    zalmoxism_good_god_bendis:0 "Zalmoxis" 
-    zalmoxism_good_god_sabazios:0 "Zalmoxis"
-
-    #dacian priest flamen vestals
-
-    #dacian priest 
+    zalmoxism_high_god_name_alternate:0 "Gebeleizis"
+    zalmoxism_high_god_name_alternate_possessive:0 "Gebeleizis's"
+    zalmoxism_creator_god_name:0 "the Creator"
+    zalmoxism_creator_god_name_possessive:0 "the Creator's"
+    zalmoxism_health_god_name:0 "the Healer"
+    zalmoxism_health_god_name_possessive:0 "the Healer's"
+    zalmoxism_fertility_god_name:0 "the Earth"
+    zalmoxism_fertility_god_name_possessive:0 "the Earth's"
+    zalmoxism_wealth_god_name:0 "the Giver of Plenty"
+    zalmoxism_wealth_god_name_possessive:0 "the Giver of Plenty's"
+    zalmoxism_household_god_name:0 "the Hearth"
+    zalmoxism_household_god_name_possessive:0 "the Hearth's"
+    zalmoxism_fate_god_name:0 "Fate"
+    zalmoxism_fate_god_name_possessive:0 "Fate's"
+    zalmoxism_knowledge_god_name:0 "the Wise One"
+    zalmoxism_knowledge_god_name_possessive:0 "the Wise One's"
+    zalmoxism_war_god_name:0 "the Lord of Battle"
+    zalmoxism_war_god_name_possessive:0 "the Lord of Battle's"
+    zalmoxism_trickster_god_name:0 "the Trickster"
+    zalmoxism_trickster_god_name_possessive:0 "the Trickster's"
+    zalmoxism_night_god_name:0 "the Night"
+    zalmoxism_night_god_name_possessive:0 "the Night's"
+    zalmoxism_water_god_name:0 "the River"
+    zalmoxism_water_god_name_possessive:0 "the River's"
+    zalmoxism_death_deity_name:0 "the Lord of the Dead"
+    zalmoxism_death_deity_name_possessive:0 "the Lord of the Dead's"
+    zalmoxism_devil_name:0 "the Destroyer"
+    zalmoxism_devil_name_possessive:0 "the Destroyer's"
+    zalmoxism_good_god_zalmoxis:0 "Zalmoxis"
+    zalmoxism_good_god_hearth:0 "the Hearth"
+    zalmoxism_good_god_lord_of_battle:0 "the Lord of Battle"
+    zalmoxism_evil_god_restless_dead:0 "the Restless Dead"
+    zalmoxism_evil_god_darkness:0 "the Darkness"
+    zalmoxism_religious_symbol:0 "the Sacred Mountain"
+    zalmoxism_religious_symbol_2:0 "$zalmoxism_religious_symbol$"
+    zalmoxism_religious_symbol_3:0 "$zalmoxism_religious_symbol$"
+    zalmoxism_religious_text:0 "the Teachings of Zalmoxis"
+    zalmoxism_religious_text_2:0 "$zalmoxism_religious_text$"
+    zalmoxism_religious_text_3:0 "$zalmoxism_religious_text$"
+    zalmoxism_divine_realm:0 "the Abode of Zalmoxis"
+    zalmoxism_divine_realm_2:0 "$zalmoxism_divine_realm$"
+    zalmoxism_divine_realm_3:0 "$zalmoxism_divine_realm$"
+    zalmoxism_positive_afterlife:0 "Everlasting Life"
+    zalmoxism_positive_afterlife_2:0 "$zalmoxism_positive_afterlife$"
+    zalmoxism_positive_afterlife_3:0 "$zalmoxism_positive_afterlife$"
+    zalmoxism_negative_afterlife:0 "the Underworld"
+    zalmoxism_negative_afterlife_2:0 "$zalmoxism_negative_afterlife$"
+    zalmoxism_negative_afterlife_3:0 "$zalmoxism_negative_afterlife$"
+    zalmoxism_religious_head_title:0 "High Priest"
+    zalmoxism_religious_head_title_female:0 "High Priestess"
     zalmoxism_priest_male:0 "Priest"
     zalmoxism_priest_male_plural:0 "Priests"
+    zalmoxism_priest_female:0 "Priestess"
+    zalmoxism_priest_female_plural:0 "Priestesses"
+    zalmoxism_bishop_male:0 "High Priest"
+    zalmoxism_bishop_male_plural:0 "High Priests"
 
-    #dacian priestess 
-    zalmoxism_priest_female:0 "Priestess" 
-    zalmoxism_priest_female_plural:0 "Priestesses" 
+    # Thracian (rite key dacian_rites; Odrysian Thrace, native names from inscriptions of the Roman period)
+    dacian_polytheism_high_god_name:0 "Zbelsurdos"
+    dacian_polytheism_high_god_name_2:0 "$dacian_polytheism_high_god_name$"
+    dacian_polytheism_high_god_name_possessive:0 "Zbelsurdos's"
+    dacian_polytheism_high_god_name_alternate:0 "Zbelthiurdos"
+    dacian_polytheism_high_god_name_alternate_possessive:0 "Zbelthiurdos's"
+    dacian_polytheism_creator_god_name:0 "the Creator"
+    dacian_polytheism_creator_god_name_possessive:0 "the Creator's"
+    dacian_polytheism_health_god_name:0 "the Healer"
+    dacian_polytheism_health_god_name_possessive:0 "the Healer's"
+    dacian_polytheism_fertility_god_name:0 "the Earth"
+    dacian_polytheism_fertility_god_name_possessive:0 "the Earth's"
+    dacian_polytheism_wealth_god_name:0 "the Giver of Plenty"
+    dacian_polytheism_wealth_god_name_possessive:0 "the Giver of Plenty's"
+    dacian_polytheism_household_god_name:0 "the Hearth"
+    dacian_polytheism_household_god_name_possessive:0 "the Hearth's"
+    dacian_polytheism_fate_god_name:0 "Fate"
+    dacian_polytheism_fate_god_name_possessive:0 "Fate's"
+    dacian_polytheism_knowledge_god_name:0 "the Wise One"
+    dacian_polytheism_knowledge_god_name_possessive:0 "the Wise One's"
+    dacian_polytheism_war_god_name:0 "the Lord of Battle"
+    dacian_polytheism_war_god_name_possessive:0 "the Lord of Battle's"
+    dacian_polytheism_trickster_god_name:0 "the Trickster"
+    dacian_polytheism_trickster_god_name_possessive:0 "the Trickster's"
+    dacian_polytheism_night_god_name:0 "Bendis"
+    dacian_polytheism_night_god_name_possessive:0 "Bendis's"
+    dacian_polytheism_water_god_name:0 "the Sea"
+    dacian_polytheism_water_god_name_possessive:0 "the Sea's"
+    dacian_polytheism_death_deity_name:0 "the Lord of the Dead"
+    dacian_polytheism_death_deity_name_possessive:0 "the Lord of the Dead's"
+    dacian_polytheism_devil_name:0 "the Destroyer"
+    dacian_polytheism_devil_name_possessive:0 "the Destroyer's"
+    dacian_polytheism_good_god_zbelsurdos:0 "Zbelsurdos"
+    dacian_polytheism_good_god_bendis:0 "Bendis"
+    dacian_polytheism_good_god_sabazios:0 "Sabazios"
+    dacian_polytheism_good_god_kotys:0 "Kotys"
+    dacian_polytheism_good_god_darzalas:0 "Darzalas"
+    dacian_polytheism_good_god_heros:0 "Heros"
+    dacian_polytheism_good_god_pleistoros:0 "Pleistoros"
+    dacian_polytheism_evil_god_restless_dead:0 "the Restless Dead"
+    dacian_polytheism_evil_god_darkness:0 "the Darkness"
+    dacian_polytheism_religious_symbol:0 "the Rider"
+    dacian_polytheism_religious_symbol_2:0 "$dacian_polytheism_religious_symbol$"
+    dacian_polytheism_religious_symbol_3:0 "$dacian_polytheism_religious_symbol$"
+    dacian_polytheism_positive_afterlife:0 "the Blessed Dead"
+    dacian_polytheism_positive_afterlife_2:0 "$dacian_polytheism_positive_afterlife$"
+    dacian_polytheism_positive_afterlife_3:0 "$dacian_polytheism_positive_afterlife$"
+    dacian_polytheism_negative_afterlife:0 "the Underworld"
+    dacian_polytheism_negative_afterlife_2:0 "$dacian_polytheism_negative_afterlife$"
+    dacian_polytheism_negative_afterlife_3:0 "$dacian_polytheism_negative_afterlife$"
+    dacian_polytheism_religious_head_title:0 "High Priest"
+    dacian_polytheism_religious_head_title_female:0 "High Priestess"
+    dacian_polytheism_priest_male:0 "Priest"
+    dacian_polytheism_priest_male_plural:0 "Priests"
+    dacian_polytheism_priest_female:0 "Priestess"
+    dacian_polytheism_priest_female_plural:0 "Priestesses"
+    dacian_polytheism_bishop_male:0 "Prophet"
+    dacian_polytheism_bishop_male_plural:0 "Prophets"
 
-    #dacian high priest
-    zalmoxism_bishop_male:0 "Priest" 
-    zalmoxism_bishop_male_plural:0 "Priests" 
+    # holy orders
+    holy_order_sons_of_Pleistoros:0 "Sons of the Rider" # key kept for existing orders; the Thracian Rider (#85)
+    holy_order_Protectors_of_zalmoxis:0 "Protectors of Zalmoxis"

@@ -234,38 +234,41 @@ semitic_ashtart:0 "Devotee of Reshef"
 semitic_ashtart_desc:0 "Devotee of Reshef, god of war"
 
 #Dacian
-dacian_gebeleizis:0 "Devotee Of Gebeleizis"
-dacian_gebeleizis_desc:0 "Devotee of Gebeleizis high god and god of the sky"
+dacian_gebeleizis:0 "Devotee of Zbelsurdos"
+dacian_gebeleizis_desc:0 "Devotee of Zbelsurdos, the Thracian god of the sky and thunder"
 
-dacian_zalmoxis:0 "Devotee Of Zalmoxis"
+dacian_zalmoxis:0 "Devotee of Zalmoxis"
 dacian_zalmoxis_desc:0 "Devotee of Zalmoxis god of afterlife and wisdom"
 
-dacian_dionysus:0 "Devotee Of Dionysus"
-dacian_dionysus_desc:0 "Devotee of Dionysus god of fertility and agriculture"
+dacian_dionysus:0 "Devotee of Sabazios"
+dacian_dionysus_desc:0 "Devotee of Sabazios, the Thracian Dionysus, god of wine and ecstasy"
 
-dacian_pleistoros:0 "Devotee Of Pleistoros"
-dacian_pleistoros_desc:0 "Devotee of Pleistoros god of war"
+dacian_pleistoros:0 "Devotee of Pleistoros"
+dacian_pleistoros_desc:0 "Devotee of Pleistoros, the god of the land of the Apsinthians"
 
-dacian_derzelas:0 "Devotee Of Derzelas"
-dacian_derzelas_desc:0 "Devotee of Derzelas god of health"
+dacian_derzelas:0 "Devotee of Darzalas"
+dacian_derzelas_desc:0 "Devotee of Darzalas, the Great God of Odessos, lord of the underworld and abundance"
+
+dacian_bendis:0 "Devotee of Bendis"
+dacian_bendis_desc:0 "Devotee of Bendis, the Thracian goddess of the hunt and the moon"
 
 #Random events
-offering_to_ursitoare_good:0 "Favoured by Ursitoare"
-offering_to_ursitoare_good_desc:0 "The future is secured by Ursitoare"
+offering_to_ursitoare_good:0 "Favourable Oracle"
+offering_to_ursitoare_good_desc:0 "The oracle foretold a good future for this ruler and their house"
 
-offering_to_ursitoare_bad:0 "Unfavoured by Ursitoare"
-offering_to_ursitoare_bad_desc:0 "Your future is unsure as you're not blessed by Ursitoare"
+offering_to_ursitoare_bad:0 "Dark Oracle"
+offering_to_ursitoare_bad_desc:0 "The oracle foretold a dark future for this ruler and their house"
 
-favoured_by_gebeleizis:0 "favoured By Gebeleizis"
-favoured_by_gebeleizis_desc:0 "Gebeleizis blesses the rule of this character's realm"
+favoured_by_gebeleizis:0 "Favoured by Zbelsurdos"
+favoured_by_gebeleizis_desc:0 "Zbelsurdos blesses the rule of this character's realm"
 
-unfavoured_by_gebeleizis:0 "Unfavoured By Gebeleizis"
-unfavoured_by_gebeleizis_desc:0 "Gebeleizis is not happy with the rule of this character's realm"
+unfavoured_by_gebeleizis:0 "Unfavoured by Zbelsurdos"
+unfavoured_by_gebeleizis_desc:0 "Zbelsurdos is not pleased with the rule of this character's realm"
 
 offering_to_zalmoxis_good:0 "Favoured by Zalmoxis"
-offering_to_zalmoxis_good_desc:0 "The sacrificed soldier survived for a long time, Zalmoxis favoures the war"
+offering_to_zalmoxis_good_desc:0 "The messenger died on the spears and carried our requests to Zalmoxis: the god favours this war"
 offering_to_zalmoxis_bad:0 "Unfavoured by Zalmoxis"
-offering_to_zalmoxis_bad_desc:0 "The sacrificed soldier died quick, Zalmoxis doesn't favour this war"
+offering_to_zalmoxis_bad_desc:0 "The messenger survived the spears: he was judged a bad man, and Zalmoxis did not receive our requests"
 
 sacrifice_refused:0 "Refused Sacrifice"
 sacrifice_refused_desc:0 "This character refused last minute to offer his/her best soldier to Zalmoxis"

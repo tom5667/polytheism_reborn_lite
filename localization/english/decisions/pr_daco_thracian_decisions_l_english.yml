@@ -6,17 +6,22 @@
 
   # --- Choose Main Deity Decision ---
   pr_daco_thracian_choose_main_deity_decision:0 "Choose Main Deity"
-  pr_daco_thracian_choose_main_deity_decision_desc:0 "#F The gods of the Dacian people call for a champion to represent their will in the mortal realm. As a follower of the Dacian faith, I must select a patron deity who will guide my actions and bless my rule with divine favor.#!\nBy choosing a main deity, I shall establish a personal connection with the divine, gaining unique blessings and modifiers that reflect the nature of my chosen god or goddess."
-  pr_daco_thracian_choose_main_deity_decision_tooltip:0 "#T Select a patron deity from your Dacian faith to gain divine blessings#!"
+  pr_daco_thracian_choose_main_deity_decision_desc:0 "#F The gods of the Thracian people call for a champion to represent their will in the mortal realm. As a follower of the Thracian rite, I must select a patron deity who will guide my actions and bless my rule with divine favor.#!\nBy choosing a main deity, I shall establish a personal connection with the divine, gaining unique blessings and modifiers that reflect the nature of my chosen god or goddess."
+  pr_daco_thracian_choose_main_deity_decision_tooltip:0 "#T Select a patron deity of the Thracian rite to gain divine blessings#!"
   pr_daco_thracian_choose_main_deity_decision_confirm:0 "Choose Main Deity!"
   pr_daco_thracian_choose_main_deity_decision_tt:0 "#T Available Deities for [ROOT.Char.GetFaith.GetName]#!"
 
   # --- Main Deity Selection Descriptions: Dacian ---
-  select_main_deity_dacian_decision.select_gebeleizis:0 "#T Gebeleizis#!\n#P The thunderer, lord of storm and rain#!"
-  select_main_deity_dacian_decision.select_zalmoxis:0 "#T Zalmoxis#!\n#P God of the afterlife and immortality#!"
-  select_main_deity_dacian_decision.select_dionysus:0 "#T Dionysus#!\n#P God of wine, ecstasy, and the wild#!"
-  select_main_deity_dacian_decision.select_pleistoros:0 "#T Pleistoros#!\n#P God of war and battle#!"
-  select_main_deity_dacian_decision.select_derzelas:0 "#T Derzelas#!\n#P God of the underworld and abundance#!"
+  select_main_deity_dacian_decision.select_zbelsurdos:0 "#T Zbelsurdos#!
+#P God of the sky, thunder and rain#!"
+  select_main_deity_dacian_decision.select_bendis:0 "#T Bendis#!
+#P Goddess of the hunt and the moon#!"
+  select_main_deity_dacian_decision.select_sabazios:0 "#T Sabazios#!
+#P The Thracian Dionysus, god of wine and ecstasy#!"
+  select_main_deity_dacian_decision.select_darzalas:0 "#T Darzalas#!
+#P The Great God of Odessos, lord of the underworld and abundance#!"
+  select_main_deity_dacian_decision.select_pleistoros:0 "#T Pleistoros#!
+#P God of the land of the Apsinthians#!"
 
   # --- Embrace Dacian Culture Decision ---
   pr_daco_thracian_embrace_dacian_culture_decision:0 "Embrace Dacian Culture"

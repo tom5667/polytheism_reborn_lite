@@ -135,12 +135,6 @@ pr_mythical_descent = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					scope:beast = flag:demigod_aeneas
-				}
-				desc = legend_aeneas
-			}
-			triggered_desc = {
-				trigger = {
 					scope:beast = flag:demigod_achilles
 				}
 				desc = legend_achilles
@@ -150,12 +144,6 @@ pr_mythical_descent = {
 	}
 	description = {
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					scope:beast = flag:demigod_aeneas
-				}
-				desc = legend_aeneas_desc
-			}
 			triggered_desc = {
 				trigger = {
 					scope:beast = flag:demigod_achilles

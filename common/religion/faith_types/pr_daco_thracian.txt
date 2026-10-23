@@ -3,7 +3,7 @@
 #####################
 
 daco_thracian_polytheism = {
-    main_rite = dacian_rites
+    main_rite = zalmoxism_rites # #85: Zalmoxian is the main rite (decision 2026-10-17)
     historical = yes
     faith_details = {
         religion = daco_thracian_religion
@@ -14,13 +14,12 @@ daco_thracian_polytheism = {
     }
 
     eminent_holy_sites = {
-        sarmizegetusa
-        capidava
+        sarmizegetusa # Getic/Dacian royal and religious centre
+        pr_seuthopolis # Odrysian capital, temple of the Great Gods (#85)
+        pr_odessos # Darzalas of Odessos (#85)
     }
     holy_sites = {
-        philippopolis
-        zargidava
-        aidava
+        philippopolis # Apollo Kendrisos, chief god of the city (Roman period)
     }
     holy_order_names = {
         { name = "holy_order_sons_of_Pleistoros" }
@@ -28,121 +27,108 @@ daco_thracian_polytheism = {
     }
 
 
-    # Faith-level loc (#142): vanilla texts read GetFaith.*, so the god names must live
-    # on the faith. The main rite (dacian_rites) inherits this block; other rites keep their own.
+    # Faith-level loc (#142): vanilla texts read GetFaith.*, so the main rite's names live on the faith.
+    # The main rite is zalmoxism_rites (#85); dacian_rites ("Thracian") has its own block.
+    # Sources and decisions: resource/daco_thracian_research.md, chronicle/decisions_log.md (2026-10-17).
     localization = {
-        #High God Name
-        HighGodName = dacian_polytheism_high_god_name
-        HighGodName2 = dacian_polytheism_high_god_name_2
-        HighGodNamePossessive = dacian_polytheism_high_god_name_possessive
+        HighGodName = zalmoxism_high_god_name
+        HighGodName2 = zalmoxism_high_god_name_2
+        HighGodNamePossessive = zalmoxism_high_god_name_possessive
         HighGodNameSheHe = CHARACTER_SHEHE_HE
         HighGodHerselfHimself = CHARACTER_HIMSELF
         HighGodHerHis = CHARACTER_HERHIS_HIS
-        HighGodNameAlternate = dacian_polytheism_high_god_name_alternate
-        HighGodNameAlternatePossessive = dacian_polytheism_high_god_name_alternate_possessive
+        HighGodNameAlternate = zalmoxism_high_god_name_alternate
+        HighGodNameAlternatePossessive = zalmoxism_high_god_name_alternate_possessive
 
-        #Creator
-        CreatorName = dacian_polytheism_creator_god_name
-        CreatorNamePossessive = dacian_polytheism_creator_god_name_possessive
+        CreatorName = zalmoxism_creator_god_name
+        CreatorNamePossessive = zalmoxism_creator_god_name_possessive
         CreatorSheHe = CHARACTER_SHEHE_HE
         CreatorHerHis = CHARACTER_HERHIS_HIS
         CreatorHerHim = CHARACTER_HERHIM_HIM
 
-        #HealthGod
-        HealthGodName = dacian_polytheism_health_god_name
-        HealthGodNamePossessive = dacian_polytheism_health_god_name_possessive
+        HealthGodName = zalmoxism_health_god_name
+        HealthGodNamePossessive = zalmoxism_health_god_name_possessive
         HealthGodSheHe = CHARACTER_SHEHE_HE
         HealthGodHerHis = CHARACTER_HERHIS_HIS
         HealthGodHerHim = CHARACTER_HERHIM_HIM
 
-        #FertilityGod
-        FertilityGodName = dacian_polytheism_fertility_god_name
-        FertilityGodNamePossessive = dacian_polytheism_fertility_god_name_possessive
-        FertilityGodSheHe = CHARACTER_SHEHE_HE
-        FertilityGodHerHis = CHARACTER_HERHIS_HIS
-        FertilityGodHerHim = CHARACTER_HERHIM_HIM
+        FertilityGodName = zalmoxism_fertility_god_name
+        FertilityGodNamePossessive = zalmoxism_fertility_god_name_possessive
+        FertilityGodSheHe = CHARACTER_SHEHE_SHE
+        FertilityGodHerHis = CHARACTER_HERHIS_HER
+        FertilityGodHerHim = CHARACTER_HERHIM_HER
 
-        #WealthGod
-        WealthGodName = dacian_polytheism_wealth_god_name
-        WealthGodNamePossessive = dacian_polytheism_wealth_god_name_possessive
+        WealthGodName = zalmoxism_wealth_god_name
+        WealthGodNamePossessive = zalmoxism_wealth_god_name_possessive
         WealthGodSheHe = CHARACTER_SHEHE_HE
         WealthGodHerHis = CHARACTER_HERHIS_HIS
         WealthGodHerHim = CHARACTER_HERHIM_HIM
 
-        #HouseholdGod
-        HouseholdGodName = dacian_polytheism_household_god_name
-        HouseholdGodNamePossessive = dacian_polytheism_household_god_name_possessive
+        HouseholdGodName = zalmoxism_household_god_name
+        HouseholdGodNamePossessive = zalmoxism_household_god_name_possessive
         HouseholdGodSheHe = CHARACTER_SHEHE_SHE
         HouseholdGodHerHis = CHARACTER_HERHIS_HER
         HouseholdGodHerHim = CHARACTER_HERHIM_HER
 
-        #FateGod
-        FateGodName = dacian_polytheism_fate_god_name
-        FateGodNamePossessive = dacian_polytheism_fate_god_name_possessive
-        FateGodSheHe = CHARACTER_SHEHE_THEY
-        FateGodHerHis = CHARACTER_HERHIS_THEIR
-        FateGodHerHim = CHARACTER_HERHIM_THEM
+        FateGodName = zalmoxism_fate_god_name
+        FateGodNamePossessive = zalmoxism_fate_god_name_possessive
+        FateGodSheHe = CHARACTER_SHEHE_IT
+        FateGodHerHis = CHARACTER_HERHIS_ITS
+        FateGodHerHim = CHARACTER_HERHIM_IT
 
-        #KnowledgeGod
-        KnowledgeGodName = dacian_polytheism_knowledge_god_name
-        KnowledgeGodNamePossessive = dacian_polytheism_knowledge_god_name_possessive
+        KnowledgeGodName = zalmoxism_knowledge_god_name
+        KnowledgeGodNamePossessive = zalmoxism_knowledge_god_name_possessive
         KnowledgeGodSheHe = CHARACTER_SHEHE_HE
         KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
         KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
 
-        #WarGod
-        WarGodName = dacian_polytheism_war_god_name
-        WarGodNamePossessive = dacian_polytheism_war_god_name_possessive
+        WarGodName = zalmoxism_war_god_name
+        WarGodNamePossessive = zalmoxism_war_god_name_possessive
         WarGodSheHe = CHARACTER_SHEHE_HE
         WarGodHerHis = CHARACTER_HERHIS_HIS
         WarGodHerHim = CHARACTER_HERHIM_HIM
 
-        #TricksterGod
-        TricksterGodName = dacian_polytheism_trickster_god_name
-        TricksterGodNamePossessive = dacian_polytheism_trickster_god_name_possessive
+        TricksterGodName = zalmoxism_trickster_god_name
+        TricksterGodNamePossessive = zalmoxism_trickster_god_name_possessive
         TricksterGodSheHe = CHARACTER_SHEHE_HE
         TricksterGodHerHis = CHARACTER_HERHIS_HIS
         TricksterGodHerHim = CHARACTER_HERHIM_HIM
 
-        #NightGod
-        NightGodName = dacian_polytheism_night_god_name
-        NightGodNamePossessive = dacian_polytheism_night_god_name_possessive
-        NightGodSheHe = CHARACTER_SHEHE_SHE
-        NightGodHerHis = CHARACTER_HERHIS_HER
-        NightGodHerHim = CHARACTER_HERHIM_HER
+        NightGodName = zalmoxism_night_god_name
+        NightGodNamePossessive = zalmoxism_night_god_name_possessive
+        NightGodSheHe = CHARACTER_SHEHE_IT
+        NightGodHerHis = CHARACTER_HERHIS_ITS
+        NightGodHerHim = CHARACTER_HERHIM_IT
 
-        #WaterGod
-        WaterGodName = dacian_polytheism_water_god_name
-        WaterGodNamePossessive = dacian_polytheism_water_god_name_possessive
-        WaterGodSheHe = CHARACTER_SHEHE_HE
-        WaterGodHerHis = CHARACTER_HERHIS_HIS
-        WaterGodHerHim = CHARACTER_HERHIM_HIM
-
-
+        WaterGodName = zalmoxism_water_god_name
+        WaterGodNamePossessive = zalmoxism_water_god_name_possessive
+        WaterGodSheHe = CHARACTER_SHEHE_IT
+        WaterGodHerHis = CHARACTER_HERHIS_ITS
+        WaterGodHerHim = CHARACTER_HERHIM_IT
 
         PantheonTerm = religion_the_gods
         PantheonTerm2 = religion_the_gods_2
         PantheonTerm3 = religion_the_gods_3
         PantheonTermHasHave = pantheon_term_have
-        GoodGodNames = { dacian_polytheism_good_god_sabazios dacian_polytheism_good_god_bendis dacian_polytheism_good_god_derzelas dacian_polytheism_good_god_dionysus dacian_polytheism_good_god_pleistoros dacian_polytheism_good_god_ursitoare dacian_polytheism_good_god_gebeleizis dacian_polytheism_good_god_zalmoxis }
-        DevilName = dacian_polytheism_devil_name
-        DevilNamePossessive = dacian_polytheism_devil_name_possessive
-        DevilSheHe = CHARACTER_SHEHE_HE
-        DevilHerHis = CHARACTER_HERHIS_HIS
-        DevilHerselfHimself = CHARACTER_HIMSELF
-        EvilGodNames = { dacian_polytheism_evil_god_spirits dacian_polytheism_evil_god_spirits}
+        GoodGodNames = { zalmoxism_good_god_zalmoxis zalmoxism_good_god_hearth zalmoxism_good_god_lord_of_battle }
+        DevilName = zalmoxism_devil_name
+        DevilNamePossessive = zalmoxism_devil_name_possessive
+        DevilSheHe = CHARACTER_SHEHE_IT
+        DevilHerHis = CHARACTER_HERHIS_ITS
+        DevilHerselfHimself = CHARACTER_ITSELF
+        EvilGodNames = { zalmoxism_evil_god_restless_dead zalmoxism_evil_god_darkness }
         HouseOfWorship = paganism_house_of_worship
         HouseOfWorship2 = paganism_house_of_worship_2
         HouseOfWorship3 = paganism_house_of_worship_3
         HouseOfWorshipPlural = paganism_house_of_worship_plural
-        ReligiousSymbol = dacian_polytheism_religious_symbol
-        ReligiousSymbol2 = dacian_polytheism_religious_symbol_2
-        ReligiousSymbol3 = dacian_polytheism_religious_symbol_3
-        ReligiousText = dacian_polytheism_religious_text
-        ReligiousText2 = dacian_polytheism_religious_text_2
-        ReligiousText3 = dacian_polytheism_religious_text_3
-        ReligiousHeadName = dacian_polytheism_religious_head_title
-        ReligiousHeadNameFemale = dacian_polytheism_religious_head_title
+        ReligiousSymbol = zalmoxism_religious_symbol
+        ReligiousSymbol2 = zalmoxism_religious_symbol_2
+        ReligiousSymbol3 = zalmoxism_religious_symbol_3
+        ReligiousText = zalmoxism_religious_text
+        ReligiousText2 = zalmoxism_religious_text_2
+        ReligiousText3 = zalmoxism_religious_text_3
+        ReligiousHeadName = zalmoxism_religious_head_title
+        ReligiousHeadNameFemale = zalmoxism_religious_head_title_female
         ReligiousHeadTitleName = dualism_religious_head_title_name
         DevoteeMale = paganism_devotee
         DevoteeMalePlural = paganism_devoteeplural
@@ -150,41 +136,40 @@ daco_thracian_polytheism = {
         DevoteeFemalePlural = paganism_devoteeplural
         DevoteeNeuter = paganism_devotee
         DevoteeNeuterPlural = paganism_devoteeplural
-        PriestMale = dacian_polytheism_priest_male
-        PriestMalePlural = dacian_polytheism_priest_male_plural
-        PriestFemale = dacian_polytheism_priest_female
-        PriestFemalePlural = dacian_polytheism_priest_female_plural
-        PriestNeuter = dacian_polytheism_priest_male
-        PriestNeuterPlural = dacian_polytheism_priest_male_plural
+        PriestMale = zalmoxism_priest_male
+        PriestMalePlural = zalmoxism_priest_male_plural
+        PriestFemale = zalmoxism_priest_female
+        PriestFemalePlural = zalmoxism_priest_female_plural
+        PriestNeuter = zalmoxism_priest_male
+        PriestNeuterPlural = zalmoxism_priest_male_plural
         AltPriestTermPlural = christianity_priest_alternate_plural
-        BishopMale = dacian_polytheism_bishop_male
-        BishopMalePlural = dacian_polytheism_bishop_male_plural
-        BishopFemale = dacian_polytheism_priest_female
-        BishopFemalePlural = dacian_polytheism_priest_female_plural
-        BishopNeuter = dacian_polytheism_priest_male
-        BishopNeuterPlural = dacian_polytheism_priest_male_plural
-        DivineRealm = dacian_polytheism_divine_realm
-        DivineRealm2 = dacian_polytheism_divine_realm_2
-        DivineRealm3 = dacian_polytheism_divine_realm_3
-        PositiveAfterLife = dacian_polytheism_death_deity_name
-        PositiveAfterLife2 = dacian_polytheism_death_deity_name_2
-        PositiveAfterLife3 = dacian_polytheism_death_deity_name_3
-        NegativeAfterLife = dacian_polytheism_death_deity_name
-        NegativeAfterLife2 = dacian_polytheism_death_deity_name_2
-        NegativeAfterLife3 = dacian_polytheism_death_deity_name_3
-        DeathDeityName = dacian_polytheism_death_deity_name
-        DeathDeityNamePossessive = dacian_polytheism_death_deity_name_possessive
+        BishopMale = zalmoxism_bishop_male
+        BishopMalePlural = zalmoxism_bishop_male_plural
+        BishopFemale = zalmoxism_priest_female
+        BishopFemalePlural = zalmoxism_priest_female_plural
+        BishopNeuter = zalmoxism_bishop_male
+        BishopNeuterPlural = zalmoxism_bishop_male_plural
+        DivineRealm = zalmoxism_divine_realm
+        DivineRealm2 = zalmoxism_divine_realm_2
+        DivineRealm3 = zalmoxism_divine_realm_3
+        PositiveAfterLife = zalmoxism_positive_afterlife
+        PositiveAfterLife2 = zalmoxism_positive_afterlife_2
+        PositiveAfterLife3 = zalmoxism_positive_afterlife_3
+        NegativeAfterLife = zalmoxism_negative_afterlife
+        NegativeAfterLife2 = zalmoxism_negative_afterlife_2
+        NegativeAfterLife3 = zalmoxism_negative_afterlife_3
+        DeathDeityName = zalmoxism_death_deity_name
+        DeathDeityNamePossessive = zalmoxism_death_deity_name_possessive
         DeathDeitySheHe = CHARACTER_SHEHE_HE
         DeathDeityHerHis = CHARACTER_HERHIS_HIS
         DeathDeityHerHim = CHARACTER_HERHIM_HIM
-        WitchGodName = dacian_polytheism_witchgodname_zalmoxis
-        WitchGodNamePossessive = dacian_polytheism_witchgodname_zalmoxis_possessive
-        WitchGodHerHis = CHARACTER_HERHIS_HIS
-        WitchGodSheHe = CHARACTER_SHEHE_HE
-        WitchGodHerHim = CHARACTER_HERHIM_HIM
-        WitchGodMistressMaster = master
-        WitchGodMotherFather = father
-
+        WitchGodName = witchgodname_paganism
+        WitchGodNamePossessive = witchgodname_paganism_possessive
+        WitchGodHerHis = CHARACTER_HERHIS_ITS
+        WitchGodSheHe = CHARACTER_SHEHE_IT
+        WitchGodHerHim = CHARACTER_HERHIM_IT
+        WitchGodMistressMaster = witch_spirit
+        WitchGodMotherFather = witch_source
 
         GHWName = ghw_great_holy_war
         GHWNamePlural = ghw_great_holy_wars

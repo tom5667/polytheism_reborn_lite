@@ -1807,10 +1807,6 @@ pr_celtic_create_gathering_place_for_druids_decision = {
         gold = 800
     }
     effect = {
-        set_global_variable = {
-            name = pr_druid_place
-            value = yes
-        }
         trigger_event = pr_celtic.0417
         hidden_effect={
             add_to_global_variable_list = {

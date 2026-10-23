@@ -73,7 +73,7 @@ pr_romano_germanic = {
 	 history_loc_override = pr_romano_germanic_heritage_loc
 
  	color = { 39 210 60 }
- 	created = 1.1.1
+ 	created = 212.1.1 # Constitutio Antoniniana; 1.1.1 counted as no date (#187)
  	ethos = ethos_stoic
  	heritage = heritage_latin
  	language = language_pr_moselle_romance
@@ -105,7 +105,7 @@ pr_romano_hispanic = {
 	history_loc_override = pr_romano_hispanic_heritage_loc
 
 	color = { 255 165 0 } # A shade of orange to represent Roman Hispanic culture
-	created = 1.1.1
+	created = 212.1.1 # Constitutio Antoniniana; 1.1.1 counted as no date (#187)
 	ethos = ethos_stoic
 	heritage = heritage_latin
 	language = language_pr_hispano_romance
@@ -138,7 +138,7 @@ pr_afro_roman = {
 	history_loc_override = pr_afro_roman_heritage_loc
 
 	color = { 180 130 50 }
-	created = 1.1.1
+	created = 212.1.1 # Constitutio Antoniniana; 1.1.1 counted as no date (#187)
 	ethos = ethos_stoic
 	heritage = heritage_latin
 	language = language_pr_african_romance
@@ -171,7 +171,7 @@ pr_romano_egyptian = {
 	history_loc_override = pr_romano_egyptian_heritage_loc
 
 	color = { 230 200 100 }
-	created = 1.1.1
+	created = 212.1.1 # Constitutio Antoniniana; 1.1.1 counted as no date (#187)
 	ethos = ethos_stoic
 	heritage = heritage_latin
 	language = language_pr_coptic
@@ -203,7 +203,7 @@ pr_romano_syrian = {
 	history_loc_override = pr_romano_syrian_heritage_loc
 
 	color = { 120 70 150 }
-	created = 1.1.1
+	created = 212.1.1 # Constitutio Antoniniana; 1.1.1 counted as no date (#187)
 	ethos = ethos_stoic
 	heritage = heritage_latin
 	language = language_aramaic
@@ -235,7 +235,7 @@ pr_romano_illyrian = {
 	history_loc_override = pr_romano_illyrian_heritage_loc
 
 	color = { 70 120 170 }
-	created = 1.1.1
+	created = 212.1.1 # Constitutio Antoniniana; 1.1.1 counted as no date (#187)
 	ethos = ethos_stoic
 	heritage = heritage_latin
 	language = language_pr_dalmatian

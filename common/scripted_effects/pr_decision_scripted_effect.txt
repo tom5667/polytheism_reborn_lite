@@ -7,10 +7,49 @@
 # Section 1: Research & Book Events
 # =============================================
 
+# Scope: character. Clears the research chain state (pr_events.txt pr.0018-pr.0049) of this character, so a
+# new attempt of pr_return_polytheism_decision starts clean. The chain keeps its state per character (not
+# global), so several players can run it at the same time in multiplayer.
+pr_research_ancient_religion_reset_effect = {
+	if = { limit = { has_variable = research_great_library } remove_variable = research_great_library }
+	if = { limit = { has_variable = research_small_library } remove_variable = research_small_library }
+	if = { limit = { has_variable = learning_good } remove_variable = learning_good }
+	if = { limit = { has_variable = bought_book } remove_variable = bought_book }
+	clear_variable_list = research_anglo_saxon
+	clear_variable_list = research_armenian
+	clear_variable_list = research_assyrian
+	clear_variable_list = research_atenism
+	clear_variable_list = research_babylonian
+	clear_variable_list = research_brythonic
+	clear_variable_list = research_celtic_iberian
+	clear_variable_list = research_dacian
+	clear_variable_list = research_etruscan
+	clear_variable_list = research_gaelic
+	clear_variable_list = research_gaulish
+	clear_variable_list = research_georgian
+	clear_variable_list = research_german
+	clear_variable_list = research_graeco_egyptian
+	clear_variable_list = research_greek
+	clear_variable_list = research_hittite
+	clear_variable_list = research_illyrian
+	clear_variable_list = research_kemetic
+	clear_variable_list = research_latvian
+	clear_variable_list = research_lithuanian
+	clear_variable_list = research_lusitanian
+	clear_variable_list = research_mycenaean
+	clear_variable_list = research_prussian
+	clear_variable_list = research_punic
+	clear_variable_list = research_roman
+	clear_variable_list = research_scythian
+	clear_variable_list = research_semitic
+	clear_variable_list = research_sumerian
+	clear_variable_list = research_zalmoxism
+}
+
 pr_research_ancient_religion_events_great_library_effect = {
 	if = {
 		limit = {
-			has_global_variable = research_great_library
+			has_variable = research_great_library
 		}
 		trigger_event = {
 			on_action = pr_research_ancient_religion_events_great_library
@@ -21,7 +60,7 @@ pr_research_ancient_religion_events_great_library_effect = {
 pr_research_ancient_religion_events_small_library_effect = {
 	if = {
 		limit = {
-			has_global_variable = research_small_library
+			has_variable = research_small_library
 		}
 		trigger_event = {
 			on_action = pr_research_ancient_religion_events_small_library
@@ -32,7 +71,7 @@ pr_research_ancient_religion_events_small_library_effect = {
 pr_research_ancient_religion_events_debate_effect = {
 	if = {
 		limit = {
-			has_global_variable = learning_good
+			has_variable = learning_good
 		}
 		trigger_event = {
 			on_action = pr_research_ancient_religion_events_debate
@@ -41,7 +80,7 @@ pr_research_ancient_religion_events_debate_effect = {
 	if = {
 		limit = {
 			NOT = {
-				has_global_variable = learning_good
+				has_variable = learning_good
 			}
 		}
 		trigger_event = {
@@ -53,7 +92,7 @@ pr_research_ancient_religion_events_debate_effect = {
 pr_bought_book_event_effect = {
 	if = {
 		limit = {
-			has_global_variable = bought_book
+			has_variable = bought_book
 		}
 	}
 	trigger_event = {
