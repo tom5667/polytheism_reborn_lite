@@ -5,7 +5,10 @@ pr_activity_kogaionon_pilgrimage = {
 		highest_held_title_tier > tier_barony
 		is_landed = yes
 		religion = religion:daco_thracian_religion
-		has_global_variable = pr_kogaionon_altar
+		is_target_in_global_variable_list = { # the Kogaionon altar has been placed (#187)
+			name = unavailable_unique_decisions
+			target = flag:pr_daco_thracian_place_kogaionon_altar_decision
+		}
 		OR = {
 			title:c_hunyad = {
 				squared_distance = {
@@ -284,6 +287,9 @@ pr_activity_kogaionon_pilgrimage = {
 	# TRAVEL
 	#
 	#################
+
+	# vanilla sets this explicitly for every activity; without it: "missing Header Background texture" (#187)
+	header_background = "gfx/interface/illustrations/activity_header_backgrounds/pr_activity_kogaionon_pilgrimage.dds"
 
 	# Travel
 	background = {
@@ -753,6 +759,9 @@ pr_activity_cnoc_uisnigh_pilgrimage = {
 	# TRAVEL
 	#
 	#################
+
+	# vanilla sets this explicitly for every activity; without it: "missing Header Background texture" (#187)
+	header_background = "gfx/interface/illustrations/activity_header_backgrounds/pr_activity_cnoc_uisnigh_pilgrimage.dds"
 
 	# Travel
 	background = {
@@ -1227,6 +1236,9 @@ pr_activity_delphi_pilgrimage = {
 	#
 	#################
 
+	# vanilla sets this explicitly for every activity; without it: "missing Header Background texture" (#187)
+	header_background = "gfx/interface/illustrations/activity_header_backgrounds/pr_activity_delphi_pilgrimage.dds"
+
 	# Travel
 	background = {
 		trigger = {
@@ -1690,6 +1702,9 @@ pr_activity_vogtei_pilgrimage = {
 	# TRAVEL
 	#
 	#################
+
+	# vanilla sets this explicitly for every activity; without it: "missing Header Background texture" (#187)
+	header_background = "gfx/interface/illustrations/activity_header_backgrounds/pr_activity_vogtei_pilgrimage.dds"
 
 	# Travel
 	background = {

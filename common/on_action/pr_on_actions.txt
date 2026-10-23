@@ -306,7 +306,7 @@ PR_check_serapis_cult_leader_yearly_pulse = {
 
 PR_check_sol_invictus_cult_leader_yearly_pulse = {
 	trigger = {
-		exists = global_var:restored_sol_invictus
+		exists = global_var:restored_sol_invictus_cult
 		pr_is_cultus_deorum_trigger = yes
 	}
 	effect = {

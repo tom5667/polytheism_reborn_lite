@@ -115,7 +115,7 @@
   #Dacian
   pr.0108.t:0 ""
   pr.0108.desc:0 " "
-  pr.0108.pr_dacian:0 "Dacian"
+  pr.0108.pr_dacian:0 "Thracian"
   pr.0108.zalmoxism:0 "Zalmoxian"
   pr.0108.back:0 "Back"
 
@@ -362,8 +362,8 @@
   #Dacian
   pr.0027.t:0 ""
   pr.0027.desc:0 " "
-  pr.0027.pr_dacian:0 "Dacian Polytheism"
-  pr.0027.zalmoxism:0 "Zalmoxism"
+  pr.0027.pr_dacian:0 "Thracian Polytheism"
+  pr.0027.zalmoxism:0 "Zalmoxian"
   pr.0027.back:0 "Back"
 
   #Caucasus

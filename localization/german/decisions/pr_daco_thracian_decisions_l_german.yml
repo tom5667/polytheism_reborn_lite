@@ -12,11 +12,16 @@
   pr_daco_thracian_choose_main_deity_decision_tt:0 "#T Verfügbare Gottheiten für [ROOT.Char.GetFaith.GetName]#!/"
 
   # --- Auswahlbeschreibungen der Hauptgottheit: Dakisch ---
-  select_main_deity_dacian_decision.select_gebeleizis:0 "#T Gebeleizis#!/\n#P Der Donnerer, Herr des Sturms und Regens#!/"
-  select_main_deity_dacian_decision.select_zalmoxis:0 "#T Zalmoxis#!/\n#P Gott des Jenseits und der Unsterblichkeit#!/"
-  select_main_deity_dacian_decision.select_dionysus:0 "#T Dionysus#!/\n#P Gott des Weines, der Ekstase und der Wildnis#!/"
-  select_main_deity_dacian_decision.select_pleistoros:0 "#T Pleistoros#!/\n#P Gott des Krieges und der Schlacht#!/"
-  select_main_deity_dacian_decision.select_derzelas:0 "#T Derzelas#!/\n#P Gott der Unterwelt und des Überflusses#!/"
+  select_main_deity_dacian_decision.select_zbelsurdos:0 "#T Zbelsurdos#!
+#P Gott des Himmels, des Donners und des Regens#!"
+  select_main_deity_dacian_decision.select_bendis:0 "#T Bendis#!
+#P Göttin der Jagd und des Mondes#!"
+  select_main_deity_dacian_decision.select_sabazios:0 "#T Sabazios#!
+#P Der thrakische Dionysos, Gott des Weines und der Ekstase#!"
+  select_main_deity_dacian_decision.select_darzalas:0 "#T Darzalas#!
+#P Der Große Gott von Odessos, Herr der Unterwelt und des Überflusses#!"
+  select_main_deity_dacian_decision.select_pleistoros:0 "#T Pleistoros#!
+#P Gott des Landes der Apsinthier#!"
 
   # --- Dakische Kultur annehmen ---
   pr_daco_thracian_embrace_dacian_culture_decision:0 "Nimm die dakische Kultur an"

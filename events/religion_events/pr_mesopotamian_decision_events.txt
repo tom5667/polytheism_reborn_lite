@@ -281,6 +281,5 @@ pr_mesopotamian.0200 = {
 		title:c_batiha.title_province = {
 			add_special_building = first_mesopotamian_brewery
 		}
-		clear_global_variable_list = unavailable_unique_decisions_open_first_brewery
 	}
 }

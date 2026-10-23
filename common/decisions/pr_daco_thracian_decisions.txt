@@ -19,11 +19,8 @@ pr_daco_thracian_choose_main_deity_decision = {
     is_shown = {
         # DLC check.
         has_fp1_dlc_trigger = yes
-        # Following a valid religion & faith.
-        OR = {
-            faith = faith:daco_thracian_polytheism
-            rite = { rite_has_parameter = special_doctrine_dacian_patron_god_active }
-        }
+        # The Thracian rite (#201); the Zalmoxian rite has no patron gods
+        rite = { rite_has_parameter = special_doctrine_dacian_patron_god_active }
     }
 
     is_valid = {
@@ -43,28 +40,28 @@ pr_daco_thracian_choose_main_deity_decision = {
                 desc = pr_daco_thracian_choose_main_deity_decision_tt
                 100 = {
                     show_chance = no
-                    desc = select_main_deity_dacian_decision.select_gebeleizis
+                    desc = select_main_deity_dacian_decision.select_zbelsurdos
                     add_character_modifier = dacian_gebeleizis
                 }
                 100 = {
                     show_chance = no
-                    desc = select_main_deity_dacian_decision.select_zalmoxis
-                    add_character_modifier = dacian_zalmoxis
+                    desc = select_main_deity_dacian_decision.select_bendis
+                    add_character_modifier = dacian_bendis
                 }
                 100 = {
                     show_chance = no
-                    desc = select_main_deity_dacian_decision.select_dionysus
+                    desc = select_main_deity_dacian_decision.select_sabazios
                     add_character_modifier = dacian_dionysus
+                }
+                100 = {
+                    show_chance = no
+                    desc = select_main_deity_dacian_decision.select_darzalas
+                    add_character_modifier = dacian_derzelas
                 }
                 100 = {
                     show_chance = no
                     desc = select_main_deity_dacian_decision.select_pleistoros
                     add_character_modifier = dacian_pleistoros
-                }
-                100 = {
-                    show_chance = no
-                    desc = select_main_deity_dacian_decision.select_derzelas
-                    add_character_modifier = dacian_derzelas
                 }
             }
         }
@@ -77,6 +74,7 @@ pr_daco_thracian_choose_main_deity_decision = {
         piety >= minor_piety_value
         NOR = {
             has_character_modifier = dacian_gebeleizis
+            has_character_modifier = dacian_bendis
             has_character_modifier = dacian_zalmoxis
             has_character_modifier = dacian_dionysus
             has_character_modifier = dacian_pleistoros
@@ -379,6 +377,7 @@ pr_daco_thracian_zalmoxis_sacrifice_decision = {
 
     is_shown = {
         religion = religion:daco_thracian_religion
+        rite = rite:zalmoxism_rites # Getic messenger to Zalmoxis (Herodotus 4.94), #201
     }
 
     is_valid = {

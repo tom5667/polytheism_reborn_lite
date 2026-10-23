@@ -1119,12 +1119,6 @@ pr_celtic.0414 = {
 			title:d_munster = { set_de_jure_liege_title = title:k_ireland }
 			hidden_effect = {
 			title:k_high_kingdom_of_ireland = { set_de_jure_liege_title = title:e_celtic_empire }
-			hidden_effect = {
-				remove_list_global_variable = {
-					name = reconquest_ireland
-					target = flag:flag_reconquest_ireland
-				}
-			}
 		}
 	}
 	option = {
@@ -1171,12 +1165,6 @@ pr_celtic.0414 = {
 			}
 			resolve_title_and_vassal_change = scope:title_change
 			title:k_scotland = { set_de_jure_liege_title = title:e_celtic_empire }
-			hidden_effect = {
-			remove_list_global_variable = {
-				name = reconquest_alba
-				target = flag:flag_reconquest_alba
-			}
-		}
 	}
 	option = {
 		trigger = {
@@ -1221,12 +1209,6 @@ pr_celtic.0414 = {
 			}
 			resolve_title_and_vassal_change = scope:title_change
 			title:k_wales = { set_de_jure_liege_title = title:e_celtic_empire }
-			hidden_effect = {
-			remove_list_global_variable = {
-				name = reconquest_wales
-				target = flag:flag_reconquest_wales
-			}
-		}
 	}
 	option = {
 		trigger = {
@@ -1275,12 +1257,6 @@ pr_celtic.0414 = {
 			}
 			resolve_title_and_vassal_change = scope:title_change
 			title:k_england = { set_de_jure_liege_title = title:e_celtic_empire }
-			hidden_effect = {
-			remove_list_global_variable = {
-				name = reconquest_albion
-				target = flag:flag_reconquest_albion
-			}
-		}	
 	}
 	option = {
 		trigger = {
@@ -1320,12 +1296,6 @@ pr_celtic.0414 = {
 			}
 			resolve_title_and_vassal_change = scope:title_change
 			title:k_brittany = { set_de_jure_liege_title = title:e_celtic_empire }
-		hidden_effect = {
-			remove_list_global_variable = {
-				name = reconquest_albion
-				target = flag:flag_reconquest_brittany
-			}
-		}	
 	}
 	option = {
 		trigger = {
@@ -1370,12 +1340,6 @@ pr_celtic.0414 = {
 			title:d_leon = { set_de_jure_liege_title = title:k_pr_galicia }
 
 			title:k_pr_galicia = { set_de_jure_liege_title = title:e_celtic_empire }
-			hidden_effect = {
-			remove_list_global_variable = {
-				name = conquest_galicia
-				target = flag:flag_conquest_galicia
-			}
-		}
 	}
 
 	option = {
@@ -1425,12 +1389,6 @@ pr_celtic.0414 = {
 			title:d_flanders = { set_de_jure_liege_title = title:k_belgica }
 
 			title:k_belgica = { set_de_jure_liege_title = title:e_celtic_empire }
-			hidden_effect = {
-			remove_list_global_variable = {
-				name = conquest_belgae
-				target = flag:flag_conquest_belgae
-			}
-		}
 	}
 	option = {
 		trigger = {
@@ -1501,12 +1459,6 @@ pr_celtic.0414 = {
 			title:d_auvergne = { set_de_jure_liege_title = title:k_celtica}
 			title:d_bourbon = { set_de_jure_liege_title = title:k_celtica}
 
-			hidden_effect = {
-			remove_list_global_variable = {
-				name = conquest_belgae
-				target = flag:flag_conquest_belgae
-			}
-		}
 	}
 }
 
@@ -1951,11 +1903,10 @@ pr_celtic.0425 = {
 			is_ai = no
 		}
 		scope:new_high_king = {
-			add_character_flag = new_high_king_tributary_war
 			start_war = {
 				cb = make_tributary_cb
 				target = scope:ruler
-				claimant = scope:new_high_kingi
+				claimant = scope:new_high_king
 			}
 		}
 	}
@@ -2002,7 +1953,6 @@ pr_celtic.0425 = {
 			}
 		}
 		scope:new_high_king = {
-			add_character_flag = new_high_king_tributary_war
 			start_war = {
 				cb = make_tributary_cb
 				target = scope:ruler

@@ -876,12 +876,10 @@ open_conversion_to_polytheism_menu = {
 		scope:actor = {
 			is_ai = no
 			has_game_rule = pr_conversion_to_polytheism_menu_on
-			NOT = {
+			NOR = { # was NOT with two triggers (ambiguous, read as NAND) (#187)
 				has_character_flag = open_demand_conversion_to_polytheism_menu
-				OR = { 
-					has_religion = religion:christianity_religion
-					has_religion = religion:islam_religion
-				}
+				has_religion = religion:christianity_religion
+				has_religion = religion:islam_religion
 			}
 		}
 	}

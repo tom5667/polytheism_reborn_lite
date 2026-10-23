@@ -575,6 +575,9 @@ uruk = { # Eanna temple of Inana; c_qadisiya (west of the Euphrates) was the wro
 #Dacian
 #############
 
+# #85 (2026-10-17): Aidava (wrong place, no cult), Capidava (one Roman relief) and Zargidava (one source) removed;
+# Seuthopolis and Odessos added. Sources and map checks: resource/daco_thracian_research.md
+
 sarmizegetusa = {
 	county = c_hunyad
 
@@ -582,37 +585,37 @@ sarmizegetusa = {
 		name = holy_site_sarmizegetusa_effect_name
 		martial = 2
 	}
-}
 
-aidava = {
-	county = c_naissus
-	barony = b_pirot
-
-	county_holder_character_modifier = {
-		monthly_piety_gain_mult = 0.1
-	}
-	parameters = {
-		aidava_conversion_bonus # +5% County Conversion
+	faith_character_modifier = { # eminent
+		monthly_piety_gain_mult = 0.05
 	}
 }
 
-capidava = {
-	county = c_constanta
+pr_seuthopolis = {
+	county = c_kran
+	barony = b_kran # control 8: Seuthopolis falls in Kran (border only with impassable terrain)
 
 	county_holder_character_modifier = {
-		name = holy_site_capidava_effect_name
-		cultural_head_fascination_mult = 0.05
-		monthly_county_control_growth_factor = 0.05
+		name = holy_site_pr_seuthopolis_effect_name
+		monthly_prestige_gain_mult = 0.1
+	}
+
+	faith_character_modifier = { # eminent
+		monthly_piety_gain_mult = 0.05
 	}
 }
 
-zargidava = {
-	county = c_stoenesti
-	barony = b_bacau
+pr_odessos = {
+	county = c_mesembria
+	barony = b_varna # control 8: Varna; county already has dionysopolis (b_karvuna), allowed
 
 	county_holder_character_modifier = {
-		name = holy_site_zargidava_effect_name
-		direct_vassal_opinion = 5
+		name = holy_site_pr_odessos_effect_name
+		monthly_income_mult = 0.05
+	}
+
+	faith_character_modifier = { # eminent
+		monthly_piety_gain_mult = 0.05
 	}
 }
 
