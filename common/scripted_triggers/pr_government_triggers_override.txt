@@ -1,0 +1,39 @@
+﻿# Override of a vanilla scripted trigger (common/scripted_triggers/pam_scripted_triggers.txt, CK3 1.20.1.2). The
+# vanilla block is copied unchanged; only the PR (#76) lines are added. Re-copy from vanilla after every CK3 update (see
+# Rules/game_update_rules.md and database_conflicts.log).
+#
+# The whole vanilla trigger only applies to rites with doctrine_theocracy_lay_clergy (the trigger_if below). Christian
+# faiths have doctrine_theocracy_temporal (religion_types/00_christianity.txt), so Catholics and Orthodox are not
+# affected; the PR line only applies to the Roman religion.
+
+theocratic_lay_clergy_trigger = {
+	trigger_if = {
+		limit = {
+			rite = { rite_has_doctrine = doctrine_theocracy_lay_clergy }
+		}
+		OR = {
+			# Cardinals
+			# PR (#76): a landed Roman ruler who holds a College seat (e.g. a landed Pontifex Maximus, who keeps a
+			# pontifical seat since 2026-10-31) is not clergy and keeps his own government. Without this the engine,
+			# which gives a head of faith the theocracy whenever he can get it (02_theocratic_government_types.txt),
+			# turned a landed Pontifex Maximus into a theocrat (in-game 2026-11-06). Who is already a theocrat stays one.
+			AND = {
+				exists = clerical_elector_title
+				NOT = {
+					AND = {
+						religion = religion:roman_religion # same scope as pam_strip_illegal_cardinalate_effect's PR branch
+						is_landed = yes
+						NOT = { government_has_flag = government_is_theocracy }
+					}
+				}
+			}
+			# Archdioceses
+			primary_title ?= { has_clerical_region = yes }
+			# Other landless explicit clergy
+			AND = {
+				is_landed = no
+				is_clergy = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+﻿# College of Pontiffs (#76): realm shares for the storyline "The New Believers" (Lex Ogulnia). Character scope (a ruler).
+pr_college_realm_roman_counties_value = {
+	value = 0
+	every_realm_county = {
+		limit = { faith = faith:roman_polytheism }
+		add = 1
+	}
+}
+
+pr_college_realm_counties_value = {
+	value = 0
+	every_realm_county = {
+		add = 1
+	}
+}
+
+# Share of the realm's counties that are Roman, in percent (0 for a ruler without counties)
+pr_college_realm_roman_share_value = {
+	value = 0
+	if = {
+		limit = { pr_college_realm_counties_value > 0 }
+		add = pr_college_realm_roman_counties_value
+		multiply = 100
+		divide = pr_college_realm_counties_value
+	}
+}
+
+# Counties of the Church of Constantinople and of Rome in the realm: which Church reaches for the converts
+# (pr_college_ogulnia_find_church_effect). Not by faith alone: before the Great Schism both are christian_faith.
+pr_college_realm_constantinople_counties_value = {
+	value = 0
+	every_realm_county = {
+		limit = { pr_college_church_of_constantinople_trigger = yes }
+		add = 1
+	}
+}
+
+pr_college_realm_rome_counties_value = {
+	value = 0
+	every_realm_county = {
+		limit = { pr_college_church_of_rome_trigger = yes }
+		add = 1
+	}
+}
+
+# Character scope (the ruler): how many great men the Lex Cornelia election would seat, as simulated when the vote opens
+# (pr_college_cornelia_electable_preview_effect in pr_college.0202). Shown in the vote, so the player knows how many of the
+# six new seats would go to great men and how many the College co-opts (decided 2026-11-08).
+pr_college_cornelia_electable_value = {
+	value = 0
+	if = {
+		limit = { has_variable = pr_college_cornelia_electable_preview }
+		add = var:pr_college_cornelia_electable_preview
+	}
+}

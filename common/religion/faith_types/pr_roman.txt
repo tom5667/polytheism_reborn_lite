@@ -28,6 +28,7 @@ roman_polytheism = {
 
     doctrines = {
         unreformed_faith_doctrine
+        special_doctrine_has_clerical_electors # College of Pontiffs elects the Pontifex Maximus (#76); faith-locked group, so it must sit on the faith
     }
     cultures = { roman greek pr_romano_british pr_romano_germanic pr_romano_hispanic pr_afro_roman pr_romano_egyptian pr_gallo_roman pr_romano_syrian pr_romano_illyrian } # every culture of a Roman rite (#65)
 

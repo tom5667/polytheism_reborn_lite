@@ -1,0 +1,260 @@
+﻿# Override of vanilla pam_strip_illegal_cardinalate_effect (common/scripted_effects/11_dlc_pam_scripted_effects.txt, CK3 1.20.1).
+# Whole vanilla block copied unchanged; only the PR (#76) line is added, so a Roman pontifex keeps his seat
+# when he holds land (pontifices were senators and magistrates). on_title_gain calls this effect.
+# Re-copy from vanilla after every CK3 update (see Rules/game_update_rules.md and database_conflicts.log).
+
+# Holy orders stay as they are, since a holy-order primary never moves onto ecclesiastical government
+# Non-rulers stay: a new holder only rules once the transfer resolves
+pam_strip_illegal_cardinalate_effect = {
+	if = {
+		limit = {
+			is_ruler = yes
+			NOR = {
+				government_has_flag = government_is_theocracy
+				government_has_flag = government_is_holy_order
+				religion = religion:roman_religion # PR (#76): College of Pontiffs seats are not clerical-only
+			}
+			exists = clerical_elector_title
+		}
+		pam_destroy_cardinal_title_effect = { CARDINALATE = clerical_elector_title }
+	}
+}
+
+# Override of vanilla pam_vacate_head_of_faith_cardinalate_effect (common/scripted_effects/11_dlc_pam_scripted_effects.txt:412-422, CK3 1.20.1.2).
+# Whole vanilla block copied unchanged; only the PR (#76) line is added. Vanilla's on_title_gain calls this effect for
+# every title gain (title_on_actions.txt:259-260) and destroys the seat of a head of faith ("A Head of Faith must not sit in
+# the College they preside over"). The Pontifex Maximus did sit in his College: he was always taken from it and counts
+# inside its 5, 9 and 15 places (resource/college_laws_research.md, Deel D; decided by the maintainer 2026-10-31).
+# Re-copy from vanilla after every CK3 update (see Rules/game_update_rules.md and database_conflicts.log).
+pam_vacate_head_of_faith_cardinalate_effect = {
+	if = {
+		limit = {
+			exists = clerical_elector_title
+			pam_holds_church_seat_trigger = yes
+			NOT = { religion = religion:roman_religion } # PR (#76): the Pontifex Maximus keeps his pontifical seat
+		}
+		clerical_elector_title = { save_temporary_scope_as = pam_vacated_cardinalate }
+		pam_destroy_cardinal_title_effect = { CARDINALATE = scope:pam_vacated_cardinalate }
+	}
+}
+
+# Override of vanilla head_of_faith_set_up_change_core_tenet_effect (common/scripted_effects/11_dlc_pam_scripted_effects.txt:745-954, CK3 1.20.1).
+# Whole vanilla block copied unchanged inside one PR (#76) guard: for the Roman religion it sets neither tenet_to_add nor
+# tenet_to_remove, so a newly elected AI Pontifex Maximus never replaces a core tenet (head_of_faith_change_core_tenet_effect
+# only acts when both exist). The College view uses the same effect for its preview (vanilla comment at :957, "Decoupled so it
+# can also be used in the UI"), so it should no longer show a swap; to confirm in-game. Decided by the maintainer 2026-10-18: the Pontifex
+# Maximus guarded ritual and custom (mos maiorum), he did not change the religion.
+# Re-copy from vanilla after every CK3 update (see Rules/game_update_rules.md and database_conflicts.log).
+# used by code, do not rename or remove. DO NOT CHANGE THE GAME STATE OR ADD ARGUMENTS - only set tenet_to_add and tenet_to_remove in scope.
+head_of_faith_set_up_change_core_tenet_effect = {
+	if = {
+		limit = { NOT = { religion = religion:roman_religion } } # PR (#76)
+		save_scope_as = actor
+		if = { # Players don't swap tenets like this
+			limit = {
+				is_ai = no
+			}
+		}
+		else_if = { # Pious candidates take what feels the best
+			limit = {
+				has_realm_law = theocratic_elective_succession_law
+				pam_is_college_election_candidate_trigger = { SOURCE = theocratic_elective_pious }
+			}
+			ordered_personal_tenet = {
+				limit = {
+					save_temporary_scope_as = tenet_check
+					scope:actor.rite = { rite_can_choose_tenet = scope:tenet_check }
+					pam_tenet_ai_may_permit_trigger = { CHARACTER = scope:actor }
+					NOR = {
+						scope:actor.rite = { rite_has_tenet = scope:tenet_check }
+						scope:actor.faith.main_rite = {
+							has_tenet_status = {
+								tenet = scope:tenet_check
+								status = prohibited
+							}
+						}
+					}
+				}
+				order_by = pam_tenet_popularity_impact_value
+				position = 0
+				save_scope_as = tenet_to_add
+			}
+			# Nothing they personally hold is still available, so settle for whatever else suits them
+			every_desired_tenet = {
+				selection_count = 97
+				only_positive = no
+				limit = {
+					NOT = { exists = scope:tenet_to_add }
+					save_temporary_scope_as = tenet_check
+					scope:actor.rite = { rite_can_choose_tenet = scope:tenet_check }
+					pam_tenet_ai_may_permit_trigger = { CHARACTER = scope:actor }
+					NOR = {
+						scope:actor.rite = { rite_has_tenet = scope:tenet_check }
+						scope:actor.faith.main_rite = {
+							has_tenet_status = {
+								tenet = scope:tenet_check
+								status = prohibited
+							}
+						}
+					}
+				}
+				save_scope_as = tenet_to_add
+			}
+		}
+		else_if = { # Powerful candidates impose their puppeteer's creed, or their own when nobody pulls the strings
+			limit = {
+				pam_is_college_election_candidate_trigger = { SOURCE = theocratic_elective_powerful }
+			}
+			if = {
+				limit = {
+					exists = puppeteer
+				}
+				puppeteer = {
+					save_temporary_scope_as = tenet_patron
+				}
+			}
+			else = {
+				save_temporary_scope_as = tenet_patron
+			}
+			scope:tenet_patron = {
+				# What the patron actually professes comes first
+				ordered_personal_tenet = {
+					limit = {
+						save_temporary_scope_as = tenet_check
+						scope:actor.rite = { rite_can_choose_tenet = scope:tenet_check }
+						trigger_if = {
+							limit = { scope:tenet_patron = scope:actor }
+							pam_tenet_ai_may_permit_trigger = { CHARACTER = scope:actor }
+						}
+						NOR = {
+							scope:actor.rite = { rite_has_tenet = scope:tenet_check }
+							scope:actor.faith.main_rite = {
+								has_tenet_status = {
+									tenet = scope:tenet_check
+									status = prohibited
+								}
+							}
+						}
+					}
+					order_by = pam_tenet_popularity_impact_value
+					position = 0
+					save_scope_as = tenet_to_add
+				}
+				# Nothing they personally hold is still available, so settle for whatever else suits them
+				every_desired_tenet = {
+					selection_count = 97
+					only_positive = no
+					limit = {
+						NOT = { exists = scope:tenet_to_add }
+						save_temporary_scope_as = tenet_check
+						scope:actor.rite = { rite_can_choose_tenet = scope:tenet_check }
+						trigger_if = {
+							limit = { scope:tenet_patron = scope:actor }
+							pam_tenet_ai_may_permit_trigger = { CHARACTER = scope:actor }
+						}
+						NOR = {
+							scope:actor.rite = { rite_has_tenet = scope:tenet_check }
+							scope:actor.faith.main_rite = {
+								has_tenet_status = {
+									tenet = scope:tenet_check
+									status = prohibited
+								}
+							}
+						}
+					}
+					save_scope_as = tenet_to_add
+				}
+			}
+			# A puppeteer with nothing left to ask for leaves the candidate to his own conscience
+			every_desired_tenet = {
+				selection_count = 97
+				only_positive = no
+				limit = {
+					NOT = { exists = scope:tenet_to_add }
+					save_temporary_scope_as = tenet_check
+					scope:actor.rite = { rite_can_choose_tenet = scope:tenet_check }
+					pam_tenet_ai_may_permit_trigger = { CHARACTER = scope:actor }
+					NOR = {
+						scope:actor.rite = { rite_has_tenet = scope:tenet_check }
+						scope:actor.faith.main_rite = {
+							has_tenet_status = {
+								tenet = scope:tenet_check
+								status = prohibited
+							}
+						}
+					}
+				}
+				save_scope_as = tenet_to_add
+			}
+		}
+		else = { # Populists take a popular tenet
+			ordered_tenet = {
+				limit = {
+					save_temporary_scope_as = tenet_check
+					scope:actor.rite = { rite_can_choose_tenet = scope:tenet_check }
+					pam_tenet_ai_may_permit_trigger = { CHARACTER = scope:actor }
+					NOR = {
+						scope:actor.rite = { rite_has_tenet = scope:tenet_check }
+						scope:actor.faith.main_rite = {
+							has_tenet_status = {
+								tenet = scope:tenet_check
+								status = prohibited
+							}
+						}
+					}
+				}
+				order_by = pam_tenet_popularity_impact_value
+				position = 0
+				save_scope_as = tenet_to_add
+			}
+		}
+	
+		# A Powerful candidate campaigns on his puppeteer's grievance, the same way he takes his puppeteer's preference above
+		if = {
+			limit = {
+				pam_is_college_election_candidate_trigger = { SOURCE = theocratic_elective_powerful }
+				exists = puppeteer
+			}
+			puppeteer = {
+				ordered_undesired_tenet = {
+					limit = {
+						save_temporary_scope_as = tenet_check
+						scope:actor.rite = { rite_has_tenet = scope:tenet_check }
+						this != tenet:tenet_armed_pilgrimages
+					}
+					save_scope_as = tenet_to_remove
+				}
+			}
+		}
+		# Pious candidates, and Powerful ones with nobody pulling the strings, drop what they resent most themselves
+		else_if = {
+			limit = {
+				OR = {
+					pam_is_college_election_candidate_trigger = { SOURCE = theocratic_elective_pious }
+					pam_is_college_election_candidate_trigger = { SOURCE = theocratic_elective_powerful }
+				}
+			}
+			ordered_undesired_tenet = {
+				limit = {
+					this != tenet:tenet_armed_pilgrimages
+				}
+				save_scope_as = tenet_to_remove
+			}
+		}
+
+		# Populists drop whichever of the Rite's core tenets has the lowest popularity
+		if = {
+			limit = { NOT = { exists = scope:tenet_to_remove } }
+			rite = {
+				ordered_rite_tenet = {
+					limit = {
+						this != tenet:tenet_armed_pilgrimages
+					}
+					order_by = pam_tenet_unpopularity_impact_value
+					position = 0
+					save_scope_as = tenet_to_remove
+				}
+			}
+		}
+	}
+}

@@ -85,6 +85,9 @@ RICE_check = {
 # Root = none (empty scope)
 polytheism_reborn_on_game_start = {
 	effect = {
+		# The Roman head of faith vanilla creates at game start gets the College election right away, as vanilla does
+		# for the Pope (game_start.txt:2546); found missing in a new game 2026-11-10
+		faith:roman_polytheism.religious_head ?= { pr_college_head_election_law_effect = yes }
 		# Emperor Julian nickname choice
 		if = {
 			limit = {

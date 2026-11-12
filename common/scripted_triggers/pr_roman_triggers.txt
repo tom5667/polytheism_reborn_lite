@@ -160,3 +160,388 @@ pr_historical_grudge_with_christianity_trigger = {
 		religion = religion:scythian_religion
 	}
 }
+
+# College of Pontiffs (#76)
+# Character holds one of the pontifical seats: the only candidates for Pontifex Maximus.
+# The rex sacrorum and the flamines maiores vote but cannot stand.
+pr_college_is_pontifex_trigger = {
+	OR = {
+		has_title = title:d_pr_pontifical_seat_1
+		has_title = title:d_pr_pontifical_seat_2
+		has_title = title:d_pr_pontifical_seat_3
+		has_title = title:d_pr_pontifical_seat_4
+		has_title = title:d_pr_pontifical_seat_5
+		has_title = title:d_pr_pontifical_seat_6
+		has_title = title:d_pr_pontifical_seat_7
+		has_title = title:d_pr_pontifical_seat_8
+		has_title = title:d_pr_pontifical_seat_9
+		has_title = title:d_pr_pontifical_seat_10
+		has_title = title:d_pr_pontifical_seat_11
+		has_title = title:d_pr_pontifical_seat_12
+		has_title = title:d_pr_pontifical_seat_13
+		has_title = title:d_pr_pontifical_seat_14
+		has_title = title:d_pr_pontifical_seat_15
+	}
+}
+
+# Character holds the seat of a flamen minor: a member of the College without a vote (excluded from the electors in
+# common/succession_election/00_pam_clerical_elective.txt) and not a candidate. Decided 2026-10-19.
+pr_college_is_flamen_minor_trigger = {
+	OR = {
+		has_title = title:d_pr_flamen_carmentalis
+		has_title = title:d_pr_flamen_cerialis
+		has_title = title:d_pr_flamen_floralis
+		has_title = title:d_pr_flamen_furrinalis
+		has_title = title:d_pr_flamen_pomonalis
+		has_title = title:d_pr_flamen_portunalis
+		has_title = title:d_pr_flamen_volcanalis
+		has_title = title:d_pr_flamen_volturnalis
+		has_title = title:d_pr_flamen_falacer
+		has_title = title:d_pr_flamen_palatualis
+	}
+}
+
+# Character holds a College seat without a vote: a flamen minor or the flamen of Augustus. Used in the electors limit of
+# common/succession_election/00_pam_clerical_elective.txt. Decided 2026-10-19.
+pr_college_has_no_vote_trigger = {
+	OR = {
+		pr_college_is_flamen_minor_trigger = yes
+		has_title = title:d_pr_flamen_augustalis
+	}
+}
+
+# Global: at least one seat of a flamen minor is empty.
+pr_college_has_empty_minor_seat_trigger = {
+	OR = {
+		title:d_pr_flamen_carmentalis = { NOT = { exists = holder } }
+		title:d_pr_flamen_cerialis = { NOT = { exists = holder } }
+		title:d_pr_flamen_floralis = { NOT = { exists = holder } }
+		title:d_pr_flamen_furrinalis = { NOT = { exists = holder } }
+		title:d_pr_flamen_pomonalis = { NOT = { exists = holder } }
+		title:d_pr_flamen_portunalis = { NOT = { exists = holder } }
+		title:d_pr_flamen_volcanalis = { NOT = { exists = holder } }
+		title:d_pr_flamen_volturnalis = { NOT = { exists = holder } }
+		title:d_pr_flamen_falacer = { NOT = { exists = holder } }
+		title:d_pr_flamen_palatualis = { NOT = { exists = holder } }
+	}
+}
+
+# Character scope: may this character be given a College seat? Used by the appoint interaction and by
+# co-optation. An adult Roman of the gender the rite allows as clergy (as vanilla's appoint_cardinal_interaction,
+# pam_interactions.txt:4697-4700), without a seat, and from a dynasty that holds no seat yet: no two members of one
+# gens in the same college (Dio 39.17).
+pr_college_can_receive_seat_trigger = {
+	is_alive = yes
+	faith = faith:roman_polytheism
+	is_adult = yes
+	# Men only (decided 2026-11-02): pontifices, rex sacrorum and flamines were men; women served as Vestals and as
+	# flaminica beside a flamen. The Roman religion allows female clergy (doctrine_clerical_gender_either, for the
+	# Vestals), so rite_has_allowed_gender_for_clergy below is not enough (in-game: three women co-opted).
+	is_male = yes
+	is_imprisoned = no
+	is_incapable = no
+	NOT = { exists = clerical_elector_title }
+	faith = {
+		NOT = { religious_head ?= prev }
+	}
+	save_temporary_scope_as = pr_college_candidate
+	rite = { rite_has_allowed_gender_for_clergy = scope:pr_college_candidate }
+	trigger_if = {
+		limit = { exists = dynasty }
+		faith = {
+			NOT = {
+				any_clerical_elector_title = {
+					holder ?= { dynasty ?= scope:pr_college_candidate.dynasty }
+				}
+			}
+		}
+	}
+	# No enemy of a sitting member: "ne cooptari quidem sacerdotem licebat qui cuiquam ex collegio esset inimicus"
+	# (Cic. Fam. 3.10.9; Webb 2023, p.32). Decided 2026-10-18.
+	faith = {
+		NOT = {
+			any_clerical_elector_title = {
+				holder ?= {
+					OR = {
+						has_relation_rival = scope:pr_college_candidate
+						has_relation_nemesis = scope:pr_college_candidate
+					}
+				}
+			}
+		}
+	}
+}
+
+# Character scope: may hold the seat of the flamen Dialis. He could hold office but not leave Rome (Webb 2023, p.151;
+# Liv. 39.45.4), so: no land, or the capital of his highest title is Rome. Decided 2026-10-18.
+pr_college_bound_to_rome_trigger = {
+	OR = {
+		is_landed = no
+		primary_title.title_capital_county ?= title:c_roma
+	}
+}
+
+# Title scope: one of the pontifical seats (1-15).
+pr_college_is_pontifical_seat_trigger = {
+	OR = {
+		this = title:d_pr_pontifical_seat_1
+		this = title:d_pr_pontifical_seat_2
+		this = title:d_pr_pontifical_seat_3
+		this = title:d_pr_pontifical_seat_4
+		this = title:d_pr_pontifical_seat_5
+		this = title:d_pr_pontifical_seat_6
+		this = title:d_pr_pontifical_seat_7
+		this = title:d_pr_pontifical_seat_8
+		this = title:d_pr_pontifical_seat_9
+		this = title:d_pr_pontifical_seat_10
+		this = title:d_pr_pontifical_seat_11
+		this = title:d_pr_pontifical_seat_12
+		this = title:d_pr_pontifical_seat_13
+		this = title:d_pr_pontifical_seat_14
+		this = title:d_pr_pontifical_seat_15
+	}
+}
+
+# Global: at least one pontifical seat is empty.
+pr_college_has_empty_pontifical_seat_trigger = {
+	OR = {
+		title:d_pr_pontifical_seat_1 = { NOT = { exists = holder } }
+		title:d_pr_pontifical_seat_2 = { NOT = { exists = holder } }
+		title:d_pr_pontifical_seat_3 = { NOT = { exists = holder } }
+		title:d_pr_pontifical_seat_4 = { NOT = { exists = holder } }
+		title:d_pr_pontifical_seat_5 = { NOT = { exists = holder } }
+		AND = {
+			exists = global_var:pr_college_lex_ogulnia
+			OR = {
+				title:d_pr_pontifical_seat_6 = { NOT = { exists = holder } }
+				title:d_pr_pontifical_seat_7 = { NOT = { exists = holder } }
+				title:d_pr_pontifical_seat_8 = { NOT = { exists = holder } }
+				title:d_pr_pontifical_seat_9 = { NOT = { exists = holder } }
+			}
+		}
+		AND = {
+			exists = global_var:pr_college_lex_cornelia
+			OR = {
+				title:d_pr_pontifical_seat_10 = { NOT = { exists = holder } }
+				title:d_pr_pontifical_seat_11 = { NOT = { exists = holder } }
+				title:d_pr_pontifical_seat_12 = { NOT = { exists = holder } }
+				title:d_pr_pontifical_seat_13 = { NOT = { exists = holder } }
+				title:d_pr_pontifical_seat_14 = { NOT = { exists = holder } }
+				title:d_pr_pontifical_seat_15 = { NOT = { exists = holder } }
+			}
+		}
+	}
+}
+
+# Global: the rex sacrorum or the flamen Dialis is missing. These sacred offices are not filled automatically for a
+# player head (the Pontifex Maximus chose them himself); a mild penalty is to be added at balancing (#76).
+pr_college_sacred_office_vacant_trigger = {
+	OR = {
+		title:d_pr_rex_sacrorum = { NOT = { exists = holder } }
+		title:d_pr_flamen_dialis = { NOT = { exists = holder } }
+	}
+}
+
+# College of Pontiffs (#76): portrait triggers for gfx/portraits/portrait_modifiers/pr_headgear_roman_priests.txt.
+# Character scope; "exists = this" as in vanilla's portrait triggers. Only for a priest without land
+# (portrait_religious_high_no_poverty_trigger, as vanilla's religious headgear), so a landed pontifex keeps his crown.
+pr_portrait_roman_pontifex_trigger = {
+	exists = this
+	portrait_religious_high_no_poverty_trigger = yes
+	OR = {
+		pr_college_is_pontifex_trigger = yes
+		has_title = title:d_pr_rex_sacrorum
+	}
+}
+
+pr_portrait_roman_flamen_trigger = {
+	exists = this
+	portrait_religious_high_no_poverty_trigger = yes
+	OR = {
+		has_title = title:d_pr_flamen_dialis
+		has_title = title:d_pr_flamen_martialis
+		has_title = title:d_pr_flamen_quirinalis
+		has_title = title:d_pr_flamen_augustalis
+		pr_college_is_flamen_minor_trigger = yes
+	}
+}
+
+pr_portrait_mithras_pater_trigger = {
+	exists = this
+	has_court_position = pr_court_pater_mithras_court_position
+}
+
+# College of Pontiffs (#76), storyline "The New Believers" (Lex Ogulnia). Decided 2026-10-20: the ruler's own realm,
+# at least half of its counties Roman and at least 8 Roman counties (the floor of vanilla's major decisions,
+# 00_major_decision_triggers.txt:4); a secular ruler (not a theocracy). Test values.
+pr_college_ogulnia_ruler_trigger = {
+	is_ruler = yes
+	is_landed = yes
+	faith = faith:roman_polytheism
+	NOT = { government_has_flag = government_is_theocracy }
+	pr_college_realm_roman_counties_value >= 8
+	pr_college_realm_roman_share_value >= 50
+}
+
+# Character scope (the ruler): a founding pontifex (seats 1-5) other than the ruler himself can speak against the law
+# in the vote (pr_college.0102 duels him).
+pr_college_ogulnia_has_founder_trigger = {
+	save_temporary_scope_as = pr_ogulnia_check_ruler
+	OR = {
+		title:d_pr_pontifical_seat_1.holder ?= { NOT = { this = scope:pr_ogulnia_check_ruler } }
+		title:d_pr_pontifical_seat_2.holder ?= { NOT = { this = scope:pr_ogulnia_check_ruler } }
+		title:d_pr_pontifical_seat_3.holder ?= { NOT = { this = scope:pr_ogulnia_check_ruler } }
+		title:d_pr_pontifical_seat_4.holder ?= { NOT = { this = scope:pr_ogulnia_check_ruler } }
+		title:d_pr_pontifical_seat_5.holder ?= { NOT = { this = scope:pr_ogulnia_check_ruler } }
+	}
+}
+
+# Character scope (the ruler): the ruler can still carry the storyline (pr_college.0101/0102/0105): Roman, landed,
+# not a theocracy, a founder to speak against him. The realm thresholds only apply to the start.
+pr_college_ogulnia_ruler_still_valid_trigger = {
+	is_alive = yes
+	is_landed = yes
+	faith = faith:roman_polytheism
+	NOT = { government_has_flag = government_is_theocracy }
+	pr_college_ogulnia_has_founder_trigger = yes
+}
+
+# Global: the College the storyline is about exists: a Pontifex Maximus and at least one founding pontifex (seats 1-5).
+pr_college_ogulnia_college_ready_trigger = {
+	exists = faith:roman_polytheism.religious_head
+	OR = {
+		exists = title:d_pr_pontifical_seat_1.holder
+		exists = title:d_pr_pontifical_seat_2.holder
+		exists = title:d_pr_pontifical_seat_3.holder
+		exists = title:d_pr_pontifical_seat_4.holder
+		exists = title:d_pr_pontifical_seat_5.holder
+	}
+}
+
+# College of Pontiffs (#76), storyline "Rome and Constantinople", towards the Lex Cornelia (9 to 15 seats). Decided
+# 2026-10-20: the ruler's own realm, at least three quarters of its counties Roman, at least 8 Roman counties, and a king
+# or emperor; a secular ruler. The Lex Ogulnia must have passed. Test values.
+pr_college_cornelia_ruler_trigger = {
+	is_ruler = yes
+	is_landed = yes
+	faith = faith:roman_polytheism
+	NOT = { government_has_flag = government_is_theocracy }
+	highest_held_title_tier >= tier_kingdom
+	pr_college_realm_roman_counties_value >= 8
+	pr_college_realm_roman_share_value >= 75
+}
+
+# Character scope (the ruler): a pontifex (seats 1-9) other than the ruler himself can speak against the law in the vote
+# (pr_college.0202 duels him).
+pr_college_cornelia_has_pontifex_trigger = {
+	save_temporary_scope_as = pr_cornelia_check_ruler
+	OR = {
+		title:d_pr_pontifical_seat_1.holder ?= { this != scope:pr_cornelia_check_ruler }
+		title:d_pr_pontifical_seat_2.holder ?= { this != scope:pr_cornelia_check_ruler }
+		title:d_pr_pontifical_seat_3.holder ?= { this != scope:pr_cornelia_check_ruler }
+		title:d_pr_pontifical_seat_4.holder ?= { this != scope:pr_cornelia_check_ruler }
+		title:d_pr_pontifical_seat_5.holder ?= { this != scope:pr_cornelia_check_ruler }
+		title:d_pr_pontifical_seat_6.holder ?= { this != scope:pr_cornelia_check_ruler }
+		title:d_pr_pontifical_seat_7.holder ?= { this != scope:pr_cornelia_check_ruler }
+		title:d_pr_pontifical_seat_8.holder ?= { this != scope:pr_cornelia_check_ruler }
+		title:d_pr_pontifical_seat_9.holder ?= { this != scope:pr_cornelia_check_ruler }
+	}
+}
+
+# Character scope (the ruler): the ruler can still carry the storyline (pr_college.0201/0202/0205). The realm thresholds
+# only apply to the start.
+pr_college_cornelia_ruler_still_valid_trigger = {
+	is_alive = yes
+	is_landed = yes
+	faith = faith:roman_polytheism
+	NOT = { government_has_flag = government_is_theocracy }
+	pr_college_cornelia_has_pontifex_trigger = yes
+}
+
+# Global: the College the storyline is about exists: the Lex Ogulnia has passed and there is a Pontifex Maximus.
+pr_college_cornelia_college_ready_trigger = {
+	exists = global_var:pr_college_lex_ogulnia
+	NOT = { exists = global_var:pr_college_ogulnia_gradual } # the College is still filling seats 6-9 (review 2026-10-31)
+	exists = faith:roman_polytheism.religious_head
+}
+
+# Character or county scope: belongs to the Church of Rome. Before the Great Schism that is christian_faith with one of
+# the rites vanilla moves to Catholicism (pam_effects.txt:7404-7487, 7556-7564); after it, faith:catholic.
+pr_college_church_of_rome_trigger = {
+	OR = {
+		faith = faith:catholic
+		AND = {
+			faith = faith:christian_faith
+			OR = {
+				rite = rite:roman_rite
+				rite = rite:insular_celtic
+				rite = rite:mozarabic_church
+				rite = rite:ambrosian_rite
+				rite = rite:carolingian_christianity
+				rite = rite:beneventan_rite
+			}
+		}
+	}
+}
+
+# Character or county scope: belongs to the Church of Constantinople (vanilla history/faiths/00_christianity.txt: the
+# Greek, Georgian and Slavic rites go to Orthodoxy).
+pr_college_church_of_constantinople_trigger = {
+	OR = {
+		faith = faith:orthodox
+		AND = {
+			faith = faith:christian_faith
+			OR = {
+				rite = rite:byzantine_rite
+				rite = rite:georgian_rite
+				rite = rite:slavic_rite
+			}
+		}
+	}
+}
+
+# Character or county scope: belongs to the Church whose main rite is $CHURCH$ (scope:<name>_rite saved by
+# pr_college_save_church_effect).
+pr_college_in_church_trigger = {
+	trigger_if = {
+		limit = { $CHURCH$ = rite:roman_rite }
+		pr_college_church_of_rome_trigger = yes
+	}
+	trigger_else = {
+		pr_college_church_of_constantinople_trigger = yes
+	}
+}
+
+# Character scope (the ruler): Constantinople lies in his own realm (he or a vassal below him holds it), so its Patriarch
+# lives under his rule (pr_college.0200, decided 2026-11-02).
+pr_college_rules_constantinople_trigger = {
+	save_temporary_scope_as = pr_college_cpl_ruler
+	title:c_byzantion.holder ?= {
+		OR = {
+			this = scope:pr_college_cpl_ruler
+			target_is_liege_or_above = scope:pr_college_cpl_ruler
+		}
+	}
+}
+
+# Character scope: a candidate in the Lex Cornelia election preview (pr_college_cornelia_electable_preview_effect) who would
+# still be seated after those already picked: not picked himself, no picked man of his dynasty, no picked rival or nemesis
+# (the same rules pr_college_can_receive_seat_trigger applies to the sitting members).
+pr_college_cornelia_preview_ok_trigger = {
+	NOT = { is_in_list = pr_cornelia_preview_picked }
+	save_temporary_scope_as = pr_cornelia_preview_candidate
+	NOT = {
+		any_in_list = {
+			list = pr_cornelia_preview_picked
+			OR = {
+				trigger_if = {
+					limit = { exists = scope:pr_cornelia_preview_candidate.dynasty }
+					dynasty ?= scope:pr_cornelia_preview_candidate.dynasty
+				}
+				trigger_else = { always = no }
+				has_relation_rival = scope:pr_cornelia_preview_candidate
+				has_relation_nemesis = scope:pr_cornelia_preview_candidate
+			}
+		}
+	}
+}

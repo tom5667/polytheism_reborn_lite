@@ -5,8 +5,8 @@
 # =============================================
 # KINGDOM FORMING COSTS (UITZONDERING: zie Rules)
 # =============================================
-# NOTE: restore_carthage_decision bestaat al in vanilla CK3
-# (in 80_major_decisions.txt). Deze hoeven we niet te dupliceren.
+# NOTE: restore_carthage_decision is een override van de vanilla-decision
+# (pr_canaanite_decisions.txt, #167) en houdt de vanilla-kosten.
 # Voor andere kingdom forming decisions, gebruik onderstaande standaard.
 
 # Standaard waarden voor kingdom forming (schaalt met realm_size)

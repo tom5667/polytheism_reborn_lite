@@ -1,0 +1,19 @@
+﻿# Override of a vanilla portrait trigger (common/scripted_triggers/00_clothing_triggers.txt, CK3 1.20.1). The vanilla
+# block is copied unchanged; only the PR (#76) lines are added. Re-copy from vanilla after every CK3 update (see
+# Rules/game_update_rules.md and database_conflicts.log).
+
+# PR (#76): holders of a Roman College seat are not cardinals. Without this every seat holder wears the cardinal's hat,
+# robe and cloak and gets the cardinal animations (03_headgear_religious, 03_clothes_religious, 06_cloaks_special,
+# animations.modifierpack). Decided 2026-10-21.
+portrait_is_cardinal_trigger = {
+	exists = this
+	has_pam_dlc_trigger = yes
+	exists = clerical_elector_title
+	portrait_religious_head_no_poverty_trigger = no
+	NOT = {
+		rite = {
+			rite_has_parameter = vows_of_poverty_active
+		}
+	}
+	NOT = { religion = religion:roman_religion } # PR (#76)
+}

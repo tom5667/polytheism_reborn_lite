@@ -252,3 +252,12 @@ pr_vesta_druidic_visit = {
 		}
 	}
 }
+
+# College of Pontiffs (#76): the College window shows the seat of the flamen Augustalis only once the imperial cult is
+# restored (pr_roman_cult.0034 sets global_var:restored_imperial_cult). The GUI cannot read a global variable itself.
+pr_college_imperial_cult_restored = {
+	scope = character
+	is_shown = {
+		exists = global_var:restored_imperial_cult
+	}
+}

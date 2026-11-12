@@ -1,0 +1,1441 @@
+﻿namespace = pr_college
+
+# College of Pontiffs (#76). Storyline "The New Believers", towards the Lex Ogulnia (0100-0199).
+# Design: chronicle/decisions_log.md (2026-10-20, 2026-10-22); sources: resource/college_laws_research.md.
+# 0100 the petition, 0101 the Church reaches for the converts, 0102 the vote, 0103 the law passes, 0104 the veto,
+# 0105 the Church answers (after the envoy was sent home).
+# Started by pr_college_ogulnia_yearly_effect (yearly pulse) or the debug decision; 0102 again through
+# pr_college_bring_lex_ogulnia_decision after a veto.
+# Decided 2026-10-22: every choice costs or yields something real. The vote chance comes from
+# var:pr_college_ogulnia_support (set in 0101) and the refusal count, not from opinions.
+
+# The petition
+pr_college.0100 = {
+	type = character_event
+	title = pr_college.0100.t
+	desc = {
+		desc = pr_college.0100.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = { faith:roman_polytheism = { has_variable = pr_college_ogulnia_refusals } }
+				desc = pr_college.0100.desc.again
+			}
+			desc = pr_college.0100.desc.first
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = { current_date < 800.1.1 }
+				desc = pr_college.era.700
+			}
+			triggered_desc = {
+				trigger = { current_date < 1050.1.1 }
+				desc = pr_college.era.867
+			}
+			triggered_desc = {
+				trigger = { current_date < 1150.1.1 }
+				desc = pr_college.era.1066
+			}
+			desc = pr_college.era.1178
+		}
+	}
+	theme = faith
+	override_background = { reference = pr_temple } # not vanilla temple: it can show a church (Hagia Sophia for an emperor in Constantinople)
+	left_portrait = {
+		character = scope:pr_ogulnia_convert
+		animation = personality_zealous
+	}
+	right_portrait = {
+		character = scope:pr_ogulnia_founder
+		animation = disapproval
+	}
+
+	immediate = {
+		pr_college_ogulnia_setup_scopes_effect = yes
+		# A new round starts clean: support and vetoes from an earlier round do not carry over
+		if = { limit = { has_variable = pr_college_ogulnia_support } remove_variable = pr_college_ogulnia_support }
+		if = { limit = { has_variable = pr_college_ogulnia_vetoes } remove_variable = pr_college_ogulnia_vetoes }
+		if = { limit = { has_variable = pr_college_ogulnia_veto_cooldown } remove_variable = pr_college_ogulnia_veto_cooldown }
+	}
+
+	# Let the College hear the petition
+	option = {
+		name = pr_college.0100.a
+		scope:pr_ogulnia_convert = {
+			add_opinion = {
+				target = root
+				modifier = pr_college_convert_grateful_opinion
+			}
+		}
+		trigger_event = {
+			id = pr_college.0101
+			days = { 20 40 }
+		}
+		ai_chance = {
+			base = 60
+			modifier = { add = 20 has_trait = just }
+			modifier = { add = 20 has_trait = gregarious }
+			modifier = { add = -20 has_trait = arrogant }
+		}
+	}
+
+	# The College is not yours to ask for
+	option = {
+		name = pr_college.0100.b
+		pr_college_ogulnia_refuse_effect = yes
+		ai_chance = {
+			base = 40
+			modifier = { add = 20 has_trait = zealous }
+			modifier = { add = 20 has_trait = arrogant }
+		}
+	}
+}
+
+# The Church reaches for the converts. Decided 2026-10-22, each choice has its own price:
+# protect = gold, a better chance (+20); let the preacher talk = a gamble (holds: +30; relapse: the round ends);
+# send the envoy home = free, a small bonus (+5), but the Church answers later (pr_college.0105). Second round after
+# the review: protect 15 -> 20, holds 25 -> 30, envoy 10 -> 5, so protecting is no longer dominated by the envoy.
+pr_college.0101 = {
+	type = character_event
+	title = pr_college.0101.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { exists = scope:pr_ogulnia_church_head }
+				desc = pr_college.0101.desc.head
+			}
+			desc = pr_college.0101.desc.nohead
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = { current_date < 800.1.1 }
+				desc = pr_college.0101.era.700
+			}
+			triggered_desc = {
+				trigger = { current_date < 1050.1.1 }
+				desc = pr_college.0101.era.867
+			}
+			triggered_desc = {
+				trigger = { current_date < 1150.1.1 }
+				desc = pr_college.0101.era.1066
+			}
+			desc = pr_college.0101.era.1178
+		}
+	}
+	theme = faith
+	override_background = { reference = throne_room }
+	left_portrait = {
+		character = scope:pr_ogulnia_convert
+		animation = worry
+	}
+	right_portrait = {
+		trigger = { exists = scope:pr_ogulnia_church_head }
+		character = scope:pr_ogulnia_church_head
+		animation = personality_rational
+	}
+
+	trigger = {
+		pr_college_ogulnia_ruler_still_valid_trigger = yes
+	}
+	# The ruler no longer qualifies: the round ends, so the storyline does not block other rulers
+	on_trigger_fail = {
+		pr_college_ogulnia_collapse_effect = yes
+	}
+
+	# The convert may have died since the petition: a new one steps forward
+	immediate = {
+		pr_college_ogulnia_setup_scopes_effect = yes
+	}
+
+	# They are under my protection: costs gold, the new believers rally, the founders are displeased
+	option = {
+		name = pr_college.0101.a
+		trigger = { short_term_gold >= medium_gold_value }
+		show_as_unavailable = { short_term_gold < medium_gold_value }
+		remove_short_term_gold = medium_gold_value
+		pr_college_ogulnia_founders_opinion_effect = { MODIFIER = pr_college_founders_displeased_opinion }
+		custom_tooltip = pr_college.0101.a.tt
+		hidden_effect = {
+			pr_college_ogulnia_set_support_effect = { SUPPORT = 20 }
+		}
+		custom_tooltip = pr_college.next_vote.tt # when the next step comes (playtest 2026-11-07)
+		trigger_event = {
+			id = pr_college.0102
+			days = { 30 60 }
+		}
+		ai_chance = {
+			base = 40
+			modifier = { add = 20 has_trait = generous }
+			modifier = { add = 20 has_trait = just }
+		}
+	}
+
+	# Let the preacher talk: the convert may fall back to the Church, and then the petition loses its face
+	option = {
+		name = pr_college.0101.b
+		random_list = {
+			60 = {
+				desc = pr_college.0101.b.holds
+				modifier = { add = 20 scope:pr_ogulnia_convert = { has_trait = zealous } }
+				modifier = { add = -20 scope:pr_ogulnia_convert = { has_trait = cynical } }
+				scope:pr_ogulnia_convert = { add_piety = minor_piety_gain }
+				custom_tooltip = pr_college.0101.b.holds.tt
+				hidden_effect = {
+					pr_college_ogulnia_set_support_effect = { SUPPORT = 30 }
+				}
+				custom_tooltip = pr_college.next_vote.tt # when the next step comes (playtest 2026-11-07)
+				trigger_event = {
+					id = pr_college.0102
+					days = { 30 60 }
+				}
+			}
+			40 = {
+				desc = pr_college.0101.b.lost
+				scope:pr_ogulnia_convert = {
+					set_character_faith = scope:pr_ogulnia_church
+					set_character_rite = scope:pr_ogulnia_church_rite
+				}
+				pr_college_ogulnia_collapse_effect = yes
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = { add = 20 has_trait = content }
+			modifier = { add = 20 has_trait = brave }
+		}
+	}
+
+	# Send the envoy home: the founders are pleased, the Church will answer
+	option = {
+		name = pr_college.0101.c
+		pr_college_ogulnia_founders_opinion_effect = { MODIFIER = pr_college_founders_honoured_opinion }
+		scope:pr_ogulnia_church_head ?= {
+			add_opinion = {
+				target = root
+				modifier = pr_college_church_rebuffed_opinion
+			}
+		}
+		custom_tooltip = pr_college.0101.c.tt
+		hidden_effect = {
+			pr_college_ogulnia_set_support_effect = { SUPPORT = 5 }
+		}
+		custom_tooltip = pr_college.next_vote.tt # when the next step comes (playtest 2026-11-07)
+		trigger_event = {
+			id = pr_college.0102
+			days = { 30 60 }
+		}
+		trigger_event = {
+			id = pr_college.0105
+			days = { 365 1095 }
+		}
+		ai_chance = {
+			base = 30
+			modifier = { add = 20 has_trait = zealous }
+			modifier = { add = 20 has_trait = wrathful }
+		}
+	}
+}
+
+# The vote on the Lex Ogulnia. Decided 2026-10-22: open = base 40, gradual = base 60. Support from the letters is added
+# to the success side, every refusal so far (max 3) adds 10 to the failure side, every veto 15 to the success side.
+pr_college.0102 = {
+	type = character_event
+	title = pr_college.0102.t
+	desc = {
+		desc = pr_college.0102.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = { has_variable = pr_college_ogulnia_vetoes }
+				desc = pr_college.0102.desc.again
+			}
+			desc = pr_college.0102.desc.first
+		}
+	}
+	theme = faith
+	override_background = { reference = pr_temple } # not vanilla temple: it can show a church (Hagia Sophia for an emperor in Constantinople)
+	left_portrait = {
+		character = scope:pr_ogulnia_founder
+		animation = disapproval
+	}
+	right_portrait = {
+		character = scope:pr_ogulnia_convert
+		animation = personality_rational
+	}
+
+	trigger = {
+		NOT = { exists = global_var:pr_college_lex_ogulnia }
+		pr_college_ogulnia_ruler_still_valid_trigger = yes
+	}
+	# The ruler no longer qualifies: the round ends, so the storyline does not block other rulers
+	on_trigger_fail = {
+		pr_college_ogulnia_collapse_effect = yes
+	}
+
+	immediate = {
+		pr_college_ogulnia_setup_scopes_effect = yes
+	}
+
+	# Open the College: the hardest to carry, the greatest gain
+	option = {
+		name = pr_college.0102.a
+		skill = diplomacy
+		custom_tooltip = pr_college.0102.a.tt
+		duel = {
+			skill = diplomacy
+			target = scope:pr_ogulnia_founder
+			40 = {
+				desc = pr_college.0102.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				# Traits of the ruler (decided 2026-10-22: the worse, the smaller the chance)
+				modifier = { add = 10 has_trait = zealous }
+				modifier = { add = 10 has_trait = just }
+				modifier = { add = 10 has_trait = honest }
+				modifier = { add = 10 has_trait = gregarious }
+				modifier = { add = 10 has_trait = diplomat }
+				modifier = { add = -10 has_trait = arrogant }
+				modifier = { add = -15 has_trait = cynical }
+				modifier = { add = -10 has_trait = deceitful }
+				modifier = { add = -10 has_trait = shy }
+				modifier = { add = -10 has_trait = wrathful }
+				# Support from the Church letters (pr_college.0101)
+				modifier = { add = 5 var:pr_college_ogulnia_support ?= 5 }
+				modifier = { add = 20 var:pr_college_ogulnia_support ?= 20 }
+				modifier = { add = 30 var:pr_college_ogulnia_support ?= 30 }
+				# Brought again after a veto (Livy 10.9: vetoed first, passed the next day)
+				modifier = { add = 15 var:pr_college_ogulnia_vetoes ?= 1 }
+				modifier = { add = 30 var:pr_college_ogulnia_vetoes ?= 2 }
+				modifier = { add = 45 has_variable = pr_college_ogulnia_vetoes var:pr_college_ogulnia_vetoes >= 3 }
+				min = 10
+				save_scope_value_as = { name = pr_ogulnia_mode value = flag:open }
+				pr_college_ogulnia_pass_effect = { OPEN = yes }
+				trigger_event = pr_college.0103
+			}
+			60 = {
+				desc = pr_college.0102.failure
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				# Every earlier refusal embittered the new believers (decided 2026-10-22: -10 each, at most 3)
+				modifier = { add = 10 faith:roman_polytheism = { var:pr_college_ogulnia_refusals ?= 1 } }
+				modifier = { add = 20 faith:roman_polytheism = { var:pr_college_ogulnia_refusals ?= 2 } }
+				modifier = { add = 30 faith:roman_polytheism = { has_variable = pr_college_ogulnia_refusals var:pr_college_ogulnia_refusals >= 3 } }
+				min = 10
+				pr_college_ogulnia_veto_effect = yes
+				trigger_event = pr_college.0104
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = { add = 20 has_trait = ambitious }
+			modifier = { add = 20 has_trait = brave }
+		}
+	}
+
+	# Let the College grow, but let it choose: easier to carry, the new seats fill one a year
+	option = {
+		name = pr_college.0102.b
+		skill = diplomacy
+		custom_tooltip = pr_college.0102.b.tt
+		duel = {
+			skill = diplomacy
+			target = scope:pr_ogulnia_founder
+			60 = {
+				desc = pr_college.0102.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				# Traits of the ruler (decided 2026-10-22: the worse, the smaller the chance)
+				modifier = { add = 10 has_trait = zealous }
+				modifier = { add = 10 has_trait = just }
+				modifier = { add = 10 has_trait = honest }
+				modifier = { add = 10 has_trait = gregarious }
+				modifier = { add = 10 has_trait = diplomat }
+				modifier = { add = -10 has_trait = arrogant }
+				modifier = { add = -15 has_trait = cynical }
+				modifier = { add = -10 has_trait = deceitful }
+				modifier = { add = -10 has_trait = shy }
+				modifier = { add = -10 has_trait = wrathful }
+				# Support from the Church letters (pr_college.0101)
+				modifier = { add = 5 var:pr_college_ogulnia_support ?= 5 }
+				modifier = { add = 20 var:pr_college_ogulnia_support ?= 20 }
+				modifier = { add = 30 var:pr_college_ogulnia_support ?= 30 }
+				# Brought again after a veto (Livy 10.9: vetoed first, passed the next day)
+				modifier = { add = 15 var:pr_college_ogulnia_vetoes ?= 1 }
+				modifier = { add = 30 var:pr_college_ogulnia_vetoes ?= 2 }
+				modifier = { add = 45 has_variable = pr_college_ogulnia_vetoes var:pr_college_ogulnia_vetoes >= 3 }
+				min = 10
+				save_scope_value_as = { name = pr_ogulnia_mode value = flag:gradual }
+				pr_college_ogulnia_pass_effect = { OPEN = no }
+				trigger_event = pr_college.0103
+			}
+			40 = {
+				desc = pr_college.0102.failure
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				# Every earlier refusal embittered the new believers (decided 2026-10-22: -10 each, at most 3)
+				modifier = { add = 10 faith:roman_polytheism = { var:pr_college_ogulnia_refusals ?= 1 } }
+				modifier = { add = 20 faith:roman_polytheism = { var:pr_college_ogulnia_refusals ?= 2 } }
+				modifier = { add = 30 faith:roman_polytheism = { has_variable = pr_college_ogulnia_refusals var:pr_college_ogulnia_refusals >= 3 } }
+				min = 10
+				pr_college_ogulnia_veto_effect = yes
+				trigger_event = pr_college.0104
+			}
+		}
+		ai_chance = {
+			base = 50
+			modifier = { add = 20 has_trait = calm }
+			modifier = { add = 20 has_trait = patient }
+		}
+	}
+
+	# Not in my lifetime: the College stays as it is
+	option = {
+		name = pr_college.0102.c
+		pr_college_ogulnia_refuse_effect = yes
+		ai_chance = {
+			base = 20
+			modifier = { add = 30 has_trait = zealous }
+			modifier = { add = 20 has_trait = stubborn }
+		}
+	}
+}
+
+# The law passes
+pr_college.0103 = {
+	type = character_event
+	title = pr_college.0103.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:pr_ogulnia_mode ?= flag:open
+					scope:pr_ogulnia_convert ?= { has_title = title:d_pr_pontifical_seat_6 }
+				}
+				desc = pr_college.0103.desc.open
+			}
+			triggered_desc = {
+				trigger = { scope:pr_ogulnia_mode ?= flag:open }
+				desc = pr_college.0103.desc.open.other
+			}
+			# Explicit, so flag:gradual is read (error.log: "set but is never used"); the same text is the fallback
+			triggered_desc = {
+				trigger = { scope:pr_ogulnia_mode ?= flag:gradual }
+				desc = pr_college.0103.desc.gradual
+			}
+			desc = pr_college.0103.desc.gradual
+		}
+	}
+	theme = faith
+	override_background = { reference = pr_temple } # not vanilla temple: it can show a church (Hagia Sophia for an emperor in Constantinople)
+	left_portrait = {
+		character = root
+		animation = happiness
+	}
+	right_portrait = {
+		trigger = { scope:pr_ogulnia_convert ?= { is_alive = yes } }
+		character = scope:pr_ogulnia_convert
+		animation = happiness
+	}
+
+	option = {
+		name = pr_college.0103.a
+		# Gradual law: how the new seats are filled, and what the player can do (playtest 2026-11-07)
+		if = {
+			limit = { exists = global_var:pr_college_ogulnia_gradual }
+			if = {
+				limit = {
+					faith = { religious_head ?= root }
+					has_pam_dlc_trigger = yes # the nominate interaction needs By God Alone
+				}
+				custom_tooltip = pr_college.0103.gradual.head.tt
+			}
+			else = {
+				custom_tooltip = pr_college.0103.gradual.tt
+			}
+		}
+	}
+}
+
+# The veto
+pr_college.0104 = {
+	type = character_event
+	title = pr_college.0104.t
+	desc = {
+		desc = pr_college.0104.desc
+		first_valid = {
+			# pr_college_ogulnia_exhausted_effect cleared the vetoes: this was the last attempt
+			triggered_desc = {
+				trigger = { NOT = { has_variable = pr_college_ogulnia_vetoes } }
+				desc = pr_college.0104.desc.final
+			}
+			desc = pr_college.0104.desc.again
+		}
+	}
+	theme = faith
+	override_background = { reference = pr_temple } # not vanilla temple: it can show a church (Hagia Sophia for an emperor in Constantinople)
+	left_portrait = {
+		character = scope:pr_ogulnia_founder
+		animation = personality_zealous
+	}
+	right_portrait = {
+		trigger = { scope:pr_ogulnia_convert ?= { is_alive = yes } }
+		character = scope:pr_ogulnia_convert
+		animation = anger
+	}
+
+	option = {
+		name = pr_college.0104.a
+		if = {
+			limit = { has_variable = pr_college_ogulnia_vetoes }
+			custom_tooltip = pr_college.0104.a.tt
+		}
+		else = {
+			custom_tooltip = pr_college.0104.a.final.tt
+		}
+	}
+}
+
+# The Church answers, a year or three after its envoy was sent home (pr_college.0101 c). Decided 2026-10-22: an event
+# with a choice and opinion, no casus belli: make amends with gold or prestige (the Church head forgives the envoy),
+# or defy the Church (piety, but the
+# Christian rulers around you think less of you for 10 years).
+pr_college.0105 = {
+	type = character_event
+	title = pr_college.0105.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { exists = scope:pr_ogulnia_church_head }
+				desc = pr_college.0105.desc.head
+			}
+			desc = pr_college.0105.desc.nohead
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = { current_date < 800.1.1 }
+				desc = pr_college.0105.era.700
+			}
+			triggered_desc = {
+				trigger = { current_date < 1050.1.1 }
+				desc = pr_college.0105.era.867
+			}
+			triggered_desc = {
+				trigger = { current_date < 1150.1.1 }
+				desc = pr_college.0105.era.1066
+			}
+			desc = pr_college.0105.era.1178
+		}
+	}
+	theme = faith
+	override_background = { reference = throne_room }
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		trigger = { exists = scope:pr_ogulnia_church_head }
+		character = scope:pr_ogulnia_church_head
+		animation = disapproval
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		faith = faith:roman_polytheism
+		NOT = { government_has_flag = government_is_theocracy }
+	}
+
+	# The head of the Church may have died in the meantime
+	immediate = {
+		save_scope_as = pr_ogulnia_ruler
+		pr_college_ogulnia_find_church_effect = yes
+	}
+
+	# Send gifts to make amends
+	option = {
+		name = pr_college.0105.a
+		trigger = { short_term_gold >= medium_gold_value }
+		show_as_unavailable = { short_term_gold < medium_gold_value }
+		remove_short_term_gold = medium_gold_value
+		custom_tooltip = pr_college.0105.amends.tt
+		scope:pr_ogulnia_church_head ?= {
+			remove_opinion = {
+				target = root
+				modifier = pr_college_church_rebuffed_opinion
+			}
+		}
+		# The quarrel ends here; the law goes on as before (playtest 2026-11-06: players asked "what now?")
+		pr_college_church_answers_end_effect = { LAW = ogulnia }
+		ai_chance = {
+			base = 30
+			modifier = { add = 20 has_trait = craven }
+			modifier = { factor = 0 short_term_gold < medium_gold_value }
+		}
+	}
+
+	# Receive the envoy with honour this time
+	option = {
+		name = pr_college.0105.b
+		add_prestige = medium_prestige_loss
+		custom_tooltip = pr_college.0105.amends.tt
+		scope:pr_ogulnia_church_head ?= {
+			remove_opinion = {
+				target = root
+				modifier = pr_college_church_rebuffed_opinion
+			}
+		}
+		# The quarrel ends here; the law goes on as before (playtest 2026-11-06: players asked "what now?")
+		pr_college_church_answers_end_effect = { LAW = ogulnia }
+		ai_chance = {
+			base = 30
+			modifier = { add = 20 has_trait = humble }
+		}
+	}
+
+	# The gods of Rome answer to no bishop
+	option = {
+		name = pr_college.0105.c
+		add_piety = medium_piety_gain
+		custom_tooltip = pr_college.0105.c.tt
+		hidden_effect = {
+			every_neighboring_and_across_water_top_liege_realm_owner = {
+				limit = { is_christian_trigger = yes } # character scope: religion_tag is a faith trigger
+				add_opinion = {
+					target = root
+					modifier = pr_college_church_defied_opinion
+				}
+			}
+			scope:pr_ogulnia_church_head ?= {
+				add_opinion = {
+					target = root
+					modifier = pr_college_church_defied_opinion
+				}
+			}
+			# Decided 2026-10-22 (second round): defying has a price at home too
+			every_vassal = {
+				limit = { is_christian_trigger = yes } # character scope: religion_tag is a faith trigger
+				add_opinion = {
+					target = root
+					modifier = pr_college_church_defied_opinion
+				}
+			}
+			every_courtier = {
+				limit = { is_christian_trigger = yes } # character scope: religion_tag is a faith trigger
+				add_opinion = {
+					target = root
+					modifier = pr_college_church_defied_opinion
+				}
+			}
+		}
+		# The quarrel ends here; the law goes on as before (playtest 2026-11-06: players asked "what now?")
+		pr_college_church_answers_end_effect = { LAW = ogulnia }
+		ai_chance = {
+			base = 40
+			modifier = { add = 30 has_trait = zealous }
+			modifier = { add = 20 has_trait = arrogant }
+		}
+	}
+}
+
+# College of Pontiffs (#76). Storyline "Rome and Constantinople", towards the Lex Cornelia (0200-0299).
+# Design: chronicle/decisions_log.md (2026-10-20, 2026-10-31); sources: resource/college_laws_research.md (Deel A, B, D).
+# 0200 both Churches court the realm (Boris of Bulgaria, 864-866), 0201 the wavering lord, 0202 the vote, 0203 the law
+# passes, 0204 the veto, 0205 the Church answers. Started by pr_college_cornelia_yearly_effect or the debug decision; 0202
+# again through pr_college_bring_lex_cornelia_decision after a veto.
+# Hard rule (maintainer, 2026-10-31): no option may be the best one in every situation. The vote chance comes from
+# var:pr_college_cornelia_support (0200 + 0201), the ruler's power and traits, and the refusal count.
+
+# Rome and Constantinople
+pr_college.0200 = {
+	type = character_event
+	title = pr_college.0200.t
+	desc = {
+		first_valid = {
+			# Constantinople lies in the ruler's own realm (e.g. a Roman emperor of Byzantium): no emperor can stand
+			# godfather, the Patriarch comes himself (decided 2026-11-02)
+			triggered_desc = {
+				trigger = { pr_college_rules_constantinople_trigger = yes }
+				desc = pr_college.0200.desc.own_city
+			}
+			desc = pr_college.0200.desc
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = { faith:roman_polytheism = { has_variable = pr_college_cornelia_refusals } }
+				desc = pr_college.0200.desc.again
+			}
+			desc = pr_college.0200.desc.first
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					current_date < 800.1.1
+					pr_college_rules_constantinople_trigger = yes
+				}
+				desc = pr_college.0200.era.700.own_city
+			}
+			triggered_desc = {
+				trigger = { current_date < 800.1.1 }
+				desc = pr_college.0200.era.700
+			}
+			triggered_desc = {
+				trigger = { current_date < 1050.1.1 }
+				desc = pr_college.0200.era.867
+			}
+			triggered_desc = {
+				trigger = { current_date < 1150.1.1 }
+				desc = pr_college.0200.era.1066
+			}
+			desc = pr_college.0200.era.1178
+		}
+	}
+	theme = faith
+	override_background = { reference = throne_room }
+	left_portrait = {
+		trigger = { exists = scope:pr_cornelia_rome_head }
+		character = scope:pr_cornelia_rome_head
+		animation = personality_rational
+	}
+	right_portrait = {
+		trigger = { exists = scope:pr_cornelia_cpl_head }
+		character = scope:pr_cornelia_cpl_head
+		animation = personality_rational
+	}
+
+	immediate = {
+		pr_college_cornelia_setup_scopes_effect = yes
+		# A new round starts clean
+		if = { limit = { has_variable = pr_college_cornelia_support } remove_variable = pr_college_cornelia_support }
+		if = { limit = { has_variable = pr_college_cornelia_promised } remove_variable = pr_college_cornelia_promised }
+		if = { limit = { has_variable = pr_college_cornelia_vetoes } remove_variable = pr_college_cornelia_vetoes }
+		if = { limit = { has_variable = pr_college_cornelia_veto_cooldown } remove_variable = pr_college_cornelia_veto_cooldown }
+	}
+
+	# Send both envoys home: piety and a College that sees a ruler who bows to no bishop, but both Churches are offended
+	# and the nearer one will answer
+	option = {
+		name = pr_college.0200.a
+		add_piety = medium_piety_gain
+		scope:pr_cornelia_rome_head ?= {
+			add_opinion = {
+				target = root
+				modifier = pr_college_church_rebuffed_opinion
+			}
+		}
+		scope:pr_cornelia_cpl_head ?= {
+			add_opinion = {
+				target = root
+				modifier = pr_college_church_rebuffed_opinion
+			}
+		}
+		pr_college_cornelia_college_opinion_effect = { MODIFIER = pr_college_cornelia_unbowed_opinion }
+		custom_tooltip = pr_college.0200.a.tt
+		custom_tooltip = pr_college.next_lord.tt # when the next step comes (playtest 2026-11-07)
+		hidden_effect = {
+			pr_college_cornelia_add_support_effect = { SUPPORT = 5 }
+			pr_college_cornelia_church_answers_effect = yes
+			trigger_event = {
+				id = pr_college.0201
+				days = { 365 730 }
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = { add = 30 has_trait = zealous }
+			modifier = { add = 20 has_trait = arrogant }
+		}
+	}
+
+	# Let them bid against each other, as Boris did: gold and the most support, unless a Church sees through it
+	option = {
+		name = pr_college.0200.b
+		random_list = {
+			65 = {
+				desc = pr_college.0200.b.success
+				modifier = { add = 10 intrigue >= 15 }
+				modifier = { add = 5 has_trait = deceitful }
+				modifier = { add = -15 has_trait = honest }
+				add_gold = medium_gold_value
+				custom_tooltip = pr_college.0200.b.success.tt
+				hidden_effect = {
+					pr_college_cornelia_add_support_effect = { SUPPORT = 20 }
+				}
+			}
+			35 = {
+				desc = pr_college.0200.b.failure
+				modifier = { add = -10 intrigue >= 15 }
+				modifier = { add = -5 has_trait = deceitful }
+				modifier = { add = 15 has_trait = honest }
+				add_gold = minor_gold_value
+				scope:pr_ogulnia_church_head ?= {
+					add_opinion = {
+						target = root
+						modifier = pr_college_church_deceived_opinion
+					}
+				}
+				custom_tooltip = pr_college.0200.b.failure.tt
+				hidden_effect = {
+					every_neighboring_and_across_water_top_liege_realm_owner = {
+						limit = { pr_college_in_church_trigger = { CHURCH = scope:pr_ogulnia_church_rite } }
+						add_opinion = {
+							target = root
+							modifier = pr_college_church_deceived_opinion
+						}
+					}
+					pr_college_cornelia_add_support_effect = { SUPPORT = 10 }
+					pr_college_cornelia_church_answers_effect = yes
+				}
+			}
+		}
+		custom_tooltip = pr_college.next_lord.tt # when the next step comes (playtest 2026-11-07)
+		hidden_effect = {
+			trigger_event = {
+				id = pr_college.0201
+				days = { 365 730 }
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = { add = 30 has_trait = deceitful }
+			modifier = { add = 20 has_trait = ambitious }
+			modifier = { add = -20 has_trait = honest }
+		}
+	}
+
+	# Receive both with honour and promise nothing: costs prestige, safe, some support
+	option = {
+		name = pr_college.0200.c
+		add_prestige = medium_prestige_loss
+		custom_tooltip = pr_college.0200.c.tt
+		custom_tooltip = pr_college.next_lord.tt # when the next step comes (playtest 2026-11-07)
+		hidden_effect = {
+			pr_college_cornelia_add_support_effect = { SUPPORT = 20 }
+			trigger_event = {
+				id = pr_college.0201
+				days = { 365 730 }
+			}
+		}
+		ai_chance = {
+			base = 40
+			modifier = { add = 20 has_trait = calm }
+			modifier = { add = 20 has_trait = humble }
+		}
+	}
+}
+
+# The wavering lord: the greatest Roman vassal has a Church envoy at his court and speaks of baptism
+pr_college.0201 = {
+	type = character_event
+	title = pr_college.0201.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { exists = scope:pr_cornelia_lord }
+				desc = pr_college.0201.desc
+			}
+			desc = pr_college.0201.desc.nolord
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:pr_cornelia_lord
+					current_date < 800.1.1
+				}
+				desc = pr_college.0201.era.700
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:pr_cornelia_lord
+					current_date < 1050.1.1
+				}
+				desc = pr_college.0201.era.867
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:pr_cornelia_lord
+					current_date < 1150.1.1
+				}
+				desc = pr_college.0201.era.1066
+			}
+			triggered_desc = {
+				trigger = { exists = scope:pr_cornelia_lord }
+				desc = pr_college.0201.era.1178
+			}
+		}
+	}
+	theme = faith
+	override_background = { reference = throne_room }
+	left_portrait = {
+		trigger = { exists = scope:pr_cornelia_lord }
+		character = scope:pr_cornelia_lord
+		animation = worry
+	}
+	right_portrait = {
+		trigger = { exists = scope:pr_ogulnia_church_head }
+		character = scope:pr_ogulnia_church_head
+		animation = personality_rational
+	}
+
+	trigger = {
+		pr_college_cornelia_ruler_still_valid_trigger = yes
+	}
+	# The ruler no longer qualifies: the round ends, so the storyline does not block other rulers
+	on_trigger_fail = {
+		pr_college_cornelia_collapse_effect = yes
+	}
+
+	# The lord may have died or gone since the first event
+	immediate = {
+		pr_college_cornelia_setup_scopes_effect = yes
+	}
+
+	# Promise him a seat in the greater College: the most support, but he will hold you to it
+	option = {
+		name = pr_college.0201.a
+		trigger = {
+			exists = scope:pr_cornelia_lord
+			scope:pr_cornelia_lord = { pr_college_can_receive_seat_trigger = yes }
+		}
+		show_as_unavailable = {
+			exists = scope:pr_cornelia_lord
+			scope:pr_cornelia_lord = { NOT = { pr_college_can_receive_seat_trigger = yes } }
+		}
+		scope:pr_cornelia_lord = {
+			add_opinion = {
+				target = root
+				modifier = pr_college_cornelia_bound_opinion
+			}
+		}
+		custom_tooltip = pr_college.0201.a.tt
+		custom_tooltip = pr_college.next_vote.tt # when the next step comes (playtest 2026-11-07)
+		hidden_effect = {
+			set_variable = {
+				name = pr_college_cornelia_promised
+				value = scope:pr_cornelia_lord
+			}
+			pr_college_cornelia_add_support_effect = { SUPPORT = 15 }
+			trigger_event = {
+				id = pr_college.0202
+				days = { 30 60 }
+			}
+		}
+		ai_chance = {
+			base = 40
+			modifier = { add = 20 has_trait = generous }
+			modifier = { add = 20 has_trait = ambitious }
+		}
+	}
+
+	# Remind him who his liege is: he may bow, or go over to the Church
+	option = {
+		name = pr_college.0201.b
+		trigger = { exists = scope:pr_cornelia_lord }
+		random_list = {
+			60 = {
+				desc = pr_college.0201.b.submits
+				modifier = { add = 15 dread >= 50 }
+				modifier = { add = 15 scope:pr_cornelia_lord = { has_trait = craven } }
+				modifier = { add = -15 scope:pr_cornelia_lord = { has_trait = brave } }
+				add_dread = minor_dread_gain
+				scope:pr_cornelia_lord = {
+					add_opinion = {
+						target = root
+						modifier = pr_college_cornelia_threatened_opinion
+					}
+				}
+				custom_tooltip = pr_college.0201.b.submits.tt
+				hidden_effect = {
+					pr_college_cornelia_add_support_effect = { SUPPORT = 10 }
+				}
+			}
+			40 = {
+				desc = pr_college.0201.b.lost
+				add_prestige = minor_prestige_loss
+				scope:pr_cornelia_lord = {
+					set_character_faith = scope:pr_ogulnia_church
+					set_character_rite = scope:pr_ogulnia_church_rite
+				}
+				hidden_effect = {
+					remove_variable = pr_college_cornelia_lord
+				}
+			}
+		}
+		custom_tooltip = pr_college.next_vote.tt # when the next step comes (playtest 2026-11-07)
+		hidden_effect = {
+			trigger_event = {
+				id = pr_college.0202
+				days = { 30 60 }
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = { add = 20 has_trait = wrathful }
+			modifier = { add = 20 has_trait = brave }
+		}
+	}
+
+	# Let him go: the College admires a ruler who will not buy faith with seats
+	option = {
+		name = pr_college.0201.c
+		trigger = { exists = scope:pr_cornelia_lord }
+		add_piety = major_piety_gain
+		scope:pr_cornelia_lord = {
+			set_character_faith = scope:pr_ogulnia_church
+			set_character_rite = scope:pr_ogulnia_church_rite
+		}
+		pr_college_cornelia_college_opinion_effect = { MODIFIER = pr_college_cornelia_firm_opinion }
+		custom_tooltip = pr_college.0201.c.tt
+		custom_tooltip = pr_college.next_vote.tt # when the next step comes (playtest 2026-11-07)
+		hidden_effect = {
+			remove_variable = pr_college_cornelia_lord
+			pr_college_cornelia_add_support_effect = { SUPPORT = 5 }
+			trigger_event = {
+				id = pr_college.0202
+				days = { 30 60 }
+			}
+		}
+		ai_chance = {
+			base = 20
+			modifier = { add = 30 has_trait = zealous }
+			modifier = { add = 20 has_trait = stubborn }
+		}
+	}
+
+	# No great lord wavers: on to the vote
+	option = {
+		name = pr_college.0201.d
+		trigger = { NOT = { exists = scope:pr_cornelia_lord } }
+		custom_tooltip = pr_college.next_vote.tt # when the next step comes (playtest 2026-11-07)
+		hidden_effect = {
+			trigger_event = {
+				id = pr_college.0202
+				days = { 30 60 }
+			}
+		}
+	}
+}
+
+# The vote on the Lex Cornelia. Decided 2026-10-31: co-optation (Sulla) = base 60, election (the Lex Domitia) = base 40.
+# Support is added to the success side in steps of 10 (at 10, 20 and 30), a king of kings and great prestige add to it
+# (Sulla's power), every veto adds 15, every refusal so far (max 3) adds 10 to the failure side.
+pr_college.0202 = {
+	type = character_event
+	title = pr_college.0202.t
+	desc = {
+		desc = pr_college.0202.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = { has_variable = pr_college_cornelia_vetoes }
+				desc = pr_college.0202.desc.again
+			}
+			desc = pr_college.0202.desc.first
+		}
+	}
+	theme = faith
+	override_background = { reference = pr_temple } # not vanilla temple: it can show a church (Hagia Sophia for an emperor in Constantinople)
+	left_portrait = {
+		character = scope:pr_cornelia_pontifex
+		animation = disapproval
+	}
+	right_portrait = {
+		trigger = { exists = var:pr_college_cornelia_promised }
+		character = var:pr_college_cornelia_promised
+		animation = personality_rational
+	}
+
+	trigger = {
+		NOT = { exists = global_var:pr_college_lex_cornelia }
+		pr_college_cornelia_ruler_still_valid_trigger = yes
+	}
+	# The ruler no longer qualifies: the round ends, so the storyline does not block other rulers
+	on_trigger_fail = {
+		pr_college_cornelia_collapse_effect = yes
+	}
+
+	immediate = {
+		# How many great men an election would seat (shown in option b, decided 2026-11-08)
+		pr_college_cornelia_electable_preview_effect = yes
+		pr_college_cornelia_setup_scopes_effect = yes
+	}
+
+	# Let the College co-opt its new members (Sulla): easier to carry, a pleased College and great piety
+	option = {
+		name = pr_college.0202.a
+		skill = diplomacy
+		custom_tooltip = pr_college.0202.a.tt
+		duel = {
+			skill = diplomacy
+			target = scope:pr_cornelia_pontifex
+			60 = {
+				desc = pr_college.0202.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				modifier = { add = 10 has_trait = zealous }
+				modifier = { add = 10 has_trait = just }
+				modifier = { add = 10 has_trait = honest }
+				modifier = { add = 10 has_trait = gregarious }
+				modifier = { add = 10 has_trait = diplomat }
+				modifier = { add = -10 has_trait = arrogant }
+				modifier = { add = -15 has_trait = cynical }
+				modifier = { add = -10 has_trait = deceitful }
+				modifier = { add = -10 has_trait = shy }
+				modifier = { add = -10 has_trait = wrathful }
+				# Support from the Churches and the lord (pr_college.0200, 0201)
+				modifier = { add = 10 has_variable = pr_college_cornelia_support var:pr_college_cornelia_support >= 10 }
+				modifier = { add = 10 has_variable = pr_college_cornelia_support var:pr_college_cornelia_support >= 20 }
+				modifier = { add = 10 has_variable = pr_college_cornelia_support var:pr_college_cornelia_support >= 30 }
+				# Sulla's power: a king of kings, a famous name
+				modifier = { add = 10 highest_held_title_tier = tier_empire }
+				modifier = { add = 10 prestige_level >= 4 }
+				# Brought again after a veto
+				modifier = { add = 15 var:pr_college_cornelia_vetoes ?= 1 }
+				modifier = { add = 30 var:pr_college_cornelia_vetoes ?= 2 }
+				modifier = { add = 45 has_variable = pr_college_cornelia_vetoes var:pr_college_cornelia_vetoes >= 3 }
+				min = 10
+				save_scope_value_as = { name = pr_cornelia_mode value = flag:cooptation }
+				pr_college_cornelia_pass_effect = { ELECTION = no }
+				trigger_event = pr_college.0203
+			}
+			40 = {
+				desc = pr_college.0202.failure
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				modifier = { add = 10 faith:roman_polytheism = { var:pr_college_cornelia_refusals ?= 1 } }
+				modifier = { add = 20 faith:roman_polytheism = { var:pr_college_cornelia_refusals ?= 2 } }
+				modifier = { add = 30 faith:roman_polytheism = { has_variable = pr_college_cornelia_refusals var:pr_college_cornelia_refusals >= 3 } }
+				min = 10
+				pr_college_cornelia_veto_effect = yes
+				trigger_event = pr_college.0204
+			}
+		}
+		ai_chance = {
+			base = 50
+			modifier = { add = 20 has_trait = zealous }
+			modifier = { add = 20 has_trait = patient }
+		}
+	}
+
+	# Let the electors choose them (the Lex Domitia): harder to carry, but the seats go to your own great men
+	option = {
+		name = pr_college.0202.b
+		skill = diplomacy
+		# The promised lord is only named when there is one (2026-11-08)
+		if = {
+			limit = { exists = var:pr_college_cornelia_promised }
+			custom_tooltip = pr_college.0202.b.tt
+		}
+		else = {
+			custom_tooltip = pr_college.0202.b.nopromise.tt
+		}
+		# How many great men the electors can seat; the College co-opts the rest (decided 2026-11-08)
+		if = {
+			limit = { pr_college_cornelia_electable_value <= 0 }
+			custom_tooltip = pr_college.0202.b.none.tt
+		}
+		else_if = {
+			# Fewer than the seats left to elect (5 when a waiting Pontifex Maximus takes seat 10)
+			limit = { pr_college_cornelia_electable_value < var:pr_college_cornelia_electable_preview_max }
+			custom_tooltip = pr_college.0202.b.few.tt
+		}
+		duel = {
+			skill = diplomacy
+			target = scope:pr_cornelia_pontifex
+			40 = {
+				desc = pr_college.0202.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				modifier = { add = 10 has_trait = zealous }
+				modifier = { add = 10 has_trait = just }
+				modifier = { add = 10 has_trait = honest }
+				modifier = { add = 10 has_trait = gregarious }
+				modifier = { add = 10 has_trait = diplomat }
+				modifier = { add = -10 has_trait = arrogant }
+				modifier = { add = -15 has_trait = cynical }
+				modifier = { add = -10 has_trait = deceitful }
+				modifier = { add = -10 has_trait = shy }
+				modifier = { add = -10 has_trait = wrathful }
+				# Support from the Churches and the lord (pr_college.0200, 0201)
+				modifier = { add = 10 has_variable = pr_college_cornelia_support var:pr_college_cornelia_support >= 10 }
+				modifier = { add = 10 has_variable = pr_college_cornelia_support var:pr_college_cornelia_support >= 20 }
+				modifier = { add = 10 has_variable = pr_college_cornelia_support var:pr_college_cornelia_support >= 30 }
+				# Sulla's power: a king of kings, a famous name
+				modifier = { add = 10 highest_held_title_tier = tier_empire }
+				modifier = { add = 10 prestige_level >= 4 }
+				# Brought again after a veto (election: +10 each, decided 2026-11-01, so a retry does not erase its harder odds)
+				modifier = { add = 10 var:pr_college_cornelia_vetoes ?= 1 }
+				modifier = { add = 20 var:pr_college_cornelia_vetoes ?= 2 }
+				modifier = { add = 30 has_variable = pr_college_cornelia_vetoes var:pr_college_cornelia_vetoes >= 3 }
+				min = 10
+				save_scope_value_as = { name = pr_cornelia_mode value = flag:election }
+				pr_college_cornelia_pass_effect = { ELECTION = yes }
+				trigger_event = pr_college.0203
+			}
+			60 = {
+				desc = pr_college.0202.failure
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				modifier = { add = 10 faith:roman_polytheism = { var:pr_college_cornelia_refusals ?= 1 } }
+				modifier = { add = 20 faith:roman_polytheism = { var:pr_college_cornelia_refusals ?= 2 } }
+				modifier = { add = 30 faith:roman_polytheism = { has_variable = pr_college_cornelia_refusals var:pr_college_cornelia_refusals >= 3 } }
+				min = 10
+				pr_college_cornelia_veto_effect = yes
+				trigger_event = pr_college.0204
+			}
+		}
+		ai_chance = {
+			base = 30
+			modifier = { add = 20 has_trait = ambitious }
+			modifier = { add = 20 has_trait = gregarious }
+		}
+	}
+
+	# Not in my lifetime: the College stays as it is
+	option = {
+		name = pr_college.0202.c
+		pr_college_cornelia_refuse_effect = yes
+		ai_chance = {
+			base = 20
+			modifier = { add = 20 has_trait = content }
+			modifier = { add = 20 has_trait = stubborn }
+		}
+	}
+}
+
+# The law passes
+pr_college.0203 = {
+	type = character_event
+	title = pr_college.0203.t
+	desc = {
+		first_valid = {
+			# Election, but no great man could be seated: the College co-opted all six (decided 2026-11-08)
+			triggered_desc = {
+				trigger = {
+					scope:pr_cornelia_mode ?= flag:election
+					var:pr_college_cornelia_elected_count ?= 0
+				}
+				desc = pr_college.0203.desc.election.none
+			}
+			triggered_desc = {
+				trigger = {
+					scope:pr_cornelia_mode ?= flag:election
+					has_variable = pr_college_cornelia_elected_count
+					has_variable = pr_college_cornelia_electable_preview_max
+					var:pr_college_cornelia_elected_count < var:pr_college_cornelia_electable_preview_max
+				}
+				desc = pr_college.0203.desc.election.few
+			}
+			triggered_desc = {
+				trigger = { scope:pr_cornelia_mode ?= flag:election }
+				desc = pr_college.0203.desc.election
+			}
+			# Explicit, so flag:cooptation is read (error.log: "set but is never used"); the same text is the fallback
+			triggered_desc = {
+				trigger = { scope:pr_cornelia_mode ?= flag:cooptation }
+				desc = pr_college.0203.desc.cooptation
+			}
+			desc = pr_college.0203.desc.cooptation
+		}
+	}
+	theme = faith
+	override_background = { reference = pr_temple } # not vanilla temple: it can show a church (Hagia Sophia for an emperor in Constantinople)
+	left_portrait = {
+		character = root
+		animation = happiness
+	}
+	right_portrait = {
+		trigger = { exists = title:d_pr_pontifical_seat_10.holder }
+		character = title:d_pr_pontifical_seat_10.holder
+		animation = happiness
+	}
+
+	option = {
+		name = pr_college.0203.a
+	}
+}
+
+# The veto
+pr_college.0204 = {
+	type = character_event
+	title = pr_college.0204.t
+	desc = {
+		desc = pr_college.0204.desc
+		first_valid = {
+			# pr_college_cornelia_exhausted_effect cleared the vetoes: this was the last attempt
+			triggered_desc = {
+				trigger = { NOT = { has_variable = pr_college_cornelia_vetoes } }
+				desc = pr_college.0204.desc.final
+			}
+			desc = pr_college.0204.desc.again
+		}
+	}
+	theme = faith
+	override_background = { reference = pr_temple } # not vanilla temple: it can show a church (Hagia Sophia for an emperor in Constantinople)
+	left_portrait = {
+		character = scope:pr_cornelia_pontifex
+		animation = personality_zealous
+	}
+
+	option = {
+		name = pr_college.0204.a
+		if = {
+			limit = { has_variable = pr_college_cornelia_vetoes }
+			custom_tooltip = pr_college.0204.a.tt
+		}
+		else = {
+			custom_tooltip = pr_college.0204.a.final.tt
+		}
+	}
+}
+
+# The Church answers, a year or three after it was sent away (0200 a) or saw through the game of bids (0200 b). As
+# pr_college.0105: make amends with gold or prestige, or defy the Church (piety, but Christians abroad and at home think
+# less of you for 10 years). No casus belli.
+pr_college.0205 = {
+	type = character_event
+	title = pr_college.0205.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { exists = scope:pr_cornelia_angry_church_head }
+				desc = pr_college.0205.desc.head
+			}
+			desc = pr_college.0205.desc.nohead
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = { current_date < 800.1.1 }
+				desc = pr_college.0105.era.700
+			}
+			triggered_desc = {
+				trigger = { current_date < 1050.1.1 }
+				desc = pr_college.0105.era.867
+			}
+			triggered_desc = {
+				trigger = { current_date < 1150.1.1 }
+				desc = pr_college.0105.era.1066
+			}
+			desc = pr_college.0105.era.1178
+		}
+	}
+	theme = faith
+	override_background = { reference = throne_room }
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		trigger = { exists = scope:pr_cornelia_angry_church_head }
+		character = scope:pr_cornelia_angry_church_head
+		animation = disapproval
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		faith = faith:roman_polytheism
+		NOT = { government_has_flag = government_is_theocracy }
+		exists = var:pr_college_cornelia_angry_church
+	}
+
+	# The head of the Church may have died in the meantime
+	immediate = {
+		pr_college_save_church_effect = { RITE = var:pr_college_cornelia_angry_church NAME = pr_cornelia_angry_church }
+		remove_variable = pr_college_cornelia_angry_church
+	}
+
+	# Send gifts to make amends
+	option = {
+		name = pr_college.0105.a
+		trigger = { short_term_gold >= medium_gold_value }
+		show_as_unavailable = { short_term_gold < medium_gold_value }
+		remove_short_term_gold = medium_gold_value
+		custom_tooltip = pr_college.0205.amends.tt
+		pr_college_cornelia_make_amends_effect = yes
+		# The quarrel ends here; the law goes on as before (playtest 2026-11-06: players asked "what now?")
+		pr_college_church_answers_end_effect = { LAW = cornelia }
+		ai_chance = {
+			base = 30
+			modifier = { add = 20 has_trait = craven }
+			modifier = { factor = 0 short_term_gold < medium_gold_value }
+		}
+	}
+
+	# Receive the next envoy with honour
+	option = {
+		name = pr_college.0105.b
+		add_prestige = medium_prestige_loss
+		custom_tooltip = pr_college.0205.amends.tt
+		pr_college_cornelia_make_amends_effect = yes
+		# The quarrel ends here; the law goes on as before (playtest 2026-11-06: players asked "what now?")
+		pr_college_church_answers_end_effect = { LAW = cornelia }
+		ai_chance = {
+			base = 30
+			modifier = { add = 20 has_trait = humble }
+		}
+	}
+
+	# The gods of Rome answer to no bishop
+	option = {
+		name = pr_college.0105.c
+		add_piety = medium_piety_gain
+		custom_tooltip = pr_college.0105.c.tt
+		hidden_effect = {
+			every_neighboring_and_across_water_top_liege_realm_owner = {
+				limit = { is_christian_trigger = yes } # character scope: religion_tag is a faith trigger
+				add_opinion = {
+					target = root
+					modifier = pr_college_church_defied_opinion
+				}
+			}
+			scope:pr_cornelia_angry_church_head ?= {
+				add_opinion = {
+					target = root
+					modifier = pr_college_church_defied_opinion
+				}
+			}
+			every_vassal = {
+				limit = { is_christian_trigger = yes } # character scope: religion_tag is a faith trigger
+				add_opinion = {
+					target = root
+					modifier = pr_college_church_defied_opinion
+				}
+			}
+			every_courtier = {
+				limit = { is_christian_trigger = yes } # character scope: religion_tag is a faith trigger
+				add_opinion = {
+					target = root
+					modifier = pr_college_church_defied_opinion
+				}
+			}
+		}
+		# The quarrel ends here; the law goes on as before (playtest 2026-11-06: players asked "what now?")
+		pr_college_church_answers_end_effect = { LAW = cornelia }
+		ai_chance = {
+			base = 40
+			modifier = { add = 30 has_trait = zealous }
+			modifier = { add = 20 has_trait = arrogant }
+		}
+	}
+}

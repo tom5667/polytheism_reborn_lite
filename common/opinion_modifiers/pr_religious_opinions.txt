@@ -56,3 +56,117 @@ generic_opinion_negative = {
 	decaying = yes
 	stacking = yes
 }
+
+# --- College of Pontiffs (#76): storyline "The New Believers" (Lex Ogulnia) ---
+
+# A founding pontifex whose College the ruler kept closed to the new believers. Decided 2026-10-22: 5 years, shorter
+# than the 10-year cooldown after a refusal, so refusing gives no lasting advantage.
+pr_college_founders_honoured_opinion = {
+	opinion = 20
+	years = 5
+}
+
+# A founding pontifex who saw the ruler pay to protect the new believers (pr_college.0101 a)
+pr_college_founders_displeased_opinion = {
+	opinion = -10
+	years = 5
+}
+
+# A founding pontifex whose College the ruler opened to the new believers, or whom he paid off against
+pr_college_founders_slighted_opinion = {
+	opinion = -20
+	years = 15
+}
+
+# The convert who asked for a seat, and was heard and protected
+pr_college_convert_grateful_opinion = {
+	opinion = 25
+	years = 15
+}
+
+# The convert who asked for a seat and was turned away
+pr_college_convert_spurned_opinion = {
+	opinion = -25
+	years = 10
+}
+
+# The Christian head whose envoy was sent home
+pr_college_church_rebuffed_opinion = {
+	opinion = -30
+	years = 20
+}
+
+# A Christian ruler or head who saw the ruler defy the Church (pr_college.0105 c)
+pr_college_church_defied_opinion = {
+	opinion = -15
+	years = 10
+}
+
+# --- College of Pontiffs (#76): storyline "Rome and Constantinople" (Lex Cornelia) ---
+
+# The Christian head whose Church saw through a game of bids (pr_college.0200 b)
+pr_college_church_deceived_opinion = {
+	opinion = -30
+	years = 20
+}
+
+# The wavering lord who was promised a seat in the greater College (pr_college.0201 a)
+pr_college_cornelia_bound_opinion = {
+	opinion = 25
+	years = 15
+}
+
+# The wavering lord who was promised a seat and did not get one
+pr_college_cornelia_promise_broken_opinion = {
+	opinion = -30
+	years = 15
+}
+
+# The wavering lord who was reminded who his liege is (pr_college.0201 b)
+pr_college_cornelia_threatened_opinion = {
+	opinion = -15
+	years = 10
+}
+
+# A College member who saw the ruler let the waverer go rather than buy him with a seat (pr_college.0201 c). 10 years
+# (decided 2026-11-01: letting a great lord go must be worth it).
+pr_college_cornelia_firm_opinion = {
+	opinion = 15
+	years = 10
+}
+
+# A College member who saw the ruler send both Churches' envoys home (pr_college.0200 a)
+pr_college_cornelia_unbowed_opinion = {
+	opinion = 15
+	years = 5
+}
+
+# A College member whose College kept its old size (pr_college.0202 c). 5 years, shorter than the 10-year cooldown.
+pr_college_cornelia_kept_opinion = {
+	opinion = 15
+	years = 5
+}
+
+# A College member whose College got back its right to choose its own members (pr_college.0202 a, Sulla)
+pr_college_cornelia_honoured_opinion = {
+	opinion = 20
+	years = 10
+}
+
+# A College member who saw the new seats given to the ruler's men (pr_college.0202 b, the Lex Domitia)
+pr_college_cornelia_displeased_opinion = {
+	opinion = -20
+	years = 15
+}
+
+# A new pontifex who got his seat through the ruler's electors (pr_college.0202 b)
+pr_college_cornelia_elected_opinion = {
+	opinion = 25
+	years = 15
+}
+
+# A powerful Roman vassal left out when the College chose its new members itself (pr_college.0202 a)
+pr_college_cornelia_passed_over_opinion = {
+	opinion = -10
+	years = 10
+}

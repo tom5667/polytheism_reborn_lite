@@ -1,0 +1,418 @@
+﻿# College of Pontiffs (#76): storyline "The New Believers", towards the Lex Ogulnia (5 to 9 pontifical seats).
+# Design: chronicle/decisions_log.md (2026-10-20 and 2026-10-22); sources: resource/college_laws_research.md.
+# State on faith:roman_polytheism: pr_college_ogulnia_active (the ruler who has the storyline, 5 years; 10 after a veto),
+# pr_college_ogulnia_cooldown (after a refusal 10 years, after a collapsed petition 5), pr_college_ogulnia_refusals
+# (count; every refusal costs support in later votes, the story returns harder).
+# State on the ruler: pr_college_ogulnia_convert (the petitioner), pr_college_ogulnia_support (10/15/25, from the
+# Church letters in pr_college.0101), pr_college_ogulnia_vetoes (count), pr_college_ogulnia_veto_cooldown (3 years).
+# The law: global_var:pr_college_lex_ogulnia; global_var:pr_college_ogulnia_gradual while the College fills the new
+# seats one a year (pr_college_maintain_effect).
+
+# Character scope (the ruler): the founding pontifex who speaks for the old families: the holder of seats 1-5 with the
+# most diplomacy (the vote is a diplomacy duel), never the ruler himself.
+pr_college_ogulnia_find_founder_effect = {
+	if = {
+		limit = { exists = scope:pr_ogulnia_founder }
+		clear_saved_scope = pr_ogulnia_founder
+	}
+	save_temporary_scope_as = pr_ogulnia_founder_ruler
+	title:d_pr_pontifical_seat_1.holder ?= { add_to_temporary_list = pr_ogulnia_founders }
+	title:d_pr_pontifical_seat_2.holder ?= { add_to_temporary_list = pr_ogulnia_founders }
+	title:d_pr_pontifical_seat_3.holder ?= { add_to_temporary_list = pr_ogulnia_founders }
+	title:d_pr_pontifical_seat_4.holder ?= { add_to_temporary_list = pr_ogulnia_founders }
+	title:d_pr_pontifical_seat_5.holder ?= { add_to_temporary_list = pr_ogulnia_founders }
+	ordered_in_list = {
+		list = pr_ogulnia_founders
+		limit = { NOT = { this = scope:pr_ogulnia_founder_ruler } }
+		order_by = diplomacy
+		save_scope_as = pr_ogulnia_founder
+	}
+}
+
+# Global: every founding pontifex (seats 1-5) gets $MODIFIER$ towards scope:pr_ogulnia_ruler. Opinion only: the vote
+# chance comes from pr_college_ogulnia_support, not from these opinions.
+pr_college_ogulnia_founders_opinion_effect = {
+	title:d_pr_pontifical_seat_1.holder ?= { add_to_temporary_list = pr_ogulnia_founders_all }
+	title:d_pr_pontifical_seat_2.holder ?= { add_to_temporary_list = pr_ogulnia_founders_all }
+	title:d_pr_pontifical_seat_3.holder ?= { add_to_temporary_list = pr_ogulnia_founders_all }
+	title:d_pr_pontifical_seat_4.holder ?= { add_to_temporary_list = pr_ogulnia_founders_all }
+	title:d_pr_pontifical_seat_5.holder ?= { add_to_temporary_list = pr_ogulnia_founders_all }
+	every_in_list = {
+		list = pr_ogulnia_founders_all
+		limit = { NOT = { this = scope:pr_ogulnia_ruler } }
+		add_opinion = {
+			target = scope:pr_ogulnia_ruler
+			modifier = $MODIFIER$
+		}
+	}
+}
+
+# Character scope (the ruler): the convert who asks for a seat. Decided 2026-10-22: first a character from the ruler's
+# own court or realm (an AI Roman without a seat, from a dynasty without a seat, not his close family; a courtier
+# before a vassal), otherwise a new one in his court. The game cannot see who used to be a Christian, so "convert" is the story's word for a newcomer.
+pr_college_ogulnia_find_convert_effect = {
+	save_scope_as = pr_ogulnia_ruler
+	if = {
+		limit = {
+			exists = var:pr_college_ogulnia_convert
+			var:pr_college_ogulnia_convert = {
+				is_alive = yes
+				pr_college_can_receive_seat_trigger = yes
+			}
+		}
+		var:pr_college_ogulnia_convert = { save_scope_as = pr_ogulnia_convert }
+	}
+	else = {
+		# A convert saved by an earlier event may be dead or Christian again: never fall back on him
+		if = {
+			limit = { exists = scope:pr_ogulnia_convert }
+			clear_saved_scope = pr_ogulnia_convert
+		}
+		# Decided 2026-10-22 (second round): a courtier first, a vassal only if no courtier fits, so a relapse rarely
+		# costs a great vassal
+		every_courtier = {
+			limit = {
+				pr_college_can_receive_seat_trigger = yes
+				is_ruler = no
+				is_ai = yes
+				NOT = { is_close_family_of = scope:pr_ogulnia_ruler }
+			}
+			add_to_temporary_list = pr_ogulnia_convert_pool
+		}
+		ordered_in_list = {
+			list = pr_ogulnia_convert_pool
+			order_by = prestige
+			save_scope_as = pr_ogulnia_convert
+		}
+		if = {
+			limit = { NOT = { exists = scope:pr_ogulnia_convert } }
+			every_vassal = {
+				limit = {
+					pr_college_can_receive_seat_trigger = yes
+					is_ai = yes
+					NOT = { is_close_family_of = scope:pr_ogulnia_ruler }
+				}
+				add_to_temporary_list = pr_ogulnia_convert_vassals
+			}
+			ordered_in_list = {
+				list = pr_ogulnia_convert_vassals
+				order_by = prestige
+				save_scope_as = pr_ogulnia_convert
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:pr_ogulnia_convert } }
+			create_character = {
+				employer = scope:pr_ogulnia_ruler
+				age = { 28 45 }
+				gender_female_chance = 0
+				trait = education_diplomacy_3
+				faith = faith:roman_polytheism
+				culture = scope:pr_ogulnia_ruler.culture
+				dynasty = generate
+				diplomacy = { 10 16 }
+				save_scope_as = pr_ogulnia_convert
+			}
+			scope:pr_ogulnia_convert = {
+				set_character_rite = scope:pr_ogulnia_ruler.rite
+			}
+		}
+		set_variable = {
+			name = pr_college_ogulnia_convert
+			value = scope:pr_ogulnia_convert
+		}
+	}
+}
+
+# Any scope: saves the Church of the rite $RITE$ (rite:roman_rite is Rome, rite:byzantine_rite is Constantinople) as
+# - scope:$NAME$_rite: the rite. A Church is its rite: before the Great Schism Rome and Constantinople are one faith
+#   (christian_faith, Chalcedonian) with two rites, after it the schism moves each rite to its own faith (catholic,
+#   orthodox; vanilla pam_create_great_schism_effect). Compare characters and counties with
+#   pr_college_in_church_trigger = { CHURCH = scope:$NAME$_rite } (it includes the Church's other rites).
+# - scope:$NAME$: the rite's faith, for set_character_faith (follow it with set_character_rite = scope:$NAME$_rite).
+# - scope:$NAME$_title: the title of the Church's head (k_papal_state, k_orthodox), for its name in text: only at the start of a sentence ([x_title.GetName|U]); GetName gives "The Papacy" with a capital T, also mid-sentence (in-game 2026-11-02).
+# - scope:$NAME$_head: its holder, if he keeps the Church's faith. Not faith.religious_head: in 1.20 christian_faith,
+#   catholic and orthodox have no religious_head before the schism (only head_of_rite), so it was always empty
+#   (in-game 2026-11-02: no portraits in pr_college.0200).
+pr_college_save_church_effect = {
+	$RITE$ = {
+		save_scope_as = $NAME$_rite
+		faith = { save_scope_as = $NAME$ }
+	}
+	if = {
+		limit = { scope:$NAME$_rite = rite:roman_rite }
+		title:k_papal_state = { save_scope_as = $NAME$_title }
+	}
+	else = {
+		title:k_orthodox = { save_scope_as = $NAME$_title }
+	}
+	if = {
+		limit = { exists = scope:$NAME$_head }
+		clear_saved_scope = $NAME$_head
+	}
+	scope:$NAME$_title.holder ?= {
+		if = {
+			limit = { faith = scope:$NAME$ }
+			save_scope_as = $NAME$_head
+		}
+	}
+}
+
+# Character scope (the ruler): the Church that reaches for the converts. Decided 2026-10-20: the nearest Christian head,
+# by region: the Patriarch if the realm has more counties of his Church than of Rome's, the Pope if it has more of
+# Rome's; with neither, by where the capital lies (west of Europe: the Pope, otherwise the Patriarch). Saves
+# scope:pr_ogulnia_church (faith), _rite, _title and _head (pr_college_save_church_effect).
+pr_college_ogulnia_find_church_effect = {
+	if = {
+		limit = {
+			pr_college_realm_constantinople_counties_value > pr_college_realm_rome_counties_value
+		}
+		pr_college_save_church_effect = { RITE = rite:byzantine_rite NAME = pr_ogulnia_church }
+	}
+	else_if = {
+		limit = {
+			pr_college_realm_rome_counties_value > pr_college_realm_constantinople_counties_value
+		}
+		pr_college_save_church_effect = { RITE = rite:roman_rite NAME = pr_ogulnia_church }
+	}
+	else_if = {
+		limit = { capital_province ?= { geographical_region = world_europe_west } }
+		pr_college_save_church_effect = { RITE = rite:roman_rite NAME = pr_ogulnia_church }
+	}
+	else = {
+		pr_college_save_church_effect = { RITE = rite:byzantine_rite NAME = pr_ogulnia_church }
+	}
+}
+
+# Character scope (the ruler): all scopes the storyline events use.
+pr_college_ogulnia_setup_scopes_effect = {
+	pr_college_ogulnia_find_convert_effect = yes
+	pr_college_ogulnia_find_founder_effect = yes
+	pr_college_ogulnia_find_church_effect = yes
+}
+
+# Character scope (the ruler): support for the vote from the Church letters (pr_college.0101). Decided 2026-10-22:
+# protect 20, a convert who stands firm 30, sending the envoy home 5 (second round after the review). Read by the duel in pr_college.0102.
+pr_college_ogulnia_set_support_effect = {
+	set_variable = { name = pr_college_ogulnia_support value = $SUPPORT$ }
+}
+
+# Character scope (the ruler): clears the ruler's storyline state (convert, support, vetoes).
+pr_college_ogulnia_clear_ruler_state_effect = {
+	if = { limit = { has_variable = pr_college_ogulnia_convert } remove_variable = pr_college_ogulnia_convert }
+	if = { limit = { has_variable = pr_college_ogulnia_support } remove_variable = pr_college_ogulnia_support }
+	if = { limit = { has_variable = pr_college_ogulnia_vetoes } remove_variable = pr_college_ogulnia_vetoes }
+	if = { limit = { has_variable = pr_college_ogulnia_veto_cooldown } remove_variable = pr_college_ogulnia_veto_cooldown }
+}
+
+# Character scope (the ruler): the petition is turned away, now or at the vote. The story returns after 10 years,
+# and every refusal costs support in later votes (pr_college.0102). The founders are pleased, but only for 5 years.
+pr_college_ogulnia_refuse_effect = {
+	pr_college_ogulnia_founders_opinion_effect = { MODIFIER = pr_college_founders_honoured_opinion }
+	scope:pr_ogulnia_convert ?= {
+		add_opinion = {
+			target = scope:pr_ogulnia_ruler
+			modifier = pr_college_convert_spurned_opinion
+		}
+	}
+	custom_tooltip = pr_college_ogulnia_refuse_tt
+	hidden_effect = {
+		faith:roman_polytheism = {
+			if = {
+				limit = { has_variable = pr_college_ogulnia_refusals }
+				change_variable = { name = pr_college_ogulnia_refusals add = 1 }
+			}
+			else = {
+				set_variable = { name = pr_college_ogulnia_refusals value = 1 }
+			}
+			set_variable = { name = pr_college_ogulnia_cooldown value = flag:refused years = 10 }
+			if = { limit = { has_variable = pr_college_ogulnia_active } remove_variable = pr_college_ogulnia_active }
+		}
+		pr_college_ogulnia_clear_ruler_state_effect = yes
+	}
+}
+
+# Character scope (the ruler): the convert fell back to the Church (pr_college.0101 b). Decided 2026-10-22: the
+# petition loses its face and the round ends; it returns after 5 years and does not count as a refusal.
+pr_college_ogulnia_collapse_effect = {
+	custom_tooltip = pr_college_ogulnia_collapse_tt
+	hidden_effect = {
+		faith:roman_polytheism = {
+			set_variable = { name = pr_college_ogulnia_cooldown value = flag:collapsed years = 5 }
+			if = { limit = { has_variable = pr_college_ogulnia_active } remove_variable = pr_college_ogulnia_active }
+		}
+		pr_college_ogulnia_clear_ruler_state_effect = yes
+	}
+}
+
+# Character scope (the ruler): the law passes. Decided 2026-10-22.
+# OPEN = yes: the convert takes the sixth seat and the College fills the rest now; the four new pontifices are
+# grateful, the founders angry; a major piety gain.
+# OPEN = no: the College fills the new seats itself, one a year (global_var:pr_college_ogulnia_gradual, read by
+# pr_college_maintain_effect); the founders are content; a minor piety gain.
+pr_college_ogulnia_pass_effect = {
+	set_global_variable = { name = pr_college_lex_ogulnia value = yes }
+	add_prestige = medium_prestige_gain
+	if = {
+		limit = { always = $OPEN$ }
+		add_piety = major_piety_gain
+		pr_college_ogulnia_founders_opinion_effect = { MODIFIER = pr_college_founders_slighted_opinion }
+		hidden_effect = {
+			# A Pontifex Maximus waiting for a seat takes one before the new seats are filled (decided 2026-10-31)
+			faith:roman_polytheism.religious_head ?= { pr_college_head_seat_effect = yes }
+			# The ruler does not co-opt himself through his own law (review 2026-10-31)
+			add_character_flag = pr_college_coopt_excluded
+			if = {
+				limit = { scope:pr_ogulnia_convert ?= { is_alive = yes pr_college_can_receive_seat_trigger = yes } }
+				title:d_pr_pontifical_seat_6 = { pr_college_grant_seat_effect = { RECIPIENT = scope:pr_ogulnia_convert } }
+			}
+			else = {
+				title:d_pr_pontifical_seat_6 = { pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } }
+			}
+			title:d_pr_pontifical_seat_7 = { pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } }
+			title:d_pr_pontifical_seat_8 = { pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } }
+			title:d_pr_pontifical_seat_9 = { pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } }
+			remove_character_flag = pr_college_coopt_excluded
+		}
+		custom_tooltip = pr_college_ogulnia_open_grateful_tt
+		hidden_effect = {
+			title:d_pr_pontifical_seat_6.holder ?= { add_to_temporary_list = pr_ogulnia_new_pontifices }
+			title:d_pr_pontifical_seat_7.holder ?= { add_to_temporary_list = pr_ogulnia_new_pontifices }
+			title:d_pr_pontifical_seat_8.holder ?= { add_to_temporary_list = pr_ogulnia_new_pontifices }
+			title:d_pr_pontifical_seat_9.holder ?= { add_to_temporary_list = pr_ogulnia_new_pontifices }
+			every_in_list = {
+				list = pr_ogulnia_new_pontifices
+				limit = { NOT = { this = scope:pr_ogulnia_ruler } }
+				add_opinion = {
+					target = scope:pr_ogulnia_ruler
+					modifier = pr_college_convert_grateful_opinion
+				}
+			}
+		}
+	}
+	else = {
+		add_piety = minor_piety_gain
+		pr_college_ogulnia_founders_opinion_effect = { MODIFIER = pr_college_founders_honoured_opinion }
+		custom_tooltip = pr_college_ogulnia_gradual_tt
+		hidden_effect = {
+			set_global_variable = { name = pr_college_ogulnia_gradual value = yes }
+		}
+	}
+	hidden_effect = {
+		faith:roman_polytheism = {
+			if = { limit = { has_variable = pr_college_ogulnia_active } remove_variable = pr_college_ogulnia_active }
+		}
+		pr_college_ogulnia_clear_ruler_state_effect = yes
+		if = {
+			limit = { debug_only = yes }
+			debug_log = "PR College (#76): Lex Ogulnia passed (see scopes)"
+			debug_log_scopes = yes
+		}
+	}
+}
+
+# Character scope (the ruler): a veto stops the law. It can be brought again after 3 years with a better chance
+# (after Livy 10.9: vetoed first, passed the next day), at most three times. The support from the letters stays.
+pr_college_ogulnia_veto_effect = {
+	add_prestige = minor_prestige_loss
+	hidden_effect = {
+		if = {
+			limit = { has_variable = pr_college_ogulnia_vetoes }
+			change_variable = { name = pr_college_ogulnia_vetoes add = 1 }
+		}
+		else = {
+			set_variable = { name = pr_college_ogulnia_vetoes value = 1 }
+		}
+		set_variable = { name = pr_college_ogulnia_veto_cooldown value = yes years = 3 }
+		faith:roman_polytheism = {
+			set_variable = { name = pr_college_ogulnia_active value = scope:pr_ogulnia_ruler years = 10 }
+		}
+		# Decided 2026-10-22 (second round): at most three new attempts; the fourth veto counts as a refusal
+		if = {
+			# has_variable first: the option tooltip runs this before the counter exists (error.log 2026-11-06)
+			limit = {
+				has_variable = pr_college_ogulnia_vetoes
+				var:pr_college_ogulnia_vetoes >= 4
+			}
+			pr_college_ogulnia_exhausted_effect = yes
+		}
+		if = {
+			limit = { debug_only = yes }
+			debug_log = "PR College (#76): Lex Ogulnia vetoed (see scopes)"
+			debug_log_scopes = yes
+		}
+	}
+}
+
+# Character scope (the ruler): the fourth veto. The new believers give up for now: counts as a refusal (10-year
+# cooldown, -10 in later votes), without the founders' approval of a real refusal.
+pr_college_ogulnia_exhausted_effect = {
+	faith:roman_polytheism = {
+		if = {
+			limit = { has_variable = pr_college_ogulnia_refusals }
+			change_variable = { name = pr_college_ogulnia_refusals add = 1 }
+		}
+		else = {
+			set_variable = { name = pr_college_ogulnia_refusals value = 1 }
+		}
+		set_variable = { name = pr_college_ogulnia_cooldown value = flag:refused years = 10 }
+		if = { limit = { has_variable = pr_college_ogulnia_active } remove_variable = pr_college_ogulnia_active }
+	}
+	pr_college_ogulnia_clear_ruler_state_effect = yes
+	if = {
+		limit = { debug_only = yes }
+		debug_log = "PR College (#76): fourth veto, the storyline counts as refused"
+	}
+}
+
+# Character scope (the dying character, pr_college_ogulnia_on_death): the ruler who had the storyline died. The
+# storyline ends, so another ruler (or his heir) can get it in a later year.
+pr_college_ogulnia_ruler_died_effect = {
+	faith:roman_polytheism = {
+		if = { limit = { has_variable = pr_college_ogulnia_active } remove_variable = pr_college_ogulnia_active }
+	}
+	pr_college_ogulnia_clear_ruler_state_effect = yes
+	if = {
+		limit = { debug_only = yes }
+		debug_log = "PR College (#76): the Ogulnia ruler died, storyline ended"
+	}
+}
+
+# Global (yearly): start the storyline for the largest eligible Roman ruler, one at a time, a 25% chance a year.
+pr_college_ogulnia_yearly_effect = {
+	if = {
+		limit = {
+			NOT = { exists = global_var:pr_college_lex_ogulnia }
+			faith:roman_polytheism = {
+				NOR = {
+					has_variable = pr_college_ogulnia_active
+					has_variable = pr_college_ogulnia_cooldown
+				}
+			}
+			pr_college_ogulnia_college_ready_trigger = yes
+			any_ruler = {
+				pr_college_ogulnia_ruler_trigger = yes
+				is_ai = yes # players start it with a decision (2026-11-07)
+				top_liege = { is_ai = yes } # not a vassal of a player either: he would take the player's storyline (review)
+				pr_college_ogulnia_has_founder_trigger = yes
+			}
+		}
+		random = {
+			chance = 25
+			ordered_ruler = {
+				limit = {
+					pr_college_ogulnia_ruler_trigger = yes
+					is_ai = yes # players start it with a decision (2026-11-07)
+					top_liege = { is_ai = yes } # not a vassal of a player either: he would take the player's storyline (review)
+					pr_college_ogulnia_has_founder_trigger = yes
+				}
+				order_by = pr_college_realm_roman_counties_value
+				faith:roman_polytheism = {
+					set_variable = { name = pr_college_ogulnia_active value = prev years = 5 }
+				}
+				trigger_event = pr_college.0100
+			}
+		}
+	}
+}
+

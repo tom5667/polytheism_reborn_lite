@@ -1,0 +1,560 @@
+﻿# College of Pontiffs (#76): storyline "Rome and Constantinople", towards the Lex Cornelia (9 to 15 pontifical seats,
+# the Pontifex Maximus included: Livy, Periocha 89; resource/college_laws_research.md, Deel A and D).
+# Design: chronicle/decisions_log.md (2026-10-20 and 2026-10-31). Model: Boris of Bulgaria between Rome and Constantinople
+# (864-870, Deel B). Hard rule from the maintainer: no option may be the best one in every situation.
+# State on faith:roman_polytheism: pr_college_cornelia_active (the ruler who has the storyline, 5 years; 10 after a veto),
+# pr_college_cornelia_cooldown (after a refusal 10 years, after a collapsed round 5), pr_college_cornelia_refusals (count).
+# State on the ruler: pr_college_cornelia_support (sum from pr_college.0200 and 0201), pr_college_cornelia_lord (the
+# wavering lord), pr_college_cornelia_promised (the lord he promised a seat), pr_college_cornelia_angry_church (the main rite
+# whose Church answers in pr_college.0205), pr_college_cornelia_vetoes (count), pr_college_cornelia_veto_cooldown (3 years).
+# The law: global_var:pr_college_lex_cornelia; global_var:pr_college_lex_domitia when the seats went to electors (the
+# co-optation then favours landed Romans, pr_college_coopt_seat_effect).
+
+# Character scope (the ruler): the pontifex who speaks for the College against the law: the holder of seats 1-9 with the
+# most diplomacy (the vote is a diplomacy duel), never the ruler himself.
+pr_college_cornelia_find_pontifex_effect = {
+	if = {
+		limit = { exists = scope:pr_cornelia_pontifex }
+		clear_saved_scope = pr_cornelia_pontifex
+	}
+	save_temporary_scope_as = pr_cornelia_pontifex_ruler
+	title:d_pr_pontifical_seat_1.holder ?= { add_to_temporary_list = pr_cornelia_pontifices }
+	title:d_pr_pontifical_seat_2.holder ?= { add_to_temporary_list = pr_cornelia_pontifices }
+	title:d_pr_pontifical_seat_3.holder ?= { add_to_temporary_list = pr_cornelia_pontifices }
+	title:d_pr_pontifical_seat_4.holder ?= { add_to_temporary_list = pr_cornelia_pontifices }
+	title:d_pr_pontifical_seat_5.holder ?= { add_to_temporary_list = pr_cornelia_pontifices }
+	title:d_pr_pontifical_seat_6.holder ?= { add_to_temporary_list = pr_cornelia_pontifices }
+	title:d_pr_pontifical_seat_7.holder ?= { add_to_temporary_list = pr_cornelia_pontifices }
+	title:d_pr_pontifical_seat_8.holder ?= { add_to_temporary_list = pr_cornelia_pontifices }
+	title:d_pr_pontifical_seat_9.holder ?= { add_to_temporary_list = pr_cornelia_pontifices }
+	ordered_in_list = {
+		list = pr_cornelia_pontifices
+		limit = { NOT = { this = scope:pr_cornelia_pontifex_ruler } }
+		order_by = diplomacy
+		save_scope_as = pr_cornelia_pontifex
+	}
+}
+
+# Character scope (the ruler): the wavering lord, the greatest Roman vassal of the ruler, courted by a Church envoy
+# (pr_college.0201). An AI landed Roman vassal, not his close family; kept once found, as long as he is still Roman and
+# still his vassal. None: the storyline goes straight to the vote.
+pr_college_cornelia_find_lord_effect = {
+	save_temporary_scope_as = pr_cornelia_lord_ruler
+	if = {
+		limit = {
+			exists = var:pr_college_cornelia_lord
+			var:pr_college_cornelia_lord = {
+				is_alive = yes
+				faith = faith:roman_polytheism
+				is_landed = yes
+				liege ?= scope:pr_cornelia_lord_ruler
+			}
+		}
+		var:pr_college_cornelia_lord = { save_scope_as = pr_cornelia_lord }
+	}
+	else = {
+		if = {
+			limit = { exists = scope:pr_cornelia_lord }
+			clear_saved_scope = pr_cornelia_lord
+		}
+		every_vassal = {
+			limit = {
+				faith = faith:roman_polytheism
+				is_ai = yes
+				is_landed = yes
+				NOT = { is_close_family_of = scope:pr_cornelia_lord_ruler }
+			}
+			add_to_temporary_list = pr_cornelia_lords
+		}
+		ordered_in_list = {
+			list = pr_cornelia_lords
+			order_by = {
+				value = prestige
+				if = {
+					limit = { is_powerful_vassal = yes }
+					add = 100000 # a powerful vassal first
+				}
+			}
+			save_scope_as = pr_cornelia_lord
+		}
+		if = {
+			limit = { exists = scope:pr_cornelia_lord }
+			set_variable = {
+				name = pr_college_cornelia_lord
+				value = scope:pr_cornelia_lord
+			}
+		}
+	}
+}
+
+# Character scope (the ruler): the two Churches and their heads (either head may be missing): scope:pr_cornelia_rome and
+# scope:pr_cornelia_cpl (faith), _rite, _title and _head (pr_college_save_church_effect).
+pr_college_cornelia_find_churches_effect = {
+	pr_college_save_church_effect = { RITE = rite:roman_rite NAME = pr_cornelia_rome }
+	pr_college_save_church_effect = { RITE = rite:byzantine_rite NAME = pr_cornelia_cpl }
+}
+
+# Character scope (the ruler): all scopes the storyline events use. pr_college_ogulnia_find_church_effect (the nearer
+# Church: the one the wavering lord turns to, and the one that sees through a game of bids) saves scope:pr_ogulnia_church
+# and scope:pr_ogulnia_church_head.
+pr_college_cornelia_setup_scopes_effect = {
+	save_scope_as = pr_cornelia_ruler
+	pr_college_cornelia_find_pontifex_effect = yes
+	pr_college_cornelia_find_lord_effect = yes
+	pr_college_cornelia_find_churches_effect = yes
+	pr_college_ogulnia_find_church_effect = yes
+}
+
+# Character scope (the ruler): adds $SUPPORT$ to the support for the vote.
+pr_college_cornelia_add_support_effect = {
+	if = {
+		limit = { has_variable = pr_college_cornelia_support }
+		change_variable = { name = pr_college_cornelia_support add = $SUPPORT$ }
+	}
+	else = {
+		set_variable = { name = pr_college_cornelia_support value = $SUPPORT$ }
+	}
+}
+
+# Character scope (the ruler): the nearer Church will answer in pr_college.0205, one to three years from now.
+pr_college_cornelia_church_answers_effect = {
+	set_variable = {
+		name = pr_college_cornelia_angry_church
+		value = scope:pr_ogulnia_church_rite
+	}
+	trigger_event = {
+		id = pr_college.0205
+		days = { 365 1095 }
+	}
+}
+
+# Global: every member of the College (any seat of the Roman faith) other than scope:pr_cornelia_ruler gets $MODIFIER$
+# towards him.
+pr_college_cornelia_college_opinion_effect = {
+	faith:roman_polytheism = {
+		every_clerical_elector_title = {
+			holder ?= { add_to_temporary_list = pr_cornelia_members }
+		}
+	}
+	every_in_list = {
+		list = pr_cornelia_members
+		limit = { NOT = { this = scope:pr_cornelia_ruler } }
+		add_opinion = {
+			target = scope:pr_cornelia_ruler
+			modifier = $MODIFIER$
+		}
+	}
+}
+
+# Character scope (the ruler): the lord was promised a seat but did not get one.
+pr_college_cornelia_break_promise_effect = {
+	if = {
+		limit = {
+			exists = var:pr_college_cornelia_promised
+			var:pr_college_cornelia_promised = {
+				is_alive = yes
+				NOT = { exists = clerical_elector_title }
+			}
+		}
+		custom_tooltip = pr_college_cornelia_promise_broken_tt
+		var:pr_college_cornelia_promised = {
+			remove_opinion = {
+				target = root
+				modifier = pr_college_cornelia_bound_opinion
+			}
+			add_opinion = {
+				target = root
+				modifier = pr_college_cornelia_promise_broken_opinion
+			}
+		}
+	}
+}
+
+# Character scope (the ruler): making amends after pr_college.0205 (decided 2026-11-01): both Church heads forgive the
+# envoys sent home, and the Church that saw through a game of bids forgives it, its head and the rulers of its faith
+# around you.
+pr_college_cornelia_make_amends_effect = {
+	save_temporary_scope_as = pr_cornelia_amends_ruler
+	title:k_papal_state.holder ?= { add_to_temporary_list = pr_cornelia_amends_heads }
+	title:k_orthodox.holder ?= { add_to_temporary_list = pr_cornelia_amends_heads }
+	every_in_list = {
+		list = pr_cornelia_amends_heads
+		if = {
+			limit = { has_opinion_modifier = { target = scope:pr_cornelia_amends_ruler modifier = pr_college_church_rebuffed_opinion } }
+			remove_opinion = { target = scope:pr_cornelia_amends_ruler modifier = pr_college_church_rebuffed_opinion }
+		}
+		if = {
+			limit = { has_opinion_modifier = { target = scope:pr_cornelia_amends_ruler modifier = pr_college_church_deceived_opinion } }
+			remove_opinion = { target = scope:pr_cornelia_amends_ruler modifier = pr_college_church_deceived_opinion }
+		}
+	}
+	every_neighboring_and_across_water_top_liege_realm_owner = {
+		limit = {
+			pr_college_in_church_trigger = { CHURCH = scope:pr_cornelia_angry_church_rite }
+			has_opinion_modifier = { target = scope:pr_cornelia_amends_ruler modifier = pr_college_church_deceived_opinion }
+		}
+		remove_opinion = { target = scope:pr_cornelia_amends_ruler modifier = pr_college_church_deceived_opinion }
+	}
+}
+
+# Character scope (the ruler): clears the ruler's storyline state.
+pr_college_cornelia_clear_ruler_state_effect = {
+	if = { limit = { has_variable = pr_college_cornelia_support } remove_variable = pr_college_cornelia_support }
+	if = { limit = { has_variable = pr_college_cornelia_lord } remove_variable = pr_college_cornelia_lord }
+	if = { limit = { has_variable = pr_college_cornelia_promised } remove_variable = pr_college_cornelia_promised }
+	if = { limit = { has_variable = pr_college_cornelia_vetoes } remove_variable = pr_college_cornelia_vetoes }
+	if = { limit = { has_variable = pr_college_cornelia_veto_cooldown } remove_variable = pr_college_cornelia_veto_cooldown }
+}
+
+# Character scope (the ruler): the law is turned away at the vote. The story returns after 10 years, and every refusal
+# costs in later votes (pr_college.0202). The College is pleased, but only for 5 years; a promise to the lord is broken.
+pr_college_cornelia_refuse_effect = {
+	pr_college_cornelia_college_opinion_effect = { MODIFIER = pr_college_cornelia_kept_opinion }
+	pr_college_cornelia_break_promise_effect = yes
+	custom_tooltip = pr_college_cornelia_refuse_tt
+	hidden_effect = {
+		faith:roman_polytheism = {
+			if = {
+				limit = { has_variable = pr_college_cornelia_refusals }
+				change_variable = { name = pr_college_cornelia_refusals add = 1 }
+			}
+			else = {
+				set_variable = { name = pr_college_cornelia_refusals value = 1 }
+			}
+			set_variable = { name = pr_college_cornelia_cooldown value = flag:refused years = 10 }
+			if = { limit = { has_variable = pr_college_cornelia_active } remove_variable = pr_college_cornelia_active }
+		}
+		pr_college_cornelia_clear_ruler_state_effect = yes
+	}
+}
+
+# Character scope (the ruler): the ruler no longer qualifies; the round ends without counting as a refusal and returns
+# after 5 years.
+pr_college_cornelia_collapse_effect = {
+	custom_tooltip = pr_college_cornelia_collapse_tt
+	hidden_effect = {
+		faith:roman_polytheism = {
+			set_variable = { name = pr_college_cornelia_cooldown value = flag:collapsed years = 5 }
+			if = { limit = { has_variable = pr_college_cornelia_active } remove_variable = pr_college_cornelia_active }
+		}
+		pr_college_cornelia_clear_ruler_state_effect = yes
+	}
+}
+
+# Character scope (the ruler): simulates the Lex Cornelia election without seating anyone, as
+# pr_college_cornelia_elect_seat_effect would pick: the promised lord first, then landed direct vassals by prestige, skipping
+# a man of the same dynasty as, or a rival of, someone picked before (pr_college_can_receive_seat_trigger checks the sitting
+# members). Stores the number in var:pr_college_cornelia_electable_preview (review 2026-11-08: a plain count was too high).
+# A Pontifex Maximus still waiting for a seat takes one first (pr_college_cornelia_pass_effect): seat 10 when 1-9 are full,
+# so then only five seats are left; and a man of his dynasty or his rival cannot be elected (second review 2026-11-08).
+pr_college_cornelia_electable_preview_effect = {
+	set_variable = { name = pr_college_cornelia_electable_preview value = 0 years = 1 }
+	set_variable = { name = pr_college_cornelia_electable_preview_max value = 6 years = 1 }
+	faith:roman_polytheism.religious_head ?= {
+		if = {
+			limit = { pr_college_is_pontifex_trigger = no }
+			add_to_temporary_list = pr_cornelia_preview_picked
+			if = {
+				limit = { pr_college_has_empty_pontifical_seat_trigger = no }
+				root = { set_variable = { name = pr_college_cornelia_electable_preview_max value = 5 years = 1 } }
+			}
+		}
+	}
+	if = {
+		limit = {
+			exists = var:pr_college_cornelia_promised
+			var:pr_college_cornelia_promised = {
+				pr_college_can_receive_seat_trigger = yes
+				pr_college_cornelia_preview_ok_trigger = yes
+			}
+		}
+		var:pr_college_cornelia_promised = { add_to_temporary_list = pr_cornelia_preview_picked }
+		change_variable = { name = pr_college_cornelia_electable_preview add = 1 }
+	}
+	every_vassal = {
+		limit = {
+			is_landed = yes
+			pr_college_can_receive_seat_trigger = yes
+		}
+		add_to_temporary_list = pr_cornelia_preview_pool
+	}
+	while = {
+		count = 6
+		limit = {
+			var:pr_college_cornelia_electable_preview < var:pr_college_cornelia_electable_preview_max
+			any_in_list = {
+				list = pr_cornelia_preview_pool
+				pr_college_cornelia_preview_ok_trigger = yes
+			}
+		}
+		ordered_in_list = {
+			list = pr_cornelia_preview_pool
+			limit = { pr_college_cornelia_preview_ok_trigger = yes }
+			order_by = prestige
+			add_to_temporary_list = pr_cornelia_preview_picked
+		}
+		change_variable = { name = pr_college_cornelia_electable_preview add = 1 }
+	}
+}
+
+# Title scope: an empty new seat (10-15) under the election rule. The lord the ruler promised a seat first, then the
+# ruler's landed Roman vassals who may hold a seat, by prestige; none left: co-optation. Saves the new member in
+# scope:pr_cornelia_elected.
+pr_college_cornelia_elect_seat_effect = {
+	if = {
+		limit = { exists = scope:pr_cornelia_elected }
+		clear_saved_scope = pr_cornelia_elected
+	}
+	if = {
+		limit = {
+			exists = scope:pr_cornelia_ruler.var:pr_college_cornelia_promised
+			scope:pr_cornelia_ruler.var:pr_college_cornelia_promised = { pr_college_can_receive_seat_trigger = yes }
+		}
+		scope:pr_cornelia_ruler.var:pr_college_cornelia_promised = { save_scope_as = pr_cornelia_elected }
+	}
+	else = {
+		scope:pr_cornelia_ruler = {
+			every_vassal = {
+				limit = {
+					is_landed = yes
+					pr_college_can_receive_seat_trigger = yes
+					NOT = { has_character_flag = pr_college_coopt_excluded }
+				}
+				add_to_temporary_list = pr_cornelia_electable
+			}
+		}
+		ordered_in_list = {
+			list = pr_cornelia_electable
+			limit = { pr_college_can_receive_seat_trigger = yes } # again: someone may have been seated a seat earlier
+			order_by = prestige
+			save_scope_as = pr_cornelia_elected
+		}
+	}
+	if = {
+		limit = { exists = scope:pr_cornelia_elected }
+		pr_college_grant_seat_effect = { RECIPIENT = scope:pr_cornelia_elected }
+		# Only the elected thank the ruler, not the co-opted (second review 2026-11-08)
+		scope:pr_cornelia_elected = { add_to_temporary_list = pr_cornelia_new_pontifices }
+		scope:pr_cornelia_ruler = {
+			if = {
+				limit = { has_variable = pr_college_cornelia_elected_count }
+				change_variable = { name = pr_college_cornelia_elected_count add = 1 }
+			}
+		}
+	}
+	else = {
+		pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no }
+	}
+}
+
+# Character scope (the ruler): the law passes. Decided 2026-10-31 (no option is the best one in every situation):
+# ELECTION = no (Sulla, co-optation): the College co-opts the six new pontifices itself; a major piety gain and a pleased
+# College, but a promise to the lord is broken unless the College chose him, and the great vassals left out are slighted.
+# ELECTION = yes (the Lex Domitia): the seats go to the lord he promised and his greatest Roman vassals, who are
+# grateful; a minor piety gain, a displeased College, and from now on the co-optation favours landed Romans.
+pr_college_cornelia_pass_effect = {
+	set_global_variable = { name = pr_college_lex_cornelia value = yes }
+	add_prestige = medium_prestige_gain
+	if = {
+		limit = { always = $ELECTION$ }
+		add_piety = minor_piety_gain
+		# The members from before the law are displeased (the new members are not yet in the list)
+		pr_college_cornelia_college_opinion_effect = { MODIFIER = pr_college_cornelia_displeased_opinion }
+		# How many great men the election seats, as simulated when the vote opened (2026-11-08)
+		if = {
+			limit = { pr_college_cornelia_electable_value <= 0 }
+			custom_tooltip = pr_college_cornelia_election_none_tt
+		}
+		else_if = {
+			limit = { pr_college_cornelia_electable_value < var:pr_college_cornelia_electable_preview_max }
+			custom_tooltip = pr_college_cornelia_election_few_tt
+		}
+		else = {
+			custom_tooltip = pr_college_cornelia_election_tt
+		}
+		hidden_effect = {
+			# The realm whose great men elect (decided 2026-11-01): its vassals go first in later co-optations
+			set_global_variable = { name = pr_college_lex_domitia value = scope:pr_cornelia_ruler.primary_title }
+		# A Pontifex Maximus waiting for a seat takes one before the new seats are filled (decided 2026-10-31)
+		faith:roman_polytheism.religious_head ?= { pr_college_head_seat_effect = yes }
+			# The ruler does not seat himself through his own law (review 2026-10-31)
+			add_character_flag = pr_college_coopt_excluded
+			# How many great men the electors seated (pr_college.0203 tells it, decided 2026-11-08)
+			set_variable = { name = pr_college_cornelia_elected_count value = 0 years = 1 }
+			# Only empty seats: a Pontifex Maximus who was waiting may just have taken seat 10 (review 2026-11-08)
+			title:d_pr_pontifical_seat_10 = { if = { limit = { NOT = { exists = holder } } pr_college_cornelia_elect_seat_effect = yes } }
+			title:d_pr_pontifical_seat_11 = { if = { limit = { NOT = { exists = holder } } pr_college_cornelia_elect_seat_effect = yes } }
+			title:d_pr_pontifical_seat_12 = { if = { limit = { NOT = { exists = holder } } pr_college_cornelia_elect_seat_effect = yes } }
+			title:d_pr_pontifical_seat_13 = { if = { limit = { NOT = { exists = holder } } pr_college_cornelia_elect_seat_effect = yes } }
+			title:d_pr_pontifical_seat_14 = { if = { limit = { NOT = { exists = holder } } pr_college_cornelia_elect_seat_effect = yes } }
+			title:d_pr_pontifical_seat_15 = { if = { limit = { NOT = { exists = holder } } pr_college_cornelia_elect_seat_effect = yes } }
+			remove_character_flag = pr_college_coopt_excluded
+			# pr_cornelia_new_pontifices: the men the electors seated (pr_college_cornelia_elect_seat_effect)
+			if = {
+				limit = { # no list when nobody was elected; the variable is unset while the tooltip is built
+					has_variable = pr_college_cornelia_elected_count
+					var:pr_college_cornelia_elected_count > 0
+				}
+				every_in_list = {
+					list = pr_cornelia_new_pontifices
+					limit = { this != scope:pr_cornelia_ruler }
+					add_opinion = {
+						target = scope:pr_cornelia_ruler
+						modifier = pr_college_cornelia_elected_opinion
+					}
+				}
+			}
+		}
+		# The promised lord may not have been able to take a seat (a rival of a member, his dynasty already seated)
+		pr_college_cornelia_break_promise_effect = yes
+	}
+	else = {
+		add_piety = major_piety_gain
+		pr_college_cornelia_college_opinion_effect = { MODIFIER = pr_college_cornelia_honoured_opinion }
+		custom_tooltip = pr_college_cornelia_cooptation_tt
+		hidden_effect = {
+		# A Pontifex Maximus waiting for a seat takes one before the new seats are filled (decided 2026-10-31)
+		faith:roman_polytheism.religious_head ?= { pr_college_head_seat_effect = yes }
+			# The ruler does not co-opt himself through his own law (review 2026-10-31)
+			add_character_flag = pr_college_coopt_excluded
+			title:d_pr_pontifical_seat_10 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+			title:d_pr_pontifical_seat_11 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+			title:d_pr_pontifical_seat_12 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+			title:d_pr_pontifical_seat_13 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+			title:d_pr_pontifical_seat_14 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+			title:d_pr_pontifical_seat_15 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+			remove_character_flag = pr_college_coopt_excluded
+		}
+		pr_college_cornelia_break_promise_effect = yes
+		custom_tooltip = pr_college_cornelia_passed_over_tt
+		hidden_effect = {
+			every_vassal = {
+				limit = {
+					is_powerful_vassal = yes
+					faith = faith:roman_polytheism
+					NOT = { exists = clerical_elector_title }
+				}
+				add_opinion = {
+					target = scope:pr_cornelia_ruler
+					modifier = pr_college_cornelia_passed_over_opinion
+				}
+			}
+		}
+	}
+	hidden_effect = {
+		faith:roman_polytheism = {
+			if = { limit = { has_variable = pr_college_cornelia_active } remove_variable = pr_college_cornelia_active }
+		}
+		pr_college_cornelia_clear_ruler_state_effect = yes
+		if = {
+			limit = { debug_only = yes }
+			debug_log = "PR College (#76): Lex Cornelia passed (see scopes)"
+			debug_log_scopes = yes
+		}
+	}
+}
+
+# Character scope (the ruler): a veto stops the law. It can be brought again after 3 years with a better chance, at most
+# three times (as for the Lex Ogulnia). The support from the earlier events stays.
+pr_college_cornelia_veto_effect = {
+	add_prestige = minor_prestige_loss
+	hidden_effect = {
+		if = {
+			limit = { has_variable = pr_college_cornelia_vetoes }
+			change_variable = { name = pr_college_cornelia_vetoes add = 1 }
+		}
+		else = {
+			set_variable = { name = pr_college_cornelia_vetoes value = 1 }
+		}
+		set_variable = { name = pr_college_cornelia_veto_cooldown value = yes years = 3 }
+		faith:roman_polytheism = {
+			set_variable = { name = pr_college_cornelia_active value = scope:pr_cornelia_ruler years = 10 }
+		}
+		if = {
+			# has_variable first: the option tooltip runs this before the counter exists (error.log 2026-11-06)
+			limit = {
+				has_variable = pr_college_cornelia_vetoes
+				var:pr_college_cornelia_vetoes >= 4
+			}
+			pr_college_cornelia_exhausted_effect = yes
+		}
+		if = {
+			limit = { debug_only = yes }
+			debug_log = "PR College (#76): Lex Cornelia vetoed (see scopes)"
+			debug_log_scopes = yes
+		}
+	}
+}
+
+# Character scope (the ruler): the fourth veto counts as a refusal (10-year cooldown, -10 in later votes), without the
+# College's approval of a real refusal. A promise to the lord is broken.
+pr_college_cornelia_exhausted_effect = {
+	pr_college_cornelia_break_promise_effect = yes
+	faith:roman_polytheism = {
+		if = {
+			limit = { has_variable = pr_college_cornelia_refusals }
+			change_variable = { name = pr_college_cornelia_refusals add = 1 }
+		}
+		else = {
+			set_variable = { name = pr_college_cornelia_refusals value = 1 }
+		}
+		set_variable = { name = pr_college_cornelia_cooldown value = flag:refused years = 10 }
+		if = { limit = { has_variable = pr_college_cornelia_active } remove_variable = pr_college_cornelia_active }
+	}
+	pr_college_cornelia_clear_ruler_state_effect = yes
+	if = {
+		limit = { debug_only = yes }
+		debug_log = "PR College (#76): fourth veto, the Lex Cornelia storyline counts as refused"
+	}
+}
+
+# Character scope (the dying character, pr_college_cornelia_on_death): the storyline ends with the ruler.
+pr_college_cornelia_ruler_died_effect = {
+	faith:roman_polytheism = {
+		if = { limit = { has_variable = pr_college_cornelia_active } remove_variable = pr_college_cornelia_active }
+	}
+	pr_college_cornelia_clear_ruler_state_effect = yes
+	if = {
+		limit = { debug_only = yes }
+		debug_log = "PR College (#76): the Cornelia ruler died, storyline ended"
+	}
+}
+
+# Global (yearly): start the storyline for the largest eligible Roman king or emperor, one at a time, a 25% chance a year,
+# once the Lex Ogulnia has passed.
+pr_college_cornelia_yearly_effect = {
+	if = {
+		limit = {
+			NOT = { exists = global_var:pr_college_lex_cornelia }
+			faith:roman_polytheism = {
+				NOR = {
+					has_variable = pr_college_cornelia_active
+					has_variable = pr_college_cornelia_cooldown
+				}
+			}
+			pr_college_cornelia_college_ready_trigger = yes
+			any_ruler = {
+				pr_college_cornelia_ruler_trigger = yes
+				is_ai = yes # players start it with a decision (2026-11-07)
+				top_liege = { is_ai = yes } # not a vassal of a player either: he would take the player's storyline (review)
+				pr_college_cornelia_has_pontifex_trigger = yes
+			}
+		}
+		random = {
+			chance = 25
+			ordered_ruler = {
+				limit = {
+					pr_college_cornelia_ruler_trigger = yes
+					is_ai = yes # players start it with a decision (2026-11-07)
+					top_liege = { is_ai = yes } # not a vassal of a player either: he would take the player's storyline (review)
+					pr_college_cornelia_has_pontifex_trigger = yes
+				}
+				order_by = pr_college_realm_roman_counties_value
+				faith:roman_polytheism = {
+					set_variable = { name = pr_college_cornelia_active value = prev years = 5 }
+				}
+				trigger_event = pr_college.0200
+			}
+		}
+	}
+}

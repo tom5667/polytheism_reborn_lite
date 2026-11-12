@@ -1,0 +1,11 @@
+﻿l_english:
+ # College of Pontiffs (#76): the College window (gui/window_cardinals.gui, vanilla) shows Roman texts for the Roman
+ # faith. Vanilla keys from localization/english/gui/cardinals_window_l_english.yml (CK3 1.20.1); every other faith
+ # keeps the vanilla text, copied unchanged into the _vanilla keys. Re-check after every CK3 update
+ # (Rules/game_update_rules.md). Working texts; the final Roman texts follow at the end of the College work.
+ CARDINALS_VIEW_TITLE:0 "[SelectLocalization( ObjectsEqual( Faith.Self, GetFaithByKey('roman_polytheism').Self ), 'pr_college_view_title', 'pr_cardinals_view_title_vanilla' )]"
+ CARDINALS_VIEW_COLLEGE_DESCRIPTION:0 "[SelectLocalization( ObjectsEqual( Faith.Self, GetFaithByKey('roman_polytheism').Self ), 'pr_college_view_description', 'pr_cardinals_view_college_description_vanilla' )]"
+ pr_cardinals_view_title_vanilla:0 "[college_of_cardinals]"
+ pr_cardinals_view_college_description_vanilla:0 "Upon the death of the Pope, the most Popular, Pious, or Powerful [cardinal|e] with the highest number of supporters will ascend to The Papacy."
+ pr_college_view_title:0 "College of Pontiffs"
+ pr_college_view_description:0 "When the Pontifex Maximus dies, the most Popular, Pious, or Powerful pontifex with the highest number of supporters succeeds him."
