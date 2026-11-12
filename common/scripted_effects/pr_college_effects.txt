@@ -1,0 +1,739 @@
+﻿# College of Pontiffs (#76)
+
+# Character scope: a holder of a Roman College seat. Removes what vanilla gives every holder of a clerical elector title:
+# cardinal_flag (his name "Cardinal") and his place in the Christian Church situation, the way vanilla's
+# pam_destroy_cardinal_title_effect does when a cardinal loses his seat. Called a day after a seat is gained and yearly.
+pr_college_seat_holder_cleanup_effect = {
+	if = {
+		limit = { has_character_flag = cardinal_flag }
+		remove_character_flag = cardinal_flag
+	}
+	situation:the_christian_church ?= {
+		if = {
+			limit = { is_manual_participant = prev }
+			remove_manual_participant = prev
+		}
+	}
+}
+
+# Option 1 (#76), safety net for a head stuck in a protected realm (no candidates, so no current heir).
+# Title scope: the Roman head-of-faith title. Remembers the current election leader, called yearly.
+pr_college_remember_leader_effect = {
+	current_heir ?= {
+		save_temporary_scope_as = pr_college_leader
+	}
+	if = {
+		limit = { exists = scope:pr_college_leader }
+		set_variable = {
+			name = pr_college_last_leader
+			value = scope:pr_college_leader
+		}
+	}
+}
+
+# Character scope: the dying head of faith, with scope:pr_college_head_title saved. Called from on_death,
+# which runs before succession (vanilla common/on_action/death.txt:1). Only when the title has no current
+# heir: gives it to the last known leader, else to the most pious pontifex, the way vanilla hands a title
+# over before succession (death.txt:2044-2066). The new holder is made independent by pr_college_on_title_gain.
+pr_college_rescue_title_effect = {
+	scope:pr_college_head_title = {
+		if = {
+			limit = {
+				exists = var:pr_college_last_leader
+				var:pr_college_last_leader = {
+					is_alive = yes
+					pr_college_is_pontifex_trigger = yes
+					NOT = { this = scope:pr_college_head_title.holder }
+				}
+			}
+			var:pr_college_last_leader = { save_scope_as = pr_college_successor }
+		}
+	}
+	if = {
+		limit = { NOT = { exists = scope:pr_college_successor } }
+		faith = {
+			every_clerical_elector_title = {
+				limit = {
+					holder ?= {
+						is_alive = yes
+						pr_college_is_pontifex_trigger = yes
+						# The dying head holds a pontifical seat too (decided 2026-10-31) and is still alive in on_death
+						NOT = { this = scope:pr_college_head_title.holder }
+					}
+				}
+				holder = { add_to_temporary_list = pr_college_pontifices }
+			}
+		}
+		ordered_in_list = {
+			list = pr_college_pontifices
+			order_by = {
+				value = piety
+			}
+			save_scope_as = pr_college_successor
+		}
+	}
+	if = {
+		limit = { debug_only = yes }
+		debug_log = "PR College (#76): SAFETY NET fired on the head's death (title had no current heir)"
+		debug_log_scopes = yes
+	}
+	if = {
+		limit = { exists = scope:pr_college_successor }
+		create_title_and_vassal_change = {
+			type = appointment
+			save_scope_as = pr_college_rescue_change
+			add_claim_on_loss = no
+		}
+		scope:pr_college_head_title = {
+			change_title_holder = {
+				holder = scope:pr_college_successor
+				change = scope:pr_college_rescue_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:pr_college_rescue_change
+	}
+}
+
+# Character scope: a woman who holds the Roman head-of-faith title (pr_college_female_head). Gives the title to the most
+# pious male pontifex, or else to a new male priest, the way pr_college_rescue_title_effect hands it over. The new head
+# then gets his seat, the election and a filled College through pr_college_on_title_gain.
+pr_college_male_head_effect = {
+	save_scope_as = pr_college_female_holder
+	faith.religious_head_title = { save_scope_as = pr_college_head_title }
+	faith = {
+		every_clerical_elector_title = {
+			limit = {
+				holder ?= {
+					is_alive = yes
+					is_male = yes
+					pr_college_is_pontifex_trigger = yes
+					NOT = { this = scope:pr_college_female_holder }
+					# Not a landed pontifex (he may sit in a realm with protected succession, the "no candidates" problem of
+					# 2026-10-18) and not a player, who should not get the title unasked (review 2026-11-12)
+					is_landed = no
+					is_ai = yes
+				}
+			}
+			holder = { add_to_temporary_list = pr_college_male_pontifices }
+		}
+	}
+	ordered_in_list = {
+		list = pr_college_male_pontifices
+		order_by = {
+			value = piety
+		}
+		save_scope_as = pr_college_male_successor
+	}
+	if = {
+		limit = { NOT = { exists = scope:pr_college_male_successor } }
+		create_character = {
+			location = title:c_roma.title_province
+			age = { 40 60 }
+			gender_female_chance = 0
+			trait = education_learning_3
+			faith = faith:roman_polytheism
+			culture = scope:pr_college_female_holder.culture
+			dynasty = generate
+			learning = { 12 20 }
+			save_scope_as = pr_college_male_successor
+		}
+		scope:pr_college_male_successor = {
+			set_character_rite = faith:roman_polytheism.main_rite
+		}
+	}
+	create_title_and_vassal_change = {
+		type = appointment
+		save_scope_as = pr_college_male_head_change
+		add_claim_on_loss = no
+	}
+	scope:pr_college_head_title = {
+		change_title_holder = {
+			holder = scope:pr_college_male_successor
+			change = scope:pr_college_male_head_change
+		}
+	}
+	resolve_title_and_vassal_change = scope:pr_college_male_head_change
+}
+
+# Keeping the College filled (#76, step 1)
+
+# Title scope: an empty College seat. Gives it to $RECIPIENT$. Registered as clerical elector before the transfer,
+# as vanilla does (pam_seed_867_suburbicarian_see_effect). A landless recipient becomes a theocrat, like the
+# College's other priests; a landed one keeps his government (pontifices could be magistrates).
+pr_college_grant_seat_effect = {
+	add_clerical_elector = $RECIPIENT$.faith
+	create_title_and_vassal_change = {
+		type = granted
+		save_scope_as = pr_college_seat_change
+		add_claim_on_loss = no
+	}
+	change_title_holder = {
+		holder = $RECIPIENT$
+		change = scope:pr_college_seat_change
+	}
+	resolve_title_and_vassal_change = scope:pr_college_seat_change
+	$RECIPIENT$ = {
+		if = {
+			limit = {
+				is_landed = no
+				NOT = { government_has_flag = government_is_theocracy }
+			}
+			change_government = theocracy_government
+		}
+		if = {
+			limit = { has_variable = pr_college_nominated }
+			remove_variable = pr_college_nominated
+		}
+	}
+	faith:roman_polytheism = {
+		if = {
+			limit = {
+				is_target_in_variable_list = {
+					name = pr_college_nominees
+					target = $RECIPIENT$
+				}
+			}
+			remove_list_variable = {
+				name = pr_college_nominees
+				target = $RECIPIENT$
+			}
+		}
+	}
+}
+
+# Character scope: the Roman head of faith. The Pontifex Maximus was always taken from the pontifices and counts inside
+# the College's 5, 9 and 15 places ("le P. M. était toujours pris au sein du collège", Bouché-Leclercq 1871; Mommsen,
+# Wissowa, Latte: resource/college_laws_research.md, Deel D). Decided by the maintainer 2026-10-31. A head without a
+# pontifical seat (set up through the faith view or the debug setup) gives up any other College seat and takes the first
+# empty pontifical one; with none empty he waits (pr_college_head_awaits_seat) and gets the next one before any
+# co-optation (pr_college_maintain_effect). An elected head keeps his seat (pam_vacate_head_of_faith_cardinalate_effect
+# override).
+pr_college_head_seat_effect = {
+	if = {
+		limit = { pr_college_is_pontifex_trigger = no }
+		save_temporary_scope_as = pr_college_seat_head
+		if = {
+			limit = {
+				pr_college_has_empty_pontifical_seat_trigger = yes
+				# Under the gradual Lex Ogulnia seats 6-9 are not his to take: one of 1-5 must be empty
+				trigger_if = {
+					limit = { exists = global_var:pr_college_ogulnia_gradual }
+					OR = {
+						title:d_pr_pontifical_seat_1 = { NOT = { exists = holder } }
+						title:d_pr_pontifical_seat_2 = { NOT = { exists = holder } }
+						title:d_pr_pontifical_seat_3 = { NOT = { exists = holder } }
+						title:d_pr_pontifical_seat_4 = { NOT = { exists = holder } }
+						title:d_pr_pontifical_seat_5 = { NOT = { exists = holder } }
+					}
+				}
+			}
+			if = {
+				limit = { exists = clerical_elector_title }
+				clerical_elector_title = { save_temporary_scope_as = pr_college_head_old_seat }
+				pam_destroy_cardinal_title_effect = { CARDINALATE = scope:pr_college_head_old_seat }
+			}
+			if = {
+				limit = { title:d_pr_pontifical_seat_1 = { NOT = { exists = holder } } }
+				title:d_pr_pontifical_seat_1 = { pr_college_grant_seat_effect = { RECIPIENT = scope:pr_college_seat_head } }
+			}
+			else_if = {
+				limit = { title:d_pr_pontifical_seat_2 = { NOT = { exists = holder } } }
+				title:d_pr_pontifical_seat_2 = { pr_college_grant_seat_effect = { RECIPIENT = scope:pr_college_seat_head } }
+			}
+			else_if = {
+				limit = { title:d_pr_pontifical_seat_3 = { NOT = { exists = holder } } }
+				title:d_pr_pontifical_seat_3 = { pr_college_grant_seat_effect = { RECIPIENT = scope:pr_college_seat_head } }
+			}
+			else_if = {
+				limit = { title:d_pr_pontifical_seat_4 = { NOT = { exists = holder } } }
+				title:d_pr_pontifical_seat_4 = { pr_college_grant_seat_effect = { RECIPIENT = scope:pr_college_seat_head } }
+			}
+			else_if = {
+				limit = { title:d_pr_pontifical_seat_5 = { NOT = { exists = holder } } }
+				title:d_pr_pontifical_seat_5 = { pr_college_grant_seat_effect = { RECIPIENT = scope:pr_college_seat_head } }
+			}
+			else_if = {
+				limit = {
+					exists = global_var:pr_college_lex_ogulnia
+					NOT = { exists = global_var:pr_college_ogulnia_gradual } # the gradual law fills 6-9 one a year itself
+					title:d_pr_pontifical_seat_6 = { NOT = { exists = holder } }
+				}
+				title:d_pr_pontifical_seat_6 = { pr_college_grant_seat_effect = { RECIPIENT = scope:pr_college_seat_head } }
+			}
+			else_if = {
+				limit = {
+					exists = global_var:pr_college_lex_ogulnia
+					NOT = { exists = global_var:pr_college_ogulnia_gradual } # the gradual law fills 6-9 one a year itself
+					title:d_pr_pontifical_seat_7 = { NOT = { exists = holder } }
+				}
+				title:d_pr_pontifical_seat_7 = { pr_college_grant_seat_effect = { RECIPIENT = scope:pr_college_seat_head } }
+			}
+			else_if = {
+				limit = {
+					exists = global_var:pr_college_lex_ogulnia
+					NOT = { exists = global_var:pr_college_ogulnia_gradual } # the gradual law fills 6-9 one a year itself
+					title:d_pr_pontifical_seat_8 = { NOT = { exists = holder } }
+				}
+				title:d_pr_pontifical_seat_8 = { pr_college_grant_seat_effect = { RECIPIENT = scope:pr_college_seat_head } }
+			}
+			else_if = {
+				limit = {
+					exists = global_var:pr_college_lex_ogulnia
+					NOT = { exists = global_var:pr_college_ogulnia_gradual } # the gradual law fills 6-9 one a year itself
+					title:d_pr_pontifical_seat_9 = { NOT = { exists = holder } }
+				}
+				title:d_pr_pontifical_seat_9 = { pr_college_grant_seat_effect = { RECIPIENT = scope:pr_college_seat_head } }
+			}
+			else_if = {
+				limit = {
+					exists = global_var:pr_college_lex_cornelia
+					title:d_pr_pontifical_seat_10 = { NOT = { exists = holder } }
+				}
+				title:d_pr_pontifical_seat_10 = { pr_college_grant_seat_effect = { RECIPIENT = scope:pr_college_seat_head } }
+			}
+			else_if = {
+				limit = {
+					exists = global_var:pr_college_lex_cornelia
+					title:d_pr_pontifical_seat_11 = { NOT = { exists = holder } }
+				}
+				title:d_pr_pontifical_seat_11 = { pr_college_grant_seat_effect = { RECIPIENT = scope:pr_college_seat_head } }
+			}
+			else_if = {
+				limit = {
+					exists = global_var:pr_college_lex_cornelia
+					title:d_pr_pontifical_seat_12 = { NOT = { exists = holder } }
+				}
+				title:d_pr_pontifical_seat_12 = { pr_college_grant_seat_effect = { RECIPIENT = scope:pr_college_seat_head } }
+			}
+			else_if = {
+				limit = {
+					exists = global_var:pr_college_lex_cornelia
+					title:d_pr_pontifical_seat_13 = { NOT = { exists = holder } }
+				}
+				title:d_pr_pontifical_seat_13 = { pr_college_grant_seat_effect = { RECIPIENT = scope:pr_college_seat_head } }
+			}
+			else_if = {
+				limit = {
+					exists = global_var:pr_college_lex_cornelia
+					title:d_pr_pontifical_seat_14 = { NOT = { exists = holder } }
+				}
+				title:d_pr_pontifical_seat_14 = { pr_college_grant_seat_effect = { RECIPIENT = scope:pr_college_seat_head } }
+			}
+			else_if = {
+				limit = {
+					exists = global_var:pr_college_lex_cornelia
+					title:d_pr_pontifical_seat_15 = { NOT = { exists = holder } }
+				}
+				title:d_pr_pontifical_seat_15 = { pr_college_grant_seat_effect = { RECIPIENT = scope:pr_college_seat_head } }
+			}
+		}
+		else = {
+			set_variable = pr_college_head_awaits_seat
+		}
+		if = {
+			limit = { debug_only = yes }
+			if = {
+				limit = { pr_college_is_pontifex_trigger = yes }
+				debug_log = "PR College (#76): the head of faith was given a pontifical seat"
+			}
+			else = {
+				debug_log = "PR College (#76): the head of faith has no pontifical seat and waits for the next empty one"
+			}
+			debug_log_scopes = yes
+		}
+	}
+	if = {
+		limit = {
+			has_variable = pr_college_head_awaits_seat
+			pr_college_is_pontifex_trigger = yes
+		}
+		remove_variable = pr_college_head_awaits_seat
+	}
+}
+
+# Title scope: an empty College seat. Fills it by co-optation: a candidate nominated by the Pontifex Maximus first, then
+# the most pious eligible Roman ruler or courtier of a Roman ruler, else a new priest. Seat rules (decided 2026-10-18):
+# $LANDLESS_ONLY$ = yes for the rex sacrorum, $ROME_BOUND$ = yes for the flamen Dialis.
+# Saves the new member as scope:pr_college_new_member.
+pr_college_coopt_seat_effect = {
+	save_scope_as = pr_college_coopt_seat
+	clear_saved_scope = pr_college_new_member # a member chosen for an earlier seat in the same pulse must not be reused
+	faith:roman_polytheism = {
+		every_in_list = {
+			variable = pr_college_nominees
+			limit = { pr_college_can_receive_seat_trigger = yes }
+			add_to_temporary_list = pr_college_coopt_pool
+		}
+	}
+	every_ruler = {
+		limit = { faith = faith:roman_polytheism }
+		if = {
+			limit = { pr_college_can_receive_seat_trigger = yes }
+			add_to_temporary_list = pr_college_coopt_pool
+		}
+		every_courtier = {
+			limit = { pr_college_can_receive_seat_trigger = yes }
+			add_to_temporary_list = pr_college_coopt_pool
+		}
+	}
+	ordered_in_list = {
+		list = pr_college_coopt_pool
+		limit = {
+			pr_college_can_receive_seat_trigger = yes # again: someone may have been seated earlier in this pulse
+			NOT = { has_character_flag = pr_college_coopt_excluded } # the ruler who passed the law (Ogulnia, Cornelia)
+			trigger_if = {
+				limit = { always = $LANDLESS_ONLY$ }
+				is_landed = no
+			}
+			trigger_if = {
+				limit = { always = $ROME_BOUND$ }
+				pr_college_bound_to_rome_trigger = yes
+			}
+			trigger_if = {
+				limit = { always = $IMPERIAL_CULT$ }
+				has_trait = imperial_cult
+			}
+		}
+		order_by = {
+			value = piety
+			if = {
+				limit = { has_variable = pr_college_nominated }
+				add = 100000 # the Pontifex Maximus' nominee goes first
+			}
+			# Lex Cornelia by election (pr_college.0202 b, decided 2026-10-31): the electors favour the great men of the
+			# realm, so landed Romans go before priests without land (after the nominee)
+			if = {
+				limit = {
+					exists = global_var:pr_college_lex_domitia
+					is_landed = yes
+					# Only for the pontifices: the flamines were never elected (review 2026-10-31)
+					scope:pr_college_coopt_seat = { pr_college_is_pontifical_seat_trigger = yes }
+					# Only vassals of the realm that passed the law (decided 2026-11-01)
+					save_temporary_scope_as = pr_domitia_candidate
+					global_var:pr_college_lex_domitia.holder ?= { target_is_vassal_or_below = scope:pr_domitia_candidate }
+				}
+				add = 50000
+			}
+		}
+		save_scope_as = pr_college_new_member
+	}
+	if = {
+		limit = { NOT = { exists = scope:pr_college_new_member } }
+		create_character = {
+			location = title:c_roma.title_province
+			age = { 30 55 }
+			gender_female_chance = 0
+			trait = education_learning_3
+			faith = faith:roman_polytheism
+			culture = faith:roman_polytheism.religious_head.culture
+			dynasty = generate
+			learning = { 12 20 }
+			save_scope_as = pr_college_new_member
+		}
+		scope:pr_college_new_member = {
+			set_character_rite = faith:roman_polytheism.main_rite
+			if = {
+				limit = { always = $IMPERIAL_CULT$ }
+				add_trait = imperial_cult
+			}
+		}
+	}
+	if = {
+		limit = { debug_only = yes }
+		if = {
+			limit = { exists = global_var:restored_imperial_cult }
+			debug_log = "PR College (#76): the imperial cult is restored"
+		}
+		if = {
+			limit = { scope:pr_college_new_member = { has_variable = pr_college_nominated } }
+			debug_log = "PR College (#76): co-opted the NOMINEE for the seat below"
+		}
+		else = {
+			debug_log = "PR College (#76): co-opted a member (not a nominee) for the seat below"
+		}
+		debug_log_scopes = yes
+	}
+	scope:pr_college_coopt_seat = {
+		pr_college_grant_seat_effect = { RECIPIENT = scope:pr_college_new_member }
+	}
+}
+
+# Title scope: an empty pontifical seat under a player head. The first yearly check notes the vacancy; a year later the
+# College co-opts a member and the player gets a toast. Decided 2026-10-18 (co-optation after a year, no penalty).
+pr_college_player_vacancy_effect = {
+	if = {
+		limit = { has_variable = pr_college_vacancy_noted }
+		remove_variable = pr_college_vacancy_noted
+		pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no }
+		scope:pr_college_head = {
+			send_interface_toast = {
+				type = event_toast_effect_neutral
+				title = pr_college_coopted_toast
+				left_icon = scope:pr_college_new_member
+				custom_tooltip = pr_college_coopted_toast_tt
+			}
+		}
+	}
+	else = {
+		set_variable = pr_college_vacancy_noted
+		# Tell the player head that he can still name a candidate this year (playtest 2026-11-07)
+		save_scope_as = pr_college_empty_seat
+		if = {
+			limit = { has_pam_dlc_trigger = yes } # the nominate interaction needs By God Alone
+			scope:pr_college_head = {
+				send_interface_toast = {
+					type = event_toast_effect_neutral
+					title = pr_college_vacancy_toast
+					custom_tooltip = pr_college_vacancy_toast_tt
+				}
+			}
+		}
+		if = {
+			limit = { debug_only = yes }
+			debug_log = "PR College (#76): empty pontifical seat noted (co-opted at the next yearly check)"
+			debug_log_scopes = yes
+		}
+	}
+}
+
+# Character scope: the Roman head of faith. The title of the Pontifex Maximus is elected by the College: a landless head
+# gets the election as realm law (as vanilla does for every new Pope, title_on_actions.txt:316-322), a landed head as
+# title law only, so his own realm is not elected. Run on title gain, two days later after his seat, a day after any seat
+# gain of the head (pr_college_seat_cleanup) and every year after the seat check. Always after a seat grant: gaining the
+# seat title gave the head vanilla's default theocratic laws again (bishop_theocratic_succession_law, should_start_with),
+# so the election was gone and the College had no vote and no window (Test_noBGA 2026-11-10, Test_noBGA1 2026-11-12).
+pr_college_head_election_law_effect = {
+	# Only the College of Pontiffs: a reformed faith of the Roman religion with its own head has no clerical electors
+	# (review 2026-11-10)
+	if = {
+		limit = { faith = faith:roman_polytheism }
+		if = {
+			limit = {
+				is_landed = no
+				NOT = { has_realm_law = theocratic_elective_succession_law }
+			}
+			add_realm_law_skip_effects = theocratic_elective_succession_law
+		}
+		else_if = {
+			limit = {
+				is_landed = yes
+				faith.religious_head_title ?= { NOT = { has_title_law = theocratic_elective_succession_law } }
+			}
+			faith.religious_head_title = { add_title_law = theocratic_elective_succession_law }
+		}
+	}
+}
+
+# Global: every empty seat of the College is co-opted now, as an AI head does each year. Also used once when a head takes
+# his seat in an empty College (a new game: vanilla creates the head a few weeks after start, and the College stayed
+# empty until the first 1 January; Test_noBGA3, 2026-11-12), as vanilla seeds the College of Cardinals at game start
+# (game_start.txt:2547, pam_seed_867_college_effect).
+pr_college_fill_empty_seats_effect = {
+	title:d_pr_pontifical_seat_1 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	title:d_pr_pontifical_seat_2 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	title:d_pr_pontifical_seat_3 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	title:d_pr_pontifical_seat_4 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	title:d_pr_pontifical_seat_5 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	if = {
+		limit = { exists = global_var:pr_college_lex_ogulnia }
+		if = {
+			limit = { NOT = { exists = global_var:pr_college_ogulnia_gradual } }
+			title:d_pr_pontifical_seat_6 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+			title:d_pr_pontifical_seat_7 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+			title:d_pr_pontifical_seat_8 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+			title:d_pr_pontifical_seat_9 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+		}
+		# Gradual Lex Ogulnia (pr_college.0102 b, decided 2026-10-22): the first empty new seat only, one a year
+		else_if = {
+			limit = { title:d_pr_pontifical_seat_6 = { NOT = { exists = holder } } }
+			title:d_pr_pontifical_seat_6 = { pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } }
+		}
+		else_if = {
+			limit = { title:d_pr_pontifical_seat_7 = { NOT = { exists = holder } } }
+			title:d_pr_pontifical_seat_7 = { pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } }
+		}
+		else_if = {
+			limit = { title:d_pr_pontifical_seat_8 = { NOT = { exists = holder } } }
+			title:d_pr_pontifical_seat_8 = { pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } }
+		}
+		else_if = {
+			limit = { title:d_pr_pontifical_seat_9 = { NOT = { exists = holder } } }
+			title:d_pr_pontifical_seat_9 = { pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } }
+		}
+		else = {
+			remove_global_variable = pr_college_ogulnia_gradual
+		}
+		# All four new seats filled: the gradual law ends now, not at the next yearly check (playtest 2026-11-07), so
+		# the Lex Cornelia storyline is not held back a year
+		if = {
+			limit = {
+				exists = global_var:pr_college_ogulnia_gradual
+				exists = title:d_pr_pontifical_seat_6.holder
+				exists = title:d_pr_pontifical_seat_7.holder
+				exists = title:d_pr_pontifical_seat_8.holder
+				exists = title:d_pr_pontifical_seat_9.holder
+			}
+			remove_global_variable = pr_college_ogulnia_gradual
+		}
+	}
+	# Lex Cornelia (#76): seats 10-15
+	if = {
+		limit = { exists = global_var:pr_college_lex_cornelia }
+		title:d_pr_pontifical_seat_10 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+		title:d_pr_pontifical_seat_11 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+		title:d_pr_pontifical_seat_12 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+		title:d_pr_pontifical_seat_13 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+		title:d_pr_pontifical_seat_14 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+		title:d_pr_pontifical_seat_15 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	}
+	title:d_pr_rex_sacrorum = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = yes ROME_BOUND = no IMPERIAL_CULT = no } } }
+	title:d_pr_flamen_dialis = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = yes IMPERIAL_CULT = no } } }
+	title:d_pr_flamen_martialis = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	title:d_pr_flamen_quirinalis = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	title:d_pr_flamen_carmentalis = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	title:d_pr_flamen_cerialis = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	title:d_pr_flamen_floralis = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	title:d_pr_flamen_furrinalis = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	title:d_pr_flamen_pomonalis = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	title:d_pr_flamen_portunalis = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	title:d_pr_flamen_volcanalis = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	title:d_pr_flamen_volturnalis = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	title:d_pr_flamen_falacer = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	title:d_pr_flamen_palatualis = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+	if = {
+		limit = { exists = global_var:restored_imperial_cult }
+		title:d_pr_flamen_augustalis = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = yes } } }
+	}
+}
+
+# Global (yearly): keeps the College filled. An AI head fills every empty seat; under a player head only the pontifical
+# seats are co-opted after about a year. The rex sacrorum and the flamines stay empty until the player appoints them.
+pr_college_maintain_effect = {
+	faith:roman_polytheism.religious_head ?= {
+		save_scope_as = pr_college_head
+	}
+	if = {
+		limit = { exists = scope:pr_college_head }
+		# The Pontifex Maximus sits in his College (decided 2026-10-31): a head without a pontifical seat takes the first
+		# empty one before any co-optation
+		scope:pr_college_head = {
+			pr_college_head_seat_effect = yes
+			# After the seat: gaining a title can bring back the default theocratic laws (2026-11-12)
+			pr_college_head_election_law_effect = yes
+		}
+		if = {
+			limit = { scope:pr_college_head = { is_ai = yes } }
+			pr_college_fill_empty_seats_effect = yes
+		}
+		else = {
+			title:d_pr_pontifical_seat_1 = { if = { limit = { NOT = { exists = holder } } pr_college_player_vacancy_effect = yes } else_if = { limit = { has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+			title:d_pr_pontifical_seat_2 = { if = { limit = { NOT = { exists = holder } } pr_college_player_vacancy_effect = yes } else_if = { limit = { has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+			title:d_pr_pontifical_seat_3 = { if = { limit = { NOT = { exists = holder } } pr_college_player_vacancy_effect = yes } else_if = { limit = { has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+			title:d_pr_pontifical_seat_4 = { if = { limit = { NOT = { exists = holder } } pr_college_player_vacancy_effect = yes } else_if = { limit = { has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+			title:d_pr_pontifical_seat_5 = { if = { limit = { NOT = { exists = holder } } pr_college_player_vacancy_effect = yes } else_if = { limit = { has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+			if = {
+				limit = { exists = global_var:pr_college_lex_ogulnia }
+				title:d_pr_pontifical_seat_6 = { if = { limit = { exists = holder has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+				title:d_pr_pontifical_seat_7 = { if = { limit = { exists = holder has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+				title:d_pr_pontifical_seat_8 = { if = { limit = { exists = holder has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+				title:d_pr_pontifical_seat_9 = { if = { limit = { exists = holder has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+				if = {
+					limit = { NOT = { exists = global_var:pr_college_ogulnia_gradual } }
+					title:d_pr_pontifical_seat_6 = { if = { limit = { NOT = { exists = holder } } pr_college_player_vacancy_effect = yes } else_if = { limit = { has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+					title:d_pr_pontifical_seat_7 = { if = { limit = { NOT = { exists = holder } } pr_college_player_vacancy_effect = yes } else_if = { limit = { has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+					title:d_pr_pontifical_seat_8 = { if = { limit = { NOT = { exists = holder } } pr_college_player_vacancy_effect = yes } else_if = { limit = { has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+					title:d_pr_pontifical_seat_9 = { if = { limit = { NOT = { exists = holder } } pr_college_player_vacancy_effect = yes } else_if = { limit = { has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+				}
+				# Gradual Lex Ogulnia (pr_college.0102 b, decided 2026-10-22): the first empty new seat only, one a year
+				else_if = {
+					limit = { title:d_pr_pontifical_seat_6 = { NOT = { exists = holder } } }
+					title:d_pr_pontifical_seat_6 = { pr_college_player_vacancy_effect = yes }
+				}
+				else_if = {
+					limit = { title:d_pr_pontifical_seat_7 = { NOT = { exists = holder } } }
+					title:d_pr_pontifical_seat_7 = { pr_college_player_vacancy_effect = yes }
+				}
+				else_if = {
+					limit = { title:d_pr_pontifical_seat_8 = { NOT = { exists = holder } } }
+					title:d_pr_pontifical_seat_8 = { pr_college_player_vacancy_effect = yes }
+				}
+				else_if = {
+					limit = { title:d_pr_pontifical_seat_9 = { NOT = { exists = holder } } }
+					title:d_pr_pontifical_seat_9 = { pr_college_player_vacancy_effect = yes }
+				}
+				else = {
+					remove_global_variable = pr_college_ogulnia_gradual
+				}
+				# All four new seats filled: the gradual law ends now, not at the next yearly check (playtest 2026-11-07), so
+				# the Lex Cornelia storyline is not held back a year
+				if = {
+					limit = {
+						exists = global_var:pr_college_ogulnia_gradual
+						exists = title:d_pr_pontifical_seat_6.holder
+						exists = title:d_pr_pontifical_seat_7.holder
+						exists = title:d_pr_pontifical_seat_8.holder
+						exists = title:d_pr_pontifical_seat_9.holder
+					}
+					remove_global_variable = pr_college_ogulnia_gradual
+				}
+			}
+			# Lex Cornelia (#76): seats 10-15
+			if = {
+				limit = { exists = global_var:pr_college_lex_cornelia }
+				title:d_pr_pontifical_seat_10 = { if = { limit = { NOT = { exists = holder } } pr_college_player_vacancy_effect = yes } else_if = { limit = { has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+				title:d_pr_pontifical_seat_11 = { if = { limit = { NOT = { exists = holder } } pr_college_player_vacancy_effect = yes } else_if = { limit = { has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+				title:d_pr_pontifical_seat_12 = { if = { limit = { NOT = { exists = holder } } pr_college_player_vacancy_effect = yes } else_if = { limit = { has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+				title:d_pr_pontifical_seat_13 = { if = { limit = { NOT = { exists = holder } } pr_college_player_vacancy_effect = yes } else_if = { limit = { has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+				title:d_pr_pontifical_seat_14 = { if = { limit = { NOT = { exists = holder } } pr_college_player_vacancy_effect = yes } else_if = { limit = { has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+				title:d_pr_pontifical_seat_15 = { if = { limit = { NOT = { exists = holder } } pr_college_player_vacancy_effect = yes } else_if = { limit = { has_variable = pr_college_vacancy_noted } remove_variable = pr_college_vacancy_noted } }
+			}
+		}
+	}
+}
+
+# Character scope: the head of faith. Makes him independent of any secular liege. Copied from vanilla
+# pam_antipope_effects.txt:177-187 ("A rival Head of Faith answers to no secular liege").
+# Why: a liege whose realm has titles_cannot_leave_realm_on_succession (common/laws/_laws.info:400)
+# disqualifies every College candidate from outside his realm, so the College has no candidates
+# (confirmed in-game 2026-10-18). Used by pr_college_make_head_independent (on_action) and the debug decision.
+pr_college_head_independent_effect = {
+	if = {
+		limit = { NOT = { this = top_liege } }
+		create_title_and_vassal_change = {
+			type = independency
+			save_scope_as = pr_college_independence_change
+			add_claim_on_loss = no
+		}
+		becomes_independent = { change = scope:pr_college_independence_change }
+		resolve_title_and_vassal_change = scope:pr_college_independence_change
+	}
+}
+
+# Character scope (the ruler): the closing lines of "The Church Answers" (pr_college.0105 for $LAW$ = ogulnia, pr_college.0205
+# for $LAW$ = cornelia). The quarrel with the Church ends here; the second line says where the law stands, so the player
+# knows what comes next (playtest 2026-11-06). Same state variables as the storyline itself.
+pr_college_church_answers_end_effect = {
+	custom_tooltip = pr_college.church_answers_end.tt
+	if = {
+		limit = { exists = global_var:pr_college_ogulnia_gradual }
+		custom_tooltip = pr_college.church_answers_end.$LAW$.gradual
+	}
+	else_if = {
+		limit = { exists = global_var:pr_college_lex_$LAW$ }
+		custom_tooltip = pr_college.church_answers_end.$LAW$.passed
+	}
+	else_if = {
+		limit = {
+			has_variable = pr_college_$LAW$_vetoes
+			faith:roman_polytheism ?= { var:pr_college_$LAW$_active ?= root }
+		}
+		custom_tooltip = pr_college.church_answers_end.$LAW$.veto
+	}
+	else_if = {
+		limit = { faith:roman_polytheism ?= { var:pr_college_$LAW$_active ?= root } }
+		custom_tooltip = pr_college.church_answers_end.$LAW$.vote
+	}
+	else = {
+		custom_tooltip = pr_college.church_answers_end.$LAW$.rests
+	}
+}

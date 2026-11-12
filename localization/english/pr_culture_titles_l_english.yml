@@ -7,3 +7,7 @@
 	pr_high_queen_female_irish:0 "High Queen"
 	pr_high_prince_male_irish:0 "High Prince"
 	pr_high_princess_female_irish:0 "High Princess"
+	# College of Pontiffs (#76)
+	pr_college_pontifex:0 "Pontifex"
+	pr_college_rex_sacrorum:0 "Rex Sacrorum"
+	pr_college_flamen:0 "Flamen"

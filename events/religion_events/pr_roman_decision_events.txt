@@ -1487,7 +1487,7 @@ pr_roman_culture.0601= {
 	}
 	option = {
 		name = pr_roman_culture.0601.a
-		set_culture = culture:pr_gallo_roman
+		# The culture changed through the decision (2026-11-09)
 	}
 }
 #Embrace Romano British culture
@@ -1506,7 +1506,7 @@ pr_roman_culture.0602= {
 	}
 	option = {
 		name = pr_roman_culture.0602.a
-		set_culture = culture:pr_romano_british
+		# The culture changed through the decision (2026-11-09)
 	}
 }
 
@@ -1526,7 +1526,7 @@ pr_roman_culture.0603= {
 	}
 	option = {
 		name = pr_roman_culture.0603.a
-		set_culture = culture:pr_romano_germanic
+		# The culture changed through the decision (2026-11-09)
 	}
 }
 
@@ -1547,7 +1547,7 @@ pr_roman_culture.0604= {
 	}
 	option = {
 		name = pr_roman_culture.0604.a
-		set_culture = culture:pr_romano_hispanic
+		# The culture changed through the decision (2026-11-09)
 	}
 }
 

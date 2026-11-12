@@ -1,0 +1,55 @@
+﻿# College of Pontiffs (#76): headgear for Roman priests, chosen by the user in the ruler designer (2026-10-21). Vanilla
+# has no Roman priestly dress. Pontifices and the rex sacrorum go bareheaded (they wore no cap of their own; the Hood was
+# tried and rejected). The flamines wear the Phrygian Cap as a stand-in for their pointed apex; the Phrygian Cap is also
+# how Mithras is shown, so the Pater of Mithras wears it too. Same priority as vanilla's headgear_religious
+# (03_headgear_religious.txt) and loaded after it, so it replaces that; armour (4) and special cases (5, 6) still win.
+# The range picks one item of a vanilla gene template (common/genes/06_genes_special_accessories_headgear.txt):
+# no_headgear = empty; byzantine_common = empty 10 / male_headgear_secular_byzantine_common_01 (Phrygian Cap) 5, so
+# 0.85-1 is the cap.
+pr_headgear_roman_priests = {
+
+	usage = game
+	selection_behavior = weighted_random
+	priority = 3
+
+	pr_roman_pontifex_bareheaded = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = no_headgear
+				range = { 0 1 }
+			}
+		}
+		outfit_tags = { priest_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				pr_portrait_roman_pontifex_trigger = yes
+			}
+		}
+	}
+
+	pr_roman_flamen_cap = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = byzantine_common
+				range = { 0.85 1 }
+			}
+		}
+		outfit_tags = { priest_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					pr_portrait_roman_flamen_trigger = yes
+					pr_portrait_mithras_pater_trigger = yes
+				}
+			}
+		}
+	}
+}

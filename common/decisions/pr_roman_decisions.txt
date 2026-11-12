@@ -187,8 +187,9 @@ pr_roman_embrace_gallo_roman_culture_decision = {
     is_shown = {
         is_ai = no
         is_landed = yes
-        rite = { rite_has_parameter = special_doctrine_gallo_roman_patron_god_active }
-        culture = { has_cultural_pillar = heritage_frankish }
+        pr_is_cultus_deorum_trigger = yes
+        NOT = { culture = culture:pr_gallo_roman }
+        capital_province = { geographical_region = world_europe_west_francia }
         NOT = {
             is_target_in_global_variable_list = {
                 name = unavailable_unique_decisions
@@ -201,7 +202,6 @@ pr_roman_embrace_gallo_roman_culture_decision = {
         is_adult = yes
         is_imprisoned = no
         completely_controls = title:c_ile_de_france
-        faith = faith:roman_polytheism
     }
 
     is_valid_showing_failures_only = {
@@ -220,8 +220,39 @@ pr_roman_embrace_gallo_roman_culture_decision = {
             name = unavailable_unique_decisions
             target = flag:pr_roman_embrace_gallo_roman_culture_decision
         }
-        trigger_event = pr_roman_culture.0601
         save_scope_as = actor
+        # Vanilla's culture change (10_culture_conversion_decisions.txt): you, your close family, and a choice for your
+        # vassals of your old culture
+        convert_family_culture_and_notify_vassals_effect = {
+            CONVERTER = root
+            OLD_CULTURE = root.culture
+            NEW_CULTURE = culture:pr_gallo_roman
+        }
+        # The regional rite of the Roman faith, which belongs to this culture (a reformed Roman faith keeps its own rite).
+        # Also for the close family and consorts who took the culture, so the heir keeps it (review 2026-11-09).
+        if = {
+            limit = { faith = faith:roman_polytheism }
+            set_character_rite = rite:gallo_roman_rites
+            hidden_effect = {
+                every_close_family_member = {
+                    limit = {
+                        is_courtier_of = root
+                        culture = culture:pr_gallo_roman
+                        faith = faith:roman_polytheism
+                    }
+                    set_character_rite = rite:gallo_roman_rites
+                }
+                every_consort = {
+                    limit = {
+                        culture = culture:pr_gallo_roman
+                        faith = faith:roman_polytheism
+                    }
+                    set_character_rite = rite:gallo_roman_rites
+                }
+            }
+        }
+        title:c_ile_de_france = { set_county_culture = culture:pr_gallo_roman }
+        trigger_event = pr_roman_culture.0601
     }
 
     ai_check_interval = 90
@@ -247,8 +278,9 @@ pr_roman_embrace_romano_british_culture_decision = {
     is_shown = {
         is_ai = no
         is_landed = yes
-        rite = { rite_has_parameter = special_doctrine_romano_british_patron_god_active }
-        culture = { has_cultural_pillar = heritage_brythonic }
+        pr_is_cultus_deorum_trigger = yes
+        NOT = { culture = culture:pr_romano_british }
+        capital_province = { geographical_region = world_europe_west_britannia }
         NOT = {
             is_target_in_global_variable_list = {
                 name = unavailable_unique_decisions
@@ -279,8 +311,39 @@ pr_roman_embrace_romano_british_culture_decision = {
             name = unavailable_unique_decisions
             target = flag:pr_roman_embrace_romano_british_culture_decision
         }
-        trigger_event = pr_roman_culture.0602
         save_scope_as = actor
+        # Vanilla's culture change (10_culture_conversion_decisions.txt): you, your close family, and a choice for your
+        # vassals of your old culture
+        convert_family_culture_and_notify_vassals_effect = {
+            CONVERTER = root
+            OLD_CULTURE = root.culture
+            NEW_CULTURE = culture:pr_romano_british
+        }
+        # The regional rite of the Roman faith, which belongs to this culture (a reformed Roman faith keeps its own rite).
+        # Also for the close family and consorts who took the culture, so the heir keeps it (review 2026-11-09).
+        if = {
+            limit = { faith = faith:roman_polytheism }
+            set_character_rite = rite:romano_british_rites
+            hidden_effect = {
+                every_close_family_member = {
+                    limit = {
+                        is_courtier_of = root
+                        culture = culture:pr_romano_british
+                        faith = faith:roman_polytheism
+                    }
+                    set_character_rite = rite:romano_british_rites
+                }
+                every_consort = {
+                    limit = {
+                        culture = culture:pr_romano_british
+                        faith = faith:roman_polytheism
+                    }
+                    set_character_rite = rite:romano_british_rites
+                }
+            }
+        }
+        title:c_middlesex = { set_county_culture = culture:pr_romano_british }
+        trigger_event = pr_roman_culture.0602
     }
 
     ai_check_interval = 90
@@ -626,8 +689,9 @@ pr_roman_embrace_romano_germanic_culture_decision = {
     is_shown = {
         is_ai = no
         is_landed = yes
-        rite = { rite_has_parameter = special_doctrine_romano_germanic_patron_god_active }
-        culture = { has_cultural_pillar = heritage_central_germanic }
+        pr_is_cultus_deorum_trigger = yes
+        NOT = { culture = culture:pr_romano_germanic }
+        capital_province = { geographical_region = world_europe_west_germania }
         NOT = {
             is_target_in_global_variable_list = {
                 name = unavailable_unique_decisions
@@ -658,8 +722,39 @@ pr_roman_embrace_romano_germanic_culture_decision = {
             name = unavailable_unique_decisions
             target = flag:pr_roman_embrace_romano_germanic_culture_decision
         }
-        trigger_event = pr_roman_culture.0603
         save_scope_as = actor
+        # Vanilla's culture change (10_culture_conversion_decisions.txt): you, your close family, and a choice for your
+        # vassals of your old culture
+        convert_family_culture_and_notify_vassals_effect = {
+            CONVERTER = root
+            OLD_CULTURE = root.culture
+            NEW_CULTURE = culture:pr_romano_germanic
+        }
+        # The regional rite of the Roman faith, which belongs to this culture (a reformed Roman faith keeps its own rite).
+        # Also for the close family and consorts who took the culture, so the heir keeps it (review 2026-11-09).
+        if = {
+            limit = { faith = faith:roman_polytheism }
+            set_character_rite = rite:romano_germanic_rites
+            hidden_effect = {
+                every_close_family_member = {
+                    limit = {
+                        is_courtier_of = root
+                        culture = culture:pr_romano_germanic
+                        faith = faith:roman_polytheism
+                    }
+                    set_character_rite = rite:romano_germanic_rites
+                }
+                every_consort = {
+                    limit = {
+                        culture = culture:pr_romano_germanic
+                        faith = faith:roman_polytheism
+                    }
+                    set_character_rite = rite:romano_germanic_rites
+                }
+            }
+        }
+        title:c_cologne = { set_county_culture = culture:pr_romano_germanic }
+        trigger_event = pr_roman_culture.0603
     }
 
     ai_check_interval = 90
@@ -685,7 +780,9 @@ pr_roman_embrace_hispano_roman_culture_decision = {
     is_shown = {
         is_ai = no
         is_landed = yes
-        rite = { rite_has_parameter = special_doctrine_romano_hispanic_patron_god_active }
+        pr_is_cultus_deorum_trigger = yes
+        NOT = { culture = culture:pr_romano_hispanic }
+        capital_province = { geographical_region = world_europe_west_iberia }
         NOT = {
             is_target_in_global_variable_list = {
                 name = unavailable_unique_decisions
@@ -716,8 +813,39 @@ pr_roman_embrace_hispano_roman_culture_decision = {
             name = unavailable_unique_decisions
             target = flag:pr_roman_embrace_hispano_roman_culture_decision
         }
-        trigger_event = pr_roman_culture.0604
         save_scope_as = actor
+        # Vanilla's culture change (10_culture_conversion_decisions.txt): you, your close family, and a choice for your
+        # vassals of your old culture
+        convert_family_culture_and_notify_vassals_effect = {
+            CONVERTER = root
+            OLD_CULTURE = root.culture
+            NEW_CULTURE = culture:pr_romano_hispanic
+        }
+        # The regional rite of the Roman faith, which belongs to this culture (a reformed Roman faith keeps its own rite).
+        # Also for the close family and consorts who took the culture, so the heir keeps it (review 2026-11-09).
+        if = {
+            limit = { faith = faith:roman_polytheism }
+            set_character_rite = rite:romano_hispanic_rites
+            hidden_effect = {
+                every_close_family_member = {
+                    limit = {
+                        is_courtier_of = root
+                        culture = culture:pr_romano_hispanic
+                        faith = faith:roman_polytheism
+                    }
+                    set_character_rite = rite:romano_hispanic_rites
+                }
+                every_consort = {
+                    limit = {
+                        culture = culture:pr_romano_hispanic
+                        faith = faith:roman_polytheism
+                    }
+                    set_character_rite = rite:romano_hispanic_rites
+                }
+            }
+        }
+        title:c_toledo = { set_county_culture = culture:pr_romano_hispanic }
+        trigger_event = pr_roman_culture.0604
     }
 
     ai_check_interval = 90
@@ -2871,5 +2999,308 @@ adopt_state_faith = {
             has_vassal_stance = zealot
             factor = 0.3
         }
+    }
+}
+
+# --- College of Pontiffs (#76): start the storylines (players) ---
+# Decided 2026-11-07: a player starts each storyline himself; the yearly 25% start stays for AI rulers only
+# (pr_college_ogulnia_yearly_effect, pr_college_cornelia_yearly_effect). Costs from an independent balance review:
+# the Lex Ogulnia start in piety (it competes with patron gods and College interactions), the Lex Cornelia start in
+# prestige and piety (larger stakes, kings and emperors only); both cheaper than a retry after a veto, which buys a
+# better chance. No decision cooldown (removed 2026-11-08): the faith variables pr_college_ogulnia_cooldown and
+# pr_college_cornelia_cooldown (flag:refused 10 years, flag:collapsed 5 years) keep a round from being restarted at once.
+pr_college_hear_new_believers_decision = {
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+    }
+    desc = pr_college_hear_new_believers_decision_desc
+    selection_tooltip = pr_college_hear_new_believers_decision_tooltip
+    decision_group_type = roman
+
+    is_shown = {
+        is_ai = no
+        faith = faith:roman_polytheism
+        NOT = { exists = global_var:pr_college_lex_ogulnia }
+    }
+
+    is_valid = {
+        custom_tooltip = {
+            text = pr_college_start_roman_counties_tt
+            pr_college_realm_roman_counties_value >= 8
+        }
+        custom_tooltip = {
+            text = pr_college_start_roman_half_tt
+            pr_college_realm_roman_share_value >= 50
+        }
+        custom_tooltip = {
+            text = pr_college_start_landed_tt
+            is_landed = yes
+            NOT = { government_has_flag = government_is_theocracy }
+        }
+        custom_tooltip = {
+            text = pr_college_hear_new_believers_decision_founder_tt
+            pr_college_ogulnia_college_ready_trigger = yes
+            pr_college_ogulnia_has_founder_trigger = yes
+        }
+        custom_tooltip = {
+            text = pr_college_start_no_round_tt
+            faith:roman_polytheism = {
+                NOR = {
+                    has_variable = pr_college_ogulnia_active
+                    has_variable = pr_college_cornelia_active
+                }
+            }
+        }
+        # Says how long the College rests (2026-11-08): 10 years after a refusal, 5 after a round that ended without a vote
+        trigger_if = {
+            limit = { faith:roman_polytheism = { var:pr_college_ogulnia_cooldown ?= flag:collapsed } }
+            custom_tooltip = {
+                text = pr_college_start_cooldown_collapsed_tt
+                always = no
+            }
+        }
+        trigger_else_if = {
+            limit = { faith:roman_polytheism = { has_variable = pr_college_ogulnia_cooldown } }
+            custom_tooltip = {
+                text = pr_college_start_cooldown_refused_tt
+                always = no
+            }
+        }
+        trigger_else = {
+            custom_tooltip = {
+                text = pr_college_start_cooldown_tt
+                always = yes
+            }
+        }
+    }
+
+    is_valid_showing_failures_only = {
+        is_capable_adult = yes
+        is_imprisoned = no
+    }
+
+    cost = {
+        piety = medium_piety_value
+    }
+
+    # No decision cooldown (2026-11-08): the faith cooldown does the work and its line names the real duration; a
+    # decision cooldown hid it behind "unavailable until …" with a different date.
+
+    effect = {
+        custom_tooltip = pr_college_hear_new_believers_decision_effect_tt
+        custom_tooltip = pr_college_start_decision_after_tt
+        hidden_effect = {
+            faith:roman_polytheism = {
+                set_variable = { name = pr_college_ogulnia_active value = root years = 5 }
+            }
+            trigger_event = pr_college.0100
+        }
+    }
+
+    ai_check_interval = 0 # players only: AI rulers get the yearly start
+    ai_will_do = { base = 0 }
+}
+
+pr_college_great_men_decision = {
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+    }
+    desc = pr_college_great_men_decision_desc
+    selection_tooltip = pr_college_great_men_decision_tooltip
+    decision_group_type = roman
+
+    is_shown = {
+        is_ai = no
+        faith = faith:roman_polytheism
+        exists = global_var:pr_college_lex_ogulnia
+        NOT = { exists = global_var:pr_college_lex_cornelia }
+    }
+
+    is_valid = {
+        custom_tooltip = {
+            text = pr_college_great_men_decision_tier_tt
+            highest_held_title_tier >= tier_kingdom
+        }
+        custom_tooltip = {
+            text = pr_college_start_roman_counties_tt
+            pr_college_realm_roman_counties_value >= 8
+        }
+        custom_tooltip = {
+            text = pr_college_great_men_decision_roman_share_tt
+            pr_college_realm_roman_share_value >= 75
+        }
+        custom_tooltip = {
+            text = pr_college_start_landed_tt
+            is_landed = yes
+            NOT = { government_has_flag = government_is_theocracy }
+        }
+        custom_tooltip = {
+            text = pr_college_great_men_decision_ready_tt
+            pr_college_cornelia_college_ready_trigger = yes
+            pr_college_cornelia_has_pontifex_trigger = yes
+        }
+        custom_tooltip = {
+            text = pr_college_start_no_round_tt
+            faith:roman_polytheism = {
+                NOR = {
+                    has_variable = pr_college_ogulnia_active
+                    has_variable = pr_college_cornelia_active
+                }
+            }
+        }
+        # Says how long the College rests (2026-11-08): 10 years after a refusal, 5 after a round that ended without a vote
+        trigger_if = {
+            limit = { faith:roman_polytheism = { var:pr_college_cornelia_cooldown ?= flag:collapsed } }
+            custom_tooltip = {
+                text = pr_college_start_cooldown_collapsed_tt
+                always = no
+            }
+        }
+        trigger_else_if = {
+            limit = { faith:roman_polytheism = { has_variable = pr_college_cornelia_cooldown } }
+            custom_tooltip = {
+                text = pr_college_start_cooldown_refused_tt
+                always = no
+            }
+        }
+        trigger_else = {
+            custom_tooltip = {
+                text = pr_college_start_cooldown_tt
+                always = yes
+            }
+        }
+    }
+
+    is_valid_showing_failures_only = {
+        is_capable_adult = yes
+        is_imprisoned = no
+    }
+
+    cost = {
+        prestige = medium_prestige_value
+        piety = medium_piety_value
+    }
+
+    # No decision cooldown (2026-11-08), as for pr_college_hear_new_believers_decision.
+
+    effect = {
+        custom_tooltip = pr_college_great_men_decision_effect_tt
+        custom_tooltip = pr_college_start_decision_after_tt
+        hidden_effect = {
+            faith:roman_polytheism = {
+                set_variable = { name = pr_college_cornelia_active value = root years = 5 }
+            }
+            trigger_event = pr_college.0200
+        }
+    }
+
+    ai_check_interval = 0 # players only: AI rulers get the yearly start
+    ai_will_do = { base = 0 }
+}
+
+# --- College of Pontiffs (#76): bring the Lex Ogulnia again after a veto ---
+# After Livy 10.9: the law was vetoed first and passed the next day. Every new attempt gets a better chance
+# (pr_college.0102). Decided 2026-10-22.
+pr_college_bring_lex_ogulnia_decision = {
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+    }
+    desc = pr_college_bring_lex_ogulnia_decision_desc
+    selection_tooltip = pr_college_bring_lex_ogulnia_decision_tooltip
+    decision_group_type = roman
+
+    ai_check_interval = 12
+
+    is_shown = {
+        faith = faith:roman_polytheism
+        has_variable = pr_college_ogulnia_vetoes
+        NOT = { exists = global_var:pr_college_lex_ogulnia }
+        # Still his storyline (it ends 10 years after the veto, or when another ruler got it)
+        faith:roman_polytheism = {
+            has_variable = pr_college_ogulnia_active
+            var:pr_college_ogulnia_active = root
+        }
+    }
+
+    is_valid = {
+        custom_tooltip = {
+            text = pr_college_bring_lex_ogulnia_decision_cooldown_tt
+            NOT = { has_variable = pr_college_ogulnia_veto_cooldown }
+        }
+        pr_college_ogulnia_college_ready_trigger = yes
+        pr_college_ogulnia_ruler_still_valid_trigger = yes
+    }
+
+    is_valid_showing_failures_only = {
+        is_capable_adult = yes
+        is_imprisoned = no
+    }
+
+    cost = {
+        prestige = medium_prestige_value
+    }
+
+    effect = {
+        custom_tooltip = pr_college_bring_lex_ogulnia_decision_effect_tt
+        hidden_effect = {
+            trigger_event = pr_college.0102
+        }
+    }
+
+    ai_will_do = {
+        base = 100
+    }
+}
+
+# College of Pontiffs (#76): bring the Lex Cornelia again after a veto (storyline "Rome and Constantinople"). As for the
+# Lex Ogulnia, every new attempt gets a better chance (pr_college.0202), at most three. Decided 2026-10-31.
+pr_college_bring_lex_cornelia_decision = {
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+    }
+    desc = pr_college_bring_lex_cornelia_decision_desc
+    selection_tooltip = pr_college_bring_lex_cornelia_decision_tooltip
+    decision_group_type = roman
+
+    ai_check_interval = 12
+
+    is_shown = {
+        faith = faith:roman_polytheism
+        has_variable = pr_college_cornelia_vetoes
+        NOT = { exists = global_var:pr_college_lex_cornelia }
+        # Still his storyline (it ends 10 years after the veto, or when another ruler got it)
+        faith:roman_polytheism = {
+            has_variable = pr_college_cornelia_active
+            var:pr_college_cornelia_active = root
+        }
+    }
+
+    is_valid = {
+        custom_tooltip = {
+            text = pr_college_bring_lex_cornelia_decision_cooldown_tt
+            NOT = { has_variable = pr_college_cornelia_veto_cooldown }
+        }
+        pr_college_cornelia_college_ready_trigger = yes
+        pr_college_cornelia_ruler_still_valid_trigger = yes
+    }
+
+    is_valid_showing_failures_only = {
+        is_capable_adult = yes
+        is_imprisoned = no
+    }
+
+    cost = {
+        prestige = major_prestige_value # decided 2026-11-01: a retry after a veto must cost something real
+    }
+
+    effect = {
+        custom_tooltip = pr_college_bring_lex_cornelia_decision_effect_tt
+        hidden_effect = {
+            trigger_event = pr_college.0202
+        }
+    }
+
+    ai_will_do = {
+        base = 100
     }
 }

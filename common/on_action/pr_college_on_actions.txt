@@ -1,0 +1,233 @@
+﻿# College of Pontiffs (#76)
+
+# Appended to vanilla on_actions (on_actions lists only, see Rules/on_action_rules.md 5.1).
+on_title_gain = {
+	on_actions = {
+		pr_college_on_title_gain
+		pr_college_on_seat_gained
+	}
+}
+
+on_death = {
+	on_actions = {
+		pr_college_on_death
+		pr_college_ogulnia_on_death
+		pr_college_cornelia_on_death
+	}
+}
+
+yearly_global_pulse = {
+	on_actions = {
+		pr_college_yearly
+	}
+}
+
+# Option 1 (#76): root = the character about to die, before succession (vanilla death.txt:1).
+# Only for a Roman head of faith whose elected title has no current heir, i.e. no candidate the
+# engine accepts (a head stuck in a protected realm).
+pr_college_on_death = {
+	trigger = {
+		religion = religion:roman_religion
+		faith = { religious_head ?= root }
+		# Elected as title law (landed head) or as realm law (landless head; review 2026-11-10)
+		OR = {
+			faith.religious_head_title ?= { has_title_law = theocratic_elective_succession_law }
+			has_realm_law = theocratic_elective_succession_law
+		}
+		faith.religious_head_title ?= { NOT = { exists = current_heir } }
+	}
+	effect = {
+		faith.religious_head_title = { save_scope_as = pr_college_head_title }
+		pr_college_rescue_title_effect = yes
+	}
+}
+
+# Storyline "The New Believers" (#76): root = the character about to die. If he had the storyline, it ends, so the
+# world is not blocked for up to 10 years after a veto.
+pr_college_ogulnia_on_death = {
+	trigger = {
+		faith:roman_polytheism = {
+			has_variable = pr_college_ogulnia_active
+			var:pr_college_ogulnia_active = root
+		}
+	}
+	effect = {
+		pr_college_ogulnia_ruler_died_effect = yes
+	}
+}
+
+# Storyline "Rome and Constantinople" (#76): root = the character about to die. If he had the storyline, it ends.
+pr_college_cornelia_on_death = {
+	trigger = {
+		faith:roman_polytheism = {
+			has_variable = pr_college_cornelia_active
+			var:pr_college_cornelia_active = root
+		}
+	}
+	effect = {
+		pr_college_cornelia_ruler_died_effect = yes
+	}
+}
+
+# Option 1 (#76): no root (vanilla yearly_on_actions.txt:2). Remembers the election leader for the safety net.
+pr_college_yearly = {
+	effect = {
+		faith:roman_polytheism.religious_head_title ?= {
+			pr_college_remember_leader_effect = yes
+		}
+		# Step 1 (#76): fill empty seats (AI head) or co-opt pontifical seats empty for a year (player head)
+		pr_college_maintain_effect = yes
+		# Storyline "The New Believers" (Lex Ogulnia): may start for the largest eligible Roman ruler
+		pr_college_ogulnia_yearly_effect = yes
+		# Storyline "Rome and Constantinople" (Lex Cornelia): may start once the Lex Ogulnia has passed
+		pr_college_cornelia_yearly_effect = yes
+		# Also catches seat holders from before 2026-10-20 that still carry the cardinal flag
+		faith:roman_polytheism = {
+			every_clerical_elector_title = {
+				holder ?= { pr_college_seat_holder_cleanup_effect = yes }
+			}
+		}
+	}
+}
+
+# Root = the new holder, scope:title = the gained title. Vanilla's on_title_gain gives every holder of a College seat
+# cardinal_flag (title_on_actions.txt:248-257): that flag names him "Cardinal" (cardinal_male in
+# 20_pam_flavorization.txt) and adds him to the Christian Church situation. A Roman seat holder gets neither; his name
+# comes from pr_college_* in pr_flavorization.txt. Delayed a day, so vanilla's handling of this transfer is done.
+pr_college_on_seat_gained = {
+	trigger = {
+		faith = faith:roman_polytheism
+		clerical_elector_title ?= scope:title
+	}
+	on_actions = {
+		delay = { days = 1 }
+		pr_college_seat_cleanup
+	}
+}
+
+pr_college_seat_cleanup = {
+	trigger = {
+		faith = faith:roman_polytheism
+		exists = clerical_elector_title
+	}
+	effect = {
+		pr_college_seat_holder_cleanup_effect = yes
+		# A day after any seat gain: if the new holder is the head, check the election once more. Gaining the seat title
+		# gave him vanilla's default theocratic laws again (Test_noBGA1, 2026-11-12), on every path that seats the head
+		# (pr_college_head_seat, the yearly check, Lex Ogulnia, Lex Cornelia; review 2026-11-12).
+		if = {
+			limit = { faith = { religious_head ?= root } }
+			pr_college_head_election_law_effect = yes
+		}
+	}
+}
+
+# Root = the new holder, scope:title = the gained title.
+# A landless Pontifex Maximus answers to no secular liege, as vanilla does for an antipope
+# (pam_antipope_effects.txt:177-187). Otherwise the head-of-faith title stays inside the previous
+# holder's realm and a liege with protected inheritance (titles_cannot_leave_realm_on_succession)
+# leaves the College without candidates (confirmed in-game 2026-10-18).
+# Delayed a day, so vanilla's own on_title_gain handling of this transfer has finished first.
+pr_college_on_title_gain = {
+	trigger = {
+		religion = religion:roman_religion
+		faith.religious_head_title ?= scope:title
+	}
+	effect = {
+		if = {
+			limit = { debug_only = yes }
+			debug_log = "PR College (#76): Roman head-of-faith title gained (see scopes: root = new holder, transfer type)"
+			debug_log_scopes = yes
+		}
+		# A landless head holds the title as his primary title, and then his own realm succession law decides
+		# (tested 2026-10-18: the title passed by "inheritance" to non-candidates). The election as realm law (landless)
+		# or title law (landed): pr_college_head_election_law_effect. Checked again two days later and every year.
+		pr_college_head_election_law_effect = yes
+	}
+	on_actions = {
+		delay = { days = 1 }
+		pr_college_female_head
+		delay = { days = 1 }
+		pr_college_make_head_independent
+		delay = { days = 2 }
+		pr_college_head_seat
+	}
+}
+
+# Root = the new Roman head of faith, two days after he gained the title. The Pontifex Maximus sits in his College
+# (decided 2026-10-31): an elected head keeps his seat (pam_vacate_head_of_faith_cardinalate_effect override), a head set
+# up through the faith view gets the first empty pontifical seat.
+pr_college_head_seat = {
+	trigger = {
+		faith = faith:roman_polytheism
+		faith = { religious_head ?= root }
+	}
+	effect = {
+		# The seat first, the election after: gaining the seat title gave the head vanilla's default theocratic laws again,
+		# so the election set before it was lost (Test_noBGA1, 2026-11-12: a head created a few weeks into a new game got
+		# seat 1 and kept bishop_theocratic_succession_law). Checked once more a day later (pr_college_seat_cleanup).
+		pr_college_head_seat_effect = yes
+		pr_college_head_election_law_effect = yes
+		# An empty College (no other pontifex, no rex sacrorum): fill it now, not at the next 1 January, so the College has
+		# electors from the start (Test_noBGA3, 2026-11-12)
+		if = {
+			limit = {
+				title:d_pr_pontifical_seat_2 = { NOT = { exists = holder } }
+				title:d_pr_pontifical_seat_3 = { NOT = { exists = holder } }
+				title:d_pr_pontifical_seat_4 = { NOT = { exists = holder } }
+				title:d_pr_pontifical_seat_5 = { NOT = { exists = holder } }
+				title:d_pr_rex_sacrorum = { NOT = { exists = holder } }
+			}
+			if = {
+				limit = { is_ai = yes }
+				pr_college_fill_empty_seats_effect = yes
+			}
+			# A player head appoints the rex sacrorum and the flamines himself: only the pontifical seats, so the
+			# College has electors (review 2026-11-12)
+			else = {
+				title:d_pr_pontifical_seat_2 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+				title:d_pr_pontifical_seat_3 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+				title:d_pr_pontifical_seat_4 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+				title:d_pr_pontifical_seat_5 = { if = { limit = { NOT = { exists = holder } } pr_college_coopt_seat_effect = { LANDLESS_ONLY = no ROME_BOUND = no IMPERIAL_CULT = no } } }
+			}
+		}
+	}
+}
+
+# Root = a woman who became Roman head of faith, a day later. The Pontifex Maximus is a man (decided 2026-11-12): vanilla
+# creates a new head from the faith's clerical gender (doctrine_clerical_gender_either, kept for the Vestals), so it can
+# make a woman (Test_noBGA1). The title goes to the most pious pontifex, or to a new priest. Only an AI head: a player who
+# set up the head herself keeps it. A later decision can open the College to women (global_var pr_college_open_to_women).
+pr_college_female_head = {
+	trigger = {
+		is_female = yes
+		is_ai = yes
+		faith = faith:roman_polytheism
+		faith = { religious_head ?= root }
+		NOT = { exists = global_var:pr_college_open_to_women }
+	}
+	effect = {
+		if = {
+			limit = { debug_only = yes }
+			debug_log = "PR College (#76): a woman became Pontifex Maximus, the title goes to a man"
+			debug_log_scopes = yes
+		}
+		pr_college_male_head_effect = yes
+	}
+}
+
+pr_college_make_head_independent = {
+	trigger = {
+		is_landed = no
+		faith = { religious_head ?= root }
+		NOT = { this = top_liege }
+	}
+	effect = {
+		if = {
+			limit = { debug_only = yes }
+			debug_log = "PR College (#76): new landless head made independent"
+			debug_log_scopes = yes
+		}
+		pr_college_head_independent_effect = yes
+	}
+}

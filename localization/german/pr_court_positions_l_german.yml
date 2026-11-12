@@ -11,56 +11,6 @@
   pr_court_augur_court_position_desc:1 "Der $pr_court_augur_court_position$ deutet den Willen der Götter durch Augurien und Wahrsagerei und bietet dem Herrscher religiöse Führung."
   pr_court_augur_employer_custom_effect_description:0 "$BULLET$Führt Augurien und Wahrsagerituale durch"
 
-  # --- Flamen des Mars ---
-  pr_court_flamen_mars_court_position:0 "Flamen des Mars"
-  pr_court_flamen_mars_court_position_desc:1 "Der $pr_court_flamen_mars_court_position$ beaufsichtigt die Riten des Mars, segnet die Heere und sichert die Gunst des Kriegsgottes."
-  pr_court_flamen_mars_employer_custom_effect_description:0 "$BULLET$Segnet Heere und kriegerische Unternehmungen"
-
-  # --- Flamen Augustalis ---
-  pr_court_flamen_augustus_court_position:0 "Flamen Augustalis"
-  pr_court_flamen_augustus_court_position_desc:1 "Der $pr_court_flamen_augustus_court_position$ pflegt den göttlichen Kaiserkult und verkörpert die heilige Verbindung zwischen Herrscher und dem Göttlichen."
-  pr_court_flamen_augustus_employer_custom_effect_description:0 "$BULLET$Erhält den Kaiserkult und die göttliche Autorität"
-
-  # --- Flamen der Carmentis ---
-  pr_court_flamen_carmentis_court_position:0 "Flamen der Carmentis"
-  pr_court_flamen_carmentis_court_position_desc:1 "Der $pr_court_flamen_carmentis_court_position$ dient der Carmentis, Göttin der Prophezeiung und der Geburt, und wacht über die Gesundheit und Fruchtbarkeit des Herrscherhauses."
-  pr_court_flamen_carmentis_employer_custom_effect_description:0 "$BULLET$Bietet prophetische Führung und Fruchtbarkeitssegen"
-
-  # --- Flamen der Ceres ---
-  pr_court_flamen_ceres_court_position:0 "Flamen der Ceres"
-  pr_court_flamen_ceres_court_position_desc:1 "Der $pr_court_flamen_ceres_court_position$ beaufsichtigt die Riten der Ceres, Göttin der Landwirtschaft, und sichert reiche Ernten und den Wohlstand des Landes."
-  pr_court_flamen_ceres_employer_custom_effect_description:0 "$BULLET$Segnet die Ernte und fördert die Entwicklung"
-
-  # --- Flamen der Flora ---
-  pr_court_flamen_flora_court_position:0 "Flamen der Flora"
-  pr_court_flamen_flora_court_position_desc:1 "Der $pr_court_flamen_flora_court_position$ pflegt die Riten der Flora, Göttin der Blumen und des Frühlings, und bringt Fruchtbarkeit und Feierlichkeiten an den Hof."
-  pr_court_flamen_flora_employer_custom_effect_description:0 "$BULLET$Bringt Fruchtbarkeit, Feierlichkeiten und höfischen Glanz"
-
-  # --- Flamen der Furrina ---
-  pr_court_flamen_furrina_court_position:0 "Flamen der Furrina"
-  pr_court_flamen_furrina_court_position_desc:1 "Der $pr_court_flamen_furrina_court_position$ dient der Furrina, Göttin der Quellen und des Wassers, und wacht über die Gesundheit und Lebenskraft des Reiches."
-  pr_court_flamen_furrina_employer_custom_effect_description:0 "$BULLET$Bietet Heilung und fördert die Entwicklung"
-
-  # --- Flamen der Pomona ---
-  pr_court_flamen_pomona_court_position:0 "Flamen der Pomona"
-  pr_court_flamen_pomona_court_position_desc:1 "Der $pr_court_flamen_pomona_court_position$ pflegt die Riten der Pomona, Göttin der Obstgärten und Früchte, und sichert den Wohlstand des Reiches."
-  pr_court_flamen_pomona_employer_custom_effect_description:0 "$BULLET$Bringt Wohlstand und fördert die Entwicklung"
-
-  # --- Flamen des Portunus ---
-  pr_court_flamen_portunus_court_position:0 "Flamen des Portunus"
-  pr_court_flamen_portunus_court_position_desc:1 "Der $pr_court_flamen_portunus_court_position$ dient dem Portunus, Gott der Schlüssel, Türen und Häfen, und wacht über Handel und Kommerz."
-  pr_court_flamen_portunus_employer_custom_effect_description:0 "$BULLET$Erhöht die Domain-Kapazität und fördert den Handel"
-
-  # --- Flamen des Vulcan ---
-  pr_court_flamen_vulcan_court_position:0 "Flamen des Vulcan"
-  pr_court_flamen_vulcan_court_position_desc:1 "Der $pr_court_flamen_vulcan_court_position$ beaufsichtigt die Riten des Vulcan, Gott des Feuers und der Schmiede, und segnet Bauvorhaben und die Kriegsbalke."
-  pr_court_flamen_vulcan_employer_custom_effect_description:0 "$BULLET$Verringert die Baukosten und segnet die Schmiede"
-
-  # --- Flamen des Volturnus ---
-  pr_court_flamen_volturnus_court_position:0 "Flamen des Volturnus"
-  pr_court_flamen_volturnus_court_position_desc:1 "Der $pr_court_flamen_volturnus_court_position$ pflegt die Riten des Volturnus, Gott der Flüsse und Winde, und wacht über die Bewegungen der Heere."
-  pr_court_flamen_volturnus_employer_custom_effect_description:0 "$BULLET$Erhöht die Heeresversorgung und die militärische Expertise"
-
   # --- Pater des Mithras ---
   pr_court_pater_mithras_court_position:0 "Pater des Mithras"
   pr_court_pater_mithras_court_position_desc:1 "Der $pr_court_pater_mithras_court_position$ leitet die Mysterien des Mithras, Gott der Soldaten und des Lichts, und wacht über die militärische Tüchtigkeit der Champions des Herrschers."

@@ -1,0 +1,121 @@
+﻿# Full override of vanilla common/succession_election/00_pam_clerical_elective.txt (CK3 1.20.1).
+# Same file name, so the vanilla file is replaced. Kept on the key theocratic_elective, because the
+# College view only shows for that election type (gui/window_faith.gui, gui/hud.gui).
+# Whole vanilla block copied unchanged except for two PR changes (College of Pontiffs, #76): the candidates
+# limit has a Roman branch, and the electors limit leaves out the flamines minores. Re-copy from vanilla after every CK3 update (see Rules/game_update_rules.md).
+
+theocratic_elective = {
+	elector_vote_strength = {
+		base = 1
+	}
+
+	electors = {
+		character_sets = {
+			theocratic_electors_clerical = {
+				type = same_faith_clerical_electors
+
+				# Not the HoF
+				limit = {
+					this != scope:holder
+					pr_college_has_no_vote_trigger = no # PR (#76): the flamines minores and the flamen of Augustus are members without a vote
+				}
+			}
+		}
+	}
+
+	candidate_score = {
+		base = 0
+		######################	Elector self-voting pattern	##########################
+		elector_self_voting_pattern_theocratic_elective_modifier = yes
+
+		##########################	Theocratic elective patterns (misc)	##########################
+		elector_voting_pattern_theocratic_elective_modifier = yes
+	}
+
+	candidates = {
+		limit = {
+			trigger_if = {
+				# PR (#76): Roman College of Pontiffs. Only pontifices can stand (the rex sacrorum and the
+				# flamines maiores vote but cannot). Lay clergy does not bar them, and a landed pontifex keeps
+				# his realm, so only a landless player without the DLC is kept out.
+				limit = { religion = religion:roman_religion }
+				pr_college_is_pontifex_trigger = yes
+				NAND = {
+					is_ai = no
+					is_landed = no
+					has_pam_dlc_trigger = no
+				}
+				# Option 3 (#76): a landed pontifex under a liege with protected inheritance cannot stand. As holder
+				# his title would be stuck in that realm, where every outside pontifex is disqualified (common/laws/_laws.info:400).
+				trigger_if = {
+					limit = { is_landed = yes }
+					NOT = {
+						any_liege_or_above = { has_realm_law_flag = titles_cannot_leave_realm_on_succession }
+					}
+				}
+			}
+			trigger_else = {
+				pam_papabile_barred_by_lay_clergy_trigger = no
+				# Without the DLC a player cannot play a theocracy, so winning would end their game
+				NAND = {
+					is_ai = no
+					has_pam_dlc_trigger = no
+				}
+			}
+		}
+
+		character_sets = {
+			theocratic_elective_pious = {
+				type = same_faith_clerical_electors
+
+				# We exclude campaigners outright, since a score penalty could be outweighed by high piety
+				limit = {
+					NOR = {
+						exists = var:pam_campaign_as_powerful
+						exists = var:pam_campaign_as_populist
+						exists = var:pam_refuses_papacy
+					}
+				}
+
+				# "The Pious" - Holiness of life
+				priority_value = {
+					value = pam_papal_pious_priority_value
+				}
+			}
+
+			theocratic_elective_populist = {
+				type = same_faith_clerical_electors
+
+				limit = {
+					NOR = {
+						exists = var:pam_campaign_as_powerful
+						exists = var:pam_refuses_papacy
+					}
+				}
+
+				# "The Populist" - The people's champion
+				priority_value = {
+					value = pam_papal_populist_priority_value
+				}
+			}
+
+			theocratic_elective_powerful = {
+				type = same_faith_clerical_electors
+
+				limit = {
+					NOR = {
+						exists = var:pam_campaign_as_populist
+						exists = var:pam_refuses_papacy
+					}
+				}
+
+				# "The Powerful" - Worldly might
+				priority_value = {
+					value = pam_papal_powerful_priority_value
+				}
+			}
+		}
+
+		candidate_policy = one_candidate_per_set
+	}
+}

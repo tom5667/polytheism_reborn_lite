@@ -1,0 +1,422 @@
+﻿#####################
+# Roman interactions
+#####################
+
+# College of Pontiffs (#76): the Pontifex Maximus takes (captio) the rex sacrorum or a flamen maior for an empty seat.
+# Modelled on vanilla appoint_cardinal_interaction (pam_interactions.txt:4619-4878). The captio covered the flamines,
+# the rex and the Vestals, but "did not apply to his direct colleagues, the pontifices" (Webb 2023, p.137): pontifical
+# seats are filled by the College's co-optation, see pr_college_nominate_interaction.
+# Decided 2026-10-18: rex sacrorum only without land (barred from any magistracy); flamen Dialis without land or with the
+# capital of his highest title in Rome (could hold office, not leave Rome); cost in gold as vanilla, piety for the PM.
+# AI heads fill their College through the yearly pulse (pr_college_maintain_effect).
+pr_college_appoint_interaction = {
+	category = interaction_category_religion
+	icon = cardinal
+	interface_priority = 45
+	common_interaction = yes
+	use_diplomatic_range = no
+	popup_on_receive = yes
+	desc = pr_college_appoint_interaction_desc
+
+	is_available = {
+		has_pam_dlc_trigger = yes
+		faith = faith:roman_polytheism
+		faith = { religious_head ?= prev }
+	}
+
+	is_shown = {
+		scope:recipient = {
+			this != scope:actor
+			pr_college_can_receive_seat_trigger = yes
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		custom_tooltip = {
+			text = pr_college_appoint_interaction_no_seat_tt
+			OR = {
+				title:d_pr_rex_sacrorum = { NOT = { exists = holder } }
+				title:d_pr_flamen_dialis = { NOT = { exists = holder } }
+				title:d_pr_flamen_martialis = { NOT = { exists = holder } }
+				title:d_pr_flamen_quirinalis = { NOT = { exists = holder } }
+				AND = {
+					exists = global_var:restored_imperial_cult
+					title:d_pr_flamen_augustalis = { NOT = { exists = holder } }
+				}
+			}
+		}
+		scope:recipient = {
+			is_available_quick = {
+				adult = yes
+				incapable = no
+				imprisoned = no
+				hostage = no
+			}
+			NOT = { is_at_war_with = scope:actor }
+		}
+	}
+
+	send_options_exclusive = yes
+	send_option = {
+		flag = pr_college_seat_rex
+		localization = pr_college_appoint_option_rex
+		is_shown = { title:d_pr_rex_sacrorum = { NOT = { exists = holder } } }
+		is_valid = {
+			custom_tooltip = {
+				text = pr_college_appoint_option_landless_tt
+				scope:recipient = { is_landed = no }
+			}
+		}
+	}
+	send_option = {
+		flag = pr_college_seat_dialis
+		localization = pr_college_appoint_option_dialis
+		is_shown = { title:d_pr_flamen_dialis = { NOT = { exists = holder } } }
+		is_valid = {
+			custom_tooltip = {
+				text = pr_college_appoint_option_rome_tt
+				scope:recipient = { pr_college_bound_to_rome_trigger = yes }
+			}
+		}
+	}
+	send_option = {
+		flag = pr_college_seat_martialis
+		localization = pr_college_appoint_option_martialis
+		is_shown = { title:d_pr_flamen_martialis = { NOT = { exists = holder } } }
+	}
+	send_option = {
+		flag = pr_college_seat_quirinalis
+		localization = pr_college_appoint_option_quirinalis
+		is_shown = { title:d_pr_flamen_quirinalis = { NOT = { exists = holder } } }
+	}
+	send_option = {
+		flag = pr_college_seat_augustalis
+		localization = pr_college_appoint_option_augustalis
+		is_shown = {
+			exists = global_var:restored_imperial_cult
+			title:d_pr_flamen_augustalis = { NOT = { exists = holder } }
+		}
+		is_valid = {
+			custom_tooltip = {
+				text = pr_college_appoint_option_imperial_tt
+				scope:recipient = { has_trait = imperial_cult }
+			}
+		}
+	}
+
+	cost = {
+		treasury_or_gold = {
+			value = scope:actor.minor_gold_value
+		}
+	}
+
+	auto_accept = {
+		trigger_if = {
+			limit = { scope:recipient = { is_ai = yes } }
+			always = yes
+		}
+	}
+
+	on_accept = {
+		scope:recipient = {
+			custom_tooltip = {
+				text = pr_college_appoint_interaction_accept_tt
+				hidden_effect = {
+					if = {
+						limit = { scope:pr_college_seat_rex ?= yes }
+						title:d_pr_rex_sacrorum = { pr_college_grant_seat_effect = { RECIPIENT = scope:recipient } }
+					}
+					else_if = {
+						limit = { scope:pr_college_seat_dialis ?= yes }
+						title:d_pr_flamen_dialis = { pr_college_grant_seat_effect = { RECIPIENT = scope:recipient } }
+					}
+					else_if = {
+						limit = { scope:pr_college_seat_martialis ?= yes }
+						title:d_pr_flamen_martialis = { pr_college_grant_seat_effect = { RECIPIENT = scope:recipient } }
+					}
+					else_if = {
+						limit = { scope:pr_college_seat_quirinalis ?= yes }
+						title:d_pr_flamen_quirinalis = { pr_college_grant_seat_effect = { RECIPIENT = scope:recipient } }
+					}
+					else_if = {
+						limit = { scope:pr_college_seat_augustalis ?= yes }
+						title:d_pr_flamen_augustalis = { pr_college_grant_seat_effect = { RECIPIENT = scope:recipient } }
+					}
+				}
+			}
+		}
+		scope:actor = {
+			add_piety = medium_piety_gain
+		}
+	}
+
+	on_decline = {
+		scope:actor = {
+			send_interface_toast = {
+				type = event_toast_effect_bad
+				title = pr_college_appoint_interaction_decline_toast
+				right_icon = scope:recipient
+			}
+		}
+	}
+
+	ai_accept = {
+		base = 100
+	}
+
+	# AI heads fill the College through the yearly pulse instead
+	ai_will_do = {
+		base = 0
+	}
+}
+
+# College of Pontiffs (#76): the Pontifex Maximus takes a flamen minor. Members of the College without a vote and not
+# candidates (Webb 2023, p.137; Wissowa 1912, pp.503-504). Plebeian (Festus p.137 L), so land is allowed and they need
+# not stay in Rome. That the Pontifex Maximus chose them is attested only for the Dialis; for the minores it is
+# Wissowa's inference. A separate interaction from pr_college_appoint_interaction to keep each option list short.
+# Decided 2026-10-19 (the court positions of the eight flamines minores became these seats).
+pr_college_appoint_minor_interaction = {
+	category = interaction_category_religion
+	icon = cardinal
+	interface_priority = 45
+	common_interaction = yes
+	use_diplomatic_range = no
+	popup_on_receive = yes
+	desc = pr_college_appoint_minor_interaction_desc
+
+	is_available = {
+		has_pam_dlc_trigger = yes
+		faith = faith:roman_polytheism
+		faith = { religious_head ?= prev }
+	}
+
+	is_shown = {
+		scope:recipient = {
+			this != scope:actor
+			pr_college_can_receive_seat_trigger = yes
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		custom_tooltip = {
+			text = pr_college_appoint_minor_interaction_no_seat_tt
+			pr_college_has_empty_minor_seat_trigger = yes
+		}
+		scope:recipient = {
+			is_available_quick = {
+				adult = yes
+				incapable = no
+				imprisoned = no
+				hostage = no
+			}
+			NOT = { is_at_war_with = scope:actor }
+		}
+	}
+
+	send_options_exclusive = yes
+	send_option = {
+		flag = pr_college_seat_carmentalis
+		localization = pr_college_appoint_option_carmentalis
+		is_shown = { title:d_pr_flamen_carmentalis = { NOT = { exists = holder } } }
+	}
+	send_option = {
+		flag = pr_college_seat_cerialis
+		localization = pr_college_appoint_option_cerialis
+		is_shown = { title:d_pr_flamen_cerialis = { NOT = { exists = holder } } }
+	}
+	send_option = {
+		flag = pr_college_seat_floralis
+		localization = pr_college_appoint_option_floralis
+		is_shown = { title:d_pr_flamen_floralis = { NOT = { exists = holder } } }
+	}
+	send_option = {
+		flag = pr_college_seat_furrinalis
+		localization = pr_college_appoint_option_furrinalis
+		is_shown = { title:d_pr_flamen_furrinalis = { NOT = { exists = holder } } }
+	}
+	send_option = {
+		flag = pr_college_seat_pomonalis
+		localization = pr_college_appoint_option_pomonalis
+		is_shown = { title:d_pr_flamen_pomonalis = { NOT = { exists = holder } } }
+	}
+	send_option = {
+		flag = pr_college_seat_portunalis
+		localization = pr_college_appoint_option_portunalis
+		is_shown = { title:d_pr_flamen_portunalis = { NOT = { exists = holder } } }
+	}
+	send_option = {
+		flag = pr_college_seat_volcanalis
+		localization = pr_college_appoint_option_volcanalis
+		is_shown = { title:d_pr_flamen_volcanalis = { NOT = { exists = holder } } }
+	}
+	send_option = {
+		flag = pr_college_seat_volturnalis
+		localization = pr_college_appoint_option_volturnalis
+		is_shown = { title:d_pr_flamen_volturnalis = { NOT = { exists = holder } } }
+	}
+	send_option = {
+		flag = pr_college_seat_falacer
+		localization = pr_college_appoint_option_falacer
+		is_shown = { title:d_pr_flamen_falacer = { NOT = { exists = holder } } }
+	}
+	send_option = {
+		flag = pr_college_seat_palatualis
+		localization = pr_college_appoint_option_palatualis
+		is_shown = { title:d_pr_flamen_palatualis = { NOT = { exists = holder } } }
+	}
+
+	cost = {
+		treasury_or_gold = {
+			value = scope:actor.minor_gold_value
+		}
+	}
+
+	auto_accept = {
+		trigger_if = {
+			limit = { scope:recipient = { is_ai = yes } }
+			always = yes
+		}
+	}
+
+	on_accept = {
+		scope:recipient = {
+			custom_tooltip = {
+				text = pr_college_appoint_interaction_accept_tt
+				hidden_effect = {
+					if = {
+						limit = { scope:pr_college_seat_carmentalis ?= yes }
+						title:d_pr_flamen_carmentalis = { pr_college_grant_seat_effect = { RECIPIENT = scope:recipient } }
+					}
+					else_if = {
+						limit = { scope:pr_college_seat_cerialis ?= yes }
+						title:d_pr_flamen_cerialis = { pr_college_grant_seat_effect = { RECIPIENT = scope:recipient } }
+					}
+					else_if = {
+						limit = { scope:pr_college_seat_floralis ?= yes }
+						title:d_pr_flamen_floralis = { pr_college_grant_seat_effect = { RECIPIENT = scope:recipient } }
+					}
+					else_if = {
+						limit = { scope:pr_college_seat_furrinalis ?= yes }
+						title:d_pr_flamen_furrinalis = { pr_college_grant_seat_effect = { RECIPIENT = scope:recipient } }
+					}
+					else_if = {
+						limit = { scope:pr_college_seat_pomonalis ?= yes }
+						title:d_pr_flamen_pomonalis = { pr_college_grant_seat_effect = { RECIPIENT = scope:recipient } }
+					}
+					else_if = {
+						limit = { scope:pr_college_seat_portunalis ?= yes }
+						title:d_pr_flamen_portunalis = { pr_college_grant_seat_effect = { RECIPIENT = scope:recipient } }
+					}
+					else_if = {
+						limit = { scope:pr_college_seat_volcanalis ?= yes }
+						title:d_pr_flamen_volcanalis = { pr_college_grant_seat_effect = { RECIPIENT = scope:recipient } }
+					}
+					else_if = {
+						limit = { scope:pr_college_seat_volturnalis ?= yes }
+						title:d_pr_flamen_volturnalis = { pr_college_grant_seat_effect = { RECIPIENT = scope:recipient } }
+					}
+					else_if = {
+						limit = { scope:pr_college_seat_falacer ?= yes }
+						title:d_pr_flamen_falacer = { pr_college_grant_seat_effect = { RECIPIENT = scope:recipient } }
+					}
+					else_if = {
+						limit = { scope:pr_college_seat_palatualis ?= yes }
+						title:d_pr_flamen_palatualis = { pr_college_grant_seat_effect = { RECIPIENT = scope:recipient } }
+					}
+				}
+			}
+		}
+		scope:actor = {
+			add_piety = minor_piety_gain
+		}
+	}
+
+	on_decline = {
+		scope:actor = {
+			send_interface_toast = {
+				type = event_toast_effect_bad
+				title = pr_college_appoint_interaction_decline_toast
+				right_icon = scope:recipient
+			}
+		}
+	}
+
+	ai_accept = {
+		base = 100
+	}
+
+	# AI heads fill the College through the yearly pulse instead
+	ai_will_do = {
+		base = 0
+	}
+}
+
+# College of Pontiffs (#76): the Pontifex Maximus nominates a candidate for a pontifical seat. The College co-opts its
+# own members (Webb 2023, p.137; each member nominated one candidate, Cic. Phil. 2.4): a nominee goes first when the
+# College co-opts for an empty pontifical seat (pr_college_coopt_seat_effect). Free; a nomination lasts 10 years.
+pr_college_nominate_interaction = {
+	category = interaction_category_religion
+	icon = cardinal
+	interface_priority = 44
+	common_interaction = yes
+	use_diplomatic_range = no
+	auto_accept = yes
+	desc = pr_college_nominate_interaction_desc
+
+	is_available = {
+		has_pam_dlc_trigger = yes
+		faith = faith:roman_polytheism
+		faith = { religious_head ?= prev }
+	}
+
+	is_shown = {
+		scope:recipient = {
+			this != scope:actor
+			pr_college_can_receive_seat_trigger = yes
+			NOT = { has_variable = pr_college_nominated }
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:recipient = {
+			is_available_quick = {
+				adult = yes
+				incapable = no
+				imprisoned = no
+				hostage = no
+			}
+		}
+	}
+
+	on_accept = {
+		scope:recipient = {
+			custom_tooltip = pr_college_nominate_interaction_accept_tt
+			hidden_effect = {
+				set_variable = {
+					name = pr_college_nominated
+					value = yes
+					years = 10
+				}
+			}
+		}
+		faith:roman_polytheism = {
+			hidden_effect = {
+				add_to_variable_list = {
+					name = pr_college_nominees
+					target = scope:recipient
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { debug_only = yes }
+				debug_log = "PR College (#76): nominated (see scopes: recipient)"
+				debug_log_scopes = yes
+			}
+		}
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}

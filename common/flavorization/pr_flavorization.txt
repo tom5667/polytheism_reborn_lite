@@ -72,3 +72,56 @@ pr_high_princess_female_irish = {
 		top_liege = no
 	}
 }
+
+# =============================================
+# College of Pontiffs (#76): the name of a seat holder ("Pontifex Marcus" instead of vanilla's "Cardinal Marcus").
+# Same priority as vanilla cardinal_male/cardinal_female (20_pam_flavorization.txt): those need cardinal_flag, which
+# Roman seat holders lose a day after taking their seat (pr_college_seat_holder_cleanup_effect). Only for a priest
+# without land (theocracy): a landed pontifex keeps his own title (King, Duke). Decided 2026-10-20.
+# =============================================
+
+pr_college_pontifex = {
+	type = character
+	special = holder
+	priority = 299
+	governments = { theocracy_government }
+	titles = {
+		d_pr_pontifical_seat_1 d_pr_pontifical_seat_2 d_pr_pontifical_seat_3 d_pr_pontifical_seat_4 d_pr_pontifical_seat_5
+		d_pr_pontifical_seat_6 d_pr_pontifical_seat_7 d_pr_pontifical_seat_8 d_pr_pontifical_seat_9 # Lex Ogulnia
+		d_pr_pontifical_seat_10 d_pr_pontifical_seat_11 d_pr_pontifical_seat_12 d_pr_pontifical_seat_13 d_pr_pontifical_seat_14 d_pr_pontifical_seat_15 # Lex Cornelia
+	}
+
+	flavourization_rules = {
+		target_character = yes
+		top_liege = no
+		spouse_takes_title = no
+	}
+}
+
+pr_college_rex_sacrorum = {
+	type = character
+	special = holder
+	priority = 299
+	governments = { theocracy_government }
+	titles = { d_pr_rex_sacrorum }
+
+	flavourization_rules = {
+		target_character = yes
+		top_liege = no
+		spouse_takes_title = no
+	}
+}
+
+pr_college_flamen = {
+	type = character
+	special = holder
+	priority = 299
+	governments = { theocracy_government }
+	titles = { d_pr_flamen_dialis d_pr_flamen_martialis d_pr_flamen_quirinalis d_pr_flamen_carmentalis d_pr_flamen_cerialis d_pr_flamen_floralis d_pr_flamen_furrinalis d_pr_flamen_pomonalis d_pr_flamen_portunalis d_pr_flamen_volcanalis d_pr_flamen_volturnalis d_pr_flamen_falacer d_pr_flamen_palatualis d_pr_flamen_augustalis }
+
+	flavourization_rules = {
+		target_character = yes
+		top_liege = no
+		spouse_takes_title = no
+	}
+}

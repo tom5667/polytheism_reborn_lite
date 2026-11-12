@@ -23,6 +23,263 @@ d_pontifex_polytheistic = {
 
 }
 
+# College of Pontiffs (#76): landless elector seats, modelled on vanilla's cardinal titles
+# (07_pam_ecclesiastical_titles.txt). Registered with add_clerical_elector when granted.
+# Pontifical seats: the pontifices, the only candidates for Pontifex Maximus.
+# Test setup: 5 seats (Pontifex Maximus + 4 under Numa); the laws for 9 and 15 come later.
+d_pr_pontifical_seat_1 = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_pontifical_seat_2 = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_pontifical_seat_3 = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_pontifical_seat_4 = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_pontifical_seat_5 = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+# Seats 6-9 exist only once the Lex Ogulnia has passed (global_var:pr_college_lex_ogulnia), as the law of 300 BC
+# brought the pontifices from four to eight, nine with the Pontifex Maximus (Livy 10.9.2). Decided 2026-10-20 (#76).
+d_pr_pontifical_seat_6 = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_pontifical_seat_7 = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_pontifical_seat_8 = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_pontifical_seat_9 = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+# Seats 10-15 exist only once the Lex Cornelia has passed (global_var:pr_college_lex_cornelia): Sulla brought the
+# College to fifteen, the Pontifex Maximus included (Livy, Periocha 89; resource/college_laws_research.md, Deel D).
+# Decided 2026-10-31 (#76).
+d_pr_pontifical_seat_10 = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_pontifical_seat_11 = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_pontifical_seat_12 = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_pontifical_seat_13 = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_pontifical_seat_14 = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_pontifical_seat_15 = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+# Electors who are not candidates: the rex sacrorum and the three flamines maiores
+# (they sat with the pontifices, Cicero, De haruspicum responso 12).
+d_pr_rex_sacrorum = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_flamen_dialis = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_flamen_martialis = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_flamen_quirinalis = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+# Members without a vote: the flamines minores, plebeian (Festus p.137 L) and part of the pontifical college under the
+# Pontifex Maximus (Webb 2023, p.137; Wissowa 1912, pp.503-504), but never named among those who deliberated (Cic. Har.
+# resp. 12). Excluded from the electors in common/succession_election/00_pam_clerical_elective.txt. Decided 2026-10-19.
+d_pr_flamen_carmentalis = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_flamen_cerialis = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_flamen_floralis = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_flamen_furrinalis = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_flamen_pomonalis = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_flamen_portunalis = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_flamen_volcanalis = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_flamen_volturnalis = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_flamen_falacer = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+d_pr_flamen_palatualis = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
+# Member without a vote, only once the imperial cult is restored (global_var:restored_imperial_cult): the flamen of
+# Augustus is imperial (cult from AD 14, Dio 56.46.1), modelled on the flamines maiores but not one of them (Gaius 1.112);
+# his tie to the pontifical college is Wissowa's inference (1912, p.522). Decided 2026-10-19.
+d_pr_flamen_augustalis = {
+	capital = c_roma
+	landless = yes
+	allow_domicile = no
+	destroy_on_succession = yes
+	no_automatic_claims = yes
+}
+
 # Celtic duchy title
 d_druidic = {
 	color = { 255 249 198 }
