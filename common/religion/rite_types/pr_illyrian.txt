@@ -14,6 +14,8 @@ illyrian_rites = {
         tenet_ancestor_worship
     }
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
         special_doctrine_illyrian_patron_god # old format, see issue #83
     }

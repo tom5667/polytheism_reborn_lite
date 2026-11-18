@@ -667,6 +667,7 @@ pr_celtic.0403 = {
 
 pr_celtic.0408 = {
 	type = activity_event
+	theme = faith # CK3 1.21: every event needs a theme
 	title = pr_celtic.0408.t
 	desc = pr_celtic.0408.desc
 	override_background = { reference = wilderness_mountains }
@@ -827,22 +828,29 @@ pr_celtic.0413 = {
 	desc = pr_celtic.0413.desc
 	theme = learning
 	immediate = {
-		root = {save_scope_as = ruler }
-		every_ruler = {
-			limit = {
-				AND = {
-					culture = { has_cultural_pillar = heritage_north_germanic } 
-					location = { geographical_region = world_europe_west_britannia }
-					is_landed = yes
-					is_independent_ruler = yes
-					primary_title = { is_neighbor_to_realm = root } # landed_title trigger
-				}					
+		root = { save_scope_as = ruler }
+		# The same neighbours as the decision checks, preferring one in Britannia
+		random_neighboring_top_liege_realm_owner = {
+			limit = { culture = { OR = { has_cultural_pillar = heritage_west_germanic has_cultural_pillar = heritage_central_germanic has_cultural_pillar = heritage_north_germanic } } }
+			weight = {
+				base = 1
+				modifier = {
+					add = 9
+					capital_province ?= { geographical_region = world_europe_west_britannia }
+				}
 			}
 			save_scope_as = germanic_invader
 		}
-
-
-
+		scope:germanic_invader ?= {
+			random_realm_county = {
+				limit = { is_neighbor_to_realm = root }
+				save_scope_as = germanic_neighbour
+			}
+			if = {
+				limit = { NOT = { exists = scope:germanic_neighbour } }
+				random_realm_county = { save_scope_as = germanic_neighbour }
+			}
+		}
 	}
 	left_portrait = {
 		character = scope:ruler
@@ -855,19 +863,14 @@ pr_celtic.0413 = {
 	option = {
 		name = pr_celtic.0413.a 
 		trigger = {
-			NOT = {
-				OR = {
-					scope:germanic_invader = {
-						has_title = title:k_norway
-					}
-					scope:germanic_invader = {
-						has_title = title:k_sweden
-					}
-					scope:germanic_invader = {
-						has_title = title:k_finland
-					}
+			# a claim on the whole realm only against a king or less, and not on the Scandinavian kingdoms
+			scope:germanic_invader = {
+				highest_held_title_tier <= tier_kingdom
+				NOR = {
+					has_title = title:k_norway
+					has_title = title:k_sweden
+					has_title = title:k_finland
 				}
-
 			}
 		}
 		add_pressed_claim = scope:germanic_invader.primary_title
@@ -898,36 +901,17 @@ pr_celtic.0413 = {
 	option = {
 		name = pr_celtic.0413.b
 		trigger = {
-			OR = {
-				scope:germanic_invader = {
+			# an empire, or a Scandinavian king: a claim on a county along the border
+			scope:germanic_invader = {
+				OR = {
+					highest_held_title_tier > tier_kingdom
 					has_title = title:k_norway
-				}
-				scope:germanic_invader = {
 					has_title = title:k_sweden
-				}
-				scope:germanic_invader = {
 					has_title = title:k_finland
 				}
 			}
 		}
-		# remove_list_global_variable = {
-		# 	name = culture_is_germanic
-		# 	target = flag:flag_culture_is_germanic
-		# }
-	    every_county = {
-			limit = {
-				AND = {
-					#scope:owner_county = scope:germanic_invader
-					is_neighbor_to_realm = root
-					culture = { has_cultural_pillar = heritage_north_germanic } 
-					
-				}
-				
-			}
-			save_scope_as = germanic_neighbour
-		}
 		add_pressed_claim = scope:germanic_neighbour
-		#add_pressed_claim = scope:germanic_invader.primary_title
 		spawn_army = {
 			name = event_troop_default_name
 			levies = 300
@@ -1569,7 +1553,7 @@ pr_celtic.0417 = {
 	option = {
 		name = pr_celtic.0417.a
 		title:c_anglesey.title_province = {
-			add_special_building = druidic_circle
+			pr_add_special_district_effect = { DISTRICT = druidic_circle_district }
 		}
 		title:c_anglesey ={
 			add_county_modifier = open_druidic_place
@@ -1682,7 +1666,7 @@ pr_celtic.0421 = {
 	type = character_event
 	title = pr_celtic.0421.t # A Thorny Dispute
 	desc = pr_celtic.0421.desc
-	theme = law_focus
+	theme = stewardship_duty_focus
 	override_background = { reference = throne_room }
 
 	immediate = {
@@ -1873,7 +1857,7 @@ pr_celtic.0425 = {
 	type = character_event
 	title = pr_celtic.0425.t
 	desc = pr_celtic.0425.desc
-	theme = learning_scholarship
+	theme = learning_scholarship_focus
 	override_background = { reference = throne_room }
 	immediate = {
 		root = { save_scope_as = ruler }

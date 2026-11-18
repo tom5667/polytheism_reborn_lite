@@ -1,0 +1,12 @@
+﻿# Polytheism Reborn (CK3 1.21): province scope. Places one of our special districts
+# (common/districts/pr_special_districts.txt), replacing add_special_building, which 1.21 removed. A slot is added
+# only when the province has none, as vanilla's Hall of Heroes (00_major_decisions_scripted_effects_2.txt:6-12).
+pr_add_special_district_effect = {
+	hidden_effect = {
+		if = {
+			limit = { has_special_district_slot = no }
+			add_special_district_slot = $DISTRICT$
+		}
+	}
+	add_special_district = $DISTRICT$
+}

@@ -13,6 +13,8 @@ cultus_deorum_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
     }
     cultures = { roman greek pr_romano_egyptian } # the other Romano-X cultures have their own rite (#65)
@@ -31,6 +33,8 @@ gallo_roman_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
     }
 
@@ -207,6 +211,8 @@ romano_british_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
     }
 
@@ -383,6 +389,8 @@ romano_germanic_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
     }
 
@@ -559,6 +567,8 @@ romano_hispanic_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
     }
 
@@ -735,6 +745,8 @@ afro_roman_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
     }
 
@@ -911,6 +923,8 @@ romano_syrian_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
     }
 
@@ -1087,6 +1101,8 @@ romano_illyrian_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
     }
 
@@ -1265,6 +1281,8 @@ etruscan_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
     }
 }

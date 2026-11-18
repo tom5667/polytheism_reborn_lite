@@ -15,6 +15,8 @@ hittite_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
         special_doctrine_hittite_patron_god
     }

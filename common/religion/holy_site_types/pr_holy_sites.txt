@@ -32,7 +32,7 @@ paestum= {
 	county_holder_character_modifier = {
 		name = holy_site_paestum_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_growth_factor = 0.05
+		monthly_control_change_when_below_baseline_mult = 0.05
 	}
 }
 
@@ -146,7 +146,7 @@ dublin = {
 	county_holder_character_modifier = {
 		name = holy_site_dublin_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_growth_factor = 0.05
+		monthly_control_change_when_below_baseline_mult = 0.05
 	}
 }
 lough_gur = {
@@ -154,7 +154,7 @@ lough_gur = {
 
 	county_holder_character_modifier = {
 		name = holy_site_lough_gur_effect_name
-		development_growth_factor = 0.1
+		prosperity_growth_factor = 0.1
 		stewardship = 1
 	}
  }
@@ -234,7 +234,7 @@ bath = {
 	county_holder_character_modifier = {
 		name = holy_site_bath_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_growth_factor = 0.05
+		monthly_control_change_when_below_baseline_mult = 0.05
 	}
 }
 
@@ -278,7 +278,7 @@ puy_de_dome = {
 		name = holy_site_puy_de_dome_effect_name
 		hills_advantage = 5
 		#stewardship = 1
-		monthly_county_control_growth_factor = 0.1
+		monthly_control_change_when_below_baseline_mult = 0.1
 	}
 }
 
@@ -333,7 +333,7 @@ pr_cartagena = {
 
 	county_holder_character_modifier = {
 		name = holy_site_pr_cartagena_effect_name
-		development_growth_factor = 0.1
+		prosperity_growth_factor = 0.1
 		stewardship = 1
 	}
  }
@@ -371,7 +371,7 @@ nicosia = {
 	county = c_nicosia
 	county_holder_character_modifier = {
 		name = holy_site_nicosia_effect_name
-		development_growth_factor = 0.1
+		prosperity_growth_factor = 0.1
 		stewardship = 1
 	}
 }
@@ -427,8 +427,8 @@ pr_tarquinii = {
 }
 
 pr_pyrgi = {
-	county = c_roma
-	barony = b_palo # border case with b_sutri along the coast (control 8); vanilla rome shares the county
+	county = c_roma_urbs # CK3 1.21: Palo belongs to the city of Rome county
+	barony = b_palo # border case with b_sutri along the coast (control 8)
 
 	county_holder_character_modifier = {
 		monthly_piety_gain_mult = 0.2
@@ -736,7 +736,7 @@ dyrrachion = {
 	county_holder_character_modifier = {
 		name = holy_site_dyrrachion_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_growth_factor = 0.05
+		monthly_control_change_when_below_baseline_mult = 0.05
 	}
 }
 
@@ -769,7 +769,7 @@ london = {
 	county_holder_character_modifier = {
 		name = holy_site_london_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_growth_factor = 0.05
+		monthly_control_change_when_below_baseline_mult = 0.05
 	}
 }
 
@@ -809,7 +809,7 @@ devon = {
 
 	county_holder_character_modifier = {
 		name = holy_site_devon_effect_name
-		development_growth_factor = 0.1
+		prosperity_growth_factor = 0.1
 		stewardship = 1
 	}
 }
@@ -834,7 +834,7 @@ chandax = {
 	county_holder_character_modifier = {
 		name = holy_site_chandax_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_growth_factor = 0.05
+		monthly_control_change_when_below_baseline_mult = 0.05
 	}
  }
 
@@ -857,7 +857,7 @@ hattusha = { # the capital: great temple of the Storm-god and the Sun-goddess, Y
 	county_holder_character_modifier = {
 		name = holy_site_hattusha_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_growth_factor = 0.05
+		monthly_control_change_when_below_baseline_mult = 0.05
 	}
 	faith_character_modifier = {
 		monthly_prestige_gain_mult = 0.05
@@ -937,7 +937,7 @@ kalos_limen = {
 
 	county_holder_character_modifier = {
 		name = holy_site_kalos_limen_effect_name
-		development_growth_factor = 0.1
+		prosperity_growth_factor = 0.1
 		stewardship = 1
 	}
 }
@@ -948,7 +948,7 @@ dionysopolis = {
 	county_holder_character_modifier = {
 		name = holy_site_dionysopolis_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_growth_factor = 0.05
+		monthly_control_change_when_below_baseline_mult = 0.05
 	}
 }
 kremnoi = {
@@ -1009,7 +1009,7 @@ elkukalni = {
 	county_holder_character_modifier = {
 		name = holy_site_elkukalni_effect_name
 		hills_advantage = 5
-		monthly_county_control_growth_factor = 0.1
+		monthly_control_change_when_below_baseline_mult = 0.1
 	}
 }
 ########################################

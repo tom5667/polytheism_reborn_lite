@@ -2,6 +2,7 @@
 
 pr_zoroastrian.0001 = {
 	type = character_event
+	theme = learning_theology_focus # CK3 1.21: every event needs a theme
 	title = pr_zoroastrian.0001.t
 	desc = pr_zoroastrian.0001.desc
 	override_background = throne_room_east
@@ -22,6 +23,7 @@ pr_zoroastrian.0001 = {
 
 pr_zoroastrian.0002 = {
 	type = character_event
+	theme = learning_theology_focus # CK3 1.21: every event needs a theme
 	title = pr_zoroastrian.0002.t
 	desc = pr_zoroastrian.0002.desc
 	override_background = throne_room_east

@@ -10,8 +10,8 @@
 # county_modifier_control_negative
 # county_modifier_corruption_positive
 # county_modifier_corruption_negative
-# county_modifier_development_positive
-# county_modifier_development_negative
+# county_modifier_prosperity_positive
+# county_modifier_prosperity_negative
 # county_modifier_opinion_positive
 # county_modifier_opinion_negative
 # diplomacy_positive
@@ -80,8 +80,8 @@
 
 VIET_celtic_sacred_springs = {
 	icon = outdoors_positive
-	monthly_county_control_growth_factor = 0.1
-	development_growth_factor = 0.1
+	monthly_control_change_when_below_baseline_mult = 0.1
+	prosperity_growth_factor = 0.1
 }
 VIET_celtic_war_gods_blessing = {
 	icon = martial_positive
@@ -111,7 +111,7 @@ VIET_celtic_sequana_blessing_major = {
 VIET_celtic_worships_common_soldier_gods = {
 	icon = martial_positive
 	martial = 1
-	county_opinion_add = 10
+	popular_opinion_add = 10
 	monthly_piety = 0.5
 	monthly_prestige = -0.5
 }

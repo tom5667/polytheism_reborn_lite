@@ -106,7 +106,7 @@ c_korinthos = {
 	}
 }
 
-c_roma = { 
+c_roma_urbs = { # CK3 1.21: the city of Rome (c_roma is the Vatican)
 	item = {
 		trigger = {
 			coa_switch_to_polytheism_trigger = yes

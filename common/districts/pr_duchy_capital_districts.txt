@@ -1,0 +1,70 @@
+﻿# Polytheism Reborn: duchy capital districts (CK3 1.21). Until 1.20 these were buildings with type = duchy_capital
+# and took the duchy's one capital slot; in 1.21 that slot holds a district, so each building is the primary
+# building of its own district, as vanilla's aurelian_walls_01_district, gated like endowment_district
+# (common/districts/duchy_capital_districts.txt). The building's own construction triggers still apply.
+
+oracle_district = {
+	primary_building = oracle
+
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/pr_temple.dds"
+	}
+
+	type = duchy_capital
+
+	can_be_replaced = yes
+
+	is_enabled = {
+		can_have_duchy_capital_building_trigger = yes
+	}
+
+	can_construct_potential = {
+		scope:holder = { pr_is_cultus_deorum_trigger = yes } # as the building's can_construct (Hellenists may keep and use it)
+	}
+
+	show_disabled = yes
+}
+
+temple_jupiter_capitoline_district = {
+	primary_building = temple_jupiter_capitoline
+
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/pr_temple.dds"
+	}
+
+	type = duchy_capital
+
+	can_be_replaced = yes
+
+	is_enabled = {
+		can_have_duchy_capital_building_trigger = yes
+	}
+
+	can_construct_potential = {
+		scope:holder = { pr_is_cultus_deorum_trigger = yes } # as the building's can_construct (Hellenists may keep and use it)
+	}
+
+	show_disabled = yes
+}
+
+sacred_grove_district = {
+	primary_building = sacred_grove
+
+	background = {
+		reference = "gfx/interface/illustrations/decisions/celtic_druid.dds"
+	}
+
+	type = duchy_capital
+
+	can_be_replaced = yes
+
+	is_enabled = {
+		can_have_duchy_capital_building_trigger = yes
+	}
+
+	can_construct_potential = {
+		scope:holder = { religion = religion:celtic_religion }
+	}
+
+	show_disabled = yes
+}

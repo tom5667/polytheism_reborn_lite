@@ -17,6 +17,8 @@ kemetic_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
         doctrine_polytheist
         special_doctrine_kemetic_patron_god
@@ -39,6 +41,8 @@ heliopolitan_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
         doctrine_polytheist
         special_doctrine_kemetic_patron_god
@@ -201,6 +205,8 @@ late_period_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
         doctrine_polytheist
         special_doctrine_kemetic_patron_god
@@ -362,6 +368,8 @@ atenism_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
         doctrine_monotheist
         special_doctrine_no_patron_god

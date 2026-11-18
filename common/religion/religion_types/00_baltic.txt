@@ -35,6 +35,7 @@
 	doctrine = doctrine_clerical_gender_either
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_temporal_appointment
+	doctrine = doctrine_usury_accepted # CK3 1.21 (vanilla)
 
 	#Funeral tradition
 	doctrine = doctrine_funeral_cremation

@@ -127,7 +127,7 @@ pr_college_male_head_effect = {
 	if = {
 		limit = { NOT = { exists = scope:pr_college_male_successor } }
 		create_character = {
-			location = title:c_roma.title_province
+			location = title:c_roma_urbs.title_province
 			age = { 40 60 }
 			gender_female_chance = 0
 			trait = education_learning_3
@@ -420,7 +420,7 @@ pr_college_coopt_seat_effect = {
 	if = {
 		limit = { NOT = { exists = scope:pr_college_new_member } }
 		create_character = {
-			location = title:c_roma.title_province
+			location = title:c_roma_urbs.title_province
 			age = { 30 55 }
 			gender_female_chance = 0
 			trait = education_learning_3

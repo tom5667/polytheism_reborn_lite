@@ -1339,15 +1339,8 @@ pr_celtic_push_out_the_sassenach_saga_decision = {
                 culture = { has_cultural_pillar = heritage_goidelic }
                 culture = { has_cultural_pillar = heritage_brythonic }
             }
-            OR = {
-                any_neighboring_top_liege_realm_owner = {
-                    culture = { has_cultural_pillar = heritage_central_germanic }
-                    count >= 1
-                }
-                any_neighboring_top_liege_realm_owner = {
-                    culture = { has_cultural_pillar = heritage_north_germanic }
-                    count >= 1
-                }
+            any_neighboring_top_liege_realm_owner = { # the Sassenach: English/Saxon (West Germanic), German or Norse
+                culture = { OR = { has_cultural_pillar = heritage_west_germanic has_cultural_pillar = heritage_central_germanic has_cultural_pillar = heritage_north_germanic } }
             }
         }
     }
@@ -1356,6 +1349,9 @@ pr_celtic_push_out_the_sassenach_saga_decision = {
             culture = { has_cultural_pillar = heritage_goidelic }
             culture = { has_cultural_pillar = heritage_brythonic }
         }
+        any_neighboring_top_liege_realm_owner = {
+            culture = { OR = { has_cultural_pillar = heritage_west_germanic has_cultural_pillar = heritage_central_germanic has_cultural_pillar = heritage_north_germanic } }
+        }
     }
     effect = {
         trigger_event = pr_celtic.0413
@@ -1363,11 +1359,11 @@ pr_celtic_push_out_the_sassenach_saga_decision = {
     ai_check_interval = 90
 
     ai_potential = {
-        always = yes
+        is_at_war = no
     }
 
-    ai_will_do = {
-        base = 100
+    ai_will_do = { # rare: most Celtic rulers border the English at the start, and a wave of wars in 867 is not wanted
+        base = 2
     }
 }
 

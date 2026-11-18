@@ -44,6 +44,7 @@ roman_religion ={
     doctrine = doctrine_clerical_gender_either
     doctrine = doctrine_clerical_marriage_allowed
     doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+    doctrine = doctrine_usury_discouraged # CK3 1.21: interest legal and capped but despised (Twelve Tables, Lex Genucia 342 BC, Cato in Cicero Off. 2.89), research 2026-11-17
     doctrine = doctrine_anointment_permitted
     doctrine = doctrine_monasticism_absent
     doctrine = doctrine_sacraments_absent

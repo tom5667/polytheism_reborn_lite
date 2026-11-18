@@ -22,7 +22,7 @@ pr_canaanite.0001 = {
 	option = {
 		name = pr_canaanite.0001.a
 		title:c_tunis.title_province = {
-			add_special_building = temple_to_tanit
+			pr_add_special_district_effect = { DISTRICT = temple_to_tanit_district }
 		}
 
 	}

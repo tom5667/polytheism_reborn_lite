@@ -261,7 +261,7 @@ pr_feast_ai_will_do_value = {
         }
 }
 
-pr_feast_province_score_value = {
+pr_feast_province_score_value = { # = vanilla 1.21 feast.txt province_score (CK3 1.21: farm buildings gone, new palaces and halls)
 		value = 0
 		# BUILDINGS
 		# Triple good / +++
@@ -278,6 +278,14 @@ pr_feast_province_score_value = {
 			add = 100
 		}
 		if = {
+			limit = { has_building_or_higher = ghana_palace_01 }
+			add = 100
+		}
+		if = {
+			limit = { has_building_or_higher = kyz_kala_01 }
+			add = 100
+		}
+		if = {
 			limit = { has_building_or_higher = leisure_palace_01 }
 			add = 100
 		}
@@ -285,84 +293,24 @@ pr_feast_province_score_value = {
 			limit = { has_building_or_higher = alhambra_01 }
 			add = 100
 		}
+		if = {
+			limit = { has_building_or_higher = pleasure_dome }
+			add = 100
+		}
 		# Double good / ++
 		if = {
-			limit = { has_building_or_higher = farm_estates_01 }
+			limit = { has_building_or_higher = royal_great_hall_1 }
 			add = 50
 		}
-		# Good / +
-		if = {
-			limit = { has_building_or_higher = longhouses_01 }
-			add = 25
-		}
-		if = {
-			limit = { has_building_or_higher = orchards_01 }
-			add = 25
-		}
-		if = {
-			limit = { has_building_or_higher = cereal_fields_01 }
-			add = 25
-		}
-		if = {
-			limit = { has_building_or_higher = plantations_01 }
-			add = 25
-		}
-}
 
-pr_feast_ai_will_select_province_value = {
+		# Good / +
+
+	}
+
+pr_feast_ai_will_select_province_value = { # = vanilla 1.21 feast.txt ai_will_select_province (CK3 1.21: farm buildings gone, new palaces and halls)
 		# Base
-		value = 0
+		value = 1
 		# Buildings
-		## Tribal
-		### Gathering Halls
-		if = {
-			limit = { has_building_or_higher = longhouses_01 }
-			add = {
-				value = @weight_up_ai_select_province_small
-				desc = activity_feast_province_desc_longhouses
-			}
-		}
-		## Terrain
-		### Manor Houses
-		if = {
-			limit = { has_building_or_higher = farm_estates_01 }
-			add = {
-				value = @weight_up_ai_select_province_medium
-				desc = activity_feast_province_desc_farm_estates
-			}
-		}
-		### Orchards
-		if = {
-			limit = { has_building_or_higher = orchards_01 }
-			add = {
-				value = @weight_up_ai_select_province_small
-				desc = activity_feast_province_desc_orchards
-			}
-		}
-		### Farms & Fields
-		if = {
-			limit = { has_building_or_higher = cereal_fields_01 }
-			add = {
-				value = @weight_up_ai_select_province_small
-				desc = activity_feast_province_desc_cereal_fields
-			}
-		}
-		### Hill Farms
-		if = {
-			limit = { has_building_or_higher = hill_farms_01 }
-			add = {
-				value = @weight_up_ai_select_province_small
-				desc = debug_gui.location_weight.building.hill_farms
-			}
-		}
-		### Desert Agriculture
-		if = {
-			limit = { has_building_or_higher = plantations_01 }
-			add = {
-				value = @weight_up_ai_select_province_small
-				desc = activity_feast_province_desc_plantations
-			}
-		}
 		## Duchy
 		### Leisure Palaces
 		if = {
@@ -372,6 +320,15 @@ pr_feast_ai_will_select_province_value = {
 				desc = activity_feast_province_desc_leisure_palace
 			}
 		}
+		## Household
+		### Great Hall & Kitchens
+		if = {
+			limit = { has_building_or_higher = royal_great_hall_1 }
+			add = {
+				value = @weight_up_ai_select_province_medium
+				desc = activity_feast_province_desc_royal_great_hall
+			}
+		}
 		## Special
 		### Doge's Palace
 		if = {
@@ -379,6 +336,14 @@ pr_feast_ai_will_select_province_value = {
 			add = {
 				value = @weight_up_ai_select_province_massive
 				desc = activity_feast_province_desc_doges_palace
+			}
+		}
+		### Ghana Palace
+		if = {
+			limit = { has_building_or_higher = ghana_palace_01 }
+			add = {
+				value = @weight_up_ai_select_province_massive
+				desc = activity_feast_province_desc_ghana_palace_01
 			}
 		}
 		### Palace of Aachen
@@ -422,5 +387,5 @@ pr_feast_ai_will_select_province_value = {
 				desc = activity_feast_province_desc_hall_of_heroes
 			}
 		}
-}
+	}
 

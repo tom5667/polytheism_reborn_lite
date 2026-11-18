@@ -393,7 +393,7 @@ pr_daco_thracian_decision.0012 = {
 	type = character_event
 	title = pr_daco_thracian_decision.0012.t
 	desc = pr_daco_thracian_decision.0012.desc
-	theme = temple
+	theme = faith
 
 	left_portrait = {
 		character = root
@@ -405,7 +405,7 @@ pr_daco_thracian_decision.0012 = {
 		add_prestige = 200
 		add_piety = 100
 		title:c_hunyad.title_province = {
-			add_special_building = kogaionon_altar
+			pr_add_special_district_effect = { DISTRICT = kogaionon_altar_district }
 		}
 	}
 }
