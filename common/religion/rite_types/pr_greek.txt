@@ -19,6 +19,8 @@ hellenic_pagan = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
         special_doctrine_hellenic_patron_god
         special_doctrine_greek_syncretism
@@ -45,6 +47,8 @@ mycenaean_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
         special_doctrine_mycenaean_patron_god
         doctrine_theocracy_lay_clergy
@@ -230,6 +234,8 @@ graeco_egyptian_rites = {
     }
 
     doctrines = {
+        special_doctrine_meat_forbidden_temples # Temperate Clergy: many priests abstained from all animals (Chaeremon in Porphyry De abst. 4.7), decided 2026-11-17
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
         special_doctrine_graeco_egyptian_patron_god
         special_doctrine_ecumenical_graeco_egyptian

@@ -167,8 +167,8 @@ yearly_playable_pulse = {
 # Root = character who holds Roma
 PR_check_temple_of_vesta_owner_roma_yearly_pulse = {
 	trigger = {
-		has_title = title:c_roma
-		title:c_roma = { has_county_modifier = open_temple_of_vesta }
+		has_title = title:c_roma_urbs
+		title:c_roma_urbs = { has_county_modifier = open_temple_of_vesta }
 		NOR = {
 			has_character_modifier = burning_flame_of_vesta
 		}
@@ -185,7 +185,7 @@ PR_check_death_or_lost_roma_temple_of_vesta_yearly_pulse = {
 			AND = {
 				has_character_modifier = burning_flame_of_vesta
 				NOT = {
-					has_title = title:c_roma
+					has_title = title:c_roma_urbs
 				}
 			}
 			AND = {
@@ -218,7 +218,7 @@ PR_check_death_or_lost_anglesey_druid_island_yearly_pulse = {
 # Root = Roman religion character with open vestalis maxima in Roma
 PR_check_vestalis_maxima_yearly_pulse = {
 	trigger = {
-		title:c_roma = { has_county_modifier = open_vestalis_maxima }
+		title:c_roma_urbs = { has_county_modifier = open_vestalis_maxima }
 		pr_is_cultus_deorum_trigger = yes
 	}
 	effect = {

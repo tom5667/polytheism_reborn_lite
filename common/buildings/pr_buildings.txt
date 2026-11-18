@@ -34,7 +34,7 @@
 		base = 100
 	}
 	flag = travel_point_of_interest_religious
-	type = duchy_capital
+	flag = duchy_building # CK3 1.21: a duchy capital district's primary building (common/districts/pr_duchy_capital_districts.txt)
 }
 #Build temple of Jupiter Constantinople 
 temple_jupiter_capitoline = {
@@ -68,13 +68,13 @@ temple_jupiter_capitoline = {
 		legitimacy_gain_mult = 0.2
 	}
 	county_modifier = {
-		monthly_county_control_growth_add = 0.25
+		monthly_control_change_when_below_baseline_add = 0.25
 	}
 	ai_value = {
 		base = 100
 	}
 	flag = travel_point_of_interest_religious
-	type = duchy_capital
+	flag = duchy_building # CK3 1.21: a duchy capital district's primary building (common/districts/pr_duchy_capital_districts.txt)
 }
 temple_to_all_gods_rome = {
 	type_icon = "icon_structure_temple_jupiter.dds"
@@ -116,13 +116,12 @@ temple_to_all_gods_rome = {
 	}
 	
 	county_modifier = {
-		development_growth_factor = 0.2
+		prosperity_growth_factor = 0.2
 	}
 	ai_value = {
 		base = 100
 	}
 	flag = travel_point_of_interest_religious
-	type = special
 }
 
 temple_to_all_gods_constantinople = {
@@ -165,13 +164,12 @@ temple_to_all_gods_constantinople = {
 	}
 	
 	county_modifier = {
-		development_growth_factor = 0.2
+		prosperity_growth_factor = 0.2
 	}
 	ai_value = {
 		base = 100
 	}
 	flag = travel_point_of_interest_religious
-	type = special
 }
 
 
@@ -200,17 +198,17 @@ sacred_grove = {
 	cost_gold = 1400
 	county_holder_character_modifier = {
 		monthly_piety = 0.4
-		monthly_county_control_growth_add = 0.3
+		monthly_control_change_when_below_baseline_add = 0.3
 
 	}
 	county_modifier = {
-		tax_mult = 0.4
+		all_tax_mult = 0.4
 	}
 	ai_value = {
 		base = 100
 	}
 	#flag = travel_point_of_interest_religious
-	type = duchy_capital
+	flag = duchy_building # CK3 1.21: a duchy capital district's primary building (common/districts/pr_duchy_capital_districts.txt)
  }
 
  #Druidic circle anglesey 
@@ -241,18 +239,17 @@ druidic_circle = {
 		learning = 1
 		diplomacy = 1
 		levy_reinforcement_rate = 0.1
-		monthly_county_control_growth_factor = 0.05
+		monthly_control_change_when_below_baseline_mult = 0.05
 		monthly_dynasty_prestige_mult = 0.05
 	}
 
 	county_modifier = {
-		development_growth_factor = 0.2
+		prosperity_growth_factor = 0.2
 	}
 	ai_value = {
 		base = 100
 	}
 	flag = travel_point_of_interest_religious
-	type = special
 }
 
 
@@ -288,13 +285,12 @@ temple_to_tanit = {
 	}
 
 	county_modifier = {
-		development_growth_factor = 0.2
+		prosperity_growth_factor = 0.2
 	}
 	ai_value = {
 		base = 100
 	}
 	flag = travel_point_of_interest_religious
-	type = special
 }
 #Mesopotamian brewery
 first_mesopotamian_brewery = {
@@ -326,14 +322,13 @@ first_mesopotamian_brewery = {
 	}
 
 	county_modifier = {
-		development_growth_factor = 0.2
-		tax_mult = 0.1
+		prosperity_growth_factor = 0.2
+		all_tax_mult = 0.1
 	}
 	ai_value = {
 		base = 100
 	}
 	flag = travel_point_of_interest_religious
-	type = special
 }
 #Zalmoxis cave
 kogaionon_altar = {
@@ -367,13 +362,12 @@ kogaionon_altar = {
 	}
 	
 	county_modifier = {
-		development_growth_factor = 0.2
+		prosperity_growth_factor = 0.2
 	}
 	ai_value = {
 		base = 100
 	}
 	flag = travel_point_of_interest_religious
-	type = special
 }
 
 paderborn_irminsul = {
@@ -414,11 +408,10 @@ paderborn_irminsul = {
 	}
 
 	county_modifier = {
-		development_growth_factor = 0.2
+		prosperity_growth_factor = 0.2
 	}
 	ai_value = {
 		base = 100
 	}
 	flag = travel_point_of_interest_religious
-	type = special
 }

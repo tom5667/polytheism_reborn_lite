@@ -136,7 +136,7 @@ pr_roman_embrace_roman_culture_decision = {
     }
 
     is_valid = {
-        completely_controls = title:c_roma
+        completely_controls = title:c_roma_urbs
         OR = {
             has_title = title:e_pr_western_roman_empire
             has_title = title:h_roman_empire
@@ -436,7 +436,7 @@ pr_roman_open_temple_of_vesta_decision = {
                 target = flag:pr_roman_open_temple_of_vesta_decision
             }
         }
-        has_title = title:c_roma
+        has_title = title:c_roma_urbs
     }
 
     cost = {
@@ -445,7 +445,7 @@ pr_roman_open_temple_of_vesta_decision = {
 
     effect = {
         add_piety = 200
-        title:c_roma = {
+        title:c_roma_urbs = {
             add_county_modifier = open_temple_of_vesta
         }
         add_character_modifier = burning_flame_of_vesta
@@ -464,7 +464,7 @@ pr_roman_open_temple_of_vesta_decision = {
 
     ai_potential = {
         pr_is_cultus_deorum_trigger = yes
-        has_title = title:c_roma
+        has_title = title:c_roma_urbs
     }
 
     ai_will_do = {
@@ -624,7 +624,7 @@ pr_roman_restore_altar_of_victoria_decision = {
     }
 
     is_valid = {
-        completely_controls = title:c_roma
+        completely_controls = title:c_roma_urbs
         pr_is_cultus_deorum_trigger = yes
     }
 
@@ -668,7 +668,7 @@ pr_roman_restore_altar_of_victoria_decision = {
 
     ai_potential = {
         is_ruler = yes
-        completely_controls = title:c_roma
+        completely_controls = title:c_roma_urbs
         pr_is_cultus_deorum_trigger = yes
     }
 
@@ -875,7 +875,7 @@ pr_roman_open_gates_of_janus_decision = {
             faith = faith:roman_polytheism
             rite = { rite_has_parameter = special_doctrine_roman_patron_god_active }
         }
-        completely_controls = title:c_roma
+        completely_controls = title:c_roma_urbs
         is_at_war = no
         NOT = { has_character_modifier = gates_of_janus_closed }
         NOT = { has_character_flag = gates_of_janus_open }
@@ -930,7 +930,7 @@ pr_roman_close_gates_of_janus_decision = {
             faith = faith:roman_polytheism
             rite = { rite_has_parameter = special_doctrine_roman_patron_god_active }
         }
-        completely_controls = title:c_roma
+        completely_controls = title:c_roma_urbs
         has_character_flag = gates_of_janus_open
     }
 
@@ -2211,7 +2211,7 @@ pr_roman_commission_sibylline_books_decision = {
             has_title = title:e_pr_western_roman_empire
         }
         OR = {
-            completely_controls = title:c_roma
+            completely_controls = title:c_roma_urbs
             completely_controls = title:c_ravenna
             completely_controls = title:c_lombardia
             completely_controls = title:c_capua
@@ -2495,11 +2495,6 @@ pr_roman_build_temple_jupiter_constantinople_decision = {
             target = flag:pr_roman_build_temple_jupiter_constantinople_decision
         }
         trigger_event = pr_roman.0039
-        hidden_effect = {
-            title:c_byzantion.title_province = {
-                remove_building = hagia_sophia_01
-            }
-        }
     }
 
     ai_check_interval = 120
@@ -2559,11 +2554,6 @@ pr_roman_build_temple_jupiter_rome_decision = {
             target = flag:pr_roman_build_temple_jupiter_rome_decision
         }
         trigger_event = pr_roman.0040
-        hidden_effect = {
-            title:b_vaticano.title_province = {
-                remove_building = holy_site_cathedral_01
-            }
-        }
     }
 
     ai_check_interval = 120
@@ -2830,176 +2820,242 @@ change_state_faith = {
 }
 
 # --- Adopt State Faith Decision ---
-# Vanilla override (EP3): adopt the liege's administrative state faith.
-# Mod extension: adds e_pr_western_roman_empire and c_roma to picture triggers.
-adopt_state_faith = {
-    picture = {
-        trigger = {
-            NOR = {
-                government_has_flag = government_is_tribal
-                government_has_flag = government_is_theocracy
-                top_liege ?= { government_has_flag = government_is_tribal }
-                top_liege ?= { government_has_flag = government_is_theocracy }
-            }
-            OR = {
-                culture = { has_cultural_pillar = heritage_byzantine }
-                top_liege ?= {
-                    OR = {
-                        culture = { has_cultural_pillar = heritage_byzantine }
-                        capital_barony ?= title:b_constantinople
-                        capital_county ?= title:c_roma
-                        primary_title ?= title:e_byzantium
-                        primary_title ?= title:h_roman_empire
-                        primary_title ?= title:e_pr_western_roman_empire
-                    }
-                }
-            }
-        }
-        reference = "gfx/interface/illustrations/decisions/ep3_cerimonial_decision.dds"
-    }
-    picture = {
-        trigger = {
-            top_liege.primary_title.state_faith.religion = religion:islam_religion
-        }
-        reference = "gfx/interface/illustrations/activity_header_backgrounds/activity_pilgrimage.dds"
-    }
-    picture = {
-        reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
-    }
+# Vanilla override (EP3, rebuilt on 1.21): adopt the liege's state rite.
+# Mod extension: adds e_pr_western_roman_empire and the city of Rome (c_roma_urbs) to the picture trigger.
+adopt_state_faith = { # Override of vanilla 1.21 (ep3_decisions.txt); PR: two picture lines marked "PR"
+	picture = {
+		trigger = {
+			NOR = {
+				government_has_flag = government_is_tribal
+				government_has_flag = government_is_theocracy
+				top_liege ?= { government_has_flag = government_is_tribal }
+				top_liege ?= { government_has_flag = government_is_theocracy }
+			}
+			OR = {
+				culture = { has_cultural_pillar = heritage_byzantine }
+				top_liege ?= {
+					OR = {
+						culture = { has_cultural_pillar = heritage_byzantine }
+						capital_barony ?= title:b_constantinople
+						is_roman_emperor_primary_title_trigger = yes
+						capital_county ?= title:c_roma_urbs # PR
+						primary_title ?= title:e_pr_western_roman_empire # PR
+					}
+				}
+			}
+		}
+		reference = "gfx/interface/illustrations/decisions/ep3_cerimonial_decision.dds"
+	}
+	picture = {
+		trigger = {
+			top_liege.primary_title.state_rite.faith.religion = religion:islam_religion
+		}
+		reference = "gfx/interface/illustrations/activity_header_backgrounds/activity_pilgrimage.dds"
+	}
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
 
-    ai_check_interval = 60
-    sort_order = 110
-    decision_group_type = admin
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 60
+		duchy = 60
+		kingdom = 60
+		empire = 60
+		hegemony = 0
+	}
+	sort_order = 110
+	decision_group_type = admin
 
-    desc = adopt_state_faith_decision_desc
-    selection_tooltip = adopt_state_faith_decision_selection_tooltip
+	desc = adopt_state_faith_decision_desc
+	selection_tooltip = adopt_state_faith_decision_selection_tooltip
 
-    is_shown = {
-        has_ep3_dlc_trigger = yes
-        government_allows = state_faith
-        exists = top_liege.primary_title.state_faith
-        NOT = { faith ?= top_liege.primary_title.state_faith }
-    }
+	is_shown = {
+		top_liege ?= { government_allows = state_faith }
+		NOT = { rite ?= top_liege.primary_title.state_rite }
+		exists = top_liege.primary_title.state_rite
+		has_ep3_dlc_trigger = yes
+	}
 
-    is_valid = {
-        government_allows = state_faith
-        NOT = { faith ?= top_liege.primary_title.state_faith }
-    }
+	is_valid = {
+		top_liege = { government_allows = state_faith }
+		NOT = { rite ?= top_liege.primary_title.state_rite }
+	}
 
-    is_valid_showing_failures_only = {
-        NOT = { exists = involved_activity }
-        is_imprisoned = no
-    }
+	is_valid_showing_failures_only = {
+		is_physically_able = yes
+		is_in_activity = no
+		NOT = { faith.religious_head ?= root }
+		custom_tooltip = {
+			text = adopt_state_faith_heresy_cooldown_tt
+			NOT = { has_character_flag = embraced_heresy_recently }
+		}
+	}
 
-    cost = {}
+	cost = {}
 
-    effect = {
-        hidden_effect = {
-            faith = { save_scope_as = old_faith }
-            top_liege.faith = { save_scope_as = new_faith }
-            create_character_memory = { type = adopted_state_faith_memory }
-            scope:new_memory = {
-                set_variable = {
-                    name = old_faith
-                    value = scope:old_faith
-                }
-                set_variable = {
-                    name = new_faith
-                    value = scope:new_faith
-                }
-                set_variable = {
-                    name = title
-                    value = root.top_liege.primary_title
-                }
-            }
-        }
+	effect = {
+		hidden_effect = {
+			rite = { save_scope_as = old_rite }
+			top_liege.primary_title.state_rite = { save_scope_as = new_rite }
+			create_character_memory = { type = adopted_state_faith_memory }
+			scope:new_memory = {
+				set_variable = {
+					name = old_rite
+					value = scope:old_rite
+				}
+				set_variable = {
+					name = new_rite
+					value = scope:new_rite
+				}
+				# Savegame and non-English loc compatibility; do not rename or remove
+				set_variable = {
+					name = old_faith
+					value = scope:old_rite.faith
+				}
+				set_variable = {
+					name = new_faith
+					value = scope:new_rite.faith
+				}
+				set_variable = {
+					name = title
+					value = root.top_liege.primary_title
+				}
+			}
+		}
 
-        set_character_faith = top_liege.primary_title.state_faith
+		# Changing rite into another faith costs piety and can fail silently, so we change the faith first
+		if = {
+			limit = { NOT = { faith = top_liege.primary_title.state_rite.faith } }
+			set_character_faith_with_conversion = top_liege.primary_title.state_rite.faith
+		}
+		if = {
+			limit = { NOT = { rite = top_liege.primary_title.state_rite } }
+			set_character_rite_with_conversion = top_liege.primary_title.state_rite
+		}
 
-        if = {
-            limit = { NOT = { has_character_flag = adopted_state_faith } }
-            change_influence = monumental_influence_gain
-            add_piety = massive_piety_gain
-            top_liege = {
-                if = {
-                    limit = { faith = primary_title.state_faith }
-                    add_opinion = {
-                        target = root
-                        modifier = converted_to_state_faith_opinion
-                        opinion = 30
-                    }
-                }
-                every_vassal = {
-                    custom = every_governor_of_state_faith
-                    limit = {
-                        faith = top_liege.primary_title.state_faith
-                        this != root
-                    }
-                    add_opinion = {
-                        target = root
-                        modifier = converted_to_state_faith_opinion
-                        opinion = 30
-                    }
-                }
-            }
-            add_character_flag = adopted_state_faith
-        }
-    }
+		if = {
+			limit = { NOT = { has_character_flag = adopted_state_faith } }
+			if = {
+				limit = { government_has_flag = government_has_influence }
+				change_influence = monumental_influence_gain
+			}
+			add_piety = massive_piety_gain
+			top_liege = {
+				if = {
+					limit = {
+						rite = primary_title.state_rite
+						this != root
+					}
+					add_opinion = {
+						target = root
+						modifier = converted_to_state_faith_opinion
+						opinion = 30
+					}
+				}
+				every_vassal = {
+					custom = every_governor_of_state_faith
+					limit = {
+						rite = top_liege.primary_title.state_rite
+						this != root
+					}
+					add_opinion = {
+						target = root
+						modifier = converted_to_state_faith_opinion
+						opinion = 30
+					}
+				}
+			}
+			add_character_flag = adopted_state_faith
+		}
+	}
 
-    ai_potential = {
-        government_has_flag = government_is_administrative
-        exists = top_liege.primary_title.state_faith
-        faith != top_liege.primary_title.state_faith
-    }
+	ai_potential = {
+		NOT = { has_trait = zealous } # A zealous vassal would presumably not want to change their faith
+		exists = top_liege.primary_title.state_rite
+		rite != top_liege.primary_title.state_rite
+	}
 
-    ai_will_do = {
-        base = 50
-        modifier = {
-            is_governor = yes
-            add = 40
-        }
-        modifier = {
-            is_governor = yes
-            has_trait = ambitious
-            add = 20
-        }
-        modifier = {
-            has_trait = fickle
-            add = 30
-        }
-        modifier = {
-            has_trait = arbitrary
-            add = 10
-        }
-        modifier = {
-            has_trait = ambitious
-            add = -15
-        }
-        modifier = {
-            has_trait = arrogant
-            add = -15
-        }
-        modifier = {
-            has_trait = content
-            add = -20
-        }
-        modifier = {
-            has_trait = cynical
-            add = -30
-        }
-        modifier = {
-            has_trait = stubborn
-            add = -50
-        }
-        modifier = {
-            has_trait = zealous
-            factor = 0.6
-        }
-        modifier = {
-            has_vassal_stance = zealot
-            factor = 0.3
-        }
-    }
+	ai_will_do = {
+		base = 20
+		modifier = {
+			is_governor = yes
+			add = 40
+		}
+
+		# Personality
+		modifier = {
+			is_governor = yes
+			has_trait = ambitious
+			add = 20
+		}
+		modifier = {
+			has_trait = fickle
+			add = 30
+		}
+		modifier = {
+			has_trait = arbitrary
+			add = 10
+		}
+		modifier = {
+			has_trait = ambitious
+			add = -15
+		}
+		modifier = {
+			has_trait = arrogant
+			add = -15
+		}
+		modifier = {
+			has_trait = content
+			add = -20
+		}
+		modifier = {
+			has_trait = cynical
+			add = -30
+		}
+		modifier = {
+			has_trait = stubborn
+			add = -50
+		}
+
+		# Faith
+		modifier = { # More likely to switch away from an unreformed faith
+			faith ?= { has_doctrine_parameter = unreformed }
+			add = 20
+		}
+		modifier = { # Communal Identity make it more likely to adopt faith if they share same culture with the top liege
+			rite ?= { rite_has_parameter = same_culture_conversion_bonus_active }
+			culture ?= top_liege.culture
+			add = 10
+		}
+		modifier = { # Some faith are more likely to be abandoned
+			rite ?= { rite_has_parameter = unattractive_for_character_conversions }
+			add = 10
+		}
+		modifier = { # Don't adopt the state faith if you have the same rite as the top liege (if the emperor can have this rite, so can we!)
+			rite = top_liege.rite
+			top_liege != this
+			factor = 0
+		}
+
+		# Other
+		modifier = {
+			has_vassal_stance = zealot
+			factor = 0.3
+		}
+
+		# Non-admin vassals only consider converting if their rite hostility is low enough
+		modifier = {
+			NOT = { government_has_flag = government_is_administrative }
+			rite ?= {
+				rite_hostility_level = {
+					target = root.top_liege.primary_title.state_rite
+					value >= faith_hostile_level
+				}
+			}
+			factor = 0
+		}
+	}
 }
 
 # --- College of Pontiffs (#76): start the storylines (players) ---

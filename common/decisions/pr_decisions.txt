@@ -146,8 +146,8 @@ pr_close_temple_of_vesta_decision = {
             religion = religion:islam_religion
         }
         AND = {
-            title:c_roma = { has_county_modifier = open_temple_of_vesta }
-            has_title = title:c_roma
+            title:c_roma_urbs = { has_county_modifier = open_temple_of_vesta }
+            has_title = title:c_roma_urbs
         }
         NOT = {
             is_target_in_global_variable_list = {
@@ -189,13 +189,14 @@ pr_close_temple_of_vesta_decision = {
     }
 }
 
-dismantle_papacy_decision = { #For Muslims and Pagans. Override of vanilla 1.20 (PR changes marked "PR", #167).
+dismantle_papacy_decision = { #For Muslims and Pagans. Override of vanilla 1.21 (PR changes marked "PR", #167).
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
 	}
 	desc = dismantle_papacy_decision_desc
 	selection_tooltip = dismantle_papacy_decision_tooltip
 	decision_group_type = polytheism # PR
+	sort_order = 100
 
 	ai_check_interval_by_tier = {
 		barony = 0
@@ -217,6 +218,16 @@ dismantle_papacy_decision = { #For Muslims and Pagans. Override of vanilla 1.20 
 		}
 		pr_historical_grudge_with_christianity_trigger = yes # PR: instead of any faith hostile to Catholics
 		NOT = { current_date < 600.1.1 } # PR: mods with earlier start dates (e.g. The Fallen Eagle, 385-495)
+		trigger_if = {
+			limit = {
+				is_ai = no
+			}
+			any_sub_realm_county = {
+				title_province = {
+					geographical_region = world_europe_south_italy
+				}
+			}
+		}
 		is_playable_character = yes
 		title:k_papal_state.holder.faith ?= faith:catholic # To avoid it showing for Chalcedonianism
 		faith:catholic = {

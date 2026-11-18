@@ -5,5 +5,5 @@ tags={
 	"Alternative History"
 }
 name="Polytheism Reborn Lite"
-supported_version="1.20.*"
+supported_version="1.21.*"
 remote_file_id="3146023394"

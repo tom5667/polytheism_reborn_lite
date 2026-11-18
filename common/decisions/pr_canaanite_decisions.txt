@@ -3,11 +3,12 @@
 # Specifieke besluiten voor de Canaanite geloofsgroep
 # made by tom5667
 ##################################################
-restore_carthage_decision = {
+restore_carthage_decision = { # Override of vanilla 1.21 (PR changes marked "PR", #167)
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/carthago.dds" # PR
 	}
 	decision_group_type = major
+	sort_order = 120
 
 	ai_check_interval_by_tier = {
 		barony = 0
@@ -22,12 +23,27 @@ restore_carthage_decision = {
 	selection_tooltip = restore_carthage_decision_tooltip
 
 	is_shown = {
+		is_ruler = yes
+		is_playable_character = yes
+		is_landed = yes
+		completely_controls = title:c_tunis
+
 		culture ?= {
 			OR = {
 				this = culture:levantine
+				this = culture:carthaginian
 				has_cultural_pillar = heritage_syriac
 				has_cultural_pillar = heritage_phoenician
 				has_cultural_pillar = heritage_pr_phoenician # PR: pr_punic and the other PR Phoenician cultures
+				any_parent_culture_or_above = {
+					OR = {
+						this = culture:levantine
+						this = culture:carthaginian
+						has_cultural_pillar = heritage_syriac
+						has_cultural_pillar = heritage_phoenician
+						has_cultural_pillar = heritage_pr_phoenician # PR
+					}
+				}
 			}
 		}
 		is_playable_character = yes
@@ -54,7 +70,6 @@ restore_carthage_decision = {
 		completely_controls_region = custom_mauretania
 		completely_controls_region = custom_carthago_nova
 		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
-
 	}
 
 	is_valid_showing_failures_only = {

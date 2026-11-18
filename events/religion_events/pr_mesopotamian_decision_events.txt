@@ -279,7 +279,7 @@ pr_mesopotamian.0200 = {
 	option = {
 		name = pr_mesopotamian.0200.a
 		title:c_batiha.title_province = {
-			add_special_building = first_mesopotamian_brewery
+			pr_add_special_district_effect = { DISTRICT = first_mesopotamian_brewery_district }
 		}
 	}
 }

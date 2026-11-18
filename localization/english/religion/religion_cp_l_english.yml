@@ -452,7 +452,7 @@
 
     #War god Teleno Localization  historical correct
     celtic_iberian_polytheism_war_god_name:0 "Teleno"
-    celtic_iberian_polytheism_war_god_name_possessive:0 "$celtic_iberian_polytheism_war_god_nam$'s"
+    celtic_iberian_polytheism_war_god_name_possessive:0 "$celtic_iberian_polytheism_war_god_name$'s"
 
     #Trickster god no god Localization
     celtic_iberian_polytheism_trickster_god_name:0 "Spirits"

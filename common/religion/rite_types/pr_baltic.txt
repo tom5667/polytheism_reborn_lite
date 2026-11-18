@@ -18,6 +18,8 @@ baltic_pagan = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
         special_doctrine_lithuanian_patron_god
     }
@@ -39,6 +41,8 @@ latvian_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
         special_doctrine_latvian_patron_god
         doctrine_pluralism_pluralistic
@@ -207,6 +211,8 @@ prussian_rites = {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         unreformed_faith_doctrine
         special_doctrine_prussian_patron_god
     }

@@ -763,7 +763,7 @@ hierophant_serapis = {
 	inherit_chance = 0
 	inherit_from_real_father = no 
 	stress_gain_mult = -0.2
-	tax_mult = 0.15
+	domain_tax_mult = 0.15
 
 	christianity_religion_opinion = -5
 	islam_religion_opinion  = -5
@@ -788,7 +788,7 @@ hierophant_eleusinian= {
 	inherit_chance = 0
 	inherit_from_real_father = no 
 	stress_gain_mult = -0.2
-	tax_mult = 0.15
+	domain_tax_mult = 0.15
 
 	christianity_religion_opinion = -5
 	islam_religion_opinion  = -5
@@ -986,7 +986,7 @@ kingdom_in_turmoil = {
 	ruler_designer_cost = 40
 	vassal_levy_contribution_add = -0.30
 	vassal_opinion = -50
-	county_opinion_add = -10
+	popular_opinion_add = -10
 	levy_size = -0.15
 
 	icon = {

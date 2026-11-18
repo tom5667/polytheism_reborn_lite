@@ -4274,6 +4274,7 @@ pr_roman.0015 = {
 #Augur auspice (no bribe) good
 pr_roman.0016 = {
 	type = character_event
+	theme = faith # CK3 1.21: every event needs a theme
 	title = pr_roman.0016.t
 	immediate = {
 		hidden_effect={
@@ -4367,6 +4368,7 @@ pr_roman.0016 = {
 #Augur accepts bribe
 pr_roman.0017 = {
 	type = character_event
+	theme = faith # CK3 1.21: every event needs a theme
 	title = pr_roman.0017.t
 	desc = {
 		first_valid = {
@@ -4412,6 +4414,7 @@ pr_roman.0017 = {
 #Augur doesn't accept the bribe
 pr_roman.0018 = {
 	type = character_event
+	theme = faith # CK3 1.21: every event needs a theme
 	title = pr_roman.0018.t
 	desc = pr_roman.0018.desc
 	immediate = {
@@ -4440,6 +4443,7 @@ pr_roman.0018 = {
 #Special event eagle owl interference
 pr_roman.0020 = {
 	type = character_event
+	theme = faith # CK3 1.21: every event needs a theme
 	title = pr_roman.0020.t
 	desc = pr_roman.0020.desc
 	immediate = {
@@ -4470,6 +4474,7 @@ pr_roman.0020 = {
 #Bad auspice
 pr_roman.0021 = {
 	type = character_event
+	theme = faith # CK3 1.21: every event needs a theme
 	title = pr_roman.0021.t
 	desc = {
 		first_valid = {
@@ -4562,6 +4567,7 @@ pr_roman.0021 = {
 #Option for a longer time to make it not a frustrating thing
 pr_roman.0022 = {
 	type = character_event
+	theme = faith # CK3 1.21: every event needs a theme
 	desc = pr_roman.0022.desc
 	title = pr_roman.0022.t
 	left_portrait = {
@@ -4908,7 +4914,7 @@ pr_roman_cult.0027 = { # New event for the Miles (Soldier) initiation
 	type = character_event
 	title = pr_roman_cult.0027.t # The Trial of the Soldier
 	desc = pr_roman_cult.0027.desc
-	theme = martial_focus
+	theme = martial
 	override_background = { reference = pr_mithraeum }
 
 	immediate = {
@@ -6232,7 +6238,9 @@ pr_roman.0039 = {
 	option = {
 		name = pr_roman.0039.a
 		title:c_byzantion.title_province = {
-		add_special_building = temple_to_all_gods_constantinople
+		# Replaces the special district already there (CK3 1.21; was remove_building in the decision)
+		if = { limit = { province_has_district = hagia_sophia_01_district } remove_district_type = hagia_sophia_01_district }
+		pr_add_special_district_effect = { DISTRICT = temple_to_all_gods_constantinople_district }
 		}
 
 	}
@@ -6251,7 +6259,10 @@ pr_roman.0040 = {
 	option = {
 		name = pr_roman.0040.a
 		title:b_vaticano.title_province = {
-		add_special_building = temple_to_all_gods_rome
+		# Replaces the special district already there (CK3 1.21; was remove_building in the decision)
+		if = { limit = { province_has_district = holy_site_st_peters_basilica_01_district } remove_district_type = holy_site_st_peters_basilica_01_district }
+		if = { limit = { province_has_district = holy_site_cathedral_01_district } remove_district_type = holy_site_cathedral_01_district }
+		pr_add_special_district_effect = { DISTRICT = temple_to_all_gods_rome_district }
 		}
 	}
 }

@@ -26,7 +26,7 @@
 		max_loot_mult = 0.25
 	}
 	county_modifier = {
-		hills_development_growth_factor = 0.2
+		hills_prosperity_growth_factor = 0.2
 	}
 	province_modifier = {
 		hills_construction_gold_cost = -0.1

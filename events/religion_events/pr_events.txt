@@ -878,7 +878,7 @@ pr.0300={
 	
 	option={
 		name = pr.0300.a 
-		title:c_roma ={
+		title:c_roma_urbs ={
 			remove_county_modifier = open_temple_of_vesta
 		}
 		remove_character_modifier = burning_flame_of_vesta

@@ -1,0 +1,74 @@
+﻿# Polytheism Reborn: special districts (CK3 1.21). Until 1.20 these were buildings with type = special; in 1.21
+# a special building is the primary building of a special district, as vanilla's stonehenge_01_district
+# (common/districts/special_districts.txt). Placed by events with pr_add_special_district_effect. The building
+# keys are unchanged (common/buildings/pr_buildings.txt), so saves keep them.
+
+temple_to_all_gods_rome_district = {
+	primary_building = temple_to_all_gods_rome
+
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/pr_temple.dds"
+	}
+
+	type = special
+}
+
+temple_to_all_gods_constantinople_district = {
+	primary_building = temple_to_all_gods_constantinople
+
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/pr_temple.dds"
+	}
+
+	type = special
+}
+
+druidic_circle_district = {
+	primary_building = druidic_circle
+
+	background = {
+		reference = "gfx/interface/illustrations/decisions/celtic_druid.dds"
+	}
+
+	type = special
+}
+
+temple_to_tanit_district = {
+	primary_building = temple_to_tanit
+
+	background = {
+		reference = "gfx/interface/illustrations/decisions/carthago.dds"
+	}
+
+	type = special
+}
+
+first_mesopotamian_brewery_district = {
+	primary_building = first_mesopotamian_brewery
+
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/bp2_tavern_mena.dds"
+	}
+
+	type = special
+}
+
+kogaionon_altar_district = {
+	primary_building = kogaionon_altar
+
+	background = {
+		reference = "gfx/interface/illustrations/decisions/dacian.dds"
+	}
+
+	type = special
+}
+
+paderborn_irminsul_district = {
+	primary_building = paderborn_irminsul
+
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/fp1_runestone_circle.dds"
+	}
+
+	type = special
+}

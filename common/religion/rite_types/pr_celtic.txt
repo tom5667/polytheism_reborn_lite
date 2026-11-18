@@ -17,6 +17,8 @@ gaelic_rites = {
         fallback_tenet = tenet_animal_sacrifice
     }
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         special_doctrine_gaelic_patron_god
         unreformed_faith_doctrine
     }
@@ -39,6 +41,8 @@ brythonic_rites = {
         fallback_tenet = tenet_animal_sacrifice
     }
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         special_doctrine_brythonic_patron_god
         unreformed_faith_doctrine
     }
@@ -61,6 +65,8 @@ gaulish_rites = {
         fallback_tenet = tenet_animal_sacrifice
     }
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         special_doctrine_gaulish_patron_god
         unreformed_faith_doctrine
     }
@@ -86,6 +92,8 @@ celtic_iberian_polytheism_rites = {
         fallback_tenet = tenet_animal_sacrifice
     }
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         special_doctrine_celtic_iberian_patron_god
         unreformed_faith_doctrine
     }

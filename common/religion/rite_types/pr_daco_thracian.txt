@@ -13,6 +13,8 @@ dacian_rites= {
     }
 
     doctrines = {
+        doctrine_diet_unrestricted # CK3 1.21: as vanilla rites (market bonuses for meat, leather)
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         special_doctrine_dacian_patron_god # Thracian patron gods (#201)
         unreformed_faith_doctrine
     }
@@ -176,6 +178,8 @@ zalmoxism_rites = {
         tenet_unrelenting_faith
     }
     doctrines = {
+        special_doctrine_meat_forbidden_temples # Temperate Clergy: the Ctistae abstained from living things (Strabo 7.3.3/7.3.5, Josephus AJ 18.1.5), decided 2026-11-17
+        doctrine_alcohol_permitted # CK3 1.21: as vanilla rites
         special_doctrine_no_patron_god
         unreformed_faith_doctrine
     }

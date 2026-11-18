@@ -153,7 +153,7 @@ pr_germanic_decision.0002 = {
 # --- Place New Irminsul at Paderborn (0012) ---
 pr_germanic_decision.0012 = {
 	type = character_event
-	theme = temple
+	theme = faith
 
 	title = pr_germanic_decision.0012.t
 	desc = pr_germanic_decision.0012.desc
@@ -168,7 +168,7 @@ pr_germanic_decision.0012 = {
 		add_prestige = 200
 		add_piety = 100
 		title:c_paderborn.title_province = {
-			add_special_building = paderborn_irminsul
+			pr_add_special_district_effect = { DISTRICT = paderborn_irminsul_district }
 		}
 	}
 }

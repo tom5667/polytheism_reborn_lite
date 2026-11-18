@@ -30,7 +30,7 @@ join_vestal_virgins_interaction = {
 	notification_text = REQUEST_TO_JOIN_VESTAL_VIRGINS
 
 	is_shown = {
-		title:c_roma = {has_county_modifier = open_temple_of_vesta }
+		title:c_roma_urbs = {has_county_modifier = open_temple_of_vesta }
 		scope:recipient = {
 			is_courtier_of = scope:actor
 			NOR = { 

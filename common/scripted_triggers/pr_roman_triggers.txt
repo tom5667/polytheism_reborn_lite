@@ -277,7 +277,7 @@ pr_college_can_receive_seat_trigger = {
 pr_college_bound_to_rome_trigger = {
 	OR = {
 		is_landed = no
-		primary_title.title_capital_county ?= title:c_roma
+		primary_title.title_capital_county ?= { OR = { this = title:c_roma_urbs this = title:c_roma } } # CK3 1.21: the city or the Vatican
 	}
 }
 
